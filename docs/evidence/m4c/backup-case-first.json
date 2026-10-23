@@ -1,0 +1,26 @@
+{
+  "root": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-backup-case-97gKhi\\data",
+  "exported": true,
+  "externalPreview": true,
+  "restoreWithBackups": {
+    "ok": false,
+    "error": {
+      "code": "FILE_ERROR",
+      "message": "保护性备份目录异常，停止恢复。"
+    }
+  },
+  "previewInsideBackups": {
+    "ok": false,
+    "error": {
+      "code": "FILE_ERROR",
+      "message": "请选择运行数据目录以外的位置，避免覆盖正在使用的数据。"
+    }
+  },
+  "previewWithBackupStaging": {
+    "ok": false,
+    "error": {
+      "code": "FILE_ERROR",
+      "message": "恢复暂存目录异常，请检查数据目录。"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+
+Running 5 tests using 1 worker
+
+
+(node:29796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/5] [development] › tests\e2e\category-tree.spec.ts:13:5 › 分类树：改名、检索、键盘选择、默认取消与移除保留全部专题/题目
+[2/5] [development] › tests\e2e\category-tree.spec.ts:76:5 › 分类范围：分类/专题/标签/难度/归档交集与候选，重导入保留归属和稳定身份
+[3/5] [development] › tests\e2e\category-tree.spec.ts:133:5 › 分类事务：修订写入失败完整回滚，界面保留目标后重试，重复创建不新增
+[4/5] [development] › tests\e2e\category-tree.spec.ts:206:5 › 分类修订使导入旧预览失效，重新预览保留归属且才更新内容
+[5/5] [development] › tests\e2e\category-tree.spec.ts:239:5 › 分类列表：离页旧响应晚到不能覆盖分类归属变化后的新结果
+  5 passed (8.8s)

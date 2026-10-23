@@ -1,0 +1,11 @@
+
+Running 2 tests using 1 worker
+
+(node:9392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\backup-window.spec.ts:583:5 › 导出保留未知自定义表，同名未知元数据表冲突时停止且保留旧目标 (1.7s)
+(node:18712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [packaged] › tests\e2e\backup-window.spec.ts:583:5 › 导出保留未知自定义表，同名未知元数据表冲突时停止且保留旧目标 (707ms)
+
+  2 passed (3.5s)

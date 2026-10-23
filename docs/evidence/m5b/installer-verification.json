@@ -1,0 +1,645 @@
+{
+  "method": "Archive extraction and hash comparison only; installer was not executed and no install/registry changes made.",
+  "installer": {
+    "path": "E:\\My_Projects\\embedded-practice\\release\\m5-20261022\\embedded-practice-0.1.0-x64-setup.exe",
+    "bytes": 105535679,
+    "sha256": "7fbfde29e999a4b42c4be286715b8c802d27bcde32e66a76192a4937fa144d2e",
+    "signature": "NotSigned"
+  },
+  "sourceUnpackedFilesMatched": 122,
+  "sourceUnpackedUnchanged": true,
+  "stagingInputFilesUnchanged": true,
+  "payloadFiles": [
+    {
+      "path": "chrome_100_percent.pak",
+      "bytes": 119889,
+      "sha256": "15a5bcb49a5c02d6a4e736e8dfa11dabb0bac0589641a4e25f0c06472ccaae6d"
+    },
+    {
+      "path": "chrome_200_percent.pak",
+      "bytes": 197073,
+      "sha256": "b7acfb068fa681f4ecb8f782bd4e3926590076c61fd0de3de4a12dde227cf52b"
+    },
+    {
+      "path": "d3dcompiler_47.dll",
+      "bytes": 4741488,
+      "sha256": "a05f99734f7c4822fefc12b367af21fd0976ed6608752fb1e1e80b6ece7ecbbb"
+    },
+    {
+      "path": "dxcompiler.dll",
+      "bytes": 25637376,
+      "sha256": "ad12b7c61f0816e50b0d23870dacb40e770a17b56aa36d334a2d6d739418f258"
+    },
+    {
+      "path": "dxil.dll",
+      "bytes": 1509760,
+      "sha256": "77e039c905030a641e53658a008b74e90635a5ea9b6b79eabd0f2003bdfca59a"
+    },
+    {
+      "path": "embedded-practice.exe",
+      "bytes": 234328064,
+      "sha256": "eeac64484ef0f1208273b625e95796ad94705abd9529db602dceeabfe102d3a6"
+    },
+    {
+      "path": "ffmpeg.dll",
+      "bytes": 3057152,
+      "sha256": "1e34171a00fc8ae121d9d45aa4f03a84930ae97c83a0f5d030c2d9657320860d"
+    },
+    {
+      "path": "icudtl.dat",
+      "bytes": 10876560,
+      "sha256": "bd8c145abdf3f8383276ce01dfa4ae48709bef9fef1c0711eb7c3fab4f6eb7c2"
+    },
+    {
+      "path": "libEGL.dll",
+      "bytes": 478208,
+      "sha256": "1303cd9d90722544bc51204a6a294f85af6c7597dceca17d9cff67db4b27e545"
+    },
+    {
+      "path": "libGLESv2.dll",
+      "bytes": 8039936,
+      "sha256": "7963c93f08c7e335e2184dd97cd635ea687b3f916d383172aba55715742a6695"
+    },
+    {
+      "path": "LICENSE.electron.txt",
+      "bytes": 1096,
+      "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d"
+    },
+    {
+      "path": "LICENSES.chromium.html",
+      "bytes": 20367775,
+      "sha256": "5d545ce8065079f38a82472ab93bd62fcdf73cd319f0771ef51c45c7e243f1d4"
+    },
+    {
+      "path": "locales/af.pak",
+      "bytes": 620482,
+      "sha256": "d990f4ced39e31a1149d2a1842ce2504706885e6ab05957ee2f338c77d94c16b"
+    },
+    {
+      "path": "locales/am.pak",
+      "bytes": 1006731,
+      "sha256": "8d3d5dfc64acfbb0c35036d74561d09ddf3b22058eeed0f8d26a2e9c0703248e"
+    },
+    {
+      "path": "locales/ar.pak",
+      "bytes": 1109717,
+      "sha256": "c54e67e232852d9b14b2bbf4c1a83f0e13a4970c2a83fd26dfb8d8c9eb40e3d6"
+    },
+    {
+      "path": "locales/bg.pak",
+      "bytes": 1150764,
+      "sha256": "2789212aac5f2133ed23c1f84623bc64eb4cfbd93aef7af751d1221e27a21daa"
+    },
+    {
+      "path": "locales/bn.pak",
+      "bytes": 1479936,
+      "sha256": "e72b72977b40fb10472fe1a3fcffcda8b434bf52e2bb2da2935faa80da224812"
+    },
+    {
+      "path": "locales/ca.pak",
+      "bytes": 699615,
+      "sha256": "bc72ff7dd7c4286c1abb52da11c4dfdc42c917cdb267004eb2a906201850bca6"
+    },
+    {
+      "path": "locales/cs.pak",
+      "bytes": 726069,
+      "sha256": "8386f70e830a565d0674014ae4ad385a61eb43d7e7b99d4d373d14388dfd32ce"
+    },
+    {
+      "path": "locales/da.pak",
+      "bytes": 652598,
+      "sha256": "ff687bb6dc79bb638bca4f6a9226544a783209645922d323cf777b169690b25a"
+    },
+    {
+      "path": "locales/de.pak",
+      "bytes": 700828,
+      "sha256": "d2dab9943eeb4c4792dc1105d58bceee0e55f5008d87e97708ffde5d725a36b9"
+    },
+    {
+      "path": "locales/el.pak",
+      "bytes": 1265039,
+      "sha256": "3ee2e46a5a569e411ccf9d77ee4f356e1833bfccbaefcc5e71b7c1517206ab5f"
+    },
+    {
+      "path": "locales/en-GB.pak",
+      "bytes": 565496,
+      "sha256": "aac3b4904d021d58d053bdea2d8056a219ecda1e341d87cb70070aea2cee418f"
+    },
+    {
+      "path": "locales/en-US.pak",
+      "bytes": 571518,
+      "sha256": "bce3ec06227dba2273c4ff12482cba37b709cc8bf5fd29c4380f9a07b92bf821"
+    },
+    {
+      "path": "locales/es-419.pak",
+      "bytes": 690701,
+      "sha256": "385691afee6f73d929007ecceca62afeccaa5411015af04cb02d49b2a757ae35"
+    },
+    {
+      "path": "locales/es.pak",
+      "bytes": 686785,
+      "sha256": "bcffeb2649d529c69ca2c310040f09708208bb76414b1ee6f402c5a9661acafe"
+    },
+    {
+      "path": "locales/et.pak",
+      "bytes": 627098,
+      "sha256": "ecc838878412cc9f28dda9efed2fc60b67315f5fdf64e912db33cee7571a5939"
+    },
+    {
+      "path": "locales/fa.pak",
+      "bytes": 1038215,
+      "sha256": "5061cb29280711363d3bf7d8ec1e7e4057393056af5ae2b6e94f31714dfcaac9"
+    },
+    {
+      "path": "locales/fi.pak",
+      "bytes": 638637,
+      "sha256": "18d904efd7d15a49ef3638c45a40b3aa604e5ec4b68e017ab3f568e6a8202fd4"
+    },
+    {
+      "path": "locales/fil.pak",
+      "bytes": 723756,
+      "sha256": "4034bd7ef11f48d7d646aacb7006562f0f9caec888785a13c36e31b9724dd798"
+    },
+    {
+      "path": "locales/fr.pak",
+      "bytes": 746436,
+      "sha256": "1972f718698d83dd9af8ca7c77062dee0cb888de2eb096259c776752322077ae"
+    },
+    {
+      "path": "locales/gu.pak",
+      "bytes": 1462607,
+      "sha256": "b207f2046791aa8150015ca78f9f76f2f6509953a00c5e89b155bb40e3a26474"
+    },
+    {
+      "path": "locales/he.pak",
+      "bytes": 908716,
+      "sha256": "0600c34932b58b18f1d3196567af67de09ecf9eee8ea4378a22aef74fdb0eca2"
+    },
+    {
+      "path": "locales/hi.pak",
+      "bytes": 1549617,
+      "sha256": "8465aa28c6a2c74d98b2c29ea50c4f8e09aee553f8b01f9bccd1236dab3dc85d"
+    },
+    {
+      "path": "locales/hr.pak",
+      "bytes": 698898,
+      "sha256": "6990ba056fcd1cac97ed5b48024be4ab366846a9c517d43a181cbb0eefa095d1"
+    },
+    {
+      "path": "locales/hu.pak",
+      "bytes": 747469,
+      "sha256": "b83fc60c6d3ce3a04338ea16ba4627d6dfdf81f4373fe4921ac01c7c9558bcb6"
+    },
+    {
+      "path": "locales/id.pak",
+      "bytes": 618259,
+      "sha256": "01f3853d21d4543ecad1ceeeee40fd9cfd4fd31e6822c590618aa965eb9c46c5"
+    },
+    {
+      "path": "locales/it.pak",
+      "bytes": 675899,
+      "sha256": "683bc613c4ee53ea46824856a4b56d5b187355d2e2f6e52284c8e7fb9eee4e01"
+    },
+    {
+      "path": "locales/ja.pak",
+      "bytes": 824122,
+      "sha256": "ba5b0b157956274ed1b8e1af1d858ca9862d59ce3ba5b833f54a613697153825"
+    },
+    {
+      "path": "locales/kn.pak",
+      "bytes": 1681341,
+      "sha256": "d154c50013245a268ba9b4b49639516ab0593922d893bdd551e4aa30ee6a3e2f"
+    },
+    {
+      "path": "locales/ko.pak",
+      "bytes": 701225,
+      "sha256": "8a899f9df64736f4f8b295361bcb95f501835350b9320c2396e1d6f03cde5ee8"
+    },
+    {
+      "path": "locales/lt.pak",
+      "bytes": 759941,
+      "sha256": "0c755ce72d1b71e77d58ab014228458d8ce2b0c51a9b00769635c6609255c9f2"
+    },
+    {
+      "path": "locales/lv.pak",
+      "bytes": 757295,
+      "sha256": "911f922f6ab11d04c4913b04088619276994104979b2c5f132182953fabc24a9"
+    },
+    {
+      "path": "locales/ml.pak",
+      "bytes": 1728736,
+      "sha256": "8beb5df27b5a1b88d0f441518a807b2c6acd99a81820cd0249710ea12bc179d0"
+    },
+    {
+      "path": "locales/mr.pak",
+      "bytes": 1431694,
+      "sha256": "1971da05e4868841c9d9f78be5e17ab09178af99b86a6c07df385015a0c9d9ef"
+    },
+    {
+      "path": "locales/ms.pak",
+      "bytes": 651309,
+      "sha256": "b60c552a9ced5d0e1f4ed408f65a04068acad7d80db7cf88528fbebbcd337e23"
+    },
+    {
+      "path": "locales/nb.pak",
+      "bytes": 623206,
+      "sha256": "cb50908b03c77263297e63ff75d4d3c58fb0cb491c69a8964239e787c762f52d"
+    },
+    {
+      "path": "locales/nl.pak",
+      "bytes": 649223,
+      "sha256": "b6a6cecceeb0097d5fd9628c684d53339f7871948655740e0f625bfedbf526ae"
+    },
+    {
+      "path": "locales/pl.pak",
+      "bytes": 725422,
+      "sha256": "dee5b710ca72425cd4d1236ce260f8d68b41bfdfceaeb2f98c8e89217b24208f"
+    },
+    {
+      "path": "locales/pt-BR.pak",
+      "bytes": 680416,
+      "sha256": "4ce3dd9bdfe8042134cebe618aadd1d29daa91dc3bd7776a2a42639f97bef101"
+    },
+    {
+      "path": "locales/pt-PT.pak",
+      "bytes": 684180,
+      "sha256": "266e49a497c6bf9e48502c7eb01aea1fa90260b6fb1609165ff50307a3d81b59"
+    },
+    {
+      "path": "locales/ro.pak",
+      "bytes": 710046,
+      "sha256": "16b11fb73ea0c5d0336de453d3e2abd2de69b3e6c66dcd72bae318666525bb18"
+    },
+    {
+      "path": "locales/ru.pak",
+      "bytes": 1177506,
+      "sha256": "f3c1d6a7344a98a150d2731f0a7009bcf3adfd0b712dc7dc41f1ba5fcd13eeda"
+    },
+    {
+      "path": "locales/sk.pak",
+      "bytes": 738140,
+      "sha256": "d9cf65b23dd452e4a42331b32e39b890ab47152b71ea247dff628d7cb1dbda9c"
+    },
+    {
+      "path": "locales/sl.pak",
+      "bytes": 706747,
+      "sha256": "1550f8df161a3484a6c7af9bc5321fae524e10d6853467afcb8749054a73e601"
+    },
+    {
+      "path": "locales/sr.pak",
+      "bytes": 1088532,
+      "sha256": "a76930f2c72e49dc3a2c9be7e7bce0f9da0c93de03b6e275521fa86da0d2d39c"
+    },
+    {
+      "path": "locales/sv.pak",
+      "bytes": 630664,
+      "sha256": "b101225f190ed1f1738059283058703afb7eb2e0fb245dd076f919d993427b04"
+    },
+    {
+      "path": "locales/sw.pak",
+      "bytes": 667143,
+      "sha256": "f4e0e2f5b49d9d767884074cc3ee8d0dd83a986f7c1d2de236885998d7a53460"
+    },
+    {
+      "path": "locales/ta.pak",
+      "bytes": 1720220,
+      "sha256": "9fbc40727cf1143d181fe6b21b63ee0f8ac020360ef23ce76759cbc0e4c009a8"
+    },
+    {
+      "path": "locales/te.pak",
+      "bytes": 1591885,
+      "sha256": "8b20dbd1ce97d4bde6273051991c593d74d51e90966dd6291b38b0185f4d0fe7"
+    },
+    {
+      "path": "locales/th.pak",
+      "bytes": 1337498,
+      "sha256": "55cdaecc9ee85290679c7c7331afa321eaa346ea33e77f2f587c0844199df7ec"
+    },
+    {
+      "path": "locales/tr.pak",
+      "bytes": 679613,
+      "sha256": "81a2cedd23026b21e617356a057839ef0f94530b51fc325c0f91ddb5b11bc932"
+    },
+    {
+      "path": "locales/uk.pak",
+      "bytes": 1185537,
+      "sha256": "39e272f1acb9c0b0bc791efa0347b92cb29e20cfbb5ae14f539628f10f45b0f1"
+    },
+    {
+      "path": "locales/ur.pak",
+      "bytes": 1021689,
+      "sha256": "0c1cfa61d9a9be6338b0a160b43ff362a982003053ae5be3b3ec867e78374d7b"
+    },
+    {
+      "path": "locales/vi.pak",
+      "bytes": 808053,
+      "sha256": "0458ac35755d2b86a116fa4a15de9c3ca7813a12852e43d697dcff2547c323ed"
+    },
+    {
+      "path": "locales/zh-CN.pak",
+      "bytes": 577797,
+      "sha256": "c2b05a5970bbb02226905b9e74fe44f32cd2796d4efc0669481c25f95a0882bb"
+    },
+    {
+      "path": "locales/zh-TW.pak",
+      "bytes": 570095,
+      "sha256": "39e6196432e79380a812d6af2e99fd198a5ca3e81565435af136531a4c9cbf42"
+    },
+    {
+      "path": "resources/app.asar",
+      "bytes": 3669491,
+      "sha256": "ff9cb31b662f2e9a029c5241aa7e51a81feb7cf8807d8eeee4093f904d8410d7"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/build/Release/better_sqlite3.node",
+      "bytes": 1920512,
+      "sha256": "24e2e3ca5a829572239718fbca35b873ba4975655d29c56a93f1880e3775d9b8"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/deps/common.gypi",
+      "bytes": 1584,
+      "sha256": "e71a565cd7733e05efc3a2792b54e260126f03f490325aa2a201202acbbdb315"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/deps/copy.js",
+      "bytes": 897,
+      "sha256": "05a2bd41dbd96e33e2fc6cf4bcbc722b4bc8c529813b882f92113d7dbbbece67"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/deps/defines.gypi",
+      "bytes": 1160,
+      "sha256": "029426d3d6528d56ea75682a67a49e48747ccb7439faa75107601d4e2cafabc3"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/deps/download.sh",
+      "bytes": 3913,
+      "sha256": "cc2c1539a4c906bd0ec38104264f9bc1d45120e79de8cc595c29a2319d5c4628"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/deps/patches/1208.patch",
+      "bytes": 597,
+      "sha256": "5d1f22d69fee3551b70a7b7b9b14be43fcfd04dbc8683233667abfa75905011a"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/deps/sqlite3/sqlite3.c",
+      "bytes": 9507980,
+      "sha256": "60d2f39a3726cd6b9021da6f4e868608d66fbb6528a9f513dc8ffcc640493422"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/deps/sqlite3/sqlite3.h",
+      "bytes": 690725,
+      "sha256": "9e69a1353a4288450b0d5239ede11fc7f1f4c8e5eb07491fc8317eacb5b7de7e"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/deps/sqlite3/sqlite3ext.h",
+      "bytes": 39175,
+      "sha256": "ac9645e5c9ff0cf176efdd6e75cb5e98f46295d38e02db5c4d208826a39ab4be"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/deps/sqlite3.gyp",
+      "bytes": 2542,
+      "sha256": "a009b8f80cf0a944eacaf71a84e590504f353fbd8f8b341138d0c3094e372d18"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/deps/test_extension.c",
+      "bytes": 587,
+      "sha256": "948af88dbf356835f5496c1a3d047fdbcc58f3717aa9bc94d0943d7de2b7cf5b"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/database.js",
+      "bytes": 4149,
+      "sha256": "02ea23bdd23d7ac5de0675a2f32fc686e76d5c6a32bd3e3891f360e72e07f61f"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/index.js",
+      "bytes": 110,
+      "sha256": "82db11c4ee43a41d859988c5db42c3771dff565371f94bacbd1e4d8d6ceb47cd"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/methods/aggregate.js",
+      "bytes": 1932,
+      "sha256": "e9f74eb919ec93fe089c95ddf25a98f1f631c80418fa34fb2346ca1bc29f1b82"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/methods/backup.js",
+      "bytes": 2380,
+      "sha256": "ea29d34992bb02e006d0fdeda9675ac5d2bb227aaf57468decd997e9fc9c7dbf"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/methods/function.js",
+      "bytes": 1396,
+      "sha256": "f431d49303b8bbdc044b1f1b455bdad21fc9b74b007de0acb22f08f25b4febd3"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/methods/inspect.js",
+      "bytes": 174,
+      "sha256": "4975a78daee850adee62ba98719d0f223819a0ec135a07c0e302994bd8dbff61"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/methods/pragma.js",
+      "bytes": 536,
+      "sha256": "8b1c54475bd4340b15e25c50d53d06308be65f8f919ecbe4aa9d285ca859ad5a"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/methods/serialize.js",
+      "bytes": 625,
+      "sha256": "7a10ee5c2735384b7f0c361811bc6d017db29f62b203fd3c68a35f667e2c2605"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/methods/table.js",
+      "bytes": 7144,
+      "sha256": "97c42d9ded1aa96c7d916b5b92f96b4e59581d50eaf629cd2c7afb78ff26a9ea"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/methods/transaction.js",
+      "bytes": 2792,
+      "sha256": "bc8624a3ef689d8f78e5669020ad121e17acbc93b1d5ee5afe26860b1084c66c"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/methods/wrappers.js",
+      "bytes": 1145,
+      "sha256": "a150a6271d23f4e5f8953b129f370ff096c7cdc4b812afbf080a6cf4ab741bcf"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/sqlite-error.js",
+      "bytes": 717,
+      "sha256": "2582d61c27680dead168543f392eb102be621dfbef282a4ca4c7c21aa5e7c75d"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/lib/util.js",
+      "bytes": 331,
+      "sha256": "92b2e39e2151b43a2252e10b6d6de876ecaf0008336a4fa1dfe1317b20f1916f"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/LICENSE",
+      "bytes": 1078,
+      "sha256": "09856b52897c91ab67e7456ef43067019f31dfd3b87fda72e655736b1ebdee55"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/package.json",
+      "bytes": 945,
+      "sha256": "35f5841195912569932e7816ca09d03f6567a9c37a6668d4fdd450314d46e24b"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/addon.cpp",
+      "bytes": 1283,
+      "sha256": "20f19f480ce060900521cf9510922e5ca1c8e76936f07ac2916f316e549a0190"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/better_sqlite3.cpp",
+      "bytes": 2851,
+      "sha256": "01b2333517538a24919cc0b916c5a436561d7f712bac7befb6850e9f4b042dc5"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/objects/backup.cpp",
+      "bytes": 4146,
+      "sha256": "16a67102c49c9312eb1deecd08c27064325840df51d6957fe134b871f5d8798c"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/objects/backup.hpp",
+      "bytes": 705,
+      "sha256": "02d57e03a1a03b3f8bb2fc503fc1704d4143b76d939fe37230fbb3b44177c44a"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/objects/database.cpp",
+      "bytes": 14198,
+      "sha256": "081c514fb0a472a0e0962f0619149c187b6cf424e09baa7f39cc5246c17f75aa"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/objects/database.hpp",
+      "bytes": 3129,
+      "sha256": "f47ab5d6bb775cadd0b2b73c4fcb6faf5cb2ae783a049ff4691fafc5d29a0bca"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/objects/statement-iterator.cpp",
+      "bytes": 3339,
+      "sha256": "6ac791fbb786fc498450e843f2a043eddeb03093eb6b31012a04ae7b84a8d7ab"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/objects/statement-iterator.hpp",
+      "bytes": 1391,
+      "sha256": "c064f10ad6bca99154d4f5325e187978d4c6d6cc6fedaa047a4d2f3b4b4f9655"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/objects/statement.cpp",
+      "bytes": 13173,
+      "sha256": "4875a4d1942b89b1dc715b50f3f01e0899530a0772d0fef6f26c358d7e3d12a3"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/objects/statement.hpp",
+      "bytes": 1373,
+      "sha256": "3dca186418c62d81f4b9170904fdc02e624c3d76a0c0c61e6aa95486799808e9"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/bind-map.cpp",
+      "bytes": 1587,
+      "sha256": "7026e107a7f662b6460fbd05e91d9594f5114ffa69de7a8ddb082911f6e90876"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/binder.cpp",
+      "bytes": 6060,
+      "sha256": "64e2ebe910f2efc1d7a847672565745da2c4f5656d951033d99567e7593409d8"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/constants.cpp",
+      "bytes": 9068,
+      "sha256": "bbf4a3f983631f01f723627ee0e897f92b12cd6ca3e8b8b965318931bba0f2b4"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/custom-aggregate.cpp",
+      "bytes": 3952,
+      "sha256": "742d03187a7b8483c9f42bb7b77ed29d0f6877450584fba2662164d2b8dd11b6"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/custom-function.cpp",
+      "bytes": 1550,
+      "sha256": "6a1f826df2cc2c402d8a3dd747a57dbcedb52fe9220a2bbda6a5e01f038b13d1"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/custom-table.cpp",
+      "bytes": 14960,
+      "sha256": "7549b38f24b7e69e78d407534a5cde8814a8a08628a421b122644a43940e0aaf"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/data-converter.cpp",
+      "bytes": 460,
+      "sha256": "3cb73d0911e92893abf840752e9cfd6baded604d49b39ec4000599eec7c8c594"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/data.cpp",
+      "bytes": 9639,
+      "sha256": "74de42f9a0fa68277d8ea9cbaf8ee5f455bbd99cc41297696546c0ec8408c882"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/helpers.cpp",
+      "bytes": 4439,
+      "sha256": "7b763d2caa40f70bf6726c0f70ea50c1db69c7fa453b3bc2ec19577e99800984"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/macros.cpp",
+      "bytes": 4574,
+      "sha256": "09d5605bb65c8d43c0e235f878cbbffc98d79b1e35ee05b7c33766ce114a13a4"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/query-macros.cpp",
+      "bytes": 4138,
+      "sha256": "0dcf68c3ff527398ebe0a6b874b38aa23b3fb87f285b9701636c3b19282dde8c"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/better-sqlite3/src/util/row-builder.cpp",
+      "bytes": 1017,
+      "sha256": "d5b352ac4959a07db22a825019286e085910310d6363c61fbdf037e3f32d56fc"
+    },
+    {
+      "path": "resources/elevate.exe",
+      "bytes": 107520,
+      "sha256": "9b1fbf0c11c520ae714af8aa9af12cfd48503eedecd7398d8992ee94d1b4dc37"
+    },
+    {
+      "path": "resources.pak",
+      "bytes": 6875967,
+      "sha256": "b92a3508c9631066b013adb736684e63e7b9e82e5f4c8a005b243e8e6b2bb5d2"
+    },
+    {
+      "path": "snapshot_blob.bin",
+      "bytes": 346664,
+      "sha256": "f4944af4edad684f09da3ae7573dd3dfb85ba317092b4b3390c088c4b0d3da78"
+    },
+    {
+      "path": "v8_context_snapshot.bin",
+      "bytes": 721416,
+      "sha256": "8370f0e919f5fda4315e3d5106b3423a2abf441ab730c05570eb43fadd7e2152"
+    },
+    {
+      "path": "vk_swiftshader.dll",
+      "bytes": 5529088,
+      "sha256": "0a632a9f9042a9350778ede49c01133b60b349aeffa9e2cf6867e0aa37f6319a"
+    },
+    {
+      "path": "vk_swiftshader_icd.json",
+      "bytes": 106,
+      "sha256": "32d83ff113fef532a9f97e0d2831f8656628ab1c99e9060f0332b1532839afd9"
+    },
+    {
+      "path": "vulkan-1.dll",
+      "bytes": 925696,
+      "sha256": "9e773a62577127c2eeb5d7f07957c6d02dc560f307ca797453479f91b086c1b8"
+    }
+  ],
+  "extraPayloadFiles": [
+    {
+      "path": "resources/elevate.exe",
+      "bytes": 107520,
+      "sha256": "9b1fbf0c11c520ae714af8aa9af12cfd48503eedecd7398d8992ee94d1b4dc37"
+    }
+  ],
+  "oldM0NsisUnchanged": true,
+  "oldM0Sha256": "641eef07330151d6343047c3aad2639a70c442b46a26426cd74b281d73a091d8",
+  "payloadDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-LsU3tY\\安装包 只读拆检\\程序 内容",
+  "installUpgradeUninstallOfflineAcceptance": false,
+  "nsisHelperSource": {
+    "path": "C:\\Users\\pc\\AppData\\Local\\electron-builder\\Cache\\nsis-3.0.4.1\\nsis-3.0.4.1-1mx3n\\elevate.exe",
+    "sha256": "9b1fbf0c11c520ae714af8aa9af12cfd48503eedecd7398d8992ee94d1b4dc37",
+    "matchesExtraPayloadFile": true
+  }
+}

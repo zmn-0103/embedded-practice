@@ -1,0 +1,77 @@
+
+> embedded-practice@0.1.0 test:desktop
+> npm run build && playwright test --project=development
+
+
+> embedded-practice@0.1.0 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 429 modules transformed.
+rendering chunks...
+out/main/rolldown-runtime-Dbql6lyJ.js    1.73 kB
+out/main/import-preparation.js           4.78 kB
+out/main/import-protocol-CjaQDko1.js     6.66 kB
+out/main/practice.js                    16.56 kB
+out/main/library-import.js              19.85 kB
+out/main/open-database-BmFaPWCf.js      22.83 kB
+out/main/index.js                       27.35 kB
+out/main/question-bank-DgNu3Pwr.js     185.06 kB
+out/main/import-worker-CTPDu8a3.js     760.65 kB
+
+✓ built in 102ms
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 103 modules transformed.
+rendering chunks...
+out/preload/index.js  186.90 kB
+
+✓ built in 27ms
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 574 modules transformed.
+rendering chunks...
+out/renderer/index.html                     0.71 kB
+out/renderer/assets/index-7YOOx3Nh.css     10.92 kB
+out/renderer/assets/index-DSI5VOIN.js   1,695.83 kB
+
+✓ built in 116ms
+
+Running 27 tests using 1 worker
+
+(node:23420) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\database-errors.spec.ts:24:7 › 损坏文件报错且原文件不变 (620ms)
+  ok  2 [development] › tests\e2e\database-errors.spec.ts:24:7 › 无应用标识的非空库报错且原文件不变 (599ms)
+  ok  3 [development] › tests\e2e\database-errors.spec.ts:24:7 › 不受支持的结构版本报错且原文件不变 (577ms)
+  ok  4 [development] › tests\e2e\import-worker.spec.ts:38:5 › 真实线程准备题库与三种图片，停止后来源可移动 (712ms)
+  ok  5 [development] › tests\e2e\import-worker.spec.ts:79:5 › 真实线程支持忙碌、失败后重试、取消与期限 (830ms)
+  ok  6 [development] › tests\e2e\import-worker.spec.ts:105:5 › 关闭服务等待真实线程停止并拒绝新任务 (571ms)
+  ok  7 [development] › tests\e2e\library-import.spec.ts:20:5 › 预览后来源移动，80 题与三种图片原子入库并跨进程读回 (1.4s)
+  ok  8 [development] › tests\e2e\library-import.spec.ts:104:5 › 真实事务区分元数据与内容版本，保留收藏/旧引用，归档恢复与旧基线保护 (1.2s)
+  ok  9 [development] › tests\e2e\library-import.spec.ts:155:5 › 第二专题中途写入失败整批回滚，确认无回执后可重试同一快照 (767ms)
+  ok 10 [development] › tests\e2e\library-import.spec.ts:217:5 › 旧 M0 库迁移前备份可读，原启动记录与数据保留且升级不重复 (1.2s)
+  ok 11 [development] › tests\e2e\library-import.spec.ts:269:5 › 迁移前备份无法创建时停止，旧数据库不改写 (570ms)
+  ok 12 [development] › tests\e2e\library-import.spec.ts:287:5 › 迁移 DDL 失败回滚结构，保留旧库和保护性备份 (602ms)
+  ok 13 [development] › tests\e2e\library-window.spec.ts:82:5 › 窗口预览确认、三种图片解码、移动来源后独立进程重开 (2.0s)
+  ok 14 [development] › tests\e2e\library-window.spec.ts:135:5 › 窗口取消、错误定位、放弃预览、重载与非法请求保护 (1.0s)
+  ok 15 [development] › tests\e2e\library-window.spec.ts:179:5 › 分页与归档视图、窗口更新摘要及相同身份恢复 (1.3s)
+  ok 16 [development] › tests\e2e\library-window.spec.ts:212:5 › 受控外链与资源关联、严格 CSP、模板导出 (905ms)
+  ok 17 [development] › tests\e2e\library-window.spec.ts:288:5 › 准备期间关闭应用，真实工作线程退出后正常结束 (653ms)
+  ok 18 [development] › tests\e2e\practice.spec.ts:41:5 › 顺序队列、草稿、揭晓、自评修改、跳过与独立进程恢复 (1.3s)
+  ok 19 [development] › tests\e2e\practice.spec.ts:182:5 › 实际题库更新与归档保留本轮版本和真实作答行，新轮使用最新内容 (747ms)
+  ok 20 [development] › tests\e2e\practice.spec.ts:237:5 › 自评推进、结束回执、草稿和揭晓故障分别整笔回滚并可重试 (681ms)
+  ok 21 [development] › tests\e2e\practice.spec.ts:281:5 › 提交后响应异常先确认持久化；核实不可用时停写，重开按原回执确认 (729ms)
+  ok 22 [development] › tests\e2e\practice.spec.ts:321:5 › 草稿真实 UTF-8 字节边界、非法输入和数据库约束 (734ms)
+  ok 23 [development] › tests\e2e\practice.spec.ts:396:5 › M1 v2 升级前一致性备份并保留题库、图片、收藏和旧自评，重开不重复升级 (1.2s)
+  ok 24 [development] › tests\e2e\practice.spec.ts:453:5 › v2 备份失败时停止，原数据库逐字节保持 (602ms)
+  ok 25 [development] › tests\e2e\practice.spec.ts:467:5 › v2 迁移 DDL 冲突回滚且保留原结构和保护性备份 (606ms)
+  ok 26 [development] › tests\e2e\startup.spec.ts:6:5 › 关闭重开后读回 SQLite 记录 (1.3s)
+  ok 27 [development] › tests\e2e\startup.spec.ts:38:5 › 窗口隔离与生产内容策略生效 (605ms)
+
+  27 passed (25.1s)

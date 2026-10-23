@@ -1,0 +1,5 @@
+
+> embedded-practice@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/category-practice.spec.ts(6,37): error TS6133: 'openPage' is declared but its value is never read.

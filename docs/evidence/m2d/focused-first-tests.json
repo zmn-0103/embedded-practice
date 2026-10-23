@@ -1,0 +1,304 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=development",
+      "--grep",
+      "M2 第四批"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-window.spec.ts",
+      "file": "practice-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2013,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T13:13:24.869Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLCJmb2N1c2VkIjp7IngiOjkyLCJ5IjoyMjIuNDUsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6ODc0fSwiZWRpdG9yQm94Ijp7IngiOjc4LCJ5Ijo0MjYuMjUsIndpZHRoIjo5NTMsImhlaWdodCI6MjM3LjEyNX0sInBhbmVsQm94Ijp7IngiOjYxLCJ5Ijo2NDAuMjAzMTI1LCJ3aWR0aCI6OTg3LCJoZWlnaHQiOjkyLjc5Njg3NX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-729a24e602cba4f48937",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1974,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"hitId\": \"practice-answer\",\u001b[22m\n\u001b[32m-   \"scrollY\": 1020.7999877929688,\u001b[39m\n\u001b[31m+   \"scrollY\": 1000.7999877929688,\u001b[39m\n\u001b[2m    \"x\": 75.40000228881836,\u001b[22m\n\u001b[32m-   \"y\": 75.60000228881836,\u001b[39m\n\u001b[31m+   \"y\": 95.5999984741211,\u001b[39m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"hitId\": \"practice-answer\",\u001b[22m\n\u001b[32m-   \"scrollY\": 1020.7999877929688,\u001b[39m\n\u001b[31m+   \"scrollY\": 1000.7999877929688,\u001b[39m\n\u001b[2m    \"x\": 75.40000228881836,\u001b[22m\n\u001b[32m-   \"y\": 75.60000228881836,\u001b[39m\n\u001b[31m+   \"y\": 95.5999984741211,\u001b[39m\n\u001b[2m  }\u001b[22m\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:812:33",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 33,
+                      "line": 812
+                    },
+                    "snippet": "  810 |       await page.keyboard.press('Tab')\n  811 |       await expect(input).toBeFocused()\n> 812 |       expect(await firstLine()).toEqual(focused)\n      |                                 ^\n  813 |     } finally {\n  814 |       await stop(application)\n  815 |     }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 33,
+                        "line": 812
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"hitId\": \"practice-answer\",\u001b[22m\n\u001b[32m-   \"scrollY\": 1020.7999877929688,\u001b[39m\n\u001b[31m+   \"scrollY\": 1000.7999877929688,\u001b[39m\n\u001b[2m    \"x\": 75.40000228881836,\u001b[22m\n\u001b[32m-   \"y\": 75.60000228881836,\u001b[39m\n\u001b[31m+   \"y\": 95.5999984741211,\u001b[39m\n\u001b[2m  }\u001b[22m\n\n  810 |       await page.keyboard.press('Tab')\n  811 |       await expect(input).toBeFocused()\n> 812 |       expect(await firstLine()).toEqual(focused)\n      |                                 ^\n  813 |     } finally {\n  814 |       await stop(application)\n  815 |     }\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:812:33"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T13:13:26.911Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjI1LCJmb2N1c2VkIjp7IngiOjc1LjQwMDAwMjI4ODgxODM2LCJ5Ijo3NS42MDAwMDIyODg4MTgzNiwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODh9LCJlZGl0b3JCb3giOnsieCI6NjEuNjAwMDAyMjg4ODE4MzYsInkiOjM1Miwid2lkdGgiOjc2NC4wMDAwMzQzMzIyNzU0LCJoZWlnaHQiOjIzNi43OTk5ODc3OTI5Njg3NX0sInBhbmVsQm94Ijp7IngiOjQ0Ljc5OTk5OTIzNzA2MDU1LCJ5Ijo0OTIuODAwMDE4MzEwNTQ2OSwid2lkdGgiOjc5Ny42MDAwMjUxNzcwMDIsImhlaWdodCI6OTEuOTk5OTY5NDgyNDIxODh9fQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 33,
+                    "line": 812
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-7493a7afa48faaf2259e",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1970,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"hitId\": \"practice-answer\",\u001b[22m\n\u001b[32m-   \"scrollY\": 1066,\u001b[39m\n\u001b[31m+   \"scrollY\": 763.3333129882812,\u001b[39m\n\u001b[2m    \"x\": 75.00000287646483,\u001b[22m\n\u001b[32m-   \"y\": 26.179167,\u001b[39m\n\u001b[31m+   \"y\": 328.84585401171876,\u001b[39m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"hitId\": \"practice-answer\",\u001b[22m\n\u001b[32m-   \"scrollY\": 1066,\u001b[39m\n\u001b[31m+   \"scrollY\": 763.3333129882812,\u001b[39m\n\u001b[2m    \"x\": 75.00000287646483,\u001b[22m\n\u001b[32m-   \"y\": 26.179167,\u001b[39m\n\u001b[31m+   \"y\": 328.84585401171876,\u001b[39m\n\u001b[2m  }\u001b[22m\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:812:33",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 33,
+                      "line": 812
+                    },
+                    "snippet": "  810 |       await page.keyboard.press('Tab')\n  811 |       await expect(input).toBeFocused()\n> 812 |       expect(await firstLine()).toEqual(focused)\n      |                                 ^\n  813 |     } finally {\n  814 |       await stop(application)\n  815 |     }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 33,
+                        "line": 812
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"hitId\": \"practice-answer\",\u001b[22m\n\u001b[32m-   \"scrollY\": 1066,\u001b[39m\n\u001b[31m+   \"scrollY\": 763.3333129882812,\u001b[39m\n\u001b[2m    \"x\": 75.00000287646483,\u001b[22m\n\u001b[32m-   \"y\": 26.179167,\u001b[39m\n\u001b[31m+   \"y\": 328.84585401171876,\u001b[39m\n\u001b[2m  }\u001b[22m\n\n  810 |       await page.keyboard.press('Tab')\n  811 |       await expect(input).toBeFocused()\n> 812 |       expect(await firstLine()).toEqual(focused)\n      |                                 ^\n  813 |     } finally {\n  814 |       await stop(application)\n  815 |     }\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:812:33"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T13:13:29.217Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjUsImZvY3VzZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwiZWRpdG9yQm94Ijp7IngiOjYxLjMzMzMzNTg3NjQ2NDg0NCwieSI6MzAyLjk3OTE4NzAxMTcxODc1LCJ3aWR0aCI6NjE2LjY2NjY2NDEyMzUzNTIsImhlaWdodCI6MjM2LjV9LCJwYW5lbEJveCI6eyJ4Ijo0NC42NjY2Njc5MzgyMzI0MiwieSI6Mzk0LjU0MTY4NzAxMTcxODc1LCJ3aWR0aCI6NjUwLjAwMDAxOTA3MzQ4NjMsImhlaWdodCI6OTEuNDU4MzEyOTg4MjgxMjV9fQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 33,
+                    "line": 812
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-bb0ae361e7cbf360ea94",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-20T13:13:24.320Z",
+    "duration": 6916.974999999999,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

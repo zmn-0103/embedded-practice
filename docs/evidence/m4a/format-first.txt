@@ -1,0 +1,16 @@
+src/shared/contracts/backup.ts 62ms (unchanged)
+src/shared/contracts/application.ts 6ms (unchanged)
+src/preload/index.ts 16ms (unchanged)
+src/main/services/backup/validate-backup.ts 21ms
+src/main/services/backup/backup.ts 18ms
+src/main/ipc/backup.ts 12ms
+src/main/index.ts 14ms (unchanged)
+src/renderer/src/components/BackupPanel.tsx 13ms
+src/renderer/src/components/SettingsPane.tsx 7ms (unchanged)
+src/renderer/src/App.tsx 9ms (unchanged)
+tests/unit/backup-contract.test.ts 4ms
+tests/unit/backup-ipc.test.ts 14ms
+tests/e2e/backup-window.spec.ts 33ms
+tests/e2e/settings-window.spec.ts 28ms (unchanged)
+tests/e2e/startup.spec.ts 7ms (unchanged)
+electron.vite.config.ts 3ms (unchanged)

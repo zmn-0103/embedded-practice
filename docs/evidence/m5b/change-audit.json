@@ -1,0 +1,30 @@
+{
+  "previousBaselineFiles": 175,
+  "changedBaselineDocumentation": [
+    "README.md",
+    "docs/README.md",
+    "docs/代码复查记录.md",
+    "docs/开发说明.md",
+    "docs/验收记录.md"
+  ],
+  "unexpectedSourceOrTestDifferences": [],
+  "productionAndExistingTestsUnchanged": true,
+  "fourNewScripts": [
+    "scripts/check-m5-trial.mjs",
+    "scripts/m5-desktop-harness.mjs",
+    "scripts/measure-m5-performance.mjs",
+    "scripts/prepare-m5-samples.mjs"
+  ],
+  "reviewLog": "docs/代码复查记录.md",
+  "m5aEvidenceUnchanged": 133,
+  "m4cEvidenceUnchanged": 681,
+  "sourceNotesFilesUnchanged": 6,
+  "originalUnpackedFilesUnchanged": 122,
+  "oldM0NsisUnchanged": true,
+  "candidateNsis": {
+    "path": "E:\\My_Projects\\embedded-practice\\release\\m5-20261022\\embedded-practice-0.1.0-x64-setup.exe",
+    "bytes": 105535679,
+    "sha256": "7fbfde29e999a4b42c4be286715b8c802d27bcde32e66a76192a4937fa144d2e",
+    "signature": "NotSigned"
+  }
+}

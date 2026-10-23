@@ -1,0 +1,42 @@
+{
+  "finalLinkCheck": {
+    "initial": "简单正则误把计划书中 assets/文件名.png 的 Markdown 格式示例当成真实文件链接。",
+    "fix": "使用项目现有 remark 解析实际 link/image 节点，排除代码示例，不伪造示例图片或修改需求原文；结果见 link-check.json。"
+  },
+  "firstFullRun": {
+    "report": "full-01.json",
+    "passed": 328,
+    "failed": 2,
+    "reason": "两种运行形态同一备份场景的 schema_version 旧预期遗漏为6，实际产物正确为7。",
+    "fix": "仅该精确预期改为7，生产文件、构建及包保持。定向完整复验这两个场景，其他328项不无意义重复；最终合并覆盖以单独统计和文件哈希说明。"
+  },
+  "firstPackageInspection": {
+    "status": "tool-path-error",
+    "reason": "@electron/asar 在 Windows 返回和读取本机分隔符路径，首次把 out/main/backup.js 按正斜杠传给 extractFile，报告未找到。",
+    "fix": "清单展示统一正斜杠，实际 extractFile 参数使用 path.normalize。本机 API 路径修正，不改包文件。其后静态版本探针误找已被构建器内联删除的 SCHEMA_VERSION 名称，依据实际构建文本改查两处 user_version = 7，未修改构建或包。"
+  },
+  "firstDesktopRun": {
+    "report": "targeted-01.json",
+    "passed": 30,
+    "failed": 4,
+    "finding": "四套主题均在明→暗切换的按钮背景120ms过渡中出现暂时对比不足，文字已换色而背景仍在插值。",
+    "diagnosis": "contrast-transition-before.json 保存14帧实际颜色，初帧背景rgb(33,107,82)与文字rgb(20,37,28)处于同一时刻。",
+    "fix": "只删除按钮/导航/主题卡的背景颜色过渡，保留阴影反馈。原对比度4.5阈值、检查时机和原失败均保持。"
+  },
+  "secondTypecheck": {
+    "report": "typecheck-02.txt",
+    "status": "failed",
+    "reason": "新增桌面测试一个未使用的类型导入；删除后build-02类型和构建通过。"
+  },
+  "firstVisualIssue": {
+    "evidence": "preview-03-local-dark.png",
+    "finding": "局部暗色预览的 color-scheme 作用于整个表单，表单说明/边界/按钮的 light-dark 值也变暗，白色面板上对比度下降。",
+    "fix": "将模式范围收窄到主题缩略图和局部阅读预览；全局界面仍仅在确认保存后应用。增加跨模式局部预览回归。"
+  },
+  "initialTypecheck": {
+    "status": "failed",
+    "stage": "production-contract-extended-before-test-fixtures-updated",
+    "reason": "新增必填 palette 后，8 处既有测试目标或服务替身尚缺该字段。生产文件未报告类型错误；逐文件同步测试后重新执行，不放宽生产契约。",
+    "affectedFiles": ["tests/e2e/data-locations.spec.ts", "tests/e2e/restore-window.spec.ts", "tests/e2e/settings-migration.spec.ts", "tests/unit/library-ipc.test.ts"]
+  }
+}

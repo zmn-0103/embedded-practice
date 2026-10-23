@@ -1,0 +1,391 @@
+{
+  "beforeFileCount": 556,
+  "missingOriginalFiles": [],
+  "codeFileCount": 14,
+  "changes": [
+    {
+      "path": "docs/验收记录.md",
+      "kind": "changed",
+      "sha256": "ee050d8d7396a05b856199c22d49abfc9919a248bd06d51db83069bc879f68d5"
+    },
+    {
+      "path": "docs/开发说明.md",
+      "kind": "changed",
+      "sha256": "0169288cdc7fa7e9f1f93820858eedaece0508432740da131c8bc4fa2214ebdb"
+    },
+    {
+      "path": "docs/使用说明.md",
+      "kind": "changed",
+      "sha256": "4c064813ca8d7f0df425e638a70d171439954ce0e05726c728a637d4a91db5cf"
+    },
+    {
+      "path": "docs/代码复查记录.md",
+      "kind": "changed",
+      "sha256": "1b4833116767162e9c5994fddce3111c539b8ac8e5f5d6f48603c293fa650975"
+    },
+    {
+      "path": "docs/产品说明.md",
+      "kind": "changed",
+      "sha256": "36a16b264782d084a18a92c3a840c1b8c26ab27bbf5c6e94db44337cd4345601"
+    },
+    {
+      "path": "docs/README.md",
+      "kind": "changed",
+      "sha256": "1f89a6edd6fa20e14309549dcdba4428027f4d13155a50e39eef74ae6fd25a88"
+    },
+    {
+      "path": "docs/M3第二批行为与验收.md",
+      "kind": "added",
+      "sha256": "fe6f5de3debd0b83e4a30e62c42c5b3b19e5806e61afc17a25886268a2f45398"
+    },
+    {
+      "path": "tests/unit/practice-ipc.test.ts",
+      "kind": "changed",
+      "sha256": "a9a86783a359a22be028d215f7ece063be5c288d50a68be371083fdd9c83355e"
+    },
+    {
+      "path": "tests/unit/practice-contract.test.ts",
+      "kind": "changed",
+      "sha256": "bcfb673854d4ba9763dfa94c9ef3775b07d6e4d3fcef0c3c7e96b15c2911218a"
+    },
+    {
+      "path": "README.md",
+      "kind": "changed",
+      "sha256": "5973c65fda526d34282b84e27ad12f78f709002b418674cebb6f7d8d6a4d4d2f"
+    },
+    {
+      "path": "tests/integration/random-practice-exercise.ts",
+      "kind": "added",
+      "sha256": "18deccbbc05ab78cea1ae675ef60a5f321fe6f65c9529d010af5f22f27ea1f9d"
+    },
+    {
+      "path": "tests/fixtures/practice-v3-schema.ts",
+      "kind": "added",
+      "sha256": "2a986c789f93cb971cc70a33737c424c120c025782a12d2fa16b414848805974"
+    },
+    {
+      "path": "tests/e2e/random-practice.spec.ts",
+      "kind": "added",
+      "sha256": "630f018a2783a5dfed07a671d081fc93e51746ceeb4aa0bf6d60d1a71caef42d"
+    },
+    {
+      "path": "tests/e2e/practice.spec.ts",
+      "kind": "changed",
+      "sha256": "020c3c5300717b1acee22627147922aedae1519aca5b8e061822f1e338c1d9c5"
+    },
+    {
+      "path": "tests/e2e/practice-mode-migration.spec.ts",
+      "kind": "added",
+      "sha256": "9a7a9380fa20e8b1cd01278d22b46e6ed6528a3dcae33aa9d8133fc5a9a5322c"
+    },
+    {
+      "path": "tests/e2e/library-import.spec.ts",
+      "kind": "changed",
+      "sha256": "e0ee347e6b13e9312dd974b348a04cb3f5055368f5d9deb40d41810065b592e9"
+    },
+    {
+      "path": "docs/evidence/m3b/development-random-saved.png",
+      "kind": "added",
+      "sha256": "a24278b38560804eec52aa902975f344b1b8f92e957b94c24fa22729fb3fe99a"
+    },
+    {
+      "path": "docs/evidence/m3b/development-random-recovery-normal.json",
+      "kind": "added",
+      "sha256": "69eef32d2f0cca3c87c9ccc6c9db7ed571ff82f19c47f03e89951d9d8020e9b1"
+    },
+    {
+      "path": "docs/evidence/m3b/development-random-recovery-forced.json",
+      "kind": "added",
+      "sha256": "77f5a311e91c90f7bfa16dade0ac6794d1a2715a7006e5fa6d085209a1705971"
+    },
+    {
+      "path": "docs/evidence/m3b/development-random-fixed-versions.json",
+      "kind": "added",
+      "sha256": "352d7648f98ea402125fa8e01cc39d61727efdd1d04f761a2aae1505a6fc8009"
+    },
+    {
+      "path": "docs/evidence/m3b/development-random-controlled-sql.json",
+      "kind": "added",
+      "sha256": "82c8120fcb344f041a0b9a056a023f1db426523f9f01055d8394a51c6e71d993"
+    },
+    {
+      "path": "docs/evidence/m3b/development-random-before-close-normal.json",
+      "kind": "added",
+      "sha256": "bfe97fdb067ef404d2d5e549b5fb3eb29774076663c40168154d6a6983d368c7"
+    },
+    {
+      "path": "docs/evidence/m3b/development-random-before-close-forced.json",
+      "kind": "added",
+      "sha256": "e05e63b8b80dfe5290fce671ddd900fc4586e70d05a6c69dc68338f080b1272f"
+    },
+    {
+      "path": "docs/evidence/m3b/development-migration-v3-trigger.json",
+      "kind": "added",
+      "sha256": "9b33fc638d3654f872980d00dec509c7514ef24cb656ef133bb3365328888207"
+    },
+    {
+      "path": "docs/evidence/m3b/development-migration-v3-preserved.json",
+      "kind": "added",
+      "sha256": "824118da832717a0e79ef0847484a6b9392276c3a453359332d4497fb87ad55f"
+    },
+    {
+      "path": "docs/evidence/m3b/development-migration-v3-index.json",
+      "kind": "added",
+      "sha256": "9a9033e8552746ae449b502b095fcf3670d35aa85bf99951c71bc091724862be"
+    },
+    {
+      "path": "docs/evidence/m3b/development-migration-v3-foreign-key.json",
+      "kind": "added",
+      "sha256": "c62cfdbb9174b4c7875b12153dd5ba2da4a61ca9a9a4f6a76b0fe668281292f7"
+    },
+    {
+      "path": "docs/evidence/m3b/development-migration-v3-conflict.json",
+      "kind": "added",
+      "sha256": "0fcba6a1479f05858ee50402ac975546949aeaf8f44bac2afac8b9fbdbb0c8c1"
+    },
+    {
+      "path": "docs/evidence/m3b/development-first-tests.json",
+      "kind": "added",
+      "sha256": "58805d583642d241efbefadf10f081b052269d8cd8d2d2fc26b2dd95aeb2698f"
+    },
+    {
+      "path": "docs/evidence/m3b/code-change-audit.json",
+      "kind": "added",
+      "sha256": "b881d413e756a56cce096d1ee19f4c0fd225a243e38eea3b6af8ec9623ad5e67"
+    },
+    {
+      "path": "docs/evidence/m3b/unit-tests.json",
+      "kind": "added",
+      "sha256": "f7c27ddba99cfb9652c1704345bbac3cf404ccfc515165b8502cdd45de267e91"
+    },
+    {
+      "path": "docs/evidence/m3b/review-coverage.json",
+      "kind": "added",
+      "sha256": "07778ed695c7357421ba821c7858cd449eb9d2c27cc2508cd4d6fefefe4ee844"
+    },
+    {
+      "path": "docs/evidence/m3b/results-summary.json",
+      "kind": "added",
+      "sha256": "010bd1475da9a85ff776e0c3641d89cbb0900fc066a938071dacad28e7718fb8"
+    },
+    {
+      "path": "docs/evidence/m3b/README.md",
+      "kind": "added",
+      "sha256": "f775213dc81642657c83189ad74445da885b5b208f7b736e20fe2f9436c120e0"
+    },
+    {
+      "path": "docs/evidence/m3b/random-separated-tests.json",
+      "kind": "added",
+      "sha256": "86c58ee59c26d8c13ad226d3fa611259503d1338af31f18e7dc7278766bb6743"
+    },
+    {
+      "path": "docs/evidence/m3b/random-newline-probe-tests.json",
+      "kind": "added",
+      "sha256": "6524fb76e1f3d6f9ae0f3a5a37bec477532b83e4470ea7cf2f221e47b860e000"
+    },
+    {
+      "path": "docs/evidence/m3b/random-first-tests.json",
+      "kind": "added",
+      "sha256": "6fecf8835f1fc1480d092545a292ae43efc381fc2f37386aa9f85ff10643e2b3"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-random-start.png",
+      "kind": "added",
+      "sha256": "eb869cf64bd50de08e18444ddb897cd6e895d470e37fdc831a82bf94ec574321"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-random-start-retry.json",
+      "kind": "added",
+      "sha256": "f7fbffd7f67b17bd2a8ec9a4c31bb819a90d7b2a55be69e9412d308b0bcede0e"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-random-start-before-scroll.png",
+      "kind": "added",
+      "sha256": "4e0ea7af54bb28a589d9b53b982c02039eb80fdbe30df88c4ba574651f04160b"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-random-saved.png",
+      "kind": "added",
+      "sha256": "55827c13c86af8fc64e2ee97792dffd58278ea4f24b4c0fff8b5a1d9bcd7545d"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-random-recovery-normal.json",
+      "kind": "added",
+      "sha256": "28b7fe64fbe7fd414bb8eff40209ae984060471dd2234189664861f3d8457f25"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-random-recovery-forced.json",
+      "kind": "added",
+      "sha256": "6d91f66f605aa016963927fee1c2213bd4e2b82a612e2065b45cf87d4fcbaf17"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-random-fixed-versions.json",
+      "kind": "added",
+      "sha256": "7801246606adf5d1f38244705461e5c4db34ea923e1f29d646af572f475a9cb8"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-random-controlled-sql.json",
+      "kind": "added",
+      "sha256": "7d554ca9cd896c210bec605e4c0aed3c5ad1c9eb6aa7844b8ad6cdae4bb4c6b0"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-random-before-close-normal.json",
+      "kind": "added",
+      "sha256": "9138db3e06760f8bbc9571f44f924468b8f2584f1f5fbe116625ef080ced2332"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-random-before-close-forced.json",
+      "kind": "added",
+      "sha256": "c2eb918ed092072bb9f7c3834c2739ef326b0e702e20a68c33bc4e0305b6a231"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-migration-v3-trigger.json",
+      "kind": "added",
+      "sha256": "686b5ebf72032023676e5dcc69b124fb966c3c05889816c80a6b7c6c28f4fac0"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-migration-v3-preserved.json",
+      "kind": "added",
+      "sha256": "33f27bf22f91d77cda5ce0003e760f2882d5da1958bf2d3608fd202658d700ed"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-migration-v3-index.json",
+      "kind": "added",
+      "sha256": "8de55e8337b264c1718fc2913be81acaa8b9fb02f585a8696099f080191b2430"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-migration-v3-foreign-key.json",
+      "kind": "added",
+      "sha256": "41cbed01d1b013d8dcae88dc6e756fc3dd6fc79a5e95b6b0b965f14e4971f97d"
+    },
+    {
+      "path": "docs/evidence/m3b/packaged-migration-v3-conflict.json",
+      "kind": "added",
+      "sha256": "9f5b53219a035b3b3bbfc25f71cf64999a076563a16ddfc21ef46f0238076abf"
+    },
+    {
+      "path": "docs/evidence/m3b/package-inspection.json",
+      "kind": "added",
+      "sha256": "4b238a66e9c36af76b388d0ffaecae34cc7d6b6848f495edfcf358aa771d81ef"
+    },
+    {
+      "path": "docs/evidence/m3b/nsis-before.json",
+      "kind": "added",
+      "sha256": "55980b067bf76f96e7f76b4a165b2994f2e89834e145dde818bf10fe1cbbf25c"
+    },
+    {
+      "path": "docs/evidence/m3b/newline-measurements.json",
+      "kind": "added",
+      "sha256": "33633b72cf4205e741159f76259f0ccab104f550a4b3944aec6192c5d1926dce"
+    },
+    {
+      "path": "docs/evidence/m3b/migration-first-tests.json",
+      "kind": "added",
+      "sha256": "a6b65e235349cc81a6f2c56d9ffee87134d91fb6436a45d294982c6502f7c144"
+    },
+    {
+      "path": "docs/evidence/m3b/legacy-schema-source.json",
+      "kind": "added",
+      "sha256": "477c237062c683551c3b19474b7481fef9267c50cb0eca1d8e9cae8bb35ab16c"
+    },
+    {
+      "path": "docs/evidence/m3b/home-capture-tests.json",
+      "kind": "added",
+      "sha256": "98d45f321e93c0d0aabde92cabc99a0de1d6af4a267652b1de9e9d8c25f2b3d7"
+    },
+    {
+      "path": "docs/evidence/m3b/final-full-tests.json",
+      "kind": "added",
+      "sha256": "7afee54429679b13e337b44900f64f31a7ad622f1228fde111f5caada94ce215"
+    },
+    {
+      "path": "docs/evidence/m3b/environment.json",
+      "kind": "added",
+      "sha256": "caabefa48510d01786c0ffdeb8c81830abe946a6d1d7b45b94afb80a5b8f8e96"
+    },
+    {
+      "path": "docs/evidence/m3b/development-random-start.png",
+      "kind": "added",
+      "sha256": "35b9f7cdba9f79afd0c9a5c2e89728d95ccfa6763bc2a29b7b731bce2d358703"
+    },
+    {
+      "path": "docs/evidence/m3b/development-random-start-retry.json",
+      "kind": "added",
+      "sha256": "579057f98dc7368df4af2f75d081f98f1213d4050ac6b68de6130e4efae7adb3"
+    },
+    {
+      "path": "docs/evidence/m3b/development-random-start-before-scroll.png",
+      "kind": "added",
+      "sha256": "9be896237fee75f6fa60892a58c56ee01dfdb230177e8599be9fa62dc98a4e5b"
+    },
+    {
+      "path": "src/shared/contracts/practice.ts",
+      "kind": "changed",
+      "sha256": "69d2042eb4f25391fe7b2919a8695632bcc819db5ff038e472ab72c87ef836ee"
+    },
+    {
+      "path": "AGENTS.md",
+      "kind": "changed",
+      "sha256": "ae9089be13280f165433cce81b99a6a127fd394105b567ac764ae063be7dff0b"
+    },
+    {
+      "path": "docs/architecture/M3随机练习与模式升级.md",
+      "kind": "added",
+      "sha256": "9607e50e97c84cb467cbf50e46bf78ab6b78310d66a9945105ca990e43059cdc"
+    },
+    {
+      "path": "src/renderer/src/components/PracticeWorkspace.tsx",
+      "kind": "changed",
+      "sha256": "e9ec9176af8ce1a70ccb82eaa8371ccb41728fe22e161b14c0b6b83202b0559c"
+    },
+    {
+      "path": "src/renderer/src/components/PracticePane.tsx",
+      "kind": "changed",
+      "sha256": "24cdb5f1747ac47c941c36bd107024098367b3f49e37d358501556637a55b7b3"
+    },
+    {
+      "path": "src/main/database/practice-schema.ts",
+      "kind": "changed",
+      "sha256": "1865e300794c147315a1d764c877ebea8669980de8d1b9b7d68ee2f82b603db2"
+    },
+    {
+      "path": "src/main/database/open-database.ts",
+      "kind": "changed",
+      "sha256": "4b60890fc6a8c6a3a1ddcc5400980c2b542013ed5fffdef1db6ca3928445ec46"
+    },
+    {
+      "path": "src/main/database/repositories/practice-repository.ts",
+      "kind": "changed",
+      "sha256": "4a2d4374f729bb4c4432bd54dbd741ea09ff596bf244eea7193cdb6e3565c214"
+    }
+  ],
+  "protectedFilesUnchanged": [
+    "计划书.md",
+    "package.json",
+    "package-lock.json",
+    "electron.vite.config.ts",
+    "electron-builder.yml",
+    "playwright.config.ts",
+    "tsconfig.node.json",
+    "tsconfig.web.json",
+    "vitest.config.ts",
+    "question-banks/templates/专题模板.md",
+    "question-banks/templates/README.md",
+    "question-banks/templates/.gitkeep",
+    "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+    "question-banks/sources/STM32F103RCT6-GPIO-题答对应.json",
+    "question-banks/sources/STM32F103RCT6-GPIO-原始自测题.txt",
+    "question-banks/README.md",
+    "question-banks/examples/格式示例.md",
+    "question-banks/examples/README.md",
+    "question-banks/examples/assets/测试.webp",
+    "question-banks/examples/assets/带 空格.jpg",
+    "question-banks/examples/assets/中文测试图.png",
+    "question-banks/examples/assets/.gitkeep"
+  ],
+  "excludedSelfAuditFiles": [
+    "docs/evidence/m3b/change-audit.json",
+    "docs/evidence/m3b/documents-static.json",
+    "docs/evidence/m3b/source-manifest.json"
+  ]
+}

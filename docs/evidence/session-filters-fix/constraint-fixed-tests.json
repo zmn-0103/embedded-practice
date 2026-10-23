@@ -1,0 +1,223 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/practice.spec.ts",
+      "--grep=草稿真实 UTF-8",
+      "--reporter=list,json",
+      "--output=tmp/session-filters-constraint-fixed"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/tmp/session-filters-constraint-fixed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/tmp/session-filters-constraint-fixed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\tmp\\session-filters-constraint-fixed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\tmp\\session-filters-constraint-fixed",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice.spec.ts",
+      "file": "practice.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "草稿真实 UTF-8 字节边界、非法输入和数据库约束",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1089,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T15:10:04.540Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-limits.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnZhbGlkIjpbeyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJJTlZBTElEX1JFUVVFU1QiLCJtZXNzYWdlIjoi57uD5Lmg6K+35rGC5peg5pWI77yM6K+35L+d55WZ6L6T5YWl5ZCO6YeN5paw6K+75Y+W77yb6I2J56i/6aG75Li65pyJ5pWI5paH5a2X5LiU5LiN6LaF6L+HIDFNaULjgIIifX0seyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJJTlZBTElEX1JFUVVFU1QiLCJtZXNzYWdlIjoi57uD5Lmg6K+35rGC5peg5pWI77yM6K+35L+d55WZ6L6T5YWl5ZCO6YeN5paw6K+75Y+W77yb6I2J56i/6aG75Li65pyJ5pWI5paH5a2X5LiU5LiN6LaF6L+HIDFNaULjgIIifX0seyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJJTlZBTElEX1JFUVVFU1QiLCJtZXNzYWdlIjoi57uD5Lmg6K+35rGC5peg5pWI77yM6K+35L+d55WZ6L6T5YWl5ZCO6YeN5paw6K+75Y+W77yb6I2J56i/6aG75Li65pyJ5pWI5paH5a2X5LiU5LiN6LaF6L+HIDFNaULjgIIifX0seyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJJTlZBTElEX1JFUVVFU1QiLCJtZXNzYWdlIjoi57uD5Lmg6K+35rGC5peg5pWI77yM6K+35L+d55WZ6L6T5YWl5ZCO6YeN5paw6K+75Y+W77yb6I2J56i/6aG75Li65pyJ5pWI5paH5a2X5LiU5LiN6LaF6L+HIDFNaULjgIIifX1dLCJzYXZlZCI6eyJzZXNzaW9uSWQiOiJiYzRhMWYwNi0wZGNlLTQ3ZjgtYTA2NS0xMTYyNDg4M2Y4YmMiLCJwb3NpdGlvbiI6MCwiZHJhZnRSZXZpc2lvbiI6MX0sIm92ZXJzaXplZCI6eyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJJTlZBTElEX1JFUVVFU1QiLCJtZXNzYWdlIjoi57uD5Lmg6K+35rGC5peg5pWI77yM6K+35L+d55WZ6L6T5YWl5ZCO6YeN5paw6K+75Y+W77yb6I2J56i/6aG75Li65pyJ5pWI5paH5a2X5LiU5LiN6LaF6L+HIDFNaULjgIIifX0sImV4YWN0Ijp0cnVlLCJieXRlcyI6MTA0ODU3NiwibWlzc2luZyI6eyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJTRVNTSU9OX05PVF9GT1VORCIsIm1lc3NhZ2UiOiLnu4PkuaDkvJror53kuI3lrZjlnKjvvIzor7fph43mlrDor7vlj5blvZPliY3nu4PkuaDjgIIifX0sImJhZFBvc2l0aW9uIjp7Im9rIjpmYWxzZSwiZXJyb3IiOnsiY29kZSI6IlNFU1NJT05fQ09ORkxJQ1QiLCJtZXNzYWdlIjoi57uD5Lmg6aKY55uu5L2N572u5peg5pWI77yM6K+36YeN5paw6K+75Y+W5b2T5YmN57uD5Lmg44CCIn19LCJjb25zdHJhaW50cyI6WyJzaW5nbGVBY3RpdmUiLCJ2ZXJzaW9uT3duZXIiLCJyYXRpbmdCZWZvcmVSZXZlYWwiLCJieXRlTGltaXQiLCJ1bmlxdWVRdWVzdGlvbiJdLCJmb3JlaWduS2V5cyI6W10sImVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c0011e267bb7a139fed4-3599ac6522623216eafc",
+          "file": "practice.spec.ts",
+          "line": 321,
+          "column": 5
+        },
+        {
+          "title": "草稿真实 UTF-8 字节边界、非法输入和数据库约束",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1026,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T15:10:06.063Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-limits.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnZhbGlkIjpbeyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJJTlZBTElEX1JFUVVFU1QiLCJtZXNzYWdlIjoi57uD5Lmg6K+35rGC5peg5pWI77yM6K+35L+d55WZ6L6T5YWl5ZCO6YeN5paw6K+75Y+W77yb6I2J56i/6aG75Li65pyJ5pWI5paH5a2X5LiU5LiN6LaF6L+HIDFNaULjgIIifX0seyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJJTlZBTElEX1JFUVVFU1QiLCJtZXNzYWdlIjoi57uD5Lmg6K+35rGC5peg5pWI77yM6K+35L+d55WZ6L6T5YWl5ZCO6YeN5paw6K+75Y+W77yb6I2J56i/6aG75Li65pyJ5pWI5paH5a2X5LiU5LiN6LaF6L+HIDFNaULjgIIifX0seyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJJTlZBTElEX1JFUVVFU1QiLCJtZXNzYWdlIjoi57uD5Lmg6K+35rGC5peg5pWI77yM6K+35L+d55WZ6L6T5YWl5ZCO6YeN5paw6K+75Y+W77yb6I2J56i/6aG75Li65pyJ5pWI5paH5a2X5LiU5LiN6LaF6L+HIDFNaULjgIIifX0seyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJJTlZBTElEX1JFUVVFU1QiLCJtZXNzYWdlIjoi57uD5Lmg6K+35rGC5peg5pWI77yM6K+35L+d55WZ6L6T5YWl5ZCO6YeN5paw6K+75Y+W77yb6I2J56i/6aG75Li65pyJ5pWI5paH5a2X5LiU5LiN6LaF6L+HIDFNaULjgIIifX1dLCJzYXZlZCI6eyJzZXNzaW9uSWQiOiI5NzliMGJhMS1lMjc4LTRkN2ItYjI4OC1mMmYzYjAyZGVkZWUiLCJwb3NpdGlvbiI6MCwiZHJhZnRSZXZpc2lvbiI6MX0sIm92ZXJzaXplZCI6eyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJJTlZBTElEX1JFUVVFU1QiLCJtZXNzYWdlIjoi57uD5Lmg6K+35rGC5peg5pWI77yM6K+35L+d55WZ6L6T5YWl5ZCO6YeN5paw6K+75Y+W77yb6I2J56i/6aG75Li65pyJ5pWI5paH5a2X5LiU5LiN6LaF6L+HIDFNaULjgIIifX0sImV4YWN0Ijp0cnVlLCJieXRlcyI6MTA0ODU3NiwibWlzc2luZyI6eyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJTRVNTSU9OX05PVF9GT1VORCIsIm1lc3NhZ2UiOiLnu4PkuaDkvJror53kuI3lrZjlnKjvvIzor7fph43mlrDor7vlj5blvZPliY3nu4PkuaDjgIIifX0sImJhZFBvc2l0aW9uIjp7Im9rIjpmYWxzZSwiZXJyb3IiOnsiY29kZSI6IlNFU1NJT05fQ09ORkxJQ1QiLCJtZXNzYWdlIjoi57uD5Lmg6aKY55uu5L2N572u5peg5pWI77yM6K+36YeN5paw6K+75Y+W5b2T5YmN57uD5Lmg44CCIn19LCJjb25zdHJhaW50cyI6WyJzaW5nbGVBY3RpdmUiLCJ2ZXJzaW9uT3duZXIiLCJyYXRpbmdCZWZvcmVSZXZlYWwiLCJieXRlTGltaXQiLCJ1bmlxdWVRdWVzdGlvbiJdLCJmb3JlaWduS2V5cyI6W10sImVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c0011e267bb7a139fed4-96399bbc065a58489a8d",
+          "file": "practice.spec.ts",
+          "line": 321,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-21T15:10:04.000Z",
+    "duration": 3143.291,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

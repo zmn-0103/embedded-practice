@@ -1,0 +1,12 @@
+
+Running 5 tests using 1 worker
+
+(node:24456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：100% 页面缩放下长内容切题回到题首 (3.8s)
+  ok 2 [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：125% 页面缩放下长内容切题回到题首 (3.8s)
+  ok 3 [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：150% 页面缩放下长内容切题回到题首 (3.8s)
+  ok 4 [development] › tests\e2e\practice-window.spec.ts:631:5 › M2 第三批：长题干末题完成后展示并聚焦结果标题 (2.7s)
+  ok 5 [development] › tests\e2e\practice-window.spec.ts:661:5 › M2 第三批：强制终止后恢复已确认草稿、原位置与自评 (3.3s)
+
+  5 passed (17.8s)

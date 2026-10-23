@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-23",
+  "build": "20261023.3-findability",
+  "program": "release/findability-20261023-r2/win-unpacked",
+  "sourceFiles": 210,
+  "beforeFilesVerified": 206,
+  "originalPlanTextPreserved": true,
+  "changedExisting": [
+    "AGENTS.md",
+    "README.md",
+    "docs/README.md",
+    "docs/产品说明.md",
+    "docs/代码复查记录.md",
+    "docs/使用说明.md",
+    "docs/开发说明.md",
+    "docs/当前试用版本交付说明.md",
+    "docs/验收记录.md",
+    "scripts/m5-desktop-harness.mjs",
+    "src/main/database/repositories/library-reader.ts",
+    "src/renderer/src/App.tsx",
+    "src/renderer/src/components/LibraryBrowser.tsx",
+    "src/renderer/src/components/PracticeWorkspace.tsx",
+    "src/renderer/src/components/QuestionFilterFields.tsx",
+    "src/renderer/src/styles/global.css",
+    "src/shared/contracts/library-desktop.ts",
+    "tests/e2e/learning-management.spec.ts",
+    "tests/unit/desktop-contract.test.ts",
+    "tests/unit/library-ipc.test.ts",
+    "计划书.md"
+  ],
+  "added": [
+    "docs/找题体验第一批行为与验收.md",
+    "scripts/measure-findability-performance.mjs",
+    "src/renderer/src/components/TagPicker.tsx",
+    "tests/e2e/findability.spec.ts"
+  ],
+  "codeFilesReviewed": [
+    "scripts/m5-desktop-harness.mjs",
+    "src/main/database/repositories/library-reader.ts",
+    "src/renderer/src/App.tsx",
+    "src/renderer/src/components/LibraryBrowser.tsx",
+    "src/renderer/src/components/PracticeWorkspace.tsx",
+    "src/renderer/src/components/QuestionFilterFields.tsx",
+    "src/renderer/src/styles/global.css",
+    "src/shared/contracts/library-desktop.ts",
+    "tests/e2e/learning-management.spec.ts",
+    "tests/unit/desktop-contract.test.ts",
+    "tests/unit/library-ipc.test.ts",
+    "scripts/measure-findability-performance.mjs",
+    "src/renderer/src/components/TagPicker.tsx",
+    "tests/e2e/findability.spec.ts"
+  ],
+  "productionCodeFiles": 8,
+  "testCodeFiles": 4,
+  "scriptFiles": 2,
+  "unchangedDependenciesMigrationAndController": true,
+  "localLinksChecked": 628,
+  "missingLocalLinks": [],
+  "strictUtf8": true,
+  "jsonFilesParsed": 21,
+  "desktop": {
+    "uniqueScenarios": 344,
+    "perProject": {
+      "development": 172,
+      "packaged": 172
+    },
+    "allPassed": true,
+    "skipped": 0,
+    "flaky": 0,
+    "automaticRetries": 0,
+    "oneResultPerScenario": true
+  },
+  "previousUiScenariosPreserved": 330,
+  "performanceCompleted": true,
+  "programFiles": 122,
+  "bundledChecks": 23,
+  "preservedPrograms": [
+    {
+      "program": "release/ui-20261023/win-unpacked",
+      "files": 122,
+      "allMatch": true
+    },
+    {
+      "program": "release/win-unpacked",
+      "files": 122,
+      "allMatch": true
+    }
+  ],
+  "formalDataAccess": false,
+  "installerExecuted": false,
+  "vmwareOperated": false,
+  "gitCommitCreated": false,
+  "v1FullyAccepted": false,
+  "checksPassed": true
+}

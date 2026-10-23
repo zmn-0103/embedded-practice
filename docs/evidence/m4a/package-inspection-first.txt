@@ -1,0 +1,1 @@
+包内容核对工具首轮失败：@electron/asar.listPackage 在 Windows 返回反斜杠路径，脚本将其规范化后直接传 extractFile，报 "out/main/backup.js" was not found in this archive。尚未证明包缺文件；修正工具保留真实档案路径后重核。不修改应用或包产物。

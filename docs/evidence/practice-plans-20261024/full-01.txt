@@ -1,0 +1,416 @@
+
+Running 404 tests using 1 worker
+
+
+
+(node:25484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[1/404] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 1 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[2/404] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 2 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[3/404] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 3 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[4/404] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 4 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[5/404] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 5 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[6/404] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 6 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[7/404] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 1 备份只迁移暂存副本，旧时间未知且来源不变
+[8/404] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 2 备份只迁移暂存副本，旧时间未知且来源不变
+[9/404] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 3 备份只迁移暂存副本，旧时间未知且来源不变
+[10/404] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 4 备份只迁移暂存副本，旧时间未知且来源不变
+[11/404] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 5 备份只迁移暂存副本，旧时间未知且来源不变
+[12/404] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 6 备份只迁移暂存副本，旧时间未知且来源不变
+[13/404] [development] › tests\e2e\backup-window.spec.ts:126:5 › 完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库
+[14/404] [development] › tests\e2e\backup-window.spec.ts:238:5 › 备份取消与预览取消保留原状态，空库可导出并预览
+[15/404] [development] › tests\e2e\backup-window.spec.ts:291:5 › 实际备份写入失败保留已有目标与当前数据，清理暂存后可重试
+[16/404] [development] › tests\e2e\backup-window.spec.ts:334:5 › 备份拒绝当前库伴随文件及目录链接硬链接别名，目标有旧 WAL 时不发布
+[17/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 corrupt，原备份字节及当前数据保持
+[18/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 foreign-app，原备份字节及当前数据保持
+[19/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 future，原备份字节及当前数据保持
+[20/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 missing-table，原备份字节及当前数据保持
+[21/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 foreign-key，原备份字节及当前数据保持
+[22/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 metadata，原备份字节及当前数据保持
+[23/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 image-hash，原备份字节及当前数据保持
+[24/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 filters，原备份字节及当前数据保持
+[25/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 body-json，原备份字节及当前数据保持
+[26/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 palette，原备份字节及当前数据保持
+[27/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 category-title，原备份字节及当前数据保持
+[28/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 category-membership，原备份字节及当前数据保持
+[29/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 category-snapshot，原备份字节及当前数据保持
+[30/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 plan-options，原备份字节及当前数据保持
+[31/404] [development] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 plan-name，原备份字节及当前数据保持
+[32/404] [development] › tests\e2e\backup-window.spec.ts:481:5 › 在途备份阻止重复操作和切页，正常退出等待已验证备份发布
+[33/404] [development] › tests\e2e\backup-window.spec.ts:534:5 › 发布失败保留既有备份，来源读取中变化时停止预览且清理副本
+[34/404] [development] › tests\e2e\backup-window.spec.ts:582:5 › 备份期间其他连接的事务写入保持一致性快照
+[35/404] [development] › tests\e2e\backup-window.spec.ts:634:5 › 导出保留未知自定义表，同名未知元数据表冲突时停止且保留旧目标
+[36/404] [development] › tests\e2e\category-migration.spec.ts:83:5 › 结构7分类迁移：一致性保护、原业务/条件/回执/自定义对象保持，旧专题未分类与旧轮不限分类
+[37/404] [development] › tests\e2e\category-migration.spec.ts:195:7 › 结构7分类迁移 backup-blocked 停止或完整回滚，原库不修补不重建
+[38/404] [development] › tests\e2e\category-migration.spec.ts:195:7 › 结构7分类迁移 table-conflict 停止或完整回滚，原库不修补不重建
+[39/404] [development] › tests\e2e\category-migration.spec.ts:195:7 › 结构7分类迁移 scope-column-conflict 停止或完整回滚，原库不修补不重建
+[40/404] [development] › tests\e2e\category-migration.spec.ts:195:7 › 结构7分类迁移 foreign-key 停止或完整回滚，原库不修补不重建
+[41/404] [development] › tests\e2e\category-practice.spec.ts:27:5 › 分类练习：同事务快照、随机队列、移动/改名/移除后的原请求重试和正常重开保持
+[42/404] [development] › tests\e2e\category-practice.spec.ts:122:5 › 分类统计：同题多轮去重、当前版本/收藏与归档交集，题库下方保持同一固定范围
+[43/404] [development] › tests\e2e\category-practice.spec.ts:220:5 › 分类统计：旧分类的晚到摘要不能覆盖新范围或下方题库
+[44/404] [development] › tests\e2e\category-practice.spec.ts:275:7 › 分类正常关闭等待在途保存：成功后退出重开保持
+[45/404] [development] › tests\e2e\category-practice.spec.ts:275:7 › 分类正常关闭等待在途保存：失败返回窗口并保留原目标
+[46/404] [development] › tests\e2e\category-tree.spec.ts:13:5 › 分类树：改名、检索、键盘选择、默认取消与移除保留全部专题/题目
+[47/404] [development] › tests\e2e\category-tree.spec.ts:76:5 › 分类范围：分类/专题/标签/难度/归档交集与候选，重导入保留归属和稳定身份
+[48/404] [development] › tests\e2e\category-tree.spec.ts:133:5 › 分类事务：修订写入失败完整回滚，界面保留目标后重试，重复创建不新增
+[49/404] [development] › tests\e2e\category-tree.spec.ts:206:5 › 分类修订使导入旧预览失效，重新预览保留归属且才更新内容
+[50/404] [development] › tests\e2e\category-tree.spec.ts:239:5 › 分类列表：离页旧响应晚到不能覆盖分类归属变化后的新结果
+[51/404] [development] › tests\e2e\data-locations.spec.ts:69:5 › 设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据
+[52/404] [development] › tests\e2e\data-locations.spec.ts:144:5 › 数据位置拒绝任意路径及文件或 junction 目标，修正后可重试
+[53/404] [development] › tests\e2e\data-locations.spec.ts:205:5 › 数据位置读取与系统打开失败保留真实状态，重试成功且诊断不含系统原始内容
+[54/404] [development] › tests\e2e\data-locations.spec.ts:244:5 › 数据库不可用时仍能查看数据位置并打开日志文件夹，原坏文件字节保持
+[55/404] [development] › tests\e2e\data-locations.spec.ts:274:5 › 目录打开处理中锁定设置备份导航，正常关闭等待在途打开响应
+[56/404] [development] › tests\e2e\data-locations.spec.ts:318:5 › 恢复先暂停并等待目录打开，结算后才创建保护备份和替换
+[57/404] [development] › tests\e2e\data-locations.spec.ts:384:5 › 切页期间晚到的位置读取不能覆盖新面板的实际位置
+[58/404] [development] › tests\e2e\data-locations.spec.ts:425:5 › Windows 已有 Logs Backups 和 Backup-Staging 目录可正常打开并完成保护恢复
+[59/404] [development] › tests\e2e\database-errors.spec.ts:24:7 › 损坏文件报错且原文件不变
+[60/404] [development] › tests\e2e\database-errors.spec.ts:24:7 › 无应用标识的非空库报错且原文件不变
+[61/404] [development] › tests\e2e\database-errors.spec.ts:24:7 › 不受支持的结构版本报错且原文件不变
+[62/404] [development] › tests\e2e\findability.spec.ts:82:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置
+[63/404] [development] › tests\e2e\findability.spec.ts:112:5 › 找题：标签候选跨分页、独立于筛选、限定专题，支持鼠标/键盘/无匹配/清除
+[64/404] [development] › tests\e2e\findability.spec.ts:172:5 › 找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择
+[65/404] [development] › tests\e2e\findability.spec.ts:238:5 › 找题：导入元数据使候选缓存失效，归档范围隔离，清除旧题选择
+[66/404] [development] › tests\e2e\findability.spec.ts:263:5 › 找题：返回后读取失败保留条件和页码，重试仍查询原范围
+[67/404] [development] › tests\e2e\findability.spec.ts:298:5 › 找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情
+[68/404] [development] › tests\e2e\findability.spec.ts:322:5 › 找题：首页快捷条件不替换旧轮，明确开始/无匹配/继续保留原契约
+[69/404] [development] › tests\e2e\history-versions.spec.ts:32:5 › 单题历史真实记录资格、倒序分页、同轮改评、跨专题隔离及只读
+[70/404] [development] › tests\e2e\history-versions.spec.ts:106:5 › 内容更新标记按最新揭晓消除，旧轮/跳过/只读历史不消除，元数据不新增标记
+[71/404] [development] › tests\e2e\history-versions.spec.ts:222:5 › 历史旧版本图片在替换/来源移动/归档恢复与独立进程重开后可读
+[72/404] [development] › tests\e2e\history-window.spec.ts:22:5 › 历史默认不读/不挂载，主动回看与自动保存保持，新题新轮重新关闭
+[73/404] [development] › tests\e2e\history-window.spec.ts:126:5 › 历史真实读取失败与坏记录可重试，保留已存数据且诊断不包含旧作答
+[74/404] [development] › tests\e2e\history-window.spec.ts:221:7 › 切题后晚到的 history:list 不覆盖另一题或泄露旧内容
+[75/404] [development] › tests\e2e\history-window.spec.ts:221:7 › 切题后晚到的 history:get-entry 不覆盖另一题或泄露旧内容
+[76/404] [development] › tests\e2e\import-worker.spec.ts:38:5 › 真实线程准备题库与三种图片，停止后来源可移动
+[77/404] [development] › tests\e2e\import-worker.spec.ts:79:5 › 真实线程支持忙碌、失败后重试、取消与期限
+[78/404] [development] › tests\e2e\import-worker.spec.ts:105:5 › 关闭服务等待真实线程停止并拒绝新任务
+[79/404] [development] › tests\e2e\learning-management.spec.ts:211:7 › M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致
+[80/404] [development] › tests\e2e\learning-management.spec.ts:211:7 › M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致
+[81/404] [development] › tests\e2e\learning-management.spec.ts:276:5 › M3 修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数
+[82/404] [development] › tests\e2e\learning-management.spec.ts:312:5 › M3 第一批：搜索标题/题干/标签、字面字符、交集、分页与答案边界
+[83/404] [development] › tests\e2e\learning-management.spec.ts:377:5 › M3 第一批：收藏快速重复、练习数量同步、正常关闭重开持久化
+[84/404] [development] › tests\e2e\learning-management.spec.ts:436:5 › M3 第一批：收藏写入失败与响应丢失重试、收藏页取消后收敛
+[85/404] [development] › tests\e2e\learning-management.spec.ts:496:5 › M3 第一批：筛选固定队列、真实自评/未练习区分、无匹配保留旧轮
+[86/404] [development] › tests\e2e\learning-management.spec.ts:581:5 › M3 第一批：旧版本自评排除、元数据保持、归档恢复收藏和历史
+[87/404] [development] › tests\e2e\learning-records-errors.spec.ts:7:5 › 学习记录真实读取失败不伪造零，修复后重试保留原数据
+[88/404] [development] › tests\e2e\learning-records-errors.spec.ts:55:5 › 学习总览晚到的旧专题响应不覆盖新专题或归档范围
+[89/404] [development] › tests\e2e\learning-records.spec.ts:24:5 › 学习总览空库、未知专题、严格输入与只读零结果
+[90/404] [development] › tests\e2e\learning-records.spec.ts:68:5 › 学习总览真实多轮去重、未评价、当前版本、旧状态和归档恢复
+[91/404] [development] › tests\e2e\learning-records.spec.ts:202:5 › 学习记录页专题范围、收藏刷新、主动历史与明暗布局
+[92/404] [development] › tests\e2e\learning-records.spec.ts:247:5 › 切页保留待确认预览，记录页关闭仍保存并可继续原轮
+[93/404] [development] › tests\e2e\library-import.spec.ts:20:5 › 预览后来源移动，80 题与三种图片原子入库并跨进程读回
+[94/404] [development] › tests\e2e\library-import.spec.ts:104:5 › 真实事务区分元数据与内容版本，保留收藏/旧引用，归档恢复与旧基线保护
+[95/404] [development] › tests\e2e\library-import.spec.ts:155:5 › 第二专题中途写入失败整批回滚，确认无回执后可重试同一快照
+[96/404] [development] › tests\e2e\library-import.spec.ts:217:5 › 旧 M0 库迁移前备份可读，原启动记录与数据保留且升级不重复
+[97/404] [development] › tests\e2e\library-import.spec.ts:269:5 › 迁移前备份无法创建时停止，旧数据库不改写
+[98/404] [development] › tests\e2e\library-import.spec.ts:287:5 › 迁移 DDL 失败回滚结构，保留旧库和保护性备份
+[99/404] [development] › tests\e2e\library-window.spec.ts:82:5 › 窗口预览确认、三种图片解码、移动来源后独立进程重开
+[100/404] [development] › tests\e2e\library-window.spec.ts:139:5 › 窗口取消、错误定位、放弃预览、重载与非法请求保护
+[101/404] [development] › tests\e2e\library-window.spec.ts:187:5 › 分页与归档视图、窗口更新摘要及相同身份恢复
+[102/404] [development] › tests\e2e\library-window.spec.ts:224:5 › 受控外链与资源关联、严格 CSP、模板导出
+[103/404] [development] › tests\e2e\library-window.spec.ts:304:5 › 准备期间关闭应用，真实工作线程退出后正常结束
+[104/404] [development] › tests\e2e\palette-migration.spec.ts:87:5 › 真实结构6先保护备份再追加配色，全部业务/自定义对象/显示和条件保持
+[105/404] [development] › tests\e2e\palette-migration.spec.ts:159:7 › 结构6配色迁移 backup-blocked 停止/回滚，不修补未知结构
+[106/404] [development] › tests\e2e\palette-migration.spec.ts:159:7 › 结构6配色迁移 column-conflict 停止/回滚，不修补未知结构
+[107/404] [development] › tests\e2e\palette-migration.spec.ts:159:7 › 结构6配色迁移 foreign-key 停止/回滚，不修补未知结构
+[108/404] [development] › tests\e2e\practice-mode-migration.spec.ts:129:5 › v3 升级至 v9：备份、全部旧记录、原请求回执与顺序会话恢复保持
+[109/404] [development] › tests\e2e\practice-mode-migration.spec.ts:217:5 › v3 备份失败停止升级，原文件逐字节不变
+[110/404] [development] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 conflict，保留原结构、记录和保护性备份
+[111/404] [development] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 trigger，保留原结构、记录和保护性备份
+[112/404] [development] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 index，保留原结构、记录和保护性备份
+[113/404] [development] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 foreign-key，保留原结构、记录和保护性备份
+[114/404] [development] › tests\e2e\practice-plans-errors.spec.ts:7:5 › 方案失败：读取不伪造空成功、已提交丢响应按原命令重试，停止重试不删已存项
+[115/404] [development] › tests\e2e\practice-plans-errors.spec.ts:76:7 › 方案正常关闭等待在途保存：成功退出重开保持
+[116/404] [development] › tests\e2e\practice-plans-errors.spec.ts:76:7 › 方案正常关闭等待在途保存：失败返回窗口原目标重试
+[117/404] [development] › tests\e2e\practice-plans-migration.spec.ts:59:5 › 结构8方案升级：只追加空方案表，原分类/条件/草稿/自定义对象与保护备份保持
+[118/404] [development] › tests\e2e\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 backup-blocked 停止或完整回滚，原库与分类不修补
+[119/404] [development] › tests\e2e\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 table-conflict 停止或完整回滚，原库与分类不修补
+[120/404] [development] › tests\e2e\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 foreign-key 停止或完整回滚，原库与分类不修补
+[121/404] [development] › tests\e2e\practice-plans.spec.ts:9:5 › 方案：命名保存完整条件、填入不建轮，正常重开后明确开始才替换原轮
+[122/404] [development] › tests\e2e\practice-plans.spec.ts:113:5 › 方案：原ID重试、同名拒绝、容量、写入回滚及坏JSON读取，不改变原业务或题库修订
+[123/404] [development] › tests\e2e\practice-plans.spec.ts:192:5 › 方案：分类改名沿原ID，移出/移除不扩大范围，删除默认取消且只删方案
+[124/404] [development] › tests\e2e\practice-window.spec.ts:119:5 › 窗口输入/纯思考、答案隐藏、自评修改/跳过/末题与新轮默认
+[125/404] [development] › tests\e2e\practice-window.spec.ts:190:5 › 写入失败保留输入/阻止切题，自评推进失败按原操作重试
+[126/404] [development] › tests\e2e\practice-window.spec.ts:235:5 › 返回首页和正常关窗立即保存，独立进程继续原题与草稿
+[127/404] [development] › tests\e2e\practice-window.spec.ts:268:5 › 关闭保存失败返回窗口保留输入，修复后可正常关闭
+[128/404] [development] › tests\e2e\practice-window.spec.ts:306:5 › 只有明确选择放弃时允许未保存退出
+[129/404] [development] › tests\e2e\practice-window.spec.ts:328:5 › 窗口提交后响应丢失，重试原请求不再次推进
+[130/404] [development] › tests\e2e\practice-window.spec.ts:379:5 › 真实代码 token/复制调用、图片模态缩放与长答案操作区
+[131/404] [development] › tests\e2e\practice-window.spec.ts:427:7 › 快速重复：50ms 双击跳过和上一题只移动一题
+[132/404] [development] › tests\e2e\practice-window.spec.ts:427:7 › 快速重复：100ms 双击跳过和上一题只移动一题
+[133/404] [development] › tests\e2e\practice-window.spec.ts:427:7 › 快速重复：250ms 双击跳过和上一题只移动一题
+[134/404] [development] › tests\e2e\practice-window.spec.ts:475:7 › 快速重复：100ms 两次 Enter 激活跳过只移动一题
+[135/404] [development] › tests\e2e\practice-window.spec.ts:475:7 › 快速重复：100ms 两次 Space 激活跳过只移动一题
+[136/404] [development] › tests\e2e\practice-window.spec.ts:505:5 › 快速重复：持续按住 Enter 不会在操作恢复后再次跳过
+[137/404] [development] › tests\e2e\practice-window.spec.ts:532:5 › 图片自动保存：放大窗口与缩放状态在草稿保存后保留
+[138/404] [development] › tests\e2e\practice-window.spec.ts:568:7 › M2 第三批：100% 页面缩放下长内容切题回到题首
+[139/404] [development] › tests\e2e\practice-window.spec.ts:568:7 › M2 第三批：125% 页面缩放下长内容切题回到题首
+[140/404] [development] › tests\e2e\practice-window.spec.ts:568:7 › M2 第三批：150% 页面缩放下长内容切题回到题首
+[141/404] [development] › tests\e2e\practice-window.spec.ts:640:5 › M2 第三批：长题干末题完成后展示并聚焦结果标题
+[142/404] [development] › tests\e2e\practice-window.spec.ts:670:5 › M2 第三批：强制终止后恢复已确认草稿、原位置与自评
+[143/404] [development] › tests\e2e\practice-window.spec.ts:744:7 › M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡
+[144/404] [development] › tests\e2e\practice-window.spec.ts:744:7 › M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡
+[145/404] [development] › tests\e2e\practice-window.spec.ts:744:7 › M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡
+[146/404] [development] › tests\e2e\practice.spec.ts:41:5 › 顺序队列、草稿、揭晓、自评修改、跳过与独立进程恢复
+[147/404] [development] › tests\e2e\practice.spec.ts:182:5 › 实际题库更新与归档保留本轮版本和真实作答行，新轮使用最新内容
+[148/404] [development] › tests\e2e\practice.spec.ts:237:5 › 自评推进、结束回执、草稿和揭晓故障分别整笔回滚并可重试
+[149/404] [development] › tests\e2e\practice.spec.ts:281:5 › 提交后响应异常先确认持久化；核实不可用时停写，重开按原回执确认
+[150/404] [development] › tests\e2e\practice.spec.ts:321:5 › 草稿真实 UTF-8 字节边界、非法输入和数据库约束
+[151/404] [development] › tests\e2e\practice.spec.ts:396:5 › M1 v2 升级前一致性备份并保留题库、图片、收藏和旧自评，重开不重复升级
+[152/404] [development] › tests\e2e\practice.spec.ts:453:5 › v2 备份失败时停止，原数据库逐字节保持
+[153/404] [development] › tests\e2e\practice.spec.ts:467:5 › v2 迁移 DDL 冲突回滚且保留原结构和保护性备份
+[154/404] [development] › tests\e2e\random-practice.spec.ts:151:5 › 随机 SQL 从全部匹配题取样，数量/交集/同键去重/幂等及失败回滚
+[155/404] [development] › tests\e2e\random-practice.spec.ts:202:7 › 随机窗口保存/自评后正常关窗，独立进程恢复完整原队列
+[156/404] [development] › tests\e2e\random-practice.spec.ts:202:7 › 随机窗口保存/自评后真实强制终止，独立进程恢复完整原队列
+[157/404] [development] › tests\e2e\random-practice.spec.ts:314:5 › 随机本轮不受更新/归档影响，新轮使用最新版本并重新隐藏作答
+[158/404] [development] › tests\e2e\random-practice.spec.ts:373:5 › 随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题
+[159/404] [development] › tests\e2e\restore-window.spec.ts:222:5 › 全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容
+[160/404] [development] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 protect 时不替换原库，窗口仍可继续保存
+[161/404] [development] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 save 时不替换原库，窗口仍可继续保存
+[162/404] [development] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 tampered 时不替换原库，窗口仍可继续保存
+[163/404] [development] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 cancel 时不替换原库，窗口仍可继续保存
+[164/404] [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 publish 后独立进程保留可恢复数据且不创建空库
+[165/404] [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 close 后独立进程保留可恢复数据且不创建空库
+[166/404] [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 rollback 后独立进程保留可恢复数据且不创建空库
+[167/404] [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 crash-moved 后独立进程保留可恢复数据且不创建空库
+[168/404] [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 crash-installed 后独立进程保留可恢复数据且不创建空库
+[169/404] [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 crash-committed 后独立进程保留可恢复数据且不创建空库
+[170/404] [development] › tests\e2e\restore-window.spec.ts:552:5 › 恢复文件事务保留并回退全部数据库伴随文件，未知事务现场不清理
+[171/404] [development] › tests\e2e\restore-window.spec.ts:645:5 › 恢复前提交未到自动保存时间的草稿，保护备份包括最终输入且暂停期间拒绝业务写入
+[172/404] [development] › tests\e2e\restore-window.spec.ts:730:5 › 保护性备份可直接从本数据目录选择并恢复，来源文件不被覆盖
+[173/404] [development] › tests\e2e\session-filters-migration.spec.ts:139:5 › v5 升级至 v9 保留全业务、原回执与显示设置，旧筛选明确未知
+[174/404] [development] › tests\e2e\session-filters-migration.spec.ts:237:7 › v5 筛选迁移 backup-blocked 停止或回滚，原库保留
+[175/404] [development] › tests\e2e\session-filters-migration.spec.ts:237:7 › v5 筛选迁移 column-conflict 停止或回滚，原库保留
+[176/404] [development] › tests\e2e\session-filters-migration.spec.ts:237:7 › v5 筛选迁移 foreign-key 停止或回滚，原库保留
+[177/404] [development] › tests\e2e\session-filters.spec.ts:68:7 › sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列
+[178/404] [development] › tests\e2e\session-filters.spec.ts:68:7 › random 建轮原筛选重开保持，修改首页与题库不重抽固定队列
+[179/404] [development] › tests\e2e\session-filters.spec.ts:159:5 › 筛选快照与替换旧轮原子提交，失败回滚和丢响应重试不改快照
+[180/404] [development] › tests\e2e\session-filters.spec.ts:231:5 › 省略条件的新轮保存明确默认快照，旧请求形状重试仍幂等
+[181/404] [development] › tests\e2e\session-filters.spec.ts:260:5 › 损坏筛选快照不能冒充旧未知或默认条件，修复后原轮可读
+[182/404] [development] › tests\e2e\settings-migration.spec.ts:136:5 › v4 升级至 v9：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级
+[183/404] [development] › tests\e2e\settings-migration.spec.ts:261:7 › v4 显示设置升级 backup-blocked 时停止/回滚且保留原库
+[184/404] [development] › tests\e2e\settings-migration.spec.ts:261:7 › v4 显示设置升级 table-conflict 时停止/回滚且保留原库
+[185/404] [development] › tests\e2e\settings-migration.spec.ts:261:7 › v4 显示设置升级 foreign-key 时停止/回滚且保留原库
+[186/404] [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[187/404] [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[188/404] [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[189/404] [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[190/404] [development] › tests\e2e\settings-palettes.spec.ts:144:5 › 配色真实写失败/丢响应保留选择，键盘切换后正常重开保留草稿
+[191/404] [development] › tests\e2e\settings-palettes.spec.ts:218:5 › 损坏配色明确报错且不伪造默认成功，修复重读保持学习数据
+[192/404] [development] › tests\e2e\settings-palettes.spec.ts:260:5 › 配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作
+[193/404] [development] › tests\e2e\settings-palettes.spec.ts:306:5 › 复制成功反馈2.5秒自熄，重复复制重置、错误保留且切题拒绝晚到响应
+[194/404] [development] › tests\e2e\settings-window.spec.ts:48:5 › 四入口初始空库、独立页面、地址与显示默认值保持
+[195/404] [development] › tests\e2e\settings-window.spec.ts:84:5 › 系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案
+[196/404] [development] › tests\e2e\settings-window.spec.ts:155:5 › 显示设置正常关闭独立重开，保留草稿位置自评收藏与历史
+[197/404] [development] › tests\e2e\settings-window.spec.ts:210:5 › 真实设置写入失败及提交后响应丢失，原目标重试不改变学习数据
+[198/404] [development] › tests\e2e\settings-window.spec.ts:272:5 › 损坏设置读取报错且不伪造默认成功，修复重读保留业务数据
+[199/404] [development] › tests\e2e\settings-window.spec.ts:309:7 › 设置保存处理中正常关闭等待结果，成功关闭独立重开
+[200/404] [development] › tests\e2e\settings-window.spec.ts:309:7 › 设置保存处理中正常关闭等待结果，失败返回窗口后重试
+[201/404] [development] › tests\e2e\startup.spec.ts:6:5 › 关闭重开后读回 SQLite 记录
+[202/404] [development] › tests\e2e\startup.spec.ts:38:5 › 窗口隔离与生产内容策略生效
+
+(node:34392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[203/404] [packaged] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 1 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[204/404] [packaged] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 2 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[205/404] [packaged] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 3 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[206/404] [packaged] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 4 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[207/404] [packaged] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 5 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[208/404] [packaged] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 6 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[209/404] [packaged] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 1 备份只迁移暂存副本，旧时间未知且来源不变
+[210/404] [packaged] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 2 备份只迁移暂存副本，旧时间未知且来源不变
+[211/404] [packaged] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 3 备份只迁移暂存副本，旧时间未知且来源不变
+[212/404] [packaged] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 4 备份只迁移暂存副本，旧时间未知且来源不变
+[213/404] [packaged] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 5 备份只迁移暂存副本，旧时间未知且来源不变
+[214/404] [packaged] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 6 备份只迁移暂存副本，旧时间未知且来源不变
+[215/404] [packaged] › tests\e2e\backup-window.spec.ts:126:5 › 完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库
+[216/404] [packaged] › tests\e2e\backup-window.spec.ts:238:5 › 备份取消与预览取消保留原状态，空库可导出并预览
+[217/404] [packaged] › tests\e2e\backup-window.spec.ts:291:5 › 实际备份写入失败保留已有目标与当前数据，清理暂存后可重试
+[218/404] [packaged] › tests\e2e\backup-window.spec.ts:334:5 › 备份拒绝当前库伴随文件及目录链接硬链接别名，目标有旧 WAL 时不发布
+[219/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 corrupt，原备份字节及当前数据保持
+[220/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 foreign-app，原备份字节及当前数据保持
+[221/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 future，原备份字节及当前数据保持
+[222/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 missing-table，原备份字节及当前数据保持
+[223/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 foreign-key，原备份字节及当前数据保持
+[224/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 metadata，原备份字节及当前数据保持
+[225/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 image-hash，原备份字节及当前数据保持
+[226/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 filters，原备份字节及当前数据保持
+[227/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 body-json，原备份字节及当前数据保持
+[228/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 palette，原备份字节及当前数据保持
+[229/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 category-title，原备份字节及当前数据保持
+[230/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 category-membership，原备份字节及当前数据保持
+[231/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 category-snapshot，原备份字节及当前数据保持
+[232/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 plan-options，原备份字节及当前数据保持
+[233/404] [packaged] › tests\e2e\backup-window.spec.ts:400:7 › 恢复预览拒绝 plan-name，原备份字节及当前数据保持
+[234/404] [packaged] › tests\e2e\backup-window.spec.ts:481:5 › 在途备份阻止重复操作和切页，正常退出等待已验证备份发布
+[235/404] [packaged] › tests\e2e\backup-window.spec.ts:534:5 › 发布失败保留既有备份，来源读取中变化时停止预览且清理副本
+[236/404] [packaged] › tests\e2e\backup-window.spec.ts:582:5 › 备份期间其他连接的事务写入保持一致性快照
+[237/404] [packaged] › tests\e2e\backup-window.spec.ts:634:5 › 导出保留未知自定义表，同名未知元数据表冲突时停止且保留旧目标
+[238/404] [packaged] › tests\e2e\category-migration.spec.ts:83:5 › 结构7分类迁移：一致性保护、原业务/条件/回执/自定义对象保持，旧专题未分类与旧轮不限分类
+[239/404] [packaged] › tests\e2e\category-migration.spec.ts:195:7 › 结构7分类迁移 backup-blocked 停止或完整回滚，原库不修补不重建
+[240/404] [packaged] › tests\e2e\category-migration.spec.ts:195:7 › 结构7分类迁移 table-conflict 停止或完整回滚，原库不修补不重建
+[241/404] [packaged] › tests\e2e\category-migration.spec.ts:195:7 › 结构7分类迁移 scope-column-conflict 停止或完整回滚，原库不修补不重建
+[242/404] [packaged] › tests\e2e\category-migration.spec.ts:195:7 › 结构7分类迁移 foreign-key 停止或完整回滚，原库不修补不重建
+[243/404] [packaged] › tests\e2e\category-practice.spec.ts:27:5 › 分类练习：同事务快照、随机队列、移动/改名/移除后的原请求重试和正常重开保持
+[244/404] [packaged] › tests\e2e\category-practice.spec.ts:122:5 › 分类统计：同题多轮去重、当前版本/收藏与归档交集，题库下方保持同一固定范围
+[245/404] [packaged] › tests\e2e\category-practice.spec.ts:220:5 › 分类统计：旧分类的晚到摘要不能覆盖新范围或下方题库
+[246/404] [packaged] › tests\e2e\category-practice.spec.ts:275:7 › 分类正常关闭等待在途保存：成功后退出重开保持
+[247/404] [packaged] › tests\e2e\category-practice.spec.ts:275:7 › 分类正常关闭等待在途保存：失败返回窗口并保留原目标
+[248/404] [packaged] › tests\e2e\category-tree.spec.ts:13:5 › 分类树：改名、检索、键盘选择、默认取消与移除保留全部专题/题目
+[249/404] [packaged] › tests\e2e\category-tree.spec.ts:76:5 › 分类范围：分类/专题/标签/难度/归档交集与候选，重导入保留归属和稳定身份
+[250/404] [packaged] › tests\e2e\category-tree.spec.ts:133:5 › 分类事务：修订写入失败完整回滚，界面保留目标后重试，重复创建不新增
+[251/404] [packaged] › tests\e2e\category-tree.spec.ts:206:5 › 分类修订使导入旧预览失效，重新预览保留归属且才更新内容
+[252/404] [packaged] › tests\e2e\category-tree.spec.ts:239:5 › 分类列表：离页旧响应晚到不能覆盖分类归属变化后的新结果
+[253/404] [packaged] › tests\e2e\data-locations.spec.ts:69:5 › 设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据
+[254/404] [packaged] › tests\e2e\data-locations.spec.ts:144:5 › 数据位置拒绝任意路径及文件或 junction 目标，修正后可重试
+[255/404] [packaged] › tests\e2e\data-locations.spec.ts:205:5 › 数据位置读取与系统打开失败保留真实状态，重试成功且诊断不含系统原始内容
+[256/404] [packaged] › tests\e2e\data-locations.spec.ts:244:5 › 数据库不可用时仍能查看数据位置并打开日志文件夹，原坏文件字节保持
+[257/404] [packaged] › tests\e2e\data-locations.spec.ts:274:5 › 目录打开处理中锁定设置备份导航，正常关闭等待在途打开响应
+[258/404] [packaged] › tests\e2e\data-locations.spec.ts:318:5 › 恢复先暂停并等待目录打开，结算后才创建保护备份和替换
+[259/404] [packaged] › tests\e2e\data-locations.spec.ts:384:5 › 切页期间晚到的位置读取不能覆盖新面板的实际位置
+[260/404] [packaged] › tests\e2e\data-locations.spec.ts:425:5 › Windows 已有 Logs Backups 和 Backup-Staging 目录可正常打开并完成保护恢复
+[261/404] [packaged] › tests\e2e\database-errors.spec.ts:24:7 › 损坏文件报错且原文件不变
+[262/404] [packaged] › tests\e2e\database-errors.spec.ts:24:7 › 无应用标识的非空库报错且原文件不变
+[263/404] [packaged] › tests\e2e\database-errors.spec.ts:24:7 › 不受支持的结构版本报错且原文件不变
+[264/404] [packaged] › tests\e2e\findability.spec.ts:82:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置
+[265/404] [packaged] › tests\e2e\findability.spec.ts:112:5 › 找题：标签候选跨分页、独立于筛选、限定专题，支持鼠标/键盘/无匹配/清除
+[266/404] [packaged] › tests\e2e\findability.spec.ts:172:5 › 找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择
+[267/404] [packaged] › tests\e2e\findability.spec.ts:238:5 › 找题：导入元数据使候选缓存失效，归档范围隔离，清除旧题选择
+[268/404] [packaged] › tests\e2e\findability.spec.ts:263:5 › 找题：返回后读取失败保留条件和页码，重试仍查询原范围
+[269/404] [packaged] › tests\e2e\findability.spec.ts:298:5 › 找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情
+[270/404] [packaged] › tests\e2e\findability.spec.ts:322:5 › 找题：首页快捷条件不替换旧轮，明确开始/无匹配/继续保留原契约
+[271/404] [packaged] › tests\e2e\history-versions.spec.ts:32:5 › 单题历史真实记录资格、倒序分页、同轮改评、跨专题隔离及只读
+[272/404] [packaged] › tests\e2e\history-versions.spec.ts:106:5 › 内容更新标记按最新揭晓消除，旧轮/跳过/只读历史不消除，元数据不新增标记
+[273/404] [packaged] › tests\e2e\history-versions.spec.ts:222:5 › 历史旧版本图片在替换/来源移动/归档恢复与独立进程重开后可读
+[274/404] [packaged] › tests\e2e\history-window.spec.ts:22:5 › 历史默认不读/不挂载，主动回看与自动保存保持，新题新轮重新关闭
+[275/404] [packaged] › tests\e2e\history-window.spec.ts:126:5 › 历史真实读取失败与坏记录可重试，保留已存数据且诊断不包含旧作答
+[276/404] [packaged] › tests\e2e\history-window.spec.ts:221:7 › 切题后晚到的 history:list 不覆盖另一题或泄露旧内容
+[277/404] [packaged] › tests\e2e\history-window.spec.ts:221:7 › 切题后晚到的 history:get-entry 不覆盖另一题或泄露旧内容
+[278/404] [packaged] › tests\e2e\import-worker.spec.ts:38:5 › 真实线程准备题库与三种图片，停止后来源可移动
+[279/404] [packaged] › tests\e2e\import-worker.spec.ts:79:5 › 真实线程支持忙碌、失败后重试、取消与期限
+[280/404] [packaged] › tests\e2e\import-worker.spec.ts:105:5 › 关闭服务等待真实线程停止并拒绝新任务
+[281/404] [packaged] › tests\e2e\learning-management.spec.ts:211:7 › M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致
+[282/404] [packaged] › tests\e2e\learning-management.spec.ts:211:7 › M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致
+[283/404] [packaged] › tests\e2e\learning-management.spec.ts:276:5 › M3 修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数
+[284/404] [packaged] › tests\e2e\learning-management.spec.ts:312:5 › M3 第一批：搜索标题/题干/标签、字面字符、交集、分页与答案边界
+[285/404] [packaged] › tests\e2e\learning-management.spec.ts:377:5 › M3 第一批：收藏快速重复、练习数量同步、正常关闭重开持久化
+[286/404] [packaged] › tests\e2e\learning-management.spec.ts:436:5 › M3 第一批：收藏写入失败与响应丢失重试、收藏页取消后收敛
+[287/404] [packaged] › tests\e2e\learning-management.spec.ts:496:5 › M3 第一批：筛选固定队列、真实自评/未练习区分、无匹配保留旧轮
+[288/404] [packaged] › tests\e2e\learning-management.spec.ts:581:5 › M3 第一批：旧版本自评排除、元数据保持、归档恢复收藏和历史
+[289/404] [packaged] › tests\e2e\learning-records-errors.spec.ts:7:5 › 学习记录真实读取失败不伪造零，修复后重试保留原数据
+[290/404] [packaged] › tests\e2e\learning-records-errors.spec.ts:55:5 › 学习总览晚到的旧专题响应不覆盖新专题或归档范围
+[291/404] [packaged] › tests\e2e\learning-records.spec.ts:24:5 › 学习总览空库、未知专题、严格输入与只读零结果
+[292/404] [packaged] › tests\e2e\learning-records.spec.ts:68:5 › 学习总览真实多轮去重、未评价、当前版本、旧状态和归档恢复
+[293/404] [packaged] › tests\e2e\learning-records.spec.ts:202:5 › 学习记录页专题范围、收藏刷新、主动历史与明暗布局
+[294/404] [packaged] › tests\e2e\learning-records.spec.ts:247:5 › 切页保留待确认预览，记录页关闭仍保存并可继续原轮
+[295/404] [packaged] › tests\e2e\library-import.spec.ts:20:5 › 预览后来源移动，80 题与三种图片原子入库并跨进程读回
+[296/404] [packaged] › tests\e2e\library-import.spec.ts:104:5 › 真实事务区分元数据与内容版本，保留收藏/旧引用，归档恢复与旧基线保护
+[297/404] [packaged] › tests\e2e\library-import.spec.ts:155:5 › 第二专题中途写入失败整批回滚，确认无回执后可重试同一快照
+[298/404] [packaged] › tests\e2e\library-import.spec.ts:217:5 › 旧 M0 库迁移前备份可读，原启动记录与数据保留且升级不重复
+[299/404] [packaged] › tests\e2e\library-import.spec.ts:269:5 › 迁移前备份无法创建时停止，旧数据库不改写
+[300/404] [packaged] › tests\e2e\library-import.spec.ts:287:5 › 迁移 DDL 失败回滚结构，保留旧库和保护性备份
+[301/404] [packaged] › tests\e2e\library-window.spec.ts:82:5 › 窗口预览确认、三种图片解码、移动来源后独立进程重开
+[302/404] [packaged] › tests\e2e\library-window.spec.ts:139:5 › 窗口取消、错误定位、放弃预览、重载与非法请求保护
+[303/404] [packaged] › tests\e2e\library-window.spec.ts:187:5 › 分页与归档视图、窗口更新摘要及相同身份恢复
+[304/404] [packaged] › tests\e2e\library-window.spec.ts:224:5 › 受控外链与资源关联、严格 CSP、模板导出
+[305/404] [packaged] › tests\e2e\library-window.spec.ts:304:5 › 准备期间关闭应用，真实工作线程退出后正常结束
+[306/404] [packaged] › tests\e2e\palette-migration.spec.ts:87:5 › 真实结构6先保护备份再追加配色，全部业务/自定义对象/显示和条件保持
+[307/404] [packaged] › tests\e2e\palette-migration.spec.ts:159:7 › 结构6配色迁移 backup-blocked 停止/回滚，不修补未知结构
+[308/404] [packaged] › tests\e2e\palette-migration.spec.ts:159:7 › 结构6配色迁移 column-conflict 停止/回滚，不修补未知结构
+[309/404] [packaged] › tests\e2e\palette-migration.spec.ts:159:7 › 结构6配色迁移 foreign-key 停止/回滚，不修补未知结构
+[310/404] [packaged] › tests\e2e\practice-mode-migration.spec.ts:129:5 › v3 升级至 v9：备份、全部旧记录、原请求回执与顺序会话恢复保持
+[311/404] [packaged] › tests\e2e\practice-mode-migration.spec.ts:217:5 › v3 备份失败停止升级，原文件逐字节不变
+[312/404] [packaged] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 conflict，保留原结构、记录和保护性备份
+[313/404] [packaged] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 trigger，保留原结构、记录和保护性备份
+[314/404] [packaged] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 index，保留原结构、记录和保护性备份
+[315/404] [packaged] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 foreign-key，保留原结构、记录和保护性备份
+[316/404] [packaged] › tests\e2e\practice-plans-errors.spec.ts:7:5 › 方案失败：读取不伪造空成功、已提交丢响应按原命令重试，停止重试不删已存项
+[317/404] [packaged] › tests\e2e\practice-plans-errors.spec.ts:76:7 › 方案正常关闭等待在途保存：成功退出重开保持
+[318/404] [packaged] › tests\e2e\practice-plans-errors.spec.ts:76:7 › 方案正常关闭等待在途保存：失败返回窗口原目标重试
+[319/404] [packaged] › tests\e2e\practice-plans-migration.spec.ts:59:5 › 结构8方案升级：只追加空方案表，原分类/条件/草稿/自定义对象与保护备份保持
+[320/404] [packaged] › tests\e2e\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 backup-blocked 停止或完整回滚，原库与分类不修补
+[321/404] [packaged] › tests\e2e\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 table-conflict 停止或完整回滚，原库与分类不修补
+[322/404] [packaged] › tests\e2e\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 foreign-key 停止或完整回滚，原库与分类不修补
+[323/404] [packaged] › tests\e2e\practice-plans.spec.ts:9:5 › 方案：命名保存完整条件、填入不建轮，正常重开后明确开始才替换原轮
+[324/404] [packaged] › tests\e2e\practice-plans.spec.ts:113:5 › 方案：原ID重试、同名拒绝、容量、写入回滚及坏JSON读取，不改变原业务或题库修订
+[325/404] [packaged] › tests\e2e\practice-plans.spec.ts:192:5 › 方案：分类改名沿原ID，移出/移除不扩大范围，删除默认取消且只删方案
+[326/404] [packaged] › tests\e2e\practice-window.spec.ts:119:5 › 窗口输入/纯思考、答案隐藏、自评修改/跳过/末题与新轮默认
+[327/404] [packaged] › tests\e2e\practice-window.spec.ts:190:5 › 写入失败保留输入/阻止切题，自评推进失败按原操作重试
+[328/404] [packaged] › tests\e2e\practice-window.spec.ts:235:5 › 返回首页和正常关窗立即保存，独立进程继续原题与草稿
+[329/404] [packaged] › tests\e2e\practice-window.spec.ts:268:5 › 关闭保存失败返回窗口保留输入，修复后可正常关闭
+[330/404] [packaged] › tests\e2e\practice-window.spec.ts:306:5 › 只有明确选择放弃时允许未保存退出
+[331/404] [packaged] › tests\e2e\practice-window.spec.ts:328:5 › 窗口提交后响应丢失，重试原请求不再次推进
+[332/404] [packaged] › tests\e2e\practice-window.spec.ts:379:5 › 真实代码 token/复制调用、图片模态缩放与长答案操作区
+[333/404] [packaged] › tests\e2e\practice-window.spec.ts:427:7 › 快速重复：50ms 双击跳过和上一题只移动一题
+[334/404] [packaged] › tests\e2e\practice-window.spec.ts:427:7 › 快速重复：100ms 双击跳过和上一题只移动一题
+[335/404] [packaged] › tests\e2e\practice-window.spec.ts:427:7 › 快速重复：250ms 双击跳过和上一题只移动一题
+[336/404] [packaged] › tests\e2e\practice-window.spec.ts:475:7 › 快速重复：100ms 两次 Enter 激活跳过只移动一题
+[337/404] [packaged] › tests\e2e\practice-window.spec.ts:475:7 › 快速重复：100ms 两次 Space 激活跳过只移动一题
+[338/404] [packaged] › tests\e2e\practice-window.spec.ts:505:5 › 快速重复：持续按住 Enter 不会在操作恢复后再次跳过
+[339/404] [packaged] › tests\e2e\practice-window.spec.ts:532:5 › 图片自动保存：放大窗口与缩放状态在草稿保存后保留
+[340/404] [packaged] › tests\e2e\practice-window.spec.ts:568:7 › M2 第三批：100% 页面缩放下长内容切题回到题首
+[341/404] [packaged] › tests\e2e\practice-window.spec.ts:568:7 › M2 第三批：125% 页面缩放下长内容切题回到题首
+[342/404] [packaged] › tests\e2e\practice-window.spec.ts:568:7 › M2 第三批：150% 页面缩放下长内容切题回到题首
+[343/404] [packaged] › tests\e2e\practice-window.spec.ts:640:5 › M2 第三批：长题干末题完成后展示并聚焦结果标题
+[344/404] [packaged] › tests\e2e\practice-window.spec.ts:670:5 › M2 第三批：强制终止后恢复已确认草稿、原位置与自评
+[345/404] [packaged] › tests\e2e\practice-window.spec.ts:744:7 › M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡
+[346/404] [packaged] › tests\e2e\practice-window.spec.ts:744:7 › M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡
+[347/404] [packaged] › tests\e2e\practice-window.spec.ts:744:7 › M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡
+[348/404] [packaged] › tests\e2e\practice.spec.ts:41:5 › 顺序队列、草稿、揭晓、自评修改、跳过与独立进程恢复
+[349/404] [packaged] › tests\e2e\practice.spec.ts:182:5 › 实际题库更新与归档保留本轮版本和真实作答行，新轮使用最新内容
+[350/404] [packaged] › tests\e2e\practice.spec.ts:237:5 › 自评推进、结束回执、草稿和揭晓故障分别整笔回滚并可重试
+[351/404] [packaged] › tests\e2e\practice.spec.ts:281:5 › 提交后响应异常先确认持久化；核实不可用时停写，重开按原回执确认
+[352/404] [packaged] › tests\e2e\practice.spec.ts:321:5 › 草稿真实 UTF-8 字节边界、非法输入和数据库约束
+[353/404] [packaged] › tests\e2e\practice.spec.ts:396:5 › M1 v2 升级前一致性备份并保留题库、图片、收藏和旧自评，重开不重复升级
+[354/404] [packaged] › tests\e2e\practice.spec.ts:453:5 › v2 备份失败时停止，原数据库逐字节保持
+[355/404] [packaged] › tests\e2e\practice.spec.ts:467:5 › v2 迁移 DDL 冲突回滚且保留原结构和保护性备份
+[356/404] [packaged] › tests\e2e\random-practice.spec.ts:151:5 › 随机 SQL 从全部匹配题取样，数量/交集/同键去重/幂等及失败回滚
+[357/404] [packaged] › tests\e2e\random-practice.spec.ts:202:7 › 随机窗口保存/自评后正常关窗，独立进程恢复完整原队列
+[358/404] [packaged] › tests\e2e\random-practice.spec.ts:202:7 › 随机窗口保存/自评后真实强制终止，独立进程恢复完整原队列
+[359/404] [packaged] › tests\e2e\random-practice.spec.ts:314:5 › 随机本轮不受更新/归档影响，新轮使用最新版本并重新隐藏作答
+[360/404] [packaged] › tests\e2e\random-practice.spec.ts:373:5 › 随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题
+[361/404] [packaged] › tests\e2e\restore-window.spec.ts:222:5 › 全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容
+[362/404] [packaged] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 protect 时不替换原库，窗口仍可继续保存
+[363/404] [packaged] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 save 时不替换原库，窗口仍可继续保存
+[364/404] [packaged] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 tampered 时不替换原库，窗口仍可继续保存
+[365/404] [packaged] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 cancel 时不替换原库，窗口仍可继续保存
+[366/404] [packaged] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 publish 后独立进程保留可恢复数据且不创建空库
+[367/404] [packaged] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 close 后独立进程保留可恢复数据且不创建空库
+[368/404] [packaged] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 rollback 后独立进程保留可恢复数据且不创建空库
+[369/404] [packaged] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 crash-moved 后独立进程保留可恢复数据且不创建空库
+[370/404] [packaged] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 crash-installed 后独立进程保留可恢复数据且不创建空库
+[371/404] [packaged] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 crash-committed 后独立进程保留可恢复数据且不创建空库
+[372/404] [packaged] › tests\e2e\restore-window.spec.ts:552:5 › 恢复文件事务保留并回退全部数据库伴随文件，未知事务现场不清理
+[373/404] [packaged] › tests\e2e\restore-window.spec.ts:645:5 › 恢复前提交未到自动保存时间的草稿，保护备份包括最终输入且暂停期间拒绝业务写入
+[374/404] [packaged] › tests\e2e\restore-window.spec.ts:730:5 › 保护性备份可直接从本数据目录选择并恢复，来源文件不被覆盖
+[375/404] [packaged] › tests\e2e\session-filters-migration.spec.ts:139:5 › v5 升级至 v9 保留全业务、原回执与显示设置，旧筛选明确未知
+[376/404] [packaged] › tests\e2e\session-filters-migration.spec.ts:237:7 › v5 筛选迁移 backup-blocked 停止或回滚，原库保留
+[377/404] [packaged] › tests\e2e\session-filters-migration.spec.ts:237:7 › v5 筛选迁移 column-conflict 停止或回滚，原库保留
+[378/404] [packaged] › tests\e2e\session-filters-migration.spec.ts:237:7 › v5 筛选迁移 foreign-key 停止或回滚，原库保留
+[379/404] [packaged] › tests\e2e\session-filters.spec.ts:68:7 › sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列
+[380/404] [packaged] › tests\e2e\session-filters.spec.ts:68:7 › random 建轮原筛选重开保持，修改首页与题库不重抽固定队列
+[381/404] [packaged] › tests\e2e\session-filters.spec.ts:159:5 › 筛选快照与替换旧轮原子提交，失败回滚和丢响应重试不改快照
+[382/404] [packaged] › tests\e2e\session-filters.spec.ts:231:5 › 省略条件的新轮保存明确默认快照，旧请求形状重试仍幂等
+[383/404] [packaged] › tests\e2e\session-filters.spec.ts:260:5 › 损坏筛选快照不能冒充旧未知或默认条件，修复后原轮可读
+[384/404] [packaged] › tests\e2e\settings-migration.spec.ts:136:5 › v4 升级至 v9：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级
+[385/404] [packaged] › tests\e2e\settings-migration.spec.ts:261:7 › v4 显示设置升级 backup-blocked 时停止/回滚且保留原库
+[386/404] [packaged] › tests\e2e\settings-migration.spec.ts:261:7 › v4 显示设置升级 table-conflict 时停止/回滚且保留原库
+[387/404] [packaged] › tests\e2e\settings-migration.spec.ts:261:7 › v4 显示设置升级 foreign-key 时停止/回滚且保留原库
+[388/404] [packaged] › tests\e2e\settings-palettes.spec.ts:83:7 › 松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[389/404] [packaged] › tests\e2e\settings-palettes.spec.ts:83:7 › 晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[390/404] [packaged] › tests\e2e\settings-palettes.spec.ts:83:7 › 暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[391/404] [packaged] › tests\e2e\settings-palettes.spec.ts:83:7 › 暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[392/404] [packaged] › tests\e2e\settings-palettes.spec.ts:144:5 › 配色真实写失败/丢响应保留选择，键盘切换后正常重开保留草稿
+[393/404] [packaged] › tests\e2e\settings-palettes.spec.ts:218:5 › 损坏配色明确报错且不伪造默认成功，修复重读保持学习数据
+[394/404] [packaged] › tests\e2e\settings-palettes.spec.ts:260:5 › 配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作
+[395/404] [packaged] › tests\e2e\settings-palettes.spec.ts:306:5 › 复制成功反馈2.5秒自熄，重复复制重置、错误保留且切题拒绝晚到响应
+[396/404] [packaged] › tests\e2e\settings-window.spec.ts:48:5 › 四入口初始空库、独立页面、地址与显示默认值保持
+[397/404] [packaged] › tests\e2e\settings-window.spec.ts:84:5 › 系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案
+[398/404] [packaged] › tests\e2e\settings-window.spec.ts:155:5 › 显示设置正常关闭独立重开，保留草稿位置自评收藏与历史
+[399/404] [packaged] › tests\e2e\settings-window.spec.ts:210:5 › 真实设置写入失败及提交后响应丢失，原目标重试不改变学习数据
+[400/404] [packaged] › tests\e2e\settings-window.spec.ts:272:5 › 损坏设置读取报错且不伪造默认成功，修复重读保留业务数据
+[401/404] [packaged] › tests\e2e\settings-window.spec.ts:309:7 › 设置保存处理中正常关闭等待结果，成功关闭独立重开
+[402/404] [packaged] › tests\e2e\settings-window.spec.ts:309:7 › 设置保存处理中正常关闭等待结果，失败返回窗口后重试
+[403/404] [packaged] › tests\e2e\startup.spec.ts:6:5 › 关闭重开后读回 SQLite 记录
+[404/404] [packaged] › tests\e2e\startup.spec.ts:38:5 › 窗口隔离与生产内容策略生效
+  404 passed (12.0m)

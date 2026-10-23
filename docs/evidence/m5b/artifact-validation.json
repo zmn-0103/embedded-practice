@@ -1,0 +1,118 @@
+{
+  "checkedAt": "2026-10-22T13:01:20.641470+00:00",
+  "kind": "Static artifact checks; actual desktop trial and measured performance are separately recorded",
+  "markdownFiles": [
+    "README.md",
+    "docs/README.md",
+    "docs/验收记录.md",
+    "docs/代码复查记录.md",
+    "docs/开发说明.md",
+    "docs/M5第二批行为与验收.md",
+    "docs/evidence/m5b/README.md",
+    "question-banks/README.md",
+    "question-banks/trials/README.md",
+    "question-banks/trials/STM32F103-UART第二层-30题试用.md",
+    "release/m5-20261022/README.md"
+  ],
+  "localLinksChecked": 528,
+  "missingLinks": [],
+  "jsonFiles": [
+    "artifact-validation.json",
+    "before.json",
+    "change-audit.json",
+    "evidence-manifest.json",
+    "initial-static-failure.json",
+    "installer-input.json",
+    "installer-signature.json",
+    "installer-verification.json",
+    "performance-01/executed-scripts/manifest.json",
+    "performance-01/result.json",
+    "performance-summary.json",
+    "sample-generation.json",
+    "sample-validation.json",
+    "samples.json",
+    "script-checks.json",
+    "source-manifest.json",
+    "tooling-notes.json",
+    "trial-01/result.json"
+  ],
+  "jsonFilesChecked": 18,
+  "images": [
+    {
+      "path": "docs/evidence/m5b/performance-01/5000-question-library.png",
+      "format": "PNG",
+      "width": 1109,
+      "height": 2566,
+      "decoded": true
+    },
+    {
+      "path": "docs/evidence/m5b/performance-01/practice-after-30-switches.png",
+      "format": "PNG",
+      "width": 1109,
+      "height": 1170,
+      "decoded": true
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/30-question-finished.png",
+      "format": "PNG",
+      "width": 1124,
+      "height": 741,
+      "decoded": true
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-028-revealed.png",
+      "format": "PNG",
+      "width": 1109,
+      "height": 1813,
+      "decoded": true
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-031-revealed.png",
+      "format": "PNG",
+      "width": 1109,
+      "height": 1690,
+      "decoded": true
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-033-revealed.png",
+      "format": "PNG",
+      "width": 1109,
+      "height": 1859,
+      "decoded": true
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-034-revealed.png",
+      "format": "PNG",
+      "width": 1109,
+      "height": 2097,
+      "decoded": true
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-039-revealed.png",
+      "format": "PNG",
+      "width": 1109,
+      "height": 1856,
+      "decoded": true
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-042-revealed.png",
+      "format": "PNG",
+      "width": 1109,
+      "height": 1867,
+      "decoded": true
+    }
+  ],
+  "imageFilesDecoded": 9,
+  "generatedSourceImagesDecodedEarlier": 500,
+  "sourceManifestFiles": 185,
+  "productionAndExistingTestsUnchanged": true,
+  "notesUnchanged": 6,
+  "m5aEvidenceFilesUnchanged": 133,
+  "m4cEvidenceFilesUnchanged": 681,
+  "originalUnpackedFilesUnchanged": 122,
+  "candidateNsisPayloadMatches": true,
+  "candidateSignature": "NotSigned",
+  "toolAndStatisticsCorrectionsPreserved": true,
+  "fullUnitDesktopSuiteRerun": false,
+  "installerExecuted": false
+}

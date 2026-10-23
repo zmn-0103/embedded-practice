@@ -1,0 +1,2341 @@
+{
+  "originalScenes": 344,
+  "currentScenes": 380,
+  "retainedOriginal": 344,
+  "addedScenes": 36,
+  "perProject": {
+    "development": 190,
+    "packaged": 190
+  },
+  "singleFullRun": true,
+  "onePassingResultEach": true,
+  "noRetries": true,
+  "titleMappings": [
+    {
+      "project": "development",
+      "file": "practice-mode-migration.spec.ts",
+      "from": "v3 升级至 v7：备份、全部旧记录、原请求回执与顺序会话恢复保持",
+      "to": "v3 升级至 v8：备份、全部旧记录、原请求回执与顺序会话恢复保持",
+      "reason": "成功目标结构升级至8，原业务/失败保护断言保持"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-mode-migration.spec.ts",
+      "from": "v3 升级至 v7：备份、全部旧记录、原请求回执与顺序会话恢复保持",
+      "to": "v3 升级至 v8：备份、全部旧记录、原请求回执与顺序会话恢复保持",
+      "reason": "成功目标结构升级至8，原业务/失败保护断言保持"
+    },
+    {
+      "project": "development",
+      "file": "session-filters-migration.spec.ts",
+      "from": "v5 升级至 v7 保留全业务、原回执与显示设置，旧筛选明确未知",
+      "to": "v5 升级至 v8 保留全业务、原回执与显示设置，旧筛选明确未知",
+      "reason": "成功目标结构升级至8，原业务/失败保护断言保持"
+    },
+    {
+      "project": "packaged",
+      "file": "session-filters-migration.spec.ts",
+      "from": "v5 升级至 v7 保留全业务、原回执与显示设置，旧筛选明确未知",
+      "to": "v5 升级至 v8 保留全业务、原回执与显示设置，旧筛选明确未知",
+      "reason": "成功目标结构升级至8，原业务/失败保护断言保持"
+    },
+    {
+      "project": "development",
+      "file": "settings-migration.spec.ts",
+      "from": "v4 升级至 v7：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级",
+      "to": "v4 升级至 v8：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级",
+      "reason": "成功目标结构升级至8，原业务/失败保护断言保持"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-migration.spec.ts",
+      "from": "v4 升级至 v7：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级",
+      "to": "v4 升级至 v8：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级",
+      "reason": "成功目标结构升级至8，原业务/失败保护断言保持"
+    }
+  ],
+  "allCurrent": [
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 1 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 2 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 3 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 4 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 5 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 6 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 1 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 2 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 3 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 4 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 5 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 6 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 1 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 2 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 3 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 4 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 5 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 6 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 1 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 2 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 3 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 4 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 5 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 6 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "备份取消与预览取消保留原状态，空库可导出并预览",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "实际备份写入失败保留已有目标与当前数据，清理暂存后可重试",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "备份拒绝当前库伴随文件及目录链接硬链接别名，目标有旧 WAL 时不发布",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 corrupt，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 foreign-app，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 future，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 missing-table，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 foreign-key，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 metadata，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 image-hash，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 filters，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 body-json，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 palette，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 category-title，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 category-membership，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 category-snapshot，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "在途备份阻止重复操作和切页，正常退出等待已验证备份发布",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "发布失败保留既有备份，来源读取中变化时停止预览且清理副本",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "备份期间其他连接的事务写入保持一致性快照",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "backup-window.spec.ts",
+      "title": "导出保留未知自定义表，同名未知元数据表冲突时停止且保留旧目标",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "备份取消与预览取消保留原状态，空库可导出并预览",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "实际备份写入失败保留已有目标与当前数据，清理暂存后可重试",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "备份拒绝当前库伴随文件及目录链接硬链接别名，目标有旧 WAL 时不发布",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 corrupt，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 foreign-app，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 future，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 missing-table，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 foreign-key，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 metadata，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 image-hash，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 filters，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 body-json，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 palette，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 category-title，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 category-membership，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 category-snapshot，原备份字节及当前数据保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "在途备份阻止重复操作和切页，正常退出等待已验证备份发布",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "发布失败保留既有备份，来源读取中变化时停止预览且清理副本",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "备份期间其他连接的事务写入保持一致性快照",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "backup-window.spec.ts",
+      "title": "导出保留未知自定义表，同名未知元数据表冲突时停止且保留旧目标",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移：一致性保护、原业务/条件/回执/自定义对象保持，旧专题未分类与旧轮不限分类",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移 backup-blocked 停止或完整回滚，原库不修补不重建",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移 table-conflict 停止或完整回滚，原库不修补不重建",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移 scope-column-conflict 停止或完整回滚，原库不修补不重建",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移 foreign-key 停止或完整回滚，原库不修补不重建",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移：一致性保护、原业务/条件/回执/自定义对象保持，旧专题未分类与旧轮不限分类",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移 backup-blocked 停止或完整回滚，原库不修补不重建",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移 table-conflict 停止或完整回滚，原库不修补不重建",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移 scope-column-conflict 停止或完整回滚，原库不修补不重建",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移 foreign-key 停止或完整回滚，原库不修补不重建",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-practice.spec.ts",
+      "title": "分类练习：同事务快照、随机队列、移动/改名/移除后的原请求重试和正常重开保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-practice.spec.ts",
+      "title": "分类统计：同题多轮去重、当前版本/收藏与归档交集，题库下方保持同一固定范围",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-practice.spec.ts",
+      "title": "分类统计：旧分类的晚到摘要不能覆盖新范围或下方题库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-practice.spec.ts",
+      "title": "分类正常关闭等待在途保存：成功后退出重开保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-practice.spec.ts",
+      "title": "分类正常关闭等待在途保存：失败返回窗口并保留原目标",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-practice.spec.ts",
+      "title": "分类练习：同事务快照、随机队列、移动/改名/移除后的原请求重试和正常重开保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-practice.spec.ts",
+      "title": "分类统计：同题多轮去重、当前版本/收藏与归档交集，题库下方保持同一固定范围",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-practice.spec.ts",
+      "title": "分类统计：旧分类的晚到摘要不能覆盖新范围或下方题库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-practice.spec.ts",
+      "title": "分类正常关闭等待在途保存：成功后退出重开保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-practice.spec.ts",
+      "title": "分类正常关闭等待在途保存：失败返回窗口并保留原目标",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-tree.spec.ts",
+      "title": "分类树：改名、检索、键盘选择、默认取消与移除保留全部专题/题目",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-tree.spec.ts",
+      "title": "分类范围：分类/专题/标签/难度/归档交集与候选，重导入保留归属和稳定身份",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-tree.spec.ts",
+      "title": "分类事务：修订写入失败完整回滚，界面保留目标后重试，重复创建不新增",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-tree.spec.ts",
+      "title": "分类修订使导入旧预览失效，重新预览保留归属且才更新内容",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "category-tree.spec.ts",
+      "title": "分类列表：离页旧响应晚到不能覆盖分类归属变化后的新结果",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-tree.spec.ts",
+      "title": "分类树：改名、检索、键盘选择、默认取消与移除保留全部专题/题目",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-tree.spec.ts",
+      "title": "分类范围：分类/专题/标签/难度/归档交集与候选，重导入保留归属和稳定身份",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-tree.spec.ts",
+      "title": "分类事务：修订写入失败完整回滚，界面保留目标后重试，重复创建不新增",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-tree.spec.ts",
+      "title": "分类修订使导入旧预览失效，重新预览保留归属且才更新内容",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "category-tree.spec.ts",
+      "title": "分类列表：离页旧响应晚到不能覆盖分类归属变化后的新结果",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "data-locations.spec.ts",
+      "title": "设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "data-locations.spec.ts",
+      "title": "数据位置拒绝任意路径及文件或 junction 目标，修正后可重试",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "data-locations.spec.ts",
+      "title": "数据位置读取与系统打开失败保留真实状态，重试成功且诊断不含系统原始内容",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "data-locations.spec.ts",
+      "title": "数据库不可用时仍能查看数据位置并打开日志文件夹，原坏文件字节保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "data-locations.spec.ts",
+      "title": "目录打开处理中锁定设置备份导航，正常关闭等待在途打开响应",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "data-locations.spec.ts",
+      "title": "恢复先暂停并等待目录打开，结算后才创建保护备份和替换",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "data-locations.spec.ts",
+      "title": "切页期间晚到的位置读取不能覆盖新面板的实际位置",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "data-locations.spec.ts",
+      "title": "Windows 已有 Logs Backups 和 Backup-Staging 目录可正常打开并完成保护恢复",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "data-locations.spec.ts",
+      "title": "设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "data-locations.spec.ts",
+      "title": "数据位置拒绝任意路径及文件或 junction 目标，修正后可重试",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "data-locations.spec.ts",
+      "title": "数据位置读取与系统打开失败保留真实状态，重试成功且诊断不含系统原始内容",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "data-locations.spec.ts",
+      "title": "数据库不可用时仍能查看数据位置并打开日志文件夹，原坏文件字节保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "data-locations.spec.ts",
+      "title": "目录打开处理中锁定设置备份导航，正常关闭等待在途打开响应",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "data-locations.spec.ts",
+      "title": "恢复先暂停并等待目录打开，结算后才创建保护备份和替换",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "data-locations.spec.ts",
+      "title": "切页期间晚到的位置读取不能覆盖新面板的实际位置",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "data-locations.spec.ts",
+      "title": "Windows 已有 Logs Backups 和 Backup-Staging 目录可正常打开并完成保护恢复",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "database-errors.spec.ts",
+      "title": "损坏文件报错且原文件不变",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "database-errors.spec.ts",
+      "title": "无应用标识的非空库报错且原文件不变",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "database-errors.spec.ts",
+      "title": "不受支持的结构版本报错且原文件不变",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "database-errors.spec.ts",
+      "title": "损坏文件报错且原文件不变",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "database-errors.spec.ts",
+      "title": "无应用标识的非空库报错且原文件不变",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "database-errors.spec.ts",
+      "title": "不受支持的结构版本报错且原文件不变",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "findability.spec.ts",
+      "title": "找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "findability.spec.ts",
+      "title": "找题：标签候选跨分页、独立于筛选、限定专题，支持鼠标/键盘/无匹配/清除",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "findability.spec.ts",
+      "title": "找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "findability.spec.ts",
+      "title": "找题：导入元数据使候选缓存失效，归档范围隔离，清除旧题选择",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "findability.spec.ts",
+      "title": "找题：返回后读取失败保留条件和页码，重试仍查询原范围",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "findability.spec.ts",
+      "title": "找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "findability.spec.ts",
+      "title": "找题：首页快捷条件不替换旧轮，明确开始/无匹配/继续保留原契约",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "findability.spec.ts",
+      "title": "找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "findability.spec.ts",
+      "title": "找题：标签候选跨分页、独立于筛选、限定专题，支持鼠标/键盘/无匹配/清除",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "findability.spec.ts",
+      "title": "找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "findability.spec.ts",
+      "title": "找题：导入元数据使候选缓存失效，归档范围隔离，清除旧题选择",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "findability.spec.ts",
+      "title": "找题：返回后读取失败保留条件和页码，重试仍查询原范围",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "findability.spec.ts",
+      "title": "找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "findability.spec.ts",
+      "title": "找题：首页快捷条件不替换旧轮，明确开始/无匹配/继续保留原契约",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "history-versions.spec.ts",
+      "title": "单题历史真实记录资格、倒序分页、同轮改评、跨专题隔离及只读",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "history-versions.spec.ts",
+      "title": "内容更新标记按最新揭晓消除，旧轮/跳过/只读历史不消除，元数据不新增标记",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "history-versions.spec.ts",
+      "title": "历史旧版本图片在替换/来源移动/归档恢复与独立进程重开后可读",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "history-versions.spec.ts",
+      "title": "单题历史真实记录资格、倒序分页、同轮改评、跨专题隔离及只读",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "history-versions.spec.ts",
+      "title": "内容更新标记按最新揭晓消除，旧轮/跳过/只读历史不消除，元数据不新增标记",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "history-versions.spec.ts",
+      "title": "历史旧版本图片在替换/来源移动/归档恢复与独立进程重开后可读",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "history-window.spec.ts",
+      "title": "历史默认不读/不挂载，主动回看与自动保存保持，新题新轮重新关闭",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "history-window.spec.ts",
+      "title": "历史真实读取失败与坏记录可重试，保留已存数据且诊断不包含旧作答",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "history-window.spec.ts",
+      "title": "切题后晚到的 history:list 不覆盖另一题或泄露旧内容",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "history-window.spec.ts",
+      "title": "切题后晚到的 history:get-entry 不覆盖另一题或泄露旧内容",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "history-window.spec.ts",
+      "title": "历史默认不读/不挂载，主动回看与自动保存保持，新题新轮重新关闭",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "history-window.spec.ts",
+      "title": "历史真实读取失败与坏记录可重试，保留已存数据且诊断不包含旧作答",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "history-window.spec.ts",
+      "title": "切题后晚到的 history:list 不覆盖另一题或泄露旧内容",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "history-window.spec.ts",
+      "title": "切题后晚到的 history:get-entry 不覆盖另一题或泄露旧内容",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "import-worker.spec.ts",
+      "title": "真实线程准备题库与三种图片，停止后来源可移动",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "import-worker.spec.ts",
+      "title": "真实线程支持忙碌、失败后重试、取消与期限",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "import-worker.spec.ts",
+      "title": "关闭服务等待真实线程停止并拒绝新任务",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "import-worker.spec.ts",
+      "title": "真实线程准备题库与三种图片，停止后来源可移动",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "import-worker.spec.ts",
+      "title": "真实线程支持忙碌、失败后重试、取消与期限",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "import-worker.spec.ts",
+      "title": "关闭服务等待真实线程停止并拒绝新任务",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-management.spec.ts",
+      "title": "M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-management.spec.ts",
+      "title": "M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-management.spec.ts",
+      "title": "M3 修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：搜索标题/题干/标签、字面字符、交集、分页与答案边界",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：收藏快速重复、练习数量同步、正常关闭重开持久化",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：收藏写入失败与响应丢失重试、收藏页取消后收敛",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：筛选固定队列、真实自评/未练习区分、无匹配保留旧轮",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：旧版本自评排除、元数据保持、归档恢复收藏和历史",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-management.spec.ts",
+      "title": "M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-management.spec.ts",
+      "title": "M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-management.spec.ts",
+      "title": "M3 修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：搜索标题/题干/标签、字面字符、交集、分页与答案边界",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：收藏快速重复、练习数量同步、正常关闭重开持久化",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：收藏写入失败与响应丢失重试、收藏页取消后收敛",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：筛选固定队列、真实自评/未练习区分、无匹配保留旧轮",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：旧版本自评排除、元数据保持、归档恢复收藏和历史",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-records-errors.spec.ts",
+      "title": "学习记录真实读取失败不伪造零，修复后重试保留原数据",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-records-errors.spec.ts",
+      "title": "学习总览晚到的旧专题响应不覆盖新专题或归档范围",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-records-errors.spec.ts",
+      "title": "学习记录真实读取失败不伪造零，修复后重试保留原数据",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-records-errors.spec.ts",
+      "title": "学习总览晚到的旧专题响应不覆盖新专题或归档范围",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-records.spec.ts",
+      "title": "学习总览空库、未知专题、严格输入与只读零结果",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-records.spec.ts",
+      "title": "学习总览真实多轮去重、未评价、当前版本、旧状态和归档恢复",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-records.spec.ts",
+      "title": "学习记录页专题范围、收藏刷新、主动历史与明暗布局",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "learning-records.spec.ts",
+      "title": "切页保留待确认预览，记录页关闭仍保存并可继续原轮",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-records.spec.ts",
+      "title": "学习总览空库、未知专题、严格输入与只读零结果",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-records.spec.ts",
+      "title": "学习总览真实多轮去重、未评价、当前版本、旧状态和归档恢复",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-records.spec.ts",
+      "title": "学习记录页专题范围、收藏刷新、主动历史与明暗布局",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "learning-records.spec.ts",
+      "title": "切页保留待确认预览，记录页关闭仍保存并可继续原轮",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-import.spec.ts",
+      "title": "预览后来源移动，80 题与三种图片原子入库并跨进程读回",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-import.spec.ts",
+      "title": "真实事务区分元数据与内容版本，保留收藏/旧引用，归档恢复与旧基线保护",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-import.spec.ts",
+      "title": "第二专题中途写入失败整批回滚，确认无回执后可重试同一快照",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-import.spec.ts",
+      "title": "旧 M0 库迁移前备份可读，原启动记录与数据保留且升级不重复",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-import.spec.ts",
+      "title": "迁移前备份无法创建时停止，旧数据库不改写",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-import.spec.ts",
+      "title": "迁移 DDL 失败回滚结构，保留旧库和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-import.spec.ts",
+      "title": "预览后来源移动，80 题与三种图片原子入库并跨进程读回",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-import.spec.ts",
+      "title": "真实事务区分元数据与内容版本，保留收藏/旧引用，归档恢复与旧基线保护",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-import.spec.ts",
+      "title": "第二专题中途写入失败整批回滚，确认无回执后可重试同一快照",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-import.spec.ts",
+      "title": "旧 M0 库迁移前备份可读，原启动记录与数据保留且升级不重复",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-import.spec.ts",
+      "title": "迁移前备份无法创建时停止，旧数据库不改写",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-import.spec.ts",
+      "title": "迁移 DDL 失败回滚结构，保留旧库和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-window.spec.ts",
+      "title": "窗口预览确认、三种图片解码、移动来源后独立进程重开",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-window.spec.ts",
+      "title": "窗口取消、错误定位、放弃预览、重载与非法请求保护",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-window.spec.ts",
+      "title": "分页与归档视图、窗口更新摘要及相同身份恢复",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-window.spec.ts",
+      "title": "受控外链与资源关联、严格 CSP、模板导出",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "library-window.spec.ts",
+      "title": "准备期间关闭应用，真实工作线程退出后正常结束",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-window.spec.ts",
+      "title": "窗口预览确认、三种图片解码、移动来源后独立进程重开",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-window.spec.ts",
+      "title": "窗口取消、错误定位、放弃预览、重载与非法请求保护",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-window.spec.ts",
+      "title": "分页与归档视图、窗口更新摘要及相同身份恢复",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-window.spec.ts",
+      "title": "受控外链与资源关联、严格 CSP、模板导出",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "library-window.spec.ts",
+      "title": "准备期间关闭应用，真实工作线程退出后正常结束",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "palette-migration.spec.ts",
+      "title": "真实结构6先保护备份再追加配色，全部业务/自定义对象/显示和条件保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "palette-migration.spec.ts",
+      "title": "结构6配色迁移 backup-blocked 停止/回滚，不修补未知结构",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "palette-migration.spec.ts",
+      "title": "结构6配色迁移 column-conflict 停止/回滚，不修补未知结构",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "palette-migration.spec.ts",
+      "title": "结构6配色迁移 foreign-key 停止/回滚，不修补未知结构",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "palette-migration.spec.ts",
+      "title": "真实结构6先保护备份再追加配色，全部业务/自定义对象/显示和条件保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "palette-migration.spec.ts",
+      "title": "结构6配色迁移 backup-blocked 停止/回滚，不修补未知结构",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "palette-migration.spec.ts",
+      "title": "结构6配色迁移 column-conflict 停止/回滚，不修补未知结构",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "palette-migration.spec.ts",
+      "title": "结构6配色迁移 foreign-key 停止/回滚，不修补未知结构",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 升级至 v8：备份、全部旧记录、原请求回执与顺序会话恢复保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 备份失败停止升级，原文件逐字节不变",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 迁移拒绝 conflict，保留原结构、记录和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 迁移拒绝 trigger，保留原结构、记录和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 迁移拒绝 index，保留原结构、记录和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 迁移拒绝 foreign-key，保留原结构、记录和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 升级至 v8：备份、全部旧记录、原请求回执与顺序会话恢复保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 备份失败停止升级，原文件逐字节不变",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 迁移拒绝 conflict，保留原结构、记录和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 迁移拒绝 trigger，保留原结构、记录和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 迁移拒绝 index，保留原结构、记录和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 迁移拒绝 foreign-key，保留原结构、记录和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "窗口输入/纯思考、答案隐藏、自评修改/跳过/末题与新轮默认",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "写入失败保留输入/阻止切题，自评推进失败按原操作重试",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "返回首页和正常关窗立即保存，独立进程继续原题与草稿",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "关闭保存失败返回窗口保留输入，修复后可正常关闭",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "只有明确选择放弃时允许未保存退出",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "窗口提交后响应丢失，重试原请求不再次推进",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "真实代码 token/复制调用、图片模态缩放与长答案操作区",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：50ms 双击跳过和上一题只移动一题",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：100ms 双击跳过和上一题只移动一题",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：250ms 双击跳过和上一题只移动一题",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：100ms 两次 Enter 激活跳过只移动一题",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：100ms 两次 Space 激活跳过只移动一题",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：持续按住 Enter 不会在操作恢复后再次跳过",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "图片自动保存：放大窗口与缩放状态在草稿保存后保留",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：100% 页面缩放下长内容切题回到题首",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：125% 页面缩放下长内容切题回到题首",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：150% 页面缩放下长内容切题回到题首",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：长题干末题完成后展示并聚焦结果标题",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：强制终止后恢复已确认草稿、原位置与自评",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "窗口输入/纯思考、答案隐藏、自评修改/跳过/末题与新轮默认",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "写入失败保留输入/阻止切题，自评推进失败按原操作重试",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "返回首页和正常关窗立即保存，独立进程继续原题与草稿",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "关闭保存失败返回窗口保留输入，修复后可正常关闭",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "只有明确选择放弃时允许未保存退出",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "窗口提交后响应丢失，重试原请求不再次推进",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "真实代码 token/复制调用、图片模态缩放与长答案操作区",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：50ms 双击跳过和上一题只移动一题",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：100ms 双击跳过和上一题只移动一题",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：250ms 双击跳过和上一题只移动一题",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：100ms 两次 Enter 激活跳过只移动一题",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：100ms 两次 Space 激活跳过只移动一题",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "快速重复：持续按住 Enter 不会在操作恢复后再次跳过",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "图片自动保存：放大窗口与缩放状态在草稿保存后保留",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：100% 页面缩放下长内容切题回到题首",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：125% 页面缩放下长内容切题回到题首",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：150% 页面缩放下长内容切题回到题首",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：长题干末题完成后展示并聚焦结果标题",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：强制终止后恢复已确认草稿、原位置与自评",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice-window.spec.ts",
+      "title": "M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice.spec.ts",
+      "title": "顺序队列、草稿、揭晓、自评修改、跳过与独立进程恢复",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice.spec.ts",
+      "title": "实际题库更新与归档保留本轮版本和真实作答行，新轮使用最新内容",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice.spec.ts",
+      "title": "自评推进、结束回执、草稿和揭晓故障分别整笔回滚并可重试",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice.spec.ts",
+      "title": "提交后响应异常先确认持久化；核实不可用时停写，重开按原回执确认",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice.spec.ts",
+      "title": "草稿真实 UTF-8 字节边界、非法输入和数据库约束",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice.spec.ts",
+      "title": "M1 v2 升级前一致性备份并保留题库、图片、收藏和旧自评，重开不重复升级",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice.spec.ts",
+      "title": "v2 备份失败时停止，原数据库逐字节保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "practice.spec.ts",
+      "title": "v2 迁移 DDL 冲突回滚且保留原结构和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice.spec.ts",
+      "title": "顺序队列、草稿、揭晓、自评修改、跳过与独立进程恢复",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice.spec.ts",
+      "title": "实际题库更新与归档保留本轮版本和真实作答行，新轮使用最新内容",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice.spec.ts",
+      "title": "自评推进、结束回执、草稿和揭晓故障分别整笔回滚并可重试",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice.spec.ts",
+      "title": "提交后响应异常先确认持久化；核实不可用时停写，重开按原回执确认",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice.spec.ts",
+      "title": "草稿真实 UTF-8 字节边界、非法输入和数据库约束",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice.spec.ts",
+      "title": "M1 v2 升级前一致性备份并保留题库、图片、收藏和旧自评，重开不重复升级",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice.spec.ts",
+      "title": "v2 备份失败时停止，原数据库逐字节保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "practice.spec.ts",
+      "title": "v2 迁移 DDL 冲突回滚且保留原结构和保护性备份",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "random-practice.spec.ts",
+      "title": "随机 SQL 从全部匹配题取样，数量/交集/同键去重/幂等及失败回滚",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "random-practice.spec.ts",
+      "title": "随机窗口保存/自评后正常关窗，独立进程恢复完整原队列",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "random-practice.spec.ts",
+      "title": "随机窗口保存/自评后真实强制终止，独立进程恢复完整原队列",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "random-practice.spec.ts",
+      "title": "随机本轮不受更新/归档影响，新轮使用最新版本并重新隐藏作答",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "random-practice.spec.ts",
+      "title": "随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "random-practice.spec.ts",
+      "title": "随机 SQL 从全部匹配题取样，数量/交集/同键去重/幂等及失败回滚",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "random-practice.spec.ts",
+      "title": "随机窗口保存/自评后正常关窗，独立进程恢复完整原队列",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "random-practice.spec.ts",
+      "title": "随机窗口保存/自评后真实强制终止，独立进程恢复完整原队列",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "random-practice.spec.ts",
+      "title": "随机本轮不受更新/归档影响，新轮使用最新版本并重新隐藏作答",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "random-practice.spec.ts",
+      "title": "随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复准备 protect 时不替换原库，窗口仍可继续保存",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复准备 save 时不替换原库，窗口仍可继续保存",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复准备 tampered 时不替换原库，窗口仍可继续保存",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复准备 cancel 时不替换原库，窗口仍可继续保存",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 publish 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 close 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 rollback 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 crash-moved 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 crash-installed 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 crash-committed 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复文件事务保留并回退全部数据库伴随文件，未知事务现场不清理",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "恢复前提交未到自动保存时间的草稿，保护备份包括最终输入且暂停期间拒绝业务写入",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "restore-window.spec.ts",
+      "title": "保护性备份可直接从本数据目录选择并恢复，来源文件不被覆盖",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复准备 protect 时不替换原库，窗口仍可继续保存",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复准备 save 时不替换原库，窗口仍可继续保存",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复准备 tampered 时不替换原库，窗口仍可继续保存",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复准备 cancel 时不替换原库，窗口仍可继续保存",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 publish 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 close 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 rollback 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 crash-moved 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 crash-installed 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复 crash-committed 后独立进程保留可恢复数据且不创建空库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复文件事务保留并回退全部数据库伴随文件，未知事务现场不清理",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "恢复前提交未到自动保存时间的草稿，保护备份包括最终输入且暂停期间拒绝业务写入",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "restore-window.spec.ts",
+      "title": "保护性备份可直接从本数据目录选择并恢复，来源文件不被覆盖",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "session-filters-migration.spec.ts",
+      "title": "v5 升级至 v8 保留全业务、原回执与显示设置，旧筛选明确未知",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "session-filters-migration.spec.ts",
+      "title": "v5 筛选迁移 backup-blocked 停止或回滚，原库保留",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "session-filters-migration.spec.ts",
+      "title": "v5 筛选迁移 column-conflict 停止或回滚，原库保留",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "session-filters-migration.spec.ts",
+      "title": "v5 筛选迁移 foreign-key 停止或回滚，原库保留",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "session-filters-migration.spec.ts",
+      "title": "v5 升级至 v8 保留全业务、原回执与显示设置，旧筛选明确未知",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "session-filters-migration.spec.ts",
+      "title": "v5 筛选迁移 backup-blocked 停止或回滚，原库保留",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "session-filters-migration.spec.ts",
+      "title": "v5 筛选迁移 column-conflict 停止或回滚，原库保留",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "session-filters-migration.spec.ts",
+      "title": "v5 筛选迁移 foreign-key 停止或回滚，原库保留",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "session-filters.spec.ts",
+      "title": "sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "session-filters.spec.ts",
+      "title": "random 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "session-filters.spec.ts",
+      "title": "筛选快照与替换旧轮原子提交，失败回滚和丢响应重试不改快照",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "session-filters.spec.ts",
+      "title": "省略条件的新轮保存明确默认快照，旧请求形状重试仍幂等",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "session-filters.spec.ts",
+      "title": "损坏筛选快照不能冒充旧未知或默认条件，修复后原轮可读",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "session-filters.spec.ts",
+      "title": "sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "session-filters.spec.ts",
+      "title": "random 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "session-filters.spec.ts",
+      "title": "筛选快照与替换旧轮原子提交，失败回滚和丢响应重试不改快照",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "session-filters.spec.ts",
+      "title": "省略条件的新轮保存明确默认快照，旧请求形状重试仍幂等",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "session-filters.spec.ts",
+      "title": "损坏筛选快照不能冒充旧未知或默认条件，修复后原轮可读",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-migration.spec.ts",
+      "title": "v4 升级至 v8：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-migration.spec.ts",
+      "title": "v4 显示设置升级 backup-blocked 时停止/回滚且保留原库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-migration.spec.ts",
+      "title": "v4 显示设置升级 table-conflict 时停止/回滚且保留原库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-migration.spec.ts",
+      "title": "v4 显示设置升级 foreign-key 时停止/回滚且保留原库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-migration.spec.ts",
+      "title": "v4 升级至 v8：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-migration.spec.ts",
+      "title": "v4 显示设置升级 backup-blocked 时停止/回滚且保留原库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-migration.spec.ts",
+      "title": "v4 显示设置升级 table-conflict 时停止/回滚且保留原库",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-migration.spec.ts",
+      "title": "v4 显示设置升级 foreign-key 时停止/回滚且保留原库",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-palettes.spec.ts",
+      "title": "松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-palettes.spec.ts",
+      "title": "晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-palettes.spec.ts",
+      "title": "暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-palettes.spec.ts",
+      "title": "暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-palettes.spec.ts",
+      "title": "配色真实写失败/丢响应保留选择，键盘切换后正常重开保留草稿",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-palettes.spec.ts",
+      "title": "损坏配色明确报错且不伪造默认成功，修复重读保持学习数据",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-palettes.spec.ts",
+      "title": "配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-palettes.spec.ts",
+      "title": "复制成功反馈2.5秒自熄，重复复制重置、错误保留且切题拒绝晚到响应",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-palettes.spec.ts",
+      "title": "松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-palettes.spec.ts",
+      "title": "晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-palettes.spec.ts",
+      "title": "暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-palettes.spec.ts",
+      "title": "暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-palettes.spec.ts",
+      "title": "配色真实写失败/丢响应保留选择，键盘切换后正常重开保留草稿",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-palettes.spec.ts",
+      "title": "损坏配色明确报错且不伪造默认成功，修复重读保持学习数据",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-palettes.spec.ts",
+      "title": "配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-palettes.spec.ts",
+      "title": "复制成功反馈2.5秒自熄，重复复制重置、错误保留且切题拒绝晚到响应",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-window.spec.ts",
+      "title": "四入口初始空库、独立页面、地址与显示默认值保持",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-window.spec.ts",
+      "title": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-window.spec.ts",
+      "title": "显示设置正常关闭独立重开，保留草稿位置自评收藏与历史",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-window.spec.ts",
+      "title": "真实设置写入失败及提交后响应丢失，原目标重试不改变学习数据",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-window.spec.ts",
+      "title": "损坏设置读取报错且不伪造默认成功，修复重读保留业务数据",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-window.spec.ts",
+      "title": "设置保存处理中正常关闭等待结果，成功关闭独立重开",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "settings-window.spec.ts",
+      "title": "设置保存处理中正常关闭等待结果，失败返回窗口后重试",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-window.spec.ts",
+      "title": "四入口初始空库、独立页面、地址与显示默认值保持",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-window.spec.ts",
+      "title": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-window.spec.ts",
+      "title": "显示设置正常关闭独立重开，保留草稿位置自评收藏与历史",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-window.spec.ts",
+      "title": "真实设置写入失败及提交后响应丢失，原目标重试不改变学习数据",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-window.spec.ts",
+      "title": "损坏设置读取报错且不伪造默认成功，修复重读保留业务数据",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-window.spec.ts",
+      "title": "设置保存处理中正常关闭等待结果，成功关闭独立重开",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "settings-window.spec.ts",
+      "title": "设置保存处理中正常关闭等待结果，失败返回窗口后重试",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "startup.spec.ts",
+      "title": "关闭重开后读回 SQLite 记录",
+      "status": "passed"
+    },
+    {
+      "project": "development",
+      "file": "startup.spec.ts",
+      "title": "窗口隔离与生产内容策略生效",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "startup.spec.ts",
+      "title": "关闭重开后读回 SQLite 记录",
+      "status": "passed"
+    },
+    {
+      "project": "packaged",
+      "file": "startup.spec.ts",
+      "title": "窗口隔离与生产内容策略生效",
+      "status": "passed"
+    }
+  ],
+  "firstFailurePreserved": "full-01.json / full-01-files",
+  "checksPassed": true
+}

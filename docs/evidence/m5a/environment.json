@@ -1,0 +1,43 @@
+{
+  "localDate": "2026-10-22",
+  "startedAt": "2026-10-22T14:55:43.8858675+08:00",
+  "workspace": "E:\\My_Projects\\embedded-practice",
+  "taskRoot": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8",
+  "dataDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\中文 验收数据",
+  "exportDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\备份 输出",
+  "sourceBaseline": "docs/evidence/m4c/source-manifest.json",
+  "baselineFileCount": 173,
+  "baselineDifferences": [],
+  "package": [
+    {
+      "path": "release/win-unpacked/embedded-practice.exe",
+      "bytes": 234328064,
+      "sha256": "eeac64484ef0f1208273b625e95796ad94705abd9529db602dceeabfe102d3a6"
+    },
+    {
+      "path": "release/win-unpacked/resources/app.asar",
+      "bytes": 3669491,
+      "sha256": "ff9cb31b662f2e9a029c5241aa7e51a81feb7cf8807d8eeee4093f904d8410d7"
+    },
+    {
+      "path": "release/win-unpacked/resources/app.asar.unpacked/node_modules/better-sqlite3/build/Release/better_sqlite3.node",
+      "bytes": 1920512,
+      "sha256": "24e2e3ca5a829572239718fbca35b873ba4975655d29c56a93f1880e3775d9b8"
+    },
+    {
+      "path": "release/embedded-practice-0.1.0-x64-setup.exe",
+      "bytes": 105194654,
+      "sha256": "641eef07330151d6343047c3aad2639a70c442b46a26426cd74b281d73a091d8"
+    }
+  ],
+  "os": {
+    "Caption": "Microsoft Windows 11 家庭版 中文版",
+    "Version": "10.0.26200",
+    "OSArchitecture": "64 位"
+  },
+  "processor": {
+    "Name": "13th Gen Intel(R) Core(TM) i5-13500HX"
+  },
+  "memoryBytes": 16883900416,
+  "method": "Computer Use 原生输入与窗口观察；数据库仅独立目录只读核对；未替换系统对话框/Explorer/重启"
+}

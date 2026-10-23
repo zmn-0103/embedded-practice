@@ -1,0 +1,13 @@
+
+Running 5 tests using 1 worker
+
+
+
+(node:39452) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[1/5] [development] › tests\e2e\category-migration.spec.ts:83:5 › 结构7分类迁移：一致性保护、原业务/条件/回执/自定义对象保持，旧专题未分类与旧轮不限分类
+[2/5] [development] › tests\e2e\category-migration.spec.ts:177:7 › 结构7分类迁移 backup-blocked 停止或完整回滚，原库不修补不重建
+[3/5] [development] › tests\e2e\category-migration.spec.ts:177:7 › 结构7分类迁移 table-conflict 停止或完整回滚，原库不修补不重建
+[4/5] [development] › tests\e2e\category-migration.spec.ts:177:7 › 结构7分类迁移 scope-column-conflict 停止或完整回滚，原库不修补不重建
+[5/5] [development] › tests\e2e\category-migration.spec.ts:177:7 › 结构7分类迁移 foreign-key 停止或完整回滚，原库不修补不重建
+  5 passed (5.1s)

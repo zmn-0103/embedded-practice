@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:16052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\practice-window.spec.ts:741:7 › M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡 (2.0s)
+  ok 2 [development] › tests\e2e\practice-window.spec.ts:741:7 › M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡 (2.1s)
+  ok 3 [development] › tests\e2e\practice-window.spec.ts:741:7 › M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡 (2.0s)
+
+  3 passed (6.9s)

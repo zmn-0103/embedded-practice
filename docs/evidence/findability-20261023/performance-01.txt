@@ -1,0 +1,46 @@
+多专题真实导入完成，准备历史样本。
+1万条历史已建立，开始搜索与连续切题计时。
+连续切题已测 30 / 120 次。
+连续切题已测 60 / 120 次。
+连续切题已测 90 / 120 次。
+连续切题已测 120 / 120 次。
+{
+  "completed": true,
+  "output": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\findability-20261023\\performance-01",
+  "statistics": {
+    "searchMs": {
+      "count": 30,
+      "min": 17.100000001490116,
+      "median": 22.300000000745058,
+      "p95": 22.900000002235174,
+      "max": 26.300000000745058
+    },
+    "switchPaintMs": {
+      "count": 120,
+      "min": 12.299999997019768,
+      "median": 20.25,
+      "p95": 39.19999999925494,
+      "max": 42.69999999925494
+    },
+    "switchEnabledMs": {
+      "count": 120,
+      "min": 501.8999999985099,
+      "median": 507.5,
+      "p95": 509.30000000074506,
+      "max": 511.20000000298023
+    },
+    "startupMs": {
+      "count": 5,
+      "min": 528.5081000000064,
+      "median": 639.8451999999961,
+      "p95": 649.4523999999947,
+      "max": 649.4523999999947
+    }
+  },
+  "targets": {
+    "searchUnder500ms": true,
+    "switchUnder200ms": true,
+    "startupUnder3000ms": true
+  },
+  "errors": []
+}

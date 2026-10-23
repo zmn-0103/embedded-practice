@@ -1,0 +1,5 @@
+{
+  "isolatedDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-startup-abort-LSZyEZ",
+  "log": "2026-10-22T02:34:31.843Z Error: ERR_FAILED (-2) loading 'file:///E:/My_Projects/embedded-practice/out/renderer/index.html'\n    at rejectAndCleanup (node:electron/js2c/browser_init:2:95038)\n    at finishListener (node:electron/js2c/browser_init:2:95200)\n    at WebContents.stopLoadingListener (node:electron/js2c/browser_init:2:95587)\n    at WebContents.emit (node:events:521:24)\n",
+  "intercepted": "{\"title\":\"嵌入式刷题本无法启动\",\"message\":\"请检查数据目录权限或本地诊断日志后重新启动。\"}"
+}

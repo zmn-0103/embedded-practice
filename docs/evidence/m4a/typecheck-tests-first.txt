@@ -1,0 +1,6 @@
+
+> embedded-practice@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/backup-window.spec.ts(1,10): error TS6133: 'randomUUID' is declared but its value is never read.
+tests/e2e/backup-window.spec.ts(11,17): error TS6133: 'beginHistoryPractice' is declared but its value is never read.

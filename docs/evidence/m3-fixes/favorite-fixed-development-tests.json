@@ -1,0 +1,240 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=development",
+      "--grep",
+      "M3 修复"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "learning-management.spec.ts",
+      "file": "learning-management.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1182,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:28:50.367Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "favorite-out-of-order.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbml0aWFsRmF2b3JpdGUiOmZhbHNlLCJsaXN0IjoiQSDnrZvpgInkuJPpopggwrcgcS0wMVxuR3Bpb1RpdGxlTWFya2VyIiwiZGV0YWlsIjoiZmFsc2UiLCJkYXRhYmFzZSI6eyJxdWV1ZSI6W10sInN0YXRlcyI6W3sidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wMSIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjF9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wMiIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjJ9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wMyIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjN9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wNCIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjR9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wNSIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjV9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wNiIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjZ9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wNyIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjd9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wOCIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjh9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wOSIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjl9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0xMCIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjEwfSx7InRvcGljSWQiOiJtMy1hIiwicXVlc3Rpb25JZCI6InEtMTEiLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoxMX0seyJ0b3BpY0lkIjoibTMtYSIsInF1ZXN0aW9uSWQiOiJxLTEyIiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6MTJ9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0xMyIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjEzfSx7InRvcGljSWQiOiJtMy1hIiwicXVlc3Rpb25JZCI6InEtMTQiLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoxNH0seyJ0b3BpY0lkIjoibTMtYSIsInF1ZXN0aW9uSWQiOiJxLTE1IiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6MTV9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0xNiIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjE2fSx7InRvcGljSWQiOiJtMy1hIiwicXVlc3Rpb25JZCI6InEtMTciLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoxN30seyJ0b3BpY0lkIjoibTMtYSIsInF1ZXN0aW9uSWQiOiJxLTE4IiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6MTh9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0xOSIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjE5fSx7InRvcGljSWQiOiJtMy1hIiwicXVlc3Rpb25JZCI6InEtMjAiLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoyMH0seyJ0b3BpY0lkIjoibTMtYSIsInF1ZXN0aW9uSWQiOiJxLTIxIiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6MjF9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0yMiIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjIyfSx7InRvcGljSWQiOiJtMy1hIiwicXVlc3Rpb25JZCI6InEtMjMiLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoyM30seyJ0b3BpY0lkIjoibTMtYSIsInF1ZXN0aW9uSWQiOiJxLTI0IiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6MjR9LHsidG9waWNJZCI6Im0zLWIiLCJxdWVzdGlvbklkIjoicS0wMSIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjI1fSx7InRvcGljSWQiOiJtMy1iIiwicXVlc3Rpb25JZCI6InEtMDIiLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoyNn0seyJ0b3BpY0lkIjoibTMtYiIsInF1ZXN0aW9uSWQiOiJxLTAzIiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6Mjd9XSwic2Vzc2lvbnMiOltdLCJyZWNlaXB0cyI6W10sInJldmlzaW9uIjp7InJldmlzaW9uIjoxfSwiaW50ZWdyaXR5IjpbeyJxdWlja19jaGVjayI6Im9rIn1dLCJmb3JlaWduS2V5cyI6W119fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7721b2e31cc4f9800f87-25cd8502da964d721c59",
+          "file": "learning-management.spec.ts",
+          "line": 210,
+          "column": 7
+        },
+        {
+          "title": "M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1138,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:28:51.573Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "favorite-out-of-order.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbml0aWFsRmF2b3JpdGUiOnRydWUsImxpc3QiOiJBIOetm+mAieS4k+mimCDCtyBxLTAxXG5HcGlvVGl0bGVNYXJrZXJcbuW3suaUtuiXjyIsImRldGFpbCI6InRydWUiLCJkYXRhYmFzZSI6eyJxdWV1ZSI6W10sInN0YXRlcyI6W3sidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wMSIsImZhdm9yaXRlIjoxLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjF9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wMiIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjJ9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wMyIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjN9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wNCIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjR9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wNSIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjV9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wNiIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjZ9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wNyIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjd9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wOCIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjh9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0wOSIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjl9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0xMCIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjEwfSx7InRvcGljSWQiOiJtMy1hIiwicXVlc3Rpb25JZCI6InEtMTEiLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoxMX0seyJ0b3BpY0lkIjoibTMtYSIsInF1ZXN0aW9uSWQiOiJxLTEyIiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6MTJ9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0xMyIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjEzfSx7InRvcGljSWQiOiJtMy1hIiwicXVlc3Rpb25JZCI6InEtMTQiLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoxNH0seyJ0b3BpY0lkIjoibTMtYSIsInF1ZXN0aW9uSWQiOiJxLTE1IiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6MTV9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0xNiIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjE2fSx7InRvcGljSWQiOiJtMy1hIiwicXVlc3Rpb25JZCI6InEtMTciLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoxN30seyJ0b3BpY0lkIjoibTMtYSIsInF1ZXN0aW9uSWQiOiJxLTE4IiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6MTh9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0xOSIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjE5fSx7InRvcGljSWQiOiJtMy1hIiwicXVlc3Rpb25JZCI6InEtMjAiLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoyMH0seyJ0b3BpY0lkIjoibTMtYSIsInF1ZXN0aW9uSWQiOiJxLTIxIiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6MjF9LHsidG9waWNJZCI6Im0zLWEiLCJxdWVzdGlvbklkIjoicS0yMiIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjIyfSx7InRvcGljSWQiOiJtMy1hIiwicXVlc3Rpb25JZCI6InEtMjMiLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoyM30seyJ0b3BpY0lkIjoibTMtYSIsInF1ZXN0aW9uSWQiOiJxLTI0IiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6MjR9LHsidG9waWNJZCI6Im0zLWIiLCJxdWVzdGlvbklkIjoicS0wMSIsImZhdm9yaXRlIjowLCJyYXRpbmciOm51bGwsInJhdGVkVmVyc2lvbiI6bnVsbCwiY3VycmVudFZlcnNpb24iOjI1fSx7InRvcGljSWQiOiJtMy1iIiwicXVlc3Rpb25JZCI6InEtMDIiLCJmYXZvcml0ZSI6MCwicmF0aW5nIjpudWxsLCJyYXRlZFZlcnNpb24iOm51bGwsImN1cnJlbnRWZXJzaW9uIjoyNn0seyJ0b3BpY0lkIjoibTMtYiIsInF1ZXN0aW9uSWQiOiJxLTAzIiwiZmF2b3JpdGUiOjAsInJhdGluZyI6bnVsbCwicmF0ZWRWZXJzaW9uIjpudWxsLCJjdXJyZW50VmVyc2lvbiI6Mjd9XSwic2Vzc2lvbnMiOltdLCJyZWNlaXB0cyI6W10sInJldmlzaW9uIjp7InJldmlzaW9uIjoxfSwiaW50ZWdyaXR5IjpbeyJxdWlja19jaGVjayI6Im9rIn1dLCJmb3JlaWduS2V5cyI6W119fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7721b2e31cc4f9800f87-1eb9a25293538afdc163",
+          "file": "learning-management.spec.ts",
+          "line": 210,
+          "column": 7
+        },
+        {
+          "title": "M3 修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1092,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:28:52.723Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7721b2e31cc4f9800f87-c986d6fa83e79302ebf4",
+          "file": "learning-management.spec.ts",
+          "line": 270,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-21T04:28:49.772Z",
+    "duration": 4072.5070000000005,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

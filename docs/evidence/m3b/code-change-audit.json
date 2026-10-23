@@ -1,0 +1,98 @@
+{
+  "codeChanges": [
+    {
+      "path": "tests/unit/practice-ipc.test.ts",
+      "kind": "changed",
+      "sha256": "a9a86783a359a22be028d215f7ece063be5c288d50a68be371083fdd9c83355e"
+    },
+    {
+      "path": "tests/unit/practice-contract.test.ts",
+      "kind": "changed",
+      "sha256": "bcfb673854d4ba9763dfa94c9ef3775b07d6e4d3fcef0c3c7e96b15c2911218a"
+    },
+    {
+      "path": "tests/integration/random-practice-exercise.ts",
+      "kind": "added",
+      "sha256": "18deccbbc05ab78cea1ae675ef60a5f321fe6f65c9529d010af5f22f27ea1f9d"
+    },
+    {
+      "path": "tests/fixtures/practice-v3-schema.ts",
+      "kind": "added",
+      "sha256": "2a986c789f93cb971cc70a33737c424c120c025782a12d2fa16b414848805974"
+    },
+    {
+      "path": "tests/e2e/random-practice.spec.ts",
+      "kind": "added",
+      "sha256": "630f018a2783a5dfed07a671d081fc93e51746ceeb4aa0bf6d60d1a71caef42d"
+    },
+    {
+      "path": "tests/e2e/practice.spec.ts",
+      "kind": "changed",
+      "sha256": "020c3c5300717b1acee22627147922aedae1519aca5b8e061822f1e338c1d9c5"
+    },
+    {
+      "path": "tests/e2e/practice-mode-migration.spec.ts",
+      "kind": "added",
+      "sha256": "9a7a9380fa20e8b1cd01278d22b46e6ed6528a3dcae33aa9d8133fc5a9a5322c"
+    },
+    {
+      "path": "tests/e2e/library-import.spec.ts",
+      "kind": "changed",
+      "sha256": "e0ee347e6b13e9312dd974b348a04cb3f5055368f5d9deb40d41810065b592e9"
+    },
+    {
+      "path": "src/shared/contracts/practice.ts",
+      "kind": "changed",
+      "sha256": "69d2042eb4f25391fe7b2919a8695632bcc819db5ff038e472ab72c87ef836ee"
+    },
+    {
+      "path": "src/renderer/src/components/PracticeWorkspace.tsx",
+      "kind": "changed",
+      "sha256": "e9ec9176af8ce1a70ccb82eaa8371ccb41728fe22e161b14c0b6b83202b0559c"
+    },
+    {
+      "path": "src/renderer/src/components/PracticePane.tsx",
+      "kind": "changed",
+      "sha256": "24cdb5f1747ac47c941c36bd107024098367b3f49e37d358501556637a55b7b3"
+    },
+    {
+      "path": "src/main/database/practice-schema.ts",
+      "kind": "changed",
+      "sha256": "1865e300794c147315a1d764c877ebea8669980de8d1b9b7d68ee2f82b603db2"
+    },
+    {
+      "path": "src/main/database/open-database.ts",
+      "kind": "changed",
+      "sha256": "4b60890fc6a8c6a3a1ddcc5400980c2b542013ed5fffdef1db6ca3928445ec46"
+    },
+    {
+      "path": "src/main/database/repositories/practice-repository.ts",
+      "kind": "changed",
+      "sha256": "4a2d4374f729bb4c4432bd54dbd741ea09ff596bf244eea7193cdb6e3565c214"
+    }
+  ],
+  "protectedUnchanged": [
+    "计划书.md",
+    "package.json",
+    "package-lock.json",
+    "electron.vite.config.ts",
+    "electron-builder.yml",
+    "playwright.config.ts",
+    "tsconfig.node.json",
+    "tsconfig.web.json",
+    "vitest.config.ts",
+    "question-banks/templates/专题模板.md",
+    "question-banks/templates/README.md",
+    "question-banks/templates/.gitkeep",
+    "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+    "question-banks/sources/STM32F103RCT6-GPIO-题答对应.json",
+    "question-banks/sources/STM32F103RCT6-GPIO-原始自测题.txt",
+    "question-banks/README.md",
+    "question-banks/examples/格式示例.md",
+    "question-banks/examples/README.md",
+    "question-banks/examples/assets/测试.webp",
+    "question-banks/examples/assets/带 空格.jpg",
+    "question-banks/examples/assets/中文测试图.png",
+    "question-banks/examples/assets/.gitkeep"
+  ]
+}

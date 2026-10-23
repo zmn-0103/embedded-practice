@@ -1,0 +1,155 @@
+
+Running 34 tests using 1 worker
+
+
+
+(node:30788) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[1/34] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 1 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[2/34] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 2 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[3/34] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 3 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[4/34] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 4 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[5/34] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 5 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[6/34] [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 6 备份确认恢复后独立启动保留旧题图收藏草稿和设置
+[7/34] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 1 备份只迁移暂存副本，旧时间未知且来源不变
+[8/34] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 2 备份只迁移暂存副本，旧时间未知且来源不变
+[9/34] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 3 备份只迁移暂存副本，旧时间未知且来源不变
+[10/34] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 4 备份只迁移暂存副本，旧时间未知且来源不变
+[11/34] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 5 备份只迁移暂存副本，旧时间未知且来源不变
+[12/34] [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 6 备份只迁移暂存副本，旧时间未知且来源不变
+[13/34] [development] › tests\e2e\palette-migration.spec.ts:87:5 › 真实结构6先保护备份再追加配色，全部业务/自定义对象/显示和条件保持
+[14/34] [development] › tests\e2e\palette-migration.spec.ts:152:7 › 结构6配色迁移 backup-blocked 停止/回滚，不修补未知结构
+[15/34] [development] › tests\e2e\palette-migration.spec.ts:152:7 › 结构6配色迁移 column-conflict 停止/回滚，不修补未知结构
+[16/34] [development] › tests\e2e\palette-migration.spec.ts:152:7 › 结构6配色迁移 foreign-key 停止/回滚，不修补未知结构
+[17/34] [development] › tests\e2e\settings-migration.spec.ts:136:5 › v4 升级至 v6：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级
+[18/34] [development] › tests\e2e\settings-migration.spec.ts:256:7 › v4 显示设置升级 backup-blocked 时停止/回滚且保留原库
+[19/34] [development] › tests\e2e\settings-migration.spec.ts:256:7 › v4 显示设置升级 table-conflict 时停止/回滚且保留原库
+[20/34] [development] › tests\e2e\settings-migration.spec.ts:256:7 › v4 显示设置升级 foreign-key 时停止/回滚且保留原库
+[21/34] [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+  1) [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 ───
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 4.5
+    Received:    3.1143230636030714
+
+      116 |         expect(stored(testDataDirectory)).toEqual({ theme, palette: palette.id, fontSize: size })
+      117 |         const ratios = await contrast(page)
+    > 118 |         for (const value of Object.values(ratios)) expect(value).toBeGreaterThanOrEqual(4.5)
+          |                                                                  ^
+      119 |         measurements.push({ theme, ratios })
+      120 |         await page.getByRole('radio', { name: palette.name, exact: true }).scrollIntoViewIfNeeded()
+      121 |         await captureHistory(application, page, info, `palette-${palette.id}-${theme}.png`)
+        at E:\My_Projects\embedded-practice\tests\e2e\settings-palettes.spec.ts:118:66
+
+    attachment #1: palette-forest-light.png (image/png) ────────────────────────────────────────────
+    docs\evidence\ui-themes-20261023\targeted-01\settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\attachments\palette-forest-light-png-388f47f3515f4815b7cf10842c329c506c99e3bc.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\evidence\ui-themes-20261023\targeted-01\settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\error-context.md
+
+
+(node:31208) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[22/34] [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+  2) [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 ───
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 4.5
+    Received:    2.7745459405266772
+
+      116 |         expect(stored(testDataDirectory)).toEqual({ theme, palette: palette.id, fontSize: size })
+      117 |         const ratios = await contrast(page)
+    > 118 |         for (const value of Object.values(ratios)) expect(value).toBeGreaterThanOrEqual(4.5)
+          |                                                                  ^
+      119 |         measurements.push({ theme, ratios })
+      120 |         await page.getByRole('radio', { name: palette.name, exact: true }).scrollIntoViewIfNeeded()
+      121 |         await captureHistory(application, page, info, `palette-${palette.id}-${theme}.png`)
+        at E:\My_Projects\embedded-practice\tests\e2e\settings-palettes.spec.ts:118:66
+
+    attachment #1: palette-ocean-light.png (image/png) ─────────────────────────────────────────────
+    docs\evidence\ui-themes-20261023\targeted-01\settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\attachments\palette-ocean-light-png-d159c7bd8a6dd18ae033befe5375b8d817dea510.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\evidence\ui-themes-20261023\targeted-01\settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\error-context.md
+
+
+(node:17004) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[23/34] [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+  3) [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 ───
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 4.5
+    Received:    2.9713419023449092
+
+      116 |         expect(stored(testDataDirectory)).toEqual({ theme, palette: palette.id, fontSize: size })
+      117 |         const ratios = await contrast(page)
+    > 118 |         for (const value of Object.values(ratios)) expect(value).toBeGreaterThanOrEqual(4.5)
+          |                                                                  ^
+      119 |         measurements.push({ theme, ratios })
+      120 |         await page.getByRole('radio', { name: palette.name, exact: true }).scrollIntoViewIfNeeded()
+      121 |         await captureHistory(application, page, info, `palette-${palette.id}-${theme}.png`)
+        at E:\My_Projects\embedded-practice\tests\e2e\settings-palettes.spec.ts:118:66
+
+    attachment #1: palette-sand-light.png (image/png) ──────────────────────────────────────────────
+    docs\evidence\ui-themes-20261023\targeted-01\settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\attachments\palette-sand-light-png-69c10a655b9419c6dbe8c7e9731a588d8432605c.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\evidence\ui-themes-20261023\targeted-01\settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\error-context.md
+
+
+(node:18828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[24/34] [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+  4) [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 ───
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 4.5
+    Received:    2.7371088635463434
+
+      116 |         expect(stored(testDataDirectory)).toEqual({ theme, palette: palette.id, fontSize: size })
+      117 |         const ratios = await contrast(page)
+    > 118 |         for (const value of Object.values(ratios)) expect(value).toBeGreaterThanOrEqual(4.5)
+          |                                                                  ^
+      119 |         measurements.push({ theme, ratios })
+      120 |         await page.getByRole('radio', { name: palette.name, exact: true }).scrollIntoViewIfNeeded()
+      121 |         await captureHistory(application, page, info, `palette-${palette.id}-${theme}.png`)
+        at E:\My_Projects\embedded-practice\tests\e2e\settings-palettes.spec.ts:118:66
+
+    attachment #1: palette-lilac-light.png (image/png) ─────────────────────────────────────────────
+    docs\evidence\ui-themes-20261023\targeted-01\settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\attachments\palette-lilac-light-png-b06a9d7518c83edc6fce53240eb8f663a2789c65.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\evidence\ui-themes-20261023\targeted-01\settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\error-context.md
+
+
+
+(node:31644) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[25/34] [development] › tests\e2e\settings-palettes.spec.ts:143:5 › 配色真实写失败/丢响应保留选择，键盘切换后正常重开保留草稿
+[26/34] [development] › tests\e2e\settings-palettes.spec.ts:217:5 › 配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作
+[27/34] [development] › tests\e2e\settings-palettes.spec.ts:263:5 › 复制成功反馈2.5秒自熄，重复复制重置、错误保留且切题拒绝晚到响应
+[28/34] [development] › tests\e2e\settings-window.spec.ts:48:5 › 四入口初始空库、独立页面、地址与显示默认值保持
+[29/34] [development] › tests\e2e\settings-window.spec.ts:84:5 › 系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案
+[30/34] [development] › tests\e2e\settings-window.spec.ts:155:5 › 显示设置正常关闭独立重开，保留草稿位置自评收藏与历史
+[31/34] [development] › tests\e2e\settings-window.spec.ts:210:5 › 真实设置写入失败及提交后响应丢失，原目标重试不改变学习数据
+[32/34] [development] › tests\e2e\settings-window.spec.ts:272:5 › 损坏设置读取报错且不伪造默认成功，修复重读保留业务数据
+[33/34] [development] › tests\e2e\settings-window.spec.ts:309:7 › 设置保存处理中正常关闭等待结果，成功关闭独立重开
+[34/34] [development] › tests\e2e\settings-window.spec.ts:309:7 › 设置保存处理中正常关闭等待结果，失败返回窗口后重试
+  4 failed
+    [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 ────
+    [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 ────
+    [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 ────
+    [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 ────
+  30 passed (57.2s)

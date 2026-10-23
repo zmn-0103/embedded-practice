@@ -1,0 +1,423 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/practice-window.spec.ts",
+      "--project=development",
+      "--grep",
+      "快速重复|图片自动保存",
+      "--output=tmp/m2-fixes-regression-results"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/tmp/m2-fixes-regression-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/tmp/m2-fixes-regression-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\tmp\\m2-fixes-regression-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-window.spec.ts",
+      "file": "practice-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "快速重复：50ms 双击跳过和上一题只移动一题",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3325,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:15:59.525Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "repeat-skip.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnRlcnZhbCI6NTAsImJlZm9yZSI6eyJzZXNzaW9ucyI6W3siaWQiOiIzMzgzNzU1MC05ZmNjLTQzMjItYjdjOS1kY2ZiYjQ5ZTViYWQiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MCwicmV2aXNpb24iOjB9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjMzODM3NTUwLTlmY2MtNDMyMi1iN2M5LWRjZmJiNDllNWJhZCIsInBvc2l0aW9uIjowLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjMzODM3NTUwLTlmY2MtNDMyMi1iN2M5LWRjZmJiNDllNWJhZCIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjMzODM3NTUwLTlmY2MtNDMyMi1iN2M5LWRjZmJiNDllNWJhZCIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiNmEwZWFiYWQtOTZiZi00MzI2LTg4NjktZTI5MWJiMTQ3N2JmIn1dLCJmb3JlaWduS2V5cyI6W119LCJhZnRlclNraXAiOnsic2Vzc2lvbnMiOlt7ImlkIjoiMzM4Mzc1NTAtOWZjYy00MzIyLWI3YzktZGNmYmI0OWU1YmFkIiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjEsInJldmlzaW9uIjoxfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiIzMzgzNzU1MC05ZmNjLTQzMjItYjdjOS1kY2ZiYjQ5ZTViYWQiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6MTY6MDAuNzQwWiJ9LHsic2Vzc2lvbklkIjoiMzM4Mzc1NTAtOWZjYy00MzIyLWI3YzktZGNmYmI0OWU1YmFkIiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiMzM4Mzc1NTAtOWZjYy00MzIyLWI3YzktZGNmYmI0OWU1YmFkIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiI2YTBlYWJhZC05NmJmLTQzMjYtODg2OS1lMjkxYmIxNDc3YmYifSx7InJlcXVlc3RfaWQiOiJlMDFjYTcxYi00YjE0LTQ3NDQtYTk0Yy05OGQyYTZlNWFkYjMifV0sImZvcmVpZ25LZXlzIjpbXX19"
+                    },
+                    {
+                      "name": "repeat-previous.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnRlcnZhbCI6NTAsImJlZm9yZVByZXZpb3VzIjp7InNlc3Npb25zIjpbeyJpZCI6IjMzODM3NTUwLTlmY2MtNDMyMi1iN2M5LWRjZmJiNDllNWJhZCIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjoyLCJyZXZpc2lvbiI6Mn1dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiMzM4Mzc1NTAtOWZjYy00MzIyLWI3YzktZGNmYmI0OWU1YmFkIiwicG9zaXRpb24iOjAsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjE2OjAwLjc0MFoifSx7InNlc3Npb25JZCI6IjMzODM3NTUwLTlmY2MtNDMyMi1iN2M5LWRjZmJiNDllNWJhZCIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjoiMjAyNi0xMC0yMFQxMjoxNjowMS42NzVaIn0seyJzZXNzaW9uSWQiOiIzMzgzNzU1MC05ZmNjLTQzMjItYjdjOS1kY2ZiYjQ5ZTViYWQiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6IjZhMGVhYmFkLTk2YmYtNDMyNi04ODY5LWUyOTFiYjE0NzdiZiJ9LHsicmVxdWVzdF9pZCI6ImUwMWNhNzFiLTRiMTQtNDc0NC1hOTRjLTk4ZDJhNmU1YWRiMyJ9LHsicmVxdWVzdF9pZCI6IjA2ZGE2MzM1LTdkNDMtNDQwNi05OGUxLTc4MDAzNjQzODk2NCJ9XSwiZm9yZWlnbktleXMiOltdfSwiYWZ0ZXJQcmV2aW91cyI6eyJzZXNzaW9ucyI6W3siaWQiOiIzMzgzNzU1MC05ZmNjLTQzMjItYjdjOS1kY2ZiYjQ5ZTViYWQiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MSwicmV2aXNpb24iOjN9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjMzODM3NTUwLTlmY2MtNDMyMi1iN2M5LWRjZmJiNDllNWJhZCIsInBvc2l0aW9uIjowLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjoiMjAyNi0xMC0yMFQxMjoxNjowMC43NDBaIn0seyJzZXNzaW9uSWQiOiIzMzgzNzU1MC05ZmNjLTQzMjItYjdjOS1kY2ZiYjQ5ZTViYWQiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6MTY6MDEuNjc1WiJ9LHsic2Vzc2lvbklkIjoiMzM4Mzc1NTAtOWZjYy00MzIyLWI3YzktZGNmYmI0OWU1YmFkIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiI2YTBlYWJhZC05NmJmLTQzMjYtODg2OS1lMjkxYmIxNDc3YmYifSx7InJlcXVlc3RfaWQiOiJlMDFjYTcxYi00YjE0LTQ3NDQtYTk0Yy05OGQyYTZlNWFkYjMifSx7InJlcXVlc3RfaWQiOiIwNmRhNjMzNS03ZDQzLTQ0MDYtOThlMS03ODAwMzY0Mzg5NjQifSx7InJlcXVlc3RfaWQiOiIyZDI5Y2JhNS0wN2U2LTRkMGQtYTg0YS1hZTEwOWY2YTQ4MWIifV0sImZvcmVpZ25LZXlzIjpbXX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-98fe35ec97ad69e2f92e",
+          "file": "practice-window.spec.ts",
+          "line": 418,
+          "column": 7
+        },
+        {
+          "title": "快速重复：100ms 双击跳过和上一题只移动一题",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2807,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:16:02.876Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "repeat-skip.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnRlcnZhbCI6MTAwLCJiZWZvcmUiOnsic2Vzc2lvbnMiOlt7ImlkIjoiNjI4ZDdhNGYtZDQ3NC00MWVlLTgzMGYtMzQ4MGFhZDlkZjUxIiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjAsInJldmlzaW9uIjowfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiI2MjhkN2E0Zi1kNDc0LTQxZWUtODMwZi0zNDgwYWFkOWRmNTEiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiI2MjhkN2E0Zi1kNDc0LTQxZWUtODMwZi0zNDgwYWFkOWRmNTEiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiI2MjhkN2E0Zi1kNDc0LTQxZWUtODMwZi0zNDgwYWFkOWRmNTEiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6ImYyZmE5NjY4LTBhYjMtNGVlZi05NzA1LWZmM2RjYTc4MzdjZCJ9XSwiZm9yZWlnbktleXMiOltdfSwiYWZ0ZXJTa2lwIjp7InNlc3Npb25zIjpbeyJpZCI6IjYyOGQ3YTRmLWQ0NzQtNDFlZS04MzBmLTM0ODBhYWQ5ZGY1MSIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjoxLCJyZXZpc2lvbiI6MX1dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiNjI4ZDdhNGYtZDQ3NC00MWVlLTgzMGYtMzQ4MGFhZDlkZjUxIiwicG9zaXRpb24iOjAsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjE2OjAzLjg0NVoifSx7InNlc3Npb25JZCI6IjYyOGQ3YTRmLWQ0NzQtNDFlZS04MzBmLTM0ODBhYWQ5ZGY1MSIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjYyOGQ3YTRmLWQ0NzQtNDFlZS04MzBmLTM0ODBhYWQ5ZGY1MSIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiZjJmYTk2NjgtMGFiMy00ZWVmLTk3MDUtZmYzZGNhNzgzN2NkIn0seyJyZXF1ZXN0X2lkIjoiYWZlYzgyODQtNTY0Yy00MzYxLTkwNWUtMGY4YWQ4YzVmYmQ2In1dLCJmb3JlaWduS2V5cyI6W119fQ=="
+                    },
+                    {
+                      "name": "repeat-previous.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnRlcnZhbCI6MTAwLCJiZWZvcmVQcmV2aW91cyI6eyJzZXNzaW9ucyI6W3siaWQiOiI2MjhkN2E0Zi1kNDc0LTQxZWUtODMwZi0zNDgwYWFkOWRmNTEiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MiwicmV2aXNpb24iOjJ9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjYyOGQ3YTRmLWQ0NzQtNDFlZS04MzBmLTM0ODBhYWQ5ZGY1MSIsInBvc2l0aW9uIjowLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjoiMjAyNi0xMC0yMFQxMjoxNjowMy44NDVaIn0seyJzZXNzaW9uSWQiOiI2MjhkN2E0Zi1kNDc0LTQxZWUtODMwZi0zNDgwYWFkOWRmNTEiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6MTY6MDQuNDA3WiJ9LHsic2Vzc2lvbklkIjoiNjI4ZDdhNGYtZDQ3NC00MWVlLTgzMGYtMzQ4MGFhZDlkZjUxIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiJmMmZhOTY2OC0wYWIzLTRlZWYtOTcwNS1mZjNkY2E3ODM3Y2QifSx7InJlcXVlc3RfaWQiOiJhZmVjODI4NC01NjRjLTQzNjEtOTA1ZS0wZjhhZDhjNWZiZDYifSx7InJlcXVlc3RfaWQiOiIzZWY5NTg5Ni03NGZlLTQyM2YtOWEyYS00ZmE1OTY0MzZkZGQifV0sImZvcmVpZ25LZXlzIjpbXX0sImFmdGVyUHJldmlvdXMiOnsic2Vzc2lvbnMiOlt7ImlkIjoiNjI4ZDdhNGYtZDQ3NC00MWVlLTgzMGYtMzQ4MGFhZDlkZjUxIiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjEsInJldmlzaW9uIjozfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiI2MjhkN2E0Zi1kNDc0LTQxZWUtODMwZi0zNDgwYWFkOWRmNTEiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6MTY6MDMuODQ1WiJ9LHsic2Vzc2lvbklkIjoiNjI4ZDdhNGYtZDQ3NC00MWVlLTgzMGYtMzQ4MGFhZDlkZjUxIiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjE2OjA0LjQwN1oifSx7InNlc3Npb25JZCI6IjYyOGQ3YTRmLWQ0NzQtNDFlZS04MzBmLTM0ODBhYWQ5ZGY1MSIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiZjJmYTk2NjgtMGFiMy00ZWVmLTk3MDUtZmYzZGNhNzgzN2NkIn0seyJyZXF1ZXN0X2lkIjoiYWZlYzgyODQtNTY0Yy00MzYxLTkwNWUtMGY4YWQ4YzVmYmQ2In0seyJyZXF1ZXN0X2lkIjoiM2VmOTU4OTYtNzRmZS00MjNmLTlhMmEtNGZhNTk2NDM2ZGRkIn0seyJyZXF1ZXN0X2lkIjoiYmU1YWRjZmYtYTEzZi00OWJlLWI2NDktNjA2ZDEwZjU2YjBlIn1dLCJmb3JlaWduS2V5cyI6W119fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-772d8f3e1d98c205fdb8",
+          "file": "practice-window.spec.ts",
+          "line": 418,
+          "column": 7
+        },
+        {
+          "title": "快速重复：250ms 双击跳过和上一题只移动一题",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3427,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:16:05.689Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "repeat-skip.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnRlcnZhbCI6MjUwLCJiZWZvcmUiOnsic2Vzc2lvbnMiOlt7ImlkIjoiODAxMjYxYTEtZWUxOS00MTAxLWEyN2UtYzQyNWFjMTEyMGNlIiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjAsInJldmlzaW9uIjowfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiI4MDEyNjFhMS1lZTE5LTQxMDEtYTI3ZS1jNDI1YWMxMTIwY2UiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiI4MDEyNjFhMS1lZTE5LTQxMDEtYTI3ZS1jNDI1YWMxMTIwY2UiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiI4MDEyNjFhMS1lZTE5LTQxMDEtYTI3ZS1jNDI1YWMxMTIwY2UiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6ImZjOTQ5MWFhLTRmZGUtNDI2Yi04OWIyLWJmMDQ4MGI3N2EyOSJ9XSwiZm9yZWlnbktleXMiOltdfSwiYWZ0ZXJTa2lwIjp7InNlc3Npb25zIjpbeyJpZCI6IjgwMTI2MWExLWVlMTktNDEwMS1hMjdlLWM0MjVhYzExMjBjZSIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjoxLCJyZXZpc2lvbiI6MX1dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiODAxMjYxYTEtZWUxOS00MTAxLWEyN2UtYzQyNWFjMTEyMGNlIiwicG9zaXRpb24iOjAsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjE2OjA2Ljc2OVoifSx7InNlc3Npb25JZCI6IjgwMTI2MWExLWVlMTktNDEwMS1hMjdlLWM0MjVhYzExMjBjZSIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjgwMTI2MWExLWVlMTktNDEwMS1hMjdlLWM0MjVhYzExMjBjZSIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiZmM5NDkxYWEtNGZkZS00MjZiLTg5YjItYmYwNDgwYjc3YTI5In0seyJyZXF1ZXN0X2lkIjoiZDA1ZTYwN2YtNTA0My00NjIxLWE2MjMtZjNiYmJkMTIyNGVlIn1dLCJmb3JlaWduS2V5cyI6W119fQ=="
+                    },
+                    {
+                      "name": "repeat-previous.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnRlcnZhbCI6MjUwLCJiZWZvcmVQcmV2aW91cyI6eyJzZXNzaW9ucyI6W3siaWQiOiI4MDEyNjFhMS1lZTE5LTQxMDEtYTI3ZS1jNDI1YWMxMTIwY2UiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MiwicmV2aXNpb24iOjJ9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjgwMTI2MWExLWVlMTktNDEwMS1hMjdlLWM0MjVhYzExMjBjZSIsInBvc2l0aW9uIjowLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjoiMjAyNi0xMC0yMFQxMjoxNjowNi43NjlaIn0seyJzZXNzaW9uSWQiOiI4MDEyNjFhMS1lZTE5LTQxMDEtYTI3ZS1jNDI1YWMxMTIwY2UiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6MTY6MDcuMzM2WiJ9LHsic2Vzc2lvbklkIjoiODAxMjYxYTEtZWUxOS00MTAxLWEyN2UtYzQyNWFjMTEyMGNlIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiJmYzk0OTFhYS00ZmRlLTQyNmItODliMi1iZjA0ODBiNzdhMjkifSx7InJlcXVlc3RfaWQiOiJkMDVlNjA3Zi01MDQzLTQ2MjEtYTYyMy1mM2JiYmQxMjI0ZWUifSx7InJlcXVlc3RfaWQiOiIzNzRlZmYzYy0wN2VlLTQ1YmMtODRhNS1iZDk2ZDBjNTliMGMifV0sImZvcmVpZ25LZXlzIjpbXX0sImFmdGVyUHJldmlvdXMiOnsic2Vzc2lvbnMiOlt7ImlkIjoiODAxMjYxYTEtZWUxOS00MTAxLWEyN2UtYzQyNWFjMTEyMGNlIiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjEsInJldmlzaW9uIjozfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiI4MDEyNjFhMS1lZTE5LTQxMDEtYTI3ZS1jNDI1YWMxMTIwY2UiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6MTY6MDYuNzY5WiJ9LHsic2Vzc2lvbklkIjoiODAxMjYxYTEtZWUxOS00MTAxLWEyN2UtYzQyNWFjMTEyMGNlIiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjE2OjA3LjMzNloifSx7InNlc3Npb25JZCI6IjgwMTI2MWExLWVlMTktNDEwMS1hMjdlLWM0MjVhYzExMjBjZSIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiZmM5NDkxYWEtNGZkZS00MjZiLTg5YjItYmYwNDgwYjc3YTI5In0seyJyZXF1ZXN0X2lkIjoiZDA1ZTYwN2YtNTA0My00NjIxLWE2MjMtZjNiYmJkMTIyNGVlIn0seyJyZXF1ZXN0X2lkIjoiMzc0ZWZmM2MtMDdlZS00NWJjLTg0YTUtYmQ5NmQwYzU5YjBjIn0seyJyZXF1ZXN0X2lkIjoiNzIxNDNlNTctNWFkNi00MmU0LWIxYjktZTBiNzhmYzBjYmM3In1dLCJmb3JlaWduS2V5cyI6W119fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-67ad7d34a9bfd29994ed",
+          "file": "practice-window.spec.ts",
+          "line": 418,
+          "column": 7
+        },
+        {
+          "title": "快速重复：100ms 两次 Enter 激活跳过只移动一题",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:16:09.132Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "repeat-keyboard.json",
+                      "contentType": "application/json",
+                      "body": "eyJrZXkiOiJFbnRlciIsImJlZm9yZSI6eyJzZXNzaW9ucyI6W3siaWQiOiI4MDU4OGJlOS02MDM4LTQ2YmYtOTk5NS1mZWE5MjFlOTUzYWMiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MCwicmV2aXNpb24iOjB9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjgwNTg4YmU5LTYwMzgtNDZiZi05OTk1LWZlYTkyMWU5NTNhYyIsInBvc2l0aW9uIjowLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjgwNTg4YmU5LTYwMzgtNDZiZi05OTk1LWZlYTkyMWU5NTNhYyIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjgwNTg4YmU5LTYwMzgtNDZiZi05OTk1LWZlYTkyMWU5NTNhYyIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiNzhmZGNkZTUtMDA0Yi00NmY2LWEzZjMtMDZiZTMzOWJhYzRkIn1dLCJmb3JlaWduS2V5cyI6W119LCJyZXN1bHQiOnsic2Vzc2lvbnMiOlt7ImlkIjoiODA1ODhiZTktNjAzOC00NmJmLTk5OTUtZmVhOTIxZTk1M2FjIiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjEsInJldmlzaW9uIjoxfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiI4MDU4OGJlOS02MDM4LTQ2YmYtOTk5NS1mZWE5MjFlOTUzYWMiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6MTY6MDkuODkxWiJ9LHsic2Vzc2lvbklkIjoiODA1ODhiZTktNjAzOC00NmJmLTk5OTUtZmVhOTIxZTk1M2FjIiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiODA1ODhiZTktNjAzOC00NmJmLTk5OTUtZmVhOTIxZTk1M2FjIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiI3OGZkY2RlNS0wMDRiLTQ2ZjYtYTNmMy0wNmJlMzM5YmFjNGQifSx7InJlcXVlc3RfaWQiOiIzOWU4MjM2Ny1hMWNmLTRiYjctYWI0Zi00ZmM1ZWM1OGFhZjQifV0sImZvcmVpZ25LZXlzIjpbXX0sImRlbGliZXJhdGVOZXh0Ijp7InNlc3Npb25zIjpbeyJpZCI6IjgwNTg4YmU5LTYwMzgtNDZiZi05OTk1LWZlYTkyMWU5NTNhYyIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjoyLCJyZXZpc2lvbiI6Mn1dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiODA1ODhiZTktNjAzOC00NmJmLTk5OTUtZmVhOTIxZTk1M2FjIiwicG9zaXRpb24iOjAsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjE2OjA5Ljg5MVoifSx7InNlc3Npb25JZCI6IjgwNTg4YmU5LTYwMzgtNDZiZi05OTk1LWZlYTkyMWU5NTNhYyIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjoiMjAyNi0xMC0yMFQxMjoxNjoxMC44MTBaIn0seyJzZXNzaW9uSWQiOiI4MDU4OGJlOS02MDM4LTQ2YmYtOTk5NS1mZWE5MjFlOTUzYWMiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6Ijc4ZmRjZGU1LTAwNGItNDZmNi1hM2YzLTA2YmUzMzliYWM0ZCJ9LHsicmVxdWVzdF9pZCI6IjM5ZTgyMzY3LWExY2YtNGJiNy1hYjRmLTRmYzVlYzU4YWFmNCJ9LHsicmVxdWVzdF9pZCI6IjMzMGQwZjgyLWQ4MDMtNDI4Yi04MWNjLTE0YjQ3NDYwM2ExZSJ9XSwiZm9yZWlnbktleXMiOltdfX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-2cc4b035aec7d6e78705",
+          "file": "practice-window.spec.ts",
+          "line": 466,
+          "column": 7
+        },
+        {
+          "title": "快速重复：100ms 两次 Space 激活跳过只移动一题",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1848,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:16:10.947Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "repeat-keyboard.json",
+                      "contentType": "application/json",
+                      "body": "eyJrZXkiOiJTcGFjZSIsImJlZm9yZSI6eyJzZXNzaW9ucyI6W3siaWQiOiJlM2U0ODQxOC1kNjM5LTQxZDYtYjI4Mi1jZTE1ODdhNTE0ZTUiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MCwicmV2aXNpb24iOjB9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6ImUzZTQ4NDE4LWQ2MzktNDFkNi1iMjgyLWNlMTU4N2E1MTRlNSIsInBvc2l0aW9uIjowLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6ImUzZTQ4NDE4LWQ2MzktNDFkNi1iMjgyLWNlMTU4N2E1MTRlNSIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6ImUzZTQ4NDE4LWQ2MzktNDFkNi1iMjgyLWNlMTU4N2E1MTRlNSIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiODZhZjViZDktMDBhNC00NTg5LWFkNWYtN2VhZWM4NGI1NmQzIn1dLCJmb3JlaWduS2V5cyI6W119LCJyZXN1bHQiOnsic2Vzc2lvbnMiOlt7ImlkIjoiZTNlNDg0MTgtZDYzOS00MWQ2LWIyODItY2UxNTg3YTUxNGU1Iiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjEsInJldmlzaW9uIjoxfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiJlM2U0ODQxOC1kNjM5LTQxZDYtYjI4Mi1jZTE1ODdhNTE0ZTUiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6MTY6MTEuNjk5WiJ9LHsic2Vzc2lvbklkIjoiZTNlNDg0MTgtZDYzOS00MWQ2LWIyODItY2UxNTg3YTUxNGU1IiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiZTNlNDg0MTgtZDYzOS00MWQ2LWIyODItY2UxNTg3YTUxNGU1IiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiI4NmFmNWJkOS0wMGE0LTQ1ODktYWQ1Zi03ZWFlYzg0YjU2ZDMifSx7InJlcXVlc3RfaWQiOiJjZDRlZWY1ZC0wYzc2LTQzMjMtYjk1Yy0yYmU4YjFlZDUyOTAifV0sImZvcmVpZ25LZXlzIjpbXX0sImRlbGliZXJhdGVOZXh0Ijp7InNlc3Npb25zIjpbeyJpZCI6ImUzZTQ4NDE4LWQ2MzktNDFkNi1iMjgyLWNlMTU4N2E1MTRlNSIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjoyLCJyZXZpc2lvbiI6Mn1dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiZTNlNDg0MTgtZDYzOS00MWQ2LWIyODItY2UxNTg3YTUxNGU1IiwicG9zaXRpb24iOjAsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjE2OjExLjY5OVoifSx7InNlc3Npb25JZCI6ImUzZTQ4NDE4LWQ2MzktNDFkNi1iMjgyLWNlMTU4N2E1MTRlNSIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjoiMjAyNi0xMC0yMFQxMjoxNjoxMi42NDhaIn0seyJzZXNzaW9uSWQiOiJlM2U0ODQxOC1kNjM5LTQxZDYtYjI4Mi1jZTE1ODdhNTE0ZTUiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6Ijg2YWY1YmQ5LTAwYTQtNDU4OS1hZDVmLTdlYWVjODRiNTZkMyJ9LHsicmVxdWVzdF9pZCI6ImNkNGVlZjVkLTBjNzYtNDMyMy1iOTVjLTJiZThiMWVkNTI5MCJ9LHsicmVxdWVzdF9pZCI6IjhiMWJkZDQwLWMyZWItNDhlMy1hNDliLTBlMDEwZjk3NWNlMSJ9XSwiZm9yZWlnbktleXMiOltdfX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-9e8fefdd07766c5a0d11",
+          "file": "practice-window.spec.ts",
+          "line": 466,
+          "column": 7
+        },
+        {
+          "title": "快速重复：持续按住 Enter 不会在操作恢复后再次跳过",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1708,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:16:12.804Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "repeat-held-key.json",
+                      "contentType": "application/json",
+                      "body": "eyJiZWZvcmUiOnsic2Vzc2lvbnMiOlt7ImlkIjoiYjE0Yzg0YzAtNzA3ZS00ZTdmLWJlZWItNDQ5NDZiOWM5OTJhIiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjAsInJldmlzaW9uIjowfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiJiMTRjODRjMC03MDdlLTRlN2YtYmVlYi00NDk0NmI5Yzk5MmEiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiJiMTRjODRjMC03MDdlLTRlN2YtYmVlYi00NDk0NmI5Yzk5MmEiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiJiMTRjODRjMC03MDdlLTRlN2YtYmVlYi00NDk0NmI5Yzk5MmEiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6IjQ0ODkzMDlhLTQ1NjAtNDViZi04ZmIyLTRhYjVlMGNiMjkyOSJ9XSwiZm9yZWlnbktleXMiOltdfSwicmVzdWx0Ijp7InNlc3Npb25zIjpbeyJpZCI6ImIxNGM4NGMwLTcwN2UtNGU3Zi1iZWViLTQ0OTQ2YjljOTkyYSIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjoxLCJyZXZpc2lvbiI6MX1dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiYjE0Yzg0YzAtNzA3ZS00ZTdmLWJlZWItNDQ5NDZiOWM5OTJhIiwicG9zaXRpb24iOjAsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjE2OjEzLjUzM1oifSx7InNlc3Npb25JZCI6ImIxNGM4NGMwLTcwN2UtNGU3Zi1iZWViLTQ0OTQ2YjljOTkyYSIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6ImIxNGM4NGMwLTcwN2UtNGU3Zi1iZWViLTQ0OTQ2YjljOTkyYSIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiNDQ4OTMwOWEtNDU2MC00NWJmLThmYjItNGFiNWUwY2IyOTI5In0seyJyZXF1ZXN0X2lkIjoiYjAyOGViMTUtZmUxMi00MTcxLWFhZjQtM2ZhYTc5MzExZGIzIn1dLCJmb3JlaWduS2V5cyI6W119fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-3767ee0b3b6410174ab9",
+          "file": "practice-window.spec.ts",
+          "line": 496,
+          "column": 5
+        },
+        {
+          "title": "图片自动保存：放大窗口与缩放状态在草稿保存后保留",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1898,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:16:14.521Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "image-autosave.json",
+                      "contentType": "application/json",
+                      "body": "eyJzZXNzaW9ucyI6W3siaWQiOiI2NTUxOTBlZS02ZTE4LTQ4Y2MtYWZmZC05ZmJjMDJmNDljNzciLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MCwicmV2aXNpb24iOjB9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjY1NTE5MGVlLTZlMTgtNDhjYy1hZmZkLTlmYmMwMmY0OWM3NyIsInBvc2l0aW9uIjowLCJkcmFmdCI6IuWbvueJh+aJk+W8gOacn+mXtOiHquWKqOS/neWtmOeahOiNieeovyIsImRyYWZ0UmV2aXNpb24iOjEsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjY1NTE5MGVlLTZlMTgtNDhjYy1hZmZkLTlmYmMwMmY0OWM3NyIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjY1NTE5MGVlLTZlMTgtNDhjYy1hZmZkLTlmYmMwMmY0OWM3NyIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiODg5MTA5NGItMGE0Ni00ZWQ4LWEzZmEtYjg0YmFjYzQyMGNkIn1dLCJmb3JlaWduS2V5cyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-97c6d0459cb7cf6f56f3",
+          "file": "practice-window.spec.ts",
+          "line": 523,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-20T12:15:59.200Z",
+    "duration": 17247.540999999997,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,47 @@
+
+> embedded-practice@0.1.0 test:desktop
+> npm run build && playwright test --project=development
+
+
+> embedded-practice@0.1.0 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 101 modules transformed.
+rendering chunks...
+out/main/index.js  186.87 kB
+
+✓ built in 42ms
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 98 modules transformed.
+rendering chunks...
+out/preload/index.js  172.47 kB
+
+✓ built in 26ms
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 15 modules transformed.
+rendering chunks...
+out/renderer/index.html                   0.70 kB
+out/renderer/assets/index-Bspc05qX.css    3.43 kB
+out/renderer/assets/index-COnObg9K.js   569.55 kB
+
+✓ built in 66ms
+
+Running 5 tests using 1 worker
+
+(node:31388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\database-errors.spec.ts:24:7 › 损坏文件报错且原文件不变 (620ms)
+  ok 2 [development] › tests\e2e\database-errors.spec.ts:24:7 › 无应用标识的非空库报错且原文件不变 (579ms)
+  ok 3 [development] › tests\e2e\database-errors.spec.ts:24:7 › 不受支持的结构版本报错且原文件不变 (588ms)
+  ok 4 [development] › tests\e2e\startup.spec.ts:5:5 › 关闭重开后读回 SQLite 记录 (1.2s)
+  ok 5 [development] › tests\e2e\startup.spec.ts:37:5 › 窗口隔离与生产内容策略生效 (516ms)
+
+  5 passed (3.9s)

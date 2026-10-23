@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-23",
+  "notes": [
+    "首次运行前最后一行 SQLite 原型断言改动后，Prettier 报告换行格式未通过；PowerShell 顺序继续执行，六组应用检查均通过。此格式失败独立保留，不是应用缺陷。",
+    "已保存首次实际执行脚本原文，随后仅使用 Prettier 调整断言换行；最终 Node 语法与 Prettier 均通过，无语义改动。"
+  ],
+  "applicationRun": "experience-01/result.json",
+  "executedScript": "experience-01/executed-script.mjs.txt",
+  "fullHistoricalSuitesRerun": false
+}

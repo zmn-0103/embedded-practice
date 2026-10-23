@@ -1,0 +1,21 @@
+
+Running 14 tests using 1 worker
+
+(node:33924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\database-errors.spec.ts:24:7 › 损坏文件报错且原文件不变 (684ms)
+  ok  2 [development] › tests\e2e\database-errors.spec.ts:24:7 › 无应用标识的非空库报错且原文件不变 (620ms)
+  ok  3 [development] › tests\e2e\database-errors.spec.ts:24:7 › 不受支持的结构版本报错且原文件不变 (660ms)
+  ok  4 [development] › tests\e2e\import-worker.spec.ts:38:5 › 真实线程准备题库与三种图片，停止后来源可移动 (750ms)
+  ok  5 [development] › tests\e2e\import-worker.spec.ts:79:5 › 真实线程支持忙碌、失败后重试、取消与期限 (752ms)
+  ok  6 [development] › tests\e2e\import-worker.spec.ts:105:5 › 关闭服务等待真实线程停止并拒绝新任务 (595ms)
+  ok  7 [development] › tests\e2e\library-import.spec.ts:20:5 › 预览后来源移动，80 题与三种图片原子入库并跨进程读回 (1.3s)
+  ok  8 [development] › tests\e2e\library-import.spec.ts:104:5 › 真实事务区分元数据与内容版本，保留收藏/旧引用，归档恢复与旧基线保护 (1.2s)
+  ok  9 [development] › tests\e2e\library-import.spec.ts:155:5 › 第二专题中途写入失败整批回滚，确认无回执后可重试同一快照 (710ms)
+  ok 10 [development] › tests\e2e\library-import.spec.ts:217:5 › 旧 M0 库迁移前备份可读，原启动记录与数据保留且升级不重复 (1.2s)
+  ok 11 [development] › tests\e2e\library-import.spec.ts:269:5 › 迁移前备份无法创建时停止，旧数据库不改写 (523ms)
+  ok 12 [development] › tests\e2e\library-import.spec.ts:287:5 › 迁移 DDL 失败回滚结构，保留旧库和保护性备份 (527ms)
+  ok 13 [development] › tests\e2e\startup.spec.ts:6:5 › 关闭重开后读回 SQLite 记录 (1.3s)
+  ok 14 [development] › tests\e2e\startup.spec.ts:38:5 › 窗口隔离与生产内容策略生效 (590ms)
+
+  14 passed (12.5s)

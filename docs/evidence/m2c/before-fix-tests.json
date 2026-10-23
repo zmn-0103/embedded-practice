@@ -1,0 +1,455 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/practice-window.spec.ts",
+      "--project=development",
+      "--grep",
+      "M2 第三批",
+      "--output=tmp/m2c-before-results"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/tmp/m2c-before-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/tmp/m2c-before-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\tmp\\m2c-before-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-window.spec.ts",
+      "file": "practice-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "M2 第三批：100% 页面缩放下长内容切题回到题首",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12134,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '窗口练习 2', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })\u001b[22m\n\u001b[2m    24 × locator resolved to <h2>窗口练习 2</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '窗口练习 2', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })\u001b[22m\n\u001b[2m    24 × locator resolved to <h2>窗口练习 2</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:603:33",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 33,
+                      "line": 603
+                    },
+                    "snippet": "  601 |         contentType: 'application/json',\n  602 |       })\n> 603 |       await expect(secondTitle).toBeInViewport({ ratio: 1 })\n      |                                 ^\n  604 |       await expect(secondTitle).toBeFocused()\n  605 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })\n  606 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 33,
+                        "line": 603
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '窗口练习 2', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })\u001b[22m\n\u001b[2m    24 × locator resolved to <h2>窗口练习 2</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n\n  601 |         contentType: 'application/json',\n  602 |       })\n> 603 |       await expect(secondTitle).toBeInViewport({ ratio: 1 })\n      |                                 ^\n  604 |       await expect(secondTitle).toBeFocused()\n  605 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })\n  606 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:603:33"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:32:24.299Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "long-content-advance.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLCJzY3JvbGxZIjoyODMzLCJ0aXRsZUJveCI6eyJ4Ijo2MSwieSI6LTI2MzMuMjM0Mzc1LCJ3aWR0aCI6OTg3LCJoZWlnaHQiOjQwfSwic3RvcmVkIjp7InNlc3Npb25zIjpbeyJpZCI6ImI3Zjc4YzU4LWE4MTgtNGU4OS1iMmU2LTBlMTlkYzA2M2JlOCIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjoxLCJyZXZpc2lvbiI6Mn1dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiYjdmNzhjNTgtYTgxOC00ZTg5LWIyZTYtMGUxOWRjMDYzYmU4IiwicG9zaXRpb24iOjAsImRyYWZ0Ijoi6ZW/562U5qGI6ZiF6K+75pe26Ieq5Yqo5L+d5a2Y77yM5LiN5oqi54Sm54K55ZKM6ZiF6K+75L2N572uIiwiZHJhZnRSZXZpc2lvbiI6MSwicmV2ZWFsZWRBdCI6IjIwMjYtMTAtMjBUMTI6MzI6MjUuMjk1WiIsInJhdGluZyI6IuaOjOaPoSIsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiJiN2Y3OGM1OC1hODE4LTRlODktYjJlNi0wZTE5ZGMwNjNiZTgiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiJiN2Y3OGM1OC1hODE4LTRlODktYjJlNi0wZTE5ZGMwNjNiZTgiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6IjkxYTgyOTUwLTAzM2UtNDE5My04YWUxLWUzOTMwMDcwMjNlYiJ9LHsicmVxdWVzdF9pZCI6IjU5ZDA0YWMzLWQwZDgtNDNiMi05ZWNlLTU2YmIwNzI1ZGFmNiJ9LHsicmVxdWVzdF9pZCI6ImE1ODA1Mzc3LWE4YTUtNDg1OC1iZDI0LTQ1OWY3M2NmYzQ5ZSJ9XSwiZm9yZWlnbktleXMiOltdfX0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\tmp\\m2c-before-results\\practice-window-M2-第三批：100-页面缩放下长内容切题回到题首-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 33,
+                    "line": 603
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-5034c3150ddbdd6ba1d7",
+          "file": "practice-window.spec.ts",
+          "line": 565,
+          "column": 7
+        },
+        {
+          "title": "M2 第三批：125% 页面缩放下长内容切题回到题首",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12828,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '窗口练习 2', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })\u001b[22m\n\u001b[2m    24 × locator resolved to <h2>窗口练习 2</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '窗口练习 2', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })\u001b[22m\n\u001b[2m    24 × locator resolved to <h2>窗口练习 2</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:603:33",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 33,
+                      "line": 603
+                    },
+                    "snippet": "  601 |         contentType: 'application/json',\n  602 |       })\n> 603 |       await expect(secondTitle).toBeInViewport({ ratio: 1 })\n      |                                 ^\n  604 |       await expect(secondTitle).toBeFocused()\n  605 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })\n  606 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 33,
+                        "line": 603
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '窗口练习 2', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })\u001b[22m\n\u001b[2m    24 × locator resolved to <h2>窗口练习 2</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n\n  601 |         contentType: 'application/json',\n  602 |       })\n> 603 |       await expect(secondTitle).toBeInViewport({ ratio: 1 })\n      |                                 ^\n  604 |       await expect(secondTitle).toBeFocused()\n  605 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })\n  606 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:603:33"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:32:36.772Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "long-content-advance.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjI1LCJzY3JvbGxZIjoyOTgwLCJ0aXRsZUJveCI6eyJ4Ijo0NC43OTk5OTkyMzcwNjA1NSwieSI6LTI3ODAuNDAwMTQ2NDg0Mzc1LCJ3aWR0aCI6Nzk3LjYwMDAyNTE3NzAwMiwiaGVpZ2h0Ijo0MH0sInN0b3JlZCI6eyJzZXNzaW9ucyI6W3siaWQiOiIzMDQxZWIwYy0yY2ZkLTRkMTUtYjI2ZS1lMmY3NWMzNjYxNWQiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MSwicmV2aXNpb24iOjJ9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjMwNDFlYjBjLTJjZmQtNGQxNS1iMjZlLWUyZjc1YzM2NjE1ZCIsInBvc2l0aW9uIjowLCJkcmFmdCI6IumVv+etlOahiOmYheivu+aXtuiHquWKqOS/neWtmO+8jOS4jeaKoueEpueCueWSjOmYheivu+S9jee9riIsImRyYWZ0UmV2aXNpb24iOjEsInJldmVhbGVkQXQiOiIyMDI2LTEwLTIwVDEyOjMyOjM4LjQzOVoiLCJyYXRpbmciOiLmjozmj6EiLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiMzA0MWViMGMtMmNmZC00ZDE1LWIyNmUtZTJmNzVjMzY2MTVkIiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiMzA0MWViMGMtMmNmZC00ZDE1LWIyNmUtZTJmNzVjMzY2MTVkIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiI1YmNlMDQ4NC03ODlhLTQ0NTAtYjQxZi01Nzc2ODdjYWUxNDYifSx7InJlcXVlc3RfaWQiOiIxNWJjNjNmNi0yYTc4LTRkOWUtYTFhMC01YTViMDExZGUxZGQifSx7InJlcXVlc3RfaWQiOiI5ZWM5MDUyNy1hMmE3LTRhMDUtODgxYS1lMzBhNTA0MGFlMjAifV0sImZvcmVpZ25LZXlzIjpbXX19"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\tmp\\m2c-before-results\\practice-window-M2-第三批：125-页面缩放下长内容切题回到题首-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 33,
+                    "line": 603
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-f19ed47db8bcbda4b96a",
+          "file": "practice-window.spec.ts",
+          "line": 565,
+          "column": 7
+        },
+        {
+          "title": "M2 第三批：150% 页面缩放下长内容切题回到题首",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12014,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '窗口练习 2', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })\u001b[22m\n\u001b[2m    23 × locator resolved to <h2>窗口练习 2</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '窗口练习 2', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })\u001b[22m\n\u001b[2m    23 × locator resolved to <h2>窗口练习 2</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:603:33",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 33,
+                      "line": 603
+                    },
+                    "snippet": "  601 |         contentType: 'application/json',\n  602 |       })\n> 603 |       await expect(secondTitle).toBeInViewport({ ratio: 1 })\n      |                                 ^\n  604 |       await expect(secondTitle).toBeFocused()\n  605 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })\n  606 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 33,
+                        "line": 603
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '窗口练习 2', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })\u001b[22m\n\u001b[2m    23 × locator resolved to <h2>窗口练习 2</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n\n  601 |         contentType: 'application/json',\n  602 |       })\n> 603 |       await expect(secondTitle).toBeInViewport({ ratio: 1 })\n      |                                 ^\n  604 |       await expect(secondTitle).toBeFocused()\n  605 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })\n  606 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:603:33"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:32:49.955Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "long-content-advance.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjUsInNjcm9sbFkiOjMwNzYuNjY2NzQ4MDQ2ODc1LCJ0aXRsZUJveCI6eyJ4Ijo0NC42NjY2Njc5MzgyMzI0MiwieSI6LTI4NzcuMjE4NzUsIndpZHRoIjo2NTAuMDAwMDE5MDczNDg2MywiaGVpZ2h0Ijo0MH0sInN0b3JlZCI6eyJzZXNzaW9ucyI6W3siaWQiOiJjODZlNjcwMC03NmRlLTQzNGEtOTY5YS1lY2Q5YTRiZWUzZWMiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MSwicmV2aXNpb24iOjJ9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6ImM4NmU2NzAwLTc2ZGUtNDM0YS05NjlhLWVjZDlhNGJlZTNlYyIsInBvc2l0aW9uIjowLCJkcmFmdCI6IumVv+etlOahiOmYheivu+aXtuiHquWKqOS/neWtmO+8jOS4jeaKoueEpueCueWSjOmYheivu+S9jee9riIsImRyYWZ0UmV2aXNpb24iOjEsInJldmVhbGVkQXQiOiIyMDI2LTEwLTIwVDEyOjMyOjUwLjgyM1oiLCJyYXRpbmciOiLmjozmj6EiLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiYzg2ZTY3MDAtNzZkZS00MzRhLTk2OWEtZWNkOWE0YmVlM2VjIiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiYzg2ZTY3MDAtNzZkZS00MzRhLTk2OWEtZWNkOWE0YmVlM2VjIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiIwNzVlMmZlZS01ZGM4LTRmMzAtODA5OS1kNzUwMjg5YTExZTUifSx7InJlcXVlc3RfaWQiOiIxYTM2ZDFiYi0wZTRhLTRkYmEtOTdiMi0xYjI4MTQ3ZDIxNGUifSx7InJlcXVlc3RfaWQiOiIwZDYzZmM1Yi1lZWVlLTQzMWYtODYyZC04NWExZWRjYzkwYTEifV0sImZvcmVpZ25LZXlzIjpbXX19"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\tmp\\m2c-before-results\\practice-window-M2-第三批：150-页面缩放下长内容切题回到题首-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 33,
+                    "line": 603
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-e60c70d6adb669ac2653",
+          "file": "practice-window.spec.ts",
+          "line": 565,
+          "column": 7
+        },
+        {
+          "title": "M2 第三批：长题干末题完成后展示并聚焦结果标题",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12797,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '本轮已完成', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('heading', { name: '本轮已完成', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '本轮已完成', exact: true })\u001b[22m\n\u001b[2m    23 × locator resolved to <h2>本轮已完成</h2>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '本轮已完成', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('heading', { name: '本轮已完成', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '本轮已完成', exact: true })\u001b[22m\n\u001b[2m    23 × locator resolved to <h2>本轮已完成</h2>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:648:25",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 25,
+                      "line": 648
+                    },
+                    "snippet": "  646 |     const title = page.getByRole('heading', { name: '本轮已完成', exact: true })\n  647 |     await expect(title).toBeInViewport({ ratio: 1 })\n> 648 |     await expect(title).toBeFocused()\n      |                         ^\n  649 |     const result = stored(testDataDirectory)\n  650 |     expect(result.sessions[0]).toMatchObject({ status: 'finished', position: 3 })\n  651 |     expect(result.items.filter((item) => item.skippedAt !== null)).toHaveLength(3)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 25,
+                        "line": 648
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: '本轮已完成', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('heading', { name: '本轮已完成', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '本轮已完成', exact: true })\u001b[22m\n\u001b[2m    23 × locator resolved to <h2>本轮已完成</h2>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  646 |     const title = page.getByRole('heading', { name: '本轮已完成', exact: true })\n  647 |     await expect(title).toBeInViewport({ ratio: 1 })\n> 648 |     await expect(title).toBeFocused()\n      |                         ^\n  649 |     const result = stored(testDataDirectory)\n  650 |     expect(result.sessions[0]).toMatchObject({ status: 'finished', position: 3 })\n  651 |     expect(result.items.filter((item) => item.skippedAt !== null)).toHaveLength(3)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:648:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:33:02.315Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\tmp\\m2c-before-results\\practice-window-M2-第三批：长题干末题完成后展示并聚焦结果标题-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 25,
+                    "line": 648
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-c3ebc8d0eceb22fe1cc7",
+          "file": "practice-window.spec.ts",
+          "line": 631,
+          "column": 5
+        },
+        {
+          "title": "M2 第三批：强制终止后恢复已确认草稿、原位置与自评",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 33485,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 32,
+                        "line": 682
+                      },
+                      "message": "TimeoutError: electronApplication.waitForEvent: Timeout 30000ms exceeded while waiting for event \"close\"\n\n  680 |     const applicationProcess = application.process()\n  681 |     if (!applicationProcess.pid) throw new Error('缺少本场景启动的应用进程。')\n> 682 |     const closed = application.waitForEvent('close')\n      |                                ^\n  683 |     if (!applicationProcess.kill('SIGKILL')) throw new Error('未能终止本场景的测试进程。')\n  684 |     await closed\n  685 |     closedApplications.add(application)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:682:32"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:33:15.456Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\tmp\\m2c-before-results\\practice-window-M2-第三批：强制终止后恢复已确认草稿、原位置与自评-development\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-e254dc218b455e5a6309",
+          "file": "practice-window.spec.ts",
+          "line": 661,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-20T12:32:23.837Z",
+    "duration": 85156.486,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

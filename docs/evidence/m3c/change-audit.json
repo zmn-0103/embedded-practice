@@ -1,0 +1,311 @@
+{
+  "date": "2026-10-21",
+  "baselineFiles": 612,
+  "changed": [
+    {
+      "path": "AGENTS.md",
+      "before": "ae9089be13280f165433cce81b99a6a127fd394105b567ac764ae063be7dff0b",
+      "after": "61ca749dd6bdd53dcf20d9a61a9bcd6b9d43fbd627b74903c32c9d76884d217b"
+    },
+    {
+      "path": "README.md",
+      "before": "5973c65fda526d34282b84e27ad12f78f709002b418674cebb6f7d8d6a4d4d2f",
+      "after": "ffd8e91eb60be56b6637e6477fb38e58fecd44a420c62dc14fdca3c0628ee984"
+    },
+    {
+      "path": "docs/README.md",
+      "before": "1f89a6edd6fa20e14309549dcdba4428027f4d13155a50e39eef74ae6fd25a88",
+      "after": "a5e90b6aa04a94accd758430a6d8f12b902ef9d3f19f0f43bc0374cba62f7c92"
+    },
+    {
+      "path": "docs/产品说明.md",
+      "before": "36a16b264782d084a18a92c3a840c1b8c26ab27bbf5c6e94db44337cd4345601",
+      "after": "63ee02cdd700872f36994f26e72fb3ec0293dde879aa8490d7c9a9d44d99ce1f"
+    },
+    {
+      "path": "docs/代码复查记录.md",
+      "before": "1b4833116767162e9c5994fddce3111c539b8ac8e5f5d6f48603c293fa650975",
+      "after": "2aff52de584a62f3a473c12d0d0160ddc6f9c2fb46c20e2282209baf024719ff"
+    },
+    {
+      "path": "docs/使用说明.md",
+      "before": "4c064813ca8d7f0df425e638a70d171439954ce0e05726c728a637d4a91db5cf",
+      "after": "69ae312955ea532c822fa8e60848973c445994d5cb119c063ab78ff9d2cff910"
+    },
+    {
+      "path": "docs/开发说明.md",
+      "before": "0169288cdc7fa7e9f1f93820858eedaece0508432740da131c8bc4fa2214ebdb",
+      "after": "ae718ebf13344a75b5572eb178962e40f1bc779ffcc3925f42d53805a5935a50"
+    },
+    {
+      "path": "docs/验收记录.md",
+      "before": "ee050d8d7396a05b856199c22d49abfc9919a248bd06d51db83069bc879f68d5",
+      "after": "5d83864e3d847d92ebf9b2933380c5b1ef34fe84e62bfbc4576696591f97d5cf"
+    },
+    {
+      "path": "src/main/database/repositories/library-reader.ts",
+      "before": "55fac6688cb352c6de5a698ff211869eb8064218357a40390da077c078e14523",
+      "after": "3694fbc9bfc8425a316b03c8e50314122b162ad305ee0549693af005bb6e4373"
+    },
+    {
+      "path": "src/main/ipc/library.ts",
+      "before": "1b4b76f6a9f2f9bac07a110c20a71dbf72a79586c6c84db3e749680b2c99b2f5",
+      "after": "9f7188aa8072f60bb949f6c488e982601aa30db2c54141508ca1c1c33d3fc755"
+    },
+    {
+      "path": "src/main/services/library/library-import.ts",
+      "before": "7051ffee31c26eaed3bb59d37e355fc301c32aeeba8c98ad6724fd585d03c4a1",
+      "after": "d330de8b6fa06a9589dc1ff01f96947ef7923f1227ef327d644df305f424c4e2"
+    },
+    {
+      "path": "src/preload/index.ts",
+      "before": "7fd916de8032ce641558cb0176283874ad8073cc1eafb9a2b03ddc4acbc5400e",
+      "after": "63c3da4d5a7a84f6e0c55a0ee731ee69cf8f4b4d6c328da64f9b4e7e2776ad53"
+    },
+    {
+      "path": "src/renderer/src/components/LibraryBrowser.tsx",
+      "before": "6fbb2792e2a691b94814c6b512d4b4f906d6155630cdaf10b263650a13a2cb50",
+      "after": "48ded6a1c3d740fea8cf9db681918cad9f8d28a560da1f44f213720a2eb4ea6b"
+    },
+    {
+      "path": "src/renderer/src/components/PracticePane.tsx",
+      "before": "24cdb5f1747ac47c941c36bd107024098367b3f49e37d358501556637a55b7b3",
+      "after": "2d12d6694a81a3c4b9d6868d3a48439a4de875062511a66da878e7655122ade4"
+    },
+    {
+      "path": "src/renderer/src/styles/global.css",
+      "before": "5d41c7987661df7f6c3e3dcd206cb49fbee8ceb826bc1557b4233f41fcc4c231",
+      "after": "e913c5e0dc6f3b8e90f8fe93f1180acae9916d0fd50d329ea292f34a431f1bf5"
+    },
+    {
+      "path": "src/shared/contracts/application.ts",
+      "before": "aadd863e67a8f967ed4ab8ec4a0d0caf3db6409923e5dd9f510e7030dc781fc1",
+      "after": "00536d5df8c2ca69e901433901b5af863b975c2ff66b52bbf289cf6f9d655372"
+    },
+    {
+      "path": "src/shared/contracts/library-desktop.ts",
+      "before": "7f1f5b48b163683c5661636639851dd2a2720dac6653060b216ea69e351fad57",
+      "after": "6e70894a3c96acd5f24398c58babcdcbce84233a796412bf09cd452e8ccb2c66"
+    },
+    {
+      "path": "tests/e2e/learning-management.spec.ts",
+      "before": "eb2cc0d5b1ebc325ca88b72f3db04fb3074238bb7e1bce482c52a71ccd3ce5b2",
+      "after": "a2ad9d52fbc5db430f59b764fc8fcb8baf717922b5dbb4c66ff863a128867f69"
+    },
+    {
+      "path": "tests/e2e/startup.spec.ts",
+      "before": "c73d140ffb299fa80d2ac66d1ab2fc6b8d663c0aea64b435c181d15c8d9f4e90",
+      "after": "e5668c25050c3146a1b733aa74270b420c0531d2b3339fb2a772ec1bf9e55904"
+    },
+    {
+      "path": "tests/unit/library-ipc.test.ts",
+      "before": "39f5afc14a78440be5d3759f4af8d00ad003ebbd7e3a6d514a9f4be92a0d1f89",
+      "after": "f5d390622d1cbde4672f4de7075e76d1c49cdfe2f4ac811f5b105a5c2afa1df2"
+    }
+  ],
+  "new": [
+    {
+      "path": "docs/M3第三批行为与验收.md",
+      "sha256": "b40f22bc4b2125e4dd82d1455172c832e9094965db33e15d165fecff7516e776"
+    },
+    {
+      "path": "docs/architecture/M3单题历史与更新标记.md",
+      "sha256": "e66f789991dd76cdc4159f74e41e2896372bae5c6c37a5d7372972b21f91f639"
+    },
+    {
+      "path": "docs/evidence/m3c/README.md",
+      "sha256": "226454ed22d99fcc756ff57ee8e1848849521f0f877bcdd897268f4b8bca774c"
+    },
+    {
+      "path": "docs/evidence/m3c/code-change-audit.json",
+      "sha256": "73904d5b27212a9a4c31e94feb4eaa7219625f473bb0b5c01a2657c7f87e69b3"
+    },
+    {
+      "path": "docs/evidence/m3c/development-content-update-lifecycle.json",
+      "sha256": "21cde9545243972a36584485bc54de798bfb0eb6c42dd70ba6538b815c4b6951"
+    },
+    {
+      "path": "docs/evidence/m3c/development-content-update.png",
+      "sha256": "0e24ca35faa90d0ffbdded30817dff81a717298044284b63b2159f64f7c044b5"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-default-readonly-autosave.json",
+      "sha256": "36d09ebe59e9f2b40490cdff9c7ccf617287df17e4c92e537082af0aa160b15b"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-expanded.png",
+      "sha256": "f26eea760ca0aeb3fd9ccd22bb6751f045a5bc3419c03d35e626c7d1f623c159"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-image-archive-restore.json",
+      "sha256": "b88ba118aa5800ff440c8335a7f07a7fc18687f523a0ffd3957cd30e2ab1a0ff"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-late-get-entry.json",
+      "sha256": "5d76d64f7107019fec390aed47ed23c11455d3e3ece1601edf01c80fa66f225b"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-late-list.json",
+      "sha256": "fb76204e1f550a8f67ec330f86d284190baa3e8aabdf3df835a768e81e0e435d"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-old-image.png",
+      "sha256": "56ef2e92e48aa24bd71ac222ecb1c0d6aea50807c37340210c6339e5aef3ead7"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-query-matrix.json",
+      "sha256": "966e1318d7a70717a80e2f4a2fdf4089c4fc5cb010572d4fc1575b960e0a55a7"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-read-failure-retry.json",
+      "sha256": "6cd1e49efd369fd1ad6e35a489603953f5f1aa5e863301248ae8d183972b9b8a"
+    },
+    {
+      "path": "docs/evidence/m3c/environment.json",
+      "sha256": "a0ede8300aa2122adb55b4bd420a848c87824d3df25ff42a8a13fb220c0c6a8f"
+    },
+    {
+      "path": "docs/evidence/m3c/failure-recheck-tests.json",
+      "sha256": "09e069e73ef2e1a5b5bfa2ee8efd2f9b914020542910a08c04f93a09ea081a21"
+    },
+    {
+      "path": "docs/evidence/m3c/final-full-tests.json",
+      "sha256": "e8e2c2a417b1f151dc74e1f6b911e8818821571f5fc91793f1e16b192e76e904"
+    },
+    {
+      "path": "docs/evidence/m3c/full-first-tests.json",
+      "sha256": "226ee5cc35ee29137d511a5ca54762de9f70004595c2d3cbc543d9a1ac66dbdc"
+    },
+    {
+      "path": "docs/evidence/m3c/history-versions-first-tests.json",
+      "sha256": "0014db7f65612978bcf8ff90807d5bb161c9f6aa6f5150d32b56378ec49e256b"
+    },
+    {
+      "path": "docs/evidence/m3c/history-window-first-tests.json",
+      "sha256": "6db7e189c050cc299d40e78a1e1823da4ba82c9d5d6e3063f341d794109848fa"
+    },
+    {
+      "path": "docs/evidence/m3c/nsis-before.json",
+      "sha256": "55980b067bf76f96e7f76b4a165b2994f2e89834e145dde818bf10fe1cbbf25c"
+    },
+    {
+      "path": "docs/evidence/m3c/package-inspection.json",
+      "sha256": "3eac7b222bdf23bfa4c8fd01b81c0c6ec41ae3aa686d442583bf76887e838c37"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-content-update-lifecycle.json",
+      "sha256": "a06f300768e5d8cdc04197571323cf04ad9f70cbd3531d6c5891e85a2e81b53c"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-content-update.png",
+      "sha256": "518a120524ccd839bf4c9459e7b95631ef15cc54783e135fb78cb74b15313ed9"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-default-readonly-autosave.json",
+      "sha256": "170b423056e0bddd62a4171257c2830ccebcdb094628a81fdf0e9574c6a9fff6"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-expanded.png",
+      "sha256": "e1d5d1562e368a0f89e916a67741a3a13f035d118e17f9079a0de27ea40fd815"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-image-archive-restore.json",
+      "sha256": "9e0f580e07233d6bdf1d9312a2ce9650524e4e449e870a27341adc86d81de055"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-late-get-entry.json",
+      "sha256": "081cd08409d7ae487a10236400446fdc52fb8ebd3bab63b4c517355b2a70c169"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-late-list.json",
+      "sha256": "218b6faf160b357684debd0a54b6823fa49ecd84fd2b28db881291af109952a0"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-old-image.png",
+      "sha256": "7c2be4d3329f4473666a8aaa3b628e807c71adb85fe4433482735f3fb5110343"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-query-matrix.json",
+      "sha256": "29080f4c410ec94a55de75bcb9520e2e3190cb7dfeb057562a9aa30e43ab1c74"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-read-failure-retry.json",
+      "sha256": "3cd86e1b9b85ce974261cd2c610c6a85801201e28bd0d5a109fb1a02ee7ad76a"
+    },
+    {
+      "path": "docs/evidence/m3c/results-summary.json",
+      "sha256": "a617428fdbb484fa49bc5825b44a5e41f9a6ebaf65126459b0932b9ba6ef17cd"
+    },
+    {
+      "path": "docs/evidence/m3c/unit-tests.json",
+      "sha256": "87d93a55c220c1b725cf2c9477ca8a6488e40911a6bdf87299dc8c7d874cfef4"
+    },
+    {
+      "path": "src/main/database/repositories/history-reader.ts",
+      "sha256": "60873b64820a4ca3fa48f8f4a5ab11289a19b2e31b7033bde353e652e0e7fc99"
+    },
+    {
+      "path": "src/renderer/src/components/QuestionHistory.tsx",
+      "sha256": "c5cb5fd235b74a37f784515e2cf8407ad142b4d9ad28fe02b82d1a5e33fb3c2c"
+    },
+    {
+      "path": "src/shared/contracts/history.ts",
+      "sha256": "c23e91c991975bfef3a83ad7f9fc6e6f33eb787d6a3665bbe59df06946fb2ce3"
+    },
+    {
+      "path": "tests/e2e/history-helpers.ts",
+      "sha256": "f4b8f556249070f29d80df0daa7c39f4b8bf316528a0cebfeca2af95325b41f5"
+    },
+    {
+      "path": "tests/e2e/history-versions.spec.ts",
+      "sha256": "66a3db0e1e0c63c75f6453277caf006dabc4b6474a9df7c4f05f2701134a6aa2"
+    },
+    {
+      "path": "tests/e2e/history-window.spec.ts",
+      "sha256": "b673184ba58adf807008edf85dea924707dca972553c13e4266c94f29681d558"
+    },
+    {
+      "path": "tests/integration/history-seed.ts",
+      "sha256": "40165251a85d0051be02950baa36088040a64162d538a1de881bbde4c6be0d90"
+    },
+    {
+      "path": "tests/unit/history-contract.test.ts",
+      "sha256": "3721748a2bb691d978de9f375a2ae2c3f7f9774f234f9c70399575df13bfa35f"
+    }
+  ],
+  "deleted": [],
+  "protectedUnchanged": [
+    "计划书.md",
+    "vitest.config.ts",
+    "tsconfig.web.json",
+    "tsconfig.node.json",
+    "package.json",
+    "package-lock.json",
+    "electron.vite.config.ts",
+    "electron-builder.yml",
+    "playwright.config.ts",
+    "question-banks/README.md",
+    "question-banks/templates/专题模板.md",
+    "question-banks/templates/README.md",
+    "question-banks/templates/.gitkeep",
+    "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+    "src/main/database/practice-schema.ts",
+    "src/main/database/open-database.ts",
+    "question-banks/sources/STM32F103RCT6-GPIO-原始自测题.txt",
+    "question-banks/sources/STM32F103RCT6-GPIO-题答对应.json",
+    "question-banks/examples/格式示例.md",
+    "question-banks/examples/README.md",
+    "question-banks/examples/assets/测试.webp",
+    "question-banks/examples/assets/带 空格.jpg",
+    "question-banks/examples/assets/中文测试图.png",
+    "question-banks/examples/assets/.gitkeep",
+    "src/main/database/migrations/.gitkeep"
+  ],
+  "codeCount": 20,
+  "documentsChecked": 11,
+  "selfReferentialFilesExcluded": [
+    "change-audit.json",
+    "documents-static.json",
+    "source-manifest.json"
+  ]
+}

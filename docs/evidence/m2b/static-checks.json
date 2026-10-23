@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-10-20T08:37:33.283Z",
+  "strictUtf8": {
+    "files": 305,
+    "invalid": []
+  },
+  "localLinks": {
+    "markdownFiles": 40,
+    "checked": 515,
+    "broken": []
+  },
+  "codeReviews": {
+    "changedCodeFiles": 23,
+    "changed": [
+      "electron-builder.yml",
+      "package-lock.json",
+      "package.json",
+      "src/main/index.ts",
+      "src/main/ipc/library.ts",
+      "src/main/ipc/practice.ts",
+      "src/preload/index.ts",
+      "src/renderer/src/App.tsx",
+      "src/renderer/src/components/CodeBlock.tsx",
+      "src/renderer/src/components/MarkdownContent.tsx",
+      "src/renderer/src/components/PracticePane.tsx",
+      "src/renderer/src/components/PracticeWorkspace.tsx",
+      "src/renderer/src/components/ResourceImage.tsx",
+      "src/renderer/src/practice-controller.ts",
+      "src/renderer/src/styles/global.css",
+      "src/shared/contracts/application.ts",
+      "src/shared/contracts/library-desktop.ts",
+      "src/shared/contracts/practice-desktop.ts",
+      "tests/e2e/practice-window.spec.ts",
+      "tests/e2e/startup.spec.ts",
+      "tests/unit/library-ipc.test.ts",
+      "tests/unit/practice-controller.test.ts",
+      "tests/unit/practice-ipc.test.ts"
+    ],
+    "missingReviews": []
+  },
+  "unchanged": {
+    "questionBanks": true,
+    "questionBankFiles": 13,
+    "databaseAndPracticeCore": true,
+    "databaseCoreFiles": 12,
+    "csp": true,
+    "originalPlan": true
+  },
+  "runtimeVersions": {
+    "electron": "42.11.15",
+    "sqlite": "12.11.1",
+    "lowlight": "3.3.0",
+    "highlight": "11.11.2",
+    "originalNativeCombination": true,
+    "projectLicenseUnchanged": true
+  },
+  "licenses": [
+    {
+      "copy": "docs/licenses/lowlight-3.3.0-MIT.txt",
+      "source": "node_modules/lowlight/license",
+      "equal": true,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "copy": "docs/licenses/highlight.js-11.11.2-BSD-3-Clause.txt",
+      "source": "node_modules/highlight.js/LICENSE",
+      "equal": true,
+      "sha256": "6c081431591d9df696c82dc598fe1423765b8a299b200ed00b281afd0f64c490"
+    }
+  ],
+  "packagedNotices": {
+    "files": 6,
+    "equal": true
+  },
+  "git": {
+    "branch": "main",
+    "hasCommit": false,
+    "remotes": ""
+  },
+  "tests": {
+    "unit": {
+      "files": 20,
+      "suites": 43,
+      "total": 405,
+      "passed": 405,
+      "failed": 0,
+      "pending": 0
+    },
+    "development": {
+      "startTime": "2026-10-20T08:21:38.033Z",
+      "duration": 35052.578,
+      "expected": 34,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "packaged": {
+      "startTime": "2026-10-20T08:36:10.851Z",
+      "duration": 38907.869,
+      "expected": 34,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 8,
+    "high": 0,
+    "critical": 0,
+    "total": 8
+  },
+  "passed": true
+}

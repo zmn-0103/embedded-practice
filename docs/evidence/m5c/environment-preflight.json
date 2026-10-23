@@ -1,0 +1,25 @@
+{
+  "recordedAtUtc": "2026-10-23T02:08:21.8270636+00:00",
+  "stage": "M5 third batch preparation; installed application acceptance pending",
+  "vmx": "E:\\Program Files (x86)\\embedded-practice-test-environment\\virtual-machines\\embedded-practice-M5-Win11.vmx",
+  "runningVmCount": 1,
+  "vmwareVersion": "17.5.2 build-23775571",
+  "guestConfiguration": {
+    "guestOS": "windows11-64",
+    "vcpus": 2,
+    "coresPerSocket": 2,
+    "memoryMiB": 4096,
+    "firmware": "efi",
+    "secureBoot": true,
+    "networkMode": "nat"
+  },
+  "desktopEvidence": "user-reported-windows-desktop.png",
+  "guestWindowsVersion": "Desktop watermark: Windows 11 Enterprise LTSC Evaluation, Build 26100.ge_release.240331-1435; exact installed revision not independently collected",
+  "currentInstaller": {
+    "path": "release/m5-20261022/embedded-practice-0.1.0-x64-setup.exe",
+    "appVersion": "0.1.0",
+    "schemaVersion": 6,
+    "sha256": "7FBFDE29E999A4B42C4BE286715B8C802D27BCDE32E66A76192A4937FA144D2E"
+  },
+  "credentialHandling": "User authorized local-file use for encrypted VM CLI. Values were not printed or included in kit, scripts, or evidence."
+}

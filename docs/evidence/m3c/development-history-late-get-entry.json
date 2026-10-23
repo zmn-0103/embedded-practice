@@ -1,0 +1,74 @@
+{
+  "channel": "history:get-entry",
+  "held": 1,
+  "returned": {
+    "started": 1,
+    "returned": 1
+  },
+  "target": {
+    "topicId": "history-a",
+    "questionId": "q-2",
+    "currentVersionId": 2,
+    "archived": false,
+    "total": 3,
+    "page": 1,
+    "pageSize": 20,
+    "entries": [
+      {
+        "sessionId": "c96552fc-ac00-462a-bc28-627d6a6985af",
+        "position": 1,
+        "versionId": 2,
+        "versionSequence": 1,
+        "isCurrentVersion": true,
+        "title": "历史题 2",
+        "topicTitle": "历史专题 A",
+        "mode": "sequential",
+        "sessionStatus": "finished",
+        "createdAt": "2026-10-21T09:27:50.981Z",
+        "endedAt": "2026-10-21T09:27:50.983Z",
+        "revealedAt": null,
+        "rating": null,
+        "ratedAt": null,
+        "skippedAt": "2026-10-21T09:27:50.983Z",
+        "hasDraft": false
+      },
+      {
+        "sessionId": "22b5996e-4452-4bfa-889d-fbe213867776",
+        "position": 0,
+        "versionId": 2,
+        "versionSequence": 1,
+        "isCurrentVersion": true,
+        "title": "历史题 2",
+        "topicTitle": "历史专题 A",
+        "mode": "random",
+        "sessionStatus": "ended",
+        "createdAt": "2026-10-21T09:27:50.977Z",
+        "endedAt": "2026-10-21T09:27:50.980Z",
+        "revealedAt": null,
+        "rating": null,
+        "ratedAt": null,
+        "skippedAt": "2026-10-21T09:27:50.978Z",
+        "hasDraft": false
+      },
+      {
+        "sessionId": "27a9c997-4084-4848-82b5-170e2e918741",
+        "position": 1,
+        "versionId": 2,
+        "versionSequence": 1,
+        "isCurrentVersion": true,
+        "title": "历史题 2",
+        "topicTitle": "历史专题 A",
+        "mode": "sequential",
+        "sessionStatus": "finished",
+        "createdAt": "2026-10-21T09:27:50.968Z",
+        "endedAt": "2026-10-21T09:27:50.976Z",
+        "revealedAt": null,
+        "rating": null,
+        "ratedAt": null,
+        "skippedAt": "2026-10-21T09:27:50.976Z",
+        "hasDraft": false
+      }
+    ]
+  },
+  "unchanged": true
+}

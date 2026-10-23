@@ -1,0 +1,114 @@
+{
+  "generatedAtUtc": "2026-10-19T14:46:27.5047974Z",
+  "platform": "Windows 11 x64 10.0.26200",
+  "nodeVersion": "24.19.0",
+  "npmVersion": "11.17.0",
+  "reviewedFileCount": 22,
+  "unitTestsPassed": 9,
+  "runtimeTestsPassed": 10,
+  "installedTestsPassed": 5,
+  "installer": {
+    "path": "release/embedded-practice-0.1.0-x64-setup.exe",
+    "bytes": 105194654,
+    "signature": "NotSigned",
+    "sha256": "641EEF07330151D6343047C3AAD2639A70C442B46A26426CD74B281D73A091D8"
+  },
+  "files": [
+    {
+      "path": ".prettierrc.json",
+      "sha256": "92BC76807B2F2C249F23A3D3C9A9A78E130DF5CF713A876C082077DA43ED10E4"
+    },
+    {
+      "path": "electron-builder.yml",
+      "sha256": "B964603892BE8ACBFFF6D891562BFC003C4CCE66ACA92EBD86829DBAF59AB386"
+    },
+    {
+      "path": "electron.vite.config.ts",
+      "sha256": "37C5B0A38FAA67C1ED2E7F622EC7D530CB6E4154A5FCFB6B367B105B2FDF7645"
+    },
+    {
+      "path": "package.json",
+      "sha256": "5435CF8629077C7F5CB67B3F924CE6C5A7A16E640DC36DCC186278C1BE84D90A"
+    },
+    {
+      "path": "playwright.config.ts",
+      "sha256": "9B5B8138C57D8AD41D079D62E120E49D9307F12142BE29C72BBD75F49B58728E"
+    },
+    {
+      "path": "src/main/database/startup-store.ts",
+      "sha256": "69AD40B82F1F098EC6E830DF003116A0899EBFEB3FA6E701B3C51A89337B0D1E"
+    },
+    {
+      "path": "src/main/index.ts",
+      "sha256": "14E31182993FF1074C7844B48523D5A0BED0A1B3D332F3CE795772AE4D303E77"
+    },
+    {
+      "path": "src/main/ipc/application.ts",
+      "sha256": "19292B8163B4E1C0DB915F0A0BEB4B8E786B27A4BAE0DF21DA92BE9C7295BD13"
+    },
+    {
+      "path": "src/main/window.ts",
+      "sha256": "C2493BE2646CB90354AF8E041B1BE943B789EAA0683FD5DF95DC799C68C5DCD7"
+    },
+    {
+      "path": "src/preload/index.ts",
+      "sha256": "40B25470917BAB5E59A0510EDB704CFC79760335BD5DED0F0D21FB83A74EB8B4"
+    },
+    {
+      "path": "src/renderer/index.html",
+      "sha256": "F8790587D9EB16C142E3F47437BF6EC8C28CC5706C9DB986AD46AC174AC131DC"
+    },
+    {
+      "path": "src/renderer/src/App.tsx",
+      "sha256": "0D023D81694D54FF1316C3D7ABA13BBBC3A3CBFA1C19C0F2DDDBA7E01063B93B"
+    },
+    {
+      "path": "src/renderer/src/env.d.ts",
+      "sha256": "F9C102558631B913449D3BF4A860980BA8C1BEC9DAD975F60B77BFBB042F0BFA"
+    },
+    {
+      "path": "src/renderer/src/main.tsx",
+      "sha256": "CBAE0E49F9288480C5FCE1C76EFF4723F29D660CFCB4BC6083BC3652B47917AD"
+    },
+    {
+      "path": "src/renderer/src/styles/global.css",
+      "sha256": "0C1B7D33600D219734556FF0A18320938BB44C9F281B6F6F703C5E98544B25F4"
+    },
+    {
+      "path": "src/shared/contracts/application.ts",
+      "sha256": "282F08E7B35E07F9718E552CA89F93168EF77DDDFD0E5E0998E8506E52362A5E"
+    },
+    {
+      "path": "tests/e2e/database-errors.spec.ts",
+      "sha256": "1155D6932E6FC51F200B6A52A33E8FEE31F853C60FFC995FB501ABF26E013FCB"
+    },
+    {
+      "path": "tests/e2e/helpers.ts",
+      "sha256": "837C17DE05F0738E2C7C288BCAC0BB820675191F260383DC7F8A7DCE62E73381"
+    },
+    {
+      "path": "tests/e2e/startup.spec.ts",
+      "sha256": "78738FEAF1CB61812A9A7B54B77F7E1EC1D217AFD43ED89ED718975B4311D770"
+    },
+    {
+      "path": "tests/unit/application.test.ts",
+      "sha256": "2083F4BD62EB3826453FE6B10063B9EC8C29A253B7D6B3304A8E4C62E523FD29"
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "EA7F86FD9B466ADC13AD169F2C434B44BD3B54DA5884194276CADF561038DF28"
+    },
+    {
+      "path": "tsconfig.web.json",
+      "sha256": "71A9F286BAFA88047E2790CEDD822DFA8024FA36C5C708F7606ABD94AE85F8AD"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1639CEEC61D504BCFA3B9E1D27042136BDF37CB58E41AAED458528978D545193"
+    },
+    {
+      "path": "计划书.md",
+      "sha256": "4217BEA47B9CB28E5A1B8E976BACB57EB769BB25503981A4E0652EA0171E1C73"
+    }
+  ]
+}

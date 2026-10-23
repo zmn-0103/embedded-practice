@@ -1,0 +1,13 @@
+
+Running 5 tests using 1 worker
+
+
+
+(node:34884) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[1/5] [development] › tests\e2e\category-practice.spec.ts:27:5 › 分类练习：同事务快照、随机队列、移动/改名/移除后的原请求重试和正常重开保持
+[2/5] [development] › tests\e2e\category-practice.spec.ts:122:5 › 分类统计：同题多轮去重、当前版本/收藏与归档交集，题库下方保持同一固定范围
+[3/5] [development] › tests\e2e\category-practice.spec.ts:220:5 › 分类统计：旧分类的晚到摘要不能覆盖新范围或下方题库
+[4/5] [development] › tests\e2e\category-practice.spec.ts:275:7 › 分类正常关闭等待在途保存：成功后退出重开保持
+[5/5] [development] › tests\e2e\category-practice.spec.ts:275:7 › 分类正常关闭等待在途保存：失败返回窗口并保留原目标
+  5 passed (11.2s)

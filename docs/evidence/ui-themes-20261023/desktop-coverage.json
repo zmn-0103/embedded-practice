@@ -1,0 +1,40 @@
+{
+  "firstFull": {
+    "startTime": "2026-10-23T04:36:24.622Z",
+    "duration": 586897.777,
+    "expected": 328,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  },
+  "focusedAfterTestExpectationFix": {
+    "startTime": "2026-10-23T04:47:04.302Z",
+    "duration": 8158.761999999999,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "consolidated": {
+    "distinctCases": 330,
+    "passed": 330,
+    "byProject": {
+      "development": 165,
+      "packaged": 165
+    },
+    "skipped": 0,
+    "flaky": 0,
+    "automaticRetries": 0
+  },
+  "scope": "328 first-run passes plus two full-case focused passes after one stale version expectation fix; not a claim of a single 330/330 run",
+  "historicalM4CasesRetained": 300,
+  "missingHistorical": [],
+  "renamedVersionTitles": "v3/v4/v5 successful target v6 -> v7; scenario behavior preserved",
+  "contrast": {
+    "palettes": 4,
+    "modes": 2,
+    "projects": 2,
+    "pairsPerMode": 3,
+    "minimum": 5.129123289667843
+  }
+}

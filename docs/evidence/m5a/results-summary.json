@@ -1,0 +1,340 @@
+{
+  "clientDate": "2026-10-22",
+  "timezone": "Asia/Shanghai",
+  "finishedAt": "2026-10-22T12:18:52.650713+00:00",
+  "scope": "M4 native closeout and M5a 20-question UI trial; not full human or release acceptance",
+  "method": "Real Windows input, dialogs, clipboard, Explorer and relaunch; read-only SQLite comparison in explicit temporary directories",
+  "directories": {
+    "original": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\中文 验收数据",
+    "fresh": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\全新 恢复数据",
+    "exports": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\备份 输出"
+  },
+  "checks": {
+    "sameDirectoryResume": "observed",
+    "favoritePersistence": "observed",
+    "nativeImageExampleImport": "observed",
+    "nativeExport12Tables": "exact match",
+    "nativeDefaultCancel": "12 tables unchanged",
+    "nativeRestoreAndRelaunch": "12 tables exact match",
+    "protectionPreRestoreState": "12 tables exact match; dark/22 retained",
+    "freshRestoreAndRelaunch": "12 tables exact match",
+    "freshProtectionEmptyState": "12 tables exact match",
+    "threeExplorerAddresses": "observed; 12 tables unchanged",
+    "realBankUiTrialQuestions": 20,
+    "finishedTrialRevealed": 20,
+    "finishedTrialRatings": 1,
+    "finishedTrialUnrated": 19,
+    "clipboard": "outbound CRLF, inbound LF; line content matches source",
+    "threeSmallImagePreviews": "PNG/JPEG/WebP observed; PNG 150 percent; not real large images",
+    "finalReopenDraftAndNormalClose": "observed"
+  },
+  "trial": {
+    "coverage": [
+      {
+        "id": "gpio-001",
+        "title": "GPIO 的英文全称是什么？GPIO 输入与输出的区别是什么？",
+        "observed": true
+      },
+      {
+        "id": "gpio-002",
+        "title": "为什么配置 GPIO 之前通常需要使能对应端口的外设时钟？",
+        "observed": true
+      },
+      {
+        "id": "gpio-003",
+        "title": "STM32F103 的 GPIOA、GPIOC 使用哪条总线的外设时钟？",
+        "observed": true
+      },
+      {
+        "id": "gpio-004",
+        "title": "SystemCoreClockUpdate() 的作用是什么？它能否替代 GPIO 外设时钟使能？",
+        "observed": true
+      },
+      {
+        "id": "gpio-005",
+        "title": "GPIO 的通用输出和复用输出有什么区别？",
+        "observed": true
+      },
+      {
+        "id": "gpio-006",
+        "title": "推挽输出与开漏输出的主要区别是什么？",
+        "observed": true
+      },
+      {
+        "id": "gpio-007",
+        "title": "GPIO_Speed_2MHz 表示什么？它是否表示 MCU 主频为 2 MHz？",
+        "observed": true
+      },
+      {
+        "id": "gpio-008",
+        "title": "为什么输入引脚可能需要上拉或下拉？",
+        "observed": true
+      },
+      {
+        "id": "gpio-009",
+        "title": "输入上拉模式下，按键按下不一定是高电平，为什么？",
+        "observed": true
+      },
+      {
+        "id": "gpio-010",
+        "title": "为什么配置为复用输出后，还需要配置对应的片上外设？",
+        "observed": true
+      },
+      {
+        "id": "gpio-011",
+        "title": "GPIO_InitTypeDef 结构体中最重要的三个成员是什么？分别有什么作用？",
+        "observed": true
+      },
+      {
+        "id": "gpio-012",
+        "title": "GPIO_Init(GPIOA, &GPIO_InitStructure) 中两个参数分别表示什么？",
+        "observed": true
+      },
+      {
+        "id": "gpio-013",
+        "title": "RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE) 的作用是什么？",
+        "observed": true
+      },
+      {
+        "id": "gpio-014",
+        "title": "GPIO_SetBits() 与 GPIO_ResetBits() 有什么区别？",
+        "observed": true
+      },
+      {
+        "id": "gpio-015",
+        "title": "GPIO_ReadInputDataBit() 返回什么类型的结果？Bit_SET 和 Bit_RESET 分别代表什么？",
+        "observed": true
+      },
+      {
+        "id": "gpio-016",
+        "title": "GPIO_ReadInputDataBit() 与 GPIO_ReadOutputDataBit() 有什么区别？",
+        "observed": true
+      },
+      {
+        "id": "gpio-017",
+        "title": "输入模式下设置 GPIO_Speed 是否决定输入信号的采样速度？为什么？",
+        "observed": true
+      },
+      {
+        "id": "gpio-018",
+        "title": "为什么建议在函数或代码块开头声明局部变量，以兼容较老的 C 编译模式？",
+        "observed": true
+      },
+      {
+        "id": "gpio-019",
+        "title": "STM32F103 的 GPIO 有哪些常见输入模式？",
+        "observed": true
+      },
+      {
+        "id": "gpio-020",
+        "title": "STM32F103 的 GPIO 有哪些常见输出模式？",
+        "observed": true
+      }
+    ],
+    "observedQuestions": 20,
+    "trialScope": "AI原生操作：恢复前两题既有揭晓状态，逐题揭晓其余18题、暂不评价推进；非用户学习或技术内容验收",
+    "changedFreshTables": [
+      "practice_sessions",
+      "practice_items",
+      "practice_receipts"
+    ],
+    "originalVsAfterLocations": [],
+    "freshSession": {
+      "id": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+      "mode": "sequential",
+      "topic_id": null,
+      "status": "finished",
+      "position": 20,
+      "revision": 42,
+      "created_at": "2026-10-22T07:03:30.707Z",
+      "ended_at": "2026-10-22T07:27:34.017Z",
+      "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+    },
+    "integrity": [
+      "ok"
+    ],
+    "foreignKeys": [],
+    "selectedBackupUnchanged": true
+  },
+  "export": {
+    "time": "2026-10-22T07:11:12.779Z",
+    "backupFile": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\备份 输出\\完整 备份.sqlite3",
+    "backupSha256": "1b4c412555564c35e5c94980d2a477ef4c42c5130cc4556ff65cc068c4761354",
+    "currentVsBefore": [],
+    "exportVsBefore": [],
+    "integrity": [
+      "ok"
+    ],
+    "foreignKeys": [],
+    "images": [
+      {
+        "hash": "200a7848eb435a30c8a06c9762b87732ec6971ca01fd384fe08aacf383b2d639",
+        "actualSha256": "200a7848eb435a30c8a06c9762b87732ec6971ca01fd384fe08aacf383b2d639",
+        "format": "jpeg",
+        "width": 2,
+        "height": 3,
+        "bytes": 661
+      },
+      {
+        "hash": "4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad",
+        "actualSha256": "4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad",
+        "format": "png",
+        "width": 2,
+        "height": 3,
+        "bytes": 80
+      },
+      {
+        "hash": "b1f3ff00ba1d62d206025ce07b1ed6cdf87e8c018608d8d1984fe463f4e6e534",
+        "actualSha256": "b1f3ff00ba1d62d206025ce07b1ed6cdf87e8c018608d8d1984fe463f4e6e534",
+        "format": "webp",
+        "width": 2,
+        "height": 3,
+        "bytes": 48
+      }
+    ],
+    "tableCount": 12
+  },
+  "restore": {
+    "time": "2026-10-22T07:14:15.561Z",
+    "restoredVsSelectedBackup": [],
+    "protectionVsPreRestore": [],
+    "restoredAppearance": [
+      {
+        "id": 1,
+        "theme": "system",
+        "font_size": 17
+      }
+    ],
+    "protectedAppearance": [
+      {
+        "id": 1,
+        "theme": "dark",
+        "font_size": 22
+      }
+    ],
+    "selectedBackupUnchanged": true,
+    "protectionPath": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\中文 验收数据/backups/before-restore-74be9d92-3ca8-487d-9464-1d9993985ecf.sqlite3",
+    "newWindow": {
+      "app": "process:E:\\My_Projects\\embedded-practice\\release\\win-unpacked\\embedded-practice.exe",
+      "id": 2164352,
+      "title": "嵌入式刷题本"
+    },
+    "scope": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\中文 验收数据"
+  },
+  "freshRestore": {
+    "selectedVsRestored": [],
+    "emptyBeforeVsProtection": [],
+    "integrity": [
+      "ok"
+    ],
+    "foreignKeys": [],
+    "protectionFiles": [
+      "before-restore-525ed917-2010-4e7d-b318-645c31fb2a20.sqlite3"
+    ],
+    "selectedBackupUnchanged": true
+  },
+  "finalDatabases": {
+    "originalPreservedSinceLocationsDifferences": [],
+    "baselineDifferencesBeforeDocumentSync": [],
+    "productionChangedBeforeDocumentSync": false,
+    "databases": {
+      "original-final": {
+        "integrity": [
+          "ok"
+        ],
+        "foreignKeys": [],
+        "imageHashesValid": true,
+        "logs": [],
+        "counts": {
+          "library_meta": 1,
+          "topics": 2,
+          "questions": 80,
+          "question_versions": 80,
+          "image_resources": 3,
+          "version_images": 3,
+          "question_user_state": 80,
+          "import_receipts": 2,
+          "practice_sessions": 2,
+          "practice_items": 40,
+          "practice_receipts": 11,
+          "appearance_settings": 1
+        }
+      },
+      "fresh-final": {
+        "integrity": [
+          "ok"
+        ],
+        "foreignKeys": [],
+        "imageHashesValid": true,
+        "logs": [],
+        "counts": {
+          "library_meta": 1,
+          "topics": 2,
+          "questions": 80,
+          "question_versions": 80,
+          "image_resources": 3,
+          "version_images": 3,
+          "question_user_state": 80,
+          "import_receipts": 2,
+          "practice_sessions": 3,
+          "practice_items": 42,
+          "practice_receipts": 52,
+          "appearance_settings": 1
+        }
+      }
+    }
+  },
+  "sourceAndPackage": {
+    "baselineFiles": 173,
+    "changedDocumentation": [
+      "README.md",
+      "docs/README.md",
+      "docs/验收记录.md"
+    ],
+    "unexpectedDifferences": [],
+    "productionAndTestsUnchanged": true,
+    "currentSourceFiles": 175,
+    "package": [
+      {
+        "path": "release/win-unpacked/embedded-practice.exe",
+        "bytes": 234328064,
+        "sha256": "eeac64484ef0f1208273b625e95796ad94705abd9529db602dceeabfe102d3a6",
+        "matchesM4c": true
+      },
+      {
+        "path": "release/win-unpacked/resources/app.asar",
+        "bytes": 3669491,
+        "sha256": "ff9cb31b662f2e9a029c5241aa7e51a81feb7cf8807d8eeee4093f904d8410d7",
+        "matchesM4c": true
+      },
+      {
+        "path": "release/win-unpacked/resources/app.asar.unpacked/node_modules/better-sqlite3/build/Release/better_sqlite3.node",
+        "bytes": 1920512,
+        "sha256": "24e2e3ca5a829572239718fbca35b873ba4975655d29c56a93f1880e3775d9b8",
+        "matchesM4c": true
+      },
+      {
+        "path": "release/embedded-practice-0.1.0-x64-setup.exe",
+        "bytes": 105194654,
+        "sha256": "641eef07330151d6343047c3aad2639a70c442b46a26426cd74b281d73a091d8",
+        "matchesM4c": true
+      }
+    ],
+    "m4cEvidenceFilesChecked": 681,
+    "m4cEvidenceDifferences": []
+  },
+  "unknownObservation": "Prior test app and Notepad processes were absent after runtime update; cause unknown. Subsequent explicit reopen and normal close were separately observed.",
+  "notRun": [
+    "new unit or desktop suite",
+    "new application build",
+    "new NSIS",
+    "installation or upgrade",
+    "full offline workflow",
+    "performance measurement",
+    "full IME or DPI acceptance",
+    "technical answer review",
+    "real long-answer or large-image user experience"
+  ],
+  "productionChanges": false,
+  "committedOrPushed": false
+}

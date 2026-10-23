@@ -1,0 +1,85 @@
+{
+  "development": {
+    "passed": 68,
+    "failed": 0,
+    "skipped": 0,
+    "retries": 0,
+    "baselineScenariosRetained": 57,
+    "newScenarios": 11
+  },
+  "packaged": {
+    "passed": 68,
+    "failed": 0,
+    "skipped": 0,
+    "retries": 0,
+    "baselineScenariosRetained": 57,
+    "newScenarios": 11
+  },
+  "unit": {
+    "numTotalTestSuites": 45,
+    "numTotalTests": 430,
+    "numPassedTests": 430,
+    "numFailedTests": 0,
+    "numPendingTests": 0,
+    "success": true,
+    "fileCount": 21
+  },
+  "runs": {
+    "final-full-tests.json": {
+      "startTime": "2026-10-21T05:19:26.769Z",
+      "duration": 252130.322,
+      "expected": 136,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "development-first-tests.json": {
+      "startTime": "2026-10-21T05:16:05.770Z",
+      "duration": 126619.088,
+      "expected": 66,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "random-first-tests.json": {
+      "startTime": "2026-10-21T05:12:27.842Z",
+      "duration": 34734.511,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "random-separated-tests.json": {
+      "startTime": "2026-10-21T05:14:05.942Z",
+      "duration": 13049.607,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "random-newline-probe-tests.json": {
+      "startTime": "2026-10-21T05:15:14.357Z",
+      "duration": 7580.46,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "migration-first-tests.json": {
+      "startTime": "2026-10-21T05:06:55.453Z",
+      "duration": 5762.531,
+      "expected": 6,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "home-capture-tests.json": {
+      "startTime": "2026-10-21T05:23:51.165Z",
+      "duration": 3206.8909999999996,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  }
+}

@@ -1,0 +1,28 @@
+
+Running 21 tests using 1 worker
+
+(node:18676) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\backup-legacy.spec.ts:85:7 › 结构 1 备份只迁移暂存副本，旧时间未知且来源不变 (2.3s)
+  ok  2 [development] › tests\e2e\backup-legacy.spec.ts:85:7 › 结构 2 备份只迁移暂存副本，旧时间未知且来源不变 (1.0s)
+  ok  3 [development] › tests\e2e\backup-legacy.spec.ts:85:7 › 结构 3 备份只迁移暂存副本，旧时间未知且来源不变 (937ms)
+  ok  4 [development] › tests\e2e\backup-legacy.spec.ts:85:7 › 结构 4 备份只迁移暂存副本，旧时间未知且来源不变 (966ms)
+  ok  5 [development] › tests\e2e\backup-legacy.spec.ts:85:7 › 结构 5 备份只迁移暂存副本，旧时间未知且来源不变 (1.1s)
+  ok  6 [development] › tests\e2e\backup-window.spec.ts:123:5 › 完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库 (4.9s)
+  ok  7 [development] › tests\e2e\backup-window.spec.ts:232:5 › 备份取消与预览取消保留原状态，空库可导出并预览 (902ms)
+  ok  8 [development] › tests\e2e\backup-window.spec.ts:275:5 › 实际备份写入失败保留已有目标与当前数据，清理暂存后可重试 (1.0s)
+  ok  9 [development] › tests\e2e\backup-window.spec.ts:318:5 › 备份拒绝当前库伴随文件及目录链接硬链接别名，目标有旧 WAL 时不发布 (665ms)
+  ok 10 [development] › tests\e2e\backup-window.spec.ts:378:7 › 恢复预览拒绝 corrupt，原备份字节及当前数据保持 (1.0s)
+  ok 11 [development] › tests\e2e\backup-window.spec.ts:378:7 › 恢复预览拒绝 foreign-app，原备份字节及当前数据保持 (1.1s)
+  ok 12 [development] › tests\e2e\backup-window.spec.ts:378:7 › 恢复预览拒绝 future，原备份字节及当前数据保持 (1.1s)
+  ok 13 [development] › tests\e2e\backup-window.spec.ts:378:7 › 恢复预览拒绝 missing-table，原备份字节及当前数据保持 (990ms)
+  ok 14 [development] › tests\e2e\backup-window.spec.ts:378:7 › 恢复预览拒绝 foreign-key，原备份字节及当前数据保持 (1.0s)
+  ok 15 [development] › tests\e2e\backup-window.spec.ts:378:7 › 恢复预览拒绝 metadata，原备份字节及当前数据保持 (1.0s)
+  ok 16 [development] › tests\e2e\backup-window.spec.ts:378:7 › 恢复预览拒绝 image-hash，原备份字节及当前数据保持 (972ms)
+  ok 17 [development] › tests\e2e\backup-window.spec.ts:378:7 › 恢复预览拒绝 filters，原备份字节及当前数据保持 (1.1s)
+  ok 18 [development] › tests\e2e\backup-window.spec.ts:378:7 › 恢复预览拒绝 body-json，原备份字节及当前数据保持 (1.0s)
+  ok 19 [development] › tests\e2e\backup-window.spec.ts:431:5 › 在途备份阻止重复操作和切页，正常退出等待已验证备份发布 (1.7s)
+  ok 20 [development] › tests\e2e\backup-window.spec.ts:484:5 › 发布失败保留既有备份，来源读取中变化时停止预览且清理副本 (1.0s)
+  ok 21 [development] › tests\e2e\backup-window.spec.ts:532:5 › 备份期间其他连接的事务写入保持一致性快照 (901ms)
+
+  21 passed (27.5s)

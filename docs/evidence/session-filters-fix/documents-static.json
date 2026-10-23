@@ -1,0 +1,3004 @@
+{
+  "status": "passed",
+  "utf8Files": 40,
+  "docs": [
+    "AGENTS.md",
+    "docs/evidence/session-filters-fix/README.md",
+    "docs/M3会话筛选快照修复.md",
+    "docs/README.md",
+    "docs/产品说明.md",
+    "docs/代码复查记录.md",
+    "docs/使用说明.md",
+    "docs/开发说明.md",
+    "docs/验收记录.md",
+    "README.md"
+  ],
+  "localLinks": 497,
+  "allLocalLinksExist": true,
+  "fencesBalanced": true,
+  "links": [
+    {
+      "file": "AGENTS.md",
+      "line": 7,
+      "target": "计划书.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "line": 30,
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "line": 30,
+      "target": "docs/验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 3,
+      "target": "../../M3会话筛选快照修复.md",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 7,
+      "target": "original-filter-persistence.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 7,
+      "target": "environment.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 17,
+      "target": "../../代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 17,
+      "target": "code-change-audit.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 19,
+      "target": "package-inspection.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 25,
+      "target": "check-first.log",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 25,
+      "target": "check-final.log",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 26,
+      "target": "unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 26,
+      "target": "unit-tests.log",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 27,
+      "target": "build.log",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 28,
+      "target": "package.log",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 29,
+      "target": "targeted-first-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 29,
+      "target": "targeted-first.log",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 30,
+      "target": "reopen-fixed-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 30,
+      "target": "reopen-fixed.log",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 31,
+      "target": "full-first-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 31,
+      "target": "full-first.log",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 32,
+      "target": "constraint-fixed-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 32,
+      "target": "constraint-fixed.log",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 33,
+      "target": "final-full-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 33,
+      "target": "final-full.log",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 46,
+      "target": "development-filters-reopen-sequential.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 46,
+      "target": "packaged-filters-reopen-sequential.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 47,
+      "target": "development-filters-reopen-random.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 47,
+      "target": "packaged-filters-reopen-random.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 48,
+      "target": "development-filters-atomic-retry.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 48,
+      "target": "packaged-filters-atomic-retry.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 51,
+      "target": "development-filters-v5-preserved.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 51,
+      "target": "packaged-filters-v5-preserved.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 52,
+      "target": "development-filters-v5-backup-blocked.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 52,
+      "target": "packaged-filters-v5-backup-blocked.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 53,
+      "target": "development-filters-v5-column-conflict.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 53,
+      "target": "packaged-filters-v5-column-conflict.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 54,
+      "target": "development-filters-v5-foreign-key.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 54,
+      "target": "packaged-filters-v5-foreign-key.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 56,
+      "target": "../../../tests/fixtures/schema-v5.sql",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 56,
+      "target": "schema-v5-source.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 68,
+      "target": "development-original-filters-sequential.png",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 68,
+      "target": "packaged-original-filters-sequential.png",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 69,
+      "target": "development-original-filters-random.png",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 69,
+      "target": "packaged-original-filters-random.png",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 71,
+      "target": "results-summary.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 71,
+      "target": "source-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 71,
+      "target": "change-audit.json",
+      "exists": true
+    },
+    {
+      "file": "docs/evidence/session-filters-fix/README.md",
+      "line": 71,
+      "target": "documents-static.json",
+      "exists": true
+    },
+    {
+      "file": "docs/M3会话筛选快照修复.md",
+      "line": 3,
+      "target": "../计划书.md",
+      "exists": true
+    },
+    {
+      "file": "docs/M3会话筛选快照修复.md",
+      "line": 23,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/M3会话筛选快照修复.md",
+      "line": 23,
+      "target": "evidence/session-filters-fix/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 3,
+      "target": "evidence/m3e/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 3,
+      "target": "../计划书.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 5,
+      "target": "M3会话筛选快照修复.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 5,
+      "target": "evidence/session-filters-fix/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 11,
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 12,
+      "target": "../计划书.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 13,
+      "target": "../AGENTS.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 14,
+      "target": "验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 15,
+      "target": "产品说明.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 16,
+      "target": "开发说明.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 17,
+      "target": "MarkdownV1题库格式.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 18,
+      "target": "architecture/M0启动与存储.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 19,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 20,
+      "target": "../question-banks/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 21,
+      "target": "M1第一批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 22,
+      "target": "architecture/M1结构解析.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 23,
+      "target": "evidence/m1a/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 24,
+      "target": "M1第二批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 25,
+      "target": "architecture/M1文件与图片快照.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 26,
+      "target": "evidence/m1b/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 27,
+      "target": "M1第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 28,
+      "target": "architecture/M1导入工作线程.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 29,
+      "target": "evidence/m1c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 30,
+      "target": "M1第四批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 31,
+      "target": "architecture/M1预览与提交.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 32,
+      "target": "evidence/m1d/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 33,
+      "target": "M1第五批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 34,
+      "target": "architecture/M1窗口与受控内容.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 35,
+      "target": "evidence/m1e/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 36,
+      "target": "使用说明.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 37,
+      "target": "licenses/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 38,
+      "target": "M2第一批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 39,
+      "target": "architecture/M2顺序练习与保存.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 40,
+      "target": "evidence/m2a/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 41,
+      "target": "M2第二批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 42,
+      "target": "architecture/M2练习窗口与保存.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 43,
+      "target": "evidence/m2b/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 44,
+      "target": "evidence/m2-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 45,
+      "target": "M2第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 46,
+      "target": "evidence/m2c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 47,
+      "target": "M2第四批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 48,
+      "target": "evidence/m2d/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 49,
+      "target": "M2人工验收清单.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 50,
+      "target": "M3第一批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 51,
+      "target": "evidence/m3a/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 52,
+      "target": "evidence/m3-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 53,
+      "target": "M3第二批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 54,
+      "target": "architecture/M3随机练习与模式升级.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 55,
+      "target": "evidence/m3b/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 56,
+      "target": "M3第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 57,
+      "target": "architecture/M3单题历史与更新标记.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 58,
+      "target": "evidence/m3c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 59,
+      "target": "M3第四批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 60,
+      "target": "architecture/M3学习记录总览.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 61,
+      "target": "evidence/m3d/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 62,
+      "target": "M3第五批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 63,
+      "target": "architecture/M3显示设置与页面.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 64,
+      "target": "evidence/m3e/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 65,
+      "target": "M3会话筛选快照修复.md",
+      "exists": true
+    },
+    {
+      "file": "docs/README.md",
+      "line": 66,
+      "target": "evidence/session-filters-fix/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 5,
+      "target": "../计划书.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 36,
+      "target": "../question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 36,
+      "target": "使用说明.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 36,
+      "target": "验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 38,
+      "target": "使用说明.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 38,
+      "target": "architecture/M3随机练习与模式升级.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 40,
+      "target": "M3第一批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 40,
+      "target": "M2人工验收清单.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 52,
+      "target": "M3第五批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 52,
+      "target": "architecture/M3显示设置与页面.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 65,
+      "target": "使用说明.md",
+      "exists": true
+    },
+    {
+      "file": "docs/产品说明.md",
+      "line": 65,
+      "target": "M3第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 45,
+      "target": "evidence/session-filters-fix/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 96,
+      "target": "evidence/m3e/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 121,
+      "target": "evidence/m3d/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 152,
+      "target": "evidence/m3c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 192,
+      "target": "evidence/m3-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 221,
+      "target": "evidence/m3a/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 233,
+      "target": "evidence/m2d/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 237,
+      "target": "验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 246,
+      "target": "evidence/m2c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 250,
+      "target": "验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 259,
+      "target": "evidence/m2-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 296,
+      "target": "验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 296,
+      "target": "evidence/m2b/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "line": 396,
+      "target": "验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/使用说明.md",
+      "line": 3,
+      "target": "产品说明.md",
+      "exists": true
+    },
+    {
+      "file": "docs/使用说明.md",
+      "line": 3,
+      "target": "验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/使用说明.md",
+      "line": 15,
+      "target": "MarkdownV1题库格式.md",
+      "exists": true
+    },
+    {
+      "file": "docs/使用说明.md",
+      "line": 15,
+      "target": "../question-banks/templates/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/使用说明.md",
+      "line": 15,
+      "target": "../question-banks/examples/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/使用说明.md",
+      "line": 19,
+      "target": "../question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+      "exists": true
+    },
+    {
+      "file": "docs/使用说明.md",
+      "line": 80,
+      "target": "M3会话筛选快照修复.md",
+      "exists": true
+    },
+    {
+      "file": "docs/使用说明.md",
+      "line": 116,
+      "target": "M2人工验收清单.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 52,
+      "target": "evidence/m3a/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 54,
+      "target": "evidence/m3-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 58,
+      "target": "architecture/M1预览与提交.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 58,
+      "target": "architecture/M1窗口与受控内容.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 60,
+      "target": "architecture/M2顺序练习与保存.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 60,
+      "target": "architecture/M2练习窗口与保存.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 62,
+      "target": "architecture/M3单题历史与更新标记.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 64,
+      "target": "architecture/M3学习记录总览.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 68,
+      "target": "evidence/m1c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 70,
+      "target": "evidence/m1d/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 72,
+      "target": "evidence/m1e/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 74,
+      "target": "evidence/m2a/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 74,
+      "target": "evidence/m2b/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 76,
+      "target": "evidence/m2b/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 78,
+      "target": "evidence/m2-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 80,
+      "target": "evidence/m2c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 80,
+      "target": "M2人工验收清单.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 82,
+      "target": "architecture/M3显示设置与页面.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 82,
+      "target": "evidence/m3e/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 84,
+      "target": "M3会话筛选快照修复.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 84,
+      "target": "evidence/session-filters-fix/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 88,
+      "target": "evidence/m3d/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 90,
+      "target": "evidence/m3c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 92,
+      "target": "evidence/m3b/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 126,
+      "target": "architecture/M3随机练习与模式升级.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 130,
+      "target": "../AGENTS.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 130,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 130,
+      "target": "验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 134,
+      "target": "licenses/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 136,
+      "target": "licenses/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/开发说明.md",
+      "line": 138,
+      "target": "evidence/m2b/npm-audit.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 7,
+      "target": "evidence/session-filters-fix/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 9,
+      "target": "M2人工验收清单.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 49,
+      "target": "开发说明.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 49,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 68,
+      "target": "evidence/m0/development-smoke.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 69,
+      "target": "evidence/m0/runtime-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 71,
+      "target": "evidence/m0/installed-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 76,
+      "target": "evidence/m0/uninstall-result.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 77,
+      "target": "evidence/m0/startup-light.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 77,
+      "target": "evidence/m0/startup-dark.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 82,
+      "target": "evidence/m0/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 97,
+      "target": "M1第一批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 101,
+      "target": "../question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 104,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 111,
+      "target": "evidence/m1a/check-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 112,
+      "target": "evidence/m1a/unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 117,
+      "target": "evidence/m1a/desktop-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 117,
+      "target": "evidence/m1a/desktop-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 118,
+      "target": "evidence/m1a/static-checks.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 120,
+      "target": "evidence/m1a/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 132,
+      "target": "M1第二批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 132,
+      "target": "architecture/M1文件与图片快照.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 139,
+      "target": "../question-banks/templates/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 139,
+      "target": "../question-banks/examples/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 140,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 146,
+      "target": "evidence/m1b/check-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 147,
+      "target": "evidence/m1b/unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 153,
+      "target": "evidence/m1b/desktop-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 153,
+      "target": "evidence/m1b/desktop-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 156,
+      "target": "evidence/m1b/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 156,
+      "target": "evidence/m1b/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 156,
+      "target": "evidence/m1b/static-checks.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 168,
+      "target": "M1第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 168,
+      "target": "architecture/M1导入工作线程.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 182,
+      "target": "evidence/m1c/check-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 183,
+      "target": "evidence/m1c/unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 183,
+      "target": "evidence/m1c/unit-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 185,
+      "target": "evidence/m1c/development-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 185,
+      "target": "evidence/m1c/development-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 186,
+      "target": "evidence/m1c/package-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 187,
+      "target": "evidence/m1c/packaged-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 187,
+      "target": "evidence/m1c/packaged-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 188,
+      "target": "evidence/m1c/development-worker-snapshot.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 188,
+      "target": "evidence/m1c/packaged-worker-snapshot.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 189,
+      "target": "evidence/m1c/packaged-worker-controls.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 189,
+      "target": "evidence/m1c/packaged-worker-shutdown.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 191,
+      "target": "evidence/m1c/package-inspection.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 194,
+      "target": "evidence/m1c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 194,
+      "target": "evidence/m1c/static-checks.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 194,
+      "target": "evidence/m1c/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 198,
+      "target": "evidence/m1c/development-eval-failure.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 208,
+      "target": "M1第四批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 208,
+      "target": "architecture/M1预览与提交.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 218,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 224,
+      "target": "evidence/m1d/check-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 225,
+      "target": "evidence/m1d/unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 225,
+      "target": "evidence/m1d/unit-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 226,
+      "target": "evidence/m1d/development-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 226,
+      "target": "evidence/m1d/development-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 227,
+      "target": "evidence/m1d/package-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 228,
+      "target": "evidence/m1d/packaged-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 228,
+      "target": "evidence/m1d/packaged-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 236,
+      "target": "evidence/m1d/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 236,
+      "target": "evidence/m1d/static-checks.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 236,
+      "target": "evidence/m1d/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 242,
+      "target": "evidence/m1d/development-fixture-failure.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 244,
+      "target": "evidence/m1d/unit-discovery-before-fix.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 244,
+      "target": "evidence/m1d/configuration-type-failure.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 252,
+      "target": "M1第五批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 252,
+      "target": "architecture/M1窗口与受控内容.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 252,
+      "target": "使用说明.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 254,
+      "target": "licenses/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 263,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 269,
+      "target": "evidence/m1e/check-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 270,
+      "target": "evidence/m1e/unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 271,
+      "target": "evidence/m1e/development-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 271,
+      "target": "evidence/m1e/development-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 272,
+      "target": "evidence/m1e/package-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 273,
+      "target": "evidence/m1e/packaged-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 273,
+      "target": "evidence/m1e/packaged-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 279,
+      "target": "evidence/m1e/development-window-worker-exit.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 279,
+      "target": "evidence/m1e/packaged-window-worker-exit.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 281,
+      "target": "evidence/m1e/packaged-question-light.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 281,
+      "target": "evidence/m1e/packaged-answer-dark.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 282,
+      "target": "evidence/m1e/package-inspection.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 283,
+      "target": "evidence/m1e/static-checks.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 283,
+      "target": "evidence/m1e/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 285,
+      "target": "evidence/m1e/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 289,
+      "target": "evidence/m1e/baseline-build-failure.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 289,
+      "target": "evidence/m1e/development-image-failure.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 289,
+      "target": "evidence/m1e/development-image-failure.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 291,
+      "target": "evidence/m1e/npm-audit.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 299,
+      "target": "M2第一批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 299,
+      "target": "architecture/M2顺序练习与保存.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 317,
+      "target": "evidence/m2a/check-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 318,
+      "target": "evidence/m2a/unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 318,
+      "target": "evidence/m2a/unit-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 319,
+      "target": "evidence/m2a/development-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 319,
+      "target": "evidence/m2a/development-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 320,
+      "target": "evidence/m2a/package-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 321,
+      "target": "evidence/m2a/packaged-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 321,
+      "target": "evidence/m2a/packaged-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 322,
+      "target": "evidence/m2a/development-practice-lifecycle.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 322,
+      "target": "evidence/m2a/packaged-practice-lifecycle.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 322,
+      "target": "evidence/m2a/packaged-practice-reopened.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 324,
+      "target": "evidence/m2a/development-practice-versions.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 324,
+      "target": "evidence/m2a/packaged-practice-versions.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 325,
+      "target": "evidence/m2a/development-practice-rollback.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 325,
+      "target": "evidence/m2a/packaged-practice-rollback.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 326,
+      "target": "evidence/m2a/development-practice-durability.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 326,
+      "target": "evidence/m2a/packaged-practice-durability.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 327,
+      "target": "evidence/m2a/development-practice-limits.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 327,
+      "target": "evidence/m2a/packaged-practice-limits.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 329,
+      "target": "evidence/m2a/package-inspection.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 330,
+      "target": "evidence/m2a/static-checks.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 330,
+      "target": "evidence/m2a/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 332,
+      "target": "evidence/m2a/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 336,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 344,
+      "target": "M2第二批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 344,
+      "target": "architecture/M2练习窗口与保存.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 346,
+      "target": "licenses/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 360,
+      "target": "evidence/m2b/check-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 361,
+      "target": "evidence/m2b/unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 361,
+      "target": "evidence/m2b/unit-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 362,
+      "target": "evidence/m2b/development-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 362,
+      "target": "evidence/m2b/development-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 363,
+      "target": "evidence/m2b/package-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 364,
+      "target": "evidence/m2b/packaged-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 364,
+      "target": "evidence/m2b/packaged-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 365,
+      "target": "evidence/m2b/development-practice-window-roundtrip.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 365,
+      "target": "evidence/m2b/packaged-practice-window-roundtrip.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 366,
+      "target": "evidence/m2b/development-practice-window-failures.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 366,
+      "target": "evidence/m2b/packaged-practice-window-failures.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 367,
+      "target": "evidence/m2b/development-practice-window-reopened.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 367,
+      "target": "evidence/m2b/packaged-practice-window-reopened.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 369,
+      "target": "evidence/m2b/development-practice-window-retry.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 369,
+      "target": "evidence/m2b/packaged-practice-window-retry.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 371,
+      "target": "evidence/m2b/packaged-practice-light.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 371,
+      "target": "evidence/m2b/packaged-practice-dark.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 371,
+      "target": "evidence/m2b/packaged-practice-image-zoom.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 373,
+      "target": "evidence/m2b/package-inspection.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 374,
+      "target": "evidence/m2b/npm-audit.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 375,
+      "target": "evidence/m2b/static-checks.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 375,
+      "target": "evidence/m2b/manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 379,
+      "target": "evidence/m2b/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 404,
+      "target": "evidence/m2-fixes/before-fix-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 404,
+      "target": "evidence/m2-fixes/before-fix-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 405,
+      "target": "evidence/m2-fixes/check-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 406,
+      "target": "evidence/m2-fixes/unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 406,
+      "target": "evidence/m2-fixes/unit-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 407,
+      "target": "evidence/m2-fixes/fixed-regressions-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 407,
+      "target": "evidence/m2-fixes/fixed-regressions-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 408,
+      "target": "evidence/m2-fixes/development-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 408,
+      "target": "evidence/m2-fixes/development-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 409,
+      "target": "evidence/m2-fixes/package-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 410,
+      "target": "evidence/m2-fixes/packaged-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 410,
+      "target": "evidence/m2-fixes/packaged-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 411,
+      "target": "evidence/m2-fixes/development-repeat-skip-100ms.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 411,
+      "target": "evidence/m2-fixes/packaged-repeat-skip-100ms.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 411,
+      "target": "evidence/m2-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 412,
+      "target": "evidence/m2-fixes/development-image-after-autosave.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 412,
+      "target": "evidence/m2-fixes/packaged-image-after-autosave.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 413,
+      "target": "evidence/m2-fixes/package-inspection.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 415,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 415,
+      "target": "evidence/m2-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 425,
+      "target": "M2第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 436,
+      "target": "M2人工验收清单.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 442,
+      "target": "evidence/m2c/before-fix-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 442,
+      "target": "evidence/m2c/before-fix-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 443,
+      "target": "evidence/m2c/forced-stop-baseline-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 444,
+      "target": "evidence/m2c/check-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 445,
+      "target": "evidence/m2c/unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 445,
+      "target": "evidence/m2c/unit-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 446,
+      "target": "evidence/m2c/focused-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 446,
+      "target": "evidence/m2c/focused-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 447,
+      "target": "evidence/m2c/development-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 447,
+      "target": "evidence/m2c/development-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 448,
+      "target": "evidence/m2c/package-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 449,
+      "target": "evidence/m2c/packaged-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 449,
+      "target": "evidence/m2c/packaged-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 450,
+      "target": "evidence/m2c/results-summary.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 450,
+      "target": "evidence/m2c/development-long-content-next-150.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 450,
+      "target": "evidence/m2c/packaged-long-content-next-150.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 451,
+      "target": "evidence/m2c/development-forced-stop-confirmed.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 451,
+      "target": "evidence/m2c/development-forced-stop-recovered.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 451,
+      "target": "evidence/m2c/packaged-forced-stop-confirmed.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 451,
+      "target": "evidence/m2c/packaged-forced-stop-recovered.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 452,
+      "target": "evidence/m2c/package-inspection.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 453,
+      "target": "evidence/m2c/manual-instructions-static.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 455,
+      "target": "代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 455,
+      "target": "evidence/m2c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 465,
+      "target": "M2第四批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 471,
+      "target": "evidence/m2d/native-keyboard-before-fix.jpg",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 480,
+      "target": "evidence/m2d/before-fix-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 480,
+      "target": "evidence/m2d/before-fix-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 480,
+      "target": "evidence/m2d/before-fix-keyboard-150.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 481,
+      "target": "evidence/m2d/focused-first-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 481,
+      "target": "evidence/m2d/focused-first-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 482,
+      "target": "evidence/m2d/focused-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 482,
+      "target": "evidence/m2d/fixed-keyboard-150.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 483,
+      "target": "evidence/m2d/check-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 483,
+      "target": "evidence/m2d/build-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 484,
+      "target": "evidence/m2d/unit-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 484,
+      "target": "evidence/m2d/unit-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 485,
+      "target": "evidence/m2d/development-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 485,
+      "target": "evidence/m2d/development-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 486,
+      "target": "evidence/m2d/package-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 487,
+      "target": "evidence/m2d/packaged-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 487,
+      "target": "evidence/m2d/packaged-output.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 487,
+      "target": "evidence/m2d/packaged-keyboard-150.png",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 488,
+      "target": "evidence/m2d/package-inspection.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 492,
+      "target": "evidence/m2d/native-actions.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 492,
+      "target": "evidence/m2d/environment.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 495,
+      "target": "evidence/m2d/native-keyboard-after-fix.jpg",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 496,
+      "target": "evidence/m2d/input-method-profile.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 496,
+      "target": "evidence/m2d/native-ime-candidate.jpg",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 496,
+      "target": "evidence/m2d/native-ime-committed.jpg",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 497,
+      "target": "evidence/m2d/native-clipboard-paste.jpg",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 498,
+      "target": "evidence/m2d/fixed-native-reopened-process.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 498,
+      "target": "evidence/m2d/native-recovered-second-question.jpg",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 498,
+      "target": "evidence/m2d/fixed-native-after-reopen-database.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 499,
+      "target": "evidence/m2d/native-final-windows.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 499,
+      "target": "evidence/m2d/native-final-process.json",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 501,
+      "target": "evidence/m2d/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 505,
+      "target": "M2人工验收清单.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 511,
+      "target": "M3第一批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 523,
+      "target": "evidence/m3a/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 536,
+      "target": "evidence/m3a/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 542,
+      "target": "evidence/m3-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 564,
+      "target": "evidence/m3-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 580,
+      "target": "M3第二批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 580,
+      "target": "architecture/M3随机练习与模式升级.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 604,
+      "target": "evidence/m3b/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 616,
+      "target": "M3第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 616,
+      "target": "architecture/M3单题历史与更新标记.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 641,
+      "target": "evidence/m3c/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 655,
+      "target": "M3第四批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 655,
+      "target": "architecture/M3学习记录总览.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 679,
+      "target": "evidence/m3d/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 691,
+      "target": "M3第五批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 691,
+      "target": "architecture/M3显示设置与页面.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 711,
+      "target": "evidence/m3e/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 717,
+      "target": "M3会话筛选快照修复.md",
+      "exists": true
+    },
+    {
+      "file": "docs/验收记录.md",
+      "line": 717,
+      "target": "evidence/session-filters-fix/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 9,
+      "target": "docs/验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 11,
+      "target": "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 11,
+      "target": "docs/验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 13,
+      "target": "question-banks/templates/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 13,
+      "target": "question-banks/examples/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 15,
+      "target": "docs/evidence/m1c/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 17,
+      "target": "docs/architecture/M1预览与提交.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 17,
+      "target": "docs/evidence/m1d/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 19,
+      "target": "docs/architecture/M1窗口与受控内容.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 19,
+      "target": "docs/evidence/m1e/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 21,
+      "target": "docs/architecture/M2顺序练习与保存.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 21,
+      "target": "docs/evidence/m2a/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 23,
+      "target": "docs/architecture/M2练习窗口与保存.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 23,
+      "target": "docs/evidence/m2b/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 25,
+      "target": "docs/evidence/m2-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 27,
+      "target": "docs/evidence/m2c/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 29,
+      "target": "docs/evidence/m2d/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 31,
+      "target": "docs/evidence/m3a/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 33,
+      "target": "docs/evidence/m3-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 35,
+      "target": "docs/M3第二批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 35,
+      "target": "docs/evidence/m3b/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 37,
+      "target": "docs/M3第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 37,
+      "target": "docs/evidence/m3c/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 39,
+      "target": "docs/M3第四批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 39,
+      "target": "docs/evidence/m3d/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 41,
+      "target": "docs/M3第五批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 41,
+      "target": "docs/evidence/m3e/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 41,
+      "target": "docs/M2人工验收清单.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 41,
+      "target": "docs/使用说明.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 43,
+      "target": "docs/M3会话筛选快照修复.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 43,
+      "target": "docs/evidence/session-filters-fix/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 49,
+      "target": "计划书.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 50,
+      "target": "AGENTS.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 51,
+      "target": "docs/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 52,
+      "target": "docs/验收记录.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 53,
+      "target": "docs/开发说明.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 54,
+      "target": "docs/代码复查记录.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 55,
+      "target": "question-banks/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 56,
+      "target": "docs/M1第一批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 57,
+      "target": "docs/M1第二批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 58,
+      "target": "docs/M1第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 59,
+      "target": "docs/architecture/M1导入工作线程.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 60,
+      "target": "docs/M1第四批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 61,
+      "target": "docs/architecture/M1预览与提交.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 62,
+      "target": "docs/M1第五批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 63,
+      "target": "docs/architecture/M1窗口与受控内容.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 64,
+      "target": "docs/使用说明.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 65,
+      "target": "docs/M2第一批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 66,
+      "target": "docs/architecture/M2顺序练习与保存.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 67,
+      "target": "docs/M2第二批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 68,
+      "target": "docs/architecture/M2练习窗口与保存.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 69,
+      "target": "docs/evidence/m2-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 70,
+      "target": "docs/M2第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 71,
+      "target": "docs/evidence/m2c/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 72,
+      "target": "docs/M2第四批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 73,
+      "target": "docs/evidence/m2d/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 74,
+      "target": "docs/M2人工验收清单.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 75,
+      "target": "docs/M3第一批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 76,
+      "target": "docs/evidence/m3a/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 77,
+      "target": "docs/evidence/m3-fixes/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 78,
+      "target": "docs/M3第二批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 79,
+      "target": "docs/evidence/m3b/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 80,
+      "target": "docs/M3第三批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 81,
+      "target": "docs/architecture/M3单题历史与更新标记.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 82,
+      "target": "docs/evidence/m3c/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 83,
+      "target": "docs/M3第四批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 84,
+      "target": "docs/architecture/M3学习记录总览.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 85,
+      "target": "docs/evidence/m3d/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 86,
+      "target": "docs/M3第五批行为与验收.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 87,
+      "target": "docs/architecture/M3显示设置与页面.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 88,
+      "target": "docs/evidence/m3e/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 89,
+      "target": "docs/M3会话筛选快照修复.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 90,
+      "target": "docs/evidence/session-filters-fix/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 139,
+      "target": "docs/architecture/M0启动与存储.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 174,
+      "target": "docs/evidence/session-filters-fix/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "line": 187,
+      "target": "计划书.md",
+      "exists": true
+    }
+  ],
+  "errors": []
+}

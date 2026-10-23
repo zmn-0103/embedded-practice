@@ -1,0 +1,39 @@
+
+> embedded-practice@0.1.0 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 429 modules transformed.
+rendering chunks...
+out/main/rolldown-runtime-Dbql6lyJ.js    1.73 kB
+out/main/import-preparation.js           4.78 kB
+out/main/import-protocol-CjaQDko1.js     6.66 kB
+out/main/practice.js                    16.56 kB
+out/main/library-import.js              19.85 kB
+out/main/open-database-BmFaPWCf.js      22.83 kB
+out/main/index.js                       27.35 kB
+out/main/question-bank-DgNu3Pwr.js     185.06 kB
+out/main/import-worker-CTPDu8a3.js     760.65 kB
+
+✓ built in 101ms
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 103 modules transformed.
+rendering chunks...
+out/preload/index.js  186.90 kB
+
+✓ built in 26ms
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 574 modules transformed.
+rendering chunks...
+out/renderer/index.html                     0.71 kB
+out/renderer/assets/index-7YOOx3Nh.css     10.92 kB
+out/renderer/assets/index-DPzMGkKK.js   1,700.79 kB
+
+✓ built in 122ms

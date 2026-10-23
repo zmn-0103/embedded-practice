@@ -1,0 +1,48 @@
+{
+  "stats": {
+    "startTime": "2026-10-22T03:53:39.798Z",
+    "duration": 500893.17799999996,
+    "expected": 300,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "total": 300,
+  "projects": {
+    "development": {
+      "passed": 150,
+      "baseline": 142,
+      "added": 8
+    },
+    "packaged": {
+      "passed": 150,
+      "baseline": 142,
+      "added": 8
+    }
+  },
+  "missingBaseline": [],
+  "unexpected": [],
+  "resultsPerTest": 1,
+  "retries": 0,
+  "added": [
+    "development|data-locations.spec.ts|data-locations.spec.ts|设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据",
+    "development|data-locations.spec.ts|data-locations.spec.ts|数据位置拒绝任意路径及文件或 junction 目标，修正后可重试",
+    "development|data-locations.spec.ts|data-locations.spec.ts|数据位置读取与系统打开失败保留真实状态，重试成功且诊断不含系统原始内容",
+    "development|data-locations.spec.ts|data-locations.spec.ts|数据库不可用时仍能查看数据位置并打开日志文件夹，原坏文件字节保持",
+    "development|data-locations.spec.ts|data-locations.spec.ts|目录打开处理中锁定设置备份导航，正常关闭等待在途打开响应",
+    "development|data-locations.spec.ts|data-locations.spec.ts|恢复先暂停并等待目录打开，结算后才创建保护备份和替换",
+    "development|data-locations.spec.ts|data-locations.spec.ts|切页期间晚到的位置读取不能覆盖新面板的实际位置",
+    "development|data-locations.spec.ts|data-locations.spec.ts|Windows 已有 Logs Backups 和 Backup-Staging 目录可正常打开并完成保护恢复",
+    "packaged|data-locations.spec.ts|data-locations.spec.ts|设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据",
+    "packaged|data-locations.spec.ts|data-locations.spec.ts|数据位置拒绝任意路径及文件或 junction 目标，修正后可重试",
+    "packaged|data-locations.spec.ts|data-locations.spec.ts|数据位置读取与系统打开失败保留真实状态，重试成功且诊断不含系统原始内容",
+    "packaged|data-locations.spec.ts|data-locations.spec.ts|数据库不可用时仍能查看数据位置并打开日志文件夹，原坏文件字节保持",
+    "packaged|data-locations.spec.ts|data-locations.spec.ts|目录打开处理中锁定设置备份导航，正常关闭等待在途打开响应",
+    "packaged|data-locations.spec.ts|data-locations.spec.ts|恢复先暂停并等待目录打开，结算后才创建保护备份和替换",
+    "packaged|data-locations.spec.ts|data-locations.spec.ts|切页期间晚到的位置读取不能覆盖新面板的实际位置",
+    "packaged|data-locations.spec.ts|data-locations.spec.ts|Windows 已有 Logs Backups 和 Backup-Staging 目录可正常打开并完成保护恢复"
+  ],
+  "attachments": 298,
+  "attachmentFiles": 44,
+  "attachmentEmbedded": 254
+}

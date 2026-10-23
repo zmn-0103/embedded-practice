@@ -1,0 +1,15 @@
+
+Running 7 tests using 1 worker
+
+
+
+(node:24360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[1/7] [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[2/7] [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[3/7] [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[4/7] [development] › tests\e2e\settings-palettes.spec.ts:82:7 › 暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录
+[5/7] [development] › tests\e2e\settings-palettes.spec.ts:143:5 › 配色真实写失败/丢响应保留选择，键盘切换后正常重开保留草稿
+[6/7] [development] › tests\e2e\settings-palettes.spec.ts:217:5 › 配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作
+[7/7] [development] › tests\e2e\settings-palettes.spec.ts:263:5 › 复制成功反馈2.5秒自熄，重复复制重置、错误保留且切题拒绝晚到响应
+  7 passed (19.3s)

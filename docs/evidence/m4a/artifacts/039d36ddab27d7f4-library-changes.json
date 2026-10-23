@@ -1,0 +1,450 @@
+{
+  "first": {
+    "revision": 1,
+    "summary": {
+      "counts": {
+        "added": 3,
+        "updated": 0,
+        "metadata": 0,
+        "unchanged": 0,
+        "archived": 0,
+        "restored": 0,
+        "newVersions": 3
+      },
+      "topics": [
+        {
+          "topicId": "topic-a",
+          "topicTitle": "topic-a",
+          "metadataChanged": true,
+          "counts": {
+            "added": 2,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 0,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 2
+          },
+          "questions": [
+            {
+              "questionId": "a-1",
+              "kind": "added",
+              "contentChanged": true
+            },
+            {
+              "questionId": "a-2",
+              "kind": "added",
+              "contentChanged": true
+            }
+          ]
+        },
+        {
+          "topicId": "topic-b",
+          "topicTitle": "topic-b",
+          "metadataChanged": true,
+          "counts": {
+            "added": 1,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 0,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 1
+          },
+          "questions": [
+            {
+              "questionId": "b-1",
+              "kind": "added",
+              "contentChanged": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "revision": 2,
+    "summary": {
+      "counts": {
+        "added": 0,
+        "updated": 0,
+        "metadata": 2,
+        "unchanged": 0,
+        "archived": 0,
+        "restored": 0,
+        "newVersions": 0
+      },
+      "topics": [
+        {
+          "topicId": "topic-a",
+          "topicTitle": "专题新名称",
+          "metadataChanged": true,
+          "counts": {
+            "added": 0,
+            "updated": 0,
+            "metadata": 2,
+            "unchanged": 0,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 0
+          },
+          "questions": [
+            {
+              "questionId": "a-2",
+              "kind": "metadata",
+              "contentChanged": false
+            },
+            {
+              "questionId": "a-1",
+              "kind": "metadata",
+              "contentChanged": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "metadataState": {
+    "valid": 1
+  },
+  "imageUpdate": {
+    "revision": 3,
+    "summary": {
+      "counts": {
+        "added": 0,
+        "updated": 1,
+        "metadata": 0,
+        "unchanged": 1,
+        "archived": 0,
+        "restored": 0,
+        "newVersions": 1
+      },
+      "topics": [
+        {
+          "topicId": "topic-a",
+          "topicTitle": "专题新名称",
+          "metadataChanged": false,
+          "counts": {
+            "added": 0,
+            "updated": 1,
+            "metadata": 0,
+            "unchanged": 1,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 1
+          },
+          "questions": [
+            {
+              "questionId": "a-2",
+              "kind": "unchanged",
+              "contentChanged": false
+            },
+            {
+              "questionId": "a-1",
+              "kind": "updated",
+              "contentChanged": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "answerUpdate": {
+    "revision": 4,
+    "summary": {
+      "counts": {
+        "added": 0,
+        "updated": 1,
+        "metadata": 0,
+        "unchanged": 1,
+        "archived": 0,
+        "restored": 0,
+        "newVersions": 1
+      },
+      "topics": [
+        {
+          "topicId": "topic-a",
+          "topicTitle": "topic-a",
+          "metadataChanged": true,
+          "counts": {
+            "added": 0,
+            "updated": 1,
+            "metadata": 0,
+            "unchanged": 1,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 1
+          },
+          "questions": [
+            {
+              "questionId": "a-2",
+              "kind": "unchanged",
+              "contentChanged": false
+            },
+            {
+              "questionId": "a-1",
+              "kind": "updated",
+              "contentChanged": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "archive": {
+    "revision": 5,
+    "summary": {
+      "counts": {
+        "added": 0,
+        "updated": 0,
+        "metadata": 0,
+        "unchanged": 1,
+        "archived": 1,
+        "restored": 0,
+        "newVersions": 0
+      },
+      "topics": [
+        {
+          "topicId": "topic-a",
+          "topicTitle": "topic-a",
+          "metadataChanged": false,
+          "counts": {
+            "added": 0,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 1,
+            "archived": 1,
+            "restored": 0,
+            "newVersions": 0
+          },
+          "questions": [
+            {
+              "questionId": "a-2",
+              "kind": "unchanged",
+              "contentChanged": false
+            },
+            {
+              "questionId": "a-1",
+              "kind": "archived",
+              "contentChanged": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "archived": {
+    "archived": 1
+  },
+  "restore": {
+    "revision": 6,
+    "summary": {
+      "counts": {
+        "added": 0,
+        "updated": 0,
+        "metadata": 0,
+        "unchanged": 1,
+        "archived": 0,
+        "restored": 1,
+        "newVersions": 0
+      },
+      "topics": [
+        {
+          "topicId": "topic-a",
+          "topicTitle": "topic-a",
+          "metadataChanged": false,
+          "counts": {
+            "added": 0,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 1,
+            "archived": 0,
+            "restored": 1,
+            "newVersions": 0
+          },
+          "questions": [
+            {
+              "questionId": "a-2",
+              "kind": "unchanged",
+              "contentChanged": false
+            },
+            {
+              "questionId": "a-1",
+              "kind": "restored",
+              "contentChanged": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "restoredChanged": {
+    "revision": 8,
+    "summary": {
+      "counts": {
+        "added": 0,
+        "updated": 0,
+        "metadata": 0,
+        "unchanged": 1,
+        "archived": 0,
+        "restored": 1,
+        "newVersions": 1
+      },
+      "topics": [
+        {
+          "topicId": "topic-a",
+          "topicTitle": "topic-a",
+          "metadataChanged": false,
+          "counts": {
+            "added": 0,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 1,
+            "archived": 0,
+            "restored": 1,
+            "newVersions": 1
+          },
+          "questions": [
+            {
+              "questionId": "a-2",
+              "kind": "unchanged",
+              "contentChanged": false
+            },
+            {
+              "questionId": "a-1",
+              "kind": "restored",
+              "contentChanged": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "same": {
+    "revision": 8,
+    "summary": {
+      "counts": {
+        "added": 0,
+        "updated": 0,
+        "metadata": 0,
+        "unchanged": 2,
+        "archived": 0,
+        "restored": 0,
+        "newVersions": 0
+      },
+      "topics": [
+        {
+          "topicId": "topic-a",
+          "topicTitle": "topic-a",
+          "metadataChanged": false,
+          "counts": {
+            "added": 0,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 2,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 0
+          },
+          "questions": [
+            {
+              "questionId": "a-2",
+              "kind": "unchanged",
+              "contentChanged": false
+            },
+            {
+              "questionId": "a-1",
+              "kind": "unchanged",
+              "contentChanged": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "beforeRepeat": {
+    "counts": {
+      "topics": 2,
+      "questions": 3,
+      "question_versions": 6,
+      "image_resources": 2,
+      "version_images": 4,
+      "import_receipts": 8
+    },
+    "revision": 8
+  },
+  "afterRepeat": {
+    "counts": {
+      "topics": 2,
+      "questions": 3,
+      "question_versions": 6,
+      "image_resources": 2,
+      "version_images": 4,
+      "import_receipts": 9
+    },
+    "revision": 8
+  },
+  "stale": {
+    "ok": false,
+    "error": {
+      "code": "PREVIEW_STALE",
+      "message": "题库在预览后已变化，请重新预览再确认。"
+    }
+  },
+  "state": {
+    "id": 1,
+    "archived": 0,
+    "favorite": 1,
+    "rating": "掌握",
+    "ratedVersion": 1,
+    "currentVersion": 6,
+    "valid": 0
+  },
+  "identity": {
+    "id": 1,
+    "version": 1
+  },
+  "wrongVersionRejected": true,
+  "history": [
+    {
+      "version_id": 1,
+      "note": "retain"
+    }
+  ],
+  "versions": [
+    {
+      "question_id": 1,
+      "sequence": 1
+    },
+    {
+      "question_id": 2,
+      "sequence": 1
+    },
+    {
+      "question_id": 3,
+      "sequence": 1
+    },
+    {
+      "question_id": 1,
+      "sequence": 2
+    },
+    {
+      "question_id": 1,
+      "sequence": 3
+    },
+    {
+      "question_id": 1,
+      "sequence": 4
+    }
+  ],
+  "counts": {
+    "topics": 2,
+    "questions": 3,
+    "question_versions": 6,
+    "image_resources": 2,
+    "version_images": 4,
+    "import_receipts": 10
+  },
+  "foreignKeys": [],
+  "errors": []
+}

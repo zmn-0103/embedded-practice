@@ -1,0 +1,19 @@
+
+> embedded-practice@0.1.0 test:packaged
+> playwright test --project=packaged
+
+
+Running 8 tests using 1 worker
+
+(node:27964) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [packaged] › tests\e2e\database-errors.spec.ts:24:7 › 损坏文件报错且原文件不变 (729ms)
+  ok 2 [packaged] › tests\e2e\database-errors.spec.ts:24:7 › 无应用标识的非空库报错且原文件不变 (620ms)
+  ok 3 [packaged] › tests\e2e\database-errors.spec.ts:24:7 › 不受支持的结构版本报错且原文件不变 (567ms)
+  ok 4 [packaged] › tests\e2e\import-worker.spec.ts:38:5 › 真实线程准备题库与三种图片，停止后来源可移动 (631ms)
+  ok 5 [packaged] › tests\e2e\import-worker.spec.ts:79:5 › 真实线程支持忙碌、失败后重试、取消与期限 (716ms)
+  ok 6 [packaged] › tests\e2e\import-worker.spec.ts:105:5 › 关闭服务等待真实线程停止并拒绝新任务 (524ms)
+  ok 7 [packaged] › tests\e2e\startup.spec.ts:5:5 › 关闭重开后读回 SQLite 记录 (1.2s)
+  ok 8 [packaged] › tests\e2e\startup.spec.ts:37:5 › 窗口隔离与生产内容策略生效 (589ms)
+
+  8 passed (6.0s)

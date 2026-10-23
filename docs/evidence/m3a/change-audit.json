@@ -1,0 +1,190 @@
+{
+  "checkedAt": "2026-10-21T01:48:00.912Z",
+  "beforeFiles": 487,
+  "unchanged": 466,
+  "changed": [
+    {
+      "path": "AGENTS.md",
+      "before": "0C482CAFA0B542CDDFFA43E7E740D0A26E30F994EC124EFE8E10D686BBF8BC2B",
+      "current": "86241D9B30B4277EFD70041CCD0B6033089CBD926AE35AB5D2FDC52E49F3F9FD"
+    },
+    {
+      "path": "README.md",
+      "before": "41F8B30150D4AC3ADBE7DAF66EF75F657D31F2AEFC5E25DA58FDC216403195A7",
+      "current": "AC4928CEED9915F728B7F9463DA24D1C1C6244BD80987F7F74DCF3DFC4314DED"
+    },
+    {
+      "path": "docs/验收记录.md",
+      "before": "6F0DB93E8BEF648947D15A03B4E6CF16BE1555B0234A73360AC7B4B8C9ABE405",
+      "current": "59CB3A755B1A7BD5A38882BE86E6ECA555934B4DD61E58C955101D4F66BE81A8"
+    },
+    {
+      "path": "docs/开发说明.md",
+      "before": "1196D0B97CED8D1BD8C1569DE9E741E444BFBFF73AD9CC70BC1C179F5B6DBF81",
+      "current": "30538C1C198864D9CAA30EE62255A0D8C200A724E28E5A2F1B5F89828957A155"
+    },
+    {
+      "path": "docs/使用说明.md",
+      "before": "C86B5EFE31B85B4BE5114438EBA2B41772515AE169E06E8EFA2793BD54355926",
+      "current": "CCB348347192D817C7FE3CC2F2583D4FAD28B7AE3D21700DD2D1E4697C9C53FE"
+    },
+    {
+      "path": "docs/代码复查记录.md",
+      "before": "C45FC50B08A6ABDB9E4DEEEAD500F1898BEF70989CC4DAD8677EE5A1A5F7D470",
+      "current": "03526578C8AFC311919A7A53AD250C84E998C6CB319DFD4B6254035B5D13C73F"
+    },
+    {
+      "path": "docs/产品说明.md",
+      "before": "E1091CAA58364B0908B4A85BF611C5A8C145B17DAF2321BAAC560555873E4F38",
+      "current": "7AFA6E210BC1C578C7763D346B322A7403142240EFD37992F7ABDCCDBAFA1895"
+    },
+    {
+      "path": "docs/README.md",
+      "before": "490EC45147AAE883F7FA8C909E57C46BD98EEFAE1A8187B6277A1559609071B3",
+      "current": "A86C01AA369F5A1364098A5736F88135D62CC0FC3E485A7C6CCBE83D83D2E2C3"
+    },
+    {
+      "path": "tests/unit/library-ipc.test.ts",
+      "before": "CF120122E9B5A2B722BC536CDE83C54B4DB9B0AF47AF56683CE77AB23F67DDA2",
+      "current": "39F5AFC14A78440BE5D3759F4AF8D00AD003EBBD7E3A6D514A9F4BE92A0D1F89"
+    },
+    {
+      "path": "src/preload/index.ts",
+      "before": "EF7193793A840B2CE250FF197C9FED54A71136B408C3A58E4DF4628232212533",
+      "current": "7FD916DE8032CE641558CB0176283874AD8073CC1EAFB9A2B03DDC4ACBC5400E"
+    },
+    {
+      "path": "tests/e2e/startup.spec.ts",
+      "before": "FF213EA8F465DD566F8FDDF044D5A490D6A60122B7BC0442491605F838147B17",
+      "current": "C73D140FFB299FA80D2AC66D1AB2FC6B8D663C0AEA64B435C181D15C8D9F4E90"
+    },
+    {
+      "path": "src/shared/contracts/practice.ts",
+      "before": "007585F60CACB59AB7609B18D87C07689CC4B92AB25813488E54969DE2782F16",
+      "current": "820D7C76C155A3F1ABF56DAAD506C6312EDD0DE6E5A4F310C7E98A7A32900A11"
+    },
+    {
+      "path": "src/shared/contracts/library-desktop.ts",
+      "before": "C91EFD908B133A974B6D63C5C4FAB2BFEA28639BFE395F109E862090DA334297",
+      "current": "7F1F5B48B163683C5661636639851DD2A2720DAC6653060B216EA69E351FAD57"
+    },
+    {
+      "path": "src/main/database/repositories/practice-repository.ts",
+      "before": "2E00791CA19F415750540FA4E683CF11BD7BD2CA4EAAACB98DE9CDC39C6A711B",
+      "current": "F327E9B76CB2DDB3B5ABD451BEB53C1451464BE71043856A6383857B91C6F3EC"
+    },
+    {
+      "path": "src/main/database/repositories/library-reader.ts",
+      "before": "B43B2FFAF59EDCCB61EFF4360B69B55A27B23FC31F21F2AD4E78731AC596C7E8",
+      "current": "55FAC6688CB352C6DE5A698FF211869EB8064218357A40390DA077C078E14523"
+    },
+    {
+      "path": "src/main/ipc/library.ts",
+      "before": "820F8171DE05E0F20F1AD60378112E6665E8A4CD158BFE782AFD561875B6CB93",
+      "current": "1B4B76F6A9F2F9BAC07A110C20A71DBF72A79586C6C84DB3E749680B2C99B2F5"
+    },
+    {
+      "path": "src/main/services/library/library-import.ts",
+      "before": "0C2F4F5E968BA25A9B3F03019D8A0A34AE677E8DDCB8F1BB30BD9A5D9CAF8440",
+      "current": "7051FFEE31C26EAED3BB59D37E355FC301C32AEEBA8C98AD6724FD585D03C4A1"
+    },
+    {
+      "path": "src/renderer/src/App.tsx",
+      "before": "D29ACF875A1750E8D19ECAC4DF9B91465082FE271EF611697136EB36B11F7F28",
+      "current": "A0CD383FC6E04CB090C46E1DF85912447D4EED595C89F75EB9A5B576FCD863F9"
+    },
+    {
+      "path": "src/renderer/src/components/LibraryBrowser.tsx",
+      "before": "8591FAAC20CE054D578186432B404F0FEC97FB1397EE484E040E7179B0A085F1",
+      "current": "2C2FE1E5D68306CBDAE465DAAC16D95D31023B6FCE7097DB9728EC6F7E47DD5C"
+    },
+    {
+      "path": "src/renderer/src/components/PracticeWorkspace.tsx",
+      "before": "588C189E9564FBCCDECC04171DA08A1E83323318D92F4795057364A8117059C6",
+      "current": "F4E37DF4920D141B76624AFDB0E276CC646ABDBAAEB092C58D19F71A904051FE"
+    },
+    {
+      "path": "src/renderer/src/styles/global.css",
+      "before": "B47E4548C62443810648F720529AD47897583B0D3E692678871207BD4B4CD48C",
+      "current": "5D41C7987661DF7F6C3E3DCD206CB49FBEE8CEB826BC1557B4233F41FCC4C231"
+    }
+  ],
+  "added": [
+    "docs/M3第一批行为与验收.md",
+    "docs/evidence/m3a/README.md",
+    "docs/evidence/m3a/change-audit.json",
+    "docs/evidence/m3a/development-favorite-failure-retry.json",
+    "docs/evidence/m3a/development-favorite-reopened.json",
+    "docs/evidence/m3a/development-filtered-queue-state.json",
+    "docs/evidence/m3a/development-search-boundaries.json",
+    "docs/evidence/m3a/development-search-filter.png",
+    "docs/evidence/m3a/development-tests.json",
+    "docs/evidence/m3a/development-version-archive-restore.json",
+    "docs/evidence/m3a/documents-static-first.json",
+    "docs/evidence/m3a/documents-static.json",
+    "docs/evidence/m3a/environment.json",
+    "docs/evidence/m3a/focused-tests.json",
+    "docs/evidence/m3a/package-inspection.json",
+    "docs/evidence/m3a/packaged-favorite-failure-retry.json",
+    "docs/evidence/m3a/packaged-favorite-reopened.json",
+    "docs/evidence/m3a/packaged-filtered-queue-state.json",
+    "docs/evidence/m3a/packaged-search-boundaries.json",
+    "docs/evidence/m3a/packaged-search-filter.png",
+    "docs/evidence/m3a/packaged-tests.json",
+    "docs/evidence/m3a/packaged-version-archive-restore.json",
+    "docs/evidence/m3a/results-summary.json",
+    "docs/evidence/m3a/source-manifest.json",
+    "docs/evidence/m3a/unit-first.json",
+    "src/main/database/repositories/favorite-repository.ts",
+    "src/main/database/repositories/question-selection.ts",
+    "src/renderer/src/components/QuestionFilterFields.tsx",
+    "src/shared/contracts/question-filters.ts",
+    "tests/e2e/learning-management.spec.ts",
+    "tests/unit/question-filters.test.ts"
+  ],
+  "deleted": [],
+  "codeFiles": [
+    "tests/unit/library-ipc.test.ts",
+    "src/preload/index.ts",
+    "tests/e2e/startup.spec.ts",
+    "src/shared/contracts/practice.ts",
+    "src/shared/contracts/library-desktop.ts",
+    "src/main/database/repositories/practice-repository.ts",
+    "src/main/database/repositories/library-reader.ts",
+    "src/main/ipc/library.ts",
+    "src/main/services/library/library-import.ts",
+    "src/renderer/src/App.tsx",
+    "src/renderer/src/components/LibraryBrowser.tsx",
+    "src/renderer/src/components/PracticeWorkspace.tsx",
+    "src/renderer/src/styles/global.css",
+    "src/main/database/repositories/favorite-repository.ts",
+    "src/main/database/repositories/question-selection.ts",
+    "src/renderer/src/components/QuestionFilterFields.tsx",
+    "src/shared/contracts/question-filters.ts",
+    "tests/e2e/learning-management.spec.ts",
+    "tests/unit/question-filters.test.ts"
+  ],
+  "protectedUnchanged": true,
+  "protectedFiles": [
+    "计划书.md",
+    "package.json",
+    "package-lock.json",
+    "electron-builder.yml",
+    "question-banks/templates/专题模板.md",
+    "question-banks/templates/README.md",
+    "question-banks/templates/.gitkeep",
+    "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+    "question-banks/sources/STM32F103RCT6-GPIO-题答对应.json",
+    "question-banks/sources/STM32F103RCT6-GPIO-原始自测题.txt",
+    "question-banks/README.md",
+    "question-banks/examples/格式示例.md",
+    "question-banks/examples/README.md",
+    "question-banks/examples/assets/测试.webp",
+    "question-banks/examples/assets/带 空格.jpg",
+    "question-banks/examples/assets/中文测试图.png",
+    "question-banks/examples/assets/.gitkeep",
+    "src/main/database/practice-schema.ts",
+    "src/main/database/migrations/.gitkeep",
+    "src/main/database/library-schema.ts"
+  ]
+}

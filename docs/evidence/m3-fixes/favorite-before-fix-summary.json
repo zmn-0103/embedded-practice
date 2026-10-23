@@ -1,0 +1,48 @@
+{
+  "stats": {
+    "startTime": "2026-10-21T04:27:43.970Z",
+    "duration": 9622.636,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  },
+  "rows": [
+    {
+      "project": "development",
+      "case": "M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致",
+      "status": "failed",
+      "intended": false,
+      "list": "A 筛选专题 · q-01\nGpioTitleMarker\n已收藏",
+      "detail": "false",
+      "databaseFavorite": 0
+    },
+    {
+      "project": "development",
+      "case": "M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致",
+      "status": "failed",
+      "intended": true,
+      "list": "A 筛选专题 · q-01\nGpioTitleMarker",
+      "detail": "true",
+      "databaseFavorite": 1
+    },
+    {
+      "project": "packaged",
+      "case": "M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致",
+      "status": "failed",
+      "intended": false,
+      "list": "A 筛选专题 · q-01\nGpioTitleMarker\n已收藏",
+      "detail": "false",
+      "databaseFavorite": 0
+    },
+    {
+      "project": "packaged",
+      "case": "M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致",
+      "status": "failed",
+      "intended": true,
+      "list": "A 筛选专题 · q-01\nGpioTitleMarker",
+      "detail": "true",
+      "databaseFavorite": 1
+    }
+  ]
+}

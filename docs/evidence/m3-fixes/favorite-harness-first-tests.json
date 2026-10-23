@@ -1,0 +1,531 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=development",
+      "--project=packaged",
+      "--grep",
+      "M3 修复"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "learning-management.spec.ts",
+      "file": "learning-management.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11226,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:246:10",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                      "column": 10,
+                      "line": 246
+                    },
+                    "snippet": "  244 |       await expect\n  245 |         .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 246 |         .toBeGreaterThan(barrier.readyCount)\n      |          ^\n  247 |       await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  248 |       const observed = {\n  249 |         initialFavorite,"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                        "column": 10,
+                        "line": 246
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n  244 |       await expect\n  245 |         .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 246 |         .toBeGreaterThan(barrier.readyCount)\n      |          ^\n  247 |       await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  248 |       const observed = {\n  249 |         initialFavorite,\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:246:10"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:26:10.356Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\learning-management-M3-修复：旧收藏响应晚于新操作，最终未收藏保持一致-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                    "column": 10,
+                    "line": 246
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7721b2e31cc4f9800f87-25cd8502da964d721c59",
+          "file": "learning-management.spec.ts",
+          "line": 210,
+          "column": 7
+        },
+        {
+          "title": "M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11034,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:246:10",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                      "column": 10,
+                      "line": 246
+                    },
+                    "snippet": "  244 |       await expect\n  245 |         .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 246 |         .toBeGreaterThan(barrier.readyCount)\n      |          ^\n  247 |       await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  248 |       const observed = {\n  249 |         initialFavorite,"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                        "column": 10,
+                        "line": 246
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n  244 |       await expect\n  245 |         .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 246 |         .toBeGreaterThan(barrier.readyCount)\n      |          ^\n  247 |       await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  248 |       const observed = {\n  249 |         initialFavorite,\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:246:10"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:26:22.005Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\learning-management-M3-修复：旧收藏响应晚于新操作，最终已收藏保持一致-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                    "column": 10,
+                    "line": 246
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7721b2e31cc4f9800f87-1eb9a25293538afdc163",
+          "file": "learning-management.spec.ts",
+          "line": 210,
+          "column": 7
+        },
+        {
+          "title": "M3 修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11013,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m1\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m1\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:288:8",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                      "column": 8,
+                      "line": 288
+                    },
+                    "snippet": "  286 |     await expect\n  287 |       .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 288 |       .toBeGreaterThan(barrier.readyCount)\n      |        ^\n  289 |     await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  290 |     await expect(page.getByRole('button', { name: /A 筛选专题.*q-01/ })).toContainText('已收藏')\n  291 |     await expect(page.getByText('匹配 1 题', { exact: true })).toBeVisible()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                        "column": 8,
+                        "line": 288
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m1\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n  286 |     await expect\n  287 |       .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 288 |       .toBeGreaterThan(barrier.readyCount)\n      |        ^\n  289 |     await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  290 |     await expect(page.getByRole('button', { name: /A 筛选专题.*q-01/ })).toContainText('已收藏')\n  291 |     await expect(page.getByText('匹配 1 题', { exact: true })).toBeVisible()\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:288:8"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:26:33.489Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\learning-management-M3-修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                    "column": 8,
+                    "line": 288
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7721b2e31cc4f9800f87-c986d6fa83e79302ebf4",
+          "file": "learning-management.spec.ts",
+          "line": 270,
+          "column": 5
+        },
+        {
+          "title": "M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10981,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:246:10",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                      "column": 10,
+                      "line": 246
+                    },
+                    "snippet": "  244 |       await expect\n  245 |         .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 246 |         .toBeGreaterThan(barrier.readyCount)\n      |          ^\n  247 |       await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  248 |       const observed = {\n  249 |         initialFavorite,"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                        "column": 10,
+                        "line": 246
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n  244 |       await expect\n  245 |         .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 246 |         .toBeGreaterThan(barrier.readyCount)\n      |          ^\n  247 |       await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  248 |       const observed = {\n  249 |         initialFavorite,\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:246:10"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:26:44.894Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\learning-management-M3-修复：旧收藏响应晚于新操作，最终未收藏保持一致-packaged\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                    "column": 10,
+                    "line": 246
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7721b2e31cc4f9800f87-c37d3a4e75752ed098af",
+          "file": "learning-management.spec.ts",
+          "line": 210,
+          "column": 7
+        },
+        {
+          "title": "M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10977,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:246:10",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                      "column": 10,
+                      "line": 246
+                    },
+                    "snippet": "  244 |       await expect\n  245 |         .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 246 |         .toBeGreaterThan(barrier.readyCount)\n      |          ^\n  247 |       await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  248 |       const observed = {\n  249 |         initialFavorite,"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                        "column": 10,
+                        "line": 246
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m2\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n  244 |       await expect\n  245 |         .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 246 |         .toBeGreaterThan(barrier.readyCount)\n      |          ^\n  247 |       await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  248 |       const observed = {\n  249 |         initialFavorite,\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:246:10"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:26:56.272Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\learning-management-M3-修复：旧收藏响应晚于新操作，最终已收藏保持一致-packaged\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                    "column": 10,
+                    "line": 246
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7721b2e31cc4f9800f87-42aad63b716327bd851e",
+          "file": "learning-management.spec.ts",
+          "line": 210,
+          "column": 7
+        },
+        {
+          "title": "M3 修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10948,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m1\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m1\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:288:8",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                      "column": 8,
+                      "line": 288
+                    },
+                    "snippet": "  286 |     await expect\n  287 |       .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 288 |       .toBeGreaterThan(barrier.readyCount)\n      |        ^\n  289 |     await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  290 |     await expect(page.getByRole('button', { name: /A 筛选专题.*q-01/ })).toContainText('已收藏')\n  291 |     await expect(page.getByText('匹配 1 题', { exact: true })).toBeVisible()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                        "column": 8,
+                        "line": 288
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m1\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n  286 |     await expect\n  287 |       .poll(async () => (await favoriteResponseState(application)).readyCount)\n> 288 |       .toBeGreaterThan(barrier.readyCount)\n      |        ^\n  289 |     await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  290 |     await expect(page.getByRole('button', { name: /A 筛选专题.*q-01/ })).toContainText('已收藏')\n  291 |     await expect(page.getByText('匹配 1 题', { exact: true })).toBeVisible()\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:288:8"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:27:07.653Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\learning-management-M3-修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数-packaged\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+                    "column": 8,
+                    "line": 288
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7721b2e31cc4f9800f87-a2b9035c421fbd99a4fa",
+          "file": "learning-management.spec.ts",
+          "line": 270,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-21T04:26:09.577Z",
+    "duration": 69067.99399999999,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}

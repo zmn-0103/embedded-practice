@@ -1,0 +1,1056 @@
+{
+  "stats": {
+    "startTime": "2026-10-21T04:31:10.498Z",
+    "duration": 19676.345999999998,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "rows": [
+    {
+      "name": "M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡",
+      "zoom": 1,
+      "expected": {
+        "x": 92,
+        "y": 222.45,
+        "hitId": "practice-answer",
+        "scrollY": 874
+      },
+      "actual": {
+        "x": 92,
+        "y": 222.45,
+        "hitId": "practice-answer",
+        "scrollY": 874
+      },
+      "desktopBefore": {
+        "zoomFactor": 1,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "desktopAfter": {
+        "zoomFactor": 1,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "rendererBefore": {
+        "viewport": {
+          "width": 1124,
+          "height": 741,
+          "dpr": 1
+        },
+        "style": {
+          "border": "1px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557072099,
+            "scrollY": 644,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          },
+          {
+            "type": "scroll",
+            "time": 1792557072128,
+            "scrollY": 430,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          }
+        ]
+      },
+      "rendererAfter": {
+        "viewport": {
+          "width": 1124,
+          "height": 741,
+          "dpr": 1
+        },
+        "style": {
+          "border": "1px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557072099,
+            "scrollY": 644,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          },
+          {
+            "type": "scroll",
+            "time": 1792557072128,
+            "scrollY": 430,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          },
+          {
+            "type": "scroll",
+            "time": 1792557072165,
+            "scrollY": 874,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡",
+      "zoom": 1.25,
+      "expected": {
+        "x": 75.40000228881836,
+        "y": 75.60000228881836,
+        "hitId": "practice-answer",
+        "scrollY": 1020.7999877929688
+      },
+      "actual": {
+        "x": 75.40000228881836,
+        "y": 75.60000228881836,
+        "hitId": "practice-answer",
+        "scrollY": 1020.7999877929688
+      },
+      "desktopBefore": {
+        "zoomFactor": 1.25,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "desktopAfter": {
+        "zoomFactor": 1.25,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "rendererBefore": {
+        "viewport": {
+          "width": 899,
+          "height": 593,
+          "dpr": 1.25
+        },
+        "style": {
+          "border": "0.8px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557074127,
+            "scrollY": 718.4000244140625,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          },
+          {
+            "type": "scroll",
+            "time": 1792557074162,
+            "scrollY": 577.5999755859375,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          }
+        ]
+      },
+      "rendererAfter": {
+        "viewport": {
+          "width": 899,
+          "height": 593,
+          "dpr": 1.25
+        },
+        "style": {
+          "border": "0.8px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557074127,
+            "scrollY": 718.4000244140625,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          },
+          {
+            "type": "scroll",
+            "time": 1792557074162,
+            "scrollY": 577.5999755859375,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          },
+          {
+            "type": "scroll",
+            "time": 1792557074193,
+            "scrollY": 1020.7999877929688,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          }
+        ]
+      }
+    },
+    {
+      "name": "M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡",
+      "zoom": 1.5,
+      "expected": {
+        "x": 75.00000287646483,
+        "y": 26.179167,
+        "hitId": "practice-answer",
+        "scrollY": 1066
+      },
+      "actual": {
+        "x": 75.00000287646483,
+        "y": 26.179167,
+        "hitId": "practice-answer",
+        "scrollY": 1066
+      },
+      "desktopBefore": {
+        "zoomFactor": 1.5,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "desktopAfter": {
+        "zoomFactor": 1.5,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "rendererBefore": {
+        "viewport": {
+          "width": 749,
+          "height": 494,
+          "dpr": 1.5
+        },
+        "style": {
+          "border": "0.666667px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557076187,
+            "scrollY": 763.3333129882812,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          },
+          {
+            "type": "scroll",
+            "time": 1792557076219,
+            "scrollY": 672,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          }
+        ]
+      },
+      "rendererAfter": {
+        "viewport": {
+          "width": 749,
+          "height": 494,
+          "dpr": 1.5
+        },
+        "style": {
+          "border": "0.666667px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557076187,
+            "scrollY": 763.3333129882812,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          },
+          {
+            "type": "scroll",
+            "time": 1792557076219,
+            "scrollY": 672,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          },
+          {
+            "type": "scroll",
+            "time": 1792557076253,
+            "scrollY": 1066,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡",
+      "zoom": 1,
+      "expected": {
+        "x": 92,
+        "y": 222.45,
+        "hitId": "practice-answer",
+        "scrollY": 874
+      },
+      "actual": {
+        "x": 92,
+        "y": 222.45,
+        "hitId": "practice-answer",
+        "scrollY": 874
+      },
+      "desktopBefore": {
+        "zoomFactor": 1,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "desktopAfter": {
+        "zoomFactor": 1,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "rendererBefore": {
+        "viewport": {
+          "width": 1124,
+          "height": 741,
+          "dpr": 1
+        },
+        "style": {
+          "border": "1px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557078516,
+            "scrollY": 644,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          },
+          {
+            "type": "scroll",
+            "time": 1792557078544,
+            "scrollY": 430,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          }
+        ]
+      },
+      "rendererAfter": {
+        "viewport": {
+          "width": 1124,
+          "height": 741,
+          "dpr": 1
+        },
+        "style": {
+          "border": "1px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557078516,
+            "scrollY": 644,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          },
+          {
+            "type": "scroll",
+            "time": 1792557078544,
+            "scrollY": 430,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          },
+          {
+            "type": "scroll",
+            "time": 1792557078576,
+            "scrollY": 874,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡",
+      "zoom": 1.25,
+      "expected": {
+        "x": 75.40000228881836,
+        "y": 75.60000228881836,
+        "hitId": "practice-answer",
+        "scrollY": 1020.7999877929688
+      },
+      "actual": {
+        "x": 75.40000228881836,
+        "y": 75.60000228881836,
+        "hitId": "practice-answer",
+        "scrollY": 1020.7999877929688
+      },
+      "desktopBefore": {
+        "zoomFactor": 1.25,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "desktopAfter": {
+        "zoomFactor": 1.25,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "rendererBefore": {
+        "viewport": {
+          "width": 899,
+          "height": 593,
+          "dpr": 1.25
+        },
+        "style": {
+          "border": "0.8px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557080548,
+            "scrollY": 718.4000244140625,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          },
+          {
+            "type": "scroll",
+            "time": 1792557080574,
+            "scrollY": 577.5999755859375,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          }
+        ]
+      },
+      "rendererAfter": {
+        "viewport": {
+          "width": 899,
+          "height": 593,
+          "dpr": 1.25
+        },
+        "style": {
+          "border": "0.8px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557080548,
+            "scrollY": 718.4000244140625,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          },
+          {
+            "type": "scroll",
+            "time": 1792557080574,
+            "scrollY": 577.5999755859375,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          },
+          {
+            "type": "scroll",
+            "time": 1792557080609,
+            "scrollY": 1020.7999877929688,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          }
+        ]
+      }
+    },
+    {
+      "name": "M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡",
+      "zoom": 1.5,
+      "expected": {
+        "x": 75.00000287646483,
+        "y": 26.179167,
+        "hitId": "practice-answer",
+        "scrollY": 1066
+      },
+      "actual": {
+        "x": 75.00000287646483,
+        "y": 26.179167,
+        "hitId": "practice-answer",
+        "scrollY": 1066
+      },
+      "desktopBefore": {
+        "zoomFactor": 1.5,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "desktopAfter": {
+        "zoomFactor": 1.5,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "rendererBefore": {
+        "viewport": {
+          "width": 749,
+          "height": 494,
+          "dpr": 1.5
+        },
+        "style": {
+          "border": "0.666667px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557082571,
+            "scrollY": 763.3333129882812,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          },
+          {
+            "type": "scroll",
+            "time": 1792557082601,
+            "scrollY": 672,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          }
+        ]
+      },
+      "rendererAfter": {
+        "viewport": {
+          "width": 749,
+          "height": 494,
+          "dpr": 1.5
+        },
+        "style": {
+          "border": "0.666667px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557082571,
+            "scrollY": 763.3333129882812,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          },
+          {
+            "type": "scroll",
+            "time": 1792557082601,
+            "scrollY": 672,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          },
+          {
+            "type": "scroll",
+            "time": 1792557082635,
+            "scrollY": 1066,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡",
+      "zoom": 1,
+      "expected": {
+        "x": 92,
+        "y": 222.45,
+        "hitId": "practice-answer",
+        "scrollY": 874
+      },
+      "actual": {
+        "x": 92,
+        "y": 222.45,
+        "hitId": "practice-answer",
+        "scrollY": 874
+      },
+      "desktopBefore": {
+        "zoomFactor": 1,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "desktopAfter": {
+        "zoomFactor": 1,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "rendererBefore": {
+        "viewport": {
+          "width": 1124,
+          "height": 741,
+          "dpr": 1
+        },
+        "style": {
+          "border": "1px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557084928,
+            "scrollY": 644,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          },
+          {
+            "type": "scroll",
+            "time": 1792557084956,
+            "scrollY": 430,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          }
+        ]
+      },
+      "rendererAfter": {
+        "viewport": {
+          "width": 1124,
+          "height": 741,
+          "dpr": 1
+        },
+        "style": {
+          "border": "1px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557084928,
+            "scrollY": 644,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          },
+          {
+            "type": "scroll",
+            "time": 1792557084956,
+            "scrollY": 430,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          },
+          {
+            "type": "scroll",
+            "time": 1792557084988,
+            "scrollY": 874,
+            "width": 1124,
+            "height": 741,
+            "dpr": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡",
+      "zoom": 1.25,
+      "expected": {
+        "x": 75.40000228881836,
+        "y": 75.60000228881836,
+        "hitId": "practice-answer",
+        "scrollY": 1020.7999877929688
+      },
+      "actual": {
+        "x": 75.40000228881836,
+        "y": 75.60000228881836,
+        "hitId": "practice-answer",
+        "scrollY": 1020.7999877929688
+      },
+      "desktopBefore": {
+        "zoomFactor": 1.25,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "desktopAfter": {
+        "zoomFactor": 1.25,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "rendererBefore": {
+        "viewport": {
+          "width": 899,
+          "height": 593,
+          "dpr": 1.25
+        },
+        "style": {
+          "border": "0.8px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557086931,
+            "scrollY": 718.4000244140625,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          },
+          {
+            "type": "scroll",
+            "time": 1792557086957,
+            "scrollY": 577.5999755859375,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          }
+        ]
+      },
+      "rendererAfter": {
+        "viewport": {
+          "width": 899,
+          "height": 593,
+          "dpr": 1.25
+        },
+        "style": {
+          "border": "0.8px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557086931,
+            "scrollY": 718.4000244140625,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          },
+          {
+            "type": "scroll",
+            "time": 1792557086957,
+            "scrollY": 577.5999755859375,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          },
+          {
+            "type": "scroll",
+            "time": 1792557086998,
+            "scrollY": 1020.7999877929688,
+            "width": 899,
+            "height": 593,
+            "dpr": 1.25
+          }
+        ]
+      }
+    },
+    {
+      "name": "M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡",
+      "zoom": 1.5,
+      "expected": {
+        "x": 75.00000287646483,
+        "y": 26.179167,
+        "hitId": "practice-answer",
+        "scrollY": 1066
+      },
+      "actual": {
+        "x": 75.00000287646483,
+        "y": 26.179167,
+        "hitId": "practice-answer",
+        "scrollY": 1066
+      },
+      "desktopBefore": {
+        "zoomFactor": 1.5,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "desktopAfter": {
+        "zoomFactor": 1.5,
+        "visible": true,
+        "bounds": {
+          "x": 390,
+          "y": 126,
+          "width": 1140,
+          "height": 780
+        },
+        "contentBounds": {
+          "x": 398,
+          "y": 157,
+          "width": 1124,
+          "height": 741
+        },
+        "displayScale": 1
+      },
+      "rendererBefore": {
+        "viewport": {
+          "width": 749,
+          "height": 494,
+          "dpr": 1.5
+        },
+        "style": {
+          "border": "0.666667px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557088976,
+            "scrollY": 763.3333129882812,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          },
+          {
+            "type": "scroll",
+            "time": 1792557089006,
+            "scrollY": 672,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          }
+        ]
+      },
+      "rendererAfter": {
+        "viewport": {
+          "width": 749,
+          "height": 494,
+          "dpr": 1.5
+        },
+        "style": {
+          "border": "0.666667px",
+          "font": "16px / 26.4px Consolas, \"Microsoft YaHei\", monospace"
+        },
+        "trace": [
+          {
+            "type": "scroll",
+            "time": 1792557088976,
+            "scrollY": 763.3333129882812,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          },
+          {
+            "type": "scroll",
+            "time": 1792557089006,
+            "scrollY": 672,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          },
+          {
+            "type": "scroll",
+            "time": 1792557089042,
+            "scrollY": 1066,
+            "width": 749,
+            "height": 494,
+            "dpr": 1.5
+          }
+        ]
+      }
+    }
+  ]
+}

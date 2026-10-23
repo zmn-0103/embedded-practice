@@ -1,0 +1,415 @@
+{
+  "capturedAt": "2026-10-22T07:00:18.926620+00:00",
+  "database": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\中文 验收数据\\practice.sqlite3",
+  "mode": "read-only transaction",
+  "integrity": [
+    "ok"
+  ],
+  "foreignKeys": [],
+  "schemaVersion": 6,
+  "applicationId": 1162891825,
+  "tables": {
+    "library_meta": {
+      "count": 1,
+      "sha256": "461f056244fd42a2892a80d51dd66b1fa4df1214752ad101ea7deb191aa45126",
+      "columns": [
+        "id",
+        "revision"
+      ]
+    },
+    "topics": {
+      "count": 1,
+      "sha256": "bdadb2902d688f542201cf965062ad2cad13c0ed1e93a66dc7291f8da5db19a1",
+      "columns": [
+        "topic_id",
+        "title",
+        "source_name"
+      ]
+    },
+    "questions": {
+      "count": 78,
+      "sha256": "3d576807d8e2e0df977a0954327f994013639607f4384e6aabf70d8184316a45",
+      "columns": [
+        "id",
+        "topic_id",
+        "question_id",
+        "title",
+        "tags_json",
+        "difficulty",
+        "position",
+        "archived",
+        "current_version_id"
+      ]
+    },
+    "question_versions": {
+      "count": 78,
+      "sha256": "0c63bfaa180415c51db96d74ac4009ba4b79bf162c74efbc561eed0bf5a850f3",
+      "columns": [
+        "id",
+        "question_id",
+        "sequence",
+        "title",
+        "question_markdown",
+        "answer_markdown",
+        "definitions_json",
+        "image_bindings_json",
+        "content_hash",
+        "created_at"
+      ]
+    },
+    "image_resources": {
+      "count": 0,
+      "sha256": "d94bb96745d4c2ff188b999406c7f376e4ece068182017c51bbdffd8ee26ed5c",
+      "columns": [
+        "hash",
+        "format",
+        "width",
+        "height",
+        "bytes"
+      ]
+    },
+    "version_images": {
+      "count": 0,
+      "sha256": "3316d5ad17233164872d7a3c03e840862dfa8fd27384fb787dc48f3c5fcc881f",
+      "columns": [
+        "version_id",
+        "resource_hash"
+      ]
+    },
+    "question_user_state": {
+      "count": 78,
+      "sha256": "77ab7c2d302c4339c3848dfb0e583cc6a86a1357418fa41cd776968b86223347",
+      "columns": [
+        "question_id",
+        "favorite",
+        "last_rating",
+        "last_rated_version_id"
+      ]
+    },
+    "import_receipts": {
+      "count": 1,
+      "sha256": "5569b248961e07e841027e4598e18ae6677f68428365dff10060629432d8fbc2",
+      "columns": [
+        "token",
+        "committed_at",
+        "result_json"
+      ]
+    },
+    "practice_sessions": {
+      "count": 1,
+      "sha256": "5d9b2b7dec93cc49d689feccb4b2dc1ddbba995faeac16bf7333a5930474c5a4",
+      "columns": [
+        "id",
+        "mode",
+        "topic_id",
+        "status",
+        "position",
+        "revision",
+        "created_at",
+        "ended_at",
+        "filters_json"
+      ],
+      "rows": [
+        {
+          "id": "509fb90a-9f2b-4d23-a578-5306e0946e58",
+          "mode": "sequential",
+          "topic_id": null,
+          "status": "active",
+          "position": 0,
+          "revision": 0,
+          "created_at": "2026-10-22T07:00:16.717Z",
+          "ended_at": null,
+          "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+        }
+      ]
+    },
+    "practice_items": {
+      "count": 20,
+      "sha256": "026f1b5d225ab1256b9bf1d71cbed8d0a6adfa7e0d73ac8397e9e0cca8a62364",
+      "columns": [
+        "session_id",
+        "position",
+        "question_id",
+        "version_id",
+        "title",
+        "topic_title",
+        "tags_json",
+        "difficulty",
+        "draft",
+        "draft_revision",
+        "revealed_at",
+        "rating",
+        "rated_at",
+        "skipped_at"
+      ],
+      "items": [
+        {
+          "position": 0,
+          "question_id": 1,
+          "version_id": 1,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 1,
+          "question_id": 2,
+          "version_id": 2,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 2,
+          "question_id": 3,
+          "version_id": 3,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 3,
+          "question_id": 4,
+          "version_id": 4,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 4,
+          "question_id": 5,
+          "version_id": 5,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 5,
+          "question_id": 6,
+          "version_id": 6,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 6,
+          "question_id": 7,
+          "version_id": 7,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 7,
+          "question_id": 8,
+          "version_id": 8,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 8,
+          "question_id": 9,
+          "version_id": 9,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 9,
+          "question_id": 10,
+          "version_id": 10,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 10,
+          "question_id": 11,
+          "version_id": 11,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 11,
+          "question_id": 12,
+          "version_id": 12,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 12,
+          "question_id": 13,
+          "version_id": 13,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 13,
+          "question_id": 14,
+          "version_id": 14,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 14,
+          "question_id": 15,
+          "version_id": 15,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 15,
+          "question_id": 16,
+          "version_id": 16,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 16,
+          "question_id": 17,
+          "version_id": 17,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 17,
+          "question_id": 18,
+          "version_id": 18,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 18,
+          "question_id": 19,
+          "version_id": 19,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "position": 19,
+          "question_id": 20,
+          "version_id": 20,
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null,
+          "rated_at": null,
+          "skipped_at": null,
+          "draftBytes": 0,
+          "draftSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "practice_receipts": {
+      "count": 1,
+      "sha256": "099c6af540cbc1b6b7362e07ac45bc5596d4d29973fcf6a5d40b8b7ea0ade460",
+      "columns": [
+        "request_id",
+        "payload_hash",
+        "result_json",
+        "created_at"
+      ]
+    },
+    "appearance_settings": {
+      "count": 1,
+      "sha256": "01952c4fd727927d3080d3ac8f4e505f960971e9631200f47e47d5d8f30653a0",
+      "columns": [
+        "id",
+        "theme",
+        "font_size"
+      ],
+      "rows": [
+        {
+          "id": 1,
+          "theme": "system",
+          "font_size": 17
+        }
+      ]
+    }
+  }
+}

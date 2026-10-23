@@ -1,0 +1,201 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/restore-window.spec.ts",
+      "--project=development",
+      "--grep",
+      "全新目录"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "restore-window.spec.ts",
+      "file": "restore-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 18014,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\restore-window.spec.ts:312:10\n    at temporary (E:\\My_Projects\\embedded-practice\\tests\\e2e\\restore-window.spec.ts:61:20)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\restore-window.spec.ts:218:3",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\restore-window.spec.ts",
+                      "column": 10,
+                      "line": 312
+                    },
+                    "snippet": "  310 |           { timeout: 15_000 },\n  311 |         )\n> 312 |         .toBe(true)\n      |          ^\n  313 |       const newPage = restarted!\n  314 |         .contexts()[0]!\n  315 |         .pages()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\restore-window.spec.ts",
+                        "column": 10,
+                        "line": 312
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n  310 |           { timeout: 15_000 },\n  311 |         )\n> 312 |         .toBe(true)\n      |          ^\n  313 |       const newPage = restarted!\n  314 |         .contexts()[0]!\n  315 |         .pages()\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\restore-window.spec.ts:312:10\n    at temporary (E:\\My_Projects\\embedded-practice\\tests\\e2e\\restore-window.spec.ts:61:20)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\restore-window.spec.ts:218:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T02:30:38.525Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "restart-request.json",
+                      "contentType": "application/json",
+                      "body": "eyJ0YXJnZXREaXJlY3RvcnkiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtcmVzdG9yZS1RZjdDOGRcXOWFqOaWsCDmlbDmja7nm67lvZUiLCJyZXF1ZXN0Ijp7ImFyZ3MiOlsiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcb3V0XFxtYWluXFxpbmRleC5qcyIsIi0tcmVtb3RlLWRlYnVnZ2luZy1wb3J0PTY1MTQ5Il19LCJwb3J0Ijo2NTE0OX0="
+                    },
+                    {
+                      "name": "failed-temporary-directory.txt",
+                      "contentType": "text/plain",
+                      "body": "QzpcVXNlcnNccGNcQXBwRGF0YVxMb2NhbFxUZW1wXGVtYmVkZGVkLXByYWN0aWNlLXJlc3RvcmUtUWY3Qzhk"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\restore-window-全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\restore-window.spec.ts",
+                    "column": 10,
+                    "line": 312
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "12ae7e0e5d7fc4beaa27-fc0aab9ce7d097d6cf5b",
+          "file": "restore-window.spec.ts",
+          "line": 214,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-22T02:30:38.068Z",
+    "duration": 18509.021,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

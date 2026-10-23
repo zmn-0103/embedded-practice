@@ -1,0 +1,14 @@
+
+Running 2 tests using 1 worker
+
+
+
+(node:31912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[1/2] [development] › tests\e2e\learning-records.spec.ts:24:5 › 学习总览空库、未知专题、严格输入与只读零结果
+(node:35092) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/2] [packaged] › tests\e2e\learning-records.spec.ts:24:5 › 学习总览空库、未知专题、严格输入与只读零结果
+  2 passed (3.6s)

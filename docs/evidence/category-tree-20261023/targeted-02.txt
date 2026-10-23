@@ -1,0 +1,45 @@
+
+Running 5 tests using 1 worker
+
+(node:37624) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/5] [development] › tests\e2e\category-practice.spec.ts:27:5 › 分类练习：同事务快照、随机队列、移动/改名/移除后的原请求重试和正常重开保持
+[2/5] [development] › tests\e2e\category-practice.spec.ts:122:5 › 分类统计：同题多轮去重、当前版本/收藏与归档交集，题库下方保持同一固定范围
+[3/5] [development] › tests\e2e\category-practice.spec.ts:220:5 › 分类统计：旧分类的晚到摘要不能覆盖新范围或下方题库
+  1) [development] › tests\e2e\category-practice.spec.ts:220:5 › 分类统计：旧分类的晚到摘要不能覆盖新范围或下方题库 ─────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: /cat-c.*q-1/ })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: /cat-c.*q-1/ }) with timeout 10000ms
+      - waiting for getByRole('button', { name: /cat-c.*q-1/ })
+
+
+      263 |     await page.getByRole('button', { name: '清空题库筛选', exact: true }).click()
+      264 |     await expect(page.getByText('共 1 题', { exact: true })).toBeVisible()
+    > 265 |     await expect(page.getByRole('button', { name: /cat-c.*q-1/ })).toBeVisible()
+          |                                                                    ^
+      266 |   } finally {
+      267 |     await application
+      268 |       .evaluate(() => Reflect.get(globalThis, '__releaseCategorySummary')?.())
+        at E:\My_Projects\embedded-practice\tests\e2e\category-practice.spec.ts:265:68
+
+    Error Context: docs\evidence\category-tree-20261023\targeted-02-files\category-practice-分类统计：旧分类的晚到摘要不能覆盖新范围或下方题库-development\error-context.md
+
+
+(node:36944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[4/5] [development] › tests\e2e\category-practice.spec.ts:275:7 › 分类正常关闭等待在途保存：成功后退出重开保持
+[5/5] [development] › tests\e2e\category-practice.spec.ts:275:7 › 分类正常关闭等待在途保存：失败返回窗口并保留原目标
+  1 failed
+    [development] › tests\e2e\category-practice.spec.ts:220:5 › 分类统计：旧分类的晚到摘要不能覆盖新范围或下方题库 ──────────
+  4 passed (21.7s)

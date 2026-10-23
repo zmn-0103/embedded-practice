@@ -1,0 +1,31 @@
+{
+  "reviewedAt": "2026-10-21T12:17:03.3025082+08:00",
+  "sourceManifestFiles": 515,
+  "sourceManifestMismatches": [],
+  "check": "passed",
+  "unit": {
+    "passed": 418,
+    "failed": 0,
+    "files": 21
+  },
+  "build": "passed",
+  "fullElectron": {
+    "development": {
+      "passed": 54,
+      "failed": 0
+    },
+    "packaged": {
+      "passed": 53,
+      "failed": 1
+    },
+    "failure": "practice-window.spec.ts:804 input coordinates changed; input remained focused and first line hit practice-answer"
+  },
+  "isolatedPackagedRecheck": {
+    "scenario": "100% page zoom keyboard input visibility and stable position",
+    "passed": 3,
+    "failed": 0,
+    "initialFailureCause": "not established"
+  },
+  "supplementalFindings": "findings.json",
+  "reviewMode": "No source or project document changes; builds and isolated temporary test data only"
+}

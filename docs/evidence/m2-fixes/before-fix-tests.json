@@ -1,0 +1,528 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/practice-window.spec.ts",
+      "--project=development",
+      "--grep",
+      "快速重复|图片自动保存",
+      "--output=tmp/m2-fixes-before-results"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/tmp/m2-fixes-before-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/tmp/m2-fixes-before-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\tmp\\m2-fixes-before-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-window.spec.ts",
+      "file": "practice-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "快速重复：50ms 双击跳过和上一题只移动一题",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11528,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    24 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    24 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:427:45",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 45,
+                      "line": 427
+                    },
+                    "snippet": "  425 |       const skip = page.getByRole('button', { name: '跳过本题', exact: true })\n  426 |       await skip.dblclick({ delay: interval })\n> 427 |       await expect(page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')\n      |                                             ^\n  428 |       const afterSkip = stored(testDataDirectory)\n  429 |       await info.attach('repeat-skip.json', {\n  430 |         body: JSON.stringify({ interval, before, afterSkip }),"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 45,
+                        "line": 427
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    24 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n\n\n  425 |       const skip = page.getByRole('button', { name: '跳过本题', exact: true })\n  426 |       await skip.dblclick({ delay: interval })\n> 427 |       await expect(page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')\n      |                                             ^\n  428 |       const afterSkip = stored(testDataDirectory)\n  429 |       await info.attach('repeat-skip.json', {\n  430 |         body: JSON.stringify({ interval, before, afterSkip }),\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:427:45"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:13:22.372Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\tmp\\m2-fixes-before-results\\practice-window-快速重复：50ms-双击跳过和上一题只移动一题-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 45,
+                    "line": 427
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-98fe35ec97ad69e2f92e",
+          "file": "practice-window.spec.ts",
+          "line": 418,
+          "column": 7
+        },
+        {
+          "title": "快速重复：100ms 双击跳过和上一题只移动一题",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11387,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    23 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    23 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:427:45",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 45,
+                      "line": 427
+                    },
+                    "snippet": "  425 |       const skip = page.getByRole('button', { name: '跳过本题', exact: true })\n  426 |       await skip.dblclick({ delay: interval })\n> 427 |       await expect(page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')\n      |                                             ^\n  428 |       const afterSkip = stored(testDataDirectory)\n  429 |       await info.attach('repeat-skip.json', {\n  430 |         body: JSON.stringify({ interval, before, afterSkip }),"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 45,
+                        "line": 427
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    23 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n\n\n  425 |       const skip = page.getByRole('button', { name: '跳过本题', exact: true })\n  426 |       await skip.dblclick({ delay: interval })\n> 427 |       await expect(page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')\n      |                                             ^\n  428 |       const afterSkip = stored(testDataDirectory)\n  429 |       await info.attach('repeat-skip.json', {\n  430 |         body: JSON.stringify({ interval, before, afterSkip }),\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:427:45"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:13:34.243Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\tmp\\m2-fixes-before-results\\practice-window-快速重复：100ms-双击跳过和上一题只移动一题-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 45,
+                    "line": 427
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-772d8f3e1d98c205fdb8",
+          "file": "practice-window.spec.ts",
+          "line": 418,
+          "column": 7
+        },
+        {
+          "title": "快速重复：250ms 双击跳过和上一题只移动一题",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11771,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    24 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    24 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:427:45",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 45,
+                      "line": 427
+                    },
+                    "snippet": "  425 |       const skip = page.getByRole('button', { name: '跳过本题', exact: true })\n  426 |       await skip.dblclick({ delay: interval })\n> 427 |       await expect(page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')\n      |                                             ^\n  428 |       const afterSkip = stored(testDataDirectory)\n  429 |       await info.attach('repeat-skip.json', {\n  430 |         body: JSON.stringify({ interval, before, afterSkip }),"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 45,
+                        "line": 427
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    24 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n\n\n  425 |       const skip = page.getByRole('button', { name: '跳过本题', exact: true })\n  426 |       await skip.dblclick({ delay: interval })\n> 427 |       await expect(page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')\n      |                                             ^\n  428 |       const afterSkip = stored(testDataDirectory)\n  429 |       await info.attach('repeat-skip.json', {\n  430 |         body: JSON.stringify({ interval, before, afterSkip }),\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:427:45"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:13:45.983Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\tmp\\m2-fixes-before-results\\practice-window-快速重复：250ms-双击跳过和上一题只移动一题-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 45,
+                    "line": 427
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-67ad7d34a9bfd29994ed",
+          "file": "practice-window.spec.ts",
+          "line": 418,
+          "column": 7
+        },
+        {
+          "title": "快速重复：100ms 两次 Enter 激活跳过只移动一题",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1132,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:13:58.097Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "repeat-keyboard.json",
+                      "contentType": "application/json",
+                      "body": "eyJrZXkiOiJFbnRlciIsImJlZm9yZSI6eyJzZXNzaW9ucyI6W3siaWQiOiI3ZThmMTFhNC01NGQwLTRhYmQtOTIwOS03NzZhMGU4MTIyNWUiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MCwicmV2aXNpb24iOjB9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjdlOGYxMWE0LTU0ZDAtNGFiZC05MjA5LTc3NmEwZTgxMjI1ZSIsInBvc2l0aW9uIjowLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjdlOGYxMWE0LTU0ZDAtNGFiZC05MjA5LTc3NmEwZTgxMjI1ZSIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjdlOGYxMWE0LTU0ZDAtNGFiZC05MjA5LTc3NmEwZTgxMjI1ZSIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiYjJmNDE4YTgtYjEzOC00MmNkLTg2YjMtNzFjZTk4YTM3OGVkIn1dLCJmb3JlaWduS2V5cyI6W119LCJyZXN1bHQiOnsic2Vzc2lvbnMiOlt7ImlkIjoiN2U4ZjExYTQtNTRkMC00YWJkLTkyMDktNzc2YTBlODEyMjVlIiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjEsInJldmlzaW9uIjoxfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiI3ZThmMTFhNC01NGQwLTRhYmQtOTIwOS03NzZhMGU4MTIyNWUiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6MTM6NTguOTg2WiJ9LHsic2Vzc2lvbklkIjoiN2U4ZjExYTQtNTRkMC00YWJkLTkyMDktNzc2YTBlODEyMjVlIiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiN2U4ZjExYTQtNTRkMC00YWJkLTkyMDktNzc2YTBlODEyMjVlIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiJiMmY0MThhOC1iMTM4LTQyY2QtODZiMy03MWNlOThhMzc4ZWQifSx7InJlcXVlc3RfaWQiOiI4Njk5YjE0NC02Y2U2LTRkZjMtOWZmNy04YTJhYmZmZGZkMjkifV0sImZvcmVpZ25LZXlzIjpbXX0sImRlbGliZXJhdGVOZXh0Ijp7InNlc3Npb25zIjpbeyJpZCI6IjdlOGYxMWE0LTU0ZDAtNGFiZC05MjA5LTc3NmEwZTgxMjI1ZSIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjoyLCJyZXZpc2lvbiI6Mn1dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiN2U4ZjExYTQtNTRkMC00YWJkLTkyMDktNzc2YTBlODEyMjVlIiwicG9zaXRpb24iOjAsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjEzOjU4Ljk4NloifSx7InNlc3Npb25JZCI6IjdlOGYxMWE0LTU0ZDAtNGFiZC05MjA5LTc3NmEwZTgxMjI1ZSIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjoiMjAyNi0xMC0yMFQxMjoxMzo1OS4xMTJaIn0seyJzZXNzaW9uSWQiOiI3ZThmMTFhNC01NGQwLTRhYmQtOTIwOS03NzZhMGU4MTIyNWUiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6ImIyZjQxOGE4LWIxMzgtNDJjZC04NmIzLTcxY2U5OGEzNzhlZCJ9LHsicmVxdWVzdF9pZCI6Ijg2OTliMTQ0LTZjZTYtNGRmMy05ZmY3LThhMmFiZmZkZmQyOSJ9LHsicmVxdWVzdF9pZCI6ImViNGE0MDlhLTdlMjQtNDk5YS04N2Y3LTkwN2I5YzM1OTRjNiJ9XSwiZm9yZWlnbktleXMiOltdfX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-2cc4b035aec7d6e78705",
+          "file": "practice-window.spec.ts",
+          "line": 466,
+          "column": 7
+        },
+        {
+          "title": "快速重复：100ms 两次 Space 激活跳过只移动一题",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1027,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:13:59.259Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "repeat-keyboard.json",
+                      "contentType": "application/json",
+                      "body": "eyJrZXkiOiJTcGFjZSIsImJlZm9yZSI6eyJzZXNzaW9ucyI6W3siaWQiOiIxZmZhOTIzYi1mZDk3LTRmNjUtYTc0My03Yzg1MjYwM2NlODEiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MCwicmV2aXNpb24iOjB9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjFmZmE5MjNiLWZkOTctNGY2NS1hNzQzLTdjODUyNjAzY2U4MSIsInBvc2l0aW9uIjowLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjFmZmE5MjNiLWZkOTctNGY2NS1hNzQzLTdjODUyNjAzY2U4MSIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfSx7InNlc3Npb25JZCI6IjFmZmE5MjNiLWZkOTctNGY2NS1hNzQzLTdjODUyNjAzY2U4MSIsInBvc2l0aW9uIjoyLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjpudWxsfV0sInJlY2VpcHRzIjpbeyJyZXF1ZXN0X2lkIjoiYjQxZDVlZDItYTY2OC00NGVjLTlkYjgtZmNkMTI0ZDMwOWJjIn1dLCJmb3JlaWduS2V5cyI6W119LCJyZXN1bHQiOnsic2Vzc2lvbnMiOlt7ImlkIjoiMWZmYTkyM2ItZmQ5Ny00ZjY1LWE3NDMtN2M4NTI2MDNjZTgxIiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjEsInJldmlzaW9uIjoxfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiIxZmZhOTIzYi1mZDk3LTRmNjUtYTc0My03Yzg1MjYwM2NlODEiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6MTQ6MDAuMDQzWiJ9LHsic2Vzc2lvbklkIjoiMWZmYTkyM2ItZmQ5Ny00ZjY1LWE3NDMtN2M4NTI2MDNjZTgxIiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiMWZmYTkyM2ItZmQ5Ny00ZjY1LWE3NDMtN2M4NTI2MDNjZTgxIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiJiNDFkNWVkMi1hNjY4LTQ0ZWMtOWRiOC1mY2QxMjRkMzA5YmMifSx7InJlcXVlc3RfaWQiOiJlYmQzMDg0MC0yN2ZlLTQwZDUtOTY4Ny0xZGE5ODQzNjk4YzIifV0sImZvcmVpZ25LZXlzIjpbXX0sImRlbGliZXJhdGVOZXh0Ijp7InNlc3Npb25zIjpbeyJpZCI6IjFmZmE5MjNiLWZkOTctNGY2NS1hNzQzLTdjODUyNjAzY2U4MSIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjoyLCJyZXZpc2lvbiI6Mn1dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiMWZmYTkyM2ItZmQ5Ny00ZjY1LWE3NDMtN2M4NTI2MDNjZTgxIiwicG9zaXRpb24iOjAsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjE0OjAwLjA0M1oifSx7InNlc3Npb25JZCI6IjFmZmE5MjNiLWZkOTctNGY2NS1hNzQzLTdjODUyNjAzY2U4MSIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjoiMjAyNi0xMC0yMFQxMjoxNDowMC4xNzBaIn0seyJzZXNzaW9uSWQiOiIxZmZhOTIzYi1mZDk3LTRmNjUtYTc0My03Yzg1MjYwM2NlODEiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6ImI0MWQ1ZWQyLWE2NjgtNDRlYy05ZGI4LWZjZDEyNGQzMDliYyJ9LHsicmVxdWVzdF9pZCI6ImViZDMwODQwLTI3ZmUtNDBkNS05Njg3LTFkYTk4NDM2OThjMiJ9LHsicmVxdWVzdF9pZCI6IjRlMzg4YWM2LWI1NjktNGQyMC05MDFjLTBmZGY2ZmM3ZjVkYiJ9XSwiZm9yZWlnbktleXMiOltdfX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-9e8fefdd07766c5a0d11",
+          "file": "practice-window.spec.ts",
+          "line": 466,
+          "column": 7
+        },
+        {
+          "title": "快速重复：持续按住 Enter 不会在操作恢复后再次跳过",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11058,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    24 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    24 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:510:43",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 43,
+                      "line": 510
+                    },
+                    "snippet": "  508 |     await page.keyboard.down('Enter')\n  509 |     await page.keyboard.up('Enter')\n> 510 |     await expect(page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')\n      |                                           ^\n  511 |     const result = stored(testDataDirectory)\n  512 |     expect(result.sessions[0]?.position).toBe(1)\n  513 |     expect(result.receipts).toHaveLength(before.receipts.length + 1)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 43,
+                        "line": 510
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('练习进度')\nExpected: \u001b[32m\"第 \u001b[7m2\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nReceived: \u001b[31m\"第 \u001b[7m3\u001b[27m / 3 题 · 顺序练习\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByLabel('练习进度') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('练习进度')\u001b[22m\n\u001b[2m    24 × locator resolved to <p aria-label=\"练习进度\">第 3 / 3 题 · 顺序练习</p>\u001b[22m\n\u001b[2m       - unexpected value \"第 3 / 3 题 · 顺序练习\"\u001b[22m\n\n\n  508 |     await page.keyboard.down('Enter')\n  509 |     await page.keyboard.up('Enter')\n> 510 |     await expect(page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')\n      |                                           ^\n  511 |     const result = stored(testDataDirectory)\n  512 |     expect(result.sessions[0]?.position).toBe(1)\n  513 |     expect(result.receipts).toHaveLength(before.receipts.length + 1)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:510:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:14:00.298Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\tmp\\m2-fixes-before-results\\practice-window-快速重复：持续按住-Enter-不会在操作恢复后再次跳过-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 43,
+                    "line": 510
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-3767ee0b3b6410174ab9",
+          "file": "practice-window.spec.ts",
+          "line": 496,
+          "column": 5
+        },
+        {
+          "title": "图片自动保存：放大窗口与缩放状态在草稿保存后保留",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11967,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: '图片预览：PNG', exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('dialog', { name: '图片预览：PNG', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: '图片预览：PNG', exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: '图片预览：PNG', exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('dialog', { name: '图片预览：PNG', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: '图片预览：PNG', exact: true })\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:538:26",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                      "column": 26,
+                      "line": 538
+                    },
+                    "snippet": "  536 |     await expect(page.locator('.practice-save')).toHaveText('已保存')\n  537 |     expect(stored(testDataDirectory).items[0]?.draft).toBe('图片打开期间自动保存的草稿')\n> 538 |     await expect(dialog).toBeVisible()\n      |                          ^\n  539 |     await expect(dialog.getByText('150%', { exact: true })).toBeVisible()\n  540 |     await expect(dialog.locator('img')).toHaveAttribute('width', '3')\n  541 |     await page.screenshot({ path: info.outputPath('image-after-autosave.png') })"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                        "column": 26,
+                        "line": 538
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: '图片预览：PNG', exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('dialog', { name: '图片预览：PNG', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: '图片预览：PNG', exact: true })\u001b[22m\n\n\n  536 |     await expect(page.locator('.practice-save')).toHaveText('已保存')\n  537 |     expect(stored(testDataDirectory).items[0]?.draft).toBe('图片打开期间自动保存的草稿')\n> 538 |     await expect(dialog).toBeVisible()\n      |                          ^\n  539 |     await expect(dialog.getByText('150%', { exact: true })).toBeVisible()\n  540 |     await expect(dialog.locator('img')).toHaveAttribute('width', '3')\n  541 |     await page.screenshot({ path: info.outputPath('image-after-autosave.png') })\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:538:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:14:11.682Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\tmp\\m2-fixes-before-results\\practice-window-图片自动保存：放大窗口与缩放状态在草稿保存后保留-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+                    "column": 26,
+                    "line": 538
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-97c6d0459cb7cf6f56f3",
+          "file": "practice-window.spec.ts",
+          "line": 523,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-20T12:13:21.885Z",
+    "duration": 61813.409999999996,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

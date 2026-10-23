@@ -1,0 +1,42 @@
+{
+  "empty": {
+    "topicId": null,
+    "archived": false,
+    "topics": [],
+    "total": 0,
+    "revealed": 0,
+    "rated": 0,
+    "favorites": 0,
+    "contentUpdated": 0,
+    "ratings": {
+      "不会": 0,
+      "不熟": 0,
+      "掌握": 0
+    }
+  },
+  "invalid": {
+    "ok": false,
+    "error": {
+      "code": "INVALID_REQUEST",
+      "message": "请求参数无效，请刷新页面后重试。"
+    }
+  },
+  "before": {
+    "sessions": [],
+    "items": [],
+    "states": [],
+    "receipts": [],
+    "versions": [],
+    "questions": [],
+    "resources": [],
+    "foreignKeys": [],
+    "integrity": [
+      {
+        "quick_check": "ok"
+      }
+    ],
+    "schema": {
+      "user_version": 4
+    }
+  }
+}

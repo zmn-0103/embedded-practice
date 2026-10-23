@@ -1,0 +1,13 @@
+
+> embedded-practice@0.1.0 pack:dir
+> npm run build && electron-builder --win --x64 --dir --publish never
+
+
+> embedded-practice@0.1.0 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+vitest.config.ts(6,37): error TS2694: Namespace '"E:/My_Projects/embedded-practice/node_modules/vitest/config"' has no exported member 'UserConfig'.

@@ -1,0 +1,16 @@
+{
+  "scriptsBeforeMedianPostprocessingCorrection": [
+    {
+      "path": "scripts\\prepare-m5-samples.mjs",
+      "sha256": "d88a433af8cb393f968ad8d61c4a667d5908d3270279aaa54218a3f36541ef33"
+    },
+    {
+      "path": "scripts\\m5-desktop-harness.mjs",
+      "sha256": "d950c368eb0e3fb0d038c7d788a6e936fa3e7ad4b661ff41ec5bef380b6d6afe"
+    },
+    {
+      "path": "scripts\\measure-m5-performance.mjs",
+      "sha256": "7dffbbb44745d5caed5cfb76398d4ec8b7139b74cc096d9fc8f413f9477688f6"
+    }
+  ]
+}

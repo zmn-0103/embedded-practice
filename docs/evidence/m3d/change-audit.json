@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-21",
+  "baselineFiles": 657,
+  "changed": [
+    {
+      "path": "AGENTS.md",
+      "before": "61ca749dd6bdd53dcf20d9a61a9bcd6b9d43fbd627b74903c32c9d76884d217b",
+      "after": "921136d974e3a2296993e4b0aec57596381c507e2625ae606d5195c69ce3a74e"
+    },
+    {
+      "path": "README.md",
+      "before": "ffd8e91eb60be56b6637e6477fb38e58fecd44a420c62dc14fdca3c0628ee984",
+      "after": "3e66ca3874802ea75fe0da85dd3fd01b86a500a354d5480c8e7ac688ba85eb5b"
+    },
+    {
+      "path": "docs/README.md",
+      "before": "a5e90b6aa04a94accd758430a6d8f12b902ef9d3f19f0f43bc0374cba62f7c92",
+      "after": "ebb6bb689dd246dd3f2745756a8ef951a51b110f531c886216248d2cabe209e3"
+    },
+    {
+      "path": "docs/产品说明.md",
+      "before": "63ee02cdd700872f36994f26e72fb3ec0293dde879aa8490d7c9a9d44d99ce1f",
+      "after": "d0de84bb8577d3be750091f22212704b43f8a6372f5b810a18a14e3c43f0fea1"
+    },
+    {
+      "path": "docs/代码复查记录.md",
+      "before": "2aff52de584a62f3a473c12d0d0160ddc6f9c2fb46c20e2282209baf024719ff",
+      "after": "0c85bd7d95e32052046f33e7045cca3393347ce17a447197d194b70f33a9f009"
+    },
+    {
+      "path": "docs/使用说明.md",
+      "before": "69ae312955ea532c822fa8e60848973c445994d5cb119c063ab78ff9d2cff910",
+      "after": "a16e9e13840411b15d15547cdb4d1d182a8012e7f149c4554caf2b86d82f1a79"
+    },
+    {
+      "path": "docs/开发说明.md",
+      "before": "ae718ebf13344a75b5572eb178962e40f1bc779ffcc3925f42d53805a5935a50",
+      "after": "678f5c234e26ac1c0c5055b2ec6573a78989c5c951fb4659d95e34c22613ce2f"
+    },
+    {
+      "path": "docs/验收记录.md",
+      "before": "5d83864e3d847d92ebf9b2933380c5b1ef34fe84e62bfbc4576696591f97d5cf",
+      "after": "264a5e7c5c2cbb76ea643aa7b5ce69710251bca6faf00439e111d140b6f3e9de"
+    },
+    {
+      "path": "src/main/ipc/library.ts",
+      "before": "9f7188aa8072f60bb949f6c488e982601aa30db2c54141508ca1c1c33d3fc755",
+      "after": "b70059b66114e7440578fd136fe144528e06df064b4bb8dc4a0743a2781cfb28"
+    },
+    {
+      "path": "src/main/services/library/library-import.ts",
+      "before": "d330de8b6fa06a9589dc1ff01f96947ef7923f1227ef327d644df305f424c4e2",
+      "after": "851b4c976fbad496638d810efe19c940f319278f7473b43f4dc853d3aef6867c"
+    },
+    {
+      "path": "src/preload/index.ts",
+      "before": "63c3da4d5a7a84f6e0c55a0ee731ee69cf8f4b4d6c328da64f9b4e7e2776ad53",
+      "after": "713abfc38a77fa750cc50eeef534a208521625fecbdf953eb998cc573aa06705"
+    },
+    {
+      "path": "src/renderer/src/App.tsx",
+      "before": "a0cd383fc6e04cb090c46e1df85912447d4eed595c89f75eb9a5b576fcd863f9",
+      "after": "0a4c74e487a65f7a11cc4dddc41d7b32937ef79870769d542066efaf491362fa"
+    },
+    {
+      "path": "src/renderer/src/components/LibraryBrowser.tsx",
+      "before": "48ded6a1c3d740fea8cf9db681918cad9f8d28a560da1f44f213720a2eb4ea6b",
+      "after": "fa5b1fd5746f55913ec9e8d150790e8bcee6b99c4baf8ad6d23c43d2848981df"
+    },
+    {
+      "path": "src/renderer/src/styles/global.css",
+      "before": "e913c5e0dc6f3b8e90f8fe93f1180acae9916d0fd50d329ea292f34a431f1bf5",
+      "after": "1e2c6a408f59f4dbf79fba59e0156d61897312a8baaaf878e2911fa56a05be3a"
+    },
+    {
+      "path": "src/shared/contracts/application.ts",
+      "before": "00536d5df8c2ca69e901433901b5af863b975c2ff66b52bbf289cf6f9d655372",
+      "after": "ffe98ff92f54e5252a58f6da53156cda2f1f54d937936767e3e6a92751de1df2"
+    },
+    {
+      "path": "tests/e2e/startup.spec.ts",
+      "before": "e5668c25050c3146a1b733aa74270b420c0531d2b3339fb2a772ec1bf9e55904",
+      "after": "a450308ab6fa1c9523956fcd2a492af22535ee03bcf542c15fd8405fbb74ca05"
+    },
+    {
+      "path": "tests/unit/library-ipc.test.ts",
+      "before": "f5d390622d1cbde4672f4de7075e76d1c49cdfe2f4ac811f5b105a5c2afa1df2",
+      "after": "f8ea47539632b59a4d8ca68384ecedba7a40ea444bcd03f74f2d71876621bd80"
+    }
+  ],
+  "new": [
+    {
+      "path": "docs/M3第四批行为与验收.md",
+      "sha256": "9140807fc66106c9f9a52251517d33e5c1736e41e6486afa834552da2e35c39b"
+    },
+    {
+      "path": "docs/architecture/M3学习记录总览.md",
+      "sha256": "4b21bbb9da0e2543882ef0ea813ef060c1d207dc3c6fbea38680ff6369ee8c47"
+    },
+    {
+      "path": "docs/evidence/m3d/README.md",
+      "sha256": "96394ec6cd1d3f374db9a4c51385ef12a90a046e5fb4f00256c5aabf7b9124d7"
+    },
+    {
+      "path": "docs/evidence/m3d/code-change-audit.json",
+      "sha256": "9c380a87ca2a2d111b85cf7702b7834b1cbe083dd86c0cee1fe649cb7cfe9f83"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-dark.png",
+      "sha256": "c4fcd50b30ad24bc38c48bd9e06d116aa7c34c26aa6dfe95b691d60c1be2e450"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-empty.json",
+      "sha256": "7484228adb1e6965729cffc4464ee8ab0639eec6a2689ed3e21c48a24c687157"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-late-response.json",
+      "sha256": "a5f08f7771d3b19541fdda1d189cb45de3b8ab4ad4f5e4bf8ef528be1e224aaf"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-light.png",
+      "sha256": "0c12823127b22528e98b36711c1922b85a38dcbedaf555c0f08f8dee7c4a1b61"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-page-reopen.json",
+      "sha256": "cc9ee61df5bddb49c63f1b37c645ebc5cedda9e03a8a7825718dcd18321b5653"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-read-failure.json",
+      "sha256": "0c8bd405ae246d5c36337e44f4b59b852b38bd76d76ed130f4a3bd7dedacc17b"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-version-counts.json",
+      "sha256": "154d4befe2e065a9a5b36f7b09b36fbdfd45c8cccdb6c2973293b8599689f79b"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-window-counts.json",
+      "sha256": "0a55751b9d5dd53b447c4808789f5c1b0a38e1f62a10b1388867a7c7753c54cc"
+    },
+    {
+      "path": "docs/evidence/m3d/environment.json",
+      "sha256": "81258d4fab59b5827d93272429581d5864f63e69872fc4221447993f15b6c923"
+    },
+    {
+      "path": "docs/evidence/m3d/final-full-tests.json",
+      "sha256": "04e8577d9b90d72efe050c2f6965cfa998cb6ca8dae8a9f9a9fce209216b4213"
+    },
+    {
+      "path": "docs/evidence/m3d/learning-errors-first-tests.json",
+      "sha256": "88e88f88ae88ceec9918712e5f64a69fe74014f6c18fadf0733aac59a26e0d4f"
+    },
+    {
+      "path": "docs/evidence/m3d/learning-first-tests.json",
+      "sha256": "9f6616a4f6f9f9ce914a1d49a12c9b53febc793f2061c6e79fe2e22437edf27d"
+    },
+    {
+      "path": "docs/evidence/m3d/nsis-before.json",
+      "sha256": "d883c0088cac407ed7e38ad1e3c24fd4caeb1cc0ae2a24ab505b2b1bd141c42b"
+    },
+    {
+      "path": "docs/evidence/m3d/package-inspection.json",
+      "sha256": "8c9b4983abc6763e5cbe9f968a76f9fad99976e2acf4239eabdb69a50d4532df"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-dark.png",
+      "sha256": "eefb9ddc256f796bdb2bded35ef60266a1b9a02346ada54473321ff7b263bc00"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-empty.json",
+      "sha256": "7484228adb1e6965729cffc4464ee8ab0639eec6a2689ed3e21c48a24c687157"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-late-response.json",
+      "sha256": "a5f08f7771d3b19541fdda1d189cb45de3b8ab4ad4f5e4bf8ef528be1e224aaf"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-light.png",
+      "sha256": "4a610abe4450fc7e47481023f14e93200da77fbc353009f60baab5e3002498ab"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-page-reopen.json",
+      "sha256": "939a6a753ab826f059c50e5ea90c0578aa6b2557b63d174be5deeee3f7d51bef"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-read-failure.json",
+      "sha256": "318b56e42720330b7a9bc247d55323937fdd303925d5b784592542c09308792b"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-version-counts.json",
+      "sha256": "fda5c59132e4e16d659fc47ab7a6e03a7bcca182c95bc28c092957436eaa3993"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-window-counts.json",
+      "sha256": "0a55751b9d5dd53b447c4808789f5c1b0a38e1f62a10b1388867a7c7753c54cc"
+    },
+    {
+      "path": "docs/evidence/m3d/results-summary.json",
+      "sha256": "74f51d7f7213a709fa7e00204d3aee02d40a41effc34f8aeadc3ef466473df30"
+    },
+    {
+      "path": "docs/evidence/m3d/unit-tests.json",
+      "sha256": "06aca78203a9ae870fb9e25f3c1bf4ae4d1cd46d6d0236c191ef43a3d7ca874b"
+    },
+    {
+      "path": "src/main/database/repositories/learning-reader.ts",
+      "sha256": "d40b495722cb0048e37e74e4cb1f0df6cca84fb06e02d7914cb5c2fee3ded6e5"
+    },
+    {
+      "path": "src/renderer/src/components/LearningRecords.tsx",
+      "sha256": "9c744ace6cc42ea754d2aca406092fb590876f29b9aa2bd7ee115737f49f9f9c"
+    },
+    {
+      "path": "src/shared/contracts/learning.ts",
+      "sha256": "0b39d7c89867897a1f8c6e50c3430a08f2ca5327e4b4240461c9a3f378fbdc67"
+    },
+    {
+      "path": "tests/e2e/learning-helpers.ts",
+      "sha256": "69960b9cad3d2921af3a2cf1aecf2ed9d06037c98fcd8a9bb65e4159427726e1"
+    },
+    {
+      "path": "tests/e2e/learning-records-errors.spec.ts",
+      "sha256": "a80b8008ed16eeaa31b673b6c586134913c749ddef7db5f44a2b73d02e1bcfab"
+    },
+    {
+      "path": "tests/e2e/learning-records.spec.ts",
+      "sha256": "78a4a3d78fd57fb64344dddb291ee94b0788e86046945c444e3f2c4c95f83de1"
+    },
+    {
+      "path": "tests/unit/learning-contract.test.ts",
+      "sha256": "9d05e046fbd110a377d44ae1718f2b4387cecea7c1b6ffc62447f2a50536d482"
+    }
+  ],
+  "deleted": [],
+  "codeCount": 16,
+  "protectedUnchanged": [
+    "计划书.md",
+    "vitest.config.ts",
+    "tsconfig.web.json",
+    "tsconfig.node.json",
+    "package.json",
+    "package-lock.json",
+    "electron.vite.config.ts",
+    "electron-builder.yml",
+    "src/renderer/src/practice-controller.ts",
+    "playwright.config.ts",
+    "question-banks/examples/格式示例.md",
+    "question-banks/examples/README.md",
+    "question-banks/examples/assets/测试.webp",
+    "question-banks/examples/assets/带 空格.jpg",
+    "question-banks/examples/assets/中文测试图.png",
+    "question-banks/examples/assets/.gitkeep",
+    "question-banks/README.md",
+    "src/main/database/library-schema.ts",
+    "src/main/database/open-database.ts",
+    "src/main/database/practice-schema.ts",
+    "question-banks/sources/STM32F103RCT6-GPIO-题答对应.json",
+    "question-banks/sources/STM32F103RCT6-GPIO-原始自测题.txt",
+    "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+    "question-banks/templates/专题模板.md",
+    "question-banks/templates/README.md",
+    "question-banks/templates/.gitkeep"
+  ],
+  "selfReferentialFilesExcluded": [
+    "docs/evidence/m3d/change-audit.json",
+    "docs/evidence/m3d/documents-static.json",
+    "docs/evidence/m3d/source-manifest.json"
+  ]
+}

@@ -1,0 +1,668 @@
+{
+  "sourcePath": "D:\\AIOT实训班\\笔记\\UART\\STM32F103 UART 第二层自测题与参考答案.md",
+  "sourceSha256": "f305beb7f966b00bf2cd5573e95d04b84cfade1b3b932897fff6b43f7a730ed9",
+  "topicId": "m5-trial-uart-level-2",
+  "selection": "原第19～48题；判断结论从原答案标题移到答案正文，未改写技术内容。",
+  "mappings": [
+    {
+      "questionId": "uart2-019",
+      "originalNumber": 19,
+      "title": "UART 第二层判断题 19",
+      "question": {
+        "title": "",
+        "body": "TXE=1 就意味着最后一个停止位已经从 TX 引脚发送完毕。",
+        "line": 217,
+        "start": 2715,
+        "end": 2750
+      },
+      "answer": {
+        "title": "错误",
+        "body": "TXE 只表示发送数据寄存器为空，数据可能仍在移位寄存器中发送。",
+        "line": 531,
+        "start": 7371,
+        "end": 7407
+      },
+      "verdict": "错误",
+      "questionSha256": "d0f8f0ebb72e745ede67e803b20aaebd9fb0f655622b4fdef4064af90d6d30f2",
+      "answerSha256": "7def6ad3de0784a81b86297e5cb4200b8b5b0dc70ec37afffde03ce256cee32f"
+    },
+    {
+      "questionId": "uart2-020",
+      "originalNumber": 20,
+      "title": "UART 第二层判断题 20",
+      "question": {
+        "title": "",
+        "body": "TC=1 时，表示发送数据寄存器与移位寄存器均为空，最后一帧已经发送完成。",
+        "line": 221,
+        "start": 2760,
+        "end": 2801
+      },
+      "answer": {
+        "title": "正确",
+        "body": "TC 表示发送数据寄存器和移位寄存器均为空，最后一帧已完成发送。",
+        "line": 535,
+        "start": 7420,
+        "end": 7456
+      },
+      "verdict": "正确",
+      "questionSha256": "163ff44d14ab0b04073900d6dafeb0c6566e9b0a2f00d7006c24b751e25ae28f",
+      "answerSha256": "58ae85899582cc9d85ed2322d75901407023e4fdc1807632ced28cb6fd2e3468"
+    },
+    {
+      "questionId": "uart2-021",
+      "originalNumber": 21,
+      "title": "UART 第二层判断题 21",
+      "question": {
+        "title": "",
+        "body": "RXNE=1 表示 RX 引脚当前一定处于低电平。",
+        "line": 225,
+        "start": 2811,
+        "end": 2840
+      },
+      "answer": {
+        "title": "错误",
+        "body": "RXNE 表示接收数据寄存器非空，与 RX 引脚当前的高低电平不是同一个概念。",
+        "line": 539,
+        "start": 7469,
+        "end": 7512
+      },
+      "verdict": "错误",
+      "questionSha256": "e46b79067c0fb12cd4e056a45952a5ce0abdffbcf5c86ed225a3e8092b1ac498",
+      "answerSha256": "db2f7e6807551a6247e8884ab0a06ea1f55ad67a7d451160f7a3f3a84a391275"
+    },
+    {
+      "questionId": "uart2-022",
+      "originalNumber": 22,
+      "title": "UART 第二层判断题 22",
+      "question": {
+        "title": "",
+        "body": "`USART_SendData()` 的作用是将待发送数据写入数据寄存器，它本身不负责等待 TXE。",
+        "line": 229,
+        "start": 2850,
+        "end": 2904
+      },
+      "answer": {
+        "title": "正确",
+        "body": "`USART_SendData()` 负责写入 DR，本身不替调用者等待 TXE。调用者必须确保写入时机正确。",
+        "line": 543,
+        "start": 7525,
+        "end": 7584
+      },
+      "verdict": "正确",
+      "questionSha256": "2330dd8c0f9af10aac8e614b282f66a8be125e46000af2a79ad1cb4315b1d2d9",
+      "answerSha256": "53b98990bdd44cfce901aefffcaedf316974c4ed68071f1a049122b38d8b11ce"
+    },
+    {
+      "questionId": "uart2-023",
+      "originalNumber": 23,
+      "title": "UART 第二层判断题 23",
+      "question": {
+        "title": "",
+        "body": "`USART_ReceiveData()` 本身会等待 RXNE 置位，因此可以不检查接收状态就安全调用。",
+        "line": 233,
+        "start": 2914,
+        "end": 2971
+      },
+      "answer": {
+        "title": "错误",
+        "body": "`USART_ReceiveData()` 读取 DR，但不会自动等待 RXNE。调用者需要先确认数据已经准备好。",
+        "line": 547,
+        "start": 7597,
+        "end": 7658
+      },
+      "verdict": "错误",
+      "questionSha256": "4009281f3b658f349d6b7c0eb6579123414f547299b464006196868eee411ae7",
+      "answerSha256": "7a5818ff3c06517146683308a2d19b23efb3440e510a6301e22856d22da7ec02"
+    },
+    {
+      "questionId": "uart2-024",
+      "originalNumber": 24,
+      "title": "UART 第二层判断题 24",
+      "question": {
+        "title": "",
+        "body": "在 STM32F103 中，清除 ORE 时，按照手册规定执行读取 SR、再读取 DR 的操作。",
+        "line": 237,
+        "start": 2981,
+        "end": 3033
+      },
+      "answer": {
+        "title": "正确",
+        "body": "STM32F103 的 ORE 清除应遵循手册规定的 SR → DR 访问顺序。",
+        "line": 551,
+        "start": 7671,
+        "end": 7715
+      },
+      "verdict": "正确",
+      "questionSha256": "45d0bd7cb03a34515f7fa1ddd08f1472256b0929e52a0a801d4f705fe4a02848",
+      "answerSha256": "de10ff48efcc5350438fd6902d3baf72f67ed1d8de2c408067818c7a27b18267"
+    },
+    {
+      "questionId": "uart2-025",
+      "originalNumber": 25,
+      "title": "UART 第二层判断题 25",
+      "question": {
+        "title": "",
+        "body": "`volatile` 能够保证寄存器读—改—写操作具有原子性。",
+        "line": 241,
+        "start": 3043,
+        "end": 3078
+      },
+      "answer": {
+        "title": "错误",
+        "body": "`volatile` 不能保证复合读—改—写操作具有原子性，也不能自动解决并发问题。",
+        "line": 555,
+        "start": 7728,
+        "end": 7774
+      },
+      "verdict": "错误",
+      "questionSha256": "caeaf7e910949794a7d1e23f89000b3fcb78a5371f86fc9d845a28a3007d277b",
+      "answerSha256": "43cae36deaf3956b5373e8c35848dcb620f6a21b5a9812e869712b26068a7059"
+    },
+    {
+      "questionId": "uart2-026",
+      "originalNumber": 26,
+      "title": "UART 第二层判断题 26",
+      "question": {
+        "title": "",
+        "body": "使能 USART 的 RXNE 中断源后，就不需要配置 NVIC，也不需要编写中断服务程序。",
+        "line": 245,
+        "start": 3088,
+        "end": 3138
+      },
+      "answer": {
+        "title": "错误",
+        "body": "还需要配置 NVIC 的中断通道和优先级，并实现正确的中断服务程序。",
+        "line": 559,
+        "start": 7787,
+        "end": 7825
+      },
+      "verdict": "错误",
+      "questionSha256": "f12a191ae0e99520e9187656a305f35c04471548281b3335c729e1b71262d360",
+      "answerSha256": "37bafcfc3f18463d9600f5c99a6dfb095f282261a646e5ea4f41a668cc29c8e3"
+    },
+    {
+      "questionId": "uart2-027",
+      "originalNumber": 27,
+      "title": "UART 第二层判断题 27",
+      "question": {
+        "title": "",
+        "body": "使能 USART 的接收 DMA 请求后，仍然需要正确配置 DMA 控制器。\n\n---",
+        "line": 249,
+        "start": 3148,
+        "end": 3195
+      },
+      "answer": {
+        "title": "正确",
+        "body": "USART 侧的 DMA 请求使能不等于 DMA 通道已经完成配置。",
+        "line": 563,
+        "start": 7838,
+        "end": 7876
+      },
+      "verdict": "正确",
+      "questionSha256": "cb7af78de601e2db2e0973fb67aefb693dae1cc03cfa7b4ce2a34023be5e27f3",
+      "answerSha256": "97d2bc708ed3f0ac4a337477511813a1c06622506effaa4c266bc85364220bdb"
+    },
+    {
+      "questionId": "uart2-028",
+      "originalNumber": 28,
+      "title": "寄存器地址计算",
+      "question": {
+        "title": "寄存器地址计算",
+        "body": "已知 USART1 基地址为 `0x40013800`，请写出以下寄存器的绝对地址：\n\n1. SR\n2. DR\n3. BRR\n4. CR1\n5. CR2\n6. CR3\n\n同时说明为什么寄存器偏移地址不能直接当作绝对地址使用。",
+        "line": 257,
+        "start": 3223,
+        "end": 3339
+      },
+      "answer": {
+        "title": "寄存器地址计算",
+        "body": "| 寄存器 | 偏移地址 | 绝对地址       |\n| --- | ---- | ---------- |\n| SR  | 0x00 | 0x40013800 |\n| DR  | 0x04 | 0x40013804 |\n| BRR | 0x08 | 0x40013808 |\n| CR1 | 0x0C | 0x4001380C |\n| CR2 | 0x10 | 0x40013810 |\n| CR3 | 0x14 | 0x40013814 |\n\n偏移地址只表示寄存器相对于外设基地址的位置，不能单独确定它在 MCU 地址空间中的绝对位置。",
+        "line": 569,
+        "start": 7908,
+        "end": 8183
+      },
+      "verdict": null,
+      "questionSha256": "536eec9b14a07300e7c3927a27c18e3791b29c96cd926dda20dda4a454aac74d",
+      "answerSha256": "c3efd029221e4dda387b119c9009eb036e5775bfadb6e70b0e143a3574552722"
+    },
+    {
+      "questionId": "uart2-029",
+      "originalNumber": 29,
+      "title": "BRR 波特率计算",
+      "question": {
+        "title": "BRR 波特率计算",
+        "body": "已知：\n\n- USART1 输入时钟：72 MHz\n- 目标波特率：115200 baud\n- 过采样倍数：16\n\n请计算：\n\n1. USARTDIV\n2. 整数部分\n3. 小数部分\n4. BRR 的最终值\n\n写出计算过程。",
+        "line": 270,
+        "start": 3359,
+        "end": 3475
+      },
+      "answer": {
+        "title": "BRR 波特率计算",
+        "body": "计算公式：\n\n`USARTDIV = fCK / (16 × baud)`\n\n代入：\n\n`USARTDIV = 72000000 / (16 × 115200)`\n\n得到：\n\n`USARTDIV = 39.0625`\n\n整数部分为 39，即 `0x27`。\n\n小数部分为 0.0625：\n\n`0.0625 × 16 = 1`\n\n因此：\n\n`BRR = (39 << 4) | 1 = 0x0271`",
+        "line": 582,
+        "start": 8203,
+        "end": 8406
+      },
+      "verdict": null,
+      "questionSha256": "dc5160fba4417d81e68de9052608d7ccd759124d710fd67774e839fe88472278",
+      "answerSha256": "ce3084fe19dd5a51222f9f49d5d5fbb551f2e06f691b55bc5d0f7b6b29026c73"
+    },
+    {
+      "questionId": "uart2-030",
+      "originalNumber": 30,
+      "title": "CR1 解析",
+      "question": {
+        "title": "CR1 解析",
+        "body": "已知：\n\n`CR1 = 0x200C`\n\n请分析：\n\n1. UE、TE、RE 分别是什么状态？\n2. M、PCE、PS 是什么状态？\n3. 是否启用了 RXNE 中断？\n4. 该配置是否符合普通 8N1 收发的 CR1 要求？",
+        "line": 287,
+        "start": 3492,
+        "end": 3609
+      },
+      "answer": {
+        "title": "CR1 解析",
+        "body": "`CR1 = 0x200C`\n\n二进制置位情况：\n\n- bit 13（UE）= 1。\n- bit 3（TE）= 1。\n- bit 2（RE）= 1。\n- bit 12（M）= 0。\n- bit 10（PCE）= 0。\n- bit 9（PS）= 0。\n- bit 5（RXNEIE）= 0。\n\n因此，该配置启用了 USART、发送器和接收器，没有启用奇偶校验，也没有启用 RXNE 中断源，符合普通 8N1 收发的 CR1 配置要求。",
+        "line": 606,
+        "start": 8423,
+        "end": 8643
+      },
+      "verdict": null,
+      "questionSha256": "b710cbee02fe4c6720a18c87c54cba9605ed77f85314a71725eff4f46fd2e463",
+      "answerSha256": "49fcf4f1d60f339434fa249070da8542ca697a6b871ee6fe467729f8810c6ce6"
+    },
+    {
+      "questionId": "uart2-031",
+      "originalNumber": 31,
+      "title": "CR2 停止位解析",
+      "question": {
+        "title": "CR2 停止位解析",
+        "body": "CR2 的 STOP 字段位于 bit 13:12。\n\n请回答：\n\n1. STOP=`00` 表示什么？\n2. STOP=`01` 表示什么？\n3. STOP=`10` 表示什么？\n4. 如果只修改 STOP 字段，为什么不能直接用新字段值覆盖整个 CR2？",
+        "line": 300,
+        "start": 3629,
+        "end": 3762
+      },
+      "answer": {
+        "title": "CR2 停止位解析",
+        "body": "| STOP | 含义       |\n| ---- | -------- |\n| 00   | 1 个停止位   |\n| 01   | 0.5 个停止位 |\n| 10   | 2 个停止位   |\n| 11   | 1.5 个停止位 |\n\nSTOP 是多位字段。直接覆盖整个 CR2 可能破坏其他控制位。\n\n修改字段时，应先清除 STOP 对应的位，再设置目标值，同时保留其他需要保留的位。",
+        "line": 622,
+        "start": 8663,
+        "end": 8863
+      },
+      "verdict": null,
+      "questionSha256": "5085c1aedc53051fb91129994f9558a5ac2dfd9ac3315c3b7c30672bdcf1f95b",
+      "answerSha256": "a2eee7eaa7ab53d391e83f3ddcf81f851df4040a755aec01f9e1678f39aa6f33"
+    },
+    {
+      "questionId": "uart2-032",
+      "originalNumber": 32,
+      "title": "SR 状态标志解析",
+      "question": {
+        "title": "SR 状态标志解析",
+        "body": "已知：\n\n`SR = 0x00A0`\n\n请判断：\n\n1. TXE 是否置位？\n2. TC 是否置位？\n3. RXNE 是否置位？\n\n写出对应的掩码判断过程。",
+        "line": 311,
+        "start": 3782,
+        "end": 3864
+      },
+      "answer": {
+        "title": "SR 状态标志解析",
+        "body": "已知：\n\n`SR = 0x00A0`\n\nTXE 掩码：\n\n`1 << 7 = 0x0080`\n\n`0x00A0 & 0x0080 = 0x0080`\n\n因此 TXE=1。\n\nTC 掩码：\n\n`1 << 6 = 0x0040`\n\n`0x00A0 & 0x0040 = 0`\n\n因此 TC=0。\n\nRXNE 掩码：\n\n`1 << 5 = 0x0020`\n\n`0x00A0 & 0x0020 = 0x0020`\n\n因此 RXNE=1。\n\n最终结果：TXE=1、TC=0、RXNE=1。",
+        "line": 635,
+        "start": 8883,
+        "end": 9126
+      },
+      "verdict": null,
+      "questionSha256": "53a3d67562abf4f5d28829ca453f2fe9c32e065aa4232c684024f565cdf58459",
+      "answerSha256": "c1ec8ad39d67a196b8534c321895fe6a17c8dcb19c997166afec4a109764563a"
+    },
+    {
+      "questionId": "uart2-033",
+      "originalNumber": 33,
+      "title": "库函数底层原理",
+      "question": {
+        "title": "库函数底层原理",
+        "body": "请分别解释以下函数的作用，以及它们是否会自动等待状态标志：\n\n1. `USART_Init()`\n2. `USART_Cmd()`\n3. `USART_SendData()`\n4. `USART_ReceiveData()`\n5. `USART_GetFlagStatus()`\n6. `USART_ITConfig()`\n7. `USART_DMACmd()`",
+        "line": 325,
+        "start": 3882,
+        "end": 4067
+      },
+      "answer": {
+        "title": "库函数底层原理",
+        "body": "| 函数                    | 主要作用                 | 是否自动等待状态标志 |\n| --------------------- | -------------------- | ---------- |\n| USART_Init()          | 根据结构体配置 USART 通信参数   | 否          |\n| USART_Cmd()           | 控制 USART 整体使能        | 否          |\n| USART_SendData()      | 写入发送数据寄存器            | 否          |\n| USART_ReceiveData()   | 读取接收数据寄存器            | 否          |\n| USART_GetFlagStatus() | 查询指定状态标志             | 否，只查询      |\n| USART_ITConfig()      | 配置 USART 内部中断使能位     | 否          |\n| USART_DMACmd()        | 使能或关闭 USART 的 DMA 请求 | 否          |\n\n调用者必须理解每个函数的职责，并负责协调状态检查、数据处理和外设时序。",
+        "line": 667,
+        "start": 9144,
+        "end": 9742
+      },
+      "verdict": null,
+      "questionSha256": "af327fd8a8bd59c015a454178474a04fa71903b8db2d33d051be6d07626ef7ba",
+      "answerSha256": "8d0591197ecd6e27c29c3a6eeace978bac7e453e357638c11d5b23cdf6a37a23"
+    },
+    {
+      "questionId": "uart2-034",
+      "originalNumber": 34,
+      "title": "状态标志清除",
+      "question": {
+        "title": "状态标志清除",
+        "body": "请说明以下标志的含义与清除方式：\n\n1. TXE\n2. TC\n3. RXNE\n4. IDLE\n5. ORE\n6. FE\n7. NE\n8. CTS\n9. LBD\n\n特别说明：为什么不能把所有标志都统一交给 `USART_ClearFlag()` 处理？",
+        "line": 337,
+        "start": 4084,
+        "end": 4213
+      },
+      "answer": {
+        "title": "状态标志清除",
+        "body": "| 标志   | 含义           | 清除方式                               |\n| ---- | ------------ | ---------------------------------- |\n| TXE  | 发送数据寄存器为空    | 写入 DR 后由硬件清除                       |\n| TC   | 发送完成         | 按手册规定的方式清除，例如读取 SR 后写 DR，或向 TC 写 0 |\n| RXNE | 接收数据寄存器非空    | 通常读取 DR 清除                         |\n| IDLE | 接收线路空闲事件     | 先读 SR，再读 DR                        |\n| ORE  | 接收溢出错误       | 先读 SR，再读 DR                        |\n| FE   | 帧错误          | 先读 SR，再读 DR                        |\n| NE   | 噪声错误         | 先读 SR，再读 DR                        |\n| CTS  | CTS 状态变化     | 向对应标志写 0                           |\n| LBD  | LIN Break 检测 | 向对应标志写 0                           |\n\n不能把所有标志统一交给 `USART_ClearFlag()`，因为不同标志具有不同的硬件清除语义。STM32F1 SPL 的该函数只允许清除特定标志；错误标志和 IDLE 等必须遵循手册规定的读取序列。",
+        "line": 681,
+        "start": 9759,
+        "end": 10537
+      },
+      "verdict": null,
+      "questionSha256": "03e6ef9a77b79407c1c0ab2011fa63dc7b0954d268de1073a9c06c8faafc14b7",
+      "answerSha256": "3febbfef43dddec0301e4ad9a344faa9168ea5240ce9b0a375e089efe352f92e"
+    },
+    {
+      "questionId": "uart2-035",
+      "originalNumber": 35,
+      "title": "初始化流程",
+      "question": {
+        "title": "初始化流程",
+        "body": "请从硬件依赖关系出发，写出 USART1 默认映射下的主要初始化步骤，并说明 RCC、GPIO、BRR、CR1、CR2、CR3 分别负责什么。",
+        "line": 353,
+        "start": 4229,
+        "end": 4304
+      },
+      "answer": {
+        "title": "初始化流程",
+        "body": "合理流程：\n\n1. 根据实际时钟树使能 GPIOA、USART1 所需的 RCC 时钟。\n2. 配置 PA9 为复用推挽输出，PA10 为合适的输入模式。\n3. 如使用重映射，配置 AFIO。\n4. 配置 BRR，确定波特率。\n5. 配置 CR1，确定字长、校验、收发使能和中断需求。\n6. 配置 CR2，确定停止位及特殊模式。\n7. 配置 CR3，确定流控、DMA 或其他高级功能。\n8. 使能 USART。\n9. 根据需要配置 NVIC 或 DMA 控制器。\n10. 通过状态标志和实际通信验证配置。\n\n各模块职责：\n\n- RCC：提供外设时钟。\n- GPIO：配置引脚模式。\n- BRR：设置波特率分频。\n- CR1：设置核心通信参数和收发控制。\n- CR2：设置停止位及特殊模式。\n- CR3：设置 DMA、硬件流控等高级功能。",
+        "line": 697,
+        "start": 10553,
+        "end": 10925
+      },
+      "verdict": null,
+      "questionSha256": "3d1c630adbeabe2df7ea2aee76d2f00c348876fb9bc0bab2730cb6bd3ac1b2a3",
+      "answerSha256": "a1d080f42a006ef85be17b475361366993d37549a5599be6037871f12d282e2a"
+    },
+    {
+      "questionId": "uart2-036",
+      "originalNumber": 36,
+      "title": "发送时序",
+      "question": {
+        "title": "发送时序",
+        "body": "请按照硬件执行顺序，描述软件发送一个字节时，从写入 DR 到 TC 置位的主要过程。\n\n解释 TXE 为什么可能早于 TC 置位。",
+        "line": 357,
+        "start": 4319,
+        "end": 4388
+      },
+      "answer": {
+        "title": "发送时序",
+        "body": "1. 软件确认 TXE=1。\n2. 软件向 DR 写入数据。\n3. TXE 清零。\n4. 硬件将数据转移到发送移位寄存器。\n5. TXE 重新置位，允许写入下一份数据。\n6. 移位寄存器按照串行帧格式发送数据。\n7. 最后一帧发送完成且发送数据寄存器为空时，TC 置位。\n\nTXE 关注发送数据寄存器是否可用；TC 关注整个发送过程是否完成。因此 TXE 可以早于 TC 置位。",
+        "line": 721,
+        "start": 10940,
+        "end": 11133
+      },
+      "verdict": null,
+      "questionSha256": "7e8906bdef052bd406f2b7d602c3dddbd0bdbf9d666e7f493fe769de3c727621",
+      "answerSha256": "5a983711e76b5c03944e10e1285b8cde68fa3eb8333529883e7ad9a87880802c"
+    },
+    {
+      "questionId": "uart2-037",
+      "originalNumber": 37,
+      "title": "接收时序",
+      "question": {
+        "title": "接收时序",
+        "body": "请描述一个字节从 RX 引脚进入 USART，到软件读取 DR 的主要过程。\n\n说明 RXNE 的产生条件、读取 DR 的作用，以及 ORE 可能如何产生。",
+        "line": 363,
+        "start": 4403,
+        "end": 4485
+      },
+      "answer": {
+        "title": "接收时序",
+        "body": "1. USART 检测 RX 引脚上的起始位。\n2. 硬件按配置的波特率采样数据。\n3. 硬件完成数据帧接收。\n4. 接收数据进入 DR，RXNE 置位。\n5. 软件检查 RXNE 后读取 DR。\n6. 正常读取后 RXNE 清除。\n\n如果旧数据没有及时读取，而新数据又完成接收，可能产生 ORE。软件应及时取走数据，并按手册规定处理错误标志。",
+        "line": 733,
+        "start": 11148,
+        "end": 11324
+      },
+      "verdict": null,
+      "questionSha256": "2fea0ef2f15ab3eac6b25d7eb83c326105105764c81212865fce3fc1c9edb6f1",
+      "answerSha256": "147b3d4df1bd917b9f49d7ec64002ce57e66c4270d0ff4e38bd2e281167819fc"
+    },
+    {
+      "questionId": "uart2-038",
+      "originalNumber": 38,
+      "title": "寄存器与库函数",
+      "question": {
+        "title": "寄存器与库函数",
+        "body": "请解释以下调用链的关系：\n\n应用程序 → SPL 函数 → 寄存器访问 → USART 硬件。\n\n为什么只记住库函数名称，不足以满足第二层的学习要求？\n\n---",
+        "line": 369,
+        "start": 4503,
+        "end": 4587
+      },
+      "answer": {
+        "title": "寄存器与库函数",
+        "body": "应用程序调用 SPL 函数，SPL 函数访问 CMSIS 定义的寄存器，CPU 再通过总线访问 USART 外设，最终由硬件完成相应操作。\n\n只记住函数名称，无法解释：\n\n- 函数实际修改了哪些寄存器。\n- 为什么需要等待 TXE 或 RXNE。\n- 为什么某些状态标志需要特殊清除顺序。\n- 初始化参数如何转化为寄存器配置。\n- 硬件异常发生时应该检查什么。\n\n第二层要求能够从寄存器与手册出发解释硬件行为。",
+        "line": 744,
+        "start": 11342,
+        "end": 11551
+      },
+      "verdict": null,
+      "questionSha256": "9cdf22bdfb4198087859c36f23ae61cc67555d7e0a0abbd513f12a133857b986",
+      "answerSha256": "fa31765c4f1ba83814d9df3e38f6deec090376d3ec360830d3048f800e513dc0"
+    },
+    {
+      "questionId": "uart2-039",
+      "originalNumber": 39,
+      "title": "CR1 掩码计算",
+      "question": {
+        "title": "CR1 掩码计算",
+        "body": "请计算以下掩码的十六进制值：\n\n1. UE：bit 13\n2. TE：bit 3\n3. RE：bit 2\n4. RXNEIE：bit 5\n5. TXEIE：bit 7\n6. TCIE：bit 6\n\n然后回答：如果只需要启用 UE、TE、RE，应该将哪些位设置为 1？",
+        "line": 381,
+        "start": 4622,
+        "end": 4759
+      },
+      "answer": {
+        "title": "CR1 掩码计算",
+        "body": "| 位            | 掩码     |\n| ------------ | ------ |\n| UE：bit 13    | 0x2000 |\n| TE：bit 3     | 0x0008 |\n| RE：bit 2     | 0x0004 |\n| RXNEIE：bit 5 | 0x0020 |\n| TXEIE：bit 7  | 0x0080 |\n| TCIE：bit 6   | 0x0040 |\n\n只启用 UE、TE、RE：\n\n`0x2000 | 0x0008 | 0x0004 = 0x200C`",
+        "line": 760,
+        "start": 11590,
+        "end": 11853
+      },
+      "verdict": null,
+      "questionSha256": "a91b936a49a6c2c630f2f701e4336fdeb69f5e36f61ca83c6ff349cf9b17540e",
+      "answerSha256": "cb21aa5bb7d58b7cc580ff866165f8cf61f04732c20ac3e1b2606a8c3ad0b978"
+    },
+    {
+      "questionId": "uart2-040",
+      "originalNumber": 40,
+      "title": "寄存器读—改—写",
+      "question": {
+        "title": "寄存器读—改—写",
+        "body": "假设某寄存器中的目标字段位于 bit 5:4，现在需要将该字段设置为二进制 `10`。\n\n请说明：\n\n1. 目标字段掩码是多少？\n2. 应先清除哪些位？\n3. 为什么不能简单地对寄存器执行 `REG |= VALUE`？\n4. 普通读—改—写操作有哪些潜在风险？",
+        "line": 394,
+        "start": 4778,
+        "end": 4913
+      },
+      "answer": {
+        "title": "寄存器读—改—写",
+        "body": "目标字段为 bit 5:4。\n\n字段掩码：\n\n`MASK = 0b00110000 = 0x30`\n\n目标字段值为二进制 `10`，放入 bit 5:4 后：\n\n`VALUE = 0b00100000 = 0x20`\n\n常规读—改—写表达式：\n\n`REG = (REG & ~MASK) | VALUE`\n\n不能简单执行 `REG |= VALUE`，因为原字段中可能已有 1，按位或无法将原来的 1 清零。\n\n普通读—改—写还可能存在并发修改、非原子操作，以及对具有读写副作用的寄存器产生意外影响等风险。",
+        "line": 775,
+        "start": 11872,
+        "end": 12129
+      },
+      "verdict": null,
+      "questionSha256": "6e53db8bbc3dec52d1abac1f16107f0ebfb9d88d7a65ae2345dbe87d5a4602bc",
+      "answerSha256": "88f0c09995f2a49ba944adc10654155d882bd0de523996a40dd071adac51bdc9"
+    },
+    {
+      "questionId": "uart2-041",
+      "originalNumber": 41,
+      "title": "波特率变化",
+      "question": {
+        "title": "波特率变化",
+        "body": "假设 USART1 输入时钟仍为 72 MHz，但目标波特率改为 9600 baud。\n\n请计算：\n\n1. USARTDIV\n2. BRR 的整数部分\n3. BRR 的小数部分\n4. 最终 BRR 值\n\n说明与 115200 baud 相比，BRR 为什么发生变化。",
+        "line": 405,
+        "start": 4929,
+        "end": 5066
+      },
+      "answer": {
+        "title": "波特率变化",
+        "body": "已知：\n\n`fCK = 72000000`\n\n`baud = 9600`\n\n计算：\n\n`USARTDIV = 72000000 / (16 × 9600) = 468.75`\n\n整数部分：\n\n`468 = 0x1D4`\n\n小数部分：\n\n`0.75 × 16 = 12 = 0xC`\n\n因此：\n\n`BRR = (468 << 4) | 12 = 0x1D4C`\n\n波特率越低，在输入时钟不变的情况下，所需分频系数越大，因此 BRR 的数值随之变化。",
+        "line": 795,
+        "start": 12145,
+        "end": 12372
+      },
+      "verdict": null,
+      "questionSha256": "7af1183dd6eaf30c886ce26608d97f4200206bd4453dc5bbf0b93587f1249c0b",
+      "answerSha256": "dfbe24b7acc5f2f548b7c53ff895fcb14eb36d35281c02249a5b3ee7891f1898"
+    },
+    {
+      "questionId": "uart2-042",
+      "originalNumber": 42,
+      "title": "初始化目标值",
+      "question": {
+        "title": "初始化目标值",
+        "body": "在以下假设下，写出 BRR、CR1、CR2、CR3 的目标值：\n\n- USART1\n- PCLK2 = 72 MHz\n- 波特率 115200\n- 8 个有效数据位\n- 无奇偶校验\n- 1 个停止位\n- 发送和接收都启用\n- 不使用 DMA、硬件流控或其他特殊模式\n\n同时说明这些寄存器值为什么不能代替 RCC 和 GPIO 配置。\n\n---",
+        "line": 418,
+        "start": 5083,
+        "end": 5258
+      },
+      "answer": {
+        "title": "初始化目标值",
+        "body": "在题设条件下：\n\n| 寄存器 | 目标值    |\n| --- | ------ |\n| BRR | 0x0271 |\n| CR1 | 0x200C |\n| CR2 | 0x0000 |\n| CR3 | 0x0000 |\n\n这些值仅表示题设中 USART 通信参数的目标配置。\n\n它们不能代替 RCC 时钟使能、GPIO 引脚配置、AFIO 映射确认、实际接线以及其他必要的系统配置。",
+        "line": 821,
+        "start": 12389,
+        "end": 12585
+      },
+      "verdict": null,
+      "questionSha256": "32cb7469c486ac8d8f234e92aef88be43a52c159dde8c14affa942d4c8aa9e40",
+      "answerSha256": "a9d2e4f3e8ea69e67e9dd83acd39a302abad70cdc581d7f2ac8bbb617c269f1d"
+    },
+    {
+      "questionId": "uart2-043",
+      "originalNumber": 43,
+      "title": "TX 无输出",
+      "question": {
+        "title": "TX 无输出",
+        "body": "USART1 初始化后，程序已经执行发送函数，但电脑收不到任何字符。\n\n请从以下层次分析可能原因：\n\n1. RCC\n2. GPIO\n3. AFIO 映射\n4. USART 控制寄存器\n5. BRR 与帧格式\n6. 物理连接",
+        "line": 437,
+        "start": 5287,
+        "end": 5402
+      },
+      "answer": {
+        "title": "TX 无输出",
+        "body": "建议按层次检查：\n\n1. **RCC：** GPIOA、USART1 时钟是否使能。\n2. **GPIO：** PA9 是否配置为复用推挽输出。\n3. **AFIO：** USART1 是否采用默认映射，是否存在重映射配置不一致。\n4. **USART：** UE、TE 是否置位，初始化是否正确。\n5. **BRR 与帧格式：** 是否使用正确的 PCLK2，波特率和数据帧参数是否匹配。\n6. **物理连接：** STM32 TX 是否连接到 USB 转 TTL 的 RX，双方是否共地。\n7. **软件流程：** 程序是否实际执行到发送逻辑，TXE 是否正常变化。",
+        "line": 838,
+        "start": 12618,
+        "end": 12907
+      },
+      "verdict": null,
+      "questionSha256": "5a63892e1866c016dc87ad64489c7f245763dcfa315f2d177eeff5758a23f9ae",
+      "answerSha256": "9d4b27d27fd6919ea4b1a6ce5b4c2d8f8fb73c20f62f96989f0b2b6a86533a8f"
+    },
+    {
+      "questionId": "uart2-044",
+      "originalNumber": 44,
+      "title": "TXE 正常但 TC 不置位",
+      "question": {
+        "title": "TXE 正常但 TC 不置位",
+        "body": "程序发现 TXE 已置位，但一直无法观察到预期的 TC 状态。\n\n请说明：\n\n1. TXE 置位能够证明什么？\n2. 为什么它不能证明最后一帧发送完成？\n3. 应重点检查哪些因素？",
+        "line": 450,
+        "start": 5427,
+        "end": 5521
+      },
+      "answer": {
+        "title": "TXE 正常但 TC 不置位",
+        "body": "TXE=1 只能证明发送数据寄存器当前为空，可以接受新数据；它不能单独证明最后一帧已经发送完成。\n\n应检查：\n\n- 是否确实写入了数据。\n- USART 是否使能。\n- 是否持续写入数据，导致发送通路没有完全空闲。\n- TC 的观察时机是否正确。\n- 是否存在对 TC 的清除操作。\n- 是否正确区分了软件调试观察与硬件真实状态。",
+        "line": 850,
+        "start": 12932,
+        "end": 13101
+      },
+      "verdict": null,
+      "questionSha256": "0cc5380fe2239aca0421846032e83cc911cc1cb81da6cfb52d39f1af9b977a06",
+      "answerSha256": "de3c6bd8da7678dcbfdc0c4803237bf2aeea7b4fc0a958085282d8d9fae0fc7b"
+    },
+    {
+      "questionId": "uart2-045",
+      "originalNumber": 45,
+      "title": "接收出现 ORE",
+      "question": {
+        "title": "接收出现 ORE",
+        "body": "USART1 连续接收数据时出现 ORE。\n\n请分析：\n\n1. ORE 的产生条件。\n2. 为什么扩大软件数组容量不一定解决问题？\n3. 应如何处理硬件标志与软件缓冲区？\n4. 清除错误标志后，是否能够恢复已经丢失的数据？",
+        "line": 460,
+        "start": 5540,
+        "end": 5655
+      },
+      "answer": {
+        "title": "接收出现 ORE",
+        "body": "ORE 可能在旧接收数据尚未被读取，而新数据又完成接收时产生。\n\n扩大软件数组容量只能缓解软件缓冲区空间不足，不能直接解决 USART 硬件接收数据未及时读取的问题。\n\n正确思路：\n\n1. 及时读取 DR。\n2. 检查程序是否长时间阻塞。\n3. 检查接收处理是否及时。\n4. 必要时考虑中断或 DMA。\n5. 区分硬件 ORE 与软件数组溢出。\n6. 按手册规定清除错误标志，并恢复接收流程。\n\n清除 ORE 不能恢复已经丢失的数据。",
+        "line": 863,
+        "start": 13120,
+        "end": 13341
+      },
+      "verdict": null,
+      "questionSha256": "10768a09bd26743e1fdb387ba4c50987dfb835cf4d2314897c2d6d26eb4afd9d",
+      "answerSha256": "29f1aaf6ade232e2ef171c4f78a0e51ffbe0fbe971470fdd9735ade948011912"
+    },
+    {
+      "questionId": "uart2-046",
+      "originalNumber": 46,
+      "title": "中断没有进入",
+      "question": {
+        "title": "中断没有进入",
+        "body": "程序已经执行：\n\n`USART_ITConfig(USART1, USART_IT_RXNE, ENABLE)`\n\n但接收字符时没有进入中断服务程序。\n\n请列出至少五项需要检查的内容。",
+        "line": 471,
+        "start": 5672,
+        "end": 5768
+      },
+      "answer": {
+        "title": "中断没有进入",
+        "body": "应检查：\n\n1. USART1 时钟是否使能。\n2. GPIO 与实际接线是否正确。\n3. USART 接收功能 RE 是否启用。\n4. RXNE 是否确实置位。\n5. RXNE 中断源是否使能。\n6. NVIC 对应的 USART1 中断通道是否使能。\n7. 中断服务函数名称是否正确。\n8. 中断处理文件是否参与编译与链接。\n9. 是否存在全局中断关闭等影响因素。\n10. 是否有其他代码提前读取 DR，导致 RXNE 被清除。",
+        "line": 880,
+        "start": 13358,
+        "end": 13578
+      },
+      "verdict": null,
+      "questionSha256": "b3f46b32443b4dcb7d0c035c2a9b662af3e27d409fe6e931d5a4218bca14d856",
+      "answerSha256": "ec2e9b1050b98bf470d3de790c998770cc768164632c4bb5414f185c8ec8fb9d"
+    },
+    {
+      "questionId": "uart2-047",
+      "originalNumber": 47,
+      "title": "接收数据乱码",
+      "question": {
+        "title": "接收数据乱码",
+        "body": "电脑发送字符后，STM32 观察到的数据不符合预期。\n\n请从时钟、BRR、数据帧格式、GPIO、物理连接和接收逻辑六个方面分析可能原因。",
+        "line": 481,
+        "start": 5785,
+        "end": 5857
+      },
+      "answer": {
+        "title": "接收数据乱码",
+        "body": "- **时钟：** 确认实际 PCLK2。\n- **BRR：** 根据实际输入时钟重新计算波特率。\n- **帧格式：** 检查数据位、校验位和停止位。\n- **GPIO：** 检查 PA10 的输入模式与 USART1 映射。\n- **物理连接：** 检查 TX/RX 交叉连接、共地及信号电平。\n- **接收逻辑：** 检查读取 DR 的时机、数据类型、缓冲区索引和数据处理过程。",
+        "line": 895,
+        "start": 13595,
+        "end": 13790
+      },
+      "verdict": null,
+      "questionSha256": "564700c85ccce4d74e6d1adc101ccb448729f2cebccba367a0d5b8e81ecacedc",
+      "answerSha256": "9e7164f87397dad2d7c01c2c3d8321c41dbc5440bc63989e2d3deb87e236d4fe"
+    },
+    {
+      "questionId": "uart2-048",
+      "originalNumber": 48,
+      "title": "清除标志失败",
+      "question": {
+        "title": "清除标志失败",
+        "body": "程序试图使用 `USART_ClearFlag()` 清除 ORE，但错误标志仍然存在。\n\n请解释原因，并说明正确的处理思路。\n\n---",
+        "line": 487,
+        "start": 5874,
+        "end": 5946
+      },
+      "answer": {
+        "title": "清除标志失败",
+        "body": "`USART_ClearFlag()` 只支持 SPL 允许软件直接清除的特定标志，不能用它替代所有 USART 状态标志的硬件清除规则。\n\n对于 STM32F103 的 ORE，应按照参考手册规定执行先读 SR、再读 DR 的操作。\n\n还应检查：\n\n- 实际错误是否仍然持续发生。\n- 是否确实执行了规定的清除序列。\n- 是否在清除后又产生了新的错误。\n- 软件是否正确区分了标志清除和数据恢复。\n\n清除标志只是恢复流程的一部分，不代表丢失的数据可以恢复。\n\n---",
+        "line": 904,
+        "start": 13807,
+        "end": 14045
+      },
+      "verdict": null,
+      "questionSha256": "5a9a8e086ca04e1299a88cb3a0e337920b3ec1ef944336a5a05dc3978b94115a",
+      "answerSha256": "0358ce0fa81d9f36c452391a36bf76d4cb6970b4f66170bb218c783341516447"
+    }
+  ]
+}

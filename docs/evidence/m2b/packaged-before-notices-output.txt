@@ -1,0 +1,45 @@
+
+> embedded-practice@0.1.0 test:packaged
+> playwright test --project=packaged
+
+
+Running 34 tests using 1 worker
+
+(node:20980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [packaged] › tests\e2e\database-errors.spec.ts:24:7 › 损坏文件报错且原文件不变 (1.2s)
+  ok  2 [packaged] › tests\e2e\database-errors.spec.ts:24:7 › 无应用标识的非空库报错且原文件不变 (793ms)
+  ok  3 [packaged] › tests\e2e\database-errors.spec.ts:24:7 › 不受支持的结构版本报错且原文件不变 (860ms)
+  ok  4 [packaged] › tests\e2e\import-worker.spec.ts:38:5 › 真实线程准备题库与三种图片，停止后来源可移动 (1.4s)
+  ok  5 [packaged] › tests\e2e\import-worker.spec.ts:79:5 › 真实线程支持忙碌、失败后重试、取消与期限 (2.1s)
+  ok  6 [packaged] › tests\e2e\import-worker.spec.ts:105:5 › 关闭服务等待真实线程停止并拒绝新任务 (734ms)
+  ok  7 [packaged] › tests\e2e\library-import.spec.ts:20:5 › 预览后来源移动，80 题与三种图片原子入库并跨进程读回 (1.5s)
+  ok  8 [packaged] › tests\e2e\library-import.spec.ts:104:5 › 真实事务区分元数据与内容版本，保留收藏/旧引用，归档恢复与旧基线保护 (3.4s)
+  ok  9 [packaged] › tests\e2e\library-import.spec.ts:155:5 › 第二专题中途写入失败整批回滚，确认无回执后可重试同一快照 (4.3s)
+  ok 10 [packaged] › tests\e2e\library-import.spec.ts:217:5 › 旧 M0 库迁移前备份可读，原启动记录与数据保留且升级不重复 (7.4s)
+  ok 11 [packaged] › tests\e2e\library-import.spec.ts:269:5 › 迁移前备份无法创建时停止，旧数据库不改写 (574ms)
+  ok 12 [packaged] › tests\e2e\library-import.spec.ts:287:5 › 迁移 DDL 失败回滚结构，保留旧库和保护性备份 (800ms)
+  ok 13 [packaged] › tests\e2e\library-window.spec.ts:82:5 › 窗口预览确认、三种图片解码、移动来源后独立进程重开 (3.5s)
+  ok 14 [packaged] › tests\e2e\library-window.spec.ts:135:5 › 窗口取消、错误定位、放弃预览、重载与非法请求保护 (1.7s)
+  ok 15 [packaged] › tests\e2e\library-window.spec.ts:179:5 › 分页与归档视图、窗口更新摘要及相同身份恢复 (2.0s)
+  ok 16 [packaged] › tests\e2e\library-window.spec.ts:212:5 › 受控外链与资源关联、严格 CSP、模板导出 (1.4s)
+  ok 17 [packaged] › tests\e2e\library-window.spec.ts:288:5 › 准备期间关闭应用，真实工作线程退出后正常结束 (972ms)
+  ok 18 [packaged] › tests\e2e\practice-window.spec.ts:112:5 › 窗口输入/纯思考、答案隐藏、自评修改/跳过/末题与新轮默认 (2.8s)
+  ok 19 [packaged] › tests\e2e\practice-window.spec.ts:181:5 › 写入失败保留输入/阻止切题，自评推进失败按原操作重试 (2.4s)
+  ok 20 [packaged] › tests\e2e\practice-window.spec.ts:226:5 › 返回首页和正常关窗立即保存，独立进程继续原题与草稿 (2.6s)
+  ok 21 [packaged] › tests\e2e\practice-window.spec.ts:259:5 › 关闭保存失败返回窗口保留输入，修复后可正常关闭 (2.1s)
+  ok 22 [packaged] › tests\e2e\practice-window.spec.ts:297:5 › 只有明确选择放弃时允许未保存退出 (1.9s)
+  ok 23 [packaged] › tests\e2e\practice-window.spec.ts:319:5 › 窗口提交后响应丢失，重试原请求不再次推进 (1.1s)
+  ok 24 [packaged] › tests\e2e\practice-window.spec.ts:370:5 › 真实代码 token/复制调用、图片模态缩放与长答案操作区 (1.4s)
+  ok 25 [packaged] › tests\e2e\practice.spec.ts:41:5 › 顺序队列、草稿、揭晓、自评修改、跳过与独立进程恢复 (1.4s)
+  ok 26 [packaged] › tests\e2e\practice.spec.ts:182:5 › 实际题库更新与归档保留本轮版本和真实作答行，新轮使用最新内容 (750ms)
+  ok 27 [packaged] › tests\e2e\practice.spec.ts:237:5 › 自评推进、结束回执、草稿和揭晓故障分别整笔回滚并可重试 (694ms)
+  ok 28 [packaged] › tests\e2e\practice.spec.ts:281:5 › 提交后响应异常先确认持久化；核实不可用时停写，重开按原回执确认 (712ms)
+  ok 29 [packaged] › tests\e2e\practice.spec.ts:321:5 › 草稿真实 UTF-8 字节边界、非法输入和数据库约束 (734ms)
+  ok 30 [packaged] › tests\e2e\practice.spec.ts:396:5 › M1 v2 升级前一致性备份并保留题库、图片、收藏和旧自评，重开不重复升级 (1.3s)
+  ok 31 [packaged] › tests\e2e\practice.spec.ts:453:5 › v2 备份失败时停止，原数据库逐字节保持 (639ms)
+  ok 32 [packaged] › tests\e2e\practice.spec.ts:467:5 › v2 迁移 DDL 冲突回滚且保留原结构和保护性备份 (700ms)
+  ok 33 [packaged] › tests\e2e\startup.spec.ts:6:5 › 关闭重开后读回 SQLite 记录 (1.6s)
+  ok 34 [packaged] › tests\e2e\startup.spec.ts:38:5 › 窗口隔离与生产内容策略生效 (601ms)
+
+  34 passed (1.0m)

@@ -1,0 +1,149 @@
+{
+  "runtime": {
+    "packaged": true,
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp/embedded-practice-ui-experience-vyB27C",
+    "version": "0.1.0",
+    "window": {
+      "x": 390,
+      "y": 126,
+      "width": 1140,
+      "height": 780
+    },
+    "zoom": 1,
+    "display": 1
+  },
+  "dataDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp/embedded-practice-ui-experience-vyB27C",
+  "sampleBankSha256": "bbae92e7539a439c5b03a363c39720e1f1599590e139cd0496dafb3546789bee",
+  "sampleCodeSha256": "87c98e115c8acde9a5918a70a577c7e6748688291cbbf3fcc8099aeb792214e0",
+  "dialogSelection": "explicit test replacement",
+  "checks": [
+    {
+      "name": "theme forest light",
+      "status": "passed"
+    },
+    {
+      "name": "theme ocean dark",
+      "status": "passed"
+    },
+    {
+      "name": "theme sand light",
+      "status": "passed"
+    },
+    {
+      "name": "theme lilac dark",
+      "status": "passed"
+    },
+    {
+      "name": "183-line code, horizontal scrolling, real OS clipboard",
+      "status": "passed",
+      "geometry": {
+        "width": 978,
+        "fullWidth": 2238,
+        "left": 500,
+        "height": 5319
+      },
+      "sha256": "87c98e115c8acde9a5918a70a577c7e6748688291cbbf3fcc8099aeb792214e0"
+    },
+    {
+      "name": "long answer and reachable actions",
+      "status": "passed",
+      "paragraphs": 61
+    },
+    {
+      "name": "large PNG decode, zoom, pan and focus",
+      "status": "passed",
+      "naturalWidth": 2560,
+      "naturalHeight": 1440,
+      "pan": {
+        "left": 2866,
+        "top": 1693,
+        "width": 974,
+        "height": 467
+      }
+    },
+    {
+      "name": "large JPEG decode, zoom, pan and focus",
+      "status": "passed",
+      "naturalWidth": 2400,
+      "naturalHeight": 1600,
+      "pan": {
+        "left": 2626,
+        "top": 1933,
+        "width": 974,
+        "height": 467
+      }
+    },
+    {
+      "name": "large WEBP decode, zoom, pan and focus",
+      "status": "passed",
+      "naturalWidth": 2048,
+      "naturalHeight": 1536,
+      "pan": {
+        "left": 2098,
+        "top": 1837,
+        "width": 974,
+        "height": 467
+      }
+    },
+    {
+      "name": "large preview survives pending autosave at 150%",
+      "status": "passed",
+      "before": "待保存",
+      "atOpen": "待保存"
+    },
+    {
+      "name": "normal close and independent reopen preserves palette, mode, queue and exact draft",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    "01-home-forest.png",
+    "02-settings-forest-light.png",
+    "02-settings-ocean-dark.png",
+    "02-settings-sand-light.png",
+    "02-settings-lilac-dark.png",
+    "03-long-answer-actions.png",
+    "04-large-PNG.png",
+    "04-large-JPEG.png",
+    "04-large-WEBP.png",
+    "05-large-preview-during-autosave.png",
+    "06-reopened-input.png"
+  ],
+  "database": {
+    "version": {
+      "user_version": 7
+    },
+    "integrity": [
+      {
+        "integrity_check": "ok"
+      }
+    ],
+    "foreignKeys": [],
+    "settings": [
+      {
+        "theme": "dark",
+        "palette": "lilac",
+        "font_size": 17
+      }
+    ],
+    "items": [
+      {
+        "position": 0,
+        "draft": "新 UI 长内容草稿\n    int sample = 7;",
+        "draft_revision": 1
+      },
+      {
+        "position": 1,
+        "draft": "新 UI 大图预览保存\n    四个空格\n\tTab 缩进",
+        "draft_revision": 1
+      },
+      {
+        "position": 2,
+        "draft": "",
+        "draft_revision": 0
+      }
+    ]
+  },
+  "status": "passed",
+  "finishedAt": "2026-10-23T04:49:58.087Z"
+}

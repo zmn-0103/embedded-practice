@@ -1,0 +1,11 @@
+
+Running 3 tests using 1 worker
+
+
+
+(node:40896) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[1/3] [development] › tests\e2e\practice-plans.spec.ts:9:5 › 方案：命名保存完整条件、填入不建轮，正常重开后明确开始才替换原轮
+[2/3] [development] › tests\e2e\practice-plans.spec.ts:113:5 › 方案：原ID重试、同名拒绝、容量、写入回滚及坏JSON读取，不改变原业务或题库修订
+[3/3] [development] › tests\e2e\practice-plans.spec.ts:192:5 › 方案：分类改名沿原ID，移出/移除不扩大范围，删除默认取消且只删方案
+  3 passed (6.7s)

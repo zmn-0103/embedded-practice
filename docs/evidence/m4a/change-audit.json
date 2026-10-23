@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-22 Asia/Shanghai",
+  "changed": [
+    {
+      "path": "tests/e2e/startup.spec.ts",
+      "before": "aba3571535b523be2928ab155d8157930532eabaf147b105393af57d799d4947",
+      "after": "4be971777f0697cf941026e5b613ce7abb181b369aad4bcaa0b465510dda99f1"
+    },
+    {
+      "path": "tests/e2e/settings-window.spec.ts",
+      "before": "19bf0ec0d809f313bf976a987259ea5d4900f2a5d66b2e1eac5839ac1df87341",
+      "after": "e9542d8319439d7252cfeb4f182a501333bab1868abdc0ca75dae003daf1e421"
+    },
+    {
+      "path": "src/shared/contracts/application.ts",
+      "before": "2917d99a6e23d7e5719a8c1d786b583c886c81ce9e0bd666e4a91cb49e739553",
+      "after": "39a28f9d631faf97dbfe054ba6c53c341d620db17e47298f1064b83970cb3ea8"
+    },
+    {
+      "path": "src/main/index.ts",
+      "before": "86a215d8a3ecb7890e87b68ccf08ac1a4570c213ce9112336a6cca138259fb6c",
+      "after": "b4d831543a60607c69308eb00fbf0724c83e2413cdcb35a1556f815b1dcb46f4"
+    },
+    {
+      "path": "src/renderer/src/components/SettingsPane.tsx",
+      "before": "ae64e51eab18418ef6224e1248c7bb4a7f0feadfb992e2b525f91b6a3feb508d",
+      "after": "c589dd4bea3ce46c5bf636bf334892311a36d4dff803c7f95b62497039dd81ed"
+    },
+    {
+      "path": "src/renderer/src/App.tsx",
+      "before": "12d307a219d0ac8974c823d3f45dd690a51eb905bf4cfa146afbfa65d79c2e3b",
+      "after": "9f0b0a3f7374c3635b39246936fc9c224586e348936c966bf3ed57c1143ea3dc"
+    },
+    {
+      "path": "src/preload/index.ts",
+      "before": "40285b22cd316140b8aa314c71a78994b29f2f85ac7aa420b8a93d615eeea3b7",
+      "after": "9d1cee602148d46e8632862ffcab5d2bea3d6c74037f4f0d78ee82d78345dd28"
+    },
+    {
+      "path": "AGENTS.md",
+      "before": "4a2fe44782ef763efb349ee18f88a29b4e70054ec33158d02edc0147193f88c2",
+      "after": "745d4b4d776abe3c657802f2ab7e031f0099765fcba14d2dc862934a3735dddf"
+    },
+    {
+      "path": "README.md",
+      "before": "30b5fbb54d6cf129357bc7aee3065ae59537998c86cf32ca8f1b2996fad7ff55",
+      "after": "7387d9394c8d756efeeec0c8bb60b4fdd1da9f8132abc226469abe580d0b0470"
+    },
+    {
+      "path": "electron.vite.config.ts",
+      "before": "38f81fce515839c5361fc2cf3a1d43f749336792166604c8f49825ca573a481e",
+      "after": "63d874a79ca567f714660a82697379de9a3f1613e0d85a13504ccda69e46ddaf"
+    },
+    {
+      "path": "docs/产品说明.md",
+      "before": "5bb7f0effde253948f02cf080472af86b48b2cc8a96d3206e08146903c7b94a1",
+      "after": "5ede080f2efc142e7d23f7ea7dd87691d52fcd14cf499158ea2160b14b3fd29f"
+    },
+    {
+      "path": "docs/代码复查记录.md",
+      "before": "77fa4399e73fcd9e361e141ef16d25960b4bd9f862b2be3afbfe0d7f7d602b3a",
+      "after": "c91a0d8b8713c708c2029cd6a056bb21ac81a8cc5df651286e4047cd17e9e7b9"
+    },
+    {
+      "path": "docs/开发说明.md",
+      "before": "25dec479aab822de5d3214c0367223791bcc78bf6c856ddb330b9a0673d6c546",
+      "after": "623ad39adcb811ef14267a257f0d48b3329ddf63fbef87728d983dd4e99d0a0a"
+    },
+    {
+      "path": "docs/使用说明.md",
+      "before": "c4915815b7e5548868ce726c1ce7c451748afca41a6b7752eec9f1a75ae6ae96",
+      "after": "fbbfbe45572e22860b4585676f61c6b95b8bec9966d9d08453a2aa94cc5b3a46"
+    },
+    {
+      "path": "docs/验收记录.md",
+      "before": "1adcfd97850d37da0c61eeb769dc57fe1f2e4fa07df1a32384dbd369086bdc93",
+      "after": "53c6591b4f7e6b006439da6884b8fb03327cd4c61faef577c6eba076acfc085a"
+    },
+    {
+      "path": "docs/M2人工验收清单.md",
+      "before": "a55684868fc83bb19faca6009d8201f85d71f3fbee129e047927300f06427306",
+      "after": "333ffd0ac0b73827bdc1bb0dc9d7cd66ab14719cd1191cc031b9e3fc3f3a0dac"
+    },
+    {
+      "path": "docs/README.md",
+      "before": "2c3b788de299481a669b867c7322ce3e7afee4f77646b04848ce059966f1d008",
+      "after": "a46a5e83a674c332e9b812984c61e9db39515a30d6085c244e6d2f120fcee505"
+    }
+  ],
+  "added": [
+    {
+      "path": "src/shared/contracts/backup.ts",
+      "sha256": "f106437b8cfe99833e27941adf0e7a2b27c7943fca9138c6fff1c44555163df1"
+    },
+    {
+      "path": "tests/unit/backup-ipc.test.ts",
+      "sha256": "8fb43d842a84ce4f938c47421140851e66ef7b91c8dffec47ca1bab1c413859a"
+    },
+    {
+      "path": "tests/unit/backup-contract.test.ts",
+      "sha256": "6e3ff91210d67027c67b9b73f142bd3944007b2dab85b4e2528e758661f18554"
+    },
+    {
+      "path": "src/renderer/src/components/BackupPanel.tsx",
+      "sha256": "aafa385fc6b81cb584ca12791e4f9f2d0f7a0e9f8cca08282ce8bb0e8f965740"
+    },
+    {
+      "path": "tests/e2e/backup-window.spec.ts",
+      "sha256": "9328dde1d7f12234b006ba7650a8878f3f36ac3e61716a4e475c9af3bbbac7de"
+    },
+    {
+      "path": "tests/e2e/backup-legacy.spec.ts",
+      "sha256": "6600fe93755998f01cecc00aeda56d0f04013fe324caaf62bbe84361f76e9435"
+    },
+    {
+      "path": "src/main/ipc/backup.ts",
+      "sha256": "d4126eaf030d0dc2f52de42d6efa2edf379497faf603c3d27ae6d3b0479d3f7f"
+    },
+    {
+      "path": "src/main/services/backup/validate-backup.ts",
+      "sha256": "d962763620d81051dc87dfb041b2115efd5fae4349663c03a9dbaa77ad61f34b"
+    },
+    {
+      "path": "src/main/services/backup/backup.ts",
+      "sha256": "15ff0a91ebb98520290f6ded78d2930d25fa23fbb5814d83e06a0ead8b084679"
+    }
+  ],
+  "changedCodeCount": 8,
+  "addedCodeCount": 9,
+  "allCodeReviewed": true,
+  "sourceUtf8": true,
+  "textCount": 139,
+  "beforeDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m4a-before-d5aa8ec87c2a4a91be15d12acabdcdea",
+  "notes": "改前快照逐文件哈希比较；保留用户原有文件，未提交或推送。"
+}

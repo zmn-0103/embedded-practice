@@ -1,0 +1,151 @@
+
+Running 5 tests using 1 worker
+
+(node:16812) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：100% 页面缩放下长内容切题回到题首 (12.1s)
+(node:22024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  2 [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：125% 页面缩放下长内容切题回到题首 (12.8s)
+(node:34376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  3 [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：150% 页面缩放下长内容切题回到题首 (12.0s)
+(node:26960) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  4 [development] › tests\e2e\practice-window.spec.ts:631:5 › M2 第三批：长题干末题完成后展示并聚焦结果标题 (12.8s)
+(node:43124) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  5 [development] › tests\e2e\practice-window.spec.ts:661:5 › M2 第三批：强制终止后恢复已确认草稿、原位置与自评 (33.5s)
+
+
+  1) [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：100% 页面缩放下长内容切题回到题首 ──────────
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator:  getByRole('heading', { name: '窗口练习 2', exact: true })
+    Expected: in viewport
+    Received: viewport ratio 0
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeInViewport" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms
+      - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })
+        24 × locator resolved to <h2>窗口练习 2</h2>
+           - unexpected value "viewport ratio 0"
+
+
+      601 |         contentType: 'application/json',
+      602 |       })
+    > 603 |       await expect(secondTitle).toBeInViewport({ ratio: 1 })
+          |                                 ^
+      604 |       await expect(secondTitle).toBeFocused()
+      605 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })
+      606 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-window.spec.ts:603:33
+
+    Error Context: tmp\m2c-before-results\practice-window-M2-第三批：100-页面缩放下长内容切题回到题首-development\error-context.md
+
+  2) [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：125% 页面缩放下长内容切题回到题首 ──────────
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator:  getByRole('heading', { name: '窗口练习 2', exact: true })
+    Expected: in viewport
+    Received: viewport ratio 0
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeInViewport" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms
+      - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })
+        24 × locator resolved to <h2>窗口练习 2</h2>
+           - unexpected value "viewport ratio 0"
+
+
+      601 |         contentType: 'application/json',
+      602 |       })
+    > 603 |       await expect(secondTitle).toBeInViewport({ ratio: 1 })
+          |                                 ^
+      604 |       await expect(secondTitle).toBeFocused()
+      605 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })
+      606 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-window.spec.ts:603:33
+
+    Error Context: tmp\m2c-before-results\practice-window-M2-第三批：125-页面缩放下长内容切题回到题首-development\error-context.md
+
+  3) [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：150% 页面缩放下长内容切题回到题首 ──────────
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator:  getByRole('heading', { name: '窗口练习 2', exact: true })
+    Expected: in viewport
+    Received: viewport ratio 0
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeInViewport" getByRole('heading', { name: '窗口练习 2', exact: true }) with timeout 10000ms
+      - waiting for getByRole('heading', { name: '窗口练习 2', exact: true })
+        23 × locator resolved to <h2>窗口练习 2</h2>
+           - unexpected value "viewport ratio 0"
+
+
+      601 |         contentType: 'application/json',
+      602 |       })
+    > 603 |       await expect(secondTitle).toBeInViewport({ ratio: 1 })
+          |                                 ^
+      604 |       await expect(secondTitle).toBeFocused()
+      605 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })
+      606 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-window.spec.ts:603:33
+
+    Error Context: tmp\m2c-before-results\practice-window-M2-第三批：150-页面缩放下长内容切题回到题首-development\error-context.md
+
+  4) [development] › tests\e2e\practice-window.spec.ts:631:5 › M2 第三批：长题干末题完成后展示并聚焦结果标题 ────────────
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('heading', { name: '本轮已完成', exact: true })
+    Expected: focused
+    Received: inactive
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeFocused" getByRole('heading', { name: '本轮已完成', exact: true }) with timeout 10000ms
+      - waiting for getByRole('heading', { name: '本轮已完成', exact: true })
+        23 × locator resolved to <h2>本轮已完成</h2>
+           - unexpected value "inactive"
+
+
+      646 |     const title = page.getByRole('heading', { name: '本轮已完成', exact: true })
+      647 |     await expect(title).toBeInViewport({ ratio: 1 })
+    > 648 |     await expect(title).toBeFocused()
+          |                         ^
+      649 |     const result = stored(testDataDirectory)
+      650 |     expect(result.sessions[0]).toMatchObject({ status: 'finished', position: 3 })
+      651 |     expect(result.items.filter((item) => item.skippedAt !== null)).toHaveLength(3)
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-window.spec.ts:648:25
+
+    Error Context: tmp\m2c-before-results\practice-window-M2-第三批：长题干末题完成后展示并聚焦结果标题-development\error-context.md
+
+  5) [development] › tests\e2e\practice-window.spec.ts:661:5 › M2 第三批：强制终止后恢复已确认草稿、原位置与自评 ──────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: electronApplication.waitForEvent: Timeout 30000ms exceeded while waiting for event "close"
+
+      680 |     const applicationProcess = application.process()
+      681 |     if (!applicationProcess.pid) throw new Error('缺少本场景启动的应用进程。')
+    > 682 |     const closed = application.waitForEvent('close')
+          |                                ^
+      683 |     if (!applicationProcess.kill('SIGKILL')) throw new Error('未能终止本场景的测试进程。')
+      684 |     await closed
+      685 |     closedApplications.add(application)
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-window.spec.ts:682:32
+
+    Error Context: tmp\m2c-before-results\practice-window-M2-第三批：强制终止后恢复已确认草稿、原位置与自评-development\error-context.md
+
+  5 failed
+    [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：100% 页面缩放下长内容切题回到题首 ───────────
+    [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：125% 页面缩放下长内容切题回到题首 ───────────
+    [development] › tests\e2e\practice-window.spec.ts:565:7 › M2 第三批：150% 页面缩放下长内容切题回到题首 ───────────
+    [development] › tests\e2e\practice-window.spec.ts:631:5 › M2 第三批：长题干末题完成后展示并聚焦结果标题 ─────────────
+    [development] › tests\e2e\practice-window.spec.ts:661:5 › M2 第三批：强制终止后恢复已确认草稿、原位置与自评 ───────────

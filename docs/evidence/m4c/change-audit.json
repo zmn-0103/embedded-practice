@@ -1,0 +1,103 @@
+{
+  "codeCount": 19,
+  "productionCount": 10,
+  "testCount": 9,
+  "changedCode": [
+    {
+      "path": "src/main/index.ts",
+      "beforeSha256": "e1fbad2aa70ad2f1235dcba545430815bcaed7cb61efd3bf542ae8e2448dbc21",
+      "sha256": "62de1d45cf14b591a1d658617572989779dcf289951f0f5ce88bcbeba5e0beca"
+    },
+    {
+      "path": "src/main/ipc/data-locations.ts",
+      "beforeSha256": null,
+      "sha256": "0c93ce230045bd8b1b7b6824c9767556fe0425b1295d6ca1d820b00988fdcf48"
+    },
+    {
+      "path": "src/main/services/backup/backup.ts",
+      "beforeSha256": "2c9185cc0c536c92913c246c543008a7fc57bbc6f777c0fdb11079c68575e07f",
+      "sha256": "0b1fc263fdeb81c9ad1799acf980076995d984a9faf13b0529f9df6a2d98d003"
+    },
+    {
+      "path": "src/preload/index.ts",
+      "beforeSha256": "cae0ee22b6a533cffda865095f77927ba3d14610e4f04c800e42257ed65a3e01",
+      "sha256": "32d9bfd7bcd0f66bfdcfbc36d4e1288ba74785892b4ca362db1b202aaf654150"
+    },
+    {
+      "path": "src/renderer/src/App.tsx",
+      "beforeSha256": "9f0b0a3f7374c3635b39246936fc9c224586e348936c966bf3ed57c1143ea3dc",
+      "sha256": "0dc2201bb496cf9b3806690de6859a17d641c79351bf47163fd9de9b34fd5c98"
+    },
+    {
+      "path": "src/renderer/src/components/DataLocationsPanel.tsx",
+      "beforeSha256": null,
+      "sha256": "a544431df57a4e412b1ea20336183c2ac1e248a5433399934095ba5d22de4d5f"
+    },
+    {
+      "path": "src/renderer/src/components/SettingsPane.tsx",
+      "beforeSha256": "c589dd4bea3ce46c5bf636bf334892311a36d4dff803c7f95b62497039dd81ed",
+      "sha256": "2f3baeee8b447f2d3ac1ed4c0cdd122124ae9b0f68aaf8b324ec6c585cfad2b0"
+    },
+    {
+      "path": "src/renderer/src/styles/global.css",
+      "beforeSha256": "1208b5a2637a47e34558382f54bd74a853d7cb094ee0e946a755d194a2dcdd12",
+      "sha256": "2bdf49b6dfa422d5123a983fc6972bdf8049bab50727255321683a91bc3290b0"
+    },
+    {
+      "path": "src/shared/contracts/application.ts",
+      "beforeSha256": "39a28f9d631faf97dbfe054ba6c53c341d620db17e47298f1064b83970cb3ea8",
+      "sha256": "759f64d46e15f17704af6a0b12b61fe988cbb1d323f04973efc2c3948ae0381e"
+    },
+    {
+      "path": "src/shared/contracts/data-locations.ts",
+      "beforeSha256": null,
+      "sha256": "da7852f412fca27f62fd164c40d731e21529b6804476d4663a58649e6c5fc3de"
+    },
+    {
+      "path": "tests/e2e/data-locations.spec.ts",
+      "beforeSha256": null,
+      "sha256": "2791aed8ed5da0833dba1914426f6c615f7ad914794d301d87dde7496067bb48"
+    },
+    {
+      "path": "tests/e2e/database-errors.spec.ts",
+      "beforeSha256": "1155d6932e6fc51f200b6a52a33e8fee31f853c60ffc995fb501abf26e013fcb",
+      "sha256": "f5aa2b9beb83a3f7dba66f1e5ddef15b443b9a3672eb422c315cb3484a82c405"
+    },
+    {
+      "path": "tests/e2e/library-import.spec.ts",
+      "beforeSha256": "4ad028ec11bc005d349831f13cd3b7cea03702f30d628dffa9056936648f814b",
+      "sha256": "0b1fe12ef7e45d5793e1b16e03fae9105e9c6f5d4fe9a8ace0b5b14f6f62f177"
+    },
+    {
+      "path": "tests/e2e/session-filters-migration.spec.ts",
+      "beforeSha256": "1eb2d7c95ed2d49511dffcb643a25667f99865b6b90e80fa2a520a738fa8b7b8",
+      "sha256": "9f56b0446be8ce10f7b6df2480a6c969cdf5f747e8f854584599cdb798bf0c9f"
+    },
+    {
+      "path": "tests/e2e/settings-migration.spec.ts",
+      "beforeSha256": "c2f05ca1d61fda5ed6cad4b2f5c3fa1810d32d69e58002a440ab99c4b96fcb76",
+      "sha256": "d7868b1df2516876969ecbb60281d4c88d657c164485e800e8525778244bfd1a"
+    },
+    {
+      "path": "tests/e2e/settings-window.spec.ts",
+      "beforeSha256": "e9542d8319439d7252cfeb4f182a501333bab1868abdc0ca75dae003daf1e421",
+      "sha256": "cb27a8e15e90047c1d9a7c7882508f13a26e599c46bc978653c06e4f80ad1194"
+    },
+    {
+      "path": "tests/e2e/startup.spec.ts",
+      "beforeSha256": "a60953463cb387641a6a44ce3feaa481d19e2533038f8afeb02b43defe2c6c73",
+      "sha256": "f6e8a91519f4a4e2a306fdeed308f7c7c8297c7286135bcfc501fec2d822f4ea"
+    },
+    {
+      "path": "tests/unit/data-locations-contract.test.ts",
+      "beforeSha256": null,
+      "sha256": "f6e5f391b1ed6be60abf6956453e0e7e17b53188849790182d6152dc4b57d471"
+    },
+    {
+      "path": "tests/unit/data-locations-ipc.test.ts",
+      "beforeSha256": null,
+      "sha256": "feafbd60b1acfcecd94d534be08e483f80c3f656b1f8f2a87337f1d45488eff6"
+    }
+  ],
+  "review": "逐文件完成 Bug/边界及可维护性两轮静态复查，实质修改重复记录；不替代运行检查。"
+}

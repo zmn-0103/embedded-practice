@@ -1,0 +1,5 @@
+
+> embedded-practice@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/settings-palettes.spec.ts(2,1): error TS6133: 'DesktopApi' is declared but its value is never read.

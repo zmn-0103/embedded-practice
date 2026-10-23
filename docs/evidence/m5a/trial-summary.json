@@ -1,0 +1,128 @@
+{
+  "coverage": [
+    {
+      "id": "gpio-001",
+      "title": "GPIO 的英文全称是什么？GPIO 输入与输出的区别是什么？",
+      "observed": true
+    },
+    {
+      "id": "gpio-002",
+      "title": "为什么配置 GPIO 之前通常需要使能对应端口的外设时钟？",
+      "observed": true
+    },
+    {
+      "id": "gpio-003",
+      "title": "STM32F103 的 GPIOA、GPIOC 使用哪条总线的外设时钟？",
+      "observed": true
+    },
+    {
+      "id": "gpio-004",
+      "title": "SystemCoreClockUpdate() 的作用是什么？它能否替代 GPIO 外设时钟使能？",
+      "observed": true
+    },
+    {
+      "id": "gpio-005",
+      "title": "GPIO 的通用输出和复用输出有什么区别？",
+      "observed": true
+    },
+    {
+      "id": "gpio-006",
+      "title": "推挽输出与开漏输出的主要区别是什么？",
+      "observed": true
+    },
+    {
+      "id": "gpio-007",
+      "title": "GPIO_Speed_2MHz 表示什么？它是否表示 MCU 主频为 2 MHz？",
+      "observed": true
+    },
+    {
+      "id": "gpio-008",
+      "title": "为什么输入引脚可能需要上拉或下拉？",
+      "observed": true
+    },
+    {
+      "id": "gpio-009",
+      "title": "输入上拉模式下，按键按下不一定是高电平，为什么？",
+      "observed": true
+    },
+    {
+      "id": "gpio-010",
+      "title": "为什么配置为复用输出后，还需要配置对应的片上外设？",
+      "observed": true
+    },
+    {
+      "id": "gpio-011",
+      "title": "GPIO_InitTypeDef 结构体中最重要的三个成员是什么？分别有什么作用？",
+      "observed": true
+    },
+    {
+      "id": "gpio-012",
+      "title": "GPIO_Init(GPIOA, &GPIO_InitStructure) 中两个参数分别表示什么？",
+      "observed": true
+    },
+    {
+      "id": "gpio-013",
+      "title": "RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE) 的作用是什么？",
+      "observed": true
+    },
+    {
+      "id": "gpio-014",
+      "title": "GPIO_SetBits() 与 GPIO_ResetBits() 有什么区别？",
+      "observed": true
+    },
+    {
+      "id": "gpio-015",
+      "title": "GPIO_ReadInputDataBit() 返回什么类型的结果？Bit_SET 和 Bit_RESET 分别代表什么？",
+      "observed": true
+    },
+    {
+      "id": "gpio-016",
+      "title": "GPIO_ReadInputDataBit() 与 GPIO_ReadOutputDataBit() 有什么区别？",
+      "observed": true
+    },
+    {
+      "id": "gpio-017",
+      "title": "输入模式下设置 GPIO_Speed 是否决定输入信号的采样速度？为什么？",
+      "observed": true
+    },
+    {
+      "id": "gpio-018",
+      "title": "为什么建议在函数或代码块开头声明局部变量，以兼容较老的 C 编译模式？",
+      "observed": true
+    },
+    {
+      "id": "gpio-019",
+      "title": "STM32F103 的 GPIO 有哪些常见输入模式？",
+      "observed": true
+    },
+    {
+      "id": "gpio-020",
+      "title": "STM32F103 的 GPIO 有哪些常见输出模式？",
+      "observed": true
+    }
+  ],
+  "observedQuestions": 20,
+  "trialScope": "AI原生操作：恢复前两题既有揭晓状态，逐题揭晓其余18题、暂不评价推进；非用户学习或技术内容验收",
+  "changedFreshTables": [
+    "practice_sessions",
+    "practice_items",
+    "practice_receipts"
+  ],
+  "originalVsAfterLocations": [],
+  "freshSession": {
+    "id": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+    "mode": "sequential",
+    "topic_id": null,
+    "status": "finished",
+    "position": 20,
+    "revision": 42,
+    "created_at": "2026-10-22T07:03:30.707Z",
+    "ended_at": "2026-10-22T07:27:34.017Z",
+    "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+  },
+  "integrity": [
+    "ok"
+  ],
+  "foreignKeys": [],
+  "selectedBackupUnchanged": true
+}

@@ -1,0 +1,66 @@
+
+Running 58 tests using 1 worker
+
+
+
+(node:28568) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[1/58] [development] › tests\e2e\backup-window.spec.ts:124:5 › 完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库
+[2/58] [development] › tests\e2e\backup-window.spec.ts:236:5 › 备份取消与预览取消保留原状态，空库可导出并预览
+[3/58] [development] › tests\e2e\backup-window.spec.ts:288:5 › 实际备份写入失败保留已有目标与当前数据，清理暂存后可重试
+[4/58] [development] › tests\e2e\backup-window.spec.ts:331:5 › 备份拒绝当前库伴随文件及目录链接硬链接别名，目标有旧 WAL 时不发布
+[5/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 corrupt，原备份字节及当前数据保持
+[6/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 foreign-app，原备份字节及当前数据保持
+[7/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 future，原备份字节及当前数据保持
+[8/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 missing-table，原备份字节及当前数据保持
+[9/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 foreign-key，原备份字节及当前数据保持
+[10/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 metadata，原备份字节及当前数据保持
+[11/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 image-hash，原备份字节及当前数据保持
+[12/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 filters，原备份字节及当前数据保持
+[13/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 body-json，原备份字节及当前数据保持
+[14/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 palette，原备份字节及当前数据保持
+[15/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 category-title，原备份字节及当前数据保持
+[16/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 category-membership，原备份字节及当前数据保持
+[17/58] [development] › tests\e2e\backup-window.spec.ts:395:7 › 恢复预览拒绝 category-snapshot，原备份字节及当前数据保持
+[18/58] [development] › tests\e2e\backup-window.spec.ts:462:5 › 在途备份阻止重复操作和切页，正常退出等待已验证备份发布
+[19/58] [development] › tests\e2e\backup-window.spec.ts:515:5 › 发布失败保留既有备份，来源读取中变化时停止预览且清理副本
+[20/58] [development] › tests\e2e\backup-window.spec.ts:563:5 › 备份期间其他连接的事务写入保持一致性快照
+[21/58] [development] › tests\e2e\backup-window.spec.ts:615:5 › 导出保留未知自定义表，同名未知元数据表冲突时停止且保留旧目标
+[22/58] [development] › tests\e2e\category-migration.spec.ts:83:5 › 结构7分类迁移：一致性保护、原业务/条件/回执/自定义对象保持，旧专题未分类与旧轮不限分类
+[23/58] [development] › tests\e2e\category-migration.spec.ts:194:7 › 结构7分类迁移 backup-blocked 停止或完整回滚，原库不修补不重建
+[24/58] [development] › tests\e2e\category-migration.spec.ts:194:7 › 结构7分类迁移 table-conflict 停止或完整回滚，原库不修补不重建
+[25/58] [development] › tests\e2e\category-migration.spec.ts:194:7 › 结构7分类迁移 scope-column-conflict 停止或完整回滚，原库不修补不重建
+[26/58] [development] › tests\e2e\category-migration.spec.ts:194:7 › 结构7分类迁移 foreign-key 停止或完整回滚，原库不修补不重建
+[27/58] [development] › tests\e2e\palette-migration.spec.ts:87:5 › 真实结构6先保护备份再追加配色，全部业务/自定义对象/显示和条件保持
+[28/58] [development] › tests\e2e\palette-migration.spec.ts:158:7 › 结构6配色迁移 backup-blocked 停止/回滚，不修补未知结构
+[29/58] [development] › tests\e2e\palette-migration.spec.ts:158:7 › 结构6配色迁移 column-conflict 停止/回滚，不修补未知结构
+[30/58] [development] › tests\e2e\palette-migration.spec.ts:158:7 › 结构6配色迁移 foreign-key 停止/回滚，不修补未知结构
+[31/58] [development] › tests\e2e\practice-mode-migration.spec.ts:129:5 › v3 升级至 v8：备份、全部旧记录、原请求回执与顺序会话恢复保持
+[32/58] [development] › tests\e2e\practice-mode-migration.spec.ts:217:5 › v3 备份失败停止升级，原文件逐字节不变
+[33/58] [development] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 conflict，保留原结构、记录和保护性备份
+[34/58] [development] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 trigger，保留原结构、记录和保护性备份
+[35/58] [development] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 index，保留原结构、记录和保护性备份
+[36/58] [development] › tests\e2e\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 foreign-key，保留原结构、记录和保护性备份
+[37/58] [development] › tests\e2e\restore-window.spec.ts:218:5 › 全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容
+[38/58] [development] › tests\e2e\restore-window.spec.ts:399:7 › 恢复准备 protect 时不替换原库，窗口仍可继续保存
+[39/58] [development] › tests\e2e\restore-window.spec.ts:399:7 › 恢复准备 save 时不替换原库，窗口仍可继续保存
+[40/58] [development] › tests\e2e\restore-window.spec.ts:399:7 › 恢复准备 tampered 时不替换原库，窗口仍可继续保存
+[41/58] [development] › tests\e2e\restore-window.spec.ts:399:7 › 恢复准备 cancel 时不替换原库，窗口仍可继续保存
+[42/58] [development] › tests\e2e\restore-window.spec.ts:462:7 › 恢复 publish 后独立进程保留可恢复数据且不创建空库
+[43/58] [development] › tests\e2e\restore-window.spec.ts:462:7 › 恢复 close 后独立进程保留可恢复数据且不创建空库
+[44/58] [development] › tests\e2e\restore-window.spec.ts:462:7 › 恢复 rollback 后独立进程保留可恢复数据且不创建空库
+[45/58] [development] › tests\e2e\restore-window.spec.ts:462:7 › 恢复 crash-moved 后独立进程保留可恢复数据且不创建空库
+[46/58] [development] › tests\e2e\restore-window.spec.ts:462:7 › 恢复 crash-installed 后独立进程保留可恢复数据且不创建空库
+[47/58] [development] › tests\e2e\restore-window.spec.ts:462:7 › 恢复 crash-committed 后独立进程保留可恢复数据且不创建空库
+[48/58] [development] › tests\e2e\restore-window.spec.ts:521:5 › 恢复文件事务保留并回退全部数据库伴随文件，未知事务现场不清理
+[49/58] [development] › tests\e2e\restore-window.spec.ts:614:5 › 恢复前提交未到自动保存时间的草稿，保护备份包括最终输入且暂停期间拒绝业务写入
+[50/58] [development] › tests\e2e\restore-window.spec.ts:699:5 › 保护性备份可直接从本数据目录选择并恢复，来源文件不被覆盖
+[51/58] [development] › tests\e2e\session-filters-migration.spec.ts:139:5 › v5 升级至 v8 保留全业务、原回执与显示设置，旧筛选明确未知
+[52/58] [development] › tests\e2e\session-filters-migration.spec.ts:237:7 › v5 筛选迁移 backup-blocked 停止或回滚，原库保留
+[53/58] [development] › tests\e2e\session-filters-migration.spec.ts:237:7 › v5 筛选迁移 column-conflict 停止或回滚，原库保留
+[54/58] [development] › tests\e2e\session-filters-migration.spec.ts:237:7 › v5 筛选迁移 foreign-key 停止或回滚，原库保留
+[55/58] [development] › tests\e2e\settings-migration.spec.ts:136:5 › v4 升级至 v8：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级
+[56/58] [development] › tests\e2e\settings-migration.spec.ts:261:7 › v4 显示设置升级 backup-blocked 时停止/回滚且保留原库
+[57/58] [development] › tests\e2e\settings-migration.spec.ts:261:7 › v4 显示设置升级 table-conflict 时停止/回滚且保留原库
+[58/58] [development] › tests\e2e\settings-migration.spec.ts:261:7 › v4 显示设置升级 foreign-key 时停止/回滚且保留原库
+  58 passed (1.4m)

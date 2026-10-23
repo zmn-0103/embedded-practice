@@ -1,0 +1,44 @@
+
+> embedded-practice@0.1.0 test
+> vitest run tests/unit --reporter=default --reporter=json --outputFile=docs/evidence/m4a/unit-final.json
+
+
+ RUN  v5.0.5 E:/My_Projects/embedded-practice
+
+ ✓ tests/unit/read-file-snapshot.test.ts (5 tests) 109ms
+ ✓ tests/unit/import-task-runner.test.ts (9 tests) 25ms
+ ✓ tests/unit/import-task-failures.test.ts (18 tests) 24ms
+ ✓ tests/unit/history-contract.test.ts (19 tests) 24ms
+ ✓ tests/unit/practice-contract.test.ts (60 tests) 57ms
+ ✓ tests/unit/practice-controller.test.ts (15 tests) 61ms
+ ✓ tests/unit/practice-ipc.test.ts (16 tests) 61ms
+ ✓ tests/unit/read-image.test.ts (18 tests) 362ms
+ ✓ tests/unit/backup-ipc.test.ts (15 tests) 96ms
+ ✓ tests/unit/library-ipc.test.ts (24 tests) 255ms
+ ✓ tests/unit/question-filters.test.ts (11 tests) 18ms
+ ✓ tests/unit/learning-contract.test.ts (20 tests) 18ms
+ ✓ tests/unit/desktop-contract.test.ts (23 tests) 30ms
+ ✓ tests/unit/application.test.ts (9 tests) 17ms
+ ✓ tests/unit/settings-contract.test.ts (16 tests) 14ms
+ ✓ tests/unit/backup-contract.test.ts (8 tests) 14ms
+ ✓ tests/unit/markdown-images.test.ts (25 tests) 134ms
+ ✓ tests/unit/import-comparison.test.ts (13 tests) 146ms
+ ✓ tests/unit/import-protocol.test.ts (28 tests) 28ms
+ ✓ tests/unit/markdown-metadata.test.ts (24 tests) 118ms
+ ✓ tests/unit/import-budget.test.ts (7 tests) 8ms
+ ✓ tests/unit/import-session.test.ts (19 tests) 32ms
+ ✓ tests/unit/prepare-import.test.ts (11 tests) 291ms
+ ✓ tests/unit/gpio-question-bank.test.ts (81 tests) 16ms
+ ✓ tests/unit/import-limits.test.ts (3 tests) 2177ms
+   ✓ 批次限额实际文件链路 (3)
+     ✓ 两个合法专题合计 10,001 题时拒绝整个批次 2145ms
+ ✓ tests/unit/markdown-structure.test.ts (29 tests) 2397ms
+   ✓ Markdown 语法树分题与原文保留 (29)
+     ✓ 题量超过 10,000 时明确拒绝，不静默截断 2273ms
+
+ Test Files  26 passed (26)
+      Tests  526 passed (526)
+   Start at  09:50:01
+   Duration  3.30s (import 50%, tests 39%, transform 10%, worker 1%)
+
+JSON report written to E:/My_Projects/embedded-practice/docs/evidence/m4a/unit-final.json

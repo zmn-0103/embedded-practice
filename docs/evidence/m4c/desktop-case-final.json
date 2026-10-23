@@ -1,0 +1,226 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/data-locations.spec.ts",
+      "--grep",
+      "Windows 已有"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "data-locations.spec.ts",
+      "file": "data-locations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Windows 已有 Logs Backups 和 Backup-Staging 目录可正常打开并完成保护恢复",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1773,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T03:42:26.271Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "windows-directory-case-restored.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXN0b3JlZCI6eyJvayI6dHJ1ZSwidmFsdWUiOnsicHJvdGVjdGlvblBhdGgiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtTEh4RGxuXFxiYWNrdXBzXFxiZWZvcmUtcmVzdG9yZS0wN2Q5YzY3NC00NWI0LTRlMGYtOTZjYy1mNTY3ZWU5ZTVlMjcuc3FsaXRlMyJ9fSwicHJvdGVjdGlvbnMiOlsiYmVmb3JlLXJlc3RvcmUtMDdkOWM2NzQtNDViNC00ZTBmLTk2Y2MtZjU2N2VlOWU1ZTI3LnNxbGl0ZTMiXSwic2VsZWN0ZWRQYXRoIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLUxIeERsblxcQmFja3Vwc1xc54us56uL5aSH5Lu9LnNxbGl0ZTMifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "762381293de8fc69b185-5d80d872a201b071e753",
+          "file": "data-locations.spec.ts",
+          "line": 425,
+          "column": 5
+        },
+        {
+          "title": "Windows 已有 Logs Backups 和 Backup-Staging 目录可正常打开并完成保护恢复",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1754,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T03:42:28.391Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "windows-directory-case-restored.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXN0b3JlZCI6eyJvayI6dHJ1ZSwidmFsdWUiOnsicHJvdGVjdGlvblBhdGgiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UteXdCRlJqXFxiYWNrdXBzXFxiZWZvcmUtcmVzdG9yZS1iMGYwMTFlOS0yMjFjLTRlYzQtYTgxYy0wNmFmZTc2MzI0MWQuc3FsaXRlMyJ9fSwicHJvdGVjdGlvbnMiOlsiYmVmb3JlLXJlc3RvcmUtYjBmMDExZTktMjIxYy00ZWM0LWE4MWMtMDZhZmU3NjMyNDFkLnNxbGl0ZTMiXSwic2VsZWN0ZWRQYXRoIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLXl3QkZSalxcQmFja3Vwc1xc54us56uL5aSH5Lu9LnNxbGl0ZTMifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "762381293de8fc69b185-3a8afe91fa2f89a34aa9",
+          "file": "data-locations.spec.ts",
+          "line": 425,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-22T03:42:25.797Z",
+    "duration": 4395.775000000001,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

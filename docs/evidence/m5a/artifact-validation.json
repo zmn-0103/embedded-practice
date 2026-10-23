@@ -1,0 +1,704 @@
+{
+  "checkedAt": "2026-10-22T12:24:27.918847+00:00",
+  "kind": "Static artifact verification; not application tests or performance measurement",
+  "markdownFiles": [
+    "README.md",
+    "docs/README.md",
+    "docs/验收记录.md",
+    "docs/M2人工验收清单.md",
+    "docs/M5第一批行为与验收.md",
+    "docs/evidence/m5a/README.md"
+  ],
+  "localLinksChecked": 453,
+  "missingLinks": [],
+  "jsonFiles": [
+    "artifact-validation.json",
+    "bank-profile.json",
+    "cancel-comparison.json",
+    "clipboard-inbound.json",
+    "clipboard-outbound.json",
+    "database-after-20-question-trial.json",
+    "database-after-cancel.json",
+    "database-after-manual-close.json",
+    "database-after-native-export.json",
+    "database-after-real-restore.json",
+    "database-after-second-close.json",
+    "database-after-three-explorer-opens.json",
+    "database-after-user-import.json",
+    "database-before-confirmed-restore.json",
+    "database-before-native-export.json",
+    "database-fresh-after-restore.json",
+    "database-fresh-before-restore.json",
+    "database-fresh-final.json",
+    "database-fresh-protection.json",
+    "database-native-export.json",
+    "database-original-after-fresh-trial.json",
+    "database-original-final.json",
+    "database-protection-backup.json",
+    "documents-before.json",
+    "environment.json",
+    "evidence-manifest.json",
+    "export-comparison.json",
+    "final-database-summary.json",
+    "final-reopen.json",
+    "fresh-directory-launch.json",
+    "fresh-restore-comparison.json",
+    "locations-comparison.json",
+    "native-steps.json",
+    "post-runtime-change-check.json",
+    "restore-comparison.json",
+    "results-summary.json",
+    "same-directory-reopen.json",
+    "screenshot-format-correction.json",
+    "source-and-package-comparison.json",
+    "source-manifest.json",
+    "tooling-notes.json",
+    "trial-summary.json"
+  ],
+  "jsonFilesChecked": 42,
+  "invalidJson": [],
+  "images": [
+    {
+      "path": "01-initial.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "02-library.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "03-import-picker.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "05-import-picker-refreshed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "06-user-imported-78.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "08-user-practice-in-progress.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "10-ended-session-observed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "100-final-continued-example.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "101-final-clipboard-draft-retained.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "12-reopened-same-directory.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "13-continued-second-question.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "14-previous-rating-retained.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "15-favorite-saved.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "16-import-image-example-picker-1.jpg",
+      "format": "JPEG",
+      "width": 946,
+      "height": 533,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "16-import-image-example-picker.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "17-example-preview.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "18-example-images-imported.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "20-save-button-offscreen.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "21-native-save-dialog-1.jpg",
+      "format": "JPEG",
+      "width": 946,
+      "height": 533,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "21-native-save-dialog.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "22-native-save-path-1.jpg",
+      "format": "JPEG",
+      "width": 946,
+      "height": 533,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "22-native-save-path.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "23-export-complete.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "24-native-restore-preview.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "25-native-restore-confirm-cancel-first-1.jpg",
+      "format": "JPEG",
+      "width": 558,
+      "height": 259,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "25-native-restore-confirm-cancel-first.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "26-restore-default-enter-cancelled.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "27-before-restore-dark-22-saved.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "28-confirm-before-real-restore-1.jpg",
+      "format": "JPEG",
+      "width": 558,
+      "height": 259,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "28-confirm-before-real-restore.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "30-auto-restarted-restored.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "31-explorer-data-folder-1.jpg",
+      "format": "JPEG",
+      "width": 1125,
+      "height": 634,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "31-explorer-data-folder.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "32-explorer-data-address-1.jpg",
+      "format": "JPEG",
+      "width": 1125,
+      "height": 634,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "32-explorer-data-address.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "33-explorer-protection-file-1.jpg",
+      "format": "JPEG",
+      "width": 1125,
+      "height": 634,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "33-explorer-protection-file.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "36-explorer-logs-1.jpg",
+      "format": "JPEG",
+      "width": 1125,
+      "height": 634,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "36-explorer-logs.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1080,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "39-fresh-empty-start.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "40-fresh-directory-preview.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "41-fresh-directory-confirm-1.jpg",
+      "format": "JPEG",
+      "width": 558,
+      "height": 259,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "41-fresh-directory-confirm.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "43-fresh-auto-restarted.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "44-trial-q01-restored.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "52-trial-q06-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "53-trial-q06-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "54-trial-q07-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "55-trial-q07-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "56-trial-q08-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "57-trial-q08-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "58-trial-q09-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "59-trial-q09-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "60-trial-q10-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "61-trial-q10-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "62-trial-q11-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "63-trial-q11-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "64-trial-q11-table-visible.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "65-trial-q12-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "66-trial-q12-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "67-trial-q13-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "68-trial-q13-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "69-trial-q14-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "70-trial-q14-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "71-trial-q15-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "72-trial-q15-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "73-trial-q16-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "74-trial-q16-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "75-trial-q17-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "76-trial-q17-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "77-trial-q18-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "78-trial-q18-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "79-trial-q19-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "80-trial-q19-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "81-trial-q20-unrevealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "82-trial-q20-revealed.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "83-trial-finished.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "84-after-finished-home.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "85-example-round-started.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "87-notepad-native-paste.jpg",
+      "format": "JPEG",
+      "width": 787,
+      "height": 748,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "88-notepad-native-copy.jpg",
+      "format": "JPEG",
+      "width": 787,
+      "height": 748,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "89-external-to-application-native-paste.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "91-restored-png-preview.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "92-png-native-zoom.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "93-png-escape-close.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "95-example-jpeg-webp.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "96-restored-jpeg-preview.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "98-restored-webp-preview.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "99-final-reopened.jpg",
+      "format": "JPEG",
+      "width": 1126,
+      "height": 773,
+      "verifiedAndDecoded": true
+    },
+    {
+      "path": "user-import-confirmation.png",
+      "format": "PNG",
+      "width": 1124,
+      "height": 741,
+      "verifiedAndDecoded": true
+    }
+  ],
+  "imageCount": 90,
+  "jpegCount": 89,
+  "pngCount": 1,
+  "imageVerification": "Pillow verify and full load without pixel changes; filename matches actual format",
+  "renamedScreenshotHashesUnchanged": 89,
+  "sourceManifestFiles": 175,
+  "sourceManifestMatches": true,
+  "productionAndTestsUnchanged": true,
+  "packageFilesUnchanged": 4,
+  "historicalM4cEvidenceFilesUnchanged": 681,
+  "toolingErrorsPreserved": "tooling-notes.json and screenshot-format-correction.json",
+  "boundary": "This validates evidence files, not full question-image pixel validity, human experience, new builds, unit/desktop suites, NSIS or performance."
+}

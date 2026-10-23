@@ -1,0 +1,98 @@
+
+> embedded-practice@0.1.0 test:desktop
+> npm run build && playwright test --project=development
+
+
+> embedded-practice@0.1.0 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 416 modules transformed.
+rendering chunks...
+out/main/rolldown-runtime-Dbql6lyJ.js    1.73 kB
+out/main/import-preparation.js           4.78 kB
+out/main/open-database-EiqvZY0Q.js       5.93 kB
+out/main/index.js                        7.48 kB
+out/main/import-protocol-Bu6RETGa.js     7.53 kB
+out/main/library-import.js              17.23 kB
+out/main/schemas-C3CXYOW7.js           182.22 kB
+out/main/import-worker-CHd_eeq2.js     760.59 kB
+
+✓ built in 118ms
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 98 modules transformed.
+rendering chunks...
+out/preload/index.js  172.47 kB
+
+✓ built in 31ms
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 15 modules transformed.
+rendering chunks...
+out/renderer/index.html                   0.70 kB
+out/renderer/assets/index-Bspc05qX.css    3.43 kB
+out/renderer/assets/index-COnObg9K.js   569.55 kB
+
+✓ built in 73ms
+
+Running 14 tests using 1 worker
+
+(node:27872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\database-errors.spec.ts:24:7 › 损坏文件报错且原文件不变 (696ms)
+  ok  2 [development] › tests\e2e\database-errors.spec.ts:24:7 › 无应用标识的非空库报错且原文件不变 (613ms)
+  ok  3 [development] › tests\e2e\database-errors.spec.ts:24:7 › 不受支持的结构版本报错且原文件不变 (635ms)
+  ok  4 [development] › tests\e2e\import-worker.spec.ts:38:5 › 真实线程准备题库与三种图片，停止后来源可移动 (709ms)
+  ok  5 [development] › tests\e2e\import-worker.spec.ts:79:5 › 真实线程支持忙碌、失败后重试、取消与期限 (734ms)
+  ok  6 [development] › tests\e2e\import-worker.spec.ts:105:5 › 关闭服务等待真实线程停止并拒绝新任务 (536ms)
+  ok  7 [development] › tests\e2e\library-import.spec.ts:19:5 › 预览后来源移动，80 题与三种图片原子入库并跨进程读回 (1.3s)
+  x   8 [development] › tests\e2e\library-import.spec.ts:103:5 › 真实事务区分元数据与内容版本，保留收藏/旧引用，归档恢复与旧基线保护 (530ms)
+(node:8288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   9 [development] › tests\e2e\library-import.spec.ts:154:5 › 第二专题中途写入失败整批回滚，确认无回执后可重试同一快照 (633ms)
+(node:8280) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 10 [development] › tests\e2e\library-import.spec.ts:216:5 › 旧 M0 库迁移前备份可读，原启动记录与数据保留且升级不重复 (1.2s)
+  ok 11 [development] › tests\e2e\library-import.spec.ts:268:5 › 迁移前备份无法创建时停止，旧数据库不改写 (530ms)
+  ok 12 [development] › tests\e2e\library-import.spec.ts:286:5 › 迁移 DDL 失败回滚结构，保留旧库和保护性备份 (535ms)
+  ok 13 [development] › tests\e2e\startup.spec.ts:5:5 › 关闭重开后读回 SQLite 记录 (1.2s)
+  ok 14 [development] › tests\e2e\startup.spec.ts:37:5 › 窗口隔离与生产内容策略生效 (544ms)
+
+
+  1) [development] › tests\e2e\library-import.spec.ts:103:5 › 真实事务区分元数据与内容版本，保留收藏/旧引用，归档恢复与旧基线保护 ───
+
+    Error: electronApplication.evaluate: Error: ENOENT: no such file or directory, open 'C:\Users\pc\AppData\Local\Temp\embedded-practice-mBUKKj\sources\assets\small.png'
+        at async open (node:internal/fs/promises:697:25)
+        at async Object.readFile (node:internal/fs/promises:1348:14)
+        at async exerciseLibraryImport (eval at evaluate (:370:30), <anonymous>:116:27)
+        at async <anonymous>:396:30
+        at async exerciseLibraryImport (eval at evaluate (:370:30), <anonymous>:116:27)
+        at async <anonymous>:396:30
+        at E:\My_Projects\embedded-practice\tests\e2e\library-import.spec.ts:109:38
+
+    Error Context: test-results\library-import-真实事务区分元数据与内容版本，保留收藏-旧引用，归档恢复与旧基线保护-development\error-context.md
+
+  2) [development] › tests\e2e\library-import.spec.ts:154:5 › 第二专题中途写入失败整批回滚，确认无回执后可重试同一快照 ─────────
+
+    Error: electronApplication.evaluate: Error: {"code":"PREPARATION_FAILED","message":"文件准备未通过，请按错误定位修正后重试。","issues":[{"code":"FILE_UNREADABLE","fileName":"C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-b2PoYa\\sources\\rollback-a.md","line":14,"column":1,"message":"无法找到图片，请检查 assets 目录、文件名和读取权限。"}]}
+        at value (eval at evaluate (:370:30), <anonymous>:25:27)
+        at exerciseLibraryImport (eval at evaluate (:370:30), <anonymous>:228:21)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async <anonymous>:396:30
+        at value (eval at evaluate (:370:30), <anonymous>:25:27)
+        at exerciseLibraryImport (eval at evaluate (:370:30), <anonymous>:228:21)
+        at async <anonymous>:396:30
+        at E:\My_Projects\embedded-practice\tests\e2e\library-import.spec.ts:160:38
+
+    Error Context: test-results\library-import-第二专题中途写入失败整批回滚，确认无回执后可重试同一快照-development\error-context.md
+
+  2 failed
+    [development] › tests\e2e\library-import.spec.ts:103:5 › 真实事务区分元数据与内容版本，保留收藏/旧引用，归档恢复与旧基线保护 ────
+    [development] › tests\e2e\library-import.spec.ts:154:5 › 第二专题中途写入失败整批回滚，确认无回执后可重试同一快照 ──────────
+  12 passed (13.0s)

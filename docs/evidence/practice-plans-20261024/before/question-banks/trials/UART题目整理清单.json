@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "topicId": "m5-trial-uart-level-2",
+  "topicTitle": "STM32F103 UART 第二层 30题试用选集",
+  "category": {
+    "id": "stm32",
+    "title": "STM32",
+    "parentId": null
+  },
+  "sourceMap": "题答来源.json",
+  "reviewDocument": "../../docs/UART30题来源与技术核对.md",
+  "note": "本清单维护检索元数据与人工审阅状态；原始题答和来源哈希以题答来源.json为准。分类只是内容规范，尚未写入应用数据库。难度不代表用户掌握程度。",
+  "questions": [
+    {
+      "questionId": "uart2-019",
+      "originalNumber": 19,
+      "title": "TXE 与发送完成状态",
+      "tags": ["STM32F103", "UART", "状态标志", "发送", "判断题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-020",
+      "originalNumber": 20,
+      "title": "TC 与最后一帧完成",
+      "tags": ["STM32F103", "UART", "状态标志", "发送", "判断题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-021",
+      "originalNumber": 21,
+      "title": "RXNE 与 RX 引脚电平",
+      "tags": ["STM32F103", "UART", "状态标志", "接收", "判断题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-022",
+      "originalNumber": 22,
+      "title": "USART_SendData 的等待行为",
+      "tags": ["STM32F103", "UART", "标准外设库", "发送", "判断题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-023",
+      "originalNumber": 23,
+      "title": "USART_ReceiveData 的等待行为",
+      "tags": ["STM32F103", "UART", "标准外设库", "接收", "判断题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-024",
+      "originalNumber": 24,
+      "title": "ORE 的清除顺序",
+      "tags": ["STM32F103", "UART", "状态标志", "接收", "判断题"],
+      "difficulty": "进阶",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-025",
+      "originalNumber": 25,
+      "title": "volatile 与读改写原子性",
+      "tags": ["STM32F103", "UART", "C语言", "并发与原子性", "判断题"],
+      "difficulty": "进阶",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-026",
+      "originalNumber": 26,
+      "title": "RXNE 中断的使能条件",
+      "tags": ["STM32F103", "UART", "中断", "初始化", "判断题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-027",
+      "originalNumber": 27,
+      "title": "USART DMA 请求与通道配置",
+      "tags": ["STM32F103", "UART", "DMA", "初始化", "判断题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-028",
+      "originalNumber": 28,
+      "title": "USART1 寄存器地址计算",
+      "tags": ["STM32F103", "UART", "寄存器", "地址计算", "计算题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-029",
+      "originalNumber": 29,
+      "title": "BRR 计算：72 MHz、115200 baud",
+      "tags": ["STM32F103", "UART", "波特率", "寄存器", "计算题"],
+      "difficulty": "进阶",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-030",
+      "originalNumber": 30,
+      "title": "CR1 解析：收发、字长与校验",
+      "tags": ["STM32F103", "UART", "寄存器", "帧格式", "读寄存器"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-031",
+      "originalNumber": 31,
+      "title": "CR2 STOP 字段与停止位",
+      "tags": ["STM32F103", "UART", "寄存器", "帧格式", "位运算"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-032",
+      "originalNumber": 32,
+      "title": "SR 解析：TXE、TC 与 RXNE",
+      "tags": ["STM32F103", "UART", "寄存器", "状态标志", "位运算"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-033",
+      "originalNumber": 33,
+      "title": "USART 标准外设库函数的职责",
+      "tags": ["STM32F103", "UART", "标准外设库", "初始化", "概念题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-034",
+      "originalNumber": 34,
+      "title": "USART 状态标志的清除方式",
+      "tags": ["STM32F103", "UART", "状态标志", "寄存器", "错误处理"],
+      "difficulty": "进阶",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-035",
+      "originalNumber": 35,
+      "title": "USART1 初始化的依赖与顺序",
+      "tags": ["STM32F103", "UART", "初始化", "GPIO", "流程题"],
+      "difficulty": "进阶",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-036",
+      "originalNumber": 36,
+      "title": "发送时序：从写 DR 到 TC",
+      "tags": ["STM32F103", "UART", "发送", "时序", "流程题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-037",
+      "originalNumber": 37,
+      "title": "接收时序：从 RX 到读 DR",
+      "tags": ["STM32F103", "UART", "接收", "时序", "流程题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-038",
+      "originalNumber": 38,
+      "title": "从标准外设库追踪寄存器行为",
+      "tags": ["STM32F103", "UART", "标准外设库", "寄存器", "概念题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-039",
+      "originalNumber": 39,
+      "title": "CR1 位掩码与组合使能",
+      "tags": ["STM32F103", "UART", "寄存器", "位运算", "计算题"],
+      "difficulty": "基础",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-040",
+      "originalNumber": 40,
+      "title": "多位字段的读改写与风险",
+      "tags": ["STM32F103", "UART", "寄存器", "位运算", "并发与原子性"],
+      "difficulty": "进阶",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-041",
+      "originalNumber": 41,
+      "title": "BRR 计算：72 MHz、9600 baud",
+      "tags": ["STM32F103", "UART", "波特率", "寄存器", "计算题"],
+      "difficulty": "进阶",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-042",
+      "originalNumber": 42,
+      "title": "综合配置：USART1 115200、8N1",
+      "tags": ["STM32F103", "UART", "初始化", "波特率", "寄存器", "综合题"],
+      "difficulty": "综合",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-043",
+      "originalNumber": 43,
+      "title": "故障排查：TX 无输出",
+      "tags": ["STM32F103", "UART", "发送", "GPIO", "故障排查"],
+      "difficulty": "综合",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-044",
+      "originalNumber": 44,
+      "title": "故障排查：TXE 正常、TC 未置位",
+      "tags": ["STM32F103", "UART", "发送", "状态标志", "故障排查"],
+      "difficulty": "进阶",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-045",
+      "originalNumber": 45,
+      "title": "故障排查：接收出现 ORE",
+      "tags": ["STM32F103", "UART", "接收", "错误处理", "故障排查"],
+      "difficulty": "进阶",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-046",
+      "originalNumber": 46,
+      "title": "故障排查：RXNE 中断未进入",
+      "tags": ["STM32F103", "UART", "中断", "接收", "故障排查"],
+      "difficulty": "综合",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-047",
+      "originalNumber": 47,
+      "title": "故障排查：接收数据乱码",
+      "tags": ["STM32F103", "UART", "波特率", "接收", "故障排查"],
+      "difficulty": "综合",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-048",
+      "originalNumber": 48,
+      "title": "故障排查：ORE 清除失败",
+      "tags": ["STM32F103", "UART", "状态标志", "错误处理", "故障排查"],
+      "difficulty": "进阶",
+      "userReview": "待用户审阅"
+    }
+  ]
+}

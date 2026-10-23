@@ -1,0 +1,16 @@
+{
+  "packageInspectionFirstAttempt": {
+    "exitCode": 1,
+    "cause": "核对脚本误写不存在的 src/main/database/schema.ts，AssertionError [ERR_ASSERTION]；未发现包字节或生产功能错误。",
+    "correctedPath": "src/main/database/library-schema.ts"
+  },
+  "unitTargetFirstAttempt": {
+    "exitCode": 1,
+    "cause": "PowerShell 中字面 tests/unit/data-locations*.test.ts 未展开，Vitest 未匹配测试；改用两个明确文件名。"
+  },
+  "historyManifestFirstAttempt": {
+    "exitCode": 1,
+    "cause": "历史 m4a 清单仅包含 path/sha256，无 bytes；核对脚本错误断言字节数等于 undefined。",
+    "correction": "对提供字节数的清单核对字节数，全部历史清单逐项核对 SHA-256。"
+  }
+}

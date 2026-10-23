@@ -1,0 +1,31 @@
+{
+  "changedCode": [
+    "src/main/database/repositories/history-reader.ts",
+    "src/main/database/repositories/library-reader.ts",
+    "src/main/ipc/library.ts",
+    "src/main/services/library/library-import.ts",
+    "src/preload/index.ts",
+    "src/renderer/src/components/LibraryBrowser.tsx",
+    "src/renderer/src/components/PracticePane.tsx",
+    "src/renderer/src/components/QuestionHistory.tsx",
+    "src/renderer/src/styles/global.css",
+    "src/shared/contracts/application.ts",
+    "src/shared/contracts/history.ts",
+    "src/shared/contracts/library-desktop.ts",
+    "tests/e2e/history-helpers.ts",
+    "tests/e2e/history-versions.spec.ts",
+    "tests/e2e/history-window.spec.ts",
+    "tests/e2e/learning-management.spec.ts",
+    "tests/e2e/startup.spec.ts",
+    "tests/integration/history-seed.ts",
+    "tests/unit/history-contract.test.ts",
+    "tests/unit/library-ipc.test.ts"
+  ],
+  "codeCount": 20,
+  "productionCount": 12,
+  "testCount": 8,
+  "deleted": [],
+  "unreviewed": [],
+  "protectedCount": 25,
+  "protectedChanged": []
+}

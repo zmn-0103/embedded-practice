@@ -1,0 +1,54 @@
+
+> embedded-practice@0.1.0 test
+> vitest run tests/unit --reporter=default --reporter=json --outputFile=docs/evidence/m1d/unit-tests.json
+
+
+ RUN  v5.0.5 E:/My_Projects/embedded-practice
+
+ ✓ tests/unit/read-file-snapshot.test.ts (5 tests) 125ms
+ ✓ tests/unit/import-task-failures.test.ts (18 tests) 26ms
+ ✓ tests/unit/import-task-runner.test.ts (9 tests) 30ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/import-task-failures.test.ts (18 tests) 30ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/import-task-runner.test.ts (9 tests) 33ms
+ ✓ tests/unit/read-image.test.ts (18 tests) 431ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/read-image.test.ts (18 tests) 461ms
+ ✓ tests/unit/markdown-metadata.test.ts (24 tests) 161ms
+ ✓ tests/unit/markdown-images.test.ts (25 tests) 240ms
+ ✓ tests/unit/application.test.ts (9 tests) 12ms
+ ✓ tests/unit/gpio-question-bank.test.ts (81 tests) 26ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/markdown-images.test.ts (25 tests) 146ms
+ ✓ tests/unit/import-comparison.test.ts (13 tests) 165ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/read-file-snapshot.test.ts (5 tests) 124ms
+ ✓ tests/unit/import-protocol.test.ts (28 tests) 29ms
+ ✓ tests/unit/import-budget.test.ts (7 tests) 10ms
+ ✓ tests/unit/import-session.test.ts (19 tests) 48ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/application.test.ts (9 tests) 13ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/import-budget.test.ts (7 tests) 12ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/markdown-metadata.test.ts (24 tests) 148ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/import-protocol.test.ts (23 tests) 21ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/gpio-question-bank.test.ts (81 tests) 33ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/prepare-import.test.ts (11 tests) 895ms
+   ✓ 文件到完整批次快照 (11)
+     ✓ 同图重复引用只计一次，相同内容的不同路径只保留一份资源 371ms
+ ✓ tests/unit/prepare-import.test.ts (11 tests) 1015ms
+   ✓ 文件到完整批次快照 (11)
+     ✓ 真实示例覆盖文本、代码、表格、三种图片和引用定义 578ms
+ ✓ tests/unit/markdown-structure.test.ts (29 tests) 3641ms
+   ✓ Markdown 语法树分题与原文保留 (29)
+     ✓ 题量超过 10,000 时明确拒绝，不静默截断 3447ms
+ ✓ tests/unit/import-limits.test.ts (3 tests) 3554ms
+   ✓ 批次限额实际文件链路 (3)
+     ✓ 两个合法专题合计 10,001 题时拒绝整个批次 3490ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/markdown-structure.test.ts (29 tests) 3552ms
+   ✓ Markdown 语法树分题与原文保留 (29)
+     ✓ 题量超过 10,000 时明确拒绝，不静默截断 3396ms
+ ✓ tmp/m1d-before-fb7b495bdb2b48fea313c611ff40d9ea/tests/unit/import-limits.test.ts (3 tests) 2895ms
+   ✓ 批次限额实际文件链路 (3)
+     ✓ 两个合法专题合计 10,001 题时拒绝整个批次 2878ms
+
+ Test Files  28 passed (28)
+      Tests  561 passed (561)
+   Start at  12:42:09
+   Duration  4.70s (tests 55%, import 41%, transform 4%, worker 1%)
+
+JSON report written to E:/My_Projects/embedded-practice/docs/evidence/m1d/unit-tests.json

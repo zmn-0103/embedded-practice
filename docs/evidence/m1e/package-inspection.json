@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-10-20T07:03:32.192Z",
+  "archive": "release/win-unpacked/resources/app.asar",
+  "sha256": "a0b1eccd868a53622a1a2d2728f059463ce56db6115529527a1d6d2e454d8907",
+  "entries": [
+    {
+      "file": "out/main/import-preparation.js",
+      "bytes": 4789,
+      "sha256": "d9ce43b97b3ecde40654a65a17624d3625638cd71faea11952eb8287720589df",
+      "matches": true
+    },
+    {
+      "file": "out/main/import-protocol-CqRC4DNm.js",
+      "bytes": 189880,
+      "sha256": "9bdb8aeaddf79feea3cd8c47d553ee3e5ff65512f44cce34d271b93256a9452b",
+      "matches": true
+    },
+    {
+      "file": "out/main/import-worker-5e-oI35x.js",
+      "bytes": 760595,
+      "sha256": "d3c10ee9c248b7a213a4d77869b0e0f5b3500d0ebb7d4373c4adb0650535136c",
+      "matches": true
+    },
+    {
+      "file": "out/main/index.js",
+      "bytes": 19716,
+      "sha256": "4c95c9884c5d1a8bcaa3c7d94858525d9af21a4caf91b40704af3867a13826eb",
+      "matches": true
+    },
+    {
+      "file": "out/main/library-import.js",
+      "bytes": 32108,
+      "sha256": "71c162d1f3e39288d802eeb114db2b76693a5288921dbafab5514537bc7823f1",
+      "matches": true
+    },
+    {
+      "file": "out/main/rolldown-runtime-Dbql6lyJ.js",
+      "bytes": 1736,
+      "sha256": "0494dbd5eac31d4e7a2fe7c72fd882986b5f881d3fbca1a83ecaddea02165a84",
+      "matches": true
+    },
+    {
+      "file": "out/preload/index.js",
+      "bytes": 180580,
+      "sha256": "a020e9f58aa6247b8c892d5d0212daef2355126dcb1882335bde49e7fcf312bd",
+      "matches": true
+    },
+    {
+      "file": "out/renderer/assets/index-Cf9_1AVP.js",
+      "bytes": 1376476,
+      "sha256": "148984700ec959f3217e8417d218644044fe2f5fc6f80c8352ab005c5cafba42",
+      "matches": true
+    },
+    {
+      "file": "out/renderer/assets/index-FKH_CDIo.css",
+      "bytes": 7947,
+      "sha256": "d5aa98ad75e5f7ddac07c2eabaeb46789ff40ebfc3ec9d237cc114c7a19617f9",
+      "matches": true
+    },
+    {
+      "file": "out/renderer/index.html",
+      "bytes": 719,
+      "sha256": "76a1f9eb42f6c2e6307bf652bbe716176cf0a9ff13d58ad94484d94acf36d160",
+      "matches": true
+    }
+  ],
+  "nsis": {
+    "file": "release/embedded-practice-0.1.0-x64-setup.exe",
+    "sha256": "641eef07330151d6343047c3aad2639a70c442b46a26426cd74b281d73a091d8"
+  }
+}

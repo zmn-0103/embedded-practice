@@ -1,0 +1,146 @@
+import assert from 'node:assert/strict'
+import { createHash } from 'node:crypto'
+import { mkdir, mkdtemp, readFile, readdir, writeFile } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
+import { join, resolve } from 'node:path'
+import { deflateSync } from 'node:zlib'
+import { toString } from 'mdast-util-to-string'
+import remarkGfm from 'remark-gfm'
+import remarkParse from 'remark-parse'
+import { unified } from 'unified'
+
+// 只读取用户指定笔记；所有生成文件写入本次新建的临时根，保留现场。
+const notesRoot = resolve(process.argv[2] ?? 'D:/AIOT实训班/笔记')
+const root = await mkdtemp(join(tmpdir(), 'embedded-practice-m5b-'))
+const trialDirectory = join(root, '真实 试用题库')
+const stressDirectory = join(root, '性能 样本')
+await mkdir(trialDirectory)
+await mkdir(join(stressDirectory, 'assets'), { recursive: true })
+const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex')
+const processor = unified().use(remarkParse).use(remarkGfm).freeze()
+const json = (value) => JSON.stringify(value, null, 2) + '\n'
+const writeNew = (path, contents) => writeFile(path, contents, { flag: 'wx' })
+const sourceFiles = []
+
+function countNodes(tree) {
+  const counts = {}
+  function visit(node) {
+    counts[node.type] = (counts[node.type] ?? 0) + 1
+    for (const child of node.children ?? []) visit(child)
+  }
+  visit(tree)
+  return counts
+}
+
+for (const entry of await readdir(notesRoot, { withFileTypes: true })) {
+  if (!entry.isDirectory()) continue
+  for (const name of await readdir(join(notesRoot, entry.name))) {
+    if (!name.includes('自测题') || !name.endsWith('.md')) continue
+    const path = join(notesRoot, entry.name, name)
+    const bytes = await readFile(path)
+    sourceFiles.push({ path, bytes: bytes.length, sha256: sha256(bytes), nodes: countNodes(processor.parse(bytes.toString('utf8'))) })
+  }
+}
+
+const sourcePath = join(notesRoot, 'UART', 'STM32F103 UART 第二层自测题与参考答案.md')
+const sourceBytes = await readFile(sourcePath)
+const source = new TextDecoder('utf-8', { fatal: true }).decode(sourceBytes)
+const tree = processor.parse(source)
+const sections = { question: new Map(), answer: new Map() }
+let part
+for (const [index, node] of tree.children.entries()) {
+  if (node.type !== 'heading') continue
+  const heading = toString(node)
+  if (node.depth === 1) {
+    part = heading.startsWith('第一部分') ? 'question' : heading.startsWith('第二部分') ? 'answer' : undefined
+  }
+  if (!part || node.depth !== 3) continue
+  const match = /^第\s*(\d+)\s*题(?:[：:]\s*(.*))?$/u.exec(heading)
+  if (!match) continue
+  const number = Number(match[1])
+  assert(!sections[part].has(number), `原文重复题号 ${part}/${number}`)
+  const next = tree.children.slice(index + 1).find((item) => item.type === 'heading' && item.depth <= 3)
+  const start = node.position.end.offset
+  const end = next?.position.start.offset ?? source.length
+  // 仅移除分区边界空行，保留正文缩进、换行及行尾双空格。
+  const body = source.slice(start, end).replace(/^(?:[ \t]*\r?\n)+/, '').replace(/(?:\r?\n[ \t]*)+$/, '')
+  assert(body.trim(), `原文分区为空 ${part}/${number}`)
+  sections[part].set(number, { title: match[2] ?? '', body, line: node.position.start.line, start, end })
+}
+
+const mappings = []
+let trial = '---\nschema_version: 1\ntopic_id: m5-trial-uart-level-2\ntopic_title: STM32F103 UART 第二层 30题试用选集\n---\n\n'
+for (let number = 19; number <= 48; number++) {
+  const question = sections.question.get(number)
+  const answer = sections.answer.get(number)
+  assert(question && answer, `缺少配对原题 ${number}`)
+  const verdict = number <= 27 ? answer.title : null
+  if (verdict) assert(['正确', '错误'].includes(verdict))
+  else assert.equal(question.title, answer.title, `题答标题错配 ${number}`)
+  const answerMarkdown = `${verdict ? `**${verdict}**\n\n` : ''}${answer.body}`
+  const questionId = `uart2-${String(number).padStart(3, '0')}`
+  const title = question.title || `UART 第二层判断题 ${number}`
+  trial += `## ${questionId} | ${title}\n\n标签：UART, 第二层, 试用选集\n\n### 题目\n\n${question.body}\n\n### 参考答案\n\n${answerMarkdown}\n\n`
+  mappings.push({ questionId, originalNumber: number, title, question, answer, verdict, questionSha256: sha256(question.body), answerSha256: sha256(answerMarkdown) })
+}
+const trialFile = join(trialDirectory, 'STM32F103-UART第二层-30题试用.md')
+await writeNew(trialFile, trial)
+await writeNew(join(trialDirectory, '题答来源.json'), json({ sourcePath, sourceSha256: sha256(sourceBytes), topicId: 'm5-trial-uart-level-2', selection: '原第19～48题；判断结论从原答案标题移到答案正文，未改写技术内容。', mappings }))
+
+const crcTable = Array.from({ length: 256 }, (_, index) => {
+  let value = index
+  for (let bit = 0; bit < 8; bit++) value = value & 1 ? 0xedb88320 ^ (value >>> 1) : value >>> 1
+  return value >>> 0
+})
+function chunk(type, data) {
+  const name = Buffer.from(type)
+  const body = Buffer.concat([name, data])
+  let crc = 0xffffffff
+  for (const byte of body) crc = crcTable[(crc ^ byte) & 255] ^ (crc >>> 8)
+  const result = Buffer.alloc(data.length + 12)
+  result.writeUInt32BE(data.length)
+  body.copy(result, 4)
+  result.writeUInt32BE((crc ^ 0xffffffff) >>> 0, result.length - 4)
+  return result
+}
+function smallPng(index) {
+  const width = 128
+  const height = 96
+  const pixels = Buffer.alloc((1 + width * 3) * height)
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const offset = y * (1 + width * 3) + 1 + x * 3
+      pixels[offset] = (x * 3 + index) & 255
+      pixels[offset + 1] = (y * 5 + (index >>> 8) * 67) & 255
+      pixels[offset + 2] = (x ^ y ^ index) & 255
+    }
+  }
+  const header = Buffer.alloc(13)
+  header.writeUInt32BE(width)
+  header.writeUInt32BE(height, 4)
+  header[8] = 8
+  header[9] = 2
+  return Buffer.concat([Buffer.from('89504e470d0a1a0a', 'hex'), chunk('IHDR', header), chunk('IDAT', deflateSync(pixels)), chunk('IEND', Buffer.alloc(0))])
+}
+const images = []
+for (let index = 0; index < 500; index++) {
+  const name = `小图 ${String(index + 1).padStart(3, '0')}.png`
+  const bytes = smallPng(index)
+  await writeNew(join(stressDirectory, 'assets', name), bytes)
+  images.push({ name, bytes: bytes.length, sha256: sha256(bytes), width: 128, height: 96 })
+}
+assert.equal(new Set(images.map((image) => image.sha256)).size, 500)
+let stress = '---\nschema_version: 1\ntopic_id: generated-m5-performance\ntopic_title: 仅性能验收使用的5000题生成样本\n---\n\n'
+for (let index = 0; index < 5000; index++) {
+  const number = String(index + 1).padStart(5, '0')
+  const category = ['GPIO', 'UART', 'SPI', 'I2C'][index % 4]
+  const picture = index % 10 === 0 ? `\n\n![生成小图 ${index / 10 + 1}](assets/${encodeURIComponent(images[index / 10].name)})` : ''
+  stress += `## perf-${number} | ${category} 生成题 ${number}\n\n标签：压力样本, ${category}\n难度：基础\n\n### 题目\n\n这是第 ${number} 道明确标记的生成题，用于检查搜索、分页与切题；不作为知识答案。${picture}\n\n### 参考答案\n\nPERF-ANSWER-${number} 仅在揭晓后显示。\n\n```c\n// 仅排版样本，不执行\nint sample_${number}(void) {\n    return ${index};\n}\n```\n\n| 项目 | 值 |\n| --- | --- |\n| 编号 | ${number} |\n\n`
+}
+const stressFile = join(stressDirectory, '5000题 性能样本.md')
+await writeNew(stressFile, stress)
+// 防止整理期间来源变化，也明确证明没有回写用户笔记。
+for (const file of sourceFiles) assert.equal(sha256(await readFile(file.path)), file.sha256)
+const manifest = { root, notesRoot, sourceFiles, trial: { file: trialFile, questions: mappings.length, sha256: sha256(trial), nodes: countNodes(processor.parse(trial)) }, stress: { file: stressFile, questions: 5000, markdownBytes: Buffer.byteLength(stress), markdownSha256: sha256(stress), imageCount: images.length, imageBytes: images.reduce((sum, image) => sum + image.bytes, 0), images } }
+await writeNew(join(root, 'samples.json'), json(manifest))
+console.log(json({ root, trial: manifest.trial, stress: { ...manifest.stress, images: undefined } }))

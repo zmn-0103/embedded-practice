@@ -1,0 +1,56 @@
+
+> embedded-practice@0.1.0 pack:dir
+> npm run build && electron-builder --win --x64 --dir --publish never
+
+
+> embedded-practice@0.1.0 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 408 modules transformed.
+rendering chunks...
+out/main/rolldown-runtime-Dbql6lyJ.js    1.73 kB
+out/main/import-preparation.js           4.78 kB
+out/main/import-protocol-D4LBU9Tj.js     6.76 kB
+out/main/index.js                        8.71 kB
+out/main/schemas-BecmEM1p.js           180.90 kB
+out/main/import-worker-CLkcPGrM.js     759.16 kB
+
+✓ built in 106ms
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 98 modules transformed.
+rendering chunks...
+out/preload/index.js  172.47 kB
+
+✓ built in 26ms
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 15 modules transformed.
+rendering chunks...
+out/renderer/index.html                   0.70 kB
+out/renderer/assets/index-Bspc05qX.css    3.43 kB
+out/renderer/assets/index-COnObg9K.js   569.55 kB
+
+✓ built in 76ms
+  • electron-builder  version=26.15.3 os=10.0.26200
+  • loaded configuration  file=E:\My_Projects\embedded-practice\electron-builder.yml
+  • author is missed in the package.json  appPackageFile=E:\My_Projects\embedded-practice\package.json
+  • executing @electron/rebuild  electronVersion=42.11.15 arch=x64 buildFromSource=false workspaceRoot=E:\My_Projects\embedded-practice projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • preparing       moduleName=better-sqlite3 arch=x64
+  • finished        moduleName=better-sqlite3 arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=42.11.15 appOutDir=release\win-unpacked
+  • downloaded      label=electron progress=100%
+  • downloaded electron zip extracted successfully  output=E:\My_Projects\embedded-practice\release\win-unpacked
+  • searching for node modules  pm=npm searchDir=E:\My_Projects\embedded-practice
+  • duplicate dependency references  dependencies=["once@1.4.0","once@1.4.0","pump@3.0.4","string_decoder@1.1.1","end-of-stream@1.4.5"]
+  • updating asar integrity executable resource  executablePath=release\win-unpacked\embedded-practice.exe
+  • default Electron icon is used  reason=application icon is not set
+  • file signing skipped via signExecutable configuration  file=release\win-unpacked\embedded-practice.exe

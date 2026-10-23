@@ -1,0 +1,50 @@
+
+ RUN  v5.0.5 E:/My_Projects/embedded-practice
+
+ ❯ tests/unit/practice-controller.test.ts (15 tests | 1 failed) 30ms
+   ❯ 输入停止与串行草稿保存 (8)
+     ✓ 停止输入 500ms 后保存，保留纯文本和修订 12ms
+     ✓ 连续输入重设计时，不保存早期值 3ms
+     ✓ 旧保存响应不替换在途新输入，下一次安静期才保存新值 1ms
+     ✓ 离开立即保存并取消旧计时器 1ms
+     × 在途保存和立即离开串行完成，不产生重复最新保存 5ms
+     ✓ 失败保持输入和位置，阻止揭晓，重试原修订 1ms
+     ✓ 传输异常或错误确认不能显示已保存 1ms
+     ✓ 草稿未确认时拒绝用其他题目覆盖，释放后不再计时保存 1ms
+   ✓ 操作回执、重试和关闭输入锁 (7)
+     ✓ 重复操作只发送一次，空输入允许揭晓 1ms
+     ✓ 操作响应不明保留原 UUID 和请求内容，禁止再次编辑后重试 2ms
+     ✓ 提交已确认但读取失败，只重读不重复提交 1ms
+     ✓ 关闭确认后持续锁输入，只有明确取消关闭才能再编辑 1ms
+     ✓ 关闭保存失败恢复输入，重试后可重新关闭 0ms
+     ✓ 关闭等待正在执行的推进，不覆盖新位置 1ms
+     ✓ 原操作仍无法确认时拒绝正常离开 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/practice-controller.test.ts > 输入停止与串行草稿保存 > 在途保存和立即离开串行完成，不产生重复最新保存
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ tests/unit/practice-controller.test.ts:172:28
+    170|     pending.resolve(ok({ sessionId, position: 0, draftRevision: 1 }))
+    171|     expect(await leave).toBe(true)
+    172|     expect(await repeated).toBe(false)
+       |                            ^
+    173|     expect(api.saveDraft).toHaveBeenCalledTimes(2)
+    174|     expect(controller.getState().savedRevision).toBe(2)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 14 passed (15)
+   Start at  16:08:30
+   Duration  218ms (import 60%, tests 27%, transform 11%, worker 3%)
+
+JSON report written to E:/My_Projects/embedded-practice/docs/evidence/m2b/controller-expectation-before-fix.json

@@ -1,0 +1,10 @@
+
+> embedded-practice@0.1.0 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/category-tree.spec.ts(281,35): error TS2304: Cannot find name 'requestAnimationFrame'.
+tests/e2e/category-tree.spec.ts(281,63): error TS2304: Cannot find name 'requestAnimationFrame'.

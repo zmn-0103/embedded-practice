@@ -1,0 +1,724 @@
+{
+  "changed": [
+    {
+      "topicId": "history-a",
+      "questionId": "q-1",
+      "versionId": 4,
+      "title": "历史题 1",
+      "topicTitle": "历史专题 A",
+      "tags": [
+        "历史样本"
+      ],
+      "difficulty": "基础",
+      "archived": false,
+      "favorite": false,
+      "practiced": false,
+      "contentUpdated": true,
+      "currentRating": null
+    },
+    {
+      "topicId": "history-a",
+      "questionId": "q-2",
+      "versionId": 5,
+      "title": "历史题 2",
+      "topicTitle": "历史专题 A",
+      "tags": [
+        "历史样本"
+      ],
+      "difficulty": "基础",
+      "archived": false,
+      "favorite": false,
+      "practiced": false,
+      "contentUpdated": true,
+      "currentRating": null
+    }
+  ],
+  "reviewed": [
+    {
+      "topicId": "history-a",
+      "questionId": "q-1",
+      "versionId": 4,
+      "title": "历史题 1",
+      "topicTitle": "历史专题 A",
+      "tags": [
+        "历史样本"
+      ],
+      "difficulty": "基础",
+      "archived": false,
+      "favorite": false,
+      "practiced": true,
+      "contentUpdated": false,
+      "currentRating": null
+    },
+    {
+      "topicId": "history-a",
+      "questionId": "q-2",
+      "versionId": 5,
+      "title": "历史题 2",
+      "topicTitle": "历史专题 A",
+      "tags": [
+        "历史样本"
+      ],
+      "difficulty": "基础",
+      "archived": false,
+      "favorite": false,
+      "practiced": false,
+      "contentUpdated": true,
+      "currentRating": null
+    }
+  ],
+  "metadata": [
+    {
+      "topicId": "history-a",
+      "questionId": "q-2",
+      "versionId": 5,
+      "title": "元数据题 2",
+      "topicTitle": "元数据专题",
+      "tags": [
+        "历史样本",
+        "新标签"
+      ],
+      "difficulty": "基础",
+      "archived": false,
+      "favorite": false,
+      "practiced": false,
+      "contentUpdated": true,
+      "currentRating": null
+    },
+    {
+      "topicId": "history-a",
+      "questionId": "q-1",
+      "versionId": 4,
+      "title": "元数据题 1",
+      "topicTitle": "元数据专题",
+      "tags": [
+        "历史样本",
+        "新标签"
+      ],
+      "difficulty": "基础",
+      "archived": false,
+      "favorite": false,
+      "practiced": true,
+      "contentUpdated": false,
+      "currentRating": null
+    }
+  ],
+  "imageUpdated": [
+    {
+      "topicId": "history-a",
+      "questionId": "q-2",
+      "versionId": 5,
+      "title": "元数据题 2",
+      "topicTitle": "元数据专题",
+      "tags": [
+        "历史样本",
+        "新标签"
+      ],
+      "difficulty": "基础",
+      "archived": false,
+      "favorite": false,
+      "practiced": false,
+      "contentUpdated": true,
+      "currentRating": null
+    },
+    {
+      "topicId": "history-a",
+      "questionId": "q-1",
+      "versionId": 6,
+      "title": "元数据题 1",
+      "topicTitle": "元数据专题",
+      "tags": [
+        "历史样本",
+        "新标签"
+      ],
+      "difficulty": "基础",
+      "archived": false,
+      "favorite": false,
+      "practiced": false,
+      "contentUpdated": true,
+      "currentRating": null
+    }
+  ],
+  "final": {
+    "sessions": [
+      {
+        "id": "8da75465-dc45-453c-88c6-de4a24142d9c",
+        "mode": "sequential",
+        "topic_id": "history-a",
+        "status": "finished",
+        "position": 2,
+        "revision": 5,
+        "created_at": "2026-10-21T09:27:36.531Z",
+        "ended_at": "2026-10-21T09:27:36.540Z"
+      },
+      {
+        "id": "7261ca43-ba82-43c7-a455-d5636904dc30",
+        "mode": "random",
+        "topic_id": "history-a",
+        "status": "ended",
+        "position": 0,
+        "revision": 1,
+        "created_at": "2026-10-21T09:27:36.541Z",
+        "ended_at": "2026-10-21T09:27:36.543Z"
+      },
+      {
+        "id": "b6c5b69a-b35d-483e-9dd5-3c00587febcd",
+        "mode": "sequential",
+        "topic_id": "history-a",
+        "status": "finished",
+        "position": 2,
+        "revision": 3,
+        "created_at": "2026-10-21T09:27:36.544Z",
+        "ended_at": "2026-10-21T09:27:36.546Z"
+      },
+      {
+        "id": "d09e8e62-4bab-4298-b988-0a08915b2d3a",
+        "mode": "sequential",
+        "topic_id": "history-a",
+        "status": "ended",
+        "position": 0,
+        "revision": 1,
+        "created_at": "2026-10-21T09:27:36.547Z",
+        "ended_at": "2026-10-21T09:27:36.548Z"
+      },
+      {
+        "id": "71d23bb3-b6c8-4f67-a5ef-92ea82a239ff",
+        "mode": "sequential",
+        "topic_id": "history-b",
+        "status": "finished",
+        "position": 1,
+        "revision": 2,
+        "created_at": "2026-10-21T09:27:36.548Z",
+        "ended_at": "2026-10-21T09:27:36.549Z"
+      },
+      {
+        "id": "fc922e98-e38e-4bed-a1ee-f74d03bb7a40",
+        "mode": "sequential",
+        "topic_id": "history-a",
+        "status": "ended",
+        "position": 0,
+        "revision": 2,
+        "created_at": "2026-10-21T09:27:36.594Z",
+        "ended_at": "2026-10-21T09:27:37.988Z"
+      },
+      {
+        "id": "3f8af02c-8ce0-4e72-b42b-6ddb577f9685",
+        "mode": "sequential",
+        "topic_id": "history-a",
+        "status": "finished",
+        "position": 2,
+        "revision": 3,
+        "created_at": "2026-10-21T09:27:38.846Z",
+        "ended_at": "2026-10-21T09:27:40.501Z"
+      }
+    ],
+    "items": [
+      {
+        "session_id": "8da75465-dc45-453c-88c6-de4a24142d9c",
+        "position": 0,
+        "question_id": 1,
+        "version_id": 1,
+        "title": "历史题 1",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "HISTORY-DRAFT-0\r\n<script>literal</script>\nint value = 0;",
+        "draft_revision": 1,
+        "revealed_at": "2026-10-21T09:27:36.536Z",
+        "rating": "不熟",
+        "rated_at": "2026-10-21T09:27:36.539Z",
+        "skipped_at": null
+      },
+      {
+        "session_id": "8da75465-dc45-453c-88c6-de4a24142d9c",
+        "position": 1,
+        "question_id": 2,
+        "version_id": 2,
+        "title": "历史题 2",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": null,
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": "2026-10-21T09:27:36.540Z"
+      },
+      {
+        "session_id": "7261ca43-ba82-43c7-a455-d5636904dc30",
+        "position": 0,
+        "question_id": 1,
+        "version_id": 1,
+        "title": "历史题 1",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "HISTORY-DRAFT-1\r\n<script>literal</script>\nint value = 1;",
+        "draft_revision": 1,
+        "revealed_at": null,
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": null
+      },
+      {
+        "session_id": "7261ca43-ba82-43c7-a455-d5636904dc30",
+        "position": 1,
+        "question_id": 2,
+        "version_id": 2,
+        "title": "历史题 2",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": null,
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": null
+      },
+      {
+        "session_id": "b6c5b69a-b35d-483e-9dd5-3c00587febcd",
+        "position": 0,
+        "question_id": 1,
+        "version_id": 1,
+        "title": "历史题 1",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": "2026-10-21T09:27:36.545Z",
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": null
+      },
+      {
+        "session_id": "b6c5b69a-b35d-483e-9dd5-3c00587febcd",
+        "position": 1,
+        "question_id": 2,
+        "version_id": 2,
+        "title": "历史题 2",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": null,
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": "2026-10-21T09:27:36.546Z"
+      },
+      {
+        "session_id": "d09e8e62-4bab-4298-b988-0a08915b2d3a",
+        "position": 0,
+        "question_id": 1,
+        "version_id": 1,
+        "title": "历史题 1",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": null,
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": null
+      },
+      {
+        "session_id": "d09e8e62-4bab-4298-b988-0a08915b2d3a",
+        "position": 1,
+        "question_id": 2,
+        "version_id": 2,
+        "title": "历史题 2",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": null,
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": null
+      },
+      {
+        "session_id": "71d23bb3-b6c8-4f67-a5ef-92ea82a239ff",
+        "position": 0,
+        "question_id": 3,
+        "version_id": 3,
+        "title": "异专题题 1",
+        "topic_title": "历史专题 B",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "OTHER-TOPIC-DRAFT 不可串题",
+        "draft_revision": 1,
+        "revealed_at": "2026-10-21T09:27:36.549Z",
+        "rating": "不会",
+        "rated_at": "2026-10-21T09:27:36.549Z",
+        "skipped_at": null
+      },
+      {
+        "session_id": "fc922e98-e38e-4bed-a1ee-f74d03bb7a40",
+        "position": 0,
+        "question_id": 1,
+        "version_id": 1,
+        "title": "历史题 1",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": "2026-10-21T09:27:37.132Z",
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": null
+      },
+      {
+        "session_id": "fc922e98-e38e-4bed-a1ee-f74d03bb7a40",
+        "position": 1,
+        "question_id": 2,
+        "version_id": 2,
+        "title": "历史题 2",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": null,
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": null
+      },
+      {
+        "session_id": "3f8af02c-8ce0-4e72-b42b-6ddb577f9685",
+        "position": 0,
+        "question_id": 1,
+        "version_id": 4,
+        "title": "历史题 1",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": "2026-10-21T09:27:38.870Z",
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": null
+      },
+      {
+        "session_id": "3f8af02c-8ce0-4e72-b42b-6ddb577f9685",
+        "position": 1,
+        "question_id": 2,
+        "version_id": 5,
+        "title": "历史题 2",
+        "topic_title": "历史专题 A",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": null,
+        "rating": null,
+        "rated_at": null,
+        "skipped_at": "2026-10-21T09:27:40.501Z"
+      }
+    ],
+    "states": [
+      {
+        "question_id": 1,
+        "favorite": 0,
+        "last_rating": "不熟",
+        "last_rated_version_id": 1
+      },
+      {
+        "question_id": 2,
+        "favorite": 0,
+        "last_rating": "掌握",
+        "last_rated_version_id": 5
+      },
+      {
+        "question_id": 3,
+        "favorite": 0,
+        "last_rating": "不会",
+        "last_rated_version_id": 3
+      }
+    ],
+    "receipts": [
+      {
+        "request_id": "b8d7a86d-cad7-43ec-a6c0-99f6787120f9",
+        "payload_hash": "9b239da863a75175ca103bda695a6e4ae12d3f7383d2fd2b7b2090b03e6bcb13",
+        "result_json": "{\"sessionId\":\"8da75465-dc45-453c-88c6-de4a24142d9c\",\"status\":\"active\",\"position\":0,\"revision\":0,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.532Z"
+      },
+      {
+        "request_id": "ab0b71e7-58b6-428a-90bb-d1f2a86c2c34",
+        "payload_hash": "9bd1deea08bf2d87aa5592f074e24a578de7c069a648d1a82e9dd6544b133898",
+        "result_json": "{\"sessionId\":\"8da75465-dc45-453c-88c6-de4a24142d9c\",\"status\":\"active\",\"position\":0,\"revision\":1,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.536Z"
+      },
+      {
+        "request_id": "eb880a8e-2c75-41a8-8a59-4a676e8d8f40",
+        "payload_hash": "d10c0e3df604de1caebefaa41b741615d93d3083394564aedcb42b3bbfd9a00c",
+        "result_json": "{\"sessionId\":\"8da75465-dc45-453c-88c6-de4a24142d9c\",\"status\":\"active\",\"position\":1,\"revision\":2,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.538Z"
+      },
+      {
+        "request_id": "6f27f4fd-1cbe-49b0-a8a3-331a99a29dee",
+        "payload_hash": "0c9b6168b623d75e9f0206a02c8e0bfe2ebddd13d06b993a4e3bd1f91cd12504",
+        "result_json": "{\"sessionId\":\"8da75465-dc45-453c-88c6-de4a24142d9c\",\"status\":\"active\",\"position\":0,\"revision\":3,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.539Z"
+      },
+      {
+        "request_id": "1f6780e0-57e1-4687-b9c3-89be43e9562b",
+        "payload_hash": "7aceafc2cd89f0e13cb5a30d03caeeb1557f5372eaf4c40ec89c227714993830",
+        "result_json": "{\"sessionId\":\"8da75465-dc45-453c-88c6-de4a24142d9c\",\"status\":\"active\",\"position\":1,\"revision\":4,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.539Z"
+      },
+      {
+        "request_id": "686136d7-1e0a-4b61-9741-9698b878c21a",
+        "payload_hash": "c398f5b17a063d5bcf310b218a3943cde6ff7e52f3e9e59f3e233ad47b0ac22e",
+        "result_json": "{\"sessionId\":\"8da75465-dc45-453c-88c6-de4a24142d9c\",\"status\":\"finished\",\"position\":2,\"revision\":5,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.540Z"
+      },
+      {
+        "request_id": "bd767f1b-5a57-4116-a599-3a428f525a5f",
+        "payload_hash": "c53fc8565e86d9e3af649c1c8b82c24282b4ae114c3b5695349336a3331a681b",
+        "result_json": "{\"sessionId\":\"7261ca43-ba82-43c7-a455-d5636904dc30\",\"status\":\"active\",\"position\":0,\"revision\":0,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.541Z"
+      },
+      {
+        "request_id": "2f4b183f-e7f4-41c0-b634-bcf88a855b05",
+        "payload_hash": "b84c8c612d9e853731cd796d3dc83d48dca279f2edc379923a0ac36f4520b7e1",
+        "result_json": "{\"sessionId\":\"7261ca43-ba82-43c7-a455-d5636904dc30\",\"status\":\"ended\",\"position\":0,\"revision\":1,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.543Z"
+      },
+      {
+        "request_id": "5c245800-ece8-44d0-a61c-5bfdf384e6ea",
+        "payload_hash": "fc349688807fb148127b0d173437a89d6faf4c477ed7121e6149be41a8ff9842",
+        "result_json": "{\"sessionId\":\"b6c5b69a-b35d-483e-9dd5-3c00587febcd\",\"status\":\"active\",\"position\":0,\"revision\":0,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.544Z"
+      },
+      {
+        "request_id": "91f5dc05-68da-42ab-8a6c-955eec7dfcae",
+        "payload_hash": "89f517fb5a9533ad4ae29e3603e187db5d3f5f50a38bba68b745a4596d75c44b",
+        "result_json": "{\"sessionId\":\"b6c5b69a-b35d-483e-9dd5-3c00587febcd\",\"status\":\"active\",\"position\":0,\"revision\":1,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.545Z"
+      },
+      {
+        "request_id": "9a82f449-ff94-45d7-8498-9b907280c5b8",
+        "payload_hash": "0735aa7278c46498156896a9887e17190c3d604873bf8de8ce0db5d9d3b03746",
+        "result_json": "{\"sessionId\":\"b6c5b69a-b35d-483e-9dd5-3c00587febcd\",\"status\":\"active\",\"position\":1,\"revision\":2,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.546Z"
+      },
+      {
+        "request_id": "5e8fdbcc-d891-4503-b21f-1556f0edccd5",
+        "payload_hash": "2cf14f875c6677508b4eed219c270135c32a5f3aa4f33c250cdb02fd808f6c3a",
+        "result_json": "{\"sessionId\":\"b6c5b69a-b35d-483e-9dd5-3c00587febcd\",\"status\":\"finished\",\"position\":2,\"revision\":3,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.546Z"
+      },
+      {
+        "request_id": "e3a194e1-06cb-431d-bef4-99d6c6364489",
+        "payload_hash": "e01128ee084ed0852e926f2179b98145e6e7998da23daa7112f5e3cfb47891a9",
+        "result_json": "{\"sessionId\":\"d09e8e62-4bab-4298-b988-0a08915b2d3a\",\"status\":\"active\",\"position\":0,\"revision\":0,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.547Z"
+      },
+      {
+        "request_id": "5a80cebd-38bc-4483-bd8a-7433c90a9edb",
+        "payload_hash": "04653ed4e5058e4decf6ff1e3655de11b644568936793d173badd640679a39ef",
+        "result_json": "{\"sessionId\":\"d09e8e62-4bab-4298-b988-0a08915b2d3a\",\"status\":\"ended\",\"position\":0,\"revision\":1,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.548Z"
+      },
+      {
+        "request_id": "d8999ba2-fee2-4a43-825b-0e2aa81083da",
+        "payload_hash": "4ac743cefce40b7f2b8e2a1cd0ab7ae10675a16151fbf6476c2af2339392bc0d",
+        "result_json": "{\"sessionId\":\"71d23bb3-b6c8-4f67-a5ef-92ea82a239ff\",\"status\":\"active\",\"position\":0,\"revision\":0,\"total\":1}",
+        "created_at": "2026-10-21T09:27:36.548Z"
+      },
+      {
+        "request_id": "be2802e5-0c69-47fb-b227-808e3c45289f",
+        "payload_hash": "4426d22eb355b1eec668dd31016226c76f7e3956bb88695c67b89929e51ea05d",
+        "result_json": "{\"sessionId\":\"71d23bb3-b6c8-4f67-a5ef-92ea82a239ff\",\"status\":\"active\",\"position\":0,\"revision\":1,\"total\":1}",
+        "created_at": "2026-10-21T09:27:36.549Z"
+      },
+      {
+        "request_id": "5cae566e-5ecf-4aba-8aa7-cd8ff8c4979d",
+        "payload_hash": "1cdf8cd5e56218999970605f981663860919f5f682f10df514f7c9ce6ca6d7f0",
+        "result_json": "{\"sessionId\":\"71d23bb3-b6c8-4f67-a5ef-92ea82a239ff\",\"status\":\"finished\",\"position\":1,\"revision\":2,\"total\":1}",
+        "created_at": "2026-10-21T09:27:36.549Z"
+      },
+      {
+        "request_id": "7d4fd665-579f-487d-8aef-a703941ee8bf",
+        "payload_hash": "aeacc3d5d94d4859045232d7d97ddef5affce732c22d9511673506fbd26f6312",
+        "result_json": "{\"sessionId\":\"fc922e98-e38e-4bed-a1ee-f74d03bb7a40\",\"status\":\"active\",\"position\":0,\"revision\":0,\"total\":2}",
+        "created_at": "2026-10-21T09:27:36.594Z"
+      },
+      {
+        "request_id": "ef20e49e-cdd7-4ac1-a091-99c750f4357c",
+        "payload_hash": "69865c09fdc3694510a96bfb17194a2758a57ebc9a65857a2928fa19cb2fa971",
+        "result_json": "{\"sessionId\":\"fc922e98-e38e-4bed-a1ee-f74d03bb7a40\",\"status\":\"active\",\"position\":0,\"revision\":1,\"total\":2}",
+        "created_at": "2026-10-21T09:27:37.132Z"
+      },
+      {
+        "request_id": "50a68c27-172e-447d-947a-08b74041da68",
+        "payload_hash": "433fcdfa3f0391672efeb8d48b2ebf0ce63c514641ef112db2748f1db9fb3bef",
+        "result_json": "{\"sessionId\":\"fc922e98-e38e-4bed-a1ee-f74d03bb7a40\",\"status\":\"ended\",\"position\":0,\"revision\":2,\"total\":2}",
+        "created_at": "2026-10-21T09:27:37.988Z"
+      },
+      {
+        "request_id": "d1cb307a-b865-4ff4-871f-3cd22867195a",
+        "payload_hash": "d690c138b847880cdd8ece79ccd71f0296271fdd85a988d1e1aa8dcc96698ce6",
+        "result_json": "{\"sessionId\":\"3f8af02c-8ce0-4e72-b42b-6ddb577f9685\",\"status\":\"active\",\"position\":0,\"revision\":0,\"total\":2}",
+        "created_at": "2026-10-21T09:27:38.847Z"
+      },
+      {
+        "request_id": "a90fc168-fe9f-475f-9e7f-88f6b9cab5b9",
+        "payload_hash": "ff002bd12f6a84912fa9605a90839a3886575400be9995c34f906811df252e20",
+        "result_json": "{\"sessionId\":\"3f8af02c-8ce0-4e72-b42b-6ddb577f9685\",\"status\":\"active\",\"position\":0,\"revision\":1,\"total\":2}",
+        "created_at": "2026-10-21T09:27:38.870Z"
+      },
+      {
+        "request_id": "aba75dbf-b028-499b-a525-009292572698",
+        "payload_hash": "2883475491a0e206e39baaed26d973b47db55f7c653fe2be49cb051af0e85d90",
+        "result_json": "{\"sessionId\":\"3f8af02c-8ce0-4e72-b42b-6ddb577f9685\",\"status\":\"active\",\"position\":1,\"revision\":2,\"total\":2}",
+        "created_at": "2026-10-21T09:27:39.677Z"
+      },
+      {
+        "request_id": "33f5f2aa-d430-4887-9515-92fc86acb7ef",
+        "payload_hash": "7a55226882c65cacec089fc171ee70b4b310cb7c5f69be0180e2eec8755c2e31",
+        "result_json": "{\"sessionId\":\"3f8af02c-8ce0-4e72-b42b-6ddb577f9685\",\"status\":\"finished\",\"position\":2,\"revision\":3,\"total\":2}",
+        "created_at": "2026-10-21T09:27:40.501Z"
+      }
+    ],
+    "versions": [
+      {
+        "id": 1,
+        "question_id": 1,
+        "sequence": 1,
+        "title": "历史题 1",
+        "question_markdown": "HISTORY-BODY-OLD-history-a-1\n\n![历史图](assets/history.png)",
+        "answer_markdown": "HISTORY-ANSWER-OLD-history-a-1\n\n```c\nint value = 1;\n```",
+        "definitions_json": "[]",
+        "image_bindings_json": "[{\"url\":\"assets/history.png\",\"hash\":\"4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad\"}]",
+        "content_hash": "6d8850510cfd571a57267b1fa03d468672dbb0137ff5efe10738a37af9eea495",
+        "created_at": "2026-10-21T09:27:36.485Z"
+      },
+      {
+        "id": 2,
+        "question_id": 2,
+        "sequence": 1,
+        "title": "历史题 2",
+        "question_markdown": "HISTORY-BODY-OLD-history-a-2",
+        "answer_markdown": "HISTORY-ANSWER-OLD-history-a-2\n\n```c\nint value = 1;\n```",
+        "definitions_json": "[]",
+        "image_bindings_json": "[]",
+        "content_hash": "b1832f659463e23b4fbf3eb4e8d7ef291565e8a8e251128126b90a486b2e32f5",
+        "created_at": "2026-10-21T09:27:36.485Z"
+      },
+      {
+        "id": 3,
+        "question_id": 3,
+        "sequence": 1,
+        "title": "异专题题 1",
+        "question_markdown": "HISTORY-BODY-OLD-history-b-1\n\n![历史图](assets/history.png)",
+        "answer_markdown": "HISTORY-ANSWER-OLD-history-b-1\n\n```c\nint value = 1;\n```",
+        "definitions_json": "[]",
+        "image_bindings_json": "[{\"url\":\"assets/history.png\",\"hash\":\"4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad\"}]",
+        "content_hash": "d75c6bfe50a582b9bb8bd04d7f5746c5938ffb5da566c53991ca1a17463ef23e",
+        "created_at": "2026-10-21T09:27:36.485Z"
+      },
+      {
+        "id": 4,
+        "question_id": 1,
+        "sequence": 2,
+        "title": "历史题 1",
+        "question_markdown": "HISTORY-BODY-NEW-history-a-1\n\n![历史图](assets/history.png)",
+        "answer_markdown": "HISTORY-ANSWER-NEW-history-a-1\n\n```c\nint value = 2;\n```",
+        "definitions_json": "[]",
+        "image_bindings_json": "[{\"url\":\"assets/history.png\",\"hash\":\"4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad\"}]",
+        "content_hash": "5e5b8c65b8c41845f8964617bd24b07355c4d9fa691af9ef19759a7d2e85206a",
+        "created_at": "2026-10-21T09:27:36.893Z"
+      },
+      {
+        "id": 5,
+        "question_id": 2,
+        "sequence": 2,
+        "title": "历史题 2",
+        "question_markdown": "HISTORY-BODY-NEW-history-a-2",
+        "answer_markdown": "HISTORY-ANSWER-NEW-history-a-2\n\n```c\nint value = 2;\n```",
+        "definitions_json": "[]",
+        "image_bindings_json": "[]",
+        "content_hash": "ca33c1c632664ed033490d17d41edd8db8f1323cb118f4268bd57df0484078f8",
+        "created_at": "2026-10-21T09:27:36.893Z"
+      },
+      {
+        "id": 6,
+        "question_id": 1,
+        "sequence": 3,
+        "title": "元数据题 1",
+        "question_markdown": "HISTORY-BODY-NEW-history-a-1\n\n![历史图](assets/history.png)",
+        "answer_markdown": "HISTORY-ANSWER-NEW-history-a-1\n\n```c\nint value = 2;\n```",
+        "definitions_json": "[]",
+        "image_bindings_json": "[{\"url\":\"assets/history.png\",\"hash\":\"461889cdfd3fadf95dfd2e4c571ce3b0f8a3143d78c35effd2b0199c3d3a6ec8\"}]",
+        "content_hash": "92a8b1a00654e62cf42fd189112264c7d7fd878e4a56b1ae157ad63b81a24142",
+        "created_at": "2026-10-21T09:27:41.591Z"
+      }
+    ],
+    "questions": [
+      {
+        "id": 1,
+        "topic_id": "history-a",
+        "question_id": "q-1",
+        "title": "元数据题 1",
+        "tags_json": "[\"历史样本\",\"新标签\"]",
+        "difficulty": "基础",
+        "position": 1,
+        "archived": 0,
+        "current_version_id": 6
+      },
+      {
+        "id": 2,
+        "topic_id": "history-a",
+        "question_id": "q-2",
+        "title": "元数据题 2",
+        "tags_json": "[\"历史样本\",\"新标签\"]",
+        "difficulty": "基础",
+        "position": 0,
+        "archived": 0,
+        "current_version_id": 5
+      },
+      {
+        "id": 3,
+        "topic_id": "history-b",
+        "question_id": "q-1",
+        "title": "异专题题 1",
+        "tags_json": "[\"历史样本\"]",
+        "difficulty": "基础",
+        "position": 0,
+        "archived": 0,
+        "current_version_id": 3
+      }
+    ],
+    "resources": [
+      {
+        "hash": "461889cdfd3fadf95dfd2e4c571ce3b0f8a3143d78c35effd2b0199c3d3a6ec8",
+        "width": 3,
+        "height": 2,
+        "bytes": "89504E470D0A1A0A0000000D49484452000000030000000208060000009D74661A0000001149444154789C63B86364F41F8619903900AE110D7BA9AAE81E0000000049454E44AE426082"
+      },
+      {
+        "hash": "4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad",
+        "width": 2,
+        "height": 3,
+        "bytes": "89504E470D0A1A0A0000000D4948445200000002000000030802000000368849D60000001749444154789C6394CBDBC2C0C0C0C40006206AD5A312001BB403468546CE090000000049454E44AE426082"
+      }
+    ],
+    "foreignKeys": [],
+    "integrity": [
+      {
+        "quick_check": "ok"
+      }
+    ],
+    "schema": {
+      "user_version": 4
+    }
+  }
+}

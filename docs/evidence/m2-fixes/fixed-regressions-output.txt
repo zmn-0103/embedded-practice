@@ -1,0 +1,14 @@
+
+Running 7 tests using 1 worker
+
+(node:39924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\practice-window.spec.ts:418:7 › 快速重复：50ms 双击跳过和上一题只移动一题 (3.3s)
+  ok 2 [development] › tests\e2e\practice-window.spec.ts:418:7 › 快速重复：100ms 双击跳过和上一题只移动一题 (2.8s)
+  ok 3 [development] › tests\e2e\practice-window.spec.ts:418:7 › 快速重复：250ms 双击跳过和上一题只移动一题 (3.4s)
+  ok 4 [development] › tests\e2e\practice-window.spec.ts:466:7 › 快速重复：100ms 两次 Enter 激活跳过只移动一题 (1.8s)
+  ok 5 [development] › tests\e2e\practice-window.spec.ts:466:7 › 快速重复：100ms 两次 Space 激活跳过只移动一题 (1.8s)
+  ok 6 [development] › tests\e2e\practice-window.spec.ts:496:5 › 快速重复：持续按住 Enter 不会在操作恢复后再次跳过 (1.7s)
+  ok 7 [development] › tests\e2e\practice-window.spec.ts:523:5 › 图片自动保存：放大窗口与缩放状态在草稿保存后保留 (1.9s)
+
+  7 passed (17.2s)

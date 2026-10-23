@@ -1,0 +1,1 @@
+{"stage":"initial sample-script static check","exitCode":1,"error":"Template literal contained unescaped Markdown fence backticks at original line 138; Prettier and node --check both rejected it before any sample execution.","preservedFile":"initial-sample-script.mjs.txt","repair":"Use a separate fence string, then format and check syntax again; second check passed."}

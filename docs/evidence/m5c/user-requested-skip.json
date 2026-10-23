@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Shanghai",
+  "status": "skipped_by_user_not_accepted",
+  "userRequest": "跳过这个测试；记录一下",
+  "scope": "本轮 VMware 隔离安装验收及相关环境排障",
+  "followup": "用户回复已手动释放键鼠后，下一次窗口工具调用报告实体 Escape 停止，未继续窗口操作；随后用户明确要求跳过本测试。",
+  "completedPreparation": [
+    "用户完成 Windows 11 LTSC 虚拟机桌面设置",
+    "验收光盘生成：210886656 字节",
+    "13 个光盘文件实际回读，SHA-256 全部一致"
+  ],
+  "notCompleted": [
+    "干净系统快照创建",
+    "验收光盘挂载",
+    "当前 NSIS 候选包全新安装及客户机内运行核对",
+    "安装包覆盖、版本升级、卸载保留与重新安装",
+    "实际安装版断网完整流程"
+  ],
+  "acceptancePassed": false,
+  "m5Complete": false,
+  "v1Complete": false,
+  "retention": "保留虚拟机、Windows 镜像、验收光盘、材料和既有失败证据；本次不执行清理或继续验收。",
+  "preservedEvidence": [
+    { "path": "environment-preflight.json", "sha256": "BA2A92FA96995C36AA7659CAC3412A2E7123EDE8C1FE5431DA4349FC70553DB8" },
+    { "path": "installation-kit-preparation.json", "sha256": "E837B42A980890414A8F4055657B5A479F88E42CB90D91D30AF314265EC06EA2" },
+    { "path": "installation-kit-verification.json", "sha256": "39FCD0CE739E10902CCA8EA9CE292061AB806F685C8ED9E16FAE782B265AB0DC" },
+    { "path": "user-reported-windows-desktop.png", "sha256": "B9F9E778E6FF5F4920D6DFA9562E481B4BADA147EFE8C1B5F4D4753C1403D765" },
+    { "path": "vmware-operation-results.json", "sha256": "83A1FB8579FF37DB4DD8AC40D4BAF37D4CA5D48E142C047D01AAC87EE60A099E" }
+  ]
+}

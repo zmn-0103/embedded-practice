@@ -1,0 +1,38 @@
+{
+  "stats": {
+    "startTime": "2026-10-22T01:52:18.415Z",
+    "duration": 431010.326,
+    "expected": 246,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": {
+    "development": {
+      "total": 123,
+      "passed": 123,
+      "oldRetained": 101
+    },
+    "packaged": {
+      "total": 123,
+      "passed": 123,
+      "oldRetained": 101
+    }
+  },
+  "unit": {
+    "total": 526,
+    "passed": 526,
+    "failed": 0,
+    "files": 26,
+    "reportedSuites": 52
+  },
+  "oldDesktopRetained": 202,
+  "newDesktop": 44,
+  "missing": [],
+  "bad": [],
+  "artifacts": 246,
+  "eachCaseSingleRunNoRetries": true,
+  "notes": "相同项目/文件/标题逐项保留；原 101+101 桌面和 503 单元均保持。首轮失败另存。",
+  "fileBackedArtifacts": 42,
+  "embeddedArtifacts": 204
+}

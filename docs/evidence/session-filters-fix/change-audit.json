@@ -1,0 +1,43 @@
+{
+  "backup": "E:\\My_Projects\\embedded-practice\\tmp\\session-filters-before-0e54ca49e3ab4edf9e71a6de6163df46",
+  "modifiedExisting": [
+    "AGENTS.md",
+    "docs/README.md",
+    "docs/产品说明.md",
+    "docs/代码复查记录.md",
+    "docs/使用说明.md",
+    "docs/开发说明.md",
+    "docs/验收记录.md",
+    "README.md",
+    "src/main/database/open-database.ts",
+    "src/main/database/practice-schema.ts",
+    "src/main/database/repositories/practice-repository.ts",
+    "src/renderer/src/components/PracticeWorkspace.tsx",
+    "src/shared/contracts/practice.ts",
+    "tests/e2e/history-versions.spec.ts",
+    "tests/e2e/library-import.spec.ts",
+    "tests/e2e/practice-mode-migration.spec.ts",
+    "tests/e2e/practice.spec.ts",
+    "tests/e2e/settings-migration.spec.ts",
+    "tests/integration/practice-exercise.ts",
+    "tests/unit/practice-contract.test.ts",
+    "tests/unit/practice-controller.test.ts"
+  ],
+  "newSource": [
+    "tests/e2e/session-filters-migration.spec.ts",
+    "tests/e2e/session-filters.spec.ts",
+    "tests/fixtures/schema-v5.sql"
+  ],
+  "newDocs": [
+    "docs/M3会话筛选快照修复.md",
+    "docs/evidence/session-filters-fix/README.md"
+  ],
+  "productionFiles": 5,
+  "testFixtureFiles": 11,
+  "allCodeReviewed": true,
+  "protectedUnchanged": true,
+  "noDependenciesChanged": true,
+  "schemaVersion": 6,
+  "oldInstallerUnchanged": true,
+  "scope": "Only session filter snapshot fix; no M4/M5 development"
+}

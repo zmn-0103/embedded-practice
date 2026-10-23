@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 4,
+  "objects": [
+    {
+      "type": "table",
+      "name": "app_startup"
+    },
+    {
+      "type": "table",
+      "name": "library_meta"
+    },
+    {
+      "type": "table",
+      "name": "topics"
+    },
+    {
+      "type": "table",
+      "name": "questions"
+    },
+    {
+      "type": "table",
+      "name": "question_versions"
+    },
+    {
+      "type": "table",
+      "name": "image_resources"
+    },
+    {
+      "type": "table",
+      "name": "version_images"
+    },
+    {
+      "type": "table",
+      "name": "question_user_state"
+    },
+    {
+      "type": "table",
+      "name": "import_receipts"
+    },
+    {
+      "type": "index",
+      "name": "questions_topic_order"
+    },
+    {
+      "type": "table",
+      "name": "practice_sessions"
+    },
+    {
+      "type": "index",
+      "name": "practice_one_active"
+    },
+    {
+      "type": "table",
+      "name": "practice_items"
+    },
+    {
+      "type": "table",
+      "name": "practice_receipts"
+    },
+    {
+      "type": "index",
+      "name": "practice_items_version"
+    }
+  ],
+  "sha256": "208ec1a8629aca2f3a35aa3e224e0b1a9329a252cc942d71c4c0b5e2dea06fb6",
+  "sourceArchiveSHA256": "033ea75a4399f6ca657c162885427a5a6022606c33b6043f1df449c0ec3c05d6"
+}

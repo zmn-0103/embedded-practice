@@ -1,0 +1,18 @@
+
+Running 10 tests using 1 worker
+
+
+
+(node:25760) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[1/10] [development] › tests\e2e\practice-plans-errors.spec.ts:7:5 › 方案失败：读取不伪造空成功、已提交丢响应按原命令重试，停止重试不删已存项
+[2/10] [development] › tests\e2e\practice-plans-errors.spec.ts:76:7 › 方案正常关闭等待在途保存：成功退出重开保持
+[3/10] [development] › tests\e2e\practice-plans-errors.spec.ts:76:7 › 方案正常关闭等待在途保存：失败返回窗口原目标重试
+[4/10] [development] › tests\e2e\practice-plans-migration.spec.ts:59:5 › 结构8方案升级：只追加空方案表，原分类/条件/草稿/自定义对象与保护备份保持
+[5/10] [development] › tests\e2e\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 backup-blocked 停止或完整回滚，原库与分类不修补
+[6/10] [development] › tests\e2e\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 table-conflict 停止或完整回滚，原库与分类不修补
+[7/10] [development] › tests\e2e\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 foreign-key 停止或完整回滚，原库与分类不修补
+[8/10] [development] › tests\e2e\practice-plans.spec.ts:9:5 › 方案：命名保存完整条件、填入不建轮，正常重开后明确开始才替换原轮
+[9/10] [development] › tests\e2e\practice-plans.spec.ts:113:5 › 方案：原ID重试、同名拒绝、容量、写入回滚及坏JSON读取，不改变原业务或题库修订
+[10/10] [development] › tests\e2e\practice-plans.spec.ts:192:5 › 方案：分类改名沿原ID，移出/移除不扩大范围，删除默认取消且只删方案
+  10 passed (15.4s)
