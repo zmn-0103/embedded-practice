@@ -15,9 +15,14 @@ import { MarkdownContent } from './MarkdownContent'
 import { QuestionFilterFields } from './QuestionFilterFields'
 import { QuestionHistory } from './QuestionHistory'
 import type { LearningScope } from '../../../shared/contracts/learning'
-import { ALL_CATEGORIES, matchesCategory } from '../../../shared/contracts/categories'
+import {
+  ALL_CATEGORIES,
+  matchesCategory,
+  type CategoryScope,
+} from '../../../shared/contracts/categories'
 import { TopicNavigator } from './TopicNavigator'
 import { CategoryManager } from './CategoryManager'
+import { DifficultyBadge } from './DifficultyBadge'
 
 function QuestionView({
   identity,
@@ -151,7 +156,7 @@ function QuestionView({
         </p>
         <h3>{detail.title}</h3>
         <p className="question-tags">
-          {detail.difficulty}
+          <DifficultyBadge difficulty={detail.difficulty} />
           {detail.tags.length > 0 ? ` · ${detail.tags.join(' / ')}` : ''}
         </p>
         <p className="muted">
@@ -214,6 +219,12 @@ function QuestionView({
   )
 }
 
+export interface LibraryEntry {
+  id: number
+  category: CategoryScope
+  archived: boolean
+}
+
 interface LibraryBrowserProps {
   refresh: number
   onFavoriteSaved: () => void
@@ -224,6 +235,7 @@ interface LibraryBrowserProps {
   onCategoryChanged?: () => void
   onCategoryBusy?: (busy: boolean) => void
   onCategoryOperation?: (work: Promise<boolean>) => void
+  entry?: LibraryEntry | undefined
 }
 
 export function LibraryBrowser(props: LibraryBrowserProps) {
@@ -256,12 +268,13 @@ function LibraryContent({
   onCategoryChanged,
   onCategoryBusy,
   onCategoryOperation,
+  entry,
 }: LibraryBrowserProps) {
   // 学习记录父级按范围建立 key；范围在本次挂载中固定，其他筛选仍可独立调整。
   const [request, setRequest] = useState<ListRequest>(() => ({
     topicId: scope?.topicId ?? null,
-    category: scope?.category ?? ALL_CATEGORIES,
-    archived: scope?.archived ?? false,
+    category: scope?.category ?? entry?.category ?? ALL_CATEGORIES,
+    archived: scope?.archived ?? entry?.archived ?? false,
     page: 1,
     ...(scope ? { filters: { ...EMPTY_QUESTION_FILTERS, favoritesOnly: true } } : {}),
   }))
@@ -275,6 +288,29 @@ function LibraryContent({
     favoritesOnly: Boolean(scope),
   }))
   const [loading, setLoading] = useState(true)
+  const heading = useRef<HTMLElement>(null)
+  const appliedEntry = useRef(entry?.id)
+  const focusEntry = useRef(Boolean(entry))
+  useEffect(() => {
+    if (!entry || scope || appliedEntry.current === entry.id) return
+    appliedEntry.current = entry.id
+    focusEntry.current = true
+    setLoading(true)
+    setFilters({ ...EMPTY_QUESTION_FILTERS })
+    setRequest({
+      topicId: null,
+      category: entry.category,
+      archived: entry.archived,
+      page: 1,
+    })
+  }, [entry, scope])
+  useLayoutEffect(() => {
+    if (visible && !loading && !error && focusEntry.current && heading.current) {
+      focusEntry.current = false
+      heading.current.focus({ preventScroll: true })
+      window.scrollTo(0, 0)
+    }
+  }, [visible, loading, error, data])
   useEffect(() => {
     setSelected(undefined)
   }, [request, refresh, attempt])
@@ -353,7 +389,7 @@ function LibraryContent({
   )
   if (data.topics.length === 0)
     return (
-      <section className="library-empty" aria-labelledby="empty-title">
+      <section ref={heading} tabIndex={-1} className="library-empty" aria-labelledby="empty-title">
         <div className="empty-symbol" aria-hidden="true">
           ▤
         </div>
@@ -364,7 +400,13 @@ function LibraryContent({
       </section>
     )
   return (
-    <section className="library-workspace" aria-label="题库浏览">
+    <section
+      ref={heading}
+      tabIndex={-1}
+      className="library-workspace"
+      aria-label="题库浏览"
+      aria-busy={loading}
+    >
       {navigation}
       <QuestionFilterFields
         prefix="题库"
@@ -483,6 +525,7 @@ function LibraryContent({
                     {question.topicTitle} · {question.questionId}
                   </small>
                   <span>{question.title}</span>
+                  <DifficultyBadge difficulty={question.difficulty} />
                   {question.favorite && <small>已收藏</small>}
                   {question.contentUpdated && (
                     <small className="content-update">内容更新待复习</small>
@@ -532,7 +575,7 @@ function LibraryContent({
               '选择一道题查看内容，再主动展开单题历史。'
             ) : (
               <>
-                选择一道题，检查导入后的内容。<p>在上方选择专题和题数，即可开始练习与作答。</p>
+                选择一道题，检查导入后的内容。<p>需要作答时，切换到“开始练习”选择条件。</p>
               </>
             )}
           </div>

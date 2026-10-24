@@ -1,0 +1,6 @@
+{
+  "observedError": "GET /favicon.ico returned 404",
+  "cause": "Preview had no favicon declaration; browser requested its default path.",
+  "correction": "Generator now declares an empty data favicon; no external request or new asset is required.",
+  "productionChanged": false
+}

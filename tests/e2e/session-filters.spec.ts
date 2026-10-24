@@ -127,7 +127,7 @@ for (const mode of ['sequential', 'random'] as const) {
         'history-a',
         filters.query,
         filters.tag,
-        '基础',
+        '易（基础）',
         '未练习',
         '是',
       ])

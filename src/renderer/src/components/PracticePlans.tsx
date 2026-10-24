@@ -2,6 +2,7 @@ import { useId, useState } from 'react'
 import { matchesCategory, type LibraryNavigation } from '../../../shared/contracts/categories'
 import type { PracticePlan, PracticePlanOptions } from '../../../shared/contracts/practice-plans'
 import { usePracticePlans } from '../usePracticePlans'
+import { difficultyLabel } from './DifficultyBadge'
 
 interface Props extends LibraryNavigation {
   refresh: number
@@ -114,7 +115,8 @@ export function PracticePlans({
         {config && (
           <p className="muted">
             搜索：{config.filters.query || '不限'}；标签：{config.filters.tag ?? '不限'}； 难度：
-            {config.filters.difficulty ?? '不限'}； 自评：
+            {config.filters.difficulty ? difficultyLabel(config.filters.difficulty) : '不限'}；
+            自评：
             {config.filters.mastery === 'all'
               ? '不限'
               : config.filters.mastery === 'unpracticed'

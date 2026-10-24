@@ -1,0 +1,6 @@
+{
+  "action": "click e24 after page reload",
+  "observedError": "Ref e24 not found in the current page snapshot.",
+  "cause": "Reload produced a new snapshot with f1-prefixed element references; the earlier reference was stale.",
+  "correction": "Read the current snapshot and use f1e24. No application or preview logic changed."
+}

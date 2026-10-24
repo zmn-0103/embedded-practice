@@ -1,0 +1,156 @@
+- main [ref=f2e2]:
+  - paragraph [ref=f2e3]: 嵌入式刷题本 / 板块规划
+  - heading "按知识领域找题，逐步补齐题库。" [level=1] [ref=f2e4]
+  - paragraph [ref=f2e5]: 先建立清晰的学习版图。点击卡片查看规划专题；有题后沿同一板块补充。候选题数量来自仓库，尚待用户审阅，不代表个人库中的题数。
+  - generic [ref=f2e6]:
+    - generic [ref=f2e7]:
+      - strong [ref=f2e8]: "15"
+      - text: 基础板块
+    - generic [ref=f2e9]:
+      - strong [ref=f2e10]: "7"
+      - text: 拓展方向
+    - generic [ref=f2e11]:
+      - strong [ref=f2e12]: "7"
+      - text: 现有候选专题
+  - generic [ref=f2e13]:
+    - generic [ref=f2e14]:
+      - generic [ref=f2e15]: 查找板块或规划专题
+      - searchbox "查找板块或规划专题" [ref=f2e16]
+    - generic [ref=f2e17]:
+      - checkbox "显示拓展方向" [ref=f2e18]
+      - text: 显示拓展方向
+  - status [ref=f2e19]: 显示 15 个板块 · 点击查看内容范围
+  - generic [ref=f2e20]:
+    - heading "基础板块" [level=2] [ref=f2e21]
+    - generic [ref=f2e22]:
+      - group [ref=f2e23]:
+        - generic "C语言 类型、表达式、内存和可移植代码的基础。 待补题 收起专题" [active] [ref=f2e144] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e25]: C
+          - heading "C语言" [level=3] [ref=f2e26]
+          - paragraph [ref=f2e27]: 类型、表达式、内存和可移植代码的基础。
+          - generic [ref=f2e28]:
+            - generic [ref=f2e29]: 待补题
+            - generic [ref=f2e30]: 收起专题
+        - generic [ref=f2e145]:
+          - paragraph [ref=f2e146]: 规划专题 · 6
+          - list [ref=f2e147]:
+            - listitem [ref=f2e148]: 数据类型与表达式
+            - listitem [ref=f2e149]: 指针、数组与字符串
+            - listitem [ref=f2e150]: 结构体与联合体
+            - listitem [ref=f2e151]: 内存与生命周期
+            - listitem [ref=f2e152]: 预处理、编译与链接
+            - listitem [ref=f2e153]: 位运算与可移植性
+          - paragraph [ref=f2e154]: 以C语言规则为主；不收具体芯片寄存器记忆题。
+      - group [ref=f2e31]:
+        - generic "C++语言 对象、泛型与资源管理。 待补题 查看专题" [ref=f2e32] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e33]: C++
+          - heading "C++语言" [level=3] [ref=f2e34]
+          - paragraph [ref=f2e35]: 对象、泛型与资源管理。
+          - generic [ref=f2e36]:
+            - generic [ref=f2e37]: 待补题
+            - generic [ref=f2e38]: 查看专题
+      - group [ref=f2e39]:
+        - generic "数据结构与算法 组织数据、分析复杂度并解决问题。 待补题 查看专题" [ref=f2e40] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e41]: DS
+          - heading "数据结构与算法" [level=3] [ref=f2e42]
+          - paragraph [ref=f2e43]: 组织数据、分析复杂度并解决问题。
+          - generic [ref=f2e44]:
+            - generic [ref=f2e45]: 待补题
+            - generic [ref=f2e46]: 查看专题
+      - group [ref=f2e47]:
+        - generic "处理器与ARM架构 处理器如何执行程序和访问内存。 待补题 查看专题" [ref=f2e48] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e49]: ARM
+          - heading "处理器与ARM架构" [level=3] [ref=f2e50]
+          - paragraph [ref=f2e51]: 处理器如何执行程序和访问内存。
+          - generic [ref=f2e52]:
+            - generic [ref=f2e53]: 待补题
+            - generic [ref=f2e54]: 查看专题
+      - group [ref=f2e55]:
+        - generic "MCU与外设原理 不依赖具体芯片的单片机与外设知识。 仓库候选 4 题 查看专题" [ref=f2e56] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e57]: I/O
+          - heading "MCU与外设原理" [level=3] [ref=f2e58]
+          - paragraph [ref=f2e59]: 不依赖具体芯片的单片机与外设知识。
+          - generic [ref=f2e60]:
+            - generic [ref=f2e61]: 仓库候选 4 题
+            - generic [ref=f2e62]: 查看专题
+      - group [ref=f2e63]:
+        - generic "MCU平台与SDK 具体芯片、寄存器、SDK及平台实现。 仓库候选 108 题 查看专题" [ref=f2e64] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e65]: MCU
+          - heading "MCU平台与SDK" [level=3] [ref=f2e66]
+          - paragraph [ref=f2e67]: 具体芯片、寄存器、SDK及平台实现。
+          - generic [ref=f2e68]:
+            - generic [ref=f2e69]: 仓库候选 108 题
+            - generic [ref=f2e70]: 查看专题
+      - group [ref=f2e71]:
+        - generic "通信协议 设备互连、总线时序和消息组织。 仓库候选 6 题 查看专题" [ref=f2e72] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e73]: BUS
+          - heading "通信协议" [level=3] [ref=f2e74]
+          - paragraph [ref=f2e75]: 设备互连、总线时序和消息组织。
+          - generic [ref=f2e76]:
+            - generic [ref=f2e77]: 仓库候选 6 题
+            - generic [ref=f2e78]: 查看专题
+      - group [ref=f2e79]:
+        - generic "计算机网络 从网络分层到连接和故障定位。 待补题 查看专题" [ref=f2e80] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e81]: NET
+          - heading "计算机网络" [level=3] [ref=f2e82]
+          - paragraph [ref=f2e83]: 从网络分层到连接和故障定位。
+          - generic [ref=f2e84]:
+            - generic [ref=f2e85]: 待补题
+            - generic [ref=f2e86]: 查看专题
+      - group [ref=f2e87]:
+        - generic "RTOS与并发 调度、同步和实时资源管理。 待补题 查看专题" [ref=f2e88] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e89]: RTOS
+          - heading "RTOS与并发" [level=3] [ref=f2e90]
+          - paragraph [ref=f2e91]: 调度、同步和实时资源管理。
+          - generic [ref=f2e92]:
+            - generic [ref=f2e93]: 待补题
+            - generic [ref=f2e94]: 查看专题
+      - group [ref=f2e95]:
+        - generic "Linux系统与应用 Linux使用、用户态编程与部署。 待补题 查看专题" [ref=f2e96] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e97]: LIN
+          - heading "Linux系统与应用" [level=3] [ref=f2e98]
+          - paragraph [ref=f2e99]: Linux使用、用户态编程与部署。
+          - generic [ref=f2e100]:
+            - generic [ref=f2e101]: 待补题
+            - generic [ref=f2e102]: 查看专题
+      - group [ref=f2e103]:
+        - generic "Linux内核与驱动 内核机制、设备模型和驱动开发。 待补题 查看专题" [ref=f2e104] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e105]: DRV
+          - heading "Linux内核与驱动" [level=3] [ref=f2e106]
+          - paragraph [ref=f2e107]: 内核机制、设备模型和驱动开发。
+          - generic [ref=f2e108]:
+            - generic [ref=f2e109]: 待补题
+            - generic [ref=f2e110]: 查看专题
+      - group [ref=f2e111]:
+        - generic "硬件与电路基础 读懂电路并理解接口的电气约束。 待补题 查看专题" [ref=f2e112] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e113]: HW
+          - heading "硬件与电路基础" [level=3] [ref=f2e114]
+          - paragraph [ref=f2e115]: 读懂电路并理解接口的电气约束。
+          - generic [ref=f2e116]:
+            - generic [ref=f2e117]: 待补题
+            - generic [ref=f2e118]: 查看专题
+      - group [ref=f2e119]:
+        - generic "存储与文件系统 存储介质、数据组织和掉电一致性。 待补题 查看专题" [ref=f2e120] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e121]: FS
+          - heading "存储与文件系统" [level=3] [ref=f2e122]
+          - paragraph [ref=f2e123]: 存储介质、数据组织和掉电一致性。
+          - generic [ref=f2e124]:
+            - generic [ref=f2e125]: 待补题
+            - generic [ref=f2e126]: 查看专题
+      - group [ref=f2e127]:
+        - generic "编译调试与工程实践 把代码构建、验证并定位问题。 待补题 查看专题" [ref=f2e128] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e129]: DBG
+          - heading "编译调试与工程实践" [level=3] [ref=f2e130]
+          - paragraph [ref=f2e131]: 把代码构建、验证并定位问题。
+          - generic [ref=f2e132]:
+            - generic [ref=f2e133]: 待补题
+            - generic [ref=f2e134]: 查看专题
+      - group [ref=f2e135]:
+        - generic "项目与面试表达 用真实证据解释方案、职责与取舍。 待补题 查看专题" [ref=f2e136] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f2e137]: PRJ
+          - heading "项目与面试表达" [level=3] [ref=f2e138]
+          - paragraph [ref=f2e139]: 用真实证据解释方案、职责与取舍。
+          - generic [ref=f2e140]:
+            - generic [ref=f2e141]: 待补题
+            - generic [ref=f2e142]: 查看专题
+  - generic [ref=f2e143]: 板块 → 专题；标签用于跨专题找题。空板块显示待补题，可先查看规划专题。此页为 2026-10-24 设计预览。

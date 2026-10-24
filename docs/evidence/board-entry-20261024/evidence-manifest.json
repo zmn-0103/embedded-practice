@@ -1,0 +1,2824 @@
+{
+  "date": "2026-10-24",
+  "build": "20261024.3-boards",
+  "schema": 9,
+  "sealed": true,
+  "selfExcluded": true,
+  "files": [
+    {
+      "path": "appearance-verification.json",
+      "size": 11338,
+      "sha256": "9d093b9a8af0904185f01431be3cc6f1577eb7a15bfdf7e6ae52f778a2a94ab4"
+    },
+    {
+      "path": "before/AGENTS.md",
+      "size": 9029,
+      "sha256": "836696cffe2be53b23f4c365a3eae55be147ae73c8c2be62b2a90d3ae8c89818"
+    },
+    {
+      "path": "before/docs/AGENTS.md",
+      "size": 1282,
+      "sha256": "72b077b19f5043e753374e462aba30f124c2fffc1b07d2bc6a3febfb622cc3fa"
+    },
+    {
+      "path": "before/docs/M1第一批行为与验收.md",
+      "size": 2598,
+      "sha256": "91bfb76e08a641c339744475ce9bbcfe7e55c40fa333d3774ea7fea0b605089d"
+    },
+    {
+      "path": "before/docs/M1第三批行为与验收.md",
+      "size": 2722,
+      "sha256": "0d1a323808a1e46d25065c4b4c798a3f2d8de4e0717b43a0c4973dfc74ef62dc"
+    },
+    {
+      "path": "before/docs/M1第二批行为与验收.md",
+      "size": 3259,
+      "sha256": "8637e857c1d497bc83e5debfbd6cc9e0dc83a16dfba21e5ec6f9303f4e85586e"
+    },
+    {
+      "path": "before/docs/M1第五批行为与验收.md",
+      "size": 3113,
+      "sha256": "22e72978aa74162284f9ffcc53c6d4695fd3e6aea06a0d4c6723a796ab024baa"
+    },
+    {
+      "path": "before/docs/M1第四批行为与验收.md",
+      "size": 3793,
+      "sha256": "5045c982b111a06fa997ea2907c41689598bb1b9e82a3b0e4123f54a8168ade6"
+    },
+    {
+      "path": "before/docs/M2人工验收清单.md",
+      "size": 14436,
+      "sha256": "a7f0487713514d171821e2bd9c53c835a397798ec99205a76038aa9cf127b2bf"
+    },
+    {
+      "path": "before/docs/M2第一批行为与验收.md",
+      "size": 4526,
+      "sha256": "04a5462ae4f7524cfaa88790cc46d0638e941a00397c78031d0f0a00991a00e6"
+    },
+    {
+      "path": "before/docs/M2第三批行为与验收.md",
+      "size": 2548,
+      "sha256": "c9098785e31341251917ce5bf817750b059be8724f11695744690d2e5565be1a"
+    },
+    {
+      "path": "before/docs/M2第二批行为与验收.md",
+      "size": 3913,
+      "sha256": "f4c7151de09bf667803f80281ae6d30f2dbda9bd4c9651ec1b1773c6a59c0d1f"
+    },
+    {
+      "path": "before/docs/M2第四批行为与验收.md",
+      "size": 2200,
+      "sha256": "ddc4b92229ed1405cb38dd675f06a492b53f890c25404f4805efa43502842cc3"
+    },
+    {
+      "path": "before/docs/M3会话筛选快照修复.md",
+      "size": 3944,
+      "sha256": "4c0665dd94fc15f5612b4315abfd57f3e776a7ccc60d7fa0f141fe97d817def7"
+    },
+    {
+      "path": "before/docs/M3第一批行为与验收.md",
+      "size": 4602,
+      "sha256": "b6b2cbdc429fa857d80e0465f08fb9689fc0055f393c843da23979ca102bb88c"
+    },
+    {
+      "path": "before/docs/M3第三批行为与验收.md",
+      "size": 4588,
+      "sha256": "b40f22bc4b2125e4dd82d1455172c832e9094965db33e15d165fecff7516e776"
+    },
+    {
+      "path": "before/docs/M3第二批行为与验收.md",
+      "size": 3801,
+      "sha256": "fe6f5de3debd0b83e4a30e62c42c5b3b19e5806e61afc17a25886268a2f45398"
+    },
+    {
+      "path": "before/docs/M3第五批行为与验收.md",
+      "size": 3657,
+      "sha256": "6e8e3d855405d78bf3ddc30237c3ba8c55ca55e790fd4be669dff2ef3927b6c6"
+    },
+    {
+      "path": "before/docs/M3第四批行为与验收.md",
+      "size": 2880,
+      "sha256": "9140807fc66106c9f9a52251517d33e5c1736e41e6486afa834552da2e35c39b"
+    },
+    {
+      "path": "before/docs/M4第一批行为与验收.md",
+      "size": 4671,
+      "sha256": "59b3693501f5e42ff6d1b06c8ca109f9e2e15b755fbc3d7a08bf510a8d60d328"
+    },
+    {
+      "path": "before/docs/M4第三批行为与验收.md",
+      "size": 7443,
+      "sha256": "e2e565a20c4c0f498f5aa1f4230fcce0d9fb00d8e049f82f58921ff13c0f6edd"
+    },
+    {
+      "path": "before/docs/M4第二批行为与验收.md",
+      "size": 5056,
+      "sha256": "5ddfeb0b99df5e0f1502d6cfaba0ca53473a750b491bcde76b7f972592befab3"
+    },
+    {
+      "path": "before/docs/M5第一批行为与验收.md",
+      "size": 9580,
+      "sha256": "b954b739b4d9eec3bca449bdb0b81c77c2306753dbac5706f36363fa073bcc63"
+    },
+    {
+      "path": "before/docs/M5第二批行为与验收.md",
+      "size": 8142,
+      "sha256": "948785e94551e57f20a5e07343014614480dbf8f4fcffa495defc00ff7fdf061"
+    },
+    {
+      "path": "before/docs/M5第四批行为与验收.md",
+      "size": 8131,
+      "sha256": "854dfdafbe2c8e355366ee5bf1daa53e7dd717a9069b96989190d1ffc1cecc59"
+    },
+    {
+      "path": "before/docs/M5题目审阅与试用反馈.md",
+      "size": 6306,
+      "sha256": "e249e499cc896f6cb4277fccc96d9dcf8dd46f64c161bb349cb7a0d9e98a6475"
+    },
+    {
+      "path": "before/docs/MarkdownV1题库格式.md",
+      "size": 8348,
+      "sha256": "4b56e403d95b4931466e97f7868a179afade7726e504a0e7f7985239bbc7f77b"
+    },
+    {
+      "path": "before/docs/README.md",
+      "size": 14796,
+      "sha256": "151d2f050625766c5f70f00af386c4bb70ad9ff402dff1dc065f491801a0ef79"
+    },
+    {
+      "path": "before/docs/UART30题来源与技术核对.md",
+      "size": 12273,
+      "sha256": "2627d2e0b830bb2ebdf9988df07dc309c98eafc3a9c0ebda09599a2a1519cc4b"
+    },
+    {
+      "path": "before/docs/UART题库整理行为与验收.md",
+      "size": 6547,
+      "sha256": "6ded05833acfb3c31934d0be9f64c7a06a99ce3a4cc44ade2043f0a93dda4c49"
+    },
+    {
+      "path": "before/docs/UI美化与主题说明.md",
+      "size": 6408,
+      "sha256": "416ab83d0884a511f2520ebae9ad2332414fffbbad6690e9d43984618815a7b6"
+    },
+    {
+      "path": "before/docs/产品说明.md",
+      "size": 12854,
+      "sha256": "49963861a00aa3629dd0035934e215930ba542ecae095252599e7c0887180eec"
+    },
+    {
+      "path": "before/docs/代码复查记录.md",
+      "size": 265857,
+      "sha256": "f6947f9a16a9640a3c614775de166147d4fc85ea528adc387663b6dcce57de37"
+    },
+    {
+      "path": "before/docs/使用说明.md",
+      "size": 24371,
+      "sha256": "53e2f4216b67a82e2c1dfd4893a617eebe42ea66b59351c6b794f838f7a6a6e6"
+    },
+    {
+      "path": "before/docs/分类树行为与验收.md",
+      "size": 7617,
+      "sha256": "824b6124ceeb21a21e94c40c9de3584fc549a1a2a71b35682a1db70b605c45f0"
+    },
+    {
+      "path": "before/docs/开发记录.md",
+      "size": 65493,
+      "sha256": "b0b40a60c7b0799a585a1943aabe839ec35fd0bb728f554b39e1c7439d678c0c"
+    },
+    {
+      "path": "before/docs/开发说明.md",
+      "size": 34968,
+      "sha256": "24419379ebdbc5927edab559c1c159034447783795f14ff1c06e26935019e80a"
+    },
+    {
+      "path": "before/docs/当前试用版本交付说明.md",
+      "size": 11409,
+      "sha256": "b70959aec15efae60fc4d89b229fc631fae5e4ee263930032d7d855f43c3b0ac"
+    },
+    {
+      "path": "before/docs/找题体验第一批行为与验收.md",
+      "size": 5192,
+      "sha256": "a26d4bd4f897e0727d244c07b542eca8f6e577e39810aded0c2f413a589b7617"
+    },
+    {
+      "path": "before/docs/数据保护与桌面边界.md",
+      "size": 1990,
+      "sha256": "0d34d3f633cc009e4930a365c89f34a115e8f6f1e38881ba3d7186bb07d469ab"
+    },
+    {
+      "path": "before/docs/练习保存与统计契约.md",
+      "size": 1805,
+      "sha256": "90738283ca0e6aa9c7c8041dc2eaaa5156870bf385f83c7d10d2dc9ceb0d58c9"
+    },
+    {
+      "path": "before/docs/练习方案行为与验收.md",
+      "size": 5677,
+      "sha256": "9fbc2f4a18704bf8e23a9daff11ab6be94e8844b1714fb95d1c510443d36d2d5"
+    },
+    {
+      "path": "before/docs/结构9定向试用与UART修订.md",
+      "size": 6379,
+      "sha256": "d747820271dc090435ddae5256059b9b0fc681eba4e6bc0cb08867e09dd53a4a"
+    },
+    {
+      "path": "before/docs/通用基础样题与试用.md",
+      "size": 6474,
+      "sha256": "35bc2a0d45db3d1749cf0d06cbc59a0a0b1550f155117422f6650b28d0c1dccb"
+    },
+    {
+      "path": "before/docs/项目概况.md",
+      "size": 941,
+      "sha256": "cd74fbf449b22a8cc2a7802f8aa677097e289396bccee779b6e7511ac6dc697b"
+    },
+    {
+      "path": "before/docs/项目模块职责.md",
+      "size": 2735,
+      "sha256": "f97de48ac21203759b8f6c96e3c9b02c40a3ee7158b4628ca1ffa6f329b401fd"
+    },
+    {
+      "path": "before/docs/题库与导入契约.md",
+      "size": 2008,
+      "sha256": "50f8c6ee386c4b7ed0e6b36feb488cba52fb31b513a154c3fe8e884b56e0036d"
+    },
+    {
+      "path": "before/docs/题库分类与标签规范.md",
+      "size": 9060,
+      "sha256": "1ce9171971ae65a9ff750293feb0d3bbdc8e9b2ea502a021c20d2eddb78ec741"
+    },
+    {
+      "path": "before/docs/题库板块规划与展示设计.md",
+      "size": 11575,
+      "sha256": "aa2a4c6482d9c6f5bec36dbee384f60db55f757dc2dce521050436ae491efee6"
+    },
+    {
+      "path": "before/docs/验收记录.md",
+      "size": 129319,
+      "sha256": "9fbc889e592f3d93398a4f282a90b70fba785b23bff9c9f77c9feab96d7092b7"
+    },
+    {
+      "path": "before/electron-builder.yml",
+      "size": 558,
+      "sha256": "fbd78d3cd6165705cd1e65d9bdc7d0bfc9316e5b7ce3ca329b2802c1d3ac31df"
+    },
+    {
+      "path": "before/electron.vite.config.ts",
+      "size": 1510,
+      "sha256": "593ebf95df0342dd9d5aa5c08148c8f98e8b5635331583192acc0d461718fe15"
+    },
+    {
+      "path": "before/package-lock.json",
+      "size": 262340,
+      "sha256": "8eba923818767dbd7f8c65b2ecb12d763004d131a0418df9902e2e728ecddb2e"
+    },
+    {
+      "path": "before/package.json",
+      "size": 2033,
+      "sha256": "67887afccf13dc4625e6b26142057124b0b6cfaad897f70193aad2ec334d4522"
+    },
+    {
+      "path": "before/playwright.config.ts",
+      "size": 386,
+      "sha256": "9b5b8138c57d8ad41d079d62e120e49d9307f12142be29c72bbd75f49b58728e"
+    },
+    {
+      "path": "before/question-banks/catalog/板块规划.json",
+      "size": 13603,
+      "sha256": "c8b9d9638d08049d6dbfbdd69ff191c0962262d7889dc00b235b9a4b32edd3a5"
+    },
+    {
+      "path": "before/README.md",
+      "size": 4167,
+      "sha256": "335d757348f99b3e01ad9e0fcecdbd712f62e5d06d8ee3d26ce6a826ae9da6c7"
+    },
+    {
+      "path": "before/src/main/database/category-schema.ts",
+      "size": 652,
+      "sha256": "50a4166277f5997c2f4f128fb72de6491e70ad37c458318d029244a45ab2ae60"
+    },
+    {
+      "path": "before/src/main/database/library-schema.ts",
+      "size": 2906,
+      "sha256": "a347613cdb25a85274a24c9598f49b83bb6dc90a7af4a1686d587e2563904509"
+    },
+    {
+      "path": "before/src/main/database/migrations/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "before/src/main/database/open-database.ts",
+      "size": 5756,
+      "sha256": "5b144e79db49f2ca6eb38fb8984ef7c25c902a9eb734278e997206966c52e1d0"
+    },
+    {
+      "path": "before/src/main/database/practice-plan-schema.ts",
+      "size": 396,
+      "sha256": "31c6b51594fe633a5d18e7526d395ded273544d1a895e90ae9e4c9e2927cc784"
+    },
+    {
+      "path": "before/src/main/database/practice-schema.ts",
+      "size": 3180,
+      "sha256": "614f8f5363fa7a9286aea4c918f6808ec0801fa4394fb69850cc32734ecadd51"
+    },
+    {
+      "path": "before/src/main/database/repositories/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "before/src/main/database/repositories/category-repository.ts",
+      "size": 3454,
+      "sha256": "7a15179c1f07af0d5a31fa342033af5df2c0460286d9cee6b79c7d3fcd36fa5a"
+    },
+    {
+      "path": "before/src/main/database/repositories/favorite-repository.ts",
+      "size": 773,
+      "sha256": "61d426c54e32ee25476186db25ee53adfed841cb751bcf410fa01448f3609ae6"
+    },
+    {
+      "path": "before/src/main/database/repositories/history-reader.ts",
+      "size": 4850,
+      "sha256": "60873b64820a4ca3fa48f8f4a5ab11289a19b2e31b7033bde353e652e0e7fc99"
+    },
+    {
+      "path": "before/src/main/database/repositories/learning-reader.ts",
+      "size": 2470,
+      "sha256": "f3745f129ed00db4d84c9cde1139b195b9416d97d5053b8befcc6bcfdd450988"
+    },
+    {
+      "path": "before/src/main/database/repositories/library-reader.ts",
+      "size": 6180,
+      "sha256": "466fa5df894910e857bf2476767cd0088bc8e398b24d366e226887d2f338de75"
+    },
+    {
+      "path": "before/src/main/database/repositories/library-repository.ts",
+      "size": 9383,
+      "sha256": "057f0e68130ad722d5b81c550b4b327712f4ab95ae897e7d71ca3764b6662acb"
+    },
+    {
+      "path": "before/src/main/database/repositories/practice-plan-repository.ts",
+      "size": 3415,
+      "sha256": "e836f15ae2935ded14874843655ae7d83aaf6d82c42defd5c9c6f42755e92fa5"
+    },
+    {
+      "path": "before/src/main/database/repositories/practice-repository.ts",
+      "size": 18715,
+      "sha256": "9853e8698dd3bd60d462f13af4bcee91b10aa6c0c9ff08b2a3a50de9b8008845"
+    },
+    {
+      "path": "before/src/main/database/repositories/question-selection.ts",
+      "size": 2561,
+      "sha256": "952c44d5a698f8e94b97a170e296ba2412c08d8d702a864f34ba776da1aa5abb"
+    },
+    {
+      "path": "before/src/main/database/repositories/settings-repository.ts",
+      "size": 842,
+      "sha256": "975da2d2c2356f63b1b0040602f76d7d3c931a8d6bcfc81e8d6f9246dc74ac93"
+    },
+    {
+      "path": "before/src/main/database/repositories/topic-navigation.ts",
+      "size": 905,
+      "sha256": "ff3ea3c0331077607984cf263cd08f2f7dd91e9d1e69011740f24c33cbf19aa1"
+    },
+    {
+      "path": "before/src/main/database/settings-schema.ts",
+      "size": 689,
+      "sha256": "2d91dffa49cf34d6dc5858e8e07c8f4e49773a23dd973145def38351ff2e7351"
+    },
+    {
+      "path": "before/src/main/database/startup-store.ts",
+      "size": 1271,
+      "sha256": "347c2b9d4e1795a38d294fec99a45ce285320297e41e4044754f0b7490c3ea87"
+    },
+    {
+      "path": "before/src/main/index.ts",
+      "size": 11786,
+      "sha256": "62de1d45cf14b591a1d658617572989779dcf289951f0f5ce88bcbeba5e0beca"
+    },
+    {
+      "path": "before/src/main/ipc/application.ts",
+      "size": 1292,
+      "sha256": "b137c52112b1837d2565333090c6d5ac2b1a642051ddcb98d008689d40994c42"
+    },
+    {
+      "path": "before/src/main/ipc/backup.ts",
+      "size": 8621,
+      "sha256": "fdeaf2c22c9bbe5f0cb9301d9fe65bd0e9ec3aeee1cf91d69b7c16acdc12d0c7"
+    },
+    {
+      "path": "before/src/main/ipc/data-locations.ts",
+      "size": 5641,
+      "sha256": "0c93ce230045bd8b1b7b6824c9767556fe0425b1295d6ca1d820b00988fdcf48"
+    },
+    {
+      "path": "before/src/main/ipc/library.ts",
+      "size": 13369,
+      "sha256": "3dc9d3b295c4fb8d4378d8b334b8c9db341d785f4625fb8f8d8dec112a8a04f9"
+    },
+    {
+      "path": "before/src/main/ipc/practice.ts",
+      "size": 6086,
+      "sha256": "2dde411ad556664d7f391fa371b471279fc399ef381bdc85b8b6e0703b8f35a0"
+    },
+    {
+      "path": "before/src/main/ipc/trusted-sender.ts",
+      "size": 542,
+      "sha256": "feedf8c8ec5100cc32f8bd99530e09bb486488aec727a4e5fce6dabec47b3301"
+    },
+    {
+      "path": "before/src/main/raw.d.ts",
+      "size": 79,
+      "sha256": "c780995a49f68475718978985cbe38bc3e1a3dc33501b3cef018fe2d7ce868d9"
+    },
+    {
+      "path": "before/src/main/services/backup/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "before/src/main/services/backup/backup.ts",
+      "size": 11438,
+      "sha256": "0b1fc263fdeb81c9ad1799acf980076995d984a9faf13b0529f9df6a2d98d003"
+    },
+    {
+      "path": "before/src/main/services/backup/restore-files.ts",
+      "size": 8825,
+      "sha256": "a14b919ff59ebfd8cd76e94b458d4cf09840ae479a17249f2f805ca963708766"
+    },
+    {
+      "path": "before/src/main/services/backup/validate-backup.ts",
+      "size": 9795,
+      "sha256": "27407feca96b4e8af3cd79470fd67ca6b01997e18c8180438ba6d7beb554f5a0"
+    },
+    {
+      "path": "before/src/main/services/library/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "before/src/main/services/library/compare-import.ts",
+      "size": 3377,
+      "sha256": "f5707758f2f3656ccab418d53dc16fc34a523ed5c0ba93d744f568eca5e662c0"
+    },
+    {
+      "path": "before/src/main/services/library/content-fingerprint.ts",
+      "size": 928,
+      "sha256": "9e9bb06292e831f674f26d1f8966eb61b4758f60eabe8a17c78edba1e1795fcc"
+    },
+    {
+      "path": "before/src/main/services/library/image-references.ts",
+      "size": 1368,
+      "sha256": "470ef58a498b933fd15af9744334960063c0203c59c6c2ee30f781bd37f7f2a1"
+    },
+    {
+      "path": "before/src/main/services/library/import-budget.ts",
+      "size": 1120,
+      "sha256": "f6817017469f7d7bfb9ab2638c66dca327c66ae0808cb69f376961e52df4a49f"
+    },
+    {
+      "path": "before/src/main/services/library/import-preparation.ts",
+      "size": 618,
+      "sha256": "7ca2a80e5688846e27b9a8d58424b9aa73a2c9233e6ba41ada7b24d36ec01e2b"
+    },
+    {
+      "path": "before/src/main/services/library/import-session.ts",
+      "size": 7170,
+      "sha256": "bfa7988331cbb4be6a634d5b95252dd0387133870a02a44f32389bca2732fb39"
+    },
+    {
+      "path": "before/src/main/services/library/library-import.ts",
+      "size": 2737,
+      "sha256": "a66ade061ccefda4e624ba100e2ff8b5e35aaa831660b1deaeaf8b6bc83123d6"
+    },
+    {
+      "path": "before/src/main/services/library/markdown-document.ts",
+      "size": 4629,
+      "sha256": "a894fec1e957e26e7dcd05bfc4ca7bf262b5b042327698779b694d45bbdddbbd"
+    },
+    {
+      "path": "before/src/main/services/library/parse-question-bank.ts",
+      "size": 3738,
+      "sha256": "71445481dafd99db70d4869368fc436c479b91646f46765606602969a528723f"
+    },
+    {
+      "path": "before/src/main/services/library/parse-question.ts",
+      "size": 5054,
+      "sha256": "73553f04eaad74fb20348ad4f9492de59c4eb06d3cc0d0dd68f510bd2f3cc715"
+    },
+    {
+      "path": "before/src/main/services/library/prepare-import.ts",
+      "size": 5356,
+      "sha256": "22168d0efdab6dc3cbe35ce4683e074d0d9e1708577395c0737342e2907d94b8"
+    },
+    {
+      "path": "before/src/main/services/library/question-metadata.ts",
+      "size": 2016,
+      "sha256": "bd7bc763902d7b655047f875817410ee9249078f0c43cb55103b556f8e9ab14e"
+    },
+    {
+      "path": "before/src/main/services/practice/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "before/src/main/services/practice/practice.ts",
+      "size": 3574,
+      "sha256": "113f18117bd4f15b252a962b8f313c771404d69b13ff0dc3002ec7a52251f6d7"
+    },
+    {
+      "path": "before/src/main/services/resources/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "before/src/main/services/resources/image-protocol.ts",
+      "size": 1194,
+      "sha256": "ac365365f249546e4310fa3bc92c72d5d8370fabe1a482945935702fce9b2556"
+    },
+    {
+      "path": "before/src/main/services/resources/read-file-snapshot.ts",
+      "size": 2387,
+      "sha256": "aba650ef9d5dcb6ef5a3ad900eb4076c2b8b7b1719dc6d1746d8d184566093bd"
+    },
+    {
+      "path": "before/src/main/services/resources/read-image.ts",
+      "size": 4524,
+      "sha256": "ce7cc2cd650b1a4d569e613643cb842f265d30cf666c7d466e9da1f740b0d9ae"
+    },
+    {
+      "path": "before/src/main/window.ts",
+      "size": 1580,
+      "sha256": "c2493be2646cb90354af8e041b1be943b789eaa0683fd5df95dc799c68c5dcd7"
+    },
+    {
+      "path": "before/src/main/workers/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "before/src/main/workers/import-protocol.ts",
+      "size": 5484,
+      "sha256": "8151da4dfcf40ce6cb14ec0b985d7f8be6f83cb0a1ef52c1d95063fc6776a324"
+    },
+    {
+      "path": "before/src/main/workers/import-task-runner.ts",
+      "size": 4915,
+      "sha256": "2e8de32175ebb0dd6368b1ba5374783213f7d767a09052d585a85b08db0b275a"
+    },
+    {
+      "path": "before/src/main/workers/import-worker.ts",
+      "size": 1468,
+      "sha256": "e29a41a12d71fff39267c676208a6315bf8dd79a1c8881c072876d4b33c4e5d2"
+    },
+    {
+      "path": "before/src/preload/index.ts",
+      "size": 6656,
+      "sha256": "bdccd4e477adaa6de9277e23477570defe802ac1d3365c09cedbb898354ec3b4"
+    },
+    {
+      "path": "before/src/renderer/index.html",
+      "size": 619,
+      "sha256": "d80666eeb66982ed34db9aa2407d6fa810dc8a9b4548e30b5fde608e79d21dec"
+    },
+    {
+      "path": "before/src/renderer/src/App.tsx",
+      "size": 10532,
+      "sha256": "6238a2f025d4f68e2e7007f177aa918da67751bbec381d21c2af13b2739b4e91"
+    },
+    {
+      "path": "before/src/renderer/src/components/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "before/src/renderer/src/components/BackupPanel.tsx",
+      "size": 6146,
+      "sha256": "1c71d39fddffddf615c93a35ec060bb4d99cfdc5139475b3e5c97847af6697b5"
+    },
+    {
+      "path": "before/src/renderer/src/components/CategoryManager.tsx",
+      "size": 8442,
+      "sha256": "6d92d57d6b83397b0ad836ef87ea78fa67d676f4dcf625235f0f182403425f68"
+    },
+    {
+      "path": "before/src/renderer/src/components/CodeBlock.tsx",
+      "size": 3997,
+      "sha256": "f08efbeb0d71f8f3b352b1d6835bf6ddb5e1f78cc631053971dc7bb8f911f4eb"
+    },
+    {
+      "path": "before/src/renderer/src/components/DataLocationsPanel.tsx",
+      "size": 4095,
+      "sha256": "a544431df57a4e412b1ea20336183c2ac1e248a5433399934095ba5d22de4d5f"
+    },
+    {
+      "path": "before/src/renderer/src/components/ImportPanel.tsx",
+      "size": 8001,
+      "sha256": "124763f3231c8ea50e5c491af63eb04997c3bd56112b4290bc7a00ce09fee285"
+    },
+    {
+      "path": "before/src/renderer/src/components/LearningRecords.tsx",
+      "size": 6325,
+      "sha256": "3ded3ca3af3967221227158a61215fdf8f401dbc30c682ac93e15422ffd9bb68"
+    },
+    {
+      "path": "before/src/renderer/src/components/LibraryBrowser.tsx",
+      "size": 18577,
+      "sha256": "1bffaccec365d69245e3c8ca16dfa439bfff5938c6fe3507d707e2e6ddadad0a"
+    },
+    {
+      "path": "before/src/renderer/src/components/MarkdownContent.tsx",
+      "size": 3143,
+      "sha256": "9ec46814b970afaeb9aa5739f2be519c69d5e014a9d378003a224c5d9ccb4dc0"
+    },
+    {
+      "path": "before/src/renderer/src/components/PracticePane.tsx",
+      "size": 8870,
+      "sha256": "2d12d6694a81a3c4b9d6868d3a48439a4de875062511a66da878e7655122ade4"
+    },
+    {
+      "path": "before/src/renderer/src/components/PracticePlans.tsx",
+      "size": 7152,
+      "sha256": "909c5b6a9e74cce60e5b2ab861bd5b695aeae512f1cbbb813d616f989d196be0"
+    },
+    {
+      "path": "before/src/renderer/src/components/PracticeWorkspace.tsx",
+      "size": 17503,
+      "sha256": "90e86cc0ec0e893a55ce3b436d99509fc659c95fbea2cd8c5ebfad877b6fdd49"
+    },
+    {
+      "path": "before/src/renderer/src/components/QuestionFilterFields.tsx",
+      "size": 3262,
+      "sha256": "8edb12aa2e89cd76ab5172dec080b14816d0577efe0187787cb1a98babd5cc09"
+    },
+    {
+      "path": "before/src/renderer/src/components/QuestionHistory.tsx",
+      "size": 8347,
+      "sha256": "c5cb5fd235b74a37f784515e2cf8407ad142b4d9ad28fe02b82d1a5e33fb3c2c"
+    },
+    {
+      "path": "before/src/renderer/src/components/ResourceImage.tsx",
+      "size": 2500,
+      "sha256": "bd477f0640a30763f8dcd3998323644670d4f462e523343a7f85e80c76563b1d"
+    },
+    {
+      "path": "before/src/renderer/src/components/SettingsPane.tsx",
+      "size": 7065,
+      "sha256": "73f44cf4a536f8cc5074b75e56c82ef289a2895203a17b482a4a7e39ff7f5fac"
+    },
+    {
+      "path": "before/src/renderer/src/components/TagPicker.tsx",
+      "size": 4151,
+      "sha256": "ecc76b381e44aed2c2bc48ceee0ace26c46a832c169190ac6bdf04fe71c0bac9"
+    },
+    {
+      "path": "before/src/renderer/src/components/TopicNavigator.tsx",
+      "size": 5799,
+      "sha256": "6e13b8ee16ad967a4b80599a0ade41119070794aa7d65da00045d65219c10ef6"
+    },
+    {
+      "path": "before/src/renderer/src/env.d.ts",
+      "size": 138,
+      "sha256": "f9c102558631b913449d3bf4a860980ba8c1bec9dad975f60b77bfbb042f0bfa"
+    },
+    {
+      "path": "before/src/renderer/src/main.tsx",
+      "size": 314,
+      "sha256": "cbae0e49f9288480c5fce1c76eff4723f29d660cfcb4bc6083bc3652b47917ad"
+    },
+    {
+      "path": "before/src/renderer/src/markdown-source.ts",
+      "size": 527,
+      "sha256": "632379573347263a5cd22407401a4ca711c7fa219e01330b6d92a74f6f905ed5"
+    },
+    {
+      "path": "before/src/renderer/src/pages/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "before/src/renderer/src/practice-controller.ts",
+      "size": 8988,
+      "sha256": "21e48b13efa17879bc0f686996ab842da789bfbd9dad0a79da2c4f308e83c98f"
+    },
+    {
+      "path": "before/src/renderer/src/styles/global.css",
+      "size": 30239,
+      "sha256": "f4f1ae6447c4598b8eb80f9ab0f70d72af417cb5e6fe9a0f5e56f9d5b5a08b0d"
+    },
+    {
+      "path": "before/src/renderer/src/useAppearance.ts",
+      "size": 2847,
+      "sha256": "468d78e235e9b21c59ef56cbf4e3fcc5a8907a8742166cb1fc5a848789ac36a1"
+    },
+    {
+      "path": "before/src/renderer/src/usePracticePlans.ts",
+      "size": 2982,
+      "sha256": "ed6f820df4df620bea3828b61ab373c5c9438705a145377ca7de8c2711db0e35"
+    },
+    {
+      "path": "before/src/shared/contracts/application.ts",
+      "size": 1639,
+      "sha256": "d9062a2722cc5c9548b81f69d12a0bccde41e8c0a0dd9e0e79a27feed5b01f74"
+    },
+    {
+      "path": "before/src/shared/contracts/backup.ts",
+      "size": 2686,
+      "sha256": "3081cc6ffb6e062675704962db4b59e4cc5e16b9312112a81fb467199c60c951"
+    },
+    {
+      "path": "before/src/shared/contracts/categories.ts",
+      "size": 2778,
+      "sha256": "889ad87f529a188e0f2f51a4bd3a0aba7f77ef0025c6c531592e600930e49539"
+    },
+    {
+      "path": "before/src/shared/contracts/content-urls.ts",
+      "size": 1608,
+      "sha256": "ee1b9a05f308cfc81f4cee1070ba590bf69e2ec8d98cd4d0b97ce7047c09d9f2"
+    },
+    {
+      "path": "before/src/shared/contracts/data-locations.ts",
+      "size": 1509,
+      "sha256": "da7852f412fca27f62fd164c40d731e21529b6804476d4663a58649e6c5fc3de"
+    },
+    {
+      "path": "before/src/shared/contracts/history.ts",
+      "size": 3146,
+      "sha256": "c23e91c991975bfef3a83ad7f9fc6e6f33eb787d6a3665bbe59df06946fb2ce3"
+    },
+    {
+      "path": "before/src/shared/contracts/image-path.ts",
+      "size": 1023,
+      "sha256": "5d45f4df2479dea4596ed992eab8821e76b3ee45f6182ec8b6b68a6ac8e3ce41"
+    },
+    {
+      "path": "before/src/shared/contracts/import-snapshot.ts",
+      "size": 1006,
+      "sha256": "76749ca4eedeee57f22f7ea6e53a5d4e774bcfc32b01362a72d5815a995182af"
+    },
+    {
+      "path": "before/src/shared/contracts/learning.ts",
+      "size": 1619,
+      "sha256": "3a6c44f82f15082638a13421462d6ee8b4aead667643c6b63aea52b5cd39f393"
+    },
+    {
+      "path": "before/src/shared/contracts/library-desktop.ts",
+      "size": 5380,
+      "sha256": "a3cb61cbc59d4488b8831bf0e735349995ff80ad0abdd7be6f64dabdafb91481"
+    },
+    {
+      "path": "before/src/shared/contracts/library-import.ts",
+      "size": 2138,
+      "sha256": "8eac3a2de1784a8340baf2a187338e7cf95ac212712b70e35895e1768246478f"
+    },
+    {
+      "path": "before/src/shared/contracts/practice-desktop.ts",
+      "size": 2599,
+      "sha256": "f5821e1d584d5ffa03255b78d140925162eab660aeebb40bcd20a73f667f5f20"
+    },
+    {
+      "path": "before/src/shared/contracts/practice-plans.ts",
+      "size": 2092,
+      "sha256": "b9644dddb5899712b858d1b84edfe136eebb7e967c9434fe62f334087b4bb8e9"
+    },
+    {
+      "path": "before/src/shared/contracts/practice.ts",
+      "size": 5477,
+      "sha256": "cbf99e26184dc400d73bf5042d8700e578ab8d22725414e822380b53bb6ab038"
+    },
+    {
+      "path": "before/src/shared/contracts/question-bank.ts",
+      "size": 2088,
+      "sha256": "f645e655080c21954664937f52c1d025c4f75662786b52b29e4fdab2792d892f"
+    },
+    {
+      "path": "before/src/shared/contracts/question-filters.ts",
+      "size": 767,
+      "sha256": "550f3f72f1a18fa94edae4870f4f4fdeb365e6ff4877964090b377119feac9a5"
+    },
+    {
+      "path": "before/src/shared/contracts/settings.ts",
+      "size": 916,
+      "sha256": "c674d3933e40ed756946385687dd54cc25358582136d7dc258c3fa3d44ea88d0"
+    },
+    {
+      "path": "before/tests/e2e/backup-legacy.spec.ts",
+      "size": 11560,
+      "sha256": "851e6dfd434b678735080927910491c19db9969bf2d049b58d4b0db77a4e7a88"
+    },
+    {
+      "path": "before/tests/e2e/backup-window.spec.ts",
+      "size": 27836,
+      "sha256": "5e1be1e05fc9605d440acb8e76904ea63963179fc805d304a8a4882305c19289"
+    },
+    {
+      "path": "before/tests/e2e/category-helpers.ts",
+      "size": 4402,
+      "sha256": "2f022b19b77f44284ac4c932bb2cec82f6354048c9509a93d1e65d27c24da233"
+    },
+    {
+      "path": "before/tests/e2e/category-migration.spec.ts",
+      "size": 10389,
+      "sha256": "aa3577749b0a451766763514690804f09a7385f2f5fb7e039ef2cf1c44fa720a"
+    },
+    {
+      "path": "before/tests/e2e/category-practice.spec.ts",
+      "size": 15853,
+      "sha256": "61c499fcd7b2613bfcb4862c611c7f6e5c83ffd27f8ed827125538a1d2847113"
+    },
+    {
+      "path": "before/tests/e2e/category-tree.spec.ts",
+      "size": 13267,
+      "sha256": "1d115cd47dc26bcd6dbf699aa1dcad891c1d7f97ea5bcf421c4134cb7b358d4f"
+    },
+    {
+      "path": "before/tests/e2e/data-locations.spec.ts",
+      "size": 22318,
+      "sha256": "83bed03216f535b1aacebb61453b6b06a559a1178bb56ab0d63f798f413f7d8f"
+    },
+    {
+      "path": "before/tests/e2e/database-errors.spec.ts",
+      "size": 1910,
+      "sha256": "f5aa2b9beb83a3f7dba66f1e5ddef15b443b9a3672eb422c315cb3484a82c405"
+    },
+    {
+      "path": "before/tests/e2e/findability.spec.ts",
+      "size": 19573,
+      "sha256": "3d607a6ffe5840713667886061b393f1b1fe16d7b86cc509891ebecbef25e75c"
+    },
+    {
+      "path": "before/tests/e2e/helpers.ts",
+      "size": 3057,
+      "sha256": "21f73ee964acf0e9352a9dfe615501dc417c9070fdfe85b0cdba6bd1dfe80e32"
+    },
+    {
+      "path": "before/tests/e2e/history-helpers.ts",
+      "size": 8036,
+      "sha256": "09bba3cb35af7157d4b34ae60780842674249a8f29e3f0a8e75796ca0205a78d"
+    },
+    {
+      "path": "before/tests/e2e/history-versions.spec.ts",
+      "size": 14226,
+      "sha256": "d83c9dcf0430f0d4b3840ef57745c68672153cc35022f51862f7b8a35838a5c0"
+    },
+    {
+      "path": "before/tests/e2e/history-window.spec.ts",
+      "size": 13728,
+      "sha256": "b673184ba58adf807008edf85dea924707dca972553c13e4266c94f29681d558"
+    },
+    {
+      "path": "before/tests/e2e/import-worker-exercise.ts",
+      "size": 5330,
+      "sha256": "2b5de8f3de25afc4480b73a4ceb82dacf248aa1208bf310eaf43a142378ab91d"
+    },
+    {
+      "path": "before/tests/e2e/import-worker.spec.ts",
+      "size": 4827,
+      "sha256": "530db3de2eba3a4468e3c0b3501b2b50c1ffeee0ae053632a71450b070e1d66c"
+    },
+    {
+      "path": "before/tests/e2e/learning-helpers.ts",
+      "size": 1518,
+      "sha256": "7b62177a287774605d06aced54f7015fae46fb5facdd1b3688241d2bc1c34bf7"
+    },
+    {
+      "path": "before/tests/e2e/learning-management.spec.ts",
+      "size": 29833,
+      "sha256": "e60562b01aa6b4f7ea47d38135bdcfe6c61621e01db693ae045b65d39e59ce40"
+    },
+    {
+      "path": "before/tests/e2e/learning-records-errors.spec.ts",
+      "size": 5810,
+      "sha256": "069ed2689f78fc4bbee06084f412f3df49cbde240ff1fdd1fc3dc1a7f700e572"
+    },
+    {
+      "path": "before/tests/e2e/learning-records.spec.ts",
+      "size": 12901,
+      "sha256": "5cfdd4c37f0c01cfcd12c9e2a6a18b8e291699c75a85fab8da438f81086cc990"
+    },
+    {
+      "path": "before/tests/e2e/library-import.spec.ts",
+      "size": 12474,
+      "sha256": "b6880b221cdce4e4eca6fa4768050e53f26a6861abd121be7005fe56acf6a741"
+    },
+    {
+      "path": "before/tests/e2e/library-window.spec.ts",
+      "size": 16537,
+      "sha256": "ceaf2217e8dded6ff4db02f53a89bfb0fcbc21507643201fba13fb76063a6cc8"
+    },
+    {
+      "path": "before/tests/e2e/palette-migration.spec.ts",
+      "size": 8863,
+      "sha256": "8cbaab8410120227035e0b3be8f663e8db8e85a4c8d9a3ec0d85a34ff9628e84"
+    },
+    {
+      "path": "before/tests/e2e/practice-mode-migration.spec.ts",
+      "size": 11629,
+      "sha256": "3fb0a802a41c8a37ba04b2a55c1aac924309f75be048d94f0e080c1d39ce06b7"
+    },
+    {
+      "path": "before/tests/e2e/practice-plan-helpers.ts",
+      "size": 1724,
+      "sha256": "d659e93727817913670ccf983b54e72b8a2d83b5267a6152fd60104dcbcffec6"
+    },
+    {
+      "path": "before/tests/e2e/practice-plans-errors.spec.ts",
+      "size": 7997,
+      "sha256": "eba3a5b18b9ef0f29861e4b3547622fd0936339bc4390257719ca618b16e4a17"
+    },
+    {
+      "path": "before/tests/e2e/practice-plans-migration.spec.ts",
+      "size": 8109,
+      "sha256": "9a5e39452bf9f398fd0e3e19154c4ada8a34775ed8ed2cf97520e8ef202dbcb0"
+    },
+    {
+      "path": "before/tests/e2e/practice-plans.spec.ts",
+      "size": 12453,
+      "sha256": "9d7a67c226be8f492b77a597d1ea70aeda9c3d3de0ebbf8473a04741cd1bdbbd"
+    },
+    {
+      "path": "before/tests/e2e/practice-window.spec.ts",
+      "size": 44667,
+      "sha256": "77ad41e3d7d43ee0f4944ed33b7fb882c152f5c7ca3e6068289e98da909ffcbe"
+    },
+    {
+      "path": "before/tests/e2e/practice.spec.ts",
+      "size": 19907,
+      "sha256": "66732dabdafdb943a77fc3f4606c7b78611f15698a29281f6ab36191806304a5"
+    },
+    {
+      "path": "before/tests/e2e/random-practice.spec.ts",
+      "size": 20347,
+      "sha256": "e2619ee1fd04cd42a07ae1e792ec0910cbc2e9946c3d3125b19e0983df09521c"
+    },
+    {
+      "path": "before/tests/e2e/restore-window.spec.ts",
+      "size": 33161,
+      "sha256": "45cc49d0d8f67c8b6935a15eed703dfb5c49c3769790337d3ac475ca2cd51c37"
+    },
+    {
+      "path": "before/tests/e2e/session-filters-migration.spec.ts",
+      "size": 11608,
+      "sha256": "b822fcca5c2924d329c184507b138bf97be43ef71a572b13132e797b63a72065"
+    },
+    {
+      "path": "before/tests/e2e/session-filters.spec.ts",
+      "size": 12859,
+      "sha256": "0a8dcd45a6d80cf920e99fbba6b0f53d2e24fb179ad1ce6ec1a44188153ab680"
+    },
+    {
+      "path": "before/tests/e2e/settings-migration.spec.ts",
+      "size": 11466,
+      "sha256": "5559e1b67b804a7c49f1ef6b92acbcbcd7585bf38d88a7c1f77eb04a025be5a8"
+    },
+    {
+      "path": "before/tests/e2e/settings-palettes.spec.ts",
+      "size": 16861,
+      "sha256": "173dba80aab3392b3a19406480690445e336d4c22bd3017ac255e1216a543e01"
+    },
+    {
+      "path": "before/tests/e2e/settings-window.spec.ts",
+      "size": 19676,
+      "sha256": "26d328d299e924e2d05cbb31e72299c1d6e9a1dfc0ec5e07761b8127209d5019"
+    },
+    {
+      "path": "before/tests/e2e/startup.spec.ts",
+      "size": 4898,
+      "sha256": "bffc3b7b1159606c67da1a187dba61c755c30de790180276e1d97caff4870a16"
+    },
+    {
+      "path": "before/tests/unit/application.test.ts",
+      "size": 1194,
+      "sha256": "2083f4bd62eb3826453fe6b10063b9ec8c29a253b7d6b3304a8e4c62e523fd29"
+    },
+    {
+      "path": "before/tests/unit/backup-contract.test.ts",
+      "size": 3400,
+      "sha256": "7b0e1c0421f74f17e4ebc23dfc96495a03cb190ac1b7fe0005a8364a56d1d3cd"
+    },
+    {
+      "path": "before/tests/unit/backup-ipc.test.ts",
+      "size": 13130,
+      "sha256": "280dde43bd7d88e6f20d8228bc1f3e5ebe814599297dc11813fe157028cb561f"
+    },
+    {
+      "path": "before/tests/unit/category-contract.test.ts",
+      "size": 4595,
+      "sha256": "c77d96663103602e3afeadb8df204ae8111a65f286d92b647bd4ad32160af996"
+    },
+    {
+      "path": "before/tests/unit/data-locations-contract.test.ts",
+      "size": 2150,
+      "sha256": "f6e5f391b1ed6be60abf6956453e0e7e17b53188849790182d6152dc4b57d471"
+    },
+    {
+      "path": "before/tests/unit/data-locations-ipc.test.ts",
+      "size": 8663,
+      "sha256": "feafbd60b1acfcecd94d534be08e483f80c3f656b1f8f2a87337f1d45488eff6"
+    },
+    {
+      "path": "before/tests/unit/desktop-contract.test.ts",
+      "size": 4524,
+      "sha256": "e0003aaa95add44562c51a14d2beae648b9e80ca1c1eee7991558eabd35d30df"
+    },
+    {
+      "path": "before/tests/unit/gpio-question-bank.test.ts",
+      "size": 4879,
+      "sha256": "2366aa434b4ea42ee64fbf4d6d3697767754bfe002be40623f95edde1b2e3978"
+    },
+    {
+      "path": "before/tests/unit/history-contract.test.ts",
+      "size": 5133,
+      "sha256": "3721748a2bb691d978de9f375a2ae2c3f7f9774f234f9c70399575df13bfa35f"
+    },
+    {
+      "path": "before/tests/unit/import-budget.test.ts",
+      "size": 1621,
+      "sha256": "2370af7032412b46eaec315f6584e133913bf38fb85344189c2e68642f1e5698"
+    },
+    {
+      "path": "before/tests/unit/import-comparison.test.ts",
+      "size": 6572,
+      "sha256": "f44463cb589ae51ff53e45cdf5cbdb98b6b7d24ad67fb9de8c8a6453c4ee1924"
+    },
+    {
+      "path": "before/tests/unit/import-limits.test.ts",
+      "size": 2364,
+      "sha256": "56e27afb4d6fa5fab09cc2b7b4b47413b479417572977a6c4ae65397a9c500dd"
+    },
+    {
+      "path": "before/tests/unit/import-protocol.test.ts",
+      "size": 6244,
+      "sha256": "f817dcf5b46c942205803b6dab7ff67011e046feb62f9bf92cbf55ec6eda136e"
+    },
+    {
+      "path": "before/tests/unit/import-session.test.ts",
+      "size": 9328,
+      "sha256": "56f72e94fec0d105e5c5f7d2cd68862db25443a746fd0ac8cadcc4fe578921e7"
+    },
+    {
+      "path": "before/tests/unit/import-task-failures.test.ts",
+      "size": 5693,
+      "sha256": "47522a5dfe69c18c5257f3252859c05798c9e7b8344e68587e0d81b3e54d93f7"
+    },
+    {
+      "path": "before/tests/unit/import-task-runner.test.ts",
+      "size": 5479,
+      "sha256": "022c513bdb4fe4fbb7d4c2efb9ab0d15ba9639459d98e7fca82a641b10b18581"
+    },
+    {
+      "path": "before/tests/unit/learning-contract.test.ts",
+      "size": 2676,
+      "sha256": "9c43ddb106c8a08a184e7960e002ef1b9d7fa415c5f2697c8b56d4f8c4917ace"
+    },
+    {
+      "path": "before/tests/unit/library-ipc.test.ts",
+      "size": 29721,
+      "sha256": "77ef26752d2a18a0a999af1b886248e2685cf500fc2150a5d522ec4d0944690f"
+    },
+    {
+      "path": "before/tests/unit/markdown-images.test.ts",
+      "size": 2808,
+      "sha256": "57606880e9b0d960a3aec92ec8d7b4c08a9365cd74a07d3527f5887bc4506f9e"
+    },
+    {
+      "path": "before/tests/unit/markdown-metadata.test.ts",
+      "size": 4703,
+      "sha256": "f4e635c0903044b10c63f24580e3f395b64f72eb157c23d1ea0da98d3007889f"
+    },
+    {
+      "path": "before/tests/unit/markdown-structure.test.ts",
+      "size": 7051,
+      "sha256": "a6fec1bcbed64b2b34a411c2bbfc7a773fc2e9d8c7efcb9fc2b679435212cf99"
+    },
+    {
+      "path": "before/tests/unit/practice-contract.test.ts",
+      "size": 9149,
+      "sha256": "34e248798441535334a3082a8cc2233e669ad4fe5d1c0440c3e9363aa6cfdb2a"
+    },
+    {
+      "path": "before/tests/unit/practice-controller.test.ts",
+      "size": 12683,
+      "sha256": "b915b67f88034ab676c6e79b19886215091fe84d6064c119a9175166f70ee1e1"
+    },
+    {
+      "path": "before/tests/unit/practice-ipc.test.ts",
+      "size": 9287,
+      "sha256": "77cdb6580a30eed09a057202080163cfd5fa01f6bf5ba2583cb9e74dab358648"
+    },
+    {
+      "path": "before/tests/unit/practice-plans-contract.test.ts",
+      "size": 2485,
+      "sha256": "10d1583fa3538fe720194f4aa6679e1874f376d7c6d212d7af7d6472ebee2c32"
+    },
+    {
+      "path": "before/tests/unit/prepare-import.test.ts",
+      "size": 7320,
+      "sha256": "92b0274efcbcc30639a0293cd3bfcf8c0b2bb8aded26c3ff2c4e9fb100e41cb3"
+    },
+    {
+      "path": "before/tests/unit/question-filters.test.ts",
+      "size": 2445,
+      "sha256": "93ea203953d28aacf4f948dcba82b680715898acb7bcaadea06e52370a1263e1"
+    },
+    {
+      "path": "before/tests/unit/read-file-snapshot.test.ts",
+      "size": 4035,
+      "sha256": "89880b248f89b5eef6f71e4ab7dd4e9260f4434386a97a95d51c009069724cf1"
+    },
+    {
+      "path": "before/tests/unit/read-image.test.ts",
+      "size": 6588,
+      "sha256": "ceca40543929e3647d0184e970d42f4bfe076662711f2da473d528b69ea29ebe"
+    },
+    {
+      "path": "before/tests/unit/settings-contract.test.ts",
+      "size": 2796,
+      "sha256": "30f1aeca2d927d2f36f208199f7be102907f1506a7372dcc4b0d68bd155ef738"
+    },
+    {
+      "path": "before/计划书.md",
+      "size": 35043,
+      "sha256": "e803bfd30f31c8f0037fe3ae85659e939150e8338f55d30764e113f8cd6b3b8c"
+    },
+    {
+      "path": "before.json",
+      "size": 1307364,
+      "sha256": "210286cf5ac8797a3eeaca6f401959b2bd5a6de97d31749d09bc7ea0f2b385f0"
+    },
+    {
+      "path": "board-entry-before-focus-fix.ts",
+      "size": 23513,
+      "sha256": "befb78c70c533c381fb829e33940fe7221b5541667051f61cfa345eb9b87b6ba"
+    },
+    {
+      "path": "board-entry-before-runtime-fix.ts",
+      "size": 10248,
+      "sha256": "2b6eb308485e8a0881b646de3196ba56fa424bf99053008e862ef35c81c4e62a"
+    },
+    {
+      "path": "board-entry-before-tab-fix.ts",
+      "size": 23634,
+      "sha256": "3f1788ce9b1777c8f391e9ce518b5f9c35ee2f98c7c5923d942b1d5d0882a89d"
+    },
+    {
+      "path": "board-entry-before-width-fix.ts",
+      "size": 23539,
+      "sha256": "dd03eea05ec88298f5a3c9b094ad9987b72d42dedf394074fd413d222be7bf0f"
+    },
+    {
+      "path": "build-01.json",
+      "size": 1631,
+      "sha256": "9a779e0728fee1040ac4faf64fc522b653a7898c91f897e7a1dc937a64546fb7"
+    },
+    {
+      "path": "build-02.json",
+      "size": 1631,
+      "sha256": "971e56128ce918a2ba83b57b45ad8d80fa562eebf4998457a66542e4e25e2d27"
+    },
+    {
+      "path": "check-02.json",
+      "size": 522,
+      "sha256": "2f67ec82a23568092a2614abe28756586dfc4acd1418d4988ae743d6d2cd3e8f"
+    },
+    {
+      "path": "check-final.json",
+      "size": 524,
+      "sha256": "030cfe8425f77f249c0e90b1b5873e084429f10db00af81fdbeaa20b79ea884c"
+    },
+    {
+      "path": "desktop-coverage.json",
+      "size": 3827,
+      "sha256": "541bce0842bae13bd8a853b88d1c2661a25957a6e8c84c9bd37a29a41250c547"
+    },
+    {
+      "path": "diff-check.json",
+      "size": 124,
+      "sha256": "b3ef6b3eb114abe00a8d499db257cb55ca3c189aef0e5b0b14c60242f9d366bc"
+    },
+    {
+      "path": "full-01-artifacts/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development/attachments/backup-preview-dark-22-png-c248fa97fa1ec1e0ac768db08f6892ce19f52f56.png",
+      "size": 69195,
+      "sha256": "2f3ae34c660deb1b9aafc5dd7601a321e1cbf01641754d2ae5091904c22b80a2"
+    },
+    {
+      "path": "full-01-artifacts/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development/backup-preview-dark-22.png",
+      "size": 69195,
+      "sha256": "2f3ae34c660deb1b9aafc5dd7601a321e1cbf01641754d2ae5091904c22b80a2"
+    },
+    {
+      "path": "full-01-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/boards-dark-png-01c15821515f9d8ebbabdd849e03304623cd3d99.png",
+      "size": 67314,
+      "sha256": "5db797a27096987caaa0ea44fdea502034bc3bf2792de8ed479612ffd0897a1f"
+    },
+    {
+      "path": "full-01-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/boards-light-png-29e949e25950f40298fa729241f31cd35993d114.png",
+      "size": 91101,
+      "sha256": "578a3c22f173de3705ab77e7c9882530aae96b482ede43b021852a047015faf1"
+    },
+    {
+      "path": "full-01-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/difficulty-dark-png-556c0021b073f378d92a29908f88104018e837b3.png",
+      "size": 59238,
+      "sha256": "78a2c0c36da93e487a01ea9b9e5c020c3da1f4f367a606691a02b5296592adb9"
+    },
+    {
+      "path": "full-01-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/difficulty-light-png-cf7671ec3c88c5ac0682ff2415c598fc7ab1380b.png",
+      "size": 66055,
+      "sha256": "edf8d579d2c1b0ca1a66914190e073199bcb16f2b6030b7c92ee3d9fa102fb25"
+    },
+    {
+      "path": "full-01-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/boards-dark.png",
+      "size": 67314,
+      "sha256": "5db797a27096987caaa0ea44fdea502034bc3bf2792de8ed479612ffd0897a1f"
+    },
+    {
+      "path": "full-01-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/boards-light.png",
+      "size": 91101,
+      "sha256": "578a3c22f173de3705ab77e7c9882530aae96b482ede43b021852a047015faf1"
+    },
+    {
+      "path": "full-01-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/difficulty-dark.png",
+      "size": 59238,
+      "sha256": "78a2c0c36da93e487a01ea9b9e5c020c3da1f4f367a606691a02b5296592adb9"
+    },
+    {
+      "path": "full-01-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/difficulty-light.png",
+      "size": 66055,
+      "sha256": "edf8d579d2c1b0ca1a66914190e073199bcb16f2b6030b7c92ee3d9fa102fb25"
+    },
+    {
+      "path": "full-01-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/attachments/boards-empty-png-e8bf8296b926b1df99f5922890720407d5e3adaf.png",
+      "size": 72830,
+      "sha256": "58d7c4afddef7483b34a0db923efa76e4d40b5c4bb51ce631e72d27a84792fb3"
+    },
+    {
+      "path": "full-01-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/boards-empty.png",
+      "size": 72830,
+      "sha256": "58d7c4afddef7483b34a0db923efa76e4d40b5c4bb51ce631e72d27a84792fb3"
+    },
+    {
+      "path": "full-01-artifacts/category-migration-结构7分类迁移-19efe-n-conflict-停止或完整回滚，原库不修补不重建-development/error-context.md",
+      "size": 4942,
+      "sha256": "5c24414a9e08f2c2243c817257b298684ea1a1d6f9b182a0c4eaa5ddd65db050"
+    },
+    {
+      "path": "full-01-artifacts/category-migration-结构7分类迁移-backup-blocked-停止或完整回滚，原库不修补不重建-development/error-context.md",
+      "size": 4935,
+      "sha256": "1e2e5fa2216d28e76370012826f156c22eedaf689c86a909c8c0bc7d23130b82"
+    },
+    {
+      "path": "full-01-artifacts/category-migration-结构7分类迁移-foreign-key-停止或完整回滚，原库不修补不重建-development/error-context.md",
+      "size": 4932,
+      "sha256": "9d9474c95ff700333158498393c02bfa42d38959b462ff8e29b38bfc73227b23"
+    },
+    {
+      "path": "full-01-artifacts/category-migration-结构7分类迁移-table-conflict-停止或完整回滚，原库不修补不重建-development/error-context.md",
+      "size": 4935,
+      "sha256": "f93f6e1b7162c00f9288cb3de2266b99cea2612a03015183323233449ddb8467"
+    },
+    {
+      "path": "full-01-artifacts/data-locations-数据库不可用时仍能查看数据位置并打开日志文件夹，原坏文件字节保持-development/error-context.md",
+      "size": 4940,
+      "sha256": "b24814f386a95fc70e35f4cbab25e9fcbeab971ca1407a8601370008963e0ed6"
+    },
+    {
+      "path": "full-01-artifacts/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/attachments/data-locations-dark-22-png-defd5dfaf51cd7f0262a995cec9bfac64631fb41.png",
+      "size": 40523,
+      "sha256": "a7ff0b0c550e6a664b24321354a9b2265cc68c3ff679e04f748c24217b115116"
+    },
+    {
+      "path": "full-01-artifacts/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/data-locations-dark-22.png",
+      "size": 40523,
+      "sha256": "a7ff0b0c550e6a664b24321354a9b2265cc68c3ff679e04f748c24217b115116"
+    },
+    {
+      "path": "full-01-artifacts/database-errors-不受支持的结构版本报错且原文件不变-development/error-context.md",
+      "size": 4896,
+      "sha256": "b2ae08e411f59d28cce322c60fdd51d47df5b1e3ff95ebfb63852caf90f5f262"
+    },
+    {
+      "path": "full-01-artifacts/database-errors-损坏文件报错且原文件不变-development/error-context.md",
+      "size": 4881,
+      "sha256": "f7728bf220b56aec76e947bc43d63f2d7460ae7c2e08191de1314ea21ebd6aa2"
+    },
+    {
+      "path": "full-01-artifacts/database-errors-无应用标识的非空库报错且原文件不变-development/error-context.md",
+      "size": 4896,
+      "sha256": "545396268d3d52c58a913fc6af28b818bd6c5c5f910e3d5b2329c0ffd40eba81"
+    },
+    {
+      "path": "full-01-artifacts/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-development/attachments/content-update-png-9386f17d2657160d62545219d920e25ee743b758.png",
+      "size": 65135,
+      "sha256": "2ea61d98a1587bd95f91a7fb3623b07bdced108ee5f56d5624d4ef7576d064c2"
+    },
+    {
+      "path": "full-01-artifacts/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-development/content-update.png",
+      "size": 65135,
+      "sha256": "2ea61d98a1587bd95f91a7fb3623b07bdced108ee5f56d5624d4ef7576d064c2"
+    },
+    {
+      "path": "full-01-artifacts/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-development/attachments/history-old-image-png-516ae7862ef023b09ae31537ad3b3aeae0299d49.png",
+      "size": 46583,
+      "sha256": "38b026a7290d7989d7fb73c0d68846307fa44c4fbf45f2509d89993ffcc8b59b"
+    },
+    {
+      "path": "full-01-artifacts/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-development/history-old-image.png",
+      "size": 46583,
+      "sha256": "38b026a7290d7989d7fb73c0d68846307fa44c4fbf45f2509d89993ffcc8b59b"
+    },
+    {
+      "path": "full-01-artifacts/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-development/attachments/history-expanded-png-09f98f6e6dc8fc89a9714d1ddfd039855f25427c.png",
+      "size": 46004,
+      "sha256": "2714f1377f2f25cd90866e4d9db17703ca4ffed6d04161f40293f68a911f8988"
+    },
+    {
+      "path": "full-01-artifacts/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-development/history-expanded.png",
+      "size": 46004,
+      "sha256": "2714f1377f2f25cd90866e4d9db17703ca4ffed6d04161f40293f68a911f8988"
+    },
+    {
+      "path": "full-01-artifacts/learning-management-M3-第一批：搜索标题-题干-标签、字面字符、交集、分页与答案边界-development/search-filter.png",
+      "size": 108171,
+      "sha256": "e0cc2c34541d8c121ff195ce5bf5437d09ee24340205cf9e718080244c14361d"
+    },
+    {
+      "path": "full-01-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/attachments/learning-dark-png-5fb20fc0eaa1b2a284f99ba5512897e67439c96a.png",
+      "size": 61430,
+      "sha256": "84fd6daac72c23d65c41dcf20141cd7b38ccf556c29acd769856a205c006c08d"
+    },
+    {
+      "path": "full-01-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/attachments/learning-light-png-9d9b63fe394bbcae6227b8a1c115a7f3e9b79fa8.png",
+      "size": 60907,
+      "sha256": "f581181b87bdbc97fc0ab04e192613f195925842f4b840b2bc842841f709106a"
+    },
+    {
+      "path": "full-01-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/learning-dark.png",
+      "size": 61430,
+      "sha256": "84fd6daac72c23d65c41dcf20141cd7b38ccf556c29acd769856a205c006c08d"
+    },
+    {
+      "path": "full-01-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/learning-light.png",
+      "size": 60907,
+      "sha256": "f581181b87bdbc97fc0ab04e192613f195925842f4b840b2bc842841f709106a"
+    },
+    {
+      "path": "full-01-artifacts/library-import-迁移-DDL-失败回滚结构，保留旧库和保护性备份-development/error-context.md",
+      "size": 4906,
+      "sha256": "1d21cf04a5872f70efb4c21140098a0bbb57696c4167ce4f418ff6d5529ce383"
+    },
+    {
+      "path": "full-01-artifacts/library-import-迁移前备份无法创建时停止，旧数据库不改写-development/error-context.md",
+      "size": 4904,
+      "sha256": "8a48be2da415cf9a35898e6ecce6a7225e6a1698637f5a2d2839e5ecb83d77a0"
+    },
+    {
+      "path": "full-01-artifacts/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-development/library-answer-dark.png",
+      "size": 132025,
+      "sha256": "9695f23ac380a48e83268e68b11baab3e411194bbb54d51009576965daa48884"
+    },
+    {
+      "path": "full-01-artifacts/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-development/library-question-light.png",
+      "size": 125087,
+      "sha256": "9becbfc6388487d3b7c55c0556063aa3b0a77ac08ac9f8af4b0d52ae8b476c6f"
+    },
+    {
+      "path": "full-01-artifacts/palette-migration-结构6配色迁移-backup-blocked-停止-回滚，不修补未知结构-development/error-context.md",
+      "size": 4922,
+      "sha256": "04f79414eb83a65600b2f9393f589985614b0fdfde11528bce20dcd0aa6887a8"
+    },
+    {
+      "path": "full-01-artifacts/palette-migration-结构6配色迁移-column-conflict-停止-回滚，不修补未知结构-development/error-context.md",
+      "size": 4923,
+      "sha256": "dd7c6223cd4b2edd4d11a922b5b0be87e7db460745d44184670583cff2f65a22"
+    },
+    {
+      "path": "full-01-artifacts/palette-migration-结构6配色迁移-foreign-key-停止-回滚，不修补未知结构-development/error-context.md",
+      "size": 4919,
+      "sha256": "7ce0b37a3bc856e8bee448248c0c7b32cadee9d05bf7648d25342d17e9ff3c4d"
+    },
+    {
+      "path": "full-01-artifacts/practice-mode-migration-v3-备份失败停止升级，原文件逐字节不变-development/error-context.md",
+      "size": 4916,
+      "sha256": "8e95eca733d2f4bf7801f7315e99f5a0fd1520543a4784cc2826ace1ab9ba950"
+    },
+    {
+      "path": "full-01-artifacts/practice-mode-migration-v3-迁移拒绝-conflict，保留原结构、记录和保护性备份-development/error-context.md",
+      "size": 4931,
+      "sha256": "e722a679e271a8bb1d58885a38899edf58129a8af38d0eb1e8ca75718c2470ef"
+    },
+    {
+      "path": "full-01-artifacts/practice-mode-migration-v3-迁移拒绝-foreign-key，保留原结构、记录和保护性备份-development/error-context.md",
+      "size": 4934,
+      "sha256": "bdf773776ed2d7a46bb9458c4ae2367a6b453cf9a5e81343403e823de99046ae"
+    },
+    {
+      "path": "full-01-artifacts/practice-mode-migration-v3-迁移拒绝-index，保留原结构、记录和保护性备份-development/error-context.md",
+      "size": 4928,
+      "sha256": "7195dbaa7e38e784168d3b4efc954829369e4ffd526f29dcee55df445960d10d"
+    },
+    {
+      "path": "full-01-artifacts/practice-mode-migration-v3-迁移拒绝-trigger，保留原结构、记录和保护性备份-development/error-context.md",
+      "size": 4930,
+      "sha256": "bcf8804ac2610ee5d7963eebd005cc407e413d59b6082a17c3b0b32968f7ed6b"
+    },
+    {
+      "path": "full-01-artifacts/practice-plans-migration-结-88960-e-conflict-停止或完整回滚，原库与分类不修补-development/error-context.md",
+      "size": 4947,
+      "sha256": "6d8970de1d38008f2c6078e5256382037a467cabef4219bc678e0210d4e132dc"
+    },
+    {
+      "path": "full-01-artifacts/practice-plans-migration-结-9a1fd-up-blocked-停止或完整回滚，原库与分类不修补-development/error-context.md",
+      "size": 4947,
+      "sha256": "f00bf28634d2b2c0cb57a6dcfd8cbe3c763ed45edfcc6ada21a1d86fef4754ef"
+    },
+    {
+      "path": "full-01-interruption.json",
+      "size": 3044,
+      "sha256": "c15d2dceb6aa5131174623b7d49d4eeb5926a77e2587828252f5261806013074"
+    },
+    {
+      "path": "full-01-stopped-process.json",
+      "size": 246,
+      "sha256": "0414bb95013b35c6ad5df7dd3e638ac2d6b0ab525987d735c52175066fd17c87"
+    },
+    {
+      "path": "full-02-artifacts/.last-run.json",
+      "size": 243,
+      "sha256": "d1517e7723534f1fadc06175c431f3c95a744fbb335a17d622133eacd2d82c23"
+    },
+    {
+      "path": "full-02-artifacts/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development/attachments/backup-preview-dark-22-png-72607d4f4d2079fb397645ef218ab69e2d8f0f79.png",
+      "size": 69186,
+      "sha256": "41fddb0d5b065380b4df8ff3e65f833ec1404131c71b2c12779c12a06be354d1"
+    },
+    {
+      "path": "full-02-artifacts/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development/backup-preview-dark-22.png",
+      "size": 69186,
+      "sha256": "41fddb0d5b065380b4df8ff3e65f833ec1404131c71b2c12779c12a06be354d1"
+    },
+    {
+      "path": "full-02-artifacts/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-packaged/attachments/backup-preview-dark-22-png-f43944c399560f997f0bd45dd927d59ea619b442.png",
+      "size": 75998,
+      "sha256": "90aed41498c9ab75d3c371e4789b8247786f5b002d1058dd8fe9664b4fad2e2f"
+    },
+    {
+      "path": "full-02-artifacts/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-packaged/backup-preview-dark-22.png",
+      "size": 75998,
+      "sha256": "90aed41498c9ab75d3c371e4789b8247786f5b002d1058dd8fe9664b4fad2e2f"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/boards-dark-png-46b0d91bb52d869daa0dccbe06e2eb8881dfdeee.png",
+      "size": 67314,
+      "sha256": "5db797a27096987caaa0ea44fdea502034bc3bf2792de8ed479612ffd0897a1f"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/boards-light-png-e6b71f1da08a7ecf67dd74e9832973f9487ec475.png",
+      "size": 91101,
+      "sha256": "578a3c22f173de3705ab77e7c9882530aae96b482ede43b021852a047015faf1"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/difficulty-dark-png-382288c24fe2e9da79708ac33eaf7a5d34486d98.png",
+      "size": 59238,
+      "sha256": "78a2c0c36da93e487a01ea9b9e5c020c3da1f4f367a606691a02b5296592adb9"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/difficulty-light-png-ef01d759bf3cd2ae48f7dc2ffa9870fdc6d89bf8.png",
+      "size": 66055,
+      "sha256": "edf8d579d2c1b0ca1a66914190e073199bcb16f2b6030b7c92ee3d9fa102fb25"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/boards-dark.png",
+      "size": 67314,
+      "sha256": "5db797a27096987caaa0ea44fdea502034bc3bf2792de8ed479612ffd0897a1f"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/boards-light.png",
+      "size": 91101,
+      "sha256": "578a3c22f173de3705ab77e7c9882530aae96b482ede43b021852a047015faf1"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/difficulty-dark.png",
+      "size": 59238,
+      "sha256": "78a2c0c36da93e487a01ea9b9e5c020c3da1f4f367a606691a02b5296592adb9"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/difficulty-light.png",
+      "size": 66055,
+      "sha256": "edf8d579d2c1b0ca1a66914190e073199bcb16f2b6030b7c92ee3d9fa102fb25"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/attachments/boards-dark-png-a0dc881ef5b55aeb21a0004891cb5f130934c3bf.png",
+      "size": 67661,
+      "sha256": "1a6cf14d2a2c894297728e00b4bc243ff30a27accf439c307cf79e580d5bbe98"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/attachments/boards-light-png-45e9e8beeaa52b7953c161fa926e1d07c592e9cf.png",
+      "size": 92032,
+      "sha256": "7eb6b57e1f5027f27ce0073475f1c0842ec0797c34469bd1108cf24e4100e4f5"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/attachments/difficulty-dark-png-e24ff0af9bc0fcaddcfc7d5fea257010fdfe60ba.png",
+      "size": 59548,
+      "sha256": "0cfcf669fa9cd0ad7b6d6ec8ee3d758e126b9e3b1c2c9c33b962492559841021"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/attachments/difficulty-light-png-cfac008bf9a5fd872b2b49d9e48c20de9661bf35.png",
+      "size": 67399,
+      "sha256": "277237caf09b0140f0f391128b946de4ff96f95dc0fce861fcf80d5b7fd1abe4"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/boards-dark.png",
+      "size": 67661,
+      "sha256": "1a6cf14d2a2c894297728e00b4bc243ff30a27accf439c307cf79e580d5bbe98"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/boards-light.png",
+      "size": 92032,
+      "sha256": "7eb6b57e1f5027f27ce0073475f1c0842ec0797c34469bd1108cf24e4100e4f5"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/difficulty-dark.png",
+      "size": 59548,
+      "sha256": "0cfcf669fa9cd0ad7b6d6ec8ee3d758e126b9e3b1c2c9c33b962492559841021"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/difficulty-light.png",
+      "size": 67399,
+      "sha256": "277237caf09b0140f0f391128b946de4ff96f95dc0fce861fcf80d5b7fd1abe4"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/attachments/boards-empty-png-2e13134e8889b2f331c318526c81a100cec20db2.png",
+      "size": 72830,
+      "sha256": "58d7c4afddef7483b34a0db923efa76e4d40b5c4bb51ce631e72d27a84792fb3"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/boards-empty.png",
+      "size": 72830,
+      "sha256": "58d7c4afddef7483b34a0db923efa76e4d40b5c4bb51ce631e72d27a84792fb3"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-packaged/attachments/boards-empty-png-f4410e9715e184e77e4c263c851f39b71a6acdae.png",
+      "size": 74480,
+      "sha256": "f13b55425c03222077ad295f24e8922dcbafbaaeb0f59cce71729a06a1a651a2"
+    },
+    {
+      "path": "full-02-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-packaged/boards-empty.png",
+      "size": 74480,
+      "sha256": "f13b55425c03222077ad295f24e8922dcbafbaaeb0f59cce71729a06a1a651a2"
+    },
+    {
+      "path": "full-02-artifacts/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/attachments/data-locations-dark-22-png-a53dc6ff75eee82974553ff4596a63f80cbbc7c5.png",
+      "size": 40521,
+      "sha256": "281357b260a664cf3e570aad7ad7aa826438b255927e1fbd26128c847ed3864b"
+    },
+    {
+      "path": "full-02-artifacts/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/data-locations-dark-22.png",
+      "size": 40521,
+      "sha256": "281357b260a664cf3e570aad7ad7aa826438b255927e1fbd26128c847ed3864b"
+    },
+    {
+      "path": "full-02-artifacts/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-packaged/attachments/data-locations-dark-22-png-79ac446522bf51aa5d8e1a5d3ab927f709b94f63.png",
+      "size": 40889,
+      "sha256": "669274d0ac13bf093d2f30436fcb5cef81cfe88c3d6249e9f7cc2bfcb81d2ea2"
+    },
+    {
+      "path": "full-02-artifacts/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-packaged/data-locations-dark-22.png",
+      "size": 40889,
+      "sha256": "669274d0ac13bf093d2f30436fcb5cef81cfe88c3d6249e9f7cc2bfcb81d2ea2"
+    },
+    {
+      "path": "full-02-artifacts/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-development/attachments/content-update-png-54fc9fca4af9b2c4b5996cf4215c8914ac453a5e.png",
+      "size": 65135,
+      "sha256": "2ea61d98a1587bd95f91a7fb3623b07bdced108ee5f56d5624d4ef7576d064c2"
+    },
+    {
+      "path": "full-02-artifacts/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-development/content-update.png",
+      "size": 65135,
+      "sha256": "2ea61d98a1587bd95f91a7fb3623b07bdced108ee5f56d5624d4ef7576d064c2"
+    },
+    {
+      "path": "full-02-artifacts/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-packaged/attachments/content-update-png-bda30581696b46db5ec3ba11f2df6ac811be6ba5.png",
+      "size": 67010,
+      "sha256": "821ac5a7627ec9f471ff2c9921c19d6ecb50d85c2d503e7c881f5e546f6e6c21"
+    },
+    {
+      "path": "full-02-artifacts/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-packaged/content-update.png",
+      "size": 67010,
+      "sha256": "821ac5a7627ec9f471ff2c9921c19d6ecb50d85c2d503e7c881f5e546f6e6c21"
+    },
+    {
+      "path": "full-02-artifacts/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-development/attachments/history-old-image-png-cd5be3a26d228c83947858aff21a7effb8092ca7.png",
+      "size": 46633,
+      "sha256": "65aa8fe46c959e62cc1094e506e0daf29e30da2e95480d67aaf9c35b7ebb64b3"
+    },
+    {
+      "path": "full-02-artifacts/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-development/history-old-image.png",
+      "size": 46633,
+      "sha256": "65aa8fe46c959e62cc1094e506e0daf29e30da2e95480d67aaf9c35b7ebb64b3"
+    },
+    {
+      "path": "full-02-artifacts/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-packaged/attachments/history-old-image-png-70c8bfdfc97f3745e489b647c2603b91733787cc.png",
+      "size": 48594,
+      "sha256": "1cbf8a6eb902d6f2a77e07eb4bcc48f2b7af3f31fa51de1990d2f4a58dd5a306"
+    },
+    {
+      "path": "full-02-artifacts/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-packaged/history-old-image.png",
+      "size": 48594,
+      "sha256": "1cbf8a6eb902d6f2a77e07eb4bcc48f2b7af3f31fa51de1990d2f4a58dd5a306"
+    },
+    {
+      "path": "full-02-artifacts/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-development/attachments/history-expanded-png-372a17289de10f334a03a1526d10805e9934e923.png",
+      "size": 46218,
+      "sha256": "27592f8501cf4146363411f92e1cd7d56b05c05b1f802b1906bbf0e43ab238db"
+    },
+    {
+      "path": "full-02-artifacts/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-development/history-expanded.png",
+      "size": 46218,
+      "sha256": "27592f8501cf4146363411f92e1cd7d56b05c05b1f802b1906bbf0e43ab238db"
+    },
+    {
+      "path": "full-02-artifacts/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-packaged/attachments/history-expanded-png-dbdc87744002c81350458caf9824ea45388ac4b8.png",
+      "size": 46139,
+      "sha256": "eae74362d8b41b4b5e858091e3fb2774b7f96cb2df96f9732a9d220496a97946"
+    },
+    {
+      "path": "full-02-artifacts/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-packaged/history-expanded.png",
+      "size": 46139,
+      "sha256": "eae74362d8b41b4b5e858091e3fb2774b7f96cb2df96f9732a9d220496a97946"
+    },
+    {
+      "path": "full-02-artifacts/learning-management-M3-第一批：搜索标题-题干-标签、字面字符、交集、分页与答案边界-development/search-filter.png",
+      "size": 108914,
+      "sha256": "5b17970506d807faab9e61a10812e5f91bcc3e8dfc72b5240ff4ba41f48f61c1"
+    },
+    {
+      "path": "full-02-artifacts/learning-management-M3-第一批：搜索标题-题干-标签、字面字符、交集、分页与答案边界-packaged/search-filter.png",
+      "size": 110337,
+      "sha256": "574803fccf5033044b4974e06c0275a03d51508b5248c54c55569edf7ba6c734"
+    },
+    {
+      "path": "full-02-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/attachments/learning-dark-png-2cd0f871f2512216bdd9417706acd2c97612bb69.png",
+      "size": 61430,
+      "sha256": "84fd6daac72c23d65c41dcf20141cd7b38ccf556c29acd769856a205c006c08d"
+    },
+    {
+      "path": "full-02-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/attachments/learning-light-png-30129b8ad3ec54ffda0906e9a5a277839ce415d3.png",
+      "size": 60907,
+      "sha256": "f581181b87bdbc97fc0ab04e192613f195925842f4b840b2bc842841f709106a"
+    },
+    {
+      "path": "full-02-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/learning-dark.png",
+      "size": 61430,
+      "sha256": "84fd6daac72c23d65c41dcf20141cd7b38ccf556c29acd769856a205c006c08d"
+    },
+    {
+      "path": "full-02-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/learning-light.png",
+      "size": 60907,
+      "sha256": "f581181b87bdbc97fc0ab04e192613f195925842f4b840b2bc842841f709106a"
+    },
+    {
+      "path": "full-02-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/attachments/learning-dark-png-b86f9db9f50a4b4ee5016c1a7399a5a524d4c3c1.png",
+      "size": 67691,
+      "sha256": "407377f566a1724e81842dc2f1d781fae73b6918c81f7e8627019f34f519868d"
+    },
+    {
+      "path": "full-02-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/attachments/learning-light-png-832f9d4238b58fcd2bb5d68a762101d55aa99d92.png",
+      "size": 62335,
+      "sha256": "9f51884bf9155716f1f428f91f19b67dbc49165a62fbbcde465a8bd96b56d140"
+    },
+    {
+      "path": "full-02-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/learning-dark.png",
+      "size": 67691,
+      "sha256": "407377f566a1724e81842dc2f1d781fae73b6918c81f7e8627019f34f519868d"
+    },
+    {
+      "path": "full-02-artifacts/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/learning-light.png",
+      "size": 62335,
+      "sha256": "9f51884bf9155716f1f428f91f19b67dbc49165a62fbbcde465a8bd96b56d140"
+    },
+    {
+      "path": "full-02-artifacts/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-development/library-answer-dark.png",
+      "size": 132025,
+      "sha256": "9695f23ac380a48e83268e68b11baab3e411194bbb54d51009576965daa48884"
+    },
+    {
+      "path": "full-02-artifacts/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-development/library-question-light.png",
+      "size": 125087,
+      "sha256": "9becbfc6388487d3b7c55c0556063aa3b0a77ac08ac9f8af4b0d52ae8b476c6f"
+    },
+    {
+      "path": "full-02-artifacts/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-packaged/library-answer-dark.png",
+      "size": 146485,
+      "sha256": "27d4a40fc6f40476f9aa4690b61c544e5dfc8adc19602b385fd1cfe6718df368"
+    },
+    {
+      "path": "full-02-artifacts/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-packaged/library-question-light.png",
+      "size": 127144,
+      "sha256": "43fc33ad388f58960379c894e1c76babe85b89145af42166a91662156cb918a8"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第三批：100-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "size": 61911,
+      "sha256": "babd676ef85de9d29a438f61f3d3fdf1619037d65cd8803d1ae658ecf6298303"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第三批：100-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "size": 62456,
+      "sha256": "2af4d9e15707d68d754b9c95dc35b0e1d3ec392fd83727f887638b87bd101cec"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第三批：125-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "size": 58659,
+      "sha256": "e831653b8d3ac5b5c9f5c966246fbae3a0c3c5f31746c3326a6ba70a4c0d484a"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第三批：125-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "size": 59049,
+      "sha256": "d87e941d16f07e809bff5b7570631f949d295d7ae9fb6463f20687d645594819"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第三批：150-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "size": 75859,
+      "sha256": "3d4b464a5536f94c4b63df5c76ce67aa76b0598fc3f79fb2f9100fe6b20ff694"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第三批：150-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "size": 76204,
+      "sha256": "6356fc1a9f1eeb9ae3d20cc46bdb7065829b89414d5ae4118896626c40c68fba"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "size": 30521,
+      "sha256": "c95745958b0fb104a8186f205aa2aea0b808279ef1ac15ca946e3205b54b722a"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "size": 29714,
+      "sha256": "0d61755b33e34bbcfdd24eb21437aab99525f733e635dd6775d1461e8effa6e9"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "size": 30853,
+      "sha256": "249edf955e9b288db7e77970c374ed74967cae78d8d3fa2ec247aed60d1549e4"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "size": 30026,
+      "sha256": "fce4811a7cf4bfc7d5ba6dcde8037b03ce2fdba39f5151a71a1c93e7a08c6b62"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "size": 34619,
+      "sha256": "d1f8cfc28895f5f5ffbf213c4c87ae639d39125f32baf64063d6c03a893f3438"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "size": 34245,
+      "sha256": "8caa75461d7effb750f508c42702852be55aeef490f898d2e93b415f8584b934"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "size": 34773,
+      "sha256": "b0ea745414bb4f2fc1f3aaf89122c27c61e81f9db6e77482407ed98e8bb6b5c1"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "size": 34390,
+      "sha256": "864905e15440d096b77c86a0444404f56ae54a2671d862e52c8b7df8cafa10f7"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "size": 43759,
+      "sha256": "209cd0e372de86f4ef1cdf2c4e486014e32b0c2b8688d6f8a21ca92d62701e05"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "size": 38978,
+      "sha256": "38cc3b3d7ce0ee32843d657c2ce5dddf2ed9da470583ccc02de5b6f9935ab4b4"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "size": 44072,
+      "sha256": "58f9314aa4fad8b8ae4a7744b6d2b5336b0041c5067c0c5bc4e74c0e6a198458"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "size": 39312,
+      "sha256": "f6f4f8e4c4f58dc710e97f2be68f70b9db3c3e2cafc22a648f295ef0eccdb07e"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-图片自动保存：放大窗口与缩放状态在草稿保存后保留-development/image-after-autosave.png",
+      "size": 26344,
+      "sha256": "a2a42b7587262194759d46010e07a47575eaad72a9dbc43bf840af32ecea8e27"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-图片自动保存：放大窗口与缩放状态在草稿保存后保留-packaged/image-after-autosave.png",
+      "size": 26667,
+      "sha256": "4fa152fc7f30326d9e007c08a8348a79458459bd14769ca0d512db615ed1e46e"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-dark.png",
+      "size": 29393,
+      "sha256": "dd1ad9809fcdbb892b98215bcaccae0a45738870b16886ac6bf2099ea480b9c4"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-image-zoom.png",
+      "size": 32716,
+      "sha256": "d5399c81b4236af20af31aca716539bc29b5c20453b8c97c6190fcf487c1b068"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-light.png",
+      "size": 30440,
+      "sha256": "2932f87ba5182d3e0f4973922fdee1982adcbaa5449bcd39002fa5d00657dbd8"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-dark.png",
+      "size": 29646,
+      "sha256": "c156ad33b4a134d17621fad0a2aa774a0d9d5d9711ba8c34eade8d051672e0e1"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-image-zoom.png",
+      "size": 33044,
+      "sha256": "45b0a51788da5099f178f09bbdc343f90f89f4d1c3879425373cb680e364e86e"
+    },
+    {
+      "path": "full-02-artifacts/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-light.png",
+      "size": 30783,
+      "sha256": "adbea77df170c316ac65e236e64792e0c2e24b0df0d84e28f72f36959b291baf"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-development/attachments/random-start-png-42ab80ef384823fad9283f6b213093db8bbae5aa.png",
+      "size": 72532,
+      "sha256": "9feed7e123c8b35b6a1cc57e61c83df9a4bc08b44b724f1da1a152badadf7b21"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-development/random-start.png",
+      "size": 72532,
+      "sha256": "9feed7e123c8b35b6a1cc57e61c83df9a4bc08b44b724f1da1a152badadf7b21"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-packaged/attachments/random-start-png-ab9e29feb266563f62618e76e771cfc878f202f1.png",
+      "size": 73626,
+      "sha256": "a5ff599719503631e429807ed9cb05243774d00234c521ceade7ad352c8a8322"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-packaged/random-start.png",
+      "size": 73626,
+      "sha256": "a5ff599719503631e429807ed9cb05243774d00234c521ceade7ad352c8a8322"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-development/attachments/random-saved-png-6cdcf79c455f79c622def5fc1a75be59ae0de36f.png",
+      "size": 38866,
+      "sha256": "2c9365bb157bc8aa2b327457f3efa45168e316f5a9d3012a91f0c1000110006e"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-development/random-saved.png",
+      "size": 38866,
+      "sha256": "2c9365bb157bc8aa2b327457f3efa45168e316f5a9d3012a91f0c1000110006e"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-packaged/attachments/random-saved-png-81cea035b647df02bf300610240bc5d3d0ee0e94.png",
+      "size": 39320,
+      "sha256": "afa2e8234ade438fc9fcd3985b97852f1472fd581226d792db89d0f1e16c2b1e"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-packaged/random-saved.png",
+      "size": 39320,
+      "sha256": "afa2e8234ade438fc9fcd3985b97852f1472fd581226d792db89d0f1e16c2b1e"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-development/attachments/random-saved-png-e69144b947a21f37e7c2e6a53e303f8d1ce2eef2.png",
+      "size": 38664,
+      "sha256": "555a398a1afc224b9cd43b256808951d2e4cbd99d681233bd6fdc992f4d78b34"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-development/random-saved.png",
+      "size": 38664,
+      "sha256": "555a398a1afc224b9cd43b256808951d2e4cbd99d681233bd6fdc992f4d78b34"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-packaged/attachments/random-saved-png-446e71a4e8eeabb8b7760b2554e9b0856b3d2c3c.png",
+      "size": 39520,
+      "sha256": "d0b8585dac976bf8c74b96238541c60b2656ff2280caff1278a4aa25999e88eb"
+    },
+    {
+      "path": "full-02-artifacts/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-packaged/random-saved.png",
+      "size": 39520,
+      "sha256": "d0b8585dac976bf8c74b96238541c60b2656ff2280caff1278a4aa25999e88eb"
+    },
+    {
+      "path": "full-02-artifacts/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/error-context.md",
+      "size": 11231,
+      "sha256": "ae166baf66e731ff7d0214ba9015456b4565edd4b0e5e9d3ea95638c2bc5a9f9"
+    },
+    {
+      "path": "full-02-artifacts/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/error-context.md",
+      "size": 11231,
+      "sha256": "ae166baf66e731ff7d0214ba9015456b4565edd4b0e5e9d3ea95638c2bc5a9f9"
+    },
+    {
+      "path": "full-02-artifacts/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/error-context.md",
+      "size": 11235,
+      "sha256": "9fb67be77ac8280f29e59e8fa93a2e6dc8f6d95247a9bf13da357242c4cd6b87"
+    },
+    {
+      "path": "full-02-artifacts/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/error-context.md",
+      "size": 11235,
+      "sha256": "9fb67be77ac8280f29e59e8fa93a2e6dc8f6d95247a9bf13da357242c4cd6b87"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/attachments/palette-ocean-dark-png-d2db7c92809e802a789daba1e108d3172bb2a98b.png",
+      "size": 78085,
+      "sha256": "61f9f0108ad648dca32ef8ea4c1eba6fc0b5f11f9287694a5e4c21d8f7d0ac1a"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/attachments/palette-ocean-light-png-5c9ac6fc2b7efce5344b1ded44aa9d43ad762010.png",
+      "size": 65395,
+      "sha256": "140a98a038dfce46445a18895d9207a78c944c83f38fba1a37370505e15e1892"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/palette-ocean-dark.png",
+      "size": 78085,
+      "sha256": "61f9f0108ad648dca32ef8ea4c1eba6fc0b5f11f9287694a5e4c21d8f7d0ac1a"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/palette-ocean-light.png",
+      "size": 65395,
+      "sha256": "140a98a038dfce46445a18895d9207a78c944c83f38fba1a37370505e15e1892"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/attachments/palette-ocean-dark-png-92c94c81f48e3350430c8c55a7d2e45eb10be5e9.png",
+      "size": 86371,
+      "sha256": "a8b3ff427b5191d4555d66c4fbef7daf631ca8116278eeabdc029c23ba08963d"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/attachments/palette-ocean-light-png-8c76852264322b53ce1db13f62cdffe58d3661d7.png",
+      "size": 75374,
+      "sha256": "241a633c6871c5411c6124de9b20e4989a078fb2ca46fea5f80b9c4a37753831"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/palette-ocean-dark.png",
+      "size": 86371,
+      "sha256": "a8b3ff427b5191d4555d66c4fbef7daf631ca8116278eeabdc029c23ba08963d"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/palette-ocean-light.png",
+      "size": 75374,
+      "sha256": "241a633c6871c5411c6124de9b20e4989a078fb2ca46fea5f80b9c4a37753831"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/attachments/palette-sand-dark-png-e9d5f46781f9072e7f2624816dcd2ba4c60292fc.png",
+      "size": 67292,
+      "sha256": "554deb64860fa8d08aa63d909126f7e55b336c8492b90c72e219459d284cdc99"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/attachments/palette-sand-light-png-aa8e948883b9b13ffcc5398279e8c4651a177193.png",
+      "size": 67456,
+      "sha256": "ee8f2a6c7a5fa6d9c7b6c857b54eb390921ae20514a51d33232056e36289e95b"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/palette-sand-dark.png",
+      "size": 67292,
+      "sha256": "554deb64860fa8d08aa63d909126f7e55b336c8492b90c72e219459d284cdc99"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/palette-sand-light.png",
+      "size": 67456,
+      "sha256": "ee8f2a6c7a5fa6d9c7b6c857b54eb390921ae20514a51d33232056e36289e95b"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/attachments/palette-sand-dark-png-bff4d1877261e4e48d2fde802456ce361d94348d.png",
+      "size": 75749,
+      "sha256": "85a658e8e464d102a9d54a3380d033b7c4fa5f131308ea47f51426eda5a432b5"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/attachments/palette-sand-light-png-6b3ca3684904375cb7e4c510094071d59a673e23.png",
+      "size": 77166,
+      "sha256": "893546a147c43830f8ddf1cf7df9e7a5ee8aaede15a121f191821a36bc206d84"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/palette-sand-dark.png",
+      "size": 75749,
+      "sha256": "85a658e8e464d102a9d54a3380d033b7c4fa5f131308ea47f51426eda5a432b5"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/palette-sand-light.png",
+      "size": 77166,
+      "sha256": "893546a147c43830f8ddf1cf7df9e7a5ee8aaede15a121f191821a36bc206d84"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/attachments/palette-lilac-dark-png-fcbcbcff0eccf1824a55d4dde8571c220a7d4954.png",
+      "size": 67129,
+      "sha256": "64a39093ae7275f6b024e5d4a20bd21b1375eb168b2f771c81c22085f8908ac2"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/attachments/palette-lilac-light-png-fb3bbeb3977f6412e920f6ba3c6c9e806fbcb6dc.png",
+      "size": 67173,
+      "sha256": "3a9793738b07ceac737004cf70e48c5f747cc9a57aa863354020e9725802a53f"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/palette-lilac-dark.png",
+      "size": 67129,
+      "sha256": "64a39093ae7275f6b024e5d4a20bd21b1375eb168b2f771c81c22085f8908ac2"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/palette-lilac-light.png",
+      "size": 67173,
+      "sha256": "3a9793738b07ceac737004cf70e48c5f747cc9a57aa863354020e9725802a53f"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/attachments/palette-lilac-dark-png-f07985e8279cf15caceff92329330bcf8ebd2506.png",
+      "size": 77803,
+      "sha256": "7334b1f827162433ed020c62fc893976c01b7e9d6717d75bb31aae0525912a68"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/attachments/palette-lilac-light-png-48ef6cdb26bb530824bf12de2c02516e306635d5.png",
+      "size": 74455,
+      "sha256": "7ba082defe302b839de2e78fdad9a89efa2d8db399d52e91d110a659fe617d39"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/palette-lilac-dark.png",
+      "size": 77803,
+      "sha256": "7334b1f827162433ed020c62fc893976c01b7e9d6717d75bb31aae0525912a68"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/palette-lilac-light.png",
+      "size": 74455,
+      "sha256": "7ba082defe302b839de2e78fdad9a89efa2d8db399d52e91d110a659fe617d39"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/attachments/palette-forest-dark-png-b2bad01657c82e12e1ad2c394c5c76a518c12b4f.png",
+      "size": 65860,
+      "sha256": "dbd5c8cba18bcc382cbce2214437a6464bf4b99ff675fda7d41fbb1a6372081e"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/attachments/palette-forest-light-png-7791c8216cf1a7b34024e46e42c347e424039d43.png",
+      "size": 65486,
+      "sha256": "baf29324105cebfbeaf575949795519f1ac5bafc506cd16255742beb38edca97"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/palette-forest-dark.png",
+      "size": 65860,
+      "sha256": "dbd5c8cba18bcc382cbce2214437a6464bf4b99ff675fda7d41fbb1a6372081e"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development/palette-forest-light.png",
+      "size": 65486,
+      "sha256": "baf29324105cebfbeaf575949795519f1ac5bafc506cd16255742beb38edca97"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/attachments/palette-forest-dark-png-bcd1d7f65e3fe4e2d97ec811818388e454efba26.png",
+      "size": 83895,
+      "sha256": "43a7fd4da76c12a9730356d3f244b65ca4de97fa3bd83c96e155f90752c25458"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/attachments/palette-forest-light-png-bc35f669ca544e1b0e40a9d302b1cf2d1bfb1499.png",
+      "size": 67096,
+      "sha256": "d3ab90442b44d1b43a3073e685a2472017b6d816eb2f5d02cdd5575875e3a143"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/palette-forest-dark.png",
+      "size": 83895,
+      "sha256": "43a7fd4da76c12a9730356d3f244b65ca4de97fa3bd83c96e155f90752c25458"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-packaged/palette-forest-light.png",
+      "size": 67096,
+      "sha256": "d3ab90442b44d1b43a3073e685a2472017b6d816eb2f5d02cdd5575875e3a143"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作-development/attachments/palette-narrow-input-png-08e0f4fb3055dbaadb150b74b99f28cdf3374a48.png",
+      "size": 21720,
+      "sha256": "24f2dad3685ce918d039bcd72024b36e189be8795ebddf7045c31ecf261d7df2"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作-development/palette-narrow-input.png",
+      "size": 21720,
+      "sha256": "24f2dad3685ce918d039bcd72024b36e189be8795ebddf7045c31ecf261d7df2"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作-packaged/attachments/palette-narrow-input-png-fb49398475d30dae4bbddc18d545807d0147a0f8.png",
+      "size": 22055,
+      "sha256": "7e6d3542facc0af01bc45b801b4f16ad86632320d78ab8d02eeaf2c9e4c09be8"
+    },
+    {
+      "path": "full-02-artifacts/settings-palettes-配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作-packaged/palette-narrow-input.png",
+      "size": 22055,
+      "sha256": "7e6d3542facc0af01bc45b801b4f16ad86632320d78ab8d02eeaf2c9e4c09be8"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-development/attachments/settings-default-png-1e944131f1d08256f5985f41e2c24c0c569ee825.png",
+      "size": 64730,
+      "sha256": "4c1b7d0638de7d25afea7786ec0e3c4563a7c1a3acfcbb7a3809e530deb01faa"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-development/settings-default.png",
+      "size": 64730,
+      "sha256": "4c1b7d0638de7d25afea7786ec0e3c4563a7c1a3acfcbb7a3809e530deb01faa"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-packaged/attachments/settings-default-png-9be96e6e768af29ca40ef2101bf27d9cc2213fce.png",
+      "size": 66164,
+      "sha256": "014baa1430e2490f7fcf7989892087cc8f263574f8c5d65402ba2bc1fda09097"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-packaged/settings-default.png",
+      "size": 66164,
+      "sha256": "014baa1430e2490f7fcf7989892087cc8f263574f8c5d65402ba2bc1fda09097"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-dark-22-png-3255f1ed727ba98226810ed779ace00786983b39.png",
+      "size": 41720,
+      "sha256": "a8f2091ae26577df4be36005f2ea7c69c785a83c61bcde8b9b007fa954209f20"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-light-15-png-02376b09e6786863b15244cddcf4d056e687ccda.png",
+      "size": 36492,
+      "sha256": "df2106b9572ffec84003c64d9d4325ec83ff176030327dba94ac77d3e3e317bf"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-system-17-png-feed49ad0c845fe9777ddcd4491dfc42c53e0558.png",
+      "size": 34415,
+      "sha256": "d02ac3f460e10bbf6b470ad70ea285c4c2e1ab92462be0d3d78d6a7ff5507a3c"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-dark-22-png-3decd020b12da1669d1bb3424708c7b3f8447b61.png",
+      "size": 58310,
+      "sha256": "485cd9e54cf42d3adaab246085f7951c297ca4f9d19d42974ed044ddd8ea41d6"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-light-15-png-b06f2e22d0c80c4334fa0fa0adfb5a680be1f9c0.png",
+      "size": 47557,
+      "sha256": "2f0274d9e1fb47247048d03a3e352381eb03deb2d7054c05b33b7961c853a70e"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-system-17-png-51b01110fab1a0eda1681d46df212b29b90eabad.png",
+      "size": 52346,
+      "sha256": "e3e554ef2facbe4cea6d5bc9cff7271142fab8691ca65161a34940e214273c06"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-dark-22-png-bc50beae263f5996146e3601f0c3e6368e84f594.png",
+      "size": 65838,
+      "sha256": "071fb4f5ae3cf31880a191202c99f64b89d61dc89e652a3bc240c3b1d59e7c09"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-light-15-png-0dde56284b360881d3707cbbdff8a39c829ac47c.png",
+      "size": 65517,
+      "sha256": "d4225da28ee458427dd071e6a2c685b251285784d0a56dcfa8c07508e97ff429"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-system-17-png-2541203dbff33e99d6313bf75dde8860d9181839.png",
+      "size": 67162,
+      "sha256": "dce19eb84f5623d1b6dcc8430f87f205d33d5b33ef5b0ec82d3b43ef04332bf0"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-dark-22.png",
+      "size": 41720,
+      "sha256": "a8f2091ae26577df4be36005f2ea7c69c785a83c61bcde8b9b007fa954209f20"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-light-15.png",
+      "size": 36492,
+      "sha256": "df2106b9572ffec84003c64d9d4325ec83ff176030327dba94ac77d3e3e317bf"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-system-17.png",
+      "size": 34415,
+      "sha256": "d02ac3f460e10bbf6b470ad70ea285c4c2e1ab92462be0d3d78d6a7ff5507a3c"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-dark-22.png",
+      "size": 58310,
+      "sha256": "485cd9e54cf42d3adaab246085f7951c297ca4f9d19d42974ed044ddd8ea41d6"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-light-15.png",
+      "size": 47557,
+      "sha256": "2f0274d9e1fb47247048d03a3e352381eb03deb2d7054c05b33b7961c853a70e"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-system-17.png",
+      "size": 52346,
+      "sha256": "e3e554ef2facbe4cea6d5bc9cff7271142fab8691ca65161a34940e214273c06"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-dark-22.png",
+      "size": 65838,
+      "sha256": "071fb4f5ae3cf31880a191202c99f64b89d61dc89e652a3bc240c3b1d59e7c09"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-light-15.png",
+      "size": 65517,
+      "sha256": "d4225da28ee458427dd071e6a2c685b251285784d0a56dcfa8c07508e97ff429"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-system-17.png",
+      "size": 67162,
+      "sha256": "dce19eb84f5623d1b6dcc8430f87f205d33d5b33ef5b0ec82d3b43ef04332bf0"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-dark-22-png-17c1e95cc91428ee2e2576648bc2d24f1035ae42.png",
+      "size": 42000,
+      "sha256": "e41facdd1707d5d208622602c5c014e734dcac36b6574a50a6e05857122b51e0"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-light-15-png-8cd648432a4cf45d255fb1b06c5458cdd4552f78.png",
+      "size": 36839,
+      "sha256": "b2e6f7b64241452304ca79edb4aad9b0224941620ba2a67c51ca79be4821f310"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-system-17-png-ba1634169e9782eb1974155778d1aa84221b8c25.png",
+      "size": 34789,
+      "sha256": "03672766b36148ef54e6a72122772e14844cc3b0ef74b6fc72e50861860dd8a0"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-dark-22-png-ee13e422184c8a81ea445ce2b17c983c08103168.png",
+      "size": 64965,
+      "sha256": "8b3a1d6698c4c2b54ac9104a2dd0ebbb3bd9315a1eef5b15c856726615cd7d53"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-light-15-png-fb9b532ddbc265286b127f9189a6cc65e26b90bc.png",
+      "size": 49426,
+      "sha256": "3d1e85ab05159cd4ea49cd7aa82ae0793772429fb798eaf8be4fc9d2b2f590af"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-system-17-png-35b79c38999d362696cbec5102a853de02b284fb.png",
+      "size": 54372,
+      "sha256": "f4bf74a77db2d6d8472f1b50b0740e03904ecb4a040d06a74288248ccb66ebb6"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-dark-22-png-06d319bfede4a31df8bce864b7ef6be8e4196c6e.png",
+      "size": 72267,
+      "sha256": "523f2eb27f3320b957ed9853a78e545a2afdf9525b17e868a521ce61782ef9d8"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-light-15-png-d00ad509fac3c776bfd50a5120ee02b9fde0219c.png",
+      "size": 67151,
+      "sha256": "cf3105c7ab2d06b6f8f3459c6c6447740329b10e88d9f00dc375359ff8b6ca66"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-system-17-png-00e8d87b1d61285d2448fc1930c319024a33c87e.png",
+      "size": 68740,
+      "sha256": "aaa36559f9771d234e81516fd42c39fdf1dffdcf393d3a7d8f899f65ef479c93"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-dark-22.png",
+      "size": 42000,
+      "sha256": "e41facdd1707d5d208622602c5c014e734dcac36b6574a50a6e05857122b51e0"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-light-15.png",
+      "size": 36839,
+      "sha256": "b2e6f7b64241452304ca79edb4aad9b0224941620ba2a67c51ca79be4821f310"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-system-17.png",
+      "size": 34789,
+      "sha256": "03672766b36148ef54e6a72122772e14844cc3b0ef74b6fc72e50861860dd8a0"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-dark-22.png",
+      "size": 64965,
+      "sha256": "8b3a1d6698c4c2b54ac9104a2dd0ebbb3bd9315a1eef5b15c856726615cd7d53"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-light-15.png",
+      "size": 49426,
+      "sha256": "3d1e85ab05159cd4ea49cd7aa82ae0793772429fb798eaf8be4fc9d2b2f590af"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-system-17.png",
+      "size": 54372,
+      "sha256": "f4bf74a77db2d6d8472f1b50b0740e03904ecb4a040d06a74288248ccb66ebb6"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-dark-22.png",
+      "size": 72267,
+      "sha256": "523f2eb27f3320b957ed9853a78e545a2afdf9525b17e868a521ce61782ef9d8"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-light-15.png",
+      "size": 67151,
+      "sha256": "cf3105c7ab2d06b6f8f3459c6c6447740329b10e88d9f00dc375359ff8b6ca66"
+    },
+    {
+      "path": "full-02-artifacts/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-system-17.png",
+      "size": 68740,
+      "sha256": "aaa36559f9771d234e81516fd42c39fdf1dffdcf393d3a7d8f899f65ef479c93"
+    },
+    {
+      "path": "full-02-artifacts/startup-关闭重开后读回-SQLite-记录-development/startup-dark.png",
+      "size": 72010,
+      "sha256": "3763d2b24c9006d616da6b8c234d21624b25d17398dfcae94b056169c2cbf402"
+    },
+    {
+      "path": "full-02-artifacts/startup-关闭重开后读回-SQLite-记录-development/startup-light.png",
+      "size": 71528,
+      "sha256": "2f4a21f46c59a1bf908641f6ac820ae17e45967ca58ad14e03631fbe990344e0"
+    },
+    {
+      "path": "full-02-artifacts/startup-关闭重开后读回-SQLite-记录-packaged/startup-dark.png",
+      "size": 78324,
+      "sha256": "103ef72a4d3d66921336dc7a7adfe08c2618d2182f5ce6fd182eddf61d6af59a"
+    },
+    {
+      "path": "full-02-artifacts/startup-关闭重开后读回-SQLite-记录-packaged/startup-light.png",
+      "size": 73064,
+      "sha256": "278c1e3c6e0cdff560537d6190ee30b0c197d18ca6a75b6ca477585fecdb6f9b"
+    },
+    {
+      "path": "full-02-command.json",
+      "size": 7249,
+      "sha256": "a5464d4feeb5f1370a5276d2217383b9bb9df77c3083e8f9d7233b4c06be0f06"
+    },
+    {
+      "path": "full-02.json",
+      "size": 5202367,
+      "sha256": "e95afec4a4fe8959457681a138cace05a96f50366b5a6a44e002d00f505e2c21"
+    },
+    {
+      "path": "git-status-before.txt",
+      "size": 1199,
+      "sha256": "282d45752ea00c450896f19ac9e0538dff27d95e6bf46ce52a6245ecd1561ccf"
+    },
+    {
+      "path": "helpers-before-error-state-fix.ts",
+      "size": 3056,
+      "sha256": "966ecc445f0a1abd43231ad45165fb779d18a5cdeb1dd6c11c4cc3fa6bfdd0d5"
+    },
+    {
+      "path": "links-verification.json",
+      "size": 4187,
+      "sha256": "be20c9a615010f540953fd8d14b9a1791650b86b3d35f4346dda7d7c9c517016"
+    },
+    {
+      "path": "pack-02.json",
+      "size": 1758,
+      "sha256": "eb26bccba883e2ca189b6560eed5b1500f08c78f7043596c2048359a1633c2cb"
+    },
+    {
+      "path": "package-first-candidate.json",
+      "size": 22509,
+      "sha256": "576a5ee768d861d4ea58452c5497a23c5db2cd329fe66b37984638b5320cd4ed"
+    },
+    {
+      "path": "package-manifest.json",
+      "size": 22439,
+      "sha256": "e1591fa8ed7b757143b3d4e21e8b6e8ab3156097782234ed78b87dbb0162d0da"
+    },
+    {
+      "path": "package-verification.json",
+      "size": 4683,
+      "sha256": "2f747c6e67df84687eb3e35369754d7c8859afb649a98e21b02526a30433ea8d"
+    },
+    {
+      "path": "README.md",
+      "size": 6570,
+      "sha256": "1c9941d48939141752559783abd550d1dc5a1c621d6004afe7fa3db7a2b2fbf0"
+    },
+    {
+      "path": "scope-verification.json",
+      "size": 2007,
+      "sha256": "19cf9f586b7917b23881e6b9a293cefa59ba79587608c29b8aa7eb068c25731a"
+    },
+    {
+      "path": "screenshot-sources.json",
+      "size": 991,
+      "sha256": "04de14f5d2380d30c1a3e215b4acf723501c76757860c6889cdfbabb2fe70ab1"
+    },
+    {
+      "path": "screenshots/boards-dark.png",
+      "size": 67661,
+      "sha256": "1a6cf14d2a2c894297728e00b4bc243ff30a27accf439c307cf79e580d5bbe98"
+    },
+    {
+      "path": "screenshots/boards-light.png",
+      "size": 92032,
+      "sha256": "7eb6b57e1f5027f27ce0073475f1c0842ec0797c34469bd1108cf24e4100e4f5"
+    },
+    {
+      "path": "session-filters-before-label-fix.ts",
+      "size": 12859,
+      "sha256": "0a8dcd45a6d80cf920e99fbba6b0f53d2e24fb179ad1ce6ec1a44188153ab680"
+    },
+    {
+      "path": "signature-readable.json",
+      "size": 232,
+      "sha256": "e81ba50b184672117f2a040e9004ef6188eb6d7617088973aad635b2c254c491"
+    },
+    {
+      "path": "signature.json",
+      "size": 489,
+      "sha256": "4ce256735bb2c3417b233eedcb8d394298b703f5ffa48d3d30370b86f97ed3f1"
+    },
+    {
+      "path": "source-manifest.json",
+      "size": 4835,
+      "sha256": "fb4506612d572823f77721bc6e9591d854b3c3b1fbef07feff063646187285c2"
+    },
+    {
+      "path": "targeted-01-artifacts/.last-run.json",
+      "size": 145,
+      "sha256": "6a1b8610158a4268179ff8b5337140dcec7abf39850a23fd7d1a3ced8984af51"
+    },
+    {
+      "path": "targeted-01-artifacts/board-entry-板块入口：实际数量-分页-归档一致，自定义与未分类可达，易中难筛选沿用原值-development/error-context.md",
+      "size": 8738,
+      "sha256": "2909ab875f4a731b3bdbcd8ddf8f03cf81f08834bad66b17525ed5157729ee00"
+    },
+    {
+      "path": "targeted-01-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/error-context.md",
+      "size": 8728,
+      "sha256": "3cba159fbddbdf800d6d135108c814d1345be5d2c347a5163016eaf84c3ebc58"
+    },
+    {
+      "path": "targeted-01.json",
+      "size": 12930,
+      "sha256": "a5ec96a6e8048e4508ea11ddd1bda10e9f2acbaff8323e8caa13e15e78f57aaf"
+    },
+    {
+      "path": "targeted-02-artifacts/.last-run.json",
+      "size": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "targeted-02-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/attachments/boards-empty-png-18758325fc82e8334fed7f03592945cd3ccece58.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-02-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/boards-empty.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-02.json",
+      "size": 7880,
+      "sha256": "aec876659d8bb37b98756950b4a3ab2ec3917800c6afe5bd0a592dad005bc626"
+    },
+    {
+      "path": "targeted-03-artifacts/.last-run.json",
+      "size": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "targeted-03-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/attachments/boards-empty-png-98a8a0c51af7542706806ead050c18b38dcde54b.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-03-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/boards-empty.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-03.json",
+      "size": 59637,
+      "sha256": "1537c208f070f8aa518871979c277464129bc29f16390ef6f8587ebb7c0378ed"
+    },
+    {
+      "path": "targeted-04-artifacts/.last-run.json",
+      "size": 96,
+      "sha256": "ba271d6c63bcca7d61f6c750e1d797b59391e3cb496723b577db0e3e979425ae"
+    },
+    {
+      "path": "targeted-04-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/error-context.md",
+      "size": 10380,
+      "sha256": "d56d82a796e411273008f09188dff49fd03d7e7a2695cd878e8b84e7b8bb708f"
+    },
+    {
+      "path": "targeted-04-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/attachments/boards-empty-png-1c2594eb4e86b67cacde47f6e6b2b2a075c41816.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-04-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/boards-empty.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-04.json",
+      "size": 65479,
+      "sha256": "2dc7918fcf23a2c056d98ee6d26e20bafc8dfa7f0274dfae699b5f7edbc37002"
+    },
+    {
+      "path": "targeted-05-artifacts/.last-run.json",
+      "size": 96,
+      "sha256": "ba271d6c63bcca7d61f6c750e1d797b59391e3cb496723b577db0e3e979425ae"
+    },
+    {
+      "path": "targeted-05-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/error-context.md",
+      "size": 9229,
+      "sha256": "bf245b89ba0fd596f619e4079380aaac975678d3d05b308b55915f9023c766e4"
+    },
+    {
+      "path": "targeted-05-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/attachments/boards-empty-png-1297235949dca5fd223991db3e0e1df6e225dd72.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-05-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/boards-empty.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-05.json",
+      "size": 63792,
+      "sha256": "8cb277581a23cf4a254bfde45aaded20fde8c2ccb0d0cbac2058e3050c12570d"
+    },
+    {
+      "path": "targeted-06-artifacts/.last-run.json",
+      "size": 96,
+      "sha256": "ba271d6c63bcca7d61f6c750e1d797b59391e3cb496723b577db0e3e979425ae"
+    },
+    {
+      "path": "targeted-06-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/boards-light-png-9dc5876cd3ca02ac90a05e07069a97621ca7f715.png",
+      "size": 92975,
+      "sha256": "9797b8ed405c78d6f9062a8fe46f2f7af42124bf720afb90a2d798fb8544f7d3"
+    },
+    {
+      "path": "targeted-06-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/boards-light.png",
+      "size": 92975,
+      "sha256": "9797b8ed405c78d6f9062a8fe46f2f7af42124bf720afb90a2d798fb8544f7d3"
+    },
+    {
+      "path": "targeted-06-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/error-context.md",
+      "size": 8920,
+      "sha256": "0ab481cae8bf8dfe42a929e84b9a7e79708e78ee479f608f78af14c4b1e4659a"
+    },
+    {
+      "path": "targeted-06-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/attachments/boards-empty-png-997609ad91ba349fdec418de75fd243d9f5cde8c.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-06-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/boards-empty.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-06.json",
+      "size": 65977,
+      "sha256": "cc2fb1173b2d060ff440e2bbef9844346906671efec2359df70b9de11cf7e975"
+    },
+    {
+      "path": "targeted-07-artifacts/.last-run.json",
+      "size": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "targeted-07-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/boards-dark-png-2d7a3bb016ff6c1bd30ade83044776a29b8609ab.png",
+      "size": 72968,
+      "sha256": "7a2e6bd3d8b483b980d32561e68afdefc96594c28a383f1d0d9e9fa50b3d6451"
+    },
+    {
+      "path": "targeted-07-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/boards-light-png-c74cbd6eef30d707f519ae976f30bc8edc7cd13d.png",
+      "size": 92975,
+      "sha256": "9797b8ed405c78d6f9062a8fe46f2f7af42124bf720afb90a2d798fb8544f7d3"
+    },
+    {
+      "path": "targeted-07-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/difficulty-dark-png-e86b4fa602f751c11da6652e9cf7ed86db25687b.png",
+      "size": 59012,
+      "sha256": "feb546e3bb6bbf050527e2d42cd770b2623c12119388a09ef23b4ba25e10c6ef"
+    },
+    {
+      "path": "targeted-07-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/difficulty-light-png-4eed9241ab9227ee543e7a96cb4fdf7bfc8f1eef.png",
+      "size": 66055,
+      "sha256": "edf8d579d2c1b0ca1a66914190e073199bcb16f2b6030b7c92ee3d9fa102fb25"
+    },
+    {
+      "path": "targeted-07-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/boards-dark.png",
+      "size": 72968,
+      "sha256": "7a2e6bd3d8b483b980d32561e68afdefc96594c28a383f1d0d9e9fa50b3d6451"
+    },
+    {
+      "path": "targeted-07-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/boards-light.png",
+      "size": 92975,
+      "sha256": "9797b8ed405c78d6f9062a8fe46f2f7af42124bf720afb90a2d798fb8544f7d3"
+    },
+    {
+      "path": "targeted-07-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/difficulty-dark.png",
+      "size": 59012,
+      "sha256": "feb546e3bb6bbf050527e2d42cd770b2623c12119388a09ef23b4ba25e10c6ef"
+    },
+    {
+      "path": "targeted-07-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/difficulty-light.png",
+      "size": 66055,
+      "sha256": "edf8d579d2c1b0ca1a66914190e073199bcb16f2b6030b7c92ee3d9fa102fb25"
+    },
+    {
+      "path": "targeted-07-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/attachments/boards-empty-png-e601ea193f88b70c8e8b746a24de89daffed1688.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-07-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/boards-empty.png",
+      "size": 74053,
+      "sha256": "31baf1630b89ebc92225da65a9cce5e6bc98bf5ed69cc30fd0bcc0427b1baf88"
+    },
+    {
+      "path": "targeted-07.json",
+      "size": 68120,
+      "sha256": "a8098f147e6645bb13716b6cd332b883cfdfb5347e299b02e01f2ede3bca927c"
+    },
+    {
+      "path": "targeted-08-artifacts/.last-run.json",
+      "size": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/boards-dark-png-e89d95dbb48454ef82bb3599b005c0cad6a8ef6c.png",
+      "size": 67314,
+      "sha256": "5db797a27096987caaa0ea44fdea502034bc3bf2792de8ed479612ffd0897a1f"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/boards-light-png-836c4f67ef6ce099ccb59530c3ef3d0779b4b1c7.png",
+      "size": 91101,
+      "sha256": "578a3c22f173de3705ab77e7c9882530aae96b482ede43b021852a047015faf1"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/difficulty-dark-png-9dadfcd009ec367b52e5d8334e2c0579d86f3edb.png",
+      "size": 59238,
+      "sha256": "78a2c0c36da93e487a01ea9b9e5c020c3da1f4f367a606691a02b5296592adb9"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/attachments/difficulty-light-png-e1aa06910c291b754dc320a6bfbee294671bc4c8.png",
+      "size": 66055,
+      "sha256": "edf8d579d2c1b0ca1a66914190e073199bcb16f2b6030b7c92ee3d9fa102fb25"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/boards-dark.png",
+      "size": 67314,
+      "sha256": "5db797a27096987caaa0ea44fdea502034bc3bf2792de8ed479612ffd0897a1f"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/boards-light.png",
+      "size": 91101,
+      "sha256": "578a3c22f173de3705ab77e7c9882530aae96b482ede43b021852a047015faf1"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/difficulty-dark.png",
+      "size": 59238,
+      "sha256": "78a2c0c36da93e487a01ea9b9e5c020c3da1f4f367a606691a02b5296592adb9"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development/difficulty-light.png",
+      "size": 66055,
+      "sha256": "edf8d579d2c1b0ca1a66914190e073199bcb16f2b6030b7c92ee3d9fa102fb25"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/attachments/boards-dark-png-8d2b14f35fc20d2a166436d793ea10b327e97fa3.png",
+      "size": 67661,
+      "sha256": "1a6cf14d2a2c894297728e00b4bc243ff30a27accf439c307cf79e580d5bbe98"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/attachments/boards-light-png-ac593a71acd599e44c00055f6968e1b2ffba337d.png",
+      "size": 92032,
+      "sha256": "7eb6b57e1f5027f27ce0073475f1c0842ec0797c34469bd1108cf24e4100e4f5"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/attachments/difficulty-dark-png-1faa0e340a8e263a93a8849bd95ea5ed5066094a.png",
+      "size": 59548,
+      "sha256": "0cfcf669fa9cd0ad7b6d6ec8ee3d758e126b9e3b1c2c9c33b962492559841021"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/attachments/difficulty-light-png-cad3cc46ec5668997482030345c7e6ba1528cbac.png",
+      "size": 67389,
+      "sha256": "16f5ff72272c6fcd4405a4f5fb55cdd585589928639d1ce81d2d3c01de8b009c"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/boards-dark.png",
+      "size": 67661,
+      "sha256": "1a6cf14d2a2c894297728e00b4bc243ff30a27accf439c307cf79e580d5bbe98"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/boards-light.png",
+      "size": 92032,
+      "sha256": "7eb6b57e1f5027f27ce0073475f1c0842ec0797c34469bd1108cf24e4100e4f5"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/difficulty-dark.png",
+      "size": 59548,
+      "sha256": "0cfcf669fa9cd0ad7b6d6ec8ee3d758e126b9e3b1c2c9c33b962492559841021"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged/difficulty-light.png",
+      "size": 67389,
+      "sha256": "16f5ff72272c6fcd4405a4f5fb55cdd585589928639d1ce81d2d3c01de8b009c"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/attachments/boards-empty-png-257019fb64af3102d1e9db3dfa78090fc0ad2eee.png",
+      "size": 72830,
+      "sha256": "58d7c4afddef7483b34a0db923efa76e4d40b5c4bb51ce631e72d27a84792fb3"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development/boards-empty.png",
+      "size": 72830,
+      "sha256": "58d7c4afddef7483b34a0db923efa76e4d40b5c4bb51ce631e72d27a84792fb3"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-packaged/attachments/boards-empty-png-7588d222b9090b46358a9f1147117e5fd73a9250.png",
+      "size": 74480,
+      "sha256": "f13b55425c03222077ad295f24e8922dcbafbaaeb0f59cce71729a06a1a651a2"
+    },
+    {
+      "path": "targeted-08-artifacts/board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-packaged/boards-empty.png",
+      "size": 74480,
+      "sha256": "f13b55425c03222077ad295f24e8922dcbafbaaeb0f59cce71729a06a1a651a2"
+    },
+    {
+      "path": "targeted-08.json",
+      "size": 133942,
+      "sha256": "62b9325e5039490e0a192e46500b71a582cc885ae59378b105adea30d3d89e7a"
+    },
+    {
+      "path": "targeted-09-artifacts/.last-run.json",
+      "size": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "targeted-09.json",
+      "size": 6490,
+      "sha256": "98d7ed02305386e43cd9d268604519aaa1a3fc99a5c737419591e763a699ab5d"
+    },
+    {
+      "path": "targeted-10-artifacts/.last-run.json",
+      "size": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "targeted-10-artifacts/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/attachments/original-filters-random-png-7b96bbe7b978a10d81dde19abee974af74475b30.png",
+      "size": 60354,
+      "sha256": "07d08b7c0403976c4702415e8dc31fdf3380ec1c5a103d5ec6fbd75529fba2bb"
+    },
+    {
+      "path": "targeted-10-artifacts/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/original-filters-random.png",
+      "size": 60354,
+      "sha256": "07d08b7c0403976c4702415e8dc31fdf3380ec1c5a103d5ec6fbd75529fba2bb"
+    },
+    {
+      "path": "targeted-10-artifacts/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/attachments/original-filters-random-png-d0ba45437a30e612b2deae679ff23f57dac9244c.png",
+      "size": 61426,
+      "sha256": "3b0b50a22dbb13971bd1292b69a1482e0108e53e7f3f345597aa0f3e5b3aef9c"
+    },
+    {
+      "path": "targeted-10-artifacts/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/original-filters-random.png",
+      "size": 61426,
+      "sha256": "3b0b50a22dbb13971bd1292b69a1482e0108e53e7f3f345597aa0f3e5b3aef9c"
+    },
+    {
+      "path": "targeted-10-artifacts/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/attachments/original-filters-sequential-png-1d9ca760a638ed9d448a8776046b1f4bb33a3128.png",
+      "size": 60240,
+      "sha256": "2d65d242e1a20065462c1f80b1f0bd14a5915e9787061f2a04c1e2743c276209"
+    },
+    {
+      "path": "targeted-10-artifacts/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/original-filters-sequential.png",
+      "size": 60240,
+      "sha256": "2d65d242e1a20065462c1f80b1f0bd14a5915e9787061f2a04c1e2743c276209"
+    },
+    {
+      "path": "targeted-10-artifacts/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/attachments/original-filters-sequential-png-151ff6badc3eb4d77028455b1ca051c24266bb76.png",
+      "size": 61266,
+      "sha256": "5e4795e7d9c187d5f52076278d448f10fc54d99dc244987404cbef2c9a76a457"
+    },
+    {
+      "path": "targeted-10-artifacts/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/original-filters-sequential.png",
+      "size": 61266,
+      "sha256": "5e4795e7d9c187d5f52076278d448f10fc54d99dc244987404cbef2c9a76a457"
+    },
+    {
+      "path": "targeted-10.json",
+      "size": 203851,
+      "sha256": "bf8a06ee3ffb540c2d70e020f3ea001cb3a8ac1a308941abc49c94e640c08a1c"
+    },
+    {
+      "path": "tooling-notes.txt",
+      "size": 928,
+      "sha256": "eff2e44052ebf7c2071bd3715ae44d0c0419f6715f5d432cc59c73fce06c1b42"
+    },
+    {
+      "path": "typecheck-01.json",
+      "size": 240,
+      "sha256": "476368a097dcb5e6bc1a77378d2ee6090f3d0e80a3458b5acc4f6a774031df83"
+    },
+    {
+      "path": "typecheck-02.json",
+      "size": 414,
+      "sha256": "4514139633b29ad85893a2f6da85d73d4274e87865d3b04871414144e510c7d5"
+    },
+    {
+      "path": "unit-01-command.json",
+      "size": 368,
+      "sha256": "e15df2a760f13c23069b0f870b22ef0e997ef8aea183e0e917b20570de8138ca"
+    },
+    {
+      "path": "unit-01.json",
+      "size": 208105,
+      "sha256": "ab5402659a93c2cb8bce553dcf41461aad6b6d67fc6a9a0eb83b6537af0ce6a5"
+    },
+    {
+      "path": "unit-coverage.json",
+      "size": 1048,
+      "sha256": "010cd73bbb7104416762f2c693dc8ace4e87c04819501ec784bb4cc52f46f39d"
+    }
+  ]
+}

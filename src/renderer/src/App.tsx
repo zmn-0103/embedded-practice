@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { ImportPanel } from './components/ImportPanel'
-import { LibraryBrowser } from './components/LibraryBrowser'
+import { LibraryBrowser, type LibraryEntry } from './components/LibraryBrowser'
+import { BoardEntrance } from './components/BoardEntrance'
 import { PracticeWorkspace } from './components/PracticeWorkspace'
 import { LearningRecords } from './components/LearningRecords'
 import { SettingsPane } from './components/SettingsPane'
@@ -13,13 +14,18 @@ type ViewState =
   | { status: 'error'; message: string }
 
 const pages = [
+  {
+    id: 'boards',
+    label: '板块',
+    path: 'M4 4h6v6H4V4Zm10 0h6v6h-6V4ZM4 14h6v6H4v-6Zm10 0h6v6h-6v-6Z',
+  },
   { id: 'practice', label: '开始练习', path: 'm9 5 10 7-10 7V5Z' },
   { id: 'library', label: '题库', path: 'M4 4h6l2 2 2-2h6v15h-6l-2 2-2-2H4V4Zm8 2v15' },
   { id: 'records', label: '学习记录', path: 'M5 20V4m0 16h15M9 16v-5m5 5V7m5 9v-3' },
   { id: 'settings', label: '设置与数据', path: 'M4 7h16M4 17h16M9 4v6m6 4v6' },
 ] as const
 type PageId = (typeof pages)[number]['id']
-const BUILD_LABEL = '20261024.1-plans'
+const BUILD_LABEL = '20261024.3-boards'
 
 export function App() {
   const [state, setState] = useState<ViewState>({ status: 'loading' })
@@ -28,9 +34,12 @@ export function App() {
   const [selectionRefresh, setSelectionRefresh] = useState(0)
   const [practicing, setPracticing] = useState(false)
   const [dataBusy, setDataBusy] = useState(false)
-  const [page, setPage] = useState<PageId>('practice')
+  const [page, setPage] = useState<PageId>('boards')
   const [libraryVisited, setLibraryVisited] = useState(false)
+  const [libraryEntry, setLibraryEntry] = useState<LibraryEntry>()
+  const focusPage = useRef(false)
   const scrollPositions = useRef<Record<PageId, number>>({
+    boards: 0,
     practice: 0,
     library: 0,
     records: 0,
@@ -59,7 +68,13 @@ export function App() {
   }
   useLayoutEffect(() => {
     if (practicing) return
-    const frame = requestAnimationFrame(() => window.scrollTo(0, scrollPositions.current[page]))
+    const frame = requestAnimationFrame(() => {
+      if (focusPage.current) {
+        focusPage.current = false
+        document.getElementById('main-content')?.focus({ preventScroll: true })
+      }
+      window.scrollTo(0, scrollPositions.current[page])
+    })
     return () => cancelAnimationFrame(frame)
   }, [page, practicing])
 
@@ -135,7 +150,7 @@ export function App() {
         </nav>
       )}
 
-      <main id="main-content">
+      <main id="main-content" tabIndex={-1}>
         {!practicing && (
           <div className="workspace-heading">
             <span>{pages.find((item) => item.id === page)?.label}</span>
@@ -192,12 +207,33 @@ export function App() {
         )}
 
         {state.status === 'ready' && (
-          <div hidden={!practicing && page !== 'practice'}>
+          <div hidden={!practicing && page !== 'practice' && page !== 'boards'}>
             <PracticeWorkspace
               refresh={refresh + selectionRefresh}
               beforeClose={waitForSaves}
               onDataBusy={setDataBusy}
               onDataOperation={trackDataOperation}
+              homeContent={
+                page === 'boards' && !practicing ? (
+                  <BoardEntrance
+                    refresh={refresh}
+                    disabled={appearance.busy || dataBusy}
+                    onBrowse={(category, archived) => {
+                      scrollPositions.current.library = 0
+                      setLibraryEntry((previous) => ({
+                        id: (previous?.id ?? 0) + 1,
+                        category,
+                        archived,
+                      }))
+                      changePage('library')
+                    }}
+                    onPractice={() => {
+                      focusPage.current = true
+                      changePage('practice')
+                    }}
+                  />
+                ) : undefined
+              }
               onActiveChange={(active) => {
                 setPracticing(active)
                 scrollPositions.current.practice = 0
@@ -222,6 +258,7 @@ export function App() {
               refresh={refresh}
               visible={!practicing && page === 'library'}
               invalidation={selectionRefresh}
+              entry={libraryEntry}
               categoryDisabled={appearance.busy || dataBusy}
               onCategoryChanged={() => setRefresh((value) => value + 1)}
               onCategoryBusy={setDataBusy}

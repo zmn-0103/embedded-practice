@@ -331,6 +331,7 @@ th small {
   gap: 8px;
 }
 select,
+.board-controls input[type='search'],
 .practice-plans input[type='text'],
 .question-filter-fields input[type='search'],
 .question-filter-fields input[type='text'] {
@@ -584,7 +585,8 @@ select,
   margin: 6px 0 18px;
   font-size: 23px;
 }
-.practice-start > p {
+.practice-start > p,
+.practice-options > p {
   margin-bottom: 12px;
 }
 .practice-heading {
@@ -1659,5 +1661,146 @@ footer {
   .category-manager form,
   .category-manager form label {
     width: 100%;
+  }
+}
+
+.board-heading,
+.board-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 16px;
+}
+
+.board-heading {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.board-controls > label:first-child {
+  flex: 1 1 280px;
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.board-controls > label:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.board-controls input[type='search'] {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+
+.board-help,
+.board-result {
+  margin-block: 12px;
+  font-size: 13px;
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.board-card {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--background);
+  overflow-wrap: anywhere;
+}
+
+.board-kind {
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.board-card h3 {
+  margin-block: 8px;
+  font-size: 18px;
+}
+
+.board-summary {
+  min-height: 3.2em;
+  font-size: 13px;
+}
+
+.board-count {
+  margin-block: 14px;
+  font-size: 14px;
+}
+
+.board-count strong {
+  font-size: 26px;
+  color: var(--text);
+}
+
+.board-card > button {
+  display: block;
+  width: 100%;
+  margin-block: 8px;
+}
+
+.board-card details {
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.board-card summary {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.board-card details p {
+  margin-top: 12px;
+}
+
+.board-card ul {
+  padding-left: 20px;
+}
+
+.difficulty-badge {
+  display: inline-flex;
+  align-self: start;
+  padding: 1px 8px;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: var(--strong-weight);
+  white-space: nowrap;
+}
+
+.difficulty-easy {
+  color: light-dark(#246445, #a1d8b2);
+  background: light-dark(#eef8f0, #203a2a);
+}
+
+.difficulty-medium {
+  color: light-dark(#795315, #eed096);
+  background: light-dark(#fcf4df, #41341c);
+}
+
+.difficulty-hard {
+  color: light-dark(#9c3845, #f4b0b9);
+  background: light-dark(#fceff1, #41252d);
+}
+
+.difficulty-unrated {
+  color: var(--muted);
+  background: var(--background);
+}
+
+@media (max-width: 720px) {
+  .board-card {
+    padding: 16px;
   }
 }

@@ -1,5 +1,6 @@
 import type { QuestionFilters } from '../../../shared/contracts/question-filters'
 import { TagPicker } from './TagPicker'
+import { difficultyLabel } from './DifficultyBadge'
 
 export function QuestionFilterFields({
   prefix,
@@ -17,7 +18,7 @@ export function QuestionFilterFields({
   const conditions = [
     filters.query && `搜索：${filters.query}`,
     filters.tag && `标签：${filters.tag}`,
-    filters.difficulty && `难度：${filters.difficulty}`,
+    filters.difficulty && `难度：${difficultyLabel(filters.difficulty)}`,
     filters.mastery !== 'all' &&
       `自评：${filters.mastery === 'unpracticed' ? '未练习' : filters.mastery}`,
     filters.favoritesOnly && '只看收藏',
@@ -59,7 +60,7 @@ export function QuestionFilterFields({
           <option value="">全部难度</option>
           {(['未分级', '基础', '进阶', '综合'] as const).map((difficulty) => (
             <option key={difficulty} value={difficulty}>
-              {difficulty}
+              {difficultyLabel(difficulty)}
             </option>
           ))}
         </select>

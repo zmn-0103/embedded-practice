@@ -6,6 +6,7 @@ import type {
 } from '../practice-controller'
 import { MarkdownContent } from './MarkdownContent'
 import { QuestionHistory } from './QuestionHistory'
+import { DifficultyBadge } from './DifficultyBadge'
 
 const ACTION_REPEAT_GUARD_MS = 500
 
@@ -98,7 +99,8 @@ export function PracticePane({
           第 {session.position + 1} / {session.total} 题 · {modeLabel}
         </p>
         <p className="muted">
-          {item.topicTitle} · {item.difficulty} · {item.tags.join('、')}
+          {item.topicTitle} · <DifficultyBadge difficulty={item.difficulty} />
+          {item.tags.length > 0 ? ` · ${item.tags.join('、')}` : ''}
         </p>
         <h2 ref={title} tabIndex={-1}>
           {item.title}

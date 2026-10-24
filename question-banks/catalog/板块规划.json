@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "designDate": "2026-10-24",
+  "status": "板块设计，未写入个人库或接入程序默认分类",
+  "hierarchy": "板块→专题；标签表达跨板块考点。基础/拓展是展示分组，不增加树层级。",
+  "keyMeaning": "key是规划键，不是应用自动生成的category_id；plannedTopics只有待建名称，不是已创建的空专题。",
+  "emptyBoardBehavior": "保留0题板块，可查看待建设专题；无可练题时不提供开始练习。",
+  "boards": [
+    {
+      "key": "c-language",
+      "title": "C语言",
+      "tier": "foundation",
+      "order": 1,
+      "summary": "类型、表达式、内存和可移植代码的基础。",
+      "plannedTopics": [
+        "数据类型与表达式",
+        "指针、数组与字符串",
+        "结构体与联合体",
+        "内存与生命周期",
+        "预处理、编译与链接",
+        "位运算与可移植性"
+      ],
+      "boundary": "以C语言规则为主；不收具体芯片寄存器记忆题。"
+    },
+    {
+      "key": "cpp-language",
+      "title": "C++语言",
+      "tier": "foundation",
+      "order": 2,
+      "summary": "对象、泛型与资源管理。",
+      "plannedTopics": [
+        "类与对象、RAII",
+        "继承与多态",
+        "模板与泛型",
+        "STL容器与迭代器",
+        "移动语义与资源管理"
+      ],
+      "boundary": "以C++语言和库语义为主，工程案例作为题设。"
+    },
+    {
+      "key": "data-structures",
+      "title": "数据结构与算法",
+      "tier": "foundation",
+      "order": 3,
+      "summary": "组织数据、分析复杂度并解决问题。",
+      "plannedTopics": [
+        "数组与链表",
+        "栈与队列",
+        "树与哈希",
+        "查找与排序",
+        "复杂度分析",
+        "嵌入式缓冲区算法"
+      ],
+      "boundary": "以数据结构或算法推导为主，不重复语言语法题。"
+    },
+    {
+      "key": "processor-architecture",
+      "title": "处理器与ARM架构",
+      "tier": "foundation",
+      "order": 4,
+      "summary": "处理器如何执行程序和访问内存。",
+      "plannedTopics": [
+        "计算机组成",
+        "ARM与Cortex-M",
+        "异常与中断架构",
+        "栈与调用约定",
+        "MPU、MMU与Cache",
+        "内存模型与屏障"
+      ],
+      "boundary": "讲体系结构与执行模型；外设业务原理、具体SDK另归其板块。"
+    },
+    {
+      "key": "mcu-fundamentals",
+      "title": "MCU与外设原理",
+      "tier": "foundation",
+      "order": 5,
+      "summary": "不依赖具体芯片的单片机与外设知识。",
+      "plannedTopics": [
+        "GPIO通用基础",
+        "ADC通用基础",
+        "定时器与PWM",
+        "中断与事件",
+        "DMA原理",
+        "时钟、复位与低功耗"
+      ],
+      "boundary": "通用原理在此；UART/SPI/I2C等协议归通信协议；型号实现归MCU平台与SDK。"
+    },
+    {
+      "key": "mcu-platforms",
+      "title": "MCU平台与SDK",
+      "tier": "foundation",
+      "order": 6,
+      "summary": "具体芯片、寄存器、SDK及平台实现。",
+      "plannedTopics": [
+        "STM32F1 GPIO",
+        "STM32F1 UART",
+        "SPL、HAL与CMSIS",
+        "芯片寄存器与时钟树",
+        "其他MCU平台"
+      ],
+      "boundary": "题答依赖型号、寄存器或SDK约定时归此，保留芯片系列标识。"
+    },
+    {
+      "key": "communication-protocols",
+      "title": "通信协议",
+      "tier": "foundation",
+      "order": 7,
+      "summary": "设备互连、总线时序和消息组织。",
+      "plannedTopics": [
+        "UART通用基础",
+        "SPI通用基础",
+        "I2C通用基础",
+        "CAN与CAN FD",
+        "RS-232与RS-485",
+        "USB接口",
+        "Modbus与帧协议"
+      ],
+      "boundary": "以协议、电气链路或帧事务为主；TCP/IP归计算机网络，专用芯片操作归平台专题。"
+    },
+    {
+      "key": "computer-networks",
+      "title": "计算机网络",
+      "tier": "foundation",
+      "order": 8,
+      "summary": "从网络分层到连接和故障定位。",
+      "plannedTopics": [
+        "TCP/IP基础",
+        "UDP与传输选择",
+        "以太网与Socket原理",
+        "连接、重传与拥塞",
+        "网络故障排查",
+        "HTTP、MQTT等应用协议"
+      ],
+      "boundary": "以网络协议和端到端行为为主；POSIX接口编程归Linux系统与应用。"
+    },
+    {
+      "key": "rtos-concurrency",
+      "title": "RTOS与并发",
+      "tier": "foundation",
+      "order": 9,
+      "summary": "调度、同步和实时资源管理。",
+      "plannedTopics": [
+        "任务与调度",
+        "中断上下文",
+        "同步与互斥",
+        "队列与通知",
+        "死锁与优先级反转",
+        "时间与资源管理",
+        "FreeRTOS",
+        "RT-Thread"
+      ],
+      "boundary": "通用OS/并发及RTOS机制在此；Linux专用API和内核实现分别归对应Linux板块。"
+    },
+    {
+      "key": "linux-applications",
+      "title": "Linux系统与应用",
+      "tier": "foundation",
+      "order": 10,
+      "summary": "Linux使用、用户态编程与部署。",
+      "plannedTopics": [
+        "系统使用与进程",
+        "文件与设备I/O",
+        "进程间通信",
+        "POSIX线程与同步",
+        "Socket与事件驱动编程",
+        "交叉开发与部署"
+      ],
+      "boundary": "面向用户态接口、程序和工具；内核机制与驱动归Linux内核与驱动。"
+    },
+    {
+      "key": "linux-kernel-drivers",
+      "title": "Linux内核与驱动",
+      "tier": "foundation",
+      "order": 11,
+      "summary": "内核机制、设备模型和驱动开发。",
+      "plannedTopics": [
+        "内核基础",
+        "设备模型与设备树",
+        "字符设备驱动",
+        "平台与总线驱动",
+        "中断与DMA驱动",
+        "内核内存与并发"
+      ],
+      "boundary": "以内核上下文、驱动接口和设备模型为主。"
+    },
+    {
+      "key": "hardware-circuits",
+      "title": "硬件与电路基础",
+      "tier": "foundation",
+      "order": 12,
+      "summary": "读懂电路并理解接口的电气约束。",
+      "plannedTopics": [
+        "电压、电流与器件基础",
+        "数字与模拟电路",
+        "接口电平与保护",
+        "原理图阅读",
+        "PCB与信号完整性",
+        "电源与接地"
+      ],
+      "boundary": "包含硬件基础、嵌入式硬件和PCB共性内容；通信帧规则不在此重复。"
+    },
+    {
+      "key": "storage-filesystems",
+      "title": "存储与文件系统",
+      "tier": "foundation",
+      "order": 13,
+      "summary": "存储介质、数据组织和掉电一致性。",
+      "plannedTopics": [
+        "RAM、ROM、Flash与EEPROM",
+        "页、扇区与写擦约束",
+        "磨损与掉电一致性",
+        "环形日志",
+        "FAT、LittleFS等文件系统",
+        "存储故障排查"
+      ],
+      "boundary": "以介质、存储协议或文件组织为主；C对象生命周期归C语言。"
+    },
+    {
+      "key": "engineering-debugging",
+      "title": "编译调试与工程实践",
+      "tier": "foundation",
+      "order": 14,
+      "summary": "把代码构建、验证并定位问题。",
+      "plannedTopics": [
+        "编译、链接与构建工具",
+        "Make与CMake",
+        "GDB、JTAG与SWD",
+        "仪器与故障定位",
+        "Git、测试与持续集成",
+        "Python与Shell脚本",
+        "错误处理与日志"
+      ],
+      "boundary": "Python/Shell先作为开发工具专题；不预设独立语言题库。项目个人经历归项目与面试表达。"
+    },
+    {
+      "key": "project-interviews",
+      "title": "项目与面试表达",
+      "tier": "foundation",
+      "order": 15,
+      "summary": "用真实证据解释方案、职责与取舍。",
+      "plannedTopics": [
+        "需求与方案设计",
+        "模块职责与接口",
+        "技术取舍与证据",
+        "故障复盘",
+        "项目口述与追问",
+        "代码阅读与审查"
+      ],
+      "boundary": "只使用用户真实经历或明确标注的假设案例，不生成虚构个人项目经历。"
+    },
+    {
+      "key": "wireless-iot",
+      "title": "无线与物联网",
+      "tier": "extension",
+      "order": 16,
+      "summary": "无线连接、配网与设备协同。",
+      "plannedTopics": ["蓝牙与BLE", "Wi-Fi", "低功耗无线", "连接与配网", "物联网设备协同"],
+      "boundary": "无线链路和连接机制在此；IP和MQTT协议原理链接计算机网络。"
+    },
+    {
+      "key": "security-reliability",
+      "title": "安全与可靠性",
+      "tier": "extension",
+      "order": 17,
+      "summary": "保护固件和数据并设计可恢复系统。",
+      "plannedTopics": ["密码与认证", "安全启动与升级", "固件完整性", "访问控制", "故障监测与恢复"],
+      "boundary": "安全机制与可靠性设计在此；通用日志和调试工具归工程实践。"
+    },
+    {
+      "key": "signal-multimedia",
+      "title": "信号处理与多媒体",
+      "tier": "extension",
+      "order": 18,
+      "summary": "采样数据、滤波及音视频处理。",
+      "plannedTopics": [
+        "采样与重建",
+        "数字滤波与DSP基础",
+        "音频处理",
+        "图像与视频",
+        "数据流与性能"
+      ],
+      "boundary": "以处理算法和信号链为主；ADC外设建立过程归MCU与外设原理。"
+    },
+    {
+      "key": "control-power",
+      "title": "控制与电力电子",
+      "tier": "extension",
+      "order": 19,
+      "summary": "控制环路、电机与功率变换。",
+      "plannedTopics": [
+        "控制基础与PID",
+        "电机驱动基础",
+        "反馈与闭环控制",
+        "功率开关与保护",
+        "控制系统调试"
+      ],
+      "boundary": "按控制或功率系统问题收题，不把普通GPIO/PWM配置重复收录。"
+    },
+    {
+      "key": "automotive",
+      "title": "汽车电子",
+      "tier": "extension",
+      "order": 20,
+      "summary": "车载系统、诊断和行业软件。",
+      "plannedTopics": ["车载网络应用", "UDS诊断", "AUTOSAR基础", "功能安全入门", "车载系统场景"],
+      "boundary": "车载应用和行业约定在此；通用CAN帧原理归通信协议。"
+    },
+    {
+      "key": "robotics-uav",
+      "title": "机器人与无人机",
+      "tier": "extension",
+      "order": 21,
+      "summary": "感知、运动及系统集成。",
+      "plannedTopics": ["传感器融合", "运动控制应用", "定位与导航", "无人机系统", "机器人系统集成"],
+      "boundary": "以系统应用和集成为主；通用控制、通信和电路知识链接其主板块。"
+    },
+    {
+      "key": "fpga-digital",
+      "title": "FPGA与数字设计",
+      "tier": "extension",
+      "order": 22,
+      "summary": "数字逻辑、HDL和可编程逻辑实现。",
+      "plannedTopics": [
+        "数字逻辑设计",
+        "Verilog与SystemVerilog",
+        "时序设计与约束",
+        "片上资源与接口",
+        "验证与综合"
+      ],
+      "boundary": "HDL、同步时序和FPGA实现归此；普通PCB和电气保护归硬件基础。"
+    }
+  ],
+  "existingTopics": [
+    {
+      "topicId": "general-gpio",
+      "file": "question-banks/general/GPIO通用基础.md",
+      "candidateQuestionCount": 2,
+      "recommendedBoardKey": "mcu-fundamentals",
+      "review": "待用户审阅",
+      "assignmentStatus": "仅推荐归属，未自动移动个人库"
+    },
+    {
+      "topicId": "general-adc",
+      "file": "question-banks/general/ADC通用基础.md",
+      "candidateQuestionCount": 2,
+      "recommendedBoardKey": "mcu-fundamentals",
+      "review": "待用户审阅",
+      "assignmentStatus": "仅推荐归属，未自动移动个人库"
+    },
+    {
+      "topicId": "general-uart",
+      "file": "question-banks/general/UART通用基础.md",
+      "candidateQuestionCount": 2,
+      "recommendedBoardKey": "communication-protocols",
+      "review": "待用户审阅",
+      "assignmentStatus": "仅推荐归属，未自动移动个人库"
+    },
+    {
+      "topicId": "general-spi",
+      "file": "question-banks/general/SPI通用基础.md",
+      "candidateQuestionCount": 2,
+      "recommendedBoardKey": "communication-protocols",
+      "review": "待用户审阅",
+      "assignmentStatus": "仅推荐归属，未自动移动个人库"
+    },
+    {
+      "topicId": "general-i2c",
+      "file": "question-banks/general/I2C通用基础.md",
+      "candidateQuestionCount": 2,
+      "recommendedBoardKey": "communication-protocols",
+      "review": "待用户审阅",
+      "assignmentStatus": "仅推荐归属，未自动移动个人库"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "file": "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+      "candidateQuestionCount": 78,
+      "recommendedBoardKey": "mcu-platforms",
+      "review": "待用户审阅",
+      "assignmentStatus": "仅推荐归属，未自动移动个人库"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "file": "question-banks/trials/STM32F103-UART第二层-30题试用.md",
+      "candidateQuestionCount": 30,
+      "recommendedBoardKey": "mcu-platforms",
+      "review": "待用户审阅",
+      "assignmentStatus": "仅推荐归属，未自动移动个人库"
+    }
+  ]
+}

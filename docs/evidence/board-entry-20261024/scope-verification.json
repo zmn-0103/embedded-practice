@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "baselineFiles": 5226,
+  "modifiedExistingFiles": [
+    "README.md",
+    "docs/README.md",
+    "docs/产品说明.md",
+    "docs/代码复查记录.md",
+    "docs/使用说明.md",
+    "docs/开发记录.md",
+    "docs/开发说明.md",
+    "docs/当前试用版本交付说明.md",
+    "docs/项目模块职责.md",
+    "docs/题库分类与标签规范.md",
+    "docs/题库板块规划与展示设计.md",
+    "docs/验收记录.md",
+    "src/renderer/src/App.tsx",
+    "src/renderer/src/components/LibraryBrowser.tsx",
+    "src/renderer/src/components/PracticePane.tsx",
+    "src/renderer/src/components/PracticePlans.tsx",
+    "src/renderer/src/components/PracticeWorkspace.tsx",
+    "src/renderer/src/components/QuestionFilterFields.tsx",
+    "src/renderer/src/styles/global.css",
+    "tests/e2e/helpers.ts",
+    "tests/e2e/session-filters.spec.ts",
+    "计划书.md"
+  ],
+  "preservedExistingFiles": 5204,
+  "newMaintainedFiles": [
+    "docs/板块入口行为与验收.md",
+    "src/renderer/src/board-catalog.ts",
+    "src/renderer/src/components/BoardEntrance.tsx",
+    "src/renderer/src/components/DifficultyBadge.tsx",
+    "tests/e2e/board-entry.spec.ts",
+    "tests/unit/board-catalog.test.ts"
+  ],
+  "backupCopiesVerified": 226,
+  "frozenEvidencePreserved": 4893,
+  "protectedSourceAndContentFiles": 5011,
+  "originalPlanPrefixIntact": true,
+  "oldCodeReviewBodyIntact": true,
+  "packages": [
+    {
+      "directory": "E:\\My_Projects\\embedded-practice\\release\\practice-plans-20261024\\win-unpacked",
+      "files": 125,
+      "preserved": true
+    },
+    {
+      "directory": "E:\\My_Projects\\embedded-practice\\release\\board-entry-20261024\\win-unpacked",
+      "files": 124,
+      "preserved": true
+    },
+    {
+      "directory": "E:\\My_Projects\\embedded-practice\\release\\board-entry-20261024-r2\\win-unpacked",
+      "files": 124,
+      "preserved": true
+    }
+  ],
+  "outsideScopeChanges": []
+}

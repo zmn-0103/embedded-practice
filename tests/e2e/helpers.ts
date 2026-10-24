@@ -24,10 +24,12 @@ export const test = base.extend<{ testDataDirectory: string }>({
   },
 })
 
+type PageName = '板块' | '开始练习' | '题库' | '学习记录' | '设置与数据'
+
 export async function launchApplication(
   directory: string,
   projectName: string,
-  initialPage?: '开始练习' | '题库' | '学习记录' | '设置与数据',
+  initialPage?: PageName,
 ) {
   const env: Record<string, string> = Object.fromEntries(
     Object.entries(process.env).filter(
@@ -65,6 +67,7 @@ export async function launchApplication(
     const page = await application.firstWindow()
     await page.getByRole('heading', { name: '嵌入式刷题本', exact: true }).waitFor()
     if (initialPage) await openPage(page, initialPage)
+    else if ((await readAppStatus(page)).ok) await openPage(page, '开始练习')
     return { application, page }
   } catch (error) {
     await application.close()
@@ -78,7 +81,7 @@ export function readAppStatus(page: Page): Promise<AppStatusResult> {
   )
 }
 
-export async function openPage(page: Page, name: '开始练习' | '题库' | '学习记录' | '设置与数据') {
+export async function openPage(page: Page, name: PageName) {
   const link = page
     .getByRole('navigation', { name: '主要页面', exact: true })
     .getByRole('link', { name, exact: true })

@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "boards": 22,
+  "foundation": 15,
+  "extension": 7,
+  "plannedTopicTitles": 127,
+  "existingTopics": 7,
+  "candidateQuestions": 118,
+  "existingSourceMapping": [
+    {
+      "topicId": "general-gpio",
+      "file": "question-banks/general/GPIO通用基础.md",
+      "count": 2,
+      "recommendedBoardKey": "mcu-fundamentals"
+    },
+    {
+      "topicId": "general-adc",
+      "file": "question-banks/general/ADC通用基础.md",
+      "count": 2,
+      "recommendedBoardKey": "mcu-fundamentals"
+    },
+    {
+      "topicId": "general-uart",
+      "file": "question-banks/general/UART通用基础.md",
+      "count": 2,
+      "recommendedBoardKey": "communication-protocols"
+    },
+    {
+      "topicId": "general-spi",
+      "file": "question-banks/general/SPI通用基础.md",
+      "count": 2,
+      "recommendedBoardKey": "communication-protocols"
+    },
+    {
+      "topicId": "general-i2c",
+      "file": "question-banks/general/I2C通用基础.md",
+      "count": 2,
+      "recommendedBoardKey": "communication-protocols"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "file": "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+      "count": 78,
+      "recommendedBoardKey": "mcu-platforms"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "file": "question-banks/trials/STM32F103-UART第二层-30题试用.md",
+      "count": 30,
+      "recommendedBoardKey": "mcu-platforms"
+    }
+  ],
+  "boundary": "Design keys and topic titles only; no personal database or imported topic created."
+}

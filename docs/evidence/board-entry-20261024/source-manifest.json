@@ -1,0 +1,145 @@
+{
+  "build": "20261024.3-boards",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 4217,
+      "sha256": "7d8386d9ecac98612776dd6bd3ed9a1a5149489679984c9dece8c7c06429e1cb"
+    },
+    {
+      "path": "docs/README.md",
+      "size": 14995,
+      "sha256": "9beff348c78431dadc476efeb8cffb09e56fe934a8a6f04bf073bbb820559180"
+    },
+    {
+      "path": "docs/产品说明.md",
+      "size": 13462,
+      "sha256": "708d776d74b30759a94623927bcd0bef111ea89aff35c698ff55957ef2383457"
+    },
+    {
+      "path": "docs/代码复查记录.md",
+      "size": 276920,
+      "sha256": "eab46ccf564b0418e1f2c1f14d5c4ecba5535b3668777cae2426d18b0ec093e4"
+    },
+    {
+      "path": "docs/使用说明.md",
+      "size": 25803,
+      "sha256": "7c0f365557167e8ca86f4ae55d574b044c243874c3b7a62ad35f2946029d2ce0"
+    },
+    {
+      "path": "docs/开发记录.md",
+      "size": 67842,
+      "sha256": "dd9fd814693804921c289361acc0b473cac52bc00178a952f77168b365af4d35"
+    },
+    {
+      "path": "docs/开发说明.md",
+      "size": 35927,
+      "sha256": "25aa14c46461b1af09e6bc0be69991b1675b5cfbc40183fdf46f4e4513eff506"
+    },
+    {
+      "path": "docs/当前试用版本交付说明.md",
+      "size": 13274,
+      "sha256": "36a6a694c73e0600590f0861a63994ae19eba36bb08283dbe9ea9f8fd076db13"
+    },
+    {
+      "path": "docs/板块入口行为与验收.md",
+      "size": 5909,
+      "sha256": "5fad0561bd45bde85a1a5166b0e0555616d2ad91c09df7738e09614ba785219d"
+    },
+    {
+      "path": "docs/项目模块职责.md",
+      "size": 3193,
+      "sha256": "26d5a9bd3834b33c8cc4ea0d0bde9ab6b7be3aac8367a6d8132cadf74c3df5d9"
+    },
+    {
+      "path": "docs/题库分类与标签规范.md",
+      "size": 9709,
+      "sha256": "df57813812e15bebc4a135d18224e109ac5dad8d5e9cf8c5eca17147da8b0792"
+    },
+    {
+      "path": "docs/题库板块规划与展示设计.md",
+      "size": 11846,
+      "sha256": "8824c5e3e8a8f4c369612c48b9e79080e3e711521bb96e84e75f88ccc2d52404"
+    },
+    {
+      "path": "docs/验收记录.md",
+      "size": 132114,
+      "sha256": "05234740db1dfac77485b8d493f43d04426c30abb93066c185699e97b1b32ea3"
+    },
+    {
+      "path": "src/renderer/src/App.tsx",
+      "size": 11899,
+      "sha256": "831b68a8726c183aaad01d3fb1f96b6fe901be0f91dbb40972aade411a4ed588"
+    },
+    {
+      "path": "src/renderer/src/board-catalog.ts",
+      "size": 3842,
+      "sha256": "9668a8df03b5658d61973fb6a50bd7a5839d0a3fd955fd8e5ec828498db3060b"
+    },
+    {
+      "path": "src/renderer/src/components/BoardEntrance.tsx",
+      "size": 6872,
+      "sha256": "a8a39c6993c7c383e039b5343933a577c0030b3ab65d72e8f9618a49e2eaee7a"
+    },
+    {
+      "path": "src/renderer/src/components/DifficultyBadge.tsx",
+      "size": 802,
+      "sha256": "89ef252c028d611954d47bfeb29b51c26baa10e1913d0bdcbf4ba8262657342e"
+    },
+    {
+      "path": "src/renderer/src/components/LibraryBrowser.tsx",
+      "size": 19804,
+      "sha256": "ccb29931498a99c77eb6ce068ecfca84cb80acfb1ea16b37aaff10d030baea15"
+    },
+    {
+      "path": "src/renderer/src/components/PracticePane.tsx",
+      "size": 8997,
+      "sha256": "a3102c5aadb7abb58d763a2909d66b8d900c1a712342bb230476a64bd6225122"
+    },
+    {
+      "path": "src/renderer/src/components/PracticePlans.tsx",
+      "size": 7260,
+      "sha256": "5c542f032cc804cc819b51514fc585dcab7c584c2521980a7b76ae8d9402659c"
+    },
+    {
+      "path": "src/renderer/src/components/PracticeWorkspace.tsx",
+      "size": 18243,
+      "sha256": "6bbaf211fb32f56a64e2635b2ddc2abd9ac88cfffe69a3880881922142599e78"
+    },
+    {
+      "path": "src/renderer/src/components/QuestionFilterFields.tsx",
+      "size": 3348,
+      "sha256": "b50f92646527ca45a0b7fb53d0d4900bfcf9b29a144d6bb4b30bdd903e677589"
+    },
+    {
+      "path": "src/renderer/src/styles/global.css",
+      "size": 32478,
+      "sha256": "8c7fe05a6df7a36fadd6d73ac8fe6dfd45ebd9535f75b9b24fb1c5d1c9cc8684"
+    },
+    {
+      "path": "tests/e2e/board-entry.spec.ts",
+      "size": 24564,
+      "sha256": "413677236c53588fcd9f9550ed8799d065911992330be0ccdc6fa6b91a046076"
+    },
+    {
+      "path": "tests/e2e/helpers.ts",
+      "size": 3122,
+      "sha256": "cb76b0207a10cac2c64b368df4e6aafa8afadf6882739ee835f32081dd905bee"
+    },
+    {
+      "path": "tests/e2e/session-filters.spec.ts",
+      "size": 12868,
+      "sha256": "69221d2b2409cff3ffaa8554fa838f42880807a9a3ecbe523f43873c63d43613"
+    },
+    {
+      "path": "tests/unit/board-catalog.test.ts",
+      "size": 5099,
+      "sha256": "8141f199c7eb5c87832ddc99340d6104deb0198bda801a108aba08cd043fd3a9"
+    },
+    {
+      "path": "计划书.md",
+      "size": 37029,
+      "sha256": "90e86282acef30f3ce108dcd3f94a10bf8b821eb7c151c016dfa9496d0919d25"
+    }
+  ]
+}
