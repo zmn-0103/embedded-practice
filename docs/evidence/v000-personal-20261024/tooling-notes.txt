@@ -1,0 +1,6 @@
+本轮工具边界与首个错误：
+1. 初期读取两个猜测路径不存在，后按rg实际文件定位；没有据此改代码。
+2. build-personal-bank补丁因Prettier改变上下文首次未应用，重新读取实际文件后修正，没有部分更改。
+3. package-content首轮把ASAR内部路径转换为正斜杠，Windows版@electron/asar返回 out/main/backup.js not found；listPackage确认文件存在，改用原生相对路径后逐文件核对。不是程序包缺失。
+4. 包含空目录删除的命令在创建进程前被自动审批审查拒绝，返回blocked by policy、无更具体原因；整条命令未执行。同目标未改用其他方式删除。已独立完成只读包内容核对，空目录保持。
+5. 原先使用PLAYWRIGHT_JSON_OUTPUT_FILE未覆盖配置中的固定输出，首报告从test-results/desktop-results.json另存，后续每轮完成立即复制到新证据文件。

@@ -25,7 +25,7 @@ const pages = [
   { id: 'settings', label: '设置与数据', path: 'M4 7h16M4 17h16M9 4v6m6 4v6' },
 ] as const
 type PageId = (typeof pages)[number]['id']
-const BUILD_LABEL = '20261024.3-boards'
+const BUILD_LABEL = '20261024.4-v000'
 
 export function App() {
   const [state, setState] = useState<ViewState>({ status: 'loading' })
@@ -312,7 +312,9 @@ export function App() {
       <footer>
         <span>离线使用 · 数据保存在本机</span>
         <span>
-          {state.status === 'ready' ? `v${state.appVersion} · 构建 ${BUILD_LABEL}` : '嵌入式刷题本'}
+          {state.status === 'ready'
+            ? `V${state.appVersion} 测试版 · 构建 ${BUILD_LABEL}`
+            : '嵌入式刷题本'}
         </span>
       </footer>
     </div>

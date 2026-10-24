@@ -1,0 +1,13 @@
+
+Running 4 tests using 1 worker
+
+(node:33448) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\personal-bank.spec.ts:141:5 › 全量419题首次/重复导入、13专题归属、板块计数和三级难度筛选 (4.7s)
+  ok 2 [development] › tests\e2e\personal-bank.spec.ts:213:5 › 旧118题学习记录保护、更新后旧轮/新轮、正常重开与419题完整备份恢复 (10.1s)
+(node:20228) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 3 [packaged] › tests\e2e\personal-bank.spec.ts:141:5 › 全量419题首次/重复导入、13专题归属、板块计数和三级难度筛选 (4.2s)
+  ok 4 [packaged] › tests\e2e\personal-bank.spec.ts:213:5 › 旧118题学习记录保护、更新后旧轮/新轮、正常重开与419题完整备份恢复 (9.3s)
+
+  4 passed (29.4s)
