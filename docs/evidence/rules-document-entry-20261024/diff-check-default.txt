@@ -1,0 +1,25 @@
+Command: git diff --check
+Exit code: 2
+
+docs/开发说明.md:3: trailing whitespace.
++## 运行与测试前的目标核对
+docs/开发说明.md:4: trailing whitespace.
++
+docs/开发说明.md:5: trailing whitespace.
++1. 从[当前交付说明](当前试用版本交付说明.md)确认本轮程序；记录 EXE 绝对路径（开发形态记录构建入口）、预期构建标识、数据库结构和本轮新建临时数据目录。仅有 `0.1.0` 或同名 EXE 不能区分历史版本。
+docs/开发说明.md:6: trailing whitespace.
++2. 解包测试显式设置 `EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE`；辅助脚本使用其支持的明确目标参数或该环境变量。`tests/e2e/helpers.ts` 与 `scripts/m5-desktop-harness.mjs` 目前在缺少目标时仍可能回退到 `release/win-unpacked/embedded-practice.exe`，该目录是封存旧程序。本轮仅补强操作规则，启动逻辑尚未改成漏配报错。
+docs/开发说明.md:7: trailing whitespace.
++3. 自动化通过 `EMBEDDED_PRACTICE_TEST_DATA_DIR` 传入每场景新建目录；人工或性能脚本也必须显式传入新建测试目录。启动后记录实际 EXE/开发入口、可见构建标识、库结构与实际数据路径，和预期一致后再解释结果。历史迁移场景另记来源旧结构和目标结构，不能混作当前正常运行结构。
+docs/开发说明.md:8: trailing whitespace.
++4. 使用新的报告与打包输出目录；首轮失败、修正后检查、旧夹具与旧包分开留存。解包运行保留整个 `win-unpacked` 目录。未确认目标或数据隔离时先停止该项检查，不继续产生混淆版本的结果。
+docs/开发说明.md:9: trailing whitespace.
++
+docs/开发说明.md:10: trailing whitespace.
++## 各批工具链与实现记录
+docs/开发说明.md:11: trailing whitespace.
++
+docs/验收记录.md:3: trailing whitespace.
++2026-10-24 规则与文档入口优化：按复查结论补强根规则，增加 docs/tests/scripts 局部规则，补分类/方案契约及运行目标核对入口，修正模块职责；根 README 和文档索引的 43 段批次说明及旧工程/阶段资料迁入开发记录，完整改前文件已保存。仅采用文档内容、链接、UTF-8 与文件范围的静态核对，实际结果及原始检查日志见[本批证据](evidence/rules-document-entry-20261024/README.md)。应用仍为构建 `20261024.1-plans`、结构 9；生产代码、测试逻辑、题库、计划书、依赖与程序未改，没有运行应用、访问正式学习库或重跑单元/桌面/构建。607/607、404/404 继续是原程序批次结果；最新性能、长期体验、用户技术审阅及安装项目未新增通过结论，VMware 与相关排障继续按用户要求跳过。
+docs/验收记录.md:4: trailing whitespace.
++
