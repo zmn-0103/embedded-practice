@@ -1,0 +1,766 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-24T02:42:57.373Z",
+  "status": "10题通用化小样；待用户审阅，深度与长度反馈后再决定约30题版",
+  "identity": "新topic_id和question_id与旧STM32题独立；后续扩充使用每专题完整快照",
+  "files": [
+    {
+      "file": "question-banks/general/GPIO通用基础.md",
+      "sha256": "4c04dd53f0fbc76d228aa441c5d7deec97ddbea37bc13c0dc8ccc847ddd33636",
+      "topicId": "general-gpio",
+      "topicTitle": "GPIO 通用基础",
+      "questionCount": 2
+    },
+    {
+      "file": "question-banks/general/UART通用基础.md",
+      "sha256": "2c086a0b4c186aa76fcfbdfa63f0a5599d1ab3af7d73fb72f9e14ff986d5d2c5",
+      "topicId": "general-uart",
+      "topicTitle": "UART 通用基础",
+      "questionCount": 2
+    },
+    {
+      "file": "question-banks/general/SPI通用基础.md",
+      "sha256": "c0c5b9a4dc3b0cd188520b5fdaeb5512a0ecdeee30db07ec5236b992535ac329",
+      "topicId": "general-spi",
+      "topicTitle": "SPI 通用基础",
+      "questionCount": 2
+    },
+    {
+      "file": "question-banks/general/I2C通用基础.md",
+      "sha256": "6ba68a5ad791db89e6c6bc14ae7fabb542edf7451a9c69f9964fd299af6ebe5e",
+      "topicId": "general-i2c",
+      "topicTitle": "I2C 通用基础",
+      "questionCount": 2
+    },
+    {
+      "file": "question-banks/general/ADC通用基础.md",
+      "sha256": "3be8e3f75998ce3545c49dbfe8ce65ca693fd0848c6f8b42458af745670d58dd",
+      "topicId": "general-adc",
+      "topicTitle": "ADC 通用基础",
+      "questionCount": 2
+    }
+  ],
+  "questions": [
+    {
+      "topicId": "general-gpio",
+      "questionId": "gpio-general-001",
+      "title": "推挽与开漏输出如何建立高低电平",
+      "tags": [
+        "GPIO",
+        "电气接口",
+        "开漏与上拉",
+        "概念题"
+      ],
+      "difficulty": "基础",
+      "questionSha256": "45eb02123161c6f9280842343dd4d50cdb749c92f3dd4e89a7106818bd4e7a3f",
+      "answerSha256": "c909357e24280fd1c636cda4078280dad6ddc1751bb874e51c29529fab51203c",
+      "sourceQuestions": [
+        {
+          "sourceQuestionId": "gpio-stage-006",
+          "sourceId": "gpio-stage",
+          "number": 6,
+          "section": "STM32F103RCT6 GPIO 阶段自测题 / 一、基础概念",
+          "startLine": 32,
+          "endLine": 32,
+          "snapshot": "snapshots/gpio-stage.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "gpio-stage-008",
+          "sourceId": "gpio-stage",
+          "number": 8,
+          "section": "STM32F103RCT6 GPIO 阶段自测题 / 一、基础概念",
+          "startLine": 34,
+          "endLine": 34,
+          "snapshot": "snapshots/gpio-stage.md",
+          "sourceHasReferenceAnswers": true
+        }
+      ],
+      "processing": "提取输出级和上拉原理，补共地、电压、电流和负载条件，不推广任意电压容忍。",
+      "technicalReferences": [
+        "https://www.ti.com/lit/pdf/scpa070"
+      ],
+      "aiReview": "已核对所列原题与官方依据；条件和数值经过静态复核，未做硬件验证",
+      "userReview": "待用户审阅",
+      "experience": "待用户试用"
+    },
+    {
+      "topicId": "general-gpio",
+      "questionId": "gpio-general-002",
+      "title": "如何把按键抖动处理成一次按下事件",
+      "tags": [
+        "GPIO",
+        "软件消抖",
+        "状态机",
+        "情景分析"
+      ],
+      "difficulty": "进阶",
+      "questionSha256": "bb4c5cbbd5b292c391b1545ea74e72f649f5d6c5fa047b5f70c3a8f25071d8bd",
+      "answerSha256": "204c75a545c92243ecfeb5e9c1f7c090897e93571d98a320bb2701e75239ec7a",
+      "sourceQuestions": [
+        {
+          "sourceQuestionId": "gpio-stage-069",
+          "sourceId": "gpio-stage",
+          "number": 69,
+          "section": "STM32F103RCT6 GPIO 阶段自测题 / 七、软件消抖",
+          "startLine": 113,
+          "endLine": 113,
+          "snapshot": "snapshots/gpio-stage.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "gpio-stage-070",
+          "sourceId": "gpio-stage",
+          "number": 70,
+          "section": "STM32F103RCT6 GPIO 阶段自测题 / 七、软件消抖",
+          "startLine": 114,
+          "endLine": 114,
+          "snapshot": "snapshots/gpio-stage.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "gpio-stage-071",
+          "sourceId": "gpio-stage",
+          "number": 71,
+          "section": "STM32F103RCT6 GPIO 阶段自测题 / 七、软件消抖",
+          "startLine": 115,
+          "endLine": 115,
+          "snapshot": "snapshots/gpio-stage.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "gpio-stage-075",
+          "sourceId": "gpio-stage",
+          "number": 75,
+          "section": "STM32F103RCT6 GPIO 阶段自测题 / 七、软件消抖",
+          "startLine": 119,
+          "endLine": 119,
+          "snapshot": "snapshots/gpio-stage.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "gpio-stage-077",
+          "sourceId": "gpio-stage",
+          "number": 77,
+          "section": "STM32F103RCT6 GPIO 阶段自测题 / 七、软件消抖",
+          "startLine": 121,
+          "endLine": 121,
+          "snapshot": "snapshots/gpio-stage.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "gpio-stage-078",
+          "sourceId": "gpio-stage",
+          "number": 78,
+          "section": "STM32F103RCT6 GPIO 阶段自测题 / 七、软件消抖",
+          "startLine": 122,
+          "endLine": 122,
+          "snapshot": "snapshots/gpio-stage.md",
+          "sourceHasReferenceAnswers": true
+        }
+      ],
+      "processing": "合并抖动、确认与事件管理，给出低有效接线和示例采样策略，区分观测稳定与连续物理稳定。",
+      "technicalReferences": [
+        "https://www.ti.com/document-viewer/lit/html/scea094",
+        "https://onlinedocs.microchip.com/oxy/GUID-7FD12F93-9B28-4EF0-B36F-3A147484BEA1-en-US-3/GUID-4FD2FC7D-3F31-40C0-8745-7CEB40796CF5.html"
+      ],
+      "aiReview": "已核对所列原题与官方依据；条件和数值经过静态复核，未做硬件验证",
+      "userReview": "待用户审阅",
+      "experience": "待用户试用"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart-general-001",
+      "title": "估算 UART 字节流的理论传输时间",
+      "tags": [
+        "UART",
+        "帧格式",
+        "时序分析",
+        "计算题"
+      ],
+      "difficulty": "基础",
+      "questionSha256": "831c30116d23960de528d127578f9319b6409375dd52da5b7fad493db280d3cd",
+      "answerSha256": "9ad6781a4a57bf33aa3ccf1d1a9a02d0b97c415ac0604419fdc04fe681793d9b",
+      "sourceQuestions": [
+        {
+          "sourceQuestionId": "uart-level1-002",
+          "sourceId": "uart-level1",
+          "number": 2,
+          "section": "第一部分：自测题 / 一、选择题",
+          "startLine": 47,
+          "endLine": 55,
+          "snapshot": "snapshots/uart-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "uart-level1-016",
+          "sourceId": "uart-level1",
+          "number": 16,
+          "section": "第一部分：自测题 / 二、判断题",
+          "startLine": 193,
+          "endLine": 195,
+          "snapshot": "snapshots/uart-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "uart-level1-040",
+          "sourceId": "uart-level1",
+          "number": 40,
+          "section": "第一部分：自测题 / 四、故障分析题",
+          "startLine": 303,
+          "endLine": 314,
+          "snapshot": "snapshots/uart-level1.md",
+          "sourceHasReferenceAnswers": true
+        }
+      ],
+      "processing": "改为100字节理论传输，给齐8N1与连续发送条件，分开线路和软件观察耗时。",
+      "technicalReferences": [
+        "https://onlinedocs.microchip.com/oxy/GUID-7BB81102-57F6-474D-9BFE-B2AF8EA02A1E-en-US-5/GUID-F84E04E8-3235-4E21-89A9-D1911E9B91DD.html"
+      ],
+      "aiReview": "已核对所列原题与官方依据；条件和数值经过静态复核，未做硬件验证",
+      "userReview": "待用户审阅",
+      "experience": "待用户试用"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart-general-002",
+      "title": "文本消息接收如何处理结束符与缓冲区边界",
+      "tags": [
+        "UART",
+        "缓冲区",
+        "消息边界",
+        "错误处理",
+        "情景分析"
+      ],
+      "difficulty": "进阶",
+      "questionSha256": "66ce5964de1bbfca018f5ac6024c65fb23479b96b9c240f1d37401894e522559",
+      "answerSha256": "669db8197c33af4b7a9f26385d2edd70f8f430ce00ce307fd35eda153670dab8",
+      "sourceQuestions": [
+        {
+          "sourceQuestionId": "uart-level1-021",
+          "sourceId": "uart-level1",
+          "number": 21,
+          "section": "第一部分：自测题 / 二、判断题",
+          "startLine": 213,
+          "endLine": 215,
+          "snapshot": "snapshots/uart-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "uart-level1-022",
+          "sourceId": "uart-level1",
+          "number": 22,
+          "section": "第一部分：自测题 / 二、判断题",
+          "startLine": 217,
+          "endLine": 219,
+          "snapshot": "snapshots/uart-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "uart-level1-031",
+          "sourceId": "uart-level1",
+          "number": 31,
+          "section": "第一部分：自测题 / 三、简答题",
+          "startLine": 263,
+          "endLine": 265,
+          "snapshot": "snapshots/uart-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "uart-level1-032",
+          "sourceId": "uart-level1",
+          "number": 32,
+          "section": "第一部分：自测题 / 三、简答题",
+          "startLine": 267,
+          "endLine": 269,
+          "snapshot": "snapshots/uart-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "uart-level1-037",
+          "sourceId": "uart-level1",
+          "number": 37,
+          "section": "第一部分：自测题 / 四、故障分析题",
+          "startLine": 291,
+          "endLine": 293,
+          "snapshot": "snapshots/uart-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "uart-level1-042",
+          "sourceId": "uart-level1",
+          "number": 42,
+          "section": "第一部分：自测题 / 五、综合设计题",
+          "startLine": 322,
+          "endLine": 331,
+          "snapshot": "snapshots/uart-level1.md",
+          "sourceHasReferenceAnswers": true
+        }
+      ],
+      "processing": "补全LF、ASCII正文、空消息、31字节临界和超长丢弃到LF的恢复策略。",
+      "technicalReferences": [
+        "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/characters-and-strings-str/str31-c/"
+      ],
+      "aiReview": "已核对所列原题与官方依据；条件和数值经过静态复核，未做硬件验证",
+      "userReview": "待用户审阅",
+      "experience": "待用户试用"
+    },
+    {
+      "topicId": "general-spi",
+      "questionId": "spi-general-001",
+      "title": "根据时钟极性与相位判断采样边沿",
+      "tags": [
+        "SPI",
+        "时序分析",
+        "概念题"
+      ],
+      "difficulty": "基础",
+      "questionSha256": "23cff2043b4b683ae82af823708d5cf043eae5fbf377fb2211c8343e94927a03",
+      "answerSha256": "91b1db088ab7157ae5e4b7733bfbbdec732ab479e0e86bae528428c8a6edaa2a",
+      "sourceQuestions": [
+        {
+          "sourceQuestionId": "spi-level1-003",
+          "sourceId": "spi-level1",
+          "number": 3,
+          "section": "第一部分：自测题 / A. 单项选择题",
+          "startLine": 50,
+          "endLine": 55,
+          "snapshot": "snapshots/spi-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "spi-level2-002",
+          "sourceId": "spi-level2",
+          "number": 2,
+          "section": "STM32F103RCT6 SPI 第二层自测题 / 第一部分：单选题",
+          "startLine": 33,
+          "endLine": 34,
+          "snapshot": "snapshots/spi-level2.md",
+          "sourceHasReferenceAnswers": true
+        }
+      ],
+      "processing": "合并Mode0重复考点，改问相对边沿随CPOL改变的推导，不记库配置常量。",
+      "technicalReferences": [
+        "https://www.analog.com/en/resources/analog-dialogue/articles/2018/08/13/15/31/introduction-to-spi-interface.html",
+        "https://www.analog.com/en/resources/app-notes/an-1248.html"
+      ],
+      "aiReview": "已核对所列原题与官方依据；条件和数值经过静态复核，未做硬件验证",
+      "userReview": "待用户审阅",
+      "experience": "待用户试用"
+    },
+    {
+      "topicId": "general-spi",
+      "questionId": "spi-general-002",
+      "title": "控制器读取数据时为什么仍需提供时钟",
+      "tags": [
+        "SPI",
+        "全双工",
+        "时序分析",
+        "情景分析"
+      ],
+      "difficulty": "进阶",
+      "questionSha256": "d399e703f60767fef555267ddfaf3c0316724510cf322e8d24365c2d35de4ca8",
+      "answerSha256": "607bb4b0c5414d9e5f5fea206b09615512ba3c83d1d262940cbeae7eb514c6be",
+      "sourceQuestions": [
+        {
+          "sourceQuestionId": "spi-level1-004",
+          "sourceId": "spi-level1",
+          "number": 4,
+          "section": "第一部分：自测题 / A. 单项选择题",
+          "startLine": 57,
+          "endLine": 62,
+          "snapshot": "snapshots/spi-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "spi-level1-012",
+          "sourceId": "spi-level1",
+          "number": 12,
+          "section": "第一部分：自测题 / A. 单项选择题",
+          "startLine": 113,
+          "endLine": 118,
+          "snapshot": "snapshots/spi-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "spi-level1-019",
+          "sourceId": "spi-level1",
+          "number": 19,
+          "section": "第一部分：自测题 / B. 简答题",
+          "startLine": 164,
+          "endLine": 164,
+          "snapshot": "snapshots/spi-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "spi-level1-021",
+          "sourceId": "spi-level1",
+          "number": 21,
+          "section": "第一部分：自测题 / B. 简答题",
+          "startLine": 176,
+          "endLine": 176,
+          "snapshot": "snapshots/spi-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "spi-level2-003",
+          "sourceId": "spi-level2",
+          "number": 3,
+          "section": "STM32F103RCT6 SPI 第二层自测题 / 第一部分：单选题",
+          "startLine": 36,
+          "endLine": 37,
+          "snapshot": "snapshots/spi-level2.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "spi-level2-014",
+          "sourceId": "spi-level2",
+          "number": 14,
+          "section": "STM32F103RCT6 SPI 第二层自测题 / 第一部分：单选题",
+          "startLine": 69,
+          "endLine": 70,
+          "snapshot": "snapshots/spi-level2.md",
+          "sourceHasReferenceAnswers": true
+        }
+      ],
+      "processing": "移除Flash型号与命令码，给出三帧读取协议，解释控制器供钟和全双工接收。",
+      "technicalReferences": [
+        "https://www.analog.com/en/resources/analog-dialogue/articles/2018/08/13/15/31/introduction-to-spi-interface.html"
+      ],
+      "aiReview": "已核对所列原题与官方依据；条件和数值经过静态复核，未做硬件验证",
+      "userReview": "待用户审阅",
+      "experience": "待用户试用"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c-general-001",
+      "title": "区分 7 位设备地址与线上地址字节",
+      "tags": [
+        "I2C",
+        "设备寻址",
+        "计算题"
+      ],
+      "difficulty": "基础",
+      "questionSha256": "e032f240aef2f74e98ec85c9625ed14368defbad511b8f40c27e36863f6df8cf",
+      "answerSha256": "2ecce350a10d6945b1f2df9cd735ce3180492c84f8b48b3a2f8dc24ff15ec6f2",
+      "sourceQuestions": [
+        {
+          "sourceQuestionId": "i2c-level1-026",
+          "sourceId": "i2c-level1",
+          "number": 26,
+          "section": "STM32F103 I2C 第一层自测题及答案 / 一、单项选择题（1～40题） / 第六部分：器件寄存器读写",
+          "startLine": 223,
+          "endLine": 228,
+          "snapshot": "snapshots/i2c-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "i2c-level1-063",
+          "sourceId": "i2c-level1",
+          "number": 63,
+          "section": "STM32F103 I2C 第一层自测题及答案 / 四、简答题（61～68题）",
+          "startLine": 434,
+          "endLine": 438,
+          "snapshot": "snapshots/i2c-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "i2c-level2-013",
+          "sourceId": "i2c-level2",
+          "number": 13,
+          "section": "STM32F103 I2C 第二层自测题 / 一、单项选择题 / 3. 地址与发送流程",
+          "startLine": 119,
+          "endLine": 124,
+          "snapshot": "snapshots/i2c-level2.md",
+          "sourceHasReferenceAnswers": false
+        },
+        {
+          "sourceQuestionId": "i2c-level2-037",
+          "sourceId": "i2c-level2",
+          "number": 37,
+          "section": "STM32F103 I2C 第二层自测题 / 三、判断题",
+          "startLine": 291,
+          "endLine": 291,
+          "snapshot": "snapshots/i2c-level2.md",
+          "sourceHasReferenceAnswers": false
+        },
+        {
+          "sourceQuestionId": "i2c-level2-049",
+          "sourceId": "i2c-level2",
+          "number": 49,
+          "section": "STM32F103 I2C 第二层自测题 / 四、填空题",
+          "startLine": 319,
+          "endLine": 319,
+          "snapshot": "snapshots/i2c-level2.md",
+          "sourceHasReferenceAnswers": false
+        },
+        {
+          "sourceQuestionId": "i2c-level2-063",
+          "sourceId": "i2c-level2",
+          "number": 63,
+          "section": "STM32F103 I2C 第二层自测题 / 五、简答题",
+          "startLine": 351,
+          "endLine": 351,
+          "snapshot": "snapshots/i2c-level2.md",
+          "sourceHasReferenceAnswers": false
+        }
+      ],
+      "processing": "合并两层地址题，移除标准库参数记忆，区分7位地址、线上字节和API契约。",
+      "technicalReferences": [
+        "https://www.nxp.com/docs/en/user-guide/UM10204.pdf"
+      ],
+      "aiReview": "已核对所列原题与官方依据；条件和数值经过静态复核，未做硬件验证",
+      "userReview": "待用户审阅",
+      "experience": "待用户试用"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c-general-002",
+      "title": "用重复 START 组织一次寄存器读取",
+      "tags": [
+        "I2C",
+        "消息边界",
+        "时序分析",
+        "情景分析"
+      ],
+      "difficulty": "进阶",
+      "questionSha256": "f97a47ad308dd179ed2a30c6191494781aba42e08b71072594e25168f1cc1daf",
+      "answerSha256": "446729e876663acf76eaae1febc835fbcf29bf4e94d5adcf04f93fa113cc9db1",
+      "sourceQuestions": [
+        {
+          "sourceQuestionId": "i2c-level1-010",
+          "sourceId": "i2c-level1",
+          "number": 10,
+          "section": "STM32F103 I2C 第一层自测题及答案 / 一、单项选择题（1～40题） / 第二部分：I2C 协议与时序",
+          "startLine": 103,
+          "endLine": 108,
+          "snapshot": "snapshots/i2c-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "i2c-level1-022",
+          "sourceId": "i2c-level1",
+          "number": 22,
+          "section": "STM32F103 I2C 第一层自测题及答案 / 一、单项选择题（1～40题） / 第五部分：主机接收",
+          "startLine": 193,
+          "endLine": 198,
+          "snapshot": "snapshots/i2c-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "i2c-level1-060",
+          "sourceId": "i2c-level1",
+          "number": 60,
+          "section": "STM32F103 I2C 第一层自测题及答案 / 三、判断题（49～60题）",
+          "startLine": 422,
+          "endLine": 424,
+          "snapshot": "snapshots/i2c-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "i2c-level1-062",
+          "sourceId": "i2c-level1",
+          "number": 62,
+          "section": "STM32F103 I2C 第一层自测题及答案 / 四、简答题（61～68题）",
+          "startLine": 432,
+          "endLine": 432,
+          "snapshot": "snapshots/i2c-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "i2c-level1-067",
+          "sourceId": "i2c-level1",
+          "number": 67,
+          "section": "STM32F103 I2C 第一层自测题及答案 / 四、简答题（61～68题）",
+          "startLine": 446,
+          "endLine": 446,
+          "snapshot": "snapshots/i2c-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "i2c-level2-019",
+          "sourceId": "i2c-level2",
+          "number": 19,
+          "section": "STM32F103 I2C 第二层自测题 / 一、单项选择题 / 4. 接收与错误处理",
+          "startLine": 163,
+          "endLine": 168,
+          "snapshot": "snapshots/i2c-level2.md",
+          "sourceHasReferenceAnswers": false
+        },
+        {
+          "sourceQuestionId": "i2c-level2-038",
+          "sourceId": "i2c-level2",
+          "number": 38,
+          "section": "STM32F103 I2C 第二层自测题 / 三、判断题",
+          "startLine": 293,
+          "endLine": 293,
+          "snapshot": "snapshots/i2c-level2.md",
+          "sourceHasReferenceAnswers": false
+        },
+        {
+          "sourceQuestionId": "i2c-level2-066",
+          "sourceId": "i2c-level2",
+          "number": 66,
+          "section": "STM32F103 I2C 第二层自测题 / 五、简答题",
+          "startLine": 357,
+          "endLine": 357,
+          "snapshot": "snapshots/i2c-level2.md",
+          "sourceHasReferenceAnswers": false
+        },
+        {
+          "sourceQuestionId": "i2c-level2-067",
+          "sourceId": "i2c-level2",
+          "number": 67,
+          "section": "STM32F103 I2C 第二层自测题 / 五、简答题",
+          "startLine": 359,
+          "endLine": 359,
+          "snapshot": "snapshots/i2c-level2.md",
+          "sourceHasReferenceAnswers": false
+        },
+        {
+          "sourceQuestionId": "i2c-level2-080",
+          "sourceId": "i2c-level2",
+          "number": 80,
+          "section": "STM32F103 I2C 第二层自测题 / 六、时序与状态机分析题",
+          "startLine": 402,
+          "endLine": 404,
+          "snapshot": "snapshots/i2c-level2.md",
+          "sourceHasReferenceAnswers": false
+        },
+        {
+          "sourceQuestionId": "i2c-level2-084",
+          "sourceId": "i2c-level2",
+          "number": 84,
+          "section": "STM32F103 I2C 第二层自测题 / 七、综合应用题",
+          "startLine": 451,
+          "endLine": 463,
+          "snapshot": "snapshots/i2c-level2.md",
+          "sourceHasReferenceAnswers": false
+        }
+      ],
+      "processing": "合并重复START、寄存器读取和ACK角色，明确指针宽度及递增是器件协议条件。",
+      "technicalReferences": [
+        "https://www.nxp.com/docs/en/user-guide/UM10204.pdf"
+      ],
+      "aiReview": "已核对所列原题与官方依据；条件和数值经过静态复核，未做硬件验证",
+      "userReview": "待用户审阅",
+      "experience": "待用户试用"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc-general-001",
+      "title": "区分分辨率、编码数量与理想量化步长",
+      "tags": [
+        "ADC",
+        "分辨率与量化",
+        "计算题"
+      ],
+      "difficulty": "基础",
+      "questionSha256": "59c2d1f142b2b6c41ae27eac4d187a818ae527186637a4650fb10a33ed9b4e99",
+      "answerSha256": "9829ba8a011d9c3dfc6c968213cc467ce3d72e22a51e5023cf0c9f05cb90a20f",
+      "sourceQuestions": [
+        {
+          "sourceQuestionId": "adc-level1-002",
+          "sourceId": "adc-level1",
+          "number": 2,
+          "section": "STM32F103RCT6 ADC 第一层自测题 / 二、第一部分：选择题",
+          "startLine": 70,
+          "endLine": 80,
+          "snapshot": "snapshots/adc-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "adc-level1-013",
+          "sourceId": "adc-level1",
+          "number": 13,
+          "section": "STM32F103RCT6 ADC 第一层自测题 / 三、第二部分：判断题",
+          "startLine": 208,
+          "endLine": 210,
+          "snapshot": "snapshots/adc-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "adc-level1-023",
+          "sourceId": "adc-level1",
+          "number": 23,
+          "section": "STM32F103RCT6 ADC 第一层自测题 / 四、第三部分：简答题",
+          "startLine": 254,
+          "endLine": 260,
+          "snapshot": "snapshots/adc-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "adc-level1-029",
+          "sourceId": "adc-level1",
+          "number": 29,
+          "section": "STM32F103RCT6 ADC 第一层自测题 / 五、第四部分：计算题",
+          "startLine": 309,
+          "endLine": 313,
+          "snapshot": "snapshots/adc-level1.md",
+          "sourceHasReferenceAnswers": true
+        }
+      ],
+      "processing": "给定12位无符号模型，区分编码数、最大值和理想步长，限制准确度推断。",
+      "technicalReferences": [
+        "https://www.nxp.com/docs/en/application-note/AN5250.pdf",
+        "https://www.analog.com/en/resources/technical-articles/an-inside-look-at-high-speed-analog-to-digital-converter-accuracy-part-one.html"
+      ],
+      "aiReview": "已核对所列原题与官方依据；条件和数值经过静态复核，未做硬件验证",
+      "userReview": "待用户审阅",
+      "experience": "待用户试用"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc-general-002",
+      "title": "高源阻抗为什么可能需要更长采样时间",
+      "tags": [
+        "ADC",
+        "采样保持",
+        "电气接口",
+        "故障排查"
+      ],
+      "difficulty": "进阶",
+      "questionSha256": "2de5c18a8369422791cd5baf949796b06bde8f4b3b8c55f5c9e6986ca75c35d9",
+      "answerSha256": "bbd42ddf1d53cf1632dc524513a423f72bdef8c04f6c05cf6cba60601a672cce",
+      "sourceQuestions": [
+        {
+          "sourceQuestionId": "adc-level1-006",
+          "sourceId": "adc-level1",
+          "number": 6,
+          "section": "STM32F103RCT6 ADC 第一层自测题 / 二、第一部分：选择题",
+          "startLine": 118,
+          "endLine": 128,
+          "snapshot": "snapshots/adc-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "adc-level1-016",
+          "sourceId": "adc-level1",
+          "number": 16,
+          "section": "STM32F103RCT6 ADC 第一层自测题 / 三、第二部分：判断题",
+          "startLine": 220,
+          "endLine": 222,
+          "snapshot": "snapshots/adc-level1.md",
+          "sourceHasReferenceAnswers": true
+        },
+        {
+          "sourceQuestionId": "adc-level1-026",
+          "sourceId": "adc-level1",
+          "number": 26,
+          "section": "STM32F103RCT6 ADC 第一层自测题 / 四、第三部分：简答题",
+          "startLine": 279,
+          "endLine": 285,
+          "snapshot": "snapshots/adc-level1.md",
+          "sourceHasReferenceAnswers": true
+        }
+      ],
+      "processing": "提取SAR采样电容建立，移除固定周期，明确初始电压并限制误差方向和架构推广。",
+      "technicalReferences": [
+        "https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/acquisition-time/"
+      ],
+      "aiReview": "已核对所列原题与官方依据；条件和数值经过静态复核，未做硬件验证",
+      "userReview": "待用户审阅",
+      "experience": "待用户试用"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-24",
+  "topicId": "m5-trial-uart-level-2",
+  "beforeFileSha256": "d1f63993942ef42380e1e5036fa73644050b17ebbacee21aed4f07bad62b4e2b",
+  "afterFileSha256": "9afa52b64c4db35a313296c6ea0c10d24fd8072ab4bcb9bd420d2f5fd403627e",
+  "sourceMap": "题答来源.json",
+  "metadataMap": "UART题目整理清单.json",
+  "unchangedQuestions": 30,
+  "unchangedMetadata": 30,
+  "changedAnswers": 7,
+  "unchangedAnswers": 23,
+  "references": [
+    {
+      "id": "RM0008",
+      "version": "Rev21",
+      "url": "https://www.st.com/resource/en/reference_manual/cd00171190.pdf",
+      "sections": [
+        "9.3.8",
+        "9.4.2",
+        "27.6.1",
+        "27.6.4",
+        "27.6.5",
+        "27.3.11"
+      ],
+      "access": "ST官方检索章节摘录；完整PDF下载超时，没有声明全文或全部勘误核对。"
+    },
+    {
+      "id": "SPL",
+      "version": "V3.5.0",
+      "local": "E:/My_Projects/New/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c",
+      "scope": "USART_Init/ITConfig/DMACmd的实际职责；初始化依赖推导不冒充唯一官方步骤。"
+    },
+    {
+      "id": "GCC",
+      "version": "GNU Tools for STM32 13.3.rel1.20240926-1715 / GCC13.3.1",
+      "url": "https://gcc.gnu.org/onlinedocs/gcc/Volatiles.html",
+      "evidence": "../../docs/evidence/schema9-daily-uart-20261024/references/compiler-probe.json"
+    }
+  ],
+  "questions": [
+    {
+      "questionId": "uart2-020",
+      "reason": "补有效发送与TC复位为1的前提，避免从标志位反推已经发送。",
+      "beforeAnswer": "**正确**\n\nTC 表示发送数据寄存器和移位寄存器均为空，最后一帧已完成发送。",
+      "afterAnswer": "**有条件成立，不能仅凭 TC=1 断言刚完成了一次有效发送。**\n\n在已经启动有效发送、并按手册规定处理了此前 TC 状态的上下文中，TC=1 才用于确认相应发送已经完成；连续发送时应观察最后一帧的完成状态。它与只表示发送数据寄存器可继续写入的 TXE 不同。\n\n#### 适用条件与来源\n\nSTM32F103 的 USART_SR 复位值为 0x00C0，TC 复位后就是 1，因此复位后读到 TC=1 不能证明发过数据。TC 的规定清除序列涉及读 SR 后写 DR，另有按手册限定使用的写 0 路径；不能把任意读改写当成通用清标志操作。依据：[ST RM0008 Rev21，27.6.1](https://www.st.com/resource/en/reference_manual/cd00171190.pdf)。本题未做发送波形或板上验证，仍待用户审阅。",
+      "beforeAnswerSha256": "58ae85899582cc9d85ed2322d75901407023e4fdc1807632ced28cb6fd2e3468",
+      "afterAnswerSha256": "ec4557b6f0043382d0cae8b8fe662e156800256142d0c53835f1e9606160c855",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-025",
+      "reason": "补GCC13.3.1/Cortex-M3/32位对象的编译反汇编依据，限定结论范围。",
+      "beforeAnswer": "**错误**\n\n`volatile` 不能保证复合读—改—写操作具有原子性，也不能自动解决并发问题。",
+      "afterAnswer": "**错误**\n\n`volatile` 不能保证复合读—改—写操作具有原子性，也不能自动解决并发问题。\n\n#### 适用条件与来源\n\n本机 GNU Tools for STM32 的 GCC 13.3.1，在 Cortex-M3、Thumb、普通有效且按 32 位对齐的可读写对象前提下，分别以 -O0、-O2 编译独立样例。-O2 中单次赋值生成 STR，而 `*reg |= mask` 生成 LDR、ORRS、STR，整个读改写仍是多条指令；中断若在读与写之间修改同一对象，随后写回可能覆盖该修改。不能由“某次访问是一条指令”推导整个复合操作原子。\n\n实际并发控制还取决于共享对象、访问者和寄存器语义，应采用符合该场景的临界区或硬件原子置位/清位机制；特殊状态寄存器不因加了 volatile 就适合读改写。依据：[GCC volatile 说明](https://gcc.gnu.org/onlinedocs/gcc/Volatiles.html)与本批独立编译及反汇编记录，后者的完整来源见仓库 UART 技术核对文档。这只补充所列工具链和样例的依据，没有运行样例、验证其他编译器或代替板上并发实验，仍待用户审阅。",
+      "beforeAnswerSha256": "43cae36deaf3956b5373e8c35848dcb620f6a21b5a9812e869712b26068a7059",
+      "afterAnswerSha256": "f3f951bb19c19d67d404801787fcee8ecb213c92098453a1c638b28ed5e861a2",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-030",
+      "reason": "说明CR1只确定部分帧参数，停止位需查CR2。",
+      "beforeAnswer": "`CR1 = 0x200C`\n\n二进制置位情况：\n\n- bit 13（UE）= 1。\n- bit 3（TE）= 1。\n- bit 2（RE）= 1。\n- bit 12（M）= 0。\n- bit 10（PCE）= 0。\n- bit 9（PS）= 0。\n- bit 5（RXNEIE）= 0。\n\n因此，该配置启用了 USART、发送器和接收器，没有启用奇偶校验，也没有启用 RXNE 中断源，符合普通 8N1 收发的 CR1 配置要求。",
+      "afterAnswer": "`CR1 = 0x200C`\n\n二进制置位情况：\n\n- bit 13（UE）= 1。\n- bit 3（TE）= 1。\n- bit 2（RE）= 1。\n- bit 12（M）= 0。\n- bit 10（PCE）= 0。\n- bit 9（PS）= 0。\n- bit 5（RXNEIE）= 0。\n\n因此，该配置启用了 USART、发送器和接收器，没有启用奇偶校验，也没有启用 RXNE 中断源，符合普通 8N1 收发的 CR1 配置要求。\n\n#### 适用条件与来源\n\n这里仅说明 CR1 中的字长、校验和收发状态。要确认完整的普通 8N1，还须检查 CR2 的 STOP=00（1 个停止位）及实际通信模式；波特率、时钟和引脚配置也需要另行核对。PCE=0 时，PS 位不产生启用奇偶校验的效果。不能只看 CR1=0x200C 就认定整套串口配置正确。依据：[ST RM0008 Rev21，27.6.4～27.6.5](https://www.st.com/resource/en/reference_manual/cd00171190.pdf)和 ST SPL V3.5.0 的 USART_Init；仍待用户审阅。",
+      "beforeAnswerSha256": "49fcf4f1d60f339434fa249070da8542ca697a6b871ee6fe467729f8810c6ce6",
+      "afterAnswerSha256": "4595f4c06ee174065c113d47bf768aaf5eeb29b3180d438268e04713a663785e",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-031",
+      "reason": "补UART4/5与Smartcard等实例和模式限制。",
+      "beforeAnswer": "| STOP | 含义       |\n| ---- | -------- |\n| 00   | 1 个停止位   |\n| 01   | 0.5 个停止位 |\n| 10   | 2 个停止位   |\n| 11   | 1.5 个停止位 |\n\nSTOP 是多位字段。直接覆盖整个 CR2 可能破坏其他控制位。\n\n修改字段时，应先清除 STOP 对应的位，再设置目标值，同时保留其他需要保留的位。",
+      "afterAnswer": "| STOP | 含义       |\n| ---- | -------- |\n| 00   | 1 个停止位   |\n| 01   | 0.5 个停止位 |\n| 10   | 2 个停止位   |\n| 11   | 1.5 个停止位 |\n\nSTOP 是多位字段。直接覆盖整个 CR2 可能破坏其他控制位。\n\n修改字段时，应先清除 STOP 对应的位，再设置目标值，同时保留其他需要保留的位。\n\n#### 适用条件与来源\n\n上表是字段编码，不代表每个外设实例、每种模式都支持全部取值。RM0008 明确指出 UART4、UART5 不支持 0.5 和 1.5 个停止位；Smartcard 的停止位配置另有模式要求，普通异步通信不能仅凭这张编码表照搬。应结合具体 USART/UART 实例、当前模式和对端帧格式选择。依据：[ST RM0008 Rev21，27.6.5 与 27.3.11](https://www.st.com/resource/en/reference_manual/cd00171190.pdf)；仍待用户审阅。",
+      "beforeAnswerSha256": "a2eee7eaa7ab53d391e83f3ddcf81f851df4040a755aec01f9e1678f39aa6f33",
+      "afterAnswerSha256": "eb0bd5f9e516ec35e059d2137f98dfab15ac0ebccf48df462f2bc350f6740bcd",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-035",
+      "reason": "改正先开放请求再准备NVIC/DMA的通用步骤，改按依赖准备。",
+      "beforeAnswer": "合理流程：\n\n1. 根据实际时钟树使能 GPIOA、USART1 所需的 RCC 时钟。\n2. 配置 PA9 为复用推挽输出，PA10 为合适的输入模式。\n3. 如使用重映射，配置 AFIO。\n4. 配置 BRR，确定波特率。\n5. 配置 CR1，确定字长、校验、收发使能和中断需求。\n6. 配置 CR2，确定停止位及特殊模式。\n7. 配置 CR3，确定流控、DMA 或其他高级功能。\n8. 使能 USART。\n9. 根据需要配置 NVIC 或 DMA 控制器。\n10. 通过状态标志和实际通信验证配置。\n\n各模块职责：\n\n- RCC：提供外设时钟。\n- GPIO：配置引脚模式。\n- BRR：设置波特率分频。\n- CR1：设置核心通信参数和收发控制。\n- CR2：设置停止位及特殊模式。\n- CR3：设置 DMA、硬件流控等高级功能。",
+      "afterAnswer": "应先完成依赖准备，再开放对应收发事件。以下是初始化时的依赖安排，不是适用于所有模式的唯一寄存器写入顺序：\n\n1. 确认实际时钟树和 USART1 的 PCLK2，使能所需 GPIOA、USART1 时钟；需要修改映射时同时准备 AFIO 时钟。\n2. 默认映射下配置 PA9 为复用推挽输出、PA10 为适合板卡接线的输入模式。若采用重映射，改按实际引脚配置，不继续使用默认引脚假设。\n3. 按手册规定配置 BRR、CR1 的字长和校验、CR2 的停止位、CR3 的流控等参数；准备期间保持尚未就绪的中断源和 DMA 请求关闭，收发使能按实际配置步骤控制。\n4. 使用中断时，先准备接收缓存、状态变量、正确的中断入口以及 NVIC 通道和优先级，再开放相应事件；需按真实事件处理遗留标志，不无条件读取 DR 丢弃有效数据。\n5. 使用 DMA 时，先准备缓存和 DMA 通道的方向、地址、长度及状态；在通道已准备并按要求使能后，再开放 USART 对应 DMA 请求，不能用 USART_DMACmd 代替 DMA 控制器配置。\n6. 按选定模式完成 USART、收发器和对应请求的使能，并与发送方约定开始通信的时机，避免初始化窗口内已有外部数据到达而无人接收。\n7. 通过状态标志与实际通信检查配置；轮询方式不必为了套用此表增加 NVIC 或 DMA。\n\n各模块职责：\n\n- RCC：提供外设时钟。\n- GPIO：配置引脚模式。\n- BRR：设置波特率分频。\n- CR1：设置核心通信参数和收发控制。\n- CR2：设置停止位及特殊模式。\n- CR3：设置 DMA、硬件流控等高级功能。\n\n#### 适用条件与来源\n\n原答案中“先使能 USART，再配置 NVIC 或 DMA”不再作为通用固定顺序。上述“先准备再开放请求”由实际依赖关系推导：SPL V3.5.0 的 USART_ITConfig 只设置外设中断控制位，USART_DMACmd 只设置 USART DMA 请求位，两者都不替调用者准备处理入口、NVIC、DMA 通道或缓存。硬件流程另见[ST RM0008 Rev21，13.3 与第27章](https://www.st.com/resource/en/reference_manual/cd00171190.pdf)。本题没有执行中断或 DMA 收发实验，仍待用户审阅。",
+      "beforeAnswerSha256": "a1d080f42a006ef85be17b475361366993d37549a5599be6037871f12d282e2a",
+      "afterAnswerSha256": "94c0ec9913dbf46067ff6767a42da74a7a88634663b8790eb54be9e26fc909c3",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-043",
+      "reason": "补USART1默认/重映射引脚和电气接口排查前提。",
+      "beforeAnswer": "建议按层次检查：\n\n1. **RCC：** GPIOA、USART1 时钟是否使能。\n2. **GPIO：** PA9 是否配置为复用推挽输出。\n3. **AFIO：** USART1 是否采用默认映射，是否存在重映射配置不一致。\n4. **USART：** UE、TE 是否置位，初始化是否正确。\n5. **BRR 与帧格式：** 是否使用正确的 PCLK2，波特率和数据帧参数是否匹配。\n6. **物理连接：** STM32 TX 是否连接到 USB 转 TTL 的 RX，双方是否共地。\n7. **软件流程：** 程序是否实际执行到发送逻辑，TXE 是否正常变化。",
+      "afterAnswer": "建议按层次检查：\n\n1. **RCC：** GPIOA、USART1 时钟是否使能。\n2. **GPIO：** PA9 是否配置为复用推挽输出。\n3. **AFIO：** USART1 是否采用默认映射，是否存在重映射配置不一致。\n4. **USART：** UE、TE 是否置位，初始化是否正确。\n5. **BRR 与帧格式：** 是否使用正确的 PCLK2，波特率和数据帧参数是否匹配。\n6. **物理连接：** STM32 TX 是否连接到 USB 转 TTL 的 RX，双方是否共地。\n7. **软件流程：** 程序是否实际执行到发送逻辑，TXE 是否正常变化。\n\n#### 适用条件与来源\n\n上述 GPIOA、PA9 排查以 USART1 默认映射为前提；USART1 重映射后 TX/RX 改为 PB6/PB7，应核对 AFIO_MAPR、GPIOB 时钟和实际板卡接线。也要核对转接器信号电平与 MCU 管脚条件是否兼容，不能只凭“USB 转串口”名称推断电气接口正确。TXE 或函数已经执行不能证明引脚波形、接线或电脑端配置正常。依据：[ST RM0008 Rev21，9.3.8、9.4.2 与第27章](https://www.st.com/resource/en/reference_manual/cd00171190.pdf)。这些是待验证的排查项，不是已确认根因，仍待用户审阅。",
+      "beforeAnswerSha256": "9d4b27d27fd6919ea4b1a6ce5b4c2d8f8fb73c20f62f96989f0b2b6a86533a8f",
+      "afterAnswerSha256": "e69ba982be9995112cb90bca6f05a56d00e27c7ef81f912bb5508617fa0d5343",
+      "userReview": "待用户审阅"
+    },
+    {
+      "questionId": "uart2-047",
+      "reason": "补USART1时钟、默认/重映射接收引脚和故障推断边界。",
+      "beforeAnswer": "- **时钟：** 确认实际 PCLK2。\n- **BRR：** 根据实际输入时钟重新计算波特率。\n- **帧格式：** 检查数据位、校验位和停止位。\n- **GPIO：** 检查 PA10 的输入模式与 USART1 映射。\n- **物理连接：** 检查 TX/RX 交叉连接、共地及信号电平。\n- **接收逻辑：** 检查读取 DR 的时机、数据类型、缓冲区索引和数据处理过程。",
+      "afterAnswer": "- **时钟：** 确认实际 PCLK2。\n- **BRR：** 根据实际输入时钟重新计算波特率。\n- **帧格式：** 检查数据位、校验位和停止位。\n- **GPIO：** 检查 PA10 的输入模式与 USART1 映射。\n- **物理连接：** 检查 TX/RX 交叉连接、共地及信号电平。\n- **接收逻辑：** 检查读取 DR 的时机、数据类型、缓冲区索引和数据处理过程。\n\n#### 适用条件与来源\n\nPCLK2 和 PA10 是本题 USART1 默认映射下的检查对象，不适用于任意串口：USART1 重映射后 RX 是 PB7；换成其他 USART/UART 时，还需按实际实例核对总线时钟和引脚。结合板卡与转接器确认兼容电平、共地、接收线和帧格式，并区分波特率偏差、错误标志与软件处理错误，不能只凭“乱码”锁定某一个原因。依据：[ST RM0008 Rev21，9.3.8、9.4.2、27.3.4 与第27章](https://www.st.com/resource/en/reference_manual/cd00171190.pdf)。尚未测量波形或在实物上复现，仍待用户审阅。",
+      "beforeAnswerSha256": "9e7164f87397dad2d7c01c2c3d8321c41dbc5440bc63989e2d3deb87e236d4fe",
+      "afterAnswerSha256": "49678085483e41a96a05dc4ed6725106674f98e7c097738e98a956867c5e9e4a",
+      "userReview": "待用户审阅"
+    }
+  ]
+}

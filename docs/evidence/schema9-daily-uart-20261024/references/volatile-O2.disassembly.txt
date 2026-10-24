@@ -1,0 +1,15 @@
+
+E:\My_Projects\embedded-practice\docs\evidence\schema9-daily-uart-20261024\references\volatile-O2.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <probe_write>:
+   0:	6001      	str	r1, [r0, #0]
+   2:	4770      	bx	lr
+
+00000004 <probe_rmw>:
+   4:	6803      	ldr	r3, [r0, #0]
+   6:	430b      	orrs	r3, r1
+   8:	6003      	str	r3, [r0, #0]
+   a:	4770      	bx	lr

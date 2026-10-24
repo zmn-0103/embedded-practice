@@ -1,0 +1,169 @@
+{
+  "baseline": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\schema9-daily-uart-20261024\\before\\question-banks\\trials\\STM32F103-UART第二层-30题试用.md",
+  "bank": "E:\\My_Projects\\embedded-practice\\question-banks\\trials\\STM32F103-UART第二层-30题试用.md",
+  "dataDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-uart-content-AOioBh\\中文 数据",
+  "events": [
+    {
+      "label": "修订前完整30题",
+      "file": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\schema9-daily-uart-20261024\\before\\question-banks\\trials\\STM32F103-UART第二层-30题试用.md",
+      "preparing": {
+        "elapsedMs": 300.69999999995343,
+        "timerTicks": 14,
+        "maxTimerGapMs": 21.600000000093132,
+        "messages": [
+          "匹配 0 题",
+          "正在选择并检查题库文件与图片…取消准备"
+        ]
+      },
+      "committing": {
+        "elapsedMs": 41,
+        "timerTicks": 1,
+        "maxTimerGapMs": 21.800000000046566,
+        "messages": [
+          "导入完成：新增 30，内容更新 0，信息变更 0，不变 0，归档 0，恢复 0。"
+        ]
+      },
+      "counts": [
+        "30",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "七题答案内容更新",
+      "file": "E:\\My_Projects\\embedded-practice\\question-banks\\trials\\STM32F103-UART第二层-30题试用.md",
+      "preparing": {
+        "elapsedMs": 246.30000000004657,
+        "timerTicks": 12,
+        "maxTimerGapMs": 24.699999999953434,
+        "messages": [
+          "匹配 30 题",
+          "正在选择并检查题库文件与图片…取消准备"
+        ]
+      },
+      "committing": {
+        "elapsedMs": 29,
+        "timerTicks": 1,
+        "maxTimerGapMs": 21.199999999953434,
+        "messages": [
+          "匹配 30 题",
+          "导入完成：新增 0，内容更新 7，信息变更 0，不变 23，归档 0，恢复 0。",
+          "正在筛选题库…"
+        ]
+      },
+      "counts": [
+        "0",
+        "7",
+        "0",
+        "23",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "修订版重复导入",
+      "file": "E:\\My_Projects\\embedded-practice\\question-banks\\trials\\STM32F103-UART第二层-30题试用.md",
+      "preparing": {
+        "elapsedMs": 121.0999999998603,
+        "timerTicks": 5,
+        "maxTimerGapMs": 20.5999999998603,
+        "messages": [
+          "匹配 30 题",
+          "正在选择并检查题库文件与图片…取消准备"
+        ]
+      },
+      "committing": {
+        "elapsedMs": 26,
+        "timerTicks": 1,
+        "maxTimerGapMs": 22.199999999953434,
+        "messages": [
+          "正在查找匹配题目…",
+          "导入完成：新增 0，内容更新 0，信息变更 0，不变 30，归档 0，恢复 0。",
+          "正在筛选题库…"
+        ]
+      },
+      "counts": [
+        "0",
+        "0",
+        "0",
+        "30",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "errors": [],
+  "checks": {
+    "classificationPlanStartSaveCloseAndResume": true,
+    "exactSevenUpdatesAndThirtyUnchangedReimport": true,
+    "oldVersionsQueueDraftsRatingsFavoritesCategoriesPlansAndReceiptsPreserved": true,
+    "newRoundUsesCurrentVersionAndHidesAnswerUntilReveal": true,
+    "inputFilesUnchangedByRun": true
+  },
+  "boundary": "新建临时库，明确结构9解包EXE；仅文件选择框替身。真实界面/解析/事务/正常关闭重开；非用户答案、技术审阅、硬件或安装验收。",
+  "runtime": {
+    "executable": "E:\\My_Projects\\embedded-practice\\release\\practice-plans-20261024\\win-unpacked\\embedded-practice.exe",
+    "sha256": "2a2aa6340bb8aa2aeae3334493ced1466f1ad851bb8a3e4bacc973c17b331990",
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-uart-content-AOioBh\\中文 数据",
+    "packaged": true,
+    "versions": {
+      "node": "24.19.0",
+      "acorn": "8.17.0",
+      "ada": "3.4.4",
+      "amaro": "1.1.10",
+      "ares": "1.34.6",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.2",
+      "llhttp": "9.4.3",
+      "merve": "1.2.2",
+      "modules": "146",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.69.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "openssl": "0.0.0",
+      "simdjson": "4.6.4",
+      "simdutf": "7.7.0",
+      "sqlite": "3.53.3",
+      "tz": "2025c",
+      "undici": "7.29.0",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "14.8.178.38-electron.0",
+      "zlib": "1.3.2.1-motley",
+      "zstd": "1.6.0",
+      "electron": "42.11.15",
+      "chrome": "148.0.7778.280"
+    },
+    "size": [
+      1140,
+      780
+    ]
+  },
+  "protectedBeforeSha256": "817b5a63daddbe9e4c8907caba010ee629495e8eda938e64604c8600a4a174a4",
+  "protectedAfterReopenSha256": "817b5a63daddbe9e4c8907caba010ee629495e8eda938e64604c8600a4a174a4",
+  "finalDatabase": {
+    "counts": {
+      "topics": 1,
+      "questions": 30,
+      "question_versions": 37,
+      "image_resources": 0,
+      "practice_sessions": 2,
+      "practice_items": 60
+    },
+    "integrity": [
+      {
+        "integrity_check": "ok"
+      }
+    ],
+    "foreignKeys": []
+  },
+  "completed": true
+}

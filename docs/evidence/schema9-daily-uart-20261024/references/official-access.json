@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-24",
+  "rm0008": {
+    "revision": "21",
+    "url": "https://www.st.com/resource/en/reference_manual/cd00171190.pdf",
+    "access": "ST官方域名检索所得章节摘录",
+    "sectionsSeen": [
+      "9.3.8/Table54",
+      "9.4.2/USART1_REMAP",
+      "27.6.1/SR reset and TC",
+      "27.6.4/CR1",
+      "27.6.5/STOP",
+      "27.3.11/Smartcard"
+    ],
+    "fullPdfDownloaded": false,
+    "fullErrataChecked": false,
+    "failureRecord": "manual-download-01.json"
+  },
+  "gcc": {
+    "url": "https://gcc.gnu.org/onlinedocs/gcc/Volatiles.html",
+    "access": "已打开官方页面，核对volatile与内存顺序边界",
+    "versionSpecific13_3Url": "不可访问，未冒称已取得；以本机GCC13.3.1编译和反汇编作为所列目标证据"
+  },
+  "inference": "035的先准备再开放请求来自SPL各函数职责及初始化依赖推导，不冒称官方唯一顺序；实际电气与通信仍需板卡验证。",
+  "compilerProbe": "compiler-probe.json",
+  "hardwareExecuted": false
+}

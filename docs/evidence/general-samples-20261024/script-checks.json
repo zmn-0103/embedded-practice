@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "check": "node --check scripts/check-general-samples.mjs",
+      "status": "fulfilled",
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "check": "prettier --check scripts/check-general-samples.mjs",
+      "status": "fulfilled",
+      "exitCode": 0,
+      "output": "Checking formatting...\nAll matched files use Prettier code style!\n"
+    }
+  ],
+  "scope": "Only the new verification script; no application code or full test-suite rerun."
+}

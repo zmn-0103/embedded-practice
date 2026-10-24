@@ -1,0 +1,5137 @@
+{
+  "date": "2026-10-24",
+  "checksPassed": true,
+  "documentsChecked": 69,
+  "localLinksChecked": 1011,
+  "anchorsChecked": 19,
+  "parser": "Markdown AST; code blocks excluded; historical evidence not treated as current documents",
+  "missing": [],
+  "documents": [
+    "AGENTS.md",
+    "README.md",
+    "docs/AGENTS.md",
+    "docs/M1第一批行为与验收.md",
+    "docs/M1第三批行为与验收.md",
+    "docs/M1第二批行为与验收.md",
+    "docs/M1第五批行为与验收.md",
+    "docs/M1第四批行为与验收.md",
+    "docs/M2人工验收清单.md",
+    "docs/M2第一批行为与验收.md",
+    "docs/M2第三批行为与验收.md",
+    "docs/M2第二批行为与验收.md",
+    "docs/M2第四批行为与验收.md",
+    "docs/M3会话筛选快照修复.md",
+    "docs/M3第一批行为与验收.md",
+    "docs/M3第三批行为与验收.md",
+    "docs/M3第二批行为与验收.md",
+    "docs/M3第五批行为与验收.md",
+    "docs/M3第四批行为与验收.md",
+    "docs/M4第一批行为与验收.md",
+    "docs/M4第三批行为与验收.md",
+    "docs/M4第二批行为与验收.md",
+    "docs/M5第一批行为与验收.md",
+    "docs/M5第二批行为与验收.md",
+    "docs/M5第四批行为与验收.md",
+    "docs/M5题目审阅与试用反馈.md",
+    "docs/MarkdownV1题库格式.md",
+    "docs/README.md",
+    "docs/UART30题来源与技术核对.md",
+    "docs/UART题库整理行为与验收.md",
+    "docs/UI美化与主题说明.md",
+    "docs/architecture/M0启动与存储.md",
+    "docs/architecture/M1导入工作线程.md",
+    "docs/architecture/M1文件与图片快照.md",
+    "docs/architecture/M1窗口与受控内容.md",
+    "docs/architecture/M1结构解析.md",
+    "docs/architecture/M1预览与提交.md",
+    "docs/architecture/M2练习窗口与保存.md",
+    "docs/architecture/M2顺序练习与保存.md",
+    "docs/architecture/M3单题历史与更新标记.md",
+    "docs/architecture/M3学习记录总览.md",
+    "docs/architecture/M3显示设置与页面.md",
+    "docs/architecture/M3随机练习与模式升级.md",
+    "docs/architecture/M4完整备份与恢复预览.md",
+    "docs/architecture/M4恢复执行与回退.md",
+    "docs/architecture/M4数据位置与诊断入口.md",
+    "docs/evidence/schema9-daily-uart-20261024/README.md",
+    "docs/licenses/README.md",
+    "docs/产品说明.md",
+    "docs/代码复查记录.md",
+    "docs/使用说明.md",
+    "docs/分类树行为与验收.md",
+    "docs/开发记录.md",
+    "docs/开发说明.md",
+    "docs/当前试用版本交付说明.md",
+    "docs/找题体验第一批行为与验收.md",
+    "docs/数据保护与桌面边界.md",
+    "docs/练习保存与统计契约.md",
+    "docs/练习方案行为与验收.md",
+    "docs/结构9定向试用与UART修订.md",
+    "docs/项目概况.md",
+    "docs/项目模块职责.md",
+    "docs/题库与导入契约.md",
+    "docs/题库分类与标签规范.md",
+    "docs/验收记录.md",
+    "question-banks/trials/README.md",
+    "scripts/AGENTS.md",
+    "tests/AGENTS.md",
+    "计划书.md"
+  ],
+  "links": [
+    {
+      "document": "AGENTS.md",
+      "line": 8,
+      "target": "计划书.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 17,
+      "target": "计划书.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 18,
+      "target": "README.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 19,
+      "target": "docs/开发记录.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 20,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 21,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 22,
+      "target": "docs/项目概况.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 23,
+      "target": "docs/项目模块职责.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 24,
+      "target": "docs/题库与导入契约.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 25,
+      "target": "docs/练习保存与统计契约.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 26,
+      "target": "docs/分类树行为与验收.md#%E6%9C%AC%E6%89%B9%E5%A5%91%E7%BA%A6"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 27,
+      "target": "docs/练习方案行为与验收.md#%E6%9C%80%E5%B0%8F%E8%8C%83%E5%9B%B4"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 28,
+      "target": "docs/数据保护与桌面边界.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 29,
+      "target": "docs/开发说明.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 30,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 31,
+      "target": "docs/README.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 35,
+      "target": "README.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 35,
+      "target": "计划书.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 35,
+      "target": "docs/开发记录.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 35,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "line": 35,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "README.md",
+      "line": 11,
+      "target": "docs/evidence/practice-plans-20261024/README.md"
+    },
+    {
+      "document": "README.md",
+      "line": 11,
+      "target": "docs/结构9定向试用与UART修订.md"
+    },
+    {
+      "document": "README.md",
+      "line": 15,
+      "target": "release/practice-plans-20261024/win-unpacked/embedded-practice.exe"
+    },
+    {
+      "document": "README.md",
+      "line": 15,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "README.md",
+      "line": 17,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "README.md",
+      "line": 17,
+      "target": "question-banks/README.md"
+    },
+    {
+      "document": "README.md",
+      "line": 17,
+      "target": "question-banks/trials/README.md"
+    },
+    {
+      "document": "README.md",
+      "line": 17,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "README.md",
+      "line": 23,
+      "target": "docs/README.md"
+    },
+    {
+      "document": "README.md",
+      "line": 24,
+      "target": "计划书.md"
+    },
+    {
+      "document": "README.md",
+      "line": 25,
+      "target": "AGENTS.md"
+    },
+    {
+      "document": "README.md",
+      "line": 26,
+      "target": "docs/开发记录.md"
+    },
+    {
+      "document": "README.md",
+      "line": 27,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "README.md",
+      "line": 28,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "README.md",
+      "line": 29,
+      "target": "docs/项目概况.md"
+    },
+    {
+      "document": "README.md",
+      "line": 29,
+      "target": "docs/项目模块职责.md"
+    },
+    {
+      "document": "README.md",
+      "line": 30,
+      "target": "docs/开发说明.md#%E8%BF%90%E8%A1%8C%E4%B8%8E%E6%B5%8B%E8%AF%95%E5%89%8D%E7%9A%84%E7%9B%AE%E6%A0%87%E6%A0%B8%E5%AF%B9"
+    },
+    {
+      "document": "README.md",
+      "line": 31,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "README.md",
+      "line": 33,
+      "target": "docs/开发记录.md#%E4%BB%8E%E5%85%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E8%BF%81%E5%85%A5%E7%9A%84%E5%8E%86%E5%8F%B2%E8%AF%B4%E6%98%8E"
+    },
+    {
+      "document": "README.md",
+      "line": 33,
+      "target": "docs/evidence/rules-document-entry-20261024/README.md"
+    },
+    {
+      "document": "README.md",
+      "line": 37,
+      "target": "docs/开发说明.md"
+    },
+    {
+      "document": "README.md",
+      "line": 39,
+      "target": "docs/数据保护与桌面边界.md"
+    },
+    {
+      "document": "README.md",
+      "line": 39,
+      "target": "docs/题库与导入契约.md"
+    },
+    {
+      "document": "docs/AGENTS.md",
+      "line": 3,
+      "target": "AGENTS.md"
+    },
+    {
+      "document": "docs/AGENTS.md",
+      "line": 5,
+      "target": "docs/开发记录.md"
+    },
+    {
+      "document": "docs/AGENTS.md",
+      "line": 5,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/AGENTS.md",
+      "line": 5,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/AGENTS.md",
+      "line": 6,
+      "target": "docs/分类树行为与验收.md#%E6%9C%AC%E6%89%B9%E5%A5%91%E7%BA%A6"
+    },
+    {
+      "document": "docs/AGENTS.md",
+      "line": 6,
+      "target": "docs/练习方案行为与验收.md#%E6%9C%80%E5%B0%8F%E8%8C%83%E5%9B%B4"
+    },
+    {
+      "document": "docs/AGENTS.md",
+      "line": 6,
+      "target": "docs/数据保护与桌面边界.md"
+    },
+    {
+      "document": "docs/M1第一批行为与验收.md",
+      "line": 34,
+      "target": "docs/architecture/M1结构解析.md"
+    },
+    {
+      "document": "docs/M1第一批行为与验收.md",
+      "line": 34,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/M1第三批行为与验收.md",
+      "line": 28,
+      "target": "docs/architecture/M1导入工作线程.md"
+    },
+    {
+      "document": "docs/M1第三批行为与验收.md",
+      "line": 28,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/M1第三批行为与验收.md",
+      "line": 28,
+      "target": "docs/evidence/m1c/README.md"
+    },
+    {
+      "document": "docs/M1第二批行为与验收.md",
+      "line": 32,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/M1第二批行为与验收.md",
+      "line": 32,
+      "target": "docs/evidence/m1b/README.md"
+    },
+    {
+      "document": "docs/M1第四批行为与验收.md",
+      "line": 32,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/M1第四批行为与验收.md",
+      "line": 32,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/M1第四批行为与验收.md",
+      "line": 32,
+      "target": "docs/evidence/m1d/README.md"
+    },
+    {
+      "document": "docs/M2人工验收清单.md",
+      "line": 7,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/M2人工验收清单.md",
+      "line": 49,
+      "target": "docs/evidence/m2d/README.md"
+    },
+    {
+      "document": "docs/M2人工验收清单.md",
+      "line": 72,
+      "target": "docs/evidence/m4a/native-steps.json"
+    },
+    {
+      "document": "docs/M2人工验收清单.md",
+      "line": 72,
+      "target": "docs/evidence/m4a/native-reopened.png"
+    },
+    {
+      "document": "docs/M2人工验收清单.md",
+      "line": 76,
+      "target": "docs/M5第一批行为与验收.md"
+    },
+    {
+      "document": "docs/M2人工验收清单.md",
+      "line": 76,
+      "target": "docs/evidence/m5a/README.md"
+    },
+    {
+      "document": "docs/M2人工验收清单.md",
+      "line": 90,
+      "target": "docs/M5第四批行为与验收.md"
+    },
+    {
+      "document": "docs/M2人工验收清单.md",
+      "line": 90,
+      "target": "docs/evidence/m5d/README.md"
+    },
+    {
+      "document": "docs/M2人工验收清单.md",
+      "line": 105,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/M2第一批行为与验收.md",
+      "line": 34,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/M3会话筛选快照修复.md",
+      "line": 3,
+      "target": "计划书.md"
+    },
+    {
+      "document": "docs/M3会话筛选快照修复.md",
+      "line": 23,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/M3会话筛选快照修复.md",
+      "line": 23,
+      "target": "docs/evidence/session-filters-fix/README.md"
+    },
+    {
+      "document": "docs/M3第一批行为与验收.md",
+      "line": 29,
+      "target": "docs/evidence/m3-fixes/README.md"
+    },
+    {
+      "document": "docs/M3第三批行为与验收.md",
+      "line": 34,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/M3第三批行为与验收.md",
+      "line": 36,
+      "target": "docs/evidence/m3c/README.md"
+    },
+    {
+      "document": "docs/M3第二批行为与验收.md",
+      "line": 34,
+      "target": "docs/evidence/m3b/README.md"
+    },
+    {
+      "document": "docs/M3第五批行为与验收.md",
+      "line": 20,
+      "target": "docs/evidence/m3e/README.md"
+    },
+    {
+      "document": "docs/M3第四批行为与验收.md",
+      "line": 22,
+      "target": "docs/evidence/m3d/README.md"
+    },
+    {
+      "document": "docs/M4第一批行为与验收.md",
+      "line": 24,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/M4第一批行为与验收.md",
+      "line": 38,
+      "target": "docs/evidence/m4a/README.md"
+    },
+    {
+      "document": "docs/M4第三批行为与验收.md",
+      "line": 28,
+      "target": "docs/evidence/m4c/windows-case-first.json"
+    },
+    {
+      "document": "docs/M4第三批行为与验收.md",
+      "line": 28,
+      "target": "docs/evidence/m4c/backup-case-first.json"
+    },
+    {
+      "document": "docs/M4第三批行为与验收.md",
+      "line": 45,
+      "target": "tests/e2e/data-locations.spec.ts"
+    },
+    {
+      "document": "docs/M4第三批行为与验收.md",
+      "line": 47,
+      "target": "docs/evidence/m4c/results-summary.json"
+    },
+    {
+      "document": "docs/M4第三批行为与验收.md",
+      "line": 51,
+      "target": "docs/evidence/m4c/README.md"
+    },
+    {
+      "document": "docs/M4第二批行为与验收.md",
+      "line": 19,
+      "target": "docs/architecture/M4恢复执行与回退.md"
+    },
+    {
+      "document": "docs/M4第二批行为与验收.md",
+      "line": 19,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/M4第二批行为与验收.md",
+      "line": 25,
+      "target": "docs/evidence/m4b/results-summary.json"
+    },
+    {
+      "document": "docs/M4第二批行为与验收.md",
+      "line": 25,
+      "target": "docs/evidence/m4b/package-inspection.json"
+    },
+    {
+      "document": "docs/M4第二批行为与验收.md",
+      "line": 29,
+      "target": "docs/evidence/m4b/README.md"
+    },
+    {
+      "document": "docs/M4第二批行为与验收.md",
+      "line": 33,
+      "target": "docs/evidence/m4b/startup-abort-diagnostic.json"
+    },
+    {
+      "document": "docs/M4第二批行为与验收.md",
+      "line": 33,
+      "target": "docs/evidence/m4b/startup-cleanup-verified.json"
+    },
+    {
+      "document": "docs/M5第一批行为与验收.md",
+      "line": 21,
+      "target": "docs/evidence/m5a/README.md"
+    },
+    {
+      "document": "docs/M5第一批行为与验收.md",
+      "line": 25,
+      "target": "question-banks/STM32F103RCT6-GPIO阶段自测题.md"
+    },
+    {
+      "document": "docs/M5第二批行为与验收.md",
+      "line": 5,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/M5第二批行为与验收.md",
+      "line": 9,
+      "target": "question-banks/trials/README.md"
+    },
+    {
+      "document": "docs/M5第二批行为与验收.md",
+      "line": 27,
+      "target": "docs/evidence/m5b/trial-01/result.json"
+    },
+    {
+      "document": "docs/M5第二批行为与验收.md",
+      "line": 46,
+      "target": "docs/evidence/m5b/performance-01/result.json"
+    },
+    {
+      "document": "docs/M5第二批行为与验收.md",
+      "line": 46,
+      "target": "docs/evidence/m5b/performance-summary.json"
+    },
+    {
+      "document": "docs/M5第二批行为与验收.md",
+      "line": 60,
+      "target": "docs/evidence/m5b/README.md"
+    },
+    {
+      "document": "docs/M5第四批行为与验收.md",
+      "line": 17,
+      "target": "docs/evidence/m5d/before.json"
+    },
+    {
+      "document": "docs/M5第四批行为与验收.md",
+      "line": 17,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/M5第四批行为与验收.md",
+      "line": 23,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/M5第四批行为与验收.md",
+      "line": 23,
+      "target": "docs/M5题目审阅与试用反馈.md"
+    },
+    {
+      "document": "docs/M5第四批行为与验收.md",
+      "line": 29,
+      "target": "docs/evidence/m5d/experience-01/result.json"
+    },
+    {
+      "document": "docs/M5第四批行为与验收.md",
+      "line": 32,
+      "target": "docs/evidence/m5d/native-01/result.json"
+    },
+    {
+      "document": "docs/M5第四批行为与验收.md",
+      "line": 52,
+      "target": "docs/evidence/m5d/tooling-notes.json"
+    },
+    {
+      "document": "docs/M5第四批行为与验收.md",
+      "line": 58,
+      "target": "docs/evidence/m5d/artifact-validation.json"
+    },
+    {
+      "document": "docs/M5题目审阅与试用反馈.md",
+      "line": 5,
+      "target": "question-banks/trials/STM32F103-UART第二层-30题试用.md"
+    },
+    {
+      "document": "docs/M5题目审阅与试用反馈.md",
+      "line": 5,
+      "target": "question-banks/trials/题答来源.json"
+    },
+    {
+      "document": "docs/M5题目审阅与试用反馈.md",
+      "line": 5,
+      "target": "docs/M5第二批行为与验收.md"
+    },
+    {
+      "document": "docs/M5题目审阅与试用反馈.md",
+      "line": 5,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/M5题目审阅与试用反馈.md",
+      "line": 7,
+      "target": "question-banks/trials/UART答案修订清单.json"
+    },
+    {
+      "document": "docs/M5题目审阅与试用反馈.md",
+      "line": 13,
+      "target": "question-banks/trials/UART题目整理清单.json"
+    },
+    {
+      "document": "docs/M5题目审阅与试用反馈.md",
+      "line": 13,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/M5题目审阅与试用反馈.md",
+      "line": 63,
+      "target": "docs/M5第四批行为与验收.md"
+    },
+    {
+      "document": "docs/MarkdownV1题库格式.md",
+      "line": 3,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/MarkdownV1题库格式.md",
+      "line": 5,
+      "target": "计划书.md"
+    },
+    {
+      "document": "docs/MarkdownV1题库格式.md",
+      "line": 121,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/MarkdownV1题库格式.md",
+      "line": 136,
+      "target": "question-banks/templates/README.md"
+    },
+    {
+      "document": "docs/MarkdownV1题库格式.md",
+      "line": 136,
+      "target": "question-banks/examples/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 3,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 3,
+      "target": "docs/开发记录.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 3,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 9,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 9,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 9,
+      "target": "docs/M5题目审阅与试用反馈.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 10,
+      "target": "计划书.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 10,
+      "target": "AGENTS.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 10,
+      "target": "docs/项目模块职责.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 11,
+      "target": "docs/题库与导入契约.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 11,
+      "target": "docs/MarkdownV1题库格式.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 11,
+      "target": "docs/题库分类与标签规范.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 12,
+      "target": "docs/练习保存与统计契约.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 12,
+      "target": "docs/分类树行为与验收.md#%E6%9C%AC%E6%89%B9%E5%A5%91%E7%BA%A6"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 12,
+      "target": "docs/练习方案行为与验收.md#%E6%9C%80%E5%B0%8F%E8%8C%83%E5%9B%B4"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 13,
+      "target": "docs/数据保护与桌面边界.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 14,
+      "target": "docs/开发说明.md#%E8%BF%90%E8%A1%8C%E4%B8%8E%E6%B5%8B%E8%AF%95%E5%89%8D%E7%9A%84%E7%9B%AE%E6%A0%87%E6%A0%B8%E5%AF%B9"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 14,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 22,
+      "target": "README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 23,
+      "target": "计划书.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 24,
+      "target": "AGENTS.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 25,
+      "target": "docs/开发记录.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 26,
+      "target": "docs/项目概况.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 27,
+      "target": "docs/项目模块职责.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 28,
+      "target": "docs/题库与导入契约.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 29,
+      "target": "docs/练习保存与统计契约.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 30,
+      "target": "docs/数据保护与桌面边界.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 31,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 32,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 33,
+      "target": "docs/M5第四批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 34,
+      "target": "docs/evidence/m5d/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 35,
+      "target": "docs/M5题目审阅与试用反馈.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 36,
+      "target": "docs/evidence/m5c/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 37,
+      "target": "docs/M5第二批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 38,
+      "target": "docs/evidence/m5b/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 39,
+      "target": "docs/M5第一批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 40,
+      "target": "docs/evidence/m5a/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 41,
+      "target": "docs/产品说明.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 42,
+      "target": "docs/开发说明.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 43,
+      "target": "docs/MarkdownV1题库格式.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 44,
+      "target": "docs/architecture/M0启动与存储.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 45,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 46,
+      "target": "docs/M4第一批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 47,
+      "target": "docs/architecture/M4完整备份与恢复预览.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 48,
+      "target": "docs/evidence/m4a/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 49,
+      "target": "docs/M4第二批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 50,
+      "target": "docs/architecture/M4恢复执行与回退.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 51,
+      "target": "docs/evidence/m4b/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 52,
+      "target": "docs/M4第三批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 53,
+      "target": "docs/architecture/M4数据位置与诊断入口.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 54,
+      "target": "docs/evidence/m4c/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 55,
+      "target": "question-banks/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 56,
+      "target": "docs/M1第一批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 57,
+      "target": "docs/architecture/M1结构解析.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 58,
+      "target": "docs/evidence/m1a/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 59,
+      "target": "docs/M1第二批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 60,
+      "target": "docs/architecture/M1文件与图片快照.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 61,
+      "target": "docs/evidence/m1b/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 62,
+      "target": "docs/M1第三批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 63,
+      "target": "docs/architecture/M1导入工作线程.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 64,
+      "target": "docs/evidence/m1c/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 65,
+      "target": "docs/M1第四批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 66,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 67,
+      "target": "docs/evidence/m1d/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 68,
+      "target": "docs/M1第五批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 69,
+      "target": "docs/architecture/M1窗口与受控内容.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 70,
+      "target": "docs/evidence/m1e/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 71,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 72,
+      "target": "docs/licenses/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 73,
+      "target": "docs/M2第一批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 74,
+      "target": "docs/architecture/M2顺序练习与保存.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 75,
+      "target": "docs/evidence/m2a/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 76,
+      "target": "docs/M2第二批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 77,
+      "target": "docs/architecture/M2练习窗口与保存.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 78,
+      "target": "docs/evidence/m2b/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 79,
+      "target": "docs/evidence/m2-fixes/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 80,
+      "target": "docs/M2第三批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 81,
+      "target": "docs/evidence/m2c/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 82,
+      "target": "docs/M2第四批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 83,
+      "target": "docs/evidence/m2d/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 84,
+      "target": "docs/M2人工验收清单.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 85,
+      "target": "docs/M3第一批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 86,
+      "target": "docs/evidence/m3a/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 87,
+      "target": "docs/evidence/m3-fixes/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 88,
+      "target": "docs/M3第二批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 89,
+      "target": "docs/architecture/M3随机练习与模式升级.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 90,
+      "target": "docs/evidence/m3b/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 91,
+      "target": "docs/M3第三批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 92,
+      "target": "docs/architecture/M3单题历史与更新标记.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 93,
+      "target": "docs/evidence/m3c/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 94,
+      "target": "docs/M3第四批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 95,
+      "target": "docs/architecture/M3学习记录总览.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 96,
+      "target": "docs/evidence/m3d/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 97,
+      "target": "docs/M3第五批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 98,
+      "target": "docs/architecture/M3显示设置与页面.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 99,
+      "target": "docs/evidence/m3e/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 100,
+      "target": "docs/M3会话筛选快照修复.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 101,
+      "target": "docs/evidence/session-filters-fix/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 102,
+      "target": "docs/分类树行为与验收.md#%E6%9C%AC%E6%89%B9%E5%A5%91%E7%BA%A6"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 103,
+      "target": "docs/evidence/category-tree-20261023/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 104,
+      "target": "docs/练习方案行为与验收.md#%E6%9C%80%E5%B0%8F%E8%8C%83%E5%9B%B4"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 105,
+      "target": "docs/evidence/practice-plans-20261024/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 106,
+      "target": "docs/找题体验第一批行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 106,
+      "target": "docs/evidence/findability-20261023/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 107,
+      "target": "docs/UI美化与主题说明.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 107,
+      "target": "docs/evidence/ui-themes-20261023/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 108,
+      "target": "docs/UART题库整理行为与验收.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 108,
+      "target": "docs/evidence/uart-metadata-20261023/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 109,
+      "target": "docs/题库分类与标签规范.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 110,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 111,
+      "target": "question-banks/trials/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 112,
+      "target": "docs/evidence/agents-document-split-20261024/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 113,
+      "target": "docs/evidence/rules-document-entry-20261024/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 114,
+      "target": "docs/结构9定向试用与UART修订.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 114,
+      "target": "docs/evidence/schema9-daily-uart-20261024/README.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 118,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 119,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 119,
+      "target": "docs/M5题目审阅与试用反馈.md"
+    },
+    {
+      "document": "docs/README.md",
+      "line": 120,
+      "target": "docs/开发记录.md#%E4%BB%8E%E5%85%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E8%BF%81%E5%85%A5%E7%9A%84%E5%8E%86%E5%8F%B2%E8%AF%B4%E6%98%8E"
+    },
+    {
+      "document": "docs/UART30题来源与技术核对.md",
+      "line": 5,
+      "target": "question-banks/trials/UART答案修订清单.json"
+    },
+    {
+      "document": "docs/UART30题来源与技术核对.md",
+      "line": 5,
+      "target": "docs/evidence/schema9-daily-uart-20261024/before/question-banks/trials/STM32F103-UART第二层-30题试用.md"
+    },
+    {
+      "document": "docs/UART30题来源与技术核对.md",
+      "line": 17,
+      "target": "docs/evidence/schema9-daily-uart-20261024/references/official-access.json"
+    },
+    {
+      "document": "docs/UART30题来源与技术核对.md",
+      "line": 19,
+      "target": "docs/evidence/schema9-daily-uart-20261024/references/compiler-probe.json"
+    },
+    {
+      "document": "docs/UART30题来源与技术核对.md",
+      "line": 21,
+      "target": "docs/结构9定向试用与UART修订.md"
+    },
+    {
+      "document": "docs/UART30题来源与技术核对.md",
+      "line": 29,
+      "target": "question-banks/trials/题答来源.json"
+    },
+    {
+      "document": "docs/UART30题来源与技术核对.md",
+      "line": 29,
+      "target": "question-banks/trials/UART题目整理清单.json"
+    },
+    {
+      "document": "docs/UART30题来源与技术核对.md",
+      "line": 36,
+      "target": "docs/evidence/uart-metadata-20261023/references/local-sources.json"
+    },
+    {
+      "document": "docs/UART30题来源与技术核对.md",
+      "line": 40,
+      "target": "docs/evidence/uart-metadata-20261023/README.md"
+    },
+    {
+      "document": "docs/UART30题来源与技术核对.md",
+      "line": 81,
+      "target": "docs/M5题目审阅与试用反馈.md"
+    },
+    {
+      "document": "docs/UART题库整理行为与验收.md",
+      "line": 7,
+      "target": "question-banks/trials/STM32F103-UART第二层-30题试用.md"
+    },
+    {
+      "document": "docs/UART题库整理行为与验收.md",
+      "line": 8,
+      "target": "question-banks/trials/UART题目整理清单.json"
+    },
+    {
+      "document": "docs/UART题库整理行为与验收.md",
+      "line": 9,
+      "target": "docs/题库分类与标签规范.md"
+    },
+    {
+      "document": "docs/UART题库整理行为与验收.md",
+      "line": 10,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/UART题库整理行为与验收.md",
+      "line": 10,
+      "target": "docs/M5题目审阅与试用反馈.md"
+    },
+    {
+      "document": "docs/UART题库整理行为与验收.md",
+      "line": 35,
+      "target": "docs/evidence/uart-metadata-20261023/desktop-01/result.json"
+    },
+    {
+      "document": "docs/UART题库整理行为与验收.md",
+      "line": 37,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/UART题库整理行为与验收.md",
+      "line": 41,
+      "target": "docs/evidence/uart-metadata-20261023/README.md"
+    },
+    {
+      "document": "docs/UART题库整理行为与验收.md",
+      "line": 49,
+      "target": "release/findability-20261023-r2/win-unpacked/embedded-practice.exe"
+    },
+    {
+      "document": "docs/UART题库整理行为与验收.md",
+      "line": 51,
+      "target": "docs/evidence/uart-metadata-20261023/README.md"
+    },
+    {
+      "document": "docs/UI美化与主题说明.md",
+      "line": 3,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/UI美化与主题说明.md",
+      "line": 3,
+      "target": "docs/evidence/ui-themes-20261023/README.md"
+    },
+    {
+      "document": "docs/UI美化与主题说明.md",
+      "line": 41,
+      "target": "release/ui-20261023/win-unpacked/embedded-practice.exe"
+    },
+    {
+      "document": "docs/UI美化与主题说明.md",
+      "line": 41,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/UI美化与主题说明.md",
+      "line": 43,
+      "target": "docs/evidence/ui-themes-20261023/experience-01/01-home-forest.png"
+    },
+    {
+      "document": "docs/UI美化与主题说明.md",
+      "line": 43,
+      "target": "docs/evidence/ui-themes-20261023/experience-01/02-settings-forest-light.png"
+    },
+    {
+      "document": "docs/UI美化与主题说明.md",
+      "line": 43,
+      "target": "docs/evidence/ui-themes-20261023/experience-01/02-settings-ocean-dark.png"
+    },
+    {
+      "document": "docs/UI美化与主题说明.md",
+      "line": 43,
+      "target": "docs/evidence/ui-themes-20261023/experience-01/02-settings-sand-light.png"
+    },
+    {
+      "document": "docs/UI美化与主题说明.md",
+      "line": 43,
+      "target": "docs/evidence/ui-themes-20261023/experience-01/02-settings-lilac-dark.png"
+    },
+    {
+      "document": "docs/architecture/M0启动与存储.md",
+      "line": 18,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/architecture/M0启动与存储.md",
+      "line": 18,
+      "target": "docs/architecture/M1窗口与受控内容.md"
+    },
+    {
+      "document": "docs/architecture/M0启动与存储.md",
+      "line": 20,
+      "target": "docs/architecture/M2顺序练习与保存.md"
+    },
+    {
+      "document": "docs/architecture/M0启动与存储.md",
+      "line": 20,
+      "target": "docs/architecture/M2练习窗口与保存.md"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 3,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 3,
+      "target": "docs/architecture/M1窗口与受控内容.md"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 17,
+      "target": "src/main/workers/import-protocol.ts"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 18,
+      "target": "src/main/workers/import-worker.ts"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 19,
+      "target": "src/main/workers/import-task-runner.ts"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 20,
+      "target": "src/main/services/library/import-preparation.ts"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 21,
+      "target": "electron.vite.config.ts"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 47,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 47,
+      "target": "docs/evidence/m1c/README.md"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 49,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/architecture/M1导入工作线程.md",
+      "line": 49,
+      "target": "docs/evidence/m1e/README.md"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 3,
+      "target": "docs/architecture/M1导入工作线程.md"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 3,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 3,
+      "target": "docs/architecture/M1窗口与受控内容.md"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 17,
+      "target": "src/main/services/library/prepare-import.ts"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 18,
+      "target": "src/main/services/library/import-budget.ts"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 19,
+      "target": "src/shared/contracts/image-path.ts"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 20,
+      "target": "src/main/services/resources/read-file-snapshot.ts"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 21,
+      "target": "src/main/services/resources/read-image.ts"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 22,
+      "target": "src/shared/contracts/import-snapshot.ts"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 30,
+      "target": "docs/licenses/image-size-MIT.txt"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 44,
+      "target": "docs/evidence/m1c/README.md"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 44,
+      "target": "docs/evidence/m1d/README.md"
+    },
+    {
+      "document": "docs/architecture/M1文件与图片快照.md",
+      "line": 44,
+      "target": "docs/evidence/m1e/README.md"
+    },
+    {
+      "document": "docs/architecture/M1窗口与受控内容.md",
+      "line": 3,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/architecture/M1窗口与受控内容.md",
+      "line": 3,
+      "target": "docs/M1第五批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M1窗口与受控内容.md",
+      "line": 3,
+      "target": "docs/evidence/m1e/README.md"
+    },
+    {
+      "document": "docs/architecture/M1窗口与受控内容.md",
+      "line": 3,
+      "target": "docs/architecture/M2练习窗口与保存.md"
+    },
+    {
+      "document": "docs/architecture/M1窗口与受控内容.md",
+      "line": 48,
+      "target": "docs/architecture/M2练习窗口与保存.md"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 5,
+      "target": "docs/architecture/M1文件与图片快照.md"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 5,
+      "target": "docs/architecture/M1导入工作线程.md"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 5,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 9,
+      "target": "src/main/services/library/parse-question-bank.ts"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 19,
+      "target": "src/shared/contracts/question-bank.ts"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 20,
+      "target": "src/main/services/library/markdown-document.ts"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 21,
+      "target": "src/main/services/library/question-metadata.ts"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 22,
+      "target": "src/main/services/library/parse-question.ts"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 23,
+      "target": "src/main/services/library/image-references.ts"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 24,
+      "target": "src/main/services/library/parse-question-bank.ts"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 34,
+      "target": "docs/architecture/M1窗口与受控内容.md"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 37,
+      "target": "docs/M1第一批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 37,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 37,
+      "target": "docs/evidence/m1a/README.md"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 37,
+      "target": "docs/evidence/m1c/README.md"
+    },
+    {
+      "document": "docs/architecture/M1结构解析.md",
+      "line": 37,
+      "target": "docs/evidence/m1e/README.md"
+    },
+    {
+      "document": "docs/architecture/M1预览与提交.md",
+      "line": 3,
+      "target": "docs/architecture/M1窗口与受控内容.md"
+    },
+    {
+      "document": "docs/architecture/M1预览与提交.md",
+      "line": 3,
+      "target": "docs/M1第四批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M1预览与提交.md",
+      "line": 5,
+      "target": "docs/architecture/M2顺序练习与保存.md"
+    },
+    {
+      "document": "docs/architecture/M1预览与提交.md",
+      "line": 70,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/architecture/M1预览与提交.md",
+      "line": 70,
+      "target": "docs/evidence/m1d/README.md"
+    },
+    {
+      "document": "docs/architecture/M1预览与提交.md",
+      "line": 74,
+      "target": "docs/architecture/M1窗口与受控内容.md"
+    },
+    {
+      "document": "docs/architecture/M1预览与提交.md",
+      "line": 74,
+      "target": "docs/evidence/m1e/README.md"
+    },
+    {
+      "document": "docs/architecture/M2练习窗口与保存.md",
+      "line": 3,
+      "target": "docs/architecture/M2顺序练习与保存.md"
+    },
+    {
+      "document": "docs/architecture/M2练习窗口与保存.md",
+      "line": 3,
+      "target": "docs/M2第二批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M2练习窗口与保存.md",
+      "line": 3,
+      "target": "docs/evidence/m2b/README.md"
+    },
+    {
+      "document": "docs/architecture/M2练习窗口与保存.md",
+      "line": 5,
+      "target": "docs/M2第三批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M2练习窗口与保存.md",
+      "line": 7,
+      "target": "docs/M2第四批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M2练习窗口与保存.md",
+      "line": 61,
+      "target": "docs/licenses/README.md"
+    },
+    {
+      "document": "docs/architecture/M2练习窗口与保存.md",
+      "line": 73,
+      "target": "docs/evidence/m2d/README.md"
+    },
+    {
+      "document": "docs/architecture/M2练习窗口与保存.md",
+      "line": 77,
+      "target": "docs/M2人工验收清单.md"
+    },
+    {
+      "document": "docs/architecture/M2顺序练习与保存.md",
+      "line": 3,
+      "target": "docs/M2第一批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M2顺序练习与保存.md",
+      "line": 3,
+      "target": "docs/evidence/m2a/README.md"
+    },
+    {
+      "document": "docs/architecture/M2顺序练习与保存.md",
+      "line": 3,
+      "target": "docs/architecture/M2练习窗口与保存.md"
+    },
+    {
+      "document": "docs/architecture/M2顺序练习与保存.md",
+      "line": 66,
+      "target": "docs/architecture/M2练习窗口与保存.md"
+    },
+    {
+      "document": "docs/architecture/M3单题历史与更新标记.md",
+      "line": 3,
+      "target": "docs/M3第三批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M3单题历史与更新标记.md",
+      "line": 3,
+      "target": "docs/evidence/m3c/README.md"
+    },
+    {
+      "document": "docs/architecture/M3学习记录总览.md",
+      "line": 3,
+      "target": "docs/M3第四批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M3学习记录总览.md",
+      "line": 3,
+      "target": "docs/evidence/m3d/README.md"
+    },
+    {
+      "document": "docs/architecture/M3显示设置与页面.md",
+      "line": 3,
+      "target": "docs/M3第五批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M3显示设置与页面.md",
+      "line": 3,
+      "target": "docs/evidence/m3e/README.md"
+    },
+    {
+      "document": "docs/architecture/M3随机练习与模式升级.md",
+      "line": 3,
+      "target": "docs/M3第二批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M3随机练习与模式升级.md",
+      "line": 3,
+      "target": "docs/evidence/m3b/README.md"
+    },
+    {
+      "document": "docs/architecture/M4完整备份与恢复预览.md",
+      "line": 3,
+      "target": "docs/architecture/M4恢复执行与回退.md"
+    },
+    {
+      "document": "docs/architecture/M4恢复执行与回退.md",
+      "line": 3,
+      "target": "docs/M4第二批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M4恢复执行与回退.md",
+      "line": 3,
+      "target": "docs/evidence/m4b/README.md"
+    },
+    {
+      "document": "docs/architecture/M4数据位置与诊断入口.md",
+      "line": 3,
+      "target": "docs/M4第三批行为与验收.md"
+    },
+    {
+      "document": "docs/architecture/M4数据位置与诊断入口.md",
+      "line": 3,
+      "target": "docs/evidence/m4c/README.md"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 3,
+      "target": "docs/结构9定向试用与UART修订.md"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 7,
+      "target": "docs/evidence/schema9-daily-uart-20261024/workspace-before.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 7,
+      "target": "docs/evidence/schema9-daily-uart-20261024/git-before.txt"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 8,
+      "target": "docs/evidence/schema9-daily-uart-20261024/before.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 8,
+      "target": "docs/evidence/schema9-daily-uart-20261024/before/question-banks/trials/STM32F103-UART第二层-30题试用.md"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 9,
+      "target": "docs/evidence/schema9-daily-uart-20261024/program-before.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 10,
+      "target": "docs/evidence/schema9-daily-uart-20261024/runtime-01/result.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 10,
+      "target": "docs/evidence/schema9-daily-uart-20261024/runtime-01/current-program.png"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 11,
+      "target": "docs/evidence/schema9-daily-uart-20261024/focused-01/report.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 11,
+      "target": "docs/evidence/schema9-daily-uart-20261024/focused-01/stderr.txt"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 12,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-01/result.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 12,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-01/failure.png"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 12,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-01/source-after-format-before-fix.mjs"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 13,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-02/result.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 13,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-02-console.txt"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 14,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-02/plan-filled.png"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 14,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-02/daily-resumed.png"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 14,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-02/revised-answer.png"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 15,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-verification.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 15,
+      "target": "question-banks/trials/UART答案修订清单.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 16,
+      "target": "docs/evidence/schema9-daily-uart-20261024/references/local-sources.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 16,
+      "target": "docs/evidence/schema9-daily-uart-20261024/references/official-access.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 16,
+      "target": "docs/evidence/schema9-daily-uart-20261024/references/manual-download-01.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 17,
+      "target": "docs/evidence/schema9-daily-uart-20261024/references/volatile-rmw-probe.c"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 17,
+      "target": "docs/evidence/schema9-daily-uart-20261024/references/compiler-probe.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 17,
+      "target": "docs/evidence/schema9-daily-uart-20261024/references/volatile-O0.disassembly.txt"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 17,
+      "target": "docs/evidence/schema9-daily-uart-20261024/references/volatile-O2.disassembly.txt"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 18,
+      "target": "docs/evidence/schema9-daily-uart-20261024/script-check.txt"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 18,
+      "target": "docs/evidence/schema9-daily-uart-20261024/links-verification.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 18,
+      "target": "docs/evidence/schema9-daily-uart-20261024/verification.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 20,
+      "target": "docs/evidence/schema9-daily-uart-20261024/script-check-01.txt"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 20,
+      "target": "docs/evidence/schema9-daily-uart-20261024/revision-format-equivalence.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 20,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-02/revision-map-input.json"
+    },
+    {
+      "document": "docs/evidence/schema9-daily-uart-20261024/README.md",
+      "line": 20,
+      "target": "docs/evidence/schema9-daily-uart-20261024/links-verification-01.json"
+    },
+    {
+      "document": "docs/licenses/README.md",
+      "line": 7,
+      "target": "docs/licenses/react-markdown-10.1.0-MIT.txt"
+    },
+    {
+      "document": "docs/licenses/README.md",
+      "line": 8,
+      "target": "docs/licenses/mdast-util-to-markdown-2.2.0-MIT.txt"
+    },
+    {
+      "document": "docs/licenses/README.md",
+      "line": 9,
+      "target": "docs/licenses/lowlight-3.3.0-MIT.txt"
+    },
+    {
+      "document": "docs/licenses/README.md",
+      "line": 10,
+      "target": "docs/licenses/highlight.js-11.11.2-BSD-3-Clause.txt"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 3,
+      "target": "docs/练习方案行为与验收.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 5,
+      "target": "docs/分类树行为与验收.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 7,
+      "target": "docs/UART题库整理行为与验收.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 7,
+      "target": "docs/题库分类与标签规范.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 9,
+      "target": "docs/找题体验第一批行为与验收.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 11,
+      "target": "docs/UI美化与主题说明.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 11,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 13,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 13,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 17,
+      "target": "计划书.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 46,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 50,
+      "target": "question-banks/STM32F103RCT6-GPIO阶段自测题.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 50,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 50,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 52,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 52,
+      "target": "docs/UI美化与主题说明.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 52,
+      "target": "docs/architecture/M3随机练习与模式升级.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 54,
+      "target": "docs/M3第一批行为与验收.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 54,
+      "target": "docs/M2人工验收清单.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 66,
+      "target": "docs/architecture/M3显示设置与页面.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 66,
+      "target": "docs/M4第二批行为与验收.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 66,
+      "target": "docs/M4第三批行为与验收.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 79,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/产品说明.md",
+      "line": 79,
+      "target": "docs/M3第三批行为与验收.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 7,
+      "target": "docs/结构9定向试用与UART修订.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 25,
+      "target": "docs/练习方案行为与验收.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 73,
+      "target": "docs/分类树行为与验收.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 73,
+      "target": "docs/evidence/category-tree-20261023/desktop-coverage.json"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 138,
+      "target": "docs/UART题库整理行为与验收.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 176,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 176,
+      "target": "docs/evidence/ui-themes-20261023/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 262,
+      "target": "docs/evidence/session-filters-fix/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 313,
+      "target": "docs/evidence/m3e/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 338,
+      "target": "docs/evidence/m3d/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 369,
+      "target": "docs/evidence/m3c/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 409,
+      "target": "docs/evidence/m3-fixes/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 438,
+      "target": "docs/evidence/m3a/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 450,
+      "target": "docs/evidence/m2d/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 454,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 463,
+      "target": "docs/evidence/m2c/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 467,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 476,
+      "target": "docs/evidence/m2-fixes/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 513,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 513,
+      "target": "docs/evidence/m2b/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 613,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 746,
+      "target": "docs/evidence/m4a/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 791,
+      "target": "docs/evidence/m4b/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 823,
+      "target": "docs/evidence/m4c/README.md"
+    },
+    {
+      "document": "docs/代码复查记录.md",
+      "line": 837,
+      "target": "docs/evidence/m5b/README.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 3,
+      "target": "docs/产品说明.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 3,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 7,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 21,
+      "target": "docs/练习方案行为与验收.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 25,
+      "target": "docs/MarkdownV1题库格式.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 25,
+      "target": "question-banks/templates/README.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 25,
+      "target": "question-banks/examples/README.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 29,
+      "target": "question-banks/STM32F103RCT6-GPIO阶段自测题.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 104,
+      "target": "docs/M3会话筛选快照修复.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 146,
+      "target": "docs/M4第三批行为与验收.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 162,
+      "target": "docs/M4第二批行为与验收.md"
+    },
+    {
+      "document": "docs/使用说明.md",
+      "line": 164,
+      "target": "docs/M2人工验收清单.md"
+    },
+    {
+      "document": "docs/分类树行为与验收.md",
+      "line": 28,
+      "target": "docs/evidence/category-tree-20261023/full-02.json"
+    },
+    {
+      "document": "docs/分类树行为与验收.md",
+      "line": 28,
+      "target": "docs/evidence/category-tree-20261023/desktop-coverage.json"
+    },
+    {
+      "document": "docs/分类树行为与验收.md",
+      "line": 29,
+      "target": "docs/evidence/category-tree-20261023/performance-01/result.json"
+    },
+    {
+      "document": "docs/分类树行为与验收.md",
+      "line": 37,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/分类树行为与验收.md",
+      "line": 41,
+      "target": "docs/evidence/category-tree-20261023/tooling-notes.txt"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 3,
+      "target": "AGENTS.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 3,
+      "target": "docs/项目概况.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 3,
+      "target": "计划书.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 3,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 3,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 3,
+      "target": "docs/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 11,
+      "target": "docs/结构9定向试用与UART修订.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 11,
+      "target": "docs/evidence/schema9-daily-uart-20261024/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 19,
+      "target": "docs/evidence/rules-document-entry-20261024/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 19,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 34,
+      "target": "docs/项目概况.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 34,
+      "target": "docs/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 35,
+      "target": "docs/evidence/agents-document-split-20261024/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 89,
+      "target": "docs/evidence/rules-document-entry-20261024/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 93,
+      "target": "release/practice-plans-20261024/win-unpacked/embedded-practice.exe"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 93,
+      "target": "docs/练习方案行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 93,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 93,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 95,
+      "target": "release/categories-20261023/win-unpacked/embedded-practice.exe"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 95,
+      "target": "docs/分类树行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 95,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 95,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 97,
+      "target": "docs/UART题库整理行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 97,
+      "target": "docs/题库分类与标签规范.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 97,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 99,
+      "target": "docs/找题体验第一批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 99,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 101,
+      "target": "docs/UI美化与主题说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 101,
+      "target": "docs/evidence/ui-themes-20261023/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 101,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 103,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 103,
+      "target": "docs/M5第四批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 103,
+      "target": "docs/evidence/m5d/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 105,
+      "target": "docs/evidence/m5c/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 107,
+      "target": "question-banks/trials/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 107,
+      "target": "release/m5-20261022/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 107,
+      "target": "docs/M5第二批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 107,
+      "target": "docs/evidence/m5b/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 109,
+      "target": "docs/M5第一批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 109,
+      "target": "docs/evidence/m5a/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 111,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 113,
+      "target": "question-banks/STM32F103RCT6-GPIO阶段自测题.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 113,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 115,
+      "target": "question-banks/templates/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 115,
+      "target": "question-banks/examples/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 117,
+      "target": "docs/evidence/m1c/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 119,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 119,
+      "target": "docs/evidence/m1d/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 121,
+      "target": "docs/architecture/M1窗口与受控内容.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 121,
+      "target": "docs/evidence/m1e/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 123,
+      "target": "docs/architecture/M2顺序练习与保存.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 123,
+      "target": "docs/evidence/m2a/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 125,
+      "target": "docs/architecture/M2练习窗口与保存.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 125,
+      "target": "docs/evidence/m2b/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 127,
+      "target": "docs/evidence/m2-fixes/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 129,
+      "target": "docs/evidence/m2c/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 131,
+      "target": "docs/evidence/m2d/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 133,
+      "target": "docs/evidence/m3a/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 135,
+      "target": "docs/evidence/m3-fixes/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 137,
+      "target": "docs/M3第二批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 137,
+      "target": "docs/evidence/m3b/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 139,
+      "target": "docs/M3第三批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 139,
+      "target": "docs/evidence/m3c/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 141,
+      "target": "docs/M3第四批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 141,
+      "target": "docs/evidence/m3d/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 143,
+      "target": "docs/M3第五批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 143,
+      "target": "docs/evidence/m3e/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 143,
+      "target": "docs/M2人工验收清单.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 143,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 145,
+      "target": "docs/M3会话筛选快照修复.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 145,
+      "target": "docs/evidence/session-filters-fix/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 147,
+      "target": "docs/M4第二批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 147,
+      "target": "docs/evidence/m4b/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 151,
+      "target": "docs/M4第三批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 151,
+      "target": "docs/evidence/m4c/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 202,
+      "target": "docs/architecture/M0启动与存储.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 237,
+      "target": "docs/evidence/session-filters-fix/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 250,
+      "target": "计划书.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 260,
+      "target": "docs/练习方案行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 260,
+      "target": "docs/evidence/practice-plans-20261024/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 260,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 260,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 262,
+      "target": "docs/分类树行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 262,
+      "target": "docs/evidence/category-tree-20261023/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 262,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 262,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 262,
+      "target": "docs/题库分类与标签规范.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 264,
+      "target": "docs/UART题库整理行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 264,
+      "target": "docs/evidence/uart-metadata-20261023/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 264,
+      "target": "docs/题库分类与标签规范.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 264,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 264,
+      "target": "docs/M5题目审阅与试用反馈.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 266,
+      "target": "docs/找题体验第一批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 266,
+      "target": "docs/evidence/findability-20261023/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 266,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 268,
+      "target": "docs/UI美化与主题说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 268,
+      "target": "docs/evidence/ui-themes-20261023/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 268,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 270,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 270,
+      "target": "docs/M5第四批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 270,
+      "target": "docs/evidence/m5d/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 270,
+      "target": "docs/M5题目审阅与试用反馈.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 272,
+      "target": "docs/evidence/m5c/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 274,
+      "target": "docs/evidence/m3e/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 274,
+      "target": "计划书.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 276,
+      "target": "docs/M3会话筛选快照修复.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 276,
+      "target": "docs/evidence/session-filters-fix/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 278,
+      "target": "docs/M4第二批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 278,
+      "target": "docs/evidence/m4b/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 280,
+      "target": "docs/M4第三批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 280,
+      "target": "docs/architecture/M4数据位置与诊断入口.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 280,
+      "target": "docs/evidence/m4c/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 282,
+      "target": "docs/M5第一批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 282,
+      "target": "docs/evidence/m5a/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 285,
+      "target": "docs/M5第二批行为与验收.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 285,
+      "target": "docs/evidence/m5b/README.md"
+    },
+    {
+      "document": "docs/开发记录.md",
+      "line": 285,
+      "target": "question-banks/trials/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 5,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 12,
+      "target": "docs/练习方案行为与验收.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 25,
+      "target": "docs/分类树行为与验收.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 25,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 35,
+      "target": "docs/找题体验第一批行为与验收.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 43,
+      "target": "docs/UI美化与主题说明.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 43,
+      "target": "docs/evidence/ui-themes-20261023/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 43,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 56,
+      "target": "docs/M5第二批行为与验收.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 107,
+      "target": "docs/evidence/m3a/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 109,
+      "target": "docs/evidence/m3-fixes/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 113,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 113,
+      "target": "docs/architecture/M1窗口与受控内容.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 115,
+      "target": "docs/architecture/M2顺序练习与保存.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 115,
+      "target": "docs/architecture/M2练习窗口与保存.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 117,
+      "target": "docs/architecture/M3单题历史与更新标记.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 119,
+      "target": "docs/architecture/M3学习记录总览.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 123,
+      "target": "docs/evidence/m1c/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 125,
+      "target": "docs/evidence/m1d/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 127,
+      "target": "docs/evidence/m1e/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 129,
+      "target": "docs/evidence/m2a/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 129,
+      "target": "docs/evidence/m2b/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 131,
+      "target": "docs/evidence/m2b/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 133,
+      "target": "docs/evidence/m2-fixes/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 135,
+      "target": "docs/evidence/m2c/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 135,
+      "target": "docs/M2人工验收清单.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 137,
+      "target": "docs/architecture/M3显示设置与页面.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 137,
+      "target": "docs/evidence/m3e/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 139,
+      "target": "docs/M3会话筛选快照修复.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 139,
+      "target": "docs/evidence/session-filters-fix/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 143,
+      "target": "docs/evidence/m3d/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 145,
+      "target": "docs/evidence/m3c/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 147,
+      "target": "docs/evidence/m3b/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 183,
+      "target": "docs/architecture/M3随机练习与模式升级.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 189,
+      "target": "docs/architecture/M4完整备份与恢复预览.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 191,
+      "target": "docs/evidence/m4a/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 195,
+      "target": "AGENTS.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 195,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 195,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 199,
+      "target": "docs/licenses/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 201,
+      "target": "docs/licenses/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 203,
+      "target": "docs/evidence/m2b/npm-audit.json"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 207,
+      "target": "docs/architecture/M4恢复执行与回退.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 207,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 207,
+      "target": "docs/evidence/m4b/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 209,
+      "target": "docs/architecture/M4数据位置与诊断入口.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 209,
+      "target": "docs/M4第三批行为与验收.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 209,
+      "target": "docs/evidence/m4c/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 232,
+      "target": "docs/evidence/m5b/README.md"
+    },
+    {
+      "document": "docs/开发说明.md",
+      "line": 245,
+      "target": "docs/evidence/m5d/README.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 7,
+      "target": "docs/练习方案行为与验收.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 7,
+      "target": "docs/evidence/practice-plans-20261024/README.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 7,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 11,
+      "target": "release/practice-plans-20261024/win-unpacked/embedded-practice.exe"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 27,
+      "target": "release/m5-20261022/README.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 30,
+      "target": "docs/evidence/practice-plans-20261024/package-manifest.json"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 30,
+      "target": "docs/evidence/practice-plans-20261024/signature-readable.json"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 34,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 34,
+      "target": "docs/MarkdownV1题库格式.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 34,
+      "target": "question-banks/templates/README.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 35,
+      "target": "docs/题库分类与标签规范.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 46,
+      "target": "question-banks/trials/STM32F103-UART第二层-30题试用.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 46,
+      "target": "docs/结构9定向试用与UART修订.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 48,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 48,
+      "target": "question-banks/trials/UART答案修订清单.json"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 48,
+      "target": "docs/M5题目审阅与试用反馈.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 56,
+      "target": "docs/开发说明.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 62,
+      "target": "docs/evidence/schema9-daily-uart-20261024/README.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 64,
+      "target": "docs/evidence/practice-plans-20261024/README.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 66,
+      "target": "docs/evidence/category-tree-20261023/performance-01/result.json"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 67,
+      "target": "docs/evidence/category-tree-20261023/performance-01/category-1440.png"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 67,
+      "target": "docs/evidence/category-tree-20261023/performance-01/category-900.png"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 77,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 77,
+      "target": "docs/开发说明.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 77,
+      "target": "docs/README.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 77,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/当前试用版本交付说明.md",
+      "line": 77,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/找题体验第一批行为与验收.md",
+      "line": 3,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/找题体验第一批行为与验收.md",
+      "line": 16,
+      "target": "docs/evidence/findability-20261023/before.json"
+    },
+    {
+      "document": "docs/找题体验第一批行为与验收.md",
+      "line": 16,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/找题体验第一批行为与验收.md",
+      "line": 21,
+      "target": "docs/evidence/findability-20261023/desktop-coverage.json"
+    },
+    {
+      "document": "docs/找题体验第一批行为与验收.md",
+      "line": 23,
+      "target": "docs/evidence/findability-20261023/README.md"
+    },
+    {
+      "document": "docs/找题体验第一批行为与验收.md",
+      "line": 23,
+      "target": "docs/evidence/findability-20261023/performance-summary.json"
+    },
+    {
+      "document": "docs/找题体验第一批行为与验收.md",
+      "line": 25,
+      "target": "docs/evidence/findability-20261023/README.md"
+    },
+    {
+      "document": "docs/数据保护与桌面边界.md",
+      "line": 3,
+      "target": "docs/architecture/M4完整备份与恢复预览.md"
+    },
+    {
+      "document": "docs/数据保护与桌面边界.md",
+      "line": 3,
+      "target": "docs/architecture/M4恢复执行与回退.md"
+    },
+    {
+      "document": "docs/数据保护与桌面边界.md",
+      "line": 3,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/练习保存与统计契约.md",
+      "line": 3,
+      "target": "计划书.md"
+    },
+    {
+      "document": "docs/练习保存与统计契约.md",
+      "line": 3,
+      "target": "docs/分类树行为与验收.md#%E6%9C%AC%E6%89%B9%E5%A5%91%E7%BA%A6"
+    },
+    {
+      "document": "docs/练习保存与统计契约.md",
+      "line": 3,
+      "target": "docs/练习方案行为与验收.md#%E6%9C%80%E5%B0%8F%E8%8C%83%E5%9B%B4"
+    },
+    {
+      "document": "docs/练习保存与统计契约.md",
+      "line": 3,
+      "target": "docs/数据保护与桌面边界.md"
+    },
+    {
+      "document": "docs/练习保存与统计契约.md",
+      "line": 3,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 7,
+      "target": "question-banks/trials/STM32F103-UART第二层-30题试用.md"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 9,
+      "target": "question-banks/trials/题答来源.json"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 9,
+      "target": "question-banks/trials/UART题目整理清单.json"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 9,
+      "target": "question-banks/trials/UART答案修订清单.json"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 13,
+      "target": "docs/evidence/schema9-daily-uart-20261024/runtime-01/result.json"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 17,
+      "target": "docs/evidence/schema9-daily-uart-20261024/focused-01/report.json"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 24,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-02/result.json"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 28,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 30,
+      "target": "docs/evidence/schema9-daily-uart-20261024/references/compiler-probe.json"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 32,
+      "target": "docs/evidence/schema9-daily-uart-20261024/content-01/result.json"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 38,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/结构9定向试用与UART修订.md",
+      "line": 42,
+      "target": "docs/evidence/schema9-daily-uart-20261024/README.md"
+    },
+    {
+      "document": "docs/项目概况.md",
+      "line": 3,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/项目概况.md",
+      "line": 3,
+      "target": "docs/开发记录.md"
+    },
+    {
+      "document": "docs/项目概况.md",
+      "line": 3,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/项目模块职责.md",
+      "line": 13,
+      "target": "src/main/database/repositories/category-repository.ts"
+    },
+    {
+      "document": "docs/项目模块职责.md",
+      "line": 13,
+      "target": "docs/分类树行为与验收.md#%E6%9C%AC%E6%89%B9%E5%A5%91%E7%BA%A6"
+    },
+    {
+      "document": "docs/项目模块职责.md",
+      "line": 14,
+      "target": "src/main/database/repositories/practice-plan-repository.ts"
+    },
+    {
+      "document": "docs/项目模块职责.md",
+      "line": 14,
+      "target": "docs/练习方案行为与验收.md#%E6%9C%80%E5%B0%8F%E8%8C%83%E5%9B%B4"
+    },
+    {
+      "document": "docs/项目模块职责.md",
+      "line": 20,
+      "target": "docs/题库与导入契约.md"
+    },
+    {
+      "document": "docs/项目模块职责.md",
+      "line": 24,
+      "target": "src/renderer/src/components/CategoryManager.tsx"
+    },
+    {
+      "document": "docs/项目模块职责.md",
+      "line": 24,
+      "target": "src/renderer/src/usePracticePlans.ts"
+    },
+    {
+      "document": "docs/项目模块职责.md",
+      "line": 24,
+      "target": "src/renderer/src/components/PracticePlans.tsx"
+    },
+    {
+      "document": "docs/题库与导入契约.md",
+      "line": 3,
+      "target": "计划书.md"
+    },
+    {
+      "document": "docs/题库与导入契约.md",
+      "line": 3,
+      "target": "docs/MarkdownV1题库格式.md"
+    },
+    {
+      "document": "docs/题库与导入契约.md",
+      "line": 3,
+      "target": "docs/开发记录.md"
+    },
+    {
+      "document": "docs/题库与导入契约.md",
+      "line": 3,
+      "target": "docs/验收记录.md"
+    },
+    {
+      "document": "docs/题库分类与标签规范.md",
+      "line": 3,
+      "target": "docs/分类树行为与验收.md"
+    },
+    {
+      "document": "docs/题库分类与标签规范.md",
+      "line": 5,
+      "target": "docs/练习方案行为与验收.md#%E6%9C%80%E5%B0%8F%E8%8C%83%E5%9B%B4"
+    },
+    {
+      "document": "docs/题库分类与标签规范.md",
+      "line": 5,
+      "target": "docs/结构9定向试用与UART修订.md"
+    },
+    {
+      "document": "docs/题库分类与标签规范.md",
+      "line": 13,
+      "target": "question-banks/STM32F103RCT6-GPIO阶段自测题.md"
+    },
+    {
+      "document": "docs/题库分类与标签规范.md",
+      "line": 14,
+      "target": "question-banks/trials/STM32F103-UART第二层-30题试用.md"
+    },
+    {
+      "document": "docs/题库分类与标签规范.md",
+      "line": 51,
+      "target": "question-banks/trials/UART题目整理清单.json"
+    },
+    {
+      "document": "docs/题库分类与标签规范.md",
+      "line": 51,
+      "target": "question-banks/trials/题答来源.json"
+    },
+    {
+      "document": "docs/题库分类与标签规范.md",
+      "line": 53,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/题库分类与标签规范.md",
+      "line": 53,
+      "target": "docs/M5题目审阅与试用反馈.md"
+    },
+    {
+      "document": "docs/题库分类与标签规范.md",
+      "line": 59,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 3,
+      "target": "docs/结构9定向试用与UART修订.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 3,
+      "target": "docs/evidence/schema9-daily-uart-20261024/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 5,
+      "target": "docs/evidence/rules-document-entry-20261024/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 7,
+      "target": "docs/开发记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 7,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 9,
+      "target": "docs/开发记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 9,
+      "target": "docs/evidence/agents-document-split-20261024/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 19,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 19,
+      "target": "docs/练习方案行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 19,
+      "target": "docs/evidence/practice-plans-20261024/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 25,
+      "target": "docs/分类树行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 25,
+      "target": "docs/evidence/category-tree-20261023/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 27,
+      "target": "docs/evidence/category-tree-20261023/full-02.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 27,
+      "target": "docs/evidence/category-tree-20261023/desktop-coverage.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 31,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 33,
+      "target": "docs/题库分类与标签规范.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 35,
+      "target": "docs/UART题库整理行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 35,
+      "target": "docs/evidence/uart-metadata-20261023/desktop-01/result.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 35,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 37,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 41,
+      "target": "docs/evidence/findability-20261023/desktop-coverage.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 43,
+      "target": "docs/evidence/findability-20261023/performance-01/result.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 47,
+      "target": "docs/evidence/findability-20261023/before.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 47,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 47,
+      "target": "docs/找题体验第一批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 47,
+      "target": "docs/evidence/findability-20261023/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 53,
+      "target": "docs/evidence/ui-themes-20261023/desktop-coverage.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 57,
+      "target": "docs/evidence/ui-themes-20261023/experience-01/result.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 59,
+      "target": "docs/evidence/ui-themes-20261023/delivery-verification.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 61,
+      "target": "docs/UI美化与主题说明.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 61,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 61,
+      "target": "docs/evidence/ui-themes-20261023/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 65,
+      "target": "docs/evidence/plan-status-20261023/verification.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 71,
+      "target": "docs/M5第四批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 71,
+      "target": "docs/evidence/m5d/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 71,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 73,
+      "target": "docs/evidence/m5c/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 73,
+      "target": "docs/evidence/m5c/user-requested-skip.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 77,
+      "target": "docs/M5第二批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 77,
+      "target": "docs/evidence/m5b/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 81,
+      "target": "docs/M5第一批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 81,
+      "target": "docs/evidence/m5a/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 83,
+      "target": "docs/M4第三批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 83,
+      "target": "docs/architecture/M4数据位置与诊断入口.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 83,
+      "target": "docs/evidence/m4c/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 87,
+      "target": "docs/M4第二批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 87,
+      "target": "docs/evidence/m4b/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 91,
+      "target": "docs/M2人工验收清单.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 131,
+      "target": "docs/开发说明.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 131,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 150,
+      "target": "docs/evidence/m0/development-smoke.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 151,
+      "target": "docs/evidence/m0/runtime-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 153,
+      "target": "docs/evidence/m0/installed-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 158,
+      "target": "docs/evidence/m0/uninstall-result.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 159,
+      "target": "docs/evidence/m0/startup-light.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 159,
+      "target": "docs/evidence/m0/startup-dark.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 164,
+      "target": "docs/evidence/m0/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 179,
+      "target": "docs/M1第一批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 183,
+      "target": "question-banks/STM32F103RCT6-GPIO阶段自测题.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 186,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 193,
+      "target": "docs/evidence/m1a/check-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 194,
+      "target": "docs/evidence/m1a/unit-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 199,
+      "target": "docs/evidence/m1a/desktop-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 199,
+      "target": "docs/evidence/m1a/desktop-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 200,
+      "target": "docs/evidence/m1a/static-checks.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 202,
+      "target": "docs/evidence/m1a/manifest.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 214,
+      "target": "docs/M1第二批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 214,
+      "target": "docs/architecture/M1文件与图片快照.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 221,
+      "target": "question-banks/templates/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 221,
+      "target": "question-banks/examples/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 222,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 228,
+      "target": "docs/evidence/m1b/check-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 229,
+      "target": "docs/evidence/m1b/unit-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 235,
+      "target": "docs/evidence/m1b/desktop-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 235,
+      "target": "docs/evidence/m1b/desktop-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 238,
+      "target": "docs/evidence/m1b/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 238,
+      "target": "docs/evidence/m1b/manifest.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 238,
+      "target": "docs/evidence/m1b/static-checks.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 250,
+      "target": "docs/M1第三批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 250,
+      "target": "docs/architecture/M1导入工作线程.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 264,
+      "target": "docs/evidence/m1c/check-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 265,
+      "target": "docs/evidence/m1c/unit-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 265,
+      "target": "docs/evidence/m1c/unit-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 267,
+      "target": "docs/evidence/m1c/development-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 267,
+      "target": "docs/evidence/m1c/development-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 268,
+      "target": "docs/evidence/m1c/package-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 269,
+      "target": "docs/evidence/m1c/packaged-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 269,
+      "target": "docs/evidence/m1c/packaged-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 270,
+      "target": "docs/evidence/m1c/development-worker-snapshot.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 270,
+      "target": "docs/evidence/m1c/packaged-worker-snapshot.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 271,
+      "target": "docs/evidence/m1c/packaged-worker-controls.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 271,
+      "target": "docs/evidence/m1c/packaged-worker-shutdown.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 273,
+      "target": "docs/evidence/m1c/package-inspection.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 276,
+      "target": "docs/evidence/m1c/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 276,
+      "target": "docs/evidence/m1c/static-checks.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 276,
+      "target": "docs/evidence/m1c/manifest.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 280,
+      "target": "docs/evidence/m1c/development-eval-failure.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 290,
+      "target": "docs/M1第四批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 290,
+      "target": "docs/architecture/M1预览与提交.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 300,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 306,
+      "target": "docs/evidence/m1d/check-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 307,
+      "target": "docs/evidence/m1d/unit-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 307,
+      "target": "docs/evidence/m1d/unit-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 308,
+      "target": "docs/evidence/m1d/development-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 308,
+      "target": "docs/evidence/m1d/development-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 309,
+      "target": "docs/evidence/m1d/package-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 310,
+      "target": "docs/evidence/m1d/packaged-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 310,
+      "target": "docs/evidence/m1d/packaged-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 318,
+      "target": "docs/evidence/m1d/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 318,
+      "target": "docs/evidence/m1d/static-checks.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 318,
+      "target": "docs/evidence/m1d/manifest.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 324,
+      "target": "docs/evidence/m1d/development-fixture-failure.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 326,
+      "target": "docs/evidence/m1d/unit-discovery-before-fix.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 326,
+      "target": "docs/evidence/m1d/configuration-type-failure.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 334,
+      "target": "docs/M1第五批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 334,
+      "target": "docs/architecture/M1窗口与受控内容.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 334,
+      "target": "docs/使用说明.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 336,
+      "target": "docs/licenses/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 345,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 351,
+      "target": "docs/evidence/m1e/check-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 352,
+      "target": "docs/evidence/m1e/unit-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 353,
+      "target": "docs/evidence/m1e/development-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 353,
+      "target": "docs/evidence/m1e/development-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 354,
+      "target": "docs/evidence/m1e/package-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 355,
+      "target": "docs/evidence/m1e/packaged-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 355,
+      "target": "docs/evidence/m1e/packaged-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 361,
+      "target": "docs/evidence/m1e/development-window-worker-exit.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 361,
+      "target": "docs/evidence/m1e/packaged-window-worker-exit.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 363,
+      "target": "docs/evidence/m1e/packaged-question-light.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 363,
+      "target": "docs/evidence/m1e/packaged-answer-dark.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 364,
+      "target": "docs/evidence/m1e/package-inspection.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 365,
+      "target": "docs/evidence/m1e/static-checks.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 365,
+      "target": "docs/evidence/m1e/manifest.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 367,
+      "target": "docs/evidence/m1e/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 371,
+      "target": "docs/evidence/m1e/baseline-build-failure.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 371,
+      "target": "docs/evidence/m1e/development-image-failure.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 371,
+      "target": "docs/evidence/m1e/development-image-failure.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 373,
+      "target": "docs/evidence/m1e/npm-audit.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 381,
+      "target": "docs/M2第一批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 381,
+      "target": "docs/architecture/M2顺序练习与保存.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 399,
+      "target": "docs/evidence/m2a/check-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 400,
+      "target": "docs/evidence/m2a/unit-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 400,
+      "target": "docs/evidence/m2a/unit-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 401,
+      "target": "docs/evidence/m2a/development-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 401,
+      "target": "docs/evidence/m2a/development-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 402,
+      "target": "docs/evidence/m2a/package-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 403,
+      "target": "docs/evidence/m2a/packaged-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 403,
+      "target": "docs/evidence/m2a/packaged-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 404,
+      "target": "docs/evidence/m2a/development-practice-lifecycle.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 404,
+      "target": "docs/evidence/m2a/packaged-practice-lifecycle.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 404,
+      "target": "docs/evidence/m2a/packaged-practice-reopened.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 406,
+      "target": "docs/evidence/m2a/development-practice-versions.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 406,
+      "target": "docs/evidence/m2a/packaged-practice-versions.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 407,
+      "target": "docs/evidence/m2a/development-practice-rollback.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 407,
+      "target": "docs/evidence/m2a/packaged-practice-rollback.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 408,
+      "target": "docs/evidence/m2a/development-practice-durability.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 408,
+      "target": "docs/evidence/m2a/packaged-practice-durability.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 409,
+      "target": "docs/evidence/m2a/development-practice-limits.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 409,
+      "target": "docs/evidence/m2a/packaged-practice-limits.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 411,
+      "target": "docs/evidence/m2a/package-inspection.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 412,
+      "target": "docs/evidence/m2a/static-checks.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 412,
+      "target": "docs/evidence/m2a/manifest.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 414,
+      "target": "docs/evidence/m2a/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 418,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 426,
+      "target": "docs/M2第二批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 426,
+      "target": "docs/architecture/M2练习窗口与保存.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 428,
+      "target": "docs/licenses/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 442,
+      "target": "docs/evidence/m2b/check-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 443,
+      "target": "docs/evidence/m2b/unit-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 443,
+      "target": "docs/evidence/m2b/unit-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 444,
+      "target": "docs/evidence/m2b/development-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 444,
+      "target": "docs/evidence/m2b/development-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 445,
+      "target": "docs/evidence/m2b/package-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 446,
+      "target": "docs/evidence/m2b/packaged-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 446,
+      "target": "docs/evidence/m2b/packaged-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 447,
+      "target": "docs/evidence/m2b/development-practice-window-roundtrip.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 447,
+      "target": "docs/evidence/m2b/packaged-practice-window-roundtrip.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 448,
+      "target": "docs/evidence/m2b/development-practice-window-failures.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 448,
+      "target": "docs/evidence/m2b/packaged-practice-window-failures.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 449,
+      "target": "docs/evidence/m2b/development-practice-window-reopened.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 449,
+      "target": "docs/evidence/m2b/packaged-practice-window-reopened.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 451,
+      "target": "docs/evidence/m2b/development-practice-window-retry.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 451,
+      "target": "docs/evidence/m2b/packaged-practice-window-retry.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 453,
+      "target": "docs/evidence/m2b/packaged-practice-light.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 453,
+      "target": "docs/evidence/m2b/packaged-practice-dark.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 453,
+      "target": "docs/evidence/m2b/packaged-practice-image-zoom.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 455,
+      "target": "docs/evidence/m2b/package-inspection.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 456,
+      "target": "docs/evidence/m2b/npm-audit.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 457,
+      "target": "docs/evidence/m2b/static-checks.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 457,
+      "target": "docs/evidence/m2b/manifest.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 461,
+      "target": "docs/evidence/m2b/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 486,
+      "target": "docs/evidence/m2-fixes/before-fix-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 486,
+      "target": "docs/evidence/m2-fixes/before-fix-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 487,
+      "target": "docs/evidence/m2-fixes/check-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 488,
+      "target": "docs/evidence/m2-fixes/unit-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 488,
+      "target": "docs/evidence/m2-fixes/unit-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 489,
+      "target": "docs/evidence/m2-fixes/fixed-regressions-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 489,
+      "target": "docs/evidence/m2-fixes/fixed-regressions-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 490,
+      "target": "docs/evidence/m2-fixes/development-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 490,
+      "target": "docs/evidence/m2-fixes/development-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 491,
+      "target": "docs/evidence/m2-fixes/package-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 492,
+      "target": "docs/evidence/m2-fixes/packaged-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 492,
+      "target": "docs/evidence/m2-fixes/packaged-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 493,
+      "target": "docs/evidence/m2-fixes/development-repeat-skip-100ms.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 493,
+      "target": "docs/evidence/m2-fixes/packaged-repeat-skip-100ms.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 493,
+      "target": "docs/evidence/m2-fixes/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 494,
+      "target": "docs/evidence/m2-fixes/development-image-after-autosave.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 494,
+      "target": "docs/evidence/m2-fixes/packaged-image-after-autosave.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 495,
+      "target": "docs/evidence/m2-fixes/package-inspection.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 497,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 497,
+      "target": "docs/evidence/m2-fixes/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 507,
+      "target": "docs/M2第三批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 518,
+      "target": "docs/M2人工验收清单.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 524,
+      "target": "docs/evidence/m2c/before-fix-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 524,
+      "target": "docs/evidence/m2c/before-fix-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 525,
+      "target": "docs/evidence/m2c/forced-stop-baseline-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 526,
+      "target": "docs/evidence/m2c/check-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 527,
+      "target": "docs/evidence/m2c/unit-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 527,
+      "target": "docs/evidence/m2c/unit-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 528,
+      "target": "docs/evidence/m2c/focused-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 528,
+      "target": "docs/evidence/m2c/focused-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 529,
+      "target": "docs/evidence/m2c/development-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 529,
+      "target": "docs/evidence/m2c/development-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 530,
+      "target": "docs/evidence/m2c/package-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 531,
+      "target": "docs/evidence/m2c/packaged-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 531,
+      "target": "docs/evidence/m2c/packaged-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 532,
+      "target": "docs/evidence/m2c/results-summary.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 532,
+      "target": "docs/evidence/m2c/development-long-content-next-150.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 532,
+      "target": "docs/evidence/m2c/packaged-long-content-next-150.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 533,
+      "target": "docs/evidence/m2c/development-forced-stop-confirmed.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 533,
+      "target": "docs/evidence/m2c/development-forced-stop-recovered.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 533,
+      "target": "docs/evidence/m2c/packaged-forced-stop-confirmed.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 533,
+      "target": "docs/evidence/m2c/packaged-forced-stop-recovered.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 534,
+      "target": "docs/evidence/m2c/package-inspection.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 535,
+      "target": "docs/evidence/m2c/manual-instructions-static.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 537,
+      "target": "docs/代码复查记录.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 537,
+      "target": "docs/evidence/m2c/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 547,
+      "target": "docs/M2第四批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 553,
+      "target": "docs/evidence/m2d/native-keyboard-before-fix.jpg"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 562,
+      "target": "docs/evidence/m2d/before-fix-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 562,
+      "target": "docs/evidence/m2d/before-fix-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 562,
+      "target": "docs/evidence/m2d/before-fix-keyboard-150.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 563,
+      "target": "docs/evidence/m2d/focused-first-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 563,
+      "target": "docs/evidence/m2d/focused-first-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 564,
+      "target": "docs/evidence/m2d/focused-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 564,
+      "target": "docs/evidence/m2d/fixed-keyboard-150.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 565,
+      "target": "docs/evidence/m2d/check-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 565,
+      "target": "docs/evidence/m2d/build-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 566,
+      "target": "docs/evidence/m2d/unit-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 566,
+      "target": "docs/evidence/m2d/unit-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 567,
+      "target": "docs/evidence/m2d/development-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 567,
+      "target": "docs/evidence/m2d/development-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 568,
+      "target": "docs/evidence/m2d/package-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 569,
+      "target": "docs/evidence/m2d/packaged-tests.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 569,
+      "target": "docs/evidence/m2d/packaged-output.txt"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 569,
+      "target": "docs/evidence/m2d/packaged-keyboard-150.png"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 570,
+      "target": "docs/evidence/m2d/package-inspection.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 574,
+      "target": "docs/evidence/m2d/native-actions.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 574,
+      "target": "docs/evidence/m2d/environment.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 577,
+      "target": "docs/evidence/m2d/native-keyboard-after-fix.jpg"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 578,
+      "target": "docs/evidence/m2d/input-method-profile.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 578,
+      "target": "docs/evidence/m2d/native-ime-candidate.jpg"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 578,
+      "target": "docs/evidence/m2d/native-ime-committed.jpg"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 579,
+      "target": "docs/evidence/m2d/native-clipboard-paste.jpg"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 580,
+      "target": "docs/evidence/m2d/fixed-native-reopened-process.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 580,
+      "target": "docs/evidence/m2d/native-recovered-second-question.jpg"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 580,
+      "target": "docs/evidence/m2d/fixed-native-after-reopen-database.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 581,
+      "target": "docs/evidence/m2d/native-final-windows.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 581,
+      "target": "docs/evidence/m2d/native-final-process.json"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 583,
+      "target": "docs/evidence/m2d/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 587,
+      "target": "docs/M2人工验收清单.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 593,
+      "target": "docs/M3第一批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 605,
+      "target": "docs/evidence/m3a/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 618,
+      "target": "docs/evidence/m3a/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 624,
+      "target": "docs/evidence/m3-fixes/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 646,
+      "target": "docs/evidence/m3-fixes/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 662,
+      "target": "docs/M3第二批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 662,
+      "target": "docs/architecture/M3随机练习与模式升级.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 686,
+      "target": "docs/evidence/m3b/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 698,
+      "target": "docs/M3第三批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 698,
+      "target": "docs/architecture/M3单题历史与更新标记.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 723,
+      "target": "docs/evidence/m3c/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 737,
+      "target": "docs/M3第四批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 737,
+      "target": "docs/architecture/M3学习记录总览.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 761,
+      "target": "docs/evidence/m3d/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 773,
+      "target": "docs/M3第五批行为与验收.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 773,
+      "target": "docs/architecture/M3显示设置与页面.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 793,
+      "target": "docs/evidence/m3e/README.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 799,
+      "target": "docs/M3会话筛选快照修复.md"
+    },
+    {
+      "document": "docs/验收记录.md",
+      "line": 799,
+      "target": "docs/evidence/session-filters-fix/README.md"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 3,
+      "target": "question-banks/trials/UART答案修订清单.json"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 3,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 5,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 5,
+      "target": "docs/结构9定向试用与UART修订.md"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 9,
+      "target": "question-banks/trials/UART题目整理清单.json"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 9,
+      "target": "docs/题库分类与标签规范.md"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 9,
+      "target": "docs/UART30题来源与技术核对.md"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 11,
+      "target": "docs/UART题库整理行为与验收.md"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 13,
+      "target": "question-banks/trials/STM32F103-UART第二层-30题试用.md"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 24,
+      "target": "question-banks/trials/题答来源.json"
+    },
+    {
+      "document": "question-banks/trials/README.md",
+      "line": 26,
+      "target": "docs/M5第二批行为与验收.md"
+    },
+    {
+      "document": "scripts/AGENTS.md",
+      "line": 3,
+      "target": "AGENTS.md"
+    },
+    {
+      "document": "scripts/AGENTS.md",
+      "line": 3,
+      "target": "docs/开发说明.md#%E8%BF%90%E8%A1%8C%E4%B8%8E%E6%B5%8B%E8%AF%95%E5%89%8D%E7%9A%84%E7%9B%AE%E6%A0%87%E6%A0%B8%E5%AF%B9"
+    },
+    {
+      "document": "scripts/AGENTS.md",
+      "line": 3,
+      "target": "docs/当前试用版本交付说明.md"
+    },
+    {
+      "document": "scripts/AGENTS.md",
+      "line": 3,
+      "target": "docs/数据保护与桌面边界.md"
+    },
+    {
+      "document": "tests/AGENTS.md",
+      "line": 3,
+      "target": "AGENTS.md"
+    },
+    {
+      "document": "tests/AGENTS.md",
+      "line": 3,
+      "target": "docs/开发说明.md#%E8%BF%90%E8%A1%8C%E4%B8%8E%E6%B5%8B%E8%AF%95%E5%89%8D%E7%9A%84%E7%9B%AE%E6%A0%87%E6%A0%B8%E5%AF%B9"
+    },
+    {
+      "document": "tests/AGENTS.md",
+      "line": 3,
+      "target": "docs/数据保护与桌面边界.md"
+    },
+    {
+      "document": "tests/AGENTS.md",
+      "line": 5,
+      "target": "docs/当前试用版本交付说明.md"
+    }
+  ]
+}

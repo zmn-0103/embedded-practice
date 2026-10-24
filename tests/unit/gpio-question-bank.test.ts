@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs'
+import { createHash } from 'node:crypto'
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
 import { parseQuestionBank } from '../../src/main/services/library/parse-question-bank'
@@ -17,8 +18,12 @@ const mapping = z
     }),
   )
   .parse(JSON.parse(readFileSync(`${sourceRoot}题答对应.json`, 'utf8')) as unknown)
+// 此组保留初始原题逐字对应约定；当前优化版由personal-bank.test.ts验证。
+const initialSnapshot = readFileSync(
+  'docs/evidence/v000-personal-20261024/before/question-banks/STM32F103RCT6-GPIO阶段自测题.md',
+)
 const parsed = parseQuestionBank(
-  readFileSync('question-banks/STM32F103RCT6-GPIO阶段自测题.md', 'utf8'),
+  initialSnapshot.toString('utf8'),
   'STM32F103RCT6-GPIO阶段自测题.md',
 )
 if (!parsed.ok) throw new Error(`真实题库未通过结构校验：${JSON.stringify(parsed.issues)}`)
@@ -37,6 +42,9 @@ function originalEntries(paragraphs: string[]): { section: string; text: string 
 
 describe('用户 GPIO 初始题库完整对应', () => {
   it('题答对应表与保留的原始纯文本逐条一致，七章均有覆盖', () => {
+    expect(createHash('sha256').update(initialSnapshot).digest('hex')).toBe(
+      '494512d817de9ad0cd3a74cb3de8e375005ac56e02f3f3fc26f4b89383fbf8e2',
+    )
     const paragraphs = original
       .split(/\r?\n(?:[ \t]*\r?\n)+/u)
       .map((item) => item.trim())

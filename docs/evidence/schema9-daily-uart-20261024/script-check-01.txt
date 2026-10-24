@@ -1,0 +1,9 @@
+Command: node --check scripts/check-uart-content.mjs
+Exit code: 0
+
+Command: node node_modules/prettier/bin/prettier.cjs --check scripts/check-uart-content.mjs question-banks/trials/UART答案修订清单.json
+Exit code: 1
+Checking formatting...
+[warn] question-banks/trials/UART答案修订清单.json
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.
+

@@ -1,0 +1,6 @@
+{
+  "command": "git -c core.whitespace=cr-at-eol diff --check",
+  "exitCode": 0,
+  "output": "",
+  "scope": "Current worktree difference; CRLF treated according to preserved historical format. No old whitespace cleanup."
+}

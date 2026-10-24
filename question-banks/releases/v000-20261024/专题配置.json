@@ -1,0 +1,567 @@
+{
+  "bankVersion": "bank-20261024.1-full433",
+  "topics": [
+    {
+      "key": "gpio",
+      "topicId": "stm32f103-gpio",
+      "title": "STM32F103RCT6 GPIO 阶段自测题",
+      "board": "STM32",
+      "file": "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+      "references": [
+        {
+          "title": "ST RM0008：GPIO、RCC、ADC、I2C、SPI、USART寄存器章节",
+          "url": "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf"
+        },
+        {
+          "title": "ST DS5792：STM32F103xC/D/E引脚与电气条件",
+          "url": "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf"
+        },
+        {
+          "title": "ST标准外设库发行入口；函数实现限定本机V3.5.0",
+          "url": "https://www.st.com/en/embedded-software/stsw-stm32054.html"
+        }
+      ],
+      "conditions": "限定STM32F103RCT6（F1高密度系列）；库函数限定STM32F10x SPL V3.5.0，不套用HAL或其他系列。实际工程时钟、芯片修订和接线须另外核对。",
+      "questionContext": "以STM32F103RCT6为平台；提到标准外设库时使用SPL V3.5.0。",
+      "baseFile": "docs/evidence/v000-personal-20261024/before/question-banks/STM32F103RCT6-GPIO阶段自测题.md"
+    },
+    {
+      "key": "stm-uart",
+      "topicId": "m5-trial-uart-level-2",
+      "title": "STM32F1 UART 与寄存器",
+      "board": "STM32",
+      "file": "question-banks/trials/STM32F103-UART第二层-30题试用.md",
+      "references": [
+        {
+          "title": "ST RM0008：GPIO、RCC、ADC、I2C、SPI、USART寄存器章节",
+          "url": "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf"
+        },
+        {
+          "title": "ST DS5792：STM32F103xC/D/E引脚与电气条件",
+          "url": "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf"
+        },
+        {
+          "title": "ST标准外设库发行入口；函数实现限定本机V3.5.0",
+          "url": "https://www.st.com/en/embedded-software/stsw-stm32054.html"
+        }
+      ],
+      "conditions": "限定STM32F103RCT6（F1高密度系列）；库函数限定STM32F10x SPL V3.5.0，不套用HAL或其他系列。实际工程时钟、芯片修订和接线须另外核对。",
+      "questionContext": "平台为STM32F103RCT6，库函数为SPL V3.5.0；使用普通异步USART，特殊模式另作题设。",
+      "baseFile": "docs/evidence/v000-personal-20261024/before/question-banks/trials/STM32F103-UART第二层-30题试用.md"
+    },
+    {
+      "key": "stm-spi",
+      "topicId": "stm32f103-spi",
+      "title": "STM32F1 SPI",
+      "board": "STM32",
+      "file": "question-banks/stm32/STM32F1-SPI.md",
+      "references": [
+        {
+          "title": "ST RM0008：GPIO、RCC、ADC、I2C、SPI、USART寄存器章节",
+          "url": "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf"
+        },
+        {
+          "title": "ST DS5792：STM32F103xC/D/E引脚与电气条件",
+          "url": "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf"
+        },
+        {
+          "title": "ST标准外设库发行入口；函数实现限定本机V3.5.0",
+          "url": "https://www.st.com/en/embedded-software/stsw-stm32054.html"
+        }
+      ],
+      "conditions": "限定STM32F103RCT6（F1高密度系列）；库函数限定STM32F10x SPL V3.5.0，不套用HAL或其他系列。实际工程时钟、芯片修订和接线须另外核对。",
+      "questionContext": "平台为STM32F103RCT6，SPL V3.5.0；除特别说明外采用SPI主机、双线全双工、8位帧。",
+      "baseFile": null
+    },
+    {
+      "key": "stm-i2c",
+      "topicId": "stm32f103-i2c",
+      "title": "STM32F1 I2C",
+      "board": "STM32",
+      "file": "question-banks/stm32/STM32F1-I2C.md",
+      "references": [
+        {
+          "title": "ST RM0008：GPIO、RCC、ADC、I2C、SPI、USART寄存器章节",
+          "url": "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf"
+        },
+        {
+          "title": "ST AN2824 Rev4 §1.2.1：轮询接收1/2/N字节",
+          "url": "https://www.st.com/content/ccc/resource/technical/document/application_note/5d/ae/a3/6f/08/69/4e/9b/CD00209826.pdf/files/CD00209826.pdf/jcr:content/translations/en.CD00209826.pdf"
+        },
+        {
+          "title": "ST ES0340 Rev17 §2.9：I2C限制与恢复",
+          "url": "https://www.st.com/resource/en/errata_sheet/es0340-stm32f101xcde-stm32f103xcde-device-errata-stmicroelectronics.pdf"
+        },
+        {
+          "title": "ST标准外设库发行入口；函数实现限定本机V3.5.0",
+          "url": "https://www.st.com/en/embedded-software/stsw-stm32054.html"
+        }
+      ],
+      "conditions": "限定STM32F103RCT6（F1高密度系列）；库函数限定STM32F10x SPL V3.5.0，不套用HAL或其他系列。实际工程时钟、芯片修订和接线须另外核对。 轮询接收依AN2824；勘误适用性待核对实物修订号。",
+      "questionContext": "平台为STM32F103RCT6、SPL V3.5.0，普通I2C 7位寻址、轮询主机模式；接收时序与勘误限定F1。",
+      "baseFile": null
+    },
+    {
+      "key": "stm-adc",
+      "topicId": "stm32f103-adc",
+      "title": "STM32F1 ADC",
+      "board": "STM32",
+      "file": "question-banks/stm32/STM32F1-ADC.md",
+      "references": [
+        {
+          "title": "ST RM0008：GPIO、RCC、ADC、I2C、SPI、USART寄存器章节",
+          "url": "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf"
+        },
+        {
+          "title": "ST DS5792：STM32F103xC/D/E引脚与电气条件",
+          "url": "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf"
+        },
+        {
+          "title": "ST标准外设库发行入口；函数实现限定本机V3.5.0",
+          "url": "https://www.st.com/en/embedded-software/stsw-stm32054.html"
+        }
+      ],
+      "conditions": "限定STM32F103RCT6（F1高密度系列）；库函数限定STM32F10x SPL V3.5.0，不套用HAL或其他系列。实际工程时钟、芯片修订和接线须另外核对。 ADC输入与参考电压均须在数据手册允许范围内。",
+      "questionContext": "平台为STM32F103RCT6，ADC为12位SAR，SPL V3.5.0；频率及参考电压按题设。",
+      "baseFile": null
+    },
+    {
+      "key": "flash",
+      "topicId": "w25q16-spi-nor",
+      "title": "W25Q16 SPI NOR",
+      "board": "存储与文件系统",
+      "file": "question-banks/storage/W25Q16-SPI-NOR.md",
+      "references": [
+        {
+          "title": "Winbond W25Q16JV：指令、状态与页编程",
+          "url": "https://www.winbond.com/resource-files/w25q16jv%20spi%20revd%2008122016.pdf"
+        },
+        {
+          "title": "ST RM0008：GPIO、RCC、ADC、I2C、SPI、USART寄存器章节",
+          "url": "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf"
+        },
+        {
+          "title": "ST ES0340 Rev17 §2.9：I2C限制与恢复",
+          "url": "https://www.st.com/resource/en/errata_sheet/es0340-stm32f101xcde-stm32f103xcde-device-errata-stmicroelectronics.pdf"
+        }
+      ],
+      "conditions": "以已查W25Q16JV的标准SPI指令为参考；实物完整后缀、供电、ID、保护位及时序待核实；不得把所有W25Q16后缀视为完全相同。",
+      "questionContext": "器件题以W25Q16JV、24位地址、256字节页为例。涉及MCU状态时限定STM32F103；实物后缀需另核对。",
+      "baseFile": null
+    },
+    {
+      "key": "ee",
+      "topicId": "24lc256",
+      "title": "24LC256 EEPROM",
+      "board": "存储与文件系统",
+      "file": "question-banks/storage/24LC256-EEPROM.md",
+      "references": [
+        {
+          "title": "Microchip DS20001203Y：24LC256页写与ACK轮询",
+          "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA256-24LC256-24FC256-256K-I2C-Serial-EEPROM-DS20001203.pdf"
+        },
+        {
+          "title": "NXP UM10204 Rev7 §3：I2C协议",
+          "url": "https://cache.nxp.com/docs/en/user-guide/UM10204.pdf"
+        }
+      ],
+      "conditions": "限定Microchip 24LC256：32K字节、64字节页、两字节内部地址；A2/A1/A0和WP按实际接线。写入仅使用已授权可覆盖区域。",
+      "questionContext": "",
+      "baseFile": null
+    },
+    {
+      "key": "gpio-gen",
+      "topicId": "general-gpio",
+      "title": "GPIO 通用基础",
+      "board": "MCU与外设原理",
+      "file": "question-banks/general/GPIO通用基础.md",
+      "references": [
+        {
+          "title": "TI SCPA070 §7：GPIO电气模型",
+          "url": "https://www.ti.com/lit/pdf/scpa070"
+        }
+      ],
+      "conditions": "只采用题设的协议、电气或量化模型；不假定特定MCU寄存器、引脚、厂商库或器件自动递增行为。",
+      "questionContext": "",
+      "baseFile": "docs/evidence/v000-personal-20261024/before/question-banks/general/GPIO通用基础.md"
+    },
+    {
+      "key": "uart",
+      "topicId": "general-uart",
+      "title": "UART 通用基础",
+      "board": "通信协议",
+      "file": "question-banks/general/UART通用基础.md",
+      "references": [
+        {
+          "title": "Microchip USART帧格式",
+          "url": "https://onlinedocs.microchip.com/oxy/GUID-7BB81102-57F6-474D-9BFE-B2AF8EA02A1E-en-US-5/GUID-F84E04E8-3235-4E21-89A9-D1911E9B91DD.html"
+        }
+      ],
+      "conditions": "只采用题设的协议、电气或量化模型；不假定特定MCU寄存器、引脚、厂商库或器件自动递增行为。",
+      "questionContext": "",
+      "baseFile": "docs/evidence/v000-personal-20261024/before/question-banks/general/UART通用基础.md"
+    },
+    {
+      "key": "spi",
+      "topicId": "general-spi",
+      "title": "SPI 通用基础",
+      "board": "通信协议",
+      "file": "question-banks/general/SPI通用基础.md",
+      "references": [
+        {
+          "title": "Analog Devices：SPI接口与模式",
+          "url": "https://www.analog.com/en/resources/analog-dialogue/articles/2018/08/13/15/31/introduction-to-spi-interface.html"
+        }
+      ],
+      "conditions": "只采用题设的协议、电气或量化模型；不假定特定MCU寄存器、引脚、厂商库或器件自动递增行为。",
+      "questionContext": "",
+      "baseFile": "docs/evidence/v000-personal-20261024/before/question-banks/general/SPI通用基础.md"
+    },
+    {
+      "key": "i2c",
+      "topicId": "general-i2c",
+      "title": "I2C 通用基础",
+      "board": "通信协议",
+      "file": "question-banks/general/I2C通用基础.md",
+      "references": [
+        {
+          "title": "NXP UM10204 Rev7 §3：I2C协议",
+          "url": "https://cache.nxp.com/docs/en/user-guide/UM10204.pdf"
+        }
+      ],
+      "conditions": "只采用题设的协议、电气或量化模型；不假定特定MCU寄存器、引脚、厂商库或器件自动递增行为。",
+      "questionContext": "",
+      "baseFile": "docs/evidence/v000-personal-20261024/before/question-banks/general/I2C通用基础.md"
+    },
+    {
+      "key": "adc",
+      "topicId": "general-adc",
+      "title": "ADC 通用基础",
+      "board": "MCU与外设原理",
+      "file": "question-banks/general/ADC通用基础.md",
+      "references": [
+        {
+          "title": "NXP AN5250：ADC分辨率与量化",
+          "url": "https://www.nxp.com/docs/en/application-note/AN5250.pdf"
+        }
+      ],
+      "conditions": "只采用题设的协议、电气或量化模型；不假定特定MCU寄存器、引脚、厂商库或器件自动递增行为。",
+      "questionContext": "",
+      "baseFile": "docs/evidence/v000-personal-20261024/before/question-banks/general/ADC通用基础.md"
+    },
+    {
+      "key": "c",
+      "topicId": "c-data-and-registers",
+      "title": "C语言数据与寄存器访问",
+      "board": "C语言",
+      "file": "question-banks/general/C语言数据与寄存器访问.md",
+      "references": [
+        {
+          "title": "GCC：volatile边界",
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/Volatiles.html"
+        },
+        {
+          "title": "SEI CERT C：为字符串与终止符保留空间",
+          "url": "https://wiki.sei.cmu.edu/confluence/display/c/STR31-C.+Guarantee+that+storage+for+strings+has+sufficient+space+for+character+data+and+the+null+terminator"
+        }
+      ],
+      "conditions": "字符编码按题设ASCII；硬件寄存器的副作用须另查芯片手册，volatile不提供互斥或复合操作原子性。",
+      "questionContext": "",
+      "baseFile": null
+    }
+  ],
+  "prefixes": {
+    "gpio-stage": "gpio",
+    "uart-level1": "uart1",
+    "uart-level2": "uart2",
+    "spi-level1": "spi1",
+    "spi-level2": "spi2",
+    "i2c-level1": "i2c1",
+    "i2c-level2": "i2c2",
+    "adc-level1": "adc1"
+  },
+  "identityOverrides": {
+    "gpio-stage-001": "gpio-001",
+    "gpio-stage-002": "gpio-002",
+    "gpio-stage-003": "gpio-003",
+    "gpio-stage-004": "gpio-004",
+    "gpio-stage-005": "gpio-005",
+    "gpio-stage-006": "gpio-006",
+    "gpio-stage-007": "gpio-007",
+    "gpio-stage-008": "gpio-008",
+    "gpio-stage-009": "gpio-009",
+    "gpio-stage-010": "gpio-010",
+    "gpio-stage-011": "gpio-011",
+    "gpio-stage-012": "gpio-012",
+    "gpio-stage-013": "gpio-013",
+    "gpio-stage-014": "gpio-014",
+    "gpio-stage-015": "gpio-015",
+    "gpio-stage-016": "gpio-016",
+    "gpio-stage-017": "gpio-017",
+    "gpio-stage-018": "gpio-018",
+    "gpio-stage-019": "gpio-019",
+    "gpio-stage-020": "gpio-020",
+    "gpio-stage-021": "gpio-021",
+    "gpio-stage-022": "gpio-022",
+    "gpio-stage-023": "gpio-023",
+    "gpio-stage-024": "gpio-024",
+    "gpio-stage-025": "gpio-025",
+    "gpio-stage-026": "gpio-026",
+    "gpio-stage-027": "gpio-027",
+    "gpio-stage-028": "gpio-028",
+    "gpio-stage-029": "gpio-029",
+    "gpio-stage-030": "gpio-030",
+    "gpio-stage-031": "gpio-031",
+    "gpio-stage-032": "gpio-032",
+    "gpio-stage-033": "gpio-033",
+    "gpio-stage-034": "gpio-034",
+    "gpio-stage-035": "gpio-035",
+    "gpio-stage-036": "gpio-036",
+    "gpio-stage-037": "gpio-037",
+    "gpio-stage-038": "gpio-038",
+    "gpio-stage-039": "gpio-039",
+    "gpio-stage-040": "gpio-040",
+    "gpio-stage-041": "gpio-041",
+    "gpio-stage-042": "gpio-042",
+    "gpio-stage-043": "gpio-043",
+    "gpio-stage-044": "gpio-044",
+    "gpio-stage-045": "gpio-045",
+    "gpio-stage-046": "gpio-046",
+    "gpio-stage-047": "gpio-047",
+    "gpio-stage-048": "gpio-048",
+    "gpio-stage-049": "gpio-049",
+    "gpio-stage-050": "gpio-050",
+    "gpio-stage-051": "gpio-051",
+    "gpio-stage-052": "gpio-052",
+    "gpio-stage-053": "gpio-053",
+    "gpio-stage-054": "gpio-054",
+    "gpio-stage-055": "gpio-055",
+    "gpio-stage-056": "gpio-056",
+    "gpio-stage-057": "gpio-057",
+    "gpio-stage-058": "gpio-058",
+    "gpio-stage-059": "gpio-059",
+    "gpio-stage-060": "gpio-060",
+    "gpio-stage-061": "gpio-061",
+    "gpio-stage-062": "gpio-062",
+    "gpio-stage-063": "gpio-063",
+    "gpio-stage-064": "gpio-064",
+    "gpio-stage-065": "gpio-065",
+    "gpio-stage-066": "gpio-066",
+    "gpio-stage-067": "gpio-067",
+    "gpio-stage-068": "gpio-068",
+    "gpio-stage-069": "gpio-069",
+    "gpio-stage-070": "gpio-070",
+    "gpio-stage-071": "gpio-071",
+    "gpio-stage-072": "gpio-072",
+    "gpio-stage-073": "gpio-073",
+    "gpio-stage-074": "gpio-074",
+    "gpio-stage-075": "gpio-075",
+    "gpio-stage-076": "gpio-076",
+    "gpio-stage-077": "gpio-077",
+    "gpio-stage-078": "gpio-078",
+    "uart-level2-019": "uart2-019",
+    "uart-level2-020": "uart2-020",
+    "uart-level2-021": "uart2-021",
+    "uart-level2-022": "uart2-022",
+    "uart-level2-023": "uart2-023",
+    "uart-level2-024": "uart2-024",
+    "uart-level2-025": "uart2-025",
+    "uart-level2-026": "uart2-026",
+    "uart-level2-027": "uart2-027",
+    "uart-level2-028": "uart2-028",
+    "uart-level2-029": "uart2-029",
+    "uart-level2-030": "uart2-030",
+    "uart-level2-031": "uart2-031",
+    "uart-level2-032": "uart2-032",
+    "uart-level2-033": "uart2-033",
+    "uart-level2-034": "uart2-034",
+    "uart-level2-035": "uart2-035",
+    "uart-level2-036": "uart2-036",
+    "uart-level2-037": "uart2-037",
+    "uart-level2-038": "uart2-038",
+    "uart-level2-039": "uart2-039",
+    "uart-level2-040": "uart2-040",
+    "uart-level2-041": "uart2-041",
+    "uart-level2-042": "uart2-042",
+    "uart-level2-043": "uart2-043",
+    "uart-level2-044": "uart2-044",
+    "uart-level2-045": "uart2-045",
+    "uart-level2-046": "uart2-046",
+    "uart-level2-047": "uart2-047",
+    "uart-level2-048": "uart2-048"
+  },
+  "questionOverrides": {
+    "i2c-level2-048": "STM32F103 I2C采用标准模式（F/S=0），假定SCL高、低各由CCR个PCLK1周期构成。请写出CCR与PCLK1、目标SCL频率的关系，并说明为什么不能把快模式DUTY=0的低高比2:1公式套到标准模式。",
+    "uart-level1-014": "电脑收不到STM32F103 USART1发送的字符，尚未确认初始化和连线无误。以下哪项通常不属于发送链路的优先排查项目？\n\nA. TX引脚的复用推挽配置。\nB. USART1时钟及使能。\nC. 波特率与帧格式。\nD. 仅用于接收的软件字符串缓冲区容量。",
+    "gpio-stage-059": "给定本题训练板接线：LED0阳极通过限流电阻接3.3V，阴极接PA8。在STM32F103 GPIO输出控制下，LED0连接哪个引脚，低电平还是高电平点亮？",
+    "gpio-stage-060": "给定本题训练板接线：KEY0连接PC1与地，松开时断路，PC1配置输入上拉。KEY0连接哪个引脚，按下时读到什么电平？",
+    "i2c-level2-053": "在STM32F103单字节主接收中，主机需要在清除ADDR之前关闭ACK，使主机对最后一个字节发送________，表示本次不再接收更多字节。请填空并说明STOP和读取DR的先后要求。",
+    "adc-level1-002": "某无符号单极性ADC的分辨率为12位，以下说法正确的是：\n\nA. 最大转换结果为4096。\nB. 只能表示12种状态。\nC. 有4096个编码，编号0到4095。\nD. 可以直接输出4096V。",
+    "adc-level1-029": "某理想无符号单极性12位ADC的输入量程为0到3.3V。按均匀量化步长模型计算一个LSB对应多少毫伏，并区分它与最高码端点映射近似。",
+    "gpio-stage-061": "本题训练电路：LED0阳极经限流电阻接3.3V、阴极接PA8；KEY0按下将PC1接地，PC1配置上拉。实物接线未核验。\n\n为什么 KEY0 配置为输入上拉后，松开通常读取 `Bit_SET`，按下读取 `Bit_RESET`？",
+    "gpio-stage-062": "本题训练电路：LED0阳极经限流电阻接3.3V、阴极接PA8；KEY0按下将PC1接地，PC1配置上拉。实物接线未核验。\n\n如果 PA8 已配置为推挽输出，执行 `GPIO_ResetBits(GPIOA, GPIO_Pin_8)` 后，LED0 会发生什么？",
+    "gpio-stage-063": "本题训练电路：LED0阳极经限流电阻接3.3V、阴极接PA8；KEY0按下将PC1接地，PC1配置上拉。实物接线未核验。\n\n如果执行 `GPIO_SetBits(GPIOA, GPIO_Pin_8)`，LED0 会发生什么？",
+    "gpio-stage-064": "本题训练电路：LED0阳极经限流电阻接3.3V、阴极接PA8；KEY0按下将PC1接地，PC1配置上拉。实物接线未核验。\n\n如果 `GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_1)` 返回 `Bit_RESET`，能否直接判断 KEY0 已按下？需要哪些前提？",
+    "gpio-stage-065": "本题训练电路：LED0阳极经限流电阻接3.3V、阴极接PA8；KEY0按下将PC1接地，PC1配置上拉。实物接线未核验。\n\n如果 GPIOA 时钟未使能，后续 GPIO 初始化可能出现什么问题？",
+    "gpio-stage-066": "本题训练电路：LED0阳极经限流电阻接3.3V、阴极接PA8；KEY0按下将PC1接地，PC1配置上拉。实物接线未核验。\n\n如果把 PC1 错误配置为输出，读取 KEY0 的程序会有什么风险？",
+    "gpio-stage-067": "本题训练电路：LED0阳极经限流电阻接3.3V、阴极接PA8；KEY0按下将PC1接地，PC1配置上拉。实物接线未核验。\n\n如果程序在初始化后立即调用 `GPIO_ResetBits()`，而 LED0 是低电平点亮，可能观察到什么现象？",
+    "gpio-stage-068": "本题训练电路：LED0阳极经限流电阻接3.3V、阴极接PA8；KEY0按下将PC1接地，PC1配置上拉。实物接线未核验。\n\n为什么在初始化 GPIO 输出之前预先设置期望的输出数据状态，有时可以减少启动时的 LED 闪烁？",
+    "gpio-stage-074": "本题训练电路：LED0阳极经限流电阻接3.3V、阴极接PA8；KEY0按下将PC1接地，PC1配置上拉。实物接线未核验。\n\n两次采样结果相同，是否代表按键一定松开？为什么？",
+    "gpio-stage-073": "本题采用两点确认策略：只有两次采样一致才承认输入稳定，再用已确认状态控制LED。如果两次采样不同，能否立即按第二次电平更新LED？应如何处理本次LED状态？"
+  },
+  "pending": {
+    "gpio-stage-059": "训练板LED0=PA8低有效、KEY0=PC1低有效只作为题设；实物原理图与接线未核验。",
+    "gpio-stage-060": "训练板LED0=PA8低有效、KEY0=PC1低有效只作为题设；实物原理图与接线未核验。",
+    "gpio-stage-061": "训练板LED0=PA8低有效、KEY0=PC1低有效只作为题设；实物原理图与接线未核验。",
+    "gpio-stage-062": "训练板LED0=PA8低有效、KEY0=PC1低有效只作为题设；实物原理图与接线未核验。",
+    "gpio-stage-063": "训练板LED0=PA8低有效、KEY0=PC1低有效只作为题设；实物原理图与接线未核验。",
+    "gpio-stage-064": "训练板LED0=PA8低有效、KEY0=PC1低有效只作为题设；实物原理图与接线未核验。",
+    "gpio-stage-065": "训练板LED0=PA8低有效、KEY0=PC1低有效只作为题设；实物原理图与接线未核验。",
+    "gpio-stage-066": "训练板LED0=PA8低有效、KEY0=PC1低有效只作为题设；实物原理图与接线未核验。",
+    "gpio-stage-067": "训练板LED0=PA8低有效、KEY0=PC1低有效只作为题设；实物原理图与接线未核验。",
+    "gpio-stage-068": "训练板LED0=PA8低有效、KEY0=PC1低有效只作为题设；实物原理图与接线未核验。",
+    "i2c-level1-024": "具体芯片修订对应的勘误适用性和板上波形待核实。",
+    "i2c-level1-035": "具体芯片修订对应的勘误适用性和板上波形待核实。",
+    "i2c-level1-059": "具体芯片修订对应的勘误适用性和板上波形待核实。",
+    "i2c-level1-070": "具体芯片修订对应的勘误适用性和板上波形待核实。",
+    "i2c-level1-071": "具体芯片修订对应的勘误适用性和板上波形待核实。",
+    "i2c-level2-024": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-044": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-065": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-071": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-072": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-077": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-078": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-079": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-082": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-083": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-086": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-095": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-097": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-098": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-099": "接收关键区与恢复方案需按实物修订核对ES0340，并验证实际波形；本文为参考设计。",
+    "i2c-level2-100": "未提供要审查的具体驱动工程，本题给出审查方法，不能声称已经发现或修复某份驱动缺陷。"
+  },
+  "merges": {
+    "spi-level2-002": {
+      "topicKey": "spi",
+      "questionId": "spi1-003",
+      "reason": "与spi-level1-003为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-003": {
+      "topicKey": "spi",
+      "questionId": "spi1-004",
+      "reason": "与spi-level1-004为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-005": {
+      "topicKey": "flash",
+      "questionId": "spi1-017",
+      "reason": "与spi-level1-017为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-006": {
+      "topicKey": "flash",
+      "questionId": "spi1-011",
+      "reason": "与spi-level1-011为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-007": {
+      "topicKey": "flash",
+      "questionId": "spi1-010",
+      "reason": "与spi-level1-010为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-009": {
+      "topicKey": "flash",
+      "questionId": "spi1-016",
+      "reason": "与spi-level1-016为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-013": {
+      "topicKey": "flash",
+      "questionId": "spi1-009",
+      "reason": "与spi-level1-009为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-014": {
+      "topicKey": "flash",
+      "questionId": "spi1-012",
+      "reason": "与spi-level1-012为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-015": {
+      "topicKey": "flash",
+      "questionId": "spi1-024",
+      "reason": "与spi-level1-024为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-018": {
+      "topicKey": "flash",
+      "questionId": "spi1-022",
+      "reason": "与spi-level1-022为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-019": {
+      "topicKey": "flash",
+      "questionId": "spi1-023",
+      "reason": "与spi-level1-023为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "spi-level2-020": {
+      "topicKey": "flash",
+      "questionId": "spi1-026",
+      "reason": "与spi-level1-026为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "uart-level1-006": {
+      "topicKey": "stm-uart",
+      "questionId": "uart2-008",
+      "reason": "与uart-level2-008为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "uart-level1-007": {
+      "topicKey": "stm-uart",
+      "questionId": "uart2-009",
+      "reason": "与uart-level2-009为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "uart-level1-008": {
+      "topicKey": "stm-uart",
+      "questionId": "uart2-010",
+      "reason": "与uart-level2-010为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "uart-level1-017": {
+      "topicKey": "stm-uart",
+      "questionId": "uart2-019",
+      "reason": "与uart-level2-019为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "i2c-level2-005": {
+      "topicKey": "stm-i2c",
+      "questionId": "i2c1-024",
+      "reason": "与i2c-level1-024为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "i2c-level2-008": {
+      "topicKey": "stm-i2c",
+      "questionId": "i2c1-012",
+      "reason": "与i2c-level1-012为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "i2c-level2-014": {
+      "topicKey": "stm-i2c",
+      "questionId": "i2c1-020",
+      "reason": "与i2c-level1-020为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "i2c-level2-017": {
+      "topicKey": "stm-i2c",
+      "questionId": "i2c1-018",
+      "reason": "与i2c-level1-018为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "i2c-level2-021": {
+      "topicKey": "stm-i2c",
+      "questionId": "i2c1-031",
+      "reason": "与i2c-level1-031为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "i2c-level2-023": {
+      "topicKey": "i2c",
+      "questionId": "i2c1-034",
+      "reason": "与i2c-level1-034为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "i2c-level2-036": {
+      "topicKey": "stm-i2c",
+      "questionId": "i2c1-053",
+      "reason": "与i2c-level1-053为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    },
+    "i2c-level2-038": {
+      "topicKey": "i2c",
+      "questionId": "i2c1-060",
+      "reason": "与i2c-level1-060为相同知识点及适用范围；最终题替代原题选项/编号，原文另存。"
+    }
+  }
+}
