@@ -92,19 +92,26 @@ test('真实结构6先保护备份再追加配色，全部业务/自定义对象
     ...before,
     categories: [],
     practice_plans: [],
+    installed_themes: [],
     topics: before.topics!.map((row) => ({ ...row, category_id: null })),
     practice_sessions: before.practice_sessions!.map((row) => ({
       ...row,
       category_scope_json: '{"kind":"all"}',
     })),
-    appearance_settings: before.appearance_settings!.map((row) => ({ ...row, palette: 'forest' })),
+    appearance_settings: before.appearance_settings!.map((row) => ({
+      ...row,
+      palette: 'forest',
+      theme_id: 'builtin.forest',
+      navigation_collapsed: 0,
+      auxiliary_hidden: 0,
+    })),
   }
   const { application, page } = await launchApplication(testDataDirectory, info.project.name)
   try {
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     withHistoryDatabase(testDataDirectory, (database) => {
       expect(records(database)).toEqual(expected)
-      expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 9 })
+      expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 10 })
       expect(database.prepare('PRAGMA foreign_key_check').all()).toEqual([])
       expect(
         database
@@ -121,7 +128,17 @@ test('真实结构6先保护备份再追加配色，全部业务/自定义对象
       await page.evaluate(() =>
         (globalThis as unknown as { desktop: DesktopApi }).desktop.settings.read(),
       ),
-    ).toEqual({ ok: true, value: { theme: 'dark', palette: 'forest', fontSize: 20 } })
+    ).toEqual({
+      ok: true,
+      value: {
+        theme: 'dark',
+        palette: 'forest',
+        fontSize: 20,
+        themeId: 'builtin.forest',
+        navigationCollapsed: false,
+        auxiliaryHidden: false,
+      },
+    })
     await page.getByRole('button', { name: '继续练习', exact: true }).click()
     await expect(page.getByRole('textbox', { name: '我的答案', exact: true })).toHaveValue(
       '结构六草稿\r\n    int kept = 6;'.replaceAll('\r\n', '\n'),

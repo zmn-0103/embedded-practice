@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { appearanceSchema, settingsResultSchema } from '../../src/shared/contracts/settings'
 
 describe('显示设置的明确目标与结果边界', () => {
-  it('完整接受三种明暗、四种配色与 15～22 整数字号，不注入隐藏默认值', () => {
+  it('旧三种明暗、四种配色与15～22字号完整保留，并明确映射内置主题和布局偏好', () => {
     for (const theme of ['system', 'light', 'dark'])
       for (const palette of ['forest', 'ocean', 'sand', 'lilac'])
         for (let fontSize = 15; fontSize <= 22; fontSize++)
@@ -10,7 +10,29 @@ describe('显示设置的明确目标与结果边界', () => {
             theme,
             palette,
             fontSize,
+            themeId: `builtin.${palette}`,
+            navigationCollapsed: false,
+            auxiliaryHidden: false,
           })
+  })
+  it('动态主题ID优先于兼容配色，布局偏好随保存保留且不接收CSS或路径', () => {
+    const target = {
+      theme: 'dark',
+      palette: 'ocean',
+      fontSize: 22,
+      themeId: 'local.ink',
+      navigationCollapsed: true,
+      auxiliaryHidden: true,
+    }
+    expect(appearanceSchema.parse(target)).toEqual(target)
+    for (const change of [
+      { themeId: '../x' },
+      { themeId: '' },
+      { navigationCollapsed: 1 },
+      { auxiliaryHidden: 'true' },
+      { themeId: 'url(https://x)' },
+    ])
+      expect(appearanceSchema.safeParse({ ...target, ...change }).success).toBe(false)
   })
   it.each([
     {},

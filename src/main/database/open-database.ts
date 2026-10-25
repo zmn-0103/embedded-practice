@@ -4,12 +4,12 @@ import { dirname, join } from 'node:path'
 import Database from 'better-sqlite3'
 import { librarySchema } from './library-schema'
 import { practiceSchema, randomModeMigration, sessionFiltersMigration } from './practice-schema'
-import { paletteMigration, settingsSchema } from './settings-schema'
+import { paletteMigration, settingsSchema, themeMigration } from './settings-schema'
 import { categoryMigration } from './category-schema'
 import { practicePlanMigration } from './practice-plan-schema'
 
 export const APPLICATION_ID = 0x45505231
-export const SCHEMA_VERSION = 9
+export const SCHEMA_VERSION = 10
 
 const startupSchema = `
   CREATE TABLE app_startup (
@@ -63,7 +63,8 @@ export async function openPracticeDatabase(databasePath: string): Promise<Databa
               sessionFiltersMigration +
               paletteMigration +
               categoryMigration +
-              practicePlanMigration,
+              practicePlanMigration +
+              themeMigration,
           )
           database.pragma(`application_id = ${APPLICATION_ID}`)
           database.pragma(`user_version = ${SCHEMA_VERSION}`)
@@ -78,7 +79,8 @@ export async function openPracticeDatabase(databasePath: string): Promise<Databa
         version === 5 ||
         version === 6 ||
         version === 7 ||
-        version === 8)
+        version === 8 ||
+        version === 9)
     ) {
       await protectBeforeMigration(database, databasePath, version)
       // SQLite 修改父表 CHECK 需替换表，外键开关必须在事务外操作。
@@ -115,7 +117,8 @@ export async function openPracticeDatabase(databasePath: string): Promise<Databa
             if (version < 6) database.exec(sessionFiltersMigration)
             if (version < 7) database.exec(paletteMigration)
             if (version < 8) database.exec(categoryMigration)
-            database.exec(practicePlanMigration)
+            if (version < 9) database.exec(practicePlanMigration)
+            database.exec(themeMigration)
             const foreignKeys = database.pragma('foreign_key_check')
             if (!Array.isArray(foreignKeys) || foreignKeys.length > 0)
               throw new Error('迁移后外键校验失败，回滚升级并保留原数据库。')

@@ -3,6 +3,7 @@ import { readFile, readdir, writeFile } from 'node:fs/promises'
 import { join, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
 import type { DesktopApi } from '../../src/shared/contracts/application'
+import { appearanceSchema } from '../../src/shared/contracts/settings'
 import { expect, launchApplication, test } from './helpers'
 import { stop, withHistoryDatabase } from './history-helpers'
 
@@ -133,7 +134,7 @@ function snapshot(directory: string) {
   )
 }
 
-test('v4 升级至 v9：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级', async ({
+test('v4 升级至 v10：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级', async ({
   testDataDirectory,
 }, info) => {
   const activeId = await seedV4(testDataDirectory)
@@ -165,9 +166,9 @@ test('v4 升级至 v9：一致性备份、完整业务与随机原轮保留，�
     )
     expect(settings).toEqual({
       ok: true,
-      value: { theme: 'system', palette: 'forest', fontSize: 17 },
+      value: appearanceSchema.parse({ theme: 'system', palette: 'forest', fontSize: 17 }),
     })
-    const target = { theme: 'dark' as const, palette: 'forest' as const, fontSize: 22 }
+    const target = appearanceSchema.parse({ theme: 'dark', palette: 'forest', fontSize: 22 })
     expect(
       await page.evaluate(
         (value) => (globalThis as unknown as { desktop: DesktopApi }).desktop.settings.save(value),
@@ -177,7 +178,7 @@ test('v4 升级至 v9：一致性备份、完整业务与随机原轮保留，�
     withHistoryDatabase(
       testDataDirectory,
       (database) => {
-        expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 9 })
+        expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 10 })
         expect(
           database
             .prepare(
@@ -240,7 +241,10 @@ test('v4 升级至 v9：一致性备份、完整业务与随机原轮保留，�
       await reopened.page.evaluate(() =>
         (globalThis as unknown as { desktop: DesktopApi }).desktop.settings.read(),
       ),
-    ).toEqual({ ok: true, value: { theme: 'dark', palette: 'forest', fontSize: 22 } })
+    ).toEqual({
+      ok: true,
+      value: appearanceSchema.parse({ theme: 'dark', palette: 'forest', fontSize: 22 }),
+    })
     expect(snapshot(testDataDirectory)).toEqual(migrated)
     expect(await readdir(join(testDataDirectory, 'backups'))).toEqual(names)
     await info.attach('settings-v4-preserved.json', {

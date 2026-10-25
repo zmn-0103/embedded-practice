@@ -8,6 +8,7 @@ import { createLearningReader } from '../../database/repositories/learning-reade
 import { createSettingsRepository } from '../../database/repositories/settings-repository'
 import { createCategoryRepository } from '../../database/repositories/category-repository'
 import { createPracticePlanRepository } from '../../database/repositories/practice-plan-repository'
+import { createThemeRepository } from '../../database/repositories/theme-repository'
 import { createImportPreparationService } from './import-preparation'
 import { createImportSession } from './import-session'
 
@@ -26,6 +27,7 @@ export async function openLibraryImportService(
     const settings = createSettingsRepository(database)
     const categories = createCategoryRepository(database)
     const plans = createPracticePlanRepository(database)
+    const themes = createThemeRepository(database)
     const session = createImportSession(
       createLibraryRepository(database),
       createImportPreparationService(reportError),
@@ -40,6 +42,7 @@ export async function openLibraryImportService(
       ...settings,
       ...categories,
       ...plans,
+      ...themes,
       preview: session.preview,
       commit: session.commit,
       discard: session.discard,

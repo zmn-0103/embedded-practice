@@ -1,0 +1,48 @@
+
+Running 9 tests using 1 worker
+
+(node:8832) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 (1.9s)
+  ok 2 [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 (1.9s)
+  ok 3 [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 (1.9s)
+  ok 4 [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 (1.9s)
+  ok 5 [development] › tests\e2e\settings-palettes.spec.ts:144:5 › 配色真实写失败/丢响应保留选择，键盘切换后正常重开保留草稿 (2.5s)
+  x  6 [development] › tests\e2e\settings-palettes.spec.ts:218:5 › 损坏配色明确报错且不伪造默认成功，修复重读保持学习数据 (11.3s)
+(node:28804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 7 [development] › tests\e2e\settings-palettes.spec.ts:260:5 › 配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作 (2.3s)
+  ok 8 [development] › tests\e2e\settings-palettes.spec.ts:306:5 › 复制成功反馈2.5秒自熄，重复复制重置、错误保留且切题拒绝晚到响应 (6.8s)
+  ok 9 [development] › tests\e2e\themes-backup.spec.ts:21:5 › 完整备份将两个主题/当前外观/布局偏好/旧队列恢复到独立空目录，坏主题备份不覆盖数据 (3.8s)
+
+
+  1) [development] › tests\e2e\settings-palettes.spec.ts:218:5 › 损坏配色明确报错且不伪造默认成功，修复重读保持学习数据 ───────
+
+    Error: expect(locator).toBeChecked() failed
+
+    Locator:  getByRole('radio', { name: '暮山紫', exact: true })
+    Expected: checked
+    Received: unchecked
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeChecked" getByRole('radio', { name: '暮山紫', exact: true }) with timeout 10000ms
+      - waiting for getByRole('radio', { name: '暮山紫', exact: true })
+        24 × locator resolved to <input type="radio" aria-label="暮山紫" value="builtin.lilac" name="appearance-palette"/>
+           - unexpected value "unchecked"
+
+
+      250 |     )
+      251 |     await page.getByRole('button', { name: '重试读取显示设置', exact: true }).click()
+    > 252 |     await expect(page.getByRole('radio', { name: '暮山紫', exact: true })).toBeChecked()
+          |                                                                         ^
+      253 |     await expect(page.locator('html')).toHaveAttribute('data-palette', 'lilac')
+      254 |     expect(historySnapshot(testDataDirectory)).toEqual(before)
+      255 |   } finally {
+        at E:\My_Projects\embedded-practice\tests\e2e\settings-palettes.spec.ts:252:73
+
+    Error Context: docs\evidence\themes-20261025\backup-dev-01\settings-palettes-损坏配色明确报错且不伪造默认成功，修复重读保持学习数据-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\settings-palettes.spec.ts:218:5 › 损坏配色明确报错且不伪造默认成功，修复重读保持学习数据 ────────
+  8 passed (35.3s)

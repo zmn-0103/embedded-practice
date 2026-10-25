@@ -1,0 +1,61 @@
+
+Running 6 tests using 1 worker
+
+(node:13600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\themes-database.spec.ts:8:7 › 主题数据库/transactions：真实版本/容量/故障回滚与原学习数据保护 (1.2s)
+  ok 2 [development] › tests\e2e\themes-database.spec.ts:8:7 › 主题数据库/capacity：真实版本/容量/故障回滚与原学习数据保护 (1.3s)
+  ok 3 [development] › tests\e2e\themes-window.spec.ts:18:5 › 两个外部主题独立预览/安装/应用，源文件删除后重开、版本更新与卸载均保留学习记录 (3.0s)
+  x  4 [development] › tests\e2e\themes-window.spec.ts:95:5 › 练习中跨布局切换、导航折叠与辅助隐藏保持同一输入/队列/答案边界，正常退出重开保留偏好和最后草稿 (32.4s)
+(node:19888) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 5 [development] › tests\e2e\themes-window.spec.ts:157:5 › 安装写入失败与提交后响应丢失均保留请求，原操作重试安全且外观不提前应用 (1.3s)
+  ok 6 [development] › tests\e2e\themes-window.spec.ts:210:5 › 当前外部配置损坏临时回退并保留原选择，恢复默认仅改变显示设置 (2.2s)
+
+
+  1) [development] › tests\e2e\themes-window.spec.ts:95:5 › 练习中跨布局切换、导航折叠与辅助隐藏保持同一输入/队列/答案边界，正常退出重开保留偏好和最后草稿 
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.click: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: '应用所选主题', exact: true })
+        - locator resolved to <button type="button">应用所选主题</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <a title="开始练习" href="#practice" aria-label="开始练习" aria-current="page" aria-disabled="true">…</a> from <nav aria-label="主要页面" class="page-navigation">…</nav> subtree intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <a title="开始练习" href="#practice" aria-label="开始练习" aria-current="page" aria-disabled="true">…</a> from <nav aria-label="主要页面" class="page-navigation">…</nav> subtree intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        58 × waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <a title="开始练习" href="#practice" aria-label="开始练习" aria-current="page" aria-disabled="true">…</a> from <nav aria-label="主要页面" class="page-navigation">…</nav> subtree intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+
+
+      111 |       await page.getByLabel('快捷主题选择', { exact: true }).selectOption(id)
+      112 |       const apply = page.getByRole('button', { name: '应用所选主题', exact: true })
+    > 113 |       await apply.click()
+          |                   ^
+      114 |       await expect(page.locator('html')).toHaveAttribute('data-theme-id', id)
+      115 |       await expect(apply).toBeFocused()
+      116 |       await expect(editor).toHaveValue(draft)
+        at E:\My_Projects\embedded-practice\tests\e2e\themes-window.spec.ts:113:19
+
+    Error Context: docs\evidence\themes-20261025\window-dev-02\themes-window-练习中跨布局切换、导航折-f0400-一输入-队列-答案边界，正常退出重开保留偏好和最后草稿-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\themes-window.spec.ts:95:5 › 练习中跨布局切换、导航折叠与辅助隐藏保持同一输入/队列/答案边界，正常退出重开保留偏好和最后草稿 
+  5 passed (42.5s)

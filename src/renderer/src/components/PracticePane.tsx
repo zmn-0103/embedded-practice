@@ -10,6 +10,19 @@ import { DifficultyBadge } from './DifficultyBadge'
 
 const ACTION_REPEAT_GUARD_MS = 500
 
+function keepAnswerVisible(input: HTMLTextAreaElement, actions: HTMLDivElement) {
+  if (!input.isConnected || document.activeElement !== input) return
+  const box = input.getBoundingClientRect()
+  const style = window.getComputedStyle(input)
+  const firstLineBottom =
+    box.top +
+    Number.parseFloat(style.borderTopWidth) +
+    Number.parseFloat(style.paddingTop) +
+    Number.parseFloat(style.lineHeight)
+  if (box.top < 0 || firstLineBottom > actions.getBoundingClientRect().top)
+    input.scrollIntoView({ block: 'start' })
+}
+
 export function PracticePane({
   state,
   controller,
@@ -23,6 +36,7 @@ export function PracticePane({
 }) {
   const title = useRef<HTMLHeadingElement>(null)
   const actions = useRef<HTMLDivElement>(null)
+  const reading = useRef<HTMLDivElement>(null)
   const repeatTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const [repeatBlocked, setRepeatBlocked] = useState(false)
   useEffect(
@@ -37,6 +51,18 @@ export function PracticePane({
     window.scrollTo(0, 0)
     title.current.focus({ preventScroll: true })
   }, [state.view?.session.sessionId, state.view?.session.position, state.view?.session.status])
+  useEffect(() => {
+    const element = reading.current
+    if (!element) return
+    // 懒加载图片会在聚焦后改变阅读区高度；按真实布局变化复核，避免固定延时或重复滚动。
+    const observer = new ResizeObserver(() => {
+      const input = document.activeElement
+      if (input instanceof HTMLTextAreaElement && element.contains(input) && actions.current)
+        keepAnswerVisible(input, actions.current)
+    })
+    observer.observe(element)
+    return () => observer.disconnect()
+  }, [state.view?.session.sessionId, state.view?.session.position, state.view?.item?.versionId])
   const view = state.view
   if (!view) return null
   const { session, item } = view
@@ -106,7 +132,31 @@ export function PracticePane({
           {item.title}
         </h2>
       </div>
+      <aside id="practice-context" className="practice-context" aria-label="练习辅助面板">
+        <p className="eyebrow">本轮上下文</p>
+        <h3>题目属性</h3>
+        <dl>
+          <dt>专题</dt>
+          <dd>{item.topicTitle}</dd>
+          <dt>难度</dt>
+          <dd>
+            <DifficultyBadge difficulty={item.difficulty} />
+          </dd>
+          <dt>标签</dt>
+          <dd>{item.tags.length ? item.tags.join('、') : '无标签'}</dd>
+          <dt>本轮进度</dt>
+          <dd>
+            {session.position + 1} / {session.total}
+          </dd>
+          <dt>已揭晓</dt>
+          <dd>{session.counts.revealed} 题</dd>
+          <dt>已自评</dt>
+          <dd>{session.counts.rated} 题</dd>
+        </dl>
+        <p className="muted">先独立思考，再揭晓与自评。</p>
+      </aside>
       <div
+        ref={reading}
         className="practice-reading"
         key={`${session.sessionId}-${item.position}-${item.versionId}`}
       >
@@ -125,18 +175,11 @@ export function PracticePane({
             readOnly={blocked}
             placeholder="可以输入文字或代码，也可以先思考，再查看参考答案。"
             onFocus={(event) => {
-              if (!actions.current) return
               const input = event.currentTarget
-              const box = input.getBoundingClientRect()
-              const style = window.getComputedStyle(input)
-              const firstLineBottom =
-                box.top +
-                Number.parseFloat(style.borderTopWidth) +
-                Number.parseFloat(style.paddingTop) +
-                Number.parseFloat(style.lineHeight)
-              // 浏览器的聚焦滚动不考虑底部悬浮区，输入行被遮挡时再定位。
-              if (box.top >= 0 && firstLineBottom > actions.current.getBoundingClientRect().top)
-                input.scrollIntoView({ block: 'start' })
+              // 等浏览器完成聚焦滚动后再测量，避免随后默认滚动把首行移回操作栏下方。
+              requestAnimationFrame(() => {
+                if (actions.current) keepAnswerVisible(input, actions.current)
+              })
             }}
             onChange={(event) => controller.edit(event.currentTarget.value)}
           />

@@ -60,11 +60,11 @@ async function runtime(
     expect(resolve(actual.appPath)).toBe(resolve('out/main'))
     expect(actual.arguments).toContain(resolve('out/main/index.js'))
   }
-  await expect(page.locator('footer')).toContainText('20261024.4-v000')
+  await expect(page.locator('footer')).toContainText('20261025.2-v001')
   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())
-  expect(schema).toEqual({ user_version: 9 })
+  expect(schema).toEqual({ user_version: 10 })
   await info.attach('runtime.json', {
-    body: JSON.stringify({ ...actual, schema, build: '20261024.4-v000' }, null, 2),
+    body: JSON.stringify({ ...actual, schema, build: '20261025.2-v001' }, null, 2),
     contentType: 'application/json',
   })
 }
@@ -213,7 +213,9 @@ test('板块入口：改名移动移除后旧轮队列/草稿/历史/方案逐�
     await expect(instance.page.getByRole('textbox', { name: '我的答案', exact: true })).toHaveValue(
       draft,
     )
-    await expect(instance.page.getByLabel('难度：中（进阶）', { exact: true })).toBeVisible()
+    await expect(
+      instance.page.locator('.practice-heading').getByLabel('难度：中（进阶）', { exact: true }),
+    ).toBeVisible()
     await expect(instance.page.getByText('BOARD-ANSWER-board-a-2', { exact: true })).toHaveCount(0)
     expect(historySnapshot(testDataDirectory)).toEqual(protectedRows)
     await info.attach('protected-learning-rows.json', {
@@ -406,7 +408,7 @@ test('板块入口：900/1440窗口、四配色明暗、22px与键盘可用，�
         await page
           .getByLabel('正文字号', { exact: true })
           .selectOption(theme === 'dark' ? '22' : '17')
-        await page.getByRole('button', { name: '保存显示设置', exact: true }).click()
+        await page.getByRole('button', { name: '保存并应用', exact: true }).click()
         await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
         await openPage(page, '板块')
         await expect(board(page, '通信协议').locator('.board-count')).toHaveText('23 题')

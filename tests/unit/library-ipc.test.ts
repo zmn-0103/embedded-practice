@@ -1,6 +1,6 @@
 import { EventEmitter } from 'node:events'
 import { randomUUID } from 'node:crypto'
-import { readFile } from 'node:fs/promises'
+import { readFile, writeFile } from 'node:fs/promises'
 import { join, resolve } from 'node:path'
 import type { BrowserWindow, IpcMainInvokeEvent, Session } from 'electron'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
@@ -11,7 +11,14 @@ import { imageResourceUrl } from '../../src/shared/contracts/content-urls'
 import { LIBRARY_CHANNELS } from '../../src/shared/contracts/library-desktop'
 import { HISTORY_CHANNELS } from '../../src/shared/contracts/history'
 import { LEARNING_CHANNEL } from '../../src/shared/contracts/learning'
-import { SETTINGS_CHANNELS } from '../../src/shared/contracts/settings'
+import { SETTINGS_CHANNELS, appearanceSchema } from '../../src/shared/contracts/settings'
+import {
+  THEME_CHANNELS,
+  MAX_THEME_BYTES,
+  themePreviewResultSchema,
+} from '../../src/shared/contracts/themes'
+import { BUILTIN_THEMES } from '../../src/shared/themes'
+import { ThemeFault } from '../../src/main/database/repositories/theme-repository'
 import { CATEGORY_CHANNEL } from '../../src/shared/contracts/categories'
 import { CategoryFault } from '../../src/main/database/repositories/category-repository'
 import { PRACTICE_PLAN_CHANNELS } from '../../src/shared/contracts/practice-plans'
@@ -81,6 +88,19 @@ function setup() {
     updateCategory: vi.fn(() => {}),
     listPracticePlans: vi.fn(() => []),
     changePracticePlan: vi.fn(() => {}),
+    listThemes: vi.fn(() => ({
+      entries: BUILTIN_THEMES.map((definition) => ({ definition, builtIn: true })),
+      issues: [],
+    })),
+    inspectTheme: vi.fn(() => ({ action: 'install' as const, previousVersion: null })),
+    installTheme: vi.fn(() => ({
+      entries: BUILTIN_THEMES.map((definition) => ({ definition, builtIn: true })),
+      issues: [],
+    })),
+    removeTheme: vi.fn(() => ({
+      entries: BUILTIN_THEMES.map((definition) => ({ definition, builtIn: true })),
+      issues: [],
+    })),
     listQuestions: vi.fn(() => ({
       revision: 0,
       page: 1,
@@ -97,11 +117,13 @@ function setup() {
     readImage: vi.fn(() => undefined),
     listHistory: vi.fn(() => undefined),
     getHistoryEntry: vi.fn(() => undefined),
-    readSettings: vi.fn(() => ({
-      theme: 'system' as const,
-      palette: 'forest' as const,
-      fontSize: 17,
-    })),
+    readSettings: vi.fn(() =>
+      appearanceSchema.parse({
+        theme: 'system' as const,
+        palette: 'forest' as const,
+        fontSize: 17,
+      }),
+    ),
     saveSettings: vi.fn((settings) => ({ ...settings })),
     readLearningSummary: vi.fn((scope) => ({
       ...scope,
@@ -257,9 +279,9 @@ describe('题库 IPC 的来源、参数与任务边界（受控原生能力）',
     const { service, invoke, frame, event, registration } = setup()
     expect(await invoke(SETTINGS_CHANNELS.read)).toEqual({
       ok: true,
-      value: { theme: 'system', palette: 'forest', fontSize: 17 },
+      value: appearanceSchema.parse({ theme: 'system', palette: 'forest', fontSize: 17 }),
     })
-    const target = { theme: 'dark', palette: 'ocean', fontSize: 22 }
+    const target = appearanceSchema.parse({ theme: 'dark', palette: 'ocean', fontSize: 22 })
     expect(await invoke(SETTINGS_CHANNELS.save, target)).toEqual({ ok: true, value: target })
     expect(service.saveSettings).toHaveBeenCalledExactlyOnceWith(target)
     expect(await invoke(SETTINGS_CHANNELS.read, {})).toMatchObject({
@@ -290,6 +312,7 @@ describe('题库 IPC 的来源、参数与任务边界（受控原生能力）',
   it('设置读取/保存异常及非法输出不返回默认成功，使用显示设置文案', async () => {
     const { service, invoke, report } = setup()
     vi.mocked(service.readSettings).mockReturnValueOnce({
+      ...appearanceSchema.parse({ theme: 'system', palette: 'forest', fontSize: 17 }),
       theme: 'system',
       palette: 'forest',
       fontSize: 99,
@@ -637,6 +660,82 @@ describe('题库 IPC 的来源、参数与任务边界（受控原生能力）',
         await readFile(resolve('question-banks/templates/专题模板.md')),
       )
     }))
+})
+
+describe('主题IPC的文件与快照边界', () => {
+  const external = { ...BUILTIN_THEMES[0]!, id: 'local.unit', name: '单元主题' }
+  it('预览后来源变化仍安装同一已校验快照，保留凭据支持重复核对', () =>
+    withImportDirectory(async (directory) => {
+      const { invoke, service } = setup()
+      const path = join(directory, '单元.ep-theme.json')
+      await writeFile(path, JSON.stringify(external))
+      native.dialog.showOpenDialog.mockResolvedValue({ canceled: false, filePaths: [path] })
+      const result = themePreviewResultSchema.parse(await invoke(THEME_CHANNELS.preview))
+      expect(result.ok).toBe(true)
+      if (!result.ok) throw new Error('需要成功预览')
+      await writeFile(path, '{"changed":true}')
+      for (let i = 0; i < 2; i++)
+        expect(await invoke(THEME_CHANNELS.install, { token: result.value.token })).toMatchObject({
+          ok: true,
+        })
+      expect(service.installTheme).toHaveBeenNthCalledWith(1, external)
+      expect(service.installTheme).toHaveBeenNthCalledWith(2, external)
+      expect(await invoke(THEME_CHANNELS.install, { token: randomUUID() })).toMatchObject({
+        error: { code: 'PREVIEW_EXPIRED' },
+      })
+    }))
+  it.each([
+    ['损坏JSON', Buffer.from('{bad'), 'INVALID_THEME'],
+    ['未知格式', Buffer.from(JSON.stringify({ ...external, formatVersion: 2 })), 'INVALID_THEME'],
+    ['携带脚本', Buffer.from(JSON.stringify({ ...external, script: 'alert(1)' })), 'INVALID_THEME'],
+    ['UTF8损坏', Buffer.from([0xff, 0xfe]), 'INVALID_THEME'],
+    ['超过上限', Buffer.alloc(MAX_THEME_BYTES + 1, 32), 'FILE_ERROR'],
+  ])('%s不进入安装仓储', (_name, content, code) =>
+    withImportDirectory(async (directory) => {
+      const { invoke, service } = setup()
+      const path = join(directory, '拒绝.ep-theme.json')
+      await writeFile(path, content)
+      native.dialog.showOpenDialog.mockResolvedValue({ canceled: false, filePaths: [path] })
+      expect(await invoke(THEME_CHANNELS.preview)).toMatchObject({ ok: false, error: { code } })
+      expect(service.inspectTheme).not.toHaveBeenCalled()
+      expect(service.installTheme).not.toHaveBeenCalled()
+    }),
+  )
+  it('来源/参数/取消/冲突/恢复暂停与关闭态不绕过边界', async () => {
+    const { invoke, service, registration, frame, event } = setup()
+    expect(await invoke(THEME_CHANNELS.preview, { path: 'private' })).toMatchObject({
+      error: { code: 'INVALID_REQUEST' },
+    })
+    expect(native.dialog.showOpenDialog).not.toHaveBeenCalled()
+    frame.url = 'https://example.com'
+    for (const channel of Object.values(THEME_CHANNELS))
+      expect(await invoke(channel)).toMatchObject({ error: { code: 'FORBIDDEN' } })
+    frame.url = 'file:///app/index.html'
+    native.dialog.showOpenDialog.mockResolvedValueOnce({ canceled: true, filePaths: [] })
+    expect(await invoke(THEME_CHANNELS.preview)).toMatchObject({ error: { code: 'CANCELLED' } })
+    vi.mocked(service.removeTheme).mockImplementationOnce(() => {
+      throw new ThemeFault('THEME_CONFLICT', '内置主题不能卸载。')
+    })
+    expect(await invoke(THEME_CHANNELS.uninstall, { themeId: 'builtin.forest' })).toMatchObject({
+      error: { code: 'THEME_CONFLICT' },
+    })
+    await registration.pause()
+    for (const channel of Object.values(THEME_CHANNELS))
+      expect(await invoke(channel)).toMatchObject({ error: { code: 'SERVICE_CLOSED' } })
+    const handler = native.handlers.get(THEME_CHANNELS.list)!
+    await registration.close()
+    expect(await handler(event)).toMatchObject({ error: { code: 'SERVICE_CLOSED' } })
+    expect(native.handlers.size).toBe(0)
+  })
+  it('未完成主题选择在关闭时取消并等待，不写入主题', async () => {
+    const { invoke, registration, service } = setup()
+    native.dialog.showOpenDialog.mockReturnValueOnce(new Promise(() => {}))
+    const waiting = invoke(THEME_CHANNELS.preview)
+    expect(await invoke(THEME_CHANNELS.preview)).toMatchObject({ error: { code: 'THEME_BUSY' } })
+    await registration.close()
+    expect(await waiting).toMatchObject({ error: { code: 'CANCELLED' } })
+    expect(service.installTheme).not.toHaveBeenCalled()
+  })
 })
 
 describe('受控图片协议', () => {

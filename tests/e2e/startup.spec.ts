@@ -62,6 +62,7 @@ test('窗口隔离与生产内容策略生效', async ({ testDataDirectory }, te
         'history',
         'learning',
         'settings',
+        'themes',
         'backup',
         'dataLocations',
         'practice',
@@ -107,6 +108,11 @@ test('窗口隔离与生产内容策略生效', async ({ testDataDirectory }, te
         Object.keys((globalThis as unknown as { desktop: DesktopApi }).desktop.settings).sort(),
       ),
     ).toEqual(['read', 'save'])
+    expect(
+      await page.evaluate(() =>
+        Object.keys((globalThis as unknown as { desktop: DesktopApi }).desktop.themes).sort(),
+      ),
+    ).toEqual(['install', 'list', 'preview', 'uninstall'])
     expect(
       await page.evaluate(() =>
         Object.keys(

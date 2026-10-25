@@ -1,0 +1,35 @@
+
+Running 3 tests using 1 worker
+
+(node:19016) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\settings-palettes.spec.ts:218:5 › 损坏配色明确报错且不伪造默认成功，修复重读保持学习数据 (1.3s)
+  ok 2 [development] › tests\e2e\themes-reading.spec.ts:52:5 › 跨主题保留题库筛选/分页/选中与阅读组件，183行代码/60段答案/大图弹窗在宽窄窗口可用 (3.0s)
+  x  3 [development] › tests\e2e\themes-reading.spec.ts:139:5 › Claude长内容练习：宽屏右侧属性/窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓 (1.9s)
+
+
+  1) [development] › tests\e2e\themes-reading.spec.ts:139:5 › Claude长内容练习：宽屏右侧属性/窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓 
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 858.203125
+    Received:   940.953125
+
+      173 |       expect(actions).not.toBeNull()
+      174 |       expect(inputBounds!.y).toBeGreaterThanOrEqual(0)
+    > 175 |       expect(inputBounds!.y + 50).toBeLessThan(actions!.y)
+          |                                   ^
+      176 |       await expect(page.getByRole('button', { name: '查看参考答案', exact: true })).toBeVisible()
+      177 |       await noDocumentOverflow(page)
+      178 |     }
+        at E:\My_Projects\embedded-practice\tests\e2e\themes-reading.spec.ts:175:35
+
+    attachment #1: claude-practice-1440.png (image/png) ────────────────────────────────────────────
+    docs\evidence\themes-20261025\reading-dev-01\themes-reading-Claude长内容练习：宽屏右侧属性-窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓-development\attachments\claude-practice-1440-png-a188eee5b07049af27de2b182b9d61c10b32c95e.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\evidence\themes-20261025\reading-dev-01\themes-reading-Claude长内容练习：宽屏右侧属性-窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\themes-reading.spec.ts:139:5 › Claude长内容练习：宽屏右侧属性/窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓 
+  2 passed (6.7s)

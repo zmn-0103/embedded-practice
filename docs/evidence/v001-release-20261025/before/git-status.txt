@@ -1,0 +1,71 @@
+ M README.md
+ M docs/README.md
+ M docs/UI美化与主题说明.md
+ M docs/代码复查记录.md
+ M docs/开发记录.md
+ M docs/开发说明.md
+ M docs/当前试用版本交付说明.md
+ M docs/项目模块职责.md
+ M docs/验收记录.md
+ M src/main/database/open-database.ts
+ M src/main/database/repositories/settings-repository.ts
+ M src/main/database/settings-schema.ts
+ M src/main/ipc/library.ts
+ M src/main/services/backup/validate-backup.ts
+ M src/main/services/library/library-import.ts
+ M src/preload/index.ts
+ M src/renderer/src/App.tsx
+ M src/renderer/src/components/BackupPanel.tsx
+ M src/renderer/src/components/PracticePane.tsx
+ M src/renderer/src/components/SettingsPane.tsx
+ M src/renderer/src/main.tsx
+ M src/renderer/src/styles/global.css
+ M src/renderer/src/useAppearance.ts
+ M src/shared/contracts/application.ts
+ M src/shared/contracts/backup.ts
+ M src/shared/contracts/settings.ts
+ M tests/e2e/backup-legacy.spec.ts
+ M tests/e2e/backup-window.spec.ts
+ M tests/e2e/board-entry.spec.ts
+ M tests/e2e/category-migration.spec.ts
+ M tests/e2e/data-locations.spec.ts
+ M tests/e2e/history-versions.spec.ts
+ M tests/e2e/library-import.spec.ts
+ M tests/e2e/palette-migration.spec.ts
+ M tests/e2e/personal-bank.spec.ts
+ M tests/e2e/practice-mode-migration.spec.ts
+ M tests/e2e/practice-plans-migration.spec.ts
+ M tests/e2e/practice.spec.ts
+ M tests/e2e/restore-window.spec.ts
+ M tests/e2e/session-filters-migration.spec.ts
+ M tests/e2e/settings-migration.spec.ts
+ M tests/e2e/settings-palettes.spec.ts
+ M tests/e2e/settings-window.spec.ts
+ M tests/e2e/startup.spec.ts
+ M tests/unit/backup-contract.test.ts
+ M tests/unit/backup-ipc.test.ts
+ M tests/unit/library-ipc.test.ts
+ M tests/unit/settings-contract.test.ts
+ M 计划书.md
+?? docs/evidence/themes-20261025/
+?? docs/evidence/v001-release-20261025/
+?? docs/多主题系统开发计划.md
+?? docs/多主题系统行为与格式.md
+?? src/main/database/repositories/theme-repository.ts
+?? src/renderer/src/components/AppearanceSwitcher.tsx
+?? src/renderer/src/components/ThemeManager.tsx
+?? src/renderer/src/components/ThemePreview.tsx
+?? src/renderer/src/styles/themes.css
+?? src/shared/contracts/themes.ts
+?? src/shared/themes.ts
+?? tests/e2e/theme-helpers.ts
+?? tests/e2e/themes-backup.spec.ts
+?? tests/e2e/themes-database.spec.ts
+?? tests/e2e/themes-layout.spec.ts
+?? tests/e2e/themes-migration.spec.ts
+?? tests/e2e/themes-reading.spec.ts
+?? tests/e2e/themes-window.spec.ts
+?? tests/fixtures/schema-v9.sql
+?? tests/integration/theme-exercise.ts
+?? tests/unit/themes-contract.test.ts
+?? themes/

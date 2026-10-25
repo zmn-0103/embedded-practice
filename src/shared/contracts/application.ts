@@ -7,6 +7,7 @@ import type { SettingsDesktopApi } from './settings'
 import type { BackupDesktopApi } from './backup'
 import type { DataLocationsDesktopApi } from './data-locations'
 import type { PracticePlansDesktopApi } from './practice-plans'
+import type { ThemesDesktopApi } from './themes'
 
 export const APP_STATUS_CHANNEL = 'app:get-status'
 
@@ -41,6 +42,7 @@ export interface DesktopApi {
   readonly history: HistoryDesktopApi
   readonly learning: LearningDesktopApi
   readonly settings: SettingsDesktopApi
+  readonly themes: ThemesDesktopApi
   readonly backup: BackupDesktopApi
   readonly dataLocations: DataLocationsDesktopApi
 }

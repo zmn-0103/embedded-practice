@@ -24,7 +24,7 @@ async function save(page: Page, theme: AppearanceSettings['theme'], fontSize: nu
   await openPage(page, '设置与数据')
   await page.getByLabel('显示主题', { exact: true }).selectOption(theme)
   await page.getByLabel('正文字号', { exact: true }).selectOption(String(fontSize))
-  await page.getByRole('button', { name: '保存显示设置', exact: true }).click()
+  await page.getByRole('button', { name: '保存并应用', exact: true }).click()
   await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
   await expect(page.locator('html')).toHaveAttribute('data-theme', theme)
   await expect(page.locator('html')).toHaveAttribute('data-font-size', String(fontSize))
@@ -224,7 +224,7 @@ test('真实设置写入失败及提交后响应丢失，原目标重试不改�
     await openPage(page, '设置与数据')
     await page.getByLabel('显示主题', { exact: true }).selectOption('dark')
     await page.getByLabel('正文字号', { exact: true }).selectOption('22')
-    await page.getByRole('button', { name: '保存显示设置', exact: true }).click()
+    await page.getByRole('button', { name: '保存并应用', exact: true }).click()
     await expect(page.getByRole('alert')).toContainText('显示设置暂不可用')
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'system')
     await expect(page.locator('html')).toHaveAttribute('data-font-size', '17')
@@ -247,13 +247,13 @@ test('真实设置写入失败及提交后响应丢失，原目标重试不改�
         return result
       })
     })
-    await page.getByRole('button', { name: '重试保存显示设置', exact: true }).click()
+    await page.getByRole('button', { name: '重试保存并应用', exact: true }).click()
     await expect(page.getByRole('alert')).toContainText('显示设置保存结果尚未确认')
     expect(stored(testDataDirectory)).toEqual([
       { id: 1, theme: 'dark', font_size: 22, palette: 'forest' },
     ])
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'system')
-    await page.getByRole('button', { name: '重试保存显示设置', exact: true }).click()
+    await page.getByRole('button', { name: '重试保存并应用', exact: true }).click()
     await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
     expect(stored(testDataDirectory)).toEqual([
@@ -287,7 +287,7 @@ test('损坏设置读取报错且不伪造默认成功，修复重读保留业�
     await openPage(page, '设置与数据')
     await expect(page.getByText('尚未读取到已保存的显示设置。', { exact: true })).toBeVisible()
     expect(await page.getByLabel('显示主题', { exact: true }).count()).toBe(0)
-    expect(await page.getByRole('button', { name: '保存显示设置', exact: true }).count()).toBe(0)
+    expect(await page.getByRole('button', { name: '保存并应用', exact: true }).count()).toBe(0)
     expect(stored(testDataDirectory)).toEqual([
       { id: 1, theme: 'system', font_size: 99, palette: 'forest' },
     ])
@@ -370,7 +370,7 @@ for (const fail of [false, true]) {
         })
       await page.getByLabel('显示主题', { exact: true }).selectOption('dark')
       await page.getByLabel('正文字号', { exact: true }).selectOption('21')
-      await page.getByRole('button', { name: '保存显示设置', exact: true }).click()
+      await page.getByRole('button', { name: '保存并应用', exact: true }).click()
       await expect.poll(async () => (await state()).started).toBe(1)
       await expect(page.getByLabel('显示主题', { exact: true })).toBeDisabled()
       const link = page
@@ -404,7 +404,7 @@ for (const fail of [false, true]) {
         expect(stored(testDataDirectory)).toEqual([
           { id: 1, theme: 'system', font_size: 17, palette: 'forest' },
         ])
-        await page.getByRole('button', { name: '重试保存显示设置', exact: true }).click()
+        await page.getByRole('button', { name: '重试保存并应用', exact: true }).click()
         await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
         await openPage(page, '开始练习')
         await expect(page.getByLabel('练习模式', { exact: true })).toBeEnabled()

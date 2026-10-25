@@ -87,7 +87,7 @@ export function BackupPanel({
     <section aria-label="完整备份与恢复预览">
       <h3>本地数据</h3>
       <p>
-        完整备份包含题库、历史版本、图片、学习记录、收藏、练习进度及显示设置。
+        完整备份包含题库、历史版本、图片、学习记录、收藏、练习进度、已安装主题及显示布局设置。
         备份仅包含已经保存的数据；调整显示后请先保存，再导出。
       </p>
       <div className="import-actions">
@@ -133,6 +133,7 @@ export function BackupPanel({
               [
                 ['分类', summary.categories],
                 ['练习方案', summary.practicePlans],
+                ['已安装主题', summary.installedThemes],
                 ['专题', summary.topics],
                 ['题目总数', summary.questions],
                 ['归档题目', summary.archivedQuestions],
@@ -150,6 +151,19 @@ export function BackupPanel({
               </div>
             ))}
           </dl>
+          <p className="muted">
+            当前主题：{summary.appearance.themeId} ·{' '}
+            {summary.appearance.theme === 'system'
+              ? '跟随系统'
+              : summary.appearance.theme === 'dark'
+                ? '暗色'
+                : '明色'}{' '}
+            · {summary.appearance.fontSize}px
+            {' · '}
+            {summary.appearance.navigationCollapsed ? '导航收起' : '导航展开'}
+            {' · '}
+            {summary.appearance.auxiliaryHidden ? '辅助面板隐藏' : '辅助面板显示'}
+          </p>
           <p>
             {summary.activeSession
               ? '包含可继续的练习轮次及固定队列。'

@@ -1,5 +1,6 @@
 import { writeFile } from 'node:fs/promises'
 import { isAbsolute } from 'node:path'
+import { randomUUID } from 'node:crypto'
 import {
   clipboard,
   dialog,
@@ -55,6 +56,19 @@ import {
   appearanceSchema,
   settingsResultSchema,
 } from '../../shared/contracts/settings'
+import {
+  THEME_CHANNELS,
+  MAX_THEME_BYTES,
+  themeDefinitionSchema,
+  themeCatalogResultSchema,
+  themePreviewResultSchema,
+  themeTokenSchema,
+  themeRemoveSchema,
+  type ThemePreview,
+  type ThemeError,
+} from '../../shared/contracts/themes'
+import { ThemeFault } from '../database/repositories/theme-repository'
+import { readFileSnapshot, SourceFileError } from '../services/resources/read-file-snapshot'
 
 export function registerLibraryIpc(
   window: BrowserWindow,
@@ -66,6 +80,7 @@ export function registerLibraryIpc(
   let closed = false
   let paused = false
   let lastToken: string | undefined
+  let themePreview: ThemePreview | undefined
   let operation: { controller: AbortController; completion: Promise<unknown> } | undefined
   let closing: Promise<void> | undefined
   const channels = [
@@ -75,9 +90,10 @@ export function registerLibraryIpc(
     ...Object.values(SETTINGS_CHANNELS),
     CATEGORY_CHANNEL,
     ...Object.values(PRACTICE_PLAN_CHANNELS),
+    ...Object.values(THEME_CHANNELS),
   ]
   const noArguments = z.tuple([])
-  function fail(code: DesktopError['code'], message: string) {
+  function fail(code: DesktopError['code'] | ThemeError['code'], message: string) {
     return { ok: false as const, error: { code, message } }
   }
   const unavailable = () =>
@@ -97,6 +113,7 @@ export function registerLibraryIpc(
   function invalidate() {
     operation?.controller.abort()
     forgetPreview()
+    themePreview = undefined
   }
   async function abortableDialog<T>(
     open: () => Promise<T>,
@@ -143,12 +160,92 @@ export function registerLibraryIpc(
       try {
         return output.parse(await action(parsed.data, event))
       } catch (error) {
+        if (error instanceof ThemeFault) return fail(error.code, error.message)
         report(error)
         return failureMessage ? fail('DATABASE_UNAVAILABLE', failureMessage) : unavailable()
       }
     })
   }
   const settingsUnavailable = '显示设置暂不可用，请重试或检查本地诊断日志。'
+  handle(THEME_CHANNELS.list, noArguments, themeCatalogResultSchema, () =>
+    service ? { ok: true, value: service.listThemes() } : unavailable(),
+  )
+  handle(THEME_CHANNELS.preview, noArguments, themePreviewResultSchema, () => {
+    if (!service) return unavailable()
+    if (operation) return fail('THEME_BUSY', '已有文件选择或准备任务，请等待完成。')
+    themePreview = undefined
+    return runOperation(async (signal) => {
+      const selected = await abortableDialog(
+        () =>
+          dialog.showOpenDialog(window, {
+            title: '安装或更新本地主题',
+            filters: [{ name: '刷题本主题包', extensions: ['ep-theme.json'] }],
+            properties: ['openFile'],
+          }),
+        signal,
+        { canceled: true, filePaths: [] },
+      )
+      if (signal.aborted || selected.canceled || !selected.filePaths[0])
+        return fail('CANCELLED', '已取消主题导入。')
+      const filePath = selected.filePaths[0]
+      if (!/\.ep-theme\.json$/i.test(filePath))
+        return fail('INVALID_THEME', '请选择扩展名为 .ep-theme.json 的主题包。')
+      let definition
+      try {
+        const bytes = await readFileSnapshot(filePath, MAX_THEME_BYTES)
+        definition = themeDefinitionSchema.parse(
+          JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes)),
+        )
+      } catch (error) {
+        if (error instanceof SourceFileError)
+          return fail(
+            'FILE_ERROR',
+            error.code === 'LIMIT_EXCEEDED'
+              ? '主题文件超过 256 KiB 上限。'
+              : '无法稳定读取主题文件，请检查文件后重新选择。',
+          )
+        return fail(
+          'INVALID_THEME',
+          '主题包不是受支持的 UTF-8 JSON 配置，或包含未知字段、格式版本、非法颜色或布局参数。',
+        )
+      }
+      if (signal.aborted) return fail('CANCELLED', '主题导入已取消。')
+      themePreview = {
+        token: randomUUID(),
+        expiresAt: new Date(Date.now() + 10 * 60_000).toISOString(),
+        definition,
+        ...service.inspectTheme(definition),
+      }
+      return { ok: true, value: themePreview }
+    })
+  })
+  handle(
+    THEME_CHANNELS.install,
+    z.tuple([themeTokenSchema]),
+    themeCatalogResultSchema,
+    ([{ token }]) => {
+      if (!service) return unavailable()
+      if (operation) return fail('THEME_BUSY', '请等待文件准备完成。')
+      if (
+        !themePreview ||
+        token !== themePreview.token ||
+        Date.parse(themePreview.expiresAt) <= Date.now()
+      )
+        return fail('PREVIEW_EXPIRED', '主题预览已失效，请重新选择文件。')
+      // 保留凭据供提交后响应丢失时核对/重试；使用预检快照，不再次读取来源文件。
+      return { ok: true, value: service.installTheme(themePreview.definition) }
+    },
+  )
+  handle(
+    THEME_CHANNELS.uninstall,
+    z.tuple([themeRemoveSchema]),
+    themeCatalogResultSchema,
+    ([{ themeId }]) => {
+      if (!service) return unavailable()
+      if (operation) return fail('THEME_BUSY', '请等待文件准备完成。')
+      return { ok: true, value: service.removeTheme(themeId) }
+    },
+  )
   handle(PRACTICE_PLAN_CHANNELS.list, noArguments, practicePlansResultSchema, () =>
     service ? { ok: true, value: service.listPracticePlans() } : unavailable(),
   )

@@ -1,0 +1,51 @@
+{
+  "formatVersion": 1,
+  "id": "local.paper-ink",
+  "name": "纸页墨色",
+  "version": "1.0.0",
+  "author": "嵌入式刷题本示例",
+  "description": "温暖纸页与深墨色，紧凑经典布局，衬线阅读字体。离线主题包示例。",
+  "license": "CC0-1.0（仅此示例配置）",
+  "light": {
+    "background": "#f5f1e8",
+    "surface": "#fffdf8",
+    "sidebar": "#eae4d7",
+    "text": "#2d2b26",
+    "muted": "#6b6254",
+    "line": "#cfc5b3",
+    "accent": "#4f493f",
+    "accentSoft": "#e9e1d3",
+    "accentInk": "#ffffff",
+    "codeBackground": "#ede8dd",
+    "error": "#a3322b",
+    "errorSoft": "#fff0eb",
+    "codeKeyword": "#704991",
+    "codeValue": "#315f45",
+    "focus": "#4f493f",
+    "success": "#315f45"
+  },
+  "dark": {
+    "background": "#211f1b",
+    "surface": "#2b2822",
+    "sidebar": "#25221d",
+    "text": "#efe7d8",
+    "muted": "#c2b6a1",
+    "line": "#544c40",
+    "accent": "#d4c2a0",
+    "accentSoft": "#453c2f",
+    "accentInk": "#242019",
+    "codeBackground": "#1a1815",
+    "error": "#ffb4a8",
+    "errorSoft": "#422824",
+    "codeKeyword": "#d1b5f0",
+    "codeValue": "#a7c5a5",
+    "focus": "#d4c2a0",
+    "success": "#a7c5a5"
+  },
+  "presentation": {
+    "font": "serif",
+    "radius": "square",
+    "density": "compact",
+    "layout": "classic"
+  }
+}

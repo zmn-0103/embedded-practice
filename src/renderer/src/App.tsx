@@ -7,6 +7,7 @@ import { LearningRecords } from './components/LearningRecords'
 import { SettingsPane } from './components/SettingsPane'
 import { DataLocationsPanel } from './components/DataLocationsPanel'
 import { useAppearance } from './useAppearance'
+import { AppearanceSwitcher } from './components/AppearanceSwitcher'
 
 type ViewState =
   | { status: 'loading' }
@@ -25,7 +26,7 @@ const pages = [
   { id: 'settings', label: '设置与数据', path: 'M4 7h16M4 17h16M9 4v6m6 4v6' },
 ] as const
 type PageId = (typeof pages)[number]['id']
-const BUILD_LABEL = '20261024.4-v000'
+const BUILD_LABEL = '20261025.2-v001'
 
 export function App() {
   const [state, setState] = useState<ViewState>({ status: 'loading' })
@@ -46,6 +47,7 @@ export function App() {
     settings: 0,
   })
   const appearance = useAppearance()
+  const studyLayout = appearance.definition?.presentation.layout === 'study'
   const dataWork = useRef<Promise<boolean> | undefined>(undefined)
   const waitForSaves = useCallback(async () => {
     const pending = dataWork.current
@@ -115,23 +117,51 @@ export function App() {
             <path d="M12 3v5m8-5v5M12 24v5m8-5v5M3 12h5m-5 8h5m16-8h5m-5 8h5m-16-4 3 3 5-6" />
           </svg>
         </div>
-        <div>
+        <div className="brand-copy">
           <h1>嵌入式刷题本</h1>
           <p className="brand-caption">思考有迹，积累有序</p>
         </div>
+        {studyLayout && appearance.value && (
+          <button
+            className="navigation-toggle"
+            type="button"
+            aria-label={appearance.value.navigationCollapsed ? '展开导航' : '收起导航'}
+            aria-expanded={!appearance.value.navigationCollapsed}
+            disabled={appearance.busy || dataBusy}
+            onClick={() => {
+              if (appearance.value)
+                void appearance.save({
+                  ...appearance.value,
+                  navigationCollapsed: !appearance.value.navigationCollapsed,
+                })
+            }}
+          >
+            {appearance.value.navigationCollapsed ? '›' : '‹'}
+          </button>
+        )}
+        {appearance.value && appearance.catalog && (
+          <AppearanceSwitcher
+            value={appearance.value}
+            catalog={appearance.catalog}
+            disabled={appearance.busy || dataBusy}
+            onSave={appearance.save}
+          />
+        )}
       </header>
 
-      {!practicing && (
+      {(!practicing || studyLayout) && (
         <nav className="page-navigation" aria-label="主要页面">
           {pages.map(({ id: target, label, path }) => (
             <a
               href={`#${target}`}
               key={target}
-              aria-disabled={state.status !== 'ready' || appearance.busy || dataBusy}
+              aria-disabled={state.status !== 'ready' || appearance.busy || dataBusy || practicing}
+              aria-label={label}
+              title={label}
               aria-current={page === target ? 'page' : undefined}
               onClick={(event) => {
                 event.preventDefault()
-                if (state.status !== 'ready' || appearance.busy || dataBusy) return
+                if (state.status !== 'ready' || appearance.busy || dataBusy || practicing) return
                 changePage(target)
               }}
             >
@@ -144,21 +174,46 @@ export function App() {
               >
                 <path d={path} strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              {label}
+              <span className="navigation-label">{label}</span>
             </a>
           ))}
+          {practicing && (
+            <p className="navigation-practice-note">练习中请用“返回首页”保存后离开。</p>
+          )}
         </nav>
       )}
 
       <main id="main-content" tabIndex={-1}>
-        {!practicing && (
+        {(!practicing || studyLayout) && (
           <div className="workspace-heading">
             <span>{pages.find((item) => item.id === page)?.label}</span>
             <span className="local-indicator">
               <span aria-hidden="true" />
               离线工作台
             </span>
+            {practicing && studyLayout && appearance.value && (
+              <button
+                type="button"
+                disabled={appearance.busy || dataBusy}
+                aria-controls="practice-context"
+                aria-expanded={!appearance.value.auxiliaryHidden}
+                onClick={() => {
+                  if (appearance.value)
+                    void appearance.save({
+                      ...appearance.value,
+                      auxiliaryHidden: !appearance.value.auxiliaryHidden,
+                    })
+                }}
+              >
+                {appearance.value.auxiliaryHidden ? '显示辅助面板' : '隐藏辅助面板'}
+              </button>
+            )}
           </div>
+        )}
+        {appearance.warning && (
+          <p role="alert" className="error-message">
+            {appearance.warning}
+          </p>
         )}
         {appearance.error && page !== 'settings' && (
           <div role="alert" className="error-message">
@@ -282,6 +337,9 @@ export function App() {
             onReload={appearance.reload}
             dataBusy={dataBusy}
             onDataBusyChange={setDataBusy}
+            catalog={appearance.catalog}
+            onThemesChanged={appearance.acceptCatalog}
+            onDataOperation={trackDataOperation}
           />
         )}
 

@@ -6,7 +6,8 @@ import {
   type BackupError,
   type BackupSummary,
 } from '../../../shared/contracts/backup'
-import { appearanceSchema } from '../../../shared/contracts/settings'
+import { createSettingsRepository } from '../../database/repositories/settings-repository'
+import { createThemeRepository } from '../../database/repositories/theme-repository'
 import { questionFiltersSchema } from '../../../shared/contracts/question-filters'
 import { contentBodySchema } from '../../../shared/contracts/library-desktop'
 import { categorySchema, categorySnapshotSchema } from '../../../shared/contracts/categories'
@@ -98,7 +99,9 @@ const requiredColumns = {
   practice_items:
     'session_id, position, question_id, version_id, title, topic_title, tags_json, difficulty, draft, draft_revision, revealed_at, rating, rated_at, skipped_at',
   practice_receipts: 'request_id, payload_hash, result_json, created_at',
-  appearance_settings: 'id, theme, font_size, palette',
+  appearance_settings:
+    'id, theme, font_size, palette, theme_id, navigation_collapsed, auxiliary_hidden',
+  installed_themes: 'theme_id, version, config_json, content_hash',
 } as const
 
 export function readBackupSummary(
@@ -113,11 +116,13 @@ export function readBackupSummary(
       throw new BackupFault('INVALID_BACKUP', '备份缺少必要的数据表，请选择完整备份。')
     database.prepare(`SELECT ${columns} FROM ${table} LIMIT 0`).all()
   }
-  const settings = database
-    .prepare('SELECT theme, palette, font_size AS fontSize FROM appearance_settings WHERE id = 1')
-    .get()
-  if (!appearanceSchema.safeParse(settings).success)
-    throw new BackupFault('INVALID_BACKUP', '备份中的显示设置无效，请选择其他备份。')
+  const settings = createSettingsRepository(database).readSettings()
+  const themes = createThemeRepository(database).listThemes()
+  if (
+    themes.issues.length ||
+    !themes.entries.some((entry) => entry.definition.id === settings.themeId)
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份中的主题配置损坏或当前主题缺失，请选择其他备份。')
   const plans = database
     .prepare(
       `SELECT plan_id AS planId,name,options_json AS options FROM practice_plans LIMIT ${MAX_PRACTICE_PLANS + 1}`,
@@ -202,6 +207,8 @@ export function readBackupSummary(
     requiresMigration: header.schemaVersion < SCHEMA_VERSION,
     categories: count('categories'),
     practicePlans: plans.length,
+    installedThemes: themes.entries.filter((entry) => !entry.builtIn).length,
+    appearance: settings,
     topics: count('topics'),
     questions: count('questions'),
     archivedQuestions: count('questions', 'WHERE archived = 1'),

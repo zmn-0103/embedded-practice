@@ -44,6 +44,7 @@ const tables = [
   'practice_items',
   'practice_receipts',
   'appearance_settings',
+  'installed_themes',
 ] as const
 function records(database: DatabaseSync) {
   return Object.fromEntries(
@@ -65,7 +66,7 @@ function exportedRecords(path: string) {
     expect(db.prepare('PRAGMA integrity_check').all()).toEqual([{ integrity_check: 'ok' }])
     expect(db.prepare('PRAGMA foreign_key_check').all()).toEqual([])
     expect(db.prepare('PRAGMA application_id').get()).toEqual({ application_id: 0x45505231 })
-    expect(db.prepare('PRAGMA user_version').get()).toEqual({ user_version: 9 })
+    expect(db.prepare('PRAGMA user_version').get()).toEqual({ user_version: 10 })
     return records(db)
   } finally {
     db.close()
@@ -169,7 +170,7 @@ test('完整备份导出覆盖版本图片历史草稿收藏固定随机队列�
       await openPage(page, '设置与数据')
       await page.getByLabel('显示主题', { exact: true }).selectOption('dark')
       await page.getByLabel('正文字号', { exact: true }).selectOption('22')
-      await page.getByRole('button', { name: '保存显示设置', exact: true }).click()
+      await page.getByRole('button', { name: '保存并应用', exact: true }).click()
       await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
       const before = withHistoryDatabase(testDataDirectory, records)
       const appVersion = await application.evaluate(({ app }) => app.getVersion())
@@ -187,7 +188,7 @@ test('完整备份导出覆盖版本图片历史草稿收藏固定随机队列�
       try {
         expect(db.prepare('SELECT * FROM backup_manifest').get()).toMatchObject({
           format_version: 1,
-          schema_version: 9,
+          schema_version: 10,
           created_at: expect.stringMatching(/^2026-/),
           app_version: appVersion,
         })
@@ -269,7 +270,7 @@ test('备份取消与预览取消保留原状态，空库可导出并预览', as
         images: 0,
         sessions: 0,
         activeSession: false,
-        schemaVersion: 9,
+        schemaVersion: 10,
         requiresMigration: false,
       })
       await select(application, 'preview', file.filePath)
@@ -616,7 +617,15 @@ test('备份期间其他连接的事务写入保持一致性快照', async ({ te
       const file = await exportFile(application, page, join(directory, '并发一致性.sqlite3'))
       const after = withHistoryDatabase(testDataDirectory, records)
       expect(after['appearance_settings']).toEqual([
-        { id: 1, theme: 'dark', font_size: 22, palette: 'forest' },
+        {
+          id: 1,
+          theme: 'dark',
+          font_size: 22,
+          palette: 'forest',
+          theme_id: 'builtin.forest',
+          navigation_collapsed: 0,
+          auxiliary_hidden: 0,
+        },
       ])
       const actual = exportedRecords(file.filePath)
       expect([JSON.stringify(before), JSON.stringify(after)]).toContain(JSON.stringify(actual))

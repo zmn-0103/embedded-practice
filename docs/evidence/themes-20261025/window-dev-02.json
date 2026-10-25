@@ -1,0 +1,370 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\playwright\\cli.js",
+      "test",
+      "tests/e2e/themes-window.spec.ts",
+      "tests/e2e/themes-database.spec.ts",
+      "--project=development",
+      "--output=docs/evidence/themes-20261025/window-dev-02",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/themes-20261025/window-dev-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/themes-20261025/window-dev-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\themes-20261025\\window-dev-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "themes-database.spec.ts",
+      "file": "themes-database.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "主题数据库/transactions：真实版本/容量/故障回滚与原学习数据保护",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1164,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T05:21:12.541Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "theme-database.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZGVudGl0eSI6IHsKICAgICJleGUiOiAiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcbm9kZV9tb2R1bGVzXFxlbGVjdHJvblxcZGlzdFxcZWxlY3Ryb24uZXhlIiwKICAgICJ1c2VyRGF0YSI6ICJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtN1BUSzZCIiwKICAgICJwYWNrYWdlZCI6IGZhbHNlLAogICAgInZlcnNpb24iOiAiNDIuMTEuMTUiCiAgfSwKICAicmVwb3J0IjogewogICAgInJlcGVhdGVkIjogIm9rIiwKICAgICJzYW1lVmVyc2lvbkNoYW5nZWQiOiAiVEhFTUVfQ09ORkxJQ1QiLAogICAgImRvd25ncmFkZSI6ICJUSEVNRV9DT05GTElDVCIsCiAgICAic2VsZWN0ZWQiOiB7CiAgICAgICJ0aGVtZSI6ICJkYXJrIiwKICAgICAgInBhbGV0dGUiOiAiZm9yZXN0IiwKICAgICAgImZvbnRTaXplIjogMjIsCiAgICAgICJ0aGVtZUlkIjogImxvY2FsLnBhcGVyLWluayIsCiAgICAgICJuYXZpZ2F0aW9uQ29sbGFwc2VkIjogdHJ1ZSwKICAgICAgImF1eGlsaWFyeUhpZGRlbiI6IHRydWUKICAgIH0sCiAgICAiZmFpbGVkRGVsZXRlIjogIlNRTElURV9DT05TVFJBSU5UX1RSSUdHRVIiLAogICAgInNldHRpbmdzQWZ0ZXJGYWlsZWREZWxldGUiOiB7CiAgICAgICJ0aGVtZSI6ICJkYXJrIiwKICAgICAgInBhbGV0dGUiOiAiZm9yZXN0IiwKICAgICAgImZvbnRTaXplIjogMjIsCiAgICAgICJ0aGVtZUlkIjogImxvY2FsLnBhcGVyLWluayIsCiAgICAgICJuYXZpZ2F0aW9uQ29sbGFwc2VkIjogdHJ1ZSwKICAgICAgImF1eGlsaWFyeUhpZGRlbiI6IHRydWUKICAgIH0sCiAgICAiY291bnRBZnRlckZhaWxlZERlbGV0ZSI6IDIsCiAgICAiYWZ0ZXJEZWxldGUiOiB7CiAgICAgICJ0aGVtZSI6ICJkYXJrIiwKICAgICAgInBhbGV0dGUiOiAiZm9yZXN0IiwKICAgICAgImZvbnRTaXplIjogMjIsCiAgICAgICJ0aGVtZUlkIjogImJ1aWx0aW4uZm9yZXN0IiwKICAgICAgIm5hdmlnYXRpb25Db2xsYXBzZWQiOiB0cnVlLAogICAgICAiYXV4aWxpYXJ5SGlkZGVuIjogdHJ1ZQogICAgfSwKICAgICJyZXBlYXREZWxldGUiOiAib2siLAogICAgImZhaWxlZEluc2VydCI6ICJTUUxJVEVfQ09OU1RSQUlOVF9UUklHR0VSIiwKICAgICJyb3dzQmVmb3JlRmFpbGVkSW5zZXJ0IjogWwogICAgICB7CiAgICAgICAgInRoZW1lX2lkIjogImxvY2FsLmNpcmN1aXQtYmx1ZSIsCiAgICAgICAgInZlcnNpb24iOiAiMS4wLjAiLAogICAgICAgICJjb25maWdfanNvbiI6ICJ7XCJmb3JtYXRWZXJzaW9uXCI6MSxcImlkXCI6XCJsb2NhbC5jaXJjdWl0LWJsdWVcIixcIm5hbWVcIjpcIueUtei3r+WknOiIqlwiLFwidmVyc2lvblwiOlwiMS4wLjBcIixcImF1dGhvclwiOlwi5bWM5YWl5byP5Yi36aKY5pys56S65L6LXCIsXCJkZXNjcmlwdGlvblwiOlwi5riF5pmw6JOd6Imy5LiO5ZyG5ram6Z2i5p2/77yM5a695p2+5a2m5Lmg5bel5L2c5Yy677yb5rWF6Imy5LiO5rex6Imy5Z2H5Y+v54us56uL6YCJ5oup44CCXCIsXCJsaWNlbnNlXCI6XCJDQzAtMS4w77yI5LuF5q2k56S65L6L6YWN572u77yJXCIsXCJsaWdodFwiOntcImJhY2tncm91bmRcIjpcIiNlZGYyZjhcIixcInN1cmZhY2VcIjpcIiNmZmZmZmZcIixcInNpZGViYXJcIjpcIiNlM2ViZjZcIixcInRleHRcIjpcIiMyMDMxNDdcIixcIm11dGVkXCI6XCIjNTI2NjgxXCIsXCJsaW5lXCI6XCIjYzlkNmU4XCIsXCJhY2NlbnRcIjpcIiMyNDU4YThcIixcImFjY2VudFNvZnRcIjpcIiNlMGVhZmJcIixcImFjY2VudElua1wiOlwiI2ZmZmZmZlwiLFwiY29kZUJhY2tncm91bmRcIjpcIiNlZWYzZmFcIixcImVycm9yXCI6XCIjYTEyZjI5XCIsXCJlcnJvclNvZnRcIjpcIiNmZmYwZWRcIixcImNvZGVLZXl3b3JkXCI6XCIjNzA0OTkxXCIsXCJjb2RlVmFsdWVcIjpcIiMyMzVlNTdcIixcImZvY3VzXCI6XCIjMjQ1OGE4XCIsXCJzdWNjZXNzXCI6XCIjMjM1ZTU3XCJ9LFwiZGFya1wiOntcImJhY2tncm91bmRcIjpcIiMxMTE5MjNcIixcInN1cmZhY2VcIjpcIiMxOTI1MzVcIixcInNpZGViYXJcIjpcIiMxNTIwMzBcIixcInRleHRcIjpcIiNlMmVkZjlcIixcIm11dGVkXCI6XCIjYThiZGQ2XCIsXCJsaW5lXCI6XCIjMzU0YzY5XCIsXCJhY2NlbnRcIjpcIiM5MWJjZjZcIixcImFjY2VudFNvZnRcIjpcIiMyNjNlNjFcIixcImFjY2VudElua1wiOlwiIzEyMjIzOVwiLFwiY29kZUJhY2tncm91bmRcIjpcIiMwZDE1MjBcIixcImVycm9yXCI6XCIjZmZiNGE4XCIsXCJlcnJvclNvZnRcIjpcIiM0MjI4MjRcIixcImNvZGVLZXl3b3JkXCI6XCIjZDFiNWYwXCIsXCJjb2RlVmFsdWVcIjpcIiM4ZGQ1YzJcIixcImZvY3VzXCI6XCIjOTFiY2Y2XCIsXCJzdWNjZXNzXCI6XCIjOGRkNWMyXCJ9LFwicHJlc2VudGF0aW9uXCI6e1wiZm9udFwiOlwic3lzdGVtXCIsXCJyYWRpdXNcIjpcInJvdW5kZWRcIixcImRlbnNpdHlcIjpcImNvbWZvcnRhYmxlXCIsXCJsYXlvdXRcIjpcInN0dWR5XCJ9fSIsCiAgICAgICAgImNvbnRlbnRfaGFzaCI6ICIxMWIzYzNmMGIxMGU0N2JiNmVhYzFmOGU5YzUxZDY3ODcwMTQ4Mjk0MjBmNWFmMGY3NjU0OWVlYzYzMGFlZDFhIgogICAgICB9CiAgICBdLAogICAgInJvd3NBZnRlckZhaWxlZEluc2VydCI6IFsKICAgICAgewogICAgICAgICJ0aGVtZV9pZCI6ICJsb2NhbC5jaXJjdWl0LWJsdWUiLAogICAgICAgICJ2ZXJzaW9uIjogIjEuMC4wIiwKICAgICAgICAiY29uZmlnX2pzb24iOiAie1wiZm9ybWF0VmVyc2lvblwiOjEsXCJpZFwiOlwibG9jYWwuY2lyY3VpdC1ibHVlXCIsXCJuYW1lXCI6XCLnlLXot6/lpJzoiKpcIixcInZlcnNpb25cIjpcIjEuMC4wXCIsXCJhdXRob3JcIjpcIuW1jOWFpeW8j+WIt+mimOacrOekuuS+i1wiLFwiZGVzY3JpcHRpb25cIjpcIua4heaZsOiTneiJsuS4juWchua2pumdouadv++8jOWuveadvuWtpuS5oOW3peS9nOWMuu+8m+a1heiJsuS4jua3seiJsuWdh+WPr+eLrOeri+mAieaLqeOAglwiLFwibGljZW5zZVwiOlwiQ0MwLTEuMO+8iOS7heatpOekuuS+i+mFjee9ru+8iVwiLFwibGlnaHRcIjp7XCJiYWNrZ3JvdW5kXCI6XCIjZWRmMmY4XCIsXCJzdXJmYWNlXCI6XCIjZmZmZmZmXCIsXCJzaWRlYmFyXCI6XCIjZTNlYmY2XCIsXCJ0ZXh0XCI6XCIjMjAzMTQ3XCIsXCJtdXRlZFwiOlwiIzUyNjY4MVwiLFwibGluZVwiOlwiI2M5ZDZlOFwiLFwiYWNjZW50XCI6XCIjMjQ1OGE4XCIsXCJhY2NlbnRTb2Z0XCI6XCIjZTBlYWZiXCIsXCJhY2NlbnRJbmtcIjpcIiNmZmZmZmZcIixcImNvZGVCYWNrZ3JvdW5kXCI6XCIjZWVmM2ZhXCIsXCJlcnJvclwiOlwiI2ExMmYyOVwiLFwiZXJyb3JTb2Z0XCI6XCIjZmZmMGVkXCIsXCJjb2RlS2V5d29yZFwiOlwiIzcwNDk5MVwiLFwiY29kZVZhbHVlXCI6XCIjMjM1ZTU3XCIsXCJmb2N1c1wiOlwiIzI0NThhOFwiLFwic3VjY2Vzc1wiOlwiIzIzNWU1N1wifSxcImRhcmtcIjp7XCJiYWNrZ3JvdW5kXCI6XCIjMTExOTIzXCIsXCJzdXJmYWNlXCI6XCIjMTkyNTM1XCIsXCJzaWRlYmFyXCI6XCIjMTUyMDMwXCIsXCJ0ZXh0XCI6XCIjZTJlZGY5XCIsXCJtdXRlZFwiOlwiI2E4YmRkNlwiLFwibGluZVwiOlwiIzM1NGM2OVwiLFwiYWNjZW50XCI6XCIjOTFiY2Y2XCIsXCJhY2NlbnRTb2Z0XCI6XCIjMjYzZTYxXCIsXCJhY2NlbnRJbmtcIjpcIiMxMjIyMzlcIixcImNvZGVCYWNrZ3JvdW5kXCI6XCIjMGQxNTIwXCIsXCJlcnJvclwiOlwiI2ZmYjRhOFwiLFwiZXJyb3JTb2Z0XCI6XCIjNDIyODI0XCIsXCJjb2RlS2V5d29yZFwiOlwiI2QxYjVmMFwiLFwiY29kZVZhbHVlXCI6XCIjOGRkNWMyXCIsXCJmb2N1c1wiOlwiIzkxYmNmNlwiLFwic3VjY2Vzc1wiOlwiIzhkZDVjMlwifSxcInByZXNlbnRhdGlvblwiOntcImZvbnRcIjpcInN5c3RlbVwiLFwicmFkaXVzXCI6XCJyb3VuZGVkXCIsXCJkZW5zaXR5XCI6XCJjb21mb3J0YWJsZVwiLFwibGF5b3V0XCI6XCJzdHVkeVwifX0iLAogICAgICAgICJjb250ZW50X2hhc2giOiAiMTFiM2MzZjBiMTBlNDdiYjZlYWMxZjhlOWM1MWQ2Nzg3MDE0ODI5NDIwZjVhZjBmNzY1NDllZWM2MzBhZWQxYSIKICAgICAgfQogICAgXSwKICAgICJjb3JydXB0Q2F0YWxvZyI6IHsKICAgICAgImVudHJpZXMiOiBbCiAgICAgICAgewogICAgICAgICAgImRlZmluaXRpb24iOiB7CiAgICAgICAgICAgICJmb3JtYXRWZXJzaW9uIjogMSwKICAgICAgICAgICAgImlkIjogImJ1aWx0aW4uZm9yZXN0IiwKICAgICAgICAgICAgIm5hbWUiOiAi5p2+6Ze057u/IiwKICAgICAgICAgICAgInZlcnNpb24iOiAiMS4wLjAiLAogICAgICAgICAgICAiYXV0aG9yIjogIuW1jOWFpeW8j+WIt+mimOacrCIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICLoh6rnhLbmuIXniL3vvIzmsonpnZnkuJPms6giLAogICAgICAgICAgICAibGljZW5zZSI6ICLlupTnlKjlhoXnva7op4bop4npooTorr4iLAogICAgICAgICAgICAibGlnaHQiOiB7CiAgICAgICAgICAgICAgImJhY2tncm91bmQiOiAiI2Y1ZjZmNCIsCiAgICAgICAgICAgICAgInN1cmZhY2UiOiAiI2ZjZmRmYiIsCiAgICAgICAgICAgICAgInNpZGViYXIiOiAiI2VkZWZlYyIsCiAgICAgICAgICAgICAgInRleHQiOiAiIzIwMzMyZCIsCiAgICAgICAgICAgICAgIm11dGVkIjogIiM1ZDcwNjciLAogICAgICAgICAgICAgICJsaW5lIjogIiNkNWUxZGEiLAogICAgICAgICAgICAgICJhY2NlbnQiOiAiIzIxNmI1MiIsCiAgICAgICAgICAgICAgImFjY2VudFNvZnQiOiAiI2U3ZjFlYyIsCiAgICAgICAgICAgICAgImFjY2VudEluayI6ICIjZmZmZmZmIiwKICAgICAgICAgICAgICAiY29kZUJhY2tncm91bmQiOiAiI2YzZjZmNSIsCiAgICAgICAgICAgICAgImVycm9yIjogIiNhYzM1MmUiLAogICAgICAgICAgICAgICJlcnJvclNvZnQiOiAiI2ZmZjFlZSIsCiAgICAgICAgICAgICAgImNvZGVLZXl3b3JkIjogIiM4MTU1YmIiLAogICAgICAgICAgICAgICJjb2RlVmFsdWUiOiAiIzI3N2Q1OCIsCiAgICAgICAgICAgICAgImZvY3VzIjogIiMyMTZiNTIiLAogICAgICAgICAgICAgICJzdWNjZXNzIjogIiMyMTZiNTIiCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJkYXJrIjogewogICAgICAgICAgICAgICJiYWNrZ3JvdW5kIjogIiMxNDFiMTgiLAogICAgICAgICAgICAgICJzdXJmYWNlIjogIiMxYjI0MjAiLAogICAgICAgICAgICAgICJzaWRlYmFyIjogIiMxNzIwMWMiLAogICAgICAgICAgICAgICJ0ZXh0IjogIiNlNGVkZTciLAogICAgICAgICAgICAgICJtdXRlZCI6ICIjYWNiZGIyIiwKICAgICAgICAgICAgICAibGluZSI6ICIjMzg0YjNlIiwKICAgICAgICAgICAgICAiYWNjZW50IjogIiM5N2Q3YjYiLAogICAgICAgICAgICAgICJhY2NlbnRTb2Z0IjogIiMyYTQxMzQiLAogICAgICAgICAgICAgICJhY2NlbnRJbmsiOiAiIzE0MjUxYyIsCiAgICAgICAgICAgICAgImNvZGVCYWNrZ3JvdW5kIjogIiMxMTFiMTYiLAogICAgICAgICAgICAgICJlcnJvciI6ICIjZmZiNGE4IiwKICAgICAgICAgICAgICAiZXJyb3JTb2Z0IjogIiMzZTI5MjUiLAogICAgICAgICAgICAgICJjb2RlS2V5d29yZCI6ICIjZDRiNWZmIiwKICAgICAgICAgICAgICAiY29kZVZhbHVlIjogIiM5YmQ2YjQiLAogICAgICAgICAgICAgICJmb2N1cyI6ICIjOTdkN2I2IiwKICAgICAgICAgICAgICAic3VjY2VzcyI6ICIjOTdkN2I2IgogICAgICAgICAgICB9LAogICAgICAgICAgICAicHJlc2VudGF0aW9uIjogewogICAgICAgICAgICAgICJmb250IjogInN5c3RlbSIsCiAgICAgICAgICAgICAgInJhZGl1cyI6ICJyb3VuZGVkIiwKICAgICAgICAgICAgICAiZGVuc2l0eSI6ICJjb21mb3J0YWJsZSIsCiAgICAgICAgICAgICAgImxheW91dCI6ICJjbGFzc2ljIgogICAgICAgICAgICB9CiAgICAgICAgICB9LAogICAgICAgICAgImJ1aWx0SW4iOiB0cnVlCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiZGVmaW5pdGlvbiI6IHsKICAgICAgICAgICAgImZvcm1hdFZlcnNpb24iOiAxLAogICAgICAgICAgICAiaWQiOiAiYnVpbHRpbi5vY2VhbiIsCiAgICAgICAgICAgICJuYW1lIjogIuaZtOepuuiTnSIsCiAgICAgICAgICAgICJ2ZXJzaW9uIjogIjEuMC4wIiwKICAgICAgICAgICAgImF1dGhvciI6ICLltYzlhaXlvI/liLfpopjmnKwiLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAi5riF5pmw5Ya36Z2Z77yM6L2755uI6YCa6YCPIiwKICAgICAgICAgICAgImxpY2Vuc2UiOiAi5bqU55So5YaF572u6KeG6KeJ6aKE6K6+IiwKICAgICAgICAgICAgImxpZ2h0IjogewogICAgICAgICAgICAgICJiYWNrZ3JvdW5kIjogIiNmM2Y1ZjgiLAogICAgICAgICAgICAgICJzdXJmYWNlIjogIiNmYWZjZmUiLAogICAgICAgICAgICAgICJzaWRlYmFyIjogIiNlOWVlZjciLAogICAgICAgICAgICAgICJ0ZXh0IjogIiMyNDMzNGIiLAogICAgICAgICAgICAgICJtdXRlZCI6ICIjNWM2ZDg1IiwKICAgICAgICAgICAgICAibGluZSI6ICIjZDVkZmVkIiwKICAgICAgICAgICAgICAiYWNjZW50IjogIiMyODVmYzEiLAogICAgICAgICAgICAgICJhY2NlbnRTb2Z0IjogIiNlN2VmZmQiLAogICAgICAgICAgICAgICJhY2NlbnRJbmsiOiAiI2ZmZmZmZiIsCiAgICAgICAgICAgICAgImNvZGVCYWNrZ3JvdW5kIjogIiNmMWY1ZmMiLAogICAgICAgICAgICAgICJlcnJvciI6ICIjYWMzNTJlIiwKICAgICAgICAgICAgICAiZXJyb3JTb2Z0IjogIiNmZmYxZWUiLAogICAgICAgICAgICAgICJjb2RlS2V5d29yZCI6ICIjODE1NWJiIiwKICAgICAgICAgICAgICAiY29kZVZhbHVlIjogIiMxYjc0NmMiLAogICAgICAgICAgICAgICJmb2N1cyI6ICIjMjg1ZmMxIiwKICAgICAgICAgICAgICAic3VjY2VzcyI6ICIjMjE2YjUyIgogICAgICAgICAgICB9LAogICAgICAgICAgICAiZGFyayI6IHsKICAgICAgICAgICAgICAiYmFja2dyb3VuZCI6ICIjMTQxYjI5IiwKICAgICAgICAgICAgICAic3VyZmFjZSI6ICIjMWUyNzM1IiwKICAgICAgICAgICAgICAic2lkZWJhciI6ICIjMTgyMTMzIiwKICAgICAgICAgICAgICAidGV4dCI6ICIjZTNlYmZhIiwKICAgICAgICAgICAgICAibXV0ZWQiOiAiI2FhYmJkNSIsCiAgICAgICAgICAgICAgImxpbmUiOiAiIzM3NGM2OSIsCiAgICAgICAgICAgICAgImFjY2VudCI6ICIjYTBjMmZmIiwKICAgICAgICAgICAgICAiYWNjZW50U29mdCI6ICIjMmEzZTYxIiwKICAgICAgICAgICAgICAiYWNjZW50SW5rIjogIiMxNDI1MWMiLAogICAgICAgICAgICAgICJjb2RlQmFja2dyb3VuZCI6ICIjMTMxZDMwIiwKICAgICAgICAgICAgICAiZXJyb3IiOiAiI2ZmYjRhOCIsCiAgICAgICAgICAgICAgImVycm9yU29mdCI6ICIjM2UyOTI1IiwKICAgICAgICAgICAgICAiY29kZUtleXdvcmQiOiAiI2Q0YjVmZiIsCiAgICAgICAgICAgICAgImNvZGVWYWx1ZSI6ICIjODZkN2NmIiwKICAgICAgICAgICAgICAiZm9jdXMiOiAiI2EwYzJmZiIsCiAgICAgICAgICAgICAgInN1Y2Nlc3MiOiAiIzk3ZDdiNiIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgInByZXNlbnRhdGlvbiI6IHsKICAgICAgICAgICAgICAiZm9udCI6ICJzeXN0ZW0iLAogICAgICAgICAgICAgICJyYWRpdXMiOiAicm91bmRlZCIsCiAgICAgICAgICAgICAgImRlbnNpdHkiOiAiY29tZm9ydGFibGUiLAogICAgICAgICAgICAgICJsYXlvdXQiOiAiY2xhc3NpYyIKICAgICAgICAgICAgfQogICAgICAgICAgfSwKICAgICAgICAgICJidWlsdEluIjogdHJ1ZQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImRlZmluaXRpb24iOiB7CiAgICAgICAgICAgICJmb3JtYXRWZXJzaW9uIjogMSwKICAgICAgICAgICAgImlkIjogImJ1aWx0aW4uc2FuZCIsCiAgICAgICAgICAgICJuYW1lIjogIuaaluaymemHkSIsCiAgICAgICAgICAgICJ2ZXJzaW9uIjogIjEuMC4wIiwKICAgICAgICAgICAgImF1dGhvciI6ICLltYzlhaXlvI/liLfpopjmnKwiLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAi5rip5pqW5p+U5ZKM77yM57q46aG16LSo5oSfIiwKICAgICAgICAgICAgImxpY2Vuc2UiOiAi5bqU55So5YaF572u6KeG6KeJ6aKE6K6+IiwKICAgICAgICAgICAgImxpZ2h0IjogewogICAgICAgICAgICAgICJiYWNrZ3JvdW5kIjogIiNmN2Y0ZWUiLAogICAgICAgICAgICAgICJzdXJmYWNlIjogIiNmZGZhZjQiLAogICAgICAgICAgICAgICJzaWRlYmFyIjogIiNmMGViZTAiLAogICAgICAgICAgICAgICJ0ZXh0IjogIiM0MTM3MjUiLAogICAgICAgICAgICAgICJtdXRlZCI6ICIjNzg2NzQ3IiwKICAgICAgICAgICAgICAibGluZSI6ICIjZTVkYWM1IiwKICAgICAgICAgICAgICAiYWNjZW50IjogIiM5MTYwMWUiLAogICAgICAgICAgICAgICJhY2NlbnRTb2Z0IjogIiNmNWVhZDIiLAogICAgICAgICAgICAgICJhY2NlbnRJbmsiOiAiI2ZmZmZmZiIsCiAgICAgICAgICAgICAgImNvZGVCYWNrZ3JvdW5kIjogIiNmN2YxZTUiLAogICAgICAgICAgICAgICJlcnJvciI6ICIjYWMzNTJlIiwKICAgICAgICAgICAgICAiZXJyb3JTb2Z0IjogIiNmZmYxZWUiLAogICAgICAgICAgICAgICJjb2RlS2V5d29yZCI6ICIjODE1NWJiIiwKICAgICAgICAgICAgICAiY29kZVZhbHVlIjogIiMzNzcxNTIiLAogICAgICAgICAgICAgICJmb2N1cyI6ICIjOTE2MDFlIiwKICAgICAgICAgICAgICAic3VjY2VzcyI6ICIjMjE2YjUyIgogICAgICAgICAgICB9LAogICAgICAgICAgICAiZGFyayI6IHsKICAgICAgICAgICAgICAiYmFja2dyb3VuZCI6ICIjMjQxZTE2IiwKICAgICAgICAgICAgICAic3VyZmFjZSI6ICIjMmUyNzFlIiwKICAgICAgICAgICAgICAic2lkZWJhciI6ICIjMmEyNDFiIiwKICAgICAgICAgICAgICAidGV4dCI6ICIjZjFlN2Q1IiwKICAgICAgICAgICAgICAibXV0ZWQiOiAiI2M4Yjk5YiIsCiAgICAgICAgICAgICAgImxpbmUiOiAiIzUzNDYzMSIsCiAgICAgICAgICAgICAgImFjY2VudCI6ICIjZWJjNDdlIiwKICAgICAgICAgICAgICAiYWNjZW50U29mdCI6ICIjNGEzYzIzIiwKICAgICAgICAgICAgICAiYWNjZW50SW5rIjogIiMxNDI1MWMiLAogICAgICAgICAgICAgICJjb2RlQmFja2dyb3VuZCI6ICIjMjQxZTE1IiwKICAgICAgICAgICAgICAiZXJyb3IiOiAiI2ZmYjRhOCIsCiAgICAgICAgICAgICAgImVycm9yU29mdCI6ICIjM2UyOTI1IiwKICAgICAgICAgICAgICAiY29kZUtleXdvcmQiOiAiI2Q0YjVmZiIsCiAgICAgICAgICAgICAgImNvZGVWYWx1ZSI6ICIjYTRkMGFkIiwKICAgICAgICAgICAgICAiZm9jdXMiOiAiI2ViYzQ3ZSIsCiAgICAgICAgICAgICAgInN1Y2Nlc3MiOiAiIzk3ZDdiNiIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgInByZXNlbnRhdGlvbiI6IHsKICAgICAgICAgICAgICAiZm9udCI6ICJzeXN0ZW0iLAogICAgICAgICAgICAgICJyYWRpdXMiOiAicm91bmRlZCIsCiAgICAgICAgICAgICAgImRlbnNpdHkiOiAiY29tZm9ydGFibGUiLAogICAgICAgICAgICAgICJsYXlvdXQiOiAiY2xhc3NpYyIKICAgICAgICAgICAgfQogICAgICAgICAgfSwKICAgICAgICAgICJidWlsdEluIjogdHJ1ZQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImRlZmluaXRpb24iOiB7CiAgICAgICAgICAgICJmb3JtYXRWZXJzaW9uIjogMSwKICAgICAgICAgICAgImlkIjogImJ1aWx0aW4ubGlsYWMiLAogICAgICAgICAgICAibmFtZSI6ICLmmq7lsbHntKsiLAogICAgICAgICAgICAidmVyc2lvbiI6ICIxLjAuMCIsCiAgICAgICAgICAgICJhdXRob3IiOiAi5bWM5YWl5byP5Yi36aKY5pysIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIuS9jumlseWSjOe0q++8jOaflOWSjOiIkuWxlSIsCiAgICAgICAgICAgICJsaWNlbnNlIjogIuW6lOeUqOWGhee9ruinhuiniemihOiuviIsCiAgICAgICAgICAgICJsaWdodCI6IHsKICAgICAgICAgICAgICAiYmFja2dyb3VuZCI6ICIjZjVmM2Y4IiwKICAgICAgICAgICAgICAic3VyZmFjZSI6ICIjZmNmYWZkIiwKICAgICAgICAgICAgICAic2lkZWJhciI6ICIjZWVlOWY0IiwKICAgICAgICAgICAgICAidGV4dCI6ICIjMzgyZTQ3IiwKICAgICAgICAgICAgICAibXV0ZWQiOiAiIzcxNjE3ZiIsCiAgICAgICAgICAgICAgImxpbmUiOiAiI2UwZDdlOSIsCiAgICAgICAgICAgICAgImFjY2VudCI6ICIjNzc1MTllIiwKICAgICAgICAgICAgICAiYWNjZW50U29mdCI6ICIjZWZlNmY4IiwKICAgICAgICAgICAgICAiYWNjZW50SW5rIjogIiNmZmZmZmYiLAogICAgICAgICAgICAgICJjb2RlQmFja2dyb3VuZCI6ICIjZjVmMGZhIiwKICAgICAgICAgICAgICAiZXJyb3IiOiAiI2FjMzUyZSIsCiAgICAgICAgICAgICAgImVycm9yU29mdCI6ICIjZmZmMWVlIiwKICAgICAgICAgICAgICAiY29kZUtleXdvcmQiOiAiIzgxNTViYiIsCiAgICAgICAgICAgICAgImNvZGVWYWx1ZSI6ICIjMmQ3NjY0IiwKICAgICAgICAgICAgICAiZm9jdXMiOiAiIzc3NTE5ZSIsCiAgICAgICAgICAgICAgInN1Y2Nlc3MiOiAiIzIxNmI1MiIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgImRhcmsiOiB7CiAgICAgICAgICAgICAgImJhY2tncm91bmQiOiAiIzIxMWIyOSIsCiAgICAgICAgICAgICAgInN1cmZhY2UiOiAiIzJiMjMzNCIsCiAgICAgICAgICAgICAgInNpZGViYXIiOiAiIzI2MWYzMCIsCiAgICAgICAgICAgICAgInRleHQiOiAiI2VkZTVmNiIsCiAgICAgICAgICAgICAgIm11dGVkIjogIiNiZmFmY2YiLAogICAgICAgICAgICAgICJsaW5lIjogIiM0YzNlNWMiLAogICAgICAgICAgICAgICJhY2NlbnQiOiAiI2QwYjNmMCIsCiAgICAgICAgICAgICAgImFjY2VudFNvZnQiOiAiIzQ0MzI1MyIsCiAgICAgICAgICAgICAgImFjY2VudEluayI6ICIjMTQyNTFjIiwKICAgICAgICAgICAgICAiY29kZUJhY2tncm91bmQiOiAiIzIxMTkyOSIsCiAgICAgICAgICAgICAgImVycm9yIjogIiNmZmI0YTgiLAogICAgICAgICAgICAgICJlcnJvclNvZnQiOiAiIzNlMjkyNSIsCiAgICAgICAgICAgICAgImNvZGVLZXl3b3JkIjogIiNkNGI1ZmYiLAogICAgICAgICAgICAgICJjb2RlVmFsdWUiOiAiIzliZDhiZiIsCiAgICAgICAgICAgICAgImZvY3VzIjogIiNkMGIzZjAiLAogICAgICAgICAgICAgICJzdWNjZXNzIjogIiM5N2Q3YjYiCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJwcmVzZW50YXRpb24iOiB7CiAgICAgICAgICAgICAgImZvbnQiOiAic3lzdGVtIiwKICAgICAgICAgICAgICAicmFkaXVzIjogInJvdW5kZWQiLAogICAgICAgICAgICAgICJkZW5zaXR5IjogImNvbWZvcnRhYmxlIiwKICAgICAgICAgICAgICAibGF5b3V0IjogImNsYXNzaWMiCiAgICAgICAgICAgIH0KICAgICAgICAgIH0sCiAgICAgICAgICAiYnVpbHRJbiI6IHRydWUKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJkZWZpbml0aW9uIjogewogICAgICAgICAgICAiZm9ybWF0VmVyc2lvbiI6IDEsCiAgICAgICAgICAgICJpZCI6ICJidWlsdGluLmNsYXVkZSIsCiAgICAgICAgICAgICJuYW1lIjogIkNsYXVkZSDpo47moLwiLAogICAgICAgICAgICAidmVyc2lvbiI6ICIxLjAuMCIsCiAgICAgICAgICAgICJhdXRob3IiOiAi5bWM5YWl5byP5Yi36aKY5pysIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIumdnuWumOaWueinhuiniemihOiuviDCtyDmmpbkuK3mgKfoibLkuI7kuJPms6jlrabkuaDlt6XkvZzljLoiLAogICAgICAgICAgICAibGljZW5zZSI6ICLlupTnlKjlhoXnva7op4bop4npooTorr7vvIzml6Dlrpjmlrnlk4HniYzntKDmnZAiLAogICAgICAgICAgICAibGlnaHQiOiB7CiAgICAgICAgICAgICAgImJhY2tncm91bmQiOiAiI2Y3ZjZmMiIsCiAgICAgICAgICAgICAgInN1cmZhY2UiOiAiI2ZmZmZmZiIsCiAgICAgICAgICAgICAgInNpZGViYXIiOiAiI2YwZWVlOCIsCiAgICAgICAgICAgICAgInRleHQiOiAiIzI5MjcyNCIsCiAgICAgICAgICAgICAgIm11dGVkIjogIiM3NDZlNjUiLAogICAgICAgICAgICAgICJsaW5lIjogIiNlM2RmZDciLAogICAgICAgICAgICAgICJhY2NlbnQiOiAiI2E4NGQzNSIsCiAgICAgICAgICAgICAgImFjY2VudFNvZnQiOiAiI2Y3ZTllMiIsCiAgICAgICAgICAgICAgImFjY2VudEluayI6ICIjZmZmZmZmIiwKICAgICAgICAgICAgICAiY29kZUJhY2tncm91bmQiOiAiI2Y0ZjJlZCIsCiAgICAgICAgICAgICAgImVycm9yIjogIiNhMTJmMjkiLAogICAgICAgICAgICAgICJlcnJvclNvZnQiOiAiI2ZmZjBlZCIsCiAgICAgICAgICAgICAgImNvZGVLZXl3b3JkIjogIiM3NjUxYTEiLAogICAgICAgICAgICAgICJjb2RlVmFsdWUiOiAiIzM4NmI0YiIsCiAgICAgICAgICAgICAgImZvY3VzIjogIiNhODRkMzUiLAogICAgICAgICAgICAgICJzdWNjZXNzIjogIiMzODZiNGIiCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJkYXJrIjogewogICAgICAgICAgICAgICJiYWNrZ3JvdW5kIjogIiMxZTFjMTkiLAogICAgICAgICAgICAgICJzdXJmYWNlIjogIiMyNzI0MjAiLAogICAgICAgICAgICAgICJzaWRlYmFyIjogIiMyMjIwMWQiLAogICAgICAgICAgICAgICJ0ZXh0IjogIiNlZGU4ZGYiLAogICAgICAgICAgICAgICJtdXRlZCI6ICIjYjliMGEzIiwKICAgICAgICAgICAgICAibGluZSI6ICIjNDk0MzNiIiwKICAgICAgICAgICAgICAiYWNjZW50IjogIiNlMmEwODgiLAogICAgICAgICAgICAgICJhY2NlbnRTb2Z0IjogIiM0NjMxMjciLAogICAgICAgICAgICAgICJhY2NlbnRJbmsiOiAiIzI4MWMxNiIsCiAgICAgICAgICAgICAgImNvZGVCYWNrZ3JvdW5kIjogIiMxOTE3MTUiLAogICAgICAgICAgICAgICJlcnJvciI6ICIjZmZiNGE4IiwKICAgICAgICAgICAgICAiZXJyb3JTb2Z0IjogIiM0MjI4MjQiLAogICAgICAgICAgICAgICJjb2RlS2V5d29yZCI6ICIjZDFiNWYwIiwKICAgICAgICAgICAgICAiY29kZVZhbHVlIjogIiNhN2M1YTUiLAogICAgICAgICAgICAgICJmb2N1cyI6ICIjZTJhMDg4IiwKICAgICAgICAgICAgICAic3VjY2VzcyI6ICIjYTdjNWE1IgogICAgICAgICAgICB9LAogICAgICAgICAgICAicHJlc2VudGF0aW9uIjogewogICAgICAgICAgICAgICJmb250IjogInN5c3RlbSIsCiAgICAgICAgICAgICAgInJhZGl1cyI6ICJzb2Z0IiwKICAgICAgICAgICAgICAiZGVuc2l0eSI6ICJjb21mb3J0YWJsZSIsCiAgICAgICAgICAgICAgImxheW91dCI6ICJzdHVkeSIKICAgICAgICAgICAgfQogICAgICAgICAgfSwKICAgICAgICAgICJidWlsdEluIjogdHJ1ZQogICAgICAgIH0KICAgICAgXSwKICAgICAgImlzc3VlcyI6IFsKICAgICAgICB7CiAgICAgICAgICAiaWQiOiAibG9jYWwuY2lyY3VpdC1ibHVlIiwKICAgICAgICAgICJtZXNzYWdlIjogIuS4u+mimOmFjee9ruaNn+Wdj++8jOW3suaaguaXtuWBnOeUqOOAguivt+WNuOi9veWQjumHjeaWsOWuieijheOAgiIKICAgICAgICB9CiAgICAgIF0KICAgIH0sCiAgICAicmV0YWluZWRDb3JydXB0U2VsZWN0aW9uIjogewogICAgICAidGhlbWUiOiAiZGFyayIsCiAgICAgICJwYWxldHRlIjogImZvcmVzdCIsCiAgICAgICJmb250U2l6ZSI6IDIyLAogICAgICAidGhlbWVJZCI6ICJsb2NhbC5jaXJjdWl0LWJsdWUiLAogICAgICAibmF2aWdhdGlvbkNvbGxhcHNlZCI6IHRydWUsCiAgICAgICJhdXhpbGlhcnlIaWRkZW4iOiB0cnVlCiAgICB9LAogICAgInJlamVjdENvcnJ1cHRBcHBseSI6ICJFcnJvciIsCiAgICAiaW50ZWdyaXR5IjogWwogICAgICB7CiAgICAgICAgImludGVncml0eV9jaGVjayI6ICJvayIKICAgICAgfQogICAgXSwKICAgICJmb3JlaWduS2V5cyI6IFtdCiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "444b55c435f96a57759f-1d6695d529b672cd45d9",
+          "file": "themes-database.spec.ts",
+          "line": 8,
+          "column": 7
+        },
+        {
+          "title": "主题数据库/capacity：真实版本/容量/故障回滚与原学习数据保护",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1303,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T05:21:13.738Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "theme-database.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJpZGVudGl0eSI6IHsKICAgICJleGUiOiAiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcbm9kZV9tb2R1bGVzXFxlbGVjdHJvblxcZGlzdFxcZWxlY3Ryb24uZXhlIiwKICAgICJ1c2VyRGF0YSI6ICJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtbUg2Zk5YIiwKICAgICJwYWNrYWdlZCI6IGZhbHNlLAogICAgInZlcnNpb24iOiAiNDIuMTEuMTUiCiAgfSwKICAicmVwb3J0IjogewogICAgImNvdW50IjogMTAwLAogICAgIm92ZXJMaW1pdCI6ICJUSEVNRV9MSU1JVCIsCiAgICAidXBkYXRlQXRMaW1pdCI6ICJvayIsCiAgICAicmVwZWF0QXRMaW1pdCI6ICJvayIsCiAgICAiYnVpbHRpbkluc3RhbGwiOiAiVEhFTUVfQ09ORkxJQ1QiLAogICAgImJ1aWx0aW5SZW1vdmUiOiAiVEhFTUVfQ09ORkxJQ1QiLAogICAgImZpbmFsQ291bnQiOiAxMDAsCiAgICAiaW50ZWdyaXR5IjogWwogICAgICB7CiAgICAgICAgImludGVncml0eV9jaGVjayI6ICJvayIKICAgICAgfQogICAgXSwKICAgICJmb3JlaWduS2V5cyI6IFtdCiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "444b55c435f96a57759f-bfdce3501e3be1e1bd8b",
+          "file": "themes-database.spec.ts",
+          "line": 8,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "themes-window.spec.ts",
+      "file": "themes-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "两个外部主题独立预览/安装/应用，源文件删除后重开、版本更新与卸载均保留学习记录",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2982,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T05:21:15.056Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "293046f217e97aec7bb1-84cdf785015f0d5c9eb8",
+          "file": "themes-window.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "练习中跨布局切换、导航折叠与辅助隐藏保持同一输入/队列/答案边界，正常退出重开保留偏好和最后草稿",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 32436,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-window.spec.ts",
+                        "column": 19,
+                        "line": 113
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '应用所选主题', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\">应用所选主题</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <a title=\"开始练习\" href=\"#practice\" aria-label=\"开始练习\" aria-current=\"page\" aria-disabled=\"true\">…</a> from <nav aria-label=\"主要页面\" class=\"page-navigation\">…</nav> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <a title=\"开始练习\" href=\"#practice\" aria-label=\"开始练习\" aria-current=\"page\" aria-disabled=\"true\">…</a> from <nav aria-label=\"主要页面\" class=\"page-navigation\">…</nav> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <a title=\"开始练习\" href=\"#practice\" aria-label=\"开始练习\" aria-current=\"page\" aria-disabled=\"true\">…</a> from <nav aria-label=\"主要页面\" class=\"page-navigation\">…</nav> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  111 |       await page.getByLabel('快捷主题选择', { exact: true }).selectOption(id)\n  112 |       const apply = page.getByRole('button', { name: '应用所选主题', exact: true })\n> 113 |       await apply.click()\n      |                   ^\n  114 |       await expect(page.locator('html')).toHaveAttribute('data-theme-id', id)\n  115 |       await expect(apply).toBeFocused()\n  116 |       await expect(editor).toHaveValue(draft)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-window.spec.ts:113:19"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T05:21:18.044Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\themes-20261025\\window-dev-02\\themes-window-练习中跨布局切换、导航折-f0400-一输入-队列-答案边界，正常退出重开保留偏好和最后草稿-development\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "293046f217e97aec7bb1-d6c396c14d90dfa79969",
+          "file": "themes-window.spec.ts",
+          "line": 95,
+          "column": 5
+        },
+        {
+          "title": "安装写入失败与提交后响应丢失均保留请求，原操作重试安全且外观不提前应用",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1288,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T05:21:50.851Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "293046f217e97aec7bb1-c0bf2add36e310bf3c68",
+          "file": "themes-window.spec.ts",
+          "line": 157,
+          "column": 5
+        },
+        {
+          "title": "当前外部配置损坏临时回退并保留原选择，恢复默认仅改变显示设置",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2226,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T05:21:52.162Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "293046f217e97aec7bb1-7f7ec6d765d40a060537",
+          "file": "themes-window.spec.ts",
+          "line": 210,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-25T05:21:11.967Z",
+    "duration": 42453.114,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

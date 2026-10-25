@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:2524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\themes-window.spec.ts:253:5 › 主题数据库读取失败明确报错，不伪造空目录或默认成功，修复后可重新读取 (1.4s)
+
+  1 passed (2.0s)

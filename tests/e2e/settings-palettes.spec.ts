@@ -38,7 +38,7 @@ async function choose(
   await page.getByLabel('正文字号', { exact: true }).selectOption(String(fontSize))
 }
 async function save(page: Page) {
-  await page.getByRole('button', { name: '保存显示设置', exact: true }).click()
+  await page.getByRole('button', { name: '保存并应用', exact: true }).click()
   await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
 }
 async function closeNormally(application: ElectronApplication) {
@@ -162,7 +162,7 @@ test('配色真实写失败/丢响应保留选择，键盘切换后正常重开�
       false,
     )
     await choose(page, '晴空蓝', 'dark', 22)
-    await page.getByRole('button', { name: '保存显示设置', exact: true }).click()
+    await page.getByRole('button', { name: '保存并应用', exact: true }).click()
     await expect(page.getByRole('alert')).toContainText('显示设置暂不可用')
     await expect(page.getByRole('radio', { name: '晴空蓝', exact: true })).toBeChecked()
     await expect(page.locator('html')).toHaveAttribute('data-palette', 'forest')
@@ -185,11 +185,11 @@ test('配色真实写失败/丢响应保留选择，键盘切换后正常重开�
         return result
       })
     })
-    await page.getByRole('button', { name: '重试保存显示设置', exact: true }).click()
+    await page.getByRole('button', { name: '重试保存并应用', exact: true }).click()
     await expect(page.getByRole('alert')).toContainText('显示设置保存结果尚未确认')
     expect(stored(testDataDirectory)).toEqual({ theme: 'dark', palette: 'ocean', fontSize: 22 })
     await expect(page.locator('html')).toHaveAttribute('data-palette', 'forest')
-    await page.getByRole('button', { name: '重试保存显示设置', exact: true }).click()
+    await page.getByRole('button', { name: '重试保存并应用', exact: true }).click()
     await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
     const ocean = page.getByRole('radio', { name: '晴空蓝', exact: true })
     await ocean.focus()
@@ -241,11 +241,12 @@ test('损坏配色明确报错且不伪造默认成功，修复重读保持学�
     await expect(page.getByRole('alert')).toContainText('显示设置暂不可用')
     await openPage(page, '设置与数据')
     await expect(page.getByRole('radio')).toHaveCount(0)
-    await expect(page.getByRole('button', { name: '保存显示设置', exact: true })).toHaveCount(0)
+    await expect(page.getByRole('button', { name: '保存并应用', exact: true })).toHaveCount(0)
     expect(stored(testDataDirectory)).toEqual({ theme: 'system', palette: 'custom', fontSize: 17 })
     withHistoryDatabase(
       testDataDirectory,
-      (database) => database.exec("UPDATE appearance_settings SET palette='lilac'"),
+      (database) =>
+        database.exec("UPDATE appearance_settings SET palette='lilac',theme_id='builtin.lilac'"),
       false,
     )
     await page.getByRole('button', { name: '重试读取显示设置', exact: true }).click()

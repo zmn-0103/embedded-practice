@@ -1,0 +1,11 @@
+
+Running 4 tests using 1 worker
+
+(node:23396) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\themes-window.spec.ts:18:5 › 两个外部主题独立预览/安装/应用，源文件删除后重开、版本更新与卸载均保留学习记录 (2.8s)
+  ok 2 [development] › tests\e2e\themes-window.spec.ts:95:5 › 练习中跨布局切换、导航折叠与辅助隐藏保持同一输入/队列/答案边界，正常退出重开保留偏好和最后草稿 (3.1s)
+  ok 3 [development] › tests\e2e\themes-window.spec.ts:157:5 › 安装写入失败与提交后响应丢失均保留请求，原操作重试安全且外观不提前应用 (1.3s)
+  ok 4 [development] › tests\e2e\themes-window.spec.ts:210:5 › 当前外部配置损坏临时回退并保留原选择，恢复默认仅改变显示设置 (2.2s)
+
+  4 passed (9.9s)

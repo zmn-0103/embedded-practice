@@ -60,12 +60,22 @@ test('结构8方案升级：只追加空方案表，原分类/条件/草稿/自�
   testDataDirectory,
 }, info) => {
   const original = await legacy(testDataDirectory),
-    expected = { ...original.before, practice_plans: [] }
+    expected = {
+      ...original.before,
+      practice_plans: [],
+      installed_themes: [],
+      appearance_settings: original.before.appearance_settings!.map((row) => ({
+        ...row,
+        theme_id: `builtin.${row['palette']}`,
+        navigation_collapsed: 0,
+        auxiliary_hidden: 0,
+      })),
+    }
   const { application, page } = await launchApplication(testDataDirectory, info.project.name)
   try {
     expect(withHistoryDatabase(testDataDirectory, records)).toEqual(expected)
     withHistoryDatabase(testDataDirectory, (db) => {
-      expect(db.prepare('PRAGMA user_version').get()).toEqual({ user_version: 9 })
+      expect(db.prepare('PRAGMA user_version').get()).toEqual({ user_version: 10 })
       expect(db.prepare('PRAGMA foreign_key_check').all()).toEqual([])
       expect(
         db

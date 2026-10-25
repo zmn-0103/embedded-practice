@@ -79,7 +79,7 @@ test('设置显示实际中文空格数据位置，读取无副作用，三种�
       await openPage(page, '设置与数据')
       await page.getByLabel('显示主题', { exact: true }).selectOption('dark')
       await page.getByLabel('正文字号', { exact: true }).selectOption('22')
-      await page.getByRole('button', { name: '保存显示设置', exact: true }).click()
+      await page.getByRole('button', { name: '保存并应用', exact: true }).click()
       await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
       const before = historySnapshot(root),
         status = await readAppStatus(page)
@@ -286,7 +286,7 @@ test('目录打开处理中锁定设置备份导航，正常关闭等待在途�
       .getByRole('button', { name: '打开日志文件夹', exact: true })
       .click()
     await expect.poll(() => folderPaths(application)).toEqual([join(testDataDirectory, 'logs')])
-    await expect(page.getByRole('button', { name: '保存显示设置', exact: true })).toBeDisabled()
+    await expect(page.getByRole('button', { name: '保存并应用', exact: true })).toBeDisabled()
     await expect(page.getByRole('button', { name: '导出完整备份', exact: true })).toBeDisabled()
     await expect(
       page

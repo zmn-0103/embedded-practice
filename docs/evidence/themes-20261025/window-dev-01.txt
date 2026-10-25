@@ -1,0 +1,43 @@
+
+Running 4 tests using 1 worker
+
+(node:13088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\themes-window.spec.ts:18:5 › 两个外部主题独立预览/安装/应用，源文件删除后重开、版本更新与卸载均保留学习记录 (4.3s)
+  x  2 [development] › tests\e2e\themes-window.spec.ts:95:5 › 练习中跨布局切换、导航折叠与辅助隐藏保持同一输入/队列/答案边界，正常退出重开保留偏好和最后草稿 (12.1s)
+(node:7372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 3 [development] › tests\e2e\themes-window.spec.ts:157:5 › 安装写入失败与提交后响应丢失均保留请求，原操作重试安全且外观不提前应用 (1.4s)
+  ok 4 [development] › tests\e2e\themes-window.spec.ts:210:5 › 当前外部配置损坏临时回退并保留原选择，恢复默认仅改变显示设置 (2.1s)
+
+
+  1) [development] › tests\e2e\themes-window.spec.ts:95:5 › 练习中跨布局切换、导航折叠与辅助隐藏保持同一输入/队列/答案边界，正常退出重开保留偏好和最后草稿 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('button', { name: '应用所选主题', exact: true })
+    Expected: focused
+    Received: inactive
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeFocused" getByRole('button', { name: '应用所选主题', exact: true }) with timeout 10000ms
+      - waiting for getByRole('button', { name: '应用所选主题', exact: true })
+        24 × locator resolved to <button type="button">应用所选主题</button>
+           - unexpected value "inactive"
+
+
+      113 |       await apply.click()
+      114 |       await expect(page.locator('html')).toHaveAttribute('data-theme-id', id)
+    > 115 |       await expect(apply).toBeFocused()
+          |                           ^
+      116 |       await expect(editor).toHaveValue(draft)
+      117 |       expect(await editor.evaluate((element) => Reflect.get(element, 'themeIdentityProbe'))).toBe(
+      118 |         'same-editor',
+        at E:\My_Projects\embedded-practice\tests\e2e\themes-window.spec.ts:115:27
+
+    Error Context: docs\evidence\themes-20261025\window-dev-01\themes-window-练习中跨布局切换、导航折-f0400-一输入-队列-答案边界，正常退出重开保留偏好和最后草稿-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\themes-window.spec.ts:95:5 › 练习中跨布局切换、导航折叠与辅助隐藏保持同一输入/队列/答案边界，正常退出重开保留偏好和最后草稿 
+  3 passed (21.6s)

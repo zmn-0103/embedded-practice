@@ -90,7 +90,7 @@ test('预览后来源移动，80 题与三种图片原子入库并跨进程读�
     expect(report.questions).toEqual(expectedQuestions)
     expect(report.resources).toEqual(expectedResources)
     expect(report).toMatchObject({
-      schemaVersion: 9,
+      schemaVersion: 10,
       oldToken: { ok: false, error: { code: 'INVALID_TOKEN' } },
       foreignKeys: [],
       errors: [],
@@ -228,7 +228,7 @@ test('旧 M0 库迁移前备份可读，原启动记录与数据保留且升级�
       filePaths: [],
     })
     expect(report).toMatchObject({
-      schemaVersion: 9,
+      schemaVersion: 10,
       counts: { topics: 0, questions: 0 },
       foreignKeys: [],
       errors: [],

@@ -1,4 +1,6 @@
 import { z } from 'zod'
+import { appearanceSchema } from './settings'
+import { MAX_INSTALLED_THEMES } from './themes'
 
 export const BACKUP_CHANNELS = {
   export: 'backup:export',
@@ -14,6 +16,8 @@ export const backupSummarySchema = z.strictObject({
   requiresMigration: z.boolean(),
   categories: count,
   practicePlans: count,
+  installedThemes: count.max(MAX_INSTALLED_THEMES),
+  appearance: appearanceSchema,
   topics: count,
   questions: count,
   archivedQuestions: count,

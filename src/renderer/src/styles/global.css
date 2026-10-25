@@ -1,63 +1,5 @@
-:root,
-.theme-swatch,
-.appearance-preview {
-  --background: light-dark(#f5f6f4, #141b18);
-  --surface: light-dark(#fcfdfb, #1b2420);
-  --sidebar: light-dark(#edefec, #17201c);
-  --text: light-dark(#20332d, #e4ede7);
-  --muted: light-dark(#5d7067, #acbdb2);
-  --line: light-dark(#d5e1da, #384b3e);
-  --accent: light-dark(#216b52, #97d7b6);
-  --accent-soft: light-dark(#e7f1ec, #2a4134);
-  --accent-ink: light-dark(#ffffff, #14251c);
-  --code-background: light-dark(#f3f6f5, #111b16);
-  --error: light-dark(#ac352e, #ffb4a8);
-  --error-soft: light-dark(#fff1ee, #3e2925);
-  --code-keyword: light-dark(#8155bb, #d4b5ff);
-  --code-value: light-dark(#277d58, #9bd6b4);
-}
-
-[data-palette='ocean'] {
-  --background: light-dark(#f3f5f8, #141b29);
-  --surface: light-dark(#fafcfe, #1e2735);
-  --sidebar: light-dark(#e9eef7, #182133);
-  --text: light-dark(#24334b, #e3ebfa);
-  --muted: light-dark(#5c6d85, #aabbd5);
-  --line: light-dark(#d5dfed, #374c69);
-  --accent: light-dark(#285fc1, #a0c2ff);
-  --accent-soft: light-dark(#e7effd, #2a3e61);
-  --code-background: light-dark(#f1f5fc, #131d30);
-  --code-value: light-dark(#1b746c, #86d7cf);
-}
-
-[data-palette='sand'] {
-  --background: light-dark(#f7f4ee, #241e16);
-  --surface: light-dark(#fdfaf4, #2e271e);
-  --sidebar: light-dark(#f0ebe0, #2a241b);
-  --text: light-dark(#413725, #f1e7d5);
-  --muted: light-dark(#786747, #c8b99b);
-  --line: light-dark(#e5dac5, #534631);
-  --accent: light-dark(#91601e, #ebc47e);
-  --accent-soft: light-dark(#f5ead2, #4a3c23);
-  --code-background: light-dark(#f7f1e5, #241e15);
-  --code-value: light-dark(#377152, #a4d0ad);
-}
-
-[data-palette='lilac'] {
-  --background: light-dark(#f5f3f8, #211b29);
-  --surface: light-dark(#fcfafd, #2b2334);
-  --sidebar: light-dark(#eee9f4, #261f30);
-  --text: light-dark(#382e47, #ede5f6);
-  --muted: light-dark(#71617f, #bfafcf);
-  --line: light-dark(#e0d7e9, #4c3e5c);
-  --accent: light-dark(#77519e, #d0b3f0);
-  --accent-soft: light-dark(#efe6f8, #443253);
-  --code-background: light-dark(#f5f0fa, #211929);
-  --code-value: light-dark(#2d7664, #9bd8bf);
-}
-
 :root {
-  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', 'Segoe UI', sans-serif;
+  font-family: var(--theme-font);
   font-size: var(--reading-font-size, 17px);
   line-height: 1.6;
   font-variant-numeric: tabular-nums;
@@ -887,7 +829,7 @@ select,
   cursor: default;
 }
 .page-navigation a:focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--focus);
   outline-offset: 3px;
 }
 .settings-pane {
@@ -954,7 +896,7 @@ select,
   box-shadow: 0 0 0 1px var(--accent);
 }
 .theme-choice:focus-within {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--focus);
   outline-offset: 3px;
 }
 .theme-choice input {
@@ -1291,7 +1233,7 @@ summary:focus-visible,
   outline: none;
   box-shadow:
     0 0 0 2px var(--surface),
-    0 0 0 4px var(--accent);
+    0 0 0 4px var(--focus);
 }
 
 footer {

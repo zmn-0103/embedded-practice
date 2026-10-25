@@ -47,17 +47,17 @@ async function runtime(
   expect(actual.packaged).toBe(info.project.name === 'packaged')
   expect(actual.name).toBe(actual.packaged ? 'embedded-practice' : 'Electron')
   expect(actual.electron).toBe('42.11.15')
-  expect(actual.version).toBe(actual.packaged ? '0.0.0' : '42.11.15')
+  expect(actual.version).toBe(actual.packaged ? '0.0.1' : '42.11.15')
   if (actual.packaged)
     expect(resolve(actual.executable)).toBe(
       resolve(process.env['EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE']!),
     )
   else expect(resolve(actual.appPath)).toBe(resolve('out/main'))
   await expect(page.locator('footer span').last()).toHaveText(
-    `V${actual.version} 测试版 · 构建 20261024.4-v000`,
+    `V${actual.version} 测试版 · 构建 20261025.2-v001`,
   )
   expect(withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())).toEqual({
-    user_version: 9,
+    user_version: 10,
   })
   await info.attach('runtime.json', {
     body: JSON.stringify(actual),

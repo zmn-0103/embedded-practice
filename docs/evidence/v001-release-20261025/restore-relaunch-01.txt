@@ -1,0 +1,11 @@
+
+Running 2 tests using 1 worker
+
+(node:33884) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\restore-window.spec.ts:223:5 › 全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容 (6.5s)
+(node:35456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [packaged] › tests\e2e\restore-window.spec.ts:223:5 › 全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容 (6.7s)
+
+  2 passed (14.3s)

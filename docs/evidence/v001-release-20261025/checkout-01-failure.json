@@ -1,0 +1,10 @@
+{
+  "stage": "本地Git独立检出探针，提交尚未执行",
+  "result": "failed",
+  "reason": "Windows Git默认长路径限制，嵌套证据截图路径超过限制；不涉及应用运行或数据升级",
+  "firstCommand": "git checkout-index --prefix=E:/My_Projects/embedded-practice/.cache/v001-staging/checkout/ -z --stdin",
+  "firstErrorExcerpt": "error: unable to create file E:/My_Projects/embedded-practice/.cache/v001-staging/checkout/docs/evidence/themes-20261025/layout-dev-01/themes-layout-Claude-风格：五页-d9d21--15与22px-900与1440窗口-离线无远程资源-development/attachments/builtin-claude-dark-900-png-fecedf9d808f8aa27d539504d757083b3c00ccf2.png: Filename too long",
+  "originalConsoleOutputWasTruncated": true,
+  "applicationOrEvidenceSourceFilesChanged": false,
+  "followup": "只对下一次Git调用传入-c core.longpaths=true，不修改系统/仓库全局配置，不改名或删除原证据"
+}

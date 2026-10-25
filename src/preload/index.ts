@@ -36,6 +36,11 @@ import {
 import { LEARNING_CHANNEL, learningResultSchema } from '../shared/contracts/learning'
 import { SETTINGS_CHANNELS, settingsResultSchema } from '../shared/contracts/settings'
 import {
+  THEME_CHANNELS,
+  themeCatalogResultSchema,
+  themePreviewResultSchema,
+} from '../shared/contracts/themes'
+import {
   BACKUP_CHANNELS,
   backupResultSchema,
   backupPreviewResultSchema,
@@ -100,6 +105,15 @@ const desktopApi: DesktopApi = {
     read: async () => settingsResultSchema.parse(await ipcRenderer.invoke(SETTINGS_CHANNELS.read)),
     save: async (settings) =>
       settingsResultSchema.parse(await ipcRenderer.invoke(SETTINGS_CHANNELS.save, settings)),
+  },
+  themes: {
+    list: async () => themeCatalogResultSchema.parse(await ipcRenderer.invoke(THEME_CHANNELS.list)),
+    preview: async () =>
+      themePreviewResultSchema.parse(await ipcRenderer.invoke(THEME_CHANNELS.preview)),
+    install: async (input) =>
+      themeCatalogResultSchema.parse(await ipcRenderer.invoke(THEME_CHANNELS.install, input)),
+    uninstall: async (input) =>
+      themeCatalogResultSchema.parse(await ipcRenderer.invoke(THEME_CHANNELS.uninstall, input)),
   },
   backup: {
     export: async () => backupResultSchema.parse(await ipcRenderer.invoke(BACKUP_CHANNELS.export)),

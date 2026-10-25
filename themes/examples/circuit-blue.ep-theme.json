@@ -1,0 +1,51 @@
+{
+  "formatVersion": 1,
+  "id": "local.circuit-blue",
+  "name": "电路夜航",
+  "version": "1.0.0",
+  "author": "嵌入式刷题本示例",
+  "description": "清晰蓝色与圆润面板，宽松学习工作区；浅色与深色均可独立选择。",
+  "license": "CC0-1.0（仅此示例配置）",
+  "light": {
+    "background": "#edf2f8",
+    "surface": "#ffffff",
+    "sidebar": "#e3ebf6",
+    "text": "#203147",
+    "muted": "#526681",
+    "line": "#c9d6e8",
+    "accent": "#2458a8",
+    "accentSoft": "#e0eafb",
+    "accentInk": "#ffffff",
+    "codeBackground": "#eef3fa",
+    "error": "#a12f29",
+    "errorSoft": "#fff0ed",
+    "codeKeyword": "#704991",
+    "codeValue": "#235e57",
+    "focus": "#2458a8",
+    "success": "#235e57"
+  },
+  "dark": {
+    "background": "#111923",
+    "surface": "#192535",
+    "sidebar": "#152030",
+    "text": "#e2edf9",
+    "muted": "#a8bdd6",
+    "line": "#354c69",
+    "accent": "#91bcf6",
+    "accentSoft": "#263e61",
+    "accentInk": "#122239",
+    "codeBackground": "#0d1520",
+    "error": "#ffb4a8",
+    "errorSoft": "#422824",
+    "codeKeyword": "#d1b5f0",
+    "codeValue": "#8dd5c2",
+    "focus": "#91bcf6",
+    "success": "#8dd5c2"
+  },
+  "presentation": {
+    "font": "system",
+    "radius": "rounded",
+    "density": "comfortable",
+    "layout": "study"
+  }
+}

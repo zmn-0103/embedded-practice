@@ -1,0 +1,14 @@
+
+Running 7 tests using 1 worker
+
+(node:24904) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 松间绿：五页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (2.9s)
+  ok 2 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 晴空蓝：五页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.0s)
+  ok 3 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 暖沙金：五页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (2.8s)
+  ok 4 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 暮山紫：五页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (2.8s)
+  ok 5 [development] › tests\e2e\themes-layout.spec.ts:34:7 › Claude 风格：五页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.0s)
+  ok 6 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 纸页墨色：五页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.0s)
+  ok 7 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 电路夜航：五页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.0s)
+
+  7 passed (21.1s)
