@@ -87,6 +87,8 @@ async function writeJournal(directory: string, journal: Journal) {
 }
 
 // 日志发布前中断：原文件尚未移动、候选也未安装，只需清理本事务自己的文件。
+// 可清理的窗口有三处：仅建好目录、已复制候选（含复制未完成）、record.next 已写但未发布；
+// 原文件移动严格发生在 writeJournal 之后，因此缺少 record.json 即可排除已移动。
 // 出现原文件副本、回退副本或任何未知文件时无法证明数据库未被移动，一律保留现场。
 async function discardUnpublishedTransaction(
   database: string,
@@ -95,7 +97,6 @@ async function discardUnpublishedTransaction(
   const names = await readdir(directory)
   const unpublished = new Set(['record.next', 'candidate.sqlite3'])
   if (names.some((name) => !unpublished.has(name))) return false
-  if (names.length > 0 && !names.includes('record.next')) return false
   if (!(await fileExists(database))) return false
   await rm(directory, { recursive: true })
   return true

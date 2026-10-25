@@ -36,6 +36,34 @@ describe('启动时的恢复事务检查', () => {
       await expect(readdir(directory)).rejects.toMatchObject({ code: 'ENOENT' })
     }))
 
+  it('只复制到候选副本、日志尚未创建时按未开始清理', () =>
+    withImportDirectory(async (root) => {
+      const databasePath = join(root, 'practice.sqlite3')
+      const directory = join(root, 'restore-transaction')
+      await writeFile(databasePath, '原数据库内容')
+      await mkdir(directory)
+      // 复制候选发生在写日志之前；复制中断留下不完整副本同样属于该状态。
+      await writeFile(join(directory, 'candidate.sqlite3'), '候选副本（可被截断）')
+
+      await expect(recoverDatabaseReplacement(databasePath)).resolves.toBe('none')
+
+      expect(await readFile(databasePath, 'utf8')).toBe('原数据库内容')
+      await expect(readdir(directory)).rejects.toMatchObject({ code: 'ENOENT' })
+    }))
+
+  it('候选副本存在但原库缺失时保留现场并停止启动', () =>
+    withImportDirectory(async (root) => {
+      const directory = join(root, 'restore-transaction')
+      await mkdir(directory)
+      await writeFile(join(directory, 'candidate.sqlite3'), '候选副本')
+
+      await expect(recoverDatabaseReplacement(join(root, 'practice.sqlite3'))).rejects.toThrow(
+        '恢复事务缺少日志',
+      )
+
+      expect(await readdir(directory)).toEqual(['candidate.sqlite3'])
+    }))
+
   it('缺少日志但存在原文件副本时保留现场并停止启动', () =>
     withImportDirectory(async (root) => {
       const databasePath = join(root, 'practice.sqlite3')
