@@ -86,6 +86,21 @@ async function writeJournal(directory: string, journal: Journal) {
   await rename(next, join(directory, 'record.json'))
 }
 
+// 日志发布前中断：原文件尚未移动、候选也未安装，只需清理本事务自己的文件。
+// 出现原文件副本、回退副本或任何未知文件时无法证明数据库未被移动，一律保留现场。
+async function discardUnpublishedTransaction(
+  database: string,
+  directory: string,
+): Promise<boolean> {
+  const names = await readdir(directory)
+  const unpublished = new Set(['record.next', 'candidate.sqlite3'])
+  if (names.some((name) => !unpublished.has(name))) return false
+  if (names.length > 0 && !names.includes('record.next')) return false
+  if (!(await fileExists(database))) return false
+  await rm(directory, { recursive: true })
+  return true
+}
+
 // 必须在打开任何业务连接之前调用；不完整/未知事务一律停止启动，绝不创建空库。
 export async function recoverDatabaseReplacement(databasePath: string) {
   const { database, directory } = await paths(databasePath)
@@ -96,9 +111,12 @@ export async function recoverDatabaseReplacement(databasePath: string) {
     throw error
   }
   await checkDirectory(directory)
-  const journal = journalSchema.parse(
-    JSON.parse(await readFile(join(directory, 'record.json'), 'utf8')),
-  )
+  const journalPath = join(directory, 'record.json')
+  if (!(await fileExists(journalPath))) {
+    if (await discardUnpublishedTransaction(database, directory)) return 'none'
+    throw new Error('恢复事务缺少日志且无法确认原文件未被移动，停止启动并保留全部原文件。')
+  }
+  const journal = journalSchema.parse(JSON.parse(await readFile(journalPath, 'utf8')))
   if (
     !journal.originals.some((file) => file.suffix === '') ||
     new Set(journal.originals.map((file) => file.suffix)).size !== journal.originals.length

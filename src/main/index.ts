@@ -356,9 +356,12 @@ void starting.catch(async (error: unknown) => {
   reportError(error)
   stopping = true
   await closeResources()
+  // 恢复事务、数据库结构与权限失败的处置方式不同，界面须给出实际原因。
+  const reason =
+    error instanceof Error && error.message !== '' ? `\n失败原因：${error.message}` : ''
   dialog.showErrorBox(
     '嵌入式刷题本无法启动',
-    `请检查数据目录权限或本地诊断日志后重新启动。\n数据目录：${app.getPath('userData')}\n诊断日志：${join(app.getPath('userData'), 'logs', 'application.log')}`,
+    `请检查数据目录权限或本地诊断日志后重新启动。${reason}\n数据目录：${app.getPath('userData')}\n诊断日志：${join(app.getPath('userData'), 'logs', 'application.log')}`,
   )
   app.exit(1)
 })
