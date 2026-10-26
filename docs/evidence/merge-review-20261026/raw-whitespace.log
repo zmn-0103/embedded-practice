@@ -1,0 +1,48 @@
+docs/代码复查记录.md:2: trailing whitespace.
++
+docs/代码复查记录.md:3: trailing whitespace.
++## 2026-10-26 主进程数据链路Bug检查（分支 review/bugfix-opt-20261026）
+docs/代码复查记录.md:4: trailing whitespace.
++
+docs/代码复查记录.md:5: trailing whitespace.
++只读审查分两轮覆盖 `src/main` 的 ipc、database、backup、library、workers、解析链路、worker 协议与建表脚本共 49 个文件约 6,950 行（占 7,225 行的 96%），未发现 P0/P1；本轮只修两项 P3，第三项仅记录。恢复事务、迁移回滚、幂等回执与路径越界防护的原有校验全部保留，未改数据库结构、IPC 契约与事务顺序。prepared 回退、committed 校验、`discardUnpublishedTransaction` 白名单与 `checkIntegrity`/`requiredColumns` 逐项核对后维持原状。
+docs/代码复查记录.md:6: trailing whitespace.
++
+docs/代码复查记录.md:7: trailing whitespace.
++- `src/main/database/repositories/practice-repository.ts`：Bug轮确认 `answer: { ...body, ...(answerQuery.get(versionId) as { markdown: string }) }` 用类型断言吞掉 `get()` 的 undefined，`{...undefined}` 展开为空对象后 `markdown` 回落到题干，等于把题目正文冒充参考答案；同函数 291 行对 detail 已有 `if (!detail) throw`，此处缺同级校验，属同类路径上的不一致。触发条件是 `practice_items.version_id` 指向缺失版本，当前受外键与只追加版本约束不可达，定 P3。改为新增 `answerMarkdown(versionId)` 局部函数，取行后判空抛 `练习队列缺少固定答案版本。`，与 detail 的普通 Error 口径一致。优化轮确认：新函数只做取行与判空，复用既有 `answerQuery`，未新增状态、缓存或第二套查询；未改用 `PracticeFault`，避免渲染层把它当成会话冲突；`read` 事务边界、返回结构与 zod 校验点不变。两轮静态复查完成，未新增单元用例（缺失版本行无法在不改表结构的前提下构造）。
+docs/代码复查记录.md:8: trailing whitespace.
++- `src/main/index.ts`：Bug轮复核原第 3 项（`restore-files.ts:184` 的 `mkdir` 位于 try 之外）后改判修复落点。`replaceDatabase` 的两条失败路径都抛 `BackupFault`，会以原始 Error 逃逸的只有这条 `mkdir`；而 `restoreBackup` 的 catch 在非 BackupFault 分支用写死文案 `恢复准备或连接关闭失败，未继续替换。` 覆盖真实错误，导致 EPERM（数据目录只读）等真实原因不进诊断日志、界面又只给通用文案。因此改为 `reportError(error)`，保留原始错误与其栈。未把 `mkdir` 移入 try：此时 `armed` 为 false，catch 会调 `checkDirectory`，目录不存在或不可访问会让它抛错并被内层 catch 判成 `RECOVERY_FAILED`，进而触发 `app.exit(1)` 与“请保留恢复事务目录”的错误指引，风险高于原缺陷。优化轮确认：不新增分支、不改恢复顺序、对话框文案与 `closeDataResources` 的聚合行为，`reportError` 调用点仍在 BackupFault 提前返回之后，不会重复记录已转换的恢复故障。两轮静态复查完成。
+docs/代码复查记录.md:9: trailing whitespace.
++- `src/shared/contracts/practice.ts`：Bug轮确认 `REVEAL_REQUIRED` 在 `navigate` 的 `skip` 方向被用于“本题已经揭晓”这一反向条件，错误码与消息矛盾。`grep` 覆盖 `src/` 与 `tests/` 后确认：唯一断言点是 `tests/e2e/practice.spec.ts` 的 ratingHidden/nextHidden；渲染层只按 `WRITE_FAILED`/`DATABASE_UNAVAILABLE`/`OUTCOME_UNKNOWN` 等具体集合分流，不消费该码；`practice-desktop.ts` 经 `practiceErrorCodeSchema.or(z.literal('FORBIDDEN'))` 自动继承。故在枚举中 `REVEAL_REQUIRED` 之后新增 `ALREADY_REVEALED`，未改其余 13 个码。优化轮确认：新码只服务 skip-已揭晓一处，未引入第二套语义，也未在渲染层复制枚举。两轮静态复查完成。
+docs/代码复查记录.md:10: trailing whitespace.
++- `src/main/database/repositories/practice-repository.ts`（skip 分支）：Bug轮把已揭晓时的错误码由 `REVEAL_REQUIRED` 改为 `ALREADY_REVEALED`，消息文案、`current()` 前置校验、`save()` 与 `move()` 的调用顺序不变；`next` 在未揭晓时继续使用 `REVEAL_REQUIRED`。优化轮确认未新增分支，BOUNDARY 与 REVEAL_REQUIRED 两条原有路径保持。两轮静态复查完成。
+docs/代码复查记录.md:11: trailing whitespace.
++
+docs/验收记录.md:3: trailing whitespace.
++## 2026-10-26 主进程数据链路Bug检查与两项P3修复
+docs/验收记录.md:4: trailing whitespace.
++
+docs/验收记录.md:5: trailing whitespace.
++Windows 11 x64、Node v24.19.0（符合 engines `>=24.19.0 <25`）。Git分支 `review/bugfix-opt-20261026`，基于 main 29342b8 新建；本轮未提交、未推送、未构建、未打包，工作区仅两个源码文件改动（9 增 2 删）。
+docs/验收记录.md:6: trailing whitespace.
++
+docs/验收记录.md:7: trailing whitespace.
++| 已执行检查 | 实际结果 |
+docs/验收记录.md:8: trailing whitespace.
++| --- | --- |
+docs/验收记录.md:9: trailing whitespace.
++| 静态类型 | tsconfig.node.json、tsconfig.web.json 两套 `tsc --noEmit` 均通过，无输出 |
+docs/验收记录.md:10: trailing whitespace.
++| 格式 | `prettier --check` 两个改动文件通过 |
+docs/验收记录.md:11: trailing whitespace.
++| 单元 | 35 文件 660/660 通过，14.69 秒（契约变更后重跑），无失败、无跳过 |
+docs/验收记录.md:12: trailing whitespace.
++
+docs/验收记录.md:13: trailing whitespace.
++审查范围与结论：只读审查 `src/main` 的 ipc、database、backup、library、workers 共 35 个文件约 5,155 行（`src/main`+`src/shared` 合计 7,225 行的 71%），未发现 P0/P1；确认三项 P3，三项均已修复。改动为 `practice-repository.ts` 的答案取值判空与 skip 错误码、`index.ts` 的恢复失败日志保真、`shared/contracts/practice.ts` 新增错误码；未改数据库结构、恢复事务顺序与依赖；IPC 契约只新增一个错误码，渲染层无按该码分流的分支，`practice-desktop.ts` 的枚举自动继承。
+docs/验收记录.md:14: trailing whitespace.
++
+docs/验收记录.md:15: trailing whitespace.
++未执行/未验证：缺陷触发路径受外键与只追加版本约束当前不可达，未构造运行期复现；恢复目录 EPERM、磁盘满等真实故障未实测；`tests/integration/` 为 Electron 流程调用的帮助器，本轮未跑 `test:desktop`，桌面、打包与性能均未新增结果。第二轮补审已覆盖其余解析链路、worker 协议、读取器与五个建表脚本（累计 49 文件约 6,950 行），未新增须修项；`raw.d.ts` 等 4 行声明文件未单独审查。复查结论见[代码复查记录](代码复查记录.md)。
+docs/验收记录.md:16: trailing whitespace.
++

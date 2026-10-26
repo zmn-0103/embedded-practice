@@ -202,6 +202,13 @@ export async function exercisePractice(
       ack = value(service.reveal(reveal))
       const revealAgain = value(service.reveal(reveal))
       const revealed = active(service)
+      // 已揭晓的题目不能再跳过；错误码必须与条件同向，不复用 REVEAL_REQUIRED。
+      const skipRevealed = service.navigate({
+        requestId: id(),
+        cursor: cursor(ack),
+        draft,
+        direction: 'skip',
+      })
       ack = command(service, 'reveal', ack, draft)
       const firstTimeRetained = active(service).item?.revealedAt === revealed.item?.revealedAt
       const staleRatingSnapshot = JSON.stringify(rows(database))
@@ -331,6 +338,7 @@ export async function exercisePractice(
         staleRatingDraft,
         staleRatingUnchanged,
         revealed,
+        skipRevealed,
         revealAgain,
         firstTimeRetained,
         duplicateRate,

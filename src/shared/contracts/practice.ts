@@ -128,6 +128,7 @@ export const practiceErrorCodeSchema = z.enum([
   'DRAFT_STALE',
   'DRAFT_CONFLICT',
   'REVEAL_REQUIRED',
+  'ALREADY_REVEALED',
   'BOUNDARY',
   'REQUEST_CONFLICT',
   'WRITE_FAILED',

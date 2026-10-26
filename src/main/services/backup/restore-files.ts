@@ -172,6 +172,14 @@ export async function recoverDatabaseReplacement(databasePath: string) {
   return journal.phase === 'committed' ? 'committed' : 'rolled-back'
 }
 
+// 诊断日志要留真实原因，但校验错误的消息可能带出备份内容，因此只记类别。
+function failureDetail(stage: string, error: unknown): Error {
+  if (!(error instanceof Error)) return new Error(`${stage}：${typeof error}`)
+  const detail = error instanceof z.ZodError ? error.name : error.message
+  const code = 'code' in error ? `（系统码 ${String((error as { code: unknown }).code)}）` : ''
+  return new Error(`${stage}：${detail}${code}`)
+}
+
 // 调用者先保存、创建保护性备份并关闭全部连接；本模块只管理应用自己的固定文件。
 export async function replaceDatabase(
   databasePath: string,
@@ -210,14 +218,16 @@ export async function replaceDatabase(
     if ((await hashBackupFile(database)) !== candidateHash) throw new Error('替换后文件校验失败。')
     await writeJournal(directory, { ...journal, phase: 'committed' })
     committed = true
-  } catch {
+  } catch (error) {
+    reportError(failureDetail('恢复替换失败', error))
     try {
       if (armed) await recoverDatabaseReplacement(database)
       else {
         await checkDirectory(directory)
         await rm(directory, { recursive: true })
       }
-    } catch {
+    } catch (recoveryError) {
+      reportError(failureDetail('恢复回退失败', recoveryError))
       throw new BackupFault(
         'RECOVERY_FAILED',
         '恢复和自动回退未能完成，已保留原文件与保护性备份。请退出并检查数据目录的恢复事务，勿删除原文件。',

@@ -1,0 +1,11 @@
+
+Running 4 tests using 1 worker
+
+(node:46216) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tmp\merge-review-20261026\expanded-probe.spec.ts:6:5 › 新增修改：主题确定性拒绝后仍可取消和卸载 (1.4s)
+  ok 2 [development] › tmp\merge-review-20261026\expanded-probe.spec.ts:26:5 › 新增修改：方案ASCII重名预检且非ASCII名称保持独立 (1.1s)
+  ok 3 [development] › tmp\merge-review-20261026\expanded-probe.spec.ts:41:5 › 新增修改：已读空库后失败可见且能够重试 (912ms)
+  ok 4 [development] › tmp\merge-review-20261026\expanded-probe.spec.ts:65:5 › 新增修改：恢复发布与回退错误均记录且原文件可恢复 (859ms)
+
+  4 passed (4.9s)

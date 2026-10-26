@@ -140,6 +140,12 @@ export function createPracticeRepository(database: Database.Database) {
     if (!row) throw new PracticeFault('SESSION_CONFLICT', '练习题目位置无效，请重新读取当前练习。')
     return row
   }
+  // 缺失版本必须报错：展开 undefined 会让题干冒充参考答案。
+  function answerMarkdown(versionId: number): string {
+    const row = answerQuery.get(versionId) as { markdown: string } | undefined
+    if (!row) throw new Error('练习队列缺少固定答案版本。')
+    return row.markdown
+  }
   function ack(row: SessionRow): PracticeAck {
     return practiceAckSchema.parse({
       sessionId: row.id,
@@ -317,7 +323,7 @@ export function createPracticeRepository(database: Database.Database) {
               ...info,
               revealed: true,
               revealedAt: state.revealedAt,
-              answer: { ...body, ...(answerQuery.get(state.versionId) as { markdown: string }) },
+              answer: { ...body, markdown: answerMarkdown(state.versionId) },
             },
     })
   })
@@ -437,7 +443,7 @@ export function createPracticeRepository(database: Database.Database) {
         if (input.direction === 'next' && !question.revealedAt)
           throw new PracticeFault('REVEAL_REQUIRED', '请先揭晓，或选择跳过本题。')
         if (input.direction === 'skip' && question.revealedAt)
-          throw new PracticeFault('REVEAL_REQUIRED', '本题已经揭晓，请选择下一题或暂不评价。')
+          throw new PracticeFault('ALREADY_REVEALED', '本题已经揭晓，请选择下一题或暂不评价。')
         save(row.id, row.position, input.draft)
         if (input.direction === 'skip') skipItem.run(new Date().toISOString(), row.id, row.position)
         return move(row, row.position + (input.direction === 'previous' ? -1 : 1))

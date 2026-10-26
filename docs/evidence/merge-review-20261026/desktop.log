@@ -1,0 +1,29 @@
+
+Running 22 tests using 1 worker
+
+(node:23800) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\practice.spec.ts:41:5 › 顺序队列、草稿、揭晓、自评修改、跳过与独立进程恢复 (2.2s)
+  ok  2 [development] › tests\e2e\practice.spec.ts:182:5 › 实际题库更新与归档保留本轮版本和真实作答行，新轮使用最新内容 (997ms)
+  ok  3 [development] › tests\e2e\practice.spec.ts:237:5 › 自评推进、结束回执、草稿和揭晓故障分别整笔回滚并可重试 (941ms)
+  ok  4 [development] › tests\e2e\practice.spec.ts:281:5 › 提交后响应异常先确认持久化；核实不可用时停写，重开按原回执确认 (979ms)
+  ok  5 [development] › tests\e2e\practice.spec.ts:321:5 › 草稿真实 UTF-8 字节边界、非法输入和数据库约束 (1.0s)
+  ok  6 [development] › tests\e2e\practice.spec.ts:396:5 › M1 v2 升级前一致性备份并保留题库、图片、收藏和旧自评，重开不重复升级 (1.6s)
+  ok  7 [development] › tests\e2e\practice.spec.ts:453:5 › v2 备份失败时停止，原数据库逐字节保持 (701ms)
+  ok  8 [development] › tests\e2e\practice.spec.ts:467:5 › v2 迁移 DDL 冲突回滚且保留原结构和保护性备份 (749ms)
+  ok  9 [development] › tests\e2e\restore-window.spec.ts:223:5 › 全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容 (6.3s)
+  ok 10 [development] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 protect 时不替换原库，窗口仍可继续保存 (2.1s)
+  ok 11 [development] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 save 时不替换原库，窗口仍可继续保存 (2.1s)
+  ok 12 [development] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 tampered 时不替换原库，窗口仍可继续保存 (2.1s)
+  ok 13 [development] › tests\e2e\restore-window.spec.ts:430:7 › 恢复准备 cancel 时不替换原库，窗口仍可继续保存 (2.1s)
+  ok 14 [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 publish 后独立进程保留可恢复数据且不创建空库 (2.1s)
+  ok 15 [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 close 后独立进程保留可恢复数据且不创建空库 (2.2s)
+  ok 16 [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 rollback 后独立进程保留可恢复数据且不创建空库 (2.1s)
+  ok 17 [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 crash-moved 后独立进程保留可恢复数据且不创建空库 (2.0s)
+  ok 18 [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 crash-installed 后独立进程保留可恢复数据且不创建空库 (1.9s)
+  ok 19 [development] › tests\e2e\restore-window.spec.ts:493:7 › 恢复 crash-committed 后独立进程保留可恢复数据且不创建空库 (2.0s)
+  ok 20 [development] › tests\e2e\restore-window.spec.ts:552:5 › 恢复文件事务保留并回退全部数据库伴随文件，未知事务现场不清理 (1.0s)
+  ok 21 [development] › tests\e2e\restore-window.spec.ts:645:5 › 恢复前提交未到自动保存时间的草稿，保护备份包括最终输入且暂停期间拒绝业务写入 (2.2s)
+  ok 22 [development] › tests\e2e\restore-window.spec.ts:730:5 › 保护性备份可直接从本数据目录选择并恢复，来源文件不被覆盖 (3.3s)
+
+  22 passed (43.8s)
