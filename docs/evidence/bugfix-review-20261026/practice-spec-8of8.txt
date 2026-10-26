@@ -1,0 +1,18 @@
+out/renderer/index.html                     0.71 kB
+out/renderer/assets/index-B85TzAQu.css     66.57 kB
+out/renderer/assets/index-WVeLJIzc.js   1,901.37 kB
+
+[32m✓ built in 199ms[39m
+
+Running 8 tests using 1 worker
+
+  ok 1 [development] › tests\e2e\practice.spec.ts:41:5 › 顺序队列、草稿、揭晓、自评修改、跳过与独立进程恢复 (2.4s)
+  ok 2 [development] › tests\e2e\practice.spec.ts:183:5 › 实际题库更新与归档保留本轮版本和真实作答行，新轮使用最新内容 (1.1s)
+  ok 3 [development] › tests\e2e\practice.spec.ts:238:5 › 自评推进、结束回执、草稿和揭晓故障分别整笔回滚并可重试 (1.0s)
+  ok 4 [development] › tests\e2e\practice.spec.ts:282:5 › 提交后响应异常先确认持久化；核实不可用时停写，重开按原回执确认 (1.1s)
+  ok 5 [development] › tests\e2e\practice.spec.ts:322:5 › 草稿真实 UTF-8 字节边界、非法输入和数据库约束 (1.1s)
+  ok 6 [development] › tests\e2e\practice.spec.ts:397:5 › M1 v2 升级前一致性备份并保留题库、图片、收藏和旧自评，重开不重复升级 (1.8s)
+  ok 7 [development] › tests\e2e\practice.spec.ts:454:5 › v2 备份失败时停止，原数据库逐字节保持 (811ms)
+  ok 8 [development] › tests\e2e\practice.spec.ts:468:5 › v2 迁移 DDL 冲突回滚且保留原结构和保护性备份 (856ms)
+
+  8 passed (10.9s)

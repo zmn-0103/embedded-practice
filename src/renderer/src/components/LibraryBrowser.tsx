@@ -429,6 +429,16 @@ function LibraryContent({
   if (data.topics.length === 0)
     return (
       <section ref={heading} tabIndex={-1} className="library-empty" aria-labelledby="empty-title">
+        {error && (
+          <>
+            <p role="alert" className="error-message">
+              {error}
+            </p>
+            <button type="button" onClick={() => setAttempt((value) => value + 1)}>
+              重新读取题库
+            </button>
+          </>
+        )}
         <div className="empty-symbol" aria-hidden="true">
           ▤
         </div>

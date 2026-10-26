@@ -1,0 +1,147 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\ep-review-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=tmp/merge-review-20261026/playwright.config.ts",
+      "--grep=恢复目录创建",
+      "--output=tmp/merge-review-20261026/probe-02",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/ep-review-20261026/tmp/merge-review-20261026",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/ep-review-20261026/tmp/merge-review-20261026/probe-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/ep-review-20261026/tmp/merge-review-20261026",
+        "testIgnore": [],
+        "testMatch": [
+          "probe.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026\\probe-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026",
+        "snapshotDir": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026",
+        "testIgnore": [],
+        "testMatch": "probe.spec.ts",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "probe.spec.ts",
+      "file": "probe.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "已提交版本：恢复目录创建故障保留真实诊断",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1032,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T11:24:15.560Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "restore-log.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXN1bHQiOnsib2siOmZhbHNlLCJlcnJvciI6eyJjb2RlIjoiUkVTVE9SRV9GQUlMRUQiLCJtZXNzYWdlIjoi5oGi5aSN5pyq5a6M5oiQ77yM5Y6f5pWw5o2u5L+d55WZ44CC6K+35qOA5p+l5L+d5oqk5oCn5aSH5Lu95Y+K5pys5Zyw6K+K5pat5pel5b+X5ZCO6YeN6K+V44CCIn19LCJsb2ciOiIyMDI2LTEwLTI2VDExOjI0OjE2LjM2M1ogRXJyb3I6IEVQRVJNIFJFVklFV19ESVJFQ1RPUllfQ1JFQVRFX1NFTlRJTkVMXG4gICAgYXQgZnMubWtkaXIgKGV2YWwgYXQgZXZhbHVhdGUgKDozNzA6MzApLCA8YW5vbnltb3VzPjoxMDoxNylcbiAgICBhdCBNb2R1bGUucmVwbGFjZURhdGFiYXNlIChFOlxcTXlfUHJvamVjdHNcXGVwLXJldmlldy0yMDI2MTAyNlxcb3V0XFxtYWluXFxyZXN0b3JlLWZpbGVzLmpzOjM0NTozNSlcbiAgICBhdCBhc3luYyByZXN0b3JlQmFja3VwIChFOlxcTXlfUHJvamVjdHNcXGVwLXJldmlldy0yMDI2MTAyNlxcb3V0XFxtYWluXFxpbmRleC5qczoxMTg1OjMpXG4gICAgYXQgYXN5bmMgRTpcXE15X1Byb2plY3RzXFxlcC1yZXZpZXctMjAyNjEwMjZcXG91dFxcbWFpblxcaW5kZXguanM6NzE4OjIwXG4gICAgYXQgYXN5bmMgU2Vzc2lvbi48YW5vbnltb3VzPiAobm9kZTplbGVjdHJvbi9qczJjL2Jyb3dzZXJfaW5pdDoyOjExODY2MSlcbiJ9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9223f0ac28d4fb57516f-6747ddc7f54982472469",
+          "file": "probe.spec.ts",
+          "line": 45,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-26T11:24:15.089Z",
+    "duration": 1553.661,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

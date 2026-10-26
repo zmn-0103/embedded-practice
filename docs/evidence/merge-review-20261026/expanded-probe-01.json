@@ -1,0 +1,249 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\ep-review-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=tmp/merge-review-20261026/playwright.config.ts",
+      "--grep=新增修改",
+      "--output=tmp/merge-review-20261026/expanded-probe-01",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/ep-review-20261026/tmp/merge-review-20261026",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/ep-review-20261026/tmp/merge-review-20261026/expanded-probe-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/ep-review-20261026/tmp/merge-review-20261026",
+        "testIgnore": [],
+        "testMatch": [
+          "*probe.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026\\expanded-probe-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026",
+        "snapshotDir": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026",
+        "testIgnore": [],
+        "testMatch": "*probe.spec.ts",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "expanded-probe.spec.ts",
+      "file": "expanded-probe.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "新增修改：主题确定性拒绝后仍可取消和卸载",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1377,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T11:29:24.786Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "932d4dc0857abc0bb33f-4335b68c721de56d3af3",
+          "file": "expanded-probe.spec.ts",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "新增修改：方案ASCII重名预检且非ASCII名称保持独立",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1129,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T11:29:26.188Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "932d4dc0857abc0bb33f-ce0764d8ca67ae942736",
+          "file": "expanded-probe.spec.ts",
+          "line": 26,
+          "column": 5
+        },
+        {
+          "title": "新增修改：已读空库后失败可见且能够重试",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 912,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T11:29:27.324Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "932d4dc0857abc0bb33f-c7ffa3fd8cc8fb11ff04",
+          "file": "expanded-probe.spec.ts",
+          "line": 41,
+          "column": 5
+        },
+        {
+          "title": "新增修改：恢复发布与回退错误均记录且原文件可恢复",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 859,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T11:29:28.243Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "replacement-diagnostics.json",
+                      "contentType": "application/json",
+                      "body": "eyJjb2RlIjoiUkVDT1ZFUllfRkFJTEVEIiwibG9ncyI6WyLmgaLlpI3mm7/mjaLlpLHotKXvvJrlrqHmoLjlj5HluIPlpLHotKXvvIjns7vnu5/noIEgRVBFUk3vvIkiLCLmgaLlpI3lm57pgIDlpLHotKXvvJrlrqHmoLjlm57pgIDlpLHotKXvvIjns7vnu5/noIEgRUFDQ0VT77yJIl0sImZpbGVzIjpbImNhbmRpZGF0ZS5zcWxpdGUzIiwib3JpZ2luYWwuc3FsaXRlMyIsInJlY29yZC5qc29uIl0sInJlY292ZXJlZCI6InJvbGxlZC1iYWNrIiwib3JpZ2luYWxSZXRhaW5lZCI6dHJ1ZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "932d4dc0857abc0bb33f-168a7a9cd73003b6f3d9",
+          "file": "expanded-probe.spec.ts",
+          "line": 65,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-26T11:29:24.258Z",
+    "duration": 4886.121,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

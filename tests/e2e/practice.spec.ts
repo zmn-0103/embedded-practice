@@ -70,6 +70,7 @@ test('顺序队列、草稿、揭晓、自评修改、跳过与独立进程恢�
       text: '中文草稿\r\n  int value = 1;\n',
     })
     for (const failure of [result.ratingHidden, result.nextHidden]) code(failure, 'REVEAL_REQUIRED')
+    code(result.skipRevealed, 'ALREADY_REVEALED')
     code(result.firstBoundary, 'BOUNDARY')
     expect(result.staleTransitions).toHaveLength(3)
     for (const failure of [...(result.staleTransitions ?? []), result.staleRatingDraft])

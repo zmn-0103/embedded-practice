@@ -4,6 +4,9 @@ import type { PracticePlan, PracticePlanOptions } from '../../../shared/contract
 import { usePracticePlans } from '../usePracticePlans'
 import { difficultyLabel } from './DifficultyBadge'
 
+// 与 practice_plans 的 name COLLATE NOCASE 一致：只折叠 ASCII，避免预检比数据库更严。
+const foldName = (value: string) => value.replace(/[A-Z]/g, (letter) => letter.toLowerCase())
+
 interface Props extends LibraryNavigation {
   refresh: number
   options: PracticePlanOptions
@@ -77,7 +80,10 @@ export function PracticePlans({
           </label>
           <button
             type="submit"
-            disabled={!name.trim() || model.plans.some((plan) => plan.name === name.trim())}
+            disabled={
+              !name.trim() ||
+              model.plans.some((plan) => foldName(plan.name) === foldName(name.trim()))
+            }
           >
             保存当前条件为方案
           </button>

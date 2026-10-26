@@ -1,0 +1,13 @@
+命令：npx playwright test tests/e2e/library-window.spec.ts tests/e2e/practice-plans-errors.spec.ts --project=development --reporter=list
+目的：首份定向回归（32 项）的控制台输出经 tail 截断，为保留这两个文件的逐项明细单独重跑。
+构建产物为同一轮 npm run build 的 out/，未改动源码。
+
+  ok 1 [development] › tests\e2e\library-window.spec.ts:86:5 › 窗口预览确认、三种图片解码、移动来源后独立进程重开 (3.2s)
+  ok 2 [development] › tests\e2e\library-window.spec.ts:144:5 › 窗口取消、错误定位、放弃预览、重载与非法请求保护 (1.5s)
+  ok 3 [development] › tests\e2e\library-window.spec.ts:192:5 › 分页与归档视图、窗口更新摘要及相同身份恢复 (1.6s)
+  ok 4 [development] › tests\e2e\library-window.spec.ts:230:5 › 受控外链与资源关联、严格 CSP、模板导出 (1.2s)
+  ok 5 [development] › tests\e2e\library-window.spec.ts:310:5 › 准备期间关闭应用，真实工作线程退出后正常结束 (869ms)
+  ok 6 [development] › tests\e2e\practice-plans-errors.spec.ts:7:5 › 方案失败：读取不伪造空成功、已提交丢响应按原命令重试，停止重试不删已存项 (1.9s)
+  ok 7 [development] › tests\e2e\practice-plans-errors.spec.ts:76:7 › 方案正常关闭等待在途保存：成功退出重开保持 (2.5s)
+  ok 8 [development] › tests\e2e\practice-plans-errors.spec.ts:76:7 › 方案正常关闭等待在途保存：失败返回窗口原目标重试 (1.6s)
+  8 passed (15.0s)

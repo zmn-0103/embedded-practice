@@ -5,6 +5,10 @@ import { ThemePreview } from './ThemePreview'
 
 type Mutation = { kind: 'install'; token: string } | { kind: 'uninstall'; themeId: string }
 
+// 只有外部状态变化后可能成功的错误才保留重试凭据；确定性拒绝必须释放 pending，
+// 否则安装、卸载与取消预览全部被禁用，用户只剩一个必然失败的重试按钮。
+const retryableCodes = new Set(['THEME_BUSY', 'SERVICE_CLOSED', 'DATABASE_UNAVAILABLE'])
+
 export function ThemeManager({
   catalog,
   disabled,
@@ -75,10 +79,10 @@ export function ThemeManager({
         if (!result.ok) {
           setMessage(result.error.message)
           setFailed(true)
-          // 过期凭据不能重试，必须重新读取文件。
-          if (result.error.code === 'PREVIEW_EXPIRED') {
-            setPreview(undefined)
+          if (!retryableCodes.has(result.error.code)) {
             setPending(undefined)
+            // 过期凭据不能重试，必须重新读取文件。
+            if (result.error.code === 'PREVIEW_EXPIRED') setPreview(undefined)
           }
           return false
         }
