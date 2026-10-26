@@ -50,6 +50,7 @@ async function prepare(directory: string, project: string, options: FixtureOptio
   await launched.page.getByRole('heading', { name: '导入预览', exact: true }).waitFor()
   await launched.page.getByRole('button', { name: '确认导入', exact: true }).click()
   await expect(launched.page.getByText(/^导入完成：/)).toBeVisible()
+  await launched.page.getByRole('button', { name: '关闭导入工作区', exact: true }).click()
   await openPage(launched.page, '开始练习')
   await expect(launched.page.getByRole('button', { name: '开始练习', exact: true })).toBeEnabled()
   return { ...launched, ...source }
@@ -167,7 +168,7 @@ test('窗口输入/纯思考、答案隐藏、自评修改/跳过/末题与新�
     expect(completed.items.map((item) => item.rating)).toEqual(['不会', null, null])
     expect(completed.items[0]?.revealedAt).toBe(firstTime)
     expect(completed.foreignKeys).toEqual([])
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await begin(page)
     await expect(input).toHaveValue('')
     expect(await page.content()).not.toContain(secret)
@@ -238,7 +239,7 @@ test('返回首页和正常关窗立即保存，独立进程继续原题与草�
     await begin(page)
     const input = page.getByRole('textbox', { name: '我的答案', exact: true })
     await input.fill('返回首页前的输入')
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     expect(stored(testDataDirectory).items[0]?.draft).toBe('返回首页前的输入')
     await page.getByRole('button', { name: '继续练习', exact: true }).click()
@@ -414,6 +415,8 @@ test('真实代码 token/复制调用、图片模态缩放与长答案操作区'
     await page.getByRole('button', { name: '查看参考答案', exact: true }).click()
     await expect(page.getByRole('region', { name: '练习参考答案' })).toContainText('第 60 段长答案')
     const button = page.getByRole('button', { name: '掌握', exact: true })
+    await expect(page.locator('.practice-actions')).toHaveCSS('position', 'fixed')
+    await button.scrollIntoViewIfNeeded()
     await expect(button).toBeInViewport()
     await page.screenshot({ path: info.outputPath('practice-light.png') })
     await page.emulateMedia({ colorScheme: 'dark' })
@@ -606,6 +609,8 @@ for (const zoomFactor of [1, 1.25, 1.5]) {
       await expect(secondTitle).toBeInViewport({ ratio: 1 })
       await expect(secondTitle).toBeFocused()
       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })
+      await expect(page.locator('.practice-actions')).toHaveCSS('position', 'fixed')
+      await page.getByRole('button', { name: '跳过本题', exact: true }).scrollIntoViewIfNeeded()
       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()
       // 页面缩放时浏览器截图可能按 CSS 尺寸裁切；从 Electron 捕获完整可视区域。
       const screenshot = await application.evaluate(async ({ BrowserWindow }) => {

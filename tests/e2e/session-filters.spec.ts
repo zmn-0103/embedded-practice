@@ -91,7 +91,7 @@ for (const mode of ['sequential', 'random'] as const) {
       await expect(page.getByLabel('练习进度')).toContainText('第 2 / 2')
       const draft = '筛选快照重开草稿\nint original = 6;'
       await page.getByRole('textbox', { name: '我的答案', exact: true }).fill(draft)
-      await page.getByRole('button', { name: '返回首页', exact: true }).click()
+      await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
       await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
       const original = await read(page)
       for (const questionId of ['q-1', 'q-2']) {
@@ -305,6 +305,7 @@ test('损坏筛选快照不能冒充旧未知或默认条件，修复后原轮�
       false,
     )
     await page.getByRole('button', { name: '重试读取练习', exact: true }).click()
+    await openPage(page, '开始练习')
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     expect(await read(page)).toEqual(original)
     expect(historySnapshot(testDataDirectory)).toEqual(before)

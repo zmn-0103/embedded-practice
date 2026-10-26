@@ -93,7 +93,7 @@ for (const version of [1, 2, 3, 4, 5, 6]) {
     const { application, page } = await launchApplication(
       testDataDirectory,
       info.project.name,
-      '设置与数据',
+      '备份恢复',
     )
     let reopened: typeof application | undefined
     try {
@@ -182,7 +182,7 @@ for (const version of [1, 2, 3, 4, 5, 6]) {
     const { application, page } = await launchApplication(
       testDataDirectory,
       info.project.name,
-      '设置与数据',
+      '备份恢复',
     )
     try {
       const path = join(directory, `旧结构 ${version}.sqlite3`)

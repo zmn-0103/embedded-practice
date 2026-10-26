@@ -1,0 +1,581 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/workbench-browser.spec.ts",
+      "tests/e2e/board-entry.spec.ts",
+      "tests/e2e/themes-layout.spec.ts",
+      "--project=development",
+      "--grep",
+      "工作台题库：|900/1440窗口|六页/",
+      "--reporter=list,json",
+      "--output=docs/evidence/workbench-e-20261025/final-layout-dev-01"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/workbench-e-20261025/final-layout-dev-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/workbench-e-20261025/final-layout-dev-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "board-entry.spec.ts",
+      "file": "board-entry.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3522,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:44:21.819Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "boards-light.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01\\board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development\\attachments\\boards-light-png-382423308e73b2dbbef9da7cfa7d185fed19093e.png"
+                    },
+                    {
+                      "name": "difficulty-light.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01\\board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development\\attachments\\difficulty-light-png-fe2c26ec1fe596741cf73788e5a543d02f296173.png"
+                    },
+                    {
+                      "name": "boards-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01\\board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development\\attachments\\boards-dark-png-9493deca079da3d9aac033b606274b2bd79fc975.png"
+                    },
+                    {
+                      "name": "difficulty-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01\\board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development\\attachments\\difficulty-dark-png-58fd61285a170bb9a554456fe800bcfcecb13dc3.png"
+                    },
+                    {
+                      "name": "board-appearance-measurements.json",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJwYWxldHRlIjogIuadvumXtOe7vyIsCiAgICAidGhlbWUiOiAibGlnaHQiLAogICAgImRpbWVuc2lvbnMiOiB7CiAgICAgICJ2aWV3cG9ydCI6IDE0MjQsCiAgICAgICJjbGllbnRXaWR0aCI6IDE0MDksCiAgICAgICJzY3JvbGxXaWR0aCI6IDE0MDkKICAgIH0sCiAgICAicmF0aW9zIjogWwogICAgICB7CiAgICAgICAgInRvbmUiOiAiZWFzeSIsCiAgICAgICAgInJhdGlvIjogNi40NzUxNDQ4MzU5ODI1ODgKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogIm1lZGl1bSIsCiAgICAgICAgInJhdGlvIjogNi4yNTQyMTQzNTY1Nzg0NDYKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogImhhcmQiLAogICAgICAgICJyYXRpbyI6IDYuMTE4OTk0Mjk4NjcwOTI1CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJ1bnJhdGVkIiwKICAgICAgICAicmF0aW8iOiA0Ljg2ODM5ODQ1NTE3NDMwOAogICAgICB9CiAgICBdCiAgfSwKICB7CiAgICAicGFsZXR0ZSI6ICLmnb7pl7Tnu78iLAogICAgInRoZW1lIjogImRhcmsiLAogICAgImRpbWVuc2lvbnMiOiB7CiAgICAgICJ2aWV3cG9ydCI6IDg4NCwKICAgICAgImNsaWVudFdpZHRoIjogODY5LAogICAgICAic2Nyb2xsV2lkdGgiOiA4NjkKICAgIH0sCiAgICAicmF0aW9zIjogWwogICAgICB7CiAgICAgICAgInRvbmUiOiAiZWFzeSIsCiAgICAgICAgInJhdGlvIjogNy42MzUzNDU3NDM2NjEyNDQKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogIm1lZGl1bSIsCiAgICAgICAgInJhdGlvIjogOC4xMzY0MDYzNTUxNDUzOTEKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogImhhcmQiLAogICAgICAgICJyYXRpbyI6IDcuNjk4MTg2ODI0NDMwNDkyNQogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAidW5yYXRlZCIsCiAgICAgICAgInJhdGlvIjogOC44OTg4NzEwNjYxODYzMjIKICAgICAgfQogICAgXQogIH0sCiAgewogICAgInBhbGV0dGUiOiAi5pm056m66JOdIiwKICAgICJ0aGVtZSI6ICJsaWdodCIsCiAgICAiZGltZW5zaW9ucyI6IHsKICAgICAgInZpZXdwb3J0IjogMTQyNCwKICAgICAgImNsaWVudFdpZHRoIjogMTQwOSwKICAgICAgInNjcm9sbFdpZHRoIjogMTQwOQogICAgfSwKICAgICJyYXRpb3MiOiBbCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJlYXN5IiwKICAgICAgICAicmF0aW8iOiA2LjQ3NTE0NDgzNTk4MjU4OAogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAibWVkaXVtIiwKICAgICAgICAicmF0aW8iOiA2LjI1NDIxNDM1NjU3ODQ0NgogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAiaGFyZCIsCiAgICAgICAgInJhdGlvIjogNi4xMTg5OTQyOTg2NzA5MjUKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogInVucmF0ZWQiLAogICAgICAgICJyYXRpbyI6IDQuODI5NTI4NjI0NjgxMDc4CiAgICAgIH0KICAgIF0KICB9LAogIHsKICAgICJwYWxldHRlIjogIuaZtOepuuiTnSIsCiAgICAidGhlbWUiOiAiZGFyayIsCiAgICAiZGltZW5zaW9ucyI6IHsKICAgICAgInZpZXdwb3J0IjogODg0LAogICAgICAiY2xpZW50V2lkdGgiOiA4NjksCiAgICAgICJzY3JvbGxXaWR0aCI6IDg2OQogICAgfSwKICAgICJyYXRpb3MiOiBbCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJlYXN5IiwKICAgICAgICAicmF0aW8iOiA3LjYzNTM0NTc0MzY2MTI0NAogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAibWVkaXVtIiwKICAgICAgICAicmF0aW8iOiA4LjEzNjQwNjM1NTE0NTM5MQogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAiaGFyZCIsCiAgICAgICAgInJhdGlvIjogNy42OTgxODY4MjQ0MzA0OTI1CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJ1bnJhdGVkIiwKICAgICAgICAicmF0aW8iOiA4Ljg0NTE2NDcxNTI4NzUyNAogICAgICB9CiAgICBdCiAgfSwKICB7CiAgICAicGFsZXR0ZSI6ICLmmpbmspnph5EiLAogICAgInRoZW1lIjogImxpZ2h0IiwKICAgICJkaW1lbnNpb25zIjogewogICAgICAidmlld3BvcnQiOiAxNDI0LAogICAgICAiY2xpZW50V2lkdGgiOiAxNDA5LAogICAgICAic2Nyb2xsV2lkdGgiOiAxNDA5CiAgICB9LAogICAgInJhdGlvcyI6IFsKICAgICAgewogICAgICAgICJ0b25lIjogImVhc3kiLAogICAgICAgICJyYXRpbyI6IDYuNDc1MTQ0ODM1OTgyNTg4CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJtZWRpdW0iLAogICAgICAgICJyYXRpbyI6IDYuMjU0MjE0MzU2NTc4NDQ2CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJoYXJkIiwKICAgICAgICAicmF0aW8iOiA2LjExODk5NDI5ODY3MDkyNQogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAidW5yYXRlZCIsCiAgICAgICAgInJhdGlvIjogNC45OTUwOTUyOTQzMTkwNzYKICAgICAgfQogICAgXQogIH0sCiAgewogICAgInBhbGV0dGUiOiAi5pqW5rKZ6YeRIiwKICAgICJ0aGVtZSI6ICJkYXJrIiwKICAgICJkaW1lbnNpb25zIjogewogICAgICAidmlld3BvcnQiOiA4ODQsCiAgICAgICJjbGllbnRXaWR0aCI6IDg2OSwKICAgICAgInNjcm9sbFdpZHRoIjogODY5CiAgICB9LAogICAgInJhdGlvcyI6IFsKICAgICAgewogICAgICAgICJ0b25lIjogImVhc3kiLAogICAgICAgICJyYXRpbyI6IDcuNjM1MzQ1NzQzNjYxMjQ0CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJtZWRpdW0iLAogICAgICAgICJyYXRpbyI6IDguMTM2NDA2MzU1MTQ1MzkxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJoYXJkIiwKICAgICAgICAicmF0aW8iOiA3LjY5ODE4NjgyNDQzMDQ5MjUKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogInVucmF0ZWQiLAogICAgICAgICJyYXRpbyI6IDguNTQyNTU4MjAwMzM5NTEKICAgICAgfQogICAgXQogIH0sCiAgewogICAgInBhbGV0dGUiOiAi5pqu5bGx57SrIiwKICAgICJ0aGVtZSI6ICJsaWdodCIsCiAgICAiZGltZW5zaW9ucyI6IHsKICAgICAgInZpZXdwb3J0IjogMTQyNCwKICAgICAgImNsaWVudFdpZHRoIjogMTQwOSwKICAgICAgInNjcm9sbFdpZHRoIjogMTQwOQogICAgfSwKICAgICJyYXRpb3MiOiBbCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJlYXN5IiwKICAgICAgICAicmF0aW8iOiA2LjQ3NTE0NDgzNTk4MjU4OAogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAibWVkaXVtIiwKICAgICAgICAicmF0aW8iOiA2LjI1NDIxNDM1NjU3ODQ0NgogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAiaGFyZCIsCiAgICAgICAgInJhdGlvIjogNi4xMTg5OTQyOTg2NzA5MjUKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogInVucmF0ZWQiLAogICAgICAgICJyYXRpbyI6IDUuMTI1MjYzNDA3MDk5NDI5CiAgICAgIH0KICAgIF0KICB9LAogIHsKICAgICJwYWxldHRlIjogIuaaruWxsee0qyIsCiAgICAidGhlbWUiOiAiZGFyayIsCiAgICAiZGltZW5zaW9ucyI6IHsKICAgICAgInZpZXdwb3J0IjogODg0LAogICAgICAiY2xpZW50V2lkdGgiOiA4NjksCiAgICAgICJzY3JvbGxXaWR0aCI6IDg2OQogICAgfSwKICAgICJyYXRpb3MiOiBbCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJlYXN5IiwKICAgICAgICAicmF0aW8iOiA3LjYzNTM0NTc0MzY2MTI0NAogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAibWVkaXVtIiwKICAgICAgICAicmF0aW8iOiA4LjEzNjQwNjM1NTE0NTM5MQogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAiaGFyZCIsCiAgICAgICAgInJhdGlvIjogNy42OTgxODY4MjQ0MzA0OTI1CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJ1bnJhdGVkIiwKICAgICAgICAicmF0aW8iOiA4LjE3NTk4NDg5MjA4NjM1MQogICAgICB9CiAgICBdCiAgfQpd"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1779d5fe0daf7702a7de-4f2140fd135fd99c0812",
+          "file": "board-entry.spec.ts",
+          "line": 398,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "themes-layout.spec.ts",
+      "file": "themes-layout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "松间绿：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2795,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:44:25.377Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "theme-layout-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJ0aGVtZUlkIjoiYnVpbHRpbi5mb3Jlc3QiLCJkZWZpbml0aW9uIjp7ImZvcm1hdFZlcnNpb24iOjEsImlkIjoiYnVpbHRpbi5mb3Jlc3QiLCJuYW1lIjoi5p2+6Ze057u/IiwidmVyc2lvbiI6IjEuMC4wIiwiYXV0aG9yIjoi5bWM5YWl5byP5Yi36aKY5pysIiwiZGVzY3JpcHRpb24iOiLoh6rnhLbmuIXniL3vvIzmsonpnZnkuJPms6giLCJsaWNlbnNlIjoi5bqU55So5YaF572u6KeG6KeJ6aKE6K6+IiwibGlnaHQiOnsiYmFja2dyb3VuZCI6IiNmNWY2ZjQiLCJzdXJmYWNlIjoiI2ZjZmRmYiIsInNpZGViYXIiOiIjZWRlZmVjIiwidGV4dCI6IiMyMDMzMmQiLCJtdXRlZCI6IiM1ZDcwNjciLCJsaW5lIjoiI2Q1ZTFkYSIsImFjY2VudCI6IiMyMTZiNTIiLCJhY2NlbnRTb2Z0IjoiI2U3ZjFlYyIsImFjY2VudEluayI6IiNmZmZmZmYiLCJjb2RlQmFja2dyb3VuZCI6IiNmM2Y2ZjUiLCJlcnJvciI6IiNhYzM1MmUiLCJlcnJvclNvZnQiOiIjZmZmMWVlIiwiY29kZUtleXdvcmQiOiIjODE1NWJiIiwiY29kZVZhbHVlIjoiIzI3N2Q1OCIsImZvY3VzIjoiIzIxNmI1MiIsInN1Y2Nlc3MiOiIjMjE2YjUyIn0sImRhcmsiOnsiYmFja2dyb3VuZCI6IiMxNDFiMTgiLCJzdXJmYWNlIjoiIzFiMjQyMCIsInNpZGViYXIiOiIjMTcyMDFjIiwidGV4dCI6IiNlNGVkZTciLCJtdXRlZCI6IiNhY2JkYjIiLCJsaW5lIjoiIzM4NGIzZSIsImFjY2VudCI6IiM5N2Q3YjYiLCJhY2NlbnRTb2Z0IjoiIzJhNDEzNCIsImFjY2VudEluayI6IiMxNDI1MWMiLCJjb2RlQmFja2dyb3VuZCI6IiMxMTFiMTYiLCJlcnJvciI6IiNmZmI0YTgiLCJlcnJvclNvZnQiOiIjM2UyOTI1IiwiY29kZUtleXdvcmQiOiIjZDRiNWZmIiwiY29kZVZhbHVlIjoiIzliZDZiNCIsImZvY3VzIjoiIzk3ZDdiNiIsInN1Y2Nlc3MiOiIjOTdkN2I2In0sInByZXNlbnRhdGlvbiI6eyJmb250Ijoic3lzdGVtIiwicmFkaXVzIjoicm91bmRlZCIsImRlbnNpdHkiOiJjb21mb3J0YWJsZSIsImxheW91dCI6ImNsYXNzaWMifX0sIndpZHRocyI6WzE0NDAsOTAwXSwiZm9udFNpemVzIjpbMTUsMjJdLCJtb2RlcyI6WyJsaWdodCIsImRhcmsiLCJzeXN0ZW0iXSwicmVtb3RlIjpbXSwiZXJyb3JzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "733b13c24b524ff872e4-ff43e948e08ca44fa7eb",
+          "file": "themes-layout.spec.ts",
+          "line": 34,
+          "column": 7
+        },
+        {
+          "title": "晴空蓝：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2900,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:44:28.179Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "theme-layout-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJ0aGVtZUlkIjoiYnVpbHRpbi5vY2VhbiIsImRlZmluaXRpb24iOnsiZm9ybWF0VmVyc2lvbiI6MSwiaWQiOiJidWlsdGluLm9jZWFuIiwibmFtZSI6IuaZtOepuuiTnSIsInZlcnNpb24iOiIxLjAuMCIsImF1dGhvciI6IuW1jOWFpeW8j+WIt+mimOacrCIsImRlc2NyaXB0aW9uIjoi5riF5pmw5Ya36Z2Z77yM6L2755uI6YCa6YCPIiwibGljZW5zZSI6IuW6lOeUqOWGhee9ruinhuiniemihOiuviIsImxpZ2h0Ijp7ImJhY2tncm91bmQiOiIjZjNmNWY4Iiwic3VyZmFjZSI6IiNmYWZjZmUiLCJzaWRlYmFyIjoiI2U5ZWVmNyIsInRleHQiOiIjMjQzMzRiIiwibXV0ZWQiOiIjNWM2ZDg1IiwibGluZSI6IiNkNWRmZWQiLCJhY2NlbnQiOiIjMjg1ZmMxIiwiYWNjZW50U29mdCI6IiNlN2VmZmQiLCJhY2NlbnRJbmsiOiIjZmZmZmZmIiwiY29kZUJhY2tncm91bmQiOiIjZjFmNWZjIiwiZXJyb3IiOiIjYWMzNTJlIiwiZXJyb3JTb2Z0IjoiI2ZmZjFlZSIsImNvZGVLZXl3b3JkIjoiIzgxNTViYiIsImNvZGVWYWx1ZSI6IiMxYjc0NmMiLCJmb2N1cyI6IiMyODVmYzEiLCJzdWNjZXNzIjoiIzIxNmI1MiJ9LCJkYXJrIjp7ImJhY2tncm91bmQiOiIjMTQxYjI5Iiwic3VyZmFjZSI6IiMxZTI3MzUiLCJzaWRlYmFyIjoiIzE4MjEzMyIsInRleHQiOiIjZTNlYmZhIiwibXV0ZWQiOiIjYWFiYmQ1IiwibGluZSI6IiMzNzRjNjkiLCJhY2NlbnQiOiIjYTBjMmZmIiwiYWNjZW50U29mdCI6IiMyYTNlNjEiLCJhY2NlbnRJbmsiOiIjMTQyNTFjIiwiY29kZUJhY2tncm91bmQiOiIjMTMxZDMwIiwiZXJyb3IiOiIjZmZiNGE4IiwiZXJyb3JTb2Z0IjoiIzNlMjkyNSIsImNvZGVLZXl3b3JkIjoiI2Q0YjVmZiIsImNvZGVWYWx1ZSI6IiM4NmQ3Y2YiLCJmb2N1cyI6IiNhMGMyZmYiLCJzdWNjZXNzIjoiIzk3ZDdiNiJ9LCJwcmVzZW50YXRpb24iOnsiZm9udCI6InN5c3RlbSIsInJhZGl1cyI6InJvdW5kZWQiLCJkZW5zaXR5IjoiY29tZm9ydGFibGUiLCJsYXlvdXQiOiJjbGFzc2ljIn19LCJ3aWR0aHMiOlsxNDQwLDkwMF0sImZvbnRTaXplcyI6WzE1LDIyXSwibW9kZXMiOlsibGlnaHQiLCJkYXJrIiwic3lzdGVtIl0sInJlbW90ZSI6W10sImVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "733b13c24b524ff872e4-6a32ddfc494c53177763",
+          "file": "themes-layout.spec.ts",
+          "line": 34,
+          "column": 7
+        },
+        {
+          "title": "暖沙金：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3541,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:44:31.084Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "theme-layout-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJ0aGVtZUlkIjoiYnVpbHRpbi5zYW5kIiwiZGVmaW5pdGlvbiI6eyJmb3JtYXRWZXJzaW9uIjoxLCJpZCI6ImJ1aWx0aW4uc2FuZCIsIm5hbWUiOiLmmpbmspnph5EiLCJ2ZXJzaW9uIjoiMS4wLjAiLCJhdXRob3IiOiLltYzlhaXlvI/liLfpopjmnKwiLCJkZXNjcmlwdGlvbiI6Iua4qeaaluaflOWSjO+8jOe6uOmhtei0qOaEnyIsImxpY2Vuc2UiOiLlupTnlKjlhoXnva7op4bop4npooTorr4iLCJsaWdodCI6eyJiYWNrZ3JvdW5kIjoiI2Y3ZjRlZSIsInN1cmZhY2UiOiIjZmRmYWY0Iiwic2lkZWJhciI6IiNmMGViZTAiLCJ0ZXh0IjoiIzQxMzcyNSIsIm11dGVkIjoiIzc4Njc0NyIsImxpbmUiOiIjZTVkYWM1IiwiYWNjZW50IjoiIzkxNjAxZSIsImFjY2VudFNvZnQiOiIjZjVlYWQyIiwiYWNjZW50SW5rIjoiI2ZmZmZmZiIsImNvZGVCYWNrZ3JvdW5kIjoiI2Y3ZjFlNSIsImVycm9yIjoiI2FjMzUyZSIsImVycm9yU29mdCI6IiNmZmYxZWUiLCJjb2RlS2V5d29yZCI6IiM4MTU1YmIiLCJjb2RlVmFsdWUiOiIjMzc3MTUyIiwiZm9jdXMiOiIjOTE2MDFlIiwic3VjY2VzcyI6IiMyMTZiNTIifSwiZGFyayI6eyJiYWNrZ3JvdW5kIjoiIzI0MWUxNiIsInN1cmZhY2UiOiIjMmUyNzFlIiwic2lkZWJhciI6IiMyYTI0MWIiLCJ0ZXh0IjoiI2YxZTdkNSIsIm11dGVkIjoiI2M4Yjk5YiIsImxpbmUiOiIjNTM0NjMxIiwiYWNjZW50IjoiI2ViYzQ3ZSIsImFjY2VudFNvZnQiOiIjNGEzYzIzIiwiYWNjZW50SW5rIjoiIzE0MjUxYyIsImNvZGVCYWNrZ3JvdW5kIjoiIzI0MWUxNSIsImVycm9yIjoiI2ZmYjRhOCIsImVycm9yU29mdCI6IiMzZTI5MjUiLCJjb2RlS2V5d29yZCI6IiNkNGI1ZmYiLCJjb2RlVmFsdWUiOiIjYTRkMGFkIiwiZm9jdXMiOiIjZWJjNDdlIiwic3VjY2VzcyI6IiM5N2Q3YjYifSwicHJlc2VudGF0aW9uIjp7ImZvbnQiOiJzeXN0ZW0iLCJyYWRpdXMiOiJyb3VuZGVkIiwiZGVuc2l0eSI6ImNvbWZvcnRhYmxlIiwibGF5b3V0IjoiY2xhc3NpYyJ9fSwid2lkdGhzIjpbMTQ0MCw5MDBdLCJmb250U2l6ZXMiOlsxNSwyMl0sIm1vZGVzIjpbImxpZ2h0IiwiZGFyayIsInN5c3RlbSJdLCJyZW1vdGUiOltdLCJlcnJvcnMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "733b13c24b524ff872e4-8f0f898b123582710e73",
+          "file": "themes-layout.spec.ts",
+          "line": 34,
+          "column": 7
+        },
+        {
+          "title": "暮山紫：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2915,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:44:34.630Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "theme-layout-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJ0aGVtZUlkIjoiYnVpbHRpbi5saWxhYyIsImRlZmluaXRpb24iOnsiZm9ybWF0VmVyc2lvbiI6MSwiaWQiOiJidWlsdGluLmxpbGFjIiwibmFtZSI6IuaaruWxsee0qyIsInZlcnNpb24iOiIxLjAuMCIsImF1dGhvciI6IuW1jOWFpeW8j+WIt+mimOacrCIsImRlc2NyaXB0aW9uIjoi5L2O6aWx5ZKM57Sr77yM5p+U5ZKM6IiS5bGVIiwibGljZW5zZSI6IuW6lOeUqOWGhee9ruinhuiniemihOiuviIsImxpZ2h0Ijp7ImJhY2tncm91bmQiOiIjZjVmM2Y4Iiwic3VyZmFjZSI6IiNmY2ZhZmQiLCJzaWRlYmFyIjoiI2VlZTlmNCIsInRleHQiOiIjMzgyZTQ3IiwibXV0ZWQiOiIjNzE2MTdmIiwibGluZSI6IiNlMGQ3ZTkiLCJhY2NlbnQiOiIjNzc1MTllIiwiYWNjZW50U29mdCI6IiNlZmU2ZjgiLCJhY2NlbnRJbmsiOiIjZmZmZmZmIiwiY29kZUJhY2tncm91bmQiOiIjZjVmMGZhIiwiZXJyb3IiOiIjYWMzNTJlIiwiZXJyb3JTb2Z0IjoiI2ZmZjFlZSIsImNvZGVLZXl3b3JkIjoiIzgxNTViYiIsImNvZGVWYWx1ZSI6IiMyZDc2NjQiLCJmb2N1cyI6IiM3NzUxOWUiLCJzdWNjZXNzIjoiIzIxNmI1MiJ9LCJkYXJrIjp7ImJhY2tncm91bmQiOiIjMjExYjI5Iiwic3VyZmFjZSI6IiMyYjIzMzQiLCJzaWRlYmFyIjoiIzI2MWYzMCIsInRleHQiOiIjZWRlNWY2IiwibXV0ZWQiOiIjYmZhZmNmIiwibGluZSI6IiM0YzNlNWMiLCJhY2NlbnQiOiIjZDBiM2YwIiwiYWNjZW50U29mdCI6IiM0NDMyNTMiLCJhY2NlbnRJbmsiOiIjMTQyNTFjIiwiY29kZUJhY2tncm91bmQiOiIjMjExOTI5IiwiZXJyb3IiOiIjZmZiNGE4IiwiZXJyb3JTb2Z0IjoiIzNlMjkyNSIsImNvZGVLZXl3b3JkIjoiI2Q0YjVmZiIsImNvZGVWYWx1ZSI6IiM5YmQ4YmYiLCJmb2N1cyI6IiNkMGIzZjAiLCJzdWNjZXNzIjoiIzk3ZDdiNiJ9LCJwcmVzZW50YXRpb24iOnsiZm9udCI6InN5c3RlbSIsInJhZGl1cyI6InJvdW5kZWQiLCJkZW5zaXR5IjoiY29tZm9ydGFibGUiLCJsYXlvdXQiOiJjbGFzc2ljIn19LCJ3aWR0aHMiOlsxNDQwLDkwMF0sImZvbnRTaXplcyI6WzE1LDIyXSwibW9kZXMiOlsibGlnaHQiLCJkYXJrIiwic3lzdGVtIl0sInJlbW90ZSI6W10sImVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "733b13c24b524ff872e4-74600da849ed44785b9f",
+          "file": "themes-layout.spec.ts",
+          "line": 34,
+          "column": 7
+        },
+        {
+          "title": "Claude 风格：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2862,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:44:37.551Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "builtin.claude-light-900.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01\\themes-layout-Claude-风格：六页-b04de--15与22px-900与1440窗口-离线无远程资源-development\\attachments\\builtin-claude-light-900-png-e16a1ccb50d14b986bb9e241a71599a5bdbf0763.png"
+                    },
+                    {
+                      "name": "builtin.claude-dark-900.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01\\themes-layout-Claude-风格：六页-b04de--15与22px-900与1440窗口-离线无远程资源-development\\attachments\\builtin-claude-dark-900-png-7e4704e0da866331d9bc23194ba4c2b100ddacac.png"
+                    },
+                    {
+                      "name": "theme-layout-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJ0aGVtZUlkIjoiYnVpbHRpbi5jbGF1ZGUiLCJkZWZpbml0aW9uIjp7ImZvcm1hdFZlcnNpb24iOjEsImlkIjoiYnVpbHRpbi5jbGF1ZGUiLCJuYW1lIjoiQ2xhdWRlIOmjjuagvCIsInZlcnNpb24iOiIxLjAuMCIsImF1dGhvciI6IuW1jOWFpeW8j+WIt+mimOacrCIsImRlc2NyaXB0aW9uIjoi6Z2e5a6Y5pa56KeG6KeJ6aKE6K6+IMK3IOaaluS4reaAp+iJsuS4juS4k+azqOWtpuS5oOW3peS9nOWMuiIsImxpY2Vuc2UiOiLlupTnlKjlhoXnva7op4bop4npooTorr7vvIzml6Dlrpjmlrnlk4HniYzntKDmnZAiLCJsaWdodCI6eyJiYWNrZ3JvdW5kIjoiI2Y3ZjZmMiIsInN1cmZhY2UiOiIjZmZmZmZmIiwic2lkZWJhciI6IiNmMGVlZTgiLCJ0ZXh0IjoiIzI5MjcyNCIsIm11dGVkIjoiIzc0NmU2NSIsImxpbmUiOiIjZTNkZmQ3IiwiYWNjZW50IjoiI2E4NGQzNSIsImFjY2VudFNvZnQiOiIjZjdlOWUyIiwiYWNjZW50SW5rIjoiI2ZmZmZmZiIsImNvZGVCYWNrZ3JvdW5kIjoiI2Y0ZjJlZCIsImVycm9yIjoiI2ExMmYyOSIsImVycm9yU29mdCI6IiNmZmYwZWQiLCJjb2RlS2V5d29yZCI6IiM3NjUxYTEiLCJjb2RlVmFsdWUiOiIjMzg2YjRiIiwiZm9jdXMiOiIjYTg0ZDM1Iiwic3VjY2VzcyI6IiMzODZiNGIifSwiZGFyayI6eyJiYWNrZ3JvdW5kIjoiIzFlMWMxOSIsInN1cmZhY2UiOiIjMjcyNDIwIiwic2lkZWJhciI6IiMyMjIwMWQiLCJ0ZXh0IjoiI2VkZThkZiIsIm11dGVkIjoiI2I5YjBhMyIsImxpbmUiOiIjNDk0MzNiIiwiYWNjZW50IjoiI2UyYTA4OCIsImFjY2VudFNvZnQiOiIjNDYzMTI3IiwiYWNjZW50SW5rIjoiIzI4MWMxNiIsImNvZGVCYWNrZ3JvdW5kIjoiIzE5MTcxNSIsImVycm9yIjoiI2ZmYjRhOCIsImVycm9yU29mdCI6IiM0MjI4MjQiLCJjb2RlS2V5d29yZCI6IiNkMWI1ZjAiLCJjb2RlVmFsdWUiOiIjYTdjNWE1IiwiZm9jdXMiOiIjZTJhMDg4Iiwic3VjY2VzcyI6IiNhN2M1YTUifSwicHJlc2VudGF0aW9uIjp7ImZvbnQiOiJzeXN0ZW0iLCJyYWRpdXMiOiJzb2Z0IiwiZGVuc2l0eSI6ImNvbWZvcnRhYmxlIiwibGF5b3V0Ijoic3R1ZHkifX0sIndpZHRocyI6WzE0NDAsOTAwXSwiZm9udFNpemVzIjpbMTUsMjJdLCJtb2RlcyI6WyJsaWdodCIsImRhcmsiLCJzeXN0ZW0iXSwicmVtb3RlIjpbXSwiZXJyb3JzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "733b13c24b524ff872e4-d8f584a6962a2cc0ed9d",
+          "file": "themes-layout.spec.ts",
+          "line": 34,
+          "column": 7
+        },
+        {
+          "title": "纸页墨色：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3333,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:44:40.419Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local.paper-ink-light-900.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01\\themes-layout-纸页墨色：六页-明暗及跟随系统-15与22px-900与1440窗口-离线无远程资源-development\\attachments\\local-paper-ink-light-900-png-33729100a93afaaa3f85933d2fb9dde5c87c963e.png"
+                    },
+                    {
+                      "name": "local.paper-ink-dark-900.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01\\themes-layout-纸页墨色：六页-明暗及跟随系统-15与22px-900与1440窗口-离线无远程资源-development\\attachments\\local-paper-ink-dark-900-png-0ca4a591aebceadd476f66742fb146f29d175fe6.png"
+                    },
+                    {
+                      "name": "theme-layout-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJ0aGVtZUlkIjoibG9jYWwucGFwZXItaW5rIiwiZGVmaW5pdGlvbiI6eyJmb3JtYXRWZXJzaW9uIjoxLCJpZCI6ImxvY2FsLnBhcGVyLWluayIsIm5hbWUiOiLnurjpobXloqjoibIiLCJ2ZXJzaW9uIjoiMS4wLjAiLCJhdXRob3IiOiLltYzlhaXlvI/liLfpopjmnKznpLrkvosiLCJkZXNjcmlwdGlvbiI6Iua4qeaalue6uOmhteS4jua3seWiqOiJsu+8jOe0p+WHkee7j+WFuOW4g+WxgO+8jOihrOe6v+mYheivu+Wtl+S9k+OAguemu+e6v+S4u+mimOWMheekuuS+i+OAgiIsImxpY2Vuc2UiOiJDQzAtMS4w77yI5LuF5q2k56S65L6L6YWN572u77yJIiwibGlnaHQiOnsiYmFja2dyb3VuZCI6IiNmNWYxZTgiLCJzdXJmYWNlIjoiI2ZmZmRmOCIsInNpZGViYXIiOiIjZWFlNGQ3IiwidGV4dCI6IiMyZDJiMjYiLCJtdXRlZCI6IiM2YjYyNTQiLCJsaW5lIjoiI2NmYzViMyIsImFjY2VudCI6IiM0ZjQ5M2YiLCJhY2NlbnRTb2Z0IjoiI2U5ZTFkMyIsImFjY2VudEluayI6IiNmZmZmZmYiLCJjb2RlQmFja2dyb3VuZCI6IiNlZGU4ZGQiLCJlcnJvciI6IiNhMzMyMmIiLCJlcnJvclNvZnQiOiIjZmZmMGViIiwiY29kZUtleXdvcmQiOiIjNzA0OTkxIiwiY29kZVZhbHVlIjoiIzMxNWY0NSIsImZvY3VzIjoiIzRmNDkzZiIsInN1Y2Nlc3MiOiIjMzE1ZjQ1In0sImRhcmsiOnsiYmFja2dyb3VuZCI6IiMyMTFmMWIiLCJzdXJmYWNlIjoiIzJiMjgyMiIsInNpZGViYXIiOiIjMjUyMjFkIiwidGV4dCI6IiNlZmU3ZDgiLCJtdXRlZCI6IiNjMmI2YTEiLCJsaW5lIjoiIzU0NGM0MCIsImFjY2VudCI6IiNkNGMyYTAiLCJhY2NlbnRTb2Z0IjoiIzQ1M2MyZiIsImFjY2VudEluayI6IiMyNDIwMTkiLCJjb2RlQmFja2dyb3VuZCI6IiMxYTE4MTUiLCJlcnJvciI6IiNmZmI0YTgiLCJlcnJvclNvZnQiOiIjNDIyODI0IiwiY29kZUtleXdvcmQiOiIjZDFiNWYwIiwiY29kZVZhbHVlIjoiI2E3YzVhNSIsImZvY3VzIjoiI2Q0YzJhMCIsInN1Y2Nlc3MiOiIjYTdjNWE1In0sInByZXNlbnRhdGlvbiI6eyJmb250Ijoic2VyaWYiLCJyYWRpdXMiOiJzcXVhcmUiLCJkZW5zaXR5IjoiY29tcGFjdCIsImxheW91dCI6ImNsYXNzaWMifX0sIndpZHRocyI6WzE0NDAsOTAwXSwiZm9udFNpemVzIjpbMTUsMjJdLCJtb2RlcyI6WyJsaWdodCIsImRhcmsiLCJzeXN0ZW0iXSwicmVtb3RlIjpbXSwiZXJyb3JzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "733b13c24b524ff872e4-2de9b7dad96033a0cac9",
+          "file": "themes-layout.spec.ts",
+          "line": 34,
+          "column": 7
+        },
+        {
+          "title": "电路夜航：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3201,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:44:43.758Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local.circuit-blue-light-900.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01\\themes-layout-电路夜航：六页-明暗及跟随系统-15与22px-900与1440窗口-离线无远程资源-development\\attachments\\local-circuit-blue-light-900-png-a8820d48bf6dc4ff399b1158c6cf89a40432a7a1.png"
+                    },
+                    {
+                      "name": "local.circuit-blue-dark-900.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-e-20261025\\final-layout-dev-01\\themes-layout-电路夜航：六页-明暗及跟随系统-15与22px-900与1440窗口-离线无远程资源-development\\attachments\\local-circuit-blue-dark-900-png-3351fbfd30de70dc85cfd165dd0f87a606812eee.png"
+                    },
+                    {
+                      "name": "theme-layout-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJ0aGVtZUlkIjoibG9jYWwuY2lyY3VpdC1ibHVlIiwiZGVmaW5pdGlvbiI6eyJmb3JtYXRWZXJzaW9uIjoxLCJpZCI6ImxvY2FsLmNpcmN1aXQtYmx1ZSIsIm5hbWUiOiLnlLXot6/lpJzoiKoiLCJ2ZXJzaW9uIjoiMS4wLjAiLCJhdXRob3IiOiLltYzlhaXlvI/liLfpopjmnKznpLrkvosiLCJkZXNjcmlwdGlvbiI6Iua4heaZsOiTneiJsuS4juWchua2pumdouadv++8jOWuveadvuWtpuS5oOW3peS9nOWMuu+8m+a1heiJsuS4jua3seiJsuWdh+WPr+eLrOeri+mAieaLqeOAgiIsImxpY2Vuc2UiOiJDQzAtMS4w77yI5LuF5q2k56S65L6L6YWN572u77yJIiwibGlnaHQiOnsiYmFja2dyb3VuZCI6IiNlZGYyZjgiLCJzdXJmYWNlIjoiI2ZmZmZmZiIsInNpZGViYXIiOiIjZTNlYmY2IiwidGV4dCI6IiMyMDMxNDciLCJtdXRlZCI6IiM1MjY2ODEiLCJsaW5lIjoiI2M5ZDZlOCIsImFjY2VudCI6IiMyNDU4YTgiLCJhY2NlbnRTb2Z0IjoiI2UwZWFmYiIsImFjY2VudEluayI6IiNmZmZmZmYiLCJjb2RlQmFja2dyb3VuZCI6IiNlZWYzZmEiLCJlcnJvciI6IiNhMTJmMjkiLCJlcnJvclNvZnQiOiIjZmZmMGVkIiwiY29kZUtleXdvcmQiOiIjNzA0OTkxIiwiY29kZVZhbHVlIjoiIzIzNWU1NyIsImZvY3VzIjoiIzI0NThhOCIsInN1Y2Nlc3MiOiIjMjM1ZTU3In0sImRhcmsiOnsiYmFja2dyb3VuZCI6IiMxMTE5MjMiLCJzdXJmYWNlIjoiIzE5MjUzNSIsInNpZGViYXIiOiIjMTUyMDMwIiwidGV4dCI6IiNlMmVkZjkiLCJtdXRlZCI6IiNhOGJkZDYiLCJsaW5lIjoiIzM1NGM2OSIsImFjY2VudCI6IiM5MWJjZjYiLCJhY2NlbnRTb2Z0IjoiIzI2M2U2MSIsImFjY2VudEluayI6IiMxMjIyMzkiLCJjb2RlQmFja2dyb3VuZCI6IiMwZDE1MjAiLCJlcnJvciI6IiNmZmI0YTgiLCJlcnJvclNvZnQiOiIjNDIyODI0IiwiY29kZUtleXdvcmQiOiIjZDFiNWYwIiwiY29kZVZhbHVlIjoiIzhkZDVjMiIsImZvY3VzIjoiIzkxYmNmNiIsInN1Y2Nlc3MiOiIjOGRkNWMyIn0sInByZXNlbnRhdGlvbiI6eyJmb250Ijoic3lzdGVtIiwicmFkaXVzIjoicm91bmRlZCIsImRlbnNpdHkiOiJjb21mb3J0YWJsZSIsImxheW91dCI6InN0dWR5In19LCJ3aWR0aHMiOlsxNDQwLDkwMF0sImZvbnRTaXplcyI6WzE1LDIyXSwibW9kZXMiOlsibGlnaHQiLCJkYXJrIiwic3lzdGVtIl0sInJlbW90ZSI6W10sImVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "733b13c24b524ff872e4-a2d0e9657f69e29ccb80",
+          "file": "themes-layout.spec.ts",
+          "line": 34,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "workbench-browser.spec.ts",
+      "file": "workbench-browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "工作台题库：内容更新筛选按当前版本和范围真实计数，标签候选保持，练习仍使用原选题规则",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2191,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:44:46.968Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e41dd3b19749ff684a10-a6529ff58a75cca4f431",
+          "file": "workbench-browser.spec.ts",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "工作台题库：宽窗三栏与窄窗详情返回保留筛选、页码、选中、已展开内容和同一阅读节点",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1392,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T17:44:49.165Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e41dd3b19749ff684a10-4a404d336f8d1cff103b",
+          "file": "workbench-browser.spec.ts",
+          "line": 64,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-25T17:44:21.260Z",
+    "duration": 29328.389,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -7,7 +7,7 @@ import {
 } from '../../../shared/contracts/question-filters'
 import { createPracticeController } from '../practice-controller'
 import { PracticePane } from './PracticePane'
-import { QuestionFilterFields } from './QuestionFilterFields'
+import { QuestionFilterFields, questionFilterSummary } from './QuestionFilterFields'
 import {
   ALL_CATEGORIES,
   categorySnapshotLabel,
@@ -32,13 +32,24 @@ export function PracticeWorkspace({
   onDataBusy,
   onDataOperation,
   homeContent,
+  homeLabel = '板块与继续练习',
+  showResume = true,
 }: {
   refresh: number
   onActiveChange: (active: boolean) => void
   beforeClose?: () => Promise<boolean>
   onDataBusy: (busy: boolean) => void
   onDataOperation: (work: Promise<boolean>) => void
-  homeContent?: ReactNode
+  homeContent?:
+    | ReactNode
+    | ((practice: {
+        active: PracticeView | null
+        ready: boolean
+        busy: boolean
+        resume: () => void
+      }) => ReactNode)
+  homeLabel?: string
+  showResume?: boolean
 }) {
   const api = window.desktop.practice
   const [controller] = useState(() => createPracticeController(api))
@@ -239,15 +250,24 @@ export function PracticeWorkspace({
   }, [page, ready, refresh, topicId, category, filters])
 
   if (page === 'practice')
-    return <PracticePane state={state} controller={controller} homeBusy={busy} onHome={home} />
+    return (
+      <PracticePane
+        state={state}
+        controller={controller}
+        homeBusy={busy}
+        onHome={home}
+        onDataBusy={onDataBusy}
+        onDataOperation={onDataOperation}
+      />
+    )
   const hasQuestions = matchingCount !== undefined && matchingCount > 0
   const blocked = busy || state.closing || !ready || plansBusy
   return (
     <section
       className="practice-workspace practice-start"
-      aria-label={homeContent ? '板块与继续练习' : '开始练习'}
+      aria-label={homeContent ? homeLabel : '开始练习'}
     >
-      {active && (
+      {active && showResume && (
         <section className="resume-practice" aria-label="继续上次练习">
           <div>
             <p className="eyebrow">接着上次的位置</p>
@@ -301,10 +321,170 @@ export function PracticeWorkspace({
           </details>
         </section>
       )}
-      {homeContent}
+      {typeof homeContent === 'function'
+        ? homeContent({ active, ready, busy: blocked || Boolean(pendingStart.current), resume })
+        : homeContent}
       <div className="practice-options" hidden={Boolean(homeContent)}>
         <p className="eyebrow">{active ? '也可以重新选择题目' : '按自己的节奏，认真完成一轮'}</p>
         <h2>{active ? '开始新一轮' : '开始一轮练习'}</h2>
+        <div className="practice-configuration">
+          <h3>1. 选题范围</h3>
+          <details className="topic-navigation-panel">
+            <summary>按分类选择专题</summary>
+            <TopicNavigator
+              prefix="练习"
+              topics={topics}
+              categories={categories}
+              category={category}
+              topicId={topicId}
+              disabled={blocked || Boolean(pendingStart.current)}
+              onChange={(next, topic) => {
+                setError('')
+                setCategory(next)
+                setTopicId(topic)
+              }}
+            />
+          </details>
+          <div className="library-filters">
+            {' '}
+            <label>
+              练习专题
+              <select
+                aria-label="练习专题"
+                value={topicId ?? ''}
+                disabled={blocked || Boolean(pendingStart.current)}
+                onChange={(event) => {
+                  setError('')
+                  setTopicId(event.currentTarget.value || null)
+                }}
+              >
+                <option value="">全部专题</option>
+                {topicId &&
+                  !topics.some(
+                    (topic) =>
+                      topic.topicId === topicId && matchesCategory(topic.categoryId, category),
+                  ) && (
+                    <option value={topicId} disabled>
+                      已不在当前活动范围的专题
+                    </option>
+                  )}
+                {topics
+                  .filter((topic) => matchesCategory(topic.categoryId, category))
+                  .map((topic) => (
+                    <option key={topic.topicId} value={topic.topicId}>
+                      {topic.title}（{topic.activeCount} 题）
+                    </option>
+                  ))}
+              </select>
+            </label>
+          </div>
+          <h3>2. 筛选条件</h3>
+
+          <div className="shortcut-row" role="group" aria-label="常用练习条件">
+            {shortcuts.map((shortcut) => (
+              <button
+                type="button"
+                key={shortcut.label}
+                aria-pressed={JSON.stringify(filters) === JSON.stringify(shortcut.filters)}
+                disabled={blocked || Boolean(pendingStart.current)}
+                onClick={() => {
+                  setError('')
+                  setFilters({ ...shortcut.filters })
+                }}
+              >
+                {shortcut.label}
+              </button>
+            ))}
+          </div>
+          <p className="muted">
+            快捷入口会替换其他筛选，保留分类、专题、模式和题数；点击开始后才创建新轮。
+          </p>
+          <details className="practice-filter-options">
+            <summary>筛选练习题目</summary>
+            <QuestionFilterFields
+              prefix="练习"
+              filters={filters}
+              tagOptions={tagOptions}
+              disabled={blocked || Boolean(pendingStart.current)}
+              onChange={(next) => {
+                setError('')
+                setFilters(next)
+              }}
+            />
+          </details>
+          <p className="filter-summary" aria-label="当前练习筛选摘要">
+            {questionFilterSummary(filters)}
+          </p>
+          <h3>3. 练习方式与题数</h3>
+          <div className="library-filters">
+            <label>
+              练习模式
+              <select
+                aria-label="练习模式"
+                value={mode}
+                disabled={blocked || Boolean(pendingStart.current)}
+                onChange={(event) =>
+                  setMode(event.currentTarget.value === 'random' ? 'random' : 'sequential')
+                }
+              >
+                <option value="sequential">顺序练习</option>
+                <option value="random">随机练习</option>
+              </select>
+            </label>
+
+            <label>
+              本轮题数
+              <select
+                aria-label="本轮题数"
+                value={count}
+                disabled={blocked || Boolean(pendingStart.current)}
+                onChange={(event) =>
+                  setCount(
+                    event.currentTarget.value === 'all'
+                      ? 'all'
+                      : (Number(event.currentTarget.value) as 10 | 20 | 50),
+                  )
+                }
+              >
+                <option value={10}>10 题</option>
+                <option value={20}>20 题</option>
+                <option value={50}>50 题</option>
+                <option value="all">全部</option>
+              </select>
+            </label>
+          </div>
+          {ready && (
+            <p className="muted" aria-live="polite">
+              {matchingCount === undefined ? (
+                '正在查找匹配题目…'
+              ) : (
+                <>
+                  <span>匹配 {matchingCount} 题</span>
+                  <strong className="practice-round-count">
+                    本轮 {count === 'all' ? matchingCount : Math.min(count, matchingCount)} 题
+                  </strong>
+                </>
+              )}
+            </p>
+          )}
+          {mode === 'random' && (
+            <p className="muted">开始时随机选题并保存顺序，继续或重新打开程序会保留本轮队列。</p>
+          )}
+          {ready && topics.length === 0 && <p className="muted">先导入题库，再开始练习。</p>}
+          {ready && topics.length > 0 && matchingCount === 0 && (
+            <p className="muted">当前筛选没有匹配题目，请调整条件。</p>
+          )}
+          <div className="button-row">
+            <button
+              type="button"
+              className={active ? undefined : 'primary'}
+              disabled={blocked || (!pendingStart.current && !hasQuestions)}
+              onClick={start}
+            >
+              {pendingStart.current ? '重试开始本轮' : active ? '结束本轮并开始新练习' : '开始练习'}
+            </button>
+          </div>
+        </div>
         <PracticePlans
           refresh={refresh}
           options={{ category, topicId, mode, count, filters }}
@@ -328,142 +508,6 @@ export function PracticeWorkspace({
             setError('')
           }}
         />
-        <div className="shortcut-row" role="group" aria-label="常用练习条件">
-          {shortcuts.map((shortcut) => (
-            <button
-              type="button"
-              key={shortcut.label}
-              aria-pressed={JSON.stringify(filters) === JSON.stringify(shortcut.filters)}
-              disabled={blocked || Boolean(pendingStart.current)}
-              onClick={() => {
-                setError('')
-                setFilters({ ...shortcut.filters })
-              }}
-            >
-              {shortcut.label}
-            </button>
-          ))}
-        </div>
-        <p className="muted">
-          快捷入口会替换其他筛选，保留分类、专题、模式和题数；点击开始后才创建新轮。
-        </p>
-        <details className="topic-navigation-panel">
-          <summary>按分类选择专题</summary>
-          <TopicNavigator
-            prefix="练习"
-            topics={topics}
-            categories={categories}
-            category={category}
-            topicId={topicId}
-            disabled={blocked || Boolean(pendingStart.current)}
-            onChange={(next, topic) => {
-              setError('')
-              setCategory(next)
-              setTopicId(topic)
-            }}
-          />
-        </details>
-        <div className="library-filters">
-          <label>
-            练习模式
-            <select
-              aria-label="练习模式"
-              value={mode}
-              disabled={blocked || Boolean(pendingStart.current)}
-              onChange={(event) =>
-                setMode(event.currentTarget.value === 'random' ? 'random' : 'sequential')
-              }
-            >
-              <option value="sequential">顺序练习</option>
-              <option value="random">随机练习</option>
-            </select>
-          </label>
-          <label>
-            练习专题
-            <select
-              aria-label="练习专题"
-              value={topicId ?? ''}
-              disabled={blocked || Boolean(pendingStart.current)}
-              onChange={(event) => {
-                setError('')
-                setTopicId(event.currentTarget.value || null)
-              }}
-            >
-              <option value="">全部专题</option>
-              {topicId &&
-                !topics.some(
-                  (topic) =>
-                    topic.topicId === topicId && matchesCategory(topic.categoryId, category),
-                ) && (
-                  <option value={topicId} disabled>
-                    已不在当前活动范围的专题
-                  </option>
-                )}
-              {topics
-                .filter((topic) => matchesCategory(topic.categoryId, category))
-                .map((topic) => (
-                  <option key={topic.topicId} value={topic.topicId}>
-                    {topic.title}（{topic.activeCount} 题）
-                  </option>
-                ))}
-            </select>
-          </label>
-          <label>
-            本轮题数
-            <select
-              aria-label="本轮题数"
-              value={count}
-              disabled={blocked || Boolean(pendingStart.current)}
-              onChange={(event) =>
-                setCount(
-                  event.currentTarget.value === 'all'
-                    ? 'all'
-                    : (Number(event.currentTarget.value) as 10 | 20 | 50),
-                )
-              }
-            >
-              <option value={10}>10 题</option>
-              <option value={20}>20 题</option>
-              <option value={50}>50 题</option>
-              <option value="all">全部</option>
-            </select>
-          </label>
-        </div>
-        <details className="practice-filter-options">
-          <summary>筛选练习题目</summary>
-          <QuestionFilterFields
-            prefix="练习"
-            filters={filters}
-            tagOptions={tagOptions}
-            disabled={blocked || Boolean(pendingStart.current)}
-            onChange={(next) => {
-              setError('')
-              setFilters(next)
-            }}
-          />
-        </details>
-        {ready && (
-          <p className="muted" aria-live="polite">
-            {matchingCount === undefined ? '正在查找匹配题目…' : `匹配 ${matchingCount} 题`}
-          </p>
-        )}
-        {mode === 'random' && (
-          <p className="muted">开始时随机选题并保存顺序，继续或重新打开程序会保留本轮队列。</p>
-        )}
-        {ready && topics.length === 0 && <p className="muted">先导入题库，再开始练习。</p>}
-        {ready && topics.length > 0 && matchingCount === 0 && (
-          <p className="muted">当前筛选没有匹配题目，请调整条件。</p>
-        )}
-        <div className="button-row">
-          <button
-            type="button"
-            className={active ? undefined : 'primary'}
-            disabled={blocked || (!pendingStart.current && !hasQuestions)}
-            onClick={start}
-          >
-            {pendingStart.current ? '重试开始本轮' : active ? '结束本轮并开始新练习' : '开始练习'}
-          </button>
-        </div>
       </div>
       {error && (
         <div role="alert" className="error-message">

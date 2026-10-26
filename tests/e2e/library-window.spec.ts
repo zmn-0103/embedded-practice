@@ -45,6 +45,9 @@ async function prepare(directory: string, count = 2) {
   return { sources, file }
 }
 async function choose(application: ElectronApplication, filePaths: string[], canceled = false) {
+  const page = await application.firstWindow()
+  const close = page.getByRole('button', { name: '关闭导入工作区', exact: true })
+  if (await close.isVisible()) await close.click()
   await application.evaluate(
     ({ dialog }, selected) => {
       dialog.showOpenDialog = async () => ({
@@ -61,6 +64,7 @@ async function importThroughWindow(application: ElectronApplication, page: Page,
   await expect(page.getByRole('heading', { name: '导入预览', exact: true })).toBeVisible()
   await page.getByRole('button', { name: '确认导入', exact: true }).click()
   await expect(page.getByText(/^导入完成：/)).toBeVisible()
+  await page.getByRole('button', { name: '关闭导入工作区', exact: true }).click()
 }
 async function expectImages(page: Page) {
   const images = page.locator('.question-reader img')
@@ -102,6 +106,7 @@ test('窗口预览确认、三种图片解码、移动来源后独立进程重�
     await rename(sources, moved)
     await page.getByRole('button', { name: '确认导入', exact: true }).dblclick()
     await expect(page.getByText(/^导入完成：/)).toBeVisible()
+    await page.getByRole('button', { name: '关闭导入工作区', exact: true }).click()
     await page.getByRole('button', { name: /ui-001/ }).click()
     await expect(page.locator('.question-reader pre code')).toContainText('int value = 1;')
     await expect(page.locator('.question-reader table')).toContainText('GPIO')
@@ -206,6 +211,7 @@ test('分页与归档视图、窗口更新摘要及相同身份恢复', async ({
     await expect(page.locator('.count-grid dd').nth(4)).toHaveText('1')
     await page.getByRole('button', { name: '确认导入', exact: true }).click()
     await expect(page.getByText(/^导入完成：/)).toBeVisible()
+    await page.getByRole('button', { name: '关闭导入工作区', exact: true }).click()
     await page.getByLabel('查看归档题目').check()
     await expect(page.locator('.question-list li')).toHaveCount(1)
     await page.getByRole('button', { name: /ui-002/ }).click()

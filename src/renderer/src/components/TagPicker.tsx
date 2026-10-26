@@ -1,4 +1,4 @@
-import { useEffect, useId, useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
 
 const MAX_VISIBLE_TAGS = 50
 
@@ -16,12 +16,22 @@ export function TagPicker({
   onChange: (value: string | null) => void
 }) {
   const id = useId()
+  const root = useRef<HTMLDivElement>(null)
   const [open, setOpen] = useState(false)
   const [highlighted, setHighlighted] = useState(-1)
   const matches = options.filter((tag) => tag.toLowerCase().includes((value ?? '').toLowerCase()))
   const visible = matches.slice(0, MAX_VISIBLE_TAGS)
   const expanded = open && !disabled
   const active = highlighted < visible.length ? highlighted : -1
+  useEffect(() => {
+    if (!expanded) return
+    // 先完成邻近控件的点击，再收起候选，避免文档流变化使按下和松开落在不同位置。
+    const closeOutside = (event: MouseEvent) => {
+      if (event.target instanceof Node && !root.current?.contains(event.target)) setOpen(false)
+    }
+    document.addEventListener('click', closeOutside)
+    return () => document.removeEventListener('click', closeOutside)
+  }, [expanded])
   useEffect(() => {
     if (expanded && active >= 0)
       document.getElementById(`${id}-option-${active}`)?.scrollIntoView({ block: 'nearest' })
@@ -33,9 +43,10 @@ export function TagPicker({
   }
   return (
     <div
+      ref={root}
       className="tag-picker"
-      onBlur={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false)
+      onKeyDown={(event) => {
+        if (event.key === 'Tab') setOpen(false)
       }}
     >
       <label htmlFor={`${id}-input`}>标签</label>

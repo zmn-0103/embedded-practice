@@ -16,6 +16,7 @@ export function BoardEntrance({
   const [navigation, setNavigation] = useState<LibraryNavigation>()
   const [query, setQuery] = useState('')
   const [extensions, setExtensions] = useState(false)
+  const [availableOnly, setAvailableOnly] = useState(false)
   const [attempt, setAttempt] = useState(0)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
@@ -40,15 +41,21 @@ export function BoardEntrance({
       current = false
     }
   }, [refresh, attempt])
-  const cards = navigation ? filterBoardCards(createBoardCards(navigation), query, extensions) : []
+  const allCards = navigation ? createBoardCards(navigation) : []
+  const cards = filterBoardCards(allCards, query, extensions).filter(
+    (card) => !availableOnly || card.activeCount > 0,
+  )
   const blocked = disabled || loading || Boolean(error)
   return (
     <section className="board-entrance" aria-labelledby="board-heading" aria-busy={loading}>
       <div className="board-heading">
-        <div>
-          <p className="eyebrow">按知识方向，找到下一道题</p>
+        <div className="board-title">
           <h2 id="board-heading">题库板块</h2>
-          <p className="muted">先看规划，再逐步积累自己的题库。</p>
+          {!loading && !error && navigation && (
+            <span className="muted">
+              本机 {allCards.find((card) => card.key === 'all')?.activeCount} 题
+            </span>
+          )}
         </div>
         <div className="button-row">
           <button
@@ -63,6 +70,34 @@ export function BoardEntrance({
           </button>
         </div>
       </div>
+      {!loading && !error && navigation && (
+        <div className="board-shortcuts" aria-label="题库快捷入口">
+          {allCards
+            .filter((card) => card.tier === 'overview')
+            .map((card) => (
+              <article key={card.key} className="board-shortcut" aria-label={`板块：${card.title}`}>
+                <button
+                  type="button"
+                  disabled={blocked || card.activeCount === 0}
+                  aria-label={`进入板块：${card.title}`}
+                  onClick={() => card.scope && onBrowse(card.scope, false)}
+                >
+                  {card.title} · {card.activeCount} 题
+                </button>
+                {card.archivedCount > 0 && (
+                  <button
+                    type="button"
+                    aria-label={`查看归档：${card.title}`}
+                    disabled={blocked}
+                    onClick={() => card.scope && onBrowse(card.scope, true)}
+                  >
+                    归档 {card.archivedCount} 题
+                  </button>
+                )}
+              </article>
+            ))}
+        </div>
+      )}
       <div className="board-controls">
         <label>
           搜索板块
@@ -83,11 +118,22 @@ export function BoardEntrance({
           />
           显示拓展方向
         </label>
+        <label>
+          <input
+            type="checkbox"
+            checked={availableOnly}
+            onChange={(event) => setAvailableOnly(event.currentTarget.checked)}
+          />
+          仅显示有题板块
+        </label>
+        <details className="board-help">
+          <summary>题数与分类说明</summary>
+          <p className="muted">
+            题数来自本机当前分类中的活动题目。同名分类合并展示；新专题默认未分类，可在管理分类中安排归属。
+            搜索覆盖全部规划与本机专题，已有题的拓展板块始终显示。有题筛选只改变展示，不调整专题归属。
+          </p>
+        </details>
       </div>
-      <p className="board-help muted">
-        题数来自本机当前分类中的活动题目。同名分类合并展示；新专题默认未分类，可在管理分类中安排归属。
-        搜索覆盖全部规划与本机专题，已有题的拓展板块始终显示。
-      </p>
       {loading && <p aria-live="polite">正在读取板块与实际题数…</p>}
       {error && (
         <div className="error-message" role="alert">
@@ -104,78 +150,114 @@ export function BoardEntrance({
       {!loading && !error && navigation && (
         <>
           <p className="board-result muted" aria-live="polite" aria-label="板块搜索结果">
-            显示 {cards.length} 个入口
+            显示 {cards.filter((card) => card.tier !== 'overview').length} 个知识板块
           </p>
-          {cards.length === 0 && (
-            <p className="reader-placeholder">没有匹配板块，请调整或清空搜索。</p>
+          {cards.filter((card) => card.tier !== 'overview').length === 0 && (
+            <p className="reader-placeholder">没有匹配板块，请调整搜索或有题筛选。</p>
           )}
-          <div className="board-grid">
-            {cards.map((card) => (
-              <article key={card.key} className="board-card" aria-label={`板块：${card.title}`}>
-                <span className="board-kind">
-                  {card.tier === 'overview'
-                    ? '本机题库'
-                    : card.tier === 'personal'
-                      ? '自定义'
-                      : card.tier === 'extension'
-                        ? '拓展方向'
-                        : '基础板块'}
-                </span>
-                <h3>{card.title}</h3>
-                <p className="board-summary muted">{card.summary}</p>
-                <p className="board-count">
-                  <strong>{card.activeCount}</strong> 题
-                  {card.activeCount === 0 && <span className="muted"> · 待补题</span>}
-                </p>
-                <button
-                  type="button"
-                  disabled={blocked || !card.scope || card.activeCount === 0}
-                  aria-label={`进入板块：${card.title}`}
-                  onClick={() => card.scope && onBrowse(card.scope, false)}
-                >
-                  查看题库
-                </button>
-                {card.archivedCount > 0 && (
-                  <button
-                    type="button"
-                    disabled={blocked || !card.scope}
-                    aria-label={`查看归档：${card.title}`}
-                    onClick={() => card.scope && onBrowse(card.scope, true)}
-                  >
-                    另有 {card.archivedCount} 题已归档
-                  </button>
-                )}
-                <details>
-                  <summary>查看专题与范围</summary>
-                  {card.topics.length > 0 ? (
-                    <>
-                      <p className="muted">本机已导入 {card.topics.length} 个专题</p>
-                      <ul>
-                        {card.topics.map((topic) => (
-                          <li key={topic.topicId}>
-                            {topic.title}（{topic.activeCount} 题）
-                          </li>
-                        ))}
-                      </ul>
-                    </>
-                  ) : (
-                    <p className="muted">暂无已导入专题。可先浏览下方规划，后续再补题。</p>
-                  )}
-                  {card.plannedTopics.length > 0 && (
-                    <>
-                      <p className="muted">建设规划，尚不代表已导入</p>
-                      <ul>
-                        {card.plannedTopics.map((topic) => (
-                          <li key={topic}>{topic}</li>
-                        ))}
-                      </ul>
-                      <p className="muted">{card.boundary}</p>
-                    </>
-                  )}
-                </details>
-              </article>
-            ))}
-          </div>
+          {(
+            [
+              ['foundation', '基础方向'],
+              ['extension', '拓展方向'],
+              ['personal', '本机自定义分类'],
+            ] as const
+          ).map(([tier, title]) => {
+            const group = cards.filter((card) => card.tier === tier)
+            return (
+              group.length > 0 && (
+                <section className="board-section" key={tier} aria-label={title}>
+                  <h3>
+                    {title} <span className="muted">· {group.length}</span>
+                  </h3>
+                  <div className="board-grid">
+                    {group.map((card) => (
+                      <article
+                        key={card.key}
+                        className="board-card"
+                        aria-label={`板块：${card.title}`}
+                      >
+                        <span className="board-icon" aria-hidden="true">
+                          <svg
+                            viewBox="0 0 24 24"
+                            width="22"
+                            height="22"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                          >
+                            <rect x="5" y="5" width="14" height="14" rx="3" />
+                            <path
+                              d={
+                                tier === 'foundation'
+                                  ? 'M8 10h8M8 14h5'
+                                  : tier === 'extension'
+                                    ? 'm9 8 6 4-6 4V8Z'
+                                    : 'M12 8v8M8 12h8'
+                              }
+                            />
+                          </svg>
+                        </span>
+
+                        <h3>{card.title}</h3>
+                        <p className="board-summary muted">{card.summary.split(/[，。；]/u)[0]}</p>
+                        <p className="board-count">
+                          <strong>{card.activeCount}</strong> 题
+                          {card.activeCount === 0 && <span className="muted"> · 待补题</span>}
+                        </p>
+                        <button
+                          type="button"
+                          disabled={blocked || !card.scope || card.activeCount === 0}
+                          aria-label={`进入板块：${card.title}`}
+                          onClick={() => card.scope && onBrowse(card.scope, false)}
+                        >
+                          查看题库
+                        </button>
+                        {card.archivedCount > 0 && (
+                          <button
+                            type="button"
+                            disabled={blocked || !card.scope}
+                            aria-label={`查看归档：${card.title}`}
+                            onClick={() => card.scope && onBrowse(card.scope, true)}
+                          >
+                            另有 {card.archivedCount} 题已归档
+                          </button>
+                        )}
+                        <details>
+                          <summary>查看专题与范围</summary>
+                          <p className="muted">{card.summary}</p>
+                          {card.topics.length > 0 ? (
+                            <>
+                              <p className="muted">本机已导入 {card.topics.length} 个专题</p>
+                              <ul>
+                                {card.topics.map((topic) => (
+                                  <li key={topic.topicId}>
+                                    {topic.title}（{topic.activeCount} 题）
+                                  </li>
+                                ))}
+                              </ul>
+                            </>
+                          ) : (
+                            <p className="muted">暂无已导入专题。可先浏览下方规划，后续再补题。</p>
+                          )}
+                          {card.plannedTopics.length > 0 && (
+                            <>
+                              <p className="muted">建设规划，尚不代表已导入</p>
+                              <ul>
+                                {card.plannedTopics.map((topic) => (
+                                  <li key={topic}>{topic}</li>
+                                ))}
+                              </ul>
+                              <p className="muted">{card.boundary}</p>
+                            </>
+                          )}
+                        </details>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              )
+            )
+          })}
         </>
       )}
     </section>

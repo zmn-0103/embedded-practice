@@ -1,0 +1,45 @@
+{
+  "baselineReport": "docs/evidence/themes-20261025/full-01.json",
+  "oldDevelopmentCases": 234,
+  "firstWorkbenchCases": 241,
+  "missingOldCases": [],
+  "addedInFirst": [
+    {
+      "file": "workbench-browser.spec.ts",
+      "title": "工作台题库：内容更新筛选按当前版本和范围真实计数，标签候选保持，练习仍使用原选题规则",
+      "project": "development"
+    },
+    {
+      "file": "workbench-browser.spec.ts",
+      "title": "工作台题库：宽窗三栏与窄窗详情返回保留筛选、页码、选中、已展开内容和同一阅读节点",
+      "project": "development"
+    },
+    {
+      "file": "workbench-overview.spec.ts",
+      "title": "工作台总览：空库默认六入口、真实零统计与导入模板入口，不自动建轮或混入样例",
+      "project": "development"
+    },
+    {
+      "file": "workbench-overview.spec.ts",
+      "title": "工作台总览：当前位置与揭晓自评分列，快捷筛选不建轮，继续本轮保持原队列与草稿",
+      "project": "development"
+    },
+    {
+      "file": "workbench-overview.spec.ts",
+      "title": "工作台总览：统计读取失败保持错误和重试，不伪装成空库或显示旧数字",
+      "project": "development"
+    },
+    {
+      "file": "workbench-practice.spec.ts",
+      "title": "工作台练习：保存失败保留输入并阻止返回，六入口保存守卫与主题/缩放不重建输入，恢复后继续原轮",
+      "project": "development"
+    },
+    {
+      "file": "workbench-practice.spec.ts",
+      "title": "工作台练习：收藏失败重试原目标且独立于自评，空输入揭晓后才挂载答案/历史和自评，新题重新隔离",
+      "project": "development"
+    }
+  ],
+  "extraAfterFirst": "workbench-errors.spec.ts: 窄窗重读错误可见场景",
+  "normalization": "仅将主题矩阵标题的六页映射回五页；新矩阵实际增加总览检查"
+}

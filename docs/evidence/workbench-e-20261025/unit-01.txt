@@ -1,0 +1,17 @@
+
+> embedded-practice@0.0.1 test
+> vitest run tests/unit
+
+
+ RUN  v5.0.5 E:/My_Projects/embedded-practice
+
+
+ Test Files  34 passed (34)
+      Tests  658 passed (658)
+   Start at  23:43:47
+   Duration  11.81s (tests 54%, import 43%, transform 2%, worker 1%)
+
+     Import  104 modules were evaluated 144 times · 3.78s total, 43% of tracked time
+             ~1.05s faster with isolate: false — shared modules are evaluated once per worker instead of once per file
+             learn more: https://vitest.dev/guide/improving-performance#test-isolation
+

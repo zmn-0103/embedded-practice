@@ -3,7 +3,7 @@ import { writeFile } from 'node:fs/promises'
 import type { Page } from '@playwright/test'
 import type { DesktopApi } from '../../src/shared/contracts/application'
 import type { StartPractice } from '../../src/shared/contracts/practice'
-import { expect, launchApplication, test } from './helpers'
+import { expect, launchApplication, openPage, test } from './helpers'
 import { categoryBank, categoryChange, categoryList, prepareCategories } from './category-helpers'
 import { historySnapshot, importHistoryFiles, stop } from './history-helpers'
 import { expectCounts, openRecords, readLearning } from './learning-helpers'
@@ -59,6 +59,7 @@ test('分类练习：同事务快照、随机队列、移动/改名/移除后的
       ),
     ).toMatchObject({ ok: true })
     await instance.page.reload()
+    await openPage(instance.page, '开始练习')
     await expect(instance.page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     await instance.page.getByRole('button', { name: '继续练习', exact: true }).click()
     await instance.page
@@ -69,7 +70,7 @@ test('分类练习：同事务快照、随机队列、移动/改名/移除后的
     const draft = '分类验收专用，非用户答案\n    kept_queue();\n中文末行'
     await instance.page.getByRole('textbox', { name: '我的答案', exact: true }).fill(draft)
     await expect(instance.page.locator('.practice-save')).toHaveText('已保存')
-    await instance.page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await instance.page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     const before = historySnapshot(testDataDirectory)
     const position = await current(instance.page)
     for (const change of [
@@ -187,7 +188,7 @@ test('分类统计：同题多轮去重、当前版本/收藏与归档交集，�
       ratings: { 不会: 0, 不熟: 1, 掌握: 0 },
     })
     await openRecords(page)
-    await page.getByText('按分类查看学习记录', { exact: true }).click()
+    await page.locator('.records-scope .topic-navigation-panel > summary').click()
     await page.getByRole('button', { name: '学习记录分类：板块 A', exact: true }).click()
     await expectCounts(page, [4, 1, 1, 1, 0], [0, 1, 0])
     await expect(page.getByText('共 1 题', { exact: true })).toBeVisible()
@@ -207,7 +208,7 @@ test('分类统计：同题多轮去重、当前版本/收藏与归档交集，�
       }),
     ).toMatchObject({ total: 3, revealed: 0, rated: 0, favorites: 0 })
     await openRecords(page)
-    await page.getByText('按分类查看学习记录', { exact: true }).click()
+    await page.locator('.records-scope .topic-navigation-panel > summary').click()
     await page.getByRole('button', { name: '学习记录分类：板块 A', exact: true }).click()
     await page.getByLabel('学习记录范围', { exact: true }).selectOption('archived')
     await expectCounts(page, [1, 1, 1, 1, 0], [0, 1, 0])
@@ -221,7 +222,7 @@ test('分类统计：旧分类的晚到摘要不能覆盖新范围或下方题�
   const { application, page, first } = await prepareCategories(testDataDirectory, info.project.name)
   try {
     await openRecords(page)
-    await page.getByText('按分类查看学习记录', { exact: true }).click()
+    await page.locator('.records-scope .topic-navigation-panel > summary').click()
     await application.evaluate(({ ipcMain }, id) => {
       const original = Reflect.get(ipcMain, '_invokeHandlers').get('learning:read')
       let hold = true
@@ -308,6 +309,10 @@ for (const failed of [false, true]) {
         })
       })
       const manager = instance.page.locator('.category-manager')
+      if ((await manager.getAttribute('open')) === null)
+        await manager.locator('summary').first().click()
+      const create = manager.getByRole('button', { name: '新增分类', exact: true })
+      if ((await create.getAttribute('aria-expanded')) !== 'true') await create.click()
       await manager.getByLabel('新分类名称', { exact: true }).fill('关闭等待分类')
       await manager.getByRole('button', { name: '添加分类', exact: true }).click()
       await expect

@@ -60,11 +60,11 @@ async function runtime(
     expect(resolve(actual.appPath)).toBe(resolve('out/main'))
     expect(actual.arguments).toContain(resolve('out/main/index.js'))
   }
-  await expect(page.locator('footer')).toContainText('20261025.2-v001')
+  await expect(page.locator('footer')).toContainText('20261026.2-workbench-e-ui3')
   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())
   expect(schema).toEqual({ user_version: 10 })
   await info.attach('runtime.json', {
-    body: JSON.stringify({ ...actual, schema, build: '20261025.2-v001' }, null, 2),
+    body: JSON.stringify({ ...actual, schema, build: '20261026.2-workbench-e-ui3' }, null, 2),
     contentType: 'application/json',
   })
 }
@@ -97,15 +97,20 @@ test('板块入口：空库默认页可搜索和键盘浏览22份规划，不种
   const { application, page } = await launchApplication(
     testDataDirectory,
     info.project.name,
-    '板块',
+    '知识板块',
   )
   try {
     await page.reload()
-    await expect(page.getByRole('link', { name: '板块', exact: true })).toHaveAttribute(
+    await expect(page.getByRole('link', { name: '学习总览', exact: true })).toHaveAttribute(
       'aria-current',
       'page',
     )
-    await expect(page.locator('.board-card')).toHaveCount(17)
+    await openPage(page, '知识板块')
+    await expect(page.getByRole('link', { name: '知识板块', exact: true })).toHaveAttribute(
+      'aria-current',
+      'page',
+    )
+    await expect(page.locator('.board-card')).toHaveCount(15)
     await runtime(application, page, testDataDirectory, info)
     const c = board(page, 'C语言')
     await expect(c.locator('.board-count')).toHaveText('0 题 · 待补题')
@@ -114,7 +119,7 @@ test('板块入口：空库默认页可搜索和键盘浏览22份规划，不种
     await c.locator('summary').press('Enter')
     await expect(c.getByText('数据类型与表达式', { exact: true })).toBeVisible()
     await page.getByLabel('显示拓展方向', { exact: true }).check()
-    await expect(page.locator('.board-card')).toHaveCount(24)
+    await expect(page.locator('.board-card')).toHaveCount(22)
     await page.getByLabel('显示拓展方向', { exact: true }).uncheck()
     const search = page.getByRole('searchbox', { name: '搜索板块', exact: true })
     await search.fill('Linux')
@@ -122,7 +127,9 @@ test('板块入口：空库默认页可搜索和键盘浏览22份规划，不种
     await search.fill('Verilog')
     await expect(board(page, 'FPGA与数字设计')).toBeVisible()
     await search.fill('不存在的规划方向')
-    await expect(page.getByText('没有匹配板块，请调整或清空搜索。', { exact: true })).toBeVisible()
+    await expect(
+      page.getByText('没有匹配板块，请调整搜索或有题筛选。', { exact: true }),
+    ).toBeVisible()
     await search.fill('')
     await captureHistory(application, page, info, 'boards-empty.png')
     await page.getByRole('button', { name: '按条件开始练习', exact: true }).focus()
@@ -133,6 +140,7 @@ test('板块入口：空库默认页可搜索和键盘浏览22份规划，不种
     expect((await categoryList(page)).categories).toEqual([])
     await page.context().setOffline(true)
     await page.reload()
+    await openPage(page, '知识板块')
     await expect(board(page, 'C语言')).toBeVisible()
     await expect(page.getByRole('status')).toHaveText('本地数据已就绪')
   } finally {
@@ -160,7 +168,7 @@ test('板块入口：改名移动移除后旧轮队列/草稿/历史/方案逐�
     await expect(instance.page.getByLabel('练习进度')).toHaveText('第 2 / 23 题 · 顺序练习')
     const draft = '板块调整前的第二题草稿\n    keep_original_queue();'
     await instance.page.getByRole('textbox', { name: '我的答案', exact: true }).fill(draft)
-    await instance.page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await instance.page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await instance.page.getByText('筛选练习题目', { exact: true }).click()
     await instance.page.getByLabel('练习难度', { exact: true }).selectOption('进阶')
     const plan = await savePlan(instance.page, '保留原条件的中等练习')
@@ -169,6 +177,7 @@ test('板块入口：改名移动移除后旧轮队列/草稿/历史/方案逐�
     const plans = await readPlans(instance.page)
     await openPage(instance.page, '题库')
     const manager = await openCategoryManager(instance.page)
+    await manager.getByRole('button', { name: '修改或移除分类', exact: true }).click()
     await manager.getByLabel('要修改的分类', { exact: true }).selectOption(prepared.communication)
     await manager.getByLabel('分类新名称', { exact: true }).fill('我的通信复习')
     await manager.getByRole('button', { name: '保存分类名称', exact: true }).click()
@@ -184,7 +193,7 @@ test('板块入口：改名移动移除后旧轮队列/草稿/历史/方案逐�
     await categoryChange(instance.page, { kind: 'delete', categoryId: prepared.communication })
     expect(historySnapshot(testDataDirectory)).toEqual(protectedRows)
     expect(await readPlans(instance.page)).toEqual(plans)
-    await openPage(instance.page, '板块')
+    await openPage(instance.page, '知识板块')
     await expect(board(instance.page, '通信协议').locator('.board-count')).toHaveText(
       '0 题 · 待补题',
     )
@@ -197,17 +206,15 @@ test('板块入口：改名移动移除后旧轮队列/草稿/历史/方案逐�
       BrowserWindow.getAllWindows()[0]!.close(),
     )
     await closed
-    instance = await launchApplication(testDataDirectory, info.project.name, '板块')
+    instance = await launchApplication(testDataDirectory, info.project.name, '知识板块')
     await runtime(instance.application, instance.page, testDataDirectory, info)
     expect(historySnapshot(testDataDirectory)).toEqual(protectedRows)
     expect(await readPlans(instance.page)).toEqual(plans)
     const panel = await openPlans(instance.page)
     await panel.getByLabel('选用练习方案', { exact: true }).selectOption(plan.planId)
     await expect(panel).toContainText('难度：中（进阶）')
-    await expect(
-      panel.getByRole('button', { name: '将方案填入练习条件', exact: true }),
-    ).toBeDisabled()
-    await openPage(instance.page, '板块')
+    await expect(panel.getByRole('button', { name: '填入条件', exact: true })).toBeDisabled()
+    await openPage(instance.page, '知识板块')
     await instance.page.getByRole('button', { name: '继续练习', exact: true }).click()
     await expect(instance.page.getByLabel('练习进度')).toHaveText('第 2 / 23 题 · 顺序练习')
     await expect(instance.page.getByRole('textbox', { name: '我的答案', exact: true })).toHaveValue(
@@ -267,7 +274,7 @@ test('板块入口：旧筛选慢响应不能覆盖新板块，计数读取失�
     await expect
       .poll(() => application.evaluate(() => Reflect.get(globalThis, 'boardReadControl').held))
       .toBe(true)
-    await openPage(page, '板块')
+    await openPage(page, '知识板块')
     await board(page, '通信协议')
       .getByRole('button', { name: '进入板块：通信协议', exact: true })
       .click()
@@ -288,7 +295,7 @@ test('板块入口：旧筛选慢响应不能覆盖新板块，计数读取失�
     await application.evaluate(() => {
       Reflect.get(globalThis, 'boardReadControl').fail = true
     })
-    await openPage(page, '板块')
+    await openPage(page, '知识板块')
     await expect(page.getByRole('alert')).toContainText('定向模拟板块题数读取失败')
     await expect(page.locator('.board-card')).toHaveCount(0)
     await page.getByRole('button', { name: '重新读取板块', exact: true }).click()
@@ -308,11 +315,15 @@ test('板块入口：实际数量/分页/归档一致，自定义与未分类可
   const { application, page, paths } = await prepare(testDataDirectory, info.project.name)
   try {
     await runtime(application, page, testDataDirectory, info)
-    await openPage(page, '板块')
+    await openPage(page, '知识板块')
     await expect(board(page, '通信协议').locator('.board-count')).toHaveText('23 题')
     await expect(board(page, '我的重点').locator('.board-count')).toHaveText('3 题')
-    await expect(board(page, '未分类').locator('.board-count')).toHaveText('1 题')
-    await expect(board(page, '全部题库').locator('.board-count')).toHaveText('27 题')
+    await expect(
+      board(page, '未分类').getByRole('button', { name: '进入板块：未分类', exact: true }),
+    ).toHaveText('未分类 · 1 题')
+    await expect(
+      board(page, '全部题库').getByRole('button', { name: '进入板块：全部题库', exact: true }),
+    ).toHaveText('全部题库 · 27 题')
     await expect(
       board(page, '空分类').getByRole('button', { name: '进入板块：空分类', exact: true }),
     ).toBeDisabled()
@@ -346,7 +357,7 @@ test('板块入口：实际数量/分页/归档一致，自定义与未分类可
     await page.getByLabel('题库只看收藏', { exact: true }).check()
     await page.getByRole('button', { name: '筛选题库', exact: true }).click()
     await expect(page.getByText('共 0 题', { exact: true })).toBeVisible()
-    await openPage(page, '板块')
+    await openPage(page, '知识板块')
     await board(page, '通信协议')
       .getByRole('button', { name: '进入板块：通信协议', exact: true })
       .click()
@@ -368,7 +379,7 @@ test('板块入口：实际数量/分页/归档一致，自定义与未分类可
       ['未分类', 1],
       ['全部题库', 27],
     ] as const) {
-      await openPage(page, '板块')
+      await openPage(page, '知识板块')
       await board(page, title)
         .getByRole('button', { name: `进入板块：${title}`, exact: true })
         .click()
@@ -376,7 +387,7 @@ test('板块入口：实际数量/分页/归档一致，自定义与未分类可
     }
     await writeFile(paths[0]!, bank('board-a', 'UART板块测试', 23, true))
     await importHistoryFiles(application, page, [paths[0]!])
-    await openPage(page, '板块')
+    await openPage(page, '知识板块')
     await expect(board(page, '通信协议').locator('.board-count')).toHaveText('22 题')
     await board(page, '通信协议')
       .getByRole('button', { name: '查看归档：通信协议', exact: true })
@@ -410,7 +421,7 @@ test('板块入口：900/1440窗口、四配色明暗、22px与键盘可用，�
           .selectOption(theme === 'dark' ? '22' : '17')
         await page.getByRole('button', { name: '保存并应用', exact: true }).click()
         await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
-        await openPage(page, '板块')
+        await openPage(page, '知识板块')
         await expect(board(page, '通信协议').locator('.board-count')).toHaveText('23 题')
         const search = page.getByRole('searchbox', { name: '搜索板块', exact: true })
         await expect(search).toHaveCSS(
@@ -468,9 +479,34 @@ test('板块入口：900/1440窗口、四配色明暗、22px与键盘可用，�
         await expect(page.getByText('共 23 题', { exact: true })).toBeVisible()
         await expect(page.getByLabel('题库浏览', { exact: true })).toBeFocused()
         await page.getByLabel('题库浏览', { exact: true }).press('Tab')
-        const navigationSummary = page.locator(
-          '.library-workspace > .topic-navigation-panel > summary',
+        const managementSummary = page.locator(
+          '.library-management-tools .category-manager > summary',
         )
+        await expect(managementSummary).toBeFocused()
+        if (
+          (await page
+            .locator('.library-management-tools .category-manager')
+            .getAttribute('open')) !== null
+        ) {
+          await managementSummary.press('Enter')
+          await expect(
+            page.locator('.library-management-tools .category-manager'),
+          ).not.toHaveAttribute('open')
+        }
+        await managementSummary.press('Tab')
+        await expect(page.getByRole('searchbox', { name: '题库搜索', exact: true })).toBeFocused()
+        const navigationSummary = page.locator(
+          '.library-navigation .topic-navigation-panel > summary',
+        )
+        for (
+          let step = 0;
+          step < 16 &&
+          !(await navigationSummary.evaluate(
+            (element) => element === element.ownerDocument.activeElement,
+          ));
+          step++
+        )
+          await page.keyboard.press('Tab')
         await expect(navigationSummary).toBeFocused()
         await navigationSummary.press('Tab')
         await expect(page.getByLabel('题库专题检索', { exact: true })).toBeFocused()

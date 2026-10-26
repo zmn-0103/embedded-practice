@@ -46,11 +46,9 @@ export function PracticePlans({
   const locked =
     disabled || model.busy || model.loading || Boolean(model.readError) || Boolean(model.pending)
   return (
-    <details className="practice-plans">
+    <details className="practice-plans" open>
       <summary>保存的练习方案（{model.plans.length}）</summary>
-      <p className="muted">
-        方案保存条件，按当前题库匹配；选用后点击开始才建新轮，同名方案不会覆盖。
-      </p>
+      <p className="muted">方案只填入条件，点击开始才建新轮。同名方案不会覆盖。</p>
       <fieldset disabled={locked || Boolean(deleting)}>
         <legend>保存当前条件</legend>
         <form
@@ -84,26 +82,29 @@ export function PracticePlans({
             保存当前条件为方案
           </button>
         </form>
-        <label>
-          选用方案
-          <select
-            aria-label="选用练习方案"
-            value={selectedId}
-            onChange={(event) => setSelectedId(event.currentTarget.value)}
-          >
-            <option value="">请选择方案</option>
-            {selectedId && !selected && (
-              <option value={selectedId} disabled>
-                方案已删除
-              </option>
-            )}
-            {model.plans.map((plan) => (
-              <option key={plan.planId} value={plan.planId}>
-                {plan.name}
-              </option>
-            ))}
-          </select>
-        </label>
+        {model.plans.length === 0 && <p className="muted">尚无方案。填写名称可保存当前条件。</p>}
+        {model.plans.length > 0 && (
+          <label>
+            选用方案
+            <select
+              aria-label="选用练习方案"
+              value={selectedId}
+              onChange={(event) => setSelectedId(event.currentTarget.value)}
+            >
+              <option value="">请选择方案</option>
+              {selectedId && !selected && (
+                <option value={selectedId} disabled>
+                  方案已删除
+                </option>
+              )}
+              {model.plans.map((plan) => (
+                <option key={plan.planId} value={plan.planId}>
+                  {plan.name}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
         {selected && (
           <p className="muted">
             {selected.name}：{categoryTitle ?? '分类已移除'} /{' '}
@@ -130,18 +131,20 @@ export function PracticePlans({
             方案的分类或专题已不在当前活动范围，请重新选择条件后另存；原条件保持。
           </p>
         )}
-        <div className="action-row">
-          <button
-            type="button"
-            disabled={!selected || Boolean(invalid)}
-            onClick={() => selected && onApply(selected.options)}
-          >
-            将方案填入练习条件
-          </button>
-          <button type="button" disabled={!selected} onClick={() => setDeleting(selected)}>
-            删除所选方案…
-          </button>
-        </div>
+        {selected && (
+          <div className="action-row">
+            <button
+              type="button"
+              disabled={!selected || Boolean(invalid)}
+              onClick={() => selected && onApply(selected.options)}
+            >
+              填入条件
+            </button>
+            <button type="button" disabled={!selected} onClick={() => setDeleting(selected)}>
+              删除所选方案…
+            </button>
+          </div>
+        )}
       </fieldset>
       {deleting && (
         <div role="alertdialog" aria-labelledby={dialogId} className="practice-plan-confirmation">

@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:48356) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\board-entry.spec.ts:94:5 › 板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习 (1.2s)
+  ok 2 [development] › tests\e2e\board-entry.spec.ts:398:5 › 板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过 (3.3s)
+  ok 3 [development] › tests\e2e\themes-reading.spec.ts:52:5 › 跨主题保留题库筛选/分页/选中与阅读组件，183行代码/60段答案/大图弹窗在宽窄窗口可用 (2.9s)
+
+  3 passed (8.1s)

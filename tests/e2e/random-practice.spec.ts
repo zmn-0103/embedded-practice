@@ -29,6 +29,7 @@ async function importFiles(application: ElectronApplication, page: Page, paths: 
   await expect(page.getByRole('heading', { name: '导入预览', exact: true })).toBeVisible()
   await page.getByRole('button', { name: '确认导入', exact: true }).click()
   await expect(page.getByText(/^导入完成：/)).toBeVisible()
+  await page.getByRole('button', { name: '关闭导入工作区', exact: true }).click()
   await openPage(page, '开始练习')
   await expect(
     page.getByRole('button', { name: /^(开始练习|结束本轮并开始新练习)$/ }),
@@ -322,7 +323,7 @@ test('随机本轮不受更新/归档影响，新轮使用最新版本并重新�
     const second = before.queue[1]!
     await page.getByRole('textbox', { name: '我的答案', exact: true }).fill('旧版本随机作答')
     await page.getByRole('button', { name: '查看参考答案', exact: true }).click()
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     const saved = snapshot(testDataDirectory)
     await writeFile(file, bank(true, second.questionId))
     await importFiles(application, page, [file])
@@ -344,7 +345,7 @@ test('随机本轮不受更新/归档影响，新轮使用最新版本并重新�
       second.answer,
     )
     await page.getByRole('button', { name: '结束本轮', exact: true }).click()
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await page.getByRole('button', { name: '开始练习', exact: true }).click()
     await expect(page.getByLabel('练习进度')).toHaveText('第 1 / 23 题 · 随机练习')
     await hidden(page)

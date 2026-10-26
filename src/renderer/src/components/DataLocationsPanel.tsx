@@ -68,7 +68,12 @@ export function DataLocationsPanel({
     }
   }
   return (
-    <section className="data-locations" aria-label="数据位置">
+    <section
+      id="data-location-section"
+      tabIndex={-1}
+      className="data-locations"
+      aria-label="数据位置"
+    >
       <h3>数据位置</h3>
       <p>
         这里显示本次运行使用的位置。保护备份保存在下方备份目录，导出的备份以你选择的保存位置为准。

@@ -124,6 +124,75 @@ async function exportFile(
   return result.value
 }
 
+test('Windows文件编号精度：普通数值相同的独立备份可预览，精确编号相同的别名仍拒绝', async ({
+  testDataDirectory,
+}, info) => {
+  await outputDirectory(async (directory) => {
+    const { application, page } = await prepareHistory(testDataDirectory, info.project.name)
+    try {
+      const target = join(directory, '独立完整备份.sqlite3')
+      await exportFile(application, page, target)
+      const before = withHistoryDatabase(testDataDirectory, records)
+      const first = '172544160723982050',
+        second = '172544160723982063'
+      expect(Number(first)).toBe(Number(second))
+      expect(BigInt(first)).not.toBe(BigInt(second))
+      await application.evaluate(
+        ({ app }, input) => {
+          const fs = process.getBuiltinModule('node:fs/promises')
+          const path = process.getBuiltinModule('node:path')
+          const database = path.join(app.getPath('userData'), 'practice.sqlite3')
+          const original = { lstat: fs.lstat, stat: fs.stat }
+          Reflect.set(globalThis, '__ui2Alias', false)
+          Reflect.set(globalThis, '__ui2RestoreFileIds', () => {
+            fs.lstat = original.lstat
+            fs.stat = original.stat
+          })
+          fs.lstat = (async (...args: Parameters<typeof fs.lstat>) => {
+            const value = await original.lstat(...args)
+            if (String(args[0]) === input.target) {
+              const exact = BigInt(
+                Reflect.get(globalThis, '__ui2Alias') ? input.first : input.second,
+              )
+              Reflect.set(value, 'dev', args[1]?.bigint ? 9n : 9)
+              Reflect.set(value, 'ino', args[1]?.bigint ? exact : Number(exact))
+            }
+            return value
+          }) as typeof fs.lstat
+          fs.stat = (async (...args: Parameters<typeof fs.stat>) => {
+            const value = await original.stat(...args)
+            if (String(args[0]) === database) {
+              Reflect.set(value, 'dev', args[1]?.bigint ? 9n : 9)
+              Reflect.set(value, 'ino', args[1]?.bigint ? BigInt(input.first) : Number(input.first))
+            }
+            return value
+          }) as typeof fs.stat
+        },
+        { target, first, second },
+      )
+      await select(application, 'preview', target)
+      const independent = await backup(page, 'preview')
+      expect(independent.ok).toBe(true)
+      expect(withHistoryDatabase(testDataDirectory, records)).toEqual(before)
+      await application.evaluate(() => Reflect.set(globalThis, '__ui2Alias', true))
+      expect(await backup(page, 'preview')).toMatchObject({
+        ok: false,
+        error: { code: 'FILE_ERROR' },
+      })
+      expect(withHistoryDatabase(testDataDirectory, records)).toEqual(before)
+      await info.attach('file-id-precision.json', {
+        body: JSON.stringify({ first, second, independent, numberCollision: true }),
+        contentType: 'application/json',
+      })
+    } finally {
+      await application
+        .evaluate(() => Reflect.get(globalThis, '__ui2RestoreFileIds')?.())
+        .catch(() => {})
+      await stop(application)
+    }
+  })
+})
+
 test('完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库', async ({
   testDataDirectory,
 }, info) => {
@@ -160,7 +229,7 @@ test('完整备份导出覆盖版本图片历史草稿收藏固定随机队列�
       await page
         .getByRole('textbox', { name: '我的答案', exact: true })
         .fill('备份未揭晓草稿\nint queued = 2;')
-      await page.getByRole('button', { name: '返回首页', exact: true }).click()
+      await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
       await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
       await writeFile(file, historyBank(true, false, true))
       await writeFile(join(folder, 'assets/history.png'), alternatePng)
@@ -172,6 +241,7 @@ test('完整备份导出覆盖版本图片历史草稿收藏固定随机队列�
       await page.getByLabel('正文字号', { exact: true }).selectOption('22')
       await page.getByRole('button', { name: '保存并应用', exact: true }).click()
       await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
+      await openPage(page, '备份恢复')
       const before = withHistoryDatabase(testDataDirectory, records)
       const appVersion = await application.evaluate(({ app }) => app.getVersion())
       expect(before['image_resources']).toHaveLength(2)
@@ -241,7 +311,7 @@ test('备份取消与预览取消保留原状态，空库可导出并预览', as
     const { application, page } = await launchApplication(
       testDataDirectory,
       info.project.name,
-      '设置与数据',
+      '备份恢复',
     )
     try {
       const before = withHistoryDatabase(testDataDirectory, records)
@@ -310,7 +380,7 @@ test('实际备份写入失败保留已有目标与当前数据，清理暂存�
           return Promise.reject(new Error('INJECTED-BACKUP-WRITE-FAILURE'))
         }
       })
-      await openPage(page, '设置与数据')
+      await openPage(page, '备份恢复')
       await select(application, 'export', path)
       await page.getByRole('button', { name: '导出完整备份', exact: true }).click()
       await expect(page.getByRole('alert')).toContainText('备份导出失败')
@@ -455,7 +525,7 @@ for (const fault of [
         }
         const original = await readFile(invalid)
         const before = withHistoryDatabase(testDataDirectory, records)
-        await openPage(page, '设置与数据')
+        await openPage(page, '备份恢复')
         await select(application, 'preview', invalid)
         const result = await backup(page, 'preview')
         expect(result).toMatchObject({
@@ -486,7 +556,7 @@ test('在途备份阻止重复操作和切页，正常退出等待已验证备�
     const { application, page } = await prepareHistory(testDataDirectory, info.project.name)
     const path = join(directory, '退出前备份.sqlite3')
     try {
-      await openPage(page, '设置与数据')
+      await openPage(page, '备份恢复')
       const before = withHistoryDatabase(testDataDirectory, records)
       await application.evaluate(() => {
         const fs = process.getBuiltinModule('node:fs/promises')

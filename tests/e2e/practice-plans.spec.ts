@@ -26,7 +26,7 @@ test('方案：命名保存完整条件、填入不建轮，正常重开后明�
     await instance.page.getByLabel('本轮题数', { exact: true }).selectOption('all')
     await instance.page.getByRole('button', { name: '开始练习', exact: true }).click()
     await instance.page.getByRole('textbox', { name: '我的答案', exact: true }).fill(draft)
-    await instance.page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await instance.page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     const original = historySnapshot(testDataDirectory)
     await instance.page.getByText('按分类选择专题', { exact: true }).click()
     await instance.page.getByRole('button', { name: '练习分类：板块 A', exact: true }).click()
@@ -60,7 +60,7 @@ test('方案：命名保存完整条件、填入不建轮，正常重开后明�
     await instance.page.getByRole('button', { name: '全部题目', exact: true }).click()
     const panel = await openPlans(instance.page)
     await panel.getByLabel('选用练习方案', { exact: true }).selectOption(saved.planId)
-    await panel.getByRole('button', { name: '将方案填入练习条件', exact: true }).click()
+    await panel.getByRole('button', { name: '填入条件', exact: true }).click()
     await expect(instance.page.getByText('匹配 1 题', { exact: true })).toBeVisible()
     await expect(instance.page.getByLabel('练习模式', { exact: true })).toHaveValue('random')
     await expect(instance.page.getByLabel('练习专题', { exact: true })).toHaveValue('cat-a')
@@ -84,7 +84,7 @@ test('方案：命名保存完整条件、填入不建轮，正常重开后明�
     expect(historySnapshot(testDataDirectory)).toEqual(original)
     const reopened = await openPlans(instance.page)
     await reopened.getByLabel('选用练习方案', { exact: true }).selectOption(saved.planId)
-    await reopened.getByRole('button', { name: '将方案填入练习条件', exact: true }).click()
+    await reopened.getByRole('button', { name: '填入条件', exact: true }).click()
     await expect(instance.page.getByText('匹配 1 题', { exact: true })).toBeVisible()
     await instance.page.getByRole('button', { name: '结束本轮并开始新练习', exact: true }).click()
     await expect(instance.page.getByLabel('练习进度')).toHaveText('第 1 / 1 题 · 随机练习')
@@ -207,7 +207,7 @@ test('方案：分类改名沿原ID，移出/移除不扩大范围，删除默�
     let panel = await openPlans(page)
     await panel.getByLabel('选用练习方案', { exact: true }).selectOption(saved.planId)
     await expect(panel).toContainText('当前分类名')
-    await panel.getByRole('button', { name: '将方案填入练习条件', exact: true }).click()
+    await panel.getByRole('button', { name: '填入条件', exact: true }).click()
     await expect(page.getByText('匹配 2 题', { exact: true })).toBeVisible()
     // 合法归档夹具模拟专题已无活动题，刷新后仍须保留明确选中的专题ID。
     withHistoryDatabase(
@@ -221,9 +221,7 @@ test('方案：分类改名沿原ID，移出/移除不扩大范围，删除默�
     panel = await openPlans(page)
     await expect(page.getByLabel('练习专题', { exact: true })).toHaveValue('cat-a')
     await expect(page.getByText('匹配 0 题', { exact: true })).toBeVisible()
-    await expect(
-      panel.getByRole('button', { name: '将方案填入练习条件', exact: true }),
-    ).toBeDisabled()
+    await expect(panel.getByRole('button', { name: '填入条件', exact: true })).toBeDisabled()
     expect(
       await changePlan(page, { kind: 'save', ...saved, planId: randomUUID(), name: '失效不保存' }),
     ).toMatchObject({ error: { code: 'NOT_FOUND' } })
@@ -232,9 +230,7 @@ test('方案：分类改名沿原ID，移出/移除不扩大范围，删除默�
     panel = await openPlans(page)
     await panel.getByLabel('选用练习方案', { exact: true }).selectOption(saved.planId)
     await expect(panel).toContainText('分类已移除')
-    await expect(
-      panel.getByRole('button', { name: '将方案填入练习条件', exact: true }),
-    ).toBeDisabled()
+    await expect(panel.getByRole('button', { name: '填入条件', exact: true })).toBeDisabled()
     expect(await readPlans(page)).toEqual([saved])
     await panel.getByRole('button', { name: '删除所选方案…', exact: true }).click()
     await expect(panel.getByRole('button', { name: '取消删除方案', exact: true })).toBeFocused()

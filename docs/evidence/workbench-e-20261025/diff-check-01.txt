@@ -1,0 +1,196 @@
+README.md:5: trailing whitespace.
++## 学习工作台（新独立试用版，2026-10-26）
+README.md:6: trailing whitespace.
++
+README.md:7: trailing whitespace.
++**V0.0.1 · 构建20261025.3-workbench-e · 数据库结构10。** 按方案E统一为学习总览、知识板块、开始练习、题库、学习记录、设置与数据六入口。总览显示真实学习状态；题库支持宽窗三栏和窄窗返回列表；练习采用题干/作答与参考双栏，保留揭晓、自评和保存守卫。五套内置主题和外部本地主题继续可用。
+README.md:8: trailing whitespace.
++
+README.md:9: trailing whitespace.
++[独立程序开始使用](release/V0.0.1-workbench-e-20261025.3-r2/开始使用.md) · [完整用户计划](docs/UI学习工作台开发计划.md) · [最终行为与验收](docs/UI学习工作台行为与验收.md) · [本批原始证据](docs/evidence/workbench-e-20261025/README.md)。请使用新目录“安全试用学习工作台.cmd”进入独立数据目录；现有桌面程序、快捷方式和正式学习库不自动替换或迁移。当前构建沿用主线1f25ffa的恢复事务修复；依赖、题库内容和数据库结构保持。
+README.md:10: trailing whitespace.
++
+README.md:11: trailing whitespace.
++## V0.0.1：增加额外主题功能（现有桌面程序）
+README.md:17: trailing whitespace.
++以下记录保留各批当时范围。现有个人入口以V0.0.1发布说明为准，新独立工作台以本页上方的使用说明和验收记录为准。
+docs/代码复查记录.md:1113: trailing whitespace.
++- LearningOverview.tsx：Bug轮核对统计只读现有learning.read，迟到响应在清理后忽略，加载/失败不展示旧数字或假空库；活动轮来自原PracticeWorkspace，不另建会话状态，位置与揭晓/自评计数分列，快捷入口只导航。发现当前契约没有内容更新筛选，改为显式传递题库只读范围标志，后续补齐服务，不伪造现有字段。可维护性轮复用原契约和主题变量，未增加打卡/正确率/时长/自动开始或新的状态库。
+docs/代码复查记录.md:1114: trailing whitespace.
++- library-desktop.ts：Bug轮新增仅题库列表请求的可选布尔contentUpdatedOnly，沿用严格校验，缺省保持旧列表语义；未修改持久化的QuestionFilters/旧方案/旧队列或返回格式。可维护性轮不新增IPC、数据库列或独立搜索系统。
+docs/代码复查记录.md:1115: trailing whitespace.
++- library-reader.ts：Bug轮核对计数与分页共用同一绑定布尔谓词，内容更新等同原v.sequence>1且当前版本未练习标记；标签候选缓存仍只按分类/专题/归档和revision，不受新筛选缩窄，缺省false保持原查询。可维护性轮只扩充原只读列表，不改公共选题SQL、数据库结构、事务写入或练习选题规则。
+docs/代码复查记录.md:1116: trailing whitespace.
++- PracticeWorkspace.tsx：Bug轮逐字核对原loadHome/start/resume/home及关闭/存储控制段保持；总览仅以渲染参数取得原活动轮/就绪/忙碌及resume方法，不复制状态。配置条件与方案移入左右区域，原回执重试/失效范围/保存守卫保持。可维护性轮只扩展现有homeContent和可选标题/继续卡展示参数，未抽换控制器或增加业务状态机。
+docs/代码复查记录.md:1117: trailing whitespace.
++- App.tsx：Bug轮六入口顺序/默认总览与单一轻工具栏核对，所有页面导航仍检查ready/appearance.busy/dataBusy/practicing，活动练习禁止跨页；折叠和外观操作只写现有设置，原PracticeWorkspace和LibraryBrowser挂载/Portal保留。总览快捷入口显式新LibraryEntry，不自动建轮；顶部不新增重复搜索。可维护性轮移除旧装饰欢迎区与按主题分叉的导航结构，统一框架/图标/构建标识20261025.3-workbench-e，保留关闭等待及在途数据操作跟踪。
+docs/代码复查记录.md:1118: trailing whitespace.
++- LibraryBrowser.tsx：Bug轮核对三栏共用原筛选/分页/身份与QuestionView，窄窗返回只隐藏阅读区域并聚焦原选中行，不清空筛选/页码/选中/答案；Portal离页机制和旧响应取消保持。总览首次/后续Entry均携带明确过滤条件，更新筛选是独立布尔；resolvedRequest避免新范围加载/失败时把旧题数或列表当当前结果，计数和详情只在响应匹配后显示。可维护性轮保留单一查询和详情组件，分类管理继续可达，列表增加已有自评文字与语义属性，不新建题目数据副本。
+docs/代码复查记录.md:1119: trailing whitespace.
++- PracticeFavorite.tsx：Bug轮收藏使用原题目稳定身份与library.setFavorite，读取迟到响应取消，写入期间同步ref防重入、沿原目标重试响应未确认；在途Promise交给App关闭等待并通知忙碌，不影响自评/揭晓。父级按题目身份key隔离，不把前题状态带入后题。可维护性轮将收藏读写反馈封装为小视图，不修改练习控制器或增加新存储能力。
+docs/代码复查记录.md:1120: trailing whitespace.
++- PracticeFavorite.tsx补充复查：Bug轮追加与旧收藏入口相同的长按重复键/第二次双击过滤；可维护性轮继续复用原幂等目标和同步锁，不增加定时器或重复状态。
+docs/代码复查记录.md:1121: trailing whitespace.
++- PracticePane.tsx：Bug轮左右阅读区域只包裹原题干/输入与原Markdown答案，未揭晓仅渲染无答案占位及唯一揭晓按钮，历史组件也仅揭晓后挂载；空输入揭晓、原perform重复保护/自评事务/保存重试保持。收藏忙碌阻止推进并交给原关闭等待；活动返回明确保存并返回，结果页原返回保留。输入可见性同时核对视口底部，长图ResizeObserver仍按原生命周期释放。可维护性轮不拆造参考内容、不生成思考方向，不改控制器；所有按钮保留文字，三种自评使用独立语义属性。
+docs/代码复查记录.md:1122: trailing whitespace.
++- PracticeWorkspace.tsx收藏接入再复查：Bug轮仅透传既有onDataBusy/onDataOperation到练习视图，收藏与外观/分类/方案共用现成关闭协调，不改变建轮或草稿保存时序；可维护性轮没有增加第二套关闭事件或全局锁。
+docs/代码复查记录.md:1123: trailing whitespace.
++- themes.css：Bug轮只移出旧study布局/导航/断点规则，主题包预览、管理、明暗color-scheme和变量使用保持；原主题目录与格式不变。可维护性轮统一布局由工作台样式负责，避免每个主题维护不同导航/DOM或互相覆盖的断点；后续独立样式接入后检查真实宽窄窗口。
+docs/代码复查记录.md:1124: trailing whitespace.
++- workbench-shell.css：Bug轮统一框架只作用.workbench，固定侧栏/六导航/轻工具栏与主区使用minmax(0,1fr)，宽窄和折叠沿同一DOM；外观弹层从右侧定位且限制视口宽度，主题颜色/字体/密度变量保持，图片/正文不额外增宽。可维护性轮复用现有功能图标和组件类，移除按主题分叉的框架，不添加在线资源/固定蓝色覆盖用户主题；状态和页面专用布局另置独立样式。
+docs/代码复查记录.md:1125: trailing whitespace.
++- workbench-pages.css：Bug轮核对总览实际数值区域、三栏题库/窄窗阅读返回、双栏练习/窄窗题干→输入→揭晓→参考→自评顺序，动作区改用文档流消除覆盖；hidden强制不可见，内部最小宽度、代码/表格容器与图片沿原规则。颜色只新增不随配色混淆的三种自评语义，始终保留文字。可维护性轮按任务密度分区，复用主题令牌和既有类，不为参考图虚构固定数据/新答案结构/多层分类。
+docs/代码复查记录.md:1126: trailing whitespace.
++- main.tsx：Bug轮只在原主题样式之后导入工作台框架与页面样式，保留首次主题变量注入/StrictMode/应用根及原加载入口；可维护性轮按通用→主题组件→工作台布局顺序单次导入，无运行时样式拼接或新依赖。
+docs/代码复查记录.md:1127: trailing whitespace.
++- LearningRecords.tsx：Bug轮仅将已有三类自评计数附带语义属性和同一rated总数分母的进度条，零自评用max1避免非法零分母，原数字/范围去重/加载错误/收藏刷新保持；可维护性轮不新增统计查询或正确率推断，下方筛选与上方范围的说明保持。
+docs/代码复查记录.md:1128: trailing whitespace.
++- SettingsPane.tsx：Bug轮新增三分区就地定位按钮，不改变页面路由/表单状态、预览与真实应用的分离或待确认操作；外观以可聚焦section包裹，安装管理与原错误仍同一作用域。可维护性轮复用原BackupPanel/DataLocationsPanel和已有保存回调，不建立第二套设置状态或隐藏在途结果。
+docs/代码复查记录.md:1129: trailing whitespace.
++- BackupPanel.tsx：Bug轮只增加分区定位ID/焦点和准确标题，原导出/预览/明确确认/保护/失败恢复和真实摘要未改；可维护性轮没有新增路径选择或数据写入能力。
+docs/代码复查记录.md:1130: trailing whitespace.
++- DataLocationsPanel.tsx：Bug轮只添加定位ID与程序化焦点，继续显示dataLocations.read真实路径，打开/复制/重试保持；可维护性轮不添加迁移目录或任意路径写入。
+docs/代码复查记录.md:1131: trailing whitespace.
++- ImportPanel.tsx：Bug轮只更换任务标题并明确原三步流程，六种真实变更计数、完整快照/遗漏归档提示、成功/失败互斥与原预检确认未改；可维护性轮不复制导入状态或创建无业务支持的归档恢复/删除按钮。
+docs/代码复查记录.md:1132: trailing whitespace.
++- workbench-pages.css管理页补充复查：Bug轮分区定位栏可换行、自评进度条限制自身宽度并继承对应语义颜色，零值仍显示真实数字；可维护性轮仅补充已有组件展现，不引入图表依赖或新的度量。
+docs/代码复查记录.md:1133: trailing whitespace.
++- workbench-shell.css首轮窗口复查：900px截图中折叠标题与按钮抢同一行，改为垂直排列；Bug轮保持标题可见和按钮可达，无页面DOM重建；可维护性轮沿同一折叠/响应规则修正，不隐藏应用名称来掩盖挤压。首轮截图保留，后续新轮核对。
+docs/代码复查记录.md:1134: trailing whitespace.
++- tests/e2e/helpers.ts：Bug轮只同步六个实际入口的类型，原定位仍限定主要页面导航、精确名称、禁用守卫与aria-current，临时目录/EXE核对保持；可维护性轮没有旧页面别名、隐藏控件点击或默认旧产物替代。
+docs/代码复查记录.md:1177: trailing whitespace.
++- board-entry.spec.ts默认首页再复查：Bug轮reload后先精确验证新默认总览，再显式进入知识板块，原22规划、空库不建轮/分类、键盘与数据断言全部保留；可维护性轮明确导航准备步骤，不把新默认页伪装为旧默认板块。
+docs/代码复查记录.md:1178: trailing whitespace.
++- workbench-contract.test.ts：Bug轮验证新可选布尔的旧请求原形、非法类型/未知能力拒绝，以及新浏览标志不能混入原练习/方案快照；可维护性轮直接调用实际共享契约，未复制SQL或制造只重复实现的断言。
+docs/代码复查记录.md:1179: trailing whitespace.
++- workbench-helpers.ts：Bug轮明确25题为独立合成样本，复用原临时目录/导入/EXE与结构核对，捕获失败关闭已创建应用；只按真实双帧绘制完成再截图，不靠固定延迟。可维护性轮复用既有主题业务快照与关闭帮助器，不访问个人数据或创建替代服务。
+docs/代码复查记录.md:1180: trailing whitespace.
++- workbench-overview.spec.ts：Bug轮覆盖冷启动真实默认总览/六入口、空库不种题/不建轮、位置3与实际揭晓自评1分离、快捷只填筛选、原队列和草稿全业务快照保持、真实SQL读取失败与恢复，不把旧数字/错误当零。可维护性轮复用生产导入/读写和既有快照，临时表改名在finally恢复，无个人数据、场景跳过或重试放宽。
+docs/代码复查记录.md:1181: trailing whitespace.
++- LibraryBrowser.tsx窄窗返回再复查：Bug轮发现再次点击同一选中行会生成新identity对象并重读详情，已复用相同身份对象，避免返回再进入清空已展开内容；更新范围新增明确文字，防止常规条件摘要被误认为全部结果。可维护性轮仅身份等同短路和只读范围说明，不引入详情缓存或改变换题重置规则。
+docs/代码复查记录.md:1182: trailing whitespace.
++- workbench-pages.css搜索排版再复查：Bug轮首轮三栏截图中搜索标签被挤成两行，改为搜索字段内部上下排列，完整保留标签和控件；可维护性轮只调整该字段的流布局，不设置超大最小宽度或强制缩小字体。
+docs/代码复查记录.md:1183: trailing whitespace.
++- workbench-browser.spec.ts：Bug轮真实完整重导入只更新一题，核对当前版本标记/计数/分类标签交集、候选不收窄及练习仍匹配25；真实揭晓当前版后更新范围清空。另验证1440三栏、1200/900详情返回的页2/2、原过滤、焦点、选中/已展开答案与同一DOM节点及业务快照。可维护性轮复用生产API与临时样本，不用伪列表/改超时/自动重试。
+docs/代码复查记录.md:1184: trailing whitespace.
++- workbench-practice.spec.ts：Bug轮使用真实SQLite草稿/收藏故障验证输入保留、保存返回阻断、六入口键盘守卫、主题/三窗口宽度同一输入节点及队列保持，修复后继续原轮；收藏原目标重试不推进/揭晓，自评与收藏独立，空输入可揭晓，前后正文及无障碍树答案隔离、历史仅揭晓后存在，新题重置。可维护性轮故障触发器在finally移除，全部原控制器/真实服务参与，不造替代状态机。
+docs/代码复查记录.md:1185: trailing whitespace.
++- board-entry.spec.ts首轮失败同步：focused-dev-01两失败均为旧页面结构预期：离线reload后显式进入知识板块，键盘目标定位到新分类导航容器。Bug轮保留离线、精确焦点、Tab序列、22规划、原数据/颜色/对比度断言；可维护性轮不改生产、不放宽匹配或重试，失败源码另存。
+docs/代码复查记录.md:1186: trailing whitespace.
++- themes-reading.spec.ts首轮失败同步：窄窗有选中题时按计划进入单独阅读区域，旧筛选控件位于返回后的列表区；Bug轮改为真实点击返回，核对原筛选/页码/选中后再进入同一题，原reader探针、代码滚动、图片焦点、所有内容/数据断言保留。可维护性轮仅按实际宽窄模式走可见入口，无force隐藏点击或减少断言；原失败源码保留。
+docs/代码复查记录.md:1187: trailing whitespace.
++- themes-layout.spec.ts总览矩阵补充：Bug轮在原五页、全部五内置/两外部、三明暗模式、字号边界和两宽度完整断言基础上增加第六页总览的真实加载与溢出检查，其他所有旧断言保留；可维护性轮同步标题六页，覆盖核对时将五页→六页作为同一扩展场景映射，不累计成额外旧场景。
+docs/代码复查记录.md:1188: trailing whitespace.
++- LibraryBrowser.tsx完整回归错误路径修复：full-development-01找题故障场景暴露窄窗已打开详情后重读失败时，列表中的错误/重试也被阅读模式隐藏。Bug轮只在当前请求成功就绪时启用单独阅读模式，加载/失败时显示原条件与真实提示，同时旧题目/旧数字仍隐藏；异步请求取消/身份/读写均保持。可维护性轮用原resultsReady单一判定，不另加错误状态机，原失败源码保留；当前完整回归继续运行原build-02，不在中途覆盖构建。
+docs/代码复查记录.md:1189: trailing whitespace.
++- LibraryBrowser.tsx管理区域窗口复查：preview-02显示管理表单被压入184px分类导航，不适合较长专题。Bug轮将原CategoryManager原封移到三栏上方的独立全宽入口，空库仍保留同一管理入口，回调/保存互斥/失败守卫均不变；可维护性轮不新增分类状态或弹窗系统，分类导航继续只做范围选择。旧截图保留。
+docs/代码复查记录.md:1190: trailing whitespace.
++- workbench-pages.css管理布局再复查：Bug轮分类展开采用全宽三组原表单，1199以下改为单列，fieldset最小宽度归零；确认/结果跨满区域，避免窄侧栏挤压。可维护性轮只改管理容器样式，真实DOM/焦点顺序与视觉顺序一致，不用固定浮层或隐藏管理字段。
+docs/代码复查记录.md:1191: trailing whitespace.
++- workbench-shell.css折叠标题再复查：Bug轮限制标题容器不超过侧栏可用宽度并平衡换行，保留应用名称可见；可维护性轮只补通用约束，不更改断点、字号或导航顺序。
+docs/代码复查记录.md:1192: trailing whitespace.
++- workbench-errors.spec.ts：Bug轮固定900px、先进入真实详情再离页，注入单次列表失败并核对错误/重试可见、旧数字/详情隐藏、条件/页码/业务快照保持，专门防止把宽窗回归当窄窗错误覆盖。可维护性轮复用原IPC结果边界和实际重试流程，未靠强制显示控件或延长等待。
+docs/代码复查记录.md:1193: trailing whitespace.
++- LibraryBrowser.tsx错误页码再复查：full-development-01原失败回归要求读取失败仍保留已确认页码。Bug轮将禁用分页与隐藏的旧题目列表分开，加载/失败明确标注“上次确认”而不冒充当前结果；旧题数仍显示结果未确认，分页按钮继续禁用。可维护性轮继续使用原data.page/pageSize和请求，无额外页码副本或查询。
+docs/代码复查记录.md:1194: trailing whitespace.
++- tests/e2e/helpers.ts宽窗准备再复查：Bug轮为原同时列表/详情操作场景明确内容宽1440×1000，窄窗/缩放专项仍自行设置900/1200等并保留全部断言；新增workbench-errors独立900覆盖已发现的真实错误，不用扩大窗口回避该缺陷。可维护性轮仅统一测试准备尺寸，产品默认窗口不变，EXE/结构/userData保护未变。
+docs/代码复查记录.md:1195: trailing whitespace.
++- history-helpers.ts：Bug轮显式选题前遇窄窗详情时，先用可见返回列表入口，再沿原专题/稳定题号定位；宽窗不增加操作，原历史数据/答案断言保持。可维护性轮不强制显示隐藏列表，适配六页主题矩阵的真实窄窗规则。
+docs/代码复查记录.md:1196: trailing whitespace.
++- category-practice.spec.ts默认入口同步：Bug轮直接reload后显式进入开始练习再继续，原随机固定队列/版本/分类快照/草稿/同请求重试/正常重开逐表断言不变；可维护性轮不添加新旧继续按钮别名或绕过保存守卫。
+docs/代码复查记录.md:1197: trailing whitespace.
++- session-filters.spec.ts默认入口同步：Bug轮坏快照真实修复并重试后显式进入配置页检查原继续按钮，原严格JSON/原条件/原轮快照与诊断隐私断言保持；可维护性轮仅同步默认总览导航，不静默回退或改变业务响应。
+docs/代码复查记录.md:1198: trailing whitespace.
++- restore-window.spec.ts默认入口同步：Bug轮真实恢复/真实自动重启后按新总览导航到开始练习，再继续验证完整原队列/草稿/分类/方案/主题；原重启参数/实际EXE/数据路径/全表比较断言保留。可维护性轮不替换relaunch、不增加重试或延长60秒门槛。
+docs/代码复查记录.md:1199: trailing whitespace.
++- learning-records.spec.ts导航契约同步：Bug轮练习时由原隐藏整套导航改为六个可见但禁用的入口，逐个核对守卫属性；原预览保留/关闭提交/旧轮继续断言均保留。可维护性轮按用户新框架验证更明确的导航边界，不仅删除旧断言。
+docs/代码复查记录.md:1200: trailing whitespace.
++- settings-window.spec.ts导航契约同步：Bug轮在原系统/明暗/字号真实正文/代码/表格/输入与答案隔离基础上，验证固定六导航全部禁用；可维护性轮没有减少原主题/保存/焦点断言，只同步统一框架。
+docs/代码复查记录.md:1201: trailing whitespace.
++- history-window.spec.ts揭晓边界同步：Bug轮先保持并新增未揭晓历史入口/正文/无障碍树均隔离，再真实揭晓后测试历史摘要不含旧作答、详情按需读取且不修改快照；当前参考答案因此应存在，已揭晓第一题用原暂不评价推进，第二题仍未揭晓跳过。所有旧历史分页/版本/XSS/自动保存/晚到响应/全表保护保留。可维护性轮明确按新计划加强隔离，不通过恢复未揭晓历史入口满足旧断言，旧源码已封存。
+docs/代码复查记录.md:1202: trailing whitespace.
++- settings-palettes.spec.ts窄窗同步：Bug轮按新固定侧导航验证column布局，原系统明暗/双环焦点/减少动态效果与文字对比度保持；揭晓按钮按文档流滚动到可视区域后仍验证InViewport。可维护性轮不恢复覆盖正文的吸底栏，不降低可达性或字体断言。
+docs/代码复查记录.md:1203: trailing whitespace.
++- practice-window.spec.ts文档流同步：Bug轮保留100/125/150%缩放下切题标题/进度全可视与焦点、60段原文/自动保存不抢滚动/精确队列全部断言；动作区按计划验证static文档流，正常滚动到按钮后仍验证InViewport，避免旧吸底前提与新布局冲突。可维护性轮不降低可达性阈值，不用固定等待或隐藏控件。
+docs/代码复查记录.md:1204: trailing whitespace.
++- practice-window.spec.ts长答案按钮补充复查：Bug轮图片缩放/关闭返回焦点及60段答案之后，对原掌握按钮同样先确认文档流、正常滚动，再保留原可视与自评断言；可维护性轮所有长内容场景统一为同一可达性契约。
+docs/代码复查记录.md:1205: trailing whitespace.
++- board-entry.spec.ts分类管理全宽入口同步：Bug轮键盘从题库容器先到顶部管理入口，再Tab到分类导航及专题检索，逐步核对真实焦点，原可视/颜色/数据断言保留；可维护性轮视觉顺序与DOM顺序一致，不用正tabindex跳过新入口。
+docs/代码复查记录.md:1206: trailing whitespace.
++- workbench-shell.css管理字段复查：preview-02中无type默认文本框仍为浏览器黑边样式；Bug轮限定分类/专题输入框使用现有主题背景、边框与字号并限制自身宽度；可维护性轮不增加新配色或覆盖复选框，统一控件规范。
+docs/代码复查记录.md:1207: trailing whitespace.
++- LibraryBrowser.tsx失效选择再复查：Bug轮窄窗详情选题在收藏/内容重读后不再匹配时，要求selected仍存在才进入单独阅读模式，避免保留detailOpen却隐藏空列表与条件；失败/加载仍显示真实状态。可维护性轮沿用已有选择值，不新增同步状态或改变原请求、收藏和分页语义。
+docs/代码复查记录.md:1208: trailing whitespace.
++- findability.spec.ts窄窗契约再复查：Bug轮保留明确1280窗口，先核对离页返回后的同题/展开答案/精确scrollY，再正常返回列表检查原筛选和页码并重开答案；慢响应仍验证新选择不被覆盖、返回后48题与当前选中，收藏筛选前通过实际返回入口。原异步释放、范围、读写快照和超时不变。可维护性轮使用真实可见控件，不强制显示三栏或扩大窗口；旧失败报告及当轮源码独立封存。
+docs/代码复查记录.md:1209: trailing whitespace.
++- workbench-pages.css标签候选复查：完整第二轮5个真实失败显示，较窄的练习配置列中原绝对定位候选遮挡收藏复选框。Bug轮只在练习配置内将候选放入标签控件的文档流，保留50项上限/内部滚动/输入/键盘/IME事件，其他条件正常可点。可维护性轮采用局部grid与原变量，不修改TagPicker状态、业务筛选或测试超时；当轮程序及失败源码封存。
+docs/代码复查记录.md:1210: trailing whitespace.
++- board-entry.spec.ts展开管理焦点再复查：prepare通过真实管理表单创建分类，保留open状态；移至顶部后Tab应先进入其字段，不能直接假设收起。Bug轮在原已获得焦点的summary上用Enter收起并确认，再Tab进入分类导航与检索，原四主题/明暗/字号/对比度/业务快照断言保持。可维护性轮正常键盘操作，不修改产品焦点、跳过字段或扩大等待。
+docs/代码复查记录.md:1211: trailing whitespace.
++- TagPicker.tsx文档流点击复查：定向第二轮3/8，原5项由遮挡转为点击后未选中，确认blur先收起使控件在mousedown/up之间移位。Bug轮外部点击在click阶段收起，Tab键盘移动显式收起，根节点内选择/清除仍按原行为，保留IME、Enter、上下键、50项上限与禁用；监听仅展开时存在并清理，不延时猜测、不强制勾选测试。可维护性轮只增根ref与单一外部点击effect，不引入弹层库、全局状态或业务变化。
+docs/代码复查记录.md:1212: trailing whitespace.
++- workbench-pages.css真实打包管理区域复查：final-preview-01发现当前Chromium的details正文由::details-content承载，原父级grid未真正排列三个fieldset，导致全宽区域仍单列。Bug轮将宽窗/窄窗两处grid目标移到实际正文伪元素，保留语义details/summary、DOM与焦点顺序，计划1440三列、900单列。可维护性轮两处选择器修正，不包装新DOM或更改业务；候选首包与截图保留，运行中的完整回归仍用原build-06。
+docs/代码复查记录.md:1213: trailing whitespace.
++- ThemePreview.tsx框架文案复查：Bug轮局部预览改为六页现用名称，标题明确局部外观预览，避免经典/学习区元数据让用户误以为会改变新版统一框架；数据属性/受控变量、局部颜色、预览与应用分离保持。可维护性轮只改文案和两个静态span，不新增预览状态或改变主题JSON兼容。
+docs/代码复查记录.md:1214: trailing whitespace.
++- workbench-browser.spec.ts管理真实布局复查：Bug轮在原1440/1200/900阅读节点与全表快照场景内补充实际展开后的fieldset边界框：1440三个>200px列横向无重叠，900三个同x按y顺排；正常收起后继续所有原过滤/分页/选中/答案/焦点/业务快照断言。可维护性轮校验实际几何而非CSS字符串或测试名称，没有新增虚假覆盖数量、固定延时或业务写入。
+docs/代码复查记录.md:1215: trailing whitespace.
++- evidence/preview-final.mjs：Bug轮必须显式提供最终EXE，先核对实际路径/packaged/0.0.1/构建，使用新TEMP目录、真实API导入分类和作答；页面就绪与两帧后capturePage，失败也记录已完成范围，finally关闭自己进程并严格校验目录父级/前缀后清理。可维护性轮固定13画面、复用小导航/导入/捕获函数，不读取正式库、不伪造统计、不混入交付库；脚本为本批证据，不进入程序或用户数据。
+docs/代码复查记录.md:1216: trailing whitespace.
++- 最终交付/安全试用学习工作台.cmd：Bug轮入口只运行自身目录的完整新EXE，先检查LOCALAPPDATA和文件，固定独立试用目录、清除开发宿主环境，setlocal不污染调用者；无删除/复制正式数据、无参数透传。可维护性轮沿既有安全入口的简单结构，用ASCII/CRLF避免命令解释差异；静态核对，不通过实际运行向持久试用目录写入演示数据。
+docs/开发说明.md:3: trailing whitespace.
++## 学习工作台构建（2026-10-26）
+docs/开发说明.md:4: trailing whitespace.
++
+docs/开发说明.md:5: trailing whitespace.
++产品0.0.1、构建20261025.3-workbench-e、结构10。源码基线1f25ffa，保留主线恢复修复；依赖、锁文件、构建配置与旧程序未变。开发形态明确运行E:\My_Projects\embedded-practice\out\main\index.js；新的完整解包目标为E:\My_Projects\embedded-practice\release\V0.0.1-workbench-e-20261025.3-r2\win-unpacked\embedded-practice.exe。新目录“安全试用学习工作台.cmd”只用于独立试用，不更新桌面入口或正式库。
+docs/开发说明.md:6: trailing whitespace.
++
+docs/开发说明.md:7: trailing whitespace.
++本轮使用既有本地Electron42.11.15分发，按下列方式输出新目录。不要覆盖历史包或把缺省release/win-unpacked当作目标。先执行npm run check、npm test与npm run build，再运行已有Playwright场景。每个自动化场景仍新建EMBEDDED_PRACTICE_TEST_DATA_DIR，启动后核对实际入口、构建、结构与userData。
+docs/开发说明.md:8: trailing whitespace.
++
+docs/开发说明.md:9: trailing whitespace.
++```powershell
+docs/开发说明.md:10: trailing whitespace.
++node node_modules/electron-builder/cli.js --win --x64 --dir --publish never --config.electronDist=node_modules/electron/dist --config.directories.output=release/V0.0.1-workbench-e-20261025.3-r2
+docs/开发说明.md:11: trailing whitespace.
++$env:EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE = 'E:\My_Projects\embedded-practice\release\V0.0.1-workbench-e-20261025.3-r2\win-unpacked\embedded-practice.exe'
+docs/开发说明.md:12: trailing whitespace.
++# JSON和截图输出也应指定本次新批次，不覆盖旧证据。
+docs/开发说明.md:13: trailing whitespace.
++node node_modules/@playwright/test/cli.js test --project=packaged
+docs/开发说明.md:14: trailing whitespace.
++```
+docs/开发说明.md:15: trailing whitespace.
++
+docs/开发说明.md:16: trailing whitespace.
++新工作台场景为tests/e2e/workbench-*.spec.ts，旧场景按可见六入口、默认总览、揭晓后历史和窄窗返回列表适配，原业务断言保留。新增contentUpdatedOnly只用于题库ListRequest，禁止混入练习条件。逐文件两轮检查在[代码复查记录](代码复查记录.md)，完整运行结果与首轮失败在[本批证据](evidence/workbench-e-20261025/README.md)。以下“当前”按各历史批次理解。
+docs/开发说明.md:17: trailing whitespace.
++
+docs/当前试用版本交付说明.md:3: trailing whitespace.
++## 学习工作台独立试用版（2026-10-26）
+docs/当前试用版本交付说明.md:4: trailing whitespace.
++
+docs/当前试用版本交付说明.md:5: trailing whitespace.
++**V0.0.1 · 构建20261025.3-workbench-e · 结构10 · Windows x64。** 本轮按方案E重构界面，源码基线1f25ffa；旧个人构建20261025.2-v001和桌面入口保留。完整新目录为E:\My_Projects\embedded-practice\release\V0.0.1-workbench-e-20261025.3-r2，程序本体位于其中win-unpacked/embedded-practice.exe，必须整体保留运行目录。
+docs/当前试用版本交付说明.md:6: trailing whitespace.
++
+docs/当前试用版本交付说明.md:7: trailing whitespace.
++请从[开始使用](../release/V0.0.1-workbench-e-20261025.3-r2/开始使用.md)进入，并双击同目录“安全试用学习工作台.cmd”。该入口明确设置独立的%LOCALAPPDATA%\embedded-practice-workbench-e-trial-20261025.3；首次为空库。附13份原题库419题、两个本地主题示例、主题格式说明与真实界面预览，不自动导入演示数据。直接双击程序本体仍按原应用规则使用正式数据目录，因此隔离试用应使用安全入口。
+docs/当前试用版本交付说明.md:8: trailing whitespace.
++
+docs/当前试用版本交付说明.md:9: trailing whitespace.
++新界面统一六入口，默认学习总览；题库宽窗三栏、窄窗详情可返回，练习宽窗题干/作答与参考双栏、窄窗顺序阅读。活动练习使用“保存并返回”，未揭晓的参考答案和历史作答不挂载；原队列、草稿、自评、收藏、分类、方案与本地主题能力保持。内容更新待复习的新浏览条件不进入练习快照。
+docs/当前试用版本交付说明.md:10: trailing whitespace.
++
+docs/当前试用版本交付说明.md:11: trailing whitespace.
++需试用自己的进度时，先在原个人程序导出完整备份到数据目录之外，再在新安全试用程序中主动选择备份、核对摘要并恢复；恢复会替换试用库并重启。本轮没有读取或复制正式数据库、替换个人程序或快捷方式，没有提交、推送、生成或发布安装器。产品与数据库结构仍为0.0.1/10，不能把结构10交给旧结构9程序。
+docs/当前试用版本交付说明.md:12: trailing whitespace.
++
+docs/当前试用版本交付说明.md:13: trailing whitespace.
++[完整用户计划](UI学习工作台开发计划.md) · [行为与验收](UI学习工作台行为与验收.md) · [本批证据](evidence/workbench-e-20261025/README.md)。执行结果以[验收记录](验收记录.md)为准，首次失败、后续定向修复和最终完整运行分别记录。截图来自隔离数据中的真实Electron窗口；用户主观体验、全部系统DPI/IME、长期性能、安装器及硬件验收保持未验，VMware继续跳过。
+docs/当前试用版本交付说明.md:14: trailing whitespace.
++
+docs/当前试用版本交付说明.md:15: trailing whitespace.
++## V0.0.1（现有桌面程序，2026-10-25）

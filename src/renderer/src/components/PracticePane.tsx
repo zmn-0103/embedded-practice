@@ -7,6 +7,7 @@ import type {
 import { MarkdownContent } from './MarkdownContent'
 import { QuestionHistory } from './QuestionHistory'
 import { DifficultyBadge } from './DifficultyBadge'
+import { PracticeFavorite } from './PracticeFavorite'
 
 const ACTION_REPEAT_GUARD_MS = 500
 
@@ -19,7 +20,10 @@ function keepAnswerVisible(input: HTMLTextAreaElement, actions: HTMLDivElement) 
     Number.parseFloat(style.borderTopWidth) +
     Number.parseFloat(style.paddingTop) +
     Number.parseFloat(style.lineHeight)
-  if (box.top < 0 || firstLineBottom > actions.getBoundingClientRect().top)
+  if (
+    box.top < 0 ||
+    firstLineBottom > Math.min(actions.getBoundingClientRect().top, window.innerHeight)
+  )
     input.scrollIntoView({ block: 'start' })
 }
 
@@ -28,17 +32,24 @@ export function PracticePane({
   controller,
   homeBusy,
   onHome,
+  onDataBusy,
+  onDataOperation,
 }: {
   state: PracticeEditorState
   controller: PracticeController
   homeBusy: boolean
   onHome: () => void
+  onDataBusy: (busy: boolean) => void
+  onDataOperation: (work: Promise<boolean>) => void
 }) {
   const title = useRef<HTMLHeadingElement>(null)
   const actions = useRef<HTMLDivElement>(null)
   const reading = useRef<HTMLDivElement>(null)
+  const workspace = useRef<HTMLElement>(null)
+  const actionReserve = useRef<HTMLDivElement>(null)
   const repeatTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const [repeatBlocked, setRepeatBlocked] = useState(false)
+  const [favoriteBusy, setFavoriteBusy] = useState(false)
   useEffect(
     () => () => {
       clearTimeout(repeatTimer.current)
@@ -63,11 +74,31 @@ export function PracticePane({
     observer.observe(element)
     return () => observer.disconnect()
   }, [state.view?.session.sessionId, state.view?.session.position, state.view?.item?.versionId])
+  useLayoutEffect(() => {
+    const bar = actions.current
+    const reserve = actionReserve.current
+    if (!bar || !reserve) return
+    const update = () => {
+      const height = Math.ceil(bar.getBoundingClientRect().height) + 24
+      reserve.style.height = `${height}px`
+      workspace.current?.style.setProperty('--practice-actions-height', `${height}px`)
+      const input = document.activeElement
+      if (input instanceof HTMLTextAreaElement && reading.current?.contains(input))
+        keepAnswerVisible(input, bar)
+    }
+    const observer = new ResizeObserver(update)
+    observer.observe(bar)
+    update()
+    return () => observer.disconnect()
+  }, [Boolean(state.view?.item)])
+  useLayoutEffect(() => {
+    if (state.error) actions.current?.scrollTo(0, 0)
+  }, [state.error])
   const view = state.view
   if (!view) return null
   const { session, item } = view
   const modeLabel = session.mode === 'random' ? '随机练习' : '顺序练习'
-  const blocked = state.busy || state.closing || state.pending || homeBusy
+  const blocked = state.busy || state.closing || state.pending || homeBusy || favoriteBusy
   const actionsBlocked = blocked || repeatBlocked
   function perform(event: MouseEvent<HTMLButtonElement>, action: PracticeAction) {
     if (blocked || repeatTimer.current !== undefined || event.detail > 1) return
@@ -119,8 +150,23 @@ export function PracticePane({
     failed: '保存失败',
   } as const
   return (
-    <section className="practice-workspace" aria-label={modeLabel}>
+    <section ref={workspace} className="practice-workspace" aria-label={modeLabel}>
       <div className="practice-heading">
+        <div className="practice-heading-actions">
+          <button type="button" className="primary" disabled={actionsBlocked} onClick={onHome}>
+            保存并返回
+          </button>
+          <PracticeFavorite
+            key={`${item.topicId}/${item.questionId}`}
+            identity={{ topicId: item.topicId, questionId: item.questionId }}
+            disabled={blocked}
+            onBusyChange={(value) => {
+              setFavoriteBusy(value)
+              onDataBusy(value)
+            }}
+            onOperation={onDataOperation}
+          />
+        </div>
         <p aria-label="练习进度">
           第 {session.position + 1} / {session.total} 题 · {modeLabel}
         </p>
@@ -133,156 +179,176 @@ export function PracticePane({
         </h2>
       </div>
       <aside id="practice-context" className="practice-context" aria-label="练习辅助面板">
-        <p className="eyebrow">本轮上下文</p>
-        <h3>题目属性</h3>
         <dl>
-          <dt>专题</dt>
-          <dd>{item.topicTitle}</dd>
-          <dt>难度</dt>
-          <dd>
-            <DifficultyBadge difficulty={item.difficulty} />
-          </dd>
-          <dt>标签</dt>
-          <dd>{item.tags.length ? item.tags.join('、') : '无标签'}</dd>
-          <dt>本轮进度</dt>
-          <dd>
-            {session.position + 1} / {session.total}
-          </dd>
           <dt>已揭晓</dt>
           <dd>{session.counts.revealed} 题</dd>
           <dt>已自评</dt>
           <dd>{session.counts.rated} 题</dd>
         </dl>
-        <p className="muted">先独立思考，再揭晓与自评。</p>
       </aside>
       <div
         ref={reading}
         className="practice-reading"
         key={`${session.sessionId}-${item.position}-${item.versionId}`}
       >
-        <section aria-label="练习题干">
-          <MarkdownContent body={item.body} versionId={item.versionId} />
-        </section>
-        <details className="practice-input" open>
-          <summary>我的答案</summary>
-          <label htmlFor="practice-answer" className="muted">
-            我的答案
-          </label>
-          <textarea
-            id="practice-answer"
-            rows={8}
-            value={state.draft.text}
-            readOnly={blocked}
-            placeholder="可以输入文字或代码，也可以先思考，再查看参考答案。"
-            onFocus={(event) => {
-              const input = event.currentTarget
-              // 等浏览器完成聚焦滚动后再测量，避免随后默认滚动把首行移回操作栏下方。
-              requestAnimationFrame(() => {
-                if (actions.current) keepAnswerVisible(input, actions.current)
-              })
-            }}
-            onChange={(event) => controller.edit(event.currentTarget.value)}
-          />
-        </details>
-        {item.revealed && (
-          <section aria-label="练习参考答案" className="reference-answer">
-            <h3>参考答案</h3>
-            <MarkdownContent body={item.answer} versionId={item.versionId} />
-            {item.rating && (
-              <p className="muted">本轮自评：{item.rating}，再次自评会更新本轮记录。</p>
-            )}
+        <div className="practice-question-column">
+          <section aria-label="练习题干">
+            <h3>题干</h3>
+            <MarkdownContent body={item.body} versionId={item.versionId} />
           </section>
-        )}
-        <QuestionHistory
-          topicId={item.topicId}
-          questionId={item.questionId}
-          excludeSessionId={session.sessionId}
-        />
-      </div>
-      <div
-        ref={actions}
-        className="practice-actions"
-        onKeyDown={(event) => {
-          // 长按产生的重复键即使跨过保护期，也不能成为下一题的新操作。
-          if (event.repeat && (event.key === 'Enter' || event.key === ' ')) event.preventDefault()
-        }}
-      >
-        <div className="practice-save" aria-live="polite">
-          {state.closing ? '正在准备关闭…' : labels[state.saveStatus]}
+          <details className="practice-input" open>
+            <summary id="practice-answer-label">我的答案</summary>
+            <textarea
+              id="practice-answer"
+              aria-labelledby="practice-answer-label"
+              rows={6}
+              value={state.draft.text}
+              readOnly={blocked}
+              placeholder="写下思路或代码，也可以先思考再揭晓。"
+              onFocus={(event) => {
+                const input = event.currentTarget
+                // 等浏览器完成聚焦滚动后再测量，避免随后默认滚动把首行移回操作栏下方。
+                requestAnimationFrame(() => {
+                  if (actions.current) keepAnswerVisible(input, actions.current)
+                })
+              }}
+              onChange={(event) => controller.edit(event.currentTarget.value)}
+            />
+            <p className="practice-input-save" aria-live="polite">
+              {labels[state.saveStatus]}
+            </p>
+          </details>
         </div>
-        {state.error && (
-          <div role="alert" className="error-message">
-            <p>{state.error}</p>
-            {(state.pending || state.saveStatus === 'failed') && (
-              <button
-                type="button"
-                disabled={state.busy || state.closing || homeBusy || repeatBlocked}
-                onClick={() => {
-                  void controller.retry()
-                }}
-              >
-                {state.pending ? '重试原操作' : '重试保存'}
-              </button>
-            )}
-          </div>
-        )}
-        <div className="button-row">
-          <button
-            type="button"
-            disabled={actionsBlocked || session.position === 0}
-            onClick={(event) => perform(event, { kind: 'navigate', direction: 'previous' })}
-          >
-            上一题
-          </button>
-          {!item.revealed ? (
+        <div className="practice-reference-column">
+          {item.revealed ? (
             <>
-              <button
-                type="button"
-                className="primary"
-                disabled={actionsBlocked}
-                onClick={(event) => perform(event, { kind: 'reveal' })}
-              >
-                查看参考答案
-              </button>
-              <button
-                type="button"
-                disabled={actionsBlocked}
-                onClick={(event) => perform(event, { kind: 'navigate', direction: 'skip' })}
-              >
-                跳过本题
-              </button>
+              <section aria-label="练习参考答案" className="reference-answer">
+                <h3>参考答案</h3>
+                <MarkdownContent body={item.answer} versionId={item.versionId} />
+                {item.rating && (
+                  <p className="muted">本轮自评：{item.rating}，再次自评会更新本轮记录。</p>
+                )}
+              </section>
+              <QuestionHistory
+                topicId={item.topicId}
+                questionId={item.questionId}
+                excludeSessionId={session.sessionId}
+              />
             </>
           ) : (
-            <>
-              {(['不会', '不熟', '掌握'] as const).map((rating) => (
+            <section className="answer-placeholder" aria-label="参考答案未揭晓">
+              <h3>参考答案</h3>
+              <div>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  aria-hidden="true"
+                >
+                  <rect x="5" y="10" width="14" height="11" rx="2" />
+                  <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                </svg>
+                <p>先尝试回忆，再查看参考答案</p>
+                <p className="muted">允许空输入，揭晓后自行评价。</p>
+              </div>
+            </section>
+          )}
+        </div>
+      </div>
+      <div ref={actionReserve} className="practice-action-reserve">
+        <div
+          ref={actions}
+          className="practice-actions"
+          data-save-status={state.saveStatus}
+          onKeyDown={(event) => {
+            // 长按产生的重复键即使跨过保护期，也不能成为下一题的新操作。
+            if (event.repeat && (event.key === 'Enter' || event.key === ' ')) event.preventDefault()
+          }}
+        >
+          <div className="practice-save" aria-live="polite">
+            {state.closing ? '正在准备关闭…' : labels[state.saveStatus]}
+          </div>
+          {state.error && (
+            <div role="alert" className="error-message">
+              <p>{state.error}</p>
+              {(state.pending || state.saveStatus === 'failed') && (
                 <button
                   type="button"
-                  key={rating}
-                  disabled={actionsBlocked}
-                  onClick={(event) => perform(event, { kind: 'rate', rating })}
+                  disabled={state.busy || state.closing || homeBusy || repeatBlocked}
+                  onClick={() => {
+                    void controller.retry()
+                  }}
                 >
-                  {rating}
+                  {state.pending ? '重试原操作' : '重试保存'}
                 </button>
-              ))}
-              <button
-                type="button"
-                disabled={actionsBlocked}
-                onClick={(event) => perform(event, { kind: 'rate', rating: null })}
-              >
-                暂不评价，下一题
-              </button>
-            </>
+              )}
+            </div>
           )}
-          <button type="button" disabled={actionsBlocked} onClick={onHome}>
-            返回首页
-          </button>
-          <button
-            type="button"
-            disabled={actionsBlocked}
-            onClick={(event) => perform(event, { kind: 'end' })}
-          >
-            结束本轮
-          </button>
+          <div className="practice-evaluation" aria-label="自评与推进">
+            {!item.revealed ? (
+              <>
+                <button
+                  type="button"
+                  className="primary"
+                  disabled={actionsBlocked}
+                  onClick={(event) => perform(event, { kind: 'reveal' })}
+                >
+                  查看参考答案
+                </button>
+                <button
+                  type="button"
+                  disabled={actionsBlocked}
+                  onClick={(event) => perform(event, { kind: 'navigate', direction: 'skip' })}
+                >
+                  跳过本题
+                </button>
+              </>
+            ) : (
+              <>
+                {(['不会', '不熟', '掌握'] as const).map((rating) => (
+                  <button
+                    type="button"
+                    key={rating}
+                    data-rating={rating}
+                    disabled={actionsBlocked}
+                    onClick={(event) => perform(event, { kind: 'rate', rating })}
+                  >
+                    {rating}
+                  </button>
+                ))}
+                <button
+                  type="button"
+                  disabled={actionsBlocked}
+                  onClick={(event) => perform(event, { kind: 'rate', rating: null })}
+                >
+                  暂不评价，下一题
+                </button>
+              </>
+            )}
+          </div>
+          <div className="practice-navigation" aria-label="本轮导航">
+            <button type="button" disabled={actionsBlocked} onClick={onHome}>
+              保存后返回
+            </button>
+            <button
+              type="button"
+              disabled={actionsBlocked || session.position === 0}
+              onClick={(event) => perform(event, { kind: 'navigate', direction: 'previous' })}
+            >
+              上一题
+            </button>
+            <button
+              type="button"
+              className="quiet-action"
+              disabled={actionsBlocked}
+              onClick={(event) => perform(event, { kind: 'end' })}
+            >
+              结束本轮
+            </button>
+          </div>
         </div>
       </div>
     </section>

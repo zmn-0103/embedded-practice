@@ -37,6 +37,7 @@ export const listRequestSchema = z.strictObject({
   archived: z.boolean(),
   page: z.number().int().positive(),
   filters: questionFiltersSchema.optional(),
+  contentUpdatedOnly: z.boolean().optional(),
 })
 export const contentBodySchema = z.strictObject({
   markdown: z.string().min(1),

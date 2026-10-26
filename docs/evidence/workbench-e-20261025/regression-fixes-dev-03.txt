@@ -1,0 +1,22 @@
+
+Running 15 tests using 1 worker
+
+(node:44200) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\backup-window.spec.ts:127:5 › 完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库 (3.7s)
+  ok  2 [development] › tests\e2e\board-entry.spec.ts:398:5 › 板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过 (3.5s)
+  ok  3 [development] › tests\e2e\findability.spec.ts:82:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置 (1.4s)
+  ok  4 [development] › tests\e2e\findability.spec.ts:118:5 › 找题：标签候选跨分页、独立于筛选、限定专题，支持鼠标/键盘/无匹配/清除 (1.3s)
+  ok  5 [development] › tests\e2e\findability.spec.ts:178:5 › 找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择 (1.5s)
+  ok  6 [development] › tests\e2e\findability.spec.ts:249:5 › 找题：导入元数据使候选缓存失效，归档范围隔离，清除旧题选择 (1.3s)
+  ok  7 [development] › tests\e2e\findability.spec.ts:274:5 › 找题：返回后读取失败保留条件和页码，重试仍查询原范围 (1.2s)
+  ok  8 [development] › tests\e2e\findability.spec.ts:309:5 › 找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情 (1.4s)
+  ok  9 [development] › tests\e2e\findability.spec.ts:335:5 › 找题：首页快捷条件不替换旧轮，明确开始/无匹配/继续保留原契约 (6.3s)
+  ok 10 [development] › tests\e2e\learning-management.spec.ts:496:5 › M3 第一批：筛选固定队列、真实自评/未练习区分、无匹配保留旧轮 (3.2s)
+  ok 11 [development] › tests\e2e\practice-plans.spec.ts:9:5 › 方案：命名保存完整条件、填入不建轮，正常重开后明确开始才替换原轮 (2.8s)
+  ok 12 [development] › tests\e2e\session-filters.spec.ts:68:7 › sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列 (4.5s)
+  ok 13 [development] › tests\e2e\session-filters.spec.ts:68:7 › random 建轮原筛选重开保持，修改首页与题库不重抽固定队列 (4.5s)
+  ok 14 [development] › tests\e2e\workbench-practice.spec.ts:7:5 › 工作台练习：保存失败保留输入并阻止返回，六入口保存守卫与主题/缩放不重建输入，恢复后继续原轮 (2.2s)
+  ok 15 [development] › tests\e2e\workbench-practice.spec.ts:81:5 › 工作台练习：收藏失败重试原目标且独立于自评，空输入揭晓后才挂载答案/历史和自评，新题重新隔离 (2.1s)
+
+  15 passed (41.7s)

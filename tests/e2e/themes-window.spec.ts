@@ -103,7 +103,7 @@ test('练习中跨布局切换、导航折叠与辅助隐藏保持同一输入/�
     const editor = page.getByRole('textbox', { name: '我的答案', exact: true })
     const draft = '主题切换保持同一练习\n    uint8_t retained = 1;'
     await editor.fill(draft)
-    await expect(page.getByText('已保存', { exact: true })).toBeVisible()
+    await expect(page.locator('.practice-save')).toHaveText('已保存')
     await editor.evaluate((element) => Reflect.set(element, 'themeIdentityProbe', 'same-editor'))
     const before = themeBusinessSnapshot(testDataDirectory)
     await page.locator('.quick-appearance summary').click()

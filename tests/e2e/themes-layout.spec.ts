@@ -31,7 +31,7 @@ async function noPageOverflow(page: Page) {
   expect(dimensions.width).toBe(dimensions.viewport)
 }
 for (const choice of choices) {
-  test(`${choice.name}：五页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源`, async ({
+  test(`${choice.name}：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源`, async ({
     testDataDirectory,
   }, info) => {
     const { application, page } = await prepareHistory(testDataDirectory, info.project.name)
@@ -79,7 +79,10 @@ for (const choice of choices) {
               BrowserWindow.getAllWindows()[0]!.setBounds({ width, height: 1000 }),
             width,
           )
-          await openPage(page, '板块')
+          await openPage(page, '学习总览')
+          await expect(page.getByLabel('有效题目当前版本统计', { exact: true })).toBeVisible()
+          await noPageOverflow(page)
+          await openPage(page, '知识板块')
           await expect(page.getByRole('searchbox', { name: '搜索板块', exact: true })).toBeVisible()
           await noPageOverflow(page)
           await selectHistoryQuestion(page)

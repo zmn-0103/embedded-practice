@@ -1,0 +1,41 @@
+{
+  "report": "full-packaged-02.json",
+  "delivery": "E:\\My_Projects\\embedded-practice\\release\\V0.0.1-workbench-e-ui3-20261026.2-r2",
+  "build": "20261026.2-workbench-e-ui3",
+  "stats": {
+    "startTime": "2026-10-26T07:16:09.334Z",
+    "duration": 520751.51800000004,
+    "expected": 255,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "resultCount": 255,
+  "allPassed": true,
+  "allRetryZero": true,
+  "capturePNGs": 19,
+  "deliveryPreviewPNGs": 10,
+  "runtimeObjects": [
+    {
+      "test": "第三轮分类：真实419题与大量展开分类只有树滚动，搜索固定且第20题定位/列表位置保持",
+      "actual": {
+        "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.1-workbench-e-ui3-20261026.2-r2\\win-unpacked\\embedded-practice.exe",
+        "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-TLIofw",
+        "packaged": true,
+        "version": "0.0.1"
+      },
+      "schemaVerified": 10
+    },
+    {
+      "test": "第三轮板块：真实题库有活动轮时首排不超过450px、两排可见，有题筛选不改归属与固定队列",
+      "actual": {
+        "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.1-workbench-e-ui3-20261026.2-r2\\win-unpacked\\embedded-practice.exe",
+        "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-Su3wBU",
+        "packaged": true,
+        "version": "0.0.1"
+      },
+      "schemaVerified": 10
+    }
+  ]
+}

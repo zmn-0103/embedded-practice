@@ -1,0 +1,174 @@
+
+Running 8 tests using 1 worker
+
+(node:46928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [development] › tests\e2e\backup-window.spec.ts:127:5 › 完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库 (1.2s)
+(node:44196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [development] › tests\e2e\board-entry.spec.ts:398:5 › 板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过 (3.3s)
+  x  3 [development] › tests\e2e\learning-management.spec.ts:496:5 › M3 第一批：筛选固定队列、真实自评/未练习区分、无匹配保留旧轮 (1.2s)
+(node:32816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  4 [development] › tests\e2e\practice-plans.spec.ts:9:5 › 方案：命名保存完整条件、填入不建轮，正常重开后明确开始才替换原轮 (1.6s)
+(node:31676) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  5 [development] › tests\e2e\session-filters.spec.ts:68:7 › sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列 (1.4s)
+(node:52764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  6 [development] › tests\e2e\session-filters.spec.ts:68:7 › random 建轮原筛选重开保持，修改首页与题库不重抽固定队列 (1.4s)
+(node:46800) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 7 [development] › tests\e2e\workbench-practice.spec.ts:7:5 › 工作台练习：保存失败保留输入并阻止返回，六入口保存守卫与主题/缩放不重建输入，恢复后继续原轮 (2.2s)
+  ok 8 [development] › tests\e2e\workbench-practice.spec.ts:81:5 › 工作台练习：收藏失败重试原目标且独立于自评，空输入揭晓后才挂载答案/历史和自评，新题重新隔离 (2.1s)
+
+
+  1) [development] › tests\e2e\backup-window.spec.ts:127:5 › 完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库 ──
+
+    Error: locator.check: Clicking the checkbox did not change its state
+    Call log:
+      - waiting for getByLabel('练习只看收藏', { exact: true })
+        - locator resolved to <input type="checkbox" aria-label="练习只看收藏"/>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+        - click action done
+        - waiting for scheduled navigations to finish
+        - navigations have finished
+
+
+      149 |       await page.getByText('筛选练习题目', { exact: true }).click()
+      150 |       await page.getByLabel('练习标签', { exact: true }).fill('历史样本')
+    > 151 |       await page.getByLabel('练习只看收藏', { exact: true }).check()
+          |                                                        ^
+      152 |       await expect(page.getByText('匹配 2 题', { exact: true })).toBeVisible()
+      153 |       await page.getByRole('button', { name: '开始练习', exact: true }).click()
+      154 |       await page
+        at E:\My_Projects\embedded-practice\tests\e2e\backup-window.spec.ts:151:56
+        at outputDirectory (E:\My_Projects\embedded-practice\tests\e2e\backup-window.spec.ts:78:12)
+        at E:\My_Projects\embedded-practice\tests\e2e\backup-window.spec.ts:130:3
+
+    Error Context: docs\evidence\workbench-e-20261025\regression-fixes-dev-02\backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development\error-context.md
+
+  2) [development] › tests\e2e\learning-management.spec.ts:496:5 › M3 第一批：筛选固定队列、真实自评/未练习区分、无匹配保留旧轮 
+
+    Error: locator.check: Clicking the checkbox did not change its state
+    Call log:
+      - waiting for getByRole('checkbox', { name: '练习只看收藏' })
+        - locator resolved to <input type="checkbox" aria-label="练习只看收藏"/>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+        - click action done
+        - waiting for scheduled navigations to finish
+        - navigations have finished
+
+
+      513 |     await page.getByRole('combobox', { name: '练习标签' }).fill('筛选标签')
+      514 |     await page.getByRole('combobox', { name: '练习难度' }).selectOption('基础')
+    > 515 |     await page.getByRole('checkbox', { name: '练习只看收藏' }).check()
+          |                                                          ^
+      516 |     await expect(page.getByText('匹配 2 题', { exact: true })).toBeVisible()
+      517 |     await page.getByRole('button', { name: '开始练习', exact: true }).click()
+      518 |     await expect(page.getByLabel('练习进度')).toContainText('第 1 / 2')
+        at E:\My_Projects\embedded-practice\tests\e2e\learning-management.spec.ts:515:58
+
+    Error Context: docs\evidence\workbench-e-20261025\regression-fixes-dev-02\learning-management-M3-第一批：筛选固定队列、真实自评-未练习区分、无匹配保留旧轮-development\error-context.md
+
+  3) [development] › tests\e2e\practice-plans.spec.ts:9:5 › 方案：命名保存完整条件、填入不建轮，正常重开后明确开始才替换原轮 ───────
+
+    Error: locator.check: Clicking the checkbox did not change its state
+    Call log:
+      - waiting for getByLabel('练习只看收藏', { exact: true })
+        - locator resolved to <input type="checkbox" aria-label="练习只看收藏"/>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+        - click action done
+        - waiting for scheduled navigations to finish
+        - navigations have finished
+
+
+      39 |     await instance.page.getByLabel('练习难度', { exact: true }).selectOption('基础')
+      40 |     await instance.page.getByLabel('练习自评状态', { exact: true }).selectOption('unpracticed')
+    > 41 |     await instance.page.getByLabel('练习只看收藏', { exact: true }).check()
+         |                                                               ^
+      42 |     const saved = await savePlan(instance.page, '板块A收藏基础随机10')
+      43 |     expect(saved.options).toEqual({
+      44 |       category: { kind: 'category', categoryId: prepared.first },
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-plans.spec.ts:41:63
+
+    Error Context: docs\evidence\workbench-e-20261025\regression-fixes-dev-02\practice-plans-方案：命名保存完整条件、填入不建轮，正常重开后明确开始才替换原轮-development\error-context.md
+
+  4) [development] › tests\e2e\session-filters.spec.ts:68:7 › sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列 ──
+
+    Error: locator.check: Clicking the checkbox did not change its state
+    Call log:
+      - waiting for getByLabel('练习只看收藏', { exact: true })
+        - locator resolved to <input type="checkbox" aria-label="练习只看收藏"/>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+        - click action done
+        - waiting for scheduled navigations to finish
+        - navigations have finished
+
+
+      81 |       await page.getByLabel('练习难度', { exact: true }).selectOption('基础')
+      82 |       await page.getByLabel('练习自评状态', { exact: true }).selectOption('unpracticed')
+    > 83 |       await page.getByLabel('练习只看收藏', { exact: true }).check()
+         |                                                        ^
+      84 |       await expect(page.getByText('匹配 2 题', { exact: true })).toBeVisible()
+      85 |       await page.getByRole('button', { name: '开始练习', exact: true }).click()
+      86 |       const initial = await read(page)
+        at E:\My_Projects\embedded-practice\tests\e2e\session-filters.spec.ts:83:56
+
+    Error Context: docs\evidence\workbench-e-20261025\regression-fixes-dev-02\session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development\error-context.md
+
+  5) [development] › tests\e2e\session-filters.spec.ts:68:7 › random 建轮原筛选重开保持，修改首页与题库不重抽固定队列 ──────
+
+    Error: locator.check: Clicking the checkbox did not change its state
+    Call log:
+      - waiting for getByLabel('练习只看收藏', { exact: true })
+        - locator resolved to <input type="checkbox" aria-label="练习只看收藏"/>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - performing click action
+        - click action done
+        - waiting for scheduled navigations to finish
+        - navigations have finished
+
+
+      81 |       await page.getByLabel('练习难度', { exact: true }).selectOption('基础')
+      82 |       await page.getByLabel('练习自评状态', { exact: true }).selectOption('unpracticed')
+    > 83 |       await page.getByLabel('练习只看收藏', { exact: true }).check()
+         |                                                        ^
+      84 |       await expect(page.getByText('匹配 2 题', { exact: true })).toBeVisible()
+      85 |       await page.getByRole('button', { name: '开始练习', exact: true }).click()
+      86 |       const initial = await read(page)
+        at E:\My_Projects\embedded-practice\tests\e2e\session-filters.spec.ts:83:56
+
+    Error Context: docs\evidence\workbench-e-20261025\regression-fixes-dev-02\session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development\error-context.md
+
+  5 failed
+    [development] › tests\e2e\backup-window.spec.ts:127:5 › 完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库 ───
+    [development] › tests\e2e\learning-management.spec.ts:496:5 › M3 第一批：筛选固定队列、真实自评/未练习区分、无匹配保留旧轮 ─
+    [development] › tests\e2e\practice-plans.spec.ts:9:5 › 方案：命名保存完整条件、填入不建轮，正常重开后明确开始才替换原轮 ────────
+    [development] › tests\e2e\session-filters.spec.ts:68:7 › sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列 ───
+    [development] › tests\e2e\session-filters.spec.ts:68:7 › random 建轮原筛选重开保持，修改首页与题库不重抽固定队列 ───────
+  3 passed (17.1s)

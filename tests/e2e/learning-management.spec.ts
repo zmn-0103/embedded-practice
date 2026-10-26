@@ -41,6 +41,7 @@ async function importFiles(application: ElectronApplication, page: Page, files: 
   await expect(page.getByRole('heading', { name: '导入预览', exact: true })).toBeVisible()
   await page.getByRole('button', { name: '确认导入', exact: true }).click()
   await expect(page.getByText(/^导入完成：/)).toBeVisible()
+  await page.getByRole('button', { name: '关闭导入工作区', exact: true }).click()
   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()
 }
 async function prepare(directory: string, project: string) {
@@ -410,7 +411,7 @@ test('M3 第一批：收藏快速重复、练习数量同步、正常关闭重�
     expect(snapshot(testDataDirectory).queue).toMatchObject([
       { questionId: 'q-01', topicId: 'm3-a' },
     ])
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     await closeWindow(application)
     const next = await launchApplication(testDataDirectory, info.project.name)
@@ -535,7 +536,7 @@ test('M3 第一批：筛选固定队列、真实自评/未练习区分、无匹�
         (q) => q.questionId,
       ),
     ).toEqual(['q-02'])
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     await page.getByText('筛选练习题目', { exact: true }).click()
     await page.getByRole('searchbox', { name: '练习搜索' }).fill('没有匹配的题目')
@@ -591,7 +592,7 @@ test('M3 第一批：旧版本自评排除、元数据保持、归档恢复收�
     await page.getByRole('button', { name: '查看参考答案', exact: true }).click()
     await page.getByRole('button', { name: '不熟', exact: true }).click()
     await expect(page.getByLabel('练习进度')).toContainText('第 2 / 20')
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     const before = snapshot(testDataDirectory)
     await writeFile(file, bank('m3-a', false, false, true))

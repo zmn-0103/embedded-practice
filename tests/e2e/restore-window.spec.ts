@@ -274,7 +274,7 @@ test('全新目录从完整预览副本恢复全部业务数据并真实自动�
       await source.page
         .getByRole('textbox', { name: '我的答案', exact: true })
         .fill('恢复未揭晓草稿\nint keep = 2;')
-      await source.page.getByRole('button', { name: '返回首页', exact: true }).click()
+      await source.page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
       await categoryChange(source.page, {
         kind: 'rename',
         categoryId,
@@ -313,7 +313,7 @@ test('全新目录从完整预览副本恢复全部业务数据并真实自动�
       await stop(source.application)
       const targetDirectory = join(root, '全新 数据目录')
       await mkdir(targetDirectory)
-      target = await launchApplication(targetDirectory, info.project.name, '设置与数据')
+      target = await launchApplication(targetDirectory, info.project.name, '备份恢复')
       const empty = saved(join(targetDirectory, 'practice.sqlite3'))
       await choose(target.application, path)
       await target.page.getByRole('button', { name: '选择备份并预览', exact: true }).click()
@@ -358,9 +358,7 @@ test('全新目录从完整预览副本恢复全部业务数据并真实自动�
         .contexts()[0]!
         .pages()
         .find((p) => p.url().includes('index.html'))!
-      await expect(
-        newPage.getByRole('heading', { name: '嵌入式刷题本', exact: true }),
-      ).toBeVisible()
+      await expect(newPage.locator('.brand-mark')).toBeVisible()
       expect(saved(join(targetDirectory, 'practice.sqlite3'))).toEqual(expected)
       expect(
         await newPage.evaluate(() =>
@@ -392,6 +390,7 @@ test('全新目录从完整预览副本恢复全部业务数据并真实自动�
       await expect(newPage.locator('html')).toHaveAttribute('data-theme', 'dark')
       await expect(newPage.locator('html')).toHaveAttribute('data-palette', 'ocean')
       await expect(newPage.locator('html')).toHaveAttribute('data-font-size', '22')
+      await openPage(newPage, '开始练习')
       await newPage.getByRole('button', { name: '继续练习', exact: true }).click()
       await expect(newPage.getByLabel('练习进度')).toHaveText('第 2 / 2 题 · 随机练习')
       await expect(newPage.getByRole('textbox', { name: '我的答案', exact: true })).toHaveValue(
@@ -466,7 +465,7 @@ for (const kind of ['protect', 'save', 'tampered', 'cancel'] as const) {
         await page.getByRole('button', { name: '开始练习', exact: true }).click()
         await expect(page.getByRole('textbox', { name: '我的答案', exact: true })).toBeEditable()
         await page.getByRole('textbox', { name: '我的答案', exact: true }).fill('失败后仍可保存')
-        await expect(page.getByText('已保存', { exact: true })).toBeVisible()
+        await expect(page.locator('.practice-save')).toHaveText('已保存')
         expect(
           withHistoryDatabase(testDataDirectory, (db) =>
             db.prepare("SELECT draft FROM practice_items WHERE draft='失败后仍可保存'").all(),
@@ -757,7 +756,7 @@ test('保护性备份可直接从本数据目录选择并恢复，来源文件�
       await exited
       const bytes = await readFile(first.value.protectionPath)
       expect(saved(first.value.protectionPath)).toEqual(expected)
-      const launched = await launchApplication(testDataDirectory, info.project.name, '设置与数据')
+      const launched = await launchApplication(testDataDirectory, info.project.name, '备份恢复')
       reopened = launched.application
       const protection = await preview(reopened, launched.page, first.value.protectionPath)
       expect(protection.summary.schemaVersion).toBe(10)
@@ -769,7 +768,7 @@ test('保护性备份可直接从本数据目录选择并恢复，来源文件�
       expect(second.value.protectionPath).not.toBe(first.value.protectionPath)
       expect(saved(join(testDataDirectory, 'practice.sqlite3'))).toEqual(expected)
       expect(await readFile(first.value.protectionPath)).toEqual(bytes)
-      const final = await launchApplication(testDataDirectory, info.project.name, '设置与数据')
+      const final = await launchApplication(testDataDirectory, info.project.name, '备份恢复')
       reopened = final.application
       await expect(final.page.getByLabel('显示主题', { exact: true })).toHaveValue('dark')
       await expect(final.page.getByLabel('正文字号', { exact: true })).toHaveValue('21')

@@ -84,8 +84,8 @@ export function BackupPanel({
   }
   const summary = result?.file.summary
   return (
-    <section aria-label="完整备份与恢复预览">
-      <h3>本地数据</h3>
+    <section id="backup-section" tabIndex={-1} aria-label="完整备份与恢复预览">
+      <h3>备份与恢复</h3>
       <p>
         完整备份包含题库、历史版本、图片、学习记录、收藏、练习进度、已安装主题及显示布局设置。
         备份仅包含已经保存的数据；调整显示后请先保存，再导出。
@@ -119,11 +119,6 @@ export function BackupPanel({
               ? new Date(summary.createdAt).toLocaleString('zh-CN')
               : '未知（旧备份未记录时间）'}
           </p>
-          {result.kind === 'preview' && (
-            <button type="button" disabled={disabled || !!busy} onClick={() => void restore()}>
-              {busy === 'restore' ? '正在准备恢复并重启…' : '恢复此备份…'}
-            </button>
-          )}
           <p>
             数据结构版本：{summary.schemaVersion}
             {summary.requiresMigration ? '（恢复时需要升级，兼容性已在副本中检查）' : ''}
@@ -169,6 +164,14 @@ export function BackupPanel({
               ? '包含可继续的练习轮次及固定队列。'
               : '没有可继续的活动练习轮次。'}
           </p>
+          {result.kind === 'preview' && (
+            <div className="backup-restore-action">
+              <p>核对以上文件和学习数据后再恢复；当前全部数据将被替换并重启。</p>
+              <button type="button" disabled={disabled || !!busy} onClick={() => void restore()}>
+                {busy === 'restore' ? '正在准备恢复并重启…' : '恢复此备份…'}
+              </button>
+            </div>
+          )}
         </section>
       )}
     </section>

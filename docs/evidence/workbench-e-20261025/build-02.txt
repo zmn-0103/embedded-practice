@@ -1,0 +1,44 @@
+
+> embedded-practice@0.0.1 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.0.1 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 456 modules transformed.
+rendering chunks...
+out/main/rolldown-runtime-Dbql6lyJ.js       1.73 kB
+out/main/read-file-snapshot-CMVe8RMv.js     2.28 kB
+out/main/question-selection-CPQCo8n4.js     3.27 kB
+out/main/import-preparation.js              4.78 kB
+out/main/import-protocol-CjaQDko1.js        6.66 kB
+out/main/backup.js                         10.58 kB
+out/main/practice.js                       18.14 kB
+out/main/settings-repository-7fSO8Sq5.js   19.57 kB
+out/main/restore-files.js                  20.82 kB
+out/main/open-database-DNSfFm_L.js         33.20 kB
+out/main/library-import.js                 39.50 kB
+out/main/index.js                          52.10 kB
+out/main/question-bank-DgNu3Pwr.js        185.06 kB
+out/main/import-worker-Dm2sGFac.js        759.48 kB
+
+✓ built in 108ms
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 112 modules transformed.
+rendering chunks...
+out/preload/index.js  203.04 kB
+
+✓ built in 27ms
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 604 modules transformed.
+rendering chunks...
+out/renderer/index.html                     0.71 kB
+out/renderer/assets/index-CDmdpYpc.css     52.38 kB
+out/renderer/assets/index-D1wafFWc.js   1,884.01 kB
+
+✓ built in 121ms

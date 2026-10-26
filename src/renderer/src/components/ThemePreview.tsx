@@ -29,16 +29,15 @@ export function ThemePreview({
       aria-label={label}
       style={themePreviewStyle(definition, fontSize)}
     >
-      <span className="preview-label">
-        {definition.name} · {definition.presentation.layout === 'study' ? '学习工作区' : '经典布局'}
-        预览
-      </span>
+      <span className="preview-label">{definition.name} · 局部外观预览</span>
       <div className="theme-demo">
         <div className="demo-sidebar" aria-label="导航预览">
-          <span>板块</span>
+          <span>学习总览</span>
+          <span>知识板块</span>
           <strong>开始练习</strong>
           <span>题库</span>
           <span>学习记录</span>
+          <span>设置与数据</span>
         </div>
         <div className="demo-body">
           <h3>把思考留在题目旁</h3>

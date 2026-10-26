@@ -25,8 +25,10 @@ export function CategoryManager({
   const [message, setMessage] = useState('')
   const [error, setError] = useState('')
   const [deleting, setDeleting] = useState<LibraryNavigation['categories'][number]>()
+  const [operation, setOperation] = useState<'create' | 'rename' | 'assign'>()
   const running = useRef(false)
   const mounted = useRef(false)
+  const panel = useRef<HTMLDetailsElement>(null)
   const dialogTitle = useId()
   useEffect(() => {
     mounted.current = true
@@ -75,10 +77,75 @@ export function CategoryManager({
   )?.title
   const missingTarget = targetId !== '' && !categories.some((item) => item.categoryId === targetId)
   return (
-    <details className="category-manager">
+    <details
+      ref={panel}
+      className="category-manager"
+      onKeyDown={(event) => {
+        if (event.key === 'Escape' && !busy && !deleting) {
+          event.preventDefault()
+          event.currentTarget.open = false
+          event.currentTarget.querySelector('summary')?.focus({ preventScroll: true })
+        }
+      }}
+    >
       <summary>管理分类</summary>
+      <button
+        className="category-close"
+        type="button"
+        disabled={busy || Boolean(deleting)}
+        onClick={() => {
+          if (panel.current) {
+            panel.current.open = false
+            panel.current.querySelector('summary')?.focus({ preventScroll: true })
+          }
+        }}
+      >
+        关闭分类管理
+      </button>
       <p className="muted">移动专题或移除分类会保留题目和已有练习；归属不随题库重导入清空。</p>
-      <fieldset disabled={disabled || busy || Boolean(deleting)}>
+      <div className="category-overview" aria-label="现有分类与专题归属">
+        {[...categories, { categoryId: '', title: '未分类' }].map((category) => {
+          const members = topics.filter((topic) => (topic.categoryId ?? '') === category.categoryId)
+          return (
+            <details key={category.categoryId}>
+              <summary>
+                {category.title} · {members.length} 个专题
+              </summary>
+              {members.length ? (
+                <ul>
+                  {members.map((topic) => (
+                    <li key={topic.topicId}>
+                      {topic.title} · {topic.activeCount} 题
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="muted">暂无专题</p>
+              )}
+            </details>
+          )
+        })}
+      </div>
+      <div className="button-row" aria-label="分类管理操作">
+        {(
+          [
+            ['create', '新增分类'],
+            ['rename', '修改或移除分类'],
+            ['assign', '调整专题归属'],
+          ] as const
+        ).map(([kind, label]) => (
+          <button
+            type="button"
+            key={kind}
+            disabled={disabled || busy || Boolean(deleting)}
+            aria-expanded={operation === kind}
+            onClick={() => setOperation(operation === kind ? undefined : kind)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+      <fieldset hidden={operation !== 'create'} disabled={disabled || busy || Boolean(deleting)}>
         <legend>添加分类</legend>
         <form
           onSubmit={(event) => {
@@ -102,7 +169,7 @@ export function CategoryManager({
         </form>
         <p className="muted">名称最长60字符；“未分类”和“全部分类”用于系统范围。</p>
       </fieldset>
-      <fieldset disabled={disabled || busy || Boolean(deleting)}>
+      <fieldset hidden={operation !== 'rename'} disabled={disabled || busy || Boolean(deleting)}>
         <legend>修改分类</legend>
         <label>
           要修改的分类
@@ -152,7 +219,7 @@ export function CategoryManager({
           移除分类
         </button>
       </fieldset>
-      <fieldset disabled={disabled || busy || Boolean(deleting)}>
+      <fieldset hidden={operation !== 'assign'} disabled={disabled || busy || Boolean(deleting)}>
         <legend>专题归属</legend>
         <label>
           调整归属的专题
@@ -173,7 +240,13 @@ export function CategoryManager({
             ))}
           </select>
         </label>
-        {currentTopic && <p className="muted">当前归属：{currentTitle ?? '未分类'}</p>}
+        {currentTopic && (
+          <p className="muted">
+            当前归属：{currentTitle ?? '未分类'} → 将调整为：
+            {categories.find((category) => category.categoryId === targetId)?.title ??
+              (missingTarget ? '已移除的分类' : '未分类')}
+          </p>
+        )}
         <label>
           归入分类
           <select

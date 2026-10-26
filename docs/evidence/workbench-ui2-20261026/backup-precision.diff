@@ -1,0 +1,29 @@
+--- before/backup.ts
++++ final/backup.ts
+@@ -57,7 +57,8 @@
+       !(reading && relative(join(dataDirectory, 'backups'), dirname(destination)) === '')
+     )
+       throw new BackupFault('FILE_ERROR', '请选择运行数据目录以外的位置，避免覆盖正在使用的数据。')
+-    const target = await lstat(destination).catch((error: unknown) => {
++    // Windows文件编号可能超过Number精度；用精确整数区分独立文件与真实硬链接。
++    const target = await lstat(destination, { bigint: true }).catch((error: unknown) => {
+       if (!missing(error)) throw error
+       return undefined
+     })
+@@ -73,10 +74,12 @@
+     }
+     if (target) {
+       for (const suffix of ['', '-wal', '-shm', '-journal']) {
+-        const running = await stat(databasePath + suffix).catch((error: unknown) => {
+-          if (!missing(error)) throw error
+-          return undefined
+-        })
++        const running = await stat(databasePath + suffix, { bigint: true }).catch(
++          (error: unknown) => {
++            if (!missing(error)) throw error
++            return undefined
++          },
++        )
+         if (running && running.dev === target.dev && running.ino === target.ino)
+           throw new BackupFault('FILE_ERROR', '不能覆盖当前数据库或其伴随文件的别名。')
+       }

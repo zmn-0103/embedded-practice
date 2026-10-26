@@ -66,6 +66,7 @@ test('四入口初始空库、独立页面、地址与显示默认值保持', as
       { id: 1, theme: 'system', font_size: 17, palette: 'forest' },
     ])
     expect(page.url()).toBe(url)
+    await openPage(page, '备份恢复')
     await expect(page.getByRole('button', { name: '导出完整备份', exact: true })).toBeVisible()
     await expect(page.getByRole('button', { name: '选择备份并预览', exact: true })).toBeVisible()
     expect(
@@ -135,10 +136,14 @@ test('系统与手动主题、15/17/22px 实际正文代码表格输入框及隐
       const input = page.getByRole('textbox', { name: '我的答案', exact: true })
       await expect(input).toHaveCSS('font-size', `${size}px`)
       expect(await page.locator('body').ariaSnapshot()).not.toContain('HISTORY-ANSWER')
-      await expect(page.getByRole('navigation', { name: '主要页面' })).not.toBeVisible()
+      const navigation = page.getByRole('navigation', { name: '主要页面', exact: true })
+      await expect(navigation).toBeVisible()
+      await expect(navigation.getByRole('link')).toHaveCount(6)
+      for (const link of await navigation.getByRole('link').all())
+        await expect(link).toHaveAttribute('aria-disabled', 'true')
       await input.scrollIntoViewIfNeeded()
       await captureHistory(application, page, info, `practice-${theme}-${size}.png`)
-      await page.getByRole('button', { name: '返回首页', exact: true }).click()
+      await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     }
     await info.attach('appearance-rendering.json', {
       body: JSON.stringify({
@@ -173,7 +178,7 @@ test('显示设置正常关闭独立重开，保留草稿位置自评收藏与�
     await expect(page.getByLabel('练习进度')).toContainText('第 2 / 2')
     const draft = '设置重开草稿\nint saved = 22;'
     await page.getByRole('textbox', { name: '我的答案', exact: true }).fill(draft)
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     const before = historySnapshot(testDataDirectory)
     await save(page, 'dark', 22)

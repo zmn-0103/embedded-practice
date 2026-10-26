@@ -43,7 +43,7 @@ test('完整备份将两个主题/当前外观/布局偏好/旧队列恢复到�
     await initial.page.getByRole('textbox', { name: '我的答案', exact: true }).fill(draft)
     await initial.page.getByRole('button', { name: '隐藏辅助面板', exact: true }).click()
     await initial.page.getByRole('button', { name: '收起导航', exact: true }).click()
-    await initial.page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await initial.page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     const business = themeBusinessSnapshot(testDataDirectory)
     const themes = withHistoryDatabase(testDataDirectory, themeRows)
     const appearance = await readAppearance(initial.page)
@@ -52,7 +52,7 @@ test('完整备份将两个主题/当前外观/布局偏好/旧队列恢复到�
       auxiliaryHidden: true,
       navigationCollapsed: true,
     })
-    await openPage(initial.page, '设置与数据')
+    await openPage(initial.page, '备份恢复')
     const backupPath = info.outputPath('含多主题完整备份.sqlite3')
     await initial.application.evaluate(({ dialog }, path) => {
       dialog.showSaveDialog = async () => ({ canceled: false, filePath: path })
@@ -82,7 +82,7 @@ test('完整备份将两个主题/当前外观/布局偏好/旧队列恢复到�
     expect(themeBusinessSnapshot(testDataDirectory)).toEqual(business)
     expect(withHistoryDatabase(testDataDirectory, themeRows)).toEqual(themes)
     await closeNormally(initial.application)
-    const empty = await launchApplication(restoredDirectory, info.project.name, '设置与数据')
+    const empty = await launchApplication(restoredDirectory, info.project.name, '备份恢复')
     opened.push(empty.application)
     await verifyThemeTarget(empty.application, empty.page, restoredDirectory, info.project.name)
     expect(themeBusinessSnapshot(restoredDirectory).questions).toEqual([])

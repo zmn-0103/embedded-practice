@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:46708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\workbench-overview.spec.ts:6:5 › 工作台总览：空库默认六入口、真实零统计与导入模板入口，不自动建轮或混入样例 (1.0s)
+  ok 2 [development] › tests\e2e\workbench-overview.spec.ts:40:5 › 工作台总览：当前位置与揭晓自评分列，快捷筛选不建轮，继续本轮保持原队列与草稿 (3.8s)
+  ok 3 [development] › tests\e2e\workbench-overview.spec.ts:81:5 › 工作台总览：统计读取失败保持错误和重试，不伪装成空库或显示旧数字 (1.1s)
+
+  3 passed (6.6s)

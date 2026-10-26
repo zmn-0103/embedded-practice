@@ -2,7 +2,6 @@ import { writeFile } from 'node:fs/promises'
 import { expect, openPage, test } from './helpers'
 import { historySnapshot, importHistoryFiles, stop, withHistoryDatabase } from './history-helpers'
 import {
-  addCategory,
   categoryBank,
   categoryChange,
   categoryList,
@@ -17,6 +16,7 @@ test('分类树：改名、检索、键盘选择、默认取消与移除保留�
   try {
     const before = historySnapshot(testDataDirectory)
     const manager = await openCategoryManager(page)
+    await manager.getByRole('button', { name: '修改或移除分类', exact: true }).click()
     await manager.getByLabel('要修改的分类', { exact: true }).selectOption(first)
     await manager.getByLabel('分类新名称', { exact: true }).fill('STM32 基础')
     await manager.getByRole('button', { name: '保存分类名称', exact: true }).click()
@@ -42,7 +42,7 @@ test('分类树：改名、检索、键盘选择、默认取消与移除保留�
     await expect(
       navigation.getByRole('button', { name: '题库专题：甲专题', exact: true }),
     ).toBeVisible()
-    await manager.locator('summary').click()
+    await manager.getByRole('button', { name: '关闭分类管理', exact: true }).click()
     await navigation.scrollIntoViewIfNeeded()
     await info.attach('category-tree.png', {
       body: await page.screenshot({ fullPage: true }),
@@ -175,6 +175,8 @@ test('分类事务：修订写入失败完整回滚，界面保留目标后重�
       expect(historySnapshot(testDataDirectory)).toEqual(protectedRows)
     }
     const manager = await openCategoryManager(page)
+    const assign = manager.getByRole('button', { name: '调整专题归属', exact: true })
+    if ((await assign.getAttribute('aria-expanded')) !== 'true') await assign.click()
     await manager.getByLabel('调整归属的专题', { exact: true }).selectOption('cat-a')
     await manager.getByLabel('归入分类', { exact: true }).selectOption(second)
     await manager.getByRole('button', { name: '保存专题归属', exact: true }).click()
@@ -220,12 +222,14 @@ test('分类修订使导入旧预览失效，重新预览保留归属且才更�
     }, paths[0]!)
     await page.getByRole('button', { name: '导入题库', exact: true }).click()
     await expect(page.getByRole('heading', { name: '导入预览', exact: true })).toBeVisible()
-    await addCategory(page, '预览后新增分类')
+    // 模态预览期间用实际IPC模拟另一操作导致修订变化，校验原预览保护。
+    await categoryChange(page, { kind: 'create', title: '预览后新增分类' })
     await page.getByRole('button', { name: '确认导入', exact: true }).click()
     await expect(
       page.getByText('题库在预览后已变化，请重新预览再确认。', { exact: true }),
     ).toBeVisible()
     expect(historySnapshot(testDataDirectory).versions).toHaveLength(5)
+    await page.getByRole('button', { name: '关闭导入工作区', exact: true }).click()
     await importHistoryFiles(application, page, [paths[0]!])
     expect(historySnapshot(testDataDirectory).versions).toHaveLength(6)
     expect(

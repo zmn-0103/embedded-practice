@@ -1,0 +1,17 @@
+
+Running 10 tests using 1 worker
+
+(node:44560) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\board-entry.spec.ts:398:5 › 板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过 (3.5s)
+  ok  2 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 松间绿：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (2.8s)
+  ok  3 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 晴空蓝：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (2.9s)
+  ok  4 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 暖沙金：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.5s)
+  ok  5 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 暮山紫：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (2.9s)
+  ok  6 [development] › tests\e2e\themes-layout.spec.ts:34:7 › Claude 风格：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (2.9s)
+  ok  7 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 纸页墨色：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.3s)
+  ok  8 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 电路夜航：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.2s)
+  ok  9 [development] › tests\e2e\workbench-browser.spec.ts:13:5 › 工作台题库：内容更新筛选按当前版本和范围真实计数，标签候选保持，练习仍使用原选题规则 (2.2s)
+  ok 10 [development] › tests\e2e\workbench-browser.spec.ts:64:5 › 工作台题库：宽窗三栏与窄窗详情返回保留筛选、页码、选中、已展开内容和同一阅读节点 (1.4s)
+
+  10 passed (29.3s)

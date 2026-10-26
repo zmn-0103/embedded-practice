@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { App } from './App'
 import './styles/global.css'
 import './styles/themes.css'
+import './styles/workbench-shell.css'
+import './styles/workbench-pages.css'
 import { DEFAULT_THEME_ID, themeVariables } from '../../shared/contracts/themes'
 import { builtinTheme } from '../../shared/themes'
 

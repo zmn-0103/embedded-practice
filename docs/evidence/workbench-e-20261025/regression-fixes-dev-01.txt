@@ -1,0 +1,125 @@
+
+Running 35 tests using 1 worker
+
+(node:52000) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\category-practice.spec.ts:27:5 › 分类练习：同事务快照、随机队列、移动/改名/移除后的原请求重试和正常重开保持 (4.7s)
+  x   2 [development] › tests\e2e\findability.spec.ts:82:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置 (11.5s)
+(node:47860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   3 [development] › tests\e2e\findability.spec.ts:172:5 › 找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择 (11.2s)
+(node:51248) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [development] › tests\e2e\findability.spec.ts:263:5 › 找题：返回后读取失败保留条件和页码，重试仍查询原范围 (1.4s)
+  x   5 [development] › tests\e2e\findability.spec.ts:298:5 › 找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情 (31.6s)
+(node:52592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 [development] › tests\e2e\history-window.spec.ts:22:5 › 历史默认不读/不挂载，主动回看与自动保存保持，新题新轮重新关闭 (4.0s)
+  ok  7 [development] › tests\e2e\history-window.spec.ts:223:7 › 切题后晚到的 history:list 不覆盖另一题或泄露旧内容 (1.3s)
+  ok  8 [development] › tests\e2e\history-window.spec.ts:223:7 › 切题后晚到的 history:get-entry 不覆盖另一题或泄露旧内容 (1.3s)
+  ok  9 [development] › tests\e2e\learning-management.spec.ts:211:7 › M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致 (1.3s)
+  ok 10 [development] › tests\e2e\learning-management.spec.ts:211:7 › M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致 (1.3s)
+  ok 11 [development] › tests\e2e\learning-management.spec.ts:276:5 › M3 修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数 (1.4s)
+  ok 12 [development] › tests\e2e\learning-management.spec.ts:436:5 › M3 第一批：收藏写入失败与响应丢失重试、收藏页取消后收敛 (1.3s)
+  ok 13 [development] › tests\e2e\learning-records.spec.ts:202:5 › 学习记录页专题范围、收藏刷新、主动历史与明暗布局 (1.4s)
+  ok 14 [development] › tests\e2e\learning-records.spec.ts:247:5 › 切页保留待确认预览，记录页关闭仍保存并可继续原轮 (2.3s)
+  ok 15 [development] › tests\e2e\library-window.spec.ts:82:5 › 窗口预览确认、三种图片解码、移动来源后独立进程重开 (2.7s)
+  ok 16 [development] › tests\e2e\practice-window.spec.ts:379:5 › 真实代码 token/复制调用、图片模态缩放与长答案操作区 (1.6s)
+  ok 17 [development] › tests\e2e\practice-window.spec.ts:570:7 › M2 第三批：100% 页面缩放下长内容切题回到题首 (3.8s)
+  ok 18 [development] › tests\e2e\practice-window.spec.ts:570:7 › M2 第三批：125% 页面缩放下长内容切题回到题首 (3.8s)
+  ok 19 [development] › tests\e2e\practice-window.spec.ts:570:7 › M2 第三批：150% 页面缩放下长内容切题回到题首 (3.9s)
+  ok 20 [development] › tests\e2e\restore-window.spec.ts:223:5 › 全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容 (5.5s)
+  ok 21 [development] › tests\e2e\session-filters.spec.ts:260:5 › 损坏筛选快照不能冒充旧未知或默认条件，修复后原轮可读 (1.1s)
+  ok 22 [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 (1.8s)
+  ok 23 [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 (1.7s)
+  ok 24 [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 (1.8s)
+  ok 25 [development] › tests\e2e\settings-palettes.spec.ts:83:7 › 暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录 (1.8s)
+  ok 26 [development] › tests\e2e\settings-palettes.spec.ts:261:5 › 配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作 (2.3s)
+  ok 27 [development] › tests\e2e\settings-window.spec.ts:84:5 › 系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案 (3.4s)
+  ok 28 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 松间绿：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.6s)
+  ok 29 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 晴空蓝：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.5s)
+  ok 30 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 暖沙金：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.3s)
+  ok 31 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 暮山紫：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.6s)
+  ok 32 [development] › tests\e2e\themes-layout.spec.ts:34:7 › Claude 风格：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.4s)
+  ok 33 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 纸页墨色：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.3s)
+  ok 34 [development] › tests\e2e\themes-layout.spec.ts:34:7 › 电路夜航：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源 (3.2s)
+  ok 35 [development] › tests\e2e\workbench-errors.spec.ts:6:5 › 工作台窄窗：详情返回重读失败仍显示错误和重试，隐藏旧结果，原条件与学习数据保持 (1.1s)
+
+
+  1) [development] › tests\e2e\findability.spec.ts:82:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置 ─────────────
+
+    Error: expect(locator).toBeEnabled() failed
+
+    Locator: getByRole('button', { name: '筛选题库', exact: true })
+    Expected: enabled
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeEnabled" getByRole('button', { name: '筛选题库', exact: true }) with timeout 10000ms
+      - waiting for getByRole('button', { name: '筛选题库', exact: true })
+
+
+       95 |     expect(await page.locator('body').ariaSnapshot()).not.toContain('FIND-ANSWER-find-a-21')
+       96 |     await openPage(page, '题库')
+    >  97 |     await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()
+          |                                                                           ^
+       98 |     await expect(page.getByRole('searchbox', { name: '题库搜索', exact: true })).toHaveValue('保留')
+       99 |     await expect(page.getByLabel('专题', { exact: true })).toHaveValue('find-a')
+      100 |     await expect(page.getByRole('navigation', { name: '题目分页' })).toContainText('2 / 3')
+        at E:\My_Projects\embedded-practice\tests\e2e\findability.spec.ts:97:75
+
+    Error Context: docs\evidence\workbench-e-20261025\regression-fixes-dev-01\findability-找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置-development\error-context.md
+
+  2) [development] › tests\e2e\findability.spec.ts:172:5 › 找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择 ─────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByText('共 48 题', { exact: true })
+    Expected: visible
+    Received: hidden
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeVisible" getByText('共 48 题', { exact: true }) with timeout 10000ms
+      - waiting for getByText('共 48 题', { exact: true })
+        24 × locator resolved to <span class="muted">共 48 题</span>
+           - unexpected value "hidden"
+
+
+      226 |         }),
+      227 |     )
+    > 228 |     await expect(page.getByText('共 48 题', { exact: true })).toBeVisible()
+          |                                                             ^
+      229 |     await expect(page.getByRole('heading', { name: '保留位置问题 1', exact: true })).toBeVisible()
+      230 |   } finally {
+      231 |     await application
+        at E:\My_Projects\embedded-practice\tests\e2e\findability.spec.ts:228:61
+
+    Error Context: docs\evidence\workbench-e-20261025\regression-fixes-dev-01\findability-找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择-development\error-context.md
+
+  3) [development] › tests\e2e\findability.spec.ts:298:5 › 找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情 ─────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.check: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('checkbox', { name: '题库只看收藏', exact: true })
+
+
+      303 |     await page.getByRole('button', { name: /A 找题专题.*q-01/ }).click()
+      304 |     await page.getByRole('button', { name: '收藏本题', exact: true }).click()
+    > 305 |     await page.getByRole('checkbox', { name: '题库只看收藏', exact: true }).check()
+          |                                                                       ^
+      306 |     await page.getByRole('button', { name: '筛选题库', exact: true }).click()
+      307 |     await expect(page.getByText('共 1 题', { exact: true })).toBeVisible()
+      308 |     await page.getByRole('button', { name: /A 找题专题.*q-01/ }).click()
+        at E:\My_Projects\embedded-practice\tests\e2e\findability.spec.ts:305:71
+
+    Error Context: docs\evidence\workbench-e-20261025\regression-fixes-dev-01\findability-找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情-development\error-context.md
+
+  3 failed
+    [development] › tests\e2e\findability.spec.ts:82:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置 ──────────────
+    [development] › tests\e2e\findability.spec.ts:172:5 › 找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择 ──────────────
+    [development] › tests\e2e\findability.spec.ts:298:5 › 找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情 ──────────────
+  32 passed (2.3m)

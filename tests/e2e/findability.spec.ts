@@ -31,6 +31,7 @@ async function importFiles(application: ElectronApplication, page: Page, files: 
   await page.getByRole('button', { name: '导入题库', exact: true }).click()
   await page.getByRole('button', { name: '确认导入', exact: true }).click()
   await expect(page.getByText(/^导入完成：/)).toBeVisible()
+  await page.getByRole('button', { name: '关闭导入工作区', exact: true }).click()
   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()
 }
 async function prepare(directory: string, project: string) {
@@ -94,16 +95,22 @@ test('找题：切页保留筛选、页码、题目、已展开答案与窗口�
     expect(await page.content()).not.toContain('FIND-ANSWER-find-a-21')
     expect(await page.locator('body').ariaSnapshot()).not.toContain('FIND-ANSWER-find-a-21')
     await openPage(page, '题库')
-    await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()
-    await expect(page.getByRole('searchbox', { name: '题库搜索', exact: true })).toHaveValue('保留')
-    await expect(page.getByLabel('专题', { exact: true })).toHaveValue('find-a')
-    await expect(page.getByRole('navigation', { name: '题目分页' })).toContainText('2 / 3')
     await expect(page.getByRole('heading', { name: '保留位置问题 21', exact: true })).toBeVisible()
     await expect(page.getByRole('region', { name: '参考答案', exact: true })).toContainText(
       'FIND-ANSWER-find-a-21',
     )
     await expect.poll(() => page.evaluate(() => Reflect.get(globalThis, 'scrollY'))).toBe(before)
     await capture(application, info, 'library-reading-restored.png')
+    await page.getByRole('button', { name: '返回题目列表', exact: true }).click()
+    await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()
+    await expect(page.getByRole('searchbox', { name: '题库搜索', exact: true })).toHaveValue('保留')
+    await expect(page.getByLabel('专题', { exact: true })).toHaveValue('find-a')
+    await expect(page.getByRole('navigation', { name: '题目分页' })).toContainText('2 / 3')
+    await page.getByRole('button', { name: /A 找题专题.*q-21/ }).click()
+    await expect(page.getByRole('heading', { name: '保留位置问题 21', exact: true })).toBeVisible()
+    await expect(page.getByRole('region', { name: '参考答案', exact: true })).toContainText(
+      'FIND-ANSWER-find-a-21',
+    )
   } finally {
     await application.close()
   }
@@ -225,8 +232,13 @@ test('找题：离页前的慢响应不能覆盖返回后已完成的新筛选�
           frame(() => frame(() => done(null)))
         }),
     )
-    await expect(page.getByText('共 48 题', { exact: true })).toBeVisible()
     await expect(page.getByRole('heading', { name: '保留位置问题 1', exact: true })).toBeVisible()
+    await page.getByRole('button', { name: '返回题目列表', exact: true }).click()
+    await expect(page.getByText('共 48 题', { exact: true })).toBeVisible()
+    await expect(page.getByRole('button', { name: /A 找题专题.*q-01/ })).toHaveAttribute(
+      'aria-current',
+      'true',
+    )
   } finally {
     await application
       .evaluate(() => Reflect.get(globalThis, 'findabilitySlowRead')?.release?.())
@@ -302,6 +314,8 @@ test('找题：隐藏期间的收藏变化返回时重读，移除不再匹配�
   try {
     await page.getByRole('button', { name: /A 找题专题.*q-01/ }).click()
     await page.getByRole('button', { name: '收藏本题', exact: true }).click()
+    await expect(page.getByRole('button', { name: '取消收藏', exact: true })).toBeVisible()
+    await page.getByRole('button', { name: '返回题目列表', exact: true }).click()
     await page.getByRole('checkbox', { name: '题库只看收藏', exact: true }).check()
     await page.getByRole('button', { name: '筛选题库', exact: true }).click()
     await expect(page.getByText('共 1 题', { exact: true })).toBeVisible()
@@ -334,7 +348,7 @@ test('找题：首页快捷条件不替换旧轮，明确开始/无匹配/继续
       await page.getByRole('button', { name: '查看参考答案', exact: true }).click()
       await page.getByRole('button', { name: rating, exact: true }).click()
     }
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     const original = await current(page)
     expect(original?.session.position).toBe(3)
     await page.getByLabel('练习模式', { exact: true }).selectOption('random')
@@ -362,7 +376,7 @@ test('找题：首页快捷条件不替换旧轮，明确开始/无匹配/继续
     await page.getByRole('button', { name: '继续练习', exact: true }).click()
     expect(await current(page)).toEqual(original)
     await expect(page.getByLabel('练习进度', { exact: true })).toContainText('第 4 / 10')
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await page.getByLabel('练习专题', { exact: true }).selectOption('find-a')
     await page.getByRole('button', { name: '练不会', exact: true }).click()
     await expect(page.getByText('匹配 1 题', { exact: true })).toBeVisible()

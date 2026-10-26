@@ -8,6 +8,7 @@ import { SettingsPane } from './components/SettingsPane'
 import { DataLocationsPanel } from './components/DataLocationsPanel'
 import { useAppearance } from './useAppearance'
 import { AppearanceSwitcher } from './components/AppearanceSwitcher'
+import { LearningOverview } from './components/LearningOverview'
 
 type ViewState =
   | { status: 'loading' }
@@ -15,9 +16,10 @@ type ViewState =
   | { status: 'error'; message: string }
 
 const pages = [
+  { id: 'overview', label: '学习总览', path: 'm3 11 9-8 9 8M5 10v11h5v-7h4v7h5V10' },
   {
     id: 'boards',
-    label: '板块',
+    label: '知识板块',
     path: 'M4 4h6v6H4V4Zm10 0h6v6h-6V4ZM4 14h6v6H4v-6Zm10 0h6v6h-6v-6Z',
   },
   { id: 'practice', label: '开始练习', path: 'm9 5 10 7-10 7V5Z' },
@@ -26,7 +28,7 @@ const pages = [
   { id: 'settings', label: '设置与数据', path: 'M4 7h16M4 17h16M9 4v6m6 4v6' },
 ] as const
 type PageId = (typeof pages)[number]['id']
-const BUILD_LABEL = '20261025.2-v001'
+const BUILD_LABEL = '20261026.2-workbench-e-ui3'
 
 export function App() {
   const [state, setState] = useState<ViewState>({ status: 'loading' })
@@ -35,11 +37,13 @@ export function App() {
   const [selectionRefresh, setSelectionRefresh] = useState(0)
   const [practicing, setPracticing] = useState(false)
   const [dataBusy, setDataBusy] = useState(false)
-  const [page, setPage] = useState<PageId>('boards')
+  const [page, setPage] = useState<PageId>('overview')
   const [libraryVisited, setLibraryVisited] = useState(false)
   const [libraryEntry, setLibraryEntry] = useState<LibraryEntry>()
+  const [importAction, setImportAction] = useState<{ id: number; kind: 'import' | 'template' }>()
   const focusPage = useRef(false)
   const scrollPositions = useRef<Record<PageId, number>>({
+    overview: 0,
     boards: 0,
     practice: 0,
     library: 0,
@@ -47,7 +51,6 @@ export function App() {
     settings: 0,
   })
   const appearance = useAppearance()
-  const studyLayout = appearance.definition?.presentation.layout === 'study'
   const dataWork = useRef<Promise<boolean> | undefined>(undefined)
   const waitForSaves = useCallback(async () => {
     const pending = dataWork.current
@@ -109,7 +112,7 @@ export function App() {
   }, [attempt])
 
   return (
-    <div className={`app-shell${practicing ? ' is-practicing' : ''}`}>
+    <div className={`app-shell workbench${practicing ? ' is-practicing' : ''}`} data-page={page}>
       <header className="app-header">
         <div className="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -121,12 +124,13 @@ export function App() {
           <h1>嵌入式刷题本</h1>
           <p className="brand-caption">思考有迹，积累有序</p>
         </div>
-        {studyLayout && appearance.value && (
+        {appearance.value && (
           <button
             className="navigation-toggle"
             type="button"
             aria-label={appearance.value.navigationCollapsed ? '展开导航' : '收起导航'}
             aria-expanded={!appearance.value.navigationCollapsed}
+            aria-controls="main-navigation"
             disabled={appearance.busy || dataBusy}
             onClick={() => {
               if (appearance.value)
@@ -139,59 +143,52 @@ export function App() {
             {appearance.value.navigationCollapsed ? '›' : '‹'}
           </button>
         )}
-        {appearance.value && appearance.catalog && (
-          <AppearanceSwitcher
-            value={appearance.value}
-            catalog={appearance.catalog}
-            disabled={appearance.busy || dataBusy}
-            onSave={appearance.save}
-          />
-        )}
       </header>
 
-      {(!practicing || studyLayout) && (
-        <nav className="page-navigation" aria-label="主要页面">
-          {pages.map(({ id: target, label, path }) => (
-            <a
-              href={`#${target}`}
-              key={target}
-              aria-disabled={state.status !== 'ready' || appearance.busy || dataBusy || practicing}
-              aria-label={label}
-              title={label}
-              aria-current={page === target ? 'page' : undefined}
-              onClick={(event) => {
-                event.preventDefault()
-                if (state.status !== 'ready' || appearance.busy || dataBusy || practicing) return
-                changePage(target)
-              }}
+      <nav id="main-navigation" className="page-navigation" aria-label="主要页面">
+        {pages.map(({ id: target, label, path }) => (
+          <a
+            href={`#${target}`}
+            key={target}
+            aria-disabled={state.status !== 'ready' || appearance.busy || dataBusy || practicing}
+            aria-label={label}
+            title={label}
+            aria-current={page === target ? 'page' : undefined}
+            onClick={(event) => {
+              event.preventDefault()
+              if (state.status !== 'ready' || appearance.busy || dataBusy || practicing) return
+              changePage(target)
+            }}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              aria-hidden="true"
             >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                aria-hidden="true"
-              >
-                <path d={path} strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-              <span className="navigation-label">{label}</span>
-            </a>
-          ))}
-          {practicing && (
-            <p className="navigation-practice-note">练习中请用“返回首页”保存后离开。</p>
-          )}
-        </nav>
-      )}
+              <path d={path} strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            <span className="navigation-label">{label}</span>
+          </a>
+        ))}
+        {practicing && <p className="navigation-practice-note">练习中请用“保存并返回”离开。</p>}
+      </nav>
 
       <main id="main-content" tabIndex={-1}>
-        {(!practicing || studyLayout) && (
-          <div className="workspace-heading">
-            <span>{pages.find((item) => item.id === page)?.label}</span>
+        <div className="workspace-heading">
+          <div className="workspace-location">
+            <span>学习工作台</span>
+            <strong>
+              {practicing ? '专注练习' : pages.find((item) => item.id === page)?.label}
+            </strong>
+          </div>
+          <div className="workspace-tools">
             <span className="local-indicator">
               <span aria-hidden="true" />
-              离线工作台
+              本地离线
             </span>
-            {practicing && studyLayout && appearance.value && (
+            {practicing && appearance.value && (
               <button
                 type="button"
                 disabled={appearance.busy || dataBusy}
@@ -208,8 +205,17 @@ export function App() {
                 {appearance.value.auxiliaryHidden ? '显示辅助面板' : '隐藏辅助面板'}
               </button>
             )}
+
+            {appearance.value && appearance.catalog && (
+              <AppearanceSwitcher
+                value={appearance.value}
+                catalog={appearance.catalog}
+                disabled={appearance.busy || dataBusy}
+                onSave={appearance.save}
+              />
+            )}
           </div>
-        )}
+        </div>
         {appearance.warning && (
           <p role="alert" className="error-message">
             {appearance.warning}
@@ -227,49 +233,48 @@ export function App() {
             </button>
           </div>
         )}
-        {!practicing && page === 'practice' && (
-          <section className="welcome">
-            <div className="welcome-copy">
-              <h2>从一道题，接着积累。</h2>
-              <p>先思考，再对照答案；继续上次的位置，或选一组需要复习的题。</p>
-              <button
-                type="button"
-                disabled={appearance.busy || dataBusy || state.status !== 'ready'}
-                onClick={() => changePage('library')}
-              >
-                前往题库
-              </button>
-            </div>
-            <svg className="welcome-circuit" viewBox="0 0 280 210" fill="none" aria-hidden="true">
-              <g stroke="currentColor" strokeWidth="1.5">
-                <path d="M0 47h55l27 27h24m-106 98h45l31-31h30M280 40h-47l-32 34h-25m104 99h-51l-28-32h-25M140 0v49m0 112v49" />
-                <rect x="106" y="65" width="70" height="80" rx="12" />
-                <path d="M119 49v16m21-16v16m21-16v16m-42 80v16m21-16v16m21-16v16m-71-75h16m-16 20h16m-16 20h16m70-40h16m-16 20h16m-16 20h16" />
-                <circle cx="55" cy="47" r="4" />
-                <circle cx="45" cy="172" r="4" />
-                <circle cx="233" cy="40" r="4" />
-                <circle cx="229" cy="173" r="4" />
-              </g>
-              <path
-                d="m128 106 9 9 18-22"
-                stroke="currentColor"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </section>
-        )}
-
         {state.status === 'ready' && (
-          <div hidden={!practicing && page !== 'practice' && page !== 'boards'}>
+          <div
+            hidden={!practicing && page !== 'practice' && page !== 'boards' && page !== 'overview'}
+          >
             <PracticeWorkspace
               refresh={refresh + selectionRefresh}
               beforeClose={waitForSaves}
               onDataBusy={setDataBusy}
               onDataOperation={trackDataOperation}
+              showResume={page !== 'overview'}
+              homeLabel={page === 'overview' ? '学习总览工作区' : '板块与继续练习'}
               homeContent={
-                page === 'boards' && !practicing ? (
+                page === 'overview' && !practicing ? (
+                  (practice) => (
+                    <LearningOverview
+                      refresh={refresh + selectionRefresh}
+                      practice={practice}
+                      disabled={appearance.busy || dataBusy}
+                      onConfigure={() => changePage('practice')}
+                      onBoards={() => changePage('boards')}
+                      onImport={(kind) => {
+                        setImportAction((previous) => ({ id: (previous?.id ?? 0) + 1, kind }))
+                        changePage('library')
+                      }}
+                      onBrowse={(
+                        filters,
+                        category = { kind: 'all' },
+                        contentUpdatedOnly = false,
+                      ) => {
+                        scrollPositions.current.library = 0
+                        setLibraryEntry((previous) => ({
+                          id: (previous?.id ?? 0) + 1,
+                          category,
+                          archived: false,
+                          filters,
+                          contentUpdatedOnly,
+                        }))
+                        changePage('library')
+                      }}
+                    />
+                  )
+                ) : page === 'boards' && !practicing ? (
                   <BoardEntrance
                     refresh={refresh}
                     disabled={appearance.busy || dataBusy}
@@ -300,6 +305,7 @@ export function App() {
         )}
         <div hidden={practicing || page !== 'library'}>
           <ImportPanel
+            action={importAction}
             enabled={state.status === 'ready' && !appearance.busy && !dataBusy}
             onCommitted={() => {
               scrollPositions.current.library = 0

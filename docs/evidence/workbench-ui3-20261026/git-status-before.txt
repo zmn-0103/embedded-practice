@@ -1,0 +1,79 @@
+ M README.md
+ M docs/README.md
+ M docs/代码复查记录.md
+ M docs/多主题系统行为与格式.md
+ M docs/开发记录.md
+ M docs/开发说明.md
+ M docs/当前试用版本交付说明.md
+ M docs/项目模块职责.md
+ M docs/验收记录.md
+ M src/main/database/repositories/library-reader.ts
+ M src/main/services/backup/backup.ts
+ M src/renderer/src/App.tsx
+ M src/renderer/src/components/BackupPanel.tsx
+ M src/renderer/src/components/BoardEntrance.tsx
+ M src/renderer/src/components/CategoryManager.tsx
+ M src/renderer/src/components/DataLocationsPanel.tsx
+ M src/renderer/src/components/ImportPanel.tsx
+ M src/renderer/src/components/LearningRecords.tsx
+ M src/renderer/src/components/LibraryBrowser.tsx
+ M src/renderer/src/components/PracticePane.tsx
+ M src/renderer/src/components/PracticePlans.tsx
+ M src/renderer/src/components/PracticeWorkspace.tsx
+ M src/renderer/src/components/QuestionFilterFields.tsx
+ M src/renderer/src/components/SettingsPane.tsx
+ M src/renderer/src/components/TagPicker.tsx
+ M src/renderer/src/components/ThemePreview.tsx
+ M src/renderer/src/main.tsx
+ M src/renderer/src/styles/global.css
+ M src/renderer/src/styles/themes.css
+ M src/shared/contracts/library-desktop.ts
+ M tests/e2e/backup-legacy.spec.ts
+ M tests/e2e/backup-window.spec.ts
+ M tests/e2e/board-entry.spec.ts
+ M tests/e2e/category-helpers.ts
+ M tests/e2e/category-practice.spec.ts
+ M tests/e2e/category-tree.spec.ts
+ M tests/e2e/data-locations.spec.ts
+ M tests/e2e/findability.spec.ts
+ M tests/e2e/helpers.ts
+ M tests/e2e/history-helpers.ts
+ M tests/e2e/history-versions.spec.ts
+ M tests/e2e/history-window.spec.ts
+ M tests/e2e/learning-management.spec.ts
+ M tests/e2e/learning-records.spec.ts
+ M tests/e2e/library-window.spec.ts
+ M tests/e2e/personal-bank.spec.ts
+ M tests/e2e/practice-plans.spec.ts
+ M tests/e2e/practice-window.spec.ts
+ M tests/e2e/random-practice.spec.ts
+ M tests/e2e/restore-window.spec.ts
+ M tests/e2e/session-filters.spec.ts
+ M tests/e2e/settings-palettes.spec.ts
+ M tests/e2e/settings-window.spec.ts
+ M tests/e2e/theme-helpers.ts
+ M tests/e2e/themes-backup.spec.ts
+ M tests/e2e/themes-layout.spec.ts
+ M tests/e2e/themes-reading.spec.ts
+ M tests/e2e/themes-window.spec.ts
+ M 计划书.md
+?? docs/UI学习工作台开发计划.md
+?? docs/UI学习工作台行为与验收.md
+?? docs/UI第二轮优化目标.md
+?? docs/UI第二轮优化行为与验收.md
+?? docs/evidence/workbench-e-20261025/
+?? docs/evidence/workbench-ui2-20261026/
+?? docs/evidence/workbench-ui3-20261026/
+?? output/playwright/ui-reference-recheck-20261026/
+?? output/playwright/ui-reference-review-20261026/
+?? src/renderer/src/components/LearningOverview.tsx
+?? src/renderer/src/components/PracticeFavorite.tsx
+?? src/renderer/src/styles/workbench-pages.css
+?? src/renderer/src/styles/workbench-shell.css
+?? tests/e2e/workbench-browser.spec.ts
+?? tests/e2e/workbench-errors.spec.ts
+?? tests/e2e/workbench-helpers.ts
+?? tests/e2e/workbench-overview.spec.ts
+?? tests/e2e/workbench-practice.spec.ts
+?? tests/e2e/workbench-ui2.spec.ts
+?? tests/unit/workbench-contract.test.ts

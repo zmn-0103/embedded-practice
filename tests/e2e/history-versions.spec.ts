@@ -113,7 +113,7 @@ test('内容更新标记按最新揭晓消除，旧轮/跳过/只读历史不消
   try {
     expect((await questions(page)).every((question) => !question.contentUpdated)).toBe(true)
     await beginHistoryPractice(page)
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await writeFile(file, historyBank(true))
     await importHistoryFiles(application, page, [file])
     const changed = await questions(page)
@@ -142,14 +142,14 @@ test('内容更新标记按最新揭晓消除，旧轮/跳过/只读历史不消
     await expect(page.getByRole('region', { name: '练习参考答案', exact: true })).toContainText(
       'HISTORY-ANSWER-OLD-history-a-1',
     )
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     expect(
       (await questions(page)).find((question) => question.questionId === 'q-1')?.contentUpdated,
     ).toBe(true)
     await openPage(page, '开始练习')
     await page.getByRole('button', { name: '继续练习', exact: true }).click()
     await page.getByRole('button', { name: '结束本轮', exact: true }).click()
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await beginHistoryPractice(page)
     await expect(page.getByRole('region', { name: '练习题干', exact: true })).toContainText(
       'HISTORY-BODY-NEW-history-a-1',
@@ -157,7 +157,7 @@ test('内容更新标记按最新揭晓消除，旧轮/跳过/只读历史不消
     await page.getByRole('button', { name: '查看参考答案', exact: true }).click()
     await page.getByRole('button', { name: '暂不评价，下一题', exact: true }).click()
     await page.getByRole('button', { name: '跳过本题', exact: true }).click()
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     const reviewed = await questions(page)
     expect(reviewed.find((question) => question.questionId === 'q-1')).toMatchObject({
       contentUpdated: false,

@@ -1,0 +1,115 @@
+
+Running 14 tests using 1 worker
+
+(node:40852) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   1 [development] › tests\e2e\board-entry.spec.ts:94:5 › 板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习 (11.5s)
+(node:50124) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 [development] › tests\e2e\board-entry.spec.ts:148:5 › 板块入口：改名移动移除后旧轮队列/草稿/历史/方案逐行保持，正常重开继续原轮 (4.7s)
+  ok  3 [development] › tests\e2e\board-entry.spec.ts:235:5 › 板块入口：旧筛选慢响应不能覆盖新板块，计数读取失败明确重试且不写库 (1.5s)
+  ok  4 [development] › tests\e2e\board-entry.spec.ts:310:5 › 板块入口：实际数量/分页/归档一致，自定义与未分类可达，易中难筛选沿用原值 (2.2s)
+  x   5 [development] › tests\e2e\board-entry.spec.ts:397:5 › 板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过 (11.6s)
+(node:47260) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   6 [development] › tests\e2e\themes-reading.spec.ts:52:5 › 跨主题保留题库筛选/分页/选中与阅读组件，183行代码/60段答案/大图弹窗在宽窄窗口可用 (11.7s)
+(node:45544) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  7 [development] › tests\e2e\themes-reading.spec.ts:139:5 › Claude长内容练习：宽屏右侧属性/窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓 (2.2s)
+  ok  8 [development] › tests\e2e\workbench-browser.spec.ts:13:5 › 工作台题库：内容更新筛选按当前版本和范围真实计数，标签候选保持，练习仍使用原选题规则 (2.2s)
+  ok  9 [development] › tests\e2e\workbench-browser.spec.ts:64:5 › 工作台题库：宽窗三栏与窄窗详情返回保留筛选、页码、选中、已展开内容和同一阅读节点 (1.3s)
+  ok 10 [development] › tests\e2e\workbench-overview.spec.ts:6:5 › 工作台总览：空库默认六入口、真实零统计与导入模板入口，不自动建轮或混入样例 (904ms)
+  ok 11 [development] › tests\e2e\workbench-overview.spec.ts:40:5 › 工作台总览：当前位置与揭晓自评分列，快捷筛选不建轮，继续本轮保持原队列与草稿 (3.7s)
+  ok 12 [development] › tests\e2e\workbench-overview.spec.ts:81:5 › 工作台总览：统计读取失败保持错误和重试，不伪装成空库或显示旧数字 (1.0s)
+  ok 13 [development] › tests\e2e\workbench-practice.spec.ts:7:5 › 工作台练习：保存失败保留输入并阻止返回，六入口保存守卫与主题/缩放不重建输入，恢复后继续原轮 (2.3s)
+  ok 14 [development] › tests\e2e\workbench-practice.spec.ts:81:5 › 工作台练习：收藏失败重试原目标且独立于自评，空输入揭晓后才挂载答案/历史和自评，新题重新隔离 (2.1s)
+
+
+  1) [development] › tests\e2e\board-entry.spec.ts:94:5 › 板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习 ───────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('article', { name: '板块：C语言', exact: true })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('article', { name: '板块：C语言', exact: true }) with timeout 10000ms
+      - waiting for getByRole('article', { name: '板块：C语言', exact: true })
+
+
+      139 |     await page.context().setOffline(true)
+      140 |     await page.reload()
+    > 141 |     await expect(board(page, 'C语言')).toBeVisible()
+          |                                      ^
+      142 |     await expect(page.getByRole('status')).toHaveText('本地数据已就绪')
+      143 |   } finally {
+      144 |     await stop(application)
+        at E:\My_Projects\embedded-practice\tests\e2e\board-entry.spec.ts:141:38
+
+    attachment #2: boards-empty.png (image/png) ────────────────────────────────────────────────────
+    docs\evidence\workbench-e-20261025\focused-dev-01\board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development\attachments\boards-empty-png-0903f054f9053b7ad52a1a1ad1965e166ce9adc3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\evidence\workbench-e-20261025\focused-dev-01\board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development\error-context.md
+
+  2) [development] › tests\e2e\board-entry.spec.ts:397:5 › 板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator: locator('.library-workspace > .topic-navigation-panel > summary')
+    Expected: focused
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeFocused" locator('.library-workspace > .topic-navigation-panel > summary') with timeout 10000ms
+      - waiting for locator('.library-workspace > .topic-navigation-panel > summary')
+
+
+      477 |           '.library-workspace > .topic-navigation-panel > summary',
+      478 |         )
+    > 479 |         await expect(navigationSummary).toBeFocused()
+          |                                         ^
+      480 |         await navigationSummary.press('Tab')
+      481 |         await expect(page.getByLabel('题库专题检索', { exact: true })).toBeFocused()
+      482 |         const ratios = await page.evaluate(() => {
+        at E:\My_Projects\embedded-practice\tests\e2e\board-entry.spec.ts:479:41
+
+    attachment #1: boards-light.png (image/png) ────────────────────────────────────────────────────
+    docs\evidence\workbench-e-20261025\focused-dev-01\board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development\attachments\boards-light-png-786d288830fd3887468d334b3e44bf582247a5f0.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\evidence\workbench-e-20261025\focused-dev-01\board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-development\error-context.md
+
+  3) [development] › tests\e2e\themes-reading.spec.ts:52:5 › 跨主题保留题库筛选/分页/选中与阅读组件，183行代码/60段答案/大图弹窗在宽窄窗口可用 
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator: getByRole('searchbox', { name: '题库搜索', exact: true })
+    Expected: "主题阅读"
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveValue" getByRole('searchbox', { name: '题库搜索', exact: true }) with timeout 10000ms
+      - waiting for getByRole('searchbox', { name: '题库搜索', exact: true })
+
+
+      82 |       )
+      83 |       await openPage(page, '题库')
+    > 84 |       await expect(page.getByRole('searchbox', { name: '题库搜索', exact: true })).toHaveValue(
+         |                                                                                ^
+      85 |         '主题阅读',
+      86 |       )
+      87 |       await expect(page.getByLabel('题库难度', { exact: true })).toHaveValue('基础')
+        at E:\My_Projects\embedded-practice\tests\e2e\themes-reading.spec.ts:84:80
+
+    Error Context: docs\evidence\workbench-e-20261025\focused-dev-01\themes-reading-跨主题保留题库筛选-分页-选中与阅读组件，183行代码-60段答案-大图弹窗在宽窄窗口可用-development\error-context.md
+
+  3 failed
+    [development] › tests\e2e\board-entry.spec.ts:94:5 › 板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习 ────────
+    [development] › tests\e2e\board-entry.spec.ts:397:5 › 板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过 
+    [development] › tests\e2e\themes-reading.spec.ts:52:5 › 跨主题保留题库筛选/分页/选中与阅读组件，183行代码/60段答案/大图弹窗在宽窄窗口可用 
+  11 passed (1.0m)

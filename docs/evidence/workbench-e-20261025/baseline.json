@@ -1,0 +1,668 @@
+{
+  "head": "1f25ffa24bdbc6eb3fffdfd994a874affabdf4e7",
+  "cleanBeforeTask": true,
+  "expectedBuild": "20261025.3-workbench-e",
+  "schema": 10,
+  "protectedFiles": [
+    {
+      "file": "src\\main\\database\\category-schema.ts",
+      "sha256": "50a4166277f5997c2f4f128fb72de6491e70ad37c458318d029244a45ab2ae60"
+    },
+    {
+      "file": "src\\main\\database\\library-schema.ts",
+      "sha256": "a347613cdb25a85274a24c9598f49b83bb6dc90a7af4a1686d587e2563904509"
+    },
+    {
+      "file": "src\\main\\database\\migrations\\.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "src\\main\\database\\open-database.ts",
+      "sha256": "12e5e28a6746dec15825f264baf904a35e0d821d7e1b021c7ebf9f2a511afb5a"
+    },
+    {
+      "file": "src\\main\\database\\practice-plan-schema.ts",
+      "sha256": "31c6b51594fe633a5d18e7526d395ded273544d1a895e90ae9e4c9e2927cc784"
+    },
+    {
+      "file": "src\\main\\database\\practice-schema.ts",
+      "sha256": "614f8f5363fa7a9286aea4c918f6808ec0801fa4394fb69850cc32734ecadd51"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\category-repository.ts",
+      "sha256": "7a15179c1f07af0d5a31fa342033af5df2c0460286d9cee6b79c7d3fcd36fa5a"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\favorite-repository.ts",
+      "sha256": "61d426c54e32ee25476186db25ee53adfed841cb751bcf410fa01448f3609ae6"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\history-reader.ts",
+      "sha256": "60873b64820a4ca3fa48f8f4a5ab11289a19b2e31b7033bde353e652e0e7fc99"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\learning-reader.ts",
+      "sha256": "f3745f129ed00db4d84c9cde1139b195b9416d97d5053b8befcc6bcfdd450988"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\library-reader.ts",
+      "sha256": "466fa5df894910e857bf2476767cd0088bc8e398b24d366e226887d2f338de75"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\library-repository.ts",
+      "sha256": "057f0e68130ad722d5b81c550b4b327712f4ab95ae897e7d71ca3764b6662acb"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\practice-plan-repository.ts",
+      "sha256": "e836f15ae2935ded14874843655ae7d83aaf6d82c42defd5c9c6f42755e92fa5"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\practice-repository.ts",
+      "sha256": "9853e8698dd3bd60d462f13af4bcee91b10aa6c0c9ff08b2a3a50de9b8008845"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\question-selection.ts",
+      "sha256": "952c44d5a698f8e94b97a170e296ba2412c08d8d702a864f34ba776da1aa5abb"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\settings-repository.ts",
+      "sha256": "d14242d18b18e3107891e6ecd0a35b5e845e33e6ae4b3cb43bef49ceada6e279"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\theme-repository.ts",
+      "sha256": "ddce45553ad27117a6c1bd0ba57c50d059930509a34c2f6cc15dfd1181395df4"
+    },
+    {
+      "file": "src\\main\\database\\repositories\\topic-navigation.ts",
+      "sha256": "ff3ea3c0331077607984cf263cd08f2f7dd91e9d1e69011740f24c33cbf19aa1"
+    },
+    {
+      "file": "src\\main\\database\\settings-schema.ts",
+      "sha256": "5e836cde251c89d68bdad9043a228889bed168e9a0f44512231d27a92237f79a"
+    },
+    {
+      "file": "src\\main\\database\\startup-store.ts",
+      "sha256": "347c2b9d4e1795a38d294fec99a45ce285320297e41e4044754f0b7490c3ea87"
+    },
+    {
+      "file": "src\\main\\index.ts",
+      "sha256": "bea1332aa448e1762ddab4e3493db7595bc4746b4df7362848d0b71bdc9f641c"
+    },
+    {
+      "file": "src\\main\\ipc\\application.ts",
+      "sha256": "b137c52112b1837d2565333090c6d5ac2b1a642051ddcb98d008689d40994c42"
+    },
+    {
+      "file": "src\\main\\ipc\\backup.ts",
+      "sha256": "fdeaf2c22c9bbe5f0cb9301d9fe65bd0e9ec3aeee1cf91d69b7c16acdc12d0c7"
+    },
+    {
+      "file": "src\\main\\ipc\\data-locations.ts",
+      "sha256": "0c93ce230045bd8b1b7b6824c9767556fe0425b1295d6ca1d820b00988fdcf48"
+    },
+    {
+      "file": "src\\main\\ipc\\library.ts",
+      "sha256": "e116b098e9ad0576747a6e0e9f493c3395656d8840e9166080f3716a2294c456"
+    },
+    {
+      "file": "src\\main\\ipc\\practice.ts",
+      "sha256": "2dde411ad556664d7f391fa371b471279fc399ef381bdc85b8b6e0703b8f35a0"
+    },
+    {
+      "file": "src\\main\\ipc\\trusted-sender.ts",
+      "sha256": "feedf8c8ec5100cc32f8bd99530e09bb486488aec727a4e5fce6dabec47b3301"
+    },
+    {
+      "file": "src\\main\\raw.d.ts",
+      "sha256": "c780995a49f68475718978985cbe38bc3e1a3dc33501b3cef018fe2d7ce868d9"
+    },
+    {
+      "file": "src\\main\\services\\backup\\.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "src\\main\\services\\backup\\backup.ts",
+      "sha256": "0b1fc263fdeb81c9ad1799acf980076995d984a9faf13b0529f9df6a2d98d003"
+    },
+    {
+      "file": "src\\main\\services\\backup\\restore-files.ts",
+      "sha256": "8b39e4a59955eee0854ed4c9097906ce2dc6ca4f312f6e001abc57f81af3a6aa"
+    },
+    {
+      "file": "src\\main\\services\\backup\\validate-backup.ts",
+      "sha256": "48b5fdfbc30637a81638898b98804266a00a6984aad360ea5ad1e94eb129919b"
+    },
+    {
+      "file": "src\\main\\services\\library\\.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "src\\main\\services\\library\\compare-import.ts",
+      "sha256": "f5707758f2f3656ccab418d53dc16fc34a523ed5c0ba93d744f568eca5e662c0"
+    },
+    {
+      "file": "src\\main\\services\\library\\content-fingerprint.ts",
+      "sha256": "9e9bb06292e831f674f26d1f8966eb61b4758f60eabe8a17c78edba1e1795fcc"
+    },
+    {
+      "file": "src\\main\\services\\library\\image-references.ts",
+      "sha256": "470ef58a498b933fd15af9744334960063c0203c59c6c2ee30f781bd37f7f2a1"
+    },
+    {
+      "file": "src\\main\\services\\library\\import-budget.ts",
+      "sha256": "f6817017469f7d7bfb9ab2638c66dca327c66ae0808cb69f376961e52df4a49f"
+    },
+    {
+      "file": "src\\main\\services\\library\\import-preparation.ts",
+      "sha256": "7ca2a80e5688846e27b9a8d58424b9aa73a2c9233e6ba41ada7b24d36ec01e2b"
+    },
+    {
+      "file": "src\\main\\services\\library\\import-session.ts",
+      "sha256": "bfa7988331cbb4be6a634d5b95252dd0387133870a02a44f32389bca2732fb39"
+    },
+    {
+      "file": "src\\main\\services\\library\\library-import.ts",
+      "sha256": "ff2bb6721a27d27f69835f6cdac893ced3ebbc1b21a362c3edf371bd763c1297"
+    },
+    {
+      "file": "src\\main\\services\\library\\markdown-document.ts",
+      "sha256": "a894fec1e957e26e7dcd05bfc4ca7bf262b5b042327698779b694d45bbdddbbd"
+    },
+    {
+      "file": "src\\main\\services\\library\\parse-question-bank.ts",
+      "sha256": "71445481dafd99db70d4869368fc436c479b91646f46765606602969a528723f"
+    },
+    {
+      "file": "src\\main\\services\\library\\parse-question.ts",
+      "sha256": "73553f04eaad74fb20348ad4f9492de59c4eb06d3cc0d0dd68f510bd2f3cc715"
+    },
+    {
+      "file": "src\\main\\services\\library\\prepare-import.ts",
+      "sha256": "22168d0efdab6dc3cbe35ce4683e074d0d9e1708577395c0737342e2907d94b8"
+    },
+    {
+      "file": "src\\main\\services\\library\\question-metadata.ts",
+      "sha256": "bd7bc763902d7b655047f875817410ee9249078f0c43cb55103b556f8e9ab14e"
+    },
+    {
+      "file": "src\\main\\services\\practice\\.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "src\\main\\services\\practice\\practice.ts",
+      "sha256": "113f18117bd4f15b252a962b8f313c771404d69b13ff0dc3002ec7a52251f6d7"
+    },
+    {
+      "file": "src\\main\\services\\resources\\.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "src\\main\\services\\resources\\image-protocol.ts",
+      "sha256": "ac365365f249546e4310fa3bc92c72d5d8370fabe1a482945935702fce9b2556"
+    },
+    {
+      "file": "src\\main\\services\\resources\\read-file-snapshot.ts",
+      "sha256": "aba650ef9d5dcb6ef5a3ad900eb4076c2b8b7b1719dc6d1746d8d184566093bd"
+    },
+    {
+      "file": "src\\main\\services\\resources\\read-image.ts",
+      "sha256": "ce7cc2cd650b1a4d569e613643cb842f265d30cf666c7d466e9da1f740b0d9ae"
+    },
+    {
+      "file": "src\\main\\window.ts",
+      "sha256": "c2493be2646cb90354af8e041b1be943b789eaa0683fd5df95dc799c68c5dcd7"
+    },
+    {
+      "file": "src\\main\\workers\\.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "src\\main\\workers\\import-protocol.ts",
+      "sha256": "8151da4dfcf40ce6cb14ec0b985d7f8be6f83cb0a1ef52c1d95063fc6776a324"
+    },
+    {
+      "file": "src\\main\\workers\\import-task-runner.ts",
+      "sha256": "2e8de32175ebb0dd6368b1ba5374783213f7d767a09052d585a85b08db0b275a"
+    },
+    {
+      "file": "src\\main\\workers\\import-worker.ts",
+      "sha256": "e29a41a12d71fff39267c676208a6315bf8dd79a1c8881c072876d4b33c4e5d2"
+    },
+    {
+      "file": "src\\preload\\index.ts",
+      "sha256": "285c8cf834736f7d316ddbe45875c57e1708618c62aa3853f368224fdc190e90"
+    },
+    {
+      "file": "src\\shared\\contracts\\application.ts",
+      "sha256": "f32e2e0d1ee6766f595fb21abf8437b1ad3f1fcded2a1254f981e93d84bbe783"
+    },
+    {
+      "file": "src\\shared\\contracts\\backup.ts",
+      "sha256": "c6f8b280bf09f04fb8a8657523913e64eb9c76e4d3ec7c521da817cc7da61909"
+    },
+    {
+      "file": "src\\shared\\contracts\\categories.ts",
+      "sha256": "889ad87f529a188e0f2f51a4bd3a0aba7f77ef0025c6c531592e600930e49539"
+    },
+    {
+      "file": "src\\shared\\contracts\\content-urls.ts",
+      "sha256": "ee1b9a05f308cfc81f4cee1070ba590bf69e2ec8d98cd4d0b97ce7047c09d9f2"
+    },
+    {
+      "file": "src\\shared\\contracts\\data-locations.ts",
+      "sha256": "da7852f412fca27f62fd164c40d731e21529b6804476d4663a58649e6c5fc3de"
+    },
+    {
+      "file": "src\\shared\\contracts\\history.ts",
+      "sha256": "c23e91c991975bfef3a83ad7f9fc6e6f33eb787d6a3665bbe59df06946fb2ce3"
+    },
+    {
+      "file": "src\\shared\\contracts\\image-path.ts",
+      "sha256": "5d45f4df2479dea4596ed992eab8821e76b3ee45f6182ec8b6b68a6ac8e3ce41"
+    },
+    {
+      "file": "src\\shared\\contracts\\import-snapshot.ts",
+      "sha256": "76749ca4eedeee57f22f7ea6e53a5d4e774bcfc32b01362a72d5815a995182af"
+    },
+    {
+      "file": "src\\shared\\contracts\\learning.ts",
+      "sha256": "3a6c44f82f15082638a13421462d6ee8b4aead667643c6b63aea52b5cd39f393"
+    },
+    {
+      "file": "src\\shared\\contracts\\library-desktop.ts",
+      "sha256": "a3cb61cbc59d4488b8831bf0e735349995ff80ad0abdd7be6f64dabdafb91481"
+    },
+    {
+      "file": "src\\shared\\contracts\\library-import.ts",
+      "sha256": "8eac3a2de1784a8340baf2a187338e7cf95ac212712b70e35895e1768246478f"
+    },
+    {
+      "file": "src\\shared\\contracts\\practice-desktop.ts",
+      "sha256": "f5821e1d584d5ffa03255b78d140925162eab660aeebb40bcd20a73f667f5f20"
+    },
+    {
+      "file": "src\\shared\\contracts\\practice-plans.ts",
+      "sha256": "b9644dddb5899712b858d1b84edfe136eebb7e967c9434fe62f334087b4bb8e9"
+    },
+    {
+      "file": "src\\shared\\contracts\\practice.ts",
+      "sha256": "cbf99e26184dc400d73bf5042d8700e578ab8d22725414e822380b53bb6ab038"
+    },
+    {
+      "file": "src\\shared\\contracts\\question-bank.ts",
+      "sha256": "f645e655080c21954664937f52c1d025c4f75662786b52b29e4fdab2792d892f"
+    },
+    {
+      "file": "src\\shared\\contracts\\question-filters.ts",
+      "sha256": "550f3f72f1a18fa94edae4870f4f4fdeb365e6ff4877964090b377119feac9a5"
+    },
+    {
+      "file": "src\\shared\\contracts\\settings.ts",
+      "sha256": "2ae6d813d14b1bfccccb254f1ff7b1f2d9890b6a285d6418faa9d8f38c59bf57"
+    },
+    {
+      "file": "src\\shared\\contracts\\themes.ts",
+      "sha256": "f3ec27223adfd487a55e309edf6a370769fc42ffc7d774ff071bf869fe67ac92"
+    },
+    {
+      "file": "src\\shared\\themes.ts",
+      "sha256": "90d30c0492269ea648aa9313c1787679fce61eb94eb015ab18a7a9cfed60611c"
+    },
+    {
+      "file": "tests\\fixtures\\.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "tests\\fixtures\\images\\README.md",
+      "sha256": "e6064a8a42a20a7bcd1141078320339ebcc9d0080cded1b1f40f361ba5ec703e"
+    },
+    {
+      "file": "tests\\fixtures\\images\\small.jpg",
+      "sha256": "200a7848eb435a30c8a06c9762b87732ec6971ca01fd384fe08aacf383b2d639"
+    },
+    {
+      "file": "tests\\fixtures\\images\\small.png",
+      "sha256": "4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad"
+    },
+    {
+      "file": "tests\\fixtures\\images\\small.webp",
+      "sha256": "b1f3ff00ba1d62d206025ce07b1ed6cdf87e8c018608d8d1984fe463f4e6e534"
+    },
+    {
+      "file": "tests\\fixtures\\markdown\\README.md",
+      "sha256": "a61c82132ca322833d6b2cca75cf2eec706e0f02cc10c3f1ff3e3db569211533"
+    },
+    {
+      "file": "tests\\fixtures\\markdown\\合法专题.md",
+      "sha256": "f499acb81560265ff05e4a619aa7d415a18cd891505459e8dc945a6eacd2b9a1"
+    },
+    {
+      "file": "tests\\fixtures\\practice-v3-schema.ts",
+      "sha256": "2a986c789f93cb971cc70a33737c424c120c025782a12d2fa16b414848805974"
+    },
+    {
+      "file": "tests\\fixtures\\schema-v4.sql",
+      "sha256": "208ec1a8629aca2f3a35aa3e224e0b1a9329a252cc942d71c4c0b5e2dea06fb6"
+    },
+    {
+      "file": "tests\\fixtures\\schema-v5.sql",
+      "sha256": "173cc03df94d26482c10269784de6f857b412c8f3830dde08e307755eaca9564"
+    },
+    {
+      "file": "tests\\fixtures\\schema-v6.sql",
+      "sha256": "8ff293b8d256fd597c2a537ab51edd289a4bf8ee1cb3dfaaa1326969d40d5294"
+    },
+    {
+      "file": "tests\\fixtures\\schema-v7.sql",
+      "sha256": "d34fb39a03dd6bbbd171bf7dfc021c38416b2c657a07d88bee2e009b3eb56e2a"
+    },
+    {
+      "file": "tests\\fixtures\\schema-v8.sql",
+      "sha256": "e63ccbb03c6b1a0bd7c9570670f53a3787998aaf6274e619531a0bdba9b7f5bf"
+    },
+    {
+      "file": "tests\\fixtures\\schema-v9.sql",
+      "sha256": "1c9a8173bf0e29bfc090beb19c48c69b1923fbb8f5f68b551c6d380c3e43b5ef"
+    },
+    {
+      "file": "question-banks\\catalog\\板块规划.json",
+      "sha256": "c8b9d9638d08049d6dbfbdd69ff191c0962262d7889dc00b235b9a4b32edd3a5"
+    },
+    {
+      "file": "question-banks\\examples\\assets\\.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "question-banks\\examples\\assets\\中文测试图.png",
+      "sha256": "4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad"
+    },
+    {
+      "file": "question-banks\\examples\\assets\\带 空格.jpg",
+      "sha256": "200a7848eb435a30c8a06c9762b87732ec6971ca01fd384fe08aacf383b2d639"
+    },
+    {
+      "file": "question-banks\\examples\\assets\\测试.webp",
+      "sha256": "b1f3ff00ba1d62d206025ce07b1ed6cdf87e8c018608d8d1984fe463f4e6e534"
+    },
+    {
+      "file": "question-banks\\examples\\README.md",
+      "sha256": "b37c00450bb8b73e25769bb7307319fc3632ad8e386806c84da29f8098588da7"
+    },
+    {
+      "file": "question-banks\\examples\\格式示例.md",
+      "sha256": "11b5f8d3da26c39e0b128915c6c2f52963d5b0c16e470c9a16568f9fa45c06f3"
+    },
+    {
+      "file": "question-banks\\general\\ADC通用基础.md",
+      "sha256": "71dba8ba22f7d6b4db314f587d3a9d2a4ec4c883a11fa73380bdf771a107c5fa"
+    },
+    {
+      "file": "question-banks\\general\\C语言数据与寄存器访问.md",
+      "sha256": "70d3b01aaab714ff092a32fc78e26b932df420cb91f6fa33ecfa9aa316e6002f"
+    },
+    {
+      "file": "question-banks\\general\\GPIO通用基础.md",
+      "sha256": "b1ff87f970ec5b8c34226af201be68dc9ffa7a33bcdd94438470dea92ac3458b"
+    },
+    {
+      "file": "question-banks\\general\\I2C通用基础.md",
+      "sha256": "a962f75ebad67fea0d16a320b361ad076c240303cde0d68ccb4ef3408e99a48c"
+    },
+    {
+      "file": "question-banks\\general\\README.md",
+      "sha256": "e4c406659ce082073c30899ab1c8697c6daf35c581ed57650756501dd01e4ec7"
+    },
+    {
+      "file": "question-banks\\general\\SPI通用基础.md",
+      "sha256": "653008e4ea908aff56f04e1f47ae7eda24014ef4e54ed3eefda35818c80a3af3"
+    },
+    {
+      "file": "question-banks\\general\\UART通用基础.md",
+      "sha256": "90e1a1e811f49c0882b790a4077ff486abe4fe1f7e8efe347ab89d80e154f4a8"
+    },
+    {
+      "file": "question-banks\\README.md",
+      "sha256": "e87889506446ee60eff2940d0b5ef5331b271bccffc89ed7521038d75c935d8b"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\433题最终去向.md",
+      "sha256": "7b725f49b523a6f7fb41d81408adf087646ab32060300e97383c807cc391a137"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\editorial\\adc-level1.json",
+      "sha256": "240c37d07439de09d2aada851c829ce965d7aed1608c18b8c8d153982bd9f68f"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\editorial\\gpio-stage.json",
+      "sha256": "b6bb520a235a4abf36fbf627c639185254ec221054d24cf52a661b60236d4912"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\editorial\\i2c-level1.json",
+      "sha256": "9e37b5f5bd35be879555331150fe38e2f8ec66977755671712a3fc4d34a5427e"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\editorial\\i2c-level2.json",
+      "sha256": "2a4ef4babd44887a9ce4c1b251244cfbe1e8ff7cc039ff5eb1a93972c69e166a"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\editorial\\spi-level1.json",
+      "sha256": "4ec6ec7de1546aa4b8383a0fe19577c465d549f6e67a202b365b3f55ac295ed1"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\editorial\\spi-level2.json",
+      "sha256": "c0faa6af4104503f2fdef3ac64233ac0783433cbe218a0db5018219f8402c99c"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\editorial\\uart-level1.json",
+      "sha256": "fe9dc15797fec9cbc71362b5869f33c5a3b3910922c821897eae89d6cee48676"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\editorial\\uart-level2.json",
+      "sha256": "34b170bff9d61826aa90ef061bee9a76b8984b05fed4dafa683fb4d62cee885c"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\README.md",
+      "sha256": "99990934076e7aee36ed0904474f72984171489d61e3db9386b734bf109105c0"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\专题配置.json",
+      "sha256": "ce900a091921a58c895cfee0699275256d3fd6b89eb0dd8e09aabc390823162b"
+    },
+    {
+      "file": "question-banks\\releases\\v000-20261024\\全量题库清单.json",
+      "sha256": "d4d3389acc2695026fcc3be18d7918fb439986092226247ed8312a2ab7a997b1"
+    },
+    {
+      "file": "question-banks\\sources\\general\\README.md",
+      "sha256": "c08fb5d5371e4a43246e7e268d24a1340571eab69e8f8cd4fed379dac4336ff9"
+    },
+    {
+      "file": "question-banks\\sources\\general\\snapshots\\adc-level1.md",
+      "sha256": "d51967802eb3f65b679d110d35340264a05fa8eb9d2ef59622ec138ed8f0e669"
+    },
+    {
+      "file": "question-banks\\sources\\general\\snapshots\\gpio-stage.md",
+      "sha256": "bd3b4abf0b34ebd23d3804d132ee00a6c8dd16580f76cbe9972df54494768c4c"
+    },
+    {
+      "file": "question-banks\\sources\\general\\snapshots\\i2c-level1.md",
+      "sha256": "301e3ce8f98950b1ccce6cc3712f71c2f09075ffb3de4e629c471b83ae112e86"
+    },
+    {
+      "file": "question-banks\\sources\\general\\snapshots\\i2c-level2.md",
+      "sha256": "29839a4608c200348360cc6d985f2964cac661dde1aad49474d46351c46f9e74"
+    },
+    {
+      "file": "question-banks\\sources\\general\\snapshots\\spi-level1.md",
+      "sha256": "6d454b63565ed788076aa78b684cdcbbb48af4d1cb705d8d863cce199c8378d2"
+    },
+    {
+      "file": "question-banks\\sources\\general\\snapshots\\spi-level2.md",
+      "sha256": "5acdba29e1704ca068a91940801fbf92396114787d07697dd82c607099bad53d"
+    },
+    {
+      "file": "question-banks\\sources\\general\\snapshots\\uart-level1.md",
+      "sha256": "9ea5e423307dffe132e22b26a27572b5fb8b1cc15efb257765f7fbe39e6dbddd"
+    },
+    {
+      "file": "question-banks\\sources\\general\\snapshots\\uart-level2.md",
+      "sha256": "22d402ead8353786ffd34e78a9f07497d7afe7d2816a3e7c1ce89a949a8c1edf"
+    },
+    {
+      "file": "question-banks\\sources\\general\\原始资料清单.json",
+      "sha256": "b06b7f7b135cae148fe9a8f064d4287b3ad8c05b2e6966e9cd8f89b37f9bdbce"
+    },
+    {
+      "file": "question-banks\\sources\\general\\技术核对.md",
+      "sha256": "e20de506c24a5bd9c14c28ff1f8960ce8921ee1c8a5d632a95a1f2fbe9b044d7"
+    },
+    {
+      "file": "question-banks\\sources\\general\\样题来源映射.json",
+      "sha256": "fd4e7c0ea4446c1fb226b099034b1b576439d78cb6b48dac6d3effec4e3d4c0c"
+    },
+    {
+      "file": "question-banks\\sources\\general\\逐题处理清单.json",
+      "sha256": "80dbee0ff60bafb39d391c44508aa051a87b4bb33ae88a604ff2b12bcb6dabfb"
+    },
+    {
+      "file": "question-banks\\sources\\general\\逐题处理清单.md",
+      "sha256": "65baf5a7f165b85c1a6c5619ac8c93f4e0e025f5868ca37bd02c9655340dc8a2"
+    },
+    {
+      "file": "question-banks\\sources\\STM32F103RCT6-GPIO-原始自测题.txt",
+      "sha256": "0d9d53af62b098b5108e7e972fb271ab5130ae1c7fba3180cc00e6d31a01a39f"
+    },
+    {
+      "file": "question-banks\\sources\\STM32F103RCT6-GPIO-题答对应.json",
+      "sha256": "188ae40a71dbe706fde6be90e6c1f08b522e8e9511d2b95b01680281d20d263d"
+    },
+    {
+      "file": "question-banks\\stm32\\STM32F1-ADC.md",
+      "sha256": "4b2f38ad683037dca82b7dcfb9b8aee13b67f77a95ba87eafc5cf707dd3f938c"
+    },
+    {
+      "file": "question-banks\\stm32\\STM32F1-I2C.md",
+      "sha256": "3c7a7a21f54561519b4b16172ec783df2d941ed6a7bdca4ba7cc760c01c42d06"
+    },
+    {
+      "file": "question-banks\\stm32\\STM32F1-SPI.md",
+      "sha256": "11b5aaf2b281063021a38475d935eae63ac910814a468b2520cc9a6c57436e83"
+    },
+    {
+      "file": "question-banks\\STM32F103RCT6-GPIO阶段自测题.md",
+      "sha256": "33e44ccf74c937da8a86ada3f5bb496880f0d65dbbb4ca6f6ae031ca4dffc77f"
+    },
+    {
+      "file": "question-banks\\storage\\24LC256-EEPROM.md",
+      "sha256": "07ab4ec9c1d408ad881b70100b2bb34e40521c8c301bb0615c30ad261cedd3a2"
+    },
+    {
+      "file": "question-banks\\storage\\W25Q16-SPI-NOR.md",
+      "sha256": "4e9cde2963aa2d3d08a426df1f306db4df720f73c35c21f21e5b405c7f8aeb24"
+    },
+    {
+      "file": "question-banks\\templates\\.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "question-banks\\templates\\README.md",
+      "sha256": "635ff121d9928326e1bf8ed0fde3c195a80d55cb174b9f63236cae49dca8fee0"
+    },
+    {
+      "file": "question-banks\\templates\\专题模板.md",
+      "sha256": "11fb5aa961e56db7aa4b6d9571ff70ae6f56a07899bb500639f498a9f71e40c3"
+    },
+    {
+      "file": "question-banks\\trials\\README.md",
+      "sha256": "e204c61148187b10243170b1ec71aa94648cf9dc5c2ffb93e7c1c74f5cedccbe"
+    },
+    {
+      "file": "question-banks\\trials\\STM32F103-UART第二层-30题试用.md",
+      "sha256": "7b59a3577cc4f842ab5e5b8cb1400341a2b80ea506a78484f6afda18eea28d00"
+    },
+    {
+      "file": "question-banks\\trials\\UART答案修订清单.json",
+      "sha256": "a3eb76fa672c3b2b4eac31dda059858fe975ae7e961153e7ae5543b9ba54f18d"
+    },
+    {
+      "file": "question-banks\\trials\\UART题目整理清单.json",
+      "sha256": "9f0f7d6bd0c1886a77413de4c1a9961b66736be56e583310e042ca59d59912fd"
+    },
+    {
+      "file": "question-banks\\trials\\题答来源.json",
+      "sha256": "2253477f5d53f432b8f9928f7d3db568a774efdbaa5240ab4a15dbbd81c94933"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\01-学习总览.png",
+      "sha256": "2f81259a1d4db4c4b7330f9d3daa3d44829959c02fb4bcf3dd31f8308475518e"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\02-知识板块.png",
+      "sha256": "bf94cd0b4ec6593b3953be28e8851e20d2321e06d4ebf073473a2adaa09538da"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\03-题库检索.png",
+      "sha256": "07c2ee73d75a285d4adade3fc3558c6cb467d73635b01bcc6ef719abed2f48db"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\04-开始练习与方案.png",
+      "sha256": "7a95b770331dcfac8084b868905ba21aaa1decaf8d4d33789574b09e23e965e9"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\05-练习未揭晓.png",
+      "sha256": "d428c55acd10afd69c7beaede0a7aec4f5b676d29beb329539715ecf113051cb"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\06-揭晓与自评.png",
+      "sha256": "6c780fb40a40f385d618f6aa0bb8485584b8caf1d6c6cc0a42b9b62f7ed137c6"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\07-学习记录与收藏.png",
+      "sha256": "0488709bd31998c9eb1ab8e6789d8ee7b29beec1c3e70754d84c84afc198a554"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\08-导入与归档.png",
+      "sha256": "08791872dfc25c005f27560eabef531705e5602201805dfd1a996c6af30d43b6"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\09-分类与专题管理.png",
+      "sha256": "fbe069b42b249130ef5c2312278fb6dffdec08b8a6b8af9b26a949b14d310a39"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\10-外观与本地主题.png",
+      "sha256": "a8eadcaeba7f6188a1151dce48f9dd720fca1c42159cc6974d583e247791f9ce"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\11-备份恢复与数据位置.png",
+      "sha256": "7141c32c2be057699aac7828a07842bfda1aba4e373d578d51e531b860dce8ad"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\12-深色与窄窗口.png",
+      "sha256": "c2ddd9d530eb464667c915a0b08f34352b4f409768237693fb42f371a7958c91"
+    },
+    {
+      "file": "output\\imagegen\\ui-layout-e-20261025\\13-关键状态与图片查看.png",
+      "sha256": "9ba7e653d71c2319116e039df2b2202c01cb946507d86b2123a43c0a11c62a6d"
+    },
+    {
+      "file": "package.json",
+      "sha256": "4347d2a4fdcbdd185d13305bb2bfcc27953ce11a6a80f0b8ae69d369aeeb03a6"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "73b7f384a8596ead2df67acf1137b123ec7869acf2e1d2d22b40da0914ac070b"
+    },
+    {
+      "file": "electron-builder.yml",
+      "sha256": "fbd78d3cd6165705cd1e65d9bdc7d0bfc9316e5b7ce3ca329b2802c1d3ac31df"
+    },
+    {
+      "file": "vitest.config.ts",
+      "sha256": "a8e4b73b2bd6e9dd4914b87475c7ef761956df981e0f19626773310455de7a67"
+    }
+  ]
+}

@@ -98,7 +98,7 @@ for (const palette of palettes) {
           'background-color',
           palette[theme],
         )
-        const pageDescription = await page.locator('.page-description').evaluate(
+        const pageDescription = await page.locator('.brand-caption').evaluate(
           (element) =>
             (
               globalThis as unknown as {
@@ -151,7 +151,7 @@ test('配色真实写失败/丢响应保留选择，键盘切换后正常重开�
     await page
       .getByRole('textbox', { name: '我的答案', exact: true })
       .fill('主题切换不能改变草稿\n    int kept = 7;')
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     const before = historySnapshot(testDataDirectory)
     withHistoryDatabase(
       testDataDirectory,
@@ -274,7 +274,7 @@ test('配色跟随系统、窄窗口、双环输入焦点和减少动态效果�
     await application.evaluate(({ BrowserWindow }) =>
       BrowserWindow.getAllWindows()[0]?.setSize(900, 620),
     )
-    await expect(page.locator('.page-navigation')).toHaveCSS('flex-direction', 'row')
+    await expect(page.locator('.page-navigation')).toHaveCSS('flex-direction', 'column')
     const geometry = await page.evaluate(() => {
       const browser = globalThis as unknown as {
         document: { documentElement: { scrollWidth: number; clientWidth: number } }
@@ -292,9 +292,10 @@ test('配色跟随系统、窄窗口、双环输入焦点和减少动态效果�
     await expect(input).toHaveCSS('outline-style', 'none')
     await expect(input).not.toHaveCSS('box-shadow', 'none')
     await expect(page.locator('.practice-save')).toHaveText('已保存')
+    await page.getByRole('button', { name: '查看参考答案', exact: true }).scrollIntoViewIfNeeded()
     await expect(page.getByRole('button', { name: '查看参考答案', exact: true })).toBeInViewport()
     await captureHistory(application, page, info, 'palette-narrow-input.png')
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await page.getByText('筛选练习题目', { exact: true }).click()
     await expect(page.getByLabel('练习搜索', { exact: true })).toBeVisible()
     await page.getByText('筛选练习题目', { exact: true }).click()

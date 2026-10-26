@@ -1,0 +1,189 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/backup-window.spec.ts",
+      "--grep",
+      "Windows文件编号精度",
+      "--project=packaged",
+      "--output=docs/evidence/workbench-ui2-20261026/file-id-before-fix",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/workbench-ui2-20261026/file-id-before-fix",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/workbench-ui2-20261026/file-id-before-fix",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-ui2-20261026\\file-id-before-fix",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "backup-window.spec.ts",
+      "file": "backup-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Windows文件编号精度：普通数值相同的独立备份可预览，精确编号相同的别名仍拒绝",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1081,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:175:30\n    at outputDirectory (E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:78:12)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:130:3",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts",
+                      "column": 30,
+                      "line": 175
+                    },
+                    "snippet": "  173 |       await select(application, 'preview', target)\n  174 |       const independent = await backup(page, 'preview')\n> 175 |       expect(independent.ok).toBe(true)\n      |                              ^\n  176 |       expect(withHistoryDatabase(testDataDirectory, records)).toEqual(before)\n  177 |       await application.evaluate(() => Reflect.set(globalThis, '__ui2Alias', true))\n  178 |       expect(await backup(page, 'preview')).toMatchObject({"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts",
+                        "column": 30,
+                        "line": 175
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  173 |       await select(application, 'preview', target)\n  174 |       const independent = await backup(page, 'preview')\n> 175 |       expect(independent.ok).toBe(true)\n      |                              ^\n  176 |       expect(withHistoryDatabase(testDataDirectory, records)).toEqual(before)\n  177 |       await application.evaluate(() => Reflect.set(globalThis, '__ui2Alias', true))\n  178 |       expect(await backup(page, 'preview')).toMatchObject({\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:175:30\n    at outputDirectory (E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:78:12)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:130:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T04:48:15.948Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\workbench-ui2-20261026\\file-id-before-fix\\backup-window-Windows文件编号精度：普通数值相同的独立备份可预览，精确编号相同的别名仍拒绝-packaged\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts",
+                    "column": 30,
+                    "line": 175
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-87053e6c6952c481e338",
+          "file": "backup-window.spec.ts",
+          "line": 127,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-26T04:48:15.376Z",
+    "duration": 1707.272,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

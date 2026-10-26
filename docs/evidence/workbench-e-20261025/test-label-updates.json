@@ -1,0 +1,30 @@
+{
+  "changed": [
+    "tests/e2e/backup-window.spec.ts",
+    "tests/e2e/board-entry.spec.ts",
+    "tests/e2e/category-practice.spec.ts",
+    "tests/e2e/data-locations.spec.ts",
+    "tests/e2e/findability.spec.ts",
+    "tests/e2e/history-versions.spec.ts",
+    "tests/e2e/history-window.spec.ts",
+    "tests/e2e/learning-management.spec.ts",
+    "tests/e2e/learning-records.spec.ts",
+    "tests/e2e/personal-bank.spec.ts",
+    "tests/e2e/practice-plans.spec.ts",
+    "tests/e2e/practice-window.spec.ts",
+    "tests/e2e/random-practice.spec.ts",
+    "tests/e2e/restore-window.spec.ts",
+    "tests/e2e/session-filters.spec.ts",
+    "tests/e2e/settings-palettes.spec.ts",
+    "tests/e2e/settings-window.spec.ts",
+    "tests/e2e/theme-helpers.ts",
+    "tests/e2e/themes-backup.spec.ts",
+    "tests/e2e/themes-layout.spec.ts",
+    "tests/e2e/themes-reading.spec.ts"
+  ],
+  "allowedSubstitutions": [
+    "板块入口名称",
+    "构建标识",
+    "活动保存并返回及结果返回首页两个互斥按钮"
+  ]
+}

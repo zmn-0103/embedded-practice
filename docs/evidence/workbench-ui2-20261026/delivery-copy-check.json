@@ -1,0 +1,77 @@
+{
+  "copied": [
+    {
+      "path": "题库/C语言__C语言数据与寄存器访问.md",
+      "match": true
+    },
+    {
+      "path": "题库/MCU与外设原理__ADC通用基础.md",
+      "match": true
+    },
+    {
+      "path": "题库/MCU与外设原理__GPIO通用基础.md",
+      "match": true
+    },
+    {
+      "path": "题库/STM32__STM32F103RCT6GPIO阶段自测题.md",
+      "match": true
+    },
+    {
+      "path": "题库/STM32__STM32F1ADC.md",
+      "match": true
+    },
+    {
+      "path": "题库/STM32__STM32F1I2C.md",
+      "match": true
+    },
+    {
+      "path": "题库/STM32__STM32F1SPI.md",
+      "match": true
+    },
+    {
+      "path": "题库/STM32__STM32F1UART与寄存器.md",
+      "match": true
+    },
+    {
+      "path": "题库/存储与文件系统__24LC256EEPROM.md",
+      "match": true
+    },
+    {
+      "path": "题库/存储与文件系统__W25Q16SPINOR.md",
+      "match": true
+    },
+    {
+      "path": "题库/通信协议__I2C通用基础.md",
+      "match": true
+    },
+    {
+      "path": "题库/通信协议__SPI通用基础.md",
+      "match": true
+    },
+    {
+      "path": "题库/通信协议__UART通用基础.md",
+      "match": true
+    },
+    {
+      "path": "主题示例/circuit-blue.ep-theme.json",
+      "match": true
+    },
+    {
+      "path": "主题示例/paper-ink.ep-theme.json",
+      "match": true
+    }
+  ],
+  "markdownTopics": 13,
+  "previewImages": 9,
+  "safeLauncherStatic": [
+    "@echo off",
+    "setlocal",
+    "if not defined LOCALAPPDATA exit /b 1",
+    "if not exist \"%~dp0win-unpacked\\embedded-practice.exe\" exit /b 1",
+    "set \"EMBEDDED_PRACTICE_TEST_DATA_DIR=%LOCALAPPDATA%\\embedded-practice-workbench-e-ui2-trial-20261026.1\"",
+    "set \"ELECTRON_RUN_AS_NODE=\"",
+    "set \"ELECTRON_RENDERER_URL=\"",
+    "start \"\" \"%~dp0win-unpacked\\embedded-practice.exe\"",
+    "endlocal"
+  ]
+}

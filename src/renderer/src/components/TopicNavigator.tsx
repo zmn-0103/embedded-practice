@@ -72,7 +72,7 @@ export function TopicNavigator({
           onChange={(event) => setQuery(event.currentTarget.value)}
         />
       </label>
-      <p className="muted">检索只收窄导航，选择分类或专题后应用范围。</p>
+      <p className="muted">检索仅筛选导航；点击后应用范围。</p>
       <button
         type="button"
         disabled={disabled}

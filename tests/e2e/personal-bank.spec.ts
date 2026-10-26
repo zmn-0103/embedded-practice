@@ -54,7 +54,7 @@ async function runtime(
     )
   else expect(resolve(actual.appPath)).toBe(resolve('out/main'))
   await expect(page.locator('footer span').last()).toHaveText(
-    `V${actual.version} 测试版 · 构建 20261025.2-v001`,
+    `V${actual.version} 测试版 · 构建 20261026.2-workbench-e-ui3`,
   )
   expect(withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())).toEqual({
     user_version: 10,
@@ -191,7 +191,7 @@ test('全量419题首次/重复导入、13专题归属、板块计数和三级�
       '导入完成：新增 0，内容更新 0，信息变更 0，不变 419，归档 0，恢复 0。',
     )
     verifyAll(testDataDirectory)
-    await openPage(page, '板块')
+    await openPage(page, '知识板块')
     for (const [title] of categories) {
       const count = manifest.files
         .filter((file) => file.board === title)
@@ -251,7 +251,7 @@ test('旧118题学习记录保护、更新后旧轮/新轮、正常重开与419�
     )
     const oldView = await current(page)
     const protectedBefore = historySnapshot(testDataDirectory)
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await importExact(
       application,
       page,
@@ -298,7 +298,7 @@ test('旧118题学习记录保护、更新后旧轮/新轮、正常重开与419�
       app.relaunch = () => {}
     }, backup)
     const saved = completeState(testDataDirectory)
-    await openPage(page, '设置与数据')
+    await openPage(page, '备份恢复')
     await page.getByRole('button', { name: '导出完整备份', exact: true }).click()
     await expect(page.getByText('完整备份已导出并校验。', { exact: true })).toBeVisible()
     const favorite = await page.evaluate(() =>
@@ -328,7 +328,7 @@ test('旧118题学习记录保护、更新后旧轮/新轮、正常重开与419�
     expect(revealed.item?.revealed).toBe(true)
     if (revealed.item?.revealed) expect(revealed.item.answer.markdown).not.toContain('核心结论：')
     await page.getByRole('button', { name: '结束本轮', exact: true }).click()
-    await page.getByRole('button', { name: '返回首页', exact: true }).click()
+    await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
     await openPage(page, '开始练习')
     await page.getByLabel('练习专题', { exact: true }).selectOption('stm32f103-gpio')
     await page.getByRole('button', { name: '开始练习', exact: true }).click()

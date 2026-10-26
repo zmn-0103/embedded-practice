@@ -1,0 +1,15 @@
+
+Running 8 tests using 1 worker
+
+(node:54544) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\findability.spec.ts:82:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置 (1.4s)
+  ok 2 [development] › tests\e2e\findability.spec.ts:118:5 › 找题：标签候选跨分页、独立于筛选、限定专题，支持鼠标/键盘/无匹配/清除 (1.3s)
+  ok 3 [development] › tests\e2e\findability.spec.ts:178:5 › 找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择 (1.3s)
+  ok 4 [development] › tests\e2e\findability.spec.ts:249:5 › 找题：导入元数据使候选缓存失效，归档范围隔离，清除旧题选择 (1.2s)
+  ok 5 [development] › tests\e2e\findability.spec.ts:274:5 › 找题：返回后读取失败保留条件和页码，重试仍查询原范围 (1.2s)
+  ok 6 [development] › tests\e2e\findability.spec.ts:309:5 › 找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情 (1.2s)
+  ok 7 [development] › tests\e2e\findability.spec.ts:335:5 › 找题：首页快捷条件不替换旧轮，明确开始/无匹配/继续保留原契约 (6.5s)
+  ok 8 [development] › tests\e2e\workbench-errors.spec.ts:6:5 › 工作台窄窗：详情返回重读失败仍显示错误和重试，隐藏旧结果，原条件与学习数据保持 (1.2s)
+
+  8 passed (16.3s)

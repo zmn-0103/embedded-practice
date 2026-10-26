@@ -24,7 +24,15 @@ export const test = base.extend<{ testDataDirectory: string }>({
   },
 })
 
-type PageName = '板块' | '开始练习' | '题库' | '学习记录' | '设置与数据'
+type PageName =
+  | '学习总览'
+  | '知识板块'
+  | '开始练习'
+  | '题库'
+  | '学习记录'
+  | '设置与数据'
+  | '备份恢复'
+  | '数据位置'
 
 export async function launchApplication(
   directory: string,
@@ -65,7 +73,10 @@ export async function launchApplication(
 
   try {
     const page = await application.firstWindow()
-    await page.getByRole('heading', { name: '嵌入式刷题本', exact: true }).waitFor()
+    // 同时操作列表和详情的既有场景使用明确宽窗；窄窗/缩放专项自行设置尺寸。
+    const window = await application.browserWindow(page)
+    await window.evaluate((window) => window.setContentSize(1440, 1000))
+    await page.locator('.app-shell').waitFor()
     if (initialPage) await openPage(page, initialPage)
     else if ((await readAppStatus(page)).ok) await openPage(page, '开始练习')
     return { application, page }
@@ -82,10 +93,14 @@ export function readAppStatus(page: Page): Promise<AppStatusResult> {
 }
 
 export async function openPage(page: Page, name: PageName) {
+  const section = name === '备份恢复' || name === '数据位置' ? name : undefined
+  const target = section ? '设置与数据' : name
   const link = page
     .getByRole('navigation', { name: '主要页面', exact: true })
-    .getByRole('link', { name, exact: true })
+    .getByRole('link', { name: target, exact: true })
   await base.expect(link).toHaveAttribute('aria-disabled', 'false')
   await link.click()
   await base.expect(link).toHaveAttribute('aria-current', 'page')
+  if (section || name === '设置与数据')
+    await page.getByRole('tab', { name: section ?? '外观主题', exact: true }).click()
 }

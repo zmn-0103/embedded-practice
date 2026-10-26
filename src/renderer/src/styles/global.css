@@ -421,7 +421,7 @@ select,
 .question-list li {
   margin-bottom: 6px;
 }
-.question-list button {
+.question-list .question-row {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -437,11 +437,14 @@ select,
 .question-list span {
   font-size: 14px;
 }
-.question-list button[aria-current='true'] {
+.question-list .question-row[aria-current='true'] {
   background: var(--accent-soft);
   border-color: var(--line);
 }
 .pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   justify-content: space-between;
   font-size: 12px;
   margin-top: 20px;

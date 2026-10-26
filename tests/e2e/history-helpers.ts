@@ -56,6 +56,7 @@ export async function importHistoryFiles(
   await expect(page.getByRole('heading', { name: '导入预览', exact: true })).toBeVisible()
   await page.getByRole('button', { name: '确认导入', exact: true }).click()
   await expect(page.getByText(/^导入完成：/)).toBeVisible()
+  await page.getByRole('button', { name: '关闭导入工作区', exact: true }).click()
 }
 export async function prepareHistory(directory: string, project: string, rounds = 3) {
   const folder = join(directory, '历史 中文来源')
@@ -133,6 +134,8 @@ export async function readHistoryEntry(
 }
 export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {
   await openPage(page, '题库')
+  const returnToList = page.getByRole('button', { name: '返回题目列表', exact: true })
+  if (await returnToList.isVisible()) await returnToList.click()
   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')
   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()
   await page

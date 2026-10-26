@@ -38,11 +38,14 @@ export async function categoryChange(page: Page, change: CategoryChange) {
 }
 export async function openCategoryManager(page: Page) {
   const manager = page.locator('.category-manager')
-  if ((await manager.getAttribute('open')) === null) await manager.locator('summary').click()
+  if ((await manager.getAttribute('open')) === null)
+    await manager.locator('summary').first().click()
   return manager
 }
 export async function addCategory(page: Page, title: string) {
   const manager = await openCategoryManager(page)
+  const create = manager.getByRole('button', { name: '新增分类', exact: true })
+  if ((await create.getAttribute('aria-expanded')) !== 'true') await create.click()
   await manager.getByLabel('新分类名称', { exact: true }).fill(title)
   await manager.getByRole('button', { name: '添加分类', exact: true }).click()
   await expect
@@ -51,10 +54,13 @@ export async function addCategory(page: Page, title: string) {
   await expect(manager.getByRole('button', { name: '添加分类', exact: true })).toBeDisabled()
   const found = (await categoryList(page)).categories.find((item) => item.title === title)
   expect(found).toBeDefined()
+  await manager.getByRole('button', { name: '关闭分类管理', exact: true }).click()
   return found!.categoryId
 }
 export async function assignTopic(page: Page, topicId: string, categoryId: string | null) {
   const manager = await openCategoryManager(page)
+  const assign = manager.getByRole('button', { name: '调整专题归属', exact: true })
+  if ((await assign.getAttribute('aria-expanded')) !== 'true') await assign.click()
   await manager.getByLabel('调整归属的专题', { exact: true }).selectOption(topicId)
   await manager.getByLabel('归入分类', { exact: true }).selectOption(categoryId ?? '')
   await manager.getByRole('button', { name: '保存专题归属', exact: true }).click()
@@ -65,6 +71,7 @@ export async function assignTopic(page: Page, topicId: string, categoryId: strin
     )
     .toBe(categoryId)
   await expect(manager.getByRole('button', { name: '保存专题归属', exact: true })).toBeEnabled()
+  await manager.getByRole('button', { name: '关闭分类管理', exact: true }).click()
 }
 export async function prepareCategories(directory: string, project: string) {
   const folder = join(directory, '分类 中文样本')

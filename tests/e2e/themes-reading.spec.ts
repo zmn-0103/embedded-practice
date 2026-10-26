@@ -81,12 +81,16 @@ test('跨主题保留题库筛选/分页/选中与阅读组件，183行代码/60
         width,
       )
       await openPage(page, '题库')
+      const returnToList = page.getByRole('button', { name: '返回题目列表', exact: true })
+      const narrow = await returnToList.isVisible()
+      if (narrow) await returnToList.click()
       await expect(page.getByRole('searchbox', { name: '题库搜索', exact: true })).toHaveValue(
         '主题阅读',
       )
       await expect(page.getByLabel('题库难度', { exact: true })).toHaveValue('基础')
       await expect(pagination).toContainText('2 / 2')
       await expect(selected).toHaveAttribute('aria-current', 'true')
+      if (narrow) await selected.click()
       expect(await reader.evaluate((element) => Reflect.get(element, 'themeReaderProbe'))).toBe(
         'same-reader',
       )
@@ -122,6 +126,8 @@ test('跨主题保留题库筛选/分页/选中与阅读组件，183行代码/60
       await noDocumentOverflow(page)
       expect(themeBusinessSnapshot(testDataDirectory)).toEqual(before)
     }
+    const returnToList = page.getByRole('button', { name: '返回题目列表', exact: true })
+    if (await returnToList.isVisible()) await returnToList.click()
     await page.getByRole('searchbox', { name: '题库搜索', exact: true }).fill('没有匹配的主题样本')
     await page.getByRole('button', { name: '筛选题库', exact: true }).click()
     await expect(page.getByText('当前筛选没有匹配题目。', { exact: true })).toBeVisible()
@@ -156,7 +162,8 @@ test('Claude长内容练习：宽屏右侧属性/窄屏可展开辅助、输入�
       )
       await expect(page.getByLabel('练习参考答案', { exact: true })).toHaveCount(0)
       const auxiliary = page.getByLabel('练习辅助面板', { exact: true })
-      await expect(auxiliary).toContainText('主题长内容')
+      await expect(page.locator('.practice-heading')).toContainText('主题长内容')
+      await expect(auxiliary).toContainText('已揭晓')
       if (width === 900) {
         await page.getByRole('button', { name: '隐藏辅助面板', exact: true }).click()
         await expect(auxiliary).toBeHidden()
@@ -225,7 +232,7 @@ test('Claude长内容练习：宽屏右侧属性/窄屏可展开辅助、输入�
     await page.getByRole('button', { name: '查看参考答案', exact: true }).click()
     await page.getByText('THEME-ANSWER-END', { exact: true }).scrollIntoViewIfNeeded()
     await expect(page.getByRole('button', { name: '掌握', exact: true })).toBeVisible()
-    await expect(page.getByRole('button', { name: '返回首页', exact: true })).toBeVisible()
+    await expect(page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ })).toBeVisible()
     const finalActions = await page.locator('.practice-actions').boundingBox()
     const viewportHeight = await page
       .locator('html')

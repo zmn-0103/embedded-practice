@@ -74,20 +74,21 @@ test('设置显示实际中文空格数据位置，读取无副作用，三种�
       await page
         .getByRole('textbox', { name: '我的答案', exact: true })
         .fill('位置检查草稿\nint keep = 3;')
-      await page.getByRole('button', { name: '返回首页', exact: true }).click()
+      await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()
       await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
       await openPage(page, '设置与数据')
       await page.getByLabel('显示主题', { exact: true }).selectOption('dark')
       await page.getByLabel('正文字号', { exact: true }).selectOption('22')
       await page.getByRole('button', { name: '保存并应用', exact: true }).click()
       await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
+      await openPage(page, '数据位置')
       const before = historySnapshot(root),
         status = await readAppStatus(page)
       const settings = withHistoryDatabase(root, (db) =>
         db.prepare('SELECT * FROM appearance_settings').all(),
       )
       expect(await readLocations(page)).toEqual({ ok: true, value: expectedLocations(root) })
-      const panel = page.getByLabel('数据位置', { exact: true })
+      const panel = page.getByRole('region', { name: '数据位置', exact: true })
       for (const path of Object.values(expectedLocations(root)))
         await expect(panel.getByText(path, { exact: true })).toBeVisible()
       expect(await readdir(root)).not.toContain('backups')
@@ -147,7 +148,7 @@ test('数据位置拒绝任意路径及文件或 junction 目标，修正后可�
   const { application, page } = await launchApplication(
     testDataDirectory,
     info.project.name,
-    '设置与数据',
+    '数据位置',
   )
   try {
     await nativeFolders(application)
@@ -217,8 +218,8 @@ test('数据位置读取与系统打开失败保留真实状态，重试成功�
       )
       shell.openPath = async () => (++opens === 1 ? 'PRIVATE-SYSTEM-CONTENT' : '')
     })
-    await openPage(page, '设置与数据')
-    const panel = page.getByLabel('数据位置', { exact: true })
+    await openPage(page, '数据位置')
+    const panel = page.getByRole('region', { name: '数据位置', exact: true })
     await expect(panel.getByRole('alert')).toContainText('数据位置尚未读取成功')
     await expect(panel.getByRole('button', { name: '打开数据文件夹', exact: true })).toHaveCount(0)
     await panel.getByRole('button', { name: '重试读取数据位置', exact: true }).click()
@@ -250,7 +251,7 @@ test('数据库不可用时仍能查看数据位置并打开日志文件夹，�
   const { application, page } = await launchApplication(testDataDirectory, info.project.name)
   try {
     await expect(page.locator('.service-status')).toContainText('本地数据暂不可用')
-    const panel = page.getByLabel('数据位置', { exact: true })
+    const panel = page.getByRole('region', { name: '数据位置', exact: true })
     await expect(panel.getByText(testDataDirectory, { exact: true })).toBeVisible()
     expect(await readLocations(page)).toEqual({
       ok: true,
@@ -277,17 +278,17 @@ test('目录打开处理中锁定设置备份导航，正常关闭等待在途�
   const { application, page } = await launchApplication(
     testDataDirectory,
     info.project.name,
-    '设置与数据',
+    '数据位置',
   )
   try {
     await nativeFolders(application, true)
     await page
-      .getByLabel('数据位置', { exact: true })
+      .getByRole('region', { name: '数据位置', exact: true })
       .getByRole('button', { name: '打开日志文件夹', exact: true })
       .click()
     await expect.poll(() => folderPaths(application)).toEqual([join(testDataDirectory, 'logs')])
-    await expect(page.getByRole('button', { name: '保存并应用', exact: true })).toBeDisabled()
-    await expect(page.getByRole('button', { name: '导出完整备份', exact: true })).toBeDisabled()
+    await expect(page.getByRole('tab', { name: '外观主题', exact: true })).toBeDisabled()
+    await expect(page.getByRole('tab', { name: '备份恢复', exact: true })).toBeDisabled()
     await expect(
       page
         .getByRole('navigation', { name: '主要页面' })
@@ -322,7 +323,7 @@ test('恢复先暂停并等待目录打开，结算后才创建保护备份和�
     const { application, page } = await launchApplication(
       testDataDirectory,
       info.project.name,
-      '设置与数据',
+      '数据位置',
     )
     try {
       const path = join(output, '位置检查 备份.sqlite3')
@@ -405,11 +406,11 @@ test('切页期间晚到的位置读取不能覆盖新面板的实际位置', as
         )
       })
     })
-    await openPage(page, '设置与数据')
+    await openPage(page, '数据位置')
     await expect(page.getByText('正在读取数据位置…', { exact: true })).toBeVisible()
     await openPage(page, '题库')
-    await openPage(page, '设置与数据')
-    const panel = page.getByLabel('数据位置', { exact: true })
+    await openPage(page, '数据位置')
+    const panel = page.getByRole('region', { name: '数据位置', exact: true })
     await expect(panel.getByText(testDataDirectory, { exact: true })).toBeVisible()
     await application.evaluate(() => Reflect.get(globalThis, 'releaseLocationRead')())
     await expect(panel).not.toContainText('STALE')
@@ -431,7 +432,7 @@ test('Windows 已有 Logs Backups 和 Backup-Staging 目录可正常打开并完
     const { application, page } = await launchApplication(
       testDataDirectory,
       info.project.name,
-      '设置与数据',
+      '数据位置',
     )
     let reopened: ElectronApplication | undefined
     try {
@@ -491,7 +492,7 @@ test('Windows 已有 Logs Backups 和 Backup-Staging 目录可正常打开并完
       )
       expect(protections).toHaveLength(1)
       expect(await readFile(selectedPath)).toEqual(bytes)
-      const launched = await launchApplication(testDataDirectory, info.project.name, '设置与数据')
+      const launched = await launchApplication(testDataDirectory, info.project.name, '数据位置')
       reopened = launched.application
       await expect(launched.page.getByLabel('显示主题', { exact: true })).toHaveValue('system')
       await expect(launched.page.getByLabel('正文字号', { exact: true })).toHaveValue('17')

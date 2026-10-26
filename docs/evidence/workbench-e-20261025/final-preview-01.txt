@@ -1,0 +1,151 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+ExpectError: expect(locator).toBeVisible() failed
+
+Locator: locator('.learning-summary')
+Expected: visible
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" locator('.learning-summary') with timeout 5000ms
+  - waiting for locator('.learning-summary')
+
+    at captureRawStack (E:\My_Projects\embedded-practice\node_modules\playwright-core\lib\coreBundle.js:9282:17)
+    at callMatcherAsStep (E:\My_Projects\embedded-practice\node_modules\playwright\lib\matchers\expect.js:13316:57)
+    at Object.toBeVisible (E:\My_Projects\embedded-practice\node_modules\playwright\lib\matchers\expect.js:13308:23)
+    at E:\My_Projects\embedded-practice\[eval1]:40:68 {
+  matcherResult: {
+    message: 'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: locator('.learning-summary')\n" +
+      'Expected: visible\n' +
+      'Timeout: 5000ms\n' +
+      'Error: element(s) not found\n' +
+      '\n' +
+      'Call log:\n' +
+      `  - Expect "toBeVisible" locator('.learning-summary') with timeout 5000ms\n` +
+      "  - waiting for locator('.learning-summary')\n",
+    pass: false,
+    actual: undefined,
+    name: 'toBeVisible',
+    expected: 'visible',
+    log: [
+      `  - Expect "toBeVisible" locator('.learning-summary') with timeout 5000ms`,
+      "  - waiting for locator('.learning-summary')"
+    ],
+    timeout: 5000,
+    ariaSnapshot: '- banner:\n' +
+      '  - heading "嵌入式刷题本" [level=1]\n' +
+      '  - paragraph: 思考有迹，积累有序\n' +
+      '  - button "收起导航" [expanded]: ‹\n' +
+      '- navigation "主要页面":\n' +
+      '  - link "学习总览":\n' +
+      '    - /url: "#overview"\n' +
+      '  - link "知识板块":\n' +
+      '    - /url: "#boards"\n' +
+      '  - link "开始练习":\n' +
+      '    - /url: "#practice"\n' +
+      '  - link "题库":\n' +
+      '    - /url: "#library"\n' +
+      '  - link "学习记录":\n' +
+      '    - /url: "#records"\n' +
+      '  - link "设置与数据":\n' +
+      '    - /url: "#settings"\n' +
+      '- main:\n' +
+      '  - text: 学习工作台\n' +
+      '  - strong: 学习记录\n' +
+      '  - text: 本地离线\n' +
+      '  - group: 外观\n' +
+      '  - region "学习记录":\n' +
+      '    - heading "学习记录" [level=2]\n' +
+      '    - paragraph: 按题去重，仅统计所选范围的当前内容版本；多轮练习不会重复累计题数。\n' +
+      '    - group: 按分类查看学习记录\n' +
+      '    - text: 学习记录专题\n' +
+      '    - combobox "学习记录专题":\n' +
+      '      - option "全部专题" [selected]\n' +
+      '      - option "24LC256 EEPROM"\n' +
+      '      - option "ADC 通用基础"\n' +
+      '      - option "C语言数据与寄存器访问"\n' +
+      '      - option "GPIO 通用基础"\n' +
+      '      - option "I2C 通用基础"\n' +
+      '      - option "SPI 通用基础"\n' +
+      '      - option "STM32F1 ADC"\n' +
+      '      - option "STM32F1 I2C"\n' +
+      '      - option "STM32F1 SPI"\n' +
+      '      - option "STM32F1 UART 与寄存器"\n' +
+      '      - option "STM32F103RCT6 GPIO 阶段自测题"\n' +
+      '      - option "UART 通用基础"\n' +
+      '      - option "W25Q16 SPI NOR"\n' +
+      '    - text: 学习记录范围\n' +
+      '    - combobox "学习记录范围":\n' +
+      '      - option "活动题目" [selected]\n' +
+      '      - option "归档题目"\n' +
+      '    - term: 范围内题数\n' +
+      '    - definition: "419"\n' +
+      '    - term: 已揭晓题数\n' +
+      '    - definition: "4"\n' +
+      '    - term: 已自评题数\n' +
+      '    - definition: "3"\n' +
+      '    - term: 收藏题数\n' +
+      '    - definition: "1"\n' +
+      '    - term: 内容更新待复习题数\n' +
+      '    - definition: "0"\n' +
+      '    - term: 不会\n' +
+      '    - definition: "1"\n' +
+      '    - progressbar "不会占已自评题数"\n' +
+      '    - term: 不熟\n' +
+      '    - definition: "1"\n' +
+      '    - progressbar "不熟占已自评题数"\n' +
+      '    - term: 掌握\n' +
+      '    - definition: "1"\n' +
+      '    - progressbar "掌握占已自评题数"\n' +
+      '    - paragraph: 揭晓只计算真实练习记录；仅保存草稿、跳过或查看题库答案不计入。旧数据若只有自评而无作答记录，只计入自评，不补造揭晓或历史。自评是个人判断。\n' +
+      '    - heading "题目与单题历史" [level=3]\n' +
+      '    - paragraph: 下方默认只看收藏，可取消或调整筛选后查看本范围其他题目。下方筛选不改变上方范围总览，历史需主动展开。\n' +
+      '    - region "题库浏览":\n' +
+      '      - text: 题库搜索\n' +
+      '      - searchbox "题库搜索"\n' +
+      '      - text: 标签\n' +
+      '      - combobox "题库标签"\n' +
+      '      - text: 难度\n' +
+      '      - combobox "题库难度":\n' +
+      '        - option "全部难度" [selected]\n' +
+      '        - option "未分级"\n' +
+      '        - option "易（基础）"\n' +
+      '        - option "中（进阶）"\n' +
+      '        - option "难（综合）"\n' +
+      '      - text: 自评状态\n' +
+      '      - combobox "题库自评状态":\n' +
+      '        - option "全部状态" [selected]\n' +
+      '        - option "未练习"\n' +
+      '        - option "不会"\n' +
+      '        - option "不熟"\n' +
+      '        - option "掌握"\n' +
+      '      - checkbox "题库只看收藏" [checked]\n' +
+      '      - text: 只看收藏\n' +
+      '      - paragraph: 只看收藏\n' +
+      '      - checkbox "题库只看内容更新待复习"\n' +
+      '      - text: 只看内容更新待复习\n' +
+      '      - paragraph: 有效题目\n' +
+      '      - button "筛选题库"\n' +
+      '      - button "清空题库筛选"\n' +
+      '      - text: 共 1 题\n' +
+      '      - complementary "题目列表":\n' +
+      '        - list:\n' +
+      '          - listitem:\n' +
+      '            - button "STM32F103RCT6 GPIO 阶段自测题 · gpio-004 SystemCoreClockUpdate职责 难度：易（基础） 已揭晓，未自评 已收藏": STM32F103RCT6 GPIO 阶段自测题 · gpio-004 SystemCoreClockUpdate职责 易（基础） 已揭晓，未自评 已收藏\n' +
+      '        - navigation "题目分页":\n' +
+      '          - button "上一页" [disabled]\n' +
+      '          - text: 1 / 1\n' +
+      '          - button "下一页" [disabled]\n' +
+      '      - text: 选择一道题查看内容，再主动展开单题历史。\n' +
+      '  - status:\n' +
+      '    - paragraph: 本地数据已就绪\n' +
+      '- contentinfo: 离线使用 · 数据保存在本机 V0.0.1 测试版 · 构建 20261025.3-workbench-e'
+  }
+}
+
+Node.js v24.19.0
