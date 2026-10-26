@@ -206,7 +206,8 @@ async function restoreBackup(token: string): Promise<{ protectionPath: string }>
       dataLocationsIpc?.resume()
     }
     if (error instanceof BackupFault) throw error
-    reportError(new Error('恢复准备或连接关闭失败，未继续替换。'))
+    // 记录真实原因；写死文案会掩盖恢复目录权限或磁盘空间问题。
+    reportError(error)
     throw new BackupFault(
       'RESTORE_FAILED',
       '恢复未完成，原数据保留。请检查保护性备份及本地诊断日志后重试。',
