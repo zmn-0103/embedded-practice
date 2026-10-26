@@ -60,11 +60,11 @@ async function runtime(
     expect(resolve(actual.appPath)).toBe(resolve('out/main'))
     expect(actual.arguments).toContain(resolve('out/main/index.js'))
   }
-  await expect(page.locator('footer')).toContainText('20261026.2-workbench-e-ui3')
+  await expect(page.locator('footer')).toContainText('20261026.3-v002')
   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())
   expect(schema).toEqual({ user_version: 10 })
   await info.attach('runtime.json', {
-    body: JSON.stringify({ ...actual, schema, build: '20261026.2-workbench-e-ui3' }, null, 2),
+    body: JSON.stringify({ ...actual, schema, build: '20261026.3-v002' }, null, 2),
     contentType: 'application/json',
   })
 }

@@ -25,13 +25,13 @@ export async function verifyThemeTarget(
   }))
   expect(actual.userData).toBe(directory)
   expect(actual.packaged).toBe(project === 'packaged')
-  expect(actual.version).toBe(project === 'packaged' ? '0.0.1' : '42.11.15')
+  expect(actual.version).toBe(project === 'packaged' ? '0.0.2' : '42.11.15')
   if (project === 'packaged') {
     const target = process.env['EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE']
     if (!target) throw new Error('必须显式指定本轮新EXE')
     expect(actual.exe.toLowerCase()).toBe(resolve(target).toLowerCase())
   }
-  await expect(page.locator('footer')).toContainText('20261026.2-workbench-e-ui3')
+  await expect(page.locator('footer')).toContainText('20261026.3-v002')
   expect(
     withHistoryDatabase(directory, (database) => database.prepare('PRAGMA user_version').get()),
   ).toEqual({ user_version: 10 })
