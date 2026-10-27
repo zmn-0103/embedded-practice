@@ -1,0 +1,264 @@
+{
+  "environment": {
+    "windows": "10.0.26200",
+    "cpu": "13th Gen Intel(R) Core(TM) i5-13500HX",
+    "memoryBytes": 16883900416,
+    "freeMemoryBytes": 2214367232,
+    "node": "v24.19.0"
+  },
+  "runtime": {
+    "executable": "E:\\My_Projects\\embedded-practice\\release\\findability-20261023-r2\\win-unpacked\\embedded-practice.exe",
+    "sha256": "96dcbc355df16ad3a746afabc9f461673d2a1f3d6c8eb8439b4002676245e982",
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\独立 数据",
+    "packaged": true,
+    "versions": {
+      "node": "24.19.0",
+      "acorn": "8.17.0",
+      "ada": "3.4.4",
+      "amaro": "1.1.10",
+      "ares": "1.34.6",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.2",
+      "llhttp": "9.4.3",
+      "merve": "1.2.2",
+      "modules": "146",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.69.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "openssl": "0.0.0",
+      "simdjson": "4.6.4",
+      "simdutf": "7.7.0",
+      "sqlite": "3.53.3",
+      "tz": "2025c",
+      "undici": "7.29.0",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "14.8.178.38-electron.0",
+      "zlib": "1.3.2.1-motley",
+      "zstd": "1.6.0",
+      "electron": "42.11.15",
+      "chrome": "148.0.7778.280"
+    },
+    "size": [
+      1140,
+      780
+    ]
+  },
+  "samples": {
+    "topics": 10,
+    "questions": 5000,
+    "images": 500,
+    "markdownBytes": 2048165,
+    "imageBytes": 17282001,
+    "files": [
+      {
+        "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\多专题 生成样本\\专题 1.md",
+        "sha256": "9617c2f21d4f7206f4329bde3c8a12be454930d71adbf24afc5ac0a5bc7dd90e"
+      },
+      {
+        "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\多专题 生成样本\\专题 2.md",
+        "sha256": "9c61c939f5b4d72601a4113738090dcbc587a6a99600cacfd027bbb0a3a3c8cc"
+      },
+      {
+        "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\多专题 生成样本\\专题 3.md",
+        "sha256": "024f4a86d5f7097b04ae3a02935e30ed32100459f8a2d5fe2620c8ca7c0ad2fe"
+      },
+      {
+        "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\多专题 生成样本\\专题 4.md",
+        "sha256": "7137afbecc366987a1b791b7edc6625a88ff3a50b0dc9de9289d8e658fde85bf"
+      },
+      {
+        "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\多专题 生成样本\\专题 5.md",
+        "sha256": "34d789c1f14ee328517c3993e4fc1ea96f20577f63df1c6e7c7d1bb34dcd18cd"
+      },
+      {
+        "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\多专题 生成样本\\专题 6.md",
+        "sha256": "d877595e5ae21231028d8a9dd65ee207459eacc61792162d6bc845ece83d1ee3"
+      },
+      {
+        "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\多专题 生成样本\\专题 7.md",
+        "sha256": "732fbf63e4b9fe41cc920d21864f254e596b081878fff48ff4964e4956c46c79"
+      },
+      {
+        "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\多专题 生成样本\\专题 8.md",
+        "sha256": "3f491f648892cbddece8238d704b0a7e07a59d1e28aefa2604c7386ad84d9802"
+      },
+      {
+        "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\多专题 生成样本\\专题 9.md",
+        "sha256": "9b127efb253d5f2992d0344c24b0397a11efd17b4e88f6c1406b6603146ab6c7"
+      },
+      {
+        "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-findability-ZqAmPs\\多专题 生成样本\\专题 10.md",
+        "sha256": "63ceed0f2c4e31483d7aab43bc81af2a309acc57f71efa8ca793b54ce9c465f1"
+      }
+    ]
+  },
+  "history": {
+    "rounds": 20,
+    "records": 10000,
+    "topicId": "perf-topic-01",
+    "generatedViaProductionService": true,
+    "failures": [],
+    "databaseBytes": 31215616
+  },
+  "statistics": {
+    "searchMs": {
+      "count": 30,
+      "min": 17.100000001490116,
+      "median": 22.300000000745058,
+      "p95": 22.900000002235174,
+      "max": 26.300000000745058
+    },
+    "switchPaintMs": {
+      "count": 120,
+      "min": 12.299999997019768,
+      "median": 20.25,
+      "p95": 39.19999999925494,
+      "max": 42.69999999925494
+    },
+    "switchEnabledMs": {
+      "count": 120,
+      "min": 501.8999999985099,
+      "median": 507.5,
+      "p95": 509.30000000074506,
+      "max": 511.20000000298023
+    },
+    "startupMs": {
+      "count": 5,
+      "min": 528.5081000000064,
+      "median": 639.8451999999961,
+      "p95": 649.4523999999947,
+      "max": 649.4523999999947
+    }
+  },
+  "targets": {
+    "searchUnder500ms": true,
+    "switchUnder200ms": true,
+    "startupUnder3000ms": true
+  },
+  "final": {
+    "counts": {
+      "topics": 10,
+      "questions": 5000,
+      "question_versions": 5000,
+      "image_resources": 500,
+      "practice_sessions": 22,
+      "practice_items": 15001
+    },
+    "bytes": 32559104,
+    "integrity": [
+      {
+        "integrity_check": "ok"
+      }
+    ],
+    "foreignKeys": []
+  },
+  "finalSchema": 7,
+  "completed": true,
+  "errors": [],
+  "memory": [
+    {
+      "position": 1,
+      "workingSetKiB": 510408,
+      "privateKiB": 369104,
+      "rendererApproximateHeap": {
+        "used": 13400000,
+        "total": 20500000
+      }
+    },
+    {
+      "position": 31,
+      "workingSetKiB": 435768,
+      "privateKiB": 292772,
+      "rendererApproximateHeap": {
+        "used": 13400000,
+        "total": 20500000
+      }
+    },
+    {
+      "position": 61,
+      "workingSetKiB": 432996,
+      "privateKiB": 290872,
+      "rendererApproximateHeap": {
+        "used": 13400000,
+        "total": 20500000
+      }
+    },
+    {
+      "position": 91,
+      "workingSetKiB": 423524,
+      "privateKiB": 284344,
+      "rendererApproximateHeap": {
+        "used": 13400000,
+        "total": 20500000
+      }
+    },
+    {
+      "position": 121,
+      "workingSetKiB": 427604,
+      "privateKiB": 287560,
+      "rendererApproximateHeap": {
+        "used": 13400000,
+        "total": 20500000
+      }
+    }
+  ],
+  "scrolling": [
+    {
+      "zoom": 1,
+      "limit": 3411,
+      "dpr": 1,
+      "viewport": {
+        "width": 1124,
+        "height": 741
+      },
+      "reachedTop": true,
+      "frameIntervalsMs": {
+        "count": 120,
+        "min": 1.1000000014901161,
+        "median": 5,
+        "p95": 5.199999999254942,
+        "max": 9.199999999254942
+      }
+    },
+    {
+      "zoom": 1.25,
+      "limit": 3582,
+      "dpr": 1.25,
+      "viewport": {
+        "width": 899,
+        "height": 593
+      },
+      "reachedTop": true,
+      "frameIntervalsMs": {
+        "count": 120,
+        "min": 4.199999999254942,
+        "median": 5,
+        "p95": 5.199999999254942,
+        "max": 5.599999997764826
+      }
+    },
+    {
+      "zoom": 1.5,
+      "limit": 3760,
+      "dpr": 1.5,
+      "viewport": {
+        "width": 749,
+        "height": 494
+      },
+      "reachedTop": true,
+      "frameIntervalsMs": {
+        "count": 120,
+        "min": 1.5999999977648258,
+        "median": 5,
+        "p95": 5.399999998509884,
+        "max": 5.900000002235174
+      }
+    }
+  ]
+}

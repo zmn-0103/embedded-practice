@@ -1,0 +1,29 @@
+{
+  "baseline": "66bbc6c",
+  "sourceFiles": 208,
+  "changed": [
+    {
+      "file": "src\\renderer\\src\\App.tsx",
+      "before": "f37af492ec905853d2c16c07a8c0e4b401aca0b3c9c4f576849c1698e67632bd",
+      "after": "0a2dd4aea12e1dc61d7bc84ce3716baae3177df298b15f0a410f9e22f09db794"
+    },
+    {
+      "file": "tests\\e2e\\theme-helpers.ts",
+      "before": "60a2a6a4a6d365b90c229e3eecf016e650667ec7398c0c3b5bed33e9b78ff526",
+      "after": "99f91752e159abd1f94417789f046e23b89f4886180ddba37c939d419488629e"
+    },
+    {
+      "file": "tests\\e2e\\personal-bank.spec.ts",
+      "before": "154b25f963dbf2466c87c631c31db91f35079079e6f28df2256012b938898811",
+      "after": "b5c7c56bccfeb9eda9b0b98d22298620506c8aae8d068ed2912639ac016f9e5e"
+    },
+    {
+      "file": "tests\\e2e\\board-entry.spec.ts",
+      "before": "2a47a3fae3e2f3ec09b01df1a0550b03b83217d5eb081b4e567ab1a9231d2611",
+      "after": "f130df9139aef17a3594a94cc8ee74097b1604d153475dcfe81ecd659d1bd7b4"
+    }
+  ],
+  "packageAndLockUnchanged": true,
+  "onlyAppBuildMetadataChanged": true,
+  "planPrefixPreserved": true
+}

@@ -1,0 +1,1 @@
+首次包内容核对未进入测试：检查脚本以POSIX路径传入Windows ASAR API，extractFile报告out/main/backup.js未找到。改为node:path.join的本机路径后重新核对；未改程序包。

@@ -1,0 +1,156 @@
+{
+  "status": "sealed",
+  "excludedSelf": "evidence-manifest.json",
+  "files": [
+    {
+      "path": "before/docs/README.md",
+      "bytes": 14592,
+      "sha256": "c66e454b3cafddd405d2db3441abc2ccb21f570ed9e61acbb70a991609561b92"
+    },
+    {
+      "path": "before/docs/代码复查记录.md",
+      "bytes": 262753,
+      "sha256": "510bc150ae54ff11c092c2d6e24af772b90567d3a58acd0896904c1ee16976a5"
+    },
+    {
+      "path": "before/docs/开发记录.md",
+      "bytes": 64466,
+      "sha256": "af7c7bce591a99842b576b2a4898a9c2f7fe5f2b9cd7c28357c268a573205da8"
+    },
+    {
+      "path": "before/docs/题库分类与标签规范.md",
+      "bytes": 8535,
+      "sha256": "edf2f04eaec2ee6f0e8b36880d4556c7f802ad4df481a3c22ec2d4a9f28a3a7b"
+    },
+    {
+      "path": "before/docs/验收记录.md",
+      "bytes": 128458,
+      "sha256": "29d5672f4125143f5169f1d34fdbbc5baebfdfec31738b5bfea78e6e3cb7fe4f"
+    },
+    {
+      "path": "before/question-banks/README.md",
+      "bytes": 4420,
+      "sha256": "002d6d33f69afac41140f38f0f2e019ae53ec5aaeb35c9daa8f9d63bca457ca2"
+    },
+    {
+      "path": "before/计划书.md",
+      "bytes": 33936,
+      "sha256": "87dc4396e2ac3875fe8d8ea9b6a8a90b4b7a5fd1e0bcf4d0cc3c4e1e1b320aa3"
+    },
+    {
+      "path": "before.json",
+      "bytes": 1309511,
+      "sha256": "e17ab087f992258e4ec486a4e72bfa516287bc1195e0a607907930bdd31050dc"
+    },
+    {
+      "path": "browser-console-01.json",
+      "bytes": 288,
+      "sha256": "9269e1083bff13ad4a3b780f247930c06a9e5be75cc240c3160dd7cbbdd55073"
+    },
+    {
+      "path": "browser-open-01.json",
+      "bytes": 575,
+      "sha256": "3e20af92bb834ff3f7ae8edf06e6e597dd6116c701d21054f6d3eca24fd561e2"
+    },
+    {
+      "path": "browser-ref-01.json",
+      "bytes": 332,
+      "sha256": "2004414739965a58d5ef884f3cc31bedb0632ff984c471ac6295928994a1a280"
+    },
+    {
+      "path": "browser-verification.json",
+      "bytes": 1140,
+      "sha256": "0816cac2713a0b8ce52961f18320aae59e27cd0382a81ca92d336f0a91f3b17c"
+    },
+    {
+      "path": "c-expanded-before-label-fix.yml",
+      "bytes": 9273,
+      "sha256": "a342b3de0478c219ba29e3289d1254ce7af7ff1512c19dd91b248e5df20b6984"
+    },
+    {
+      "path": "c-expanded.yml",
+      "bytes": 9249,
+      "sha256": "979f58f4801a5c4f154ac930496ce5da930796653e752b7613cb98c24f1cb2f4"
+    },
+    {
+      "path": "catalog-verification.json",
+      "bytes": 1542,
+      "sha256": "32071e3abad21e2c74dbf8ff4ce037d6128375325f094df47e152a47693e18db"
+    },
+    {
+      "path": "links-verification.json",
+      "bytes": 206222,
+      "sha256": "ccc4327d0ded5794871417cc20811a3ce42fe1e68519dcd26427f0c8725a7816"
+    },
+    {
+      "path": "preview-01.html",
+      "bytes": 24307,
+      "sha256": "f389a0f6bec1c0b6bdc47d7f193fa3359fc3b773de3498a3a2cb47a30cfeb2e3"
+    },
+    {
+      "path": "preview-02.html",
+      "bytes": 24338,
+      "sha256": "98c99e732607fd310cf6a1cd6086433748433743632a234166ddab5822c0c26c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4442,
+      "sha256": "0120547e444966d47669f07b29d605b52db24bd27dc244dc2edb1539fd187198"
+    },
+    {
+      "path": "references/reference-01.png",
+      "bytes": 101913,
+      "sha256": "afa6ecc9f7fe67f6cd77a4aff41b6f8b7054d5b48ac56398af1b895139c57386"
+    },
+    {
+      "path": "references/reference-02.png",
+      "bytes": 102622,
+      "sha256": "f15982f6f0c37a2c1cdd9a568dd0e7dc1f040bc018482905ccff1c6f7b05b3d5"
+    },
+    {
+      "path": "references/reference-03.png",
+      "bytes": 39589,
+      "sha256": "6593b87cf475e5dbdac0749db1ed7437652eb6de2fe8ec47ea4113735455f6b5"
+    },
+    {
+      "path": "references/reference-04.png",
+      "bytes": 43748,
+      "sha256": "34109e8d57a32b37745f00e4ed2fcdb859b84bb2d9293749c83cd99cf124cf61"
+    },
+    {
+      "path": "references/reference-05.png",
+      "bytes": 6132,
+      "sha256": "185287b3e60727900d7d50604b1e060c5d106442ccc5816f03577988c10facea"
+    },
+    {
+      "path": "scope-verification.json",
+      "bytes": 982,
+      "sha256": "9ecc5b66ee9535ed57b3a11b8a5af500bf39326f4a803a50da445865dae28dd6"
+    },
+    {
+      "path": "script-checks.json",
+      "bytes": 570,
+      "sha256": "8f0562ad20690961fca93c4f1cfcbae2530a3b2f0a31f2a4c9e5b62f6f8f27c8"
+    },
+    {
+      "path": "search-empty.yml",
+      "bytes": 1309,
+      "sha256": "6ed9f83c29b0e86db227a44be0d486fa1dc91dbd13cd5a15c9fce271c87b339f"
+    },
+    {
+      "path": "search-extension.yml",
+      "bytes": 1743,
+      "sha256": "5a7ed3d3cde48f099daae312c10f7c47e857d66fd8575887c7190b375111356b"
+    },
+    {
+      "path": "search-linux.yml",
+      "bytes": 2275,
+      "sha256": "8743249d6535b1579c244e7e9110dfe3f58555fcd9acace8c8d783dcb7569680"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 1808,
+      "sha256": "4b2dd928191a1d57779f979fd37d13fdb9b32c84e484f15f8532b00bed10569e"
+    }
+  ]
+}

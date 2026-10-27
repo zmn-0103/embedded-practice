@@ -1,0 +1,254 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/board-entry.spec.ts",
+      "--project=development",
+      "--output=docs/evidence/board-entry-20261024/targeted-01-artifacts"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/board-entry-20261024/targeted-01-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/board-entry-20261024/targeted-01-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\board-entry-20261024\\targeted-01-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "board-entry.spec.ts",
+      "file": "board-entry.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2222,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"E:\\\\My_Projects\\\\embedded-practice\"\u001b[39m\nReceived: \u001b[31m\"E:\\\\My_Projects\\\\embedded-practice\u001b[7m\\\\out\\\\main\u001b[27m\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"E:\\\\My_Projects\\\\embedded-practice\"\u001b[39m\nReceived: \u001b[31m\"E:\\\\My_Projects\\\\embedded-practice\u001b[7m\\\\out\\\\main\u001b[27m\"\u001b[39m\n    at runtime (E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts:51:40)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts:98:5",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts",
+                      "column": 40,
+                      "line": 51
+                    },
+                    "snippet": "  49 |       resolve(process.env['EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE']!),\n  50 |     )\n> 51 |   else expect(resolve(actual.appPath)).toBe(resolve('.'))\n     |                                        ^\n  52 |   await expect(page.locator('footer')).toContainText('20261024.2-boards')\n  53 |   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())\n  54 |   expect(schema).toEqual({ user_version: 9 })"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts",
+                        "column": 40,
+                        "line": 51
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"E:\\\\My_Projects\\\\embedded-practice\"\u001b[39m\nReceived: \u001b[31m\"E:\\\\My_Projects\\\\embedded-practice\u001b[7m\\\\out\\\\main\u001b[27m\"\u001b[39m\n\n  49 |       resolve(process.env['EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE']!),\n  50 |     )\n> 51 |   else expect(resolve(actual.appPath)).toBe(resolve('.'))\n     |                                        ^\n  52 |   await expect(page.locator('footer')).toContainText('20261024.2-boards')\n  53 |   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())\n  54 |   expect(schema).toEqual({ user_version: 9 })\n    at runtime (E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts:51:40)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts:98:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:18:51.692Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\board-entry-20261024\\targeted-01-artifacts\\board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts",
+                    "column": 40,
+                    "line": 51
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1779d5fe0daf7702a7de-0a66ff2e931eb38b1fdb",
+          "file": "board-entry.spec.ts",
+          "line": 83,
+          "column": 5
+        },
+        {
+          "title": "板块入口：实际数量/分页/归档一致，自定义与未分类可达，易中难筛选沿用原值",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1347,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"E:\\\\My_Projects\\\\embedded-practice\"\u001b[39m\nReceived: \u001b[31m\"E:\\\\My_Projects\\\\embedded-practice\u001b[7m\\\\out\\\\main\u001b[27m\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"E:\\\\My_Projects\\\\embedded-practice\"\u001b[39m\nReceived: \u001b[31m\"E:\\\\My_Projects\\\\embedded-practice\u001b[7m\\\\out\\\\main\u001b[27m\"\u001b[39m\n    at runtime (E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts:51:40)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts:137:5",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts",
+                      "column": 40,
+                      "line": 51
+                    },
+                    "snippet": "  49 |       resolve(process.env['EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE']!),\n  50 |     )\n> 51 |   else expect(resolve(actual.appPath)).toBe(resolve('.'))\n     |                                        ^\n  52 |   await expect(page.locator('footer')).toContainText('20261024.2-boards')\n  53 |   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())\n  54 |   expect(schema).toEqual({ user_version: 9 })"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts",
+                        "column": 40,
+                        "line": 51
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"E:\\\\My_Projects\\\\embedded-practice\"\u001b[39m\nReceived: \u001b[31m\"E:\\\\My_Projects\\\\embedded-practice\u001b[7m\\\\out\\\\main\u001b[27m\"\u001b[39m\n\n  49 |       resolve(process.env['EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE']!),\n  50 |     )\n> 51 |   else expect(resolve(actual.appPath)).toBe(resolve('.'))\n     |                                        ^\n  52 |   await expect(page.locator('footer')).toContainText('20261024.2-boards')\n  53 |   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())\n  54 |   expect(schema).toEqual({ user_version: 9 })\n    at runtime (E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts:51:40)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts:137:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:18:54.270Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\board-entry-20261024\\targeted-01-artifacts\\board-entry-板块入口：实际数量-分页-归档一致，自定义与未分类可达，易中难筛选沿用原值-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts",
+                    "column": 40,
+                    "line": 51
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1779d5fe0daf7702a7de-782f10b2d8ac4cd0c939",
+          "file": "board-entry.spec.ts",
+          "line": 132,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T05:18:51.149Z",
+    "duration": 4521.572,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

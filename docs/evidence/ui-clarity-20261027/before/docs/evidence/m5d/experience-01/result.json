@@ -1,0 +1,823 @@
+{
+  "startedAt": "2026-10-23T02:26:48.828Z",
+  "dataDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5d-4tnw379e\\体验 数据-KroqSF",
+  "samplesFile": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\m5d\\samples-01\\samples.json",
+  "scope": "real unpacked Electron; explicit file-dialog selection replacement; real OS clipboard",
+  "events": [
+    {
+      "label": "3-question reading fixture",
+      "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5d-4tnw379e\\中文 空格阅读样本\\M5 阅读体验验收.md",
+      "preparing": {
+        "elapsedMs": 178,
+        "timerTicks": 5,
+        "maxTimerGapMs": 94.20000000018626,
+        "messages": [
+          "匹配 0 题",
+          "正在选择并检查题库文件与图片…取消准备"
+        ]
+      },
+      "committing": {
+        "elapsedMs": 40.799999999813735,
+        "timerTicks": 1,
+        "maxTimerGapMs": 21.299999999813735,
+        "messages": [
+          "匹配 0 题",
+          "导入完成：新增 3，内容更新 0，信息变更 0，不变 0，归档 0，恢复 0。"
+        ]
+      },
+      "counts": [
+        "3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "code-copy",
+      "sha256": "87c98e115c8acde9a5918a70a577c7e6748688291cbbf3fcc8099aeb792214e0",
+      "width": 985,
+      "fullWidth": 2238,
+      "left": 500,
+      "height": 5319
+    },
+    {
+      "label": "01-long-code",
+      "windowBounds": {
+        "x": 390,
+        "y": 126,
+        "width": 1140,
+        "height": 780
+      },
+      "display": {
+        "accelerometerSupport": "unknown",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "colorDepth": 32,
+        "colorSpace": "{r:[0.6496, 0.3282], g:[0.3002, 0.6107], b:[0.1430, 0.0659], w:[0.3127, 0.3290]}, transfer:SRGB, matrix:RGB, range:FULL}",
+        "depthPerComponent": 8,
+        "detected": true,
+        "displayFrequency": 200,
+        "id": 2205059875,
+        "internal": false,
+        "label": "H25T7-2",
+        "maximumCursorSize": {
+          "width": 0,
+          "height": 0
+        },
+        "monochrome": false,
+        "nativeOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scaleFactor": 1,
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1032
+        },
+        "workAreaSize": {
+          "width": 1920,
+          "height": 1032
+        },
+        "touchSupport": "unknown"
+      },
+      "zoomFactor": 1,
+      "viewport": {
+        "width": 1124,
+        "height": 741,
+        "dpr": 1
+      },
+      "theme": "system",
+      "fontSize": "17",
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "pageWidth": 1109,
+      "focus": {
+        "tag": "BUTTON",
+        "text": "复制代码"
+      }
+    },
+    {
+      "label": "02-long-answer-bottom",
+      "windowBounds": {
+        "x": 390,
+        "y": 126,
+        "width": 1140,
+        "height": 780
+      },
+      "display": {
+        "accelerometerSupport": "unknown",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "colorDepth": 32,
+        "colorSpace": "{r:[0.6496, 0.3282], g:[0.3002, 0.6107], b:[0.1430, 0.0659], w:[0.3127, 0.3290]}, transfer:SRGB, matrix:RGB, range:FULL}",
+        "depthPerComponent": 8,
+        "detected": true,
+        "displayFrequency": 200,
+        "id": 2205059875,
+        "internal": false,
+        "label": "H25T7-2",
+        "maximumCursorSize": {
+          "width": 0,
+          "height": 0
+        },
+        "monochrome": false,
+        "nativeOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scaleFactor": 1,
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1032
+        },
+        "workAreaSize": {
+          "width": 1920,
+          "height": 1032
+        },
+        "touchSupport": "unknown"
+      },
+      "zoomFactor": 1,
+      "viewport": {
+        "width": 1124,
+        "height": 741,
+        "dpr": 1
+      },
+      "theme": "system",
+      "fontSize": "17",
+      "scroll": {
+        "x": 0,
+        "y": 10288
+      },
+      "pageWidth": 1109,
+      "focus": {
+        "tag": "BODY",
+        "text": "\n    练离线 · 专注 · 积累嵌入式刷题本本地题库第 1 / 3 题 · 顺序练习M5 阅读验收样本（非正式题库） · 基础 · 体验验收多屏代码与长答案验收用例：核对下列 180 余行代码的长"
+      }
+    },
+    {
+      "label": "03-light-15",
+      "windowBounds": {
+        "x": 390,
+        "y": 126,
+        "width": 1140,
+        "height": 780
+      },
+      "display": {
+        "accelerometerSupport": "unknown",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "colorDepth": 32,
+        "colorSpace": "{r:[0.6496, 0.3282], g:[0.3002, 0.6107], b:[0.1430, 0.0659], w:[0.3127, 0.3290]}, transfer:SRGB, matrix:RGB, range:FULL}",
+        "depthPerComponent": 8,
+        "detected": true,
+        "displayFrequency": 200,
+        "id": 2205059875,
+        "internal": false,
+        "label": "H25T7-2",
+        "maximumCursorSize": {
+          "width": 0,
+          "height": 0
+        },
+        "monochrome": false,
+        "nativeOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scaleFactor": 1,
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1032
+        },
+        "workAreaSize": {
+          "width": 1920,
+          "height": 1032
+        },
+        "touchSupport": "unknown"
+      },
+      "zoomFactor": 1,
+      "viewport": {
+        "width": 1124,
+        "height": 741,
+        "dpr": 1
+      },
+      "theme": "light",
+      "fontSize": "15",
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "pageWidth": 1109,
+      "focus": {
+        "tag": "H2",
+        "text": "多屏代码与长答案"
+      }
+    },
+    {
+      "label": "03-dark-22",
+      "windowBounds": {
+        "x": 390,
+        "y": 126,
+        "width": 1140,
+        "height": 780
+      },
+      "display": {
+        "accelerometerSupport": "unknown",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "colorDepth": 32,
+        "colorSpace": "{r:[0.6496, 0.3282], g:[0.3002, 0.6107], b:[0.1430, 0.0659], w:[0.3127, 0.3290]}, transfer:SRGB, matrix:RGB, range:FULL}",
+        "depthPerComponent": 8,
+        "detected": true,
+        "displayFrequency": 200,
+        "id": 2205059875,
+        "internal": false,
+        "label": "H25T7-2",
+        "maximumCursorSize": {
+          "width": 0,
+          "height": 0
+        },
+        "monochrome": false,
+        "nativeOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scaleFactor": 1,
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1032
+        },
+        "workAreaSize": {
+          "width": 1920,
+          "height": 1032
+        },
+        "touchSupport": "unknown"
+      },
+      "zoomFactor": 1,
+      "viewport": {
+        "width": 1124,
+        "height": 741,
+        "dpr": 1
+      },
+      "theme": "dark",
+      "fontSize": "22",
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "pageWidth": 1109,
+      "focus": {
+        "tag": "H2",
+        "text": "多屏代码与长答案"
+      }
+    },
+    {
+      "label": "04-PNG-zoom",
+      "windowBounds": {
+        "x": 390,
+        "y": 126,
+        "width": 1140,
+        "height": 780
+      },
+      "display": {
+        "accelerometerSupport": "unknown",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "colorDepth": 32,
+        "colorSpace": "{r:[0.6496, 0.3282], g:[0.3002, 0.6107], b:[0.1430, 0.0659], w:[0.3127, 0.3290]}, transfer:SRGB, matrix:RGB, range:FULL}",
+        "depthPerComponent": 8,
+        "detected": true,
+        "displayFrequency": 200,
+        "id": 2205059875,
+        "internal": false,
+        "label": "H25T7-2",
+        "maximumCursorSize": {
+          "width": 0,
+          "height": 0
+        },
+        "monochrome": false,
+        "nativeOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scaleFactor": 1,
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1032
+        },
+        "workAreaSize": {
+          "width": 1920,
+          "height": 1032
+        },
+        "touchSupport": "unknown"
+      },
+      "zoomFactor": 1,
+      "viewport": {
+        "width": 1124,
+        "height": 741,
+        "dpr": 1
+      },
+      "theme": "dark",
+      "fontSize": "22",
+      "scroll": {
+        "x": 0,
+        "y": 158
+      },
+      "pageWidth": 1109,
+      "focus": {
+        "tag": "BUTTON",
+        "text": "放大图片"
+      }
+    },
+    {
+      "label": "image-pan",
+      "format": "PNG",
+      "left": 2866,
+      "top": 1693,
+      "width": 974,
+      "height": 467
+    },
+    {
+      "label": "04-JPEG-zoom",
+      "windowBounds": {
+        "x": 390,
+        "y": 126,
+        "width": 1140,
+        "height": 780
+      },
+      "display": {
+        "accelerometerSupport": "unknown",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "colorDepth": 32,
+        "colorSpace": "{r:[0.6496, 0.3282], g:[0.3002, 0.6107], b:[0.1430, 0.0659], w:[0.3127, 0.3290]}, transfer:SRGB, matrix:RGB, range:FULL}",
+        "depthPerComponent": 8,
+        "detected": true,
+        "displayFrequency": 200,
+        "id": 2205059875,
+        "internal": false,
+        "label": "H25T7-2",
+        "maximumCursorSize": {
+          "width": 0,
+          "height": 0
+        },
+        "monochrome": false,
+        "nativeOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scaleFactor": 1,
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1032
+        },
+        "workAreaSize": {
+          "width": 1920,
+          "height": 1032
+        },
+        "touchSupport": "unknown"
+      },
+      "zoomFactor": 1,
+      "viewport": {
+        "width": 1124,
+        "height": 741,
+        "dpr": 1
+      },
+      "theme": "dark",
+      "fontSize": "22",
+      "scroll": {
+        "x": 0,
+        "y": 876
+      },
+      "pageWidth": 1109,
+      "focus": {
+        "tag": "BUTTON",
+        "text": "放大图片"
+      }
+    },
+    {
+      "label": "image-pan",
+      "format": "JPEG",
+      "left": 2626,
+      "top": 1933,
+      "width": 974,
+      "height": 467
+    },
+    {
+      "label": "04-WEBP-zoom",
+      "windowBounds": {
+        "x": 390,
+        "y": 126,
+        "width": 1140,
+        "height": 780
+      },
+      "display": {
+        "accelerometerSupport": "unknown",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "colorDepth": 32,
+        "colorSpace": "{r:[0.6496, 0.3282], g:[0.3002, 0.6107], b:[0.1430, 0.0659], w:[0.3127, 0.3290]}, transfer:SRGB, matrix:RGB, range:FULL}",
+        "depthPerComponent": 8,
+        "detected": true,
+        "displayFrequency": 200,
+        "id": 2205059875,
+        "internal": false,
+        "label": "H25T7-2",
+        "maximumCursorSize": {
+          "width": 0,
+          "height": 0
+        },
+        "monochrome": false,
+        "nativeOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scaleFactor": 1,
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1032
+        },
+        "workAreaSize": {
+          "width": 1920,
+          "height": 1032
+        },
+        "touchSupport": "unknown"
+      },
+      "zoomFactor": 1,
+      "viewport": {
+        "width": 1124,
+        "height": 741,
+        "dpr": 1
+      },
+      "theme": "dark",
+      "fontSize": "22",
+      "scroll": {
+        "x": 0,
+        "y": 1595
+      },
+      "pageWidth": 1109,
+      "focus": {
+        "tag": "BUTTON",
+        "text": "放大图片"
+      }
+    },
+    {
+      "label": "image-pan",
+      "format": "WEBP",
+      "left": 2098,
+      "top": 1837,
+      "width": 974,
+      "height": 467
+    },
+    {
+      "label": "05-autosave-preview",
+      "windowBounds": {
+        "x": 390,
+        "y": 126,
+        "width": 1140,
+        "height": 780
+      },
+      "display": {
+        "accelerometerSupport": "unknown",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "colorDepth": 32,
+        "colorSpace": "{r:[0.6496, 0.3282], g:[0.3002, 0.6107], b:[0.1430, 0.0659], w:[0.3127, 0.3290]}, transfer:SRGB, matrix:RGB, range:FULL}",
+        "depthPerComponent": 8,
+        "detected": true,
+        "displayFrequency": 200,
+        "id": 2205059875,
+        "internal": false,
+        "label": "H25T7-2",
+        "maximumCursorSize": {
+          "width": 0,
+          "height": 0
+        },
+        "monochrome": false,
+        "nativeOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scaleFactor": 1,
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1032
+        },
+        "workAreaSize": {
+          "width": 1920,
+          "height": 1032
+        },
+        "touchSupport": "unknown"
+      },
+      "zoomFactor": 1,
+      "viewport": {
+        "width": 1124,
+        "height": 741,
+        "dpr": 1
+      },
+      "theme": "dark",
+      "fontSize": "22",
+      "scroll": {
+        "x": 0,
+        "y": 1607
+      },
+      "pageWidth": 1109,
+      "focus": {
+        "tag": "BUTTON",
+        "text": "关闭图片"
+      }
+    },
+    {
+      "label": "autosave-in-preview",
+      "pending": "待保存",
+      "atOpen": "待保存",
+      "textSha256": "d79c2039719dc4260b4d6d33cc0e12676ed3267c8a03aa41ca54b1686aee7345"
+    },
+    {
+      "label": "06-reopened",
+      "windowBounds": {
+        "x": 390,
+        "y": 126,
+        "width": 1140,
+        "height": 780
+      },
+      "display": {
+        "accelerometerSupport": "unknown",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "colorDepth": 32,
+        "colorSpace": "{r:[0.6496, 0.3282], g:[0.3002, 0.6107], b:[0.1430, 0.0659], w:[0.3127, 0.3290]}, transfer:SRGB, matrix:RGB, range:FULL}",
+        "depthPerComponent": 8,
+        "detected": true,
+        "displayFrequency": 200,
+        "id": 2205059875,
+        "internal": false,
+        "label": "H25T7-2",
+        "maximumCursorSize": {
+          "width": 0,
+          "height": 0
+        },
+        "monochrome": false,
+        "nativeOrigin": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scaleFactor": 1,
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1032
+        },
+        "workAreaSize": {
+          "width": 1920,
+          "height": 1032
+        },
+        "touchSupport": "unknown"
+      },
+      "zoomFactor": 1,
+      "viewport": {
+        "width": 1124,
+        "height": 741,
+        "dpr": 1
+      },
+      "theme": "dark",
+      "fontSize": "22",
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "pageWidth": 1109,
+      "focus": {
+        "tag": "H2",
+        "text": "三种大图与草稿保存"
+      }
+    }
+  ],
+  "errors": [],
+  "checks": [
+    {
+      "name": "import, unrevealed answer and exact long code",
+      "startedAt": "2026-10-23T02:26:50.376Z",
+      "status": "passed"
+    },
+    {
+      "name": "60 answer paragraphs, bottom navigation and previous question focus",
+      "startedAt": "2026-10-23T02:26:51.011Z",
+      "status": "passed"
+    },
+    {
+      "name": "light 15px and dark 22px persisted display settings",
+      "startedAt": "2026-10-23T02:26:52.934Z",
+      "status": "passed"
+    },
+    {
+      "name": "large PNG JPEG WebP decoding, zoom, scrolling, Escape and focus",
+      "startedAt": "2026-10-23T02:26:54.194Z",
+      "status": "passed"
+    },
+    {
+      "name": "pending autosave completes while large image dialog stays mounted",
+      "startedAt": "2026-10-23T02:26:54.641Z",
+      "status": "passed"
+    },
+    {
+      "name": "normal close, independent reopen and exact saved draft",
+      "startedAt": "2026-10-23T02:26:55.568Z",
+      "status": "passed"
+    }
+  ],
+  "runtime": {
+    "executable": "E:\\My_Projects\\embedded-practice\\release\\win-unpacked\\embedded-practice.exe",
+    "sha256": "eeac64484ef0f1208273b625e95796ad94705abd9529db602dceeabfe102d3a6",
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5d-4tnw379e\\体验 数据-KroqSF",
+    "packaged": true,
+    "versions": {
+      "node": "24.19.0",
+      "acorn": "8.17.0",
+      "ada": "3.4.4",
+      "amaro": "1.1.10",
+      "ares": "1.34.6",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.2",
+      "llhttp": "9.4.3",
+      "merve": "1.2.2",
+      "modules": "146",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.69.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "openssl": "0.0.0",
+      "simdjson": "4.6.4",
+      "simdutf": "7.7.0",
+      "sqlite": "3.53.3",
+      "tz": "2025c",
+      "undici": "7.29.0",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "14.8.178.38-electron.0",
+      "zlib": "1.3.2.1-motley",
+      "zstd": "1.6.0",
+      "electron": "42.11.15",
+      "chrome": "148.0.7778.280"
+    },
+    "size": [
+      1140,
+      780
+    ]
+  },
+  "status": "passed",
+  "database": {
+    "integrity": [
+      {
+        "integrity_check": "ok"
+      }
+    ],
+    "foreignKeys": [],
+    "schema": {
+      "user_version": 6
+    },
+    "sessions": [
+      {
+        "id": "99550401-d1cd-447d-a128-24e405fb650a",
+        "status": "active",
+        "position": 1,
+        "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+      }
+    ],
+    "items": [
+      {
+        "position": 0,
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": "2026-10-23T02:26:51.039Z",
+        "rating": null
+      },
+      {
+        "position": 1,
+        "draft": "M5 大图预览保存\n    四个空格\n\tTab 缩进",
+        "draft_revision": 1,
+        "revealed_at": null,
+        "rating": null
+      },
+      {
+        "position": 2,
+        "draft": "",
+        "draft_revision": 0,
+        "revealed_at": null,
+        "rating": null
+      }
+    ],
+    "settings": [
+      {
+        "theme": "dark",
+        "font_size": 22
+      }
+    ]
+  },
+  "finishedAt": "2026-10-23T02:26:56.901Z"
+}

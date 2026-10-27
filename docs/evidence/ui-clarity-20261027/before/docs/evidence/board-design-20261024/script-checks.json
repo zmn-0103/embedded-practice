@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "check": "node --check scripts/render-board-design.mjs",
+      "status": "fulfilled",
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "check": "prettier --check scripts/render-board-design.mjs question-banks/catalog/板块规划.json",
+      "status": "fulfilled",
+      "exitCode": 0,
+      "output": "Checking formatting...\nAll matched files use Prettier code style!\n"
+    },
+    {
+      "check": "git -c core.whitespace=cr-at-eol diff --check",
+      "status": "fulfilled",
+      "exitCode": 0,
+      "output": ""
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-20T12:23:11.458Z",
+  "baselineFiles": 340,
+  "changed": [
+    "AGENTS.md",
+    "README.md",
+    "docs/代码复查记录.md",
+    "docs/开发说明.md",
+    "docs/使用说明.md",
+    "docs/验收记录.md",
+    "docs/M2第二批行为与验收.md",
+    "docs/README.md",
+    "docs/architecture/M2练习窗口与保存.md",
+    "src/renderer/src/components/LibraryBrowser.tsx",
+    "src/renderer/src/components/MarkdownContent.tsx",
+    "src/renderer/src/components/PracticePane.tsx",
+    "tests/e2e/practice-window.spec.ts"
+  ],
+  "unexpectedChanges": [],
+  "strictUtf8": {
+    "files": 341,
+    "invalid": []
+  },
+  "localLinks": {
+    "changedMarkdownFiles": 10,
+    "checked": 314,
+    "broken": [
+      {
+        "source": "docs/evidence/m2-fixes/README.md",
+        "target": "static-checks.json"
+      }
+    ]
+  },
+  "codeReviews": {
+    "changedCodeFiles": 4,
+    "changedCode": [
+      "src/renderer/src/components/LibraryBrowser.tsx",
+      "src/renderer/src/components/MarkdownContent.tsx",
+      "src/renderer/src/components/PracticePane.tsx",
+      "tests/e2e/practice-window.spec.ts"
+    ],
+    "missingReviews": []
+  },
+  "originalPlanHash": "4217BEA47B9CB28E5A1B8E976BACB57EB769BB25503981A4E0652EA0171E1C73",
+  "unchanged": {
+    "originalPlan": true,
+    "questionBanks": true,
+    "packageAndLock": true,
+    "mainPreloadContractsControllerAndStyles": true
+  },
+  "git": {
+    "branch": "main",
+    "hasCommit": false,
+    "remotes": ""
+  },
+  "passed": false
+}

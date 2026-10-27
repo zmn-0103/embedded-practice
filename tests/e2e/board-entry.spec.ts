@@ -60,11 +60,11 @@ async function runtime(
     expect(resolve(actual.appPath)).toBe(resolve('out/main'))
     expect(actual.arguments).toContain(resolve('out/main/index.js'))
   }
-  await expect(page.locator('footer')).toContainText('20261026.3-v002')
+  await expect(page.locator('footer')).toContainText('20261027.2-ui-adaptive')
   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())
   expect(schema).toEqual({ user_version: 10 })
   await info.attach('runtime.json', {
-    body: JSON.stringify({ ...actual, schema, build: '20261026.3-v002' }, null, 2),
+    body: JSON.stringify({ ...actual, schema, build: '20261027.2-ui-adaptive' }, null, 2),
     contentType: 'application/json',
   })
 }
@@ -494,6 +494,12 @@ test('板块入口：900/1440窗口、四配色明暗、22px与键盘可用，�
           ).not.toHaveAttribute('open')
         }
         await managementSummary.press('Tab')
+        const topicScope = page.getByLabel('专题', { exact: true })
+        await expect(topicScope).toBeFocused()
+        await topicScope.press('Tab')
+        const archiveScope = page.getByRole('checkbox', { name: '查看归档题目', exact: true })
+        await expect(archiveScope).toBeFocused()
+        await archiveScope.press('Tab')
         await expect(page.getByRole('searchbox', { name: '题库搜索', exact: true })).toBeFocused()
         const navigationSummary = page.locator(
           '.library-navigation .topic-navigation-panel > summary',

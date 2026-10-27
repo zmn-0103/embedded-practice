@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "sources": [
+    {
+      "sourceId": "gpio-stage",
+      "questionCount": 78,
+      "sha256": "bd3b4abf0b34ebd23d3804d132ee00a6c8dd16580f76cbe9972df54494768c4c",
+      "originalAndSnapshotEqual": true,
+      "allQuestionLineRangesAndHashesEqual": true,
+      "hasReferenceAnswers": true
+    },
+    {
+      "sourceId": "uart-level1",
+      "questionCount": 43,
+      "sha256": "9ea5e423307dffe132e22b26a27572b5fb8b1cc15efb257765f7fbe39e6dbddd",
+      "originalAndSnapshotEqual": true,
+      "allQuestionLineRangesAndHashesEqual": true,
+      "hasReferenceAnswers": true
+    },
+    {
+      "sourceId": "uart-level2",
+      "questionCount": 48,
+      "sha256": "22d402ead8353786ffd34e78a9f07497d7afe7d2816a3e7c1ce89a949a8c1edf",
+      "originalAndSnapshotEqual": true,
+      "allQuestionLineRangesAndHashesEqual": true,
+      "hasReferenceAnswers": true
+    },
+    {
+      "sourceId": "spi-level1",
+      "questionCount": 26,
+      "sha256": "6d454b63565ed788076aa78b684cdcbbb48af4d1cb705d8d863cce199c8378d2",
+      "originalAndSnapshotEqual": true,
+      "allQuestionLineRangesAndHashesEqual": true,
+      "hasReferenceAnswers": true
+    },
+    {
+      "sourceId": "spi-level2",
+      "questionCount": 24,
+      "sha256": "5acdba29e1704ca068a91940801fbf92396114787d07697dd82c607099bad53d",
+      "originalAndSnapshotEqual": true,
+      "allQuestionLineRangesAndHashesEqual": true,
+      "hasReferenceAnswers": true
+    },
+    {
+      "sourceId": "i2c-level1",
+      "questionCount": 73,
+      "sha256": "301e3ce8f98950b1ccce6cc3712f71c2f09075ffb3de4e629c471b83ae112e86",
+      "originalAndSnapshotEqual": true,
+      "allQuestionLineRangesAndHashesEqual": true,
+      "hasReferenceAnswers": true
+    },
+    {
+      "sourceId": "i2c-level2",
+      "questionCount": 100,
+      "sha256": "29839a4608c200348360cc6d985f2964cac661dde1aad49474d46351c46f9e74",
+      "originalAndSnapshotEqual": true,
+      "allQuestionLineRangesAndHashesEqual": true,
+      "hasReferenceAnswers": false
+    },
+    {
+      "sourceId": "adc-level1",
+      "questionCount": 41,
+      "sha256": "d51967802eb3f65b679d110d35340264a05fa8eb9d2ef59622ec138ed8f0e669",
+      "originalAndSnapshotEqual": true,
+      "allQuestionLineRangesAndHashesEqual": true,
+      "hasReferenceAnswers": true
+    }
+  ],
+  "originalQuestions": 433,
+  "decisions": {
+    "可保留": 86,
+    "需改写": 186,
+    "不适合纳入": 161
+  },
+  "sourceQuestionsContributingToSamples": 49,
+  "sampleQuestions": 10,
+  "sampleTopics": 5,
+  "questionAndAnswerMetadataHashesMatch": true,
+  "sampleSourcesMappedBothWays": true,
+  "pendingUserReview": 10,
+  "pendingUserExperience": 10,
+  "rawSnapshotObsidianNavigation": "Preserved as original bytes; no Obsidian UI or link repair claimed."
+}

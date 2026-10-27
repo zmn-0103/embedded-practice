@@ -1,0 +1,66 @@
+{
+  "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-ui-audit-fLgzER",
+  "checks": [
+    {
+      "name": "宽窗点击第20项后详情可见性",
+      "value": {
+        "top": -2440.578125,
+        "bottom": -1945.34375,
+        "viewport": 900,
+        "scrollY": 2756
+      }
+    },
+    {
+      "name": "窄窗导航步骤0",
+      "value": {
+        "expanded": "true",
+        "label": "收起导航",
+        "width": "72px",
+        "labelDisplay": "none"
+      }
+    },
+    {
+      "name": "窄窗导航步骤1",
+      "value": {
+        "expanded": "false",
+        "label": "展开导航",
+        "width": "72px",
+        "labelDisplay": "none"
+      }
+    },
+    {
+      "name": "窄窗导航步骤2",
+      "value": {
+        "expanded": "true",
+        "label": "收起导航",
+        "width": "72px",
+        "labelDisplay": "none"
+      }
+    },
+    {
+      "name": "学习记录第一题位置",
+      "value": {
+        "x": 257,
+        "y": 1129.8125,
+        "width": 465.375,
+        "height": 149.640625
+      }
+    },
+    {
+      "name": "外观保存按钮位置",
+      "value": {
+        "x": 857.28125,
+        "y": 1073.5,
+        "width": 100,
+        "height": 40.390625
+      }
+    }
+  ],
+  "actual": {
+    "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.1-workbench-e-20261025.3-r2\\win-unpacked\\embedded-practice.exe",
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-ui-audit-fLgzER",
+    "packaged": true,
+    "version": "0.0.1"
+  },
+  "complete": true
+}

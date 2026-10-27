@@ -1,0 +1,333 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/practice-window.spec.ts",
+      "--project=development",
+      "--grep",
+      "M2 第三批",
+      "--output=tmp/m2c-focused-results"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/tmp/m2c-focused-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/tmp/m2c-focused-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\tmp\\m2c-focused-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-window.spec.ts",
+      "file": "practice-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "M2 第三批：100% 页面缩放下长内容切题回到题首",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3801,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:36:49.657Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "long-content-advance.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLCJzY3JvbGxZIjowLCJ0aXRsZUJveCI6eyJ4Ijo2MSwieSI6MTk5Ljc2NTYyNSwid2lkdGgiOjk4NywiaGVpZ2h0Ijo0MH0sInN0b3JlZCI6eyJzZXNzaW9ucyI6W3siaWQiOiJmMjQ4MmU1My03MjI3LTQ5ZTUtYjYwNy0wNjNhNmY5OTA5M2MiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MSwicmV2aXNpb24iOjJ9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6ImYyNDgyZTUzLTcyMjctNDllNS1iNjA3LTA2M2E2Zjk5MDkzYyIsInBvc2l0aW9uIjowLCJkcmFmdCI6IumVv+etlOahiOmYheivu+aXtuiHquWKqOS/neWtmO+8jOS4jeaKoueEpueCueWSjOmYheivu+S9jee9riIsImRyYWZ0UmV2aXNpb24iOjEsInJldmVhbGVkQXQiOiIyMDI2LTEwLTIwVDEyOjM2OjUwLjYxM1oiLCJyYXRpbmciOiLmjozmj6EiLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiZjI0ODJlNTMtNzIyNy00OWU1LWI2MDctMDYzYTZmOTkwOTNjIiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiZjI0ODJlNTMtNzIyNy00OWU1LWI2MDctMDYzYTZmOTkwOTNjIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiJkYzZhZjc1OS03ZTM0LTQ0OGMtYmM5Ni0yZDcwMTY0YTA4NGQifSx7InJlcXVlc3RfaWQiOiJlZGI1YjY4YS1kYzQ5LTRjM2MtOTUyOS04ZjUxNjMwNGM5ODAifSx7InJlcXVlc3RfaWQiOiIwYWQ4NTQ5OC0yMGZhLTQzNDktYTM0ZS05MmFmZDM1NDIwZmQifV0sImZvcmVpZ25LZXlzIjpbXX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-5034c3150ddbdd6ba1d7",
+          "file": "practice-window.spec.ts",
+          "line": 565,
+          "column": 7
+        },
+        {
+          "title": "M2 第三批：125% 页面缩放下长内容切题回到题首",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3815,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:36:53.487Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "long-content-advance.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjI1LCJzY3JvbGxZIjowLCJ0aXRsZUJveCI6eyJ4Ijo0NC43OTk5OTkyMzcwNjA1NSwieSI6MTk5LjYwMDAwNjEwMzUxNTYyLCJ3aWR0aCI6Nzk3LjYwMDAyNTE3NzAwMiwiaGVpZ2h0Ijo0MH0sInN0b3JlZCI6eyJzZXNzaW9ucyI6W3siaWQiOiIzNDk2ZDJjNC00YTBjLTRhNzAtOWExZC0wY2E5NTg4YmE4MjkiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MSwicmV2aXNpb24iOjJ9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjM0OTZkMmM0LTRhMGMtNGE3MC05YTFkLTBjYTk1ODhiYTgyOSIsInBvc2l0aW9uIjowLCJkcmFmdCI6IumVv+etlOahiOmYheivu+aXtuiHquWKqOS/neWtmO+8jOS4jeaKoueEpueCueWSjOmYheivu+S9jee9riIsImRyYWZ0UmV2aXNpb24iOjEsInJldmVhbGVkQXQiOiIyMDI2LTEwLTIwVDEyOjM2OjU0LjQxMVoiLCJyYXRpbmciOiLmjozmj6EiLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiMzQ5NmQyYzQtNGEwYy00YTcwLTlhMWQtMGNhOTU4OGJhODI5IiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiMzQ5NmQyYzQtNGEwYy00YTcwLTlhMWQtMGNhOTU4OGJhODI5IiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiIxYjNiNTg1Yi04MjM2LTRiOTItOTM0OC02OTlhMjMzZDc4ODgifSx7InJlcXVlc3RfaWQiOiJkZDc1YTMzNy1mNDIzLTQ5NzctYjk3Zi0zZmZjMTliZGZkZjkifSx7InJlcXVlc3RfaWQiOiIyZmZkNTQxNC1jZjE5LTRiYTAtOGM3NC05NTZmMzUwYWNjMGMifV0sImZvcmVpZ25LZXlzIjpbXX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-f19ed47db8bcbda4b96a",
+          "file": "practice-window.spec.ts",
+          "line": 565,
+          "column": 7
+        },
+        {
+          "title": "M2 第三批：150% 页面缩放下长内容切题回到题首",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3770,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:36:57.312Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "long-content-advance.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjUsInNjcm9sbFkiOjAsInRpdGxlQm94Ijp7IngiOjQ0LjY2NjY2NzkzODIzMjQyLCJ5IjoxOTkuNDQ3OTIxNzUyOTI5Nywid2lkdGgiOjY1MC4wMDAwMTkwNzM0ODYzLCJoZWlnaHQiOjQwfSwic3RvcmVkIjp7InNlc3Npb25zIjpbeyJpZCI6IjBmNDdkZGZmLWVmYWUtNGRkMi1hYmRmLWI2NDdmODAxYjc3ZSIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjoxLCJyZXZpc2lvbiI6Mn1dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiMGY0N2RkZmYtZWZhZS00ZGQyLWFiZGYtYjY0N2Y4MDFiNzdlIiwicG9zaXRpb24iOjAsImRyYWZ0Ijoi6ZW/562U5qGI6ZiF6K+75pe26Ieq5Yqo5L+d5a2Y77yM5LiN5oqi54Sm54K55ZKM6ZiF6K+75L2N572uIiwiZHJhZnRSZXZpc2lvbiI6MSwicmV2ZWFsZWRBdCI6IjIwMjYtMTAtMjBUMTI6MzY6NTguMjQ5WiIsInJhdGluZyI6IuaOjOaPoSIsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiIwZjQ3ZGRmZi1lZmFlLTRkZDItYWJkZi1iNjQ3ZjgwMWI3N2UiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiIwZjQ3ZGRmZi1lZmFlLTRkZDItYWJkZi1iNjQ3ZjgwMWI3N2UiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6ImFiZTQxMWUwLWNlN2MtNGEwNi1hYWI4LTg3YjRiYmM5Y2MwNyJ9LHsicmVxdWVzdF9pZCI6ImYwZTU2OTUwLTc5MTQtNDA4Zi04OTZiLWNmY2FhZTQ3YmEwYyJ9LHsicmVxdWVzdF9pZCI6Ijc4YWQwMTdhLTA2YWEtNGU0OC04MjZlLTUxNjY5MWVkYTA1MiJ9XSwiZm9yZWlnbktleXMiOltdfX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-e60c70d6adb669ac2653",
+          "file": "practice-window.spec.ts",
+          "line": 565,
+          "column": 7
+        },
+        {
+          "title": "M2 第三批：长题干末题完成后展示并聚焦结果标题",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2704,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:37:01.088Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "long-content-finished.json",
+                      "contentType": "application/json",
+                      "body": "eyJzZXNzaW9ucyI6W3siaWQiOiIxYWZjYWM1ZS00NjE5LTQ3ZDgtYTNmYy0zMTM5YjNkMGJiOGMiLCJzdGF0dXMiOiJmaW5pc2hlZCIsInBvc2l0aW9uIjozLCJyZXZpc2lvbiI6M31dLCJpdGVtcyI6W3sic2Vzc2lvbklkIjoiMWFmY2FjNWUtNDYxOS00N2Q4LWEzZmMtMzEzOWIzZDBiYjhjIiwicG9zaXRpb24iOjAsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOiIyMDI2LTEwLTIwVDEyOjM3OjAxLjk3NVoifSx7InNlc3Npb25JZCI6IjFhZmNhYzVlLTQ2MTktNDdkOC1hM2ZjLTMxMzliM2QwYmI4YyIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbCwic2tpcHBlZEF0IjoiMjAyNi0xMC0yMFQxMjozNzowMi43NzVaIn0seyJzZXNzaW9uSWQiOiIxYWZjYWM1ZS00NjE5LTQ3ZDgtYTNmYy0zMTM5YjNkMGJiOGMiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6IjIwMjYtMTAtMjBUMTI6Mzc6MDMuNjMzWiJ9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiIxMDc5NmNhMC1jYmU4LTQwOTgtOThlMC05ODNmMmI5Njg3NTUifSx7InJlcXVlc3RfaWQiOiIwZmE2MGU5Ni02MTdmLTQ2MmQtYWM1MC1hZjNhYWE3ZmYxYjkifSx7InJlcXVlc3RfaWQiOiI1NTVjOWI4MS1iNTJjLTQ0NTUtOTU3YS1jMTEzYTQ4N2JkMjMifSx7InJlcXVlc3RfaWQiOiIxMDYwNDdhOC01MTVjLTQ2N2EtOGY0My1iMjk0YjM0NmE2ZjkifV0sImZvcmVpZ25LZXlzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-c3ebc8d0eceb22fe1cc7",
+          "file": "practice-window.spec.ts",
+          "line": 631,
+          "column": 5
+        },
+        {
+          "title": "M2 第三批：强制终止后恢复已确认草稿、原位置与自评",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3334,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T12:37:03.802Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forced-stop-confirmed.json",
+                      "contentType": "application/json",
+                      "body": "eyJwaWQiOjQxNDIwLCJjb25maXJtZWQiOnsic2Vzc2lvbnMiOlt7ImlkIjoiMDNmMGMzN2UtZGQwYS00OTdkLTg2NGUtOGZkYmU2ZTliYzQxIiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjEsInJldmlzaW9uIjoyfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiIwM2YwYzM3ZS1kZDBhLTQ5N2QtODY0ZS04ZmRiZTZlOWJjNDEiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiLnrKzkuIDpopjlt7Lnu4/noa7orqTkv53lrZhcbmludCBhbnN3ZXIgPSAxOyIsImRyYWZ0UmV2aXNpb24iOjEsInJldmVhbGVkQXQiOiIyMDI2LTEwLTIwVDEyOjM3OjA0LjU3N1oiLCJyYXRpbmciOiLkuI3nhp8iLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiMDNmMGMzN2UtZGQwYS00OTdkLTg2NGUtOGZkYmU2ZTliYzQxIiwicG9zaXRpb24iOjEsImRyYWZ0Ijoi56ys5LqM6aKY5bey57uP56Gu6K6k5L+d5a2Y55qE6I2J56i/IiwiZHJhZnRSZXZpc2lvbiI6MSwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9LHsic2Vzc2lvbklkIjoiMDNmMGMzN2UtZGQwYS00OTdkLTg2NGUtOGZkYmU2ZTliYzQxIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGx9XSwicmVjZWlwdHMiOlt7InJlcXVlc3RfaWQiOiJhMjVkNmI2Mi1mY2UxLTQ0NGEtODFiOC1mNzg3ZGU5NTZkYTgifSx7InJlcXVlc3RfaWQiOiI0MjRlOTY0YS0yNzA4LTQ4ZTMtOTc0Ni1kMDdlYmUwMjYyN2EifSx7InJlcXVlc3RfaWQiOiI5MWY2ZmI5Ny02NDZiLTQ5MjQtODVjOC1mOGM1NDUxMzk2MjYifV0sImZvcmVpZ25LZXlzIjpbXX0sImFmdGVyU3RvcCI6eyJzZXNzaW9ucyI6W3siaWQiOiIwM2YwYzM3ZS1kZDBhLTQ5N2QtODY0ZS04ZmRiZTZlOWJjNDEiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MSwicmV2aXNpb24iOjJ9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjAzZjBjMzdlLWRkMGEtNDk3ZC04NjRlLThmZGJlNmU5YmM0MSIsInBvc2l0aW9uIjowLCJkcmFmdCI6IuesrOS4gOmimOW3sue7j+ehruiupOS/neWtmFxuaW50IGFuc3dlciA9IDE7IiwiZHJhZnRSZXZpc2lvbiI6MSwicmV2ZWFsZWRBdCI6IjIwMjYtMTAtMjBUMTI6Mzc6MDQuNTc3WiIsInJhdGluZyI6IuS4jeeGnyIsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiIwM2YwYzM3ZS1kZDBhLTQ5N2QtODY0ZS04ZmRiZTZlOWJjNDEiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiLnrKzkuozpopjlt7Lnu4/noa7orqTkv53lrZjnmoTojYnnqL8iLCJkcmFmdFJldmlzaW9uIjoxLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiIwM2YwYzM3ZS1kZDBhLTQ5N2QtODY0ZS04ZmRiZTZlOWJjNDEiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6ImEyNWQ2YjYyLWZjZTEtNDQ0YS04MWI4LWY3ODdkZTk1NmRhOCJ9LHsicmVxdWVzdF9pZCI6IjQyNGU5NjRhLTI3MDgtNDhlMy05NzQ2LWQwN2ViZTAyNjI3YSJ9LHsicmVxdWVzdF9pZCI6IjkxZjZmYjk3LTY0NmItNDkyNC04NWM4LWY4YzU0NTEzOTYyNiJ9XSwiZm9yZWlnbktleXMiOltdfX0="
+                    },
+                    {
+                      "name": "forced-stop-recovered.json",
+                      "contentType": "application/json",
+                      "body": "eyJzZXNzaW9ucyI6W3siaWQiOiIwM2YwYzM3ZS1kZDBhLTQ5N2QtODY0ZS04ZmRiZTZlOWJjNDEiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MSwicmV2aXNpb24iOjJ9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjAzZjBjMzdlLWRkMGEtNDk3ZC04NjRlLThmZGJlNmU5YmM0MSIsInBvc2l0aW9uIjowLCJkcmFmdCI6IuesrOS4gOmimOW3sue7j+ehruiupOS/neWtmFxuaW50IGFuc3dlciA9IDE7IiwiZHJhZnRSZXZpc2lvbiI6MSwicmV2ZWFsZWRBdCI6IjIwMjYtMTAtMjBUMTI6Mzc6MDQuNTc3WiIsInJhdGluZyI6IuS4jeeGnyIsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiIwM2YwYzM3ZS1kZDBhLTQ5N2QtODY0ZS04ZmRiZTZlOWJjNDEiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiLnrKzkuozpopjlt7Lnu4/noa7orqTkv53lrZjnmoTojYnnqL8iLCJkcmFmdFJldmlzaW9uIjoxLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH0seyJzZXNzaW9uSWQiOiIwM2YwYzM3ZS1kZDBhLTQ5N2QtODY0ZS04ZmRiZTZlOWJjNDEiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbH1dLCJyZWNlaXB0cyI6W3sicmVxdWVzdF9pZCI6ImEyNWQ2YjYyLWZjZTEtNDQ0YS04MWI4LWY3ODdkZTk1NmRhOCJ9LHsicmVxdWVzdF9pZCI6IjQyNGU5NjRhLTI3MDgtNDhlMy05NzQ2LWQwN2ViZTAyNjI3YSJ9LHsicmVxdWVzdF9pZCI6IjkxZjZmYjk3LTY0NmItNDkyNC04NWM4LWY4YzU0NTEzOTYyNiJ9XSwiZm9yZWlnbktleXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-e254dc218b455e5a6309",
+          "file": "practice-window.spec.ts",
+          "line": 661,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-20T12:36:49.332Z",
+    "duration": 17833.43,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

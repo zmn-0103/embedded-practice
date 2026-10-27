@@ -55,11 +55,24 @@ export function LearningOverview({
   }, [refresh, attempt])
   const active = practice.ready ? practice.active : null
   const blocked = disabled || practice.busy || !practice.ready
+  const libraryReady = !loading && !error && Boolean(summary)
   return (
     <div className="learning-overview" aria-label="学习总览" aria-busy={loading || !practice.ready}>
       <section className="overview-welcome">
-        <h2>继续你的嵌入式学习</h2>
-        <p>先独立思考，再对照答案。每一轮积累都保存在本机。</p>
+        <h2>
+          {active
+            ? '继续未完成的练习'
+            : libraryReady
+              ? summary?.total === 0
+                ? '从第一份题库开始'
+                : '开始一轮新的练习'
+              : '确认本机学习状态'}
+        </h2>
+        <p>
+          {active
+            ? '接着上次的位置作答，原队列、草稿和已揭晓状态保留。'
+            : '先独立思考，再对照答案。选择下方入口开始，学习记录保存在本机。'}
+        </p>
       </section>
       <section className="overview-resume" aria-label="当前练习概况">
         {!practice.ready ? (
@@ -67,7 +80,7 @@ export function LearningOverview({
         ) : active ? (
           <>
             <div>
-              <p className="eyebrow">继续原固定队列</p>
+              <p className="eyebrow">下一步 · 继续当前练习</p>
               <h3>{active.item?.topicTitle ?? '上次练习'}</h3>
               <p>
                 当前位置 {active.session.position + 1} / {active.session.total} 题
@@ -92,13 +105,14 @@ export function LearningOverview({
                 继续本轮
               </button>
               <button type="button" disabled={blocked} onClick={onConfigure}>
-                配置新练习
+                开始新练习
               </button>
             </div>
           </>
         ) : !loading && !error && summary?.total === 0 ? (
           <>
             <div>
+              <p className="eyebrow">下一步 · 准备题库</p>
               <h3>从导入你的题库开始</h3>
               <p className="muted">选择 Markdown 文件，核对预览后保存。</p>
             </div>
@@ -116,14 +130,22 @@ export function LearningOverview({
               </button>
             </div>
           </>
+        ) : !libraryReady ? (
+          <div>
+            <h3>确认题库后开始</h3>
+            <p className="muted">
+              {error ? '题库状态尚未确认，请先在下方重试读取总览。' : '正在确认本机题库…'}
+            </p>
+          </div>
         ) : (
           <>
             <div>
+              <p className="eyebrow">下一步 · 开始新练习</p>
               <h3>开始新练习</h3>
               <p className="muted">选择范围、顺序和题数；确认开始后才创建本轮。</p>
             </div>
             <button type="button" className="primary" disabled={blocked} onClick={onConfigure}>
-              配置一轮练习
+              开始新练习
             </button>
           </>
         )}

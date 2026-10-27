@@ -1,0 +1,20 @@
+{
+  "completed": false,
+  "exitCode": 1,
+  "stoppedByAgent": true,
+  "reason": "Repeated database-unavailable scenarios timed out in new test-helper default navigation before original business assertions. Stopped only this verified Playwright process tree; source package unchanged. Original error contexts retained, no total/full-pass claim.",
+  "command": {
+    "chunk_id": "984861",
+    "wall_time_seconds": 10.0155301,
+    "session_id": 74609,
+    "original_token_count": 166,
+    "output": "\nRunning 414 tests using 1 worker\n\n(node:28764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n  ok   1 [development] › tests\\e2e\\backup-legacy.spec.ts:89:7 › 结构 1 备份确认恢复后独立启动保留旧题图收藏草稿和设置 (1.9s)\n  ok   2 [development] › tests\\e2e\\backup-legacy.spec.ts:89:7 › 结构 2 备份确认恢复后独立启动保留旧题图收藏草稿和设置 (2.0s)\n  ok   3 [development] › tests\\e2e\\backup-legacy.spec.ts:89:7 › 结构 3 备份确认恢复后独立启动保留旧题图收藏草稿和设置 (2.0s)\n"
+  },
+  "lastOutput": {
+    "chunk_id": "c43458",
+    "wall_time_seconds": 0.0236731,
+    "exit_code": 1,
+    "original_token_count": 421,
+    "output": "  x  118 [development] › tests\\e2e\\practice-mode-migration.spec.ts:234:7 › v3 迁移拒绝 foreign-key，保留原结构、记录和保护性备份 (10.7s)\n(node:24696) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n  ok 119 [development] › tests\\e2e\\practice-plans-errors.spec.ts:7:5 › 方案失败：读取不伪造空成功、已提交丢响应按原命令重试，停止重试不删已存项 (1.6s)\n  ok 120 [development] › tests\\e2e\\practice-plans-errors.spec.ts:76:7 › 方案正常关闭等待在途保存：成功退出重开保持 (2.3s)\n  ok 121 [development] › tests\\e2e\\practice-plans-errors.spec.ts:76:7 › 方案正常关闭等待在途保存：失败返回窗口原目标重试 (1.4s)\n  ok 122 [development] › tests\\e2e\\practice-plans-migration.spec.ts:59:5 › 结构8方案升级：只追加空方案表，原分类/条件/草稿/自定义对象与保护备份保持 (1.8s)\n  x  123 [development] › tests\\e2e\\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 backup-blocked 停止或完整回滚，原库与分类不修补 (10.7s)\n(node:27664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n  x  124 [development] › tests\\e2e\\practice-plans-migration.spec.ts:144:7 › 结构8方案升级 table-conflict 停止或完整回滚，原库与分类不修补 (10.7s)\n(node:22840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  }
+}

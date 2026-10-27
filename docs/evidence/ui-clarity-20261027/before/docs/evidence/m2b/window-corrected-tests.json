@@ -1,0 +1,387 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/practice-window.spec.ts",
+      "--project=development"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-window.spec.ts",
+      "file": "practice-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "窗口输入/纯思考、答案隐藏、自评修改/跳过/末题与新轮默认",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2187,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T08:14:51.946Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-window-roundtrip.json",
+                      "contentType": "application/json",
+                      "body": "eyJjb21wbGV0ZWQiOnsic2Vzc2lvbnMiOlt7ImlkIjoiYmYyNDdlYWEtMzdmYy00YTZlLWI2OTktNjhlZTJmNjMwMWIwIiwic3RhdHVzIjoiZmluaXNoZWQiLCJwb3NpdGlvbiI6MywicmV2aXNpb24iOjEyfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiJiZjI0N2VhYS0zN2ZjLTRhNmUtYjY5OS02OGVlMmY2MzAxYjAiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiLkuK3mlofovpPlhaVcbmludCBhbnN3ZXIgPSAxOyIsImRyYWZ0UmV2aXNpb24iOjEsInJldmVhbGVkQXQiOiIyMDI2LTEwLTIwVDA4OjE0OjUzLjY4MVoiLCJyYXRpbmciOiLkuI3kvJoifSx7InNlc3Npb25JZCI6ImJmMjQ3ZWFhLTM3ZmMtNGE2ZS1iNjk5LTY4ZWUyZjYzMDFiMCIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOiIyMDI2LTEwLTIwVDA4OjE0OjUzLjc4OFoiLCJyYXRpbmciOm51bGx9LHsic2Vzc2lvbklkIjoiYmYyNDdlYWEtMzdmYy00YTZlLWI2OTktNjhlZTJmNjMwMWIwIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6IjIwMjYtMTAtMjBUMDg6MTQ6NTMuOTI3WiIsInJhdGluZyI6bnVsbH1dLCJmb3JlaWduS2V5cyI6W119LCJmcmVzaCI6eyJzZXNzaW9ucyI6W3siaWQiOiJiZjI0N2VhYS0zN2ZjLTRhNmUtYjY5OS02OGVlMmY2MzAxYjAiLCJzdGF0dXMiOiJmaW5pc2hlZCIsInBvc2l0aW9uIjozLCJyZXZpc2lvbiI6MTJ9LHsiaWQiOiI2M2E2MTgxNS03NzhkLTQzYmItOTNkZS1lM2JhNDg3ZTI3NmQiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MCwicmV2aXNpb24iOjB9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6ImJmMjQ3ZWFhLTM3ZmMtNGE2ZS1iNjk5LTY4ZWUyZjYzMDFiMCIsInBvc2l0aW9uIjowLCJkcmFmdCI6IuS4reaWh+i+k+WFpVxuaW50IGFuc3dlciA9IDE7IiwiZHJhZnRSZXZpc2lvbiI6MSwicmV2ZWFsZWRBdCI6IjIwMjYtMTAtMjBUMDg6MTQ6NTMuNjgxWiIsInJhdGluZyI6IuS4jeS8miJ9LHsic2Vzc2lvbklkIjoiYmYyNDdlYWEtMzdmYy00YTZlLWI2OTktNjhlZTJmNjMwMWIwIiwicG9zaXRpb24iOjEsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6IjIwMjYtMTAtMjBUMDg6MTQ6NTMuNzg4WiIsInJhdGluZyI6bnVsbH0seyJzZXNzaW9uSWQiOiJiZjI0N2VhYS0zN2ZjLTRhNmUtYjY5OS02OGVlMmY2MzAxYjAiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjoiMjAyNi0xMC0yMFQwODoxNDo1My45MjdaIiwicmF0aW5nIjpudWxsfSx7InNlc3Npb25JZCI6IjYzYTYxODE1LTc3OGQtNDNiYi05M2RlLWUzYmE0ODdlMjc2ZCIsInBvc2l0aW9uIjowLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbH0seyJzZXNzaW9uSWQiOiI2M2E2MTgxNS03NzhkLTQzYmItOTNkZS1lM2JhNDg3ZTI3NmQiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGx9LHsic2Vzc2lvbklkIjoiNjNhNjE4MTUtNzc4ZC00M2JiLTkzZGUtZTNiYTQ4N2UyNzZkIiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsfV0sImZvcmVpZ25LZXlzIjpbXX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-73baae7cd39e4f2cec3e",
+          "file": "practice-window.spec.ts",
+          "line": 112,
+          "column": 5
+        },
+        {
+          "title": "写入失败保留输入/阻止切题，自评推进失败按原操作重试",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2019,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T08:14:54.161Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-window-failures.json",
+                      "contentType": "application/json",
+                      "body": "eyJiZWZvcmUiOnsic2Vzc2lvbnMiOlt7ImlkIjoiY2Y5ZDJiZmMtOTllNi00MjAzLWI0ZmUtY2M4NDQ1NzZkY2Q4Iiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjAsInJldmlzaW9uIjoxfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiJjZjlkMmJmYy05OWU2LTQyMDMtYjRmZS1jYzg0NDU3NmRjZDgiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiLmj63mmZPliY3nq4vljbPkv53lrZjnmoTmnIDmlrDovpPlhaUiLCJkcmFmdFJldmlzaW9uIjoyLCJyZXZlYWxlZEF0IjoiMjAyNi0xMC0yMFQwODoxNDo1NS45MTNaIiwicmF0aW5nIjpudWxsfSx7InNlc3Npb25JZCI6ImNmOWQyYmZjLTk5ZTYtNDIwMy1iNGZlLWNjODQ0NTc2ZGNkOCIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbH0seyJzZXNzaW9uSWQiOiJjZjlkMmJmYy05OWU2LTQyMDMtYjRmZS1jYzg0NDU3NmRjZDgiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGx9XSwiZm9yZWlnbktleXMiOltdfSwiYWZ0ZXIiOnsic2Vzc2lvbnMiOlt7ImlkIjoiY2Y5ZDJiZmMtOTllNi00MjAzLWI0ZmUtY2M4NDQ1NzZkY2Q4Iiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjEsInJldmlzaW9uIjoyfV0sIml0ZW1zIjpbeyJzZXNzaW9uSWQiOiJjZjlkMmJmYy05OWU2LTQyMDMtYjRmZS1jYzg0NDU3NmRjZDgiLCJwb3NpdGlvbiI6MCwiZHJhZnQiOiLmj63mmZPliY3nq4vljbPkv53lrZjnmoTmnIDmlrDovpPlhaUiLCJkcmFmdFJldmlzaW9uIjoyLCJyZXZlYWxlZEF0IjoiMjAyNi0xMC0yMFQwODoxNDo1NS45MTNaIiwicmF0aW5nIjoi5o6M5o+hIn0seyJzZXNzaW9uSWQiOiJjZjlkMmJmYy05OWU2LTQyMDMtYjRmZS1jYzg0NDU3NmRjZDgiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGx9LHsic2Vzc2lvbklkIjoiY2Y5ZDJiZmMtOTllNi00MjAzLWI0ZmUtY2M4NDQ1NzZkY2Q4IiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsfV0sImZvcmVpZ25LZXlzIjpbXX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-1c586b042896a1210974",
+          "file": "practice-window.spec.ts",
+          "line": 181,
+          "column": 5
+        },
+        {
+          "title": "返回首页和正常关窗立即保存，独立进程继续原题与草稿",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1794,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T08:14:56.191Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-window-reopened.json",
+                      "contentType": "application/json",
+                      "body": "eyJzZXNzaW9ucyI6W3siaWQiOiJhODg2M2QzMC03MjQ3LTRlOGQtOGI5Ny1kODllMGY5YzM0NTQiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MCwicmV2aXNpb24iOjB9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6ImE4ODYzZDMwLTcyNDctNGU4ZC04Yjk3LWQ4OWUwZjljMzQ1NCIsInBvc2l0aW9uIjowLCJkcmFmdCI6Iuato+W4uOWFs+eql+WJjeWwmuacquetieWIsOWumuaXtuS/neWtmOeahOi+k+WFpSIsImRyYWZ0UmV2aXNpb24iOjIsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbH0seyJzZXNzaW9uSWQiOiJhODg2M2QzMC03MjQ3LTRlOGQtOGI5Ny1kODllMGY5YzM0NTQiLCJwb3NpdGlvbiI6MSwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGx9LHsic2Vzc2lvbklkIjoiYTg4NjNkMzAtNzI0Ny00ZThkLThiOTctZDg5ZTBmOWMzNDU0IiwicG9zaXRpb24iOjIsImRyYWZ0IjoiIiwiZHJhZnRSZXZpc2lvbiI6MCwicmV2ZWFsZWRBdCI6bnVsbCwicmF0aW5nIjpudWxsfV0sImZvcmVpZ25LZXlzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-057e78eab3c32f04e9ee",
+          "file": "practice-window.spec.ts",
+          "line": 226,
+          "column": 5
+        },
+        {
+          "title": "关闭保存失败返回窗口保留输入，修复后可正常关闭",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1133,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T08:14:57.996Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-0b5e1955942576811763",
+          "file": "practice-window.spec.ts",
+          "line": 259,
+          "column": 5
+        },
+        {
+          "title": "只有明确选择放弃时允许未保存退出",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1794,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T08:14:59.138Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-ffebf5981e5545523bf5",
+          "file": "practice-window.spec.ts",
+          "line": 297,
+          "column": 5
+        },
+        {
+          "title": "窗口提交后响应丢失，重试原请求不再次推进",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1029,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T08:15:00.939Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-window-retry.json",
+                      "contentType": "application/json",
+                      "body": "eyJzZXNzaW9ucyI6W3siaWQiOiIwMzJiNjY5ZS1mMGI3LTQyNzgtYTM2Ni00NjFjNTIwNjc2NGYiLCJzdGF0dXMiOiJhY3RpdmUiLCJwb3NpdGlvbiI6MSwicmV2aXNpb24iOjJ9XSwiaXRlbXMiOlt7InNlc3Npb25JZCI6IjAzMmI2NjllLWYwYjctNDI3OC1hMzY2LTQ2MWM1MjA2NzY0ZiIsInBvc2l0aW9uIjowLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOiIyMDI2LTEwLTIwVDA4OjE1OjAxLjc3MloiLCJyYXRpbmciOiLmjozmj6EifSx7InNlc3Npb25JZCI6IjAzMmI2NjllLWYwYjctNDI3OC1hMzY2LTQ2MWM1MjA2NzY0ZiIsInBvc2l0aW9uIjoxLCJkcmFmdCI6IiIsImRyYWZ0UmV2aXNpb24iOjAsInJldmVhbGVkQXQiOm51bGwsInJhdGluZyI6bnVsbH0seyJzZXNzaW9uSWQiOiIwMzJiNjY5ZS1mMGI3LTQyNzgtYTM2Ni00NjFjNTIwNjc2NGYiLCJwb3NpdGlvbiI6MiwiZHJhZnQiOiIiLCJkcmFmdFJldmlzaW9uIjowLCJyZXZlYWxlZEF0IjpudWxsLCJyYXRpbmciOm51bGx9XSwiZm9yZWlnbktleXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-97b3df456212fbec0bdf",
+          "file": "practice-window.spec.ts",
+          "line": 319,
+          "column": 5
+        },
+        {
+          "title": "真实代码 token/复制调用、图片模态缩放与长答案操作区",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1159,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T08:15:01.975Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-d3260ac139d6f7f49209",
+          "file": "practice-window.spec.ts",
+          "line": 370,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-20T08:14:51.505Z",
+    "duration": 11660.858,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

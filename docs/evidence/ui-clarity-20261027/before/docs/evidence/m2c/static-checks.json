@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-10-20T12:48:52.744Z",
+  "baselineFiles": 383,
+  "changed": [
+    "AGENTS.md",
+    "README.md",
+    "docs/产品说明.md",
+    "docs/代码复查记录.md",
+    "docs/开发说明.md",
+    "docs/使用说明.md",
+    "docs/验收记录.md",
+    "docs/README.md",
+    "docs/architecture/M2练习窗口与保存.md",
+    "src/renderer/src/components/PracticePane.tsx",
+    "tests/e2e/practice-window.spec.ts"
+  ],
+  "addedMarkdown": [
+    "docs/M2第三批行为与验收.md",
+    "docs/M2人工验收清单.md",
+    "docs/evidence/m2c/README.md"
+  ],
+  "unexpectedChanges": [],
+  "unexpectedAddedCode": [],
+  "strictUtf8": {
+    "files": 389,
+    "invalid": []
+  },
+  "localLinks": {
+    "markdownFiles": 12,
+    "checked": 371,
+    "broken": []
+  },
+  "codeReviews": {
+    "changedCodeFiles": 2,
+    "changedCode": [
+      "src/renderer/src/components/PracticePane.tsx",
+      "tests/e2e/practice-window.spec.ts"
+    ],
+    "missingReviews": []
+  },
+  "unchanged": {
+    "originalPlan": true,
+    "questionBanks": true,
+    "packageAndLock": true,
+    "mainPreloadContractsControllerStyles": true
+  },
+  "originalPlanHash": "4217BEA47B9CB28E5A1B8E976BACB57EB769BB25503981A4E0652EA0171E1C73",
+  "tests": {
+    "unit": {
+      "total": 405,
+      "passed": 405,
+      "failed": 0,
+      "pending": 0
+    },
+    "development": {
+      "startTime": "2026-10-20T12:40:28.052Z",
+      "duration": 84356.81999999999,
+      "expected": 46,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "packaged": {
+      "startTime": "2026-10-20T12:42:49.518Z",
+      "duration": 84518.856,
+      "expected": 46,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "fullWindowScreenshots": {
+    "files": 6,
+    "correctDimensions": true
+  },
+  "packageInspection": {
+    "allEqual": true,
+    "oldInstallerUnchanged": true
+  },
+  "manualInstructions": {
+    "parseOnly": true,
+    "syntaxErrors": []
+  },
+  "git": {
+    "branch": "main",
+    "hasCommit": false,
+    "remotes": ""
+  },
+  "passed": true
+}

@@ -1,0 +1,532 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=development",
+      "--grep",
+      "M2 第四批",
+      "--repeat-each=3"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 3,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 3,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-window.spec.ts",
+      "file": "practice-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2057,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:31:11.203Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLCJmb2N1c2VkIjp7IngiOjkyLCJ5IjoyMjIuNDUsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6ODc0fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MSwidmlzaWJsZSI6dHJ1ZSwiYm91bmRzIjp7IngiOjM5MCwieSI6MTI2LCJ3aWR0aCI6MTE0MCwiaGVpZ2h0Ijo3ODB9LCJjb250ZW50Qm91bmRzIjp7IngiOjM5OCwieSI6MTU3LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDF9LCJkaXNwbGF5U2NhbGUiOjF9LCJmb2N1c2VkUmVuZGVyZXIiOnsidmlld3BvcnQiOnsid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9LCJzdHlsZSI6eyJib3JkZXIiOiIxcHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA3MjA5OSwic2Nyb2xsWSI6NjQ0LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDEsImRwciI6MX0seyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA3MjEyOCwic2Nyb2xsWSI6NDMwLCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDEsImRwciI6MX1dfSwiZWRpdG9yQm94Ijp7IngiOjc4LCJ5Ijo0MjYuMjUsIndpZHRoIjo5NTMsImhlaWdodCI6MjM3LjEyNX0sInBhbmVsQm94Ijp7IngiOjYxLCJ5Ijo2NDAuMjAzMTI1LCJ3aWR0aCI6OTg3LCJoZWlnaHQiOjkyLjc5Njg3NX19"
+                    },
+                    {
+                      "name": "keyboard-input-saved.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLCJmb2N1c2VkIjp7IngiOjkyLCJ5IjoyMjIuNDUsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6ODc0fSwic2F2ZWQiOnsieCI6OTIsInkiOjIyMi40NSwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjo4NzR9LCJmb2N1c2VkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sInNhdmVkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sImZvY3VzZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDEsImRwciI6MX0sInN0eWxlIjp7ImJvcmRlciI6IjFweCIsImZvbnQiOiIxNnB4IC8gMjYuNHB4IENvbnNvbGFzLCBcIk1pY3Jvc29mdCBZYUhlaVwiLCBtb25vc3BhY2UifSwidHJhY2UiOlt7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDcyMDk5LCJzY3JvbGxZIjo2NDQsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MSwiZHByIjoxfSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDcyMTI4LCJzY3JvbGxZIjo0MzAsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MSwiZHByIjoxfV19LCJzYXZlZFJlbmRlcmVyIjp7InZpZXdwb3J0Ijp7IndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MSwiZHByIjoxfSwic3R5bGUiOnsiYm9yZGVyIjoiMXB4IiwiZm9udCI6IjE2cHggLyAyNi40cHggQ29uc29sYXMsIFwiTWljcm9zb2Z0IFlhSGVpXCIsIG1vbm9zcGFjZSJ9LCJ0cmFjZSI6W3sidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzIwOTksInNjcm9sbFkiOjY0NCwid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzIxMjgsInNjcm9sbFkiOjQzMCwid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzIxNjUsInNjcm9sbFkiOjg3NCwid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9XX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-729a24e602cba4f48937",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2041,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:31:13.289Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjI1LCJmb2N1c2VkIjp7IngiOjc1LjQwMDAwMjI4ODgxODM2LCJ5Ijo3NS42MDAwMDIyODg4MTgzNiwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODh9LCJmb2N1c2VkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLjI1LCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sImZvY3VzZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSwic3R5bGUiOnsiYm9yZGVyIjoiMC44cHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA3NDEyNywic2Nyb2xsWSI6NzE4LjQwMDAyNDQxNDA2MjUsIndpZHRoIjo4OTksImhlaWdodCI6NTkzLCJkcHIiOjEuMjV9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzQxNjIsInNjcm9sbFkiOjU3Ny41OTk5NzU1ODU5Mzc1LCJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fV19LCJlZGl0b3JCb3giOnsieCI6NjEuNjAwMDAyMjg4ODE4MzYsInkiOjM1Miwid2lkdGgiOjc2NC4wMDAwMzQzMzIyNzU0LCJoZWlnaHQiOjIzNi43OTk5ODc3OTI5Njg3NX0sInBhbmVsQm94Ijp7IngiOjQ0Ljc5OTk5OTIzNzA2MDU1LCJ5Ijo0OTIuODAwMDE4MzEwNTQ2OSwid2lkdGgiOjc5Ny42MDAwMjUxNzcwMDIsImhlaWdodCI6OTEuOTk5OTY5NDgyNDIxODh9fQ=="
+                    },
+                    {
+                      "name": "keyboard-input-saved.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjI1LCJmb2N1c2VkIjp7IngiOjc1LjQwMDAwMjI4ODgxODM2LCJ5Ijo3NS42MDAwMDIyODg4MTgzNiwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODh9LCJzYXZlZCI6eyJ4Ijo3NS40MDAwMDIyODg4MTgzNiwieSI6NzUuNjAwMDAyMjg4ODE4MzYsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6MTAyMC43OTk5ODc3OTI5Njg4fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS4yNSwidmlzaWJsZSI6dHJ1ZSwiYm91bmRzIjp7IngiOjM5MCwieSI6MTI2LCJ3aWR0aCI6MTE0MCwiaGVpZ2h0Ijo3ODB9LCJjb250ZW50Qm91bmRzIjp7IngiOjM5OCwieSI6MTU3LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDF9LCJkaXNwbGF5U2NhbGUiOjF9LCJzYXZlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS4yNSwidmlzaWJsZSI6dHJ1ZSwiYm91bmRzIjp7IngiOjM5MCwieSI6MTI2LCJ3aWR0aCI6MTE0MCwiaGVpZ2h0Ijo3ODB9LCJjb250ZW50Qm91bmRzIjp7IngiOjM5OCwieSI6MTU3LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDF9LCJkaXNwbGF5U2NhbGUiOjF9LCJmb2N1c2VkUmVuZGVyZXIiOnsidmlld3BvcnQiOnsid2lkdGgiOjg5OSwiaGVpZ2h0Ijo1OTMsImRwciI6MS4yNX0sInN0eWxlIjp7ImJvcmRlciI6IjAuOHB4IiwiZm9udCI6IjE2cHggLyAyNi40cHggQ29uc29sYXMsIFwiTWljcm9zb2Z0IFlhSGVpXCIsIG1vbm9zcGFjZSJ9LCJ0cmFjZSI6W3sidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzQxMjcsInNjcm9sbFkiOjcxOC40MDAwMjQ0MTQwNjI1LCJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDc0MTYyLCJzY3JvbGxZIjo1NzcuNTk5OTc1NTg1OTM3NSwid2lkdGgiOjg5OSwiaGVpZ2h0Ijo1OTMsImRwciI6MS4yNX1dfSwic2F2ZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSwic3R5bGUiOnsiYm9yZGVyIjoiMC44cHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA3NDEyNywic2Nyb2xsWSI6NzE4LjQwMDAyNDQxNDA2MjUsIndpZHRoIjo4OTksImhlaWdodCI6NTkzLCJkcHIiOjEuMjV9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzQxNjIsInNjcm9sbFkiOjU3Ny41OTk5NzU1ODU5Mzc1LCJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDc0MTkzLCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODgsIndpZHRoIjo4OTksImhlaWdodCI6NTkzLCJkcHIiOjEuMjV9XX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-7493a7afa48faaf2259e",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1998,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:31:15.341Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjUsImZvY3VzZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS41LCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sImZvY3VzZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6NzQ5LCJoZWlnaHQiOjQ5NCwiZHByIjoxLjV9LCJzdHlsZSI6eyJib3JkZXIiOiIwLjY2NjY2N3B4IiwiZm9udCI6IjE2cHggLyAyNi40cHggQ29uc29sYXMsIFwiTWljcm9zb2Z0IFlhSGVpXCIsIG1vbm9zcGFjZSJ9LCJ0cmFjZSI6W3sidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzYxODcsInNjcm9sbFkiOjc2My4zMzMzMTI5ODgyODEyLCJ3aWR0aCI6NzQ5LCJoZWlnaHQiOjQ5NCwiZHByIjoxLjV9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzYyMTksInNjcm9sbFkiOjY3Miwid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fV19LCJlZGl0b3JCb3giOnsieCI6NjEuMzMzMzM1ODc2NDY0ODQ0LCJ5IjozMDIuOTc5MTg3MDExNzE4NzUsIndpZHRoIjo2MTYuNjY2NjY0MTIzNTM1MiwiaGVpZ2h0IjoyMzYuNX0sInBhbmVsQm94Ijp7IngiOjQ0LjY2NjY2NzkzODIzMjQyLCJ5IjozOTQuNTQxNjg3MDExNzE4NzUsIndpZHRoIjo2NTAuMDAwMDE5MDczNDg2MywiaGVpZ2h0Ijo5MS40NTgzMTI5ODgyODEyNX19"
+                    },
+                    {
+                      "name": "keyboard-input-saved.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjUsImZvY3VzZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwic2F2ZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS41LCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sInNhdmVkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLjUsInZpc2libGUiOnRydWUsImJvdW5kcyI6eyJ4IjozOTAsInkiOjEyNiwid2lkdGgiOjExNDAsImhlaWdodCI6NzgwfSwiY29udGVudEJvdW5kcyI6eyJ4IjozOTgsInkiOjE1Nywid2lkdGgiOjExMjQsImhlaWdodCI6NzQxfSwiZGlzcGxheVNjYWxlIjoxfSwiZm9jdXNlZFJlbmRlcmVyIjp7InZpZXdwb3J0Ijp7IndpZHRoIjo3NDksImhlaWdodCI6NDk0LCJkcHIiOjEuNX0sInN0eWxlIjp7ImJvcmRlciI6IjAuNjY2NjY3cHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA3NjE4Nywic2Nyb2xsWSI6NzYzLjMzMzMxMjk4ODI4MTIsIndpZHRoIjo3NDksImhlaWdodCI6NDk0LCJkcHIiOjEuNX0seyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA3NjIxOSwic2Nyb2xsWSI6NjcyLCJ3aWR0aCI6NzQ5LCJoZWlnaHQiOjQ5NCwiZHByIjoxLjV9XX0sInNhdmVkUmVuZGVyZXIiOnsidmlld3BvcnQiOnsid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fSwic3R5bGUiOnsiYm9yZGVyIjoiMC42NjY2NjdweCIsImZvbnQiOiIxNnB4IC8gMjYuNHB4IENvbnNvbGFzLCBcIk1pY3Jvc29mdCBZYUhlaVwiLCBtb25vc3BhY2UifSwidHJhY2UiOlt7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDc2MTg3LCJzY3JvbGxZIjo3NjMuMzMzMzEyOTg4MjgxMiwid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDc2MjE5LCJzY3JvbGxZIjo2NzIsIndpZHRoIjo3NDksImhlaWdodCI6NDk0LCJkcHIiOjEuNX0seyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA3NjI1Mywic2Nyb2xsWSI6MTA2Niwid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fV19fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-bb0ae361e7cbf360ea94",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1964,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:31:17.681Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLCJmb2N1c2VkIjp7IngiOjkyLCJ5IjoyMjIuNDUsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6ODc0fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MSwidmlzaWJsZSI6dHJ1ZSwiYm91bmRzIjp7IngiOjM5MCwieSI6MTI2LCJ3aWR0aCI6MTE0MCwiaGVpZ2h0Ijo3ODB9LCJjb250ZW50Qm91bmRzIjp7IngiOjM5OCwieSI6MTU3LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDF9LCJkaXNwbGF5U2NhbGUiOjF9LCJmb2N1c2VkUmVuZGVyZXIiOnsidmlld3BvcnQiOnsid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9LCJzdHlsZSI6eyJib3JkZXIiOiIxcHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA3ODUxNiwic2Nyb2xsWSI6NjQ0LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDEsImRwciI6MX0seyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA3ODU0NCwic2Nyb2xsWSI6NDMwLCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDEsImRwciI6MX1dfSwiZWRpdG9yQm94Ijp7IngiOjc4LCJ5Ijo0MjYuMjUsIndpZHRoIjo5NTMsImhlaWdodCI6MjM3LjEyNX0sInBhbmVsQm94Ijp7IngiOjYxLCJ5Ijo2NDAuMjAzMTI1LCJ3aWR0aCI6OTg3LCJoZWlnaHQiOjkyLjc5Njg3NX19"
+                    },
+                    {
+                      "name": "keyboard-input-saved.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLCJmb2N1c2VkIjp7IngiOjkyLCJ5IjoyMjIuNDUsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6ODc0fSwic2F2ZWQiOnsieCI6OTIsInkiOjIyMi40NSwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjo4NzR9LCJmb2N1c2VkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sInNhdmVkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sImZvY3VzZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDEsImRwciI6MX0sInN0eWxlIjp7ImJvcmRlciI6IjFweCIsImZvbnQiOiIxNnB4IC8gMjYuNHB4IENvbnNvbGFzLCBcIk1pY3Jvc29mdCBZYUhlaVwiLCBtb25vc3BhY2UifSwidHJhY2UiOlt7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDc4NTE2LCJzY3JvbGxZIjo2NDQsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MSwiZHByIjoxfSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDc4NTQ0LCJzY3JvbGxZIjo0MzAsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MSwiZHByIjoxfV19LCJzYXZlZFJlbmRlcmVyIjp7InZpZXdwb3J0Ijp7IndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MSwiZHByIjoxfSwic3R5bGUiOnsiYm9yZGVyIjoiMXB4IiwiZm9udCI6IjE2cHggLyAyNi40cHggQ29uc29sYXMsIFwiTWljcm9zb2Z0IFlhSGVpXCIsIG1vbm9zcGFjZSJ9LCJ0cmFjZSI6W3sidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzg1MTYsInNjcm9sbFkiOjY0NCwid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzg1NDQsInNjcm9sbFkiOjQzMCwid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwNzg1NzYsInNjcm9sbFkiOjg3NCwid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9XX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-7ed7136808934379cac4",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2060,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:31:19.672Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjI1LCJmb2N1c2VkIjp7IngiOjc1LjQwMDAwMjI4ODgxODM2LCJ5Ijo3NS42MDAwMDIyODg4MTgzNiwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODh9LCJmb2N1c2VkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLjI1LCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sImZvY3VzZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSwic3R5bGUiOnsiYm9yZGVyIjoiMC44cHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4MDU0OCwic2Nyb2xsWSI6NzE4LjQwMDAyNDQxNDA2MjUsIndpZHRoIjo4OTksImhlaWdodCI6NTkzLCJkcHIiOjEuMjV9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODA1NzQsInNjcm9sbFkiOjU3Ny41OTk5NzU1ODU5Mzc1LCJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fV19LCJlZGl0b3JCb3giOnsieCI6NjEuNjAwMDAyMjg4ODE4MzYsInkiOjM1Miwid2lkdGgiOjc2NC4wMDAwMzQzMzIyNzU0LCJoZWlnaHQiOjIzNi43OTk5ODc3OTI5Njg3NX0sInBhbmVsQm94Ijp7IngiOjQ0Ljc5OTk5OTIzNzA2MDU1LCJ5Ijo0OTIuODAwMDE4MzEwNTQ2OSwid2lkdGgiOjc5Ny42MDAwMjUxNzcwMDIsImhlaWdodCI6OTEuOTk5OTY5NDgyNDIxODh9fQ=="
+                    },
+                    {
+                      "name": "keyboard-input-saved.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjI1LCJmb2N1c2VkIjp7IngiOjc1LjQwMDAwMjI4ODgxODM2LCJ5Ijo3NS42MDAwMDIyODg4MTgzNiwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODh9LCJzYXZlZCI6eyJ4Ijo3NS40MDAwMDIyODg4MTgzNiwieSI6NzUuNjAwMDAyMjg4ODE4MzYsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6MTAyMC43OTk5ODc3OTI5Njg4fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS4yNSwidmlzaWJsZSI6dHJ1ZSwiYm91bmRzIjp7IngiOjM5MCwieSI6MTI2LCJ3aWR0aCI6MTE0MCwiaGVpZ2h0Ijo3ODB9LCJjb250ZW50Qm91bmRzIjp7IngiOjM5OCwieSI6MTU3LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDF9LCJkaXNwbGF5U2NhbGUiOjF9LCJzYXZlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS4yNSwidmlzaWJsZSI6dHJ1ZSwiYm91bmRzIjp7IngiOjM5MCwieSI6MTI2LCJ3aWR0aCI6MTE0MCwiaGVpZ2h0Ijo3ODB9LCJjb250ZW50Qm91bmRzIjp7IngiOjM5OCwieSI6MTU3LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDF9LCJkaXNwbGF5U2NhbGUiOjF9LCJmb2N1c2VkUmVuZGVyZXIiOnsidmlld3BvcnQiOnsid2lkdGgiOjg5OSwiaGVpZ2h0Ijo1OTMsImRwciI6MS4yNX0sInN0eWxlIjp7ImJvcmRlciI6IjAuOHB4IiwiZm9udCI6IjE2cHggLyAyNi40cHggQ29uc29sYXMsIFwiTWljcm9zb2Z0IFlhSGVpXCIsIG1vbm9zcGFjZSJ9LCJ0cmFjZSI6W3sidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODA1NDgsInNjcm9sbFkiOjcxOC40MDAwMjQ0MTQwNjI1LCJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDgwNTc0LCJzY3JvbGxZIjo1NzcuNTk5OTc1NTg1OTM3NSwid2lkdGgiOjg5OSwiaGVpZ2h0Ijo1OTMsImRwciI6MS4yNX1dfSwic2F2ZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSwic3R5bGUiOnsiYm9yZGVyIjoiMC44cHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4MDU0OCwic2Nyb2xsWSI6NzE4LjQwMDAyNDQxNDA2MjUsIndpZHRoIjo4OTksImhlaWdodCI6NTkzLCJkcHIiOjEuMjV9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODA1NzQsInNjcm9sbFkiOjU3Ny41OTk5NzU1ODU5Mzc1LCJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDgwNjA5LCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODgsIndpZHRoIjo4OTksImhlaWdodCI6NTkzLCJkcHIiOjEuMjV9XX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-778bcfce463428177e55",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1977,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:31:21.745Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjUsImZvY3VzZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS41LCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sImZvY3VzZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6NzQ5LCJoZWlnaHQiOjQ5NCwiZHByIjoxLjV9LCJzdHlsZSI6eyJib3JkZXIiOiIwLjY2NjY2N3B4IiwiZm9udCI6IjE2cHggLyAyNi40cHggQ29uc29sYXMsIFwiTWljcm9zb2Z0IFlhSGVpXCIsIG1vbm9zcGFjZSJ9LCJ0cmFjZSI6W3sidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODI1NzEsInNjcm9sbFkiOjc2My4zMzMzMTI5ODgyODEyLCJ3aWR0aCI6NzQ5LCJoZWlnaHQiOjQ5NCwiZHByIjoxLjV9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODI2MDEsInNjcm9sbFkiOjY3Miwid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fV19LCJlZGl0b3JCb3giOnsieCI6NjEuMzMzMzM1ODc2NDY0ODQ0LCJ5IjozMDIuOTc5MTg3MDExNzE4NzUsIndpZHRoIjo2MTYuNjY2NjY0MTIzNTM1MiwiaGVpZ2h0IjoyMzYuNX0sInBhbmVsQm94Ijp7IngiOjQ0LjY2NjY2NzkzODIzMjQyLCJ5IjozOTQuNTQxNjg3MDExNzE4NzUsIndpZHRoIjo2NTAuMDAwMDE5MDczNDg2MywiaGVpZ2h0Ijo5MS40NTgzMTI5ODgyODEyNX19"
+                    },
+                    {
+                      "name": "keyboard-input-saved.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjUsImZvY3VzZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwic2F2ZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS41LCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sInNhdmVkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLjUsInZpc2libGUiOnRydWUsImJvdW5kcyI6eyJ4IjozOTAsInkiOjEyNiwid2lkdGgiOjExNDAsImhlaWdodCI6NzgwfSwiY29udGVudEJvdW5kcyI6eyJ4IjozOTgsInkiOjE1Nywid2lkdGgiOjExMjQsImhlaWdodCI6NzQxfSwiZGlzcGxheVNjYWxlIjoxfSwiZm9jdXNlZFJlbmRlcmVyIjp7InZpZXdwb3J0Ijp7IndpZHRoIjo3NDksImhlaWdodCI6NDk0LCJkcHIiOjEuNX0sInN0eWxlIjp7ImJvcmRlciI6IjAuNjY2NjY3cHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4MjU3MSwic2Nyb2xsWSI6NzYzLjMzMzMxMjk4ODI4MTIsIndpZHRoIjo3NDksImhlaWdodCI6NDk0LCJkcHIiOjEuNX0seyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4MjYwMSwic2Nyb2xsWSI6NjcyLCJ3aWR0aCI6NzQ5LCJoZWlnaHQiOjQ5NCwiZHByIjoxLjV9XX0sInNhdmVkUmVuZGVyZXIiOnsidmlld3BvcnQiOnsid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fSwic3R5bGUiOnsiYm9yZGVyIjoiMC42NjY2NjdweCIsImZvbnQiOiIxNnB4IC8gMjYuNHB4IENvbnNvbGFzLCBcIk1pY3Jvc29mdCBZYUhlaVwiLCBtb25vc3BhY2UifSwidHJhY2UiOlt7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDgyNTcxLCJzY3JvbGxZIjo3NjMuMzMzMzEyOTg4MjgxMiwid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDgyNjAxLCJzY3JvbGxZIjo2NzIsIndpZHRoIjo3NDksImhlaWdodCI6NDk0LCJkcHIiOjEuNX0seyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4MjYzNSwic2Nyb2xsWSI6MTA2Niwid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fV19fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-f71894deacdfdac5b57e",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2018,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:31:24.050Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLCJmb2N1c2VkIjp7IngiOjkyLCJ5IjoyMjIuNDUsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6ODc0fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MSwidmlzaWJsZSI6dHJ1ZSwiYm91bmRzIjp7IngiOjM5MCwieSI6MTI2LCJ3aWR0aCI6MTE0MCwiaGVpZ2h0Ijo3ODB9LCJjb250ZW50Qm91bmRzIjp7IngiOjM5OCwieSI6MTU3LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDF9LCJkaXNwbGF5U2NhbGUiOjF9LCJmb2N1c2VkUmVuZGVyZXIiOnsidmlld3BvcnQiOnsid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9LCJzdHlsZSI6eyJib3JkZXIiOiIxcHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4NDkyOCwic2Nyb2xsWSI6NjQ0LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDEsImRwciI6MX0seyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4NDk1Niwic2Nyb2xsWSI6NDMwLCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDEsImRwciI6MX1dfSwiZWRpdG9yQm94Ijp7IngiOjc4LCJ5Ijo0MjYuMjUsIndpZHRoIjo5NTMsImhlaWdodCI6MjM3LjEyNX0sInBhbmVsQm94Ijp7IngiOjYxLCJ5Ijo2NDAuMjAzMTI1LCJ3aWR0aCI6OTg3LCJoZWlnaHQiOjkyLjc5Njg3NX19"
+                    },
+                    {
+                      "name": "keyboard-input-saved.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLCJmb2N1c2VkIjp7IngiOjkyLCJ5IjoyMjIuNDUsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6ODc0fSwic2F2ZWQiOnsieCI6OTIsInkiOjIyMi40NSwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjo4NzR9LCJmb2N1c2VkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sInNhdmVkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sImZvY3VzZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDEsImRwciI6MX0sInN0eWxlIjp7ImJvcmRlciI6IjFweCIsImZvbnQiOiIxNnB4IC8gMjYuNHB4IENvbnNvbGFzLCBcIk1pY3Jvc29mdCBZYUhlaVwiLCBtb25vc3BhY2UifSwidHJhY2UiOlt7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDg0OTI4LCJzY3JvbGxZIjo2NDQsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MSwiZHByIjoxfSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDg0OTU2LCJzY3JvbGxZIjo0MzAsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MSwiZHByIjoxfV19LCJzYXZlZFJlbmRlcmVyIjp7InZpZXdwb3J0Ijp7IndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MSwiZHByIjoxfSwic3R5bGUiOnsiYm9yZGVyIjoiMXB4IiwiZm9udCI6IjE2cHggLyAyNi40cHggQ29uc29sYXMsIFwiTWljcm9zb2Z0IFlhSGVpXCIsIG1vbm9zcGFjZSJ9LCJ0cmFjZSI6W3sidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODQ5MjgsInNjcm9sbFkiOjY0NCwid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODQ5NTYsInNjcm9sbFkiOjQzMCwid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODQ5ODgsInNjcm9sbFkiOjg3NCwid2lkdGgiOjExMjQsImhlaWdodCI6NzQxLCJkcHIiOjF9XX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-cdeefc1c174827dc6481",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1998,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:31:26.098Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjI1LCJmb2N1c2VkIjp7IngiOjc1LjQwMDAwMjI4ODgxODM2LCJ5Ijo3NS42MDAwMDIyODg4MTgzNiwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODh9LCJmb2N1c2VkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLjI1LCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sImZvY3VzZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSwic3R5bGUiOnsiYm9yZGVyIjoiMC44cHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4NjkzMSwic2Nyb2xsWSI6NzE4LjQwMDAyNDQxNDA2MjUsIndpZHRoIjo4OTksImhlaWdodCI6NTkzLCJkcHIiOjEuMjV9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODY5NTcsInNjcm9sbFkiOjU3Ny41OTk5NzU1ODU5Mzc1LCJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fV19LCJlZGl0b3JCb3giOnsieCI6NjEuNjAwMDAyMjg4ODE4MzYsInkiOjM1Miwid2lkdGgiOjc2NC4wMDAwMzQzMzIyNzU0LCJoZWlnaHQiOjIzNi43OTk5ODc3OTI5Njg3NX0sInBhbmVsQm94Ijp7IngiOjQ0Ljc5OTk5OTIzNzA2MDU1LCJ5Ijo0OTIuODAwMDE4MzEwNTQ2OSwid2lkdGgiOjc5Ny42MDAwMjUxNzcwMDIsImhlaWdodCI6OTEuOTk5OTY5NDgyNDIxODh9fQ=="
+                    },
+                    {
+                      "name": "keyboard-input-saved.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjI1LCJmb2N1c2VkIjp7IngiOjc1LjQwMDAwMjI4ODgxODM2LCJ5Ijo3NS42MDAwMDIyODg4MTgzNiwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODh9LCJzYXZlZCI6eyJ4Ijo3NS40MDAwMDIyODg4MTgzNiwieSI6NzUuNjAwMDAyMjg4ODE4MzYsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6MTAyMC43OTk5ODc3OTI5Njg4fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS4yNSwidmlzaWJsZSI6dHJ1ZSwiYm91bmRzIjp7IngiOjM5MCwieSI6MTI2LCJ3aWR0aCI6MTE0MCwiaGVpZ2h0Ijo3ODB9LCJjb250ZW50Qm91bmRzIjp7IngiOjM5OCwieSI6MTU3LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDF9LCJkaXNwbGF5U2NhbGUiOjF9LCJzYXZlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS4yNSwidmlzaWJsZSI6dHJ1ZSwiYm91bmRzIjp7IngiOjM5MCwieSI6MTI2LCJ3aWR0aCI6MTE0MCwiaGVpZ2h0Ijo3ODB9LCJjb250ZW50Qm91bmRzIjp7IngiOjM5OCwieSI6MTU3LCJ3aWR0aCI6MTEyNCwiaGVpZ2h0Ijo3NDF9LCJkaXNwbGF5U2NhbGUiOjF9LCJmb2N1c2VkUmVuZGVyZXIiOnsidmlld3BvcnQiOnsid2lkdGgiOjg5OSwiaGVpZ2h0Ijo1OTMsImRwciI6MS4yNX0sInN0eWxlIjp7ImJvcmRlciI6IjAuOHB4IiwiZm9udCI6IjE2cHggLyAyNi40cHggQ29uc29sYXMsIFwiTWljcm9zb2Z0IFlhSGVpXCIsIG1vbm9zcGFjZSJ9LCJ0cmFjZSI6W3sidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODY5MzEsInNjcm9sbFkiOjcxOC40MDAwMjQ0MTQwNjI1LCJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDg2OTU3LCJzY3JvbGxZIjo1NzcuNTk5OTc1NTg1OTM3NSwid2lkdGgiOjg5OSwiaGVpZ2h0Ijo1OTMsImRwciI6MS4yNX1dfSwic2F2ZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSwic3R5bGUiOnsiYm9yZGVyIjoiMC44cHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4NjkzMSwic2Nyb2xsWSI6NzE4LjQwMDAyNDQxNDA2MjUsIndpZHRoIjo4OTksImhlaWdodCI6NTkzLCJkcHIiOjEuMjV9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODY5NTcsInNjcm9sbFkiOjU3Ny41OTk5NzU1ODU5Mzc1LCJ3aWR0aCI6ODk5LCJoZWlnaHQiOjU5MywiZHByIjoxLjI1fSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDg2OTk4LCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODgsIndpZHRoIjo4OTksImhlaWdodCI6NTkzLCJkcHIiOjEuMjV9XX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-449ff6755b15ddf9e3c3",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2036,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:31:28.109Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjUsImZvY3VzZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS41LCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sImZvY3VzZWRSZW5kZXJlciI6eyJ2aWV3cG9ydCI6eyJ3aWR0aCI6NzQ5LCJoZWlnaHQiOjQ5NCwiZHByIjoxLjV9LCJzdHlsZSI6eyJib3JkZXIiOiIwLjY2NjY2N3B4IiwiZm9udCI6IjE2cHggLyAyNi40cHggQ29uc29sYXMsIFwiTWljcm9zb2Z0IFlhSGVpXCIsIG1vbm9zcGFjZSJ9LCJ0cmFjZSI6W3sidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODg5NzYsInNjcm9sbFkiOjc2My4zMzMzMTI5ODgyODEyLCJ3aWR0aCI6NzQ5LCJoZWlnaHQiOjQ5NCwiZHByIjoxLjV9LHsidHlwZSI6InNjcm9sbCIsInRpbWUiOjE3OTI1NTcwODkwMDYsInNjcm9sbFkiOjY3Miwid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fV19LCJlZGl0b3JCb3giOnsieCI6NjEuMzMzMzM1ODc2NDY0ODQ0LCJ5IjozMDIuOTc5MTg3MDExNzE4NzUsIndpZHRoIjo2MTYuNjY2NjY0MTIzNTM1MiwiaGVpZ2h0IjoyMzYuNX0sInBhbmVsQm94Ijp7IngiOjQ0LjY2NjY2NzkzODIzMjQyLCJ5IjozOTQuNTQxNjg3MDExNzE4NzUsIndpZHRoIjo2NTAuMDAwMDE5MDczNDg2MywiaGVpZ2h0Ijo5MS40NTgzMTI5ODgyODEyNX19"
+                    },
+                    {
+                      "name": "keyboard-input-saved.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjUsImZvY3VzZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwic2F2ZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwiZm9jdXNlZERlc2t0b3AiOnsiem9vbUZhY3RvciI6MS41LCJ2aXNpYmxlIjp0cnVlLCJib3VuZHMiOnsieCI6MzkwLCJ5IjoxMjYsIndpZHRoIjoxMTQwLCJoZWlnaHQiOjc4MH0sImNvbnRlbnRCb3VuZHMiOnsieCI6Mzk4LCJ5IjoxNTcsIndpZHRoIjoxMTI0LCJoZWlnaHQiOjc0MX0sImRpc3BsYXlTY2FsZSI6MX0sInNhdmVkRGVza3RvcCI6eyJ6b29tRmFjdG9yIjoxLjUsInZpc2libGUiOnRydWUsImJvdW5kcyI6eyJ4IjozOTAsInkiOjEyNiwid2lkdGgiOjExNDAsImhlaWdodCI6NzgwfSwiY29udGVudEJvdW5kcyI6eyJ4IjozOTgsInkiOjE1Nywid2lkdGgiOjExMjQsImhlaWdodCI6NzQxfSwiZGlzcGxheVNjYWxlIjoxfSwiZm9jdXNlZFJlbmRlcmVyIjp7InZpZXdwb3J0Ijp7IndpZHRoIjo3NDksImhlaWdodCI6NDk0LCJkcHIiOjEuNX0sInN0eWxlIjp7ImJvcmRlciI6IjAuNjY2NjY3cHgiLCJmb250IjoiMTZweCAvIDI2LjRweCBDb25zb2xhcywgXCJNaWNyb3NvZnQgWWFIZWlcIiwgbW9ub3NwYWNlIn0sInRyYWNlIjpbeyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4ODk3Niwic2Nyb2xsWSI6NzYzLjMzMzMxMjk4ODI4MTIsIndpZHRoIjo3NDksImhlaWdodCI6NDk0LCJkcHIiOjEuNX0seyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4OTAwNiwic2Nyb2xsWSI6NjcyLCJ3aWR0aCI6NzQ5LCJoZWlnaHQiOjQ5NCwiZHByIjoxLjV9XX0sInNhdmVkUmVuZGVyZXIiOnsidmlld3BvcnQiOnsid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fSwic3R5bGUiOnsiYm9yZGVyIjoiMC42NjY2NjdweCIsImZvbnQiOiIxNnB4IC8gMjYuNHB4IENvbnNvbGFzLCBcIk1pY3Jvc29mdCBZYUhlaVwiLCBtb25vc3BhY2UifSwidHJhY2UiOlt7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDg4OTc2LCJzY3JvbGxZIjo3NjMuMzMzMzEyOTg4MjgxMiwid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fSx7InR5cGUiOiJzY3JvbGwiLCJ0aW1lIjoxNzkyNTU3MDg5MDA2LCJzY3JvbGxZIjo2NzIsIndpZHRoIjo3NDksImhlaWdodCI6NDk0LCJkcHIiOjEuNX0seyJ0eXBlIjoic2Nyb2xsIiwidGltZSI6MTc5MjU1NzA4OTA0Miwic2Nyb2xsWSI6MTA2Niwid2lkdGgiOjc0OSwiaGVpZ2h0Ijo0OTQsImRwciI6MS41fV19fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-455de7a50363c581d1f2",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-21T04:31:10.498Z",
+    "duration": 19676.345999999998,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

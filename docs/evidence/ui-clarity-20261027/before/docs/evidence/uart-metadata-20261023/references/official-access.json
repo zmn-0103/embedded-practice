@@ -1,0 +1,31 @@
+{
+  "checkedOn": "2026-10-23",
+  "rm0008": {
+    "publisher": "STMicroelectronics",
+    "revisionSeen": "RM0008 Rev 21",
+    "url": "https://www.st.com/resource/en/reference_manual/cd00171190.pdf",
+    "sectionsSeen": ["27.3.4 Fractional baud rate generation", "27.6.1 Status register (USART_SR)", "27.6.5 Control register 2 (USART_CR2)"],
+    "access": "Official indexed chapter excerpts returned by web search; full PDF download failed.",
+    "fullDocumentDownloaded": false,
+    "allErrataChecked": false
+  },
+  "stDeviceHeader": {
+    "url": "https://raw.githubusercontent.com/STMicroelectronics/cmsis-device-f1/master/Include/stm32f103xe.h",
+    "file": "stm32f103xe.h",
+    "sha256": "2104082df11b7e172ecf85461a72689b849e05b222a573e3cae0b2ab279800c3",
+    "licenseFile": "ST-cmsis-device-f1-License.md",
+    "scope": "Read-only source comparison; not a new application dependency."
+  },
+  "gcc": {
+    "url": "https://gcc.gnu.org/onlinedocs/gcc/Volatiles.html",
+    "file": "gcc-volatiles.html",
+    "sha256": "672ebb29d8c514f0595a596965a2448ace631c06942d0196fee9c0a88fc7c1b9",
+    "scope": "Compiler volatile access semantics only; target compiler version and generated instructions remain unchecked."
+  },
+  "localSpl": {
+    "versionFromHeader": "V3.5.0",
+    "dateFromHeader": "11-March-2011",
+    "hashManifest": "local-sources.json",
+    "scope": "Existing local ST files read without modification; no official distribution ZIP downloaded."
+  }
+}

@@ -1,0 +1,5570 @@
+{
+  "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-ui3-independent-Cg847B",
+  "build": "20261026.2-workbench-e-ui3",
+  "shots": [
+    {
+      "name": "01-empty",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 916,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "继续你的嵌入式学习",
+            "x": 252,
+            "y": 96,
+            "width": 1129,
+            "height": 34.5
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "从导入你的题库开始",
+            "x": 253,
+            "y": 228.8125,
+            "width": 1017,
+            "height": 34
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "导入题库",
+            "x": 1294,
+            "y": 210.625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "导出模板",
+            "x": 1294,
+            "y": 263.015625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "知识板块",
+            "x": 253,
+            "y": 504.953125,
+            "width": 79.5625,
+            "height": 31.8125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看全部板块",
+            "x": 791.1875,
+            "y": 500.984375,
+            "width": 111.609375,
+            "height": 39.75
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "复习入口",
+            "x": 960.796875,
+            "y": 500.984375,
+            "width": 419.203125,
+            "height": 31.8125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "不会0 题 · 去筛选",
+            "x": 960.796875,
+            "y": 548.796875,
+            "width": 419.203125,
+            "height": 56.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "不熟0 题 · 去筛选",
+            "x": 960.796875,
+            "y": 617.1875,
+            "width": 419.203125,
+            "height": 56.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "内容更新待复习0 题 · 去筛选",
+            "x": 960.796875,
+            "y": 685.578125,
+            "width": 419.203125,
+            "height": 56.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "08-import-13-topics",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 943,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "导入题库",
+            "x": 1180,
+            "y": 89,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "导出题库模板",
+            "x": 1274,
+            "y": 89,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "导入与模板",
+            "x": 253,
+            "y": 103.46875,
+            "width": 120,
+            "height": 34.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "关闭导入工作区",
+            "x": 1254.796875,
+            "y": 101,
+            "width": 125.203125,
+            "height": 39.75
+          },
+          {
+            "tag": "P",
+            "class": "import-snapshot-warning",
+            "text": "每个专题文件是完整快照；遗漏的现有题目将归档，题目及学习记录保留。未参与导入的专题不受影响。请持续核对本次将归档数量。",
+            "x": 253,
+            "y": 193.140625,
+            "width": 1127,
+            "height": 48.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "导入预览",
+            "x": 253,
+            "y": 294.40625,
+            "width": 1127,
+            "height": 31.8125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "确认导入",
+            "x": 253,
+            "y": 780.0625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "放弃预览",
+            "x": 351,
+            "y": 780.0625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "题库尚未导入",
+            "x": 265,
+            "y": 251.390625,
+            "width": 1103,
+            "height": 37.6875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "全部分类（0题）",
+            "x": 280,
+            "y": 545.21875,
+            "width": 136.21875,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▾",
+            "x": 284,
+            "y": 603.609375,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "未分类（0题）",
+            "x": 326,
+            "y": 603.609375,
+            "width": 1023,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "新增分类",
+            "x": 280,
+            "y": 892.546875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "修改或移除分类",
+            "x": 378,
+            "y": 892.546875,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "调整专题归属",
+            "x": 518,
+            "y": 892.546875,
+            "width": 114,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "03-library-row20",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1811,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "导入题库",
+            "x": 1180,
+            "y": 89,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "导出题库模板",
+            "x": 1274,
+            "y": 89,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "新增分类",
+            "x": 257,
+            "y": 565.6875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "修改或移除分类",
+            "x": 355,
+            "y": 565.6875,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "调整专题归属",
+            "x": 495,
+            "y": 565.6875,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "筛选题库",
+            "x": 495.40625,
+            "y": 326.5625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "清空题库筛选",
+            "x": 593.40625,
+            "y": 326.5625,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "全部分类（419题）",
+            "x": 257,
+            "y": 542.796875,
+            "width": 152.640625,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▾",
+            "x": 261,
+            "y": 599.1875,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "未分类（0题）",
+            "x": 303,
+            "y": 599.1875,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 698.359375,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "C语言（4题）",
+            "x": 303,
+            "y": 698.359375,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 765.140625,
+            "width": 36,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "MCU与外设原理（17题）",
+            "x": 303,
+            "y": 765.140625,
+            "width": 102,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 854.3125,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "STM32（313题）",
+            "x": 303,
+            "y": 854.3125,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 921.09375,
+            "width": 36,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "存储与文件系统（22题）",
+            "x": 303,
+            "y": 921.09375,
+            "width": 102,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 1010.265625,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "通信协议（63题）",
+            "x": 303,
+            "y": 1010.265625,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO名称与输入输出STM32F103RCT6 GPIO 阶段自测题 · gpio-001 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -641.046875,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO时钟依赖STM32F103RCT6 GPIO 阶段自测题 · gpio-002 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -568.046875,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO端口总线STM32F103RCT6 GPIO 阶段自测题 · gpio-003 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -495.046875,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "SystemCoreClockUpdate职责STM32F103RCT6 GPIO 阶段自测题 · gpio-004 · 易（基础",
+            "x": 465,
+            "y": -422.046875,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "通用与复用输出STM32F103RCT6 GPIO 阶段自测题 · gpio-005 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -349.046875,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "推挽与开漏STM32F103RCT6 GPIO 阶段自测题 · gpio-006 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -276.046875,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO输出速度配置STM32F103RCT6 GPIO 阶段自测题 · gpio-007 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -203.046875,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "输入默认电平STM32F103RCT6 GPIO 阶段自测题 · gpio-008 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -130.046875,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "按键有效电平STM32F103RCT6 GPIO 阶段自测题 · gpio-009 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -57.046875,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "复用引脚与外设初始化STM32F103RCT6 GPIO 阶段自测题 · gpio-010 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 15.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO初始化结构体STM32F103RCT6 GPIO 阶段自测题 · gpio-011 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 88.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO_Init参数STM32F103RCT6 GPIO 阶段自测题 · gpio-012 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 161.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIOA时钟使能调用STM32F103RCT6 GPIO 阶段自测题 · gpio-013 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 234.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO置位和复位接口STM32F103RCT6 GPIO 阶段自测题 · gpio-014 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 307.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "读取单个输入位STM32F103RCT6 GPIO 阶段自测题 · gpio-015 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 380.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "IDR与ODR读取STM32F103RCT6 GPIO 阶段自测题 · gpio-016 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 453.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "输入模式中的Speed成员STM32F103RCT6 GPIO 阶段自测题 · gpio-017 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 526.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "旧C模式的局部声明STM32F103RCT6 GPIO 阶段自测题 · gpio-018 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 599.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "F1 GPIO输入模式STM32F103RCT6 GPIO 阶段自测题 · gpio-019 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 672.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "F1 GPIO输出模式STM32F103RCT6 GPIO 阶段自测题 · gpio-020 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 745.953125,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一页",
+            "x": 465,
+            "y": 827,
+            "width": 58,
+            "height": 34.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "下一页",
+            "x": 806.140625,
+            "y": 827,
+            "width": 58,
+            "height": 34.390625
+          },
+          {
+            "tag": "DIV",
+            "class": "library-reader-pane",
+            "text": "返回题目列表STM32F103RCT6 GPIO 阶段自测题 · gpio-020F1 GPIO输出模式易（基础） · GPIO ",
+            "x": 888.140625,
+            "y": 387.953125,
+            "width": 487.859375,
+            "height": 473.4375
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "F1 GPIO输出模式",
+            "x": 913.140625,
+            "y": 416.75,
+            "width": 447.859375,
+            "height": 35.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "收藏本题",
+            "x": 913.140625,
+            "y": 505.515625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "展开参考答案",
+            "x": 913.140625,
+            "y": 778.40625,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看本题历史",
+            "x": 913.140625,
+            "y": 842.796875,
+            "width": 114,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "09-category",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1765,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "导入题库",
+            "x": 1180,
+            "y": 89,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "导出题库模板",
+            "x": 1274,
+            "y": 89,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-close",
+            "text": "关闭分类管理",
+            "x": 858,
+            "y": 199.390625,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "新增分类",
+            "x": 858,
+            "y": 547.296875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "修改或移除分类",
+            "x": 956,
+            "y": 547.296875,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "调整专题归属",
+            "x": 1096,
+            "y": 547.296875,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "筛选题库",
+            "x": 495.40625,
+            "y": 280.171875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "清空题库筛选",
+            "x": 593.40625,
+            "y": 280.171875,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "全部分类（419题）",
+            "x": 257,
+            "y": 496.40625,
+            "width": 152.640625,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▾",
+            "x": 261,
+            "y": 552.796875,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "未分类（0题）",
+            "x": 303,
+            "y": 552.796875,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 651.96875,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "C语言（4题）",
+            "x": 303,
+            "y": 651.96875,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 718.75,
+            "width": 36,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "MCU与外设原理（17题）",
+            "x": 303,
+            "y": 718.75,
+            "width": 102,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 807.921875,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "STM32（313题）",
+            "x": 303,
+            "y": 807.921875,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 874.703125,
+            "width": 36,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "存储与文件系统（22题）",
+            "x": 303,
+            "y": 874.703125,
+            "width": 102,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 963.875,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "通信协议（63题）",
+            "x": 303,
+            "y": 963.875,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO名称与输入输出STM32F103RCT6 GPIO 阶段自测题 · gpio-001 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -641.4375,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO时钟依赖STM32F103RCT6 GPIO 阶段自测题 · gpio-002 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -568.4375,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO端口总线STM32F103RCT6 GPIO 阶段自测题 · gpio-003 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -495.4375,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "SystemCoreClockUpdate职责STM32F103RCT6 GPIO 阶段自测题 · gpio-004 · 易（基础",
+            "x": 465,
+            "y": -422.4375,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "通用与复用输出STM32F103RCT6 GPIO 阶段自测题 · gpio-005 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -349.4375,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "推挽与开漏STM32F103RCT6 GPIO 阶段自测题 · gpio-006 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -276.4375,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO输出速度配置STM32F103RCT6 GPIO 阶段自测题 · gpio-007 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -203.4375,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "输入默认电平STM32F103RCT6 GPIO 阶段自测题 · gpio-008 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -130.4375,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "按键有效电平STM32F103RCT6 GPIO 阶段自测题 · gpio-009 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -57.4375,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "复用引脚与外设初始化STM32F103RCT6 GPIO 阶段自测题 · gpio-010 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 15.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO初始化结构体STM32F103RCT6 GPIO 阶段自测题 · gpio-011 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 88.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO_Init参数STM32F103RCT6 GPIO 阶段自测题 · gpio-012 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 161.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIOA时钟使能调用STM32F103RCT6 GPIO 阶段自测题 · gpio-013 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 234.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO置位和复位接口STM32F103RCT6 GPIO 阶段自测题 · gpio-014 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 307.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "读取单个输入位STM32F103RCT6 GPIO 阶段自测题 · gpio-015 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 380.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "IDR与ODR读取STM32F103RCT6 GPIO 阶段自测题 · gpio-016 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 453.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "输入模式中的Speed成员STM32F103RCT6 GPIO 阶段自测题 · gpio-017 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 526.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "旧C模式的局部声明STM32F103RCT6 GPIO 阶段自测题 · gpio-018 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 599.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "F1 GPIO输入模式STM32F103RCT6 GPIO 阶段自测题 · gpio-019 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 672.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "F1 GPIO输出模式STM32F103RCT6 GPIO 阶段自测题 · gpio-020 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 745.5625,
+            "width": 384.140625,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一页",
+            "x": 465,
+            "y": 827,
+            "width": 58,
+            "height": 34.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "下一页",
+            "x": 806.140625,
+            "y": 827,
+            "width": 58,
+            "height": 34.390625
+          },
+          {
+            "tag": "DIV",
+            "class": "library-reader-pane",
+            "text": "返回题目列表STM32F103RCT6 GPIO 阶段自测题 · gpio-020F1 GPIO输出模式易（基础） · GPIO ",
+            "x": 888.140625,
+            "y": 341.5625,
+            "width": 487.859375,
+            "height": 519.828125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "F1 GPIO输出模式",
+            "x": 913.140625,
+            "y": 370.359375,
+            "width": 462.859375,
+            "height": 35.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "收藏本题",
+            "x": 913.140625,
+            "y": 459.125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "展开参考答案",
+            "x": 913.140625,
+            "y": 732.015625,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看本题历史",
+            "x": 913.140625,
+            "y": 796.40625,
+            "width": 114,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "02-boards",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1472,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "题库板块",
+            "x": 249,
+            "y": 100.515625,
+            "width": 92,
+            "height": 33.34375
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "导入与管理分类",
+            "x": 1116,
+            "y": 97,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "按条件开始练习",
+            "x": 1256,
+            "y": 97,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "全部题库 · 419 题",
+            "x": 249,
+            "y": 149.390625,
+            "width": 140.453125,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "未分类 · 0 题",
+            "x": 397.453125,
+            "y": 149.390625,
+            "width": 110.03125,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "基础方向 · 15",
+            "x": 249,
+            "y": 280.96875,
+            "width": 1135,
+            "height": 27.1875
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "C语言类型、表达式、内存和可移植代码的基础4 题查看题库查看专题与范围类型、表达式、内存和可移植代码的基础。本机已导入 1 个专题",
+            "x": 249,
+            "y": 316.15625,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "C语言",
+            "x": 298,
+            "y": 329.15625,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 421.75,
+            "y": 417.921875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "C++语言对象、泛型与资源管理0 题 · 待补题查看题库查看专题与范围对象、泛型与资源管理。暂无已导入专题。可先浏览下方规划，后续",
+            "x": 536.75,
+            "y": 316.15625,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "C++语言",
+            "x": 585.75,
+            "y": 329.15625,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 709.5,
+            "y": 417.921875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "数据结构与算法组织数据、分析复杂度并解决问题0 题 · 待补题查看题库查看专题与范围组织数据、分析复杂度并解决问题。暂无已导入专题",
+            "x": 824.5,
+            "y": 316.15625,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "数据结构与算法",
+            "x": 873.5,
+            "y": 329.15625,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 997.25,
+            "y": 417.921875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "处理器与ARM架构处理器如何执行程序和访问内存0 题 · 待补题查看题库查看专题与范围处理器如何执行程序和访问内存。暂无已导入专题",
+            "x": 1112.25,
+            "y": 316.15625,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "处理器与ARM架构",
+            "x": 1161.25,
+            "y": 329.15625,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 1285,
+            "y": 417.921875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "MCU与外设原理不依赖具体芯片的单片机与外设知识17 题查看题库查看专题与范围不依赖具体芯片的单片机与外设知识。本机已导入 2 个",
+            "x": 249,
+            "y": 520.921875,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "MCU与外设原理",
+            "x": 298,
+            "y": 533.921875,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 421.75,
+            "y": 617.5,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "MCU平台与SDK具体芯片、寄存器、SDK及平台实现0 题 · 待补题查看题库查看专题与范围具体芯片、寄存器、SDK及平台实现。暂",
+            "x": 536.75,
+            "y": 520.921875,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "MCU平台与SDK",
+            "x": 585.75,
+            "y": 533.921875,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 709.5,
+            "y": 617.5,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "通信协议设备互连、总线时序和消息组织63 题查看题库查看专题与范围设备互连、总线时序和消息组织。本机已导入 3 个专题I2C 通用",
+            "x": 824.5,
+            "y": 520.921875,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "通信协议",
+            "x": 873.5,
+            "y": 533.921875,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 997.25,
+            "y": 617.5,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "计算机网络从网络分层到连接和故障定位0 题 · 待补题查看题库查看专题与范围从网络分层到连接和故障定位。暂无已导入专题。可先浏览下",
+            "x": 1112.25,
+            "y": 520.921875,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "计算机网络",
+            "x": 1161.25,
+            "y": 533.921875,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 1285,
+            "y": 617.5,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "RTOS与并发调度、同步和实时资源管理0 题 · 待补题查看题库查看专题与范围调度、同步和实时资源管理。暂无已导入专题。可先浏览下",
+            "x": 249,
+            "y": 720.5,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "RTOS与并发",
+            "x": 298,
+            "y": 733.5,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 421.75,
+            "y": 817.078125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "Linux系统与应用Linux使用、用户态编程与部署0 题 · 待补题查看题库查看专题与范围Linux使用、用户态编程与部署。暂无",
+            "x": 536.75,
+            "y": 720.5,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "Linux系统与应用",
+            "x": 585.75,
+            "y": 733.5,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 709.5,
+            "y": 817.078125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "Linux内核与驱动内核机制、设备模型和驱动开发0 题 · 待补题查看题库查看专题与范围内核机制、设备模型和驱动开发。暂无已导入专",
+            "x": 824.5,
+            "y": 720.5,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "Linux内核与驱动",
+            "x": 873.5,
+            "y": 733.5,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 997.25,
+            "y": 817.078125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "硬件与电路基础读懂电路并理解接口的电气约束0 题 · 待补题查看题库查看专题与范围读懂电路并理解接口的电气约束。暂无已导入专题。可",
+            "x": 1112.25,
+            "y": 720.5,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "硬件与电路基础",
+            "x": 1161.25,
+            "y": 733.5,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 1285,
+            "y": 817.078125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "存储与文件系统存储介质、数据组织和掉电一致性22 题查看题库查看专题与范围存储介质、数据组织和掉电一致性。本机已导入 2 个专题2",
+            "x": 249,
+            "y": 920.078125,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "存储与文件系统",
+            "x": 298,
+            "y": 933.078125,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 421.75,
+            "y": 1016.65625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "编译调试与工程实践把代码构建、验证并定位问题0 题 · 待补题查看题库查看专题与范围把代码构建、验证并定位问题。暂无已导入专题。可",
+            "x": 536.75,
+            "y": 920.078125,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "编译调试与工程实践",
+            "x": 585.75,
+            "y": 933.078125,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 709.5,
+            "y": 1016.65625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "项目与面试表达用真实证据解释方案、职责与取舍0 题 · 待补题查看题库查看专题与范围用真实证据解释方案、职责与取舍。暂无已导入专题",
+            "x": 824.5,
+            "y": 920.078125,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "项目与面试表达",
+            "x": 873.5,
+            "y": 933.078125,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 997.25,
+            "y": 1016.65625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "本机自定义分类 · 1",
+            "x": 249,
+            "y": 1115.65625,
+            "width": 1135,
+            "height": 27.1875
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "STM32本机自定义分类313 题查看题库查看专题与范围本机自定义分类，沿用原有专题归属。本机已导入 5 个专题STM32F1 A",
+            "x": 249,
+            "y": 1150.84375,
+            "width": 1135,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "STM32",
+            "x": 298,
+            "y": 1163.84375,
+            "width": 1073,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 1285,
+            "y": 1247.421875,
+            "width": 86,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "10-appearance",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1224,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "设置与数据",
+            "x": 257,
+            "y": 105,
+            "width": 1119,
+            "height": 34.796875
+          },
+          {
+            "tag": "DIV",
+            "class": "",
+            "text": "外观主题备份恢复数据位置",
+            "x": 257,
+            "y": 151.796875,
+            "width": 274,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "外观主题",
+            "x": 257,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "备份恢复",
+            "x": 351,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "数据位置",
+            "x": 445,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "把思考留在题目旁",
+            "x": 895.890625,
+            "y": 362.5625,
+            "width": 457.109375,
+            "height": 33.296875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "preview-action primary",
+            "text": "查看参考答案（预览）",
+            "x": 895.890625,
+            "y": 678.859375,
+            "width": 166,
+            "height": 36.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "保存并应用",
+            "x": 857.28125,
+            "y": 847.609375,
+            "width": 100,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "恢复默认外观",
+            "x": 1262,
+            "y": 847.609375,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "安装更多主题",
+            "x": 257,
+            "y": 998.90625,
+            "width": 471.640625,
+            "height": 28.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "安装本地主题…",
+            "x": 1250.609375,
+            "y": 1011.296875,
+            "width": 125.390625,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "11-backup",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1440,
+        "clientWidth": 1440,
+        "contentHeight": 900,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1153,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "设置与数据",
+            "x": 257,
+            "y": 105,
+            "width": 1134,
+            "height": 34.796875
+          },
+          {
+            "tag": "DIV",
+            "class": "",
+            "text": "外观主题备份恢复数据位置",
+            "x": 257,
+            "y": 151.796875,
+            "width": 274,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "外观主题",
+            "x": 257,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "备份恢复",
+            "x": 351,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "数据位置",
+            "x": 445,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "备份与恢复",
+            "x": 257,
+            "y": 225.0625,
+            "width": 1134,
+            "height": 31.8125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "导出完整备份",
+            "x": 257,
+            "y": 347.125,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "选择备份并预览",
+            "x": 381,
+            "y": 347.125,
+            "width": 128,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "11b-data",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 928,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "设置与数据",
+            "x": 257,
+            "y": 105,
+            "width": 1119,
+            "height": 34.796875
+          },
+          {
+            "tag": "DIV",
+            "class": "",
+            "text": "外观主题备份恢复数据位置",
+            "x": 257,
+            "y": 151.796875,
+            "width": 274,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "外观主题",
+            "x": 257,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "备份恢复",
+            "x": 351,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "数据位置",
+            "x": 445,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "数据位置",
+            "x": 257,
+            "y": 282.0625,
+            "width": 1119,
+            "height": 31.8125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "打开数据文件夹",
+            "x": 257,
+            "y": 448.59375,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "打开备份文件夹",
+            "x": 257,
+            "y": 575.640625,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "打开日志文件夹",
+            "x": 257,
+            "y": 702.6875,
+            "width": 128,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "04-configuration",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 973,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "开始一轮练习",
+            "x": 257,
+            "y": 137.796875,
+            "width": 1119,
+            "height": 33.34375
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "1. 选题范围",
+            "x": 257,
+            "y": 199.140625,
+            "width": 657,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▾",
+            "x": 276,
+            "y": 475.671875,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "未分类（0题）",
+            "x": 318,
+            "y": 475.671875,
+            "width": 577,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 276,
+            "y": 552.453125,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "C语言（4题）",
+            "x": 318,
+            "y": 552.453125,
+            "width": 577,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 276,
+            "y": 596.84375,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "MCU与外设原理（17题）",
+            "x": 318,
+            "y": 596.84375,
+            "width": 577,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 276,
+            "y": 641.234375,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "STM32（313题）",
+            "x": 318,
+            "y": 641.234375,
+            "width": 577,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 276,
+            "y": 685.625,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "存储与文件系统（22题）",
+            "x": 318,
+            "y": 685.625,
+            "width": 577,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 276,
+            "y": 730.015625,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "通信协议（63题）",
+            "x": 318,
+            "y": 730.015625,
+            "width": 577,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "2. 筛选条件",
+            "x": 257,
+            "y": 399.90625,
+            "width": 657,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "全部题目",
+            "x": 257,
+            "y": 435.09375,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "练不会",
+            "x": 351,
+            "y": 435.09375,
+            "width": 72,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "练不熟",
+            "x": 431,
+            "y": 435.09375,
+            "width": 72,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "练收藏",
+            "x": 511,
+            "y": 435.09375,
+            "width": 72,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "3. 练习方式与题数",
+            "x": 257,
+            "y": 628.25,
+            "width": 657,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "开始练习",
+            "x": 257,
+            "y": 786.21875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "保存当前条件为方案",
+            "x": 1188,
+            "y": 316.09375,
+            "width": 156,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "05-unrevealed-1440",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1026,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "隐藏辅助面板",
+            "x": 1226.171875,
+            "y": 14.890625,
+            "width": 94,
+            "height": 33.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "保存并返回",
+            "x": 1276,
+            "y": 105,
+            "width": 100,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "取消收藏",
+            "x": 1290,
+            "y": 153.390625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "SystemCoreClockUpdate职责",
+            "x": 257,
+            "y": 171.375,
+            "width": 1003,
+            "height": 36.25
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "题干",
+            "x": 257,
+            "y": 272.015625,
+            "width": 547.5,
+            "height": 27.1875
+          },
+          {
+            "tag": "TEXTAREA",
+            "class": "",
+            "text": "输入区",
+            "x": 270,
+            "y": 506.703125,
+            "width": 521.5,
+            "height": 200
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "参考答案",
+            "x": 853.5,
+            "y": 272.015625,
+            "width": 522.5,
+            "height": 27.1875
+          },
+          {
+            "tag": "DIV",
+            "class": "practice-actions",
+            "text": "已保存查看参考答案跳过本题保存后返回上一题结束本轮",
+            "x": 232,
+            "y": 791.203125,
+            "width": 1169,
+            "height": 96.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "查看参考答案",
+            "x": 249,
+            "y": 833,
+            "width": 120,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "跳过本题",
+            "x": 385,
+            "y": 833,
+            "width": 90,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "保存后返回",
+            "x": 1098,
+            "y": 833,
+            "width": 105,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一题",
+            "x": 1211,
+            "y": 833,
+            "width": 75,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "quiet-action",
+            "text": "结束本轮",
+            "x": 1294,
+            "y": 833,
+            "width": 90,
+            "height": 42
+          }
+        ]
+      }
+    },
+    {
+      "name": "06-revealed-1440",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1050,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "隐藏辅助面板",
+            "x": 1226.171875,
+            "y": 14.890625,
+            "width": 94,
+            "height": 33.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "保存并返回",
+            "x": 1276,
+            "y": 105,
+            "width": 100,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "取消收藏",
+            "x": 1290,
+            "y": 153.390625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "SystemCoreClockUpdate职责",
+            "x": 257,
+            "y": 171.375,
+            "width": 1003,
+            "height": 36.25
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "题干",
+            "x": 257,
+            "y": 272.015625,
+            "width": 547.5,
+            "height": 27.1875
+          },
+          {
+            "tag": "TEXTAREA",
+            "class": "",
+            "text": "输入区",
+            "x": 270,
+            "y": 506.703125,
+            "width": 521.5,
+            "height": 200
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "参考答案",
+            "x": 874.5,
+            "y": 272.015625,
+            "width": 501.5,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看本题历史",
+            "x": 853.5,
+            "y": 709.578125,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "DIV",
+            "class": "practice-actions",
+            "text": "已保存不会不熟掌握暂不评价，下一题保存后返回上一题结束本轮",
+            "x": 232,
+            "y": 791.203125,
+            "width": 1169,
+            "height": 96.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "不会",
+            "x": 249,
+            "y": 833,
+            "width": 88,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "不熟",
+            "x": 345,
+            "y": 833,
+            "width": 88,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "掌握",
+            "x": 441,
+            "y": 833,
+            "width": 88,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "暂不评价，下一题",
+            "x": 545,
+            "y": 833,
+            "width": 150,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "保存后返回",
+            "x": 1098,
+            "y": 833,
+            "width": 105,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一题",
+            "x": 1211,
+            "y": 833,
+            "width": 75,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "quiet-action",
+            "text": "结束本轮",
+            "x": 1294,
+            "y": 833,
+            "width": 90,
+            "height": 42
+          }
+        ]
+      }
+    },
+    {
+      "name": "02b-boards-active",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1588,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "STM32F103RCT6 GPIO 阶段自测题",
+            "x": 262,
+            "y": 108,
+            "width": 1011,
+            "height": 24.640625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "继续练习",
+            "x": 1285,
+            "y": 113.3125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "题库板块",
+            "x": 249,
+            "y": 216.34375,
+            "width": 92,
+            "height": 33.34375
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "导入与管理分类",
+            "x": 1116,
+            "y": 212.828125,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "按条件开始练习",
+            "x": 1256,
+            "y": 212.828125,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "全部题库 · 419 题",
+            "x": 249,
+            "y": 265.21875,
+            "width": 140.453125,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "未分类 · 0 题",
+            "x": 397.453125,
+            "y": 265.21875,
+            "width": 110.03125,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "基础方向 · 15",
+            "x": 249,
+            "y": 396.796875,
+            "width": 1135,
+            "height": 27.1875
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "C语言类型、表达式、内存和可移植代码的基础4 题查看题库查看专题与范围类型、表达式、内存和可移植代码的基础。本机已导入 1 个专题",
+            "x": 249,
+            "y": 431.984375,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "C语言",
+            "x": 298,
+            "y": 444.984375,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 421.75,
+            "y": 533.75,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "C++语言对象、泛型与资源管理0 题 · 待补题查看题库查看专题与范围对象、泛型与资源管理。暂无已导入专题。可先浏览下方规划，后续",
+            "x": 536.75,
+            "y": 431.984375,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "C++语言",
+            "x": 585.75,
+            "y": 444.984375,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 709.5,
+            "y": 533.75,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "数据结构与算法组织数据、分析复杂度并解决问题0 题 · 待补题查看题库查看专题与范围组织数据、分析复杂度并解决问题。暂无已导入专题",
+            "x": 824.5,
+            "y": 431.984375,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "数据结构与算法",
+            "x": 873.5,
+            "y": 444.984375,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 997.25,
+            "y": 533.75,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "处理器与ARM架构处理器如何执行程序和访问内存0 题 · 待补题查看题库查看专题与范围处理器如何执行程序和访问内存。暂无已导入专题",
+            "x": 1112.25,
+            "y": 431.984375,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "处理器与ARM架构",
+            "x": 1161.25,
+            "y": 444.984375,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 1285,
+            "y": 533.75,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "MCU与外设原理不依赖具体芯片的单片机与外设知识17 题查看题库查看专题与范围不依赖具体芯片的单片机与外设知识。本机已导入 2 个",
+            "x": 249,
+            "y": 636.75,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "MCU与外设原理",
+            "x": 298,
+            "y": 649.75,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 421.75,
+            "y": 733.328125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "MCU平台与SDK具体芯片、寄存器、SDK及平台实现0 题 · 待补题查看题库查看专题与范围具体芯片、寄存器、SDK及平台实现。暂",
+            "x": 536.75,
+            "y": 636.75,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "MCU平台与SDK",
+            "x": 585.75,
+            "y": 649.75,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 709.5,
+            "y": 733.328125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "通信协议设备互连、总线时序和消息组织63 题查看题库查看专题与范围设备互连、总线时序和消息组织。本机已导入 3 个专题I2C 通用",
+            "x": 824.5,
+            "y": 636.75,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "通信协议",
+            "x": 873.5,
+            "y": 649.75,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 997.25,
+            "y": 733.328125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "计算机网络从网络分层到连接和故障定位0 题 · 待补题查看题库查看专题与范围从网络分层到连接和故障定位。暂无已导入专题。可先浏览下",
+            "x": 1112.25,
+            "y": 636.75,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "计算机网络",
+            "x": 1161.25,
+            "y": 649.75,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 1285,
+            "y": 733.328125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "RTOS与并发调度、同步和实时资源管理0 题 · 待补题查看题库查看专题与范围调度、同步和实时资源管理。暂无已导入专题。可先浏览下",
+            "x": 249,
+            "y": 836.328125,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "RTOS与并发",
+            "x": 298,
+            "y": 849.328125,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 421.75,
+            "y": 932.90625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "Linux系统与应用Linux使用、用户态编程与部署0 题 · 待补题查看题库查看专题与范围Linux使用、用户态编程与部署。暂无",
+            "x": 536.75,
+            "y": 836.328125,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "Linux系统与应用",
+            "x": 585.75,
+            "y": 849.328125,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 709.5,
+            "y": 932.90625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "Linux内核与驱动内核机制、设备模型和驱动开发0 题 · 待补题查看题库查看专题与范围内核机制、设备模型和驱动开发。暂无已导入专",
+            "x": 824.5,
+            "y": 836.328125,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "Linux内核与驱动",
+            "x": 873.5,
+            "y": 849.328125,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 997.25,
+            "y": 932.90625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "硬件与电路基础读懂电路并理解接口的电气约束0 题 · 待补题查看题库查看专题与范围读懂电路并理解接口的电气约束。暂无已导入专题。可",
+            "x": 1112.25,
+            "y": 836.328125,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "硬件与电路基础",
+            "x": 1161.25,
+            "y": 849.328125,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 1285,
+            "y": 932.90625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "存储与文件系统存储介质、数据组织和掉电一致性22 题查看题库查看专题与范围存储介质、数据组织和掉电一致性。本机已导入 2 个专题2",
+            "x": 249,
+            "y": 1035.90625,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "存储与文件系统",
+            "x": 298,
+            "y": 1048.90625,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 421.75,
+            "y": 1132.484375,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "编译调试与工程实践把代码构建、验证并定位问题0 题 · 待补题查看题库查看专题与范围把代码构建、验证并定位问题。暂无已导入专题。可",
+            "x": 536.75,
+            "y": 1035.90625,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "编译调试与工程实践",
+            "x": 585.75,
+            "y": 1048.90625,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 709.5,
+            "y": 1132.484375,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "项目与面试表达用真实证据解释方案、职责与取舍0 题 · 待补题查看题库查看专题与范围用真实证据解释方案、职责与取舍。暂无已导入专题",
+            "x": 824.5,
+            "y": 1035.90625,
+            "width": 271.75,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "项目与面试表达",
+            "x": 873.5,
+            "y": 1048.90625,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 997.25,
+            "y": 1132.484375,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "本机自定义分类 · 1",
+            "x": 249,
+            "y": 1231.484375,
+            "width": 1135,
+            "height": 27.1875
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "STM32本机自定义分类313 题查看题库查看专题与范围本机自定义分类，沿用原有专题归属。本机已导入 5 个专题STM32F1 A",
+            "x": 249,
+            "y": 1266.671875,
+            "width": 1135,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "STM32",
+            "x": 298,
+            "y": 1279.671875,
+            "width": 1073,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 1285,
+            "y": 1363.25,
+            "width": 86,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "02c-boards-populated",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 990,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "STM32F103RCT6 GPIO 阶段自测题",
+            "x": 262,
+            "y": 108,
+            "width": 1011,
+            "height": 24.640625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "继续练习",
+            "x": 1285,
+            "y": 113.3125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "题库板块",
+            "x": 249,
+            "y": 216.34375,
+            "width": 92,
+            "height": 33.34375
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "导入与管理分类",
+            "x": 1116,
+            "y": 212.828125,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "按条件开始练习",
+            "x": 1256,
+            "y": 212.828125,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "全部题库 · 419 题",
+            "x": 249,
+            "y": 265.21875,
+            "width": 140.453125,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "未分类 · 0 题",
+            "x": 397.453125,
+            "y": 265.21875,
+            "width": 110.03125,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "基础方向 · 4",
+            "x": 249,
+            "y": 396.796875,
+            "width": 1135,
+            "height": 27.1875
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "C语言类型、表达式、内存和可移植代码的基础4 题查看题库查看专题与范围类型、表达式、内存和可移植代码的基础。本机已导入 1 个专题",
+            "x": 249,
+            "y": 431.984375,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "C语言",
+            "x": 298,
+            "y": 444.984375,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 421.75,
+            "y": 533.75,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "MCU与外设原理不依赖具体芯片的单片机与外设知识17 题查看题库查看专题与范围不依赖具体芯片的单片机与外设知识。本机已导入 2 个",
+            "x": 536.75,
+            "y": 431.984375,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "MCU与外设原理",
+            "x": 585.75,
+            "y": 444.984375,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 709.5,
+            "y": 533.75,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "通信协议设备互连、总线时序和消息组织63 题查看题库查看专题与范围设备互连、总线时序和消息组织。本机已导入 3 个专题I2C 通用",
+            "x": 824.5,
+            "y": 431.984375,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "通信协议",
+            "x": 873.5,
+            "y": 444.984375,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 997.25,
+            "y": 533.75,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "存储与文件系统存储介质、数据组织和掉电一致性22 题查看题库查看专题与范围存储介质、数据组织和掉电一致性。本机已导入 2 个专题2",
+            "x": 1112.25,
+            "y": 431.984375,
+            "width": 271.75,
+            "height": 188.765625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "存储与文件系统",
+            "x": 1161.25,
+            "y": 444.984375,
+            "width": 209.75,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 1285,
+            "y": 533.75,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "本机自定义分类 · 1",
+            "x": 249,
+            "y": 632.75,
+            "width": 1135,
+            "height": 27.1875
+          },
+          {
+            "tag": "ARTICLE",
+            "class": "board-card",
+            "text": "STM32本机自定义分类313 题查看题库查看专题与范围本机自定义分类，沿用原有专题归属。本机已导入 5 个专题STM32F1 A",
+            "x": 249,
+            "y": 667.9375,
+            "width": 1135,
+            "height": 183.578125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "STM32",
+            "x": 298,
+            "y": 680.9375,
+            "width": 1073,
+            "height": 27.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看题库",
+            "x": 1285,
+            "y": 764.515625,
+            "width": 86,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-overview",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1036,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "继续你的嵌入式学习",
+            "x": 252,
+            "y": 96,
+            "width": 1129,
+            "height": 34.5
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "STM32F103RCT6 GPIO 阶段自测题",
+            "x": 253,
+            "y": 239.421875,
+            "width": 1003,
+            "height": 34
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "继续本轮",
+            "x": 1280,
+            "y": 242.3125,
+            "width": 100,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "配置新练习",
+            "x": 1280,
+            "y": 294.703125,
+            "width": 100,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "知识板块",
+            "x": 253,
+            "y": 568.34375,
+            "width": 79.5625,
+            "height": 31.8125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看全部板块",
+            "x": 791.1875,
+            "y": 564.375,
+            "width": 111.609375,
+            "height": 39.75
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "C语言4 道有效题目",
+            "x": 253,
+            "y": 620.125,
+            "width": 318.890625,
+            "height": 84.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "MCU与外设原理17 道有效题目",
+            "x": 583.890625,
+            "y": 620.125,
+            "width": 318.90625,
+            "height": 84.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "STM32313 道有效题目",
+            "x": 253,
+            "y": 716.90625,
+            "width": 318.890625,
+            "height": 84.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "存储与文件系统22 道有效题目",
+            "x": 583.890625,
+            "y": 716.90625,
+            "width": 318.90625,
+            "height": 84.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "通信协议63 道有效题目",
+            "x": 253,
+            "y": 813.6875,
+            "width": 318.890625,
+            "height": 84.78125
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "复习入口",
+            "x": 960.796875,
+            "y": 564.375,
+            "width": 419.203125,
+            "height": 31.8125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "不会1 题 · 去筛选",
+            "x": 960.796875,
+            "y": 612.1875,
+            "width": 419.203125,
+            "height": 56.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "不熟1 题 · 去筛选",
+            "x": 960.796875,
+            "y": 680.578125,
+            "width": 419.203125,
+            "height": 56.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "内容更新待复习0 题 · 去筛选",
+            "x": 960.796875,
+            "y": 748.96875,
+            "width": 419.203125,
+            "height": 56.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "07-records-favorite",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1175,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "学习记录",
+            "x": 249,
+            "y": 97,
+            "width": 1135,
+            "height": 34.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▾",
+            "x": 262,
+            "y": 379.140625,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "未分类（0题）",
+            "x": 304,
+            "y": 379.140625,
+            "width": 161.328125,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 262,
+            "y": 455.921875,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "C语言（4题）",
+            "x": 304,
+            "y": 455.921875,
+            "width": 161.328125,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 262,
+            "y": 500.3125,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "MCU与外设原理（17题）",
+            "x": 304,
+            "y": 500.3125,
+            "width": 161.328125,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 262,
+            "y": 567.09375,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "STM32（313题）",
+            "x": 304,
+            "y": 567.09375,
+            "width": 161.328125,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 262,
+            "y": 611.484375,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "存储与文件系统（22题）",
+            "x": 304,
+            "y": 611.484375,
+            "width": 161.328125,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 262,
+            "y": 678.265625,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "通信协议（63题）",
+            "x": 304,
+            "y": 678.265625,
+            "width": 161.328125,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "题目与单题历史",
+            "x": 249,
+            "y": 389.109375,
+            "width": 1135,
+            "height": 31.8125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "筛选题库",
+            "x": 249,
+            "y": 579.5,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "清空题库筛选",
+            "x": 347,
+            "y": 579.5,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "SystemCoreClockUpdate职责STM32F103RCT6 GPIO 阶段自测题 · gpio-004 · 易（基础",
+            "x": 249,
+            "y": 636.890625,
+            "width": 472.171875,
+            "height": 86.71875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一页",
+            "x": 249,
+            "y": 1002.5,
+            "width": 58,
+            "height": 34.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "下一页",
+            "x": 663.171875,
+            "y": 1002.5,
+            "width": 58,
+            "height": 34.390625
+          },
+          {
+            "tag": "DIV",
+            "class": "library-reader-pane",
+            "text": "选择一道题查看内容，再主动展开单题历史。",
+            "x": 745.171875,
+            "y": 636.890625,
+            "width": 638.828125,
+            "height": 400
+          }
+        ]
+      }
+    },
+    {
+      "name": "07b-records-all",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1175,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "学习记录",
+            "x": 249,
+            "y": 97,
+            "width": 1135,
+            "height": 34.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "全部分类（419题）",
+            "x": 258,
+            "y": 320.75,
+            "width": 152.640625,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▾",
+            "x": 262,
+            "y": 379.140625,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "未分类（0题）",
+            "x": 304,
+            "y": 379.140625,
+            "width": 161.328125,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 262,
+            "y": 455.921875,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "C语言（4题）",
+            "x": 304,
+            "y": 455.921875,
+            "width": 161.328125,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 262,
+            "y": 500.3125,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "MCU与外设原理（17题）",
+            "x": 304,
+            "y": 500.3125,
+            "width": 161.328125,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 262,
+            "y": 567.09375,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "STM32（313题）",
+            "x": 304,
+            "y": 567.09375,
+            "width": 161.328125,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 262,
+            "y": 611.484375,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "存储与文件系统（22题）",
+            "x": 304,
+            "y": 611.484375,
+            "width": 161.328125,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 262,
+            "y": 678.265625,
+            "width": 36,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "通信协议（63题）",
+            "x": 304,
+            "y": 678.265625,
+            "width": 161.328125,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "题目与单题历史",
+            "x": 249,
+            "y": 389.109375,
+            "width": 1135,
+            "height": 31.8125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "筛选题库",
+            "x": 249,
+            "y": 579.5,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "清空题库筛选",
+            "x": 347,
+            "y": 579.5,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "24LC256内部地址宽度24LC256 EEPROM · i2c1-029 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 636.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "EEPROM应答与写完成24LC256 EEPROM · i2c1-030 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 709.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "数据ACK等于持久化吗24LC256 EEPROM · i2c1-051 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 782.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "EEPROM跨页拆分24LC256 EEPROM · i2c1-073 · 难（综合）尚未练习",
+            "x": 249,
+            "y": 855.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "区分分辨率、编码数量与理想量化步长ADC 通用基础 · adc-general-001 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 928.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "高源阻抗为什么可能需要更长采样时间ADC 通用基础 · adc-general-002 · 中（进阶）尚未练习",
+            "x": 249,
+            "y": 1001.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "ADC的基本功能ADC 通用基础 · adc1-001 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 1074.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "12位编码范围ADC 通用基础 · adc1-002 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 1147.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "半量程的近似编码ADC 通用基础 · adc1-003 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 1220.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "高源阻抗与采样时间ADC 通用基础 · adc1-006 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 1293.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "平均滤波能做什么ADC 通用基础 · adc1-012 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 1366.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "编码数与最高码判断ADC 通用基础 · adc1-013 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 1439.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "最短采样时间是否最佳ADC 通用基础 · adc1-016 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 1512.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "平均次数与固定误差ADC 通用基础 · adc1-022 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 1585.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "位数编码数与最高码ADC 通用基础 · adc1-023 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 1658.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "参考电压影响换算ADC 通用基础 · adc1-024 · 中（进阶）尚未练习",
+            "x": 249,
+            "y": 1731.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "理想量化步长计算ADC 通用基础 · adc1-029 · 中（进阶）尚未练习",
+            "x": 249,
+            "y": 1804.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "端点映射电压换算ADC 通用基础 · adc1-030 · 中（进阶）尚未练习",
+            "x": 249,
+            "y": 1877.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "平均值与累加溢出ADC 通用基础 · adc1-033 · 中（进阶）尚未练习",
+            "x": 249,
+            "y": 1950.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "字符串对象所需空间C语言数据与寄存器访问 · uart1-011 · 易（基础）尚未练习",
+            "x": 249,
+            "y": 2023.890625,
+            "width": 457.171875,
+            "height": 72
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一页",
+            "x": 249,
+            "y": 1002.5,
+            "width": 58,
+            "height": 34.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "下一页",
+            "x": 663.171875,
+            "y": 1002.5,
+            "width": 58,
+            "height": 34.390625
+          },
+          {
+            "tag": "DIV",
+            "class": "library-reader-pane",
+            "text": "选择一道题查看内容，再主动展开单题历史。",
+            "x": 745.171875,
+            "y": 636.890625,
+            "width": 638.828125,
+            "height": 400
+          }
+        ]
+      }
+    },
+    {
+      "name": "12-unrevealed-900",
+      "geometry": {
+        "width": 900,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 885,
+        "clientWidth": 885,
+        "contentHeight": 1149,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "隐藏辅助面板",
+            "x": 686.171875,
+            "y": 14.890625,
+            "width": 94,
+            "height": 33.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 598,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "保存并返回",
+            "x": 644,
+            "y": 105,
+            "width": 100,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "收藏本题",
+            "x": 750,
+            "y": 105,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "通用与复用输出",
+            "x": 121,
+            "y": 163.375,
+            "width": 511,
+            "height": 36.25
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "题干",
+            "x": 121,
+            "y": 244.015625,
+            "width": 715,
+            "height": 27.1875
+          },
+          {
+            "tag": "TEXTAREA",
+            "class": "",
+            "text": "输入区",
+            "x": 134,
+            "y": 446.265625,
+            "width": 689,
+            "height": 200
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "参考答案",
+            "x": 121,
+            "y": 722.65625,
+            "width": 715,
+            "height": 27.1875
+          },
+          {
+            "tag": "DIV",
+            "class": "practice-actions",
+            "text": "已保存查看参考答案跳过本题保存后返回上一题结束本轮",
+            "x": 96,
+            "y": 791.203125,
+            "width": 765,
+            "height": 96.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "查看参考答案",
+            "x": 113,
+            "y": 833,
+            "width": 120,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "跳过本题",
+            "x": 249,
+            "y": 833,
+            "width": 90,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "保存后返回",
+            "x": 558,
+            "y": 833,
+            "width": 105,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一题",
+            "x": 671,
+            "y": 833,
+            "width": 75,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "quiet-action",
+            "text": "结束本轮",
+            "x": 754,
+            "y": 833,
+            "width": 90,
+            "height": 42
+          }
+        ]
+      }
+    },
+    {
+      "name": "12b-dark-900-22",
+      "geometry": {
+        "width": 900,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 885,
+        "clientWidth": 885,
+        "contentHeight": 1208,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "隐藏辅助面板",
+            "x": 686.171875,
+            "y": 14.890625,
+            "width": 94,
+            "height": 33.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 598,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "保存并返回",
+            "x": 644,
+            "y": 105,
+            "width": 100,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "收藏本题",
+            "x": 750,
+            "y": 105,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "通用与复用输出",
+            "x": 121,
+            "y": 171.375,
+            "width": 511,
+            "height": 36.25
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "题干",
+            "x": 121,
+            "y": 252.015625,
+            "width": 715,
+            "height": 35.1875
+          },
+          {
+            "tag": "TEXTAREA",
+            "class": "",
+            "text": "输入区",
+            "x": 134,
+            "y": 488.765625,
+            "width": 689,
+            "height": 200
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "参考答案",
+            "x": 121,
+            "y": 765.15625,
+            "width": 715,
+            "height": 35.1875
+          },
+          {
+            "tag": "DIV",
+            "class": "practice-actions",
+            "text": "已保存查看参考答案跳过本题保存后返回上一题结束本轮",
+            "x": 96,
+            "y": 791.203125,
+            "width": 765,
+            "height": 96.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "查看参考答案",
+            "x": 113,
+            "y": 833,
+            "width": 120,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "跳过本题",
+            "x": 249,
+            "y": 833,
+            "width": 90,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "保存后返回",
+            "x": 558,
+            "y": 833,
+            "width": 105,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一题",
+            "x": 671,
+            "y": 833,
+            "width": 75,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "quiet-action",
+            "text": "结束本轮",
+            "x": 754,
+            "y": 833,
+            "width": 90,
+            "height": 42
+          }
+        ]
+      }
+    },
+    {
+      "name": "12c-dark-revealed-900-22",
+      "geometry": {
+        "width": 900,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 885,
+        "clientWidth": 885,
+        "contentHeight": 1603,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "隐藏辅助面板",
+            "x": 686.171875,
+            "y": 14.890625,
+            "width": 94,
+            "height": 33.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 598,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "保存并返回",
+            "x": 644,
+            "y": 105,
+            "width": 100,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "收藏本题",
+            "x": 750,
+            "y": 105,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "通用与复用输出",
+            "x": 121,
+            "y": 171.375,
+            "width": 511,
+            "height": 36.25
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "题干",
+            "x": 121,
+            "y": 252.015625,
+            "width": 715,
+            "height": 35.1875
+          },
+          {
+            "tag": "TEXTAREA",
+            "class": "",
+            "text": "输入区",
+            "x": 134,
+            "y": 488.765625,
+            "width": 689,
+            "height": 200
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "参考答案",
+            "x": 142,
+            "y": 765.15625,
+            "width": 694,
+            "height": 35.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看本题历史",
+            "x": 121,
+            "y": 1221.84375,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "DIV",
+            "class": "practice-actions",
+            "text": "已保存不会不熟掌握暂不评价，下一题保存后返回上一题结束本轮",
+            "x": 96,
+            "y": 741.203125,
+            "width": 765,
+            "height": 146.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "不会",
+            "x": 113,
+            "y": 783,
+            "width": 88,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "不熟",
+            "x": 209,
+            "y": 783,
+            "width": 88,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "掌握",
+            "x": 305,
+            "y": 783,
+            "width": 88,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "暂不评价，下一题",
+            "x": 121,
+            "y": 833,
+            "width": 150,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "保存后返回",
+            "x": 558,
+            "y": 808,
+            "width": 105,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一题",
+            "x": 671,
+            "y": 808,
+            "width": 75,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "quiet-action",
+            "text": "结束本轮",
+            "x": 754,
+            "y": 808,
+            "width": 90,
+            "height": 42
+          }
+        ]
+      }
+    },
+    {
+      "name": "12d-dark-answer-bottom-900-22",
+      "geometry": {
+        "width": 900,
+        "height": 900,
+        "scrollY": 703,
+        "contentWidth": 885,
+        "clientWidth": 885,
+        "contentHeight": 1603,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "隐藏辅助面板",
+            "x": 686.171875,
+            "y": -688.109375,
+            "width": 94,
+            "height": 33.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 598,
+            "y": -549.921875,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "保存并返回",
+            "x": 644,
+            "y": -598,
+            "width": 100,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "收藏本题",
+            "x": 750,
+            "y": -598,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "通用与复用输出",
+            "x": 121,
+            "y": -531.625,
+            "width": 511,
+            "height": 36.25
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "题干",
+            "x": 121,
+            "y": -450.984375,
+            "width": 715,
+            "height": 35.1875
+          },
+          {
+            "tag": "TEXTAREA",
+            "class": "",
+            "text": "输入区",
+            "x": 134,
+            "y": -214.234375,
+            "width": 689,
+            "height": 200
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "参考答案",
+            "x": 142,
+            "y": 62.15625,
+            "width": 694,
+            "height": 35.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看本题历史",
+            "x": 121,
+            "y": 518.84375,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "DIV",
+            "class": "practice-actions",
+            "text": "已保存不会不熟掌握暂不评价，下一题保存后返回上一题结束本轮",
+            "x": 96,
+            "y": 741.203125,
+            "width": 765,
+            "height": 146.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "不会",
+            "x": 113,
+            "y": 783,
+            "width": 88,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "不熟",
+            "x": 209,
+            "y": 783,
+            "width": 88,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "掌握",
+            "x": 305,
+            "y": 783,
+            "width": 88,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "暂不评价，下一题",
+            "x": 121,
+            "y": 833,
+            "width": 150,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "保存后返回",
+            "x": 558,
+            "y": 808,
+            "width": 105,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一题",
+            "x": 671,
+            "y": 808,
+            "width": 75,
+            "height": 42
+          },
+          {
+            "tag": "BUTTON",
+            "class": "quiet-action",
+            "text": "结束本轮",
+            "x": 754,
+            "y": 808,
+            "width": 90,
+            "height": 42
+          }
+        ]
+      }
+    },
+    {
+      "name": "03b-library-1440-22",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1425,
+        "clientWidth": 1425,
+        "contentHeight": 1842,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 1138,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "导入题库",
+            "x": 1180,
+            "y": 89,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "导出题库模板",
+            "x": 1274,
+            "y": 89,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-close",
+            "text": "关闭分类管理",
+            "x": 257,
+            "y": 217.78125,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "新增分类",
+            "x": 257,
+            "y": 588.5625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "修改或移除分类",
+            "x": 355,
+            "y": 588.5625,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "调整专题归属",
+            "x": 495,
+            "y": 588.5625,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "筛选题库",
+            "x": 531.40625,
+            "y": 326.5625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "清空题库筛选",
+            "x": 629.40625,
+            "y": 326.5625,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "全部分类（419题）",
+            "x": 257,
+            "y": 561.96875,
+            "width": 152.640625,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▾",
+            "x": 261,
+            "y": 618.359375,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "未分类（0题）",
+            "x": 303,
+            "y": 618.359375,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 717.53125,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "C语言（4题）",
+            "x": 303,
+            "y": 717.53125,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 784.3125,
+            "width": 36,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "MCU与外设原理（17题）",
+            "x": 303,
+            "y": 784.3125,
+            "width": 102,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 873.484375,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "STM32（313题）",
+            "x": 303,
+            "y": 873.484375,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 940.265625,
+            "width": 36,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "存储与文件系统（22题）",
+            "x": 303,
+            "y": 940.265625,
+            "width": 102,
+            "height": 85.171875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-toggle",
+            "text": "▸",
+            "x": 261,
+            "y": 1029.4375,
+            "width": 36,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "通信协议（63题）",
+            "x": 303,
+            "y": 1029.4375,
+            "width": 102,
+            "height": 62.78125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO名称与输入输出STM32F103RCT6 GPIO 阶段自测题 · gpio-001 · 易（基础）自评：不会",
+            "x": 465,
+            "y": -641.046875,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO时钟依赖STM32F103RCT6 GPIO 阶段自测题 · gpio-002 · 易（基础）自评：不熟",
+            "x": 465,
+            "y": -566.765625,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO端口总线STM32F103RCT6 GPIO 阶段自测题 · gpio-003 · 易（基础）自评：掌握",
+            "x": 465,
+            "y": -492.484375,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "SystemCoreClockUpdate职责STM32F103RCT6 GPIO 阶段自测题 · gpio-004 · 易（基础",
+            "x": 465,
+            "y": -418.203125,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "通用与复用输出STM32F103RCT6 GPIO 阶段自测题 · gpio-005 · 易（基础）已揭晓，未自评",
+            "x": 465,
+            "y": -343.921875,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "推挽与开漏STM32F103RCT6 GPIO 阶段自测题 · gpio-006 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -269.640625,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO输出速度配置STM32F103RCT6 GPIO 阶段自测题 · gpio-007 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -195.359375,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "输入默认电平STM32F103RCT6 GPIO 阶段自测题 · gpio-008 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -121.078125,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "按键有效电平STM32F103RCT6 GPIO 阶段自测题 · gpio-009 · 易（基础）尚未练习",
+            "x": 465,
+            "y": -46.796875,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "复用引脚与外设初始化STM32F103RCT6 GPIO 阶段自测题 · gpio-010 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 27.484375,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO初始化结构体STM32F103RCT6 GPIO 阶段自测题 · gpio-011 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 101.765625,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO_Init参数STM32F103RCT6 GPIO 阶段自测题 · gpio-012 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 176.046875,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIOA时钟使能调用STM32F103RCT6 GPIO 阶段自测题 · gpio-013 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 250.328125,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "GPIO置位和复位接口STM32F103RCT6 GPIO 阶段自测题 · gpio-014 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 324.609375,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "读取单个输入位STM32F103RCT6 GPIO 阶段自测题 · gpio-015 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 398.890625,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "IDR与ODR读取STM32F103RCT6 GPIO 阶段自测题 · gpio-016 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 473.171875,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "输入模式中的Speed成员STM32F103RCT6 GPIO 阶段自测题 · gpio-017 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 547.453125,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "旧C模式的局部声明STM32F103RCT6 GPIO 阶段自测题 · gpio-018 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 621.734375,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "F1 GPIO输入模式STM32F103RCT6 GPIO 阶段自测题 · gpio-019 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 696.015625,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "question-row",
+            "text": "F1 GPIO输出模式STM32F103RCT6 GPIO 阶段自测题 · gpio-020 · 易（基础）尚未练习",
+            "x": 465,
+            "y": 770.296875,
+            "width": 384.140625,
+            "height": 73.28125
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "上一页",
+            "x": 465,
+            "y": 827,
+            "width": 58,
+            "height": 34.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "下一页",
+            "x": 806.140625,
+            "y": 827,
+            "width": 58,
+            "height": 34.390625
+          },
+          {
+            "tag": "DIV",
+            "class": "library-reader-pane",
+            "text": "返回题目列表STM32F103RCT6 GPIO 阶段自测题 · gpio-020F1 GPIO输出模式易（基础） · GPIO ",
+            "x": 888.140625,
+            "y": 387.953125,
+            "width": 487.859375,
+            "height": 473.4375
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "F1 GPIO输出模式",
+            "x": 913.140625,
+            "y": 416.75,
+            "width": 447.859375,
+            "height": 35.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "收藏本题",
+            "x": 913.140625,
+            "y": 505.515625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "展开参考答案",
+            "x": 913.140625,
+            "y": 814.15625,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看本题历史",
+            "x": 913.140625,
+            "y": 878.546875,
+            "width": 114,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "03c-library-1200-22",
+      "geometry": {
+        "width": 1200,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 1185,
+        "clientWidth": 1185,
+        "contentHeight": 954,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "navigation-toggle",
+            "text": "‹",
+            "x": 165.171875,
+            "y": 45.390625,
+            "width": 26.828125,
+            "height": 28.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 898,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "导入题库",
+            "x": 940,
+            "y": 89,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "导出题库模板",
+            "x": 1034,
+            "y": 89,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "category-close",
+            "text": "关闭分类管理",
+            "x": 257,
+            "y": 217.78125,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "新增分类",
+            "x": 257,
+            "y": 588.5625,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "修改或移除分类",
+            "x": 355,
+            "y": 588.5625,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "调整专题归属",
+            "x": 495,
+            "y": 588.5625,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "DIV",
+            "class": "library-reader-pane",
+            "text": "返回题目列表STM32F103RCT6 GPIO 阶段自测题 · gpio-020F1 GPIO输出模式易（基础） · GPIO ",
+            "x": 257,
+            "y": 237.78125,
+            "width": 879,
+            "height": 570.6875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "return-to-list",
+            "text": "返回题目列表",
+            "x": 257,
+            "y": 237.78125,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "F1 GPIO输出模式",
+            "x": 257,
+            "y": 322.96875,
+            "width": 879,
+            "height": 35.1875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "收藏本题",
+            "x": 257,
+            "y": 411.734375,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "展开参考答案",
+            "x": 257,
+            "y": 679.6875,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "查看本题历史",
+            "x": 257,
+            "y": 744.078125,
+            "width": 114,
+            "height": 40.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "10b-appearance-900-22",
+      "geometry": {
+        "width": 900,
+        "height": 900,
+        "scrollY": 0,
+        "contentWidth": 885,
+        "clientWidth": 885,
+        "contentHeight": 1791,
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "应用所选主题",
+            "x": 598,
+            "y": 153.078125,
+            "width": 246,
+            "height": 40.390625
+          },
+          {
+            "tag": "H2",
+            "class": "",
+            "text": "设置与数据",
+            "x": 121,
+            "y": 105,
+            "width": 715,
+            "height": 34.796875
+          },
+          {
+            "tag": "DIV",
+            "class": "",
+            "text": "外观主题备份恢复数据位置",
+            "x": 121,
+            "y": 151.796875,
+            "width": 274,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "外观主题",
+            "x": 121,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "备份恢复",
+            "x": 215,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "数据位置",
+            "x": 309,
+            "y": 151.796875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "把思考留在题目旁",
+            "x": 144,
+            "y": 895.25,
+            "width": 669,
+            "height": 33.296875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "preview-action primary",
+            "text": "查看参考答案（预览）",
+            "x": 144,
+            "y": 1245.328125,
+            "width": 166,
+            "height": 36.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "primary",
+            "text": "保存并应用",
+            "x": 519.28125,
+            "y": 847.609375,
+            "width": 100,
+            "height": 40.390625
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "恢复默认外观",
+            "x": 722,
+            "y": 847.609375,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "tag": "H3",
+            "class": "",
+            "text": "安装更多主题",
+            "x": 121,
+            "y": 1565.375,
+            "width": 471.640625,
+            "height": 28.796875
+          },
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "安装本地主题…",
+            "x": 710.609375,
+            "y": 1577.765625,
+            "width": 125.390625,
+            "height": 40.390625
+          }
+        ]
+      }
+    }
+  ],
+  "selections": [
+    {
+      "row": 1,
+      "before": 0,
+      "after": 0,
+      "title": {
+        "x": 913.140625,
+        "y": 416.75,
+        "width": 447.859375,
+        "height": 35.1875
+      },
+      "scrollY": 0
+    },
+    {
+      "row": 10,
+      "before": 477,
+      "after": 477,
+      "title": {
+        "x": 913.140625,
+        "y": 416.75,
+        "width": 447.859375,
+        "height": 35.1875
+      },
+      "scrollY": 0
+    },
+    {
+      "row": 20,
+      "before": 1029,
+      "after": 1029,
+      "title": {
+        "x": 913.140625,
+        "y": 416.75,
+        "width": 447.859375,
+        "height": 35.1875
+      },
+      "scrollY": 0
+    }
+  ],
+  "requests": [],
+  "actual": {
+    "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.1-workbench-e-ui3-20261026.2-r2\\win-unpacked\\embedded-practice.exe",
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-ui3-independent-Cg847B",
+    "packaged": true,
+    "version": "0.0.1"
+  },
+  "categoryScroll": [
+    {
+      "class": "category-tree",
+      "client": 270,
+      "scroll": 490
+    }
+  ],
+  "schema": 10,
+  "complete": true
+}

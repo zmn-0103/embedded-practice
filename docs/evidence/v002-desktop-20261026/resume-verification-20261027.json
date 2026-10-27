@@ -1,0 +1,20 @@
+{
+  "verifiedDate": "2026-10-27",
+  "sourceBaseline": "66bbc6c",
+  "changedSourceFiles": [
+    "src/renderer/src/App.tsx",
+    "tests/e2e/board-entry.spec.ts",
+    "tests/e2e/personal-bank.spec.ts",
+    "tests/e2e/theme-helpers.ts"
+  ],
+  "deliveredFilesVerified": 154,
+  "allDeliveredHashesMatch": true,
+  "rawTestReportUnchanged": true,
+  "expectedTests": 255,
+  "unexpected": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "desktopTarget": "E:/My_Projects/embedded-practice/release/V0.0.2-20261026.4/win-unpacked/embedded-practice.exe",
+  "appCurrentlyRunning": false,
+  "appNotRelaunchedForFinalRecheck": true
+}

@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "singleRunAllPassed": false,
+  "statement": "Full run 410/414, then exact display-label expectation correction and focused 4/4. Union covers 414 distinct cases; do not report a single 414/414 run.",
+  "previousCases": 404,
+  "currentCases": 414,
+  "fullRunStats": {
+    "startTime": "2026-10-24T05:36:45.677Z",
+    "duration": 788658.3709999999,
+    "expected": 410,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  },
+  "focusedStats": {
+    "startTime": "2026-10-24T05:50:15.931Z",
+    "duration": 19519.717,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": {
+    "development": {
+      "scenarios": 207,
+      "fullRunPassed": 205,
+      "focusedPassed": 2
+    },
+    "packaged": {
+      "scenarios": 207,
+      "fullRunPassed": 205,
+      "focusedPassed": 2
+    }
+  },
+  "originalCasesRemoved": [],
+  "added": [
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习",
+      "project": "development"
+    },
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：改名移动移除后旧轮队列/草稿/历史/方案逐行保持，正常重开继续原轮",
+      "project": "development"
+    },
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：旧筛选慢响应不能覆盖新板块，计数读取失败明确重试且不写库",
+      "project": "development"
+    },
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：实际数量/分页/归档一致，自定义与未分类可达，易中难筛选沿用原值",
+      "project": "development"
+    },
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过",
+      "project": "development"
+    },
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习",
+      "project": "packaged"
+    },
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：改名移动移除后旧轮队列/草稿/历史/方案逐行保持，正常重开继续原轮",
+      "project": "packaged"
+    },
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：旧筛选慢响应不能覆盖新板块，计数读取失败明确重试且不写库",
+      "project": "packaged"
+    },
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：实际数量/分页/归档一致，自定义与未分类可达，易中难筛选沿用原值",
+      "project": "packaged"
+    },
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过",
+      "project": "packaged"
+    }
+  ],
+  "focusedCases": [
+    {
+      "file": "session-filters.spec.ts",
+      "title": "sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "project": "development"
+    },
+    {
+      "file": "session-filters.spec.ts",
+      "title": "random 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "project": "development"
+    },
+    {
+      "file": "session-filters.spec.ts",
+      "title": "sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "project": "packaged"
+    },
+    {
+      "file": "session-filters.spec.ts",
+      "title": "random 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "project": "packaged"
+    }
+  ],
+  "unresolvedCases": [],
+  "zeroAutomaticRetries": true
+}

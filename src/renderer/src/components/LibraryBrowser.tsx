@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import type {
   ContentBody,
@@ -12,7 +12,7 @@ import {
   type QuestionFilters,
 } from '../../../shared/contracts/question-filters'
 import { MarkdownContent } from './MarkdownContent'
-import { QuestionFilterFields } from './QuestionFilterFields'
+import { QuestionFilterFields, questionFilterSummary } from './QuestionFilterFields'
 import { QuestionHistory } from './QuestionHistory'
 import type { LearningScope } from '../../../shared/contracts/learning'
 import {
@@ -281,6 +281,7 @@ function LibraryContent({
   entry,
 }: LibraryBrowserProps) {
   // 学习记录父级按范围建立 key；范围在本次挂载中固定，其他筛选仍可独立调整。
+  const clearHelpId = useId()
   const [request, setRequest] = useState<ListRequest>(() => ({
     topicId: scope?.topicId ?? null,
     category: scope?.category ?? entry?.category ?? ALL_CATEGORIES,
@@ -384,6 +385,17 @@ function LibraryContent({
     )
   if (!data) return <p className="reader-placeholder">正在读取题库…</p>
   const resultsReady = !loading && !error && resolvedRequest.current === request
+  const category = request.category ?? ALL_CATEGORIES
+  const categoryTitle =
+    category.kind === 'all'
+      ? '全部分类'
+      : category.kind === 'uncategorized'
+        ? '未分类'
+        : (data.categories.find((item) => item.categoryId === category.categoryId)?.title ??
+          '已失效的分类')
+  const topicTitle = request.topicId
+    ? (data.topics.find((item) => item.topicId === request.topicId)?.title ?? '已失效的专题')
+    : '全部专题'
   const updatedFilter = (
     <label className="content-updated-filter">
       <input
@@ -426,6 +438,26 @@ function LibraryContent({
       onOperation={onCategoryOperation}
     />
   )
+  const resultDescription = (
+    <>
+      {resultsReady && (
+        <div className="library-applied-filters">
+          <p aria-label="题库结果范围">
+            {categoryTitle} · {topicTitle} · {request.archived ? '归档题目' : '有效题目'}
+            {request.contentUpdatedOnly ? ' · 仅内容更新待复习' : ''}
+          </p>
+          <p aria-label="题库生效条件">
+            {questionFilterSummary(request.filters ?? EMPTY_QUESTION_FILTERS)}
+          </p>
+        </div>
+      )}
+      <p id={clearHelpId} className="muted">
+        {scope
+          ? '清空仅重置下方列表的附加条件，保留上方学习记录的范围。'
+          : '清空将恢复全部分类、全部专题和有效题目，并移除所有附加条件。'}
+      </p>
+    </>
+  )
   if (data.topics.length === 0)
     return (
       <section ref={heading} tabIndex={-1} className="library-empty" aria-labelledby="empty-title">
@@ -461,69 +493,13 @@ function LibraryContent({
     >
       <div className="library-management-tools">{management}</div>
       <div className="library-controls">
-        <QuestionFilterFields
-          compact={Boolean(scope)}
-          advancedContent={scope ? updatedFilter : undefined}
-          prefix="题库"
-          filters={filters}
-          tagOptions={data.tagOptions}
-          onChange={setFilters}
-          disabled={loading}
-        />
-        {(JSON.stringify(filters) !== JSON.stringify(request.filters ?? EMPTY_QUESTION_FILTERS) ||
-          contentUpdatedOnly !== Boolean(request.contentUpdatedOnly)) && (
-          <p className="muted" aria-live="polite">
-            条件已调整，点击“筛选题库”后应用到列表。
-          </p>
-        )}
-        {!scope && updatedFilter}
-        {(!scope || request.contentUpdatedOnly) && (
-          <p className="muted" aria-label="题库结果范围">
-            {request.archived ? '归档题目' : '有效题目'}
-            {request.contentUpdatedOnly ? ' · 仅内容更新待复习' : ''}
-          </p>
-        )}
-        <div className="button-row">
-          <button
-            type="button"
-            disabled={loading}
-            onClick={() =>
-              setRequest({ ...request, page: 1, filters: { ...filters }, contentUpdatedOnly })
-            }
-          >
-            筛选题库
-          </button>
-          <button
-            type="button"
-            disabled={loading}
-            onClick={() => {
-              setFilters({ ...EMPTY_QUESTION_FILTERS })
-              setContentUpdatedOnly(false)
-              setRequest({
-                topicId: scope?.topicId ?? null,
-                category: scope?.category ?? ALL_CATEGORIES,
-                archived: scope?.archived ?? false,
-                page: 1,
-              })
-            }}
-          >
-            清空题库筛选
-          </button>
-        </div>
-        {loading && <p aria-live="polite">正在筛选题库…</p>}
-        {error && (
-          <div role="alert" className="error-message">
-            <p>{error}</p>
-            <button
-              type="button"
-              disabled={loading}
-              onClick={() => setAttempt((value) => value + 1)}
-            >
-              重新读取题库
-            </button>
-          </div>
-        )}
-        <div className="library-filters">
+        <div
+          className="library-scope-controls"
+          role="group"
+          aria-label="选择题库范围"
+          hidden={Boolean(scope)}
+        >
+          <h3>1 · 选择范围</h3>
           {!scope && (
             <label>
               专题
@@ -571,8 +547,91 @@ function LibraryContent({
               查看归档题目
             </label>
           )}
-          <span className="muted">{resultsReady ? `共 ${data.total} 题` : '结果尚未确认'}</span>
+          <p className="muted">
+            {scope
+              ? '范围沿用上方学习记录；下方条件只筛选题目列表。'
+              : '分类在“分类与专题”导航中选择；范围更改后立即更新结果。'}
+          </p>
         </div>
+        <div className="library-condition-controls" role="group" aria-label="设置题库条件">
+          <h3 hidden={Boolean(scope)}>2 · 设置条件</h3>
+          <QuestionFilterFields
+            compact={Boolean(scope)}
+            advancedContent={scope ? updatedFilter : undefined}
+            prefix="题库"
+            filters={filters}
+            tagOptions={data.tagOptions}
+            onChange={setFilters}
+            disabled={loading}
+          />
+          <div className="library-apply-controls">
+            {!scope && updatedFilter}
+            <button
+              type="button"
+              className="primary"
+              disabled={loading}
+              onClick={() =>
+                setRequest({ ...request, page: 1, filters: { ...filters }, contentUpdatedOnly })
+              }
+            >
+              筛选题库
+            </button>
+            {(JSON.stringify(filters) !==
+              JSON.stringify(request.filters ?? EMPTY_QUESTION_FILTERS) ||
+              contentUpdatedOnly !== Boolean(request.contentUpdatedOnly)) && (
+              <p className="filter-pending" role="status">
+                条件已调整，点击“筛选题库”后应用到列表。
+              </p>
+            )}
+          </div>
+        </div>
+        <div className="library-result-summary" role="group" aria-label="题库生效筛选与结果">
+          <div className="library-result-heading">
+            <h3 hidden={Boolean(scope)}>3 · 查看结果</h3>
+            <strong aria-live="polite">
+              {resultsReady ? `共 ${data.total} 题` : '结果尚未确认'}
+            </strong>
+            <button
+              type="button"
+              aria-describedby={clearHelpId}
+              disabled={loading}
+              onClick={() => {
+                setFilters({ ...EMPTY_QUESTION_FILTERS })
+                setContentUpdatedOnly(false)
+                setRequest({
+                  topicId: scope?.topicId ?? null,
+                  category: scope?.category ?? ALL_CATEGORIES,
+                  archived: scope?.archived ?? false,
+                  page: 1,
+                })
+              }}
+            >
+              清空题库筛选
+            </button>
+          </div>
+          {scope ? (
+            <details className="library-result-details">
+              <summary>生效条件与清空范围</summary>
+              {resultDescription}
+            </details>
+          ) : (
+            resultDescription
+          )}
+          {!scope && <p className="muted">准备作答时，进入“开始练习”设置本轮条件。</p>}
+        </div>
+        {loading && <p aria-live="polite">正在筛选题库…</p>}
+        {error && (
+          <div role="alert" className="error-message">
+            <p>{error}</p>
+            <button
+              type="button"
+              disabled={loading}
+              onClick={() => setAttempt((value) => value + 1)}
+            >
+              重新读取题库
+            </button>
+          </div>
+        )}
       </div>
       <div className="library-layout">
         {!scope && (

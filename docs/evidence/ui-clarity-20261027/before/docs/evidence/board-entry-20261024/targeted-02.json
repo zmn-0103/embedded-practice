@@ -1,0 +1,211 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/board-entry.spec.ts",
+      "--project=development",
+      "--output=docs/evidence/board-entry-20261024/targeted-02-artifacts"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/board-entry-20261024/targeted-02-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/board-entry-20261024/targeted-02-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\board-entry-20261024\\targeted-02-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "board-entry.spec.ts",
+      "file": "board-entry.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1235,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:19:14.015Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "runtime.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJleGVjdXRhYmxlIjogIkU6XFxNeV9Qcm9qZWN0c1xcZW1iZWRkZWQtcHJhY3RpY2VcXG5vZGVfbW9kdWxlc1xcZWxlY3Ryb25cXGRpc3RcXGVsZWN0cm9uLmV4ZSIsCiAgImFwcFBhdGgiOiAiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcb3V0XFxtYWluIiwKICAicGFja2FnZWQiOiBmYWxzZSwKICAidXNlckRhdGEiOiAiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLXVqMWpmYiIsCiAgImVsZWN0cm9uIjogIjQyLjExLjE1IiwKICAibm9kZSI6ICIyNC4xOS4wIiwKICAiYXJndW1lbnRzIjogWwogICAgIkU6XFxNeV9Qcm9qZWN0c1xcZW1iZWRkZWQtcHJhY3RpY2VcXG5vZGVfbW9kdWxlc1xcZWxlY3Ryb25cXGRpc3RcXGVsZWN0cm9uLmV4ZSIsCiAgICAiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcb3V0XFxtYWluXFxpbmRleC5qcyIKICBdLAogICJzY2hlbWEiOiB7CiAgICAidXNlcl92ZXJzaW9uIjogOQogIH0sCiAgImJ1aWxkIjogIjIwMjYxMDI0LjItYm9hcmRzIgp9"
+                    },
+                    {
+                      "name": "boards-empty.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\board-entry-20261024\\targeted-02-artifacts\\board-entry-板块入口：空库默认页可搜索和键盘浏览22份规划，不种分类或启动空练习-development\\attachments\\boards-empty-png-18758325fc82e8334fed7f03592945cd3ccece58.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1779d5fe0daf7702a7de-0a66ff2e931eb38b1fdb",
+          "file": "board-entry.spec.ts",
+          "line": 87,
+          "column": 5
+        },
+        {
+          "title": "板块入口：实际数量/分页/归档一致，自定义与未分类可达，易中难筛选沿用原值",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2123,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:19:15.276Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "runtime.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJleGVjdXRhYmxlIjogIkU6XFxNeV9Qcm9qZWN0c1xcZW1iZWRkZWQtcHJhY3RpY2VcXG5vZGVfbW9kdWxlc1xcZWxlY3Ryb25cXGRpc3RcXGVsZWN0cm9uLmV4ZSIsCiAgImFwcFBhdGgiOiAiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcb3V0XFxtYWluIiwKICAicGFja2FnZWQiOiBmYWxzZSwKICAidXNlckRhdGEiOiAiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLWNSSDB0VyIsCiAgImVsZWN0cm9uIjogIjQyLjExLjE1IiwKICAibm9kZSI6ICIyNC4xOS4wIiwKICAiYXJndW1lbnRzIjogWwogICAgIkU6XFxNeV9Qcm9qZWN0c1xcZW1iZWRkZWQtcHJhY3RpY2VcXG5vZGVfbW9kdWxlc1xcZWxlY3Ryb25cXGRpc3RcXGVsZWN0cm9uLmV4ZSIsCiAgICAiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcb3V0XFxtYWluXFxpbmRleC5qcyIKICBdLAogICJzY2hlbWEiOiB7CiAgICAidXNlcl92ZXJzaW9uIjogOQogIH0sCiAgImJ1aWxkIjogIjIwMjYxMDI0LjItYm9hcmRzIgp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1779d5fe0daf7702a7de-782f10b2d8ac4cd0c939",
+          "file": "board-entry.spec.ts",
+          "line": 136,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T05:19:13.601Z",
+    "duration": 3831.7750000000005,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

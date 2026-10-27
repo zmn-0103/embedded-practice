@@ -1,0 +1,431 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "settings-palettes",
+      "--project=development",
+      "--reporter=line,json",
+      "--output=docs/evidence/ui-themes-20261023/targeted-02"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/ui-themes-20261023/targeted-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/ui-themes-20261023/targeted-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-themes-20261023\\targeted-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "settings-palettes.spec.ts",
+      "file": "settings-palettes.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1871,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T04:34:18.113Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "palette-forest-light.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-themes-20261023\\targeted-02\\settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\\attachments\\palette-forest-light-png-9de046761c5551cabe8f1b0c01f95dcd8e6faca5.png"
+                    },
+                    {
+                      "name": "palette-forest-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-themes-20261023\\targeted-02\\settings-palettes-松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\\attachments\\palette-forest-dark-png-9e90b4661e8a142bc8d37f1a148747264b4e4778.png"
+                    },
+                    {
+                      "name": "palette-forest-contrast.json",
+                      "contentType": "application/json",
+                      "body": "W3sidGhlbWUiOiJsaWdodCIsInJhdGlvcyI6eyJib2R5IjoxMy4wODYwMzA3OTc5ODAzNTEsInNlY29uZGFyeSI6NS4xNzI3Njg2ODQxOTIwMjIsInByaW1hcnkiOjYuMzgzNzg2MTYwMjQ0MjAxfX0seyJ0aGVtZSI6ImRhcmsiLCJyYXRpb3MiOnsiYm9keSI6MTMuMzA5Nzc4MzAwMzU5MjQ1LCJzZWNvbmRhcnkiOjguMDg5MDc1MDc3ODU5Njg2LCJwcmltYXJ5Ijo5LjY5NTAxMzQzMjA5NDMyNn19XQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eeabe95b8a9c05c1fffc-6f92a1b0ee110714a414",
+          "file": "settings-palettes.spec.ts",
+          "line": 82,
+          "column": 7
+        },
+        {
+          "title": "晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1791,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T04:34:20.013Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "palette-ocean-light.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-themes-20261023\\targeted-02\\settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\\attachments\\palette-ocean-light-png-7a4b0b430cffcabef0205ed3b11f50a2fd2c1aa0.png"
+                    },
+                    {
+                      "name": "palette-ocean-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-themes-20261023\\targeted-02\\settings-palettes-晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\\attachments\\palette-ocean-dark-png-bbe399cf4c22ab4951822c17a7a857b572789bbc.png"
+                    },
+                    {
+                      "name": "palette-ocean-contrast.json",
+                      "contentType": "application/json",
+                      "body": "W3sidGhlbWUiOiJsaWdodCIsInJhdGlvcyI6eyJib2R5IjoxMi4zNzQ3NDQwODc1NDc5MjIsInNlY29uZGFyeSI6NS4xMjkxMjMyODk2Njc4NDMsInByaW1hcnkiOjYuMDA0ODc2MDUwNzQ1NzU3fX0seyJ0aGVtZSI6ImRhcmsiLCJyYXRpb3MiOnsiYm9keSI6MTIuNTQ5ODkxNTc3MDMxMTksInNlY29uZGFyeSI6Ny43MTYyMTI2ODczODk1MzcsInByaW1hcnkiOjguODg5NTQxNzQxMjAzMDg2fX1d"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eeabe95b8a9c05c1fffc-5d26cb27347178ef472c",
+          "file": "settings-palettes.spec.ts",
+          "line": 82,
+          "column": 7
+        },
+        {
+          "title": "暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1814,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T04:34:21.810Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "palette-sand-light.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-themes-20261023\\targeted-02\\settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\\attachments\\palette-sand-light-png-97bf5777153cec651088eb0b0f2a398b02aaa0b9.png"
+                    },
+                    {
+                      "name": "palette-sand-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-themes-20261023\\targeted-02\\settings-palettes-暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\\attachments\\palette-sand-dark-png-a68ea01f69384395e484e2eb9a4ec3098cb41961.png"
+                    },
+                    {
+                      "name": "palette-sand-contrast.json",
+                      "contentType": "application/json",
+                      "body": "W3sidGhlbWUiOiJsaWdodCIsInJhdGlvcyI6eyJib2R5IjoxMS4yMTExMzkzMTg5NTIwMjUsInNlY29uZGFyeSI6NS4yNjMzNjQwNjQ4NjczNjYsInByaW1hcnkiOjUuMzkwMzU5MDU0NTc3MDU0fX0seyJ0aGVtZSI6ImRhcmsiLCJyYXRpb3MiOnsiYm9keSI6MTIuMDIwOTUwMzQwODgzOTcsInNlY29uZGFyeSI6Ny42MjY1NDQ2OTk0MzQzNjQsInByaW1hcnkiOjkuNzA4ODYzMjg4NDU5MzQ2fX1d"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eeabe95b8a9c05c1fffc-d6e62a7fa9aa5c69b65f",
+          "file": "settings-palettes.spec.ts",
+          "line": 82,
+          "column": 7
+        },
+        {
+          "title": "暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T04:34:23.635Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "palette-lilac-light.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-themes-20261023\\targeted-02\\settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\\attachments\\palette-lilac-light-png-e17e972fae36211c9c5d3e29db6adadeb441959c.png"
+                    },
+                    {
+                      "name": "palette-lilac-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-themes-20261023\\targeted-02\\settings-palettes-暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录-development\\attachments\\palette-lilac-dark-png-d14671b155f57bfd330f865ec3047595f57fd168.png"
+                    },
+                    {
+                      "name": "palette-lilac-contrast.json",
+                      "contentType": "application/json",
+                      "body": "W3sidGhlbWUiOiJsaWdodCIsInJhdGlvcyI6eyJib2R5IjoxMi4yNjIxMTk5NTQ3NDIzMzUsInNlY29uZGFyeSI6NS40NDA4NTEyODU4ODA5MjksInByaW1hcnkiOjYuMDc3OTk5OTMwMDA2NzEzfX0seyJ0aGVtZSI6ImRhcmsiLCJyYXRpb3MiOnsiYm9keSI6MTIuMzA2NDM4MzU4OTYxMTkzLCJzZWNvbmRhcnkiOjcuMzU4NDYyNzQ1MzE5OTE4LCJwcmltYXJ5Ijo4LjY4NTc4MTY2OTQ5NjEwMn19XQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eeabe95b8a9c05c1fffc-86bfd5b0dd9daea1b802",
+          "file": "settings-palettes.spec.ts",
+          "line": 82,
+          "column": 7
+        },
+        {
+          "title": "配色真实写失败/丢响应保留选择，键盘切换后正常重开保留草稿",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2381,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T04:34:25.474Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eeabe95b8a9c05c1fffc-b085cf90a19eed973f89",
+          "file": "settings-palettes.spec.ts",
+          "line": 143,
+          "column": 5
+        },
+        {
+          "title": "配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2239,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T04:34:27.863Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "palette-narrow-input.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-themes-20261023\\targeted-02\\settings-palettes-配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作-development\\attachments\\palette-narrow-input-png-25cdf9efb8d3eba3083f7473ce19da447946d07a.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eeabe95b8a9c05c1fffc-79a2c2373eba9035c7de",
+          "file": "settings-palettes.spec.ts",
+          "line": 217,
+          "column": 5
+        },
+        {
+          "title": "复制成功反馈2.5秒自熄，重复复制重置、错误保留且切题拒绝晚到响应",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6859,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T04:34:30.109Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eeabe95b8a9c05c1fffc-da5d8c958393152943d8",
+          "file": "settings-palettes.spec.ts",
+          "line": 263,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-23T04:34:17.732Z",
+    "duration": 19270.986,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

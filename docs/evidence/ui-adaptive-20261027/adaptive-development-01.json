@@ -1,0 +1,483 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/ui-adaptive.spec.ts",
+      "--project=development",
+      "--output=docs/evidence/ui-adaptive-20261027/adaptive-development-01",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/ui-adaptive-20261027/adaptive-development-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/ui-adaptive-20261027/adaptive-development-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-adaptive-20261027\\adaptive-development-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ui-adaptive.spec.ts",
+      "file": "ui-adaptive.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "第二批缩放：松间绿/light/1440px/17px/200%",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3441,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:00:51.388Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "zoom.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-adaptive-20261027\\adaptive-development-01\\ui-adaptive-第二批缩放：松间绿-light-1440px-17px-200--development\\attachments\\zoom-png-9489baf607288fa3df22312d7bd893cadbaa8e47.png"
+                    },
+                    {
+                      "name": "layout.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJydW50aW1lIjogewogICAgImV4ZSI6ICJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLAogICAgInVzZXJEYXRhIjogIkM6XFxVc2Vyc1xccGNcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxlbWJlZGRlZC1wcmFjdGljZS13NXJFMXgiLAogICAgInBhY2thZ2VkIjogZmFsc2UsCiAgICAidmVyc2lvbiI6ICI0Mi4xMS4xNSIKICB9LAogICJsYXlvdXQiOiB7CiAgICAid2lkdGgiOiAxNDQwLAogICAgImZvbnQiOiAxNywKICAgICJ6b29tIjogMiwKICAgICJ0aGVtZSI6ICLmnb7pl7Tnu78iLAogICAgIm1vZGUiOiAibGlnaHQiCiAgfSwKICAibWV0cmljcyI6IHsKICAgICJ2aWV3cG9ydCI6IHsKICAgICAgIndpZHRoIjogNzIwLAogICAgICAiaGVpZ2h0IjogNDUwCiAgICB9LAogICAgImFjdGlvbnMiOiB7CiAgICAgICJ0b3AiOiAzNjIuODA0Njg3NSwKICAgICAgImhlaWdodCI6IDc5LjE5NTMxMjUsCiAgICAgICJyYXRpbyI6IDAuMTc1OTg5NTgzMzMzMzMzMzQKICAgIH0sCiAgICAiaW5wdXQiOiB7CiAgICAgICJ0b3AiOiAyMy43NzM0Mzc1LAogICAgICAiaGVpZ2h0IjogMjAwLAogICAgICAidmlzaWJsZSI6IDIwMAogICAgfQogIH0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4d3c90a69ab5db27bac-df85cfc9eda421116266",
+          "file": "ui-adaptive.spec.ts",
+          "line": 22,
+          "column": 7
+        },
+        {
+          "title": "第二批缩放：松间绿/light/1440px/22px/200%",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3100,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:00:54.858Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "zoom.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-adaptive-20261027\\adaptive-development-01\\ui-adaptive-第二批缩放：松间绿-light-1440px-22px-200--development\\attachments\\zoom-png-d67549fd0b925caba1efe496bee380155e2f8989.png"
+                    },
+                    {
+                      "name": "layout.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJydW50aW1lIjogewogICAgImV4ZSI6ICJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLAogICAgInVzZXJEYXRhIjogIkM6XFxVc2Vyc1xccGNcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxlbWJlZGRlZC1wcmFjdGljZS1vVmtXTHEiLAogICAgInBhY2thZ2VkIjogZmFsc2UsCiAgICAidmVyc2lvbiI6ICI0Mi4xMS4xNSIKICB9LAogICJsYXlvdXQiOiB7CiAgICAid2lkdGgiOiAxNDQwLAogICAgImZvbnQiOiAyMiwKICAgICJ6b29tIjogMiwKICAgICJ0aGVtZSI6ICLmnb7pl7Tnu78iLAogICAgIm1vZGUiOiAibGlnaHQiCiAgfSwKICAibWV0cmljcyI6IHsKICAgICJ2aWV3cG9ydCI6IHsKICAgICAgIndpZHRoIjogNzIwLAogICAgICAiaGVpZ2h0IjogNDUwCiAgICB9LAogICAgImFjdGlvbnMiOiB7CiAgICAgICJ0b3AiOiAzNjIuODA0Njg3NSwKICAgICAgImhlaWdodCI6IDc5LjE5NTMxMjUsCiAgICAgICJyYXRpbyI6IDAuMTc1OTg5NTgzMzMzMzMzMzQKICAgIH0sCiAgICAiaW5wdXQiOiB7CiAgICAgICJ0b3AiOiAyNC4wMjM0Mzc1LAogICAgICAiaGVpZ2h0IjogMjAwLAogICAgICAidmlzaWJsZSI6IDIwMAogICAgfQogIH0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4d3c90a69ab5db27bac-6f74813870ba8e7b7317",
+          "file": "ui-adaptive.spec.ts",
+          "line": 22,
+          "column": 7
+        },
+        {
+          "title": "第二批缩放：松间绿/light/900px/17px/200%",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3118,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:00:57.968Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "zoom.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-adaptive-20261027\\adaptive-development-01\\ui-adaptive-第二批缩放：松间绿-light-900px-17px-200--development\\attachments\\zoom-png-72289e9ec2aeffaeccf3f8e276c510569cd98142.png"
+                    },
+                    {
+                      "name": "layout.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJydW50aW1lIjogewogICAgImV4ZSI6ICJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLAogICAgInVzZXJEYXRhIjogIkM6XFxVc2Vyc1xccGNcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxlbWJlZGRlZC1wcmFjdGljZS1mV2dCYVAiLAogICAgInBhY2thZ2VkIjogZmFsc2UsCiAgICAidmVyc2lvbiI6ICI0Mi4xMS4xNSIKICB9LAogICJsYXlvdXQiOiB7CiAgICAid2lkdGgiOiA5MDAsCiAgICAiZm9udCI6IDE3LAogICAgInpvb20iOiAyLAogICAgInRoZW1lIjogIuadvumXtOe7vyIsCiAgICAibW9kZSI6ICJsaWdodCIKICB9LAogICJtZXRyaWNzIjogewogICAgInZpZXdwb3J0IjogewogICAgICAid2lkdGgiOiA0NTAsCiAgICAgICJoZWlnaHQiOiA0NTAKICAgIH0sCiAgICAiYWN0aW9ucyI6IHsKICAgICAgInRvcCI6IDMyMi40MDYyNSwKICAgICAgImhlaWdodCI6IDExOS41OTM3NSwKICAgICAgInJhdGlvIjogMC4yNjU3NjM4ODg4ODg4ODg5CiAgICB9LAogICAgImlucHV0IjogewogICAgICAidG9wIjogMjQuMTcxODc1LAogICAgICAiaGVpZ2h0IjogMjAwLAogICAgICAidmlzaWJsZSI6IDIwMAogICAgfQogIH0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4d3c90a69ab5db27bac-ba73a5a4145bee7f2961",
+          "file": "ui-adaptive.spec.ts",
+          "line": 22,
+          "column": 7
+        },
+        {
+          "title": "第二批缩放：松间绿/light/900px/22px/200%",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3211,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:01:01.096Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "zoom.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-adaptive-20261027\\adaptive-development-01\\ui-adaptive-第二批缩放：松间绿-light-900px-22px-200--development\\attachments\\zoom-png-0b207d2ab66a3e13e3b2f76b6ae80e4de55fa139.png"
+                    },
+                    {
+                      "name": "layout.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJydW50aW1lIjogewogICAgImV4ZSI6ICJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLAogICAgInVzZXJEYXRhIjogIkM6XFxVc2Vyc1xccGNcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxlbWJlZGRlZC1wcmFjdGljZS1Ea216NTkiLAogICAgInBhY2thZ2VkIjogZmFsc2UsCiAgICAidmVyc2lvbiI6ICI0Mi4xMS4xNSIKICB9LAogICJsYXlvdXQiOiB7CiAgICAid2lkdGgiOiA5MDAsCiAgICAiZm9udCI6IDIyLAogICAgInpvb20iOiAyLAogICAgInRoZW1lIjogIuadvumXtOe7vyIsCiAgICAibW9kZSI6ICJsaWdodCIKICB9LAogICJtZXRyaWNzIjogewogICAgInZpZXdwb3J0IjogewogICAgICAid2lkdGgiOiA0NTAsCiAgICAgICJoZWlnaHQiOiA0NTAKICAgIH0sCiAgICAiYWN0aW9ucyI6IHsKICAgICAgInRvcCI6IDMyMi40MDYyNSwKICAgICAgImhlaWdodCI6IDExOS41OTM3NSwKICAgICAgInJhdGlvIjogMC4yNjU3NjM4ODg4ODg4ODg5CiAgICB9LAogICAgImlucHV0IjogewogICAgICAidG9wIjogMjMuOTIxODc1LAogICAgICAiaGVpZ2h0IjogMjAwLAogICAgICAidmlzaWJsZSI6IDIwMAogICAgfQogIH0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4d3c90a69ab5db27bac-f3f2395ba1c0ef31d4d9",
+          "file": "ui-adaptive.spec.ts",
+          "line": 22,
+          "column": 7
+        },
+        {
+          "title": "第二批缩放：松间绿/light/900px/22px/150%",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2916,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:01:04.317Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "zoom.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-adaptive-20261027\\adaptive-development-01\\ui-adaptive-第二批缩放：松间绿-light-900px-22px-150--development\\attachments\\zoom-png-31b7a20f15907b31b1eaffd98121dc69a653bf8e.png"
+                    },
+                    {
+                      "name": "layout.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJydW50aW1lIjogewogICAgImV4ZSI6ICJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLAogICAgInVzZXJEYXRhIjogIkM6XFxVc2Vyc1xccGNcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxlbWJlZGRlZC1wcmFjdGljZS1nQWxVOUkiLAogICAgInBhY2thZ2VkIjogZmFsc2UsCiAgICAidmVyc2lvbiI6ICI0Mi4xMS4xNSIKICB9LAogICJsYXlvdXQiOiB7CiAgICAid2lkdGgiOiA5MDAsCiAgICAiZm9udCI6IDIyLAogICAgInpvb20iOiAxLjUsCiAgICAidGhlbWUiOiAi5p2+6Ze057u/IiwKICAgICJtb2RlIjogImxpZ2h0IgogIH0sCiAgIm1ldHJpY3MiOiB7CiAgICAidmlld3BvcnQiOiB7CiAgICAgICJ3aWR0aCI6IDYwMCwKICAgICAgImhlaWdodCI6IDYwMAogICAgfSwKICAgICJhY3Rpb25zIjogewogICAgICAidG9wIjogNDc0LjQxNjY4NzAxMTcxODc1LAogICAgICAiaGVpZ2h0IjogMTE3LjU4MzMzNTg3NjQ2NDg0LAogICAgICAicmF0aW8iOiAwLjE5NTk3MjIyNjQ2MDc3NDc1CiAgICB9LAogICAgImlucHV0IjogewogICAgICAidG9wIjogMjMuOTI3MDgzOTY5MTE2MjEsCiAgICAgICJoZWlnaHQiOiAyMDAsCiAgICAgICJ2aXNpYmxlIjogMjAwCiAgICB9CiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4d3c90a69ab5db27bac-76a39362c714db8f5a14",
+          "file": "ui-adaptive.spec.ts",
+          "line": 22,
+          "column": 7
+        },
+        {
+          "title": "第二批缩放：松间绿/light/900px/22px/100%",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:01:07.240Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "zoom.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-adaptive-20261027\\adaptive-development-01\\ui-adaptive-第二批缩放：松间绿-light-900px-22px-100--development\\attachments\\zoom-png-0ff651f62547325094082a5b20f1def9d76e536a.png"
+                    },
+                    {
+                      "name": "layout.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJydW50aW1lIjogewogICAgImV4ZSI6ICJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLAogICAgInVzZXJEYXRhIjogIkM6XFxVc2Vyc1xccGNcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxlbWJlZGRlZC1wcmFjdGljZS1QWHhMTjYiLAogICAgInBhY2thZ2VkIjogZmFsc2UsCiAgICAidmVyc2lvbiI6ICI0Mi4xMS4xNSIKICB9LAogICJsYXlvdXQiOiB7CiAgICAid2lkdGgiOiA5MDAsCiAgICAiZm9udCI6IDIyLAogICAgInpvb20iOiAxLAogICAgInRoZW1lIjogIuadvumXtOe7vyIsCiAgICAibW9kZSI6ICJsaWdodCIKICB9LAogICJtZXRyaWNzIjogewogICAgInZpZXdwb3J0IjogewogICAgICAid2lkdGgiOiA5MDAsCiAgICAgICJoZWlnaHQiOiA5MDAKICAgIH0sCiAgICAiYWN0aW9ucyI6IHsKICAgICAgInRvcCI6IDczOS42MDkzNzUsCiAgICAgICJoZWlnaHQiOiAxNDguMzkwNjI1LAogICAgICAicmF0aW8iOiAwLjE2NDg3ODQ3MjIyMjIyMjIKICAgIH0sCiAgICAiaW5wdXQiOiB7CiAgICAgICJ0b3AiOiA0MzYuMDc4MTI1LAogICAgICAiaGVpZ2h0IjogMjAwLAogICAgICAidmlzaWJsZSI6IDIwMAogICAgfQogIH0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4d3c90a69ab5db27bac-084cd111f75a92ec7612",
+          "file": "ui-adaptive.spec.ts",
+          "line": 22,
+          "column": 7
+        },
+        {
+          "title": "第二批缩放：暖沙金/dark/900px/22px/200%",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2939,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:01:10.055Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "zoom.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-adaptive-20261027\\adaptive-development-01\\ui-adaptive-第二批缩放：暖沙金-dark-900px-22px-200--development\\attachments\\zoom-png-0e2b112be26b036fae8736513879691f4184bb53.png"
+                    },
+                    {
+                      "name": "layout.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJydW50aW1lIjogewogICAgImV4ZSI6ICJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLAogICAgInVzZXJEYXRhIjogIkM6XFxVc2Vyc1xccGNcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxlbWJlZGRlZC1wcmFjdGljZS1vRk04V0QiLAogICAgInBhY2thZ2VkIjogZmFsc2UsCiAgICAidmVyc2lvbiI6ICI0Mi4xMS4xNSIKICB9LAogICJsYXlvdXQiOiB7CiAgICAid2lkdGgiOiA5MDAsCiAgICAiZm9udCI6IDIyLAogICAgInpvb20iOiAyLAogICAgInRoZW1lIjogIuaaluaymemHkSIsCiAgICAibW9kZSI6ICJkYXJrIgogIH0sCiAgIm1ldHJpY3MiOiB7CiAgICAidmlld3BvcnQiOiB7CiAgICAgICJ3aWR0aCI6IDQ1MCwKICAgICAgImhlaWdodCI6IDQ1MAogICAgfSwKICAgICJhY3Rpb25zIjogewogICAgICAidG9wIjogMzIyLjQwNjI1LAogICAgICAiaGVpZ2h0IjogMTE5LjU5Mzc1LAogICAgICAicmF0aW8iOiAwLjI2NTc2Mzg4ODg4ODg4ODkKICAgIH0sCiAgICAiaW5wdXQiOiB7CiAgICAgICJ0b3AiOiAyMy45MjE4NzUsCiAgICAgICJoZWlnaHQiOiAyMDAsCiAgICAgICJ2aXNpYmxlIjogMjAwCiAgICB9CiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4d3c90a69ab5db27bac-44b36c72a466ff142739",
+          "file": "ui-adaptive.spec.ts",
+          "line": 22,
+          "column": 7
+        },
+        {
+          "title": "第二批缩放：Claude 风格/dark/1440px/22px/200%",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2627,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:01:13.000Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "zoom.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-adaptive-20261027\\adaptive-development-01\\ui-adaptive-第二批缩放：Claude-风格-dark-1440px-22px-200--development\\attachments\\zoom-png-7f136accb2868708c5e337792885a0c906949879.png"
+                    },
+                    {
+                      "name": "layout.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJydW50aW1lIjogewogICAgImV4ZSI6ICJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLAogICAgInVzZXJEYXRhIjogIkM6XFxVc2Vyc1xccGNcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxlbWJlZGRlZC1wcmFjdGljZS1WYXBPc2ciLAogICAgInBhY2thZ2VkIjogZmFsc2UsCiAgICAidmVyc2lvbiI6ICI0Mi4xMS4xNSIKICB9LAogICJsYXlvdXQiOiB7CiAgICAid2lkdGgiOiAxNDQwLAogICAgImZvbnQiOiAyMiwKICAgICJ6b29tIjogMiwKICAgICJ0aGVtZSI6ICJDbGF1ZGUg6aOO5qC8IiwKICAgICJtb2RlIjogImRhcmsiCiAgfSwKICAibWV0cmljcyI6IHsKICAgICJ2aWV3cG9ydCI6IHsKICAgICAgIndpZHRoIjogNzIwLAogICAgICAiaGVpZ2h0IjogNDUwCiAgICB9LAogICAgImFjdGlvbnMiOiB7CiAgICAgICJ0b3AiOiAzNjIuODA0Njg3NSwKICAgICAgImhlaWdodCI6IDc5LjE5NTMxMjUsCiAgICAgICJyYXRpbyI6IDAuMTc1OTg5NTgzMzMzMzMzMzQKICAgIH0sCiAgICAiaW5wdXQiOiB7CiAgICAgICJ0b3AiOiAyNC4wMjM0Mzc1LAogICAgICAiaGVpZ2h0IjogMjAwLAogICAgICAidmlzaWJsZSI6IDIwMAogICAgfQogIH0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4d3c90a69ab5db27bac-975003857d6c80e17907",
+          "file": "ui-adaptive.spec.ts",
+          "line": 22,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T05:00:50.716Z",
+    "duration": 24947.335,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

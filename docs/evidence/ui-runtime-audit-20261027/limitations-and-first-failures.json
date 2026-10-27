@@ -1,0 +1,51 @@
+{
+  "firstFailures": [
+    {
+      "step": "playwright module import",
+      "error": "index.mjs default export unavailable",
+      "resolution": "Used createRequire with existing local dependency; no install"
+    },
+    {
+      "step": "Windows Settings launch",
+      "error": "launched app did not expose a targetable window",
+      "resolution": "Inspected actual two displays through Electron and Win32; did not change settings"
+    },
+    {
+      "step": "native accessibility",
+      "error": "Native accessibility tree lagged behind actual renderer",
+      "resolution": "Used fresh screenshots for native click; did not use stale indexes"
+    },
+    {
+      "step": "cross-display setBounds",
+      "error": "First crossing returned enlarged bounds 1740x1350 from requested1160x900; native capture partly outside monitor",
+      "resolution": "Retained first observation and explicitly refitted1050x850 on target monitor; unrestricted drag sizing remains unverified"
+    },
+    {
+      "step": "page-zoom-200 first screenshot",
+      "error": "Playwright screenshot was blank although DOM remained populated",
+      "resolution": "Retained first screenshot; verified native visible image and saved Electron capturePage surface"
+    },
+    {
+      "step": "native cross-screen drag",
+      "error": "destination outside window bounds rejected by helper",
+      "resolution": "No native drag completed; API cross-screen move only"
+    }
+  ],
+  "scope": {
+    "applicationCodeChanged": false,
+    "systemScaleSettingsChanged": false,
+    "formalDataAccessed": false,
+    "actualDpi": [
+      96,
+      144,
+      96
+    ],
+    "pageZoom": [
+      1.25,
+      1.5,
+      2
+    ],
+    "nativeClick": "查看参考答案 at144DPI",
+    "fullAccessibilityAudit": false
+  }
+}

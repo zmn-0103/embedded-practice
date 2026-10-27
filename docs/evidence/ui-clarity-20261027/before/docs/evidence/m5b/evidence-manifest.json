@@ -1,0 +1,179 @@
+{
+  "files": [
+    {
+      "path": "docs/evidence/m5b/artifact-validation.json",
+      "bytes": 3358,
+      "sha256": "ed6abf6a8acec1897a89c2c98ed5285209a4f90daada2d036ab0b61a0c3069a7"
+    },
+    {
+      "path": "docs/evidence/m5b/before.json",
+      "bytes": 55961,
+      "sha256": "5f9b6bc3e887b17f8188b4673cc1c8140d28eb9eb6b13d6a843a73aef5194bfe"
+    },
+    {
+      "path": "docs/evidence/m5b/change-audit.json",
+      "bytes": 986,
+      "sha256": "afc8cd1cc3cbabccc55d3c9cc5d0a72014944d7bdf143774777de48ef50b6604"
+    },
+    {
+      "path": "docs/evidence/m5b/initial-sample-script.mjs.txt",
+      "bytes": 8242,
+      "sha256": "f33f0d063733841888e290affad06df7cec12fd9a21e8c37316dcc4181f78819"
+    },
+    {
+      "path": "docs/evidence/m5b/initial-static-failure.json",
+      "bytes": 372,
+      "sha256": "f1579f9a2842d2443f2656b0d1855cf883223ff2ea936a7acaa6a39eb6151693"
+    },
+    {
+      "path": "docs/evidence/m5b/installer-build.log",
+      "bytes": 833,
+      "sha256": "1c599f84b04021d8f5f2e907f0c8e3b46485f4e6fce7456672648d76b1b68187"
+    },
+    {
+      "path": "docs/evidence/m5b/installer-extract.log",
+      "bytes": 507,
+      "sha256": "fa630539d8aace73f6180273736ba2b8bbcbe32d1bef746702c622209b78f2ca"
+    },
+    {
+      "path": "docs/evidence/m5b/installer-input.json",
+      "bytes": 22670,
+      "sha256": "070498838600fca37c5a055762625062af42ec704d8f85d917ef3e5d7f1485f5"
+    },
+    {
+      "path": "docs/evidence/m5b/installer-list.log",
+      "bytes": 1905,
+      "sha256": "8b840e90325e62ec9fd17ec7769aa85e1b281294464857cd594e5779bda11341"
+    },
+    {
+      "path": "docs/evidence/m5b/installer-signature.json",
+      "bytes": 369,
+      "sha256": "92a00029247fca5994aa1cf7df558700900db0876f24a8955c081fbe4621e4eb"
+    },
+    {
+      "path": "docs/evidence/m5b/installer-verification.json",
+      "bytes": 23548,
+      "sha256": "a65ad120ac4ecdcc969bdd81bdaa9c83e2a3ad4df45cb767bd16722c8b7aa53b"
+    },
+    {
+      "path": "docs/evidence/m5b/payload-extract.log",
+      "bytes": 616,
+      "sha256": "4ae4fe530131dd7cdc7cf6100f99ca871ebba51448ce0108a82e0653314c4877"
+    },
+    {
+      "path": "docs/evidence/m5b/performance-01/5000-question-library.png",
+      "bytes": 151551,
+      "sha256": "416f4be4c5fbba18bc1afaa96a2f3ba259db67047572d8f07df553a1ee2207f2"
+    },
+    {
+      "path": "docs/evidence/m5b/performance-01/executed-scripts/m5-desktop-harness.mjs.txt",
+      "bytes": 11752,
+      "sha256": "d950c368eb0e3fb0d038c7d788a6e936fa3e7ad4b661ff41ec5bef380b6d6afe"
+    },
+    {
+      "path": "docs/evidence/m5b/performance-01/executed-scripts/manifest.json",
+      "bytes": 513,
+      "sha256": "3ffd0d7f05877270034264aaa9e0b1db60d6e2fe64df7186aee02534ede99fc0"
+    },
+    {
+      "path": "docs/evidence/m5b/performance-01/executed-scripts/measure-m5-performance.mjs.txt",
+      "bytes": 7894,
+      "sha256": "7dffbbb44745d5caed5cfb76398d4ec8b7139b74cc096d9fc8f413f9477688f6"
+    },
+    {
+      "path": "docs/evidence/m5b/performance-01/executed-scripts/prepare-m5-samples.mjs.txt",
+      "bytes": 8557,
+      "sha256": "d88a433af8cb393f968ad8d61c4a667d5908d3270279aaa54218a3f36541ef33"
+    },
+    {
+      "path": "docs/evidence/m5b/performance-01/practice-after-30-switches.png",
+      "bytes": 65797,
+      "sha256": "365f01801ee6d2e67c984535c084e1d8bfcba7b6df68d6a6d2f5f685f9b543ad"
+    },
+    {
+      "path": "docs/evidence/m5b/performance-01/result.json",
+      "bytes": 16602,
+      "sha256": "62eac41c69a9fea51163f26b783060146efd3b4dc6ea03d62481420e84539f5d"
+    },
+    {
+      "path": "docs/evidence/m5b/performance-summary.json",
+      "bytes": 2290,
+      "sha256": "279f13a2cbbdc60adaae707894be98799448e93df830867176ca5add76d37e50"
+    },
+    {
+      "path": "docs/evidence/m5b/README.md",
+      "bytes": 4521,
+      "sha256": "fce3183379d767c77a1f79d190491e21b05c9fe3dde8018c09d6e3759ca7c013"
+    },
+    {
+      "path": "docs/evidence/m5b/sample-generation.json",
+      "bytes": 986,
+      "sha256": "82d7f36884c04987f586d2273939c950d6a9742a508e89733e6a81cf6d102aa9"
+    },
+    {
+      "path": "docs/evidence/m5b/sample-validation.json",
+      "bytes": 369,
+      "sha256": "1ef3679015d8fe945f537f62a1114ffc9bed2d5622a00f8d1bf052df292e7fd3"
+    },
+    {
+      "path": "docs/evidence/m5b/samples.json",
+      "bytes": 105958,
+      "sha256": "5a627c5aec090eb4423f477b00b802a21ac8326ec1e96c4b558d2441fa0311b9"
+    },
+    {
+      "path": "docs/evidence/m5b/script-checks.json",
+      "bytes": 1187,
+      "sha256": "0df5731f12d07a9cd3c29dcac5665126fe93be1315e35aee7735ab4cf60e3d54"
+    },
+    {
+      "path": "docs/evidence/m5b/source-manifest.json",
+      "bytes": 32450,
+      "sha256": "ecc2a3e86be487dcac603c5e159c39c97c3f66e9ce5bd6f903cc3ddba0aa4b93"
+    },
+    {
+      "path": "docs/evidence/m5b/tooling-notes.json",
+      "bytes": 2217,
+      "sha256": "15d5e7a9e610cba88d52d59e30839f30fdba05ac45ea3647cb6e005d9eea97b3"
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/30-question-finished.png",
+      "bytes": 37120,
+      "sha256": "f3db79431f27710156c91520b16d7eba32abb47737bbce2e8ca85e65c384cb22"
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/result.json",
+      "bytes": 21724,
+      "sha256": "0ce25c482d65066ab56e445a4b9d7c1dee44caf368758495db61f598b6312766"
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-028-revealed.png",
+      "bytes": 86018,
+      "sha256": "7e9692a3069d5cb4bd2da47a0f24b7fe7b75da9f4da8a818abd1d5382d2818cb"
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-031-revealed.png",
+      "bytes": 83582,
+      "sha256": "1495edfbbeeb40525e620409b196e70726acbd6c1eb6cf09818782ef0ff9511f"
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-033-revealed.png",
+      "bytes": 108501,
+      "sha256": "5ef72ba81e81a4bc5abfa800051ffe562ba7dd082988c38fb4225639097bf9c9"
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-034-revealed.png",
+      "bytes": 117985,
+      "sha256": "a6e68aa4f1288bf823836d33220004d43c1f5957dd416c94f625f9b835c94fe1"
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-039-revealed.png",
+      "bytes": 76378,
+      "sha256": "84cacffe0dcce2f4387262e47add111d19dc7620be7745acd4ea626a570a90ea"
+    },
+    {
+      "path": "docs/evidence/m5b/trial-01/uart2-042-revealed.png",
+      "bytes": 94826,
+      "sha256": "bc5847f84739f8d78223fadb187651d9d7298c2da87a47bbf1f52d4de55b5d6f"
+    }
+  ]
+}

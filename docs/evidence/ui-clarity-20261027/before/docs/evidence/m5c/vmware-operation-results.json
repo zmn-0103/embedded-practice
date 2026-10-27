@@ -1,0 +1,35 @@
+{
+  "snapshotName": "M5-Clean-Windows-20261023",
+  "snapshotCreated": false,
+  "operations": [
+    {
+      "operation": "checkToolsState without VM password",
+      "exitCode": 1,
+      "result": "VM requires password"
+    },
+    {
+      "operation": "checkToolsState with provided VM password",
+      "exitCode": -2,
+      "result": "unknown"
+    },
+    {
+      "operation": "listSnapshots with provided VM password",
+      "exitCode": 0,
+      "result": "Total snapshots: 0"
+    },
+    {
+      "operation": "snapshot via PowerShell native arguments",
+      "exitCode": -1,
+      "result": "Error: 加密的虚拟机身份验证失败"
+    },
+    {
+      "operation": "snapshot via ProcessStartInfo.ArgumentList",
+      "exitCode": -1,
+      "result": "Error: 加密的虚拟机身份验证失败"
+    }
+  ],
+  "userConfirmedCredentialPurpose": "VM encryption password",
+  "cause": "Unknown; do not conclude the user supplied the wrong credential or claim a confirmed VMware defect",
+  "guiObservation": "Menu click, Alt+M and release-key attempts did not produce an open VMware menu. Reinitializing the window tool and reactivating the VM did not establish reliable menu control. VM input-capture status remained. Automation shell and VMware were both not elevated. Awaiting one physical Ctrl+Alt release from user.",
+  "boundary": "No snapshot rollback, VM shutdown, credential/security-setting change, installer execution, or host production database access."
+}

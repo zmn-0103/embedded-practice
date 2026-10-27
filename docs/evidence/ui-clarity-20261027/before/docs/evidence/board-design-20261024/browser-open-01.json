@@ -1,0 +1,8 @@
+{
+  "command": "playwright-cli -s=board-design-20261024 open file:///E:/My_Projects/embedded-practice/docs/design/board-catalog.html --browser chrome",
+  "exitCode": 1,
+  "result": "Browser opened; file protocol blocked by the browser tool access policy.",
+  "error": "Access to file: protocol is blocked.",
+  "nextStep": "Serve only the project design folder on a loopback HTTP address for the isolated preview, then close the browser and server.",
+  "boundary": "This is a tooling access restriction, not a production application failure. No access policy was disabled."
+}

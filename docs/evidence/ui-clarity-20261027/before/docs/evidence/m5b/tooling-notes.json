@@ -1,0 +1,39 @@
+{
+  "errors": [
+    {
+      "stage": "read-only discovery",
+      "detail": "Guessed tests/fixtures/electron.ts, contracts/library.ts and import-limits.ts did not exist; corrected via rg --files."
+    },
+    {
+      "stage": "read-only discovery",
+      "detail": "PowerShell wildcard path arguments to rg failed; corrected to explicit files or -g patterns."
+    },
+    {
+      "stage": "sample-script static check",
+      "detail": "First Prettier/node syntax checks failed before execution. Original source and failure preserved; fence string corrected, subsequent checks and generation passed."
+    },
+    {
+      "stage": "performance statistics",
+      "detail": "Initial even-count median used upper middle sample. Original report and executed source retained; derived standard median and future helper corrected. No raw timing or target decision changed, no measurement rerun."
+    },
+    {
+      "stage": "documentation patch",
+      "detail": "One multi-file patch rejected because its context said engineering schematic but the actual paragraph said circuit. No partial changes were applied; actual files re-read and a narrower patch applied."
+    },
+    {
+      "stage": "tool discovery",
+      "detail": "The old 7zip-bin dependency path did not exist. rg --files located the repository electron-winstaller vendor 7-Zip, used for read-only archive listing and extraction."
+    }
+  ],
+  "visualReview": [
+    {
+      "file": "trial-01/uart2-034-revealed.png",
+      "observation": "Answer table and following explanatory text are legible in the full-page capture; action controls are in their known 500ms repeat guard when captured. A full-page screenshot is not a system DPI or complete reading acceptance."
+    },
+    {
+      "file": "trial-01/30-question-finished.png",
+      "observation": "Result page displays 30 total/revealed, 3 rated with each rating 1, 27 unrated and 0 unrevealed skips. Return button was captured during the repeat guard; no claim that it is permanently disabled."
+    }
+  ],
+  "boundary": "No production bug inferred from tool or statistics issues. Native/manual acceptance and earlier unknown input/exit observations remain separate."
+}

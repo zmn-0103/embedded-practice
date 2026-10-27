@@ -1,0 +1,87 @@
+{
+  "IsoPath": "E:\\Program Files (x86)\\embedded-practice-test-environment\\media\\m5-acceptance-20261023.iso",
+  "IsoBytes": 210886656,
+  "IsoSha256": "CA0F9D8C6D5A08440D6AE080B4DEDA070D45F010DC431E21C803CB0A6BF18E0E",
+  "FileCount": 13,
+  "AllReadbackHashesMatch": true,
+  "Files": [
+    {
+      "Path": "manifest.json",
+      "Bytes": 2858,
+      "Sha256": "B39ED06962137EEEED2BB951E65FC4B6033C592CF7E6BE33D8A4F26FC69560EB",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "README.md",
+      "Bytes": 1417,
+      "Sha256": "9F998C58BC13AEFAD200C613183FB3BED9BA6D6F2454C9CB574C30D5474A7FD5",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "banks\\format-example\\格式示例.md",
+      "Bytes": 1572,
+      "Sha256": "11B5F8D3DA26C39E0B128915C6C2F52963D5B0C16E470C9A16568F9FA45C06F3",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "banks\\format-example\\README.md",
+      "Bytes": 610,
+      "Sha256": "B37C00450BB8B73E25769BB7307319FC3632AD8E386806C84DA29F8098588DA7",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "banks\\format-example\\assets\\测试.webp",
+      "Bytes": 48,
+      "Sha256": "B1F3FF00BA1D62D206025CE07B1ED6CDF87E8C018608D8D1984FE463F4E6E534",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "banks\\format-example\\assets\\带 空格.jpg",
+      "Bytes": 661,
+      "Sha256": "200A7848EB435A30C8A06C9762B87732EC6971CA01FD384FE08AACF383B2D639",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "banks\\format-example\\assets\\中文测试图.png",
+      "Bytes": 80,
+      "Sha256": "4BDE795C8AF51F0BDC1DE0DB1ADC89ED741BF52E777A3B52CA38015EE1B16FAD",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "banks\\trial\\题答来源.json",
+      "Bytes": 35243,
+      "Sha256": "2253477F5D53F432B8F9928F7D3DB568A774EFDBAA5240AB4A15DBBD81C94933",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "banks\\trial\\README.md",
+      "Bytes": 1956,
+      "Sha256": "11F399467F03316497E14F981092BC5AE87E39FAE1C96F75EEA0A3B02E826F13",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "banks\\trial\\STM32F103-UART第二层-30题试用.md",
+      "Bytes": 19667,
+      "Sha256": "E953A4F36C0A5A39839275FF7CDA8F8C5D88C0AD3F9514EA0F225AE51036D45B",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "current\\embedded-practice-0.1.0-x64-setup.exe",
+      "Bytes": 105535679,
+      "Sha256": "7FBFDE29E999A4B42C4BE286715B8C802D27BCDE32E66A76192A4937FA144D2E",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "current\\README.md",
+      "Bytes": 1190,
+      "Sha256": "054ED882EAC7F3FB31C1E62880D131B0018838B549DDB1E21A7F0B7DF52C2A2C",
+      "ReadbackMatches": true
+    },
+    {
+      "Path": "legacy-m0\\embedded-practice-0.1.0-x64-setup.exe",
+      "Bytes": 105194654,
+      "Sha256": "641EEF07330151D6343047C3AAD2639A70C442B46A26426CD74B281D73A091D8",
+      "ReadbackMatches": true
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "checkedAt": "2026-10-21T01:43:35.941Z",
+  "unit": {
+    "files": 21,
+    "total": 418,
+    "passed": 418,
+    "failed": 0,
+    "pending": 0
+  },
+  "focused": {
+    "startTime": "2026-10-21T01:36:24.347Z",
+    "duration": 13446.521999999999,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "development": {
+    "startTime": "2026-10-21T01:36:48.852Z",
+    "duration": 100941.595,
+    "expected": 54,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "packaged": {
+    "startTime": "2026-10-21T01:39:40.599Z",
+    "duration": 99135.57,
+    "expected": 54,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "name": "M3 第一批：搜索标题/题干/标签、字面字符、交集、分页与答案边界",
+      "status": "passed",
+      "file": "packaged-search-boundaries.json"
+    },
+    {
+      "name": "M3 第一批：收藏快速重复、练习数量同步、正常关闭重开持久化",
+      "status": "passed",
+      "file": "packaged-favorite-reopened.json"
+    },
+    {
+      "name": "M3 第一批：收藏写入失败与响应丢失重试、收藏页取消后收敛",
+      "status": "passed",
+      "file": "packaged-favorite-failure-retry.json"
+    },
+    {
+      "name": "M3 第一批：筛选固定队列、真实自评/未练习区分、无匹配保留旧轮",
+      "status": "passed",
+      "file": "packaged-filtered-queue-state.json"
+    },
+    {
+      "name": "M3 第一批：旧版本自评排除、元数据保持、归档恢复收藏和历史",
+      "status": "passed",
+      "file": "packaged-version-archive-restore.json"
+    }
+  ],
+  "packageInspection": {
+    "checkedAt": "2026-10-21T01:39:50.384Z",
+    "archive": "E:\\My_Projects\\embedded-practice\\release\\win-unpacked\\resources\\app.asar",
+    "archiveSha256": "d26e6d1030dd20521f60ea3c24c8a33af2a6a746faffe7d8e2614d1e4959702e",
+    "runtimeFiles": 13,
+    "noticeFiles": 6,
+    "files": [
+      {
+        "path": "docs/licenses/README.md",
+        "bytes": 1205,
+        "sha256": "d5dc48bacee6ee61a3b3f0dfaca48412cd1805ca53a30b3c54d25989d522213c",
+        "equal": true
+      },
+      {
+        "path": "docs/licenses/highlight.js-11.11.2-BSD-3-Clause.txt",
+        "bytes": 1514,
+        "sha256": "6c081431591d9df696c82dc598fe1423765b8a299b200ed00b281afd0f64c490",
+        "equal": true
+      },
+      {
+        "path": "docs/licenses/image-size-MIT.txt",
+        "bytes": 1112,
+        "sha256": "3109783dad7527b490aabc49c3cb148573c19b41b843e70cf9388a93f3d7fccd",
+        "equal": true
+      },
+      {
+        "path": "docs/licenses/lowlight-3.3.0-MIT.txt",
+        "bytes": 1094,
+        "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb",
+        "equal": true
+      },
+      {
+        "path": "docs/licenses/mdast-util-to-markdown-2.2.0-MIT.txt",
+        "bytes": 1094,
+        "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb",
+        "equal": true
+      },
+      {
+        "path": "docs/licenses/react-markdown-10.1.0-MIT.txt",
+        "bytes": 1079,
+        "sha256": "f6196c64e144f9a6fa9154c3a80bc8b89615a9567934b83a8951879f06ba2aef",
+        "equal": true
+      },
+      {
+        "path": "out/main/import-preparation.js",
+        "bytes": 4789,
+        "sha256": "3a537683edf96c14894a409aef0047b9c8b6a606db7ea273b3265de28c0858a9",
+        "equal": true
+      },
+      {
+        "path": "out/main/import-protocol-CjaQDko1.js",
+        "bytes": 6668,
+        "sha256": "e68edce92e63bcdb04de6fab340b0fb33b14e465e34e57ef7bcb288745de6942",
+        "equal": true
+      },
+      {
+        "path": "out/main/import-worker-CTPDu8a3.js",
+        "bytes": 760657,
+        "sha256": "b9f98f49195219995f2a0445832c045e9e587d5b2164ed70586bdbcbd86653d6",
+        "equal": true
+      },
+      {
+        "path": "out/main/index.js",
+        "bytes": 27981,
+        "sha256": "d60fecd3d243e0d6508c5d20a9965e67a5858ba4bbf46a2c30c1cbcb4b8dd5ba",
+        "equal": true
+      },
+      {
+        "path": "out/main/library-import.js",
+        "bytes": 20802,
+        "sha256": "bd0dbcce468a351029b83a790b69b2dc1a836208c8342672bd2de6b18fefd5a1",
+        "equal": true
+      },
+      {
+        "path": "out/main/practice.js",
+        "bytes": 16725,
+        "sha256": "25622e7b699a47de9270aea7fc3f914b057f58298c25a15dc6202fe7c5134d58",
+        "equal": true
+      },
+      {
+        "path": "out/main/question-bank-DgNu3Pwr.js",
+        "bytes": 185069,
+        "sha256": "b7f933d0d59e533b528ead424e14653e39e3e6dfb867f02d7c837353aa198b4d",
+        "equal": true
+      },
+      {
+        "path": "out/main/question-selection-qOW7RdSp.js",
+        "bytes": 26710,
+        "sha256": "95011fd165d8d225f0e48f1d103f21e1e2000d77f1c2864eb2b1a1573a78e418",
+        "equal": true
+      },
+      {
+        "path": "out/main/rolldown-runtime-Dbql6lyJ.js",
+        "bytes": 1736,
+        "sha256": "0494dbd5eac31d4e7a2fe7c72fd882986b5f881d3fbca1a83ecaddea02165a84",
+        "equal": true
+      },
+      {
+        "path": "out/preload/index.js",
+        "bytes": 187987,
+        "sha256": "4bca5a4c1e3b3aa5836b77b1fb08c46444d132e031d22e857405c30b404fdf32",
+        "equal": true
+      },
+      {
+        "path": "out/renderer/assets/index-CiyoiOTS.css",
+        "bytes": 11340,
+        "sha256": "5d41c7987661df7f6c3e3dcd206cb49fbee8ceb826bc1557b4233f41fcc4c231",
+        "equal": true
+      },
+      {
+        "path": "out/renderer/assets/index-DZICnxD8.js",
+        "bytes": 1711378,
+        "sha256": "f062557b6a85ba78c37fc928d210f7cd1ca08156d5794ac2f837175de768d1cd",
+        "equal": true
+      },
+      {
+        "path": "out/renderer/index.html",
+        "bytes": 719,
+        "sha256": "ecd9141d6ca2a781b373300750f43f8742c72c3c28d069e625bb9ed4cca7ac3e",
+        "equal": true
+      }
+    ],
+    "oldNsisSha256": "641eef07330151d6343047c3aad2639a70c442b46a26426cd74b281d73a091d8",
+    "oldNsisUnchanged": true
+  },
+  "schema": 3,
+  "limitations": [
+    "M3仅完成第一批搜索、筛选和收藏",
+    "Windows系统DPI和完整人工体验待验",
+    "新NSIS/完整恢复/压力性能待后续阶段"
+  ]
+}

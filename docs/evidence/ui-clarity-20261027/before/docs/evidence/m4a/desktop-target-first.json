@@ -1,0 +1,605 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/backup-window.spec.ts",
+      "--project=development"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "backup-window.spec.ts",
+      "file": "backup-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4979,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"app_version\": \"0.1.0\",\u001b[39m\n\u001b[31m+   \"app_version\": \"42.11.15\",\u001b[39m\n\u001b[2m    \"created_at\": StringMatching /^2026-/,\u001b[22m\n\u001b[2m    \"format_version\": 1,\u001b[22m\n\u001b[2m    \"schema_version\": 6,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"app_version\": \"0.1.0\",\u001b[39m\n\u001b[31m+   \"app_version\": \"42.11.15\",\u001b[39m\n\u001b[2m    \"created_at\": StringMatching /^2026-/,\u001b[22m\n\u001b[2m    \"format_version\": 1,\u001b[22m\n\u001b[2m    \"schema_version\": 6,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:184:67\n    at outputDirectory (E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:74:12)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:126:3",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts",
+                      "column": 67,
+                      "line": 184
+                    },
+                    "snippet": "  182 |       const db = new DatabaseSync(destination, { readOnly: true })\n  183 |       try {\n> 184 |         expect(db.prepare('SELECT * FROM backup_manifest').get()).toMatchObject({\n      |                                                                   ^\n  185 |           format_version: 1,\n  186 |           schema_version: 6,\n  187 |           created_at: expect.stringMatching(/^2026-/),"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts",
+                        "column": 67,
+                        "line": 184
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"app_version\": \"0.1.0\",\u001b[39m\n\u001b[31m+   \"app_version\": \"42.11.15\",\u001b[39m\n\u001b[2m    \"created_at\": StringMatching /^2026-/,\u001b[22m\n\u001b[2m    \"format_version\": 1,\u001b[22m\n\u001b[2m    \"schema_version\": 6,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  182 |       const db = new DatabaseSync(destination, { readOnly: true })\n  183 |       try {\n> 184 |         expect(db.prepare('SELECT * FROM backup_manifest').get()).toMatchObject({\n      |                                                                   ^\n  185 |           format_version: 1,\n  186 |           schema_version: 6,\n  187 |           created_at: expect.stringMatching(/^2026-/),\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:184:67\n    at outputDirectory (E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:74:12)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts:126:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:15.342Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts",
+                    "column": 67,
+                    "line": 184
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-cc802f1794c3cf223f96",
+          "file": "backup-window.spec.ts",
+          "line": 123,
+          "column": 5
+        },
+        {
+          "title": "备份取消与预览取消保留原状态，空库可导出并预览",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 772,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:20.668Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-8bc23ef98cff7f42516e",
+          "file": "backup-window.spec.ts",
+          "line": 231,
+          "column": 5
+        },
+        {
+          "title": "实际备份写入失败保留已有目标与当前数据，清理暂存后可重试",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 988,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:21.469Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-f6eb0913e94f89d6b979",
+          "file": "backup-window.spec.ts",
+          "line": 274,
+          "column": 5
+        },
+        {
+          "title": "备份拒绝当前库伴随文件及目录链接硬链接别名，目标有旧 WAL 时不发布",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 671,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:22.466Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-cb5214a4b060e6c1015b",
+          "file": "backup-window.spec.ts",
+          "line": 317,
+          "column": 5
+        },
+        {
+          "title": "恢复预览拒绝 corrupt，原备份字节及当前数据保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 967,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:23.144Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invalid-backup-result.json",
+                      "contentType": "application/json",
+                      "body": "eyJmYXVsdCI6ImNvcnJ1cHQiLCJyZXN1bHQiOnsib2siOmZhbHNlLCJlcnJvciI6eyJjb2RlIjoiSU5WQUxJRF9CQUNLVVAiLCJtZXNzYWdlIjoi5peg5rOV6K+75Y+W5a6M5pW05aSH5Lu944CC6K+35qOA5p+l5paH5Lu25p2D6ZmQ44CB5paH5Lu25a6M5pW05oCn5Y+K57uT5p6E5YW85a655oCn5ZCO6YeN5paw6YCJ5oup44CCIn19fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-44d250d2cc5dab582a53",
+          "file": "backup-window.spec.ts",
+          "line": 375,
+          "column": 7
+        },
+        {
+          "title": "恢复预览拒绝 foreign-app，原备份字节及当前数据保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1045,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:24.119Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invalid-backup-result.json",
+                      "contentType": "application/json",
+                      "body": "eyJmYXVsdCI6ImZvcmVpZ24tYXBwIiwicmVzdWx0Ijp7Im9rIjpmYWxzZSwiZXJyb3IiOnsiY29kZSI6IklOVkFMSURfQkFDS1VQIiwibWVzc2FnZSI6IuaJgOmAieaWh+S7tuS4jeaYr+acrOW6lOeUqOeahOaVsOaNruWkh+S7veOAgiJ9fX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-febf1bb03d5a5c82c5df",
+          "file": "backup-window.spec.ts",
+          "line": 375,
+          "column": 7
+        },
+        {
+          "title": "恢复预览拒绝 future，原备份字节及当前数据保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1016,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:25.171Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invalid-backup-result.json",
+                      "contentType": "application/json",
+                      "body": "eyJmYXVsdCI6ImZ1dHVyZSIsInJlc3VsdCI6eyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJVTlNVUFBPUlRFRF9CQUNLVVAiLCJtZXNzYWdlIjoi5aSH5Lu957uT5p6E54mI5pys5LiN5Y+X5pSv5oyB77yM6K+35L2/55So5YW85a6554mI5pys55qE56iL5bqP44CCIn19fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-0257887b436493b65320",
+          "file": "backup-window.spec.ts",
+          "line": 375,
+          "column": 7
+        },
+        {
+          "title": "恢复预览拒绝 missing-table，原备份字节及当前数据保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1010,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:26.193Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invalid-backup-result.json",
+                      "contentType": "application/json",
+                      "body": "eyJmYXVsdCI6Im1pc3NpbmctdGFibGUiLCJyZXN1bHQiOnsib2siOmZhbHNlLCJlcnJvciI6eyJjb2RlIjoiSU5WQUxJRF9CQUNLVVAiLCJtZXNzYWdlIjoi5aSH5Lu957y65bCR5b+F6KaB55qE5pWw5o2u6KGo77yM6K+36YCJ5oup5a6M5pW05aSH5Lu944CCIn19fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-4c9a1a3a587046221863",
+          "file": "backup-window.spec.ts",
+          "line": 375,
+          "column": 7
+        },
+        {
+          "title": "恢复预览拒绝 foreign-key，原备份字节及当前数据保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 975,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:27.210Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invalid-backup-result.json",
+                      "contentType": "application/json",
+                      "body": "eyJmYXVsdCI6ImZvcmVpZ24ta2V5IiwicmVzdWx0Ijp7Im9rIjpmYWxzZSwiZXJyb3IiOnsiY29kZSI6IklOVkFMSURfQkFDS1VQIiwibWVzc2FnZSI6IuWkh+S7veS4reeahOaVsOaNruWFs+iBlOaNn+Wdj++8jOivt+mAieaLqeWFtuS7luWkh+S7veOAgiJ9fX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-6ea63da5e74caf1dfbb9",
+          "file": "backup-window.spec.ts",
+          "line": 375,
+          "column": 7
+        },
+        {
+          "title": "恢复预览拒绝 metadata，原备份字节及当前数据保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1011,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:28.193Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invalid-backup-result.json",
+                      "contentType": "application/json",
+                      "body": "eyJmYXVsdCI6Im1ldGFkYXRhIiwicmVzdWx0Ijp7Im9rIjpmYWxzZSwiZXJyb3IiOnsiY29kZSI6IklOVkFMSURfQkFDS1VQIiwibWVzc2FnZSI6IuWkh+S7veagvOW8j+aIluaXtumXtOS/oeaBr+aXoOaViO+8jOivt+mAieaLqeWFvOWuueeahOWujOaVtOWkh+S7veOAgiJ9fX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-318c9a885a76001f949b",
+          "file": "backup-window.spec.ts",
+          "line": 375,
+          "column": 7
+        },
+        {
+          "title": "恢复预览拒绝 image-hash，原备份字节及当前数据保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1054,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:29.210Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invalid-backup-result.json",
+                      "contentType": "application/json",
+                      "body": "eyJmYXVsdCI6ImltYWdlLWhhc2giLCJyZXN1bHQiOnsib2siOmZhbHNlLCJlcnJvciI6eyJjb2RlIjoiSU5WQUxJRF9CQUNLVVAiLCJtZXNzYWdlIjoi5aSH5Lu95Lit55qE5Zu+54mH5YaF5a655qCh6aqM5aSx6LSl77yM6K+36YCJ5oup5YW25LuW5aSH5Lu944CCIn19fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-a2eb283ab7288e625299",
+          "file": "backup-window.spec.ts",
+          "line": 375,
+          "column": 7
+        },
+        {
+          "title": "在途备份阻止重复操作和切页，正常退出等待已验证备份发布",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1776,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T01:36:30.270Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17b67da23ba24ecc6bf1-7fdf151bd487a375619a",
+          "file": "backup-window.spec.ts",
+          "line": 426,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-22T01:36:14.616Z",
+    "duration": 17485.396999999997,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

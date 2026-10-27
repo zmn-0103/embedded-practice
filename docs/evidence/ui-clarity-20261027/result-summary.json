@@ -1,0 +1,64 @@
+{
+  "productVersion": "0.0.2",
+  "buildLabel": "20261027.1-ui-clarity",
+  "schemaVersion": 10,
+  "sourceBuildPassed": true,
+  "typeAndFormatPassed": true,
+  "unit": {
+    "files": 35,
+    "passed": 660,
+    "report": "unit-01.log"
+  },
+  "development": {
+    "initialPassed": 18,
+    "initialFailed": 7,
+    "focusedPassed": 9,
+    "focusedFailed": 0
+  },
+  "packaged": {
+    "first": {
+      "startTime": "2026-10-27T04:18:37.317Z",
+      "duration": 587163.574,
+      "expected": 262,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "focused": {
+      "startTime": "2026-10-27T04:29:26.456Z",
+      "duration": 6940.446,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "distinctScenariosWithPassingEvidence": 263,
+    "singleFullRunPassed": false,
+    "automaticRetries": 0,
+    "binaryChangedAfterFirstRun": false,
+    "testOnlyAdjustment": "Tab顺序逐项核对专题、归档、搜索"
+  },
+  "placeholder": {
+    "samples": 10,
+    "minimum": 5.046997193779349,
+    "maximum": 8.089075077859686,
+    "allPassed": true
+  },
+  "delivery": {
+    "root": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-ui-clarity-20261027.1",
+    "verifiedFiles": 159,
+    "totalBytes": 391633623.0,
+    "excluded": [
+      "交付文件校验.json"
+    ],
+    "manifestSha256": "f531c643cbd0c5db77052f9d9962927c77456312d1abf14f4a39c8b2aae309cd",
+    "dataFilesDetected": 0,
+    "allMatched": true,
+    "archiveCreated": false
+  },
+  "previewFiles": 14,
+  "desktopUpdated": false,
+  "personalDataAccessed": false,
+  "gitCommitted": false,
+  "gitPushed": false
+}

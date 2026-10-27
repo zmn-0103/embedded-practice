@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-20T03:22:26.309Z",
+  "archive": "release/win-unpacked/resources/app.asar",
+  "archiveSha256": "106ce7f000d9be2ac4a27a690408f836304207b83d53af598a900e6b1584954f",
+  "generatedFilesMatch": true,
+  "files": [
+    {
+      "path": "out/main/import-preparation.js",
+      "bytes": 4789,
+      "sha256": "67817e55cb0fbb1fef45877edb6c67daaee867f5b16f433015be6dfe2abe5945",
+      "matchesBuild": true
+    },
+    {
+      "path": "out/main/import-protocol-D4LBU9Tj.js",
+      "bytes": 6764,
+      "sha256": "980903102dfd8995c6997968a25257e9d87490e99ad08fe6ae36a7f3595eaa96",
+      "matchesBuild": true
+    },
+    {
+      "path": "out/main/import-worker-CLkcPGrM.js",
+      "bytes": 759160,
+      "sha256": "5626a74317417fc72044db75dc6c7da9c5e36db02ddec8a1abd7d70605bbe240",
+      "matchesBuild": true
+    },
+    {
+      "path": "out/main/index.js",
+      "bytes": 8717,
+      "sha256": "3bb26c86441e8bdce8b4139325b0938dc9813e4fd2afe3ad56488fd07ed4d935",
+      "matchesBuild": true
+    },
+    {
+      "path": "out/main/rolldown-runtime-Dbql6lyJ.js",
+      "bytes": 1736,
+      "sha256": "0494dbd5eac31d4e7a2fe7c72fd882986b5f881d3fbca1a83ecaddea02165a84",
+      "matchesBuild": true
+    },
+    {
+      "path": "out/main/schemas-BecmEM1p.js",
+      "bytes": 180904,
+      "sha256": "520928077022d07b22ff3fa9f1c37a8a02785f45e293d99bc6f48d8a01e2ed6e",
+      "matchesBuild": true
+    },
+    {
+      "path": "out/preload/index.js",
+      "bytes": 172471,
+      "sha256": "889809e7c66fcdd928402b21eb115652b1740d8d97ca0b8f5595ac5bb4049b50",
+      "matchesBuild": true
+    },
+    {
+      "path": "out/renderer/assets/index-Bspc05qX.css",
+      "bytes": 3433,
+      "sha256": "0c1b7d33600d219734556ff0a18320938bb44c9f281b6f6f703c5e98544b25f4",
+      "matchesBuild": true
+    },
+    {
+      "path": "out/renderer/assets/index-COnObg9K.js",
+      "bytes": 569554,
+      "sha256": "daf2a85b6373ad5c0609fa1ff0b250d7d31096ffe112f7d372691e8f01d48e9f",
+      "matchesBuild": true
+    },
+    {
+      "path": "out/renderer/index.html",
+      "bytes": 703,
+      "sha256": "820c375dcf14283f33f9ce88e3f6fb1d2231d3a5ef1f8862479071c5b28af7ce",
+      "matchesBuild": true
+    }
+  ],
+  "workerReports": 6,
+  "limits": "Archive inspection is static evidence. Actual development and packaged worker execution is recorded separately. Native Windows paths are used with extractFile."
+}

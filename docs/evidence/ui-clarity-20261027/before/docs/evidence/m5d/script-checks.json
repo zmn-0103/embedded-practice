@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Shanghai",
+  "checks": [
+    {
+      "name": "Python AST",
+      "status": "passed",
+      "output": "Python AST passed"
+    },
+    {
+      "name": "Node syntax",
+      "status": "passed"
+    },
+    {
+      "name": "Prettier final",
+      "status": "passed",
+      "output": "Checking formatting...\r\nAll matched files use Prettier code style!"
+    },
+    {
+      "name": "generator existing output",
+      "status": "expected_refusal",
+      "exitCode": 1
+    },
+    {
+      "name": "checker existing output",
+      "status": "expected_refusal",
+      "exitCode": 1
+    },
+    {
+      "name": "checker non-temporary root",
+      "status": "expected_refusal",
+      "exitCode": 1,
+      "outputNotCreated": true
+    }
+  ],
+  "earlierResultUnchanged": true,
+  "noUnexpectedDataDirectoryCreated": true,
+  "executedScriptDiffIsFormattingOnly": true
+}

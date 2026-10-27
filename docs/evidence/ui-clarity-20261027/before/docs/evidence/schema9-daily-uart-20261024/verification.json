@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "checksPassed": true,
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "node": "v24.19.0",
+    "electron": "42.11.15",
+    "repository": "E:\\My_Projects\\embedded-practice",
+    "head": "2aedaa764b78a741151010be3fe295159b3128ec"
+  },
+  "application": {
+    "build": "20261024.1-plans",
+    "schema": 9,
+    "executable": "E:\\My_Projects\\embedded-practice\\release\\practice-plans-20261024\\win-unpacked\\embedded-practice.exe",
+    "sha256": "2a2aa6340bb8aa2aeae3334493ced1466f1ad851bb8a3e4bacc973c17b331990",
+    "packaged": true,
+    "testDataPathVerified": true
+  },
+  "focusedPackagedTests": {
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "perTest": [
+      {
+        "title": "方案失败：读取不伪造空成功、已提交丢响应按原命令重试，停止重试不删已存项",
+        "project": "packaged",
+        "results": 1,
+        "statuses": [
+          "passed"
+        ],
+        "retries": [
+          0
+        ]
+      },
+      {
+        "title": "方案正常关闭等待在途保存：成功退出重开保持",
+        "project": "packaged",
+        "results": 1,
+        "statuses": [
+          "passed"
+        ],
+        "retries": [
+          0
+        ]
+      },
+      {
+        "title": "方案正常关闭等待在途保存：失败返回窗口原目标重试",
+        "project": "packaged",
+        "results": 1,
+        "statuses": [
+          "passed"
+        ],
+        "retries": [
+          0
+        ]
+      },
+      {
+        "title": "方案：命名保存完整条件、填入不建轮，正常重开后明确开始才替换原轮",
+        "project": "packaged",
+        "results": 1,
+        "statuses": [
+          "passed"
+        ],
+        "retries": [
+          0
+        ]
+      },
+      {
+        "title": "方案：原ID重试、同名拒绝、容量、写入回滚及坏JSON读取，不改变原业务或题库修订",
+        "project": "packaged",
+        "results": 1,
+        "statuses": [
+          "passed"
+        ],
+        "retries": [
+          0
+        ]
+      },
+      {
+        "title": "方案：分类改名沿原ID，移出/移除不扩大范围，删除默认取消且只删方案",
+        "project": "packaged",
+        "results": 1,
+        "statuses": [
+          "passed"
+        ],
+        "retries": [
+          0
+        ]
+      }
+    ]
+  },
+  "fullContentChain": {
+    "completed": true,
+    "errors": [],
+    "checks": {
+      "classificationPlanStartSaveCloseAndResume": true,
+      "exactSevenUpdatesAndThirtyUnchangedReimport": true,
+      "oldVersionsQueueDraftsRatingsFavoritesCategoriesPlansAndReceiptsPreserved": true,
+      "newRoundUsesCurrentVersionAndHidesAnswerUntilReveal": true,
+      "inputFilesUnchangedByRun": true
+    },
+    "beforeProtectedSha256": "817b5a63daddbe9e4c8907caba010ee629495e8eda938e64604c8600a4a174a4",
+    "afterReopenProtectedSha256": "817b5a63daddbe9e4c8907caba010ee629495e8eda938e64604c8600a4a174a4",
+    "finalDatabase": {
+      "counts": {
+        "topics": 1,
+        "questions": 30,
+        "question_versions": 37,
+        "image_resources": 0,
+        "practice_sessions": 2,
+        "practice_items": 60
+      },
+      "integrity": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "foreignKeys": []
+    },
+    "successfulRuns": 1,
+    "firstFailurePreserved": true,
+    "countingBoundary": "6 existing focused cases plus one overlapping end-to-end chain; not seven independent coverage cases."
+  },
+  "content": {
+    "changedAnswers": [
+      "uart2-020",
+      "uart2-025",
+      "uart2-030",
+      "uart2-031",
+      "uart2-035",
+      "uart2-043",
+      "uart2-047"
+    ],
+    "unchangedAnswers": 23,
+    "unchangedIdentitiesQuestionBodiesAndMetadata": 30,
+    "allThirtyAwaitUserReview": true,
+    "userReviewColumnsAndActualFeedbackPreserved": true,
+    "jsonFormattingValueEquivalence": true
+  },
+  "static": {
+    "documentsChecked": 69,
+    "localLinksChecked": 1011,
+    "titleAnchorsChecked": 19,
+    "missing": [],
+    "utf8FilesChecked": 16,
+    "scriptSyntaxAndFormatPassed": true,
+    "crlfAwareWhitespacePassed": true,
+    "defaultWhitespaceResult": "CRLF diagnostics retained in whitespace-default.txt; not recorded as default-rule pass."
+  },
+  "scopeVerification": {
+    "date": "2026-10-24",
+    "baselineFiles": 5068,
+    "baselineSourceFiles": 301,
+    "modifiedExistingFiles": [
+      "README.md",
+      "docs/M5题目审阅与试用反馈.md",
+      "docs/README.md",
+      "docs/UART30题来源与技术核对.md",
+      "docs/代码复查记录.md",
+      "docs/开发记录.md",
+      "docs/当前试用版本交付说明.md",
+      "docs/题库分类与标签规范.md",
+      "docs/验收记录.md",
+      "question-banks/trials/README.md",
+      "question-banks/trials/STM32F103-UART第二层-30题试用.md"
+    ],
+    "newSourceFiles": [
+      "docs/结构9定向试用与UART修订.md",
+      "question-banks/trials/UART答案修订清单.json",
+      "scripts/check-uart-content.mjs"
+    ],
+    "unchangedBaselineFiles": 5057,
+    "preservedExistingEvidenceFiles": 4767,
+    "programFilesVerified": 124,
+    "programDifferences": [],
+    "programAddedFiles": [],
+    "backupCopiesVerified": 11,
+    "backupErrors": [],
+    "unexpectedModifiedFiles": [],
+    "missingBaselineFiles": [],
+    "unexpectedNewFiles": [],
+    "utf8FilesChecked": 16,
+    "utf8Errors": [],
+    "originalRecordsPreserved": true,
+    "contentDifferenceVerified": true,
+    "userReviewColumnsAndActualFeedbackPreserved": true,
+    "allThirtyAwaitUserReview": true,
+    "runtimeRevisionMapValuesMatchFinalMap": true,
+    "compilerSourceAndResultsMatch": true,
+    "oldReferencesPreserved": true,
+    "checksPassed": true
+  },
+  "compilerProbe": {
+    "compiler": "E:\\WebDownload\\DevEnv\\DevEnv\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe",
+    "version": "arm-none-eabi-gcc.exe (GNU Tools for STM32 13.3.rel1.20240926-1715) 13.3.1 20240614",
+    "sourceSha256": "4558c851f205da0b66531a7e879c0dff23bc8f0fcfc0b4ae01061c1f067df107",
+    "results": [
+      {
+        "optimization": "O0",
+        "exitCode": 0,
+        "objectSha256": "7acb3bfd342c081a566c9a44f8e2beb0d00016871e4f5c2899d2ec4df4ae51ec"
+      },
+      {
+        "optimization": "O2",
+        "exitCode": 0,
+        "objectSha256": "e3117b1d8150dae607e016948f8f663ebf4ebbd9487bc4cc0d3969e787b72b3a"
+      }
+    ],
+    "boundary": "Compile/disassembly only; aligned ordinary 32-bit RW object; no execution, hardware or learner-mastery claim."
+  },
+  "firstFailuresRetained": [
+    "content-01/result.json",
+    "script-check-01.txt",
+    "links-verification-01.json",
+    "references/manual-download-01.json"
+  ],
+  "limitations": {
+    "productionCodeModified": false,
+    "existingTestsModified": false,
+    "existingScriptsModified": false,
+    "verificationScriptAdded": true,
+    "planModified": false,
+    "dependencyOrLockModified": false,
+    "programBuilt": false,
+    "unit607Rerun": false,
+    "fullDesktop404Rerun": false,
+    "formalLearningDatabaseAccessed": false,
+    "performanceOrLongTermMemoryMeasured": false,
+    "nativeImeOrSystemDpiAccepted": false,
+    "hardwareExperimentPerformed": false,
+    "installerAccepted": false,
+    "vmwareResumed": false,
+    "userTechnicalReviewSigned": false,
+    "committed": false,
+    "pushed": false,
+    "published": false
+  }
+}

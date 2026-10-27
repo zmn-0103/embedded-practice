@@ -1,0 +1,144 @@
+[
+  {
+    "mode": "development",
+    "directory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-review-filters-tUEjwl",
+    "selectedFilters": {
+      "query": "Review",
+      "tag": "keep",
+      "difficulty": "基础",
+      "mastery": "unpracticed",
+      "favoritesOnly": false
+    },
+    "saved": {
+      "columns": [
+        "id",
+        "mode",
+        "topic_id",
+        "status",
+        "position",
+        "revision",
+        "created_at",
+        "ended_at"
+      ],
+      "sessions": [
+        {
+          "id": "e092d214-bc0e-49f2-8fd9-d558192b6714",
+          "mode": "random",
+          "topic_id": "review-filter",
+          "status": "active",
+          "position": 0,
+          "revision": 0,
+          "created_at": "2026-10-21T14:23:37.212Z",
+          "ended_at": null
+        }
+      ],
+      "receipts": [
+        {
+          "request_id": "3f320be0-3bfa-4687-9829-5b5f97976ab1",
+          "payload_hash": "7783adbf91172269bb2c5d1db2ed9b4158b7462705a96658ae72ad4edfb5c0ee",
+          "result_json": "{\"sessionId\":\"e092d214-bc0e-49f2-8fd9-d558192b6714\",\"status\":\"active\",\"position\":0,\"revision\":0,\"total\":1}",
+          "created_at": "2026-10-21T14:23:37.213Z"
+        }
+      ]
+    },
+    "recoveredSession": {
+      "sessionId": "e092d214-bc0e-49f2-8fd9-d558192b6714",
+      "status": "active",
+      "position": 0,
+      "revision": 0,
+      "total": 1,
+      "mode": "random",
+      "topicId": "review-filter",
+      "createdAt": "2026-10-21T14:23:37.212Z",
+      "endedAt": null,
+      "counts": {
+        "revealed": 0,
+        "rated": 0,
+        "unrated": 0,
+        "skipped": 0,
+        "ratings": {
+          "不会": 0,
+          "不熟": 0,
+          "掌握": 0
+        }
+      }
+    },
+    "homeAfterRestart": {
+      "query": "",
+      "tag": "",
+      "difficulty": "",
+      "mastery": "all"
+    }
+  },
+  {
+    "mode": "packaged",
+    "directory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-review-filters-SUoHaI",
+    "selectedFilters": {
+      "query": "Review",
+      "tag": "keep",
+      "difficulty": "基础",
+      "mastery": "unpracticed",
+      "favoritesOnly": false
+    },
+    "saved": {
+      "columns": [
+        "id",
+        "mode",
+        "topic_id",
+        "status",
+        "position",
+        "revision",
+        "created_at",
+        "ended_at"
+      ],
+      "sessions": [
+        {
+          "id": "2981da07-bdcb-44a7-994e-31dc2549f863",
+          "mode": "random",
+          "topic_id": "review-filter",
+          "status": "active",
+          "position": 0,
+          "revision": 0,
+          "created_at": "2026-10-21T14:23:38.793Z",
+          "ended_at": null
+        }
+      ],
+      "receipts": [
+        {
+          "request_id": "b2da3ab6-17d3-45e4-a17c-64bce3f14a73",
+          "payload_hash": "b939a53fa5fd9b1ef22c295e994f11e471a576e29f2a257c2024fd929921e716",
+          "result_json": "{\"sessionId\":\"2981da07-bdcb-44a7-994e-31dc2549f863\",\"status\":\"active\",\"position\":0,\"revision\":0,\"total\":1}",
+          "created_at": "2026-10-21T14:23:38.793Z"
+        }
+      ]
+    },
+    "recoveredSession": {
+      "sessionId": "2981da07-bdcb-44a7-994e-31dc2549f863",
+      "status": "active",
+      "position": 0,
+      "revision": 0,
+      "total": 1,
+      "mode": "random",
+      "topicId": "review-filter",
+      "createdAt": "2026-10-21T14:23:38.793Z",
+      "endedAt": null,
+      "counts": {
+        "revealed": 0,
+        "rated": 0,
+        "unrated": 0,
+        "skipped": 0,
+        "ratings": {
+          "不会": 0,
+          "不熟": 0,
+          "掌握": 0
+        }
+      }
+    },
+    "homeAfterRestart": {
+      "query": "",
+      "tag": "",
+      "difficulty": "",
+      "mastery": "all"
+    }
+  }
+]

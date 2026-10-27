@@ -578,6 +578,10 @@ select,
     monospace;
   resize: vertical;
 }
+.practice-input textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
 .practice-actions {
   position: sticky;
   bottom: 8px;

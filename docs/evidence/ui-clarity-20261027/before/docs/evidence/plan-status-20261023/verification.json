@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Shanghai",
+  "scope": "plan and implementation entry points, current documentation, reused verified evidence and hashes; no new runtime acceptance",
+  "featureDevelopmentComplete": true,
+  "m5AcceptanceComplete": false,
+  "v1Accepted": false,
+  "initialM5dSourceFilesMatched": 192,
+  "initialM5dEvidenceFilesMatched": 91,
+  "unpackedFilesMatched": 122,
+  "baselineCoreArtifactsMatched": 6,
+  "changedExistingDocuments": [
+    "docs/产品说明.md",
+    "docs/验收记录.md"
+  ],
+  "applicationCodeChanged": false,
+  "testsChanged": false,
+  "dependenciesChanged": false,
+  "databaseSchemaChanged": false,
+  "buildPerformed": false,
+  "testsRerun": false,
+  "performanceRerun": false,
+  "installerExecuted": false,
+  "vmwareOperated": false,
+  "formalDatabaseAccess": false,
+  "extraDeliveryArchiveCreated": false,
+  "preservedOriginalDocuments": [
+    "产品说明.before.md",
+    "验收记录.before.md"
+  ],
+  "remaining": [
+    "user technical review of existing questions",
+    "user actual learning experience and update/restart/backup-restore confirmation",
+    "installation, upgrade, uninstall/reinstall and installed real-offline acceptance remain unaccepted; VMware test skipped by user"
+  ],
+  "status": "passed",
+  "localLinksChecked": 274,
+  "strictUtf8DocumentsChecked": 2
+}

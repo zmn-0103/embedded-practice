@@ -1,0 +1,67 @@
+{
+  "productVersion": "0.0.2",
+  "buildLabel": "20261027.2-ui-adaptive",
+  "schemaVersion": 10,
+  "typeAndFormatPassed": true,
+  "sourceBuildPassed": true,
+  "unit": {
+    "files": 35,
+    "passed": 660,
+    "report": "unit-01.log"
+  },
+  "development": {
+    "adaptivePassed": 8,
+    "feedbackPassed": 19,
+    "errorPassed": 1,
+    "distinctScenarios": 28,
+    "failed": 0
+  },
+  "packaged": {
+    "stats": {
+      "startTime": "2026-10-27T05:05:28.844Z",
+      "duration": 619784.971,
+      "expected": 276,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "singleFullRunPassed": true,
+    "automaticRetries": 0,
+    "errors": []
+  },
+  "layout": {
+    "samples": 8,
+    "maximumBarRatio": 0.2657638888888889,
+    "minimumVisibleInput": 200.0,
+    "inputHeight": 200,
+    "baselineReport": "layout-baseline.json",
+    "report": "layout-packaged-01.json"
+  },
+  "placeholder": {
+    "samples": 10,
+    "minimum": 5.046997193779349,
+    "maximum": 8.089075077859686
+  },
+  "sourceScope": {
+    "productionFiles": 7,
+    "existingTestFiles": 3,
+    "newTestFiles": 2,
+    "newScenarios": 13
+  },
+  "artifactVerification": "artifact-verification.json",
+  "delivery": {
+    "root": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-ui-adaptive-20261027.2",
+    "verifiedFiles": 165,
+    "totalBytes": 392439355.0,
+    "manifestSha256": "7fdc1f8178061c2c1371cb745ca4bb0ca3e5557f5675b6643e03648116694103",
+    "dataFilesDetected": 0,
+    "allMatched": true,
+    "newProgramScreens": 17,
+    "beforeScreens": 2,
+    "archiveCreated": false
+  },
+  "desktopUpdated": false,
+  "personalDataAccessed": false,
+  "gitCommitted": false,
+  "gitPushed": false
+}

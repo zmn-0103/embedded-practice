@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-24",
+  "checksPassed": true,
+  "change": "AGENTS仅保留AI约束与文档入口，项目资料独立存放",
+  "modifiedExistingDocuments": [
+    "AGENTS.md",
+    "README.md",
+    "docs/README.md",
+    "docs/验收记录.md"
+  ],
+  "newDocuments": [
+    "docs/开发记录.md",
+    "docs/项目概况.md",
+    "docs/项目模块职责.md",
+    "docs/题库与导入契约.md",
+    "docs/练习保存与统计契约.md",
+    "docs/数据保护与桌面边界.md"
+  ],
+  "originalAgentsBytes": 33196,
+  "currentAgentsBytes": 7560,
+  "migratedHistoryEntries": 23,
+  "migratedBackgroundEntries": 3,
+  "migratedContractSections": [
+    {
+      "section": "模块职责",
+      "file": "docs/项目模块职责.md",
+      "originalBodyPreserved": true
+    },
+    {
+      "section": "题库与导入契约",
+      "file": "docs/题库与导入契约.md",
+      "originalBodyPreserved": true
+    },
+    {
+      "section": "练习、保存与统计契约",
+      "file": "docs/练习保存与统计契约.md",
+      "originalBodyPreserved": true
+    },
+    {
+      "section": "数据保护与桌面边界",
+      "file": "docs/数据保护与桌面边界.md",
+      "originalBodyPreserved": true
+    }
+  ],
+  "originalAiConstraintsPreserved": true,
+  "developmentRecordsRemovedFromAgents": true,
+  "minimalCodeAndTwoReviewsRulePreserved": true,
+  "independentContractsMandatoryByTask": true,
+  "backupCopiesVerified": 4,
+  "unchangedExistingSourceFiles": 288,
+  "sourceFilesCovered": 298,
+  "utf8FilesChecked": 274,
+  "localDocumentLinksChecked": 934,
+  "missingLocalDocumentLinks": [],
+  "preservedProgram": {
+    "root": "release/practice-plans-20261024/win-unpacked",
+    "files": 124,
+    "allMatch": true
+  },
+  "preservedEvidence": [
+    {
+      "root": "docs/evidence/practice-plans-20261024",
+      "files": 482,
+      "allMatch": true
+    },
+    {
+      "root": "docs/evidence/category-tree-20261023",
+      "files": 628,
+      "allMatch": true
+    },
+    {
+      "root": "docs/evidence/findability-20261023",
+      "files": 571,
+      "allMatch": true
+    },
+    {
+      "root": "docs/evidence/uart-metadata-20261023",
+      "files": 264,
+      "allMatch": true
+    }
+  ],
+  "scope": {
+    "applicationCodeModified": false,
+    "testsModified": false,
+    "questionBankModified": false,
+    "planModified": false,
+    "dependenciesModified": false,
+    "lockModified": false,
+    "programModified": false,
+    "formalDatabaseAccessed": false,
+    "unitTestsRerun": false,
+    "desktopTestsRerun": false,
+    "buildRerun": false,
+    "installationPerformed": false,
+    "vmwarePerformed": false
+  }
+}

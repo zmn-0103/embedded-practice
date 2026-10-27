@@ -1,0 +1,295 @@
+{
+  "directory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-native-m4a-nCAIru",
+  "steps": [
+    {
+      "label": "composition-reveal",
+      "at": "2026-10-22T01:21:18.631Z",
+      "text": "ni",
+      "reference": true,
+      "events": [
+        {
+          "at": 1792632057452,
+          "type": "compositionupdate",
+          "data": "ni",
+          "value": "n"
+        },
+        {
+          "at": 1792632057453,
+          "type": "beforeinput",
+          "data": "ni",
+          "inputType": "insertCompositionText",
+          "isComposing": true,
+          "value": "n"
+        },
+        {
+          "at": 1792632057453,
+          "type": "input",
+          "data": "ni",
+          "inputType": "insertCompositionText",
+          "isComposing": true,
+          "value": "ni"
+        },
+        {
+          "at": 1792632067874,
+          "type": "compositionend",
+          "data": "ni",
+          "value": "ni"
+        },
+        {
+          "at": 1792632067874,
+          "type": "focusout",
+          "value": "ni"
+        }
+      ]
+    },
+    {
+      "label": "composition-next",
+      "at": "2026-10-22T01:22:02.152Z",
+      "state": {
+        "ok": true,
+        "value": {
+          "session": {
+            "sessionId": "309c3274-0bdb-4462-aaf9-14dc9edacabc",
+            "status": "active",
+            "position": 1,
+            "revision": 2,
+            "total": 3,
+            "mode": "sequential",
+            "topicId": null,
+            "filters": {
+              "query": "",
+              "tag": null,
+              "difficulty": null,
+              "mastery": "all",
+              "favoritesOnly": false
+            },
+            "createdAt": "2026-10-22T01:19:48.965Z",
+            "endedAt": null,
+            "counts": {
+              "revealed": 1,
+              "rated": 0,
+              "unrated": 1,
+              "skipped": 0,
+              "ratings": {
+                "不会": 0,
+                "不熟": 0,
+                "掌握": 0
+              }
+            }
+          },
+          "item": {
+            "position": 1,
+            "topicId": "native-closeout",
+            "questionId": "native-2",
+            "versionId": 2,
+            "title": "原生输入测试 2",
+            "topicTitle": "原生收尾测试",
+            "tags": [
+              "验收样本"
+            ],
+            "difficulty": "基础",
+            "body": {
+              "markdown": "输入法组合、保存与退出测试。",
+              "definitions": [],
+              "imageBindings": []
+            },
+            "draft": {
+              "revision": 0,
+              "text": ""
+            },
+            "rating": null,
+            "skippedAt": null,
+            "revealed": false,
+            "revealedAt": null
+          }
+        }
+      },
+      "events": [
+        {
+          "at": 1792632057452,
+          "type": "compositionupdate",
+          "data": "ni",
+          "value": "n"
+        },
+        {
+          "at": 1792632057453,
+          "type": "beforeinput",
+          "data": "ni",
+          "inputType": "insertCompositionText",
+          "isComposing": true,
+          "value": "n"
+        },
+        {
+          "at": 1792632057453,
+          "type": "input",
+          "data": "ni",
+          "inputType": "insertCompositionText",
+          "isComposing": true,
+          "value": "ni"
+        },
+        {
+          "at": 1792632067874,
+          "type": "compositionend",
+          "data": "ni",
+          "value": "ni"
+        },
+        {
+          "at": 1792632067874,
+          "type": "focusout",
+          "value": "ni"
+        },
+        {
+          "at": 1792632085362,
+          "type": "focusin",
+          "value": "ni"
+        },
+        {
+          "at": 1792632109284,
+          "type": "compositionstart",
+          "data": "",
+          "value": "ni"
+        },
+        {
+          "at": 1792632109284,
+          "type": "compositionupdate",
+          "data": "h",
+          "value": "ni"
+        },
+        {
+          "at": 1792632109284,
+          "type": "beforeinput",
+          "data": "h",
+          "inputType": "insertCompositionText",
+          "isComposing": true,
+          "value": "ni"
+        },
+        {
+          "at": 1792632109284,
+          "type": "input",
+          "data": "h",
+          "inputType": "insertCompositionText",
+          "isComposing": true,
+          "value": "nih"
+        },
+        {
+          "at": 1792632116379,
+          "type": "compositionend",
+          "data": "h",
+          "value": "nih"
+        },
+        {
+          "at": 1792632116379,
+          "type": "focusout",
+          "value": "nih"
+        }
+      ]
+    },
+    {
+      "label": "composition-alt-f4",
+      "at": "2026-10-22T01:23:06.723Z",
+      "result": "15 秒内未关闭，候选仍在；保留观察，不能当成关闭成功"
+    },
+    {
+      "label": "composition-titlebar-close",
+      "at": "2026-10-22T01:23:38.087Z",
+      "items": [
+        {
+          "position": 0,
+          "draft": "nih",
+          "draft_revision": 3,
+          "revealed_at": "2026-10-22T01:21:07.892Z",
+          "rating": null
+        },
+        {
+          "position": 1,
+          "draft": "n",
+          "draft_revision": 1,
+          "revealed_at": null,
+          "rating": null
+        },
+        {
+          "position": 2,
+          "draft": "",
+          "draft_revision": 0,
+          "revealed_at": null,
+          "rating": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "309c3274-0bdb-4462-aaf9-14dc9edacabc",
+          "position": 1,
+          "status": "active"
+        }
+      ],
+      "integrity": [
+        {
+          "integrity_check": "ok"
+        }
+      ]
+    },
+    {
+      "label": "reopen-continue",
+      "at": "2026-10-22T01:32:16.324Z",
+      "state": {
+        "ok": true,
+        "value": {
+          "session": {
+            "sessionId": "309c3274-0bdb-4462-aaf9-14dc9edacabc",
+            "status": "active",
+            "position": 1,
+            "revision": 2,
+            "total": 3,
+            "mode": "sequential",
+            "topicId": null,
+            "filters": {
+              "query": "",
+              "tag": null,
+              "difficulty": null,
+              "mastery": "all",
+              "favoritesOnly": false
+            },
+            "createdAt": "2026-10-22T01:19:48.965Z",
+            "endedAt": null,
+            "counts": {
+              "revealed": 1,
+              "rated": 0,
+              "unrated": 1,
+              "skipped": 0,
+              "ratings": {
+                "不会": 0,
+                "不熟": 0,
+                "掌握": 0
+              }
+            }
+          },
+          "item": {
+            "position": 1,
+            "topicId": "native-closeout",
+            "questionId": "native-2",
+            "versionId": 2,
+            "title": "原生输入测试 2",
+            "topicTitle": "原生收尾测试",
+            "tags": [
+              "验收样本"
+            ],
+            "difficulty": "基础",
+            "body": {
+              "markdown": "输入法组合、保存与退出测试。",
+              "definitions": [],
+              "imageBindings": []
+            },
+            "draft": {
+              "revision": 1,
+              "text": "n"
+            },
+            "rating": null,
+            "skippedAt": null,
+            "revealed": false,
+            "revealedAt": null
+          }
+        }
+      }
+    }
+  ]
+}

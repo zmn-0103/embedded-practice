@@ -1,0 +1,30 @@
+{
+  "stats": {
+    "startTime": "2026-10-22T02:52:24.088Z",
+    "duration": 493443.723,
+    "expected": 284,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "total": 284,
+  "projects": {
+    "development": {
+      "passed": 142,
+      "baseline": 123,
+      "added": 19
+    },
+    "packaged": {
+      "passed": 142,
+      "baseline": 123,
+      "added": 19
+    }
+  },
+  "missingBaseline": [],
+  "unexpected": [],
+  "resultsPerTest": 1,
+  "retries": 0,
+  "attachments": 286,
+  "attachmentFiles": 42,
+  "attachmentEmbedded": 244
+}

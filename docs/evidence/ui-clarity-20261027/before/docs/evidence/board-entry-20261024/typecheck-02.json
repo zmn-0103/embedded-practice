@@ -1,0 +1,7 @@
+{
+  "chunk_id": "a44e49",
+  "wall_time_seconds": 3.2506026,
+  "exit_code": 1,
+  "original_token_count": 71,
+  "output": "\n> embedded-practice@0.1.0 typecheck\n> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json\n\nsrc/renderer/src/board-catalog.ts(2,27): error TS2307: Cannot find module '../../../question-banks/catalog/板块规划.json?raw' or its corresponding type declarations.\r\n"
+}

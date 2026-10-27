@@ -1,0 +1,185 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/board-entry.spec.ts",
+      "--grep",
+      "板块入口：900/1440窗口",
+      "--project=packaged",
+      "--output=docs/evidence/ui-clarity-20261027/packaged-02",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/ui-clarity-20261027/packaged-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/ui-clarity-20261027/packaged-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-clarity-20261027\\packaged-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "board-entry.spec.ts",
+      "file": "board-entry.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6282,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T04:29:27.067Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "boards-light.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-clarity-20261027\\packaged-02\\board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged\\attachments\\boards-light-png-3a0b388c6bad6a112fdd936ed0c9646d4ae480cc.png"
+                    },
+                    {
+                      "name": "difficulty-light.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-clarity-20261027\\packaged-02\\board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged\\attachments\\difficulty-light-png-9aa67f73e500d9137de588d27430f3bc6998d0c7.png"
+                    },
+                    {
+                      "name": "boards-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-clarity-20261027\\packaged-02\\board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged\\attachments\\boards-dark-png-3d733838f4b8cb27d51dd78c78c8c990b69f940f.png"
+                    },
+                    {
+                      "name": "difficulty-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\ui-clarity-20261027\\packaged-02\\board-entry-板块入口：900-1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过-packaged\\attachments\\difficulty-dark-png-e4586e25bb03c2f1e229c80882c67c14fda13106.png"
+                    },
+                    {
+                      "name": "board-appearance-measurements.json",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJwYWxldHRlIjogIuadvumXtOe7vyIsCiAgICAidGhlbWUiOiAibGlnaHQiLAogICAgImRpbWVuc2lvbnMiOiB7CiAgICAgICJ2aWV3cG9ydCI6IDE0MjQsCiAgICAgICJjbGllbnRXaWR0aCI6IDE0MDksCiAgICAgICJzY3JvbGxXaWR0aCI6IDE0MDkKICAgIH0sCiAgICAicmF0aW9zIjogWwogICAgICB7CiAgICAgICAgInRvbmUiOiAiZWFzeSIsCiAgICAgICAgInJhdGlvIjogNi40NzUxNDQ4MzU5ODI1ODgKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogIm1lZGl1bSIsCiAgICAgICAgInJhdGlvIjogNi4yNTQyMTQzNTY1Nzg0NDYKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogImhhcmQiLAogICAgICAgICJyYXRpbyI6IDYuMTE4OTk0Mjk4NjcwOTI1CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJ1bnJhdGVkIiwKICAgICAgICAicmF0aW8iOiA0Ljg2ODM5ODQ1NTE3NDMwOAogICAgICB9CiAgICBdCiAgfSwKICB7CiAgICAicGFsZXR0ZSI6ICLmnb7pl7Tnu78iLAogICAgInRoZW1lIjogImRhcmsiLAogICAgImRpbWVuc2lvbnMiOiB7CiAgICAgICJ2aWV3cG9ydCI6IDg4NCwKICAgICAgImNsaWVudFdpZHRoIjogODY5LAogICAgICAic2Nyb2xsV2lkdGgiOiA4NjkKICAgIH0sCiAgICAicmF0aW9zIjogWwogICAgICB7CiAgICAgICAgInRvbmUiOiAiZWFzeSIsCiAgICAgICAgInJhdGlvIjogNy42MzUzNDU3NDM2NjEyNDQKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogIm1lZGl1bSIsCiAgICAgICAgInJhdGlvIjogOC4xMzY0MDYzNTUxNDUzOTEKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogImhhcmQiLAogICAgICAgICJyYXRpbyI6IDcuNjk4MTg2ODI0NDMwNDkyNQogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAidW5yYXRlZCIsCiAgICAgICAgInJhdGlvIjogOC44OTg4NzEwNjYxODYzMjIKICAgICAgfQogICAgXQogIH0sCiAgewogICAgInBhbGV0dGUiOiAi5pm056m66JOdIiwKICAgICJ0aGVtZSI6ICJsaWdodCIsCiAgICAiZGltZW5zaW9ucyI6IHsKICAgICAgInZpZXdwb3J0IjogMTQyNCwKICAgICAgImNsaWVudFdpZHRoIjogMTQwOSwKICAgICAgInNjcm9sbFdpZHRoIjogMTQwOQogICAgfSwKICAgICJyYXRpb3MiOiBbCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJlYXN5IiwKICAgICAgICAicmF0aW8iOiA2LjQ3NTE0NDgzNTk4MjU4OAogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAibWVkaXVtIiwKICAgICAgICAicmF0aW8iOiA2LjI1NDIxNDM1NjU3ODQ0NgogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAiaGFyZCIsCiAgICAgICAgInJhdGlvIjogNi4xMTg5OTQyOTg2NzA5MjUKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogInVucmF0ZWQiLAogICAgICAgICJyYXRpbyI6IDQuODI5NTI4NjI0NjgxMDc4CiAgICAgIH0KICAgIF0KICB9LAogIHsKICAgICJwYWxldHRlIjogIuaZtOepuuiTnSIsCiAgICAidGhlbWUiOiAiZGFyayIsCiAgICAiZGltZW5zaW9ucyI6IHsKICAgICAgInZpZXdwb3J0IjogODg0LAogICAgICAiY2xpZW50V2lkdGgiOiA4NjksCiAgICAgICJzY3JvbGxXaWR0aCI6IDg2OQogICAgfSwKICAgICJyYXRpb3MiOiBbCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJlYXN5IiwKICAgICAgICAicmF0aW8iOiA3LjYzNTM0NTc0MzY2MTI0NAogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAibWVkaXVtIiwKICAgICAgICAicmF0aW8iOiA4LjEzNjQwNjM1NTE0NTM5MQogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAiaGFyZCIsCiAgICAgICAgInJhdGlvIjogNy42OTgxODY4MjQ0MzA0OTI1CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJ1bnJhdGVkIiwKICAgICAgICAicmF0aW8iOiA4Ljg0NTE2NDcxNTI4NzUyNAogICAgICB9CiAgICBdCiAgfSwKICB7CiAgICAicGFsZXR0ZSI6ICLmmpbmspnph5EiLAogICAgInRoZW1lIjogImxpZ2h0IiwKICAgICJkaW1lbnNpb25zIjogewogICAgICAidmlld3BvcnQiOiAxNDI0LAogICAgICAiY2xpZW50V2lkdGgiOiAxNDA5LAogICAgICAic2Nyb2xsV2lkdGgiOiAxNDA5CiAgICB9LAogICAgInJhdGlvcyI6IFsKICAgICAgewogICAgICAgICJ0b25lIjogImVhc3kiLAogICAgICAgICJyYXRpbyI6IDYuNDc1MTQ0ODM1OTgyNTg4CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJtZWRpdW0iLAogICAgICAgICJyYXRpbyI6IDYuMjU0MjE0MzU2NTc4NDQ2CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJoYXJkIiwKICAgICAgICAicmF0aW8iOiA2LjExODk5NDI5ODY3MDkyNQogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAidW5yYXRlZCIsCiAgICAgICAgInJhdGlvIjogNC45OTUwOTUyOTQzMTkwNzYKICAgICAgfQogICAgXQogIH0sCiAgewogICAgInBhbGV0dGUiOiAi5pqW5rKZ6YeRIiwKICAgICJ0aGVtZSI6ICJkYXJrIiwKICAgICJkaW1lbnNpb25zIjogewogICAgICAidmlld3BvcnQiOiA4ODQsCiAgICAgICJjbGllbnRXaWR0aCI6IDg2OSwKICAgICAgInNjcm9sbFdpZHRoIjogODY5CiAgICB9LAogICAgInJhdGlvcyI6IFsKICAgICAgewogICAgICAgICJ0b25lIjogImVhc3kiLAogICAgICAgICJyYXRpbyI6IDcuNjM1MzQ1NzQzNjYxMjQ0CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJtZWRpdW0iLAogICAgICAgICJyYXRpbyI6IDguMTM2NDA2MzU1MTQ1MzkxCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJoYXJkIiwKICAgICAgICAicmF0aW8iOiA3LjY5ODE4NjgyNDQzMDQ5MjUKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogInVucmF0ZWQiLAogICAgICAgICJyYXRpbyI6IDguNTQyNTU4MjAwMzM5NTEKICAgICAgfQogICAgXQogIH0sCiAgewogICAgInBhbGV0dGUiOiAi5pqu5bGx57SrIiwKICAgICJ0aGVtZSI6ICJsaWdodCIsCiAgICAiZGltZW5zaW9ucyI6IHsKICAgICAgInZpZXdwb3J0IjogMTQyNCwKICAgICAgImNsaWVudFdpZHRoIjogMTQwOSwKICAgICAgInNjcm9sbFdpZHRoIjogMTQwOQogICAgfSwKICAgICJyYXRpb3MiOiBbCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJlYXN5IiwKICAgICAgICAicmF0aW8iOiA2LjQ3NTE0NDgzNTk4MjU4OAogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAibWVkaXVtIiwKICAgICAgICAicmF0aW8iOiA2LjI1NDIxNDM1NjU3ODQ0NgogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAiaGFyZCIsCiAgICAgICAgInJhdGlvIjogNi4xMTg5OTQyOTg2NzA5MjUKICAgICAgfSwKICAgICAgewogICAgICAgICJ0b25lIjogInVucmF0ZWQiLAogICAgICAgICJyYXRpbyI6IDUuMTI1MjYzNDA3MDk5NDI5CiAgICAgIH0KICAgIF0KICB9LAogIHsKICAgICJwYWxldHRlIjogIuaaruWxsee0qyIsCiAgICAidGhlbWUiOiAiZGFyayIsCiAgICAiZGltZW5zaW9ucyI6IHsKICAgICAgInZpZXdwb3J0IjogODg0LAogICAgICAiY2xpZW50V2lkdGgiOiA4NjksCiAgICAgICJzY3JvbGxXaWR0aCI6IDg2OQogICAgfSwKICAgICJyYXRpb3MiOiBbCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJlYXN5IiwKICAgICAgICAicmF0aW8iOiA3LjYzNTM0NTc0MzY2MTI0NAogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAibWVkaXVtIiwKICAgICAgICAicmF0aW8iOiA4LjEzNjQwNjM1NTE0NTM5MQogICAgICB9LAogICAgICB7CiAgICAgICAgInRvbmUiOiAiaGFyZCIsCiAgICAgICAgInJhdGlvIjogNy42OTgxODY4MjQ0MzA0OTI1CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidG9uZSI6ICJ1bnJhdGVkIiwKICAgICAgICAicmF0aW8iOiA4LjE3NTk4NDg5MjA4NjM1MQogICAgICB9CiAgICBdCiAgfQpd"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1779d5fe0daf7702a7de-3298b7d4d19ea47d114f",
+          "file": "board-entry.spec.ts",
+          "line": 403,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T04:29:26.456Z",
+    "duration": 6940.446,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

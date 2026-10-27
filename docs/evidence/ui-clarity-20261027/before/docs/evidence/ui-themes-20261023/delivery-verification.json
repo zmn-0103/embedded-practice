@@ -1,0 +1,116 @@
+{
+  "status": "passed within documented scope",
+  "version": "0.1.0",
+  "schema": 7,
+  "program": "release/ui-20261023/win-unpacked",
+  "programFiles": 122,
+  "asarSha256": "dc0f5b41ffd1bfded462b17ee739de68831e77d6b7dfb4a4a67e1aeae8f0e001",
+  "bundledBuildLicenseChecks": 23,
+  "originalUnpackedFilesPreserved": {
+    "files": 122,
+    "allMatch": true
+  },
+  "preservedCoreArtifacts": 4,
+  "oldM5dEvidenceFilesPreserved": 91,
+  "productionFilesChanged": [
+    "src/main/database/open-database.ts",
+    "src/main/database/repositories/settings-repository.ts",
+    "src/main/database/settings-schema.ts",
+    "src/main/services/backup/validate-backup.ts",
+    "src/renderer/src/App.tsx",
+    "src/renderer/src/components/CodeBlock.tsx",
+    "src/renderer/src/components/SettingsPane.tsx",
+    "src/renderer/src/styles/global.css",
+    "src/renderer/src/useAppearance.ts",
+    "src/shared/contracts/settings.ts"
+  ],
+  "existingTestsChanged": [
+    "tests/e2e/backup-legacy.spec.ts",
+    "tests/e2e/backup-window.spec.ts",
+    "tests/e2e/data-locations.spec.ts",
+    "tests/e2e/history-versions.spec.ts",
+    "tests/e2e/library-import.spec.ts",
+    "tests/e2e/practice-mode-migration.spec.ts",
+    "tests/e2e/practice.spec.ts",
+    "tests/e2e/restore-window.spec.ts",
+    "tests/e2e/session-filters-migration.spec.ts",
+    "tests/e2e/settings-migration.spec.ts",
+    "tests/e2e/settings-window.spec.ts",
+    "tests/unit/library-ipc.test.ts",
+    "tests/unit/settings-contract.test.ts"
+  ],
+  "newCodeFiles": [
+    "tests/e2e/settings-palettes.spec.ts",
+    "tests/e2e/palette-migration.spec.ts",
+    "tests/fixtures/schema-v6.sql"
+  ],
+  "twoReviewsPresentForCodeFiles": 26,
+  "unchangedConfiguration": [
+    "AGENTS.md",
+    "package.json",
+    "package-lock.json",
+    "electron-builder.yml",
+    "electron.vite.config.ts",
+    "playwright.config.ts"
+  ],
+  "sourceManifestFiles": 194,
+  "unit": {
+    "passed": 566,
+    "total": 566,
+    "files": 28
+  },
+  "desktop": {
+    "firstFull": {
+      "startTime": "2026-10-23T04:36:24.622Z",
+      "duration": 586897.777,
+      "expected": 328,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "focusedAfterTestExpectationFix": {
+      "startTime": "2026-10-23T04:47:04.302Z",
+      "duration": 8158.761999999999,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "consolidated": {
+      "distinctCases": 330,
+      "passed": 330,
+      "byProject": {
+        "development": 165,
+        "packaged": 165
+      },
+      "skipped": 0,
+      "flaky": 0,
+      "automaticRetries": 0
+    },
+    "scope": "328 first-run passes plus two full-case focused passes after one stale version expectation fix; not a claim of a single 330/330 run",
+    "historicalM4CasesRetained": 300,
+    "missingHistorical": [],
+    "renamedVersionTitles": "v3/v4/v5 successful target v6 -> v7; scenario behavior preserved",
+    "contrast": {
+      "palettes": 4,
+      "modes": 2,
+      "projects": 2,
+      "pairsPerMode": 3,
+      "minimum": 5.129123289667843
+    }
+  },
+  "longContentChecks": 11,
+  "signature": "NotSigned",
+  "dataScope": "only newly created explicit temporary data directories; no formal database",
+  "installerScope": "new unpacked UI only; old NSIS preserved; VMware install acceptance remains user-skipped",
+  "manualScope": "current new UI native IME and all actual Windows DPI combinations not reaccepted; subjective preferences and question review remain with user",
+  "localLinks": {
+    "status": "passed",
+    "method": "actual Markdown link/image AST nodes; code examples excluded",
+    "documents": 12,
+    "localLinks": 610,
+    "missing": []
+  },
+  "utf8SourceDocumentFiles": 194,
+  "evidenceFiles": 442
+}

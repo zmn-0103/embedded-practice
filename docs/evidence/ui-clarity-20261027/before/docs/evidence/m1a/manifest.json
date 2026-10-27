@@ -1,0 +1,223 @@
+{
+  "createdAt": "2026-10-20T10:23:01.0458442+08:00",
+  "stage": "M1 first increment - pure parser",
+  "appVersion": "0.1.0",
+  "environment": {
+    "os": "Windows 11 Home x64 10.0.26200",
+    "node": "24.19.0",
+    "npm": "11.17.0",
+    "electron": "42.11.15",
+    "betterSqlite3": "12.11.1"
+  },
+  "checks": {
+    "typeAndFormat": "passed",
+    "unitPassed": 168,
+    "unitFailed": 0,
+    "desktopPassed": 5,
+    "desktopFailed": 0,
+    "desktopSkipped": 0
+  },
+  "boundary": "Parser tested in Node, not connected to the Electron window. Desktop checks cover existing startup/database behavior. No new installer or hardware validation.",
+  "files": [
+    {
+      "file": ".prettierrc.json",
+      "sha256": "92BC76807B2F2C249F23A3D3C9A9A78E130DF5CF713A876C082077DA43ED10E4"
+    },
+    {
+      "file": "计划书.md",
+      "sha256": "4217BEA47B9CB28E5A1B8E976BACB57EB769BB25503981A4E0652EA0171E1C73"
+    },
+    {
+      "file": "AGENTS.md",
+      "sha256": "871C016AB4C348F06C97AC07C9C5BFEBD8036C0301A91B4485E90A44EC4C79EE"
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "sha256": "FB7AFD25ABBED8A9BDB9B485ACA026456B512AD7AA4A4ACF843A4153DAC4EA4D"
+    },
+    {
+      "file": "docs/验收记录.md",
+      "sha256": "7163CC0DC01B8FEC64A72921D06248F4FECA2718176DDCC9B40E230B8D82454C"
+    },
+    {
+      "file": "docs/architecture/M1结构解析.md",
+      "sha256": "BE2FBF022C8720B268A6AF5755E109FEB187B61FEBACACE1C253DE733F1B53A1"
+    },
+    {
+      "file": "docs/evidence/m1a/check-output.txt",
+      "sha256": "D4E638ED9B282AD1FA26FD4FD98D8398E9AB3151FD12364EB51783F9B9610C5B"
+    },
+    {
+      "file": "docs/evidence/m1a/desktop-output.txt",
+      "sha256": "28B87F13AFC4CEBC0A54796C9F056541E74C765493A97E20F430A0B6E3C344B8"
+    },
+    {
+      "file": "docs/evidence/m1a/desktop-tests.json",
+      "sha256": "700092CFE948AE6321F3DCCCD50948AF224CCED9C9A9499B1B7C4A2247855256"
+    },
+    {
+      "file": "docs/evidence/m1a/static-checks.json",
+      "sha256": "6B3362BCEEC45763B1895D49FBB6D1884CD23E01EA01174D335AA5CD4A94B331"
+    },
+    {
+      "file": "docs/evidence/m1a/unit-tests.json",
+      "sha256": "B09AD9E99DCF3F4DA2EAC4605D24C6A5204055E24A2347E9F9D4ADA0DCA2D14E"
+    },
+    {
+      "file": "docs/M1第一批行为与验收.md",
+      "sha256": "91BFB76E08A641C339744475CE9BBCFE7E55C40FA333D3774EA7FEA0B605089D"
+    },
+    {
+      "file": "electron-builder.yml",
+      "sha256": "B964603892BE8ACBFFF6D891562BFC003C4CCE66ACA92EBD86829DBAF59AB386"
+    },
+    {
+      "file": "electron.vite.config.ts",
+      "sha256": "37C5B0A38FAA67C1ED2E7F622EC7D530CB6E4154A5FCFB6B367B105B2FDF7645"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "E6D8C9263BE0F60CFE3C523D6E71F8033105A1A9E586658419D49FB528240369"
+    },
+    {
+      "file": "package.json",
+      "sha256": "9E81FEAD5C28E25EB6FD88AF826B49106DA0C808F189662BBB371A51B90B0100"
+    },
+    {
+      "file": "playwright.config.ts",
+      "sha256": "9B5B8138C57D8AD41D079D62E120E49D9307F12142BE29C72BBD75F49B58728E"
+    },
+    {
+      "file": "question-banks/README.md",
+      "sha256": "15E9F16C9E9356695C31E58A63375BE514101F5E7FFCC0902B7F3D134DA608F1"
+    },
+    {
+      "file": "question-banks/sources/STM32F103RCT6-GPIO-题答对应.json",
+      "sha256": "188AE40A71DBE706FDE6BE90E6C1F08B522E8E9511D2B95B01680281D20D263D"
+    },
+    {
+      "file": "question-banks/sources/STM32F103RCT6-GPIO-原始自测题.txt",
+      "sha256": "0D9D53AF62B098B5108E7E972FB271AB5130AE1C7FBA3180CC00E6D31A01A39F"
+    },
+    {
+      "file": "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+      "sha256": "494512D817DE9AD0CD3A74CB3DE8E375005AC56E02F3F3FC26F4B89383FBF8E2"
+    },
+    {
+      "file": "src/main/database/startup-store.ts",
+      "sha256": "69AD40B82F1F098EC6E830DF003116A0899EBFEB3FA6E701B3C51A89337B0D1E"
+    },
+    {
+      "file": "src/main/index.ts",
+      "sha256": "14E31182993FF1074C7844B48523D5A0BED0A1B3D332F3CE795772AE4D303E77"
+    },
+    {
+      "file": "src/main/ipc/application.ts",
+      "sha256": "19292B8163B4E1C0DB915F0A0BEB4B8E786B27A4BAE0DF21DA92BE9C7295BD13"
+    },
+    {
+      "file": "src/main/services/library/image-references.ts",
+      "sha256": "CA3893AC994F08EA52BBD60CD5459FD27E31A0980C5385ADE61F22A3C6605809"
+    },
+    {
+      "file": "src/main/services/library/markdown-document.ts",
+      "sha256": "A894FEC1E957E26E7DCD05BFC4CA7BF262B5B042327698779B694D45BBDDDBBD"
+    },
+    {
+      "file": "src/main/services/library/parse-question-bank.ts",
+      "sha256": "71445481DAFD99DB70D4869368FC436C479B91646F46765606602969A528723F"
+    },
+    {
+      "file": "src/main/services/library/parse-question.ts",
+      "sha256": "232870179033C8FD5114DAE7A4E913F4A105B33A03C0B8A80CFD111C6DF41528"
+    },
+    {
+      "file": "src/main/services/library/question-metadata.ts",
+      "sha256": "BD7BC763902D7B655047F875817410EE9249078F0C43CB55103B556F8E9AB14E"
+    },
+    {
+      "file": "src/main/window.ts",
+      "sha256": "C2493BE2646CB90354AF8E041B1BE943B789EAA0683FD5DF95DC799C68C5DCD7"
+    },
+    {
+      "file": "src/preload/index.ts",
+      "sha256": "40B25470917BAB5E59A0510EDB704CFC79760335BD5DED0F0D21FB83A74EB8B4"
+    },
+    {
+      "file": "src/renderer/index.html",
+      "sha256": "F8790587D9EB16C142E3F47437BF6EC8C28CC5706C9DB986AD46AC174AC131DC"
+    },
+    {
+      "file": "src/renderer/src/App.tsx",
+      "sha256": "0D023D81694D54FF1316C3D7ABA13BBBC3A3CBFA1C19C0F2DDDBA7E01063B93B"
+    },
+    {
+      "file": "src/renderer/src/env.d.ts",
+      "sha256": "F9C102558631B913449D3BF4A860980BA8C1BEC9DAD975F60B77BFBB042F0BFA"
+    },
+    {
+      "file": "src/renderer/src/main.tsx",
+      "sha256": "CBAE0E49F9288480C5FCE1C76EFF4723F29D660CFCB4BC6083BC3652B47917AD"
+    },
+    {
+      "file": "src/renderer/src/styles/global.css",
+      "sha256": "0C1B7D33600D219734556FF0A18320938BB44C9F281B6F6F703C5E98544B25F4"
+    },
+    {
+      "file": "src/shared/contracts/application.ts",
+      "sha256": "282F08E7B35E07F9718E552CA89F93168EF77DDDFD0E5E0998E8506E52362A5E"
+    },
+    {
+      "file": "src/shared/contracts/question-bank.ts",
+      "sha256": "EC01AB9595BFED3BE0D7876942E008962762720D09128FCB46E41BD39BC72097"
+    },
+    {
+      "file": "tests/e2e/database-errors.spec.ts",
+      "sha256": "1155D6932E6FC51F200B6A52A33E8FEE31F853C60FFC995FB501ABF26E013FCB"
+    },
+    {
+      "file": "tests/e2e/helpers.ts",
+      "sha256": "837C17DE05F0738E2C7C288BCAC0BB820675191F260383DC7F8A7DCE62E73381"
+    },
+    {
+      "file": "tests/e2e/startup.spec.ts",
+      "sha256": "78738FEAF1CB61812A9A7B54B77F7E1EC1D217AFD43ED89ED718975B4311D770"
+    },
+    {
+      "file": "tests/fixtures/markdown/合法专题.md",
+      "sha256": "F499ACB81560265FF05E4A619AA7D415A18CD891505459E8DC945A6EACD2B9A1"
+    },
+    {
+      "file": "tests/fixtures/markdown/README.md",
+      "sha256": "A61C82132CA322833D6B2CCA75CF2EEC706E0F02CC10C3F1FF3E3DB569211533"
+    },
+    {
+      "file": "tests/unit/application.test.ts",
+      "sha256": "2083F4BD62EB3826453FE6B10063B9EC8C29A253B7D6B3304A8E4C62E523FD29"
+    },
+    {
+      "file": "tests/unit/gpio-question-bank.test.ts",
+      "sha256": "2366AA434B4EA42EE64FBF4D6D3697767754BFE002BE40623F95EDDE1B2E3978"
+    },
+    {
+      "file": "tests/unit/markdown-images.test.ts",
+      "sha256": "57606880E9B0D960A3AEC92EC8D7B4C08A9365CD74A07D3527F5887BC4506F9E"
+    },
+    {
+      "file": "tests/unit/markdown-metadata.test.ts",
+      "sha256": "F4E635C0903044B10C63F24580E3F395B64F72EB157C23D1EA0DA98D3007889F"
+    },
+    {
+      "file": "tests/unit/markdown-structure.test.ts",
+      "sha256": "A6FEC1BCBED64B2B34A411C2BBFC7A773FC2E9D8C7EFCB9FC2B679435212CF99"
+    },
+    {
+      "file": "tsconfig.node.json",
+      "sha256": "EA7F86FD9B466ADC13AD169F2C434B44BD3B54DA5884194276CADF561038DF28"
+    },
+    {
+      "file": "tsconfig.web.json",
+      "sha256": "71A9F286BAFA88047E2790CEDD822DFA8024FA36C5C708F7606ABD94AE85F8AD"
+    }
+  ]
+}

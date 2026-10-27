@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-21",
+  "unit": {
+    "files": 22,
+    "total": 452,
+    "passed": 452,
+    "failed": 0,
+    "skipped": 0
+  },
+  "runs": {
+    "history-versions-first": {
+      "startTime": "2026-10-21T05:50:55.657Z",
+      "duration": 9792.32,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "history-window-first": {
+      "startTime": "2026-10-21T05:54:47.320Z",
+      "duration": 7853.968999999999,
+      "expected": 4,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "full-first": {
+      "startTime": "2026-10-21T05:57:32.052Z",
+      "duration": 281567.098,
+      "expected": 144,
+      "skipped": 0,
+      "unexpected": 6,
+      "flaky": 0
+    },
+    "failure-recheck": {
+      "startTime": "2026-10-21T09:26:18.273Z",
+      "duration": 52449.808000000005,
+      "expected": 10,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "final-full": {
+      "startTime": "2026-10-21T09:27:31.461Z",
+      "duration": 290470.35000000003,
+      "expected": 150,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "projects": {
+    "development": {
+      "total": 75,
+      "passed": 75,
+      "retainedPrevious": 68,
+      "added": 7,
+      "missing": [],
+      "newScenarios": [
+        {
+          "file": "history-versions.spec.ts",
+          "title": "内容更新标记按最新揭晓消除，旧轮/跳过/只读历史不消除，元数据不新增标记"
+        },
+        {
+          "file": "history-versions.spec.ts",
+          "title": "单题历史真实记录资格、倒序分页、同轮改评、跨专题隔离及只读"
+        },
+        {
+          "file": "history-versions.spec.ts",
+          "title": "历史旧版本图片在替换/来源移动/归档恢复与独立进程重开后可读"
+        },
+        {
+          "file": "history-window.spec.ts",
+          "title": "切题后晚到的 history:get-entry 不覆盖另一题或泄露旧内容"
+        },
+        {
+          "file": "history-window.spec.ts",
+          "title": "切题后晚到的 history:list 不覆盖另一题或泄露旧内容"
+        },
+        {
+          "file": "history-window.spec.ts",
+          "title": "历史真实读取失败与坏记录可重试，保留已存数据且诊断不包含旧作答"
+        },
+        {
+          "file": "history-window.spec.ts",
+          "title": "历史默认不读/不挂载，主动回看与自动保存保持，新题新轮重新关闭"
+        }
+      ]
+    },
+    "packaged": {
+      "total": 75,
+      "passed": 75,
+      "retainedPrevious": 68,
+      "added": 7,
+      "missing": [],
+      "newScenarios": [
+        {
+          "file": "history-versions.spec.ts",
+          "title": "内容更新标记按最新揭晓消除，旧轮/跳过/只读历史不消除，元数据不新增标记"
+        },
+        {
+          "file": "history-versions.spec.ts",
+          "title": "单题历史真实记录资格、倒序分页、同轮改评、跨专题隔离及只读"
+        },
+        {
+          "file": "history-versions.spec.ts",
+          "title": "历史旧版本图片在替换/来源移动/归档恢复与独立进程重开后可读"
+        },
+        {
+          "file": "history-window.spec.ts",
+          "title": "切题后晚到的 history:get-entry 不覆盖另一题或泄露旧内容"
+        },
+        {
+          "file": "history-window.spec.ts",
+          "title": "切题后晚到的 history:list 不覆盖另一题或泄露旧内容"
+        },
+        {
+          "file": "history-window.spec.ts",
+          "title": "历史真实读取失败与坏记录可重试，保留已存数据且诊断不包含旧作答"
+        },
+        {
+          "file": "history-window.spec.ts",
+          "title": "历史默认不读/不挂载，主动回看与自动保存保持，新题新轮重新关闭"
+        }
+      ]
+    }
+  },
+  "attachments": [
+    {
+      "path": "docs/evidence/m3c/development-history-query-matrix.json",
+      "sha256": "966e1318d7a70717a80e2f4a2fdf4089c4fc5cb010572d4fc1575b960e0a55a7"
+    },
+    {
+      "path": "docs/evidence/m3c/development-content-update.png",
+      "sha256": "0e24ca35faa90d0ffbdded30817dff81a717298044284b63b2159f64f7c044b5"
+    },
+    {
+      "path": "docs/evidence/m3c/development-content-update-lifecycle.json",
+      "sha256": "21cde9545243972a36584485bc54de798bfb0eb6c42dd70ba6538b815c4b6951"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-old-image.png",
+      "sha256": "56ef2e92e48aa24bd71ac222ecb1c0d6aea50807c37340210c6339e5aef3ead7"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-image-archive-restore.json",
+      "sha256": "b88ba118aa5800ff440c8335a7f07a7fc18687f523a0ffd3957cd30e2ab1a0ff"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-query-matrix.json",
+      "sha256": "29080f4c410ec94a55de75bcb9520e2e3190cb7dfeb057562a9aa30e43ab1c74"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-content-update.png",
+      "sha256": "518a120524ccd839bf4c9459e7b95631ef15cc54783e135fb78cb74b15313ed9"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-content-update-lifecycle.json",
+      "sha256": "a06f300768e5d8cdc04197571323cf04ad9f70cbd3531d6c5891e85a2e81b53c"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-old-image.png",
+      "sha256": "7c2be4d3329f4473666a8aaa3b628e807c71adb85fe4433482735f3fb5110343"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-image-archive-restore.json",
+      "sha256": "9e0f580e07233d6bdf1d9312a2ce9650524e4e449e870a27341adc86d81de055"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-expanded.png",
+      "sha256": "f26eea760ca0aeb3fd9ccd22bb6751f045a5bc3419c03d35e626c7d1f623c159"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-default-readonly-autosave.json",
+      "sha256": "36d09ebe59e9f2b40490cdff9c7ccf617287df17e4c92e537082af0aa160b15b"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-read-failure-retry.json",
+      "sha256": "6cd1e49efd369fd1ad6e35a489603953f5f1aa5e863301248ae8d183972b9b8a"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-expanded.png",
+      "sha256": "e1d5d1562e368a0f89e916a67741a3a13f035d118e17f9079a0de27ea40fd815"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-default-readonly-autosave.json",
+      "sha256": "170b423056e0bddd62a4171257c2830ccebcdb094628a81fdf0e9574c6a9fff6"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-read-failure-retry.json",
+      "sha256": "3cd86e1b9b85ce974261cd2c610c6a85801201e28bd0d5a109fb1a02ee7ad76a"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-late-list.json",
+      "sha256": "fb76204e1f550a8f67ec330f86d284190baa3e8aabdf3df835a768e81e0e435d"
+    },
+    {
+      "path": "docs/evidence/m3c/development-history-late-get-entry.json",
+      "sha256": "5d76d64f7107019fec390aed47ed23c11455d3e3ece1601edf01c80fa66f225b"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-late-list.json",
+      "sha256": "218b6faf160b357684debd0a54b6823fa49ecd84fd2b28db881291af109952a0"
+    },
+    {
+      "path": "docs/evidence/m3c/packaged-history-late-get-entry.json",
+      "sha256": "081cd08409d7ae487a10236400446fdc52fb8ebd3bab63b4c517355b2a70c169"
+    }
+  ],
+  "scope": {
+    "productionFiles": 12,
+    "testFiles": 8,
+    "databaseVersion": 4,
+    "newMigration": false,
+    "newDependency": false,
+    "newNSIS": false
+  },
+  "unresolved": [
+    "首轮四个输入场景出现脚本未输入的额外字符；来源未确认，定向与最终完整复测未出现。",
+    "历史单次键盘坐标偏移根因未知，原始失败及精确断言保留。",
+    "完整人工体验、系统 DPI、正式题库审阅、新 NSIS、性能未验收。"
+  ]
+}

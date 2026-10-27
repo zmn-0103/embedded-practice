@@ -1,0 +1,2092 @@
+[
+  {
+    "label": "松间绿/light",
+    "samples": [
+      {
+        "name": "设置正文",
+        "selector": ".settings-pane",
+        "color": "rgb(32, 51, 45)",
+        "background": [
+          252,
+          253,
+          251,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 13.086030797980351
+      },
+      {
+        "name": "辅助文字",
+        "selector": ".appearance-save-row .muted",
+        "color": "rgb(93, 112, 103)",
+        "background": [
+          252,
+          253,
+          251,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.172768684192022
+      },
+      {
+        "name": "主按钮文字",
+        "selector": ".appearance-save-row button.primary",
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          33,
+          107,
+          82,
+          1
+        ],
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "ratio": 6.383786160244201
+      },
+      {
+        "name": "主题说明",
+        "selector": ".theme-description",
+        "color": "rgb(93, 112, 103)",
+        "background": [
+          252,
+          253,
+          251,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.172768684192022
+      },
+      {
+        "name": "错误提示（局部预览）",
+        "selector": ".demo-error",
+        "color": "rgb(172, 53, 46)",
+        "background": [
+          255,
+          241,
+          238,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.773462173724522
+      },
+      {
+        "name": "代码类型（局部预览）",
+        "selector": ".demo-body code span:first-child",
+        "color": "rgb(129, 85, 187)",
+        "background": [
+          243,
+          246,
+          245,
+          1
+        ],
+        "fontSize": "14.45px",
+        "fontWeight": "400",
+        "ratio": 4.888562122713274
+      }
+    ]
+  },
+  {
+    "label": "松间绿/dark",
+    "samples": [
+      {
+        "name": "设置正文",
+        "selector": ".settings-pane",
+        "color": "rgb(228, 237, 231)",
+        "background": [
+          27,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 13.309778300359245
+      },
+      {
+        "name": "辅助文字",
+        "selector": ".appearance-save-row .muted",
+        "color": "rgb(172, 189, 178)",
+        "background": [
+          27,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 8.089075077859686
+      },
+      {
+        "name": "主按钮文字",
+        "selector": ".appearance-save-row button.primary",
+        "color": "rgb(20, 37, 28)",
+        "background": [
+          151,
+          215,
+          182,
+          1
+        ],
+        "fontSize": "14px",
+        "fontWeight": "560",
+        "ratio": 9.695013432094326
+      },
+      {
+        "name": "主题说明",
+        "selector": ".theme-description",
+        "color": "rgb(172, 189, 178)",
+        "background": [
+          27,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 8.089075077859686
+      },
+      {
+        "name": "错误提示（局部预览）",
+        "selector": ".demo-error",
+        "color": "rgb(255, 180, 168)",
+        "background": [
+          62,
+          41,
+          37,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.971721501901136
+      },
+      {
+        "name": "代码类型（局部预览）",
+        "selector": ".demo-body code span:first-child",
+        "color": "rgb(212, 181, 255)",
+        "background": [
+          17,
+          27,
+          22,
+          1
+        ],
+        "fontSize": "14.45px",
+        "fontWeight": "400",
+        "ratio": 9.942149559115887
+      }
+    ]
+  },
+  {
+    "label": "晴空蓝/light",
+    "samples": [
+      {
+        "name": "设置正文",
+        "selector": ".settings-pane",
+        "color": "rgb(36, 51, 75)",
+        "background": [
+          250,
+          252,
+          254,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 12.374744087547922
+      },
+      {
+        "name": "辅助文字",
+        "selector": ".appearance-save-row .muted",
+        "color": "rgb(92, 109, 133)",
+        "background": [
+          250,
+          252,
+          254,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.129123289667843
+      },
+      {
+        "name": "主按钮文字",
+        "selector": ".appearance-save-row button.primary",
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          40,
+          95,
+          193,
+          1
+        ],
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "ratio": 6.004876050745757
+      },
+      {
+        "name": "主题说明",
+        "selector": ".theme-description",
+        "color": "rgb(92, 109, 133)",
+        "background": [
+          250,
+          252,
+          254,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.129123289667843
+      },
+      {
+        "name": "错误提示（局部预览）",
+        "selector": ".demo-error",
+        "color": "rgb(172, 53, 46)",
+        "background": [
+          255,
+          241,
+          238,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.773462173724522
+      },
+      {
+        "name": "代码类型（局部预览）",
+        "selector": ".demo-body code span:first-child",
+        "color": "rgb(129, 85, 187)",
+        "background": [
+          241,
+          245,
+          252,
+          1
+        ],
+        "fontSize": "14.45px",
+        "fontWeight": "400",
+        "ratio": 4.861986038457698
+      }
+    ]
+  },
+  {
+    "label": "晴空蓝/dark",
+    "samples": [
+      {
+        "name": "设置正文",
+        "selector": ".settings-pane",
+        "color": "rgb(227, 235, 250)",
+        "background": [
+          30,
+          39,
+          53,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 12.54989157703119
+      },
+      {
+        "name": "辅助文字",
+        "selector": ".appearance-save-row .muted",
+        "color": "rgb(170, 187, 213)",
+        "background": [
+          30,
+          39,
+          53,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.716212687389537
+      },
+      {
+        "name": "主按钮文字",
+        "selector": ".appearance-save-row button.primary",
+        "color": "rgb(20, 37, 28)",
+        "background": [
+          160,
+          194,
+          255,
+          1
+        ],
+        "fontSize": "14px",
+        "fontWeight": "560",
+        "ratio": 8.889541741203086
+      },
+      {
+        "name": "主题说明",
+        "selector": ".theme-description",
+        "color": "rgb(170, 187, 213)",
+        "background": [
+          30,
+          39,
+          53,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.716212687389537
+      },
+      {
+        "name": "错误提示（局部预览）",
+        "selector": ".demo-error",
+        "color": "rgb(255, 180, 168)",
+        "background": [
+          62,
+          41,
+          37,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.971721501901136
+      },
+      {
+        "name": "代码类型（局部预览）",
+        "selector": ".demo-body code span:first-child",
+        "color": "rgb(212, 181, 255)",
+        "background": [
+          19,
+          29,
+          48,
+          1
+        ],
+        "fontSize": "14.45px",
+        "fontWeight": "400",
+        "ratio": 9.511927262827932
+      }
+    ]
+  },
+  {
+    "label": "暖沙金/light",
+    "samples": [
+      {
+        "name": "设置正文",
+        "selector": ".settings-pane",
+        "color": "rgb(65, 55, 37)",
+        "background": [
+          253,
+          250,
+          244,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 11.211139318952025
+      },
+      {
+        "name": "辅助文字",
+        "selector": ".appearance-save-row .muted",
+        "color": "rgb(120, 103, 71)",
+        "background": [
+          253,
+          250,
+          244,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.263364064867366
+      },
+      {
+        "name": "主按钮文字",
+        "selector": ".appearance-save-row button.primary",
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          145,
+          96,
+          30,
+          1
+        ],
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "ratio": 5.390359054577054
+      },
+      {
+        "name": "主题说明",
+        "selector": ".theme-description",
+        "color": "rgb(120, 103, 71)",
+        "background": [
+          253,
+          250,
+          244,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.263364064867366
+      },
+      {
+        "name": "错误提示（局部预览）",
+        "selector": ".demo-error",
+        "color": "rgb(172, 53, 46)",
+        "background": [
+          255,
+          241,
+          238,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.773462173724522
+      },
+      {
+        "name": "代码类型（局部预览）",
+        "selector": ".demo-body code span:first-child",
+        "color": "rgb(129, 85, 187)",
+        "background": [
+          247,
+          241,
+          229,
+          1
+        ],
+        "fontSize": "14.45px",
+        "fontWeight": "400",
+        "ratio": 4.7256974804285345
+      }
+    ]
+  },
+  {
+    "label": "暖沙金/dark",
+    "samples": [
+      {
+        "name": "设置正文",
+        "selector": ".settings-pane",
+        "color": "rgb(241, 231, 213)",
+        "background": [
+          46,
+          39,
+          30,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 12.02095034088397
+      },
+      {
+        "name": "辅助文字",
+        "selector": ".appearance-save-row .muted",
+        "color": "rgb(200, 185, 155)",
+        "background": [
+          46,
+          39,
+          30,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.626544699434364
+      },
+      {
+        "name": "主按钮文字",
+        "selector": ".appearance-save-row button.primary",
+        "color": "rgb(20, 37, 28)",
+        "background": [
+          235,
+          196,
+          126,
+          1
+        ],
+        "fontSize": "14px",
+        "fontWeight": "560",
+        "ratio": 9.708863288459346
+      },
+      {
+        "name": "主题说明",
+        "selector": ".theme-description",
+        "color": "rgb(200, 185, 155)",
+        "background": [
+          46,
+          39,
+          30,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.626544699434364
+      },
+      {
+        "name": "错误提示（局部预览）",
+        "selector": ".demo-error",
+        "color": "rgb(255, 180, 168)",
+        "background": [
+          62,
+          41,
+          37,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.971721501901136
+      },
+      {
+        "name": "代码类型（局部预览）",
+        "selector": ".demo-body code span:first-child",
+        "color": "rgb(212, 181, 255)",
+        "background": [
+          36,
+          30,
+          21,
+          1
+        ],
+        "fontSize": "14.45px",
+        "fontWeight": "400",
+        "ratio": 9.321650946730564
+      }
+    ]
+  },
+  {
+    "label": "暮山紫/light",
+    "samples": [
+      {
+        "name": "设置正文",
+        "selector": ".settings-pane",
+        "color": "rgb(56, 46, 71)",
+        "background": [
+          252,
+          250,
+          253,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 12.262119954742335
+      },
+      {
+        "name": "辅助文字",
+        "selector": ".appearance-save-row .muted",
+        "color": "rgb(113, 97, 127)",
+        "background": [
+          252,
+          250,
+          253,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.440851285880929
+      },
+      {
+        "name": "主按钮文字",
+        "selector": ".appearance-save-row button.primary",
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          119,
+          81,
+          158,
+          1
+        ],
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "ratio": 6.077999930006713
+      },
+      {
+        "name": "主题说明",
+        "selector": ".theme-description",
+        "color": "rgb(113, 97, 127)",
+        "background": [
+          252,
+          250,
+          253,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.440851285880929
+      },
+      {
+        "name": "错误提示（局部预览）",
+        "selector": ".demo-error",
+        "color": "rgb(172, 53, 46)",
+        "background": [
+          255,
+          241,
+          238,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.773462173724522
+      },
+      {
+        "name": "代码类型（局部预览）",
+        "selector": ".demo-body code span:first-child",
+        "color": "rgb(129, 85, 187)",
+        "background": [
+          245,
+          240,
+          250,
+          1
+        ],
+        "fontSize": "14.45px",
+        "fontWeight": "400",
+        "ratio": 4.740525753218699
+      }
+    ]
+  },
+  {
+    "label": "暮山紫/dark",
+    "samples": [
+      {
+        "name": "设置正文",
+        "selector": ".settings-pane",
+        "color": "rgb(237, 229, 246)",
+        "background": [
+          43,
+          35,
+          52,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 12.306438358961193
+      },
+      {
+        "name": "辅助文字",
+        "selector": ".appearance-save-row .muted",
+        "color": "rgb(191, 175, 207)",
+        "background": [
+          43,
+          35,
+          52,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.358462745319918
+      },
+      {
+        "name": "主按钮文字",
+        "selector": ".appearance-save-row button.primary",
+        "color": "rgb(20, 37, 28)",
+        "background": [
+          208,
+          179,
+          240,
+          1
+        ],
+        "fontSize": "14px",
+        "fontWeight": "560",
+        "ratio": 8.685781669496102
+      },
+      {
+        "name": "主题说明",
+        "selector": ".theme-description",
+        "color": "rgb(191, 175, 207)",
+        "background": [
+          43,
+          35,
+          52,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.358462745319918
+      },
+      {
+        "name": "错误提示（局部预览）",
+        "selector": ".demo-error",
+        "color": "rgb(255, 180, 168)",
+        "background": [
+          62,
+          41,
+          37,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.971721501901136
+      },
+      {
+        "name": "代码类型（局部预览）",
+        "selector": ".demo-body code span:first-child",
+        "color": "rgb(212, 181, 255)",
+        "background": [
+          33,
+          25,
+          41,
+          1
+        ],
+        "fontSize": "14.45px",
+        "fontWeight": "400",
+        "ratio": 9.591806082722403
+      }
+    ]
+  },
+  {
+    "label": "Claude 风格/light",
+    "samples": [
+      {
+        "name": "设置正文",
+        "selector": ".settings-pane",
+        "color": "rgb(41, 39, 36)",
+        "background": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 14.893976733154972
+      },
+      {
+        "name": "辅助文字",
+        "selector": ".appearance-save-row .muted",
+        "color": "rgb(116, 110, 101)",
+        "background": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.046997193779349
+      },
+      {
+        "name": "主按钮文字",
+        "selector": ".appearance-save-row button.primary",
+        "color": "rgb(255, 255, 255)",
+        "background": [
+          168,
+          77,
+          53,
+          1
+        ],
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "ratio": 5.558606383167994
+      },
+      {
+        "name": "主题说明",
+        "selector": ".theme-description",
+        "color": "rgb(116, 110, 101)",
+        "background": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 5.046997193779349
+      },
+      {
+        "name": "错误提示（局部预览）",
+        "selector": ".demo-error",
+        "color": "rgb(161, 47, 41)",
+        "background": [
+          255,
+          240,
+          237,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "ratio": 6.4111959814134964
+      },
+      {
+        "name": "代码类型（局部预览）",
+        "selector": ".demo-body code span:first-child",
+        "color": "rgb(118, 81, 161)",
+        "background": [
+          244,
+          242,
+          237,
+          1
+        ],
+        "fontSize": "14.45px",
+        "fontWeight": "400",
+        "ratio": 5.421943532904978
+      }
+    ]
+  },
+  {
+    "label": "Claude 风格/dark",
+    "samples": [
+      {
+        "name": "设置正文",
+        "selector": ".settings-pane",
+        "color": "rgb(237, 232, 223)",
+        "background": [
+          39,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 12.658636851777375
+      },
+      {
+        "name": "辅助文字",
+        "selector": ".appearance-save-row .muted",
+        "color": "rgb(185, 176, 163)",
+        "background": [
+          39,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.210036411630409
+      },
+      {
+        "name": "主按钮文字",
+        "selector": ".appearance-save-row button.primary",
+        "color": "rgb(40, 28, 22)",
+        "background": [
+          226,
+          160,
+          136,
+          1
+        ],
+        "fontSize": "14px",
+        "fontWeight": "560",
+        "ratio": 7.5853846924237525
+      },
+      {
+        "name": "主题说明",
+        "selector": ".theme-description",
+        "color": "rgb(185, 176, 163)",
+        "background": [
+          39,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.210036411630409
+      },
+      {
+        "name": "错误提示（局部预览）",
+        "selector": ".demo-error",
+        "color": "rgb(255, 180, 168)",
+        "background": [
+          66,
+          40,
+          36,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "360",
+        "ratio": 7.91080541360507
+      },
+      {
+        "name": "代码类型（局部预览）",
+        "selector": ".demo-body code span:first-child",
+        "color": "rgb(209, 181, 240)",
+        "background": [
+          25,
+          23,
+          21,
+          1
+        ],
+        "fontSize": "14.45px",
+        "fontWeight": "400",
+        "ratio": 9.856688233470475
+      }
+    ]
+  },
+  {
+    "label": "练习/松间绿/light",
+    "samples": [
+      {
+        "name": "答案正文",
+        "selector": ".reference-answer .markdown-content p",
+        "color": "rgb(32, 51, 45)",
+        "background": [
+          252,
+          253,
+          251,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 13.086030797980351
+      },
+      {
+        "name": "代码类型",
+        "selector": ".reference-answer .hljs-type",
+        "color": "rgb(129, 85, 187)",
+        "background": [
+          243,
+          246,
+          245,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "600",
+        "ratio": 4.888562122713274
+      },
+      {
+        "name": "代码数字",
+        "selector": ".reference-answer .hljs-number",
+        "color": "rgb(39, 125, 88)",
+        "background": [
+          243,
+          246,
+          245,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.641547471766402
+      },
+      {
+        "name": "代码注释",
+        "selector": ".reference-answer .hljs-comment",
+        "color": "rgb(93, 112, 103)",
+        "background": [
+          243,
+          246,
+          245,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.8534763271900285
+      },
+      {
+        "name": "作答文字",
+        "selector": "#practice-answer",
+        "color": "rgb(32, 51, 45)",
+        "background": [
+          252,
+          253,
+          251,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 13.086030797980351
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          252,
+          253,
+          251,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.515852220890668
+      },
+      {
+        "name": "保存成功",
+        "selector": ".practice-save",
+        "color": "rgb(33, 107, 82)",
+        "background": [
+          252,
+          253,
+          251,
+          1
+        ],
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "ratio": 6.256781703918036
+      },
+      {
+        "name": "难度标签",
+        "selector": ".difficulty-badge",
+        "color": "rgb(36, 100, 69)",
+        "background": [
+          238,
+          248,
+          240,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "ratio": 6.475144835982588
+      }
+    ]
+  },
+  {
+    "label": "练习/松间绿/dark",
+    "samples": [
+      {
+        "name": "答案正文",
+        "selector": ".reference-answer .markdown-content p",
+        "color": "rgb(228, 237, 231)",
+        "background": [
+          27,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 13.309778300359245
+      },
+      {
+        "name": "代码类型",
+        "selector": ".reference-answer .hljs-type",
+        "color": "rgb(212, 181, 255)",
+        "background": [
+          17,
+          27,
+          22,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "560",
+        "ratio": 9.942149559115887
+      },
+      {
+        "name": "代码数字",
+        "selector": ".reference-answer .hljs-number",
+        "color": "rgb(155, 214, 180)",
+        "background": [
+          17,
+          27,
+          22,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 10.6286473982589
+      },
+      {
+        "name": "代码注释",
+        "selector": ".reference-answer .hljs-comment",
+        "color": "rgb(172, 189, 178)",
+        "background": [
+          17,
+          27,
+          22,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 8.954961081978789
+      },
+      {
+        "name": "作答文字",
+        "selector": "#practice-answer",
+        "color": "rgb(228, 237, 231)",
+        "background": [
+          27,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 13.309778300359245
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          27,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.4533525233321813
+      },
+      {
+        "name": "保存成功",
+        "selector": ".practice-save",
+        "color": "rgb(151, 215, 182)",
+        "background": [
+          27,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "13px",
+        "fontWeight": "360",
+        "ratio": 9.631325406697428
+      },
+      {
+        "name": "难度标签",
+        "selector": ".difficulty-badge",
+        "color": "rgb(161, 216, 178)",
+        "background": [
+          32,
+          58,
+          42,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "560",
+        "ratio": 7.635345743661244
+      }
+    ]
+  },
+  {
+    "label": "练习/晴空蓝/light",
+    "samples": [
+      {
+        "name": "答案正文",
+        "selector": ".reference-answer .markdown-content p",
+        "color": "rgb(36, 51, 75)",
+        "background": [
+          250,
+          252,
+          254,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 12.374744087547922
+      },
+      {
+        "name": "代码类型",
+        "selector": ".reference-answer .hljs-type",
+        "color": "rgb(129, 85, 187)",
+        "background": [
+          241,
+          245,
+          252,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "600",
+        "ratio": 4.861986038457698
+      },
+      {
+        "name": "代码数字",
+        "selector": ".reference-answer .hljs-number",
+        "color": "rgb(27, 116, 108)",
+        "background": [
+          241,
+          245,
+          252,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 5.106417695817884
+      },
+      {
+        "name": "代码注释",
+        "selector": ".reference-answer .hljs-comment",
+        "color": "rgb(92, 109, 133)",
+        "background": [
+          241,
+          245,
+          252,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.824356815870476
+      },
+      {
+        "name": "作答文字",
+        "selector": "#practice-answer",
+        "color": "rgb(36, 51, 75)",
+        "background": [
+          250,
+          252,
+          254,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 12.374744087547922
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          250,
+          252,
+          254,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.48028730902543
+      },
+      {
+        "name": "保存成功",
+        "selector": ".practice-save",
+        "color": "rgb(33, 107, 82)",
+        "background": [
+          250,
+          252,
+          254,
+          1
+        ],
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "ratio": 6.207505979431198
+      },
+      {
+        "name": "难度标签",
+        "selector": ".difficulty-badge",
+        "color": "rgb(36, 100, 69)",
+        "background": [
+          238,
+          248,
+          240,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "ratio": 6.475144835982588
+      }
+    ]
+  },
+  {
+    "label": "练习/晴空蓝/dark",
+    "samples": [
+      {
+        "name": "答案正文",
+        "selector": ".reference-answer .markdown-content p",
+        "color": "rgb(227, 235, 250)",
+        "background": [
+          30,
+          39,
+          53,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 12.54989157703119
+      },
+      {
+        "name": "代码类型",
+        "selector": ".reference-answer .hljs-type",
+        "color": "rgb(212, 181, 255)",
+        "background": [
+          19,
+          29,
+          48,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "560",
+        "ratio": 9.511927262827932
+      },
+      {
+        "name": "代码数字",
+        "selector": ".reference-answer .hljs-number",
+        "color": "rgb(134, 215, 207)",
+        "background": [
+          19,
+          29,
+          48,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 10.139382507854616
+      },
+      {
+        "name": "代码注释",
+        "selector": ".reference-answer .hljs-comment",
+        "color": "rgb(170, 187, 213)",
+        "background": [
+          19,
+          29,
+          48,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 8.649406200223172
+      },
+      {
+        "name": "作答文字",
+        "selector": "#practice-answer",
+        "color": "rgb(227, 235, 250)",
+        "background": [
+          30,
+          39,
+          53,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 12.54989157703119
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          30,
+          39,
+          53,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.2629609461379645
+      },
+      {
+        "name": "保存成功",
+        "selector": ".practice-save",
+        "color": "rgb(151, 215, 182)",
+        "background": [
+          30,
+          39,
+          53,
+          1
+        ],
+        "fontSize": "13px",
+        "fontWeight": "360",
+        "ratio": 9.10032742075116
+      },
+      {
+        "name": "难度标签",
+        "selector": ".difficulty-badge",
+        "color": "rgb(161, 216, 178)",
+        "background": [
+          32,
+          58,
+          42,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "560",
+        "ratio": 7.635345743661244
+      }
+    ]
+  },
+  {
+    "label": "练习/暖沙金/light",
+    "samples": [
+      {
+        "name": "答案正文",
+        "selector": ".reference-answer .markdown-content p",
+        "color": "rgb(65, 55, 37)",
+        "background": [
+          253,
+          250,
+          244,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 11.211139318952025
+      },
+      {
+        "name": "代码类型",
+        "selector": ".reference-answer .hljs-type",
+        "color": "rgb(129, 85, 187)",
+        "background": [
+          247,
+          241,
+          229,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "600",
+        "ratio": 4.7256974804285345
+      },
+      {
+        "name": "代码数字",
+        "selector": ".reference-answer .hljs-number",
+        "color": "rgb(55, 113, 82)",
+        "background": [
+          247,
+          241,
+          229,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 5.119764900907867
+      },
+      {
+        "name": "代码注释",
+        "selector": ".reference-answer .hljs-comment",
+        "color": "rgb(120, 103, 71)",
+        "background": [
+          247,
+          241,
+          229,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.874632729526761
+      },
+      {
+        "name": "作答文字",
+        "selector": "#practice-answer",
+        "color": "rgb(65, 55, 37)",
+        "background": [
+          253,
+          250,
+          244,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 11.211139318952025
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          253,
+          250,
+          244,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.422581734510598
+      },
+      {
+        "name": "保存成功",
+        "selector": ".practice-save",
+        "color": "rgb(33, 107, 82)",
+        "background": [
+          253,
+          250,
+          244,
+          1
+        ],
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "ratio": 6.127554031232311
+      },
+      {
+        "name": "难度标签",
+        "selector": ".difficulty-badge",
+        "color": "rgb(36, 100, 69)",
+        "background": [
+          238,
+          248,
+          240,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "ratio": 6.475144835982588
+      }
+    ]
+  },
+  {
+    "label": "练习/暖沙金/dark",
+    "samples": [
+      {
+        "name": "答案正文",
+        "selector": ".reference-answer .markdown-content p",
+        "color": "rgb(241, 231, 213)",
+        "background": [
+          46,
+          39,
+          30,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 12.02095034088397
+      },
+      {
+        "name": "代码类型",
+        "selector": ".reference-answer .hljs-type",
+        "color": "rgb(212, 181, 255)",
+        "background": [
+          36,
+          30,
+          21,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "560",
+        "ratio": 9.321650946730564
+      },
+      {
+        "name": "代码数字",
+        "selector": ".reference-answer .hljs-number",
+        "color": "rgb(164, 208, 173)",
+        "background": [
+          36,
+          30,
+          21,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 9.597943031899531
+      },
+      {
+        "name": "代码注释",
+        "selector": ".reference-answer .hljs-comment",
+        "color": "rgb(200, 185, 155)",
+        "background": [
+          36,
+          30,
+          21,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 8.547643140490518
+      },
+      {
+        "name": "作答文字",
+        "selector": "#practice-answer",
+        "color": "rgb(241, 231, 213)",
+        "background": [
+          46,
+          39,
+          30,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 12.02095034088397
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          46,
+          39,
+          30,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.198156654363375
+      },
+      {
+        "name": "保存成功",
+        "selector": ".practice-save",
+        "color": "rgb(151, 215, 182)",
+        "background": [
+          46,
+          39,
+          30,
+          1
+        ],
+        "fontSize": "13px",
+        "fontWeight": "360",
+        "ratio": 8.919589654301129
+      },
+      {
+        "name": "难度标签",
+        "selector": ".difficulty-badge",
+        "color": "rgb(161, 216, 178)",
+        "background": [
+          32,
+          58,
+          42,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "560",
+        "ratio": 7.635345743661244
+      }
+    ]
+  },
+  {
+    "label": "练习/暮山紫/light",
+    "samples": [
+      {
+        "name": "答案正文",
+        "selector": ".reference-answer .markdown-content p",
+        "color": "rgb(56, 46, 71)",
+        "background": [
+          252,
+          250,
+          253,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 12.262119954742335
+      },
+      {
+        "name": "代码类型",
+        "selector": ".reference-answer .hljs-type",
+        "color": "rgb(129, 85, 187)",
+        "background": [
+          245,
+          240,
+          250,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "600",
+        "ratio": 4.740525753218699
+      },
+      {
+        "name": "代码数字",
+        "selector": ".reference-answer .hljs-number",
+        "color": "rgb(45, 118, 100)",
+        "background": [
+          245,
+          240,
+          250,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.817879034877415
+      },
+      {
+        "name": "代码注释",
+        "selector": ".reference-answer .hljs-comment",
+        "color": "rgb(113, 97, 127)",
+        "background": [
+          245,
+          240,
+          250,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 5.036184498441033
+      },
+      {
+        "name": "作答文字",
+        "selector": "#practice-answer",
+        "color": "rgb(56, 46, 71)",
+        "background": [
+          252,
+          250,
+          253,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 12.262119954742335
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          252,
+          250,
+          253,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.438949195159233
+      },
+      {
+        "name": "保存成功",
+        "selector": ".practice-save",
+        "color": "rgb(33, 107, 82)",
+        "background": [
+          252,
+          250,
+          253,
+          1
+        ],
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "ratio": 6.150231396061087
+      },
+      {
+        "name": "难度标签",
+        "selector": ".difficulty-badge",
+        "color": "rgb(36, 100, 69)",
+        "background": [
+          238,
+          248,
+          240,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "ratio": 6.475144835982588
+      }
+    ]
+  },
+  {
+    "label": "练习/暮山紫/dark",
+    "samples": [
+      {
+        "name": "答案正文",
+        "selector": ".reference-answer .markdown-content p",
+        "color": "rgb(237, 229, 246)",
+        "background": [
+          43,
+          35,
+          52,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 12.306438358961193
+      },
+      {
+        "name": "代码类型",
+        "selector": ".reference-answer .hljs-type",
+        "color": "rgb(212, 181, 255)",
+        "background": [
+          33,
+          25,
+          41,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "560",
+        "ratio": 9.591806082722403
+      },
+      {
+        "name": "代码数字",
+        "selector": ".reference-answer .hljs-number",
+        "color": "rgb(155, 216, 191)",
+        "background": [
+          33,
+          25,
+          41,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 10.494438903484252
+      },
+      {
+        "name": "代码注释",
+        "selector": ".reference-answer .hljs-comment",
+        "color": "rgb(191, 175, 207)",
+        "background": [
+          33,
+          25,
+          41,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 8.293231224194429
+      },
+      {
+        "name": "作答文字",
+        "selector": "#practice-answer",
+        "color": "rgb(237, 229, 246)",
+        "background": [
+          43,
+          35,
+          52,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 12.306438358961193
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          43,
+          35,
+          52,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.2725716962855915
+      },
+      {
+        "name": "保存成功",
+        "selector": ".practice-save",
+        "color": "rgb(151, 215, 182)",
+        "background": [
+          43,
+          35,
+          52,
+          1
+        ],
+        "fontSize": "13px",
+        "fontWeight": "360",
+        "ratio": 9.127131594796197
+      },
+      {
+        "name": "难度标签",
+        "selector": ".difficulty-badge",
+        "color": "rgb(161, 216, 178)",
+        "background": [
+          32,
+          58,
+          42,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "560",
+        "ratio": 7.635345743661244
+      }
+    ]
+  },
+  {
+    "label": "练习/Claude 风格/light",
+    "samples": [
+      {
+        "name": "答案正文",
+        "selector": ".reference-answer .markdown-content p",
+        "color": "rgb(41, 39, 36)",
+        "background": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 14.893976733154972
+      },
+      {
+        "name": "代码类型",
+        "selector": ".reference-answer .hljs-type",
+        "color": "rgb(118, 81, 161)",
+        "background": [
+          244,
+          242,
+          237,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "600",
+        "ratio": 5.421943532904978
+      },
+      {
+        "name": "代码数字",
+        "selector": ".reference-answer .hljs-number",
+        "color": "rgb(56, 107, 75)",
+        "background": [
+          244,
+          242,
+          237,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 5.56516764311923
+      },
+      {
+        "name": "代码注释",
+        "selector": ".reference-answer .hljs-comment",
+        "color": "rgb(116, 110, 101)",
+        "background": [
+          244,
+          242,
+          237,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.511139846357089
+      },
+      {
+        "name": "作答文字",
+        "selector": "#practice-answer",
+        "color": "rgb(41, 39, 36)",
+        "background": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 14.893976733154972
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.607518093747377
+      },
+      {
+        "name": "保存成功",
+        "selector": ".practice-save",
+        "color": "rgb(56, 107, 75)",
+        "background": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "ratio": 6.22622805640042
+      },
+      {
+        "name": "难度标签",
+        "selector": ".difficulty-badge",
+        "color": "rgb(36, 100, 69)",
+        "background": [
+          238,
+          248,
+          240,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "ratio": 6.475144835982588
+      }
+    ]
+  },
+  {
+    "label": "练习/Claude 风格/dark",
+    "samples": [
+      {
+        "name": "答案正文",
+        "selector": ".reference-answer .markdown-content p",
+        "color": "rgb(237, 232, 223)",
+        "background": [
+          39,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 12.658636851777375
+      },
+      {
+        "name": "代码类型",
+        "selector": ".reference-answer .hljs-type",
+        "color": "rgb(209, 181, 240)",
+        "background": [
+          25,
+          23,
+          21,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "560",
+        "ratio": 9.856688233470475
+      },
+      {
+        "name": "代码数字",
+        "selector": ".reference-answer .hljs-number",
+        "color": "rgb(167, 197, 165)",
+        "background": [
+          25,
+          23,
+          21,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 9.511122092613038
+      },
+      {
+        "name": "代码注释",
+        "selector": ".reference-answer .hljs-comment",
+        "color": "rgb(185, 176, 163)",
+        "background": [
+          25,
+          23,
+          21,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "360",
+        "ratio": 8.343984802672068
+      },
+      {
+        "name": "作答文字",
+        "selector": "#practice-answer",
+        "color": "rgb(237, 232, 223)",
+        "background": [
+          39,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 12.658636851777375
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          39,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.3525959214974375
+      },
+      {
+        "name": "保存成功",
+        "selector": ".practice-save",
+        "color": "rgb(167, 197, 165)",
+        "background": [
+          39,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "13px",
+        "fontWeight": "360",
+        "ratio": 8.218559624082951
+      },
+      {
+        "name": "难度标签",
+        "selector": ".difficulty-badge",
+        "color": "rgb(161, 216, 178)",
+        "background": [
+          32,
+          58,
+          42,
+          1
+        ],
+        "fontSize": "12px",
+        "fontWeight": "560",
+        "ratio": 7.635345743661244
+      }
+    ]
+  },
+  {
+    "label": "空白输入确认/暖沙金/dark",
+    "samples": [
+      {
+        "name": "可见占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          46,
+          39,
+          30,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.198156654363375
+      }
+    ]
+  }
+]

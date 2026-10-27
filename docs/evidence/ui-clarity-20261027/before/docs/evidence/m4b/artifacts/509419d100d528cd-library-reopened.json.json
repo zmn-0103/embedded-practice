@@ -1,0 +1,775 @@
+{
+  "counts": {
+    "topics": 2,
+    "questions": 80,
+    "question_versions": 80,
+    "image_resources": 3,
+    "version_images": 3,
+    "import_receipts": 1
+  },
+  "revision": 1,
+  "schemaVersion": 6,
+  "questions": [
+    {
+      "topicId": "format-example",
+      "questionId": "demo-001",
+      "title": "代码、表格与 PNG 图片",
+      "contentHash": "1f110e62d85d41974cb1b73913b07740edda6396b7acebeac46f95b95e8518cf",
+      "questionHash": "1d0edc5851a8bf7edc59cef269559565ac34348d2b6dfc6f1d25f72bdba28be3",
+      "answerHash": "d62dc7edf045c447a3adcf6a835b98160e228fbb31fb08fb84fb2f17eafdb405",
+      "definitions": []
+    },
+    {
+      "topicId": "format-example",
+      "questionId": "demo-002",
+      "title": "JPEG、WebP 与引用式图片",
+      "contentHash": "5b94748aaa03652139139fda9ec8bfed41760daf17d1e00ad38df471e796e9fd",
+      "questionHash": "0d00583318717355483afe9da25b70fd9cb29c6ac33ced71b8e2a0183efc4880",
+      "answerHash": "f32a5b2ecef21b1e6a0cc590ab315e73b582c246e43b212f478d3f6294298dc8",
+      "definitions": [
+        {
+          "identifier": "WEBP-TEST",
+          "url": "assets/测试.webp",
+          "title": "WebP 格式测试图"
+        }
+      ]
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-001",
+      "title": "GPIO 的英文全称是什么？GPIO 输入与输出的区别是什么？",
+      "contentHash": "b6b7a198454ce36fe9b30d1ee9d460ba040da3e1ebc8bb590cf88d9b49222232",
+      "questionHash": "a426a9d6105488bfc2483e476d5cff8d45546b4e4daf55139a18700b8862cca4",
+      "answerHash": "ff20c5bdff73ad18e5647bcaa890fee17852981fab58b5c4e8df164f3f1440e2",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-002",
+      "title": "为什么配置 GPIO 之前通常需要使能对应端口的外设时钟？",
+      "contentHash": "6bed464617ce80f1337182f6b05af5eedfa9973331bbe4f67630c11459c6449c",
+      "questionHash": "1136f174faab8f7187816ad99c1de7e82110b4f7cc17566863dd24a8e6e26ed6",
+      "answerHash": "ebfe78d6646f5e2e00e8a3ea08d7daa26a16c15f2099f973b155eab158e92d4c",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-003",
+      "title": "STM32F103 的 GPIOA、GPIOC 使用哪条总线的外设时钟？",
+      "contentHash": "488dfefa3b8cebd1863272ba0b2f1e0ed42b40edf698218e2c75fb7ff642bb12",
+      "questionHash": "6740d0390d6ca52811dd013c254a10f5878687b00a9fdc91d495d94f19d376a9",
+      "answerHash": "3619c4a2adeb96d761d2f3f294f35bb1e278353a020c52209eb694629b3f4f4e",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-004",
+      "title": "SystemCoreClockUpdate() 的作用是什么？它能否替代 GPIO 外设时钟使能？",
+      "contentHash": "fdaaa7e15c5999356f25e78bc706bc9408802b6c49e985203b23707d0ab45e53",
+      "questionHash": "06a1f9a5c08347e320a560d7d4ebe2a6b3b6fda08c50592729ebadd3ca326108",
+      "answerHash": "ce9230337889913c6fb09e868cdc1a569f7bd5b354badf33cc9841b6566f0f64",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-005",
+      "title": "GPIO 的通用输出和复用输出有什么区别？",
+      "contentHash": "e2c40a405210d64562d85c6178c895d43ca537d6a75ceee855552ac43a1a311a",
+      "questionHash": "7cb6872cd8ac2d444bfadcea592ef67201af1a5d91a1d183ba4f1b8d894ecba8",
+      "answerHash": "09ebd8ef87f42164eb8bb26c7681c2a09b3ac6117743de38b43eabe2c8583bf9",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-006",
+      "title": "推挽输出与开漏输出的主要区别是什么？",
+      "contentHash": "1ce3962759ee3fed5ed90c01dc9f1d8a73d297761db8804ba46b4938b007bc7a",
+      "questionHash": "f846a8018d348b8e798dbd2171dffbfde22a79947c8d28b83491647bc3db83f3",
+      "answerHash": "b73c12f4bee57bf34b3d3f4096958dd0f673f1434e30d1b9e721c953bbde0ff1",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-007",
+      "title": "GPIO_Speed_2MHz 表示什么？它是否表示 MCU 主频为 2 MHz？",
+      "contentHash": "8bd4cc2ad15b8ae53be2485ae8bef882edf077ffc65c9b88e491502dd4558c76",
+      "questionHash": "0d943b7fb53621d1fa62a5baa1607937d0c1e52935d53bf4b5e586c39079d126",
+      "answerHash": "963805442caf1d1c96c4cdb5c9ccffbb4705ad2232ca23c6d938d5fe7e6d1a16",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-008",
+      "title": "为什么输入引脚可能需要上拉或下拉？",
+      "contentHash": "a1e4a9ef24e7c46c98d7da66750fbef276271478633996ff4cb8151049a9d173",
+      "questionHash": "0640c331667f6a92bbbb674d6321b86943cd508383923edcc968ddc93ee4cd77",
+      "answerHash": "3efd60227a8f523c85af35995e328b2b63154cba5df6c23904ebf2edddb768ea",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-009",
+      "title": "输入上拉模式下，按键按下不一定是高电平，为什么？",
+      "contentHash": "50efa4ad81d4e6dcc653c8d356d530651ff2b88b4eb193842600f00749bfecac",
+      "questionHash": "f7669ace8af4ad3c5bac29ee5159fe9a634def050ebf97a60a780fbf8dad6b2e",
+      "answerHash": "1bb263e864ee840a829f9b8ce3c16f700d3b156f08af8352cb742929c035d377",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-010",
+      "title": "为什么配置为复用输出后，还需要配置对应的片上外设？",
+      "contentHash": "92650782c5135e4c5158aadb242832ad4fb5f9d78fcce35bf8348396745a3743",
+      "questionHash": "9cc6cf5d33b9c93160cf803c9e780dcd6df1c341d259364b519fde738d0a1314",
+      "answerHash": "3a92c96f17ad0eedbbea46e72e9cc3dfdd6dc1fde44e0ebe5451f39401233c9f",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-011",
+      "title": "GPIO_InitTypeDef 结构体中最重要的三个成员是什么？分别有什么作用？",
+      "contentHash": "7709a8c71673be0aec91bf4d4341c3e2a403e2b805a250a00d333e41c86edeaf",
+      "questionHash": "15379639d9ebb8e0bec697b4b3dd3f3f6883db7fc6991777716b0d044d853fa7",
+      "answerHash": "2aa2ebd76cd842727f5fd22d77a451b76b7e7df7b3ee2f421e209128f47cbd84",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-012",
+      "title": "GPIO_Init(GPIOA, &GPIO_InitStructure) 中两个参数分别表示什么？",
+      "contentHash": "5a44cbefd49009472c4a349abe8ae6ba9e83cb1620b6439c2cb7f24cb03dc6ec",
+      "questionHash": "6e092c6272507ebb23acad85290558696f0c748e9b70787d1ead509094dccf5c",
+      "answerHash": "4be28db788db45fdabde1e3495133eac00fac471470168f39ea31fe1a6b3a90e",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-013",
+      "title": "RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE) 的作用是什么？",
+      "contentHash": "c3144e40be6b05fec8942d4db9bd4e717ff16d144a91bae7881be6e4d2ab13a0",
+      "questionHash": "128173fe9a109304d65ce12aa06a5ed4a7a49a02b300441a52fa5ab4f8a06f27",
+      "answerHash": "f4155609773ffe956997dc20016bd582e470463dd99921f891e51a73627b628a",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-014",
+      "title": "GPIO_SetBits() 与 GPIO_ResetBits() 有什么区别？",
+      "contentHash": "c3439002b7c5036375cb374c1dd62b5156b109276b81df09ad08cfde5010a09b",
+      "questionHash": "4b2f1b0bd2b9c12a656b3841a2f88a639a58217fd646092a223cda19a076ee58",
+      "answerHash": "e4c5bf586f5133c35d972555a1f1b15f8a3c1883dfc8c3ff169640573bf4ebd8",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-015",
+      "title": "GPIO_ReadInputDataBit() 返回什么类型的结果？Bit_SET 和 Bit_RESET 分别代表什么？",
+      "contentHash": "e991a5bf93bfcefd5ee307b0707c034685748e4f2065fb99e278ae2b27036242",
+      "questionHash": "1f3f56a2256310eb4a7bedf42d155803469266c43ec29c45bc8720e0c03624bb",
+      "answerHash": "d5cb8162d007a51352e2f522c3b4ab3c8498fde736e35f29549147897ad89eee",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-016",
+      "title": "GPIO_ReadInputDataBit() 与 GPIO_ReadOutputDataBit() 有什么区别？",
+      "contentHash": "af2b8d5691ef9eb3bf16e79b3e1157e38e0557d7e1c2a27530cb5625a3713ec4",
+      "questionHash": "cd76be147ba2020c75aa8ae3897a3a17f24e12ab3b27e4f718b2572efdd83b39",
+      "answerHash": "fd44ff8e9c03d2a2b18c044bc89d42996ef38b3696e794b2f1871386aebba3fe",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-017",
+      "title": "输入模式下设置 GPIO_Speed 是否决定输入信号的采样速度？为什么？",
+      "contentHash": "1f93ec2a3f4030e0f8e0325ca10487cfd92600699a9780cb6ec2baf941151c55",
+      "questionHash": "a31fcb9c16d3b225919a13728bedb7f3d6f4e3de742264855b5ce0dee77cf7ee",
+      "answerHash": "11a52cc353862fe4ac5b7bb41379b33c1f9439adf2278c82328769030318bd26",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-018",
+      "title": "为什么建议在函数或代码块开头声明局部变量，以兼容较老的 C 编译模式？",
+      "contentHash": "2975cf3daaec27d36c84bf16b3acd573b52d28b7f3abeb68e60f4fd9f9328d92",
+      "questionHash": "a45031f7ff03410748b6d70b9b38845c1ff53548e715449e6eed69b0501683df",
+      "answerHash": "699a1f0cb84fe9cbc9f640bed981407dd4bda504dc2e3a516c6597096e364619",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-019",
+      "title": "STM32F103 的 GPIO 有哪些常见输入模式？",
+      "contentHash": "57ac0a9ece24b00d175816de196775241c27d3f3684306e2d8c68098d26a4e22",
+      "questionHash": "a679c1471391c3da64d5591605144e1ab40ec8681fd1343e9e70d8db915c667c",
+      "answerHash": "6d249e848188288225c3284b52c06edf2082f733f6997514603179c2a2a04668",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-020",
+      "title": "STM32F103 的 GPIO 有哪些常见输出模式？",
+      "contentHash": "cae6634d61ce3cda1f9550fcf641e32c5fdc867280f06a6f9f712c8819ba434e",
+      "questionHash": "faa8ebe0c62747a312e569ddfa30cc08fe5b5fdd4b526bc9416fbccbcc99a295",
+      "answerHash": "dfac0fccd25673bd29eeb80f3706bea3e0bc6ef5a629bbf06239fddb7da9ed48",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-021",
+      "title": "GPIO_Mode_Out_PP 表示什么？",
+      "contentHash": "8020358483320da79cc156a8c771d2314781382a7691f3542f90bcb63ccbb149",
+      "questionHash": "7f174677ba3f43a088a466a02982d27edb2022667032c75383ce21f795c4b906",
+      "answerHash": "39a48bd964a405f5a1309337d782418048c492521f561ab3ebe068ffc913871c",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-022",
+      "title": "GPIO_Mode_Out_OD 表示什么？",
+      "contentHash": "b245ad03b4108cbb4594c270b51cf12f4b169c0e5ee35ac2aa10c5089d5f1f65",
+      "questionHash": "1d0a15e46c16897c67ba480f8d6d81f7b098140b6598163dbd448b086dc53411",
+      "answerHash": "bd22da3902eaf22bd1093ed2a3efd26c2fbba2ba6506fcc9e1be8e3f4d101977",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-023",
+      "title": "GPIO_Mode_AF_PP 表示什么？",
+      "contentHash": "3beac79992cc0cd8657cb7d8d9c0a912f867b66c4a321504fd09a48dc2c1e0e8",
+      "questionHash": "461c6b165198a9a7853d9980f752b96b1dfee57f822e6228ed6aaa94bf5a1a98",
+      "answerHash": "8102e27e6ea3c3ba631ac241d14cbd144f88e2f736ce628bdb78fd9ef0d88376",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-024",
+      "title": "STM32F103 每个 GPIO 引脚占用多少位配置字段？",
+      "contentHash": "6cea81689a63ede5f32d5ad4fe5de3e67dbd2d93d88f36f84b6763c6f9617b26",
+      "questionHash": "c3667c2f1400f33de491a4d9c659536b0a1e6473909d9518de2019dc3f1b358e",
+      "answerHash": "8275309aca6805b151a256edce636220a46a49a7b124cea50c287d588d8aa229",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-025",
+      "title": "GPIOx_CRL 和 GPIOx_CRH 分别配置哪些引脚？",
+      "contentHash": "85009d191c7470789de120a4dfce71de7b9d838683f1f4cd4c4aec74b4a6e132",
+      "questionHash": "47d55c012f776500fa0a9d88ecdcf9984a0836d60dd09a8d1c6becb0f1099b40",
+      "answerHash": "2e2d7eb37317bcf49719496bb3cb1f8ebf024ceba437966f5745da1950abc6f3",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-026",
+      "title": "GPIO 配置字段中的 MODE 与 CNF 分别负责什么？",
+      "contentHash": "26a23ed2e77ef61eb28964c76021bec38e8750bc2477af08259d547ec8fd0b0e",
+      "questionHash": "532dfa0d5c539e1284f346712a898e3b3bec63f7da094a51e7e571ea7f208708",
+      "answerHash": "ecf61f2ea33dd75c7cce15b10dcf0345f5a455b980e66fa5144a81da101f2ef5",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-027",
+      "title": "通用推挽输出、2 MHz 的 MODE 和 CNF 分别是什么？",
+      "contentHash": "a5e8b2d59a2a4d321d55265dea51f58e6683c04afb2a27f21e3373b096e5aeb2",
+      "questionHash": "745b5346cb905b2863d20cdc971217d499720549548fa0b184aa718b92e1b5e4",
+      "answerHash": "66c7891da7d206aa0fe84c3b33e0925e9f59316762ec9c69fe82beee171db5f9",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-028",
+      "title": "通用开漏输出、2 MHz 的 MODE 和 CNF 分别是什么？",
+      "contentHash": "e3fde18231ec4ce965edf377305c9fb286ad821d71b1f6e1d4aa493216073e93",
+      "questionHash": "559013716817b9820b0ee2b610b0f8c9db6f74a9b9ead9ed0ec3595910a24693",
+      "answerHash": "0dfb8a1d62879df42e09206314bb8d179b6fcf4fec0b6026da7a0be583ba5899",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-029",
+      "title": "输入上拉/下拉模式的 MODE 和 CNF 分别是什么？",
+      "contentHash": "6e184da407ed199ba063910cd24b6551207ae9674491a62778a8fb9122d0b239",
+      "questionHash": "266459ceb59fb7c5e38595d2403476b400af08ca219cdc7a5cadc0f547229722",
+      "answerHash": "1a491d5051b9e3aad0a6a7f2ac65e17b8482ce504f20be000d507722231e4be4",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-030",
+      "title": "输入上拉与输入下拉在 CRL/CRH 中的配置字段有什么区别？",
+      "contentHash": "8c5fa77ac65e4de31cde1e6e31c9df962b6a9acde0db039df9eecdca027fdc52",
+      "questionHash": "6d44864125c9536e4e9d1d2a7639ecea064cc6ee4708501a3397919c966f815c",
+      "answerHash": "bc8a5d1a60f6936bec5135855838f2be34703eb9319bb1bf58c5c71a2cfca1ff",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-031",
+      "title": "IDR、ODR、BSRR、BRR 分别有什么作用？",
+      "contentHash": "6c82a747fce4afb3ef5620299b28128adfa78484c66e7dcd87c574e0a4baefde",
+      "questionHash": "d9081396472268454d286cf8768bde4d22904946ca72db530cc03ea1b75dbcde",
+      "answerHash": "505dd6d2c44ba497811d96124a30f1c9e9da20f2b066073d7fe6d0e08a07cf3b",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-032",
+      "title": "为什么 IDR 和 ODR 不能当成同一个寄存器理解？",
+      "contentHash": "d30cbf6bd0750f0f36a1653c0dd14bceec10dd003fc7a0f88b1820cecdb43263",
+      "questionHash": "c06e9740fcb5166f77b9a9bd713c8c9d52a33b750ec1a931cba67793532949f2",
+      "answerHash": "68d01bcb5b2730c4806f6dd74c602375b9b0b5c0b0dfe7a637df3a7259b828bd",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-033",
+      "title": "GPIO_SetBits() 底层主要操作哪个寄存器？",
+      "contentHash": "a7b8384974db7b64f0d73b66ac92715210695918dbd56bc2fe7f0b8d69d1a561",
+      "questionHash": "e1d507adb866f0c42fa92054d8ee7e447a89bf79ea6ea528a4217610455412bc",
+      "answerHash": "7a8ea0e07aa67862e70714cce8a9c078daa7d2f0c3a4a0dfa7bef24cb74b5eae",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-034",
+      "title": "GPIO_ResetBits() 底层主要操作哪个寄存器？",
+      "contentHash": "5646b80466a57ef210c8bc400ab43feae3223dd8a406e9e09ae8527f9cee84ca",
+      "questionHash": "c2e43bc35f9d2af61c774b02f9093dec0ad07c1343ad7c700f6fd643e04e335f",
+      "answerHash": "de6f7f69b7b07af7c1d07a89699d1273d647dd54a9d8d0c9d8a9fefc548ae4cd",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-035",
+      "title": "STM32F103 的 BSRR 低 16 位和高 16 位分别有什么作用？",
+      "contentHash": "66336ab48a1f9c94b0ca9523b891ed5802251f90a2d24aafb09560de27914d34",
+      "questionHash": "a52cafd96c9fab3fb8b188b45c5c5fb44ef408ae65bcecee9b32a9cedca2e1da",
+      "answerHash": "30563f2382dd486aa2e4b7fd7bdfe1399c07164ec79279ac1dde8520dc705e37",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-036",
+      "title": "为什么使用 BSRR/BRR 控制单个输出位，可以避免某些读改写冲突？",
+      "contentHash": "26bdd795bcd33ae44cd44746d26b4ac419fe32089da3f8181ead6aee4820703d",
+      "questionHash": "aa09569e9939bd0adfe8f698ade9a5d5806003d6e033dad7ba094385dba8a646",
+      "answerHash": "fcae26c20f34a650a5ffdd483175b0b9711f921b5f864b44876d2cb885b1e20b",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-037",
+      "title": "GPIO_Pin_5 的位掩码值是多少？",
+      "contentHash": "48a20861e98f2f5621a6ba27ff4d4085aa807187facb3fdb1a3ccd8d6633e4d3",
+      "questionHash": "5374b8f204fdeed7725378d3bf0c900f4f65f4bc4ba1c3413f7379116a2b0751",
+      "answerHash": "610ff7302b0b622c39aba94445530037accbc476ad513b5f475855328ba701b5",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-038",
+      "title": "引脚选择掩码和配置字段掩码有什么区别？",
+      "contentHash": "70f55b0ba8a04159eb84d245a66af17d60d1f4a90747102c3e025408c92e998b",
+      "questionHash": "6fdfed8182752840393b5af196af00ef9033fd077b4eec21e65a97582137aa17",
+      "answerHash": "06cb93d443af6a4612b5a02a1a76ca6ca3c5a4bc0fca78449abd087965b10d23",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-039",
+      "title": "PA5 对应 GPIOA_CRL 的哪 4 位？",
+      "contentHash": "d23d2a3c0b605a3dcb1ebd2092fbf03028281ed632a811361accb5fba24ac350",
+      "questionHash": "6367fdf583110fb930e7209e2ca6eb29e678179220fa123ce0ea8dd76666a6ac",
+      "answerHash": "9d7ca21a38194a7fcf515417c489a05aebeddb85637feb16489f5637e0d16d8a",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-040",
+      "title": "为什么 0x0F << 20 可以覆盖 PA5 的配置字段？",
+      "contentHash": "cf9fb5eb41927cdaaa94807237db876a7e22965b2981c330a8ddd18c4480e72d",
+      "questionHash": "ca19ed4886c442078491539011eee08e7a663a5acecc13aa4c2f0d6b4d4833b4",
+      "answerHash": "689f9df0202800f0ffd178d222e16f5867621aa07697d60639a4fb2678e05382",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-041",
+      "title": "tmpreg &= ~pinmask 的作用是什么？",
+      "contentHash": "96c9c236bab7e011ec989160a2fa459ce41e7f42a76c5196379a5b38e2178adf",
+      "questionHash": "127fea8103f03df98827ce03b37f648362f6e9e4c8bf4748f36a7607b6b2c849",
+      "answerHash": "f77d83c4f0821b4ba9d48e7acca1df247f709b4ea082778a38f3616281002eb5",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-042",
+      "title": "tmpreg |= (currentmode << pos) 的作用是什么？",
+      "contentHash": "aaf8137adecf8e26d5bf5c7eb3655357459a3cac4d1da4aa3cc33b1daecc49ab",
+      "questionHash": "f8855b49393a798fa6c53c54711b8c817a9e203565abf2dd5624d91d14ba07b8",
+      "answerHash": "a7e4763c0471b9c647e0f991cc748b35a97e286fa28e0e76fb599ae97400a5cc",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-043",
+      "title": "为什么不能仅使用按位或来覆盖一个已经存在的配置字段？",
+      "contentHash": "e5fd3e40f7db94d8c4a01683bc99ad4638e28b306176d6958478b1bc576bd21b",
+      "questionHash": "c375d9a38d65d122a047ca2c3dad8c549eeb0e0acbabe258cf27b184c4b80a3a",
+      "answerHash": "0f8781f78d189221e0a325e520dfc45c89641ce15a53265b4c516c81ca5b12ed",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-044",
+      "title": "为什么修改 PA5 的配置时，不应该把整个 GPIOA_CRL 清零？",
+      "contentHash": "efa634f05524304771e61fb292379f1af8f45664258119a615fc4aed130bf62c",
+      "questionHash": "d5b21eaaf73d6315e312c6f419b1123e47619d40bc5b7e9ec388a190d395ba41",
+      "answerHash": "9e42c7de58ad4dfad8f7a71e854bad3607011eb8ef52e512dc768e2ba0d6cf86",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-045",
+      "title": "PC1 输入上拉时，为什么除了设置 CRL，还需要设置对应的输出数据位？",
+      "contentHash": "f9900802eff35138464e1ae54ba0fce16c57262ae59b9a1fab8512632bb5be8a",
+      "questionHash": "f4a1230b54c59cfc5444a90d36413aa4bc26cc7a6fd8ea7f28a78ed6db1eedec",
+      "answerHash": "321f9bc8fa34f92252839533551220cd4da4aafaf2df7da494873b063030e8e6",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-046",
+      "title": "PA0 配置为推挽输出、2 MHz。应使用哪个寄存器？配置字段在哪 4 位？字段值是多少？",
+      "contentHash": "c065ef1442fea10f344735e425f5286c77fce9646022c0885c0cb94c8d910193",
+      "questionHash": "4398658d6bc6683955f5f18d978382cd554ffb1542a50f5111c4af6ec3ac573a",
+      "answerHash": "7385fb9322a69e8c0f3b36ad6c7c1c2986b965d69b707b6fa6cf2724f0ca823e",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-047",
+      "title": "PA3 配置为推挽输出、10 MHz。应使用哪个寄存器？配置字段在哪 4 位？MODE、CNF 和最终字段值分别是什么？",
+      "contentHash": "fb4cfb30a3e1e5ef856c79968bba3ba9fc0053f9e1daf01e6d4aa337ed0c3141",
+      "questionHash": "21191f33facece344dbc9bff52e4fa9a7c097fbfef02bb701e089c741400c4b1",
+      "answerHash": "bea9fd4ab93f3501f8aa5a8101f64de0c1cd5256bd30f13cbeca0cd427372dc1",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-048",
+      "title": "PA5 配置为推挽输出、2 MHz。应使用哪个寄存器？位范围是什么？字段值是多少？",
+      "contentHash": "b27604627e30dcc5ea04c2a936bbfd438f68a5de2d2b82ebc96406d64de42442",
+      "questionHash": "1511251886bfba0c958dae0d4302d99a717703849fc501c7929c4fec45c345a8",
+      "answerHash": "f5f06c6e3f746fae6c1c08c10e8b6479366f48be023b175033d0b7cdb0038dee",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-049",
+      "title": "PA8 配置为推挽输出、2 MHz。应使用哪个寄存器？位范围是什么？字段值是多少？",
+      "contentHash": "e89644387e1a83c11f01ede3818f282ac5138ef45852a5d9fdaec920e58a732e",
+      "questionHash": "4c209fe8c1b0168f7df572e3573cf56f9e7eb50c159d149b0ee414646affd8d6",
+      "answerHash": "ea94adc3013d7bc99f500db1f2859783288c1baff4dd144c8629d951c234b7bb",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-050",
+      "title": "PA9 配置为通用开漏输出、2 MHz。应使用哪个寄存器？位范围是什么？字段值是多少？",
+      "contentHash": "de7ca33abf3ccae96b7507ea8e92c119c62ee1e34f3aba79ae5c32537b285e78",
+      "questionHash": "6cb9cdb776742310b9e4c10db916007407eb46bdb503f478d171a8792c7b23d2",
+      "answerHash": "313b0c88c139d95a7c3b978f9d3c28ed8ea3d9caeecf475d6697eef2cc47dde2",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-051",
+      "title": "PC1 配置为输入上拉。应使用哪个寄存器？位范围是什么？MODE、CNF 和字段值分别是什么？",
+      "contentHash": "732a19db536624b2d20a02ce3f98eab3cf6275d9174e5c3e859d768e0abea40a",
+      "questionHash": "ffe7dc5678939306530b5b53603d980c0d71fd2195e602697ba26394dd8233c5",
+      "answerHash": "a73e0ed774a7822e0468646c30bc46b28da90d6446b01b354dac4e262f5b6788",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-052",
+      "title": "PC6 配置为输入浮空。应使用哪个寄存器？位范围是什么？MODE、CNF 和字段值分别是什么？",
+      "contentHash": "3e437ff50d6a5ad9a3b1159cad22725c519ff261ff7c059facd3d049e83058d3",
+      "questionHash": "17b22145bed04434798a7d6e9f9a66467be6da4852ba5fbe63e1d951c1e5cee9",
+      "answerHash": "35b3ee63c3da767c653d2d293d7d2cefa2ffd4d1fa9a9bebcf626014472bd539",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-053",
+      "title": "PC13 配置为输入下拉。应使用哪个寄存器？位范围是什么？MODE、CNF 和字段值分别是什么？",
+      "contentHash": "5bceef2b0b8940ae86b607f21b19e70ee740561851186d1090782c156158ceb9",
+      "questionHash": "5bdae8084dbc3578e1bf2907990ebfea0ccda24abaaf89f7a226c07d1fbeeade",
+      "answerHash": "15dd3abd395527723d63436c2ff2a9c888d56ca8948408265ce0910c08dc0647",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-054",
+      "title": "PA3 对应的配置字段掩码表达式是什么？",
+      "contentHash": "06885e262e4e474a00a547ad45eb91985140561e83f5cd01be0eb430c5ed3235",
+      "questionHash": "7fb1a55848eb370a74ed3d5d9cd6972d28ff73c4dc780eb440aa6b7265a444c1",
+      "answerHash": "39df6ebae86d81990ec553e4da849cb0773d26d31b11e021c45c9efd8cbe6984",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-055",
+      "title": "PA8 对应的配置字段掩码表达式是什么？",
+      "contentHash": "cfce73b7f0ca14963fa8cd47f01f1b08b7fed3f459bad786debbb43fd724cab3",
+      "questionHash": "2c01049e6e3cf48889a2f69c5d9622f1ce53226bba710059943480f2af5ba964",
+      "answerHash": "b330e3ef9709379d5a8be455de61e733c540b9331f7f255297abf4df6616d900",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-056",
+      "title": "如果 PA5 原来的配置是 1111，现在要改成 0010，为什么必须先清除旧字段？",
+      "contentHash": "d47af8d4d0836421c8421567d6c9766cf0b0bb251058258529032829338c52b6",
+      "questionHash": "4a214f01fa3a45f6e83b5c8129093a836b5213a396faa548fc9fd8752cefdcd7",
+      "answerHash": "4f933dadf207453548a80939069b45eb967629a71ccb45020e47eb2d371904a1",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-057",
+      "title": "如果 PA8 对应的输出数据位为 0，执行 GPIOA->BSRR = GPIO_Pin_8 后，该位如何变化？",
+      "contentHash": "ef3c8010fb59118bd6e7f6946e30cf878f4bcde9f477a50163a1e2a2ac7fde9a",
+      "questionHash": "df7bcac9de5f3b6ac3da639f804b20c4f32fc2fcdd7189e8a79c4482171c1477",
+      "answerHash": "f6f5e69fe7e4b7c978a8a0d2ba04c632d34ac8e5a49a06efbe4bac38d611c001",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-058",
+      "title": "如果 PC1 当前为低电平，GPIOC->IDR & GPIO_Pin_1 的结果是什么？为什么？",
+      "contentHash": "5d870689dcd457bc2aaaddd795bd1e1fe6e75dbdf25b9ca1db3d32da6c51718b",
+      "questionHash": "3cf2b2a6985d239dc53c02e854ea600c2ded035ba6141fae273fcb2d3ff50a4c",
+      "answerHash": "3a30c9ad77deecfaae957d965c69704838ec022656cc6f7573b20043ee0ddab0",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-059",
+      "title": "本开发板的 LED0 连接哪个引脚？它是高电平点亮还是低电平点亮？",
+      "contentHash": "568fec2f92d9ee116f5c81cc37dbb382e0d8a78579f80f8350398d5bab03027c",
+      "questionHash": "adc2b961387c5722ceb8be72835fcf4dca4accb80d6a1c4c532faaeb349e3e88",
+      "answerHash": "d763b8fe0e30b1b08c0ae6c3b0b613c79072966d748ac2e65047ba3f901075c8",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-060",
+      "title": "本开发板的 KEY0 连接哪个引脚？按下时是什么电平？",
+      "contentHash": "d55adf302b42faeb1291170eac883290f382ba0c98a15107ef5d2211732ded26",
+      "questionHash": "88a89eed6d87fa3560a95010b2ed8fba720f87858a06407ff6f35a1e928813ea",
+      "answerHash": "24aa9b2687216b675992bac4da05f2a9af2fffd3bbbf089e14f4b9567321cce6",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-061",
+      "title": "为什么 KEY0 配置为输入上拉后，松开通常读取 Bit_SET，按下读取 Bit_RESET？",
+      "contentHash": "05afe295a0ef949cf5574b707fe5fb86cf3473e1172a6e13e15fe4cc35ad525b",
+      "questionHash": "cb76824f5f26d841ca37d045e8fa895bcf5c8c384791a251da379c3332df9de9",
+      "answerHash": "8cf962847cf6a4976c7502947557e5605973a60009cca47275ef107da021acf5",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-062",
+      "title": "如果 PA8 已配置为推挽输出，执行 GPIO_ResetBits(GPIOA, GPIO_Pin_8) 后，LED0 会发生什么？",
+      "contentHash": "e7905a87e58f745605774d607dcb925031fc15247bdef15ac78e143ccc357c36",
+      "questionHash": "da59a13e325189376841733c1a05ffe581098be031f690ea786d8a6863a499e7",
+      "answerHash": "b0dfd03c58cafe96eb74ae902adf0f8ae9594075dfa7f38df7f34cf60aea31b0",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-063",
+      "title": "如果执行 GPIO_SetBits(GPIOA, GPIO_Pin_8)，LED0 会发生什么？",
+      "contentHash": "e4258b713d09dbfd143da63595d3fd6ec801320136d16e7b0926f38623b4e660",
+      "questionHash": "401c8fefe616ebed925c4beb19c8074fd7d5bf6eaf7d8a0218a163c16baa9016",
+      "answerHash": "5f44fc24db904dd591ca4c19887bc930207b2263602a3258d7b349987dff2717",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-064",
+      "title": "如果 GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_1) 返回 Bit_RESET，能否直接判断 KEY0 已按下？需要哪些前提？",
+      "contentHash": "1b35bd913e4f8ed213549fe24f8c32d4790f9143d642298a4ddb617b4f02556b",
+      "questionHash": "617350592d37cb1705e615745eee4d02f3184ce58dc0362d13ef77686d35b2b3",
+      "answerHash": "cf2077613e4beaa670eec0abea3a3fa38cbd698d45abeb0bd863d75e646df711",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-065",
+      "title": "如果 GPIOA 时钟未使能，后续 GPIO 初始化可能出现什么问题？",
+      "contentHash": "4e06cd836ccb8a0a2324b4ddfd5b8c95b9d0343e0e813abd26f748fd3014c336",
+      "questionHash": "e61ad0c837b402db4dc6ae2bab9145db058b23f44aec50eb08ef12e71d1d6c39",
+      "answerHash": "8632acf6acc6b7516e492f746e43bfcbdf1ef6a5e11ad2d9cd4213151603a816",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-066",
+      "title": "如果把 PC1 错误配置为输出，读取 KEY0 的程序会有什么风险？",
+      "contentHash": "86aa17063bc2734f6dcf5519b30f0cba49ea13623399d175ffed56f2690d37a7",
+      "questionHash": "06d26fb852698fbb67fd82b6d58a14a8d438382a6398e0fc3719060da14ae065",
+      "answerHash": "159ce578c9c1c98238b81d79f423f5fc2f8258cae658f9430700b5e6105d5198",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-067",
+      "title": "如果程序在初始化后立即调用 GPIO_ResetBits()，而 LED0 是低电平点亮，可能观察到什么现象？",
+      "contentHash": "32220c8e137dbf8741b1b1a0f279830f196b09c0d3faab25a7c929245bc0e183",
+      "questionHash": "396611097742e3aca336302e8ff77a874db8934b368db80bf7554d56201779f1",
+      "answerHash": "0104401d6b6656602989b3d45ac846750ba0fc1d367bd497ced2ab080b7a5566",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-068",
+      "title": "为什么在初始化 GPIO 输出之前预先设置期望的输出数据状态，有时可以减少启动时的 LED 闪烁？",
+      "contentHash": "e1b5154d1b78156a22deb3cdbcdce9de9bf2c3797264a6b159837653222732dc",
+      "questionHash": "9a9261dba117616d32a800531f9b23af7dc2bf7bff301c4420518cfadc03c2b6",
+      "answerHash": "76b6e1f5cd4b884968eb167a4d412411896db683f365faf787b85481b1f2e0da",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-069",
+      "title": "什么是机械按键抖动？",
+      "contentHash": "f9320d60cb43ce87af38e564fbe6ab53b13510b96983531bc4f8428c744cbf91",
+      "questionHash": "a480d03e3f1d3ccb16c4b6283deb6ee1a836ef1ec67a590eb1346c555425233a",
+      "answerHash": "71dc0a9b32e30456d7dc9d2b29f8234378c454cef4b7d6e5a169100e651a2f7a",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-070",
+      "title": "为什么一次真实按键动作可能被程序识别为多次动作？",
+      "contentHash": "e2079383f91bd1b58771dc7e30a6f29b6ed5d8ca4358cae77f6eced3fba571c5",
+      "questionHash": "5bb32122078fef4f5ee913e5226dc9b67c08ce2c8e684f1a0bd59fe79a926705",
+      "answerHash": "e68aaff3366b5966599e126702de2cd2bafdcf85c01b364ffaad26f5438b9013",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-071",
+      "title": "简单延时确认法的基本步骤是什么？",
+      "contentHash": "8266758847062e23d3b1312e768e9f64ea20310060688fdfb3251b5b1db32a51",
+      "questionHash": "c1bdc64f08116e6b8c903d30b4e0087bc29e08e67c0392aeae451b58d03895c5",
+      "answerHash": "49369ce502cdf787568439fad1687df1ff3031196a78498524811c72dadbf438",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-072",
+      "title": "两次采样之间为什么需要延时？",
+      "contentHash": "82c4b8a89395f64aaf12ef8f496430f9575aedf1e1ee2ca5c420bb36627c784e",
+      "questionHash": "02b946bdd5b470d7a019caf27954fc2d066501506d9beaf48115092429a20b01",
+      "answerHash": "6c2b7f01ae7d34e35613cae1eaf5bc3e97121045ea96fd4af034e8fbef48cfd2",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-073",
+      "title": "如果两次采样结果不同，本次实验应该如何处理 LED 状态？",
+      "contentHash": "4708e19a67695c6ad6e707b4ad3c25053f1350d104ad386bc541e30714942de3",
+      "questionHash": "18d2d3885f8dfdade55acb329215c55a5c6293db53eb003645d9af2d0ed4b1cd",
+      "answerHash": "3cf7bfdf8d91755b525d7d95ec4723b979cfacc624a86510f5c6c2f5269b8898",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-074",
+      "title": "两次采样结果相同，是否代表按键一定松开？为什么？",
+      "contentHash": "af3e01f97b9403bece55fff1e843770a039cce21a832ef826cb2f71b03f08ccd",
+      "questionHash": "e508fe382fea4d40cfc6a2cac1945d12aaeb984a033f3c5ae7c194f39985e16d",
+      "answerHash": "115bfe2fd9cb7fa9205af4e5c80757ea79ffda8ea4c8563c16d968a47f328904",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-075",
+      "title": "为什么简单延时确认法不保证过滤所有抖动？",
+      "contentHash": "8a155eda813aa76306ac2a3a78ad86c43a1c67241348caca2e4d2be0a115448c",
+      "questionHash": "bb1a7cd393d8a33d8b683cdc32fe0b1f86cb902cdbcc9c3b6ac62f80d94a7c69",
+      "answerHash": "d6c1088ca0fbc27c0f15513648c5357eacdb2adf19270790c61d742c9fab43d8",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-076",
+      "title": "延时消抖的缺点是什么？",
+      "contentHash": "be8ba76db89051f254b90e851ae1262782aa617d7de5db8771ae37785010f51a",
+      "questionHash": "4d09e296401552c21298a323a2ec50e38760ead244b6f413cb55b0a66cd6c052",
+      "answerHash": "5daedf69e1fee8ef8576cd93883b45980c37f3ba809f33e2eebca17c1df26dad",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-077",
+      "title": "为什么消抖与完整的按键事件管理不是同一件事？",
+      "contentHash": "b784cfee19ba0151254eaa4aafadffe7ead0734dfbf9d211885f80392e4947d6",
+      "questionHash": "f6399d61de97a97471d82dad3921bdfc9ef937a18ac00d8996218b67ee8dd196",
+      "answerHash": "846b8008ff4464abee71fb07a48b998187f8c3d8c0a493af0fa3780ddb141e97",
+      "definitions": []
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-078",
+      "title": "后续使用定时器或状态机实现非阻塞消抖，有什么潜在优势？",
+      "contentHash": "b81f45a8864fd2d427fe56dcd70a3a469e610b543820bf34ab4569f6154bbe92",
+      "questionHash": "3794d52527581f571a6ee3234578120e6d20215b05b4c26c106dc5810511aa23",
+      "answerHash": "cb3d894ef1cfef26dd06d5ca9fc771265b7a6025c3821648773323d687dbbd8c",
+      "definitions": []
+    }
+  ],
+  "resources": [
+    {
+      "hash": "200a7848eb435a30c8a06c9762b87732ec6971ca01fd384fe08aacf383b2d639",
+      "format": "jpeg",
+      "width": 2,
+      "height": 3,
+      "actualHash": "200a7848eb435a30c8a06c9762b87732ec6971ca01fd384fe08aacf383b2d639",
+      "byteLength": 661
+    },
+    {
+      "hash": "4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad",
+      "format": "png",
+      "width": 2,
+      "height": 3,
+      "actualHash": "4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad",
+      "byteLength": 80
+    },
+    {
+      "hash": "b1f3ff00ba1d62d206025ce07b1ed6cdf87e8c018608d8d1984fe463f4e6e534",
+      "format": "webp",
+      "width": 2,
+      "height": 3,
+      "actualHash": "b1f3ff00ba1d62d206025ce07b1ed6cdf87e8c018608d8d1984fe463f4e6e534",
+      "byteLength": 48
+    }
+  ],
+  "oldToken": {
+    "ok": false,
+    "error": {
+      "code": "INVALID_TOKEN",
+      "message": "预览已失效，请重新预览。"
+    }
+  },
+  "foreignKeys": [],
+  "errors": []
+}

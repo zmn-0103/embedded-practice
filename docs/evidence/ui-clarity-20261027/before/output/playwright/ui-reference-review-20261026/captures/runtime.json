@@ -1,0 +1,2080 @@
+{
+  "build": "20261025.3-workbench-e",
+  "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-ui-audit-q0dH89",
+  "shots": [
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 1199
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "SECTION",
+            "name": "从上次停下的地方继续继续你的嵌入式学习先独立思考，再对照答案。每一轮积累都保存在本机。",
+            "class": "overview-welcome",
+            "x": 232,
+            "y": 100,
+            "width": 1169,
+            "height": 154.3125,
+            "font": "17px"
+          },
+          {
+            "tag": "H2",
+            "name": "继续你的嵌入式学习",
+            "class": "",
+            "x": 256,
+            "y": 152.796875,
+            "width": 1121,
+            "height": 46.390625,
+            "font": "32px"
+          },
+          {
+            "tag": "SECTION",
+            "name": "开始新练习选择范围、顺序和题数；确认开始后才创建本轮。配置一轮练习",
+            "class": "overview-resume",
+            "x": 232,
+            "y": 270.3125,
+            "width": 1169,
+            "height": 122.390625,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "开始新练习",
+            "class": "",
+            "x": 257,
+            "y": 303.3125,
+            "width": 981,
+            "height": 34,
+            "font": "21.25px"
+          },
+          {
+            "tag": "H3",
+            "name": "从导入你的题库开始",
+            "class": "",
+            "x": 257,
+            "y": 581.28125,
+            "width": 1119,
+            "height": 31.8125,
+            "font": "19.89px"
+          },
+          {
+            "tag": "H3",
+            "name": "知识板块",
+            "class": "",
+            "x": 257,
+            "y": 782.640625,
+            "width": 79.5625,
+            "height": 31.8125,
+            "font": "19.89px"
+          },
+          {
+            "tag": "H3",
+            "name": "复习入口",
+            "class": "",
+            "x": 964.796875,
+            "y": 778.671875,
+            "width": 411.203125,
+            "height": 31.8125,
+            "font": "19.89px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "不会0 题 · 去筛选",
+            "x": 964.796875,
+            "y": 826.484375,
+            "width": 411.203125,
+            "height": 56.390625
+          },
+          {
+            "text": "不熟0 题 · 去筛选",
+            "x": 964.796875,
+            "y": 894.875,
+            "width": 411.203125,
+            "height": 56.390625
+          }
+        ]
+      },
+      "file": "13-空库真实状态.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 2074
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "题库板块",
+            "class": "",
+            "x": 257,
+            "y": 151.796875,
+            "width": 224,
+            "height": 33.34375,
+            "font": "23px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "本机题库全部题库浏览本机已导入的全部题目。419 题查看题库查看专题与范围本机已导入 13 个专题24LC256 EEPROM（4 题）AD",
+            "class": "board-card",
+            "x": 257,
+            "y": 403.5,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "全部题库",
+            "class": "",
+            "x": 274,
+            "y": 455.6875,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "本机题库未分类新导入且尚未安排归属的专题。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续再补题。",
+            "class": "board-card",
+            "x": 540.75,
+            "y": 403.5,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "未分类",
+            "class": "",
+            "x": 557.75,
+            "y": 455.6875,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块C语言类型、表达式、内存和可移植代码的基础。4 题查看题库查看专题与范围本机已导入 1 个专题C语言数据与寄存器访问（4 题）建设规",
+            "class": "board-card",
+            "x": 824.5,
+            "y": 403.5,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "C语言",
+            "class": "",
+            "x": 841.5,
+            "y": 455.6875,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块C++语言对象、泛型与资源管理。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续再补题。建设规划，尚不",
+            "class": "board-card",
+            "x": 1108.25,
+            "y": 403.5,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "C++语言",
+            "class": "",
+            "x": 1125.25,
+            "y": 455.6875,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块数据结构与算法组织数据、分析复杂度并解决问题。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续再补题。",
+            "class": "board-card",
+            "x": 257,
+            "y": 712.25,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "数据结构与算法",
+            "class": "",
+            "x": 274,
+            "y": 764.4375,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块处理器与ARM架构处理器如何执行程序和访问内存。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续再补题",
+            "class": "board-card",
+            "x": 540.75,
+            "y": 712.25,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "处理器与ARM架构",
+            "class": "",
+            "x": 557.75,
+            "y": 764.4375,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块MCU与外设原理不依赖具体芯片的单片机与外设知识。17 题查看题库查看专题与范围本机已导入 2 个专题ADC 通用基础（15 题）G",
+            "class": "board-card",
+            "x": 824.5,
+            "y": 712.25,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "MCU与外设原理",
+            "class": "",
+            "x": 841.5,
+            "y": 764.4375,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块MCU平台与SDK具体芯片、寄存器、SDK及平台实现。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续",
+            "class": "board-card",
+            "x": 1108.25,
+            "y": 712.25,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "MCU平台与SDK",
+            "class": "",
+            "x": 1125.25,
+            "y": 764.4375,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块通信协议设备互连、总线时序和消息组织。63 题查看题库查看专题与范围本机已导入 3 个专题I2C 通用基础（39 题）SPI 通用基",
+            "class": "board-card",
+            "x": 257,
+            "y": 1021,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "通信协议",
+            "class": "",
+            "x": 274,
+            "y": 1073.1875,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块计算机网络从网络分层到连接和故障定位。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续再补题。建设规划",
+            "class": "board-card",
+            "x": 540.75,
+            "y": 1021,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "计算机网络",
+            "class": "",
+            "x": 557.75,
+            "y": 1073.1875,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块RTOS与并发调度、同步和实时资源管理。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续再补题。建设规",
+            "class": "board-card",
+            "x": 824.5,
+            "y": 1021,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "RTOS与并发",
+            "class": "",
+            "x": 841.5,
+            "y": 1073.1875,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块Linux系统与应用Linux使用、用户态编程与部署。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续",
+            "class": "board-card",
+            "x": 1108.25,
+            "y": 1021,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "Linux系统与应用",
+            "class": "",
+            "x": 1125.25,
+            "y": 1073.1875,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块Linux内核与驱动内核机制、设备模型和驱动开发。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续再补",
+            "class": "board-card",
+            "x": 257,
+            "y": 1329.75,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "Linux内核与驱动",
+            "class": "",
+            "x": 274,
+            "y": 1381.9375,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块硬件与电路基础读懂电路并理解接口的电气约束。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续再补题。建",
+            "class": "board-card",
+            "x": 540.75,
+            "y": 1329.75,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "硬件与电路基础",
+            "class": "",
+            "x": 557.75,
+            "y": 1381.9375,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块存储与文件系统存储介质、数据组织和掉电一致性。22 题查看题库查看专题与范围本机已导入 2 个专题24LC256 EEPROM（4 ",
+            "class": "board-card",
+            "x": 824.5,
+            "y": 1329.75,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "存储与文件系统",
+            "class": "",
+            "x": 841.5,
+            "y": 1381.9375,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块编译调试与工程实践把代码构建、验证并定位问题。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续再补题。",
+            "class": "board-card",
+            "x": 1108.25,
+            "y": 1329.75,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "编译调试与工程实践",
+            "class": "",
+            "x": 1125.25,
+            "y": 1381.9375,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "基础板块项目与面试表达用真实证据解释方案、职责与取舍。0 题 · 待补题查看题库查看专题与范围暂无已导入专题。可先浏览下方规划，后续再补题。",
+            "class": "board-card",
+            "x": 257,
+            "y": 1638.5,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "项目与面试表达",
+            "class": "",
+            "x": 274,
+            "y": 1690.6875,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "ARTICLE",
+            "name": "自定义STM32本机自定义分类，沿用原有专题归属。313 题查看题库查看专题与范围本机已导入 5 个专题STM32F1 ADC（28 题）S",
+            "class": "board-card",
+            "x": 540.75,
+            "y": 1638.5,
+            "width": 267.75,
+            "height": 292.75,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "STM32",
+            "class": "",
+            "x": 557.75,
+            "y": 1690.6875,
+            "width": 233.75,
+            "height": 27.1875,
+            "font": "17px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "按条件开始练习",
+            "x": 1248,
+            "y": 185.140625,
+            "width": 128,
+            "height": 40.390625
+          }
+        ]
+      },
+      "file": "02-知识板块.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 3702
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "题库导入",
+            "class": "",
+            "x": 257,
+            "y": 145.796875,
+            "width": 202.078125,
+            "height": 30.4375,
+            "font": "21px"
+          },
+          {
+            "tag": "DIV",
+            "name": "题库搜索标签难度全部难度未分级易（基础）中（进阶）难（综合）自评状态全部状态未练习不会不熟掌握只看收藏全部题目，未限定其他条件只看内容更新待",
+            "class": "library-results",
+            "x": 465,
+            "y": 382.609375,
+            "width": 399.140625,
+            "height": 3176.59375,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "返回题目列表STM32F103RCT6 GPIO 阶段自测题 · gpio-001GPIO名称与输入输出易（基础） · GPIO / 概念辨",
+            "class": "library-reader-pane",
+            "x": 888.140625,
+            "y": 382.609375,
+            "width": 487.859375,
+            "height": 519.234375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "GPIO名称与输入输出",
+            "class": "",
+            "x": 913.140625,
+            "y": 411.40625,
+            "width": 462.859375,
+            "height": 35.1875,
+            "font": "22px"
+          }
+        ],
+        "actions": []
+      },
+      "file": "03-题库三栏.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 4090
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "题库导入",
+            "class": "",
+            "x": 257,
+            "y": 145.796875,
+            "width": 202.078125,
+            "height": 30.4375,
+            "font": "21px"
+          },
+          {
+            "tag": "DIV",
+            "name": "题库搜索标签难度全部难度未分级易（基础）中（进阶）难（综合）自评状态全部状态未练习不会不熟掌握只看收藏全部题目，未限定其他条件只看内容更新待",
+            "class": "library-results",
+            "x": 465,
+            "y": 770.53125,
+            "width": 399.140625,
+            "height": 3176.59375,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "返回题目列表STM32F103RCT6 GPIO 阶段自测题 · gpio-001GPIO名称与输入输出易（基础） · GPIO / 概念辨",
+            "class": "library-reader-pane",
+            "x": 888.140625,
+            "y": 770.53125,
+            "width": 487.859375,
+            "height": 519.234375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "GPIO名称与输入输出",
+            "class": "",
+            "x": 913.140625,
+            "y": 799.328125,
+            "width": 462.859375,
+            "height": 35.1875,
+            "font": "22px"
+          }
+        ],
+        "actions": []
+      },
+      "file": "09-全宽分类与专题管理.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 4631
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "题库导入",
+            "class": "",
+            "x": 257,
+            "y": 145.796875,
+            "width": 202.078125,
+            "height": 30.4375,
+            "font": "21px"
+          },
+          {
+            "tag": "H3",
+            "name": "导入预览",
+            "class": "",
+            "x": 257,
+            "y": 229.109375,
+            "width": 1119,
+            "height": 31.8125,
+            "font": "19.89px"
+          },
+          {
+            "tag": "DIV",
+            "name": "题库搜索标签难度全部难度未分级易（基础）中（进阶）难（综合）自评状态全部状态未练习不会不熟掌握只看收藏全部题目，未限定其他条件只看内容更新待",
+            "class": "library-results",
+            "x": 465,
+            "y": 1311.34375,
+            "width": 399.140625,
+            "height": 3176.59375,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "返回题目列表STM32F103RCT6 GPIO 阶段自测题 · gpio-001GPIO名称与输入输出易（基础） · GPIO / 概念辨",
+            "class": "library-reader-pane",
+            "x": 888.140625,
+            "y": 1311.34375,
+            "width": 487.859375,
+            "height": 519.234375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "GPIO名称与输入输出",
+            "class": "",
+            "x": 913.140625,
+            "y": 1340.140625,
+            "width": 462.859375,
+            "height": 35.1875,
+            "font": "22px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "确认导入",
+            "x": 257,
+            "y": 1131.765625,
+            "width": 86,
+            "height": 40.390625
+          }
+        ]
+      },
+      "file": "08-真实导入预览.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 2174
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "设置与数据",
+            "class": "",
+            "x": 257,
+            "y": 125,
+            "width": 1119,
+            "height": 34.796875,
+            "font": "24px"
+          },
+          {
+            "tag": "H3",
+            "name": "外观主题",
+            "class": "",
+            "x": 257,
+            "y": 291.578125,
+            "width": 1119,
+            "height": 28.796875,
+            "font": "18px"
+          },
+          {
+            "tag": "H3",
+            "name": "把思考留在题目旁",
+            "class": "",
+            "x": 895.890625,
+            "y": 518.546875,
+            "width": 457.109375,
+            "height": 33.296875,
+            "font": "18px"
+          },
+          {
+            "tag": "H3",
+            "name": "安装更多主题",
+            "class": "",
+            "x": 257,
+            "y": 1162.890625,
+            "width": 471.640625,
+            "height": 28.796875,
+            "font": "18px"
+          },
+          {
+            "tag": "H3",
+            "name": "数据位置",
+            "class": "",
+            "x": 257,
+            "y": 1319.078125,
+            "width": 1119,
+            "height": 28.796875,
+            "font": "18px"
+          },
+          {
+            "tag": "H3",
+            "name": "备份与恢复",
+            "class": "",
+            "x": 257,
+            "y": 1851.171875,
+            "width": 1119,
+            "height": 28.796875,
+            "font": "18px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "备份恢复",
+            "x": 355,
+            "y": 210.1875,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "text": "查看参考答案（预览）",
+            "x": 895.890625,
+            "y": 834.84375,
+            "width": 166,
+            "height": 36.390625
+          },
+          {
+            "text": "恢复默认外观",
+            "x": 1262,
+            "y": 1073.5,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "text": "打开备份文件夹",
+            "x": 257,
+            "y": 1578.21875,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "text": "导出完整备份",
+            "x": 257,
+            "y": 1932.359375,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "text": "选择备份并预览",
+            "x": 381,
+            "y": 1932.359375,
+            "width": 128,
+            "height": 40.390625
+          }
+        ]
+      },
+      "file": "10-外观与本地主题.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 2174
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "设置与数据",
+            "class": "",
+            "x": 257,
+            "y": -1049,
+            "width": 1119,
+            "height": 34.796875,
+            "font": "24px"
+          },
+          {
+            "tag": "H3",
+            "name": "外观主题",
+            "class": "",
+            "x": 257,
+            "y": -882.421875,
+            "width": 1119,
+            "height": 28.796875,
+            "font": "18px"
+          },
+          {
+            "tag": "H3",
+            "name": "把思考留在题目旁",
+            "class": "",
+            "x": 895.890625,
+            "y": -655.453125,
+            "width": 457.109375,
+            "height": 33.296875,
+            "font": "18px"
+          },
+          {
+            "tag": "H3",
+            "name": "安装更多主题",
+            "class": "",
+            "x": 257,
+            "y": -11.109375,
+            "width": 471.640625,
+            "height": 28.796875,
+            "font": "18px"
+          },
+          {
+            "tag": "H3",
+            "name": "数据位置",
+            "class": "",
+            "x": 257,
+            "y": 145.078125,
+            "width": 1119,
+            "height": 28.796875,
+            "font": "18px"
+          },
+          {
+            "tag": "H3",
+            "name": "备份与恢复",
+            "class": "",
+            "x": 257,
+            "y": 677.171875,
+            "width": 1119,
+            "height": 28.796875,
+            "font": "18px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "备份恢复",
+            "x": 355,
+            "y": -963.8125,
+            "width": 86,
+            "height": 40.390625
+          },
+          {
+            "text": "查看参考答案（预览）",
+            "x": 895.890625,
+            "y": -339.15625,
+            "width": 166,
+            "height": 36.390625
+          },
+          {
+            "text": "恢复默认外观",
+            "x": 1262,
+            "y": -100.5,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "text": "打开备份文件夹",
+            "x": 257,
+            "y": 404.21875,
+            "width": 128,
+            "height": 40.390625
+          },
+          {
+            "text": "导出完整备份",
+            "x": 257,
+            "y": 758.359375,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "text": "选择备份并预览",
+            "x": 381,
+            "y": 758.359375,
+            "width": 128,
+            "height": 40.390625
+          }
+        ]
+      },
+      "file": "11-备份恢复与数据位置.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1440,
+          "height": 1000
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "开始一轮练习",
+            "class": "",
+            "x": 257,
+            "y": 157.796875,
+            "width": 1134,
+            "height": 33.34375,
+            "font": "23px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "练不会",
+            "x": 351,
+            "y": 215.140625,
+            "width": 72,
+            "height": 40.390625
+          },
+          {
+            "text": "练不熟",
+            "x": 431,
+            "y": 215.140625,
+            "width": 72,
+            "height": 40.390625
+          },
+          {
+            "text": "开始练习",
+            "x": 257,
+            "y": 580.6875,
+            "width": 86,
+            "height": 40.390625
+          }
+        ]
+      },
+      "file": "04-练习配置与方案.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 1142
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "SystemCoreClockUpdate职责",
+            "class": "",
+            "x": 257,
+            "y": 201.375,
+            "width": 1017,
+            "height": 36.25,
+            "font": "25px"
+          },
+          {
+            "tag": "H3",
+            "name": "题干",
+            "class": "",
+            "x": 257,
+            "y": 334.8125,
+            "width": 547.5,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "name": "input",
+            "class": "",
+            "x": 274,
+            "y": 619.890625,
+            "width": 513.5,
+            "height": 250.375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "参考答案",
+            "class": "",
+            "x": 853.5,
+            "y": 334.8125,
+            "width": 522.5,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "已保存上一题跳过本题保存并返回结束本轮",
+            "class": "practice-actions",
+            "x": 257,
+            "y": 911.265625,
+            "width": 1119,
+            "height": 87.796875,
+            "font": "17px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "查看参考答案",
+            "x": 1057.75,
+            "y": 657.21875,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "text": "保存并返回",
+            "x": 446,
+            "y": 957.0625,
+            "width": 105,
+            "height": 42
+          }
+        ]
+      },
+      "file": "05-练习未揭晓.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 1142
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "SystemCoreClockUpdate职责",
+            "class": "",
+            "x": 257,
+            "y": 201.375,
+            "width": 1017,
+            "height": 36.25,
+            "font": "25px"
+          },
+          {
+            "tag": "H3",
+            "name": "题干",
+            "class": "",
+            "x": 257,
+            "y": 334.8125,
+            "width": 547.5,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "name": "input",
+            "class": "",
+            "x": 274,
+            "y": 619.890625,
+            "width": 513.5,
+            "height": 250.375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "参考答案",
+            "class": "",
+            "x": 874.5,
+            "y": 334.8125,
+            "width": 501.5,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "已保存上一题不会不熟掌握暂不评价，下一题保存并返回结束本轮",
+            "class": "practice-actions",
+            "x": 257,
+            "y": 911.265625,
+            "width": 1119,
+            "height": 87.796875,
+            "font": "17px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "不会",
+            "x": 344,
+            "y": 957.0625,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "不熟",
+            "x": 416,
+            "y": 957.0625,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "掌握",
+            "x": 488,
+            "y": 957.0625,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "保存并返回",
+            "x": 722,
+            "y": 957.0625,
+            "width": 105,
+            "height": 42
+          }
+        ]
+      },
+      "file": "06-揭晓与自评.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 1142
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "SECTION",
+            "name": "从上次停下的地方继续继续你的嵌入式学习先独立思考，再对照答案。每一轮积累都保存在本机。",
+            "class": "overview-welcome",
+            "x": 232,
+            "y": 100,
+            "width": 1169,
+            "height": 154.3125,
+            "font": "17px"
+          },
+          {
+            "tag": "H2",
+            "name": "继续你的嵌入式学习",
+            "class": "",
+            "x": 256,
+            "y": 152.796875,
+            "width": 1121,
+            "height": 46.390625,
+            "font": "32px"
+          },
+          {
+            "tag": "SECTION",
+            "name": "继续原固定队列STM32F103RCT6 GPIO 阶段自测题当前位置 4 / 20 题顺序练习 · 已揭晓 4 题 · 已自评 3 题继续",
+            "class": "overview-resume",
+            "x": 232,
+            "y": 270.3125,
+            "width": 1169,
+            "height": 206.171875,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "STM32F103RCT6 GPIO 阶段自测题",
+            "class": "",
+            "x": 257,
+            "y": 324.109375,
+            "width": 995,
+            "height": 34,
+            "font": "21.25px"
+          },
+          {
+            "tag": "H3",
+            "name": "知识板块",
+            "class": "",
+            "x": 257,
+            "y": 669.03125,
+            "width": 79.5625,
+            "height": 31.8125,
+            "font": "19.89px"
+          },
+          {
+            "tag": "H3",
+            "name": "复习入口",
+            "class": "",
+            "x": 964.796875,
+            "y": 665.0625,
+            "width": 411.203125,
+            "height": 31.8125,
+            "font": "19.89px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "不会1 题 · 去筛选",
+            "x": 964.796875,
+            "y": 712.875,
+            "width": 411.203125,
+            "height": 56.390625
+          },
+          {
+            "text": "不熟1 题 · 去筛选",
+            "x": 964.796875,
+            "y": 781.265625,
+            "width": 411.203125,
+            "height": 56.390625
+          }
+        ]
+      },
+      "file": "01-学习总览.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 1586
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "学习记录",
+            "class": "",
+            "x": 257,
+            "y": 125,
+            "width": 1119,
+            "height": 34.796875,
+            "font": "24px"
+          },
+          {
+            "tag": "H3",
+            "name": "题目与单题历史",
+            "class": "",
+            "x": 257,
+            "y": 638.125,
+            "width": 1119,
+            "height": 31.8125,
+            "font": "19.89px"
+          },
+          {
+            "tag": "DIV",
+            "name": "题库搜索标签难度全部难度未分级易（基础）中（进阶）难（综合）自评状态全部状态未练习不会不熟掌握只看收藏只看收藏只看内容更新待复习有效题目筛选",
+            "class": "library-results",
+            "x": 257,
+            "y": 745.328125,
+            "width": 465.375,
+            "height": 698.296875,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "选择一道题查看内容，再主动展开单题历史。",
+            "class": "library-reader-pane",
+            "x": 746.375,
+            "y": 745.328125,
+            "width": 629.625,
+            "height": 75.1875,
+            "font": "17px"
+          }
+        ],
+        "actions": []
+      },
+      "file": "07-学习记录与收藏.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 885,
+          "height": 1471
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "SECTION",
+            "name": "从上次停下的地方继续继续你的嵌入式学习先独立思考，再对照答案。每一轮积累都保存在本机。",
+            "class": "overview-welcome",
+            "x": 96,
+            "y": 100,
+            "width": 765,
+            "height": 139.8125,
+            "font": "17px"
+          },
+          {
+            "tag": "H2",
+            "name": "继续你的嵌入式学习",
+            "class": "",
+            "x": 120,
+            "y": 152.796875,
+            "width": 717,
+            "height": 31.890625,
+            "font": "22px"
+          },
+          {
+            "tag": "SECTION",
+            "name": "继续原固定队列STM32F103RCT6 GPIO 阶段自测题当前位置 4 / 20 题顺序练习 · 已揭晓 4 题 · 已自评 3 题继续",
+            "class": "overview-resume",
+            "x": 96,
+            "y": 255.8125,
+            "width": 765,
+            "height": 206.171875,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "STM32F103RCT6 GPIO 阶段自测题",
+            "class": "",
+            "x": 121,
+            "y": 309.609375,
+            "width": 591,
+            "height": 34,
+            "font": "21.25px"
+          },
+          {
+            "tag": "H3",
+            "name": "知识板块",
+            "class": "",
+            "x": 121,
+            "y": 654.53125,
+            "width": 79.5625,
+            "height": 31.8125,
+            "font": "19.89px"
+          },
+          {
+            "tag": "H3",
+            "name": "复习入口",
+            "class": "",
+            "x": 121,
+            "y": 1050.65625,
+            "width": 715,
+            "height": 31.8125,
+            "font": "19.89px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "不会1 题 · 去筛选",
+            "x": 121,
+            "y": 1098.46875,
+            "width": 715,
+            "height": 56.390625
+          },
+          {
+            "text": "不熟1 题 · 去筛选",
+            "x": 121,
+            "y": 1166.859375,
+            "width": 715,
+            "height": 56.390625
+          }
+        ]
+      },
+      "file": "12-深色窄窗口.png",
+      "viewport": {
+        "width": 900,
+        "height": 900
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 1142
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "SystemCoreClockUpdate职责",
+            "class": "",
+            "x": 257,
+            "y": 201.375,
+            "width": 1017,
+            "height": 36.25,
+            "font": "25px"
+          },
+          {
+            "tag": "H3",
+            "name": "题干",
+            "class": "",
+            "x": 257,
+            "y": 334.8125,
+            "width": 547.5,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "name": "input",
+            "class": "",
+            "x": 274,
+            "y": 619.890625,
+            "width": 513.5,
+            "height": 250.375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "参考答案",
+            "class": "",
+            "x": 874.5,
+            "y": 334.8125,
+            "width": 501.5,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "已保存上一题不会不熟掌握暂不评价，下一题保存并返回结束本轮",
+            "class": "practice-actions",
+            "x": 257,
+            "y": 911.265625,
+            "width": 1119,
+            "height": 87.796875,
+            "font": "17px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "不会",
+            "x": 344,
+            "y": 957.0625,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "不熟",
+            "x": 416,
+            "y": 957.0625,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "掌握",
+            "x": 488,
+            "y": 957.0625,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "保存并返回",
+            "x": 722,
+            "y": 957.0625,
+            "width": 105,
+            "height": 42
+          }
+        ]
+      },
+      "file": "14-深色练习1440x900.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 885,
+          "height": 1568
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "SystemCoreClockUpdate职责",
+            "class": "",
+            "x": 121,
+            "y": 201.375,
+            "width": 613,
+            "height": 36.25,
+            "font": "25px"
+          },
+          {
+            "tag": "H3",
+            "name": "题干",
+            "class": "",
+            "x": 121,
+            "y": 363.203125,
+            "width": 715,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "name": "input",
+            "class": "",
+            "x": 138,
+            "y": 616.84375,
+            "width": 681,
+            "height": 250.375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "参考答案",
+            "class": "",
+            "x": 142,
+            "y": 933.21875,
+            "width": 694,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "已保存上一题不会不熟掌握暂不评价，下一题保存并返回结束本轮",
+            "class": "practice-actions",
+            "x": 121,
+            "y": 1337.421875,
+            "width": 715,
+            "height": 87.796875,
+            "font": "17px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "不会",
+            "x": 208,
+            "y": 1383.21875,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "不熟",
+            "x": 280,
+            "y": 1383.21875,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "掌握",
+            "x": 352,
+            "y": 1383.21875,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "保存并返回",
+            "x": 586,
+            "y": 1383.21875,
+            "width": 105,
+            "height": 42
+          }
+        ]
+      },
+      "file": "15-深色练习900首屏.png",
+      "viewport": {
+        "width": 900,
+        "height": 900
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 885,
+          "height": 1568
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "SystemCoreClockUpdate职责",
+            "class": "",
+            "x": 121,
+            "y": -466.625,
+            "width": 613,
+            "height": 36.25,
+            "font": "25px"
+          },
+          {
+            "tag": "H3",
+            "name": "题干",
+            "class": "",
+            "x": 121,
+            "y": -304.796875,
+            "width": 715,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "name": "input",
+            "class": "",
+            "x": 138,
+            "y": -51.15625,
+            "width": 681,
+            "height": 250.375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "参考答案",
+            "class": "",
+            "x": 142,
+            "y": 265.21875,
+            "width": 694,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "已保存上一题不会不熟掌握暂不评价，下一题保存并返回结束本轮",
+            "class": "practice-actions",
+            "x": 121,
+            "y": 669.421875,
+            "width": 715,
+            "height": 87.796875,
+            "font": "17px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "不会",
+            "x": 208,
+            "y": 715.21875,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "不熟",
+            "x": 280,
+            "y": 715.21875,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "掌握",
+            "x": 352,
+            "y": 715.21875,
+            "width": 60,
+            "height": 42
+          },
+          {
+            "text": "保存并返回",
+            "x": 586,
+            "y": 715.21875,
+            "width": 105,
+            "height": 42
+          }
+        ]
+      },
+      "file": "16-深色练习900操作区.png",
+      "viewport": {
+        "width": 900,
+        "height": 900
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 3724
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "题库导入",
+            "class": "",
+            "x": 257,
+            "y": 145.796875,
+            "width": 202.078125,
+            "height": 30.4375,
+            "font": "21px"
+          },
+          {
+            "tag": "DIV",
+            "name": "题库搜索标签难度全部难度未分级易（基础）中（进阶）难（综合）自评状态全部状态未练习不会不熟掌握只看收藏全部题目，未限定其他条件只看内容更新待",
+            "class": "library-results",
+            "x": 465,
+            "y": 382.609375,
+            "width": 399.140625,
+            "height": 3198.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "返回题目列表STM32F103RCT6 GPIO 阶段自测题 · gpio-001GPIO名称与输入输出易（基础） · GPIO / 概念辨",
+            "class": "library-reader-pane",
+            "x": 888.140625,
+            "y": 382.609375,
+            "width": 487.859375,
+            "height": 519.234375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "GPIO名称与输入输出",
+            "class": "",
+            "x": 913.140625,
+            "y": 411.40625,
+            "width": 462.859375,
+            "height": 35.1875,
+            "font": "22px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "STM32F103RCT6 GPIO 阶段自测题 · gpio-001GPIO名称与输入输出易（基础）自评：不会",
+            "x": 465,
+            "y": 815.09375,
+            "width": 399.140625,
+            "height": 128.046875
+          },
+          {
+            "text": "STM32F103RCT6 GPIO 阶段自测题 · gpio-002GPIO时钟依赖易（基础）自评：不熟",
+            "x": 465,
+            "y": 944.140625,
+            "width": 399.140625,
+            "height": 128.046875
+          },
+          {
+            "text": "STM32F103RCT6 GPIO 阶段自测题 · gpio-003GPIO端口总线易（基础）自评：掌握",
+            "x": 465,
+            "y": 1073.1875,
+            "width": 399.140625,
+            "height": 128.046875
+          }
+        ]
+      },
+      "file": "17-题库1440x900.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 1425,
+          "height": 1109
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "通用与复用输出",
+            "class": "",
+            "x": 257,
+            "y": 201.375,
+            "width": 1017,
+            "height": 36.25,
+            "font": "25px"
+          },
+          {
+            "tag": "H3",
+            "name": "题干",
+            "class": "",
+            "x": 257,
+            "y": 334.8125,
+            "width": 547.5,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "name": "input",
+            "class": "",
+            "x": 274,
+            "y": 587.453125,
+            "width": 513.5,
+            "height": 250.375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "参考答案",
+            "class": "",
+            "x": 853.5,
+            "y": 334.8125,
+            "width": 522.5,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "已保存上一题跳过本题保存并返回结束本轮",
+            "class": "practice-actions",
+            "x": 257,
+            "y": 878.828125,
+            "width": 1119,
+            "height": 87.796875,
+            "font": "17px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "查看参考答案",
+            "x": 1057.75,
+            "y": 641,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "text": "保存并返回",
+            "x": 446,
+            "y": 924.625,
+            "width": 105,
+            "height": 42
+          }
+        ]
+      },
+      "file": "18-未揭晓1440x900.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 885,
+          "height": 1427
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "通用与复用输出",
+            "class": "",
+            "x": 121,
+            "y": 201.375,
+            "width": 613,
+            "height": 36.25,
+            "font": "25px"
+          },
+          {
+            "tag": "H3",
+            "name": "题干",
+            "class": "",
+            "x": 121,
+            "y": 363.203125,
+            "width": 715,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "name": "input",
+            "class": "",
+            "x": 138,
+            "y": 615.84375,
+            "width": 681,
+            "height": 250.375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "参考答案",
+            "class": "",
+            "x": 121,
+            "y": 932.21875,
+            "width": 715,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "已保存上一题跳过本题保存并返回结束本轮",
+            "class": "practice-actions",
+            "x": 121,
+            "y": 1196.21875,
+            "width": 715,
+            "height": 87.796875,
+            "font": "17px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "查看参考答案",
+            "x": 421.5,
+            "y": 1098.40625,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "text": "保存并返回",
+            "x": 310,
+            "y": 1242.015625,
+            "width": 105,
+            "height": 42
+          }
+        ]
+      },
+      "file": "19-未揭晓900首屏.png",
+      "viewport": {
+        "width": 900,
+        "height": 900
+      }
+    },
+    {
+      "geometry": {
+        "document": {
+          "width": 885,
+          "height": 1427
+        },
+        "bodyFont": {
+          "size": "17px",
+          "family": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif"
+        },
+        "items": [
+          {
+            "tag": "H2",
+            "name": "通用与复用输出",
+            "class": "",
+            "x": 121,
+            "y": -325.625,
+            "width": 613,
+            "height": 36.25,
+            "font": "25px"
+          },
+          {
+            "tag": "H3",
+            "name": "题干",
+            "class": "",
+            "x": 121,
+            "y": -163.796875,
+            "width": 715,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "name": "input",
+            "class": "",
+            "x": 138,
+            "y": 88.84375,
+            "width": 681,
+            "height": 250.375,
+            "font": "17px"
+          },
+          {
+            "tag": "H3",
+            "name": "参考答案",
+            "class": "",
+            "x": 121,
+            "y": 405.21875,
+            "width": 715,
+            "height": 27.1875,
+            "font": "17px"
+          },
+          {
+            "tag": "DIV",
+            "name": "已保存上一题跳过本题保存并返回结束本轮",
+            "class": "practice-actions",
+            "x": 121,
+            "y": 669.21875,
+            "width": 715,
+            "height": 87.796875,
+            "font": "17px"
+          }
+        ],
+        "actions": [
+          {
+            "text": "查看参考答案",
+            "x": 421.5,
+            "y": 571.40625,
+            "width": 114,
+            "height": 40.390625
+          },
+          {
+            "text": "保存并返回",
+            "x": 310,
+            "y": 715.015625,
+            "width": 105,
+            "height": 42
+          }
+        ]
+      },
+      "file": "20-未揭晓900揭晓区.png",
+      "viewport": {
+        "width": 900,
+        "height": 900
+      }
+    }
+  ],
+  "remoteRequests": [],
+  "actual": {
+    "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.1-workbench-e-20261025.3-r2\\win-unpacked\\embedded-practice.exe",
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-ui-audit-q0dH89",
+    "packaged": true,
+    "version": "0.0.1"
+  }
+}

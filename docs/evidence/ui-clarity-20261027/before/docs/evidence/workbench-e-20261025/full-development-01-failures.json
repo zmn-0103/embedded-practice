@@ -1,0 +1,305 @@
+{
+  "stats": {
+    "startTime": "2026-10-25T16:01:33.692Z",
+    "duration": 1258580.699,
+    "expected": 207,
+    "skipped": 0,
+    "unexpected": 34,
+    "flaky": 0
+  },
+  "failures": [
+    {
+      "file": "category-practice.spec.ts",
+      "title": "分类练习：同事务快照、随机队列、移动/改名/移除后的原请求重试和正常重开保持",
+      "line": 27,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: '继续练习', exact: true })\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '继续练习', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '继续练习', exact: true })\u001b[22m\n\n\n  60 |     ).toMatchObject({ ok: true })\n  61 |     await instance.page.reload()\n> 62 |     await expect(instance.page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()\n     |                                                                                    ^\n  63 |     await instance.page.getByRole('button', { name: '继续练习', exact: true }).click()\n  64 |     await instance.page\n  65 |       .getByRole('textbox', { name: '我的答案', exact: true })\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\category-practice.spec.ts:62:84"
+      ]
+    },
+    {
+      "file": "findability.spec.ts",
+      "title": "找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置",
+      "line": 82,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: '筛选题库', exact: true })\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '筛选题库', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '筛选题库', exact: true })\u001b[22m\n\n\n   95 |     expect(await page.locator('body').ariaSnapshot()).not.toContain('FIND-ANSWER-find-a-21')\n   96 |     await openPage(page, '题库')\n>  97 |     await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n      |                                                                           ^\n   98 |     await expect(page.getByRole('searchbox', { name: '题库搜索', exact: true })).toHaveValue('保留')\n   99 |     await expect(page.getByLabel('专题', { exact: true })).toHaveValue('find-a')\n  100 |     await expect(page.getByRole('navigation', { name: '题目分页' })).toContainText('2 / 3')\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\findability.spec.ts:97:75"
+      ]
+    },
+    {
+      "file": "findability.spec.ts",
+      "title": "找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择",
+      "line": 172,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByText('共 48 题', { exact: true })\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('共 48 题', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('共 48 题', { exact: true })\u001b[22m\n\u001b[2m    23 × locator resolved to <span class=\"muted\">共 48 题</span>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n\n  226 |         }),\n  227 |     )\n> 228 |     await expect(page.getByText('共 48 题', { exact: true })).toBeVisible()\n      |                                                             ^\n  229 |     await expect(page.getByRole('heading', { name: '保留位置问题 1', exact: true })).toBeVisible()\n  230 |   } finally {\n  231 |     await application\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\findability.spec.ts:228:61"
+      ]
+    },
+    {
+      "file": "findability.spec.ts",
+      "title": "找题：返回后读取失败保留条件和页码，重试仍查询原范围",
+      "line": 263,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: '题目分页' })\nExpected substring: \u001b[32m\"2 / 3\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('navigation', { name: '题目分页' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '题目分页' })\u001b[22m\n\n\n  286 |     await expect(page.getByRole('alert')).toContainText('定向模拟返回读取失败')\n  287 |     await expect(page.getByRole('searchbox', { name: '题库搜索', exact: true })).toHaveValue('保留')\n> 288 |     await expect(page.getByRole('navigation', { name: '题目分页' })).toContainText('2 / 3')\n      |                                                                  ^\n  289 |     await page.getByRole('button', { name: '重新读取题库', exact: true }).click()\n  290 |     await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  291 |     await expect(page.getByRole('navigation', { name: '题目分页' })).toContainText('2 / 3')\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\findability.spec.ts:288:66"
+      ]
+    },
+    {
+      "file": "findability.spec.ts",
+      "title": "找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情",
+      "line": 298,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.check: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: '题库只看收藏', exact: true })\u001b[22m\n\n\n  303 |     await page.getByRole('button', { name: /A 找题专题.*q-01/ }).click()\n  304 |     await page.getByRole('button', { name: '收藏本题', exact: true }).click()\n> 305 |     await page.getByRole('checkbox', { name: '题库只看收藏', exact: true }).check()\n      |                                                                       ^\n  306 |     await page.getByRole('button', { name: '筛选题库', exact: true }).click()\n  307 |     await expect(page.getByText('共 1 题', { exact: true })).toBeVisible()\n  308 |     await page.getByRole('button', { name: /A 找题专题.*q-01/ }).click()\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\findability.spec.ts:305:71"
+      ]
+    },
+    {
+      "file": "history-window.spec.ts",
+      "title": "历史默认不读/不挂载，主动回看与自动保存保持，新题新轮重新关闭",
+      "line": 22,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '查看本题历史', exact: true })\u001b[22m\n\n\n  51 |     expect(await page.getByRole('region', { name: '本题历史', exact: true }).count()).toBe(0)\n  52 |     const before = historySnapshot(testDataDirectory)\n> 53 |     await page.getByRole('button', { name: '查看本题历史', exact: true }).click()\n     |                                                                     ^\n  54 |     const history = page.getByRole('region', { name: '本题历史', exact: true })\n  55 |     await expect(history).toContainText('共 3 条历史记录')\n  56 |     expect(await page.content()).not.toMatch(/HISTORY-DRAFT|HISTORY-ANSWER/)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-window.spec.ts:53:69"
+      ]
+    },
+    {
+      "file": "history-window.spec.ts",
+      "title": "切题后晚到的 history:list 不覆盖另一题或泄露旧内容",
+      "line": 221,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-window.spec.ts:262:7"
+      ]
+    },
+    {
+      "file": "history-window.spec.ts",
+      "title": "切题后晚到的 history:get-entry 不覆盖另一题或泄露旧内容",
+      "line": 221,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-window.spec.ts:262:7"
+      ]
+    },
+    {
+      "file": "learning-management.spec.ts",
+      "title": "M3 修复：旧收藏响应晚于新操作，最终未收藏保持一致",
+      "line": 211,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /A 筛选专题.*q-02/ })\u001b[22m\n\n\n  229 |         .click()\n  230 |       await expect.poll(async () => (await favoriteResponseState(application)).written).toBe(true)\n> 231 |       await page.getByRole('button', { name: /A 筛选专题.*q-02/ }).click()\n      |                                                                ^\n  232 |       await expect(page.getByRole('heading', { name: '外设问题 2', exact: true })).toBeVisible()\n  233 |       await first.click()\n  234 |       await page\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:231:64"
+      ]
+    },
+    {
+      "file": "learning-management.spec.ts",
+      "title": "M3 修复：旧收藏响应晚于新操作，最终已收藏保持一致",
+      "line": 211,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /A 筛选专题.*q-02/ })\u001b[22m\n\n\n  229 |         .click()\n  230 |       await expect.poll(async () => (await favoriteResponseState(application)).written).toBe(true)\n> 231 |       await page.getByRole('button', { name: /A 筛选专题.*q-02/ }).click()\n      |                                                                ^\n  232 |       await expect(page.getByRole('heading', { name: '外设问题 2', exact: true })).toBeVisible()\n  233 |       await first.click()\n  234 |       await page\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:231:64"
+      ]
+    },
+    {
+      "file": "learning-management.spec.ts",
+      "title": "M3 修复：切到其他题后晚到收藏成功仍刷新最新列表与匹配数",
+      "line": 276,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /A 筛选专题.*q-02/ })\u001b[22m\n\n\n  288 |     await page.getByRole('button', { name: '收藏本题', exact: true }).click()\n  289 |     await expect.poll(async () => (await favoriteResponseState(application)).written).toBe(true)\n> 290 |     await page.getByRole('button', { name: /A 筛选专题.*q-02/ }).click()\n      |                                                              ^\n  291 |     await expect(page.getByRole('heading', { name: '外设问题 2', exact: true })).toBeVisible()\n  292 |     const before = snapshot(testDataDirectory)\n  293 |     const barrier = await favoriteResponseState(application, true)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:290:62"
+      ]
+    },
+    {
+      "file": "learning-management.spec.ts",
+      "title": "M3 第一批：收藏写入失败与响应丢失重试、收藏页取消后收敛",
+      "line": 436,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.check: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: '题库只看收藏' })\u001b[22m\n\n\n  477 |     await page.getByRole('button', { name: '收藏本题', exact: true }).click()\n  478 |     await expect(page.getByRole('button', { name: '取消收藏', exact: true })).toBeEnabled()\n> 479 |     await page.getByRole('checkbox', { name: '题库只看收藏' }).check()\n      |                                                          ^\n  480 |     await applyLibrary(page, '', 1)\n  481 |     await page.getByRole('button', { name: /A 筛选专题.*q-01/ }).click()\n  482 |     await page.getByRole('button', { name: '取消收藏', exact: true }).click()\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts:479:58"
+      ]
+    },
+    {
+      "file": "learning-records.spec.ts",
+      "title": "学习记录页专题范围、收藏刷新、主动历史与明暗布局",
+      "line": 202,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '清空题库筛选', exact: true })\u001b[22m\n\n\n  223 |       page.getByRole('complementary', { name: '题目列表' }).getByRole('button', { name: /q-1/ }),\n  224 |     ).toHaveCount(0)\n> 225 |     await page.getByRole('button', { name: '清空题库筛选', exact: true }).click()\n      |                                                                     ^\n  226 |     await expect(\n  227 |       page.getByRole('complementary', { name: '题目列表' }).getByRole('button', { name: /q-/ }),\n  228 |     ).toHaveCount(2)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-records.spec.ts:225:69"
+      ]
+    },
+    {
+      "file": "learning-records.spec.ts",
+      "title": "切页保留待确认预览，记录页关闭仍保存并可继续原轮",
+      "line": 247,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('navigation', { name: '主要页面', exact: true })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByRole('navigation', { name: '主要页面', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '主要页面', exact: true })\u001b[22m\n\u001b[2m    24 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  265 |     await expect(page.getByText(/^导入完成：/)).toBeVisible()\n  266 |     await beginHistoryPractice(page)\n> 267 |     await expect(page.getByRole('navigation', { name: '主要页面', exact: true })).toHaveCount(0)\n      |                                                                               ^\n  268 |     await page\n  269 |       .getByRole('textbox', { name: '我的答案', exact: true })\n  270 |       .fill('学习记录切页前确认的草稿')\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-records.spec.ts:267:79"
+      ]
+    },
+    {
+      "file": "library-window.spec.ts",
+      "title": "窗口预览确认、三种图片解码、移动来源后独立进程重开",
+      "line": 82,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /ui-002/ })\u001b[22m\n\n\n  114 |     await page.emulateMedia({ colorScheme: 'dark' })\n  115 |     await page.screenshot({ path: info.outputPath('library-answer-dark.png'), fullPage: true })\n> 116 |     await page.getByRole('button', { name: /ui-002/ }).click()\n      |                                                        ^\n  117 |     await expect(page.locator('.question-reader')).toContainText('第 2 题题干')\n  118 |     expect(await page.content()).not.toContain(secret)\n  119 |     expect(await page.content()).not.toContain('UI-ANSWER-TWO')\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\library-window.spec.ts:116:56"
+      ]
+    },
+    {
+      "file": "practice-window.spec.ts",
+      "title": "真实代码 token/复制调用、图片模态缩放与长答案操作区",
+      "line": 379,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '掌握', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('button', { name: '掌握', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '掌握', exact: true })\u001b[22m\n\u001b[2m    5 × locator resolved to <button disabled type=\"button\" data-rating=\"掌握\">掌握</button>\u001b[22m\n\u001b[2m      - unexpected value \"viewport ratio 0\"\u001b[22m\n\u001b[2m    19 × locator resolved to <button type=\"button\" data-rating=\"掌握\">掌握</button>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n\n  415 |     await expect(page.getByRole('region', { name: '练习参考答案' })).toContainText('第 60 段长答案')\n  416 |     const button = page.getByRole('button', { name: '掌握', exact: true })\n> 417 |     await expect(button).toBeInViewport()\n      |                          ^\n  418 |     await page.screenshot({ path: info.outputPath('practice-light.png') })\n  419 |     await page.emulateMedia({ colorScheme: 'dark' })\n  420 |     await page.screenshot({ path: info.outputPath('practice-dark.png') })\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:417:26"
+      ]
+    },
+    {
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：100% 页面缩放下长内容切题回到题首",
+      "line": 568,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '跳过本题', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('button', { name: '跳过本题', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '跳过本题', exact: true })\u001b[22m\n\u001b[2m    5 × locator resolved to <button disabled type=\"button\">跳过本题</button>\u001b[22m\n\u001b[2m      - unexpected value \"viewport ratio 0\"\u001b[22m\n\u001b[2m    19 × locator resolved to <button type=\"button\">跳过本题</button>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n\n  607 |       await expect(secondTitle).toBeFocused()\n  608 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })\n> 609 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()\n      |                                                                             ^\n  610 |       // 页面缩放时浏览器截图可能按 CSS 尺寸裁切；从 Electron 捕获完整可视区域。\n  611 |       const screenshot = await application.evaluate(async ({ BrowserWindow }) => {\n  612 |         const window = BrowserWindow.getAllWindows()[0]\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:609:77"
+      ]
+    },
+    {
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：125% 页面缩放下长内容切题回到题首",
+      "line": 568,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '跳过本题', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('button', { name: '跳过本题', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '跳过本题', exact: true })\u001b[22m\n\u001b[2m    5 × locator resolved to <button disabled type=\"button\">跳过本题</button>\u001b[22m\n\u001b[2m      - unexpected value \"viewport ratio 0\"\u001b[22m\n\u001b[2m    19 × locator resolved to <button type=\"button\">跳过本题</button>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n\n  607 |       await expect(secondTitle).toBeFocused()\n  608 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })\n> 609 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()\n      |                                                                             ^\n  610 |       // 页面缩放时浏览器截图可能按 CSS 尺寸裁切；从 Electron 捕获完整可视区域。\n  611 |       const screenshot = await application.evaluate(async ({ BrowserWindow }) => {\n  612 |         const window = BrowserWindow.getAllWindows()[0]\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:609:77"
+      ]
+    },
+    {
+      "file": "practice-window.spec.ts",
+      "title": "M2 第三批：150% 页面缩放下长内容切题回到题首",
+      "line": 568,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '跳过本题', exact: true })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('button', { name: '跳过本题', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '跳过本题', exact: true })\u001b[22m\n\u001b[2m    5 × locator resolved to <button disabled type=\"button\">跳过本题</button>\u001b[22m\n\u001b[2m      - unexpected value \"viewport ratio 0\"\u001b[22m\n\u001b[2m    19 × locator resolved to <button type=\"button\">跳过本题</button>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n\n  607 |       await expect(secondTitle).toBeFocused()\n  608 |       await expect(page.getByLabel('练习进度')).toBeInViewport({ ratio: 1 })\n> 609 |       await expect(page.getByRole('button', { name: '跳过本题', exact: true })).toBeInViewport()\n      |                                                                             ^\n  610 |       // 页面缩放时浏览器截图可能按 CSS 尺寸裁切；从 Electron 捕获完整可视区域。\n  611 |       const screenshot = await application.evaluate(async ({ BrowserWindow }) => {\n  612 |         const window = BrowserWindow.getAllWindows()[0]\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts:609:77"
+      ]
+    },
+    {
+      "file": "restore-window.spec.ts",
+      "title": "全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容",
+      "line": 223,
+      "errors": [
+        "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+      ]
+    },
+    {
+      "file": "session-filters.spec.ts",
+      "title": "损坏筛选快照不能冒充旧未知或默认条件，修复后原轮可读",
+      "line": 260,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: '继续练习', exact: true })\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '继续练习', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '继续练习', exact: true })\u001b[22m\n\n\n  306 |     )\n  307 |     await page.getByRole('button', { name: '重试读取练习', exact: true }).click()\n> 308 |     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()\n      |                                                                           ^\n  309 |     expect(await read(page)).toEqual(original)\n  310 |     expect(historySnapshot(testDataDirectory)).toEqual(before)\n  311 |   } finally {\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\session-filters.spec.ts:308:75"
+      ]
+    },
+    {
+      "file": "settings-palettes.spec.ts",
+      "title": "松间绿明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "line": 83,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\settings-palettes.spec.ts:123:9"
+      ]
+    },
+    {
+      "file": "settings-palettes.spec.ts",
+      "title": "晴空蓝明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "line": 83,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\settings-palettes.spec.ts:123:9"
+      ]
+    },
+    {
+      "file": "settings-palettes.spec.ts",
+      "title": "暖沙金明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "line": 83,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\settings-palettes.spec.ts:123:9"
+      ]
+    },
+    {
+      "file": "settings-palettes.spec.ts",
+      "title": "暮山紫明暗配色：局部预览、全局保存、阅读与对比度，不改变学习记录",
+      "line": 83,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\settings-palettes.spec.ts:123:9"
+      ]
+    },
+    {
+      "file": "settings-palettes.spec.ts",
+      "title": "配色跟随系统、窄窗口、双环输入焦点和减少动态效果保持可操作",
+      "line": 261,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.page-navigation')\nExpected: \u001b[32m\"row\"\u001b[39m\nReceived: \u001b[31m\"column\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('.page-navigation') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.page-navigation')\u001b[22m\n\u001b[2m    23 × locator resolved to <nav aria-label=\"主要页面\" class=\"page-navigation\">…</nav>\u001b[22m\n\u001b[2m       - unexpected value \"column\"\u001b[22m\n\n\n  275 |       BrowserWindow.getAllWindows()[0]?.setSize(900, 620),\n  276 |     )\n> 277 |     await expect(page.locator('.page-navigation')).toHaveCSS('flex-direction', 'row')\n      |                                                    ^\n  278 |     const geometry = await page.evaluate(() => {\n  279 |       const browser = globalThis as unknown as {\n  280 |         document: { documentElement: { scrollWidth: number; clientWidth: number } }\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\settings-palettes.spec.ts:277:52"
+      ]
+    },
+    {
+      "file": "settings-window.spec.ts",
+      "title": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "line": 84,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('navigation', { name: '主要页面' })\nExpected: not visible\nReceived: visible\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeVisible\" getByRole('navigation', { name: '主要页面' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '主要页面' })\u001b[22m\n\u001b[2m    24 × locator resolved to <nav aria-label=\"主要页面\" class=\"page-navigation\">…</nav>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n  136 |       await expect(input).toHaveCSS('font-size', `${size}px`)\n  137 |       expect(await page.locator('body').ariaSnapshot()).not.toContain('HISTORY-ANSWER')\n> 138 |       await expect(page.getByRole('navigation', { name: '主要页面' })).not.toBeVisible()\n      |                                                                        ^\n  139 |       await input.scrollIntoViewIfNeeded()\n  140 |       await captureHistory(application, page, info, `practice-${theme}-${size}.png`)\n  141 |       await page.getByRole('button', { name: /^(?:保存并返回|返回首页)$/ }).click()\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\settings-window.spec.ts:138:72"
+      ]
+    },
+    {
+      "file": "themes-layout.spec.ts",
+      "title": "松间绿：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+      "line": 34,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-layout.spec.ts:88:11"
+      ]
+    },
+    {
+      "file": "themes-layout.spec.ts",
+      "title": "晴空蓝：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+      "line": 34,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-layout.spec.ts:88:11"
+      ]
+    },
+    {
+      "file": "themes-layout.spec.ts",
+      "title": "暖沙金：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+      "line": 34,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-layout.spec.ts:88:11"
+      ]
+    },
+    {
+      "file": "themes-layout.spec.ts",
+      "title": "暮山紫：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+      "line": 34,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-layout.spec.ts:88:11"
+      ]
+    },
+    {
+      "file": "themes-layout.spec.ts",
+      "title": "Claude 风格：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+      "line": 34,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-layout.spec.ts:88:11"
+      ]
+    },
+    {
+      "file": "themes-layout.spec.ts",
+      "title": "纸页墨色：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+      "line": 34,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-layout.spec.ts:88:11"
+      ]
+    },
+    {
+      "file": "themes-layout.spec.ts",
+      "title": "电路夜航：六页/明暗及跟随系统/15与22px/900与1440窗口/离线无远程资源",
+      "line": 34,
+      "errors": [
+        "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+        "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '专题', exact: true })\u001b[22m\n\n\n   at history-helpers.ts:136\n\n  134 | export async function selectHistoryQuestion(page: Page, questionId = 'q-1') {\n  135 |   await openPage(page, '题库')\n> 136 |   await page.getByRole('combobox', { name: '专题', exact: true }).selectOption('history-a')\n      |                                                                 ^\n  137 |   await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()\n  138 |   await page\n  139 |     .getByRole('complementary', { name: '题目列表' })\n    at selectHistoryQuestion (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:136:65)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-layout.spec.ts:88:11"
+      ]
+    }
+  ]
+}

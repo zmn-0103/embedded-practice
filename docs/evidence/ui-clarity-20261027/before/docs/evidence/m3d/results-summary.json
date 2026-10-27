@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-21",
+  "unit": {
+    "files": 23,
+    "total": 474,
+    "passed": 474,
+    "failed": 0,
+    "skipped": 0
+  },
+  "finalStats": {
+    "startTime": "2026-10-21T09:58:27.759Z",
+    "duration": 307749.308,
+    "expected": 162,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "focused": {
+    "records": {
+      "startTime": "2026-10-21T09:55:44.604Z",
+      "duration": 6301.999,
+      "expected": 4,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "errors": {
+      "startTime": "2026-10-21T09:57:22.724Z",
+      "duration": 3372.853,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "projects": {
+    "development": {
+      "total": 81,
+      "passed": 81,
+      "retainedPrevious": 75,
+      "added": 6,
+      "missing": [],
+      "newScenarios": [
+        {
+          "file": "learning-records-errors.spec.ts",
+          "title": "学习总览晚到的旧专题响应不覆盖新专题或归档范围"
+        },
+        {
+          "file": "learning-records-errors.spec.ts",
+          "title": "学习记录真实读取失败不伪造零，修复后重试保留原数据"
+        },
+        {
+          "file": "learning-records.spec.ts",
+          "title": "切页保留待确认预览，记录页关闭仍保存并可继续原轮"
+        },
+        {
+          "file": "learning-records.spec.ts",
+          "title": "学习总览真实多轮去重、未评价、当前版本、旧状态和归档恢复"
+        },
+        {
+          "file": "learning-records.spec.ts",
+          "title": "学习总览空库、未知专题、严格输入与只读零结果"
+        },
+        {
+          "file": "learning-records.spec.ts",
+          "title": "学习记录页专题范围、收藏刷新、主动历史与明暗布局"
+        }
+      ]
+    },
+    "packaged": {
+      "total": 81,
+      "passed": 81,
+      "retainedPrevious": 75,
+      "added": 6,
+      "missing": [],
+      "newScenarios": [
+        {
+          "file": "learning-records-errors.spec.ts",
+          "title": "学习总览晚到的旧专题响应不覆盖新专题或归档范围"
+        },
+        {
+          "file": "learning-records-errors.spec.ts",
+          "title": "学习记录真实读取失败不伪造零，修复后重试保留原数据"
+        },
+        {
+          "file": "learning-records.spec.ts",
+          "title": "切页保留待确认预览，记录页关闭仍保存并可继续原轮"
+        },
+        {
+          "file": "learning-records.spec.ts",
+          "title": "学习总览真实多轮去重、未评价、当前版本、旧状态和归档恢复"
+        },
+        {
+          "file": "learning-records.spec.ts",
+          "title": "学习总览空库、未知专题、严格输入与只读零结果"
+        },
+        {
+          "file": "learning-records.spec.ts",
+          "title": "学习记录页专题范围、收藏刷新、主动历史与明暗布局"
+        }
+      ]
+    }
+  },
+  "attachments": [
+    {
+      "path": "docs/evidence/m3d/development-learning-read-failure.json",
+      "sha256": "0c8bd405ae246d5c36337e44f4b59b852b38bd76d76ed130f4a3bd7dedacc17b"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-late-response.json",
+      "sha256": "a5f08f7771d3b19541fdda1d189cb45de3b8ab4ad4f5e4bf8ef528be1e224aaf"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-read-failure.json",
+      "sha256": "318b56e42720330b7a9bc247d55323937fdd303925d5b784592542c09308792b"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-late-response.json",
+      "sha256": "a5f08f7771d3b19541fdda1d189cb45de3b8ab4ad4f5e4bf8ef528be1e224aaf"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-empty.json",
+      "sha256": "7484228adb1e6965729cffc4464ee8ab0639eec6a2689ed3e21c48a24c687157"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-version-counts.json",
+      "sha256": "154d4befe2e065a9a5b36f7b09b36fbdfd45c8cccdb6c2973293b8599689f79b"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-light.png",
+      "sha256": "0c12823127b22528e98b36711c1922b85a38dcbedaf555c0f08f8dee7c4a1b61"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-dark.png",
+      "sha256": "c4fcd50b30ad24bc38c48bd9e06d116aa7c34c26aa6dfe95b691d60c1be2e450"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-window-counts.json",
+      "sha256": "0a55751b9d5dd53b447c4808789f5c1b0a38e1f62a10b1388867a7c7753c54cc"
+    },
+    {
+      "path": "docs/evidence/m3d/development-learning-page-reopen.json",
+      "sha256": "cc9ee61df5bddb49c63f1b37c645ebc5cedda9e03a8a7825718dcd18321b5653"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-empty.json",
+      "sha256": "7484228adb1e6965729cffc4464ee8ab0639eec6a2689ed3e21c48a24c687157"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-version-counts.json",
+      "sha256": "fda5c59132e4e16d659fc47ab7a6e03a7bcca182c95bc28c092957436eaa3993"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-light.png",
+      "sha256": "4a610abe4450fc7e47481023f14e93200da77fbc353009f60baab5e3002498ab"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-dark.png",
+      "sha256": "eefb9ddc256f796bdb2bded35ef60266a1b9a02346ada54473321ff7b263bc00"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-window-counts.json",
+      "sha256": "0a55751b9d5dd53b447c4808789f5c1b0a38e1f62a10b1388867a7c7753c54cc"
+    },
+    {
+      "path": "docs/evidence/m3d/packaged-learning-page-reopen.json",
+      "sha256": "939a6a753ab826f059c50e5ea90c0578aa6b2557b63d174be5deeee3f7d51bef"
+    }
+  ],
+  "scope": {
+    "productionFiles": 10,
+    "testFiles": 6,
+    "schemaVersion": 4,
+    "newNSIS": false,
+    "newDependency": false,
+    "newMigration": false
+  },
+  "unresolved": [
+    "主题/字号、四个主入口完整分离、完整恢复及 M4/M5 未完成。",
+    "历史单次键盘偏移和前批额外字符未确认原因，本批通过不代表已解决。",
+    "完整 Windows 人工体验、系统 DPI、正式题库审阅、新 NSIS/安装升级及性能未验收。"
+  ]
+}

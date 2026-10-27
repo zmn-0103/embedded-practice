@@ -1,0 +1,41 @@
+{
+  "checksPassed": true,
+  "baselineFiles": 240,
+  "baselineCopiesIntact": true,
+  "modifiedExistingFiles": [
+    "AGENTS.md",
+    "README.md",
+    "docs/M5题目审阅与试用反馈.md",
+    "docs/README.md",
+    "docs/产品说明.md",
+    "docs/代码复查记录.md",
+    "docs/当前试用版本交付说明.md",
+    "docs/验收记录.md",
+    "question-banks/README.md",
+    "question-banks/trials/README.md",
+    "question-banks/trials/STM32F103-UART第二层-30题试用.md"
+  ],
+  "newContentCodeAndDocs": [
+    "question-banks/trials/UART题目整理清单.json",
+    "scripts/check-uart-metadata.mjs",
+    "docs/题库分类与标签规范.md",
+    "docs/UART30题来源与技术核对.md",
+    "docs/UART题库整理行为与验收.md"
+  ],
+  "unchangedSourceAndTestFiles": 167,
+  "planDependenciesConfigAndOtherBanksUnchanged": true,
+  "originalSourceAndLocalSplUnchanged": true,
+  "userFeedbackSectionUnchanged": true,
+  "userReviewPending": 30,
+  "aiReviewCounts": {
+    "依据相符": 23,
+    "需补条件": 5,
+    "部分核对": 1,
+    "需修订步骤": 1
+  },
+  "currentPackagedFilesUnchanged": 122,
+  "previousSealedEvidenceFilesIntact": 571,
+  "validatedExistingLocalLinks": 618,
+  "strictUtf8": true,
+  "desktopReport": true
+}

@@ -1,0 +1,9 @@
+{
+  "phase": "初次样题静态扫描",
+  "result": "failed",
+  "file": "question-banks/general/GPIO通用基础.md",
+  "cause": "扫描规则 PA\\d 未限制词边界，把官方依据文档 SCPA070 内的 PA070 当作芯片引脚名。",
+  "observedError": "AssertionError [ERR_ASSERTION]: question-banks/general/GPIO通用基础.md",
+  "correction": "对 PA/PB/PC 引脚形式增加词边界和长度范围，继续检查全部题干、答案、标题、标签及来源文本；保留厂商文档编号。",
+  "boundary": "这是检查工具误报，未修改题目掩盖结果，未启动程序。"
+}

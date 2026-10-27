@@ -1,0 +1,1186 @@
+[
+  {
+    "path": "src\\shared\\themes.ts",
+    "sha256": "90D30C0492269EA648AA9313C1787679FCE61EB94EB015AB18A7A9CFED60611C"
+  },
+  {
+    "path": "src\\shared\\contracts\\themes.ts",
+    "sha256": "F3EC27223ADFD487A55E309EDF6A370769FC42FFC7D774FF071BF869FE67AC92"
+  },
+  {
+    "path": "src\\shared\\contracts\\settings.ts",
+    "sha256": "2AE6D813D14B1BFCCCCB254F1FF7B1F2D9890B6A285D6418FAA9D8F38C59BF57"
+  },
+  {
+    "path": "src\\shared\\contracts\\question-filters.ts",
+    "sha256": "550F3F72F1A18FA94EDAE4870F4F4FDEB365E6FF4877964090B377119FEAC9A5"
+  },
+  {
+    "path": "src\\shared\\contracts\\question-bank.ts",
+    "sha256": "F645E655080C21954664937F52C1D025C4F75662786B52B29E4FDAB2792D892F"
+  },
+  {
+    "path": "src\\shared\\contracts\\practice.ts",
+    "sha256": "CBF99E26184DC400D73BF5042D8700E578AB8D22725414E822380B53BB6AB038"
+  },
+  {
+    "path": "src\\shared\\contracts\\practice-plans.ts",
+    "sha256": "B9644DDDB5899712B858D1B84EDFE136EEBB7E967C9434FE62F334087B4BB8E9"
+  },
+  {
+    "path": "src\\shared\\contracts\\practice-desktop.ts",
+    "sha256": "F5821E1D584D5FFA03255B78D140925162EAB660AEEBB40BCD20A73F667F5F20"
+  },
+  {
+    "path": "src\\shared\\contracts\\library-import.ts",
+    "sha256": "8EAC3A2DE1784A8340BAF2A187338E7CF95AC212712B70E35895E1768246478F"
+  },
+  {
+    "path": "src\\shared\\contracts\\library-desktop.ts",
+    "sha256": "6EDD5E292FCB1FC73B7B6AA75BB36D90FFF2709FA6ED09AADE9F328D2BFCD421"
+  },
+  {
+    "path": "src\\shared\\contracts\\learning.ts",
+    "sha256": "3A6C44F82F15082638A13421462D6EE8B4AEAD667643C6B63AEA52B5CD39F393"
+  },
+  {
+    "path": "src\\shared\\contracts\\import-snapshot.ts",
+    "sha256": "76749CA4EEDEEE57F22F7EA6E53A5D4E774BCFC32B01362A72D5815A995182AF"
+  },
+  {
+    "path": "src\\shared\\contracts\\image-path.ts",
+    "sha256": "5D45F4DF2479DEA4596ED992EAB8821E76B3EE45F6182EC8B6B68A6AC8E3CE41"
+  },
+  {
+    "path": "src\\shared\\contracts\\history.ts",
+    "sha256": "C23E91C991975BFEF3A83AD7F9FC6E6F33EB787D6A3665BBE59DF06946FB2CE3"
+  },
+  {
+    "path": "src\\shared\\contracts\\data-locations.ts",
+    "sha256": "DA7852F412FCA27F62FD164C40D731E21529B6804476D4663A58649E6C5FC3DE"
+  },
+  {
+    "path": "src\\shared\\contracts\\content-urls.ts",
+    "sha256": "EE1B9A05F308CFC81F4CEE1070BA590BF69E2EC8D98CD4D0B97CE7047C09D9F2"
+  },
+  {
+    "path": "src\\shared\\contracts\\categories.ts",
+    "sha256": "889AD87F529A188E0F2F51A4BD3A0ABA7F77EF0025C6C531592E600930E49539"
+  },
+  {
+    "path": "src\\shared\\contracts\\backup.ts",
+    "sha256": "C6F8B280BF09F04FB8A8657523913E64EB9C76E4D3EC7C521DA817CC7DA61909"
+  },
+  {
+    "path": "src\\shared\\contracts\\application.ts",
+    "sha256": "F32E2E0D1EE6766F595FB21ABF8437B1AD3F1FCDED2A1254F981E93D84BBE783"
+  },
+  {
+    "path": "tests\\unit\\workbench-contract.test.ts",
+    "sha256": "68EE8EE1C5B3FFED466D7C1122E0C0E34B848113B0BF2D1186F9A3EF10DB4F58"
+  },
+  {
+    "path": "src\\renderer\\src\\usePracticePlans.ts",
+    "sha256": "ED6F820DF4DF620BEA3828B61AB373C5C9438705A145377CA7DE8C2711DB0E35"
+  },
+  {
+    "path": "src\\renderer\\src\\useAppearance.ts",
+    "sha256": "A7F108388253D98CE2C56EB5AF5D705DF5507D143529CD2A900E00C62EBD07AD"
+  },
+  {
+    "path": "tests\\unit\\themes-contract.test.ts",
+    "sha256": "65E95FBD87E513A6F3C8ACB6F53D7F8F4D8D7D3FA69A5E7B102758EA0DF64BD7"
+  },
+  {
+    "path": "tests\\unit\\settings-contract.test.ts",
+    "sha256": "C1BF39E804B2AF1CCA1E720C8F6CA76473E0024D0191C155F9E7E1D236F99714"
+  },
+  {
+    "path": "tests\\unit\\restore-transaction.test.ts",
+    "sha256": "6592140FB4BD5B4713ACCC113E43F14C218B4137FF02E9E64F2138752D522011"
+  },
+  {
+    "path": "tests\\unit\\read-image.test.ts",
+    "sha256": "CECA40543929E3647D0184E970D42F4BFE076662711F2DA473D528B69EA29EBE"
+  },
+  {
+    "path": "tests\\unit\\read-file-snapshot.test.ts",
+    "sha256": "89880B248F89B5EEF6F71E4AB7DD4E9260F4434386A97A95D51C009069724CF1"
+  },
+  {
+    "path": "tests\\unit\\question-filters.test.ts",
+    "sha256": "93EA203953D28AACF4F948DCBA82B680715898ACB7BCAADEA06E52370A1263E1"
+  },
+  {
+    "path": "tests\\unit\\prepare-import.test.ts",
+    "sha256": "92B0274EFCBCC30639A0293CD3BFCF8C0B2BB8ADED26C3FF2C4E9FB100E41CB3"
+  },
+  {
+    "path": "tests\\unit\\practice-plans-contract.test.ts",
+    "sha256": "10D1583FA3538FE720194F4AA6679E1874F376D7C6D212D7AF7D6472EBEE2C32"
+  },
+  {
+    "path": "tests\\unit\\practice-ipc.test.ts",
+    "sha256": "77CDB6580A30EED09A057202080163CFD5FA01F6BF5BA2583CB9E74DAB358648"
+  },
+  {
+    "path": "tests\\unit\\practice-controller.test.ts",
+    "sha256": "B915B67F88034AB676C6E79B19886215091FE84D6064C119A9175166F70EE1E1"
+  },
+  {
+    "path": "tests\\unit\\practice-contract.test.ts",
+    "sha256": "34E248798441535334A3082A8CC2233E669AD4FE5D1C0440C3E9363AA6CFDB2A"
+  },
+  {
+    "path": "tests\\unit\\personal-bank.test.ts",
+    "sha256": "33C79BA9FAF383E366D564806559B3FEE34E3F17B185DD5700123148660B4917"
+  },
+  {
+    "path": "tests\\unit\\markdown-structure.test.ts",
+    "sha256": "A6FEC1BCBED64B2B34A411C2BBFC7A773FC2E9D8C7EFCB9FC2B679435212CF99"
+  },
+  {
+    "path": "tests\\unit\\markdown-metadata.test.ts",
+    "sha256": "F4E635C0903044B10C63F24580E3F395B64F72EB157C23D1EA0DA98D3007889F"
+  },
+  {
+    "path": "tests\\unit\\markdown-images.test.ts",
+    "sha256": "57606880E9B0D960A3AEC92EC8D7B4C08A9365CD74A07D3527F5887BC4506F9E"
+  },
+  {
+    "path": "tests\\unit\\library-ipc.test.ts",
+    "sha256": "C13C748E0A03B0FF4032049A55DB02CBF0FB6074CB0B46AE2AF89F472C6138FE"
+  },
+  {
+    "path": "tests\\unit\\learning-contract.test.ts",
+    "sha256": "9C43DDB106C8A08A184E7960E002EF1B9D7FA415C5F2697C8B56D4F8C4917ACE"
+  },
+  {
+    "path": "tests\\unit\\import-task-runner.test.ts",
+    "sha256": "022C513BDB4FE4FBB7D4C2EFB9AB0D15BA9639459D98E7FCA82A641B10B18581"
+  },
+  {
+    "path": "tests\\unit\\import-task-failures.test.ts",
+    "sha256": "47522A5DFE69C18C5257F3252859C05798C9E7B8344E68587E0D81B3E54D93F7"
+  },
+  {
+    "path": "tests\\unit\\import-session.test.ts",
+    "sha256": "56F72E94FEC0D105E5C5F7D2CD68862DB25443A746FD0AC8CADCC4FE578921E7"
+  },
+  {
+    "path": "tests\\unit\\import-protocol.test.ts",
+    "sha256": "F817DCF5B46C942205803B6DAB7FF67011E046FEB62F9BF92CBF55EC6EDA136E"
+  },
+  {
+    "path": "tests\\unit\\import-limits.test.ts",
+    "sha256": "56E27AFB4D6FA5FAB09CC2B7B4B47413B479417572977A6C4AE65397A9C500DD"
+  },
+  {
+    "path": "tests\\unit\\import-comparison.test.ts",
+    "sha256": "F44463CB589AE51FF53E45CDF5CBDB98B6B7D24AD67FB9DE8C8A6453C4EE1924"
+  },
+  {
+    "path": "docs\\验收记录.md",
+    "sha256": "0397AC546EEB415043852D8A7F4C0C044B8524CF01209C3F8451C8245A164DEF"
+  },
+  {
+    "path": "tests\\unit\\import-budget.test.ts",
+    "sha256": "2370AF7032412B46EAEC315F6584E133913BF38FB85344189C2E68642F1E5698"
+  },
+  {
+    "path": "tests\\unit\\history-contract.test.ts",
+    "sha256": "3721748A2BB691D978DE9F375A2AE2C3F7F9774F234F9C70399575DF13BFA35F"
+  },
+  {
+    "path": "tests\\unit\\gpio-question-bank.test.ts",
+    "sha256": "01A2C6F58FEC798F2E5702145A42791C50626E934FAAC1B2C3AFF853F92FAD4C"
+  },
+  {
+    "path": "docs\\题库板块规划与展示设计.md",
+    "sha256": "8824C5E3E8A8F4C369612C48B9E79080E3E711521BB96E84E75F88CCC2D52404"
+  },
+  {
+    "path": "tests\\unit\\desktop-contract.test.ts",
+    "sha256": "E0003AAA95ADD44562C51A14D2BEAE648B9E80CA1C1EEE7991558EABD35D30DF"
+  },
+  {
+    "path": "docs\\题库分类与标签规范.md",
+    "sha256": "EFBBAC95CDB308A913633FEC703765D632C8F26624D5494C85803914012CF937"
+  },
+  {
+    "path": "tests\\unit\\data-locations-ipc.test.ts",
+    "sha256": "FEAFBD60B1ACFCECD94D534BE08E483F80C3F656B1F8F2A87337F1D45488EFF6"
+  },
+  {
+    "path": "docs\\题库与导入契约.md",
+    "sha256": "50F8C6EE386C4B7ED0E6B36FEB488CBA52FB31B513A154C3FE8E884B56E0036D"
+  },
+  {
+    "path": "docs\\项目模块职责.md",
+    "sha256": "7BF6D2B365A36BD82361D90CF43BEC7265561FDAFBC6BCE548FDEDAB2D9CDBDA"
+  },
+  {
+    "path": "tests\\unit\\data-locations-contract.test.ts",
+    "sha256": "F6E5F391B1ED6BE60ABF6956453E0E7E17B53188849790182D6152DC4B57D471"
+  },
+  {
+    "path": "docs\\项目概况.md",
+    "sha256": "CD74FBF449B22A8CC2A7802F8AA677097E289396BCCEE779B6E7511AC6DC697B"
+  },
+  {
+    "path": "docs\\通用基础样题与试用.md",
+    "sha256": "35BC2A0D45DB3D1749CF0D06CBC59A0A0B1550F155117422F6650B28D0C1DCCB"
+  },
+  {
+    "path": "tests\\unit\\category-contract.test.ts",
+    "sha256": "C77D96663103602E3AFEADB8DF204AE8111A65F286D92B647BD4AD32160AF996"
+  },
+  {
+    "path": "docs\\结构9定向试用与UART修订.md",
+    "sha256": "D747820271DC090435DDAE5256059B9B0FC681EBA4E6BC0CB08867E09DD53A4A"
+  },
+  {
+    "path": "tests\\unit\\board-catalog.test.ts",
+    "sha256": "8141F199C7EB5C87832DDC99340D6104DEB0198BDA801A108ABA08CD043FD3A9"
+  },
+  {
+    "path": "docs\\练习方案行为与验收.md",
+    "sha256": "9FBC2F4A18704BF8E23A9DAFF11AB6BE94E8844B1714FB95D1C510443D36D2D5"
+  },
+  {
+    "path": "docs\\练习保存与统计契约.md",
+    "sha256": "90738283CA0E6AA9C7C8041DC2EAAA5156870BF385F83C7D10D2DC9CEB0D58C9"
+  },
+  {
+    "path": "docs\\板块入口行为与验收.md",
+    "sha256": "5FAD0561BD45BDE85A1A5166B0E0555616D2AD91C09DF7738E09614BA785219D"
+  },
+  {
+    "path": "docs\\数据保护与桌面边界.md",
+    "sha256": "0D34D3F633CC009E4930A365C89F34A115E8F6F1E38881BA3D7186BB07D469AB"
+  },
+  {
+    "path": "docs\\找题体验第一批行为与验收.md",
+    "sha256": "A26D4BD4F897E0727D244C07B542ECA8F6E577E39810ADED0C2F413A589B7617"
+  },
+  {
+    "path": "tests\\unit\\backup-ipc.test.ts",
+    "sha256": "C3B5DF08083BF8C3BF907B21BDCD6454D4CC09013F7BDF5A431318CD555FBA32"
+  },
+  {
+    "path": "docs\\当前试用版本交付说明.md",
+    "sha256": "6416891227AF078BD7190F69015C4E6DF60DCB7FFB23DE3C12E74126919BF8BB"
+  },
+  {
+    "path": "docs\\开发说明.md",
+    "sha256": "0EAB3F47429E4FE86BFF2199456FA24D228B618D59E8A9CAA3EB155B03EEED1F"
+  },
+  {
+    "path": "docs\\开发记录.md",
+    "sha256": "A7E90EE311D95FB280A2102938A90E918609884A9B03B06FEDF5F5B0EE36EE8A"
+  },
+  {
+    "path": "docs\\多主题系统行为与格式.md",
+    "sha256": "D6980057721BC3F80BBF1611E84105866436D41FBE42E60B726CA19F394B2B39"
+  },
+  {
+    "path": "docs\\多主题系统开发计划.md",
+    "sha256": "3766008A8F5D700F4BB9A997514E0AF5BE374F54716B545951F1D09649C5B05F"
+  },
+  {
+    "path": "docs\\分类树行为与验收.md",
+    "sha256": "824B6124CEEB21A21E94C40C9DE3584FC549A1A2A71B35682A1DB70B605C45F0"
+  },
+  {
+    "path": "docs\\使用说明.md",
+    "sha256": "C4E22E76E553AB8C4CE0FF114DC1E67EB8DF05051EFCC5C6C5CC4E6E458C776A"
+  },
+  {
+    "path": "docs\\代码复查记录.md",
+    "sha256": "B4D23255BF6A1E8B44E5C8983C585B902525030CCAFF1DB05E163ADC0CE64B25"
+  },
+  {
+    "path": "docs\\产品说明.md",
+    "sha256": "054F0210EC88516C27C6106324CB96F59A0A07374082D1EFC26E5E5FBA4398A4"
+  },
+  {
+    "path": "tests\\unit\\backup-contract.test.ts",
+    "sha256": "AAEE10330F62BBFFCC9BB5A29BF9855E9828445496D1DC511F1E690733ADE1AF"
+  },
+  {
+    "path": "docs\\V0.0.1发布说明.md",
+    "sha256": "153433996D66DF3F0392EAD6C6B1E521F46104F3EC9759DD134F0B02DA141F66"
+  },
+  {
+    "path": "tests\\unit\\application.test.ts",
+    "sha256": "2083F4BD62EB3826453FE6B10063B9EC8C29A253B7D6B3304A8E4C62E523FD29"
+  },
+  {
+    "path": "docs\\V0.0.0题库整理与验收.md",
+    "sha256": "A06F4240DC9AE5C86C9D5F54EDCFF601FBBA2C4C238144E615471247C3F62537"
+  },
+  {
+    "path": "docs\\V0.0.0项目整理清单.md",
+    "sha256": "0D29A8FFA8536DFB7684926391336A18C08174D5E554BB5B704E297929D0B45B"
+  },
+  {
+    "path": "docs\\V0.0.0使用与反馈.md",
+    "sha256": "96AFCE68C38060F2071BEC71B5E3CA98B86D4FB4ACBFF8CED48FF828A5EE020E"
+  },
+  {
+    "path": "docs\\V0.0.0个人测试版开发计划.md",
+    "sha256": "8AC220223D254F2C20C9D9B15449B617F6139FD1F8BFD188C480ED0792B333A5"
+  },
+  {
+    "path": "docs\\UI美化与主题说明.md",
+    "sha256": "5D7865F3CE4C127CF7941D823208B8743D518EF81F43E2A88DD1401633EDD3EE"
+  },
+  {
+    "path": "docs\\UI学习工作台行为与验收.md",
+    "sha256": "FA10B132C957F5B611DA8522DE72895278D4B2DB7A1C5786DADDD0CC6ADF0307"
+  },
+  {
+    "path": "docs\\UI学习工作台开发计划.md",
+    "sha256": "36C657CB13137D0362D262A5E25DF8D5D9FDA81BC032BAA3095152E412E18DF0"
+  },
+  {
+    "path": "docs\\UART题库整理行为与验收.md",
+    "sha256": "6DED05833ACFB3C31934D0BE9F64C7A06A99CE3A4CC44ADE2043F0A93DDA4C49"
+  },
+  {
+    "path": "docs\\UART30题来源与技术核对.md",
+    "sha256": "B89D3D87AAFF105F390D18DBC9B213B8B723077C266C280EA3EFDFC8E91CBCF0"
+  },
+  {
+    "path": "docs\\README.md",
+    "sha256": "7C20D3952D814ABA38B058B165CDF5E81956DEB0F899679AC42963367576AFFB"
+  },
+  {
+    "path": "docs\\MarkdownV1题库格式.md",
+    "sha256": "4B56E403D95B4931466E97F7868A179AFADE7726E504A0E7F7985239BBC7F77B"
+  },
+  {
+    "path": "docs\\M5题目审阅与试用反馈.md",
+    "sha256": "E249E499CC896F6CB4277FCCC96D9DCF8DD46F64C161BB349CB7A0D9E98A6475"
+  },
+  {
+    "path": "docs\\M5第四批行为与验收.md",
+    "sha256": "854DFDAFBE2C8E355366EE5BF1DAA53E7DD717A9069B96989190D1FFC1CECC59"
+  },
+  {
+    "path": "docs\\M5第二批行为与验收.md",
+    "sha256": "948785E94551E57F20A5E07343014614480DBF8F4FCFFA495DEFC00FF7FDF061"
+  },
+  {
+    "path": "docs\\M5第一批行为与验收.md",
+    "sha256": "B954B739B4D9EEC3BCA449BDB0B81C77C2306753DBAC5706F36363FA073BCC63"
+  },
+  {
+    "path": "docs\\M4第二批行为与验收.md",
+    "sha256": "5DDFEB0B99DF5E0F1502D6CFABA0CA53473A750B491BCDE76B7F972592BEFAB3"
+  },
+  {
+    "path": "docs\\M4第三批行为与验收.md",
+    "sha256": "E2E565A20C4C0F498F5AA1F4230FCCE0D9FB00D8E049F82F58921FF13C0F6EDD"
+  },
+  {
+    "path": "docs\\M4第一批行为与验收.md",
+    "sha256": "59B3693501F5E42FF6D1B06C8CA109F9E2E15B755FBC3D7A08BF510A8D60D328"
+  },
+  {
+    "path": "docs\\M3第四批行为与验收.md",
+    "sha256": "9140807FC66106C9F9A52251517D33E5C1736E41E6486AFA834552DA2E35C39B"
+  },
+  {
+    "path": "docs\\M3第五批行为与验收.md",
+    "sha256": "6E8E3D855405D78BF3DDC30237C3BA8C55CA55E790FD4BE669DFF2EF3927B6C6"
+  },
+  {
+    "path": "docs\\M3第二批行为与验收.md",
+    "sha256": "FE6F5DE3DEBD0B83E4A30E62C42C5B3B19E5806E61AFC17A25886268A2F45398"
+  },
+  {
+    "path": "docs\\M3第三批行为与验收.md",
+    "sha256": "B40F22BC4B2125E4DD82D1455172C832E9094965DB33E15D165FECFF7516E776"
+  },
+  {
+    "path": "docs\\M3第一批行为与验收.md",
+    "sha256": "B6B2CBDC429FA857D80E0465F08FB9689FC0055F393C843DA23979CA102BB88C"
+  },
+  {
+    "path": "docs\\M3会话筛选快照修复.md",
+    "sha256": "4C0665DD94FC15F5612B4315ABFD57F3E776A7CCC60D7FA0F141FE97D817DEF7"
+  },
+  {
+    "path": "docs\\M2第四批行为与验收.md",
+    "sha256": "DDC4B92229ED1405CB38DD675F06A492B53F890C25404F4805EFA43502842CC3"
+  },
+  {
+    "path": "docs\\M2第二批行为与验收.md",
+    "sha256": "F4C7151DE09BF667803F80281AE6D30F2DBDA9BD4C9651EC1B1773C6A59C0D1F"
+  },
+  {
+    "path": "docs\\M2第三批行为与验收.md",
+    "sha256": "C9098785E31341251917CE5BF817750B059BE8724F11695744690D2E5565BE1A"
+  },
+  {
+    "path": "docs\\M2第一批行为与验收.md",
+    "sha256": "04A5462AE4F7524CFAA88790CC46D0638E941A00397C78031D0F0A00991A00E6"
+  },
+  {
+    "path": "docs\\M2人工验收清单.md",
+    "sha256": "A7F0487713514D171821E2BD9C53C835A397798EC99205A76038AA9CF127B2BF"
+  },
+  {
+    "path": "docs\\M1第四批行为与验收.md",
+    "sha256": "5045C982B111A06FA997EA2907C41689598BB1B9E82A3B0E4123F54A8168ADE6"
+  },
+  {
+    "path": "docs\\M1第五批行为与验收.md",
+    "sha256": "22E72978AA74162284F9FFCC53C6D4695FD3E6AEA06A0D4C6723A796AB024BAA"
+  },
+  {
+    "path": "docs\\M1第二批行为与验收.md",
+    "sha256": "8637E857C1D497BC83E5DEBFBD6CC9E0DC83A16DFBA21E5EC6F9303F4E85586E"
+  },
+  {
+    "path": "docs\\M1第三批行为与验收.md",
+    "sha256": "0D1A323808A1E46D25065C4B4C798A3F2D8DE4E0717B43A0C4973DFC74EF62DC"
+  },
+  {
+    "path": "docs\\M1第一批行为与验收.md",
+    "sha256": "91BFB76E08A641C339744475CE9BBCFE7E55C40FA333D3774EA7FEA0B605089D"
+  },
+  {
+    "path": "src\\renderer\\src\\styles\\workbench-shell.css",
+    "sha256": "29BB22FA9DE0E672CCCEC9BB84FCD02A17CE76F9B3208AAE8DC71008BC833ADF"
+  },
+  {
+    "path": "src\\renderer\\src\\styles\\workbench-pages.css",
+    "sha256": "F2CC5243E8FC5DF572CF4FB6AFA267F7ACBC794AD88ACDFCAE62BCC26714AEE0"
+  },
+  {
+    "path": "src\\renderer\\src\\styles\\themes.css",
+    "sha256": "5B7C32A7EC966C8A66BC2039518B970ADB90321459739A42030CB6C43DFB4BEA"
+  },
+  {
+    "path": "src\\renderer\\src\\styles\\global.css",
+    "sha256": "58A1E141AE49E465954642F4031184078F7CC6004EC4E24C603260A42286B728"
+  },
+  {
+    "path": "src\\renderer\\src\\practice-controller.ts",
+    "sha256": "21E48B13EFA17879BC0F686996AB842DA789BFBD9DAD0A79DA2C4F308E83C98F"
+  },
+  {
+    "path": "tests\\integration\\theme-exercise.ts",
+    "sha256": "FD8C9BC550E9BA17F6926D5A90E88C8B2B9EB4EE7389652BF8E7E51E6E4780E4"
+  },
+  {
+    "path": "tests\\integration\\random-practice-exercise.ts",
+    "sha256": "18DECCBBC05AB78CEA1AE675EF60A5F321FE6F65C9529D010AF5F22F27EA1F9D"
+  },
+  {
+    "path": "tests\\integration\\practice-exercise.ts",
+    "sha256": "C177E241295219137C65245E598A1E61B8FC317E86EAC717D891C8BC5797EDC9"
+  },
+  {
+    "path": "tests\\integration\\library-import-exercise.ts",
+    "sha256": "6FC5B44F0DCD84C9756DBAD047901C3940D72BB88F18DF89EBF96A6CAB8B6028"
+  },
+  {
+    "path": "tests\\integration\\history-seed.ts",
+    "sha256": "40165251A85D0051BE02950BAA36088040A64162D538A1DE881BBDE4C6BE0D90"
+  },
+  {
+    "path": "src\\renderer\\src\\markdown-source.ts",
+    "sha256": "632379573347263A5CD22407401A4CA711C7FA219E01330B6D92A74F6F905ED5"
+  },
+  {
+    "path": "src\\renderer\\src\\main.tsx",
+    "sha256": "B00E1D018A13A7963F919DAFD22F6B519EDCE2BA70210D3A4566C5B7EFFB7603"
+  },
+  {
+    "path": "src\\renderer\\src\\env.d.ts",
+    "sha256": "F9C102558631B913449D3BF4A860980BA8C1BEC9DAD975F60B77BFBB042F0BFA"
+  },
+  {
+    "path": "tests\\helpers\\import-directory.ts",
+    "sha256": "FBB8A167B270117AC6B7AD89C4659A234D30EBFE5F020D606A963836F33CA8B3"
+  },
+  {
+    "path": "tests\\helpers\\fake-import-worker.ts",
+    "sha256": "D7DE3D70678262DFCF9E425E914759A60161A26DFCE7E4F85E76D3AE7645BD58"
+  },
+  {
+    "path": "tests\\fixtures\\schema-v9.sql",
+    "sha256": "1C9A8173BF0E29BFC090BEB19C48C69B1923FBB8F5F68B551C6D380C3E43B5EF"
+  },
+  {
+    "path": "tests\\fixtures\\schema-v8.sql",
+    "sha256": "E63CCBB03C6B1A0BD7C9570670F53A3787998AAF6274E619531A0BDBA9B7F5BF"
+  },
+  {
+    "path": "tests\\fixtures\\schema-v7.sql",
+    "sha256": "D34FB39A03DD6BBBD171BF7DFC021C38416B2C657A07D88BEE2E009B3EB56E2A"
+  },
+  {
+    "path": "tests\\fixtures\\schema-v6.sql",
+    "sha256": "8FF293B8D256FD597C2A537AB51EDD289A4BF8EE1CB3DFAAA1326969D40D5294"
+  },
+  {
+    "path": "tests\\fixtures\\schema-v5.sql",
+    "sha256": "173CC03DF94D26482C10269784DE6F857B412C8F3830DDE08E307755EACA9564"
+  },
+  {
+    "path": "tests\\fixtures\\schema-v4.sql",
+    "sha256": "208EC1A8629ACA2F3A35AA3E224E0B1A9329A252CC942D71C4C0B5E2DEA06FB6"
+  },
+  {
+    "path": "tests\\fixtures\\practice-v3-schema.ts",
+    "sha256": "2A986C789F93CB971CC70A33737C424C120C025782A12D2FA16B414848805974"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\TopicNavigator.tsx",
+    "sha256": "6E13B8EE16AD967A4B80599A0ADE41119070794AA7D65DA00045D65219C10EF6"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\ThemePreview.tsx",
+    "sha256": "7F00E54D9FA882BDEA8EAF635E78F9BD9015CD51F4D3D4B128B22F085EAC3336"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\ThemeManager.tsx",
+    "sha256": "E1C511559F33AB54B4289B350E5EBEF7692D935B48E33BD1C7FDB7ED254156AB"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\TagPicker.tsx",
+    "sha256": "6981115F34D144017EB2AA5577FBB24A9BA1679D9F27DF1F1661D2887DC76E3F"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\SettingsPane.tsx",
+    "sha256": "E4C390F275D01F510050580F40934FF91E1461FD9EA04B772939C6CA53EFFB7A"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\ResourceImage.tsx",
+    "sha256": "BD477F0640A30763F8DCD3998323644670D4F462E523343A7F85E80C76563B1D"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\QuestionHistory.tsx",
+    "sha256": "C5CB5FD235B74A37F784515E2CF8407AD142B4D9AD28FE02B82D1A5E33FB3C2C"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\QuestionFilterFields.tsx",
+    "sha256": "B50F92646527CA45A0B7FB53D0D4900BFCF9B29A144D6BB4B30BDD903E677589"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\PracticeWorkspace.tsx",
+    "sha256": "199BF8B8C97289E588963E935CFCE78E95E2DDA5031D3FE3A0F373223925F43B"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\PracticePlans.tsx",
+    "sha256": "5C542F032CC804CC819B51514FC585DCAB7C584C2521980A7B76AE8D9402659C"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\PracticePane.tsx",
+    "sha256": "C1C77A6C84C5085EB2744AD76A5C7D76A3339BF3064DC3357367636BC55E0643"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\PracticeFavorite.tsx",
+    "sha256": "86175D1EA876BBAA94411E01B0124053D2F8DA1F236D3381BE93B0E86B361BC7"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\MarkdownContent.tsx",
+    "sha256": "9EC46814B970AFAEB9AA5739F2BE519C69D5E014A9D378003A224C5D9CCB4DC0"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\LibraryBrowser.tsx",
+    "sha256": "5EACA0EDBF0FAD340E146461049D185A2597AF0E9D728FCAC702C5E5130762EB"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\LearningRecords.tsx",
+    "sha256": "646B300FC6BABBFEC7A4C6810443C133EC0BFA199A4FD71524F32E6CA96ADC72"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\LearningOverview.tsx",
+    "sha256": "28C2FCCCF6AF7CA1652132AEDD51FCF8949921D51AD5AFA8589B8B9DA8280DF4"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\ImportPanel.tsx",
+    "sha256": "E83238B10B39E37A14117984D581CDE2646540D71116C3289F12566C89825AED"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\DifficultyBadge.tsx",
+    "sha256": "89EF252C028D611954D47BFEB29B51C26BAA10E1913D0BDCBF4BA8262657342E"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\DataLocationsPanel.tsx",
+    "sha256": "1202C4E32A5E1619F5FA23AFC11BCDCE31A4029A40E1AB1024BBEFFB3314CED3"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\CodeBlock.tsx",
+    "sha256": "F08EFBEB0D71F8F3B352B1D6835BF6DDB5E1F78CC631053971DC7BB8F911F4EB"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\CategoryManager.tsx",
+    "sha256": "6D92D57D6B83397B0AD836EF87EA78FA67D676F4DCF625235F0F182403425F68"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\BoardEntrance.tsx",
+    "sha256": "A8A39C6993C7C383E039B5343933A577C0030B3AB65D72E8F9618A49E2EAEE7A"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\BackupPanel.tsx",
+    "sha256": "04E4287ED8388931199EBB5030513526155F316540AEF40535D4AF68097EEADB"
+  },
+  {
+    "path": "src\\renderer\\src\\components\\AppearanceSwitcher.tsx",
+    "sha256": "4B6C9DBF93FE5223415C3C95E53CE633B7D67A1E2BEE6CCA24224FAB74673DD4"
+  },
+  {
+    "path": "src\\renderer\\src\\board-catalog.ts",
+    "sha256": "9668A8DF03B5658D61973FB6A50BD7A5839D0A3FD955FD8E5EC828498DB3060B"
+  },
+  {
+    "path": "src\\renderer\\src\\App.tsx",
+    "sha256": "1E12D481A864B120A1C14197D165DDC3C827468FF217BE58E9DD0918D74338B6"
+  },
+  {
+    "path": "src\\renderer\\index.html",
+    "sha256": "D80666EEB66982ED34DB9AA2407D6FA810DC8A9B4548E30B5FDE608E79D21DEC"
+  },
+  {
+    "path": "tests\\fixtures\\markdown\\合法专题.md",
+    "sha256": "F499ACB81560265FF05E4A619AA7D415A18CD891505459E8DC945A6EACD2B9A1"
+  },
+  {
+    "path": "tests\\fixtures\\markdown\\README.md",
+    "sha256": "A61C82132CA322833D6B2CCA75CF2EEC706E0F02CC10C3F1FF3E3DB569211533"
+  },
+  {
+    "path": "src\\preload\\index.ts",
+    "sha256": "285C8CF834736F7D316DDBE45875C57E1708618C62AA3853F368224FDC190E90"
+  },
+  {
+    "path": "docs\\design\\board-catalog.html",
+    "sha256": "5327111D144ED92F11A29A613B919214DC139B8C1D5F36127DD27AF6FA2279F2"
+  },
+  {
+    "path": "docs\\architecture\\M4数据位置与诊断入口.md",
+    "sha256": "9F1F5B7BE7B3F7819CEA455DD254122980BB1B86C49CCD89DDB06608E0C6B3D5"
+  },
+  {
+    "path": "src\\main\\workers\\import-worker.ts",
+    "sha256": "E29A41A12D71FFF39267C676208A6315BF8DD79A1C8881C072876D4B33C4E5D2"
+  },
+  {
+    "path": "docs\\architecture\\M4恢复执行与回退.md",
+    "sha256": "75F4037FAD3281A7098375CCBF0DEE103784C3386BBF9BC74AE81C54E7E4EC6A"
+  },
+  {
+    "path": "docs\\architecture\\M4完整备份与恢复预览.md",
+    "sha256": "736923E5B1BCC9C5373607BF912C2857601B621E4A6A1E806A9C3B7D9B371636"
+  },
+  {
+    "path": "docs\\architecture\\M3随机练习与模式升级.md",
+    "sha256": "9607E50E97C84CB467CBF50E46BF78AB6B78310D66A9945105CA990E43059CDC"
+  },
+  {
+    "path": "docs\\architecture\\M3显示设置与页面.md",
+    "sha256": "440ADFA98E3E475FA2C3C1A47D1043E7A189D5B27345AF6DF0C258C93295811D"
+  },
+  {
+    "path": "docs\\architecture\\M3学习记录总览.md",
+    "sha256": "4B21BBB9DA0E2543882EF0EA813EF060C1D207DC3C6FBEA38680FF6369EE8C47"
+  },
+  {
+    "path": "docs\\architecture\\M3单题历史与更新标记.md",
+    "sha256": "E66F789991DD76CDC4159F74E41E2896372BAE5C6C37A5D7372972B21F91F639"
+  },
+  {
+    "path": "docs\\architecture\\M2顺序练习与保存.md",
+    "sha256": "136000689DE0855399734377999269759BC3141CC1A963DD71442D722032138A"
+  },
+  {
+    "path": "docs\\architecture\\M2练习窗口与保存.md",
+    "sha256": "EFDA7B80E9817C8C022790FE454E197405012654D1BB3830ED612B2139758E63"
+  },
+  {
+    "path": "docs\\architecture\\M1预览与提交.md",
+    "sha256": "84EA4C4308CEDECF5642A50B55BB2DC227E477F88D7290038884C643B472AF57"
+  },
+  {
+    "path": "docs\\architecture\\M1结构解析.md",
+    "sha256": "959C1F8560229C6AA526FF4EB1406EC97EEC57DAC1F40F658E19B71804C90404"
+  },
+  {
+    "path": "docs\\architecture\\M1窗口与受控内容.md",
+    "sha256": "2B04012B666290677B196278F2EBFDF43EC028B0F9BE9A5CC4BA04BE281FF6C1"
+  },
+  {
+    "path": "docs\\architecture\\M1文件与图片快照.md",
+    "sha256": "3813766727E27F05FD22F64E13EA33315ECF683073373A2BCD47EE69929B8CBD"
+  },
+  {
+    "path": "docs\\architecture\\M1导入工作线程.md",
+    "sha256": "9A328FE97D724CFA30F0F8BF8EB6639E381F1B608FFF2C8E1EBE27D62A20405A"
+  },
+  {
+    "path": "docs\\architecture\\M0启动与存储.md",
+    "sha256": "53E8FF963A0AF2B37FB7063F681568EDA89F949222E9BC0E3185ACEF5192AEB4"
+  },
+  {
+    "path": "docs\\AGENTS.md",
+    "sha256": "72B077B19F5043E753374E462ABA30F124C2FFFC1B07D2BC6A3FEBFB622CC3FA"
+  },
+  {
+    "path": "src\\main\\workers\\import-task-runner.ts",
+    "sha256": "2E8DE32175EBB0DD6368B1BA5374783213F7D767A09052D585A85B08DB0B275A"
+  },
+  {
+    "path": "src\\main\\raw.d.ts",
+    "sha256": "C780995A49F68475718978985CBE38BC3E1A3DC33501B3CEF018FE2D7CE868D9"
+  },
+  {
+    "path": "src\\main\\workers\\import-protocol.ts",
+    "sha256": "8151DA4DFCF40CE6CB14EC0B985D7F8BE6F83CB0A1EF52C1D95063FC6776A324"
+  },
+  {
+    "path": "src\\main\\window.ts",
+    "sha256": "C2493BE2646CB90354AF8E041B1BE943B789EAA0683FD5DF95DC799C68C5DCD7"
+  },
+  {
+    "path": "tests\\fixtures\\images\\small.webp",
+    "sha256": "B1F3FF00BA1D62D206025CE07B1ED6CDF87E8C018608D8D1984FE463F4E6E534"
+  },
+  {
+    "path": "tests\\fixtures\\images\\small.png",
+    "sha256": "4BDE795C8AF51F0BDC1DE0DB1ADC89ED741BF52E777A3B52CA38015EE1B16FAD"
+  },
+  {
+    "path": "tests\\fixtures\\images\\small.jpg",
+    "sha256": "200A7848EB435A30C8A06C9762B87732EC6971CA01FD384FE08AACF383B2D639"
+  },
+  {
+    "path": "tests\\fixtures\\images\\README.md",
+    "sha256": "E6064A8A42A20A7BCD1141078320339EBCC9D0080CDED1B1F40F361BA5EC703E"
+  },
+  {
+    "path": "src\\main\\ipc\\trusted-sender.ts",
+    "sha256": "FEEDF8C8EC5100CC32F8BD99530E09BB486488AEC727A4E5FCE6DABEC47B3301"
+  },
+  {
+    "path": "src\\main\\ipc\\practice.ts",
+    "sha256": "2DDE411AD556664D7F391FA371B471279FC399EF381BDC85B8B6E0703B8F35A0"
+  },
+  {
+    "path": "src\\main\\ipc\\library.ts",
+    "sha256": "E116B098E9AD0576747A6E0E9F493C3395656D8840E9166080F3716A2294C456"
+  },
+  {
+    "path": "src\\main\\ipc\\data-locations.ts",
+    "sha256": "0C93CE230045BD8B1B7B6824C9767556FE0425B1295D6CA1D820B00988FDCF48"
+  },
+  {
+    "path": "src\\main\\ipc\\backup.ts",
+    "sha256": "FDEAF2C22C9BBE5F0CB9301D9FE65BD0E9EC3AEEE1CF91D69B7C16ACDC12D0C7"
+  },
+  {
+    "path": "src\\main\\ipc\\application.ts",
+    "sha256": "B137C52112B1837D2565333090C6D5AC2B1A642051DDCB98D008689D40994C42"
+  },
+  {
+    "path": "src\\main\\index.ts",
+    "sha256": "BEA1332AA448E1762DDAB4E3493DB7595BC4746B4DF7362848D0B71BDC9F641C"
+  },
+  {
+    "path": "src\\main\\services\\resources\\read-image.ts",
+    "sha256": "CE7CC2CD650B1A4D569E613643CB842F265D30CF666C7D466E9DA1F740B0D9AE"
+  },
+  {
+    "path": "src\\main\\services\\resources\\read-file-snapshot.ts",
+    "sha256": "ABA650EF9D5DCB6EF5A3AD900EB4076C2B8B7B1719DC6D1746D8D184566093BD"
+  },
+  {
+    "path": "src\\main\\services\\resources\\image-protocol.ts",
+    "sha256": "AC365365F249546E4310FA3BC92C72D5D8370FABE1A482945935702FCE9B2556"
+  },
+  {
+    "path": "src\\main\\database\\startup-store.ts",
+    "sha256": "347C2B9D4E1795A38D294FEC99A45CE285320297E41E4044754F0B7490C3EA87"
+  },
+  {
+    "path": "src\\main\\database\\settings-schema.ts",
+    "sha256": "5E836CDE251C89D68BDAD9043A228889BED168E9A0F44512231D27A92237F79A"
+  },
+  {
+    "path": "src\\main\\services\\practice\\practice.ts",
+    "sha256": "113F18117BD4F15B252A962B8F313C771404D69B13FF0DC3002EC7A52251F6D7"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\topic-navigation.ts",
+    "sha256": "FF3EA3C0331077607984CF263CD08F2F7DD91E9D1E69011740F24C33CBF19AA1"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\theme-repository.ts",
+    "sha256": "DDCE45553AD27117A6C1BD0BA57C50D059930509A34C2F6CC15DFD1181395DF4"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\settings-repository.ts",
+    "sha256": "D14242D18B18E3107891E6ECD0A35B5E845E33E6AE4B3CB43BEF49CEADA6E279"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\question-selection.ts",
+    "sha256": "952C44D5A698F8E94B97A170E296BA2412C08D8D702A864F34BA776DA1AA5ABB"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\practice-repository.ts",
+    "sha256": "9853E8698DD3BD60D462F13AF4BCEE91B10AA6C0C9FF08B2A3A50DE9B8008845"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\practice-plan-repository.ts",
+    "sha256": "E836F15AE2935DED14874843655AE7D83AAF6D82C42DEFD5C9C6F42755E92FA5"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\library-repository.ts",
+    "sha256": "057F0E68130AD722D5B81C550B4B327712F4AB95AE897E7D71CA3764B6662ACB"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\library-reader.ts",
+    "sha256": "BC7C1EFA6345B40E75C649F46B67BB9EF78700447A76102704034C019D055601"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\learning-reader.ts",
+    "sha256": "F3745F129ED00DB4D84C9CDE1139B195B9416D97D5053B8BEFCC6BCFDD450988"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\history-reader.ts",
+    "sha256": "60873B64820A4CA3FA48F8F4A5AB11289A19B2E31B7033BDE353E652E0E7FC99"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\favorite-repository.ts",
+    "sha256": "61D426C54E32EE25476186DB25EE53ADFED841CB751BCF410FA01448F3609AE6"
+  },
+  {
+    "path": "src\\main\\database\\repositories\\category-repository.ts",
+    "sha256": "7A15179C1F07AF0D5A31FA342033AF5DF2C0460286D9CEE6B79C7D3FCD36FA5A"
+  },
+  {
+    "path": "src\\main\\database\\practice-schema.ts",
+    "sha256": "614F8F5363FA7A9286AEA4C918F6808EC0801FA4394FB69850CC32734ECADD51"
+  },
+  {
+    "path": "src\\main\\database\\practice-plan-schema.ts",
+    "sha256": "31C6B51594FE633A5D18E7526D395DED273544D1A895E90AE9E4C9E2927CC784"
+  },
+  {
+    "path": "src\\main\\database\\open-database.ts",
+    "sha256": "12E5E28A6746DEC15825F264BAF904A35E0D821D7E1B021C7EBF9F2A511AFB5A"
+  },
+  {
+    "path": "src\\main\\services\\library\\question-metadata.ts",
+    "sha256": "BD7BC763902D7B655047F875817410EE9249078F0C43CB55103B556F8E9AB14E"
+  },
+  {
+    "path": "src\\main\\services\\library\\prepare-import.ts",
+    "sha256": "22168D0EFDAB6DC3CBE35CE4683E074D0D9E1708577395C0737342E2907D94B8"
+  },
+  {
+    "path": "src\\main\\services\\library\\parse-question.ts",
+    "sha256": "73553F04EAAD74FB20348AD4F9492DE59C4EB06D3CC0D0DD68F510BD2F3CC715"
+  },
+  {
+    "path": "src\\main\\services\\library\\parse-question-bank.ts",
+    "sha256": "71445481DAFD99DB70D4869368FC436C479B91646F46765606602969A528723F"
+  },
+  {
+    "path": "src\\main\\services\\library\\markdown-document.ts",
+    "sha256": "A894FEC1E957E26E7DCD05BFC4CA7BF262B5B042327698779B694D45BBDDDBBD"
+  },
+  {
+    "path": "src\\main\\services\\library\\library-import.ts",
+    "sha256": "FF2BB6721A27D27F69835F6CDAC893CED3EBBC1B21A362C3EDF371BD763C1297"
+  },
+  {
+    "path": "src\\main\\services\\library\\import-session.ts",
+    "sha256": "BFA7988331CBB4BE6A634D5B95252DD0387133870A02A44F32389BCA2732FB39"
+  },
+  {
+    "path": "src\\main\\services\\library\\import-preparation.ts",
+    "sha256": "7CA2A80E5688846E27B9A8D58424B9AA73A2C9233E6BA41ADA7B24D36EC01E2B"
+  },
+  {
+    "path": "src\\main\\services\\library\\import-budget.ts",
+    "sha256": "F6817017469F7D7BFB9AB2638C66DCA327C66AE0808CB69F376961E52DF4A49F"
+  },
+  {
+    "path": "src\\main\\services\\library\\image-references.ts",
+    "sha256": "470EF58A498B933FD15AF9744334960063C0203C59C6C2EE30F781BD37F7F2A1"
+  },
+  {
+    "path": "src\\main\\services\\library\\content-fingerprint.ts",
+    "sha256": "9E9BB06292E831F674F26D1F8966EB61B4758F60EABE8A17C78EDBA1E1795FCC"
+  },
+  {
+    "path": "src\\main\\services\\library\\compare-import.ts",
+    "sha256": "F5707758F2F3656CCAB418D53DC16FC34A523ED5C0BA93D744F568ECA5E662C0"
+  },
+  {
+    "path": "src\\main\\database\\library-schema.ts",
+    "sha256": "A347613CDB25A85274A24C9598F49B83BB6DC90A7AF4A1686D587E2563904509"
+  },
+  {
+    "path": "src\\main\\database\\category-schema.ts",
+    "sha256": "50A4166277F5997C2F4F128FB72DE6491E70AD37C458318D029244A45AB2AE60"
+  },
+  {
+    "path": "tests\\e2e\\learning-records-errors.spec.ts",
+    "sha256": "069ED2689F78FC4BBEE06084F412F3DF49CBDE240FF1FDD1FC3DC1A7F700E572"
+  },
+  {
+    "path": "tests\\e2e\\learning-management.spec.ts",
+    "sha256": "748BAB60D263FBAF9264FFF41E951BBD478A11133FAB310D1574D60C1A50369D"
+  },
+  {
+    "path": "tests\\e2e\\learning-helpers.ts",
+    "sha256": "7B62177A287774605D06ACED54F7015FAE46FB5FACDD1B3688241D2BC1C34BF7"
+  },
+  {
+    "path": "tests\\e2e\\import-worker.spec.ts",
+    "sha256": "530DB3DE2EBA3A4468E3C0B3501B2B50C1FFEEE0AE053632A71450B070E1D66C"
+  },
+  {
+    "path": "tests\\e2e\\import-worker-exercise.ts",
+    "sha256": "2B5DE8F3DE25AFC4480B73A4CEB82DACF248AA1208BF310EAF43A142378AB91D"
+  },
+  {
+    "path": "tests\\e2e\\history-window.spec.ts",
+    "sha256": "7336045EB9F996C7CA9C360657DB44E9C320AC09B8BF9740B904D698A4B4B19B"
+  },
+  {
+    "path": "tests\\e2e\\history-versions.spec.ts",
+    "sha256": "F6117FD1943F42F785D4E4C27C801F56B665EFCA217D45759A5CE2D4EFC2A8DB"
+  },
+  {
+    "path": "tests\\e2e\\history-helpers.ts",
+    "sha256": "EFEB6D503D840E4F4103CF08F6B110BC48587C8FE95F59B695DF08F1125FC472"
+  },
+  {
+    "path": "tests\\e2e\\helpers.ts",
+    "sha256": "2F22339B32F386A7D31D2B4A1EA7A1DD165D44FAB39FAD125A361B80C83C2FCC"
+  },
+  {
+    "path": "tests\\e2e\\findability.spec.ts",
+    "sha256": "684FD2486E9C587F6B2436875CACF103C4E57100054B4D525ACD0F879CA790CC"
+  },
+  {
+    "path": "tests\\e2e\\database-errors.spec.ts",
+    "sha256": "F5AA2B9BEB83A3F7DBA66F1E5DDEF15B443B9A3672EB422C315CB3484A82C405"
+  },
+  {
+    "path": "tests\\e2e\\data-locations.spec.ts",
+    "sha256": "31B0D6B4658B94F146E40F160EF6D0CB2316B1B9F50257D91111C9A016359D0C"
+  },
+  {
+    "path": "tests\\e2e\\category-tree.spec.ts",
+    "sha256": "1D115CD47DC26BCD6DBF699AA1DCAD891C1D7F97EA5BCF421C4134CB7B358D4F"
+  },
+  {
+    "path": "tests\\e2e\\category-practice.spec.ts",
+    "sha256": "630C6D8901B687BC41B13E1CDEC9FDD8C5565BF848CFF14E090E9A9725BAE49E"
+  },
+  {
+    "path": "tests\\e2e\\category-migration.spec.ts",
+    "sha256": "8629EB68E6B33938CCE0B8E4E6198984C3A6CE897277BB7FCA8A7B31E7BA0154"
+  },
+  {
+    "path": "tests\\e2e\\category-helpers.ts",
+    "sha256": "2F022B19B77F44284AC4C932BB2CEC82F6354048C9509A93D1E65D27C24DA233"
+  },
+  {
+    "path": "tests\\e2e\\board-entry.spec.ts",
+    "sha256": "B770449A5E35D68481F66300744A2D9423877A7A85B1267A67F904E220184144"
+  },
+  {
+    "path": "tests\\e2e\\backup-window.spec.ts",
+    "sha256": "08EC71CBECE7959B444FA4F29763F35D593ADA5B6B7278FFF958F34EB062B7F3"
+  },
+  {
+    "path": "tests\\e2e\\backup-legacy.spec.ts",
+    "sha256": "30CC6D296CDBE6F424FBFBBBD0F088BC5F3FE891EB163CF1E2628362E7EA91DC"
+  },
+  {
+    "path": "tests\\AGENTS.md",
+    "sha256": "DA114A4C232D5A2FD76FF17BCE265A5CF48FAC391225550E5F743699C3EED11A"
+  },
+  {
+    "path": "src\\main\\services\\backup\\backup.ts",
+    "sha256": "0B1FC263FDEB81C9AD1799ACF980076995D984A9FAF13B0529F9DF6A2D98D003"
+  },
+  {
+    "path": "src\\main\\services\\backup\\restore-files.ts",
+    "sha256": "8B39E4A59955EEE0854ED4C9097906CE2DC6CA4F312F6E001ABC57F81AF3A6AA"
+  },
+  {
+    "path": "tests\\e2e\\session-filters-migration.spec.ts",
+    "sha256": "5ED7445B8A6A307AC418C0DE3A8DB89552F4189DFFD67B4588C61813254B29E8"
+  },
+  {
+    "path": "tests\\e2e\\restore-window.spec.ts",
+    "sha256": "B718B0C8A5C6F31C4DEB67309DD06395E272F12C4AA9F543BB298C77B0370A36"
+  },
+  {
+    "path": "tests\\e2e\\random-practice.spec.ts",
+    "sha256": "73906C404D20584EEFEE07D0DD5AF356A20FB0D52672F5419EBEDE27B4385F4F"
+  },
+  {
+    "path": "tests\\e2e\\practice.spec.ts",
+    "sha256": "9D2C3277D7051739A09751D4B01BD8230931DC19AEF0B9501AE0DDE2E0D2440A"
+  },
+  {
+    "path": "tests\\e2e\\practice-window.spec.ts",
+    "sha256": "E4E315948B7AAF1B12E8E6013122BEDE5C87CB5E65CB9B133A9B4874661CE39B"
+  },
+  {
+    "path": "tests\\e2e\\practice-plans.spec.ts",
+    "sha256": "640E8BE81335DEA96AA4EDF79A839C8AD53397FC83B3E52D305F57376BE01E5A"
+  },
+  {
+    "path": "tests\\e2e\\practice-plans-migration.spec.ts",
+    "sha256": "672934F440159B734F1031A51629F8B7204EFEFA279E77D0D775BDEA8D0B8844"
+  },
+  {
+    "path": "tests\\e2e\\practice-plans-errors.spec.ts",
+    "sha256": "EBA3A5B18B9EF0F29861E4B3547622FD0936339BC4390257719CA618B16E4A17"
+  },
+  {
+    "path": "src\\main\\services\\backup\\validate-backup.ts",
+    "sha256": "48B5FDFBC30637A81638898B98804266A00A6984AAD360EA5AD1E94EB129919B"
+  },
+  {
+    "path": "tests\\e2e\\practice-plan-helpers.ts",
+    "sha256": "D659E93727817913670CCF983B54E72B8A2D83B5267A6152FD60104DCBCFFEC6"
+  },
+  {
+    "path": "tests\\e2e\\practice-mode-migration.spec.ts",
+    "sha256": "1E5DD65D4D13245FE766AF54B46099718EDBD96E1B5BD121989EF779F33A4B73"
+  },
+  {
+    "path": "tests\\e2e\\personal-bank.spec.ts",
+    "sha256": "F1050EB6638703B5CE78AFB6EE3DE87C27399310505A5BBF70BAB3FCA3FDF931"
+  },
+  {
+    "path": "tests\\e2e\\palette-migration.spec.ts",
+    "sha256": "B63546F34C16046ECCDE76B4F0D426C565AEFAD5F6428F770FC13D1852880F1C"
+  },
+  {
+    "path": "tests\\e2e\\library-window.spec.ts",
+    "sha256": "CEAF2217E8DDED6FF4DB02F53A89BFB0FCBC21507643201FBA13FB76063A6CC8"
+  },
+  {
+    "path": "tests\\e2e\\library-import.spec.ts",
+    "sha256": "63729F4CC349C94B6D13E345D00D8A464E0950A24BCE19CE0DE630D53E8A93DE"
+  },
+  {
+    "path": "tests\\e2e\\learning-records.spec.ts",
+    "sha256": "D7DF8944D6FC98E6D0AEF0AD731DDBC0EA34CF3D22D9F5EDB25C71982D5B843C"
+  },
+  {
+    "path": "tests\\e2e\\themes-database.spec.ts",
+    "sha256": "3A0191C0E8F3D13BF7747DD90C5EE9C7E6E034371939E0F95E0BAD2A34FDC1D3"
+  },
+  {
+    "path": "tests\\e2e\\themes-backup.spec.ts",
+    "sha256": "2F2CFBF3982BF1A61CF07C9EF923D08B81756105C9A5DE701AA8EB2350374F61"
+  },
+  {
+    "path": "tests\\e2e\\theme-helpers.ts",
+    "sha256": "20AF470B6924990B4D4D088BB22B1A51B718732396B03C92755841F8251C6376"
+  },
+  {
+    "path": "tests\\e2e\\startup.spec.ts",
+    "sha256": "9F835ADDCD72E186EA4D580BAA026457FF47398E57D460F09B44D2063411DC36"
+  },
+  {
+    "path": "tests\\e2e\\settings-window.spec.ts",
+    "sha256": "8F64054E0918BAA1AAFC495D6BA4A531CD9E81D5B8C3164043B55DC439B47A54"
+  },
+  {
+    "path": "tests\\e2e\\settings-palettes.spec.ts",
+    "sha256": "84CD22E50DABE2F56EA52A7A613536916DCC873C83B19DDF297B6C77332B9FE9"
+  },
+  {
+    "path": "tests\\e2e\\settings-migration.spec.ts",
+    "sha256": "5EF288E240D2386BD7397FF473638BDEC2B179C86699CD36914264686E1552BA"
+  },
+  {
+    "path": "tests\\e2e\\session-filters.spec.ts",
+    "sha256": "4B2D8C966A6DF7DF167059957B6497350614FD8AA3758F655A3B025C1C35816E"
+  },
+  {
+    "path": "tests\\e2e\\themes-migration.spec.ts",
+    "sha256": "D8164DDEE1A03483D1AC1554D8129FBEEA4D0F39EB23417070B51E9C115560F1"
+  },
+  {
+    "path": "tests\\e2e\\themes-layout.spec.ts",
+    "sha256": "50F57BD46C7E694B935C8C96EE6272278B1C6D13A19F6C7293D6897B57867212"
+  },
+  {
+    "path": "tests\\e2e\\themes-reading.spec.ts",
+    "sha256": "DDF8CCF982C872A486EECDBED158493501CA133EBE264AE6BE9CADC7ADEB1236"
+  },
+  {
+    "path": "tests\\e2e\\themes-window.spec.ts",
+    "sha256": "386658D086D993B9B46F9816169E482D2A8F83A8488E48B280F91D2D5CA06A95"
+  },
+  {
+    "path": "tests\\e2e\\workbench-errors.spec.ts",
+    "sha256": "23D51A9EE44B324D4878D35352EA61BF7EDA9EE5BCB11E624F02199EABC8E300"
+  },
+  {
+    "path": "tests\\e2e\\workbench-browser.spec.ts",
+    "sha256": "E0792BE2F29A010BD5137C48A7AD10F83B7DD4C410BC8B6D5D35F191F8367C77"
+  },
+  {
+    "path": "tests\\e2e\\workbench-helpers.ts",
+    "sha256": "39434107BE875E994ABF104F0C4015FA1FF255662625D4B2DE51CDF50276B6FF"
+  },
+  {
+    "path": "tests\\e2e\\workbench-overview.spec.ts",
+    "sha256": "12B6F325C9D1E28A60EA8C9E76EFDED901D53521588EB3F398638DB9BF815BAF"
+  },
+  {
+    "path": "tests\\e2e\\workbench-practice.spec.ts",
+    "sha256": "0B4D9B6ADD4BD9F7C0D90CF5BEE0F317DFC54BC2079FF9C59E5C1D7FC3CF9950"
+  },
+  {
+    "path": "README.md",
+    "sha256": "E1B590E93E792925BFEE1B51552BCBB70A92130EF1198565D7F4380E4B0825B3"
+  },
+  {
+    "path": "计划书.md",
+    "sha256": "949CBF076B34450E977951E398C19A6DBA697119F61F2BB349EF42D3F7E91204"
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "836696CFFE2BE53B23F4C365A3EAE55BE147AE73C8C2BE62B2A90D3AE8C89818"
+  },
+  {
+    "path": "package.json",
+    "sha256": "4347D2A4FDCBDD185D13305BB2BFCC27953CE11A6A80F0B8AE69D369AEEB03A6"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "73B7F384A8596EAD2DF67ACF1137B123EC7869ACF2E1D2D22B40DA0914AC070B"
+  },
+  {
+    "path": "electron.vite.config.ts",
+    "sha256": "593EBF95DF0342DD9D5AA5C08148C8F98E8B5635331583192ACC0D461718FE15"
+  },
+  {
+    "path": "electron-builder.yml",
+    "sha256": "FBD78D3CD6165705CD1E65D9BDC7D0BFC9316E5B7CE3CA329B2802C1D3AC31DF"
+  },
+  {
+    "path": "playwright.config.ts",
+    "sha256": "9B5B8138C57D8AD41D079D62E120E49D9307F12142BE29C72BBD75F49B58728E"
+  }
+]

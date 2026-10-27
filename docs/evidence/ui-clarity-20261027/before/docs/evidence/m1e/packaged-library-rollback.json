@@ -1,0 +1,227 @@
+{
+  "preview": {
+    "token": "79376485-d500-4147-814b-7fdb897c9e3d",
+    "expiresAt": "2026-10-20T07:15:33.314Z",
+    "summary": {
+      "counts": {
+        "added": 2,
+        "updated": 0,
+        "metadata": 0,
+        "unchanged": 0,
+        "archived": 0,
+        "restored": 0,
+        "newVersions": 2
+      },
+      "topics": [
+        {
+          "topicId": "rollback-a",
+          "topicTitle": "rollback-a",
+          "metadataChanged": true,
+          "counts": {
+            "added": 1,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 0,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 1
+          },
+          "questions": [
+            {
+              "questionId": "r-1",
+              "kind": "added",
+              "contentChanged": true
+            }
+          ]
+        },
+        {
+          "topicId": "rollback-b",
+          "topicTitle": "rollback-b",
+          "metadataChanged": true,
+          "counts": {
+            "added": 1,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 0,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 1
+          },
+          "questions": [
+            {
+              "questionId": "r-2",
+              "kind": "added",
+              "contentChanged": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "failed": {
+    "ok": false,
+    "error": {
+      "code": "DATABASE_UNAVAILABLE",
+      "message": "本批未提交，预览仍保留；请检查本地诊断日志后重试。"
+    }
+  },
+  "before": {
+    "counts": {
+      "topics": 0,
+      "questions": 0,
+      "question_versions": 0,
+      "image_resources": 0,
+      "version_images": 0,
+      "import_receipts": 0
+    },
+    "revision": 0
+  },
+  "after": {
+    "counts": {
+      "topics": 0,
+      "questions": 0,
+      "question_versions": 0,
+      "image_resources": 0,
+      "version_images": 0,
+      "import_receipts": 0
+    },
+    "revision": 0
+  },
+  "retried": {
+    "revision": 1,
+    "summary": {
+      "counts": {
+        "added": 2,
+        "updated": 0,
+        "metadata": 0,
+        "unchanged": 0,
+        "archived": 0,
+        "restored": 0,
+        "newVersions": 2
+      },
+      "topics": [
+        {
+          "topicId": "rollback-a",
+          "topicTitle": "rollback-a",
+          "metadataChanged": true,
+          "counts": {
+            "added": 1,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 0,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 1
+          },
+          "questions": [
+            {
+              "questionId": "r-1",
+              "kind": "added",
+              "contentChanged": true
+            }
+          ]
+        },
+        {
+          "topicId": "rollback-b",
+          "topicTitle": "rollback-b",
+          "metadataChanged": true,
+          "counts": {
+            "added": 1,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 0,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 1
+          },
+          "questions": [
+            {
+              "questionId": "r-2",
+              "kind": "added",
+              "contentChanged": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "storedReceipt": {
+    "revision": 1,
+    "summary": {
+      "counts": {
+        "added": 2,
+        "updated": 0,
+        "metadata": 0,
+        "unchanged": 0,
+        "archived": 0,
+        "restored": 0,
+        "newVersions": 2
+      },
+      "topics": [
+        {
+          "topicId": "rollback-a",
+          "topicTitle": "rollback-a",
+          "metadataChanged": true,
+          "counts": {
+            "added": 1,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 0,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 1
+          },
+          "questions": [
+            {
+              "questionId": "r-1",
+              "kind": "added",
+              "contentChanged": true
+            }
+          ]
+        },
+        {
+          "topicId": "rollback-b",
+          "topicTitle": "rollback-b",
+          "metadataChanged": true,
+          "counts": {
+            "added": 1,
+            "updated": 0,
+            "metadata": 0,
+            "unchanged": 0,
+            "archived": 0,
+            "restored": 0,
+            "newVersions": 1
+          },
+          "questions": [
+            {
+              "questionId": "r-2",
+              "kind": "added",
+              "contentChanged": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "transactionReceiptRejected": true,
+  "answers": [
+    {
+      "answer": "首题快照\n![图](assets/small.png)"
+    },
+    {
+      "answer": "FAIL_COMMIT"
+    }
+  ],
+  "counts": {
+    "topics": 2,
+    "questions": 2,
+    "question_versions": 2,
+    "image_resources": 1,
+    "version_images": 1,
+    "import_receipts": 1
+  },
+  "foreignKeys": [],
+  "errors": [
+    "injected batch failure"
+  ]
+}

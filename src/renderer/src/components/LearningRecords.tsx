@@ -24,6 +24,7 @@ export function LearningRecords({
   const [attempt, setAttempt] = useState(0)
   const { topicId, archived } = scope
   const category = scope.category ?? ALL_CATEGORIES
+  const scopeRestricted = topicId !== null || archived || category.kind !== 'all'
   useEffect(() => {
     let active = true
     setLoading(true)
@@ -120,10 +121,18 @@ export function LearningRecords({
                 setScope({ ...scope, archived: event.currentTarget.value === 'archived' })
               }
             >
-              <option value="active">活动题目</option>
+              <option value="active">有效题目</option>
               <option value="archived">归档题目</option>
             </select>
           </label>
+          <button
+            type="button"
+            disabled={loading || !scopeRestricted}
+            title="恢复全部分类、全部专题和有效题目，不删除学习记录。"
+            onClick={() => setScope({ topicId: null, archived: false, category: ALL_CATEGORIES })}
+          >
+            重置记录范围
+          </button>
         </div>
       </div>
       {error ? (
@@ -134,7 +143,9 @@ export function LearningRecords({
           </button>
         </div>
       ) : !summary ? (
-        <p aria-live="polite">正在读取学习记录…</p>
+        <p role="status" aria-live="polite">
+          正在读取学习记录…
+        </p>
       ) : (
         <>
           <dl className="count-grid learning-counts" aria-label="当前版本学习总览">
@@ -168,6 +179,7 @@ export function LearningRecords({
       )}
       <details className="records-help">
         <summary>统计口径与历史说明</summary>
+        <p>范围调整后立即生效；重置记录范围只恢复显示范围，不删除题目、历史或学习记录。</p>
         <p>按题去重，仅统计所选范围的当前内容版本；多轮练习不会重复累计题数。</p>
         <p className="muted">
           揭晓只计算真实练习记录；仅保存草稿、跳过或查看题库答案不计入。旧数据若只有自评而无作答记录，只计入自评，不补造揭晓或历史。自评是个人判断。

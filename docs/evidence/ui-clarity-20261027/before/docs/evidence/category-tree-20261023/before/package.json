@@ -1,0 +1,60 @@
+{
+  "name": "embedded-practice",
+  "version": "0.1.0",
+  "private": true,
+  "description": "个人使用的 Windows 离线嵌入式刷题本",
+  "license": "UNLICENSED",
+  "main": "./out/main/index.js",
+  "packageManager": "npm@11.17.0",
+  "engines": {
+    "node": ">=24.19.0 <25"
+  },
+  "scripts": {
+    "dev": "electron-vite dev",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css,html}\" \"tests/**/*.ts\" \"*.{json,ts,yml}\"",
+    "check": "npm run typecheck && npm run format:check",
+    "test": "vitest run tests/unit",
+    "test:desktop": "npm run build && playwright test --project=development",
+    "test:packaged": "playwright test --project=packaged",
+    "build": "npm run typecheck && electron-vite build",
+    "pack:dir": "npm run build && electron-builder --win --x64 --dir --publish never",
+    "pack:win": "npm run build && electron-builder --win nsis --x64 --publish never",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "better-sqlite3": "12.11.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/better-sqlite3": "9.6.0",
+    "@types/mdast": "4.0.4",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "electron": "42.11.15",
+    "electron-builder": "26.15.3",
+    "electron-vite": "6.0.0",
+    "highlight.js": "11.11.2",
+    "image-size": "2.0.4",
+    "lowlight": "3.3.0",
+    "mdast-util-to-markdown": "2.2.0",
+    "mdast-util-to-string": "4.0.0",
+    "prettier": "3.9.10",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-markdown": "10.1.0",
+    "remark-frontmatter": "5.0.0",
+    "remark-gfm": "4.0.1",
+    "remark-parse": "11.0.0",
+    "typescript": "5.9.3",
+    "unified": "11.0.5",
+    "unist-util-visit": "5.1.0",
+    "vite": "8.3.4",
+    "vitest": "5.0.5",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  }
+}

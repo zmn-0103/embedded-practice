@@ -1,0 +1,17 @@
+{
+  "before": 526,
+  "current": 533,
+  "passed": 533,
+  "failed": 0,
+  "files": 26,
+  "missing": [],
+  "added": [
+    "backup-contract.test.ts|预览必须携带一次性凭据，恢复仅接收 UUID 并返回保护备份位置",
+    "backup-ipc.test.ts|恢复只接收当前预览的一次性 UUID，拒绝路径、额外字段和旧凭据",
+    "backup-ipc.test.ts|恢复确认默认取消且摘要来自已校验预览，取消不执行并可再次确认",
+    "backup-ipc.test.ts|恢复仍验证来源，保存失败反馈不包含用户原文或堆栈",
+    "backup-ipc.test.ts|恢复确认期间忙碌，导航使确认失效且清除原预览",
+    "backup-ipc.test.ts|新导出即使取消也使旧预览失效，晚到预览不能重新授权",
+    "practice-ipc.test.ts|恢复暂停拒绝业务写入，失败恢复后通知窗口复位关闭状态"
+  ]
+}

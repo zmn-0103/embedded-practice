@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-10-20T07:10:54.167Z",
+  "utf8Files": 210,
+  "markdownFiles": 34,
+  "localLinks": 347,
+  "changedCodeFiles": 27,
+  "changedCode": [
+    "package-lock.json",
+    "package.json",
+    "src/main/database/repositories/library-reader.ts",
+    "src/main/index.ts",
+    "src/main/ipc/application.ts",
+    "src/main/ipc/library.ts",
+    "src/main/ipc/trusted-sender.ts",
+    "src/main/raw.d.ts",
+    "src/main/services/library/library-import.ts",
+    "src/main/services/resources/image-protocol.ts",
+    "src/preload/index.ts",
+    "src/renderer/index.html",
+    "src/renderer/src/App.tsx",
+    "src/renderer/src/components/ImportPanel.tsx",
+    "src/renderer/src/components/LibraryBrowser.tsx",
+    "src/renderer/src/components/MarkdownContent.tsx",
+    "src/renderer/src/markdown-source.ts",
+    "src/renderer/src/styles/global.css",
+    "src/shared/contracts/application.ts",
+    "src/shared/contracts/content-urls.ts",
+    "src/shared/contracts/library-desktop.ts",
+    "src/shared/contracts/library-import.ts",
+    "tests/e2e/helpers.ts",
+    "tests/e2e/library-window.spec.ts",
+    "tests/e2e/startup.spec.ts",
+    "tests/unit/desktop-contract.test.ts",
+    "tests/unit/library-ipc.test.ts"
+  ],
+  "planSha256": "4217bea47b9cb28e5a1b8e976bacb57eb769bb25503981a4e0652ea0171e1c73",
+  "unchangedQuestionBankFiles": 13,
+  "nativeVersions": {
+    "electron": "42.11.15",
+    "betterSqlite3": "12.11.1"
+  },
+  "licenseCopiesMatch": true,
+  "testResults": {
+    "development": {
+      "startTime": "2026-10-20T06:59:06.568Z",
+      "duration": 19862.619000000002,
+      "expected": 19,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "packaged": {
+      "startTime": "2026-10-20T07:00:25.717Z",
+      "duration": 17730.77,
+      "expected": 19,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "unit": {
+    "total": 335,
+    "passed": 335,
+    "skipped": 0
+  },
+  "branch": "main",
+  "hasCommit": false,
+  "failures": []
+}

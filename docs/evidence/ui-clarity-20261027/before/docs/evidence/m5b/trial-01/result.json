@@ -1,0 +1,717 @@
+{
+  "label": "trial",
+  "startedAt": "2026-10-22T12:44:40.868Z",
+  "samplesFile": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-LsU3tY\\samples.json",
+  "dataDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-LsU3tY\\trial-HI6Lak\\中文 数据",
+  "environment": {
+    "windows": "10.0.26200",
+    "cpu": "13th Gen Intel(R) Core(TM) i5-13500HX",
+    "memoryBytes": 16883900416,
+    "freeMemoryBytes": 5297811456,
+    "node": "v24.19.0"
+  },
+  "dialogSelection": "explicit test replacement; worker, SQLite, renderer and executable remain real",
+  "events": [
+    {
+      "label": "30题来源选集首次导入",
+      "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-LsU3tY\\真实 试用题库\\STM32F103-UART第二层-30题试用.md",
+      "preparing": {
+        "elapsedMs": 225.29999999701977,
+        "timerTicks": 11,
+        "maxTimerGapMs": 21.299999997019768,
+        "messages": [
+          "匹配 0 题",
+          "正在选择并检查题库文件与图片…取消准备"
+        ]
+      },
+      "committing": {
+        "elapsedMs": 36.70000000298023,
+        "timerTicks": 1,
+        "maxTimerGapMs": 21.399999998509884,
+        "messages": [
+          "导入完成：新增 30，内容更新 0，信息变更 0，不变 0，归档 0，恢复 0。"
+        ]
+      },
+      "counts": [
+        "30",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "相同30题重复导入",
+      "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-LsU3tY\\真实 试用题库\\STM32F103-UART第二层-30题试用.md",
+      "preparing": {
+        "elapsedMs": 102.10000000149012,
+        "timerTicks": 5,
+        "maxTimerGapMs": 21.299999997019768,
+        "messages": [
+          "匹配 30 题",
+          "正在选择并检查题库文件与图片…取消准备"
+        ]
+      },
+      "committing": {
+        "elapsedMs": 42.899999998509884,
+        "timerTicks": 2,
+        "maxTimerGapMs": 21.19999999552965,
+        "messages": [
+          "匹配 30 题",
+          "正在保存整批题库，请稍候…",
+          "导入完成：新增 0，内容更新 0，信息变更 0，不变 30，归档 0，恢复 0。"
+        ]
+      },
+      "counts": [
+        "0",
+        "0",
+        "0",
+        "30",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "仅临时副本的1题内容更新",
+      "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-LsU3tY\\trial-HI6Lak\\30题 更新验收副本.md",
+      "preparing": {
+        "elapsedMs": 210,
+        "timerTicks": 10,
+        "maxTimerGapMs": 20.80000000447035,
+        "messages": [
+          "匹配 30 题",
+          "正在选择并检查题库文件与图片…取消准备"
+        ]
+      },
+      "committing": {
+        "elapsedMs": 38.900000005960464,
+        "timerTicks": 1,
+        "maxTimerGapMs": 20.400000005960464,
+        "messages": [
+          "匹配 30 题",
+          "正在保存整批题库，请稍候…"
+        ]
+      },
+      "counts": [
+        "0",
+        "1",
+        "0",
+        "29",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "errors": [],
+  "runtime": {
+    "executable": "E:\\My_Projects\\embedded-practice\\release\\win-unpacked\\embedded-practice.exe",
+    "sha256": "eeac64484ef0f1208273b625e95796ad94705abd9529db602dceeabfe102d3a6",
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-LsU3tY\\trial-HI6Lak\\中文 数据",
+    "packaged": true,
+    "versions": {
+      "node": "24.19.0",
+      "acorn": "8.17.0",
+      "ada": "3.4.4",
+      "amaro": "1.1.10",
+      "ares": "1.34.6",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.2",
+      "llhttp": "9.4.3",
+      "merve": "1.2.2",
+      "modules": "146",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.69.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "openssl": "0.0.0",
+      "simdjson": "4.6.4",
+      "simdutf": "7.7.0",
+      "sqlite": "3.53.3",
+      "tz": "2025c",
+      "undici": "7.29.0",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "14.8.178.38-electron.0",
+      "zlib": "1.3.2.1-motley",
+      "zstd": "1.6.0",
+      "electron": "42.11.15",
+      "chrome": "148.0.7778.280"
+    },
+    "size": [
+      1140,
+      780
+    ]
+  },
+  "sourceChecks": [
+    {
+      "questionId": "uart2-019",
+      "versionId": 1,
+      "questionSha256": "d0f8f0ebb72e745ede67e803b20aaebd9fb0f655622b4fdef4064af90d6d30f2",
+      "answerSha256": "7def6ad3de0784a81b86297e5cb4200b8b5b0dc70ec37afffde03ce256cee32f",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-020",
+      "versionId": 2,
+      "questionSha256": "163ff44d14ab0b04073900d6dafeb0c6566e9b0a2f00d7006c24b751e25ae28f",
+      "answerSha256": "58ae85899582cc9d85ed2322d75901407023e4fdc1807632ced28cb6fd2e3468",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-021",
+      "versionId": 3,
+      "questionSha256": "e46b79067c0fb12cd4e056a45952a5ce0abdffbcf5c86ed225a3e8092b1ac498",
+      "answerSha256": "db2f7e6807551a6247e8884ab0a06ea1f55ad67a7d451160f7a3f3a84a391275",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-022",
+      "versionId": 4,
+      "questionSha256": "2330dd8c0f9af10aac8e614b282f66a8be125e46000af2a79ad1cb4315b1d2d9",
+      "answerSha256": "53b98990bdd44cfce901aefffcaedf316974c4ed68071f1a049122b38d8b11ce",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-023",
+      "versionId": 5,
+      "questionSha256": "4009281f3b658f349d6b7c0eb6579123414f547299b464006196868eee411ae7",
+      "answerSha256": "7a5818ff3c06517146683308a2d19b23efb3440e510a6301e22856d22da7ec02",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-024",
+      "versionId": 6,
+      "questionSha256": "45d0bd7cb03a34515f7fa1ddd08f1472256b0929e52a0a801d4f705fe4a02848",
+      "answerSha256": "de10ff48efcc5350438fd6902d3baf72f67ed1d8de2c408067818c7a27b18267",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-025",
+      "versionId": 7,
+      "questionSha256": "caeaf7e910949794a7d1e23f89000b3fcb78a5371f86fc9d845a28a3007d277b",
+      "answerSha256": "43cae36deaf3956b5373e8c35848dcb620f6a21b5a9812e869712b26068a7059",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-026",
+      "versionId": 8,
+      "questionSha256": "f12a191ae0e99520e9187656a305f35c04471548281b3335c729e1b71262d360",
+      "answerSha256": "37bafcfc3f18463d9600f5c99a6dfb095f282261a646e5ea4f41a668cc29c8e3",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-027",
+      "versionId": 9,
+      "questionSha256": "cb7af78de601e2db2e0973fb67aefb693dae1cc03cfa7b4ce2a34023be5e27f3",
+      "answerSha256": "97d2bc708ed3f0ac4a337477511813a1c06622506effaa4c266bc85364220bdb",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-028",
+      "versionId": 10,
+      "questionSha256": "536eec9b14a07300e7c3927a27c18e3791b29c96cd926dda20dda4a454aac74d",
+      "answerSha256": "c3efd029221e4dda387b119c9009eb036e5775bfadb6e70b0e143a3574552722",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-029",
+      "versionId": 11,
+      "questionSha256": "dc5160fba4417d81e68de9052608d7ccd759124d710fd67774e839fe88472278",
+      "answerSha256": "ce3084fe19dd5a51222f9f49d5d5fbb551f2e06f691b55bc5d0f7b6b29026c73",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-030",
+      "versionId": 12,
+      "questionSha256": "b710cbee02fe4c6720a18c87c54cba9605ed77f85314a71725eff4f46fd2e463",
+      "answerSha256": "49fcf4f1d60f339434fa249070da8542ca697a6b871ee6fe467729f8810c6ce6",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-031",
+      "versionId": 13,
+      "questionSha256": "5085c1aedc53051fb91129994f9558a5ac2dfd9ac3315c3b7c30672bdcf1f95b",
+      "answerSha256": "a2eee7eaa7ab53d391e83f3ddcf81f851df4040a755aec01f9e1678f39aa6f33",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-032",
+      "versionId": 14,
+      "questionSha256": "53a3d67562abf4f5d28829ca453f2fe9c32e065aa4232c684024f565cdf58459",
+      "answerSha256": "c1ec8ad39d67a196b8534c321895fe6a17c8dcb19c997166afec4a109764563a",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-033",
+      "versionId": 15,
+      "questionSha256": "af327fd8a8bd59c015a454178474a04fa71903b8db2d33d051be6d07626ef7ba",
+      "answerSha256": "8d0591197ecd6e27c29c3a6eeace978bac7e453e357638c11d5b23cdf6a37a23",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-034",
+      "versionId": 16,
+      "questionSha256": "03e6ef9a77b79407c1c0ab2011fa63dc7b0954d268de1073a9c06c8faafc14b7",
+      "answerSha256": "3febbfef43dddec0301e4ad9a344faa9168ea5240ce9b0a375e089efe352f92e",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-035",
+      "versionId": 17,
+      "questionSha256": "3d1c630adbeabe2df7ea2aee76d2f00c348876fb9bc0bab2730cb6bd3ac1b2a3",
+      "answerSha256": "a1d080f42a006ef85be17b475361366993d37549a5599be6037871f12d282e2a",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-036",
+      "versionId": 18,
+      "questionSha256": "7e8906bdef052bd406f2b7d602c3dddbd0bdbf9d666e7f493fe769de3c727621",
+      "answerSha256": "5a983711e76b5c03944e10e1285b8cde68fa3eb8333529883e7ad9a87880802c",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-037",
+      "versionId": 19,
+      "questionSha256": "2fea0ef2f15ab3eac6b25d7eb83c326105105764c81212865fce3fc1c9edb6f1",
+      "answerSha256": "147b3d4df1bd917b9f49d7ec64002ce57e66c4270d0ff4e38bd2e281167819fc",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-038",
+      "versionId": 20,
+      "questionSha256": "9cdf22bdfb4198087859c36f23ae61cc67555d7e0a0abbd513f12a133857b986",
+      "answerSha256": "fa31765c4f1ba83814d9df3e38f6deec090376d3ec360830d3048f800e513dc0",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-039",
+      "versionId": 21,
+      "questionSha256": "a91b936a49a6c2c630f2f701e4336fdeb69f5e36f61ca83c6ff349cf9b17540e",
+      "answerSha256": "cb21aa5bb7d58b7cc580ff866165f8cf61f04732c20ac3e1b2606a8c3ad0b978",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-040",
+      "versionId": 22,
+      "questionSha256": "6e53db8bbc3dec52d1abac1f16107f0ebfb9d88d7a65ae2345dbe87d5a4602bc",
+      "answerSha256": "88f0c09995f2a49ba944adc10654155d882bd0de523996a40dd071adac51bdc9",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-041",
+      "versionId": 23,
+      "questionSha256": "7af1183dd6eaf30c886ce26608d97f4200206bd4453dc5bbf0b93587f1249c0b",
+      "answerSha256": "dfbe24b7acc5f2f548b7c53ff895fcb14eb36d35281c02249a5b3ee7891f1898",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-042",
+      "versionId": 24,
+      "questionSha256": "32cb7469c486ac8d8f234e92aef88be43a52c159dde8c14affa942d4c8aa9e40",
+      "answerSha256": "a9d2e4f3e8ea69e67e9dd83acd39a302abad70cdc581d7f2ac8bbb617c269f1d",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-043",
+      "versionId": 25,
+      "questionSha256": "5a63892e1866c016dc87ad64489c7f245763dcfa315f2d177eeff5758a23f9ae",
+      "answerSha256": "9d4b27d27fd6919ea4b1a6ce5b4c2d8f8fb73c20f62f96989f0b2b6a86533a8f",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-044",
+      "versionId": 26,
+      "questionSha256": "0cc5380fe2239aca0421846032e83cc911cc1cb81da6cfb52d39f1af9b977a06",
+      "answerSha256": "de3c6bd8da7678dcbfdc0c4803237bf2aeea7b4fc0a958085282d8d9fae0fc7b",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-045",
+      "versionId": 27,
+      "questionSha256": "10768a09bd26743e1fdb387ba4c50987dfb835cf4d2314897c2d6d26eb4afd9d",
+      "answerSha256": "29f1aaf6ade232e2ef171c4f78a0e51ffbe0fbe971470fdd9735ade948011912",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-046",
+      "versionId": 28,
+      "questionSha256": "b3f46b32443b4dcb7d0c035c2a9b662af3e27d409fe6e931d5a4218bca14d856",
+      "answerSha256": "ec2e9b1050b98bf470d3de790c998770cc768164632c4bb5414f185c8ec8fb9d",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-047",
+      "versionId": 29,
+      "questionSha256": "564700c85ccce4d74e6d1adc101ccb448729f2cebccba367a0d5b8e81ecacedc",
+      "answerSha256": "9e7164f87397dad2d7c01c2c3d8321c41dbc5440bc63989e2d3deb87e236d4fe",
+      "matched": true
+    },
+    {
+      "questionId": "uart2-048",
+      "versionId": 30,
+      "questionSha256": "5a9a8e086ca04e1299a88cb3a0e337920b3ec1ef944336a5a05dc3978b94115a",
+      "answerSha256": "0358ce0fa81d9f36c452391a36bf76d4cb6970b4f66170bb218c783341516447",
+      "matched": true
+    }
+  ],
+  "favoriteRetainedAfterUpdateAndReopen": true,
+  "reopenDraftMatched": true,
+  "questions": [
+    {
+      "questionId": "uart2-019",
+      "originalNumber": 19,
+      "versionId": 1,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": "不会"
+    },
+    {
+      "questionId": "uart2-020",
+      "originalNumber": 20,
+      "versionId": 2,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": "不熟"
+    },
+    {
+      "questionId": "uart2-021",
+      "originalNumber": 21,
+      "versionId": 3,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": "掌握"
+    },
+    {
+      "questionId": "uart2-022",
+      "originalNumber": 22,
+      "versionId": 4,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-023",
+      "originalNumber": 23,
+      "versionId": 5,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-024",
+      "originalNumber": 24,
+      "versionId": 6,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-025",
+      "originalNumber": 25,
+      "versionId": 7,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-026",
+      "originalNumber": 26,
+      "versionId": 8,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-027",
+      "originalNumber": 27,
+      "versionId": 9,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-028",
+      "originalNumber": 28,
+      "versionId": 10,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 1,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-029",
+      "originalNumber": 29,
+      "versionId": 11,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-030",
+      "originalNumber": 30,
+      "versionId": 12,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-031",
+      "originalNumber": 31,
+      "versionId": 13,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 1,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-032",
+      "originalNumber": 32,
+      "versionId": 14,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-033",
+      "originalNumber": 33,
+      "versionId": 15,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 1,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-034",
+      "originalNumber": 34,
+      "versionId": 16,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 1,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-035",
+      "originalNumber": 35,
+      "versionId": 17,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-036",
+      "originalNumber": 36,
+      "versionId": 18,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-037",
+      "originalNumber": 37,
+      "versionId": 19,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-038",
+      "originalNumber": 38,
+      "versionId": 20,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-039",
+      "originalNumber": 39,
+      "versionId": 21,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 1,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-040",
+      "originalNumber": 40,
+      "versionId": 22,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-041",
+      "originalNumber": 41,
+      "versionId": 23,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-042",
+      "originalNumber": 42,
+      "versionId": 24,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 1,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-043",
+      "originalNumber": 43,
+      "versionId": 25,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-044",
+      "originalNumber": 44,
+      "versionId": 26,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-045",
+      "originalNumber": 45,
+      "versionId": 27,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-046",
+      "originalNumber": 46,
+      "versionId": 28,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-047",
+      "originalNumber": 47,
+      "versionId": 29,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    },
+    {
+      "questionId": "uart2-048",
+      "originalNumber": 48,
+      "versionId": 30,
+      "hiddenBeforeReveal": true,
+      "sourceAnswerMatched": true,
+      "oldVersionPreserved": true,
+      "tables": 0,
+      "ratingForTestOnly": null
+    }
+  ],
+  "finishedSession": {
+    "sessionId": "50ac1827-d80d-4147-a837-928a342ffa7d",
+    "status": "finished",
+    "position": 30,
+    "revision": 60,
+    "total": 30,
+    "mode": "sequential",
+    "topicId": null,
+    "filters": {
+      "query": "",
+      "tag": null,
+      "difficulty": null,
+      "mastery": "all",
+      "favoritesOnly": false
+    },
+    "createdAt": "2026-10-22T12:44:42.039Z",
+    "endedAt": "2026-10-22T12:45:33.231Z",
+    "counts": {
+      "revealed": 30,
+      "rated": 3,
+      "unrated": 27,
+      "skipped": 0,
+      "ratings": {
+        "不会": 1,
+        "不熟": 1,
+        "掌握": 1
+      }
+    }
+  },
+  "tablesShown": 6,
+  "queueVersionsAndAnswersPreserved": true,
+  "sourceFilesUnchanged": true,
+  "finalDatabase": {
+    "counts": {
+      "topics": 1,
+      "questions": 30,
+      "question_versions": 31,
+      "image_resources": 0,
+      "practice_sessions": 1,
+      "practice_items": 30
+    },
+    "integrity": [
+      {
+        "integrity_check": "ok"
+      }
+    ],
+    "foreignKeys": []
+  },
+  "boundary": "Real Windows unpacked UI and production IPC/worker/SQLite with file-dialog selection replaced. No technical answer review or human learning acceptance; first three ratings are explicit isolated test inputs. Source self-tests contain no fenced code or images; indented draft was programmatically entered, not an IME or external-editor test.",
+  "completed": true,
+  "finishedAt": "2026-10-22T12:45:33.415Z"
+}

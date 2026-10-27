@@ -153,7 +153,19 @@ export function BoardEntrance({
             显示 {cards.filter((card) => card.tier !== 'overview').length} 个知识板块
           </p>
           {cards.filter((card) => card.tier !== 'overview').length === 0 && (
-            <p className="reader-placeholder">没有匹配板块，请调整搜索或有题筛选。</p>
+            <div className="reader-placeholder">
+              <p>没有匹配板块，请调整搜索或有题筛选。</p>
+              <button
+                type="button"
+                onClick={() => {
+                  setQuery('')
+                  setExtensions(false)
+                  setAvailableOnly(false)
+                }}
+              >
+                清空板块筛选
+              </button>
+            </div>
           )}
           {(
             [
@@ -170,89 +182,119 @@ export function BoardEntrance({
                     {title} <span className="muted">· {group.length}</span>
                   </h3>
                   <div className="board-grid">
-                    {group.map((card) => (
-                      <article
-                        key={card.key}
-                        className="board-card"
-                        aria-label={`板块：${card.title}`}
-                      >
-                        <span className="board-icon" aria-hidden="true">
-                          <svg
-                            viewBox="0 0 24 24"
-                            width="22"
-                            height="22"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                          >
-                            <rect x="5" y="5" width="14" height="14" rx="3" />
-                            <path
-                              d={
-                                tier === 'foundation'
-                                  ? 'M8 10h8M8 14h5'
-                                  : tier === 'extension'
-                                    ? 'm9 8 6 4-6 4V8Z'
-                                    : 'M12 8v8M8 12h8'
-                              }
-                            />
-                          </svg>
-                        </span>
-
-                        <h3>{card.title}</h3>
-                        <p className="board-summary muted">{card.summary.split(/[，。；]/u)[0]}</p>
-                        <p className="board-count">
-                          <strong>{card.activeCount}</strong> 题
-                          {card.activeCount === 0 && <span className="muted"> · 待补题</span>}
-                        </p>
-                        <button
-                          type="button"
-                          disabled={blocked || !card.scope || card.activeCount === 0}
-                          aria-label={`进入板块：${card.title}`}
-                          onClick={() => card.scope && onBrowse(card.scope, false)}
+                    {group.map((card) => {
+                      const availability =
+                        card.activeCount > 0
+                          ? 'available'
+                          : card.archivedCount > 0
+                            ? 'archived'
+                            : card.plannedTopics.length > 0
+                              ? 'planned'
+                              : 'empty'
+                      const statusLabel = {
+                        available: '可练习',
+                        archived: '仅有归档',
+                        planned: '规划中',
+                        empty: '暂无内容',
+                      }[availability]
+                      return (
+                        <article
+                          key={card.key}
+                          className="board-card"
+                          data-availability={availability}
+                          aria-label={`板块：${card.title}`}
                         >
-                          查看题库
-                        </button>
-                        {card.archivedCount > 0 && (
+                          <span className="board-icon" aria-hidden="true">
+                            <svg
+                              viewBox="0 0 24 24"
+                              width="22"
+                              height="22"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="1.5"
+                            >
+                              <rect x="5" y="5" width="14" height="14" rx="3" />
+                              <path
+                                d={
+                                  tier === 'foundation'
+                                    ? 'M8 10h8M8 14h5'
+                                    : tier === 'extension'
+                                      ? 'm9 8 6 4-6 4V8Z'
+                                      : 'M12 8v8M8 12h8'
+                                }
+                              />
+                            </svg>
+                          </span>
+
+                          <div className="board-card-title">
+                            <h3>{card.title}</h3>
+                            <span className="board-status">{statusLabel}</span>
+                          </div>
+                          <p className="board-summary muted">
+                            {card.summary.split(/[，。；]/u)[0]}
+                          </p>
+                          <p className="board-count">
+                            <strong>{card.activeCount}</strong> 题
+                            {card.activeCount === 0 && <span className="muted"> · 待补题</span>}
+                          </p>
                           <button
                             type="button"
-                            disabled={blocked || !card.scope}
-                            aria-label={`查看归档：${card.title}`}
-                            onClick={() => card.scope && onBrowse(card.scope, true)}
+                            disabled={blocked || !card.scope || card.activeCount === 0}
+                            aria-label={`进入板块：${card.title}`}
+                            onClick={() => card.scope && onBrowse(card.scope, false)}
                           >
-                            另有 {card.archivedCount} 题已归档
+                            {availability === 'available'
+                              ? '查看题库'
+                              : availability === 'archived'
+                                ? '无有效题目'
+                                : '暂无题目'}
                           </button>
-                        )}
-                        <details>
-                          <summary>查看专题与范围</summary>
-                          <p className="muted">{card.summary}</p>
-                          {card.topics.length > 0 ? (
-                            <>
-                              <p className="muted">本机已导入 {card.topics.length} 个专题</p>
-                              <ul>
-                                {card.topics.map((topic) => (
-                                  <li key={topic.topicId}>
-                                    {topic.title}（{topic.activeCount} 题）
-                                  </li>
-                                ))}
-                              </ul>
-                            </>
-                          ) : (
-                            <p className="muted">暂无已导入专题。可先浏览下方规划，后续再补题。</p>
+                          {card.archivedCount > 0 && (
+                            <button
+                              type="button"
+                              disabled={blocked || !card.scope}
+                              aria-label={`查看归档：${card.title}`}
+                              onClick={() => card.scope && onBrowse(card.scope, true)}
+                            >
+                              另有 {card.archivedCount} 题已归档
+                            </button>
                           )}
-                          {card.plannedTopics.length > 0 && (
-                            <>
-                              <p className="muted">建设规划，尚不代表已导入</p>
-                              <ul>
-                                {card.plannedTopics.map((topic) => (
-                                  <li key={topic}>{topic}</li>
-                                ))}
-                              </ul>
-                              <p className="muted">{card.boundary}</p>
-                            </>
-                          )}
-                        </details>
-                      </article>
-                    ))}
+                          <details>
+                            <summary>
+                              {availability === 'planned' ? '查看建设规划' : '查看专题与范围'}
+                            </summary>
+                            <p className="muted">{card.summary}</p>
+                            {card.topics.length > 0 ? (
+                              <>
+                                <p className="muted">本机已导入 {card.topics.length} 个专题</p>
+                                <ul>
+                                  {card.topics.map((topic) => (
+                                    <li key={topic.topicId}>
+                                      {topic.title}（{topic.activeCount} 题）
+                                    </li>
+                                  ))}
+                                </ul>
+                              </>
+                            ) : (
+                              <p className="muted">
+                                暂无已导入专题。可先浏览下方规划，后续再补题。
+                              </p>
+                            )}
+                            {card.plannedTopics.length > 0 && (
+                              <>
+                                <p className="muted">建设规划，尚不代表已导入</p>
+                                <ul>
+                                  {card.plannedTopics.map((topic) => (
+                                    <li key={topic}>{topic}</li>
+                                  ))}
+                                </ul>
+                                <p className="muted">{card.boundary}</p>
+                              </>
+                            )}
+                          </details>
+                        </article>
+                      )
+                    })}
                   </div>
                 </section>
               )

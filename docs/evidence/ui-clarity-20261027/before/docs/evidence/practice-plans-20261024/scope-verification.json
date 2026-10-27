@@ -1,0 +1,96 @@
+{
+  "baselineFiles": 280,
+  "baselineCopiesIntact": true,
+  "originalPlanPrefixIntact": true,
+  "protectedFilesIntact": [
+    ".prettierrc.json",
+    "electron-builder.yml",
+    "electron.vite.config.ts",
+    "package-lock.json",
+    "package.json",
+    "playwright.config.ts",
+    "question-banks/README.md",
+    "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+    "question-banks/examples/README.md",
+    "question-banks/examples/assets/.gitkeep",
+    "question-banks/examples/assets/中文测试图.png",
+    "question-banks/examples/assets/带 空格.jpg",
+    "question-banks/examples/assets/测试.webp",
+    "question-banks/examples/格式示例.md",
+    "question-banks/sources/STM32F103RCT6-GPIO-原始自测题.txt",
+    "question-banks/sources/STM32F103RCT6-GPIO-题答对应.json",
+    "question-banks/templates/.gitkeep",
+    "question-banks/templates/README.md",
+    "question-banks/templates/专题模板.md",
+    "question-banks/trials/README.md",
+    "question-banks/trials/STM32F103-UART第二层-30题试用.md",
+    "question-banks/trials/UART题目整理清单.json",
+    "question-banks/trials/题答来源.json",
+    "src/renderer/src/practice-controller.ts",
+    "tsconfig.node.json",
+    "tsconfig.web.json"
+  ],
+  "codeFilesReviewed": 37,
+  "codeFiles": [
+    "src/main/database/open-database.ts",
+    "src/main/database/practice-plan-schema.ts",
+    "src/main/database/repositories/practice-plan-repository.ts",
+    "src/main/ipc/library.ts",
+    "src/main/services/backup/validate-backup.ts",
+    "src/main/services/library/library-import.ts",
+    "src/preload/index.ts",
+    "src/renderer/src/App.tsx",
+    "src/renderer/src/components/BackupPanel.tsx",
+    "src/renderer/src/components/PracticePlans.tsx",
+    "src/renderer/src/components/PracticeWorkspace.tsx",
+    "src/renderer/src/styles/global.css",
+    "src/renderer/src/usePracticePlans.ts",
+    "src/shared/contracts/application.ts",
+    "src/shared/contracts/backup.ts",
+    "src/shared/contracts/practice-plans.ts",
+    "tests/e2e/backup-legacy.spec.ts",
+    "tests/e2e/backup-window.spec.ts",
+    "tests/e2e/category-migration.spec.ts",
+    "tests/e2e/history-versions.spec.ts",
+    "tests/e2e/library-import.spec.ts",
+    "tests/e2e/palette-migration.spec.ts",
+    "tests/e2e/practice-mode-migration.spec.ts",
+    "tests/e2e/practice-plan-helpers.ts",
+    "tests/e2e/practice-plans-errors.spec.ts",
+    "tests/e2e/practice-plans-migration.spec.ts",
+    "tests/e2e/practice-plans.spec.ts",
+    "tests/e2e/practice.spec.ts",
+    "tests/e2e/restore-window.spec.ts",
+    "tests/e2e/session-filters-migration.spec.ts",
+    "tests/e2e/settings-migration.spec.ts",
+    "tests/e2e/startup.spec.ts",
+    "tests/fixtures/schema-v8.sql",
+    "tests/unit/backup-contract.test.ts",
+    "tests/unit/backup-ipc.test.ts",
+    "tests/unit/library-ipc.test.ts",
+    "tests/unit/practice-plans-contract.test.ts"
+  ],
+  "reviewMissing": [],
+  "newProduction": [
+    {
+      "path": "src/main/database/practice-plan-schema.ts",
+      "lines": 8
+    },
+    {
+      "path": "src/main/database/repositories/practice-plan-repository.ts",
+      "lines": 73
+    },
+    {
+      "path": "src/renderer/src/components/PracticePlans.tsx",
+      "lines": 201
+    },
+    {
+      "path": "src/renderer/src/usePracticePlans.ts",
+      "lines": 91
+    },
+    {
+      "path": "src/shared/contracts/practice-plans.ts",
+      "lines": 55
+    }
+  ]
+}

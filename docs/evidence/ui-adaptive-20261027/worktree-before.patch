@@ -1,0 +1,873 @@
+diff --git a/README.md b/README.md
+index 028a256..52acc5c 100644
+--- a/README.md
++++ b/README.md
+@@ -2,7 +2,19 @@
+ 
+ 供个人使用的Windows离线刷题程序，内部标识embedded-practice。题目与参考答案在程序外用Markdown维护，程序负责导入、练习、草稿、历史、分类、方案与完整备份恢复。
+ 
+-## V0.0.2（2026-10-26）
++## UI可读性与操作层级优化（2026-10-27）
++
++新增独立试用构建20261027.1-ui-clarity，产品0.0.2、结构10。第一批处理作答占位提示、题库范围/条件/结果层级、练习主要操作与保存反馈，保留现有工作台和多主题。
++
++[优化内容与用户结论](docs/UI可读性与操作层级优化.md) · [独立试用开始使用](release/V0.0.2-ui-clarity-20261027.1/开始使用.md) · [本批检查](docs/evidence/ui-clarity-20261027/README.md)。使用新目录“安全试用UI优化.cmd”进入独立空库；现有个人桌面仍为下节20261026.4-v002。实际结果和未验边界见[验收记录](docs/验收记录.md)，不将先前42项审查计为本轮执行。
++
++## V0.0.2最新主线与桌面更新（2026-10-26）
++
++**产品0.0.2 · 构建20261026.4-v002 · 数据库结构10。** 已将main最新合并66bbc6c中的恢复诊断、练习状态及界面错误恢复修复纳入新完整程序，并将桌面更新为“嵌入式刷题本 V0.0.2”，已从该入口启动。
++
++[桌面更新说明](docs/V0.0.2桌面更新说明.md) · [最新程序开始使用](release/V0.0.2-20261026.4/开始使用.md) · [执行证据](docs/evidence/v002-desktop-20261026/README.md)。本轮单元660/660、新EXE完整解包回归255/255；正式学习库15张业务表逐表保持，13专题419题及原队列/草稿/设置保留。旧入口和数据已备份，旧完整程序保持；原生画面工具不可用，实际进程与Shell桌面合并视图核对另有记录。
++
++## V0.0.2首次发布（历史构建，2026-10-26）
+ 
+ **产品0.0.2 · 构建20261026.3-v002 · 数据库结构10。** 保留已验收的第三轮r2布局，本版更新产品/构建版本及对应断言，依赖、题库、主进程和练习保存行为保持。
+ 
+@@ -26,13 +38,13 @@
+ 
+ [独立程序开始使用](release/V0.0.1-workbench-e-20261025.3-r2/开始使用.md) · [完整用户计划](docs/UI学习工作台开发计划.md) · [最终行为与验收](docs/UI学习工作台行为与验收.md) · [本批原始证据](docs/evidence/workbench-e-20261025/README.md)。请使用新目录“安全试用学习工作台.cmd”进入独立数据目录；现有桌面程序、快捷方式和正式学习库不自动替换或迁移。当前构建沿用主线1f25ffa的恢复事务修复；依赖、题库内容和数据库结构保持。
+ 
+-## V0.0.1：增加额外主题功能（现有桌面程序）
++## V0.0.1：增加额外主题功能（历史个人交付）
+ 
+ **V0.0.1 测试版，构建20261025.2-v001，结构10。** 桌面“嵌入式刷题本 V0.0.1”已指向新完整程序并实际启动。支持多个本地主题、非官方Claude风格、预览/应用/更新/卸载及备份；内置五套主题，另附两个可安装示例。
+ 
+ [开始使用](release/V0.0.1-20261025.2/开始使用.md) · [V0.0.1发布说明](docs/V0.0.1发布说明.md) · [当前交付](docs/当前试用版本交付说明.md) · [本版检查](docs/evidence/v001-release-20261025/README.md)。13专题419题与原学习记录已保护并逐表核对，升级前后完整备份和旧快捷方式位于本机backups/个人使用/V0.0.1升级前-20261025-150100；正式库已由9升级10，旧完整程序保留。
+ 
+-以下记录保留各批当时范围。现有个人入口以V0.0.1发布说明为准，新独立工作台以本页上方的使用说明和验收记录为准。
++以下记录保留各批当时范围。当前个人桌面入口以本页顶部最新V0.0.2桌面更新说明为准，各历史独立试用版保留原使用说明和验收记录。
+ 
+ ## 2026-10-25 多主题开发交付（历史构建）
+ 
+diff --git a/docs/README.md b/docs/README.md
+index f9c0018..3114079 100644
+--- a/docs/README.md
++++ b/docs/README.md
+@@ -1,6 +1,14 @@
+ # 项目文档索引
+ 
+-## V0.0.2（2026-10-26）
++## UI可读性与操作层级第一批（2026-10-27）
++
++[完整用户结论与本批行为](UI可读性与操作层级优化.md) · [独立试用入口](../release/V0.0.2-ui-clarity-20261027.1/开始使用.md) · [执行证据](evidence/ui-clarity-20261027/README.md)。构建20261027.1-ui-clarity、产品0.0.2、结构10；个人桌面和正式学习库保持。后续高缩放/概览/规划板块等不计入本批完成范围。
++
++## 最新V0.0.2桌面入口（2026-10-26）
++
++[桌面更新说明](V0.0.2桌面更新说明.md) · [最新程序开始使用](../release/V0.0.2-20261026.4/开始使用.md) · [本轮证据](evidence/v002-desktop-20261026/README.md)。main66bbc6c、构建20261026.4-v002、产品0.0.2、结构10；桌面入口已实际启动，原个人进度逐表保持，旧入口和学习库已备份。
++
++## V0.0.2首次发布（历史构建，2026-10-26）
+ 
+ [版本发布说明](V0.0.2发布说明.md) · [新程序开始使用](../release/V0.0.2-20261026.3/开始使用.md) · [本版证据](evidence/v002-release-20261026/README.md)。产品0.0.2、构建20261026.3-v002、结构10；保持已验收UI，旧程序、个人进度和历史报告保留。
+ 
+@@ -16,7 +24,7 @@
+ 
+ [完整用户计划](UI学习工作台开发计划.md) · [行为与验收](UI学习工作台行为与验收.md) · [独立程序开始使用](../release/V0.0.1-workbench-e-20261025.3-r2/开始使用.md) · [本批证据](evidence/workbench-e-20261025/README.md)。新独立构建20261025.3-workbench-e，产品仍0.0.1、结构仍10，统一六页工作台和响应式阅读；现有桌面个人程序与正式数据保留。
+ 
+-## V0.0.1入口（现有桌面程序，2026-10-25）
++## V0.0.1入口（历史个人交付，2026-10-25）
+ 
+ [发布说明](V0.0.1发布说明.md) · [本版证据](evidence/v001-release-20261025/README.md) · [当前交付](当前试用版本交付说明.md) · [主题使用与格式](多主题系统行为与格式.md)。当前V0.0.1/20261025.2-v001/结构10，桌面入口已更新且个人学习记录已核对保护。以下各批入口按当时范围保留。
+ 
+diff --git "a/docs/V0.0.2\345\217\221\345\270\203\350\257\264\346\230\216.md" "b/docs/V0.0.2\345\217\221\345\270\203\350\257\264\346\230\216.md"
+index f051bbb..3de84d8 100644
+--- "a/docs/V0.0.2\345\217\221\345\270\203\350\257\264\346\230\216.md"
++++ "b/docs/V0.0.2\345\217\221\345\270\203\350\257\264\346\230\216.md"
+@@ -1,5 +1,13 @@
+ # V0.0.2发布说明
+ 
++## 2026-10-26 最新主线桌面更新
++
++当前桌面使用产品0.0.2、构建20261026.4-v002、结构10。已将main最新合并66bbc6c中的修复重新打包到release/V0.0.2-20261026.4，并从“嵌入式刷题本 V0.0.2”实际启动；上次首次发布构建20261026.3-v002保留。
++
++本轮单元660/660、新EXE完整解包255/255通过；原学习库15业务表逐表保持，原13专题419题和队列/草稿/外观不变，只有正常启动计数增加。旧快捷方式与完整数据已备份，实际进程及Shell合并桌面核对完成。详见[桌面更新说明](V0.0.2桌面更新说明.md)及[本轮证据](evidence/v002-desktop-20261026/README.md)。没有另行提交/推送、移动首次v0.0.2标签或制作安装器；原生画面工具故障及脚本原始失败分别保留。
++
++## 首次发布记录（20261026.3-v002，保留）
++
+ 日期：2026-10-26（Asia/Singapore）。产品版本0.0.2，构建20261026.3-v002，数据库结构10，Windows x64。
+ 
+ 本版以已验收的方案E第三轮r2为布局基线。用户要求先提交Git、再更新V0.0.2；UI实现、测试与独立复核证据已先提交为ddf2309，版本更新单独提交并用本地标签v0.0.2标记。不推送远程或发布安装器。
+diff --git "a/docs/\344\273\243\347\240\201\345\244\215\346\237\245\350\256\260\345\275\225.md" "b/docs/\344\273\243\347\240\201\345\244\215\346\237\245\350\256\260\345\275\225.md"
+index fd607ca..da132e3 100644
+--- "a/docs/\344\273\243\347\240\201\345\244\215\346\237\245\350\256\260\345\275\225.md"
++++ "b/docs/\344\273\243\347\240\201\345\244\215\346\237\245\350\256\260\345\275\225.md"
+@@ -1,5 +1,37 @@
+ # 代码复查记录
+ 
++## 2026-10-27 UI可读性与操作层级第一批
++
++逐文件完成后先检查Bug与边界，再检查可维护性；下列为静态复查，实际运行另记验收记录。开始时的未提交修改及文件快照保存在evidence/ui-clarity-20261027/before/，不覆盖上一轮失败和交付程序。
++
++- global.css：Bug轮核对选择器仅影响作答区占位提示，显式使用主题muted且opacity=1，不影响真实输入、只读状态、字体和主题切换；十组实际颜色仍待运行测量。优化轮保留四行局部规则，不新增颜色或修改主题格式。
++- LibraryBrowser.tsx：Bug轮核对范围即时生效、附加条件显式应用、清空回到首页及学习记录锁定范围的原语义；结果摘要只在resolvedRequest匹配且读取成功时展示，编辑中摘要继续使用request，错误/加载不冒充已确认结果。清空说明采用实例useId，缺失分类/专题明确标为失效。优化轮复用questionFilterSummary与现有状态/请求，不新建筛选协议或练习入口，不改变Portal、分页、焦点及异步取消。
++- PracticePane.tsx：Bug轮追踪原perform→saveLatest→rateAndAdvance及onHome保存守卫，阶段文字明确自评立即推进与末题完成；揭晓/自评/暂不评价/跳过/返回/重试均保持原处理器和禁用、防重复、焦点、失败保留输入路径。优化轮只增加阶段/保存状态横条，顶部返回降为次要、跳过与暂不评价弱化、错误重试突出；沿用自评语义颜色与底栏ResizeObserver，不添加第二套自评或待保存状态。
++- workbench-pages.css：Bug轮核对筛选三组的minmax/换行、学习记录复用、窄窗阅读时隐藏控制区，以及新阶段横条和原底栏最大高度/真实预留的关系。优化轮复用accent-soft、text、muted和主题圆角，缩小分组间距，无主题专属结构；本轮未改Windows窗口行为与第二批缩放策略，真实尺寸仍待运行检查。
++- App.tsx：Bug轮仅替换原未提交的构建常量为20261027.1-ui-clarity，产品0.0.2/结构10及已有工作区逻辑保持。优化轮不添加环境判断或修改导航，独立包/运行证据据此区分新旧程序。
++- theme-helpers.ts：Bug轮仅同步新页脚构建，原EXE精确路径、packaged、产品/宿主版本、结构10、独立userData断言全部保留。优化轮沿用原helper，无额外配置或放宽匹配。
++- board-entry.spec.ts：Bug轮同步页脚断言及运行身份附件两处构建标识，保留上轮未提交的V0.0.2断言、完整板块与筛选覆盖。优化轮保持原测试逻辑和精确定位，不改业务预期。
++- personal-bank.spec.ts：Bug轮仅同步当前构建，13专题419题、题库独立版本与运行路径/结构断言保持。优化轮不重写题库夹具，不缩减真实题库检查。
++- ui-clarity.spec.ts：Bug轮核对五主题各自独立TEMP、十组空白占位实际颜色与原始比值、草稿/生效条件分离、无结果/清空、学习记录锁定范围及真实保存推进返回；全部finally关闭应用，真实SQLite与生产导入继续使用现有helper，系统明暗使用媒体模拟且不冒充Windows DPI。优化轮复用BUILTIN_THEMES和准备/截图接口，不写生产专用测试钩子，不增加自动重试或放宽超时；首轮类型检查通过，实际运行待验。
++- ui-clarity.spec.ts首轮修正：Bug轮确认data-theme保存的是用户选择system，实际明暗由CSS媒体响应，故保留system断言并新增实际背景/占位色精确值与4.5原始比值断言；待应用提示定位限定“设置题库条件”分组，避开既有服务状态。优化轮只修测试假设与定位，未放宽颜色/业务断言、超时或重试；原文件冻结到development-01-sources/，原失败报告另存。
++- LibraryBrowser.tsx首轮布局修正：Bug轮确认共享的学习记录视图不能重复展开范围/阶段说明，将其范围分组隐藏、生效摘要与清空说明放入可展开details，清空描述仍由同一useId关联；原记录范围/统计与普通题库行为保持。优化轮提取同一结果说明片段复用两形态，不复制条件语义或添加业务状态；原首次三条记录可见性失败及源码保留，待按原断言复查。
++- workbench-pages.css首轮布局修正：Bug轮仅对已有data-records形态使用紧凑网格，应用与结果共一行，详情说明可展开；小宽度恢复单列，错误/加载跨整行。优化轮复用同一组件和变量，不改前三条必须完整可见的原测试门槛；普通题库分组保持。
++- ui-clarity.spec.ts布局跟进：Bug轮先实际展开记录页说明再读取范围，截图前等待原500ms保护结束后的按钮可用状态，避免交付暂时禁用的画面。优化轮使用原可用性等待，不加入固定延时、重试或隐藏元素操作。
++- 安全试用UI优化.cmd：Bug轮确认LOCALAPPDATA及本目录EXE存在才启动，显式指定ui-clarity独立目录并清除Electron调试环境，不读写默认个人目录或旧入口。优化轮沿用既有安全启动模板，参数全部引用，不增加复制/删除/迁移行为；入口静态核对，实际EXE另由隔离回归检查。
++- 本批verify-artifacts.cjs：Bug轮核对固定仓库/新旧交付目标，逐文件SHA与长度、ASAR本机路径、原生模块、八份预期修改/一份新测试、包锁配置和13份题库；仅写本批核对报告，不接触任何数据库或清理文件。优化轮复用同一哈希/遍历函数，名单明确且失败即停止，保留旧清单元数据，不用文件数代替逐字节检查。
++- verify-artifacts.cjs元数据修正：Bug轮确认electron-builder按既有流程移除package.json中的scripts/devDependencies，原首查错误地要求其与开发文件字节相同；改为运行元数据逐字段精确比对，并额外要求与上一版同产品/依赖的包内package.json哈希相同。优化轮保持24份构建/许可文件及原生模块的字节断言，未改变包或源配置来通过检查；首查失败与脚本冻结保留。
++- verify-artifacts.cjs基线补证：Bug轮确认开始时git ls-files默认转义导致一份中文合法专题夹具未进入文件快照；第二轮不能将其误判为新文件。改用NUL分隔的真实Git路径清单，并将快照缺项与HEAD原始字节严格比较，真实新增仍只允许ui-clarity.spec.ts。优化轮显式报告recoveredBaseline，不修改原before.json或历史文件；原工作区二进制差异补丁仍保留。第二次工具失败与脚本原样封存。
++- board-entry.spec.ts键盘次序更新：新EXE完整首轮262/263，唯一失败为旧断言要求管理分类后直接聚焦搜索。Bug轮按本批“先范围后条件”的真实DOM次序逐项增加专题→归档→搜索焦点断言，保留后续导航、焦点环、对比度与全部主题/窗口覆盖。优化轮只同步明确改变的交互顺序，不扩大Tab循环上限、不跳过控件或放宽焦点断言；原测试源/失败保留，未修改产品包。
++
++## 2026-10-26 最新主线V0.0.2桌面更新
++
++用户授权查看最新合并与开发记录，并将最新程序更新至桌面。基线main66bbc6c；产品0.0.2、结构10保持，新增可区分构建20261026.4-v002。逐文件完成Bug轮、可维护性轮后再处理下一文件；运行结果另记验收记录。
++
++- App.tsx：Bug轮核对diff仅构建常量由20261026.3-v002改为20261026.4-v002，页脚仍使用实际appVersion；导航、状态、保存与错误路径均无改动。可维护性轮确认沿用唯一既有常量，未增加版本体系或重构。
++- theme-helpers.ts：Bug轮核对仅同步新构建断言，显式EXE、独立userData、packaged、0.0.2及结构10断言均保持；不会误把旧EXE通过。可维护性轮确认继续复用现有目标核验函数，不放宽断言或超时。
++- board-entry.spec.ts：Bug轮核对页脚预期和证据build同步为同一新值，schema、EXE、宿主及独立数据目录验证保持。可维护性轮确认只改两处当前元数据，不修改板块数据、交互步骤或历史证据。
++- personal-bank.spec.ts：Bug轮核对只同步精确页脚构建，原419题内容/身份/版本/队列及备份断言保持。可维护性轮保留实际appVersion插值与原断言，无重复准备流程或额外依赖。
++
+ ## 2026-10-26 合并前独立复查（已提交及原工作区修改）
+ 
+ 范围为main29342b8至f066f4c的3项提交，加上用户追加授权的原工作区4个生产文件与2个测试文件；本次不声称重新覆盖全仓。先Bug/边界，再可维护性复查，未修改生产实现。
+diff --git "a/docs/\345\274\200\345\217\221\350\256\260\345\275\225.md" "b/docs/\345\274\200\345\217\221\350\256\260\345\275\225.md"
+index 64a943c..a4304b2 100644
+--- "a/docs/\345\274\200\345\217\221\350\256\260\345\275\225.md"
++++ "b/docs/\345\274\200\345\217\221\350\256\260\345\275\225.md"
+@@ -1,5 +1,29 @@
+ # 开发记录
+ 
++## 2026-10-27 UI可读性与操作层级第一批
++
++- 按用户“按照结论继续开发优化”，先实现占位提示对比度、题库筛选组织和练习操作层级；[用户完整结论及本批行为](UI可读性与操作层级优化.md)原文保留。开始时main66bbc6c及上一轮未提交桌面更新/审查保持，原状态/补丁/文件快照在evidence/ui-clarity-20261027。
++- 占位提示显式使用主题muted且opacity=1；题库按范围/条件/结果组织，生效摘要与待应用输入分开，清空说明按普通题库/学习记录范围分别表达。练习阶段与保存状态并列，揭晓、返回/跳过/暂不评价及失败重试形成主次，原保存与推进处理器、答案隐藏、队列和字号保持。
++- 逐文件完成Bug轮及可维护性轮。首轮开发18/25，六项新增失败为测试设置/定位假设，一项为共享学习记录布局挤压前三条记录；保留原失败，改为记录页紧凑复用与可展开说明，原可见性断言保持，修正后定向9/9。开发十组空白输入实际比值5.047～8.089，不冒称完整无障碍验收。
++- 最终check-03与build-02通过，35文件660/660单元，pack-01产生独立完整目录release/V0.0.2-ui-clarity-20261027.1；产品0.0.2/构建20261027.1-ui-clarity/结构10，原13专题419题、两个主题与独立安全入口保留。24份包内构建/许可及原生模块匹配，旧154份交付文件及题库保持；源码只改5份渲染生产文件、同步3份身份测试，新增八项回归。
++- 完整新EXE回归结果见[本批证据](evidence/ui-clarity-20261027/README.md)与验收记录；各工具首查失败单独保留。个人桌面仍用20261026.4-v002，本批未访问正式学习库、自动更新桌面、提交推送或生成安装器。第二批高缩放空间/概览/规划入口等未实施，跨屏鼠标拖动、全部DPI/IME和VMware原边界保持。
++- 新EXE完整首轮262/263、587.164秒，唯一失败为旧Tab顺序预期；按本批先范围后条件的新次序增加专题→归档→搜索逐项焦点断言，原主题/尺寸/焦点环/对比度和Tab上限保持。同一EXE定向1/1通过，check-04通过；263个不同场景均有通过证据，不冒称单轮263/263，原包与首轮失败保留。新EXE十组占位比值与开发一致，14张新窗口预览随独立程序交付。
++
++## 2026-10-27 桌面更新收尾复核
++
++- 接续上一日已完成的V0.0.2桌面切换，确认main仍为66bbc6c，桌面Shell合并视图只有新版入口，目标仍为20261026.4-v002；程序此时未运行，不额外启动或操作正式学习库。
++- 154份交付文件哈希全部保持，208源码/测试/配置仍只改既定4份构建标识相关文件；本机完整备份完整性ok，原15业务表、13专题419题与升级前快照一致，旧入口备份存在。
++- result-summary.json首次派生汇总的build字段被重复布尔字段覆盖，原文件保留，另存result-summary-final.json恢复构建标识并以buildPassed表达构建通过；不改原始packaged-01.json、255项结果及历史失败。详见[证据](evidence/v002-desktop-20261026/README.md)。未新增源码改动、重新运行整套测试或另行提交推送。
++
++## 2026-10-26 最新合并修复打包与实际桌面更新
++
++- 用户要求先查看最新合并及开发记录，再更新实际桌面程序。核对main最新66bbc6c合并078ae80，确认上次29342b8交付包不含之后的练习状态、恢复诊断与界面错误恢复修复；沿用原稳定UI，不追加视觉精修。
++- 产品0.0.2、结构10、依赖保持，构建改为20261026.4-v002；App与三份测试标识逐文件完成两轮复查。208源码/测试/配置仅这4文件变化，包和锁文件无变化，原计划前缀保持。
++- 类型/格式、单元35文件660/660、源码构建及本地Windows x64解包构建通过；明确新EXE的完整packaged回归255/255，527.021秒，零失败/跳过/flaky/自动重试。24份包内构建/许可与原生模块一致，新采集19张隔离窗口，附10张预览。
++- 正式更新前应用未运行，保存原数据目录及旧快捷方式并创建SQLite一致性快照；新程序对备份独立TEMP副本正常读取、导出完整备份、预览及15业务表摘要核对通过。副本检查的三次脚本失败保留，均未改程序保护或正式数据，原因见验收及证据。
++- 从新桌面“嵌入式刷题本 V0.0.2”实际启动，主进程路径指向release/V0.0.2-20261026.4/win-unpacked/embedded-practice.exe，窗口存在且响应。正式目录仍原路径，15业务表逐表保持、13专题419题不变，启动计数14→15。删除已备份的旧入口并刷新Shell，物理桌面/Public/OneDrive及合并视图仅新版入口；旧完整程序保持。
++- 备份位于backups/个人使用/V0.0.2桌面更新前-20261026-202244；最新使用及回退入口见[更新说明](V0.0.2桌面更新说明.md)。原生画面工具初始化失败，个人桌面截图/原生点击未新增验收；没有安装器、VMware、DPI/IME/多显示器新验收，未另行提交/推送或移动版本标签。
++
+ ## 2026-10-26 Git收口与V0.0.2
+ 
+ - 按用户“提交git，然后更新版本为V0.0.2”，先提交已验收的三轮UI实现/测试/复查证据为ddf2309，再独立进行版本提交与本地v0.0.2标记，不推送远程。
+diff --git "a/docs/\345\274\200\345\217\221\350\257\264\346\230\216.md" "b/docs/\345\274\200\345\217\221\350\257\264\346\230\216.md"
+index 118fe3c..288b16b 100644
+--- "a/docs/\345\274\200\345\217\221\350\257\264\346\230\216.md"
++++ "b/docs/\345\274\200\345\217\221\350\257\264\346\230\216.md"
+@@ -1,5 +1,21 @@
+ # 开发说明
+ 
++## UI可读性与操作层级构建（2026-10-27）
++
++产品0.0.2、构建20261027.1-ui-clarity、结构10。开发明确入口E:\My_Projects\embedded-practice\out\main\index.js；新解包EXE为E:\My_Projects\embedded-practice\release\V0.0.2-ui-clarity-20261027.1\win-unpacked\embedded-practice.exe。本批只改5份渲染层生产文件，现有3份身份断言同步、新增ui-clarity.spec.ts八场景；主进程/共享契约/草稿控制器/依赖/锁文件和构建配置保持。
++
++使用原工具链npm run check、npm test、npm run build；本地electron-builder --win --x64 --dir --publish never --config.electronDist=node_modules/electron/dist --config.directories.output=release/V0.0.2-ui-clarity-20261027.1。解包测试显式指定EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE为上述新EXE，PLAYWRIGHT_JSON_OUTPUT_FILE及--output使用本批未存在的新轮次路径，运行node node_modules/@playwright/test/cli.js test --project=packaged --reporter=list,json。逐场景新TEMP并核对实际userData、构建、结构与EXE，不依赖旧默认目录。
++
++本批运行/首次失败记录见[evidence/ui-clarity-20261027](evidence/ui-clarity-20261027/README.md)。验证脚本verify-artifacts.cjs只核对固定新旧交付、构建/许可、原生模块和源码范围；不访问数据库。独立安全试用入口不迁移个人数据或更换桌面，原42项审查与历史255项结果保持各自运行边界。以下按历史构建理解。
++
++## 最新主线V0.0.2桌面构建（2026-10-26）
++
++本次基线main66bbc6c（父提交29342b8、078ae80），含首次V0.0.2发布后合入的修复；产品0.0.2、结构10保持，新增构建20261026.4-v002。开发入口E:\My_Projects\embedded-practice\out\main\index.js；明确解包目标E:\My_Projects\embedded-practice\release\V0.0.2-20261026.4\win-unpacked\embedded-practice.exe。208源码/测试/配置仅App常量和三份测试当前标识改变，包/锁文件与其余204文件保持基线。
++
++本次运行npm run check、npm test、npm run build；利用已有本地Electron分发执行electron-builder --win --x64 --dir --publish never --config.electronDist=node_modules/electron/dist --config.directories.output=release/V0.0.2-20261026.4。随后显式设置EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE为上述新EXE，运行本地Playwright CLI的packaged全项目；报告packaged-01.json，产物目录packaged-01，全部使用每场景新建TEMP。新包完整255/255、单元660/660；不覆盖旧程序或报告，重跑须另起名称。
++
++用户本轮明确授权实际个人桌面更新，因此独立自动化完成后另作一致性备份、原数据逐表核对及快捷方式切换；这类实际交付核对不计为临时目录测试。未修改v0.0.2标签、另行提交或推送，未制作安装器。完整环境、工具故障及脚本首轮失败见[本批证据](evidence/v002-desktop-20261026/README.md)。
++
+ ## V0.0.2版本构建（2026-10-26）
+ 
+ 产品0.0.2、构建20261026.3-v002、结构10。开发入口E:\My_Projects\embedded-practice\out\main\index.js；实际解包EXE为E:\My_Projects\embedded-practice\release\V0.0.2-20261026.3\win-unpacked\embedded-practice.exe。只改版本元数据和三个当前测试断言，不改布局、业务、依赖或数据路径。开发宿主仍为Electron42.11.15，不能把宿主版本当作产品版本。
+diff --git "a/docs/\345\275\223\345\211\215\350\257\225\347\224\250\347\211\210\346\234\254\344\272\244\344\273\230\350\257\264\346\230\216.md" "b/docs/\345\275\223\345\211\215\350\257\225\347\224\250\347\211\210\346\234\254\344\272\244\344\273\230\350\257\264\346\230\216.md"
+index a9757c5..5b9fd12 100644
+--- "a/docs/\345\275\223\345\211\215\350\257\225\347\224\250\347\211\210\346\234\254\344\272\244\344\273\230\350\257\264\346\230\216.md"
++++ "b/docs/\345\275\223\345\211\215\350\257\225\347\224\250\347\211\210\346\234\254\344\272\244\344\273\230\350\257\264\346\230\216.md"
+@@ -1,6 +1,26 @@
+ # 当前试用版本交付说明
+ 
+-## V0.0.2（2026-10-26）
++## UI可读性与操作层级独立试用（2026-10-27）
++
++**产品0.0.2 · 构建20261027.1-ui-clarity · 结构10 · Windows x64。** 新完整目录为E:\My_Projects\embedded-practice\release\V0.0.2-ui-clarity-20261027.1；实际EXE为其中win-unpacked/embedded-practice.exe。请通过[开始使用](../release/V0.0.2-ui-clarity-20261027.1/开始使用.md)及同目录“安全试用UI优化.cmd”进入。
++
++该入口显式指定%LOCALAPPDATA%\embedded-practice-ui-clarity-trial-20261027.1，首次为空库；附13份原题库419题和两个主题，不自动导入或迁移个人进度。直接运行内部EXE仍按原默认数据路径规则处理，隔离试用必须使用安全入口。试用退出后可从原桌面程序继续原数据，本批没有更换桌面或访问正式学习库。
++
++第一批完成占位提示对比度、题库筛选组织和练习操作层级；保留原工作台、多主题与练习保存契约，学习记录复用列表仍保持紧凑。行为与原文见[优化说明](UI可读性与操作层级优化.md)，实际结果、首次失败和边界见[本批证据](evidence/ui-clarity-20261027/README.md)及[验收记录](验收记录.md)。本轮不制作/安装NSIS，全部Windows DPI/IME、真实跨屏拖动、主观体验/长期性能/硬件及VMware原边界保持。以下是仍在使用的个人桌面版本及历史交付。
++
++最终类型/格式与源码/解包构建通过，单元660/660；新EXE完整首轮262/263，更新旧Tab顺序断言后同一EXE定向1/1，263个不同场景均有通过证据，不冒称单轮263/263。占位10组5.047～8.089，附14张新EXE画面与完整文件校验，详见同目录[检查结果](../release/V0.0.2-ui-clarity-20261027.1/检查结果.md)。
++
++## V0.0.2最新主线桌面程序（2026-10-26）
++
++**产品0.0.2 · 构建20261026.4-v002 · 结构10 · Windows x64。** 最新完整目录E:\My_Projects\embedded-practice\release\V0.0.2-20261026.4，EXE为其中win-unpacked/embedded-practice.exe，须整体保留运行目录。源码基线为main最新合并66bbc6c，本次只额外更新构建标识与三份当前测试断言；产品、依赖和数据库结构保持。
++
++桌面现为“嵌入式刷题本 V0.0.2”，已通过该快捷方式实际启动并核对EXE路径、窗口标题、资源版本和响应状态；个人/Public/OneDrive桌面及Shell合并视图只剩新版入口，已发送Shell刷新。正式目录仍为C:\Users\pc\AppData\Roaming\embedded-practice，15张业务表逐表摘要保持，13专题419题、草稿、固定队列、历史、收藏和外观不变；只有正常启动计数14→15，不涉及结构迁移。
++
++升级前后SQLite一致性快照、原数据目录快照、旧V0.0.1入口和经新版独立副本导出并预览通过的完整备份位于E:\My_Projects\embedded-practice\backups\个人使用\V0.0.2桌面更新前-20261026-202244；程序内恢复应使用v002-verified-copy-export.sqlite3。旧V0.0.1完整程序及上次V0.0.2程序保留。
++
++本次类型/格式、构建和打包通过；单元35文件660/660，新EXE完整解包255/255（零失败/跳过/flaky/重试），15业务表副本核对及实际更新后核对分别记录。附原13专题419题、两个主题和10张本次隔离窗口预览。原生画面工具初始化失败，未完成个人桌面截图或原生点击复核；本次没有安装器、全部DPI/IME/多显示器或VMware新验收。详见[更新说明](V0.0.2桌面更新说明.md)、[开始使用](../release/V0.0.2-20261026.4/开始使用.md)与[本轮证据](evidence/v002-desktop-20261026/README.md)。以下按历史交付理解。
++
++## V0.0.2首次发布（历史构建，2026-10-26）
+ 
+ **产品0.0.2 · 构建20261026.3-v002 · 结构10 · Windows x64。** 完整目录E:\My_Projects\embedded-practice\release\V0.0.2-20261026.3，程序为其中win-unpacked/embedded-practice.exe。打开[开始使用](../release/V0.0.2-20261026.3/开始使用.md)，双击同目录“安全试用V0.0.2.cmd”；安全入口使用独立的%LOCALAPPDATA%\embedded-practice-v002-trial-20261026.3，初次为空库，须整体保留运行目录。
+ 
+@@ -44,7 +64,7 @@
+ 
+ 实际结果：类型/格式、构建和打包通过，单元660/660；完整开发242/242、最后视觉修正后开发定向10/10、最终r2解包完整242/242。最终包24份构建/许可与原生模块一致，13原题库文件哈希保持。原始失败与首包保留，不合并宣称首轮全通过。
+ 
+-## V0.0.1（现有桌面程序，2026-10-25）
++## V0.0.1（历史桌面程序，2026-10-25）
+ 
+ **V0.0.1 测试版 · 构建20261025.2-v001 · 结构10 · Windows x64。** 完整目录E:\My_Projects\embedded-practice\release\V0.0.1-20261025.2；程序为其中win-unpacked/embedded-practice.exe，保留整个目录。新增额外本地主题功能、非官方Claude工作区，内置五套配色，另有两个可安装示例。
+ 
+diff --git "a/docs/\351\252\214\346\224\266\350\256\260\345\275\225.md" "b/docs/\351\252\214\346\224\266\350\256\260\345\275\225.md"
+index 5c36e1f..ab8a0cc 100644
+--- "a/docs/\351\252\214\346\224\266\350\256\260\345\275\225.md"
++++ "b/docs/\351\252\214\346\224\266\350\256\260\345\275\225.md"
+@@ -1,5 +1,67 @@
+ # 验收记录
++
++## 2026-10-27 UI可读性与操作层级第一批
++
++用户授权按优化结论继续开发，本批限定占位提示、题库筛选组织、练习操作层级三项。Windows11 x64，Node24.19.0/npm11.17.0，Electron42.11.15/better-sqlite3 12.11.1，产品0.0.2/构建20261027.1-ui-clarity/结构10。开发入口E:\My_Projects\embedded-practice\out\main\index.js；新EXE明确为E:\My_Projects\embedded-practice\release\V0.0.2-ui-clarity-20261027.1\win-unpacked\embedded-practice.exe，测试显式指定该目标，每场景新TEMP并核对userData/实际运行身份。未访问正式学习库或更换桌面。
++
++| 实际检查 | 结果 |
++|---|---|
++| 类型/格式、构建、本地Windows x64解包 | check-04、build-02、pack-01通过；无新安装器 |
++| 单元 | unit-01：35文件660/660 |
++| 开发首轮 | development-01：18/25；6项测试设置/定位假设，1项共享记录布局可见性失败，原证据保留 |
++| 开发修正定向 | development-02：9/9，17.7秒；原前三条记录完整在视口断言保持 |
++| 新EXE完整首轮 | packaged-01：262/263，587.164秒，0跳过/0flaky/0自动重试；唯一失败为旧Tab次序断言 |
++| 同一EXE后续定向 | packaged-02：键盘场景1/1，6.9秒；明确核对专题→归档→搜索及原完整键盘/对比度覆盖，无产品包修改 |
++| 空白输入占位对比度 | 开发/新EXE分别10组，全部≥4.5；原始范围5.04699719377935～8.08907507785969，opacity=1且placeholder-shown=true |
++| 包/源码/原交付保护 | 24份新包构建/许可与SQLite原生模块一致；旧154份交付、13题库文件保持。只改5份渲染生产文件、3份身份/键盘测试，新增8项 |
++| 新程序画面与安全入口 | 14张实际新EXE预览，已目视1440题库/揭晓后/暖沙金暗色占位；安全入口静态核对独立LOCALAPPDATA目标，未自动运行该持久入口 |
++
++完整首轮与后续定向合计覆盖同一EXE的263个不同场景，**不表述为单轮263/263**。其中原255项保留，新增八项；先前42项UI运行审查不是本轮新增次数。原开发失败、完整首轮失败、后续修正及两次辅助核对工具失败分别保留。首轮唯一键盘问题是旧测试要求直接搜索，而新组织明确先选范围；更新测试时增加逐项聚焦断言，未降低标准或增加自动重试。
++
++原共享学习记录的真实首屏退步已在开发轮修复，采用紧凑控制区和可展开说明，未改变记录统计、筛选范围及数据。新阶段提示/主次样式继续使用原草稿保存、揭晓与自评推进处理器，固定队列、错误重试、答案/历史隔离与原关闭保护在本轮新EXE执行。明暗以系统媒体模拟，页面缩放/截图不代表真实Windows DPI；本次颜色测量不扩为外部主题、所有状态或完整无障碍合规验收。
++
++交付为独立完整目录，附原13专题419题、两个主题、安全入口、使用与回退说明、预览及文件校验。原个人桌面仍为20261026.4-v002，未提交/推送、发布安装器或恢复VMware验收。第二批高缩放空间/概览行动/规划状态及其他说明统一未实施，跨屏真实鼠标拖动、全部Windows DPI/IME、主观体验、长期性能和硬件仍待验。完整原始结果与工具失败原因见[evidence/ui-clarity-20261027](evidence/ui-clarity-20261027/README.md)，逐文件复查见代码复查记录。
++
++## 2026-10-27 UI运行、交互、对比度与实际DPI补充验证
++
++用户追加授权验证现有界面，不实施设计建议。明确EXE为E:\My_Projects\embedded-practice\release\V0.0.2-20261026.4\win-unpacked\embedded-practice.exe，实际产品0.0.2/构建20261026.4-v002/结构10。42项既有场景逐项使用新TEMP；补充测量独立目录embedded-practice-ui-audit-VejokK，核对实际userData并正常关闭，未访问正式学习库、修改应用代码、构建或改系统缩放。244份src/tests/scripts文件哈希保持。
++
++- 9份现有UI/主题/设置专项实际42/42，114.461秒，0失败/跳过/flaky/自动重试；不是完整255项回归。原始报告、运行身份和截图见[本轮证据](evidence/ui-runtime-audit-20261027/README.md)。
++- 五内置主题×明暗的140个实际计算颜色样本中132项达到普通文字4.5:1参考门槛，8项不足均为作答占位提示。暗色五主题3.198～3.453；明色晴空蓝4.480、暖沙金4.423、暮山紫4.439。最差暖沙金暗色17px另以空白输入、placeholder-shown及原生/渲染截图确认，尚未修复。不能表述为全部对比度或完整无障碍通过。
++- 两块真实显示器100%/150%，zoom=1下Electron与renderer比例1→1.5→1，Win32窗口DPI96→144→96；适配窗口内原草稿/揭晓保持、底栏在视口、无整页横向溢出。150%下原生点击揭晓成功。首次API跨屏窗口尺寸放大并超出屏幕，重新设定目标屏内窗口后可用；原生跨屏拖动被工具边界拒绝，手工拖动尺寸行为未确认，不记完整多屏通过。
++- 另测程序125%/150%/200%缩放，DOM几何无横溢出且底栏可见；200%首张Playwright截图空白，原图保留，以原生画面和capturePage补查，操作栏换行且输入可见空间缩小。程序缩放不代表Windows125%/200%DPI。
++- 工具原始异常及补证分别保留；未新增安装器、完整IME/无障碍/全部DPI或硬件验收，VMware保持跳过。本轮只新增证据与本条验收记录，未提交/推送。
+ 
++## 2026-10-27 V0.0.2桌面更新收尾复核
++
++- Git最新合并仍为main66bbc6c；个人桌面及Shell合并视图只有“嵌入式刷题本 V0.0.2”，目标为release/V0.0.2-20261026.4/win-unpacked/embedded-practice.exe。此时程序未运行，未为收尾再次启动或访问正式学习库。
++- 154份交付文件逐项长度/SHA-256与原清单一致；208源码/测试/配置仍只有既定4份当前标识文件改变。完整备份v002-verified-copy-export.sqlite3完整性ok/外键0，15业务表摘要与升级前快照保持，13专题419题、旧快捷方式备份存在。
++- 只读复核原始packaged-01.json仍为255/255、零失败/跳过/flaky、errors为空，没有把本次复核计为重跑；原660项单元与255项解包均为2026-10-26实际执行。派生result-summary.json的build重复键造成元数据被布尔覆盖，保留原文件，另存result-summary-final.json分离build和buildPassed；不改变原始报告。
++- 证据：[收尾核对](evidence/v002-desktop-20261026/resume-verification-20261027.json)、[备份核对](evidence/v002-desktop-20261026/backup-final-verification-20261027.json)、[修正后的派生汇总](evidence/v002-desktop-20261026/result-summary-final.json)。原生画面工具、安装器、DPI/IME、多显示器及VMware原边界保持。
++
++## 2026-10-26 最新主线V0.0.2程序与个人桌面更新
++
++用户授权“查看最新合并和开发记录；然后使用最新的程序，更新一下桌面程序”。基线main66bbc6c87abb0e17b5b185bf6b5b240c5fa8d016，产品0.0.2、构建20261026.4-v002、结构10。环境Windows 11 x64，Node24.19.0/npm11.17.0，Electron42.11.15/better-sqlite3 12.11.1。新EXE明确为E:\My_Projects\embedded-practice\release\V0.0.2-20261026.4\win-unpacked\embedded-practice.exe。
++
++| 实际执行 | 结果与证据 |
++| --- | --- |
++| 类型/格式、单元、构建和本地解包 | check-01、unit-01、build-01、pack-01通过，35文件660/660单元 |
++| 新EXE完整解包回归 | packaged-01.json：255/255，527.021秒，失败/跳过/flaky/重试均0，errors为空；每场景新TEMP并显式传入测试数据路径 |
++| 包内与运行身份 | 24份构建/许可与SQLite原生模块一致，实际packaged/version/userData/EXE及新构建核对；Windows资源0.0.2/0.0.2.0 |
++| 原程序保护 | 上次V0.0.2的155文件和旧个人V0.0.1的143文件原清单哈希全部保持 |
++| 个人数据独立副本 | TEMP/embedded-practice-v002-personal-copy-iwYEtg；正常读取、导出完整备份并预览，13专题419题，15业务表摘要保持、完整性ok、外键0 |
++| 实际桌面启动 | 从C:\Users\pc\Desktop\嵌入式刷题本 V0.0.2.lnk启动，实际主进程EXE为本轮新程序，主窗口“嵌入式刷题本”存在且Responding=true |
++| 正式更新后只读核对 | 原目录C:\Users\pc\AppData\Roaming\embedded-practice，一致性快照完整性ok/外键0/结构10；15业务表摘要保持，13专题419题，只有正常启动计数14→15 |
++| 桌面入口保护与刷新 | 原V0.0.1.lnk备份后移除，扫描个人/Public/OneDrive与Shell合并视图仅V0.0.2，发送创建/删除/目录刷新通知 |
++
++正式数据的备份和更新后核对是本次用户授权的实际交付步骤，不计入自动化测试数量；所有自动化仍只连接独立TEMP。升级前后快照、原数据目录、旧入口及副本导出的应用完整备份在backups/个人使用/V0.0.2桌面更新前-20261026-202244，程序内恢复使用已预览通过的v002-verified-copy-export.sqlite3。没有重新导入、作答、建轮或调整原外观；数据库结构未迁移。
++
++原始检查失败保留：包内容首查用POSIX路径调用Windows ASAR API，改成本机join路径后24项通过；旧清单首查仅识别path而旧V0.0.1使用file字段，补齐既有字段映射后通过。个人副本第1轮误把带WAL/SHM伴随文件的内部SQLite快照作为独立应用备份，产品返回FILE_ERROR；第2轮错误预期INVALID_BACKUP；第3轮把Node SQLite的null-prototype结果与普通对象作deepStrictEqual。第4轮使用已由生产导出接口生成的完整备份，按结果字段核对后通过。三份原日志及真实拒绝响应均保留，没有为通过而删除伴随文件、放宽产品校验或更改业务断言。
++
++原生画面工具node_repl初始化重试及reset后重试、cua_repl getState均失败（failed to write kernel assets，系统找不到指定路径），因此没有个人桌面原生截图/点击结果。19张本轮隔离Electron截图及10张交付预览中已目视题库第20项和窄窗长答案末尾；它们不替代个人桌面截图或人工验收。未新增安装器、全部DPI/IME、多显示器、长期性能/体验或硬件验收，VMware跳过保持。未另行提交/推送、移动v0.0.2标签或覆盖历史程序/失败报告。
++
++本轮来源、主报告、实际启动/逐表/桌面记录见[证据目录](evidence/v002-desktop-20261026/README.md)，使用见[桌面更新说明](V0.0.2桌面更新说明.md)。
++
+ ## 2026-10-26 分支与未提交修改的独立合并复查
+ 
+ 用户先授权复查 review/bugfix-opt-20261026 的提交，通过后合并 main；随后追加授权复查原工作区未提交修改，通过后提交并合并。审核基线 main=29342b8，原分支头 f066f4c（73b7c21、e4ab804、f066f4c 三项提交）。未提交范围为 4 个生产文件、2 个测试文件、2 份记录及原证据目录；12 个原文件在复查结束时逐个 SHA-256 核对与审核快照一致。未扩大到全仓重新审计。
+diff --git a/src/renderer/src/App.tsx b/src/renderer/src/App.tsx
+index 14d68ca..b3c2a91 100644
+--- a/src/renderer/src/App.tsx
++++ b/src/renderer/src/App.tsx
+@@ -28,7 +28,7 @@ const pages = [
+   { id: 'settings', label: '设置与数据', path: 'M4 7h16M4 17h16M9 4v6m6 4v6' },
+ ] as const
+ type PageId = (typeof pages)[number]['id']
+-const BUILD_LABEL = '20261026.3-v002'
++const BUILD_LABEL = '20261027.1-ui-clarity'
+ 
+ export function App() {
+   const [state, setState] = useState<ViewState>({ status: 'loading' })
+diff --git a/src/renderer/src/components/LibraryBrowser.tsx b/src/renderer/src/components/LibraryBrowser.tsx
+index 9b4be0b..24d1a52 100644
+--- a/src/renderer/src/components/LibraryBrowser.tsx
++++ b/src/renderer/src/components/LibraryBrowser.tsx
+@@ -1,4 +1,4 @@
+-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
++import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react'
+ import { createPortal } from 'react-dom'
+ import type {
+   ContentBody,
+@@ -12,7 +12,7 @@ import {
+   type QuestionFilters,
+ } from '../../../shared/contracts/question-filters'
+ import { MarkdownContent } from './MarkdownContent'
+-import { QuestionFilterFields } from './QuestionFilterFields'
++import { QuestionFilterFields, questionFilterSummary } from './QuestionFilterFields'
+ import { QuestionHistory } from './QuestionHistory'
+ import type { LearningScope } from '../../../shared/contracts/learning'
+ import {
+@@ -281,6 +281,7 @@ function LibraryContent({
+   entry,
+ }: LibraryBrowserProps) {
+   // 学习记录父级按范围建立 key；范围在本次挂载中固定，其他筛选仍可独立调整。
++  const clearHelpId = useId()
+   const [request, setRequest] = useState<ListRequest>(() => ({
+     topicId: scope?.topicId ?? null,
+     category: scope?.category ?? entry?.category ?? ALL_CATEGORIES,
+@@ -384,6 +385,17 @@ function LibraryContent({
+     )
+   if (!data) return <p className="reader-placeholder">正在读取题库…</p>
+   const resultsReady = !loading && !error && resolvedRequest.current === request
++  const category = request.category ?? ALL_CATEGORIES
++  const categoryTitle =
++    category.kind === 'all'
++      ? '全部分类'
++      : category.kind === 'uncategorized'
++        ? '未分类'
++        : (data.categories.find((item) => item.categoryId === category.categoryId)?.title ??
++          '已失效的分类')
++  const topicTitle = request.topicId
++    ? (data.topics.find((item) => item.topicId === request.topicId)?.title ?? '已失效的专题')
++    : '全部专题'
+   const updatedFilter = (
+     <label className="content-updated-filter">
+       <input
+@@ -426,6 +438,26 @@ function LibraryContent({
+       onOperation={onCategoryOperation}
+     />
+   )
++  const resultDescription = (
++    <>
++      {resultsReady && (
++        <div className="library-applied-filters">
++          <p aria-label="题库结果范围">
++            {categoryTitle} · {topicTitle} · {request.archived ? '归档题目' : '有效题目'}
++            {request.contentUpdatedOnly ? ' · 仅内容更新待复习' : ''}
++          </p>
++          <p aria-label="题库生效条件">
++            {questionFilterSummary(request.filters ?? EMPTY_QUESTION_FILTERS)}
++          </p>
++        </div>
++      )}
++      <p id={clearHelpId} className="muted">
++        {scope
++          ? '清空仅重置下方列表的附加条件，保留上方学习记录的范围。'
++          : '清空将恢复全部分类、全部专题和有效题目，并移除所有附加条件。'}
++      </p>
++    </>
++  )
+   if (data.topics.length === 0)
+     return (
+       <section ref={heading} tabIndex={-1} className="library-empty" aria-labelledby="empty-title">
+@@ -461,69 +493,13 @@ function LibraryContent({
+     >
+       <div className="library-management-tools">{management}</div>
+       <div className="library-controls">
+-        <QuestionFilterFields
+-          compact={Boolean(scope)}
+-          advancedContent={scope ? updatedFilter : undefined}
+-          prefix="题库"
+-          filters={filters}
+-          tagOptions={data.tagOptions}
+-          onChange={setFilters}
+-          disabled={loading}
+-        />
+-        {(JSON.stringify(filters) !== JSON.stringify(request.filters ?? EMPTY_QUESTION_FILTERS) ||
+-          contentUpdatedOnly !== Boolean(request.contentUpdatedOnly)) && (
+-          <p className="muted" aria-live="polite">
+-            条件已调整，点击“筛选题库”后应用到列表。
+-          </p>
+-        )}
+-        {!scope && updatedFilter}
+-        {(!scope || request.contentUpdatedOnly) && (
+-          <p className="muted" aria-label="题库结果范围">
+-            {request.archived ? '归档题目' : '有效题目'}
+-            {request.contentUpdatedOnly ? ' · 仅内容更新待复习' : ''}
+-          </p>
+-        )}
+-        <div className="button-row">
+-          <button
+-            type="button"
+-            disabled={loading}
+-            onClick={() =>
+-              setRequest({ ...request, page: 1, filters: { ...filters }, contentUpdatedOnly })
+-            }
+-          >
+-            筛选题库
+-          </button>
+-          <button
+-            type="button"
+-            disabled={loading}
+-            onClick={() => {
+-              setFilters({ ...EMPTY_QUESTION_FILTERS })
+-              setContentUpdatedOnly(false)
+-              setRequest({
+-                topicId: scope?.topicId ?? null,
+-                category: scope?.category ?? ALL_CATEGORIES,
+-                archived: scope?.archived ?? false,
+-                page: 1,
+-              })
+-            }}
+-          >
+-            清空题库筛选
+-          </button>
+-        </div>
+-        {loading && <p aria-live="polite">正在筛选题库…</p>}
+-        {error && (
+-          <div role="alert" className="error-message">
+-            <p>{error}</p>
+-            <button
+-              type="button"
+-              disabled={loading}
+-              onClick={() => setAttempt((value) => value + 1)}
+-            >
+-              重新读取题库
+-            </button>
+-          </div>
+-        )}
+-        <div className="library-filters">
++        <div
++          className="library-scope-controls"
++          role="group"
++          aria-label="选择题库范围"
++          hidden={Boolean(scope)}
++        >
++          <h3>1 · 选择范围</h3>
+           {!scope && (
+             <label>
+               专题
+@@ -571,8 +547,91 @@ function LibraryContent({
+               查看归档题目
+             </label>
+           )}
+-          <span className="muted">{resultsReady ? `共 ${data.total} 题` : '结果尚未确认'}</span>
++          <p className="muted">
++            {scope
++              ? '范围沿用上方学习记录；下方条件只筛选题目列表。'
++              : '分类在“分类与专题”导航中选择；范围更改后立即更新结果。'}
++          </p>
++        </div>
++        <div className="library-condition-controls" role="group" aria-label="设置题库条件">
++          <h3 hidden={Boolean(scope)}>2 · 设置条件</h3>
++          <QuestionFilterFields
++            compact={Boolean(scope)}
++            advancedContent={scope ? updatedFilter : undefined}
++            prefix="题库"
++            filters={filters}
++            tagOptions={data.tagOptions}
++            onChange={setFilters}
++            disabled={loading}
++          />
++          <div className="library-apply-controls">
++            {!scope && updatedFilter}
++            <button
++              type="button"
++              className="primary"
++              disabled={loading}
++              onClick={() =>
++                setRequest({ ...request, page: 1, filters: { ...filters }, contentUpdatedOnly })
++              }
++            >
++              筛选题库
++            </button>
++            {(JSON.stringify(filters) !==
++              JSON.stringify(request.filters ?? EMPTY_QUESTION_FILTERS) ||
++              contentUpdatedOnly !== Boolean(request.contentUpdatedOnly)) && (
++              <p className="filter-pending" role="status">
++                条件已调整，点击“筛选题库”后应用到列表。
++              </p>
++            )}
++          </div>
++        </div>
++        <div className="library-result-summary" role="group" aria-label="题库生效筛选与结果">
++          <div className="library-result-heading">
++            <h3 hidden={Boolean(scope)}>3 · 查看结果</h3>
++            <strong aria-live="polite">
++              {resultsReady ? `共 ${data.total} 题` : '结果尚未确认'}
++            </strong>
++            <button
++              type="button"
++              aria-describedby={clearHelpId}
++              disabled={loading}
++              onClick={() => {
++                setFilters({ ...EMPTY_QUESTION_FILTERS })
++                setContentUpdatedOnly(false)
++                setRequest({
++                  topicId: scope?.topicId ?? null,
++                  category: scope?.category ?? ALL_CATEGORIES,
++                  archived: scope?.archived ?? false,
++                  page: 1,
++                })
++              }}
++            >
++              清空题库筛选
++            </button>
++          </div>
++          {scope ? (
++            <details className="library-result-details">
++              <summary>生效条件与清空范围</summary>
++              {resultDescription}
++            </details>
++          ) : (
++            resultDescription
++          )}
++          {!scope && <p className="muted">准备作答时，进入“开始练习”设置本轮条件。</p>}
+         </div>
++        {loading && <p aria-live="polite">正在筛选题库…</p>}
++        {error && (
++          <div role="alert" className="error-message">
++            <p>{error}</p>
++            <button
++              type="button"
++              disabled={loading}
++              onClick={() => setAttempt((value) => value + 1)}
++            >
++              重新读取题库
++            </button>
++          </div>
++        )}
+       </div>
+       <div className="library-layout">
+         {!scope && (
+diff --git a/src/renderer/src/components/PracticePane.tsx b/src/renderer/src/components/PracticePane.tsx
+index c011ff7..8dc1289 100644
+--- a/src/renderer/src/components/PracticePane.tsx
++++ b/src/renderer/src/components/PracticePane.tsx
+@@ -153,7 +153,7 @@ export function PracticePane({
+     <section ref={workspace} className="practice-workspace" aria-label={modeLabel}>
+       <div className="practice-heading">
+         <div className="practice-heading-actions">
+-          <button type="button" className="primary" disabled={actionsBlocked} onClick={onHome}>
++          <button type="button" disabled={actionsBlocked} onClick={onHome}>
+             保存并返回
+           </button>
+           <PracticeFavorite
+@@ -268,8 +268,20 @@ export function PracticePane({
+             if (event.repeat && (event.key === 'Enter' || event.key === ' ')) event.preventDefault()
+           }}
+         >
+-          <div className="practice-save" aria-live="polite">
+-            {state.closing ? '正在准备关闭…' : labels[state.saveStatus]}
++          <div className="practice-action-status">
++            <p className="practice-stage" aria-live="polite">
++              <strong>{item.revealed ? '保存并继续' : '思考与作答'}</strong>
++              <span>
++                {item.revealed
++                  ? session.position + 1 === session.total
++                    ? '选择自评后保存并完成本轮'
++                    : '选择自评后保存并进入下一题'
++                  : '查看参考答案后，再自行评价'}
++              </span>
++            </p>
++            <div className="practice-save" aria-live="polite">
++              {state.closing ? '正在准备关闭…' : labels[state.saveStatus]}
++            </div>
+           </div>
+           {state.error && (
+             <div role="alert" className="error-message">
+@@ -277,6 +289,7 @@ export function PracticePane({
+               {(state.pending || state.saveStatus === 'failed') && (
+                 <button
+                   type="button"
++                  className="primary"
+                   disabled={state.busy || state.closing || homeBusy || repeatBlocked}
+                   onClick={() => {
+                     void controller.retry()
+@@ -300,6 +313,7 @@ export function PracticePane({
+                 </button>
+                 <button
+                   type="button"
++                  className="quiet-action"
+                   disabled={actionsBlocked}
+                   onClick={(event) => perform(event, { kind: 'navigate', direction: 'skip' })}
+                 >
+@@ -321,6 +335,7 @@ export function PracticePane({
+                 ))}
+                 <button
+                   type="button"
++                  className="quiet-action"
+                   disabled={actionsBlocked}
+                   onClick={(event) => perform(event, { kind: 'rate', rating: null })}
+                 >
+diff --git a/src/renderer/src/styles/global.css b/src/renderer/src/styles/global.css
+index c23289f..7964a93 100644
+--- a/src/renderer/src/styles/global.css
++++ b/src/renderer/src/styles/global.css
+@@ -578,6 +578,10 @@ select,
+     monospace;
+   resize: vertical;
+ }
++.practice-input textarea::placeholder {
++  color: var(--muted);
++  opacity: 1;
++}
+ .practice-actions {
+   position: sticky;
+   bottom: 8px;
+diff --git a/src/renderer/src/styles/workbench-pages.css b/src/renderer/src/styles/workbench-pages.css
+index 8df23d7..cb7ec44 100644
+--- a/src/renderer/src/styles/workbench-pages.css
++++ b/src/renderer/src/styles/workbench-pages.css
+@@ -328,10 +328,30 @@
+   padding-left: 16px;
+   border-left: 1px solid var(--line);
+ }
+-.practice-actions :is(.practice-save, .error-message) {
++.practice-actions :is(.practice-action-status, .error-message) {
+   grid-column: 1 / -1;
+   margin: 0;
+ }
++.practice-action-status {
++  display: flex;
++  flex-wrap: wrap;
++  align-items: center;
++  justify-content: space-between;
++  gap: 4px 16px;
++}
++.practice-stage {
++  display: flex;
++  flex-wrap: wrap;
++  gap: 4px 12px;
++  margin: 0;
++  font-size: 14px;
++}
++.practice-stage span {
++  color: var(--muted);
++}
++.practice-action-status .practice-save {
++  margin: 0;
++}
+ .practice-actions .error-message p {
+   margin: 0 0 8px;
+ }
+@@ -380,28 +400,99 @@
+   gap: 12px;
+ }
+ .library-controls {
+-  display: flex;
+-  flex-wrap: wrap;
+-  align-items: center;
+-  gap: 8px 16px;
++  display: grid;
++  gap: 10px;
+   flex-shrink: 0;
+   border-bottom: 1px solid var(--line);
+   padding-bottom: 8px;
+   font-size: 14px;
+ }
+-.library-controls .question-filter-fields {
+-  flex: 1 0 100%;
++.library-controls :is(h3, p) {
+   margin: 0;
+ }
+-.library-controls > :is(.button-row, .library-filters) {
+-  margin: 0;
++.library-controls h3 {
++  font-size: 14px;
++}
++.library-scope-controls,
++.library-apply-controls,
++.library-result-heading,
++.library-applied-filters {
++  display: flex;
++  flex-wrap: wrap;
++  align-items: center;
++  gap: 8px 16px;
++  min-width: 0;
++}
++.library-scope-controls label {
++  display: flex;
++  flex-wrap: wrap;
++  align-items: center;
++  gap: 8px;
++  max-width: 100%;
++}
++.library-scope-controls select {
++  max-width: min(360px, 100%);
++}
++.library-scope-controls > p {
++  flex: 1 0 240px;
++}
++.library-condition-controls {
++  display: grid;
++  grid-template-columns: auto minmax(0, 1fr);
++  align-items: start;
++  gap: 8px 16px;
++  min-width: 0;
+ }
+-.library-controls > p,
+-.library-controls > .content-updated-filter {
++.library-condition-controls .question-filter-fields {
+   margin: 0;
+ }
+-.library-controls > .library-filters:not(.question-filter-fields) {
+-  flex: 1;
++.library-apply-controls {
++  grid-column: 2;
++}
++.filter-pending {
++  color: var(--accent);
++}
++.library-result-summary {
++  display: grid;
++  gap: 6px;
++  padding: 10px 12px;
++  border-radius: var(--theme-radius);
++  background: var(--accent-soft);
++  overflow-wrap: anywhere;
++}
++.library-result-heading button {
++  margin-left: auto;
++}
++.library-result-summary > .muted {
++  font-size: 13px;
++}
++.library-workspace[data-records='true'] .library-controls {
++  grid-template-columns: auto minmax(0, 1fr);
++}
++.library-workspace[data-records='true'] .library-condition-controls {
++  display: contents;
++}
++.library-workspace[data-records='true'] .question-filter-fields,
++.library-workspace[data-records='true'] .library-controls > :is(p, .error-message) {
++  grid-column: 1 / -1;
++}
++.library-workspace[data-records='true'] .library-apply-controls {
++  grid-column: 1;
++}
++.library-workspace[data-records='true'] .library-result-summary {
++  display: flex;
++  flex-wrap: wrap;
++  align-items: center;
++  grid-column: 2;
++  padding: 0;
++  background: transparent;
++}
++.library-result-details {
++  min-width: 0;
++  font-size: 13px;
++}
++.library-result-details[open] {
++  flex-basis: 100%;
+ }
+ .library-management-tools > .category-manager {
+   padding: 0;
+@@ -1159,6 +1250,18 @@
+   }
+ }
+ @media (max-width: 719px) {
++  .library-workspace[data-records='true'] .library-controls {
++    grid-template-columns: minmax(0, 1fr);
++  }
++  .library-workspace[data-records='true'] .library-result-summary {
++    grid-column: 1;
++  }
++  .library-condition-controls {
++    grid-template-columns: minmax(0, 1fr);
++  }
++  .library-apply-controls {
++    grid-column: 1;
++  }
+   .overview-welcome,
+   .overview-resume,
+   .overview-section,
+diff --git a/tests/e2e/board-entry.spec.ts b/tests/e2e/board-entry.spec.ts
+index 8689d45..38d9368 100644
+--- a/tests/e2e/board-entry.spec.ts
++++ b/tests/e2e/board-entry.spec.ts
+@@ -60,11 +60,11 @@ async function runtime(
+     expect(resolve(actual.appPath)).toBe(resolve('out/main'))
+     expect(actual.arguments).toContain(resolve('out/main/index.js'))
+   }
+-  await expect(page.locator('footer')).toContainText('20261026.3-v002')
++  await expect(page.locator('footer')).toContainText('20261027.1-ui-clarity')
+   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())
+   expect(schema).toEqual({ user_version: 10 })
+   await info.attach('runtime.json', {
+-    body: JSON.stringify({ ...actual, schema, build: '20261026.3-v002' }, null, 2),
++    body: JSON.stringify({ ...actual, schema, build: '20261027.1-ui-clarity' }, null, 2),
+     contentType: 'application/json',
+   })
+ }
+@@ -494,6 +494,12 @@ test('板块入口：900/1440窗口、四配色明暗、22px与键盘可用，
+           ).not.toHaveAttribute('open')
+         }
+         await managementSummary.press('Tab')
++        const topicScope = page.getByLabel('专题', { exact: true })
++        await expect(topicScope).toBeFocused()
++        await topicScope.press('Tab')
++        const archiveScope = page.getByRole('checkbox', { name: '查看归档题目', exact: true })
++        await expect(archiveScope).toBeFocused()
++        await archiveScope.press('Tab')
+         await expect(page.getByRole('searchbox', { name: '题库搜索', exact: true })).toBeFocused()
+         const navigationSummary = page.locator(
+           '.library-navigation .topic-navigation-panel > summary',
+diff --git a/tests/e2e/personal-bank.spec.ts b/tests/e2e/personal-bank.spec.ts
+index f0569db..7094017 100644
+--- a/tests/e2e/personal-bank.spec.ts
++++ b/tests/e2e/personal-bank.spec.ts
+@@ -54,7 +54,7 @@ async function runtime(
+     )
+   else expect(resolve(actual.appPath)).toBe(resolve('out/main'))
+   await expect(page.locator('footer span').last()).toHaveText(
+-    `V${actual.version} 测试版 · 构建 20261026.3-v002`,
++    `V${actual.version} 测试版 · 构建 20261027.1-ui-clarity`,
+   )
+   expect(withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())).toEqual({
+     user_version: 10,
+diff --git a/tests/e2e/theme-helpers.ts b/tests/e2e/theme-helpers.ts
+index 02fc799..b8ed446 100644
+--- a/tests/e2e/theme-helpers.ts
++++ b/tests/e2e/theme-helpers.ts
+@@ -31,7 +31,7 @@ export async function verifyThemeTarget(
+     if (!target) throw new Error('必须显式指定本轮新EXE')
+     expect(actual.exe.toLowerCase()).toBe(resolve(target).toLowerCase())
+   }
+-  await expect(page.locator('footer')).toContainText('20261026.3-v002')
++  await expect(page.locator('footer')).toContainText('20261027.1-ui-clarity')
+   expect(
+     withHistoryDatabase(directory, (database) => database.prepare('PRAGMA user_version').get()),
+   ).toEqual({ user_version: 10 })
+diff --git "a/\350\256\241\345\210\222\344\271\246.md" "b/\350\256\241\345\210\222\344\271\246.md"
+index 3d71186..24b7d5a 100644
+--- "a/\350\256\241\345\210\222\344\271\246.md"
++++ "b/\350\256\241\345\210\222\344\271\246.md"
+@@ -719,3 +719,11 @@ Playwright 提供 Electron 自动化接口，但其 Electron 支持标为实验
+ ## 2026-10-26 追加：Git提交与V0.0.2版本更新
+ 
+ 用户明确要求“提交git，然后更新版本为V0.0.2”。先将已验收的方案E三轮UI与复查证据提交为ddf2309，再单独更新产品版本0.0.2、构建20261026.3-v002和当前版本断言；现有布局冻结，结构10、主进程、练习保存与题库保持。生成完整独立程序并检查后，再提交版本变更及本地版本标记。旧程序/证据与个人进度保留，不访问正式库、不自动替换桌面、不推送远程或发布安装器。
++
++## 2026-10-26 追加：最新主线程序更新至桌面
++
++用户明确要求：“查看最新合并和开发记录；然后使用最新的程序，更新一下桌面程序”。本次以main最新合并66bbc6c为源码基线，将此前尚未进入解包程序的缺陷修复纳入产品0.0.2，新增可区分构建20261026.4-v002，结构10保持。在独立临时目录核验新完整程序后，先备份原桌面入口和正式学习库，再将实际桌面入口更新至新版并核对原学习状态。此次授权允许为个人桌面更新读取、备份及正常打开原数据；自动化测试仍只能使用独立目录。旧完整程序、原始计划、各轮失败证据与备份保留，不推送远程、不生成安装器或恢复VMware验收。
++
++## 2026-10-27 追加：UI可读性与操作层级优化
++
++用户提供分优先级的UI优化结论并明确要求“按照结论继续开发优化”。完整结论原文保存在[UI可读性与操作层级优化](docs/UI可读性与操作层级优化.md)。本批先完成占位提示对比度、题库筛选组织、练习操作层级三项；保留现有工作台与多主题、原队列/草稿/保存保护，产品0.0.2/结构10，独立构建20261027.1-ui-clarity。高缩放空间、概览/规划入口/其他说明属后续批次，跨屏真实拖动尚待验证；不因本轮自动操作正式学习库、替换桌面入口、提交推送或恢复VMware安装验收。

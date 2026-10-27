@@ -1,0 +1,3409 @@
+{
+  "files": [
+    {
+      "path": "docs/evidence/m4c/README.md",
+      "bytes": 8806,
+      "sha256": "11610d43d71ca11bb570bd701b5aa7a5434fc1c4fb277872b500ebb56060d9b5"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/004e71d61c0ae53b-repeat-previous.json",
+      "bytes": 1668,
+      "sha256": "004e71d61c0ae53bec0ba6dbc8ac4f2864d60c2e9df043ba5dba389c6ab12d13"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/0114e641c3110a46-legacy-restored.json",
+      "bytes": 493,
+      "sha256": "0114e641c3110a46bcbd35b8611fcb3f25fb663cb62b49f24f7f2fea645f56ab"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/0124abce82c60220-history-late-response.json",
+      "bytes": 1029,
+      "sha256": "0124abce82c60220b094245e5f8c8cba368854598f8dcdb4f5afcdc0e453c449"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/03a355de6c7ea7e0-settings-v4-foreign-key.json",
+      "bytes": 11086,
+      "sha256": "03a355de6c7ea7e02848d9b76f3036eb4e0e84c746f2ccc19a8ea2db0a0a24db"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/04e075f3d8d317d7-keyboard-input-saved.json",
+      "bytes": 1532,
+      "sha256": "04e075f3d8d317d736530ed2b7b017ab20a612641c9683ea6193644da39fe44e"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/0547a936b56e6dff-migration-v3-foreign-key.json",
+      "bytes": 14153,
+      "sha256": "0547a936b56e6dfff55c1e0021e5fe7db7e335c82aae40367bbeb0e34777060f"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/073f9e7e265bf19b-repeat-keyboard.json",
+      "bytes": 2171,
+      "sha256": "073f9e7e265bf19b0765d26ace12e3e3f90ce7fb64072a890d27b3a7d41c5320"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/07c110a3f8a9906e-favorite-out-of-order.json",
+      "bytes": 3094,
+      "sha256": "07c110a3f8a9906e8854f396536f02d1cf6c7690d8397c25586847a7a929b7bf"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/07e00a72ed04f795-keyboard-input-focus.json",
+      "bytes": 986,
+      "sha256": "07e00a72ed04f795b39bdc96fde54ba74d65d730ac3889fd5f57874fd82f9ed9"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/096bd95cb660f06e-history-query-matrix.json",
+      "bytes": 73153,
+      "sha256": "096bd95cb660f06e0f22659c457b2a30d60b6a6251fee2c9aef87ff84b908e75"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/0b971ac335defdc9-repeat-skip.json",
+      "bytes": 1375,
+      "sha256": "0b971ac335defdc9553f26502c0502d8d42b6f6a03d6788986be6a3f6d4d4d5d"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/0c04a014ab8e23fc-history-late-response.json",
+      "bytes": 1034,
+      "sha256": "0c04a014ab8e23fc300fb110511262cdc173ecaa48c38d47d580f81a67bdf7c8"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/0c5d1dc2b45308eb-legacy-restored.json",
+      "bytes": 451,
+      "sha256": "0c5d1dc2b45308eb540b1d407bb62159c4482fcdedc3297de1d7993f7809b97c"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/0f8c3799e981d697-learning-version-counts.json",
+      "bytes": 17705,
+      "sha256": "0f8c3799e981d697d93aaed4c50a5ee8418a8d994b0adf76eac777367b416290"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/0fb65181f31ba37e-appearance-rendering.json",
+      "bytes": 14768,
+      "sha256": "0fb65181f31ba37e2e28b0eaf7fde5152fe24ea66c3702b17f85252560a89ffe"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/1053393509289674-practice-versions.json",
+      "bytes": 6264,
+      "sha256": "10533935092896748731ce3aeb99f33c900cf28e075cf0df5622c61c32d39292"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/10bf140d84aadacf-filtered-queue-state.json",
+      "bytes": 3668,
+      "sha256": "10bf140d84aadacf9a866ed979a5d39223d75e376f9e2678aa959a6a0cd87d83"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/11baf48d10c3b572-filters-v5-foreign-key.json",
+      "bytes": 10172,
+      "sha256": "11baf48d10c3b572b535fb9c1740db837c25e6d3366af2daee2b94f2bc6cd5a8"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/12bc053b89e44a67-practice-window-retry.json",
+      "bytes": 764,
+      "sha256": "12bc053b89e44a6765a0b92292756a7ae1345f5db45c627580576beab0b7d9a5"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/12f460dc8371fc99-restore-save-and-pause.json",
+      "bytes": 12045,
+      "sha256": "12f460dc8371fc999b6e9a0d0934ece1eb7201aaefbcdb51d0c58d0dc04798cb"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/141fa043fa13c524-legacy-backup-preview.json",
+      "bytes": 509,
+      "sha256": "141fa043fa13c52440113013f396cf5e7d0cdda8982327a9db89d9602fe2d9e0"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/144199bfca05d926-protective-backup-restored.json",
+      "bytes": 10696,
+      "sha256": "144199bfca05d926e34e6e6225b69d1a029503848d6f3b9685578891faafdccd"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/1536c0b1da53935e-replacement-failure.json",
+      "bytes": 10644,
+      "sha256": "1536c0b1da53935e4aa871140f12febe4f9820dbae42b7aa50db59c8ebbcafa0"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/175d1839b5bb13f4-keyboard-input-focus.json",
+      "bytes": 986,
+      "sha256": "175d1839b5bb13f4e210d6c036918dce48fc6401918d03ce8b9a7ba1dc54fc94"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/19319e6d6365af49-window-worker-exit.json",
+      "bytes": 28,
+      "sha256": "19319e6d6365af49bd8d1c341535ea00b032a415cd5b977049df9fb9bcfcfea1"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/1a185bfb0ef82b27-learning-page-reopen.json",
+      "bytes": 30098,
+      "sha256": "1a185bfb0ef82b27fec9731ba8e3bd926538c779d9f041da54469b1ecc6b32f2"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/1b8c24d90d0cd074-settings-v4-table-conflict.json",
+      "bytes": 11076,
+      "sha256": "1b8c24d90d0cd0749602190868ed9982ff61b44f0665b2ce829b925e473c5c4b"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/1ddf3972d289cd2c-forced-stop-recovered.json",
+      "bytes": 844,
+      "sha256": "1ddf3972d289cd2c3f7f70dedaa0b65eafd985902bbeec071f51e7ff40d137f9"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/1ecbf7556a8d9f30-random-recovery.json",
+      "bytes": 18398,
+      "sha256": "1ecbf7556a8d9f306881f4884491cbe0b27bcf770894a897af39ab9dbbded2d9"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/203263de4031129e-practice-durability.json",
+      "bytes": 2141,
+      "sha256": "203263de4031129e8800b0b737cac99c39ab9f17355fb77c7dd4d27d755a2929"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/20a1045db42a887b-replacement-failure.json",
+      "bytes": 10453,
+      "sha256": "20a1045db42a887bb0152455b088be0411dd01e391fe7beceb68c1fe57bab412"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/20a3754eee525a1c-library-roundtrip.json",
+      "bytes": 36482,
+      "sha256": "20a3754eee525a1c574f7910abcf4adb88fdbd760c5b6cb73806f5fb666ed786"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/20f7b5927a9eb695-random-before-close.json",
+      "bytes": 9153,
+      "sha256": "20f7b5927a9eb695b587b3a3ae6fe0070dfc0f6a2ca11b414e58076efbf5c36f"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/215c66ff6d0cee9d-complete-backup-records.json",
+      "bytes": 36887,
+      "sha256": "215c66ff6d0cee9d85700aa47c87468349065d7c9a8ccb8832dadcd8762787d3"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/22032528c77586b9-long-content-advance.json",
+      "bytes": 959,
+      "sha256": "22032528c77586b9b859f479541f1fec638c2c4aea44baa6fbe01ae92b433a0e"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/224e5f84f3ecad55-restored-desktop.png",
+      "bytes": 46096,
+      "sha256": "224e5f84f3ecad55740eac19f526974c044dd0208322676f6cb04a97f67e51ca"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/28063e41eab26740-data-location-failures.json",
+      "bytes": 779,
+      "sha256": "28063e41eab2674052b2171ca48759221114057711cdf573b8b9498850eab915"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/2a6e896681189c93-migration-v3-trigger.json",
+      "bytes": 14416,
+      "sha256": "2a6e896681189c939a68803e093b8d2da4d5e2bf3a3895c991b95e544b732026"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/2b05933363bc4cbd-version-archive-restore.json",
+      "bytes": 13767,
+      "sha256": "2b05933363bc4cbdb53adbb103d18663e43d929734deed9c2b54aff446b10e07"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/2b69dc56ab88dcc0-repeat-previous.json",
+      "bytes": 1668,
+      "sha256": "2b69dc56ab88dcc0a72cc328c9cd2ff4d4a7e55703312ae07738c212e66d85be"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/2b79cee606525c36-practice-lifecycle.json",
+      "bytes": 18694,
+      "sha256": "2b79cee606525c36528164c7f43894be90d15600f18815837b34e8db481cd0d6"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/2d1696ca895f9058-preparation-failure.json",
+      "bytes": 174,
+      "sha256": "2d1696ca895f9058b1c442cddd98a3f4478746eed75b7aff8d5a70ba97e38bac"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/305a7ecd11eb872b-repeat-keyboard.json",
+      "bytes": 2171,
+      "sha256": "305a7ecd11eb872b39f6ffd6ed447c70bae832d238d024b3b0ff5d7da714720e"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/3123cb7992cbe5c1-history-late-response.json",
+      "bytes": 1429,
+      "sha256": "3123cb7992cbe5c15d172c9a6d6d1ac00d70c6b30e54cd85d5d9fc4694a1e734"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/33bd8de533779299-filters-v5-preserved.json",
+      "bytes": 10614,
+      "sha256": "33bd8de533779299094f9d20bd38d83843a2da87e8bcfb5608bfe5be030b010f"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/347e54315659f97b-migration-v3-index.json",
+      "bytes": 14325,
+      "sha256": "347e54315659f97bbdee4cb56f87aa96d5c8d1317c4aaa75670eb024fce9492e"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/377c36ea2cbc03f6-replacement-failure.json",
+      "bytes": 10644,
+      "sha256": "377c36ea2cbc03f651c6a704ea69d7b18c054e29cfbf87cfdcfe9a4013edf576"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/393b2971e3a0b865-directory-restore-order.json",
+      "bytes": 185,
+      "sha256": "393b2971e3a0b865336fc58d6aef566f8cc75a6a466eb32e542885df1662d505"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/39648a49111e12c9-practice-rollback.json",
+      "bytes": 1967,
+      "sha256": "39648a49111e12c9d9a3968451ddb3dd4cdb507da5261980e250dc4b1a2cef25"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/399e67914d4ca4ab-replacement-failure.json",
+      "bytes": 10589,
+      "sha256": "399e67914d4ca4ab10584d0a10f27bf1eed2f2a947f7bddbe22ec0ee91060739"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/3c49a0184062272f-practice-reopened.json",
+      "bytes": 968,
+      "sha256": "3c49a0184062272f5cb5678ea7b80b12e1676aa460d9e2d6d82a305acc5a4286"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/3cbb54a749c2c6f4-appearance-write-retries.json",
+      "bytes": 12990,
+      "sha256": "3cbb54a749c2c6f4fdc66593677137bd50524e632447483ed97a62ddabf08962"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/3e045d5daf19853b-learning-version-counts.json",
+      "bytes": 17370,
+      "sha256": "3e045d5daf19853ba8b27fcfe84eca87f2086a3efbc932b0a00b82083a42728c"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/3ed9af7299e0e43f-repeat-previous.json",
+      "bytes": 1669,
+      "sha256": "3ed9af7299e0e43f3084b66a224bb0d867af890556ecf5960ec922444750ded0"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/3fcab78bd88e1b33-worker-snapshot.json",
+      "bytes": 1082,
+      "sha256": "3fcab78bd88e1b33544ecc85ac10732e344af1c8a50d44469d08790941796ced"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/4243eee6e96a38ca-keyboard-input-saved.json",
+      "bytes": 1368,
+      "sha256": "4243eee6e96a38ca5fc8c0b628cd2510317ba25c9dae7d7931d3adbfe9dcead7"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/44a5a7e9f91e4c92-keyboard-input-saved.json",
+      "bytes": 1505,
+      "sha256": "44a5a7e9f91e4c92df79cc22550c0a644266cca9ba1901cb635ed47d1f938f02"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/45ac47fcdee9e8df-long-content-advance.json",
+      "bytes": 921,
+      "sha256": "45ac47fcdee9e8df9466f0d13de4b1b1746a2b54849accb61e7668df00e6bfe2"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/46008e5942914484-restored-business-and-protection.json",
+      "bytes": 16573,
+      "sha256": "46008e594291448455b9ccbd62a3f1148b14e38f5a21d05583ebf7c586115245"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/47072a9edcf66528-random-start-retry.json",
+      "bytes": 8164,
+      "sha256": "47072a9edcf66528f0c076b6c3fe40f2ed24713fd0938f49a3745dfb15e355a5"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/4968b62e4ad521fb-filters-v5-foreign-key.json",
+      "bytes": 10172,
+      "sha256": "4968b62e4ad521fbc217b6901ca7f3c17a85b53d7db8b99930f8291bb02ca7c3"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/49b3b305bed4ec0f-learning-late-response.json",
+      "bytes": 65,
+      "sha256": "49b3b305bed4ec0f5d727201f8199a4f17f2f1cd8b8ae0ab4dce67f8cd59a214"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/4a5e0a975226d8ff-preparation-failure.json",
+      "bytes": 134,
+      "sha256": "4a5e0a975226d8ff9d8b5e6875738045c5111844f0554c78e1e7c9c9ea121cf0"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/4b324719082e302c-practice-rollback.json",
+      "bytes": 1967,
+      "sha256": "4b324719082e302cf5d28ce90410b76d0fb2b6ac6964bb502c121ab89b9d54b6"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/4bca42b28ab69844-filters-reopen-sequential.json",
+      "bytes": 36007,
+      "sha256": "4bca42b28ab6984497bf52211a578fdf775122cb421bce62125a82bd24b33077"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/4c82d1178a46f85c-filters-v5-backup-blocked.json",
+      "bytes": 10162,
+      "sha256": "4c82d1178a46f85c4d2b80f8124c30d363546834e08909dd7550099a0bcec440"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/4c94be74b039b5b6-appearance-reopened.json",
+      "bytes": 29790,
+      "sha256": "4c94be74b039b5b6972a05eca8e1e5e3553f2003b74ea1864bbd1c6420a5b91e"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/5003558e3e195ad6-restore-save-and-pause.json",
+      "bytes": 12045,
+      "sha256": "5003558e3e195ad6cc4d0c5683c8a8a61e799b6a3738bec8512b0bef98a3ce16"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/509419d100d528cd-library-reopened.json",
+      "bytes": 38306,
+      "sha256": "509419d100d528cd87eab5ca606045360214005621fb5c8ab2a0be533c8b44a2"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/520597ed5df0de37-filters-v5-backup-blocked.json",
+      "bytes": 10162,
+      "sha256": "520597ed5df0de370dcaa84aa20d265e2f7d6d53f5cc454897ddd8f449649379"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/5284284669b7be54-repeat-keyboard.json",
+      "bytes": 2171,
+      "sha256": "5284284669b7be54a09e9d173caa36bfc1979b006eb2d1aafe5b2e28e9cef8bd"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/53eeffceb3864993-practice-window-roundtrip.json",
+      "bytes": 3403,
+      "sha256": "53eeffceb386499364c211285384efed366df8bcc4c86fbfd7f04e1e998ebb26"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/570e55ff635a1415-invalid-backup-result.json",
+      "bytes": 157,
+      "sha256": "570e55ff635a1415dd3a59698a551fd697c2e290a66a0929ea42ce447527de9b"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/57939f9cda0ef616-practice-limits.json",
+      "bytes": 1326,
+      "sha256": "57939f9cda0ef616ca255e896756e92f319dc4447cdaefcf0f92c414ee53e928"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/57970f877481c3ec-settings-v4-preserved.json",
+      "bytes": 11247,
+      "sha256": "57970f877481c3eca5e199921a088b662dc7560276ab0bd8215ca626b5b9242b"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/59c0f99d3b3882a0-search-boundaries.json",
+      "bytes": 1288,
+      "sha256": "59c0f99d3b3882a07d6d3c8ac6f399ec17b5a0d1f18b0d7c4f48e880ea8de982"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/5a4f873a2e85080a-legacy-backup-preview.json",
+      "bytes": 510,
+      "sha256": "5a4f873a2e85080a9cf643b7c8b280e5920cbfc8d0fe1861282399002bc51895"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/5a59fa88aa79dbbd-invalid-backup-result.json",
+      "bytes": 137,
+      "sha256": "5a59fa88aa79dbbd5aff3cd4e403360012e5a91207d3ffe3e08594bcda65f1e1"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/5aa4f90c43bb172c-preparation-failure.json",
+      "bytes": 111,
+      "sha256": "5aa4f90c43bb172c007306f791d99c7d252c78dec6188beb117ec3110caf6ee3"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/5cc3013325e26ade-directory-restore-order.json",
+      "bytes": 185,
+      "sha256": "5cc3013325e26adedf9fd9d35a8b47ab9e6e3a285f181015c205429443db6af8"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/5e637c86a77cb9f9-library-rollback.json",
+      "bytes": 5043,
+      "sha256": "5e637c86a77cb9f922226b8d18568936bb8f25aef4565f3afdeb5bd83de2a035"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/5eda6c27ed9ff4b4-windows-directory-case-restored.json",
+      "bytes": 373,
+      "sha256": "5eda6c27ed9ff4b46039a49cda471c9cda32b885452c26a5a2c20b6dfe1b8e27"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/624362aba0c475e3-history-default-readonly-autosave.json",
+      "bytes": 29652,
+      "sha256": "624362aba0c475e30e13c10acaca84e490d6353ab7784b3b16d2339c5fb65eb1"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/63368aa86e98641e-worker-controls.json",
+      "bytes": 302,
+      "sha256": "63368aa86e98641e427a57ac88a8d30f7ffb960fcf18cea06a5f7b180626023f"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/65705b5761e46494-legacy-restored.json",
+      "bytes": 493,
+      "sha256": "65705b5761e46494e65ed248f234cd28c1bd39f26389b77d6e6571e8460391c0"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/6587e010efc9fdcf-legacy-restored.json",
+      "bytes": 218,
+      "sha256": "6587e010efc9fdcf464edbd2f23d3e9e8fc75c5ca148db62be6c3cb75726b595"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/67cc30706558f46e-learning-page-reopen.json",
+      "bytes": 29428,
+      "sha256": "67cc30706558f46eaa10a50c78ceb850ff2cdca2ca3b5b3a69d0bc3a51081f33"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/67dd9b967649ae3a-data-locations-preserved.json",
+      "bytes": 10818,
+      "sha256": "67dd9b967649ae3a3d930e042e77e3ccf98eb46a8571f10edafe1c274ad9d520"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/68d57380546d3c9a-filtered-queue-state.json",
+      "bytes": 3668,
+      "sha256": "68d57380546d3c9a8b945571a821fe7d0cd6923e8911e5182bea66e129dbabda"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/6a355ec55059a587-legacy-backup-preview.json",
+      "bytes": 509,
+      "sha256": "6a355ec55059a58744dbce4b680bf14448fdc39eb823948ac45c1ae52d68aa04"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/6a8322c147e1faf6-replacement-failure.json",
+      "bytes": 10582,
+      "sha256": "6a8322c147e1faf63f13e6a4ca6dae6da6f56410d90544ae02074c8edf01f204"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/6b3e090eed0a4d83-settings-v4-backup-blocked.json",
+      "bytes": 11076,
+      "sha256": "6b3e090eed0a4d83de8571571a97eee60ec70e83f7e8dc597256d3183eb0de03"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/6b463f10a36781c9-windows-directory-case-restored.json",
+      "bytes": 373,
+      "sha256": "6b463f10a36781c9b5bb925b49e35aad36308eb9e0c84fe9f0c3997ae07708ac"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/6ba31ede0f7d0048-keyboard-input-saved.json",
+      "bytes": 1505,
+      "sha256": "6ba31ede0f7d004895d756217a0cbc309fe8742c9b6adf4b8d2840609ceb2a65"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/6bf56ce7adc5ad1c-worker-snapshot.json",
+      "bytes": 1082,
+      "sha256": "6bf56ce7adc5ad1ca94c5ba3abace2c37e1897614aa38eb6c3b1501c3fd23c14"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/728272b32c4692d9-history-image-archive-restore.json",
+      "bytes": 14884,
+      "sha256": "728272b32c4692d9a390bb6ecc69d460c90a9e7508f0f29e23daea15684f9d80"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/73352a2299cb94b4-legacy-restored.json",
+      "bytes": 491,
+      "sha256": "73352a2299cb94b43f6c73f0a0f0471fac681626289d15a84d260a0d129d5834"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/747bb400611af2c5-restart-request.json",
+      "bytes": 204,
+      "sha256": "747bb400611af2c5e1b7cec2e7c39c0c56de0218ae465f3f11c5baef75539bfc"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/768283d36f8e4f9c-legacy-backup-preview.json",
+      "bytes": 510,
+      "sha256": "768283d36f8e4f9c274519741d86e537f9cffde6c0702de4d7da531dbf55e6ae"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/7816916e94a162b9-migration-v3-index.json",
+      "bytes": 14325,
+      "sha256": "7816916e94a162b9e00deaec75c45ae92a79ac3b93092bab0b9f1e832f6ca6ba"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/781d42801d66d817-repeat-skip.json",
+      "bytes": 1374,
+      "sha256": "781d42801d66d817fc14a13dc059f2e96edd12aadd2b0823b035a834b9adfb6c"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/784d9a4f6c67aea6-replacement-failure.json",
+      "bytes": 10447,
+      "sha256": "784d9a4f6c67aea6cd566afcdb3f98b55912cd4e1bb429862066f2adfda52b4e"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/79842507358dfc29-practice-window-failures.json",
+      "bytes": 1562,
+      "sha256": "79842507358dfc29ff944b9af84749aa382ae1d0146757fb42e431cec2e01981"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/7a89a11c268a8aef-random-before-close.json",
+      "bytes": 9152,
+      "sha256": "7a89a11c268a8aefaa53276907f08677754eece3d9897e2b0705db89a464ace6"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/7d5761c618b20ba3-filters-reopen-random.json",
+      "bytes": 36127,
+      "sha256": "7d5761c618b20ba32e8fd60e2e5f368a77c323baa4db92c3f7d9d75f2f6e280c"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/7d9aab1a0745aea5-content-update-lifecycle.json",
+      "bytes": 20497,
+      "sha256": "7d9aab1a0745aea553433c91c2609336654bbaf7d87d4e73cf5aa7667986f070"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/7db82eb3d63a56e2-practice-window-roundtrip.json",
+      "bytes": 3403,
+      "sha256": "7db82eb3d63a56e27d3c7e859d44bc120112e17601db343005ec41ec11773ee7"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/8223071662397a5e-replacement-failure.json",
+      "bytes": 10453,
+      "sha256": "8223071662397a5e992ac2d402be92bbe135e1cd5899b76f30246e037654654b"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/827900610cc88a14-legacy-backup-preview.json",
+      "bytes": 509,
+      "sha256": "827900610cc88a14e8279b2a9fb185b55d948d0d1bfaf5342a224c7e0d28846b"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/84f9cb9e758d4cc6-favorite-failure-retry.json",
+      "bytes": 2982,
+      "sha256": "84f9cb9e758d4cc6c920e672304aa8d0f5736967f44604761085dbd65e07b2c4"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/86a7262538630049-settings-v4-foreign-key.json",
+      "bytes": 11086,
+      "sha256": "86a7262538630049a021bdc43d5d07053abf9c1a6e0c024455d807b3ac6a91ec"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/890664f414c28c2e-legacy-backup-preview.json",
+      "bytes": 510,
+      "sha256": "890664f414c28c2e936a1d4e9b207cd5087c5e607e94f495caec1d49ed5075f6"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/89cf3e9790cc22fd-learning-read-failure.json",
+      "bytes": 13271,
+      "sha256": "89cf3e9790cc22fde16458f510b139e038218b7132bebd2866d3336bc708c430"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/8a64b772257de09e-restored-desktop.png",
+      "bytes": 45695,
+      "sha256": "8a64b772257de09ef1a651a1d404fa941d8608f7ba319e25b4f14c538a209b67"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/8b988d0b3929755a-repeat-previous.json",
+      "bytes": 1669,
+      "sha256": "8b988d0b3929755a47dc992dc7f86933c61057f46517ac4697b86440567c3b39"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/8dd29426b573d014-history-image-archive-restore.json",
+      "bytes": 14884,
+      "sha256": "8dd29426b573d014bb21ef49ede628d2d93df134e5c2191a6cc9104144aed71a"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/8e92497e3df30182-migration-v3-trigger.json",
+      "bytes": 14416,
+      "sha256": "8e92497e3df30182ebfedccd05a80a62573fe993b810a55364e9de4eb03e3189"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/8ed7533d38604b66-practice-limits.json",
+      "bytes": 1326,
+      "sha256": "8ed7533d38604b668a3bc849eca9b8a5543eafeb3938adeeb3b06fb45ec190c4"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/8f88ef30ee51765d-preparation-failure.json",
+      "bytes": 180,
+      "sha256": "8f88ef30ee51765d529501d83e2b163da85bfa63c801240977f45f0330891715"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/92349633c7c0f7ce-settings-v4-table-conflict.json",
+      "bytes": 11076,
+      "sha256": "92349633c7c0f7cecef6e4ad6690e1ff1f218b7f3f539216249f8ec0e4b983ad"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/934a0ce21080d11d-appearance-write-retries.json",
+      "bytes": 12990,
+      "sha256": "934a0ce21080d11dcf9ebb7795b7104e2f8990f4a4eaa5be61ca0ba412470d40"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/9392b42109a2e1bd-keyboard-input-focus.json",
+      "bytes": 988,
+      "sha256": "9392b42109a2e1bd72b4676a9a095d755efb923f993952fed61f241bb7fe2205"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/939c36deee45201a-long-content-finished.json",
+      "bytes": 860,
+      "sha256": "939c36deee45201a730871f9058b7fc87f2873861e865db18f63bf6da1404e01"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/93b33dfea8079f92-favorite-reopened.json",
+      "bytes": 3289,
+      "sha256": "93b33dfea8079f9249d7b5075c630f19f1971d560f7aedc3b52596c75916fb01"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/949d1921843f221f-practice-durability.json",
+      "bytes": 2141,
+      "sha256": "949d1921843f221ffab27ead3e908876cf03bae03dc64e7d02bb1c0172254948"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/94a7eb4fa9f69485-practice-versions.json",
+      "bytes": 6264,
+      "sha256": "94a7eb4fa9f694859459e6611c355cd63af99e3632e9cd55092ef64d35466255"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/953b5e46b469812d-replacement-failure.json",
+      "bytes": 10447,
+      "sha256": "953b5e46b469812dc9ad4f8249d07eee2c20a4215b26b7c4beda84a5ec02b515"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/953d979ba27eab34-history-late-response.json",
+      "bytes": 1424,
+      "sha256": "953d979ba27eab34b52c39249fcc05547e141d1679ae5e2cfca9eafb5a4bfbc2"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/9643a384b37825f8-concurrent-backup-snapshot.json",
+      "bytes": 43763,
+      "sha256": "9643a384b37825f801dd8e8b5b412bf1824c0ff1104e3026dfd36e626f0ceaee"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/96a0b544c437e743-repeat-skip.json",
+      "bytes": 1375,
+      "sha256": "96a0b544c437e7434684dd5069924a5a07c39c5ea608bca0943f01d84e82c752"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/97209de0fb832514-repeat-skip.json",
+      "bytes": 1374,
+      "sha256": "97209de0fb832514223cc91caaa1076c448c2c213de401a5bce494fb279d7a35"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/9ca2c4b5005112c2-history-read-failure-retry.json",
+      "bytes": 17527,
+      "sha256": "9ca2c4b5005112c289df551e140d72ecc0926c2025d790ba8e4a368869a71127"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/9df0684c2b5a5356-image-autosave.json",
+      "bytes": 669,
+      "sha256": "9df0684c2b5a535669d6ba8cd0db3b9dede5d874b46b4346d326aca3bf4326d3"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/9e835928600d1a04-repeat-held-key.json",
+      "bytes": 1357,
+      "sha256": "9e835928600d1a04746b8c040dac7fbffa83245f243e6d7f0e64c490ad0d0cee"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/9f48824d8fb90aa3-unavailable-database-locations.json",
+      "bytes": 374,
+      "sha256": "9f48824d8fb90aa344bbe943dfb07b389c5bab52f870323948f90d57d6c76475"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/a12b0b604ef73408-learning-read-failure.json",
+      "bytes": 12936,
+      "sha256": "a12b0b604ef734081a50cd36ba50468c4a67a048ba679527e41d11c1ffbba248"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/a1af6362d9f1c40a-migration-v3-preserved.json",
+      "bytes": 13516,
+      "sha256": "a1af6362d9f1c40a6b95095c20a06eb8a5c0416c83fccf889c933524b0de2dc4"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/a1c654db0e3198a1-favorite-reopened.json",
+      "bytes": 3289,
+      "sha256": "a1c654db0e3198a139202f5c09b90f509a92a2091882dec7b8fbbc5ef9f298ef"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/a34bae49b654440c-long-content-advance.json",
+      "bytes": 959,
+      "sha256": "a34bae49b654440c823778c876f6ee87893bcb73871877be3bd8bc2c6195e232"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/a44a83151fd33e5b-practice-reopened.json",
+      "bytes": 968,
+      "sha256": "a44a83151fd33e5b5dffe7ab650eff9e7c808031fe3ca0cd112e289b621b4943"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/a513dc6f659c9f4f-restart-request.json",
+      "bytes": 147,
+      "sha256": "a513dc6f659c9f4fc5a380d42532e70032a6976f20e1c8b2f58bf7a573805b99"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/a644f7cdfeb38b4e-filters-v5-column-conflict.json",
+      "bytes": 10456,
+      "sha256": "a644f7cdfeb38b4ecda6995241768e724ec7b129a5a15df24a8afcdf85588485"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/a705c3d545651007-appearance-rendering.json",
+      "bytes": 14433,
+      "sha256": "a705c3d545651007cfc850213306d9eb5496985338eebbe30af2113dcae15736"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/a94df2152ae39cca-invalid-backup-result.json",
+      "bytes": 192,
+      "sha256": "a94df2152ae39ccaa870b242bdeb2406d6688bb4357d223edf613bb7ada4f435"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/aa9b1e4a3d8189c2-forced-stop-recovered.json",
+      "bytes": 844,
+      "sha256": "aa9b1e4a3d8189c2fc6687ffa0fd0c2808c7cfab0281fb3b21203e9763523b36"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/abcf66760bf6a1a8-migration-v3-foreign-key.json",
+      "bytes": 14153,
+      "sha256": "abcf66760bf6a1a898654ec5161bfec4232014ddb8db24a88880737dc871e917"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/ac94fea90d178f3e-filters-atomic-retry.json",
+      "bytes": 31586,
+      "sha256": "ac94fea90d178f3e174e84357950fb2967bc70d1d40820d99f2afe02af0bf085"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/ad24d1f4ab3713de-invalid-backup-result.json",
+      "bytes": 154,
+      "sha256": "ad24d1f4ab3713de131e3e24c09f3409b14dca94e604f9ed00002dc8704ba24b"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/ad60cdbfe95ae8e9-keyboard-input-saved.json",
+      "bytes": 1532,
+      "sha256": "ad60cdbfe95ae8e9cf48173d2cd010c77edd47058b48ad654001765f239c1fa7"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/ada5e85fd3a4a0eb-data-location-failures.json",
+      "bytes": 691,
+      "sha256": "ada5e85fd3a4a0ebdf5abb0cb8912c9828d808f3969328560f4505d1c45c75f8"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/af7016204dd48923-settings-v4-preserved.json",
+      "bytes": 11247,
+      "sha256": "af7016204dd48923ceb3bcf1f3d7e53a1510e52e2857f125bba37dc1cf290ca3"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/af8e3e8e26ca43a7-repeat-keyboard.json",
+      "bytes": 2171,
+      "sha256": "af8e3e8e26ca43a70abe59ec0a2f40878b0a22a520148ccbc2e9372f6badcf4a"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/afd20faa22e075e3-history-query-matrix.json",
+      "bytes": 73488,
+      "sha256": "afd20faa22e075e36e17c0777f0d2401e4bd6605731ec3dbbc43397e9606ffe7"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/afec155e100da124-library-changes.json",
+      "bytes": 9526,
+      "sha256": "afec155e100da1241245b301dc3ef84c28101326cc5cb789a025bb3a599cc7f3"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/b06e1ee44afaf3a3-legacy-backup-preview.json",
+      "bytes": 509,
+      "sha256": "b06e1ee44afaf3a3b4f5a2e325a90a5105c06f457948a69cf124bcd3ae5625e2"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/b0e497e2895a38cc-random-controlled-sql.json",
+      "bytes": 60854,
+      "sha256": "b0e497e2895a38cc648c9841b14b6e1336986b92bc03c2b28f7a4cc9967d63bc"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/b137a1f14d6f4bd4-migration-v3-conflict.json",
+      "bytes": 14335,
+      "sha256": "b137a1f14d6f4bd4044c640687073a9671194115db02ab43881910df4b22ed96"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/b1bed7b64e175f1e-appearance-reopened.json",
+      "bytes": 29120,
+      "sha256": "b1bed7b64e175f1edfc4811ccbc034f5dcb287aa150ac02b177b3bbdb400043e"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/b6482b93a1b0b878-concurrent-backup-snapshot.json",
+      "bytes": 42758,
+      "sha256": "b6482b93a1b0b87809cb3d8b03c4ca8bcb5b327903915120ef35b48081def75d"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/b87980df659ae029-practice-window-reopened.json",
+      "bytes": 678,
+      "sha256": "b87980df659ae029342b2645a0f0167d3ee2e70babeb1d6a17468baf6cb61428"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/b886ce5e77ce5f7e-history-default-readonly-autosave.json",
+      "bytes": 30322,
+      "sha256": "b886ce5e77ce5f7e89686a5053339fbbe4b2c6aa7368be10b104b83e910a3bab"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/b892a50fe54b36e4-unavailable-database-locations.json",
+      "bytes": 374,
+      "sha256": "b892a50fe54b36e467748862ae07c59b75e3a34f82aaf7a7c69437c6765c0779"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/bcad0eb8c791d153-random-recovery.json",
+      "bytes": 18397,
+      "sha256": "bcad0eb8c791d153c2e58a2d9e817530877630ee6e0f2bf614b2f940007914ff"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/bd0b235d751938d0-legacy-backup-preview.json",
+      "bytes": 509,
+      "sha256": "bd0b235d751938d033e09e3889ebdf2591893db36a9aed07c4c0e8ea984b5114"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/bdcc66336158d94d-image-autosave.json",
+      "bytes": 669,
+      "sha256": "bdcc66336158d94db39267a8f9137267a8eaeb51de7c41e1ee7597944ebd1fdc"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/c0b4aa0793b58a8b-legacy-backup-preview.json",
+      "bytes": 509,
+      "sha256": "c0b4aa0793b58a8b6fda249ab9e0eb8a2e096ede2b99580383abc78715f17793"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/c12173cb57845120-long-content-advance.json",
+      "bytes": 960,
+      "sha256": "c12173cb57845120c4aedda32e9733c246d65119fadf2beb3c56018a47594e85"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/c1fc56b033435a3e-protective-backup-restored.json",
+      "bytes": 10696,
+      "sha256": "c1fc56b033435a3ecfc3ccb3879e8c530780317d5712a85b03102540793f42e9"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/c29a6b98c55833d3-forced-stop-confirmed.json",
+      "bytes": 1727,
+      "sha256": "c29a6b98c55833d3b7d8a6600d1552dbc6aad07c3ecf689724979e8206454268"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/c2a4e334df383ed8-practice-window-retry.json",
+      "bytes": 764,
+      "sha256": "c2a4e334df383ed8b204fbbb349878a38dfb424f970ef56684c587e7a4d92b22"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/c2bc1024308ad508-filters-v5-column-conflict.json",
+      "bytes": 10456,
+      "sha256": "c2bc1024308ad508c44308f2a9d38ec677cd9d7de0c686e4af1cd2ccafff8d80"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/c35d699e86cae4a6-legacy-backup-preview.json",
+      "bytes": 510,
+      "sha256": "c35d699e86cae4a63daddba22905c8c75b2359a9ab089cc61caa6db4615b8ad8"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/c538aa336d527f35-invalid-backup-result.json",
+      "bytes": 149,
+      "sha256": "c538aa336d527f35ad87bd02f1ad738cc323e10279ff17251a0bcf2e410867e4"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/c53c472883c40d51-library-roundtrip.json",
+      "bytes": 36482,
+      "sha256": "c53c472883c40d5113148e6920857e0118cfd1017b853a3ebb74ee9f4f64bf78"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/c706ce883785b530-practice-window-failures.json",
+      "bytes": 1562,
+      "sha256": "c706ce883785b530a4ca0f18f0a7f703bdb3289ca4bbd33e7ce859301a8b8805"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/caefa35876846019-repeat-previous.json",
+      "bytes": 1669,
+      "sha256": "caefa35876846019e949ad4e48d75763510df8e2d0083c7db0151636a5dc7b23"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/cd6babd0749df4e8-replacement-failure.json",
+      "bytes": 10582,
+      "sha256": "cd6babd0749df4e8a2b22411944f0983e91664898d677c42cf6125fddba4fdb0"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d0f8efb30dd4474d-learning-window-counts.json",
+      "bytes": 321,
+      "sha256": "d0f8efb30dd4474d740d7fad9cba23c0c8e7712025469623d3804cb0e58451d6"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d1beff2964793ec8-version-archive-restore.json",
+      "bytes": 13767,
+      "sha256": "d1beff2964793ec89810bdc27606210722dd41a4e54776995a40e4e3f1d94398"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d1d769e21c705068-repeat-previous.json",
+      "bytes": 1669,
+      "sha256": "d1d769e21c705068b81e9af1b11839ae1d85df789a7bb97631ac2ab88c78f669"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d3398e9417540cb4-filters-atomic-retry.json",
+      "bytes": 32394,
+      "sha256": "d3398e9417540cb4da20a82ca55c1224564dd7f52e5ccd1b78061c2e566e961a"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d3a07e79cf8b0395-long-content-advance.json",
+      "bytes": 960,
+      "sha256": "d3a07e79cf8b0395f81a320871afafa814a935bc8bd4db8fd196f17696c65190"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d3dd0f6bb87a749a-long-content-finished.json",
+      "bytes": 860,
+      "sha256": "d3dd0f6bb87a749a9fe72d7c142a4ea36a2c29d14a4516da0fa60f9ced69725b"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d503bbe5e8043548-complete-backup-records.json",
+      "bytes": 37559,
+      "sha256": "d503bbe5e8043548a917a024e8fbfeb25f065af63be0c76f0390650424a8c608"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d6bbb52b84b30b8b-replacement-failure.json",
+      "bytes": 10451,
+      "sha256": "d6bbb52b84b30b8b6b8262269dc0d30e52a6253d41db0101965d82e4758d14e5"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d8111e2640220948-replacement-failure.json",
+      "bytes": 10589,
+      "sha256": "d8111e26402209482915c96bc6241c08fff483ae497de8ca3eda76ec2b447a12"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d8b627855041f29a-practice-lifecycle.json",
+      "bytes": 18694,
+      "sha256": "d8b627855041f29ac9962ffa9e2d87da8c773275ad911b56767d64c1e90b949d"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d8bc84842455f559-keyboard-input-focus.json",
+      "bytes": 824,
+      "sha256": "d8bc84842455f559ba4b2b3eb8977b2d8ca33a7339c0f5b06730652ab701c130"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d8c7f7df3fc9a49c-invalid-backup-result.json",
+      "bytes": 158,
+      "sha256": "d8c7f7df3fc9a49c9c0d6c183936452e4f2a7679e39f235ad083e60132d75df3"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d9002d999ac1f7c4-repeat-held-key.json",
+      "bytes": 1357,
+      "sha256": "d9002d999ac1f7c4eafc4152cd4bc22f79e61e36f48e393b12ac823ef5483237"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/d943a271a00aa428-migration-v3-conflict.json",
+      "bytes": 14335,
+      "sha256": "d943a271a00aa42888bc1c3a84c80b3f6c698f6b78640f8e13704f19dd71971e"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/da5b4dfc9af43b70-library-rollback.json",
+      "bytes": 5043,
+      "sha256": "da5b4dfc9af43b7018f96d79775b6be3cce05fe176b0649031cf68ff0985c9ce"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/da6f2452af521192-random-fixed-versions.json",
+      "bytes": 55416,
+      "sha256": "da6f2452af52119285638f530926f5017605124882f09c3d8b57d7ad582be55d"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/dc4133985d2f6057-long-content-advance.json",
+      "bytes": 921,
+      "sha256": "dc4133985d2f6057be0e1ae4b254f505b85444ba92113441776a8307d41e7b95"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/dc5a6ecdc7b8765a-keyboard-input-focus.json",
+      "bytes": 824,
+      "sha256": "dc5a6ecdc7b8765a7913545aa6fcc00746d9bda82c917663f2dae13d2a6f60c8"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/dde5816ebb73fc5a-random-before-close.json",
+      "bytes": 9148,
+      "sha256": "dde5816ebb73fc5acbe6947a5d1f8c65ddc4195509f9b3d56cf290b322388de4"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/ddedfb29b602e96d-favorite-out-of-order.json",
+      "bytes": 3085,
+      "sha256": "ddedfb29b602e96df7168e190890a7c91ff1d438541a7b5eaea9873e296b88b6"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/de960e561010e077-invalid-backup-result.json",
+      "bytes": 151,
+      "sha256": "de960e561010e0770d9be4d2ffc46678fe0a353c8fe2057478426449d3bd5063"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/e1a7784c818f025d-random-fixed-versions.json",
+      "bytes": 55416,
+      "sha256": "e1a7784c818f025de800136fbce468966dbbaf69080a5a097432e9eeb98b46e9"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/e303f83d29dd807c-keyboard-input-saved.json",
+      "bytes": 1368,
+      "sha256": "e303f83d29dd807cbb88772ca4c8e6a3a9182855b4b473bd9ad05d0bc7618bf7"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/e3389d404d06a425-learning-empty.json",
+      "bytes": 471,
+      "sha256": "e3389d404d06a42560e42b53b2efe39105fe45e2d431111c9b659ad21d765ceb"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/e3835cc3c9af51b2-worker-shutdown.json",
+      "bytes": 179,
+      "sha256": "e3835cc3c9af51b2e7609fa7a61ce18b00d4fe6bebf7e9520692b72ec8d0a14c"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/e43aa3df28291cb1-history-read-failure-retry.json",
+      "bytes": 17527,
+      "sha256": "e43aa3df28291cb12e6a4208135bd5ca5986fc39d02df190c65c85c72ba833a0"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/e7fc5a3e109f1897-invalid-backup-result.json",
+      "bytes": 190,
+      "sha256": "e7fc5a3e109f1897078ba9ef16bfebf653dc6982ee848e7fbbc2ec8fbc8a3f2d"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/e82d518876a5258c-settings-v4-backup-blocked.json",
+      "bytes": 11076,
+      "sha256": "e82d518876a5258c937c588794d41d5b3afa5c309d0f659ef887eb29010bd85e"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/e97853831d06635c-content-update-lifecycle.json",
+      "bytes": 20832,
+      "sha256": "e97853831d06635ca00ebe5a24f447870810bd969d9ea9cbac0fb9bb2cd0d822"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/eb2679db94441951-replacement-failure.json",
+      "bytes": 10451,
+      "sha256": "eb2679db944419518dc247a2530ebac594dfe97b439d0c8409819b6b8a701540"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/ec297e9c5b83a9ff-forced-stop-confirmed.json",
+      "bytes": 1727,
+      "sha256": "ec297e9c5b83a9ffa754d9759b73bb63602350639f934fd12f4f7dcc42e8f289"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/ee308b28905b39a9-random-controlled-sql.json",
+      "bytes": 60854,
+      "sha256": "ee308b28905b39a9a3014cf8f307fe73fe999df110e2a974e7b0191326ce4aee"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/ee886fa15e56de43-repeat-skip.json",
+      "bytes": 1375,
+      "sha256": "ee886fa15e56de43dccc30a4cf4ef2dd1ede3fa1bfb6a30bce40b7d9c6f35a3c"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/f0640ed0cab2caa0-random-before-close.json",
+      "bytes": 9151,
+      "sha256": "f0640ed0cab2caa03d1ec45f1643dd7ef24759c029e6f716516e2ef1e5c1e64f"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/f08fcfa9611e6d28-repeat-skip.json",
+      "bytes": 1375,
+      "sha256": "f08fcfa9611e6d283374a90d20edf2a8b803e9828f3224fd2360c976d42bce59"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/f18ed596d042a485-restored-business-and-protection.json",
+      "bytes": 16182,
+      "sha256": "f18ed596d042a48527d5e4ecbea494963502caeba9a31958419b2855519ee7ff"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/f1de7a26f6096169-data-locations-preserved.json",
+      "bytes": 10818,
+      "sha256": "f1de7a26f609616912791d0e117150202c67e8571d52209560cd070926fa1207"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/f51446283a993b06-filters-v5-preserved.json",
+      "bytes": 10614,
+      "sha256": "f51446283a993b06676cf84b53eba62341c8d9e22291b7af05bfa00318f3e56b"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/f66595dcec242206-random-recovery.json",
+      "bytes": 18395,
+      "sha256": "f66595dcec24220664aafabf9116dcf8a38cd2f50bddd67a5151f6b4e71c776d"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/f7cc327bd849671a-practice-window-reopened.json",
+      "bytes": 678,
+      "sha256": "f7cc327bd849671ac6f9c904ebe6c5157cc8d71306c0bc06a863e93c968aecc7"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/f9c76a15a57b9bdb-invalid-backup-result.json",
+      "bytes": 190,
+      "sha256": "f9c76a15a57b9bdbadb776ac24a2fbb1b3bf548c125a2791acad21d562cbac0a"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/fa4d83cacece59ae-random-start-retry.json",
+      "bytes": 8154,
+      "sha256": "fa4d83cacece59ae53f3beca406c0a2749c567b48c63ad3de3807f8c7c567f26"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/fbe057e761c21bf9-migration-v3-preserved.json",
+      "bytes": 13516,
+      "sha256": "fbe057e761c21bf91bcbf31d7eae0f756faf35609f73e6e9658c124507ad1fd3"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/fd754a21d1c95c38-filters-reopen-random.json",
+      "bytes": 35457,
+      "sha256": "fd754a21d1c95c386eb7b3b96273e57d1ddb6dc7dbf4fd993077c3ab4d3a5ffb"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/fe5b6af8ca92d356-keyboard-input-focus.json",
+      "bytes": 988,
+      "sha256": "fe5b6af8ca92d3566db6bdc03d02279e2c83a24af79289e1ed58851609e659ce"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/ff1daeda436faf4c-filters-reopen-sequential.json",
+      "bytes": 36007,
+      "sha256": "ff1daeda436faf4c283cc5d392c61d116a3eb179b1ba7cad3bfbff6bdfefa2bc"
+    },
+    {
+      "path": "docs/evidence/m4c/artifacts/ff40131b05a83018-random-recovery.json",
+      "bytes": 18388,
+      "sha256": "ff40131b05a83018fda1003be79e98550909e6526ce8d1d8e868df82e87d9920"
+    },
+    {
+      "path": "docs/evidence/m4c/attachments-final.json",
+      "bytes": 138267,
+      "sha256": "5167ce0fa5d3a1b1cf6f8c4f440a7d5ccb8d6fd89031726e782b703a35457ecd"
+    },
+    {
+      "path": "docs/evidence/m4c/backup-case-first.json",
+      "bytes": 678,
+      "sha256": "0ecf83aa999c01e8bddd282c4e208228c82e6bb8420ee63935c43806c56f600c"
+    },
+    {
+      "path": "docs/evidence/m4c/build-first.log",
+      "bytes": 1505,
+      "sha256": "0a14d556f81fed5ba7b08b0fbca26bb6ede09c53aeb8ebb192f863fae4461fca"
+    },
+    {
+      "path": "docs/evidence/m4c/change-audit.json",
+      "bytes": 4360,
+      "sha256": "cb6ce0a8f022cf20b59d98be541cae8ab1cbab6d9e88ea4eb0bb4672d97997ca"
+    },
+    {
+      "path": "docs/evidence/m4c/check-before-case.log",
+      "bytes": 393,
+      "sha256": "d4e638ed9b282ad1fa26fd4fd98d8398e9ab3151fd12364eb51783f9b9610c5b"
+    },
+    {
+      "path": "docs/evidence/m4c/check-before-status.log",
+      "bytes": 393,
+      "sha256": "d4e638ed9b282ad1fa26fd4fd98d8398e9ab3151fd12364eb51783f9b9610c5b"
+    },
+    {
+      "path": "docs/evidence/m4c/check-final.log",
+      "bytes": 393,
+      "sha256": "d4e638ed9b282ad1fa26fd4fd98d8398e9ab3151fd12364eb51783f9b9610c5b"
+    },
+    {
+      "path": "docs/evidence/m4c/check-first.log",
+      "bytes": 393,
+      "sha256": "d4e638ed9b282ad1fa26fd4fd98d8398e9ab3151fd12364eb51783f9b9610c5b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-case-final.json",
+      "bytes": 7406,
+      "sha256": "09cac9f2a77e6363b0bc7689b8f246cbefcd8751c4d25510a12e41d794dbab77"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-case-final.log",
+      "bytes": 718,
+      "sha256": "03e78dbbe73ce57c53877432b4a198776be95feb7a5f11c414864e7441f5bb23"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-final.json",
+      "bytes": 3482543,
+      "sha256": "d39dbf099d2474cc8f8d95e7c30ff8ecda7f4eda52a8e0b73b97e3faf9b2349b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-final.log",
+      "bytes": 46187,
+      "sha256": "e2010948678f57542530a9984ee4aae5839102bcb4cb3c408e85bf6a4e94774a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-full-first.json",
+      "bytes": 3473431,
+      "sha256": "ef248f572f5b050f5abe5292f17e781586188fb20c21dd4c4808a0d596919089"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-full-first.log",
+      "bytes": 45860,
+      "sha256": "61fed15eaef120a3ac1dc8b0b2f53052c4c5ee311877fe4a7249ac37ba107d3d"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-full-second.json",
+      "bytes": 3474171,
+      "sha256": "a2e1781d61c54cc3e9610a6b7b61e167c2d5457a7725443b387a7255339ad6c5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-full-second.log",
+      "bytes": 48125,
+      "sha256": "e7c15064e02f80b404b07aae92e4c11ce46918b8fa689b2b6b1976172901a569"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-case-final/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-case-final/desktop-results.json",
+      "bytes": 7406,
+      "sha256": "09cac9f2a77e6363b0bc7689b8f246cbefcd8751c4d25510a12e41d794dbab77"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development/attachments/backup-preview-dark-22-png-2ccf598c5e9c4b7018bb2e431b3e702f5670ca89.png",
+      "bytes": 62962,
+      "sha256": "ec41ce626a8e3a5dc50938d0de42d392dfadb09e0ac6115f3a03a85963c76603"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development/backup-preview-dark-22.png",
+      "bytes": 62962,
+      "sha256": "ec41ce626a8e3a5dc50938d0de42d392dfadb09e0ac6115f3a03a85963c76603"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-packaged/attachments/backup-preview-dark-22-png-5917210e6a395d64a4316d1848b0b40386007fc2.png",
+      "bytes": 63625,
+      "sha256": "2c0228b4d7ed51eddf0a33f09fd765bc712ca79a120839ea2e07b3ba16ddd0e2"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-packaged/backup-preview-dark-22.png",
+      "bytes": 63625,
+      "sha256": "2c0228b4d7ed51eddf0a33f09fd765bc712ca79a120839ea2e07b3ba16ddd0e2"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/attachments/data-locations-dark-22-png-89332562d4a78a7e3fc284102401cd138243756d.png",
+      "bytes": 83823,
+      "sha256": "187a6deec56d7ca3995755ff0b0d71ce1377044b42ed1d482d31c6b6dc878534"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/data-locations-dark-22.png",
+      "bytes": 83823,
+      "sha256": "187a6deec56d7ca3995755ff0b0d71ce1377044b42ed1d482d31c6b6dc878534"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-packaged/attachments/data-locations-dark-22-png-ba1a69389d44c23eddec018d21927f07164365dd.png",
+      "bytes": 82931,
+      "sha256": "b4a8246339cef1a38bbce839e6181f2f74896e36cb90651985836270525734bb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-packaged/data-locations-dark-22.png",
+      "bytes": 82931,
+      "sha256": "b4a8246339cef1a38bbce839e6181f2f74896e36cb90651985836270525734bb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/desktop-results.json",
+      "bytes": 3482543,
+      "sha256": "d39dbf099d2474cc8f8d95e7c30ff8ecda7f4eda52a8e0b73b97e3faf9b2349b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-development/attachments/content-update-png-b82e23a58a7430d34ec287103a871c408be4d3aa.png",
+      "bytes": 63543,
+      "sha256": "eb11f254381fd18b0d65aecee21f35a355fa9a82507feb3e847f2233c06aaf30"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-development/content-update.png",
+      "bytes": 63543,
+      "sha256": "eb11f254381fd18b0d65aecee21f35a355fa9a82507feb3e847f2233c06aaf30"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-packaged/attachments/content-update-png-84cdbfe3e5a00df96c840ca2c0647ea9b3315cd7.png",
+      "bytes": 63829,
+      "sha256": "251afb37fa8c3576d7ff5d5ef3e9212c8633cb9f306f8dba22fe6e9de2f0c5de"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-packaged/content-update.png",
+      "bytes": 63829,
+      "sha256": "251afb37fa8c3576d7ff5d5ef3e9212c8633cb9f306f8dba22fe6e9de2f0c5de"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-development/attachments/history-old-image-png-baa92e9b55a1d9c2431999c617c55ca61623605a.png",
+      "bytes": 31574,
+      "sha256": "9618dcef314107e324d272b4585aaa8095132e9985afab837d6c09dc4d826db7"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-development/history-old-image.png",
+      "bytes": 31574,
+      "sha256": "9618dcef314107e324d272b4585aaa8095132e9985afab837d6c09dc4d826db7"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-packaged/attachments/history-old-image-png-a1517ae2109d58a80fd4fdd76ca6486c6302db4f.png",
+      "bytes": 31848,
+      "sha256": "0f2fa8019261f921153bb9061f14c521e72bcafd1b8a4bdc0377d5d0b555645b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-packaged/history-old-image.png",
+      "bytes": 31848,
+      "sha256": "0f2fa8019261f921153bb9061f14c521e72bcafd1b8a4bdc0377d5d0b555645b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-development/attachments/history-expanded-png-26c75ed14ead05680d46a73d17188d6f7b061505.png",
+      "bytes": 45345,
+      "sha256": "779c12df2c0ed246e31496fe0f97fb87250072e9484e486b94810f4a81f8d431"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-development/history-expanded.png",
+      "bytes": 45345,
+      "sha256": "779c12df2c0ed246e31496fe0f97fb87250072e9484e486b94810f4a81f8d431"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-packaged/attachments/history-expanded-png-86e46c2765aa4873bad05f1ba7181c541ebeb62c.png",
+      "bytes": 45641,
+      "sha256": "ac03f04f163384dc50a3e494c36eced4399c7d1983afe5409e034dd29bc76177"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-packaged/history-expanded.png",
+      "bytes": 45641,
+      "sha256": "ac03f04f163384dc50a3e494c36eced4399c7d1983afe5409e034dd29bc76177"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/learning-management-M3-第一批：搜索标题-题干-标签、字面字符、交集、分页与答案边界-development/search-filter.png",
+      "bytes": 74076,
+      "sha256": "e827b6120c537b4897b900ed183206f5a6964433505c743b6262df81c7b466e0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/learning-management-M3-第一批：搜索标题-题干-标签、字面字符、交集、分页与答案边界-packaged/search-filter.png",
+      "bytes": 74268,
+      "sha256": "8e3234492c3e401241f425c6f62833187daf1eb45c22d3a3774b39d3faf185d6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/attachments/learning-dark-png-53efbe92bb6eb488c8326069567c6ae717acf023.png",
+      "bytes": 62139,
+      "sha256": "2716e0290ab5fbd3f316c3be1af7a8d1ee108e013f9d2a94e2522d49e099e562"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/attachments/learning-light-png-fd45ec4aa7daeca4db06475c4c3608204ff161e9.png",
+      "bytes": 62448,
+      "sha256": "d8d2bbd6381f36a8931a5fd528d3d276de08678d275294d85e461f9a8e7f7533"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/learning-dark.png",
+      "bytes": 62139,
+      "sha256": "2716e0290ab5fbd3f316c3be1af7a8d1ee108e013f9d2a94e2522d49e099e562"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/learning-light.png",
+      "bytes": 62448,
+      "sha256": "d8d2bbd6381f36a8931a5fd528d3d276de08678d275294d85e461f9a8e7f7533"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/attachments/learning-dark-png-896f648384505eb650abe200f4c89a532d84700f.png",
+      "bytes": 62457,
+      "sha256": "9b8e36d4e49676070a3a6c2576dc1257c7182238e708b3b0441b409b5a635e43"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/attachments/learning-light-png-162831326bb1aef381549d1e99a4430202b197e7.png",
+      "bytes": 62674,
+      "sha256": "6e6a8657efffaba649f767ca5773f454181968519f01d5095857592bf26d88cb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/learning-dark.png",
+      "bytes": 62457,
+      "sha256": "9b8e36d4e49676070a3a6c2576dc1257c7182238e708b3b0441b409b5a635e43"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/learning-light.png",
+      "bytes": 62674,
+      "sha256": "6e6a8657efffaba649f767ca5773f454181968519f01d5095857592bf26d88cb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-development/library-answer-dark.png",
+      "bytes": 94603,
+      "sha256": "3b703ae677aa147cf834f19b91c4418fffc9767fb4eba1106a045873d54b2379"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-development/library-question-light.png",
+      "bytes": 89152,
+      "sha256": "cb1945364f9228633af3a87e708f57b25e2efd3e82f0061f33fa9237e3a7246a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-packaged/library-answer-dark.png",
+      "bytes": 94880,
+      "sha256": "8b3cf3f74f7950f309857fa6199905116859be161b81e8bdcf27c542d4634c81"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-packaged/library-question-light.png",
+      "bytes": 89334,
+      "sha256": "6b22fda62a165330f2dfadef1c338b44c14661c6a4ecf21d2aaf9a69ac5313f1"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第三批：100-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "bytes": 67151,
+      "sha256": "db689050c393510a7f688a6136aa1b559f93824632c79a28dd9caf662cf04d49"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第三批：100-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "bytes": 67406,
+      "sha256": "08e5f480bcf66e7f9bf78b7f17e2488a28e57d99a7440adbf1d49b8e6fdecc8b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第三批：125-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "bytes": 66892,
+      "sha256": "fe7df086a8e34aaa030cf9ebad9d83ba7cdecbbb967b47e2a36fa905560892a5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第三批：125-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "bytes": 67134,
+      "sha256": "95177e953ea781168a6ba791d1391ca8db45a883fe3221ad2c4dfc7a83003618"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第三批：150-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "bytes": 78295,
+      "sha256": "9074bf1943332559fd25ce1e3fb033ded1c105ba1fa805be2ec312e27465be6a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第三批：150-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "bytes": 78456,
+      "sha256": "f0c19a2a083cc8c565c42ba1527ff8b207b1f3ab77b633c803c19fc0c0c9a24a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "bytes": 29847,
+      "sha256": "268ee2536727a4b89dcfb1557a4b8fefe5605f402133e9eedc272a25438924e5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "bytes": 28974,
+      "sha256": "4b2f9df1ae005ef5f3bb69abde206db55df861b3cd67ada8479e3de7ec65cc50"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "bytes": 30083,
+      "sha256": "393e2a923e354d41b8ab1467e9f2a81f319a7d461b10a28a7357d5f0f195690a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "bytes": 29203,
+      "sha256": "d80197fd5a599187ce0c977253d107bcf681523892332e6fcc54623a923e4ecc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "bytes": 32866,
+      "sha256": "6d1b4a4491b4cb2248fbec6ee3e0be0f1879de6a63d5d184d794038335c27555"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "bytes": 32478,
+      "sha256": "1057dda3740b43659fa83db994c28f80d3f192c5fceda7b8a6deb5592a0d90d8"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "bytes": 33109,
+      "sha256": "df0d098de6a13a1efc73de427934672468354ed40409bca5d99a4a9c49d457b5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "bytes": 32715,
+      "sha256": "108f7cb1839cde617cf35b8983f6b3261bb4e64e75abbf7fc532edf74398266a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "bytes": 44761,
+      "sha256": "12da1617977a2e44d70b4cedd06448dbba6d1222e14d3951fa97879e126b35a3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "bytes": 39955,
+      "sha256": "8c50081da7e45dfcdfad891e4395da2db9421a39b563e24626dae13da1dcd33d"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "bytes": 45056,
+      "sha256": "fa2a1bd981664c849885dc0accee7d542cbc4693c8acaa9375ada9130da84fa0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "bytes": 40207,
+      "sha256": "8c59f89b51cf897430476db5ec473056f88665962c482fa7a9b37ba1df97fc44"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-图片自动保存：放大窗口与缩放状态在草稿保存后保留-development/image-after-autosave.png",
+      "bytes": 25677,
+      "sha256": "cc2c8a6475ea3e0743ecae7e448bdf8f9f85d011276fb0a641b405d35dfd6c82"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-图片自动保存：放大窗口与缩放状态在草稿保存后保留-packaged/image-after-autosave.png",
+      "bytes": 25939,
+      "sha256": "691509ffdc52c02a1aebc5391d6d2fd011837ebd4684f1d05aa5751eb33ffaf2"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-dark.png",
+      "bytes": 28714,
+      "sha256": "9f1a345b7dcf148782f4cdd9d6ade850e5922dc9585e3b8de76ea819c4239b0b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-image-zoom.png",
+      "bytes": 31347,
+      "sha256": "8616ef1d467c5be94d9570a848e1096fb1f32bf7b5094ceaf6e25e90c45e34b2"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-light.png",
+      "bytes": 29569,
+      "sha256": "66e880eff066a91fc60e95e321b9e389e1c4a8d73425f8707605b4f26f638226"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-dark.png",
+      "bytes": 29029,
+      "sha256": "f541c40fa43c008071e9cbb09a6c9720cf305e58345532bec6d698b59dfd5fbf"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-image-zoom.png",
+      "bytes": 31600,
+      "sha256": "c617d86755ded519ae89e61ff0a9edcc99e43adc45bf600332806be0d9b0eada"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-light.png",
+      "bytes": 29847,
+      "sha256": "87c9436dfc32d1a1263a4ef63ccdad2a933f82c630c7ed1cbe3d40108c35f8e5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-development/attachments/random-start-png-8e5c1fe8507870be39f839c7cfcc71fec0414077.png",
+      "bytes": 55267,
+      "sha256": "221e71ee387d930c804ec4350806483c5fb9e4243a963e7a1c085604908b13aa"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-development/random-start.png",
+      "bytes": 55267,
+      "sha256": "221e71ee387d930c804ec4350806483c5fb9e4243a963e7a1c085604908b13aa"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-packaged/attachments/random-start-png-b5be652db8821943fbeae72c45d7bc1f21e37301.png",
+      "bytes": 55572,
+      "sha256": "624099c04bafd6268496904efb86c2d61c7d4809964983d7a08b2b5cd76f93e9"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-packaged/random-start.png",
+      "bytes": 55572,
+      "sha256": "624099c04bafd6268496904efb86c2d61c7d4809964983d7a08b2b5cd76f93e9"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-development/attachments/random-saved-png-8f99eda358f696050248680c51698fd37eafeec3.png",
+      "bytes": 41680,
+      "sha256": "e0ca15cd658e6d8fdac79de3eadafded44475673fe339b7bb4896e200970d55a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-development/random-saved.png",
+      "bytes": 41680,
+      "sha256": "e0ca15cd658e6d8fdac79de3eadafded44475673fe339b7bb4896e200970d55a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-packaged/attachments/random-saved-png-2d403c047f5ee109a8cfee5d361c0c9fd799f0f7.png",
+      "bytes": 42052,
+      "sha256": "8f6e690dec1b229f7974e00f08afe86bf4266db9e3b9795db7e918847e8012c1"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-packaged/random-saved.png",
+      "bytes": 42052,
+      "sha256": "8f6e690dec1b229f7974e00f08afe86bf4266db9e3b9795db7e918847e8012c1"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-development/attachments/random-saved-png-b27862079748893118754d51339e3f1bb42ffa90.png",
+      "bytes": 41401,
+      "sha256": "e42354b555d215bc8b803298c5c0324eec707be7ed7ad365c01e7c40402d0cc5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-development/random-saved.png",
+      "bytes": 41401,
+      "sha256": "e42354b555d215bc8b803298c5c0324eec707be7ed7ad365c01e7c40402d0cc5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-packaged/attachments/random-saved-png-f2d80fbe62b0b1361d57999c3091117c689df817.png",
+      "bytes": 41874,
+      "sha256": "9e6d580267fabd8207476e97f4d51ad9b57f82f503531724a18dc89e55ab1e25"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-packaged/random-saved.png",
+      "bytes": 41874,
+      "sha256": "9e6d580267fabd8207476e97f4d51ad9b57f82f503531724a18dc89e55ab1e25"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/attachments/original-filters-random-png-25ec4adb92769b43998db3fee36f0cfde1f1c1e2.png",
+      "bytes": 38141,
+      "sha256": "327dd5d5c7b4bb46666975918c8076eae42953ac05131e2ada7f3768a9d4bcf3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/original-filters-random.png",
+      "bytes": 38141,
+      "sha256": "327dd5d5c7b4bb46666975918c8076eae42953ac05131e2ada7f3768a9d4bcf3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/attachments/original-filters-random-png-444db60c536c789fa1675454255c9f53199e32b5.png",
+      "bytes": 38340,
+      "sha256": "9fe804370c07453f359c7e9d7dc12c9a597a2a8da7c773dd1d079c374167803a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/original-filters-random.png",
+      "bytes": 38340,
+      "sha256": "9fe804370c07453f359c7e9d7dc12c9a597a2a8da7c773dd1d079c374167803a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/attachments/original-filters-sequential-png-68a119157265f97417583054de076ab6d600c20d.png",
+      "bytes": 38043,
+      "sha256": "2707ef9ad24ffd1df89c23ab5074c1fd44b96bbe2bcb4472d8720da7e0737435"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/original-filters-sequential.png",
+      "bytes": 38043,
+      "sha256": "2707ef9ad24ffd1df89c23ab5074c1fd44b96bbe2bcb4472d8720da7e0737435"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/attachments/original-filters-sequential-png-e579bbbe763d0cbd918e0f77d2c68fd85f0e6232.png",
+      "bytes": 38239,
+      "sha256": "6041283ad6ea58c52b4d435b07b9ab0ccd01b8a56716b3ddde9c21358430eab5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/original-filters-sequential.png",
+      "bytes": 38239,
+      "sha256": "6041283ad6ea58c52b4d435b07b9ab0ccd01b8a56716b3ddde9c21358430eab5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-development/attachments/settings-default-png-123d51fe99424b756951fb5284452a3880a5cdc4.png",
+      "bytes": 52370,
+      "sha256": "1789c6dfc094f2bae97b372ba8cf33136ece8508c45d89cbfc14492eeb937017"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-development/settings-default.png",
+      "bytes": 52370,
+      "sha256": "1789c6dfc094f2bae97b372ba8cf33136ece8508c45d89cbfc14492eeb937017"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-packaged/attachments/settings-default-png-ce5721488586426c90654c89aaa93f2e045bf9e0.png",
+      "bytes": 52569,
+      "sha256": "3d0c140c9c3333dcdbde5757863f982056863c76c5f7eae4e806bb38bb238f02"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-packaged/settings-default.png",
+      "bytes": 52569,
+      "sha256": "3d0c140c9c3333dcdbde5757863f982056863c76c5f7eae4e806bb38bb238f02"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-dark-22-png-bf0b715db7107b86e73d1df56436272fcdd1dea7.png",
+      "bytes": 40205,
+      "sha256": "e0fab44bfa0e1d77cdf5a173a51c3a291cb4e14dc12a7121b799032ee1b7acf5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-light-15-png-d749f95a9fb0b0d4177d73cda347872c8def116b.png",
+      "bytes": 36444,
+      "sha256": "c677678285da2e3dbba952b275dc1e087449048fe6343b5714ae3f532df0d58a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-system-17-png-12f47ea0ae4f7dfe2f9f505550f3960f331e07e7.png",
+      "bytes": 33187,
+      "sha256": "ae910bac749ef868f6dbe123635ee1192115da5da3b7de8f7e53f3cbed76212b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-dark-22-png-6b2458afa1464ee7e1cbe07cc0059c6882b3e228.png",
+      "bytes": 36597,
+      "sha256": "20521f8d6a3beb8fd5ed92bc3a0ffd4b345e38325df7556045366922bf841507"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-light-15-png-a720c7a1cf5a5f019367d0f2ed7abcfb31489441.png",
+      "bytes": 28447,
+      "sha256": "6730c5f11c96a42437b863800b29da1aa45f1ff1d09876eebbc046167f2cd256"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-system-17-png-336ca838ef5c110a905ae038458134327d851826.png",
+      "bytes": 31378,
+      "sha256": "869f06877b72bb8cedee3e5cdaf55b01fd6b53d4f0b7cd2bae3e068021d479bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-dark-22-png-5ea8e9c80b3ba982d74019858feed97ee65653de.png",
+      "bytes": 75892,
+      "sha256": "8ce5f54eed2c661cbb9ad6f677014f2f4351317046ac75040435c38ac80d46d3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-light-15-png-0caacce0638a0fe6bd138d56202ea32d469b01e6.png",
+      "bytes": 46042,
+      "sha256": "bd761c2c45c86b7b31165093547c55804ee3f119c6a2d849748aa524376ee8df"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-system-17-png-f8577555374f4cd267004ccb4a34920f0f1808b1.png",
+      "bytes": 51910,
+      "sha256": "034dc626c5bda62a8f81f2c3f93b5c5a3708313fe28f2ec88582a3d397f744ed"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-dark-22.png",
+      "bytes": 40205,
+      "sha256": "e0fab44bfa0e1d77cdf5a173a51c3a291cb4e14dc12a7121b799032ee1b7acf5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-light-15.png",
+      "bytes": 36444,
+      "sha256": "c677678285da2e3dbba952b275dc1e087449048fe6343b5714ae3f532df0d58a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-system-17.png",
+      "bytes": 33187,
+      "sha256": "ae910bac749ef868f6dbe123635ee1192115da5da3b7de8f7e53f3cbed76212b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-dark-22.png",
+      "bytes": 36597,
+      "sha256": "20521f8d6a3beb8fd5ed92bc3a0ffd4b345e38325df7556045366922bf841507"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-light-15.png",
+      "bytes": 28447,
+      "sha256": "6730c5f11c96a42437b863800b29da1aa45f1ff1d09876eebbc046167f2cd256"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-system-17.png",
+      "bytes": 31378,
+      "sha256": "869f06877b72bb8cedee3e5cdaf55b01fd6b53d4f0b7cd2bae3e068021d479bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-dark-22.png",
+      "bytes": 75892,
+      "sha256": "8ce5f54eed2c661cbb9ad6f677014f2f4351317046ac75040435c38ac80d46d3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-light-15.png",
+      "bytes": 46042,
+      "sha256": "bd761c2c45c86b7b31165093547c55804ee3f119c6a2d849748aa524376ee8df"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-system-17.png",
+      "bytes": 51910,
+      "sha256": "034dc626c5bda62a8f81f2c3f93b5c5a3708313fe28f2ec88582a3d397f744ed"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-dark-22-png-52cb376032f22b952913ec9f3f188a0010d529a2.png",
+      "bytes": 40508,
+      "sha256": "7d200d26c1430f6fade6e89bcb35e4ef5c80fe281831658699c22d6be2367ae3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-light-15-png-dda4cf4e44805a4ec852b4e2fc0fe48f5d2171c4.png",
+      "bytes": 36760,
+      "sha256": "490bb70ac86ab7c72280009c32bb77e87aedc31265d32163f623214fe1ff8752"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-system-17-png-49f296a8befde704e9839a5487b99f6597276729.png",
+      "bytes": 33507,
+      "sha256": "7871be864b8ea6d51590344d8db04c424ca238069d4cba5d8424f1c6b21106bb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-dark-22-png-ef3ec28297c1a8df77cb04979df6581f0883c90a.png",
+      "bytes": 36914,
+      "sha256": "1da1a923bac0042784f75c3419ea6eee6e0f81f8d257a48f340a4da23f453b1a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-light-15-png-9b24c1e28434d3923b3433258cc48b118fdb1ced.png",
+      "bytes": 28709,
+      "sha256": "9f9342bc1208ac40faae1385994c3629ddeb21834a17120786fee1d975e49587"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-system-17-png-768f57bf1de8e842d63bba1744c738ecae42ae84.png",
+      "bytes": 31634,
+      "sha256": "0e17f062ca2e0fc14ec4fde8ff9fdcdeb0caa634f87c2c20df42a1fdd2337af5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-dark-22-png-0620301ceab5d1de297b896e73c9a3f07695b2c5.png",
+      "bytes": 76208,
+      "sha256": "c34bd5485f9f6b8d471e62ab3d164c5d551be3affb1943ba16994420e4a355f6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-light-15-png-0074fb82f6f5bda846157580909c093e50425418.png",
+      "bytes": 46291,
+      "sha256": "b8a304bf5321b1572d9023d1b7ffedb5e7c32bbdc9ff92a5a40233cdef8996e5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-system-17-png-00362555d59c6d4fc7b848975b08b832fe27e189.png",
+      "bytes": 52139,
+      "sha256": "fb63cb598ea1a819fdc2c06e9d2ec98612c149aff2426b54dec163b0b8b17164"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-dark-22.png",
+      "bytes": 40508,
+      "sha256": "7d200d26c1430f6fade6e89bcb35e4ef5c80fe281831658699c22d6be2367ae3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-light-15.png",
+      "bytes": 36760,
+      "sha256": "490bb70ac86ab7c72280009c32bb77e87aedc31265d32163f623214fe1ff8752"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-system-17.png",
+      "bytes": 33507,
+      "sha256": "7871be864b8ea6d51590344d8db04c424ca238069d4cba5d8424f1c6b21106bb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-dark-22.png",
+      "bytes": 36914,
+      "sha256": "1da1a923bac0042784f75c3419ea6eee6e0f81f8d257a48f340a4da23f453b1a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-light-15.png",
+      "bytes": 28709,
+      "sha256": "9f9342bc1208ac40faae1385994c3629ddeb21834a17120786fee1d975e49587"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-system-17.png",
+      "bytes": 31634,
+      "sha256": "0e17f062ca2e0fc14ec4fde8ff9fdcdeb0caa634f87c2c20df42a1fdd2337af5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-dark-22.png",
+      "bytes": 76208,
+      "sha256": "c34bd5485f9f6b8d471e62ab3d164c5d551be3affb1943ba16994420e4a355f6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-light-15.png",
+      "bytes": 46291,
+      "sha256": "b8a304bf5321b1572d9023d1b7ffedb5e7c32bbdc9ff92a5a40233cdef8996e5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-system-17.png",
+      "bytes": 52139,
+      "sha256": "fb63cb598ea1a819fdc2c06e9d2ec98612c149aff2426b54dec163b0b8b17164"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/startup-关闭重开后读回-SQLite-记录-development/startup-dark.png",
+      "bytes": 50857,
+      "sha256": "29da56f803d246b8fd649f8008aa3eb3c5aa9820e42898cff633171966f340bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/startup-关闭重开后读回-SQLite-记录-development/startup-light.png",
+      "bytes": 51397,
+      "sha256": "053683cd3aaa9ef3cb1d830286181c6bcdb80656519fd3748007bb1cb10f382f"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/startup-关闭重开后读回-SQLite-记录-packaged/startup-dark.png",
+      "bytes": 51168,
+      "sha256": "32aa0d616e0157520625eb3956ab5f6ac27a330d50aab2c684cb5564b428c00e"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-final/startup-关闭重开后读回-SQLite-记录-packaged/startup-light.png",
+      "bytes": 51691,
+      "sha256": "44344d9efc6d339c583da9f492972a0d09bcd2cfd11644494414aca1e3ed59f0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/attachments/data-locations-dark-22-png-89332562d4a78a7e3fc284102401cd138243756d.png",
+      "bytes": 83341,
+      "sha256": "bcc5c2d3c24d96c550712afb157509190b15fe0179ebef883ae836c31474c882"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/data-locations-dark-22.png",
+      "bytes": 83341,
+      "sha256": "bcc5c2d3c24d96c550712afb157509190b15fe0179ebef883ae836c31474c882"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/desktop-results.json",
+      "bytes": 122885,
+      "sha256": "9a5d914ead2562d6674031bc14a37b5aec6d705f786d3bc266e39e25a68b1f0e"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-development/attachments/settings-default-png-123d51fe99424b756951fb5284452a3880a5cdc4.png",
+      "bytes": 52419,
+      "sha256": "061ac7b9d19c803fafd7188e48e479bea4ce5699f89ee955cf1f96b47d187305"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-development/settings-default.png",
+      "bytes": 52419,
+      "sha256": "061ac7b9d19c803fafd7188e48e479bea4ce5699f89ee955cf1f96b47d187305"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-dark-22-png-bf0b715db7107b86e73d1df56436272fcdd1dea7.png",
+      "bytes": 40205,
+      "sha256": "e0fab44bfa0e1d77cdf5a173a51c3a291cb4e14dc12a7121b799032ee1b7acf5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-light-15-png-d749f95a9fb0b0d4177d73cda347872c8def116b.png",
+      "bytes": 36444,
+      "sha256": "c677678285da2e3dbba952b275dc1e087449048fe6343b5714ae3f532df0d58a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-system-17-png-12f47ea0ae4f7dfe2f9f505550f3960f331e07e7.png",
+      "bytes": 33187,
+      "sha256": "ae910bac749ef868f6dbe123635ee1192115da5da3b7de8f7e53f3cbed76212b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-dark-22-png-6b2458afa1464ee7e1cbe07cc0059c6882b3e228.png",
+      "bytes": 36597,
+      "sha256": "20521f8d6a3beb8fd5ed92bc3a0ffd4b345e38325df7556045366922bf841507"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-light-15-png-a720c7a1cf5a5f019367d0f2ed7abcfb31489441.png",
+      "bytes": 28447,
+      "sha256": "6730c5f11c96a42437b863800b29da1aa45f1ff1d09876eebbc046167f2cd256"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-system-17-png-336ca838ef5c110a905ae038458134327d851826.png",
+      "bytes": 31378,
+      "sha256": "869f06877b72bb8cedee3e5cdaf55b01fd6b53d4f0b7cd2bae3e068021d479bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-dark-22-png-5ea8e9c80b3ba982d74019858feed97ee65653de.png",
+      "bytes": 75892,
+      "sha256": "8ce5f54eed2c661cbb9ad6f677014f2f4351317046ac75040435c38ac80d46d3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-light-15-png-0caacce0638a0fe6bd138d56202ea32d469b01e6.png",
+      "bytes": 46056,
+      "sha256": "6b8dbbc416eb0f8c3a15cc453d8bfe7d164bc206d62d2b000da8292cf5e190e8"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-system-17-png-f8577555374f4cd267004ccb4a34920f0f1808b1.png",
+      "bytes": 51903,
+      "sha256": "515839be5b38847564ea045c055544bb8c7729b1ef1a7d0cf8ec24df9fae3d05"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-dark-22.png",
+      "bytes": 40205,
+      "sha256": "e0fab44bfa0e1d77cdf5a173a51c3a291cb4e14dc12a7121b799032ee1b7acf5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-light-15.png",
+      "bytes": 36444,
+      "sha256": "c677678285da2e3dbba952b275dc1e087449048fe6343b5714ae3f532df0d58a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-system-17.png",
+      "bytes": 33187,
+      "sha256": "ae910bac749ef868f6dbe123635ee1192115da5da3b7de8f7e53f3cbed76212b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-dark-22.png",
+      "bytes": 36597,
+      "sha256": "20521f8d6a3beb8fd5ed92bc3a0ffd4b345e38325df7556045366922bf841507"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-light-15.png",
+      "bytes": 28447,
+      "sha256": "6730c5f11c96a42437b863800b29da1aa45f1ff1d09876eebbc046167f2cd256"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-system-17.png",
+      "bytes": 31378,
+      "sha256": "869f06877b72bb8cedee3e5cdaf55b01fd6b53d4f0b7cd2bae3e068021d479bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-dark-22.png",
+      "bytes": 75892,
+      "sha256": "8ce5f54eed2c661cbb9ad6f677014f2f4351317046ac75040435c38ac80d46d3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-light-15.png",
+      "bytes": 46056,
+      "sha256": "6b8dbbc416eb0f8c3a15cc453d8bfe7d164bc206d62d2b000da8292cf5e190e8"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-system-17.png",
+      "bytes": 51903,
+      "sha256": "515839be5b38847564ea045c055544bb8c7729b1ef1a7d0cf8ec24df9fae3d05"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/startup-关闭重开后读回-SQLite-记录-development/startup-dark.png",
+      "bytes": 50857,
+      "sha256": "29da56f803d246b8fd649f8008aa3eb3c5aa9820e42898cff633171966f340bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-first/startup-关闭重开后读回-SQLite-记录-development/startup-light.png",
+      "bytes": 51397,
+      "sha256": "053683cd3aaa9ef3cb1d830286181c6bcdb80656519fd3748007bb1cb10f382f"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development/attachments/backup-preview-dark-22-png-2ccf598c5e9c4b7018bb2e431b3e702f5670ca89.png",
+      "bytes": 63288,
+      "sha256": "f0160e11802361dd7c58f906cd1172fae79f908a412dd63505ecb838f2c93b90"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development/backup-preview-dark-22.png",
+      "bytes": 63288,
+      "sha256": "f0160e11802361dd7c58f906cd1172fae79f908a412dd63505ecb838f2c93b90"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-packaged/attachments/backup-preview-dark-22-png-5917210e6a395d64a4316d1848b0b40386007fc2.png",
+      "bytes": 63176,
+      "sha256": "c7285fcdb6827fb3806dd101fd55bf602ef7df59cb56392aa03f5abd62feaaad"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-packaged/backup-preview-dark-22.png",
+      "bytes": 63176,
+      "sha256": "c7285fcdb6827fb3806dd101fd55bf602ef7df59cb56392aa03f5abd62feaaad"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/attachments/data-locations-dark-22-png-89332562d4a78a7e3fc284102401cd138243756d.png",
+      "bytes": 84094,
+      "sha256": "2ea425566fa6c35439c9ed6683141d22751b69f6f8b95cf29d922fc4a4270e02"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/data-locations-dark-22.png",
+      "bytes": 84094,
+      "sha256": "2ea425566fa6c35439c9ed6683141d22751b69f6f8b95cf29d922fc4a4270e02"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-packaged/attachments/data-locations-dark-22-png-ba1a69389d44c23eddec018d21927f07164365dd.png",
+      "bytes": 83603,
+      "sha256": "9f1713c4c24de07e46d0c4c06bbfdaaa9de423b4d2ec7f72d39d23f7379b8be5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-packaged/data-locations-dark-22.png",
+      "bytes": 83603,
+      "sha256": "9f1713c4c24de07e46d0c4c06bbfdaaa9de423b4d2ec7f72d39d23f7379b8be5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/desktop-results.json",
+      "bytes": 3473431,
+      "sha256": "ef248f572f5b050f5abe5292f17e781586188fb20c21dd4c4808a0d596919089"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-development/attachments/content-update-png-b82e23a58a7430d34ec287103a871c408be4d3aa.png",
+      "bytes": 63543,
+      "sha256": "eb11f254381fd18b0d65aecee21f35a355fa9a82507feb3e847f2233c06aaf30"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-development/content-update.png",
+      "bytes": 63543,
+      "sha256": "eb11f254381fd18b0d65aecee21f35a355fa9a82507feb3e847f2233c06aaf30"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-packaged/attachments/content-update-png-84cdbfe3e5a00df96c840ca2c0647ea9b3315cd7.png",
+      "bytes": 63829,
+      "sha256": "251afb37fa8c3576d7ff5d5ef3e9212c8633cb9f306f8dba22fe6e9de2f0c5de"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-packaged/content-update.png",
+      "bytes": 63829,
+      "sha256": "251afb37fa8c3576d7ff5d5ef3e9212c8633cb9f306f8dba22fe6e9de2f0c5de"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-development/attachments/history-old-image-png-baa92e9b55a1d9c2431999c617c55ca61623605a.png",
+      "bytes": 31610,
+      "sha256": "472b8f71c1b486e798f735caab4828104e99bcbe4278e2779d974edb7e8d7c40"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-development/history-old-image.png",
+      "bytes": 31610,
+      "sha256": "472b8f71c1b486e798f735caab4828104e99bcbe4278e2779d974edb7e8d7c40"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-packaged/attachments/history-old-image-png-a1517ae2109d58a80fd4fdd76ca6486c6302db4f.png",
+      "bytes": 31862,
+      "sha256": "b30e6bf1d074012653501b3dc5f26d474c2c3102d28d6f3c9397aa016b3bcfe7"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-packaged/history-old-image.png",
+      "bytes": 31862,
+      "sha256": "b30e6bf1d074012653501b3dc5f26d474c2c3102d28d6f3c9397aa016b3bcfe7"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-development/attachments/history-expanded-png-26c75ed14ead05680d46a73d17188d6f7b061505.png",
+      "bytes": 45180,
+      "sha256": "497569f2dd17ea29df92401763eb3b2eec42e8fcde0f0fc8b7e7758fea4c2325"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-development/history-expanded.png",
+      "bytes": 45180,
+      "sha256": "497569f2dd17ea29df92401763eb3b2eec42e8fcde0f0fc8b7e7758fea4c2325"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-packaged/attachments/history-expanded-png-86e46c2765aa4873bad05f1ba7181c541ebeb62c.png",
+      "bytes": 45517,
+      "sha256": "6080517a69c82ee5fc5cc0ec9f2a51e977ce4e8dd8d489fbb302a223828254a6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-packaged/history-expanded.png",
+      "bytes": 45517,
+      "sha256": "6080517a69c82ee5fc5cc0ec9f2a51e977ce4e8dd8d489fbb302a223828254a6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/learning-management-M3-第一批：搜索标题-题干-标签、字面字符、交集、分页与答案边界-development/search-filter.png",
+      "bytes": 74076,
+      "sha256": "e827b6120c537b4897b900ed183206f5a6964433505c743b6262df81c7b466e0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/learning-management-M3-第一批：搜索标题-题干-标签、字面字符、交集、分页与答案边界-packaged/search-filter.png",
+      "bytes": 74268,
+      "sha256": "8e3234492c3e401241f425c6f62833187daf1eb45c22d3a3774b39d3faf185d6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/attachments/learning-dark-png-53efbe92bb6eb488c8326069567c6ae717acf023.png",
+      "bytes": 62139,
+      "sha256": "2716e0290ab5fbd3f316c3be1af7a8d1ee108e013f9d2a94e2522d49e099e562"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/attachments/learning-light-png-fd45ec4aa7daeca4db06475c4c3608204ff161e9.png",
+      "bytes": 62448,
+      "sha256": "d8d2bbd6381f36a8931a5fd528d3d276de08678d275294d85e461f9a8e7f7533"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/learning-dark.png",
+      "bytes": 62139,
+      "sha256": "2716e0290ab5fbd3f316c3be1af7a8d1ee108e013f9d2a94e2522d49e099e562"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/learning-light.png",
+      "bytes": 62448,
+      "sha256": "d8d2bbd6381f36a8931a5fd528d3d276de08678d275294d85e461f9a8e7f7533"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/attachments/learning-dark-png-896f648384505eb650abe200f4c89a532d84700f.png",
+      "bytes": 62457,
+      "sha256": "9b8e36d4e49676070a3a6c2576dc1257c7182238e708b3b0441b409b5a635e43"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/attachments/learning-light-png-162831326bb1aef381549d1e99a4430202b197e7.png",
+      "bytes": 62674,
+      "sha256": "6e6a8657efffaba649f767ca5773f454181968519f01d5095857592bf26d88cb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/learning-dark.png",
+      "bytes": 62457,
+      "sha256": "9b8e36d4e49676070a3a6c2576dc1257c7182238e708b3b0441b409b5a635e43"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/learning-light.png",
+      "bytes": 62674,
+      "sha256": "6e6a8657efffaba649f767ca5773f454181968519f01d5095857592bf26d88cb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-development/library-answer-dark.png",
+      "bytes": 94603,
+      "sha256": "3b703ae677aa147cf834f19b91c4418fffc9767fb4eba1106a045873d54b2379"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-development/library-question-light.png",
+      "bytes": 89152,
+      "sha256": "cb1945364f9228633af3a87e708f57b25e2efd3e82f0061f33fa9237e3a7246a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-packaged/library-answer-dark.png",
+      "bytes": 94880,
+      "sha256": "8b3cf3f74f7950f309857fa6199905116859be161b81e8bdcf27c542d4634c81"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-packaged/library-question-light.png",
+      "bytes": 89334,
+      "sha256": "6b22fda62a165330f2dfadef1c338b44c14661c6a4ecf21d2aaf9a69ac5313f1"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第三批：100-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "bytes": 67151,
+      "sha256": "db689050c393510a7f688a6136aa1b559f93824632c79a28dd9caf662cf04d49"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第三批：100-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "bytes": 67406,
+      "sha256": "08e5f480bcf66e7f9bf78b7f17e2488a28e57d99a7440adbf1d49b8e6fdecc8b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第三批：125-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "bytes": 66892,
+      "sha256": "fe7df086a8e34aaa030cf9ebad9d83ba7cdecbbb967b47e2a36fa905560892a5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第三批：125-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "bytes": 67134,
+      "sha256": "95177e953ea781168a6ba791d1391ca8db45a883fe3221ad2c4dfc7a83003618"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第三批：150-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "bytes": 78295,
+      "sha256": "9074bf1943332559fd25ce1e3fb033ded1c105ba1fa805be2ec312e27465be6a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第三批：150-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "bytes": 78456,
+      "sha256": "f0c19a2a083cc8c565c42ba1527ff8b207b1f3ab77b633c803c19fc0c0c9a24a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "bytes": 29847,
+      "sha256": "268ee2536727a4b89dcfb1557a4b8fefe5605f402133e9eedc272a25438924e5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "bytes": 28974,
+      "sha256": "4b2f9df1ae005ef5f3bb69abde206db55df861b3cd67ada8479e3de7ec65cc50"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "bytes": 30083,
+      "sha256": "393e2a923e354d41b8ab1467e9f2a81f319a7d461b10a28a7357d5f0f195690a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "bytes": 29203,
+      "sha256": "d80197fd5a599187ce0c977253d107bcf681523892332e6fcc54623a923e4ecc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "bytes": 32866,
+      "sha256": "6d1b4a4491b4cb2248fbec6ee3e0be0f1879de6a63d5d184d794038335c27555"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "bytes": 32478,
+      "sha256": "1057dda3740b43659fa83db994c28f80d3f192c5fceda7b8a6deb5592a0d90d8"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "bytes": 33109,
+      "sha256": "df0d098de6a13a1efc73de427934672468354ed40409bca5d99a4a9c49d457b5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "bytes": 32715,
+      "sha256": "108f7cb1839cde617cf35b8983f6b3261bb4e64e75abbf7fc532edf74398266a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "bytes": 44761,
+      "sha256": "12da1617977a2e44d70b4cedd06448dbba6d1222e14d3951fa97879e126b35a3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "bytes": 39955,
+      "sha256": "8c50081da7e45dfcdfad891e4395da2db9421a39b563e24626dae13da1dcd33d"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "bytes": 45056,
+      "sha256": "fa2a1bd981664c849885dc0accee7d542cbc4693c8acaa9375ada9130da84fa0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "bytes": 40207,
+      "sha256": "8c59f89b51cf897430476db5ec473056f88665962c482fa7a9b37ba1df97fc44"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-图片自动保存：放大窗口与缩放状态在草稿保存后保留-development/image-after-autosave.png",
+      "bytes": 25677,
+      "sha256": "cc2c8a6475ea3e0743ecae7e448bdf8f9f85d011276fb0a641b405d35dfd6c82"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-图片自动保存：放大窗口与缩放状态在草稿保存后保留-packaged/image-after-autosave.png",
+      "bytes": 25939,
+      "sha256": "691509ffdc52c02a1aebc5391d6d2fd011837ebd4684f1d05aa5751eb33ffaf2"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-dark.png",
+      "bytes": 28714,
+      "sha256": "9f1a345b7dcf148782f4cdd9d6ade850e5922dc9585e3b8de76ea819c4239b0b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-image-zoom.png",
+      "bytes": 31347,
+      "sha256": "8616ef1d467c5be94d9570a848e1096fb1f32bf7b5094ceaf6e25e90c45e34b2"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-light.png",
+      "bytes": 29569,
+      "sha256": "66e880eff066a91fc60e95e321b9e389e1c4a8d73425f8707605b4f26f638226"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-dark.png",
+      "bytes": 29029,
+      "sha256": "f541c40fa43c008071e9cbb09a6c9720cf305e58345532bec6d698b59dfd5fbf"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-image-zoom.png",
+      "bytes": 31600,
+      "sha256": "c617d86755ded519ae89e61ff0a9edcc99e43adc45bf600332806be0d9b0eada"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-light.png",
+      "bytes": 29847,
+      "sha256": "87c9436dfc32d1a1263a4ef63ccdad2a933f82c630c7ed1cbe3d40108c35f8e5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-development/attachments/random-start-png-8e5c1fe8507870be39f839c7cfcc71fec0414077.png",
+      "bytes": 55267,
+      "sha256": "221e71ee387d930c804ec4350806483c5fb9e4243a963e7a1c085604908b13aa"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-development/random-start.png",
+      "bytes": 55267,
+      "sha256": "221e71ee387d930c804ec4350806483c5fb9e4243a963e7a1c085604908b13aa"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-packaged/attachments/random-start-png-b5be652db8821943fbeae72c45d7bc1f21e37301.png",
+      "bytes": 55572,
+      "sha256": "624099c04bafd6268496904efb86c2d61c7d4809964983d7a08b2b5cd76f93e9"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-packaged/random-start.png",
+      "bytes": 55572,
+      "sha256": "624099c04bafd6268496904efb86c2d61c7d4809964983d7a08b2b5cd76f93e9"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-development/attachments/random-saved-png-8f99eda358f696050248680c51698fd37eafeec3.png",
+      "bytes": 41440,
+      "sha256": "463b5d2c563df1c92c1dfa951afd848daafb1c1381dac6aba698e14c76e6b79f"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-development/random-saved.png",
+      "bytes": 41440,
+      "sha256": "463b5d2c563df1c92c1dfa951afd848daafb1c1381dac6aba698e14c76e6b79f"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-packaged/attachments/random-saved-png-2d403c047f5ee109a8cfee5d361c0c9fd799f0f7.png",
+      "bytes": 42016,
+      "sha256": "f10c1c005cd8deacf7f282c3d4e132cf6abf73535b89bed32f6c61ffa1443b81"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-packaged/random-saved.png",
+      "bytes": 42016,
+      "sha256": "f10c1c005cd8deacf7f282c3d4e132cf6abf73535b89bed32f6c61ffa1443b81"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-development/attachments/random-saved-png-b27862079748893118754d51339e3f1bb42ffa90.png",
+      "bytes": 41700,
+      "sha256": "b061f7e4a1e0fa4e6092c21cd77f58a614ef7d1146e3d0032d99802a02f255a0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-development/random-saved.png",
+      "bytes": 41700,
+      "sha256": "b061f7e4a1e0fa4e6092c21cd77f58a614ef7d1146e3d0032d99802a02f255a0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-packaged/attachments/random-saved-png-f2d80fbe62b0b1361d57999c3091117c689df817.png",
+      "bytes": 41989,
+      "sha256": "cfd0344c95e9ac3a81f41b547ffa3ed29a39ed21ab3851eecbadea6c40d8eb1e"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-packaged/random-saved.png",
+      "bytes": 41989,
+      "sha256": "cfd0344c95e9ac3a81f41b547ffa3ed29a39ed21ab3851eecbadea6c40d8eb1e"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/attachments/original-filters-random-png-25ec4adb92769b43998db3fee36f0cfde1f1c1e2.png",
+      "bytes": 38141,
+      "sha256": "327dd5d5c7b4bb46666975918c8076eae42953ac05131e2ada7f3768a9d4bcf3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/original-filters-random.png",
+      "bytes": 38141,
+      "sha256": "327dd5d5c7b4bb46666975918c8076eae42953ac05131e2ada7f3768a9d4bcf3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/attachments/original-filters-random-png-444db60c536c789fa1675454255c9f53199e32b5.png",
+      "bytes": 38340,
+      "sha256": "9fe804370c07453f359c7e9d7dc12c9a597a2a8da7c773dd1d079c374167803a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/original-filters-random.png",
+      "bytes": 38340,
+      "sha256": "9fe804370c07453f359c7e9d7dc12c9a597a2a8da7c773dd1d079c374167803a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/attachments/original-filters-sequential-png-68a119157265f97417583054de076ab6d600c20d.png",
+      "bytes": 38043,
+      "sha256": "2707ef9ad24ffd1df89c23ab5074c1fd44b96bbe2bcb4472d8720da7e0737435"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/original-filters-sequential.png",
+      "bytes": 38043,
+      "sha256": "2707ef9ad24ffd1df89c23ab5074c1fd44b96bbe2bcb4472d8720da7e0737435"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/attachments/original-filters-sequential-png-e579bbbe763d0cbd918e0f77d2c68fd85f0e6232.png",
+      "bytes": 38239,
+      "sha256": "6041283ad6ea58c52b4d435b07b9ab0ccd01b8a56716b3ddde9c21358430eab5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/original-filters-sequential.png",
+      "bytes": 38239,
+      "sha256": "6041283ad6ea58c52b4d435b07b9ab0ccd01b8a56716b3ddde9c21358430eab5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-development/attachments/settings-default-png-123d51fe99424b756951fb5284452a3880a5cdc4.png",
+      "bytes": 52385,
+      "sha256": "7299899112d10ef1a1a4c4df3c80f4ce7639baeaca8f0bbb557c4f48eee2e768"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-development/settings-default.png",
+      "bytes": 52385,
+      "sha256": "7299899112d10ef1a1a4c4df3c80f4ce7639baeaca8f0bbb557c4f48eee2e768"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-packaged/attachments/settings-default-png-ce5721488586426c90654c89aaa93f2e045bf9e0.png",
+      "bytes": 52653,
+      "sha256": "608f78eb52ef69ed18896edc11a40e07efdac8a838f3613daffda287e4f9555b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-packaged/settings-default.png",
+      "bytes": 52653,
+      "sha256": "608f78eb52ef69ed18896edc11a40e07efdac8a838f3613daffda287e4f9555b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-dark-22-png-bf0b715db7107b86e73d1df56436272fcdd1dea7.png",
+      "bytes": 40205,
+      "sha256": "e0fab44bfa0e1d77cdf5a173a51c3a291cb4e14dc12a7121b799032ee1b7acf5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-light-15-png-d749f95a9fb0b0d4177d73cda347872c8def116b.png",
+      "bytes": 36444,
+      "sha256": "c677678285da2e3dbba952b275dc1e087449048fe6343b5714ae3f532df0d58a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-system-17-png-12f47ea0ae4f7dfe2f9f505550f3960f331e07e7.png",
+      "bytes": 33187,
+      "sha256": "ae910bac749ef868f6dbe123635ee1192115da5da3b7de8f7e53f3cbed76212b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-dark-22-png-6b2458afa1464ee7e1cbe07cc0059c6882b3e228.png",
+      "bytes": 36597,
+      "sha256": "20521f8d6a3beb8fd5ed92bc3a0ffd4b345e38325df7556045366922bf841507"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-light-15-png-a720c7a1cf5a5f019367d0f2ed7abcfb31489441.png",
+      "bytes": 28447,
+      "sha256": "6730c5f11c96a42437b863800b29da1aa45f1ff1d09876eebbc046167f2cd256"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-system-17-png-336ca838ef5c110a905ae038458134327d851826.png",
+      "bytes": 31378,
+      "sha256": "869f06877b72bb8cedee3e5cdaf55b01fd6b53d4f0b7cd2bae3e068021d479bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-dark-22-png-5ea8e9c80b3ba982d74019858feed97ee65653de.png",
+      "bytes": 75892,
+      "sha256": "8ce5f54eed2c661cbb9ad6f677014f2f4351317046ac75040435c38ac80d46d3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-light-15-png-0caacce0638a0fe6bd138d56202ea32d469b01e6.png",
+      "bytes": 46086,
+      "sha256": "7bc982acd1342b3807bb6a12cf5ddd20fe00c7c78df02e0aa0ffc7cf90ca1bdf"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-system-17-png-f8577555374f4cd267004ccb4a34920f0f1808b1.png",
+      "bytes": 51912,
+      "sha256": "4d35d7debdc14a99592986de477a6ed39558497908488cde49c1d88054d35b1f"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-dark-22.png",
+      "bytes": 40205,
+      "sha256": "e0fab44bfa0e1d77cdf5a173a51c3a291cb4e14dc12a7121b799032ee1b7acf5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-light-15.png",
+      "bytes": 36444,
+      "sha256": "c677678285da2e3dbba952b275dc1e087449048fe6343b5714ae3f532df0d58a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-system-17.png",
+      "bytes": 33187,
+      "sha256": "ae910bac749ef868f6dbe123635ee1192115da5da3b7de8f7e53f3cbed76212b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-dark-22.png",
+      "bytes": 36597,
+      "sha256": "20521f8d6a3beb8fd5ed92bc3a0ffd4b345e38325df7556045366922bf841507"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-light-15.png",
+      "bytes": 28447,
+      "sha256": "6730c5f11c96a42437b863800b29da1aa45f1ff1d09876eebbc046167f2cd256"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-system-17.png",
+      "bytes": 31378,
+      "sha256": "869f06877b72bb8cedee3e5cdaf55b01fd6b53d4f0b7cd2bae3e068021d479bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-dark-22.png",
+      "bytes": 75892,
+      "sha256": "8ce5f54eed2c661cbb9ad6f677014f2f4351317046ac75040435c38ac80d46d3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-light-15.png",
+      "bytes": 46086,
+      "sha256": "7bc982acd1342b3807bb6a12cf5ddd20fe00c7c78df02e0aa0ffc7cf90ca1bdf"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-system-17.png",
+      "bytes": 51912,
+      "sha256": "4d35d7debdc14a99592986de477a6ed39558497908488cde49c1d88054d35b1f"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-dark-22-png-52cb376032f22b952913ec9f3f188a0010d529a2.png",
+      "bytes": 40508,
+      "sha256": "7d200d26c1430f6fade6e89bcb35e4ef5c80fe281831658699c22d6be2367ae3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-light-15-png-dda4cf4e44805a4ec852b4e2fc0fe48f5d2171c4.png",
+      "bytes": 36760,
+      "sha256": "490bb70ac86ab7c72280009c32bb77e87aedc31265d32163f623214fe1ff8752"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-system-17-png-49f296a8befde704e9839a5487b99f6597276729.png",
+      "bytes": 33507,
+      "sha256": "7871be864b8ea6d51590344d8db04c424ca238069d4cba5d8424f1c6b21106bb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-dark-22-png-ef3ec28297c1a8df77cb04979df6581f0883c90a.png",
+      "bytes": 36914,
+      "sha256": "1da1a923bac0042784f75c3419ea6eee6e0f81f8d257a48f340a4da23f453b1a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-light-15-png-9b24c1e28434d3923b3433258cc48b118fdb1ced.png",
+      "bytes": 28709,
+      "sha256": "9f9342bc1208ac40faae1385994c3629ddeb21834a17120786fee1d975e49587"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-system-17-png-768f57bf1de8e842d63bba1744c738ecae42ae84.png",
+      "bytes": 31634,
+      "sha256": "0e17f062ca2e0fc14ec4fde8ff9fdcdeb0caa634f87c2c20df42a1fdd2337af5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-dark-22-png-0620301ceab5d1de297b896e73c9a3f07695b2c5.png",
+      "bytes": 76208,
+      "sha256": "c34bd5485f9f6b8d471e62ab3d164c5d551be3affb1943ba16994420e4a355f6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-light-15-png-0074fb82f6f5bda846157580909c093e50425418.png",
+      "bytes": 46322,
+      "sha256": "ae8621b3f3267c79c97752fc9455b93cf0765f35d8301605c13e63e97de02bc5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-system-17-png-00362555d59c6d4fc7b848975b08b832fe27e189.png",
+      "bytes": 52164,
+      "sha256": "9d629b07cc607f1fb547946eca89bdee11c7941e1ae711b5e88f76dcb8f20201"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-dark-22.png",
+      "bytes": 40508,
+      "sha256": "7d200d26c1430f6fade6e89bcb35e4ef5c80fe281831658699c22d6be2367ae3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-light-15.png",
+      "bytes": 36760,
+      "sha256": "490bb70ac86ab7c72280009c32bb77e87aedc31265d32163f623214fe1ff8752"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-system-17.png",
+      "bytes": 33507,
+      "sha256": "7871be864b8ea6d51590344d8db04c424ca238069d4cba5d8424f1c6b21106bb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-dark-22.png",
+      "bytes": 36914,
+      "sha256": "1da1a923bac0042784f75c3419ea6eee6e0f81f8d257a48f340a4da23f453b1a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-light-15.png",
+      "bytes": 28709,
+      "sha256": "9f9342bc1208ac40faae1385994c3629ddeb21834a17120786fee1d975e49587"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-system-17.png",
+      "bytes": 31634,
+      "sha256": "0e17f062ca2e0fc14ec4fde8ff9fdcdeb0caa634f87c2c20df42a1fdd2337af5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-dark-22.png",
+      "bytes": 76208,
+      "sha256": "c34bd5485f9f6b8d471e62ab3d164c5d551be3affb1943ba16994420e4a355f6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-light-15.png",
+      "bytes": 46322,
+      "sha256": "ae8621b3f3267c79c97752fc9455b93cf0765f35d8301605c13e63e97de02bc5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-system-17.png",
+      "bytes": 52164,
+      "sha256": "9d629b07cc607f1fb547946eca89bdee11c7941e1ae711b5e88f76dcb8f20201"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/startup-关闭重开后读回-SQLite-记录-development/startup-dark.png",
+      "bytes": 50857,
+      "sha256": "29da56f803d246b8fd649f8008aa3eb3c5aa9820e42898cff633171966f340bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/startup-关闭重开后读回-SQLite-记录-development/startup-light.png",
+      "bytes": 51397,
+      "sha256": "053683cd3aaa9ef3cb1d830286181c6bcdb80656519fd3748007bb1cb10f382f"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/startup-关闭重开后读回-SQLite-记录-packaged/startup-dark.png",
+      "bytes": 51168,
+      "sha256": "32aa0d616e0157520625eb3956ab5f6ac27a330d50aab2c684cb5564b428c00e"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-first/startup-关闭重开后读回-SQLite-记录-packaged/startup-light.png",
+      "bytes": 51691,
+      "sha256": "44344d9efc6d339c583da9f492972a0d09bcd2cfd11644494414aca1e3ed59f0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/.last-run.json",
+      "bytes": 96,
+      "sha256": "c74d8940298e816278d9e08415d843a2ba7fa0b332dd01c0d73fb8e3b3df0970"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development/attachments/backup-preview-dark-22-png-2ccf598c5e9c4b7018bb2e431b3e702f5670ca89.png",
+      "bytes": 62887,
+      "sha256": "2119fe3e85e7f4f255cd491ceaae97a78defe32940c6b0f80e7500aa77833faa"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-development/backup-preview-dark-22.png",
+      "bytes": 62887,
+      "sha256": "2119fe3e85e7f4f255cd491ceaae97a78defe32940c6b0f80e7500aa77833faa"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-packaged/attachments/backup-preview-dark-22-png-5917210e6a395d64a4316d1848b0b40386007fc2.png",
+      "bytes": 63273,
+      "sha256": "a22df05383a3e9f0fa057fca301bb15954f063a9c8f53843943dbee30a6ccfac"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/backup-window-完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库-packaged/backup-preview-dark-22.png",
+      "bytes": 63273,
+      "sha256": "a22df05383a3e9f0fa057fca301bb15954f063a9c8f53843943dbee30a6ccfac"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/attachments/data-locations-dark-22-png-89332562d4a78a7e3fc284102401cd138243756d.png",
+      "bytes": 83108,
+      "sha256": "b4dd3504865a16f08ae064b9c76fab3796067085e7d73d35d1c6d2470453c76c"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-development/data-locations-dark-22.png",
+      "bytes": 83108,
+      "sha256": "b4dd3504865a16f08ae064b9c76fab3796067085e7d73d35d1c6d2470453c76c"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-packaged/attachments/data-locations-dark-22-png-ba1a69389d44c23eddec018d21927f07164365dd.png",
+      "bytes": 83824,
+      "sha256": "379c142c91a589232a2a8345e316e89ce356c1ff711023e51a4f8e3cc5f4f35d"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/data-locations-设置显示实际中文空格数据位置，读取无副作用，三种文件夹打开不改变学习数据-packaged/data-locations-dark-22.png",
+      "bytes": 83824,
+      "sha256": "379c142c91a589232a2a8345e316e89ce356c1ff711023e51a4f8e3cc5f4f35d"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/desktop-results.json",
+      "bytes": 3474171,
+      "sha256": "a2e1781d61c54cc3e9610a6b7b61e167c2d5457a7725443b387a7255339ad6c5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-development/attachments/content-update-png-b82e23a58a7430d34ec287103a871c408be4d3aa.png",
+      "bytes": 63543,
+      "sha256": "eb11f254381fd18b0d65aecee21f35a355fa9a82507feb3e847f2233c06aaf30"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-development/content-update.png",
+      "bytes": 63543,
+      "sha256": "eb11f254381fd18b0d65aecee21f35a355fa9a82507feb3e847f2233c06aaf30"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-packaged/attachments/content-update-png-84cdbfe3e5a00df96c840ca2c0647ea9b3315cd7.png",
+      "bytes": 63829,
+      "sha256": "251afb37fa8c3576d7ff5d5ef3e9212c8633cb9f306f8dba22fe6e9de2f0c5de"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-versions-内容更新标记按最新揭晓消除，旧轮-跳过-只读历史不消除，元数据不新增标记-packaged/content-update.png",
+      "bytes": 63829,
+      "sha256": "251afb37fa8c3576d7ff5d5ef3e9212c8633cb9f306f8dba22fe6e9de2f0c5de"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-development/attachments/history-old-image-png-baa92e9b55a1d9c2431999c617c55ca61623605a.png",
+      "bytes": 31546,
+      "sha256": "bcb15579145a30e7285b8bc692a36d659445485037dfa067f8ec56ca8579e19b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-development/history-old-image.png",
+      "bytes": 31546,
+      "sha256": "bcb15579145a30e7285b8bc692a36d659445485037dfa067f8ec56ca8579e19b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-packaged/attachments/history-old-image-png-a1517ae2109d58a80fd4fdd76ca6486c6302db4f.png",
+      "bytes": 31807,
+      "sha256": "3ff7fdb87aa5cd041eea90bb3faa5eb2e5194a6caf8588d735969ee486165965"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-versions-历史旧版本图片在替换-来源移动-归档恢复与独立进程重开后可读-packaged/history-old-image.png",
+      "bytes": 31807,
+      "sha256": "3ff7fdb87aa5cd041eea90bb3faa5eb2e5194a6caf8588d735969ee486165965"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-development/attachments/history-expanded-png-26c75ed14ead05680d46a73d17188d6f7b061505.png",
+      "bytes": 45141,
+      "sha256": "3d49b0c128430c291101b80cb3e9afc8d0462cd02511acdf95e3f940cf686cb7"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-development/history-expanded.png",
+      "bytes": 45141,
+      "sha256": "3d49b0c128430c291101b80cb3e9afc8d0462cd02511acdf95e3f940cf686cb7"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-packaged/attachments/history-expanded-png-86e46c2765aa4873bad05f1ba7181c541ebeb62c.png",
+      "bytes": 45275,
+      "sha256": "acbe40cc0d6ee0faed03cf5b8347f23bbe18aa0ec90762e795e1df3479d10f76"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/history-window-历史默认不读-不挂载，主动回看与自动保存保持，新题新轮重新关闭-packaged/history-expanded.png",
+      "bytes": 45275,
+      "sha256": "acbe40cc0d6ee0faed03cf5b8347f23bbe18aa0ec90762e795e1df3479d10f76"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/learning-management-M3-第一批：搜索标题-题干-标签、字面字符、交集、分页与答案边界-development/search-filter.png",
+      "bytes": 74076,
+      "sha256": "e827b6120c537b4897b900ed183206f5a6964433505c743b6262df81c7b466e0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/learning-management-M3-第一批：搜索标题-题干-标签、字面字符、交集、分页与答案边界-packaged/search-filter.png",
+      "bytes": 74268,
+      "sha256": "8e3234492c3e401241f425c6f62833187daf1eb45c22d3a3774b39d3faf185d6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/attachments/learning-dark-png-53efbe92bb6eb488c8326069567c6ae717acf023.png",
+      "bytes": 62139,
+      "sha256": "2716e0290ab5fbd3f316c3be1af7a8d1ee108e013f9d2a94e2522d49e099e562"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/attachments/learning-light-png-fd45ec4aa7daeca4db06475c4c3608204ff161e9.png",
+      "bytes": 62448,
+      "sha256": "d8d2bbd6381f36a8931a5fd528d3d276de08678d275294d85e461f9a8e7f7533"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/learning-dark.png",
+      "bytes": 62139,
+      "sha256": "2716e0290ab5fbd3f316c3be1af7a8d1ee108e013f9d2a94e2522d49e099e562"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-development/learning-light.png",
+      "bytes": 62448,
+      "sha256": "d8d2bbd6381f36a8931a5fd528d3d276de08678d275294d85e461f9a8e7f7533"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/attachments/learning-dark-png-896f648384505eb650abe200f4c89a532d84700f.png",
+      "bytes": 62457,
+      "sha256": "9b8e36d4e49676070a3a6c2576dc1257c7182238e708b3b0441b409b5a635e43"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/attachments/learning-light-png-162831326bb1aef381549d1e99a4430202b197e7.png",
+      "bytes": 62674,
+      "sha256": "6e6a8657efffaba649f767ca5773f454181968519f01d5095857592bf26d88cb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/learning-dark.png",
+      "bytes": 62457,
+      "sha256": "9b8e36d4e49676070a3a6c2576dc1257c7182238e708b3b0441b409b5a635e43"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/learning-records-学习记录页专题范围、收藏刷新、主动历史与明暗布局-packaged/learning-light.png",
+      "bytes": 62674,
+      "sha256": "6e6a8657efffaba649f767ca5773f454181968519f01d5095857592bf26d88cb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-development/library-answer-dark.png",
+      "bytes": 94603,
+      "sha256": "3b703ae677aa147cf834f19b91c4418fffc9767fb4eba1106a045873d54b2379"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-development/library-question-light.png",
+      "bytes": 89152,
+      "sha256": "cb1945364f9228633af3a87e708f57b25e2efd3e82f0061f33fa9237e3a7246a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-packaged/library-answer-dark.png",
+      "bytes": 94880,
+      "sha256": "8b3cf3f74f7950f309857fa6199905116859be161b81e8bdcf27c542d4634c81"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/library-window-窗口预览确认、三种图片解码、移动来源后独立进程重开-packaged/library-question-light.png",
+      "bytes": 89334,
+      "sha256": "6b22fda62a165330f2dfadef1c338b44c14661c6a4ecf21d2aaf9a69ac5313f1"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第三批：100-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "bytes": 67151,
+      "sha256": "db689050c393510a7f688a6136aa1b559f93824632c79a28dd9caf662cf04d49"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第三批：100-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "bytes": 67406,
+      "sha256": "08e5f480bcf66e7f9bf78b7f17e2488a28e57d99a7440adbf1d49b8e6fdecc8b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第三批：125-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "bytes": 66892,
+      "sha256": "fe7df086a8e34aaa030cf9ebad9d83ba7cdecbbb967b47e2a36fa905560892a5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第三批：125-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "bytes": 67134,
+      "sha256": "95177e953ea781168a6ba791d1391ca8db45a883fe3221ad2c4dfc7a83003618"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第三批：150-页面缩放下长内容切题回到题首-development/long-content-next.png",
+      "bytes": 78295,
+      "sha256": "9074bf1943332559fd25ce1e3fb033ded1c105ba1fa805be2ec312e27465be6a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第三批：150-页面缩放下长内容切题回到题首-packaged/long-content-next.png",
+      "bytes": 78456,
+      "sha256": "f0c19a2a083cc8c565c42ba1527ff8b207b1f3ab77b633c803c19fc0c0c9a24a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "bytes": 29847,
+      "sha256": "268ee2536727a4b89dcfb1557a4b8fefe5605f402133e9eedc272a25438924e5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "bytes": 28974,
+      "sha256": "4b2f9df1ae005ef5f3bb69abde206db55df861b3cd67ada8479e3de7ec65cc50"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "bytes": 30083,
+      "sha256": "393e2a923e354d41b8ab1467e9f2a81f319a7d461b10a28a7357d5f0f195690a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：100-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "bytes": 29203,
+      "sha256": "d80197fd5a599187ce0c977253d107bcf681523892332e6fcc54623a923e4ecc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "bytes": 32866,
+      "sha256": "6d1b4a4491b4cb2248fbec6ee3e0be0f1879de6a63d5d184d794038335c27555"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "bytes": 32478,
+      "sha256": "1057dda3740b43659fa83db994c28f80d3f192c5fceda7b8a6deb5592a0d90d8"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "bytes": 33109,
+      "sha256": "df0d098de6a13a1efc73de427934672468354ed40409bca5d99a4a9c49d457b5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：125-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "bytes": 32715,
+      "sha256": "108f7cb1839cde617cf35b8983f6b3261bb4e64e75abbf7fc532edf74398266a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-focus.png",
+      "bytes": 44761,
+      "sha256": "12da1617977a2e44d70b4cedd06448dbba6d1222e14d3951fa97879e126b35a3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-development/keyboard-input-saved.png",
+      "bytes": 39955,
+      "sha256": "8c50081da7e45dfcdfad891e4395da2db9421a39b563e24626dae13da1dcd33d"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-focus.png",
+      "bytes": 45056,
+      "sha256": "fa2a1bd981664c849885dc0accee7d542cbc4693c8acaa9375ada9130da84fa0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-M2-第四批：150-页面缩放下键盘输入不被操作区遮挡-packaged/keyboard-input-saved.png",
+      "bytes": 40207,
+      "sha256": "8c59f89b51cf897430476db5ec473056f88665962c482fa7a9b37ba1df97fc44"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-图片自动保存：放大窗口与缩放状态在草稿保存后保留-development/image-after-autosave.png",
+      "bytes": 25677,
+      "sha256": "cc2c8a6475ea3e0743ecae7e448bdf8f9f85d011276fb0a641b405d35dfd6c82"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-图片自动保存：放大窗口与缩放状态在草稿保存后保留-packaged/image-after-autosave.png",
+      "bytes": 25939,
+      "sha256": "691509ffdc52c02a1aebc5391d6d2fd011837ebd4684f1d05aa5751eb33ffaf2"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-dark.png",
+      "bytes": 28714,
+      "sha256": "9f1a345b7dcf148782f4cdd9d6ade850e5922dc9585e3b8de76ea819c4239b0b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-image-zoom.png",
+      "bytes": 31347,
+      "sha256": "8616ef1d467c5be94d9570a848e1096fb1f32bf7b5094ceaf6e25e90c45e34b2"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-development/practice-light.png",
+      "bytes": 29569,
+      "sha256": "66e880eff066a91fc60e95e321b9e389e1c4a8d73425f8707605b4f26f638226"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-dark.png",
+      "bytes": 29029,
+      "sha256": "f541c40fa43c008071e9cbb09a6c9720cf305e58345532bec6d698b59dfd5fbf"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-image-zoom.png",
+      "bytes": 31600,
+      "sha256": "c617d86755ded519ae89e61ff0a9edcc99e43adc45bf600332806be0d9b0eada"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/practice-window-真实代码-token-复制调用、图片模态缩放与长答案操作区-packaged/practice-light.png",
+      "bytes": 29847,
+      "sha256": "87c9436dfc32d1a1263a4ef63ccdad2a933f82c630c7ed1cbe3d40108c35f8e5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-development/attachments/random-start-png-8e5c1fe8507870be39f839c7cfcc71fec0414077.png",
+      "bytes": 55267,
+      "sha256": "221e71ee387d930c804ec4350806483c5fb9e4243a963e7a1c085604908b13aa"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-development/random-start.png",
+      "bytes": 55267,
+      "sha256": "221e71ee387d930c804ec4350806483c5fb9e4243a963e7a1c085604908b13aa"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-packaged/attachments/random-start-png-b5be652db8821943fbeae72c45d7bc1f21e37301.png",
+      "bytes": 55572,
+      "sha256": "624099c04bafd6268496904efb86c2d61c7d4809964983d7a08b2b5cd76f93e9"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题-packaged/random-start.png",
+      "bytes": 55572,
+      "sha256": "624099c04bafd6268496904efb86c2d61c7d4809964983d7a08b2b5cd76f93e9"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-development/attachments/random-saved-png-8f99eda358f696050248680c51698fd37eafeec3.png",
+      "bytes": 41538,
+      "sha256": "959562a6858180eb606e1cd1a97ea8409755f2e0643511f0d951c9504b50f9cb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-development/random-saved.png",
+      "bytes": 41538,
+      "sha256": "959562a6858180eb606e1cd1a97ea8409755f2e0643511f0d951c9504b50f9cb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-packaged/attachments/random-saved-png-2d403c047f5ee109a8cfee5d361c0c9fd799f0f7.png",
+      "bytes": 42070,
+      "sha256": "49ccefbacae8aa99e12b03758eb05ac75af28033df640cbfb53f5ca9cf89f1f2"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机窗口保存-自评后正常关窗，独立进程恢复完整原队列-packaged/random-saved.png",
+      "bytes": 42070,
+      "sha256": "49ccefbacae8aa99e12b03758eb05ac75af28033df640cbfb53f5ca9cf89f1f2"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-development/attachments/random-saved-png-b27862079748893118754d51339e3f1bb42ffa90.png",
+      "bytes": 41711,
+      "sha256": "9925759d42668e7f76c369604a88bcfcfb5fba699e1e55f68ea82bc5a53e5077"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-development/random-saved.png",
+      "bytes": 41711,
+      "sha256": "9925759d42668e7f76c369604a88bcfcfb5fba699e1e55f68ea82bc5a53e5077"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-packaged/attachments/random-saved-png-f2d80fbe62b0b1361d57999c3091117c689df817.png",
+      "bytes": 42052,
+      "sha256": "8f6e690dec1b229f7974e00f08afe86bf4266db9e3b9795db7e918847e8012c1"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/random-practice-随机窗口保存-自评后真实强制终止，独立进程恢复完整原队列-packaged/random-saved.png",
+      "bytes": 42052,
+      "sha256": "8f6e690dec1b229f7974e00f08afe86bf4266db9e3b9795db7e918847e8012c1"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/session-filters-migration-v5-筛选迁移-backup-blocked-停止或回滚，原库保留-development/error-context.md",
+      "bytes": 7896,
+      "sha256": "c5519d86c0b99147475cf82f0628b2777b5657f731c9c1ae8d15e16ddfc3b140"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/attachments/original-filters-random-png-25ec4adb92769b43998db3fee36f0cfde1f1c1e2.png",
+      "bytes": 38141,
+      "sha256": "327dd5d5c7b4bb46666975918c8076eae42953ac05131e2ada7f3768a9d4bcf3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/original-filters-random.png",
+      "bytes": 38141,
+      "sha256": "327dd5d5c7b4bb46666975918c8076eae42953ac05131e2ada7f3768a9d4bcf3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/attachments/original-filters-random-png-444db60c536c789fa1675454255c9f53199e32b5.png",
+      "bytes": 38340,
+      "sha256": "9fe804370c07453f359c7e9d7dc12c9a597a2a8da7c773dd1d079c374167803a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/session-filters-random-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/original-filters-random.png",
+      "bytes": 38340,
+      "sha256": "9fe804370c07453f359c7e9d7dc12c9a597a2a8da7c773dd1d079c374167803a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/attachments/original-filters-sequential-png-68a119157265f97417583054de076ab6d600c20d.png",
+      "bytes": 38043,
+      "sha256": "2707ef9ad24ffd1df89c23ab5074c1fd44b96bbe2bcb4472d8720da7e0737435"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-development/original-filters-sequential.png",
+      "bytes": 38043,
+      "sha256": "2707ef9ad24ffd1df89c23ab5074c1fd44b96bbe2bcb4472d8720da7e0737435"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/attachments/original-filters-sequential-png-e579bbbe763d0cbd918e0f77d2c68fd85f0e6232.png",
+      "bytes": 38239,
+      "sha256": "6041283ad6ea58c52b4d435b07b9ab0ccd01b8a56716b3ddde9c21358430eab5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/session-filters-sequential-建轮原筛选重开保持，修改首页与题库不重抽固定队列-packaged/original-filters-sequential.png",
+      "bytes": 38239,
+      "sha256": "6041283ad6ea58c52b4d435b07b9ab0ccd01b8a56716b3ddde9c21358430eab5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-development/attachments/settings-default-png-123d51fe99424b756951fb5284452a3880a5cdc4.png",
+      "bytes": 52390,
+      "sha256": "679e7f6af0a32e968f6869dca93d242fd0988c2f5f08005a57c1d146f6fc67df"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-development/settings-default.png",
+      "bytes": 52390,
+      "sha256": "679e7f6af0a32e968f6869dca93d242fd0988c2f5f08005a57c1d146f6fc67df"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-packaged/attachments/settings-default-png-ce5721488586426c90654c89aaa93f2e045bf9e0.png",
+      "bytes": 52598,
+      "sha256": "e02b980cbe50c277747112a081ab6d22ddd9f9f3fd749bdcc1510a548bf8e73c"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-四入口初始空库、独立页面、地址与显示默认值保持-packaged/settings-default.png",
+      "bytes": 52598,
+      "sha256": "e02b980cbe50c277747112a081ab6d22ddd9f9f3fd749bdcc1510a548bf8e73c"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-dark-22-png-bf0b715db7107b86e73d1df56436272fcdd1dea7.png",
+      "bytes": 40205,
+      "sha256": "e0fab44bfa0e1d77cdf5a173a51c3a291cb4e14dc12a7121b799032ee1b7acf5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-light-15-png-d749f95a9fb0b0d4177d73cda347872c8def116b.png",
+      "bytes": 36444,
+      "sha256": "c677678285da2e3dbba952b275dc1e087449048fe6343b5714ae3f532df0d58a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/practice-system-17-png-12f47ea0ae4f7dfe2f9f505550f3960f331e07e7.png",
+      "bytes": 33187,
+      "sha256": "ae910bac749ef868f6dbe123635ee1192115da5da3b7de8f7e53f3cbed76212b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-dark-22-png-6b2458afa1464ee7e1cbe07cc0059c6882b3e228.png",
+      "bytes": 36597,
+      "sha256": "20521f8d6a3beb8fd5ed92bc3a0ffd4b345e38325df7556045366922bf841507"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-light-15-png-a720c7a1cf5a5f019367d0f2ed7abcfb31489441.png",
+      "bytes": 28447,
+      "sha256": "6730c5f11c96a42437b863800b29da1aa45f1ff1d09876eebbc046167f2cd256"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/reading-system-17-png-336ca838ef5c110a905ae038458134327d851826.png",
+      "bytes": 31378,
+      "sha256": "869f06877b72bb8cedee3e5cdaf55b01fd6b53d4f0b7cd2bae3e068021d479bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-dark-22-png-5ea8e9c80b3ba982d74019858feed97ee65653de.png",
+      "bytes": 75892,
+      "sha256": "8ce5f54eed2c661cbb9ad6f677014f2f4351317046ac75040435c38ac80d46d3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-light-15-png-0caacce0638a0fe6bd138d56202ea32d469b01e6.png",
+      "bytes": 46048,
+      "sha256": "64ef9dc7864688f8f14e0b98ff035eadd1207a68ef10fd32f7eb9b280844e335"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/attachments/settings-system-17-png-f8577555374f4cd267004ccb4a34920f0f1808b1.png",
+      "bytes": 51898,
+      "sha256": "a5847bf54ea11fb626149f420e8b69fd4bfbea5c92f3e31f58e9c66264210984"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-dark-22.png",
+      "bytes": 40205,
+      "sha256": "e0fab44bfa0e1d77cdf5a173a51c3a291cb4e14dc12a7121b799032ee1b7acf5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-light-15.png",
+      "bytes": 36444,
+      "sha256": "c677678285da2e3dbba952b275dc1e087449048fe6343b5714ae3f532df0d58a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/practice-system-17.png",
+      "bytes": 33187,
+      "sha256": "ae910bac749ef868f6dbe123635ee1192115da5da3b7de8f7e53f3cbed76212b"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-dark-22.png",
+      "bytes": 36597,
+      "sha256": "20521f8d6a3beb8fd5ed92bc3a0ffd4b345e38325df7556045366922bf841507"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-light-15.png",
+      "bytes": 28447,
+      "sha256": "6730c5f11c96a42437b863800b29da1aa45f1ff1d09876eebbc046167f2cd256"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/reading-system-17.png",
+      "bytes": 31378,
+      "sha256": "869f06877b72bb8cedee3e5cdaf55b01fd6b53d4f0b7cd2bae3e068021d479bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-dark-22.png",
+      "bytes": 75892,
+      "sha256": "8ce5f54eed2c661cbb9ad6f677014f2f4351317046ac75040435c38ac80d46d3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-light-15.png",
+      "bytes": 46048,
+      "sha256": "64ef9dc7864688f8f14e0b98ff035eadd1207a68ef10fd32f7eb9b280844e335"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-development/settings-system-17.png",
+      "bytes": 51898,
+      "sha256": "a5847bf54ea11fb626149f420e8b69fd4bfbea5c92f3e31f58e9c66264210984"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-dark-22-png-52cb376032f22b952913ec9f3f188a0010d529a2.png",
+      "bytes": 40508,
+      "sha256": "7d200d26c1430f6fade6e89bcb35e4ef5c80fe281831658699c22d6be2367ae3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-light-15-png-dda4cf4e44805a4ec852b4e2fc0fe48f5d2171c4.png",
+      "bytes": 36760,
+      "sha256": "490bb70ac86ab7c72280009c32bb77e87aedc31265d32163f623214fe1ff8752"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/practice-system-17-png-49f296a8befde704e9839a5487b99f6597276729.png",
+      "bytes": 33507,
+      "sha256": "7871be864b8ea6d51590344d8db04c424ca238069d4cba5d8424f1c6b21106bb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-dark-22-png-ef3ec28297c1a8df77cb04979df6581f0883c90a.png",
+      "bytes": 36914,
+      "sha256": "1da1a923bac0042784f75c3419ea6eee6e0f81f8d257a48f340a4da23f453b1a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-light-15-png-9b24c1e28434d3923b3433258cc48b118fdb1ced.png",
+      "bytes": 28709,
+      "sha256": "9f9342bc1208ac40faae1385994c3629ddeb21834a17120786fee1d975e49587"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/reading-system-17-png-768f57bf1de8e842d63bba1744c738ecae42ae84.png",
+      "bytes": 31634,
+      "sha256": "0e17f062ca2e0fc14ec4fde8ff9fdcdeb0caa634f87c2c20df42a1fdd2337af5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-dark-22-png-0620301ceab5d1de297b896e73c9a3f07695b2c5.png",
+      "bytes": 76208,
+      "sha256": "c34bd5485f9f6b8d471e62ab3d164c5d551be3affb1943ba16994420e4a355f6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-light-15-png-0074fb82f6f5bda846157580909c093e50425418.png",
+      "bytes": 46289,
+      "sha256": "8df735d8ce07dcfc94efee74f2480090034c0614f1a1d95244137075b10c7443"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/attachments/settings-system-17-png-00362555d59c6d4fc7b848975b08b832fe27e189.png",
+      "bytes": 52153,
+      "sha256": "cbff9008a6675d716db0060281807a364f8c3ca6920303244b70ff80437a89dd"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-dark-22.png",
+      "bytes": 40508,
+      "sha256": "7d200d26c1430f6fade6e89bcb35e4ef5c80fe281831658699c22d6be2367ae3"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-light-15.png",
+      "bytes": 36760,
+      "sha256": "490bb70ac86ab7c72280009c32bb77e87aedc31265d32163f623214fe1ff8752"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/practice-system-17.png",
+      "bytes": 33507,
+      "sha256": "7871be864b8ea6d51590344d8db04c424ca238069d4cba5d8424f1c6b21106bb"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-dark-22.png",
+      "bytes": 36914,
+      "sha256": "1da1a923bac0042784f75c3419ea6eee6e0f81f8d257a48f340a4da23f453b1a"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-light-15.png",
+      "bytes": 28709,
+      "sha256": "9f9342bc1208ac40faae1385994c3629ddeb21834a17120786fee1d975e49587"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/reading-system-17.png",
+      "bytes": 31634,
+      "sha256": "0e17f062ca2e0fc14ec4fde8ff9fdcdeb0caa634f87c2c20df42a1fdd2337af5"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-dark-22.png",
+      "bytes": 76208,
+      "sha256": "c34bd5485f9f6b8d471e62ab3d164c5d551be3affb1943ba16994420e4a355f6"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-light-15.png",
+      "bytes": 46289,
+      "sha256": "8df735d8ce07dcfc94efee74f2480090034c0614f1a1d95244137075b10c7443"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/settings-window-系统与手动主题、15-17-22px-实际正文代码表格输入框及隐藏答案-packaged/settings-system-17.png",
+      "bytes": 52153,
+      "sha256": "cbff9008a6675d716db0060281807a364f8c3ca6920303244b70ff80437a89dd"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/startup-关闭重开后读回-SQLite-记录-development/startup-dark.png",
+      "bytes": 50857,
+      "sha256": "29da56f803d246b8fd649f8008aa3eb3c5aa9820e42898cff633171966f340bc"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/startup-关闭重开后读回-SQLite-记录-development/startup-light.png",
+      "bytes": 51397,
+      "sha256": "053683cd3aaa9ef3cb1d830286181c6bcdb80656519fd3748007bb1cb10f382f"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/startup-关闭重开后读回-SQLite-记录-packaged/startup-dark.png",
+      "bytes": 51168,
+      "sha256": "32aa0d616e0157520625eb3956ab5f6ac27a330d50aab2c684cb5564b428c00e"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-full-second/startup-关闭重开后读回-SQLite-记录-packaged/startup-light.png",
+      "bytes": 51691,
+      "sha256": "44344d9efc6d339c583da9f492972a0d09bcd2cfd11644494414aca1e3ed59f0"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-status-target/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-output-status-target/desktop-results.json",
+      "bytes": 192707,
+      "sha256": "ab30f2a410bee5f143d7bc759deb966f3b9c733781d41e18dcd947292cfa5e87"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-status-target.json",
+      "bytes": 192707,
+      "sha256": "ab30f2a410bee5f143d7bc759deb966f3b9c733781d41e18dcd947292cfa5e87"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-status-target.log",
+      "bytes": 2451,
+      "sha256": "2e5cf65e9df37b4670cbbb0e00b8c092ad278cdd7277a777ab3ac7a04c8d999e"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-target-first.json",
+      "bytes": 122885,
+      "sha256": "9a5d914ead2562d6674031bc14a37b5aec6d705f786d3bc266e39e25a68b1f0e"
+    },
+    {
+      "path": "docs/evidence/m4c/desktop-target-first.log",
+      "bytes": 3081,
+      "sha256": "0ff132b1a1d4d5eef47529c0c4880995e26c11f1596a0b25150067fd38b55d17"
+    },
+    {
+      "path": "docs/evidence/m4c/document-check.json",
+      "bytes": 563,
+      "sha256": "d7805a7583de0cf73a7fc44f95475b47132e8e7905d92e778237e086ecfb86ba"
+    },
+    {
+      "path": "docs/evidence/m4c/environment.json",
+      "bytes": 31150,
+      "sha256": "ef45045cbcd124c3f57dbad680fa33b82ae885ec319a2b634fe3023181c6ff98"
+    },
+    {
+      "path": "docs/evidence/m4c/git-status-final.txt",
+      "bytes": 390,
+      "sha256": "6d214051accfbe9e5953a6402953cd0c211d3f0b71e1b0dc1118058af6a1d5a1"
+    },
+    {
+      "path": "docs/evidence/m4c/historical-evidence-verification.json",
+      "bytes": 145,
+      "sha256": "830e95e934c229f26811fbfe20f9be369b1b2ae985e314cb130febcd5d538b59"
+    },
+    {
+      "path": "docs/evidence/m4c/package-final.log",
+      "bytes": 3021,
+      "sha256": "f219171f256c4f8a973b2548fc14d75e181a980f41e90e5ecec3f3bc8dd268a7"
+    },
+    {
+      "path": "docs/evidence/m4c/package-first.log",
+      "bytes": 3021,
+      "sha256": "0be33c9ef45f3dee80985602cde1d42f0c93156a4aa6cc06e67ebdd4ef217785"
+    },
+    {
+      "path": "docs/evidence/m4c/package-inspection-final.json",
+      "bytes": 6097,
+      "sha256": "94ea22c56b253b8a43e7245a3ae38d73af127d25c8318442e935974e40b9e201"
+    },
+    {
+      "path": "docs/evidence/m4c/package-inspection-first.json",
+      "bytes": 4366,
+      "sha256": "c2f544763b2b9387bc1560c47a639050a41d22c703fce9f8fb0b07056b06cb14"
+    },
+    {
+      "path": "docs/evidence/m4c/prior-run-summary.json",
+      "bytes": 2103,
+      "sha256": "e73401fac8475242148516fa509389eb995e3c6c848f86eb0f7599578a411b21"
+    },
+    {
+      "path": "docs/evidence/m4c/processes-final.json",
+      "bytes": 4,
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "docs/evidence/m4c/results-summary.json",
+      "bytes": 3013,
+      "sha256": "1b4e18c06229aeccc6a327c24a6d47bac59c898211f0faf044921cf3e2997d26"
+    },
+    {
+      "path": "docs/evidence/m4c/source-manifest.json",
+      "bytes": 29355,
+      "sha256": "f7c9464cd50bb94d832e5a4af5496a2bc8ec47a964aca5500f1303f0bf9ecad5"
+    },
+    {
+      "path": "docs/evidence/m4c/tooling-notes.json",
+      "bytes": 757,
+      "sha256": "55175dd81f4b20c41478dcfd0fec4323d4872694f8c00a9234fb43cd3223869a"
+    },
+    {
+      "path": "docs/evidence/m4c/typecheck-desktop-first.log",
+      "bytes": 116,
+      "sha256": "1b47c3630df780ca5c6fb68c9cee90d945c711e7ef797fd5b9fd55fcd6bce90d"
+    },
+    {
+      "path": "docs/evidence/m4c/typecheck-tests-first.log",
+      "bytes": 116,
+      "sha256": "1b47c3630df780ca5c6fb68c9cee90d945c711e7ef797fd5b9fd55fcd6bce90d"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-baseline-comparison.json",
+      "bytes": 2634,
+      "sha256": "100cb390a02b5cd8c8e1ae9785022ddde328fe3cc20229d0b7101d92498a8f6b"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-before-case.json",
+      "bytes": 188411,
+      "sha256": "4e32faec15a2ab4e71958cbb50b71b240b49efb291255498a1955e8adc1b47e2"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-before-case.log",
+      "bytes": 91,
+      "sha256": "d2163ffc28688b7b8247cb98958a51bce6765a8eea74cdbe629afd39d0bf820a"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-final.json",
+      "bytes": 188656,
+      "sha256": "32a38453d727456ec9a4ed144bef83135a477f65403360e9c81c6880b01a4d97"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-final.log",
+      "bytes": 2158,
+      "sha256": "9dd37e260afa1322abbcdd2ab25e2359da93da79f46beb4ed59a7cfdb0851f97"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-target-case.json",
+      "bytes": 8146,
+      "sha256": "33412cf79adeabeb41a24d618a3567c55938c9a89e4198b3d9de43f973add67f"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-target-case.log",
+      "bytes": 97,
+      "sha256": "bc3c7b2a03547b6925bd0b4de076e0dfc796be3f16b0a3bf52af75516fde4280"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-target-first.json",
+      "bytes": 483,
+      "sha256": "d00f4d2a831731dc5297730bb73ac778ddb8981937f62b20f6933b978119165e"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-target-first.log",
+      "bytes": 98,
+      "sha256": "14a9d060efe26cebf6bc5abacc1cf32d8fe9ac26a0f1eee74497dee90c7b535a"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-target-second.json",
+      "bytes": 7883,
+      "sha256": "5990274a942f219cfd91ce4e739c288c0115c524705383feee75a3ed567b8269"
+    },
+    {
+      "path": "docs/evidence/m4c/unit-target-second.log",
+      "bytes": 99,
+      "sha256": "ccf8ce4e5a6cb2888e4f70d8b47ee711e26f368fdfe6c61e8e85290a6f1135d9"
+    },
+    {
+      "path": "docs/evidence/m4c/windows-case-first.json",
+      "bytes": 521,
+      "sha256": "de32016c7140f7252ae12bcaef72ed079b02b3f40d65deb9fa066c72b4f80cec"
+    }
+  ]
+}

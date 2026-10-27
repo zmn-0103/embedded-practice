@@ -1,0 +1,7 @@
+{
+  "chunk_id": "0a6c0a",
+  "wall_time_seconds": 7.73592,
+  "exit_code": 0,
+  "original_token_count": 95,
+  "output": "\n> embedded-practice@0.1.0 check\n> npm run typecheck && npm run format:check\n\n\n> embedded-practice@0.1.0 typecheck\n> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json\n\n\n> embedded-practice@0.1.0 format:check\n> prettier --check \"src/**/*.{ts,tsx,css,html}\" \"tests/**/*.ts\" \"*.{json,ts,yml}\"\n\nChecking formatting...\nAll matched files use Prettier code style!\n"
+}

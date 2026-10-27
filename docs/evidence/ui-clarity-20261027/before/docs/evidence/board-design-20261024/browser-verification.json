@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "browser": "isolated Playwright CLI Chrome session board-design-20261024",
+  "previewOnly": true,
+  "checks": {
+    "emptyBoardNativeExpansion": true,
+    "linuxSearchTwoBoards": true,
+    "noResultMessage": true,
+    "extensionSearchBluetoothOneBoard": true,
+    "accessibleToggleTextNoDuplicateOrFilteredResidual": true
+  },
+  "layouts": [
+    {
+      "viewportWidth": 1360,
+      "scrollWidth": 1360,
+      "visibleBoards": 15,
+      "scheme": "light"
+    },
+    {
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "visibleBoards": 15,
+      "scheme": "dark"
+    }
+  ],
+  "images": [
+    "output/playwright/board-design-20261024/desktop-final.png",
+    "output/playwright/board-design-20261024/narrow-dark.png"
+  ],
+  "errorsRetained": [
+    "browser-open-01.json",
+    "browser-console-01.json",
+    "browser-ref-01.json"
+  ],
+  "helperCleanup": "Browser session closed; loopback server interrupted with Ctrl+C (shell exit 1), listener absent after cleanup.",
+  "boundaries": "Browser preview only; no Electron application, personal database, system DPI, native IME, installer or hardware acceptance."
+}

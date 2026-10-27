@@ -1,0 +1,221 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/learning-records.spec.ts",
+      "--grep",
+      "学习总览空库",
+      "--reporter=json",
+      "--output=docs/evidence/category-tree-20261023/targeted-06-files"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/category-tree-20261023/targeted-06-files",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/category-tree-20261023/targeted-06-files",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\category-tree-20261023\\targeted-06-files",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\category-tree-20261023\\targeted-06-files",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "learning-records.spec.ts",
+      "file": "learning-records.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "学习总览空库、未知专题、严格输入与只读零结果",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1455,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T15:38:56.154Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "learning-empty.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbXB0eSI6eyJ0b3BpY0lkIjpudWxsLCJhcmNoaXZlZCI6ZmFsc2UsImNhdGVnb3J5Ijp7ImtpbmQiOiJhbGwifSwiY2F0ZWdvcmllcyI6W10sInRvcGljcyI6W10sInRvdGFsIjowLCJyZXZlYWxlZCI6MCwicmF0ZWQiOjAsImZhdm9yaXRlcyI6MCwiY29udGVudFVwZGF0ZWQiOjAsInJhdGluZ3MiOnsi5LiN5LyaIjowLCLkuI3nhp8iOjAsIuaOjOaPoSI6MH19LCJpbnZhbGlkIjp7Im9rIjpmYWxzZSwiZXJyb3IiOnsiY29kZSI6IklOVkFMSURfUkVRVUVTVCIsIm1lc3NhZ2UiOiLor7fmsYLlj4LmlbDml6DmlYjvvIzor7fliLfmlrDpobXpnaLlkI7ph43or5XjgIIifX0sImJlZm9yZSI6eyJzZXNzaW9ucyI6W10sIml0ZW1zIjpbXSwic3RhdGVzIjpbXSwicmVjZWlwdHMiOltdLCJ2ZXJzaW9ucyI6W10sInF1ZXN0aW9ucyI6W10sInJlc291cmNlcyI6W10sImZvcmVpZ25LZXlzIjpbXSwiaW50ZWdyaXR5IjpbeyJxdWlja19jaGVjayI6Im9rIn1dLCJzY2hlbWEiOnsidXNlcl92ZXJzaW9uIjo4fX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9d3d1876ec6868033c2d-217d93bcaf94ae951e7d",
+          "file": "learning-records.spec.ts",
+          "line": 24,
+          "column": 5
+        },
+        {
+          "title": "学习总览空库、未知专题、严格输入与只读零结果",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1112,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T15:38:58.019Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "learning-empty.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbXB0eSI6eyJ0b3BpY0lkIjpudWxsLCJhcmNoaXZlZCI6ZmFsc2UsImNhdGVnb3J5Ijp7ImtpbmQiOiJhbGwifSwiY2F0ZWdvcmllcyI6W10sInRvcGljcyI6W10sInRvdGFsIjowLCJyZXZlYWxlZCI6MCwicmF0ZWQiOjAsImZhdm9yaXRlcyI6MCwiY29udGVudFVwZGF0ZWQiOjAsInJhdGluZ3MiOnsi5LiN5LyaIjowLCLkuI3nhp8iOjAsIuaOjOaPoSI6MH19LCJpbnZhbGlkIjp7Im9rIjpmYWxzZSwiZXJyb3IiOnsiY29kZSI6IklOVkFMSURfUkVRVUVTVCIsIm1lc3NhZ2UiOiLor7fmsYLlj4LmlbDml6DmlYjvvIzor7fliLfmlrDpobXpnaLlkI7ph43or5XjgIIifX0sImJlZm9yZSI6eyJzZXNzaW9ucyI6W10sIml0ZW1zIjpbXSwic3RhdGVzIjpbXSwicmVjZWlwdHMiOltdLCJ2ZXJzaW9ucyI6W10sInF1ZXN0aW9ucyI6W10sInJlc291cmNlcyI6W10sImZvcmVpZ25LZXlzIjpbXSwiaW50ZWdyaXR5IjpbeyJxdWlja19jaGVjayI6Im9rIn1dLCJzY2hlbWEiOnsidXNlcl92ZXJzaW9uIjo4fX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9d3d1876ec6868033c2d-117fe47beace8af17156",
+          "file": "learning-records.spec.ts",
+          "line": 24,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-23T15:38:55.612Z",
+    "duration": 3572.0589999999997,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

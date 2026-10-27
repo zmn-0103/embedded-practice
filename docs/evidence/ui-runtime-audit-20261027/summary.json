@@ -1,0 +1,211 @@
+{
+  "runtime": {
+    "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-20261026.4\\win-unpacked\\embedded-practice.exe",
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-ui-audit-VejokK",
+    "packaged": true,
+    "version": "0.0.2",
+    "pid": 7908,
+    "handle": 67772,
+    "zoom": 1,
+    "bounds": {
+      "x": 390,
+      "y": 126,
+      "width": 1140,
+      "height": 780
+    },
+    "displays": [
+      {
+        "id": 3117398019,
+        "scaleFactor": 1.5,
+        "bounds": {
+          "x": -1707,
+          "y": -122,
+          "width": 1707,
+          "height": 1067
+        },
+        "workArea": {
+          "x": -1707,
+          "y": -122,
+          "width": 1707,
+          "height": 1019
+        },
+        "size": {
+          "width": 1707,
+          "height": 1067
+        }
+      },
+      {
+        "id": 3548863810,
+        "scaleFactor": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1032
+        },
+        "size": {
+          "width": 1920,
+          "height": 1080
+        }
+      }
+    ],
+    "footer": "离线使用 · 数据保存在本机\nV0.0.2 测试版 · 构建 20261026.4-v002"
+  },
+  "testStats": {
+    "startTime": "2026-10-27T02:35:22.005Z",
+    "duration": 114461.416,
+    "expected": 42,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "testDatabase": {
+    "schema": 10,
+    "integrity": {
+      "integrity_check": "ok"
+    },
+    "topics": 1
+  },
+  "contrast": {
+    "sampleCount": 140,
+    "below45": [
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          27,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.4533525233321813,
+        "label": "练习/松间绿/dark"
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          250,
+          252,
+          254,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.48028730902543,
+        "label": "练习/晴空蓝/light"
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          30,
+          39,
+          53,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.2629609461379645,
+        "label": "练习/晴空蓝/dark"
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          253,
+          250,
+          244,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.422581734510598,
+        "label": "练习/暖沙金/light"
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          46,
+          39,
+          30,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.198156654363375,
+        "label": "练习/暖沙金/dark"
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          252,
+          250,
+          253,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 4.438949195159233,
+        "label": "练习/暮山紫/light"
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          43,
+          35,
+          52,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.2725716962855915,
+        "label": "练习/暮山紫/dark"
+      },
+      {
+        "name": "输入占位提示",
+        "selector": "#practice-answer",
+        "pseudo": "::placeholder",
+        "color": "rgb(117, 117, 117)",
+        "background": [
+          39,
+          36,
+          32,
+          1
+        ],
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "ratio": 3.3525959214974375,
+        "label": "练习/Claude 风格/dark"
+      }
+    ],
+    "minimumWithoutPlaceholder": 4.511139846357089
+  },
+  "scope": "42现有场景；补充颜色和DPI测量另记，不能累计为全量回归"
+}

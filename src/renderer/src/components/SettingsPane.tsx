@@ -43,6 +43,9 @@ export function SettingsPane({
     }
   }, [value?.theme, value?.themeId, value?.fontSize])
   const selected = catalog?.entries.find((entry) => entry.definition.id === themeId)?.definition
+  const unapplied = Boolean(
+    value && (theme !== value.theme || themeId !== value.themeId || fontSize !== value.fontSize),
+  )
   return (
     <section className="settings-pane" aria-label="设置与数据">
       <h2>设置与数据</h2>
@@ -125,6 +128,17 @@ export function SettingsPane({
               })
             }}
           >
+            <p className="appearance-apply-status" role="status" data-pending={unapplied}>
+              {busy
+                ? '正在处理外观设置，请稍候…'
+                : !selected
+                  ? '所选主题不可用，请重新选择后保存并应用。'
+                  : error
+                    ? '外观应用未确认，请重试保存并应用。'
+                    : unapplied
+                      ? '外观选择尚未应用，点击“保存并应用”后生效。'
+                      : '当前外观已应用；修改选择后需保存并应用。'}
+            </p>
             <fieldset className="appearance-controls" disabled={busy || dataBusy}>
               <legend className="visually-hidden">外观与显示</legend>
               <div className="appearance-layout">
@@ -214,7 +228,9 @@ export function SettingsPane({
                 )}
               </div>
               <div className="appearance-save-row">
-                <p className="muted">预览仅在此处显示，保存后应用到所有页面，重开后保留。</p>
+                <p className="muted">
+                  保存并应用会使用当前预览；恢复默认外观会立即应用默认设置。学习数据保留。
+                </p>
                 <button type="submit" className="primary" disabled={!selected}>
                   {busy ? '正在保存显示设置…' : error ? '重试保存并应用' : '保存并应用'}
                 </button>

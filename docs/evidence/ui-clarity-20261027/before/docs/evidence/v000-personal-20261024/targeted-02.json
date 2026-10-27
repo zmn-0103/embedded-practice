@@ -1,0 +1,373 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/personal-bank.spec.ts",
+      "--output=docs/evidence/v000-personal-20261024/targeted-02"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/v000-personal-20261024/targeted-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/v000-personal-20261024/targeted-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\v000-personal-20261024\\targeted-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\v000-personal-20261024\\targeted-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "personal-bank.spec.ts",
+      "file": "personal-bank.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "全量419题首次/重复导入、13专题归属、板块计数和三级难度筛选",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4329,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T10:14:41.034Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "runtime.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcbm9kZV9tb2R1bGVzXFxlbGVjdHJvblxcZGlzdFxcZWxlY3Ryb24uZXhlIiwiYXBwUGF0aCI6IkU6XFxNeV9Qcm9qZWN0c1xcZW1iZWRkZWQtcHJhY3RpY2VcXG91dFxcbWFpbiIsIm5hbWUiOiJFbGVjdHJvbiIsInZlcnNpb24iOiI0Mi4xMS4xNSIsInBhY2thZ2VkIjpmYWxzZSwidXNlckRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtbWFpS3pTIiwiZWxlY3Ryb24iOiI0Mi4xMS4xNSJ9"
+                    },
+                    {
+                      "name": "419-topic-navigation.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXZpc2lvbiI6MTksInRvdGFsIjo0MTksInBhZ2UiOjEsInBhZ2VTaXplIjoyMCwidGFnT3B0aW9ucyI6WyJBQ0siLCJBREMiLCJBRERSIiwiQUYiLCJBRklPIiwiQVJMTyIsIkJFUlIiLCJCUlIiLCJCU1JSIiwiQlRGIiwiQlVTWSIsIkNDUiIsIkNQSEEiLCJDUE9MIiwiQ1IxIiwiQ1IyIiwiQ1JIIiwiQ1JMIiwiQ+ivreiogCIsIkRNQSIsIkVFUFJPTSIsIkVPQyIsIkdQSU8iLCJJMkMiLCJJRFIiLCJMRUQiLCJOQUNLIiwiTk9SIiwiT0RSIiwiT1JFIiwiT1ZSIiwiUE9TIiwiUkNDIiwiUlhORSIsIlNCIiwiU1BJIiwiU1BMIiwiU1IiLCJUQyIsIlRYRSIsIlVBUlQiLCJXRUwiLCJ2b2xhdGlsZSIsIuS4iuS4i+aLiSIsIuS4iuaLieeUtemYuyIsIuS4reaWrSIsIuS6i+S7tiIsIuS6i+S7tuWIhuaekCIsIuS7o+eggeWuoeafpSIsIuS9jeWtl+autSIsIuS9jeW6jyIsIuS9jeaOqeeggSIsIuS9jeaTjeS9nCIsIuS/oeWPt+e6vyIsIuWFqOWPjOW3pSIsIuWGmeWRqOacnyIsIuWHveaVsOWIhuaekCIsIuWHveaVsOi+qOaekCIsIuWIhui+qOeOhyIsIuWIhui+qOeOh+S4jumHj+WMliIsIuWIneWni+WMliIsIuWIneWni+WMluaXtuW6jyIsIuWIpOaWremimCIsIuWLmOivryIsIuWNj+iuruWIhuaekCIsIuWNj+iuruWfuuehgCIsIuWNj+iuruiuvuiuoSIsIuWNlemAiemimCIsIuWPguiAg+eUteWOiyIsIuWPkemAgeaXtuW6jyIsIuWRveS7pCIsIuWZqOS7tuWNj+iuriIsIuWcsOWdgCIsIuWcsOWdgOe8lueggSIsIuWhq+epuumimCIsIuWkjeeUqOWKn+iDvSIsIuWkluiuvuWunuS+iyIsIuWkmumAiemimCIsIuWtl+espuS4siIsIuWtl+espue8lueggSIsIuWtl+iKguW6jyIsIuWvhOWtmOWZqCIsIuW4p+agvOW8jyIsIuW5s+Wdh+a7pOazoiIsIuW5tuWPkeWIhuaekCIsIuW8gOa8jyIsIuW8gOa8j+S4juS4iuaLiSIsIuW8leiEmuaYoOWwhCIsIuaAu+e6v+aBouWkjSIsIuaAu+e6v+aXtuW6jyIsIuaDheaZr+WIhuaekCIsIuaJq+aPj+W6j+WIlyIsIuaMiemUriIsIuaOkuW6j+mimCIsIuaOpeWPo+iuvuiuoSIsIuaOpeaUtuaXtuW6jyIsIuaVhemanOWIhuaekCIsIuaVhemanOWumuS9jSIsIuaVhemanOaOkuafpSIsIuaVsOaNruS/neaKpCIsIuaVsOaNruWvhOWtmOWZqCIsIuaVsOaNruWvuem9kCIsIuaVtOaVsOa6ouWHuiIsIuaWueWQkeWIhuaekCIsIuaXtuW6j+WIhuaekCIsIuaXtumSnyIsIuaXtumSn+WIhumikSIsIuaXtumSn+agkSIsIuagoeWHhiIsIuagoemqjOS9jSIsIuamguW/tei+qOaekCIsIuamguW/temimCIsIuaooeWdl+iuvuiuoSIsIuaooeW8j+i+qOaekCIsIua1geeoi+WIhuaekCIsIua1geeoi+iuvuiuoSIsIua1i+ivleiuvuiuoSIsIua2iOaBr+i+ueeVjCIsIua2iOaKliIsIua6kOeggeWIhuaekCIsIueJh+mAieaXtuW6jyIsIueJqeeQhui/nuaOpSIsIueKtuaAgeWIhuWxgiIsIueKtuaAgeaOqOWvvCIsIueKtuaAgeacuiIsIueKtuaAgeagh+W/lyIsIueUteW5s+WIhuaekCIsIueUteawlOaOpeWPoyIsIueUteawlOeJueaApyIsIueUtei3r+WIhuaekCIsIue8k+WGsuWMuiIsIue8luivkeaooeW8jyIsIuiuoeeul+WIhuaekCIsIuiuoeeul+mimCIsIuiuvuWkh+Wvu+WdgCIsIuiwg+eUqOmTviIsIuiwg+ivleWJr+S9nOeUqCIsIuiwg+ivleW3peWFtyIsIuiwg+ivleaWueazlSIsIui1hOaWmeaguOWvuSIsIui2heaXtiIsIui9rOaNouaXtumXtCIsIui9rOaNouaooeW8jyIsIui9ruivoiIsIui9r+S7tua2iOaKliIsIui+k+WFpeaooeW8jyIsIui+k+WHuuaooeW8jyIsIui+ueeVjOWIhuaekCIsIui/lOWbnuWAvCIsIumAmumBk+aYoOWwhCIsIumHh+agt+S/neaMgSIsIumHh+agt+W7uueriyIsIumHjeWkjVNUQVJUIiwi6YeP5YyWIiwi6ZSZ6K+v5YiG57G7Iiwi6ZSZ6K+v5aSE55CGIiwi6ZSZ6K+v5oGi5aSNIiwi6ZSZ6K+v5qCH5b+XIiwi6aG15YaZIiwi6aG157yW56iLIiwi6aG16L6555WMIiwi6amx5Yqo6K6+6K6hIiwi6amx5Yqo6YCf5bqmIiwi6aqM6K+B6K6+6K6hIl0sImNhdGVnb3JpZXMiOlt7ImNhdGVnb3J5SWQiOiIwMzQwN2Q1Yy1mYTEyLTQyODAtODYxYy1jOGUxZGE5MDA3YjEiLCJ0aXRsZSI6IkPor63oqIAifSx7ImNhdGVnb3J5SWQiOiIxZjkyODEzMy0xOTBiLTQ1ODUtODA0Ni00Y2JkY2NlMDU0MWMiLCJ0aXRsZSI6Ik1DVeS4juWkluiuvuWOn+eQhiJ9LHsiY2F0ZWdvcnlJZCI6Ijk1YmYxYzU5LTNjNTEtNGQzMy04ODM0LTk5YjhmZDAxOGYzMSIsInRpdGxlIjoiU1RNMzIifSx7ImNhdGVnb3J5SWQiOiIyNmZjZjRhMy04NTMxLTRjMGUtYjMxOC00OTJkMmY2ZjAzMTQiLCJ0aXRsZSI6IuWtmOWCqOS4juaWh+S7tuezu+e7nyJ9LHsiY2F0ZWdvcnlJZCI6IjYyMzRiZTA3LTJmZGUtNDc1Ni1hN2NkLTU1MDgzM2YzOTcxMCIsInRpdGxlIjoi6YCa5L+h5Y2P6K6uIn1dLCJ0b3BpY3MiOlt7InRvcGljSWQiOiIyNGxjMjU2IiwidGl0bGUiOiIyNExDMjU2IEVFUFJPTSIsImNhdGVnb3J5SWQiOiIyNmZjZjRhMy04NTMxLTRjMGUtYjMxOC00OTJkMmY2ZjAzMTQiLCJhY3RpdmVDb3VudCI6NCwiYXJjaGl2ZWRDb3VudCI6MH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJ0aXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJjYXRlZ29yeUlkIjoiMWY5MjgxMzMtMTkwYi00NTg1LTgwNDYtNGNiZGNjZTA1NDFjIiwiYWN0aXZlQ291bnQiOjE1LCJhcmNoaXZlZENvdW50IjowfSx7InRvcGljSWQiOiJjLWRhdGEtYW5kLXJlZ2lzdGVycyIsInRpdGxlIjoiQ+ivreiogOaVsOaNruS4juWvhOWtmOWZqOiuv+mXriIsImNhdGVnb3J5SWQiOiIwMzQwN2Q1Yy1mYTEyLTQyODAtODYxYy1jOGUxZGE5MDA3YjEiLCJhY3RpdmVDb3VudCI6NCwiYXJjaGl2ZWRDb3VudCI6MH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1ncGlvIiwidGl0bGUiOiJHUElPIOmAmueUqOWfuuehgCIsImNhdGVnb3J5SWQiOiIxZjkyODEzMy0xOTBiLTQ1ODUtODA0Ni00Y2JkY2NlMDU0MWMiLCJhY3RpdmVDb3VudCI6MiwiYXJjaGl2ZWRDb3VudCI6MH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1pMmMiLCJ0aXRsZSI6IkkyQyDpgJrnlKjln7rnoYAiLCJjYXRlZ29yeUlkIjoiNjIzNGJlMDctMmZkZS00NzU2LWE3Y2QtNTUwODMzZjM5NzEwIiwiYWN0aXZlQ291bnQiOjM5LCJhcmNoaXZlZENvdW50IjowfSx7InRvcGljSWQiOiJnZW5lcmFsLXNwaSIsInRpdGxlIjoiU1BJIOmAmueUqOWfuuehgCIsImNhdGVnb3J5SWQiOiI2MjM0YmUwNy0yZmRlLTQ3NTYtYTdjZC01NTA4MzNmMzk3MTAiLCJhY3RpdmVDb3VudCI6NywiYXJjaGl2ZWRDb3VudCI6MH0seyJ0b3BpY0lkIjoic3RtMzJmMTAzLWFkYyIsInRpdGxlIjoiU1RNMzJGMSBBREMiLCJjYXRlZ29yeUlkIjoiOTViZjFjNTktM2M1MS00ZDMzLTg4MzQtOTliOGZkMDE4ZjMxIiwiYWN0aXZlQ291bnQiOjI4LCJhcmNoaXZlZENvdW50IjowfSx7InRvcGljSWQiOiJzdG0zMmYxMDMtaTJjIiwidGl0bGUiOiJTVE0zMkYxIEkyQyIsImNhdGVnb3J5SWQiOiI5NWJmMWM1OS0zYzUxLTRkMzMtODgzNC05OWI4ZmQwMThmMzEiLCJhY3RpdmVDb3VudCI6MTI0LCJhcmNoaXZlZENvdW50IjowfSx7InRvcGljSWQiOiJzdG0zMmYxMDMtc3BpIiwidGl0bGUiOiJTVE0zMkYxIFNQSSIsImNhdGVnb3J5SWQiOiI5NWJmMWM1OS0zYzUxLTRkMzMtODgzNC05OWI4ZmQwMThmMzEiLCJhY3RpdmVDb3VudCI6MTUsImFyY2hpdmVkQ291bnQiOjB9LHsidG9waWNJZCI6Im01LXRyaWFsLXVhcnQtbGV2ZWwtMiIsInRpdGxlIjoiU1RNMzJGMSBVQVJUIOS4juWvhOWtmOWZqCIsImNhdGVnb3J5SWQiOiI5NWJmMWM1OS0zYzUxLTRkMzMtODgzNC05OWI4ZmQwMThmMzEiLCJhY3RpdmVDb3VudCI6NjgsImFyY2hpdmVkQ291bnQiOjB9LHsidG9waWNJZCI6InN0bTMyZjEwMy1ncGlvIiwidGl0bGUiOiJTVE0zMkYxMDNSQ1Q2IEdQSU8g6Zi25q616Ieq5rWL6aKYIiwiY2F0ZWdvcnlJZCI6Ijk1YmYxYzU5LTNjNTEtNGQzMy04ODM0LTk5YjhmZDAxOGYzMSIsImFjdGl2ZUNvdW50Ijo3OCwiYXJjaGl2ZWRDb3VudCI6MH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC11YXJ0IiwidGl0bGUiOiJVQVJUIOmAmueUqOWfuuehgCIsImNhdGVnb3J5SWQiOiI2MjM0YmUwNy0yZmRlLTQ3NTYtYTdjZC01NTA4MzNmMzk3MTAiLCJhY3RpdmVDb3VudCI6MTcsImFyY2hpdmVkQ291bnQiOjB9LHsidG9waWNJZCI6IncyNXExNi1zcGktbm9yIiwidGl0bGUiOiJXMjVRMTYgU1BJIE5PUiIsImNhdGVnb3J5SWQiOiIyNmZjZjRhMy04NTMxLTRjMGUtYjMxOC00OTJkMmY2ZjAzMTQiLCJhY3RpdmVDb3VudCI6MTgsImFyY2hpdmVkQ291bnQiOjB9XSwicXVlc3Rpb25zIjpbeyJ0b3BpY0lkIjoiMjRsYzI1NiIsInF1ZXN0aW9uSWQiOiJpMmMxLTAyOSIsInZlcnNpb25JZCI6MzMyLCJ0aXRsZSI6IjI0TEMyNTblhoXpg6jlnLDlnYDlrr3luqYiLCJ0b3BpY1RpdGxlIjoiMjRMQzI1NiBFRVBST00iLCJ0YWdzIjpbIkVFUFJPTSIsIuWcsOWdgCIsIuWNlemAiemimCJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiMjRsYzI1NiIsInF1ZXN0aW9uSWQiOiJpMmMxLTAzMCIsInZlcnNpb25JZCI6MzMzLCJ0aXRsZSI6IkVFUFJPTeW6lOetlOS4juWGmeWujOaIkCIsInRvcGljVGl0bGUiOiIyNExDMjU2IEVFUFJPTSIsInRhZ3MiOlsiRUVQUk9NIiwi5YaZ5ZGo5pyfIiwi5Y2V6YCJ6aKYIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiIyNGxjMjU2IiwicXVlc3Rpb25JZCI6ImkyYzEtMDUxIiwidmVyc2lvbklkIjozMzQsInRpdGxlIjoi5pWw5o2uQUNL562J5LqO5oyB5LmF5YyW5ZCXIiwidG9waWNUaXRsZSI6IjI0TEMyNTYgRUVQUk9NIiwidGFncyI6WyJFRVBST00iLCLlhpnlkajmnJ8iLCLliKTmlq3popgiXSwiZGlmZmljdWx0eSI6IuWfuuehgCIsImFyY2hpdmVkIjpmYWxzZSwiZmF2b3JpdGUiOmZhbHNlLCJwcmFjdGljZWQiOmZhbHNlLCJjb250ZW50VXBkYXRlZCI6ZmFsc2UsImN1cnJlbnRSYXRpbmciOm51bGx9LHsidG9waWNJZCI6IjI0bGMyNTYiLCJxdWVzdGlvbklkIjoiaTJjMS0wNzMiLCJ2ZXJzaW9uSWQiOjMzNSwidGl0bGUiOiJFRVBST03ot6jpobXmi4bliIYiLCJ0b3BpY1RpdGxlIjoiMjRMQzI1NiBFRVBST00iLCJ0YWdzIjpbIkVFUFJPTSIsIumhteWGmSIsIuiuoeeul+mimCJdLCJkaWZmaWN1bHR5Ijoi57u85ZCIIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjLWdlbmVyYWwtMDAxIiwidmVyc2lvbklkIjo0MDEsInRpdGxlIjoi5Yy65YiG5YiG6L6o546H44CB57yW56CB5pWw6YeP5LiO55CG5oOz6YeP5YyW5q2l6ZW/IiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIuWIhui+qOeOh+S4jumHj+WMliIsIuiuoeeul+mimCJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjLWdlbmVyYWwtMDAyIiwidmVyc2lvbklkIjo0MDIsInRpdGxlIjoi6auY5rqQ6Zi75oqX5Li65LuA5LmI5Y+v6IO96ZyA6KaB5pu06ZW/6YeH5qC35pe26Ze0IiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIumHh+agt+S/neaMgSIsIueUteawlOaOpeWPoyIsIuaVhemanOaOkuafpSJdLCJkaWZmaWN1bHR5Ijoi6L+b6Zi2IiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjMS0wMDEiLCJ2ZXJzaW9uSWQiOjQwMywidGl0bGUiOiJBREPnmoTln7rmnKzlip/og70iLCJ0b3BpY1RpdGxlIjoiQURDIOmAmueUqOWfuuehgCIsInRhZ3MiOlsiQURDIiwi6YeP5YyWIiwi5Y2V6YCJ6aKYIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiJnZW5lcmFsLWFkYyIsInF1ZXN0aW9uSWQiOiJhZGMxLTAwMiIsInZlcnNpb25JZCI6NDA0LCJ0aXRsZSI6IjEy5L2N57yW56CB6IyD5Zu0IiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIuWIhui+qOeOhyIsIuWNlemAiemimCJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjMS0wMDMiLCJ2ZXJzaW9uSWQiOjQwNSwidGl0bGUiOiLljYrph4/nqIvnmoTov5HkvLznvJbnoIEiLCJ0b3BpY1RpdGxlIjoiQURDIOmAmueUqOWfuuehgCIsInRhZ3MiOlsiQURDIiwi5Y+C6ICD55S15Y6LIiwi5Y2V6YCJ6aKYIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiJnZW5lcmFsLWFkYyIsInF1ZXN0aW9uSWQiOiJhZGMxLTAwNiIsInZlcnNpb25JZCI6NDA2LCJ0aXRsZSI6IumrmOa6kOmYu+aKl+S4jumHh+agt+aXtumXtCIsInRvcGljVGl0bGUiOiJBREMg6YCa55So5Z+656GAIiwidGFncyI6WyJBREMiLCLph4fmoLflu7rnq4siLCLljZXpgInpopgiXSwiZGlmZmljdWx0eSI6IuWfuuehgCIsImFyY2hpdmVkIjpmYWxzZSwiZmF2b3JpdGUiOmZhbHNlLCJwcmFjdGljZWQiOmZhbHNlLCJjb250ZW50VXBkYXRlZCI6ZmFsc2UsImN1cnJlbnRSYXRpbmciOm51bGx9LHsidG9waWNJZCI6ImdlbmVyYWwtYWRjIiwicXVlc3Rpb25JZCI6ImFkYzEtMDEyIiwidmVyc2lvbklkIjo0MDcsInRpdGxlIjoi5bmz5Z2H5ruk5rOi6IO95YGa5LuA5LmIIiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIuW5s+Wdh+a7pOazoiIsIuWNlemAiemimCJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjMS0wMTMiLCJ2ZXJzaW9uSWQiOjQwOCwidGl0bGUiOiLnvJbnoIHmlbDkuI7mnIDpq5jnoIHliKTmlq0iLCJ0b3BpY1RpdGxlIjoiQURDIOmAmueUqOWfuuehgCIsInRhZ3MiOlsiQURDIiwi5YiG6L6o546HIiwi5Yik5pat6aKYIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiJnZW5lcmFsLWFkYyIsInF1ZXN0aW9uSWQiOiJhZGMxLTAxNiIsInZlcnNpb25JZCI6NDA5LCJ0aXRsZSI6IuacgOefremHh+agt+aXtumXtOaYr+WQpuacgOS9syIsInRvcGljVGl0bGUiOiJBREMg6YCa55So5Z+656GAIiwidGFncyI6WyJBREMiLCLph4fmoLflu7rnq4siLCLliKTmlq3popgiXSwiZGlmZmljdWx0eSI6IuWfuuehgCIsImFyY2hpdmVkIjpmYWxzZSwiZmF2b3JpdGUiOmZhbHNlLCJwcmFjdGljZWQiOmZhbHNlLCJjb250ZW50VXBkYXRlZCI6ZmFsc2UsImN1cnJlbnRSYXRpbmciOm51bGx9LHsidG9waWNJZCI6ImdlbmVyYWwtYWRjIiwicXVlc3Rpb25JZCI6ImFkYzEtMDIyIiwidmVyc2lvbklkIjo0MTAsInRpdGxlIjoi5bmz5Z2H5qyh5pWw5LiO5Zu65a6a6K+v5beuIiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIuW5s+Wdh+a7pOazoiIsIuWIpOaWremimCJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjMS0wMjMiLCJ2ZXJzaW9uSWQiOjQxMSwidGl0bGUiOiLkvY3mlbDnvJbnoIHmlbDkuI7mnIDpq5jnoIEiLCJ0b3BpY1RpdGxlIjoiQURDIOmAmueUqOWfuuehgCIsInRhZ3MiOlsiQURDIiwi5YiG6L6o546HIiwi5qaC5b+16L6o5p6QIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiJnZW5lcmFsLWFkYyIsInF1ZXN0aW9uSWQiOiJhZGMxLTAyNCIsInZlcnNpb25JZCI6NDEyLCJ0aXRsZSI6IuWPguiAg+eUteWOi+W9seWTjeaNoueulyIsInRvcGljVGl0bGUiOiJBREMg6YCa55So5Z+656GAIiwidGFncyI6WyJBREMiLCLlj4LogIPnlLXljosiLCLmpoLlv7XovqjmnpAiXSwiZGlmZmljdWx0eSI6Iui/m+mYtiIsImFyY2hpdmVkIjpmYWxzZSwiZmF2b3JpdGUiOmZhbHNlLCJwcmFjdGljZWQiOmZhbHNlLCJjb250ZW50VXBkYXRlZCI6ZmFsc2UsImN1cnJlbnRSYXRpbmciOm51bGx9LHsidG9waWNJZCI6ImdlbmVyYWwtYWRjIiwicXVlc3Rpb25JZCI6ImFkYzEtMDI5IiwidmVyc2lvbklkIjo0MTMsInRpdGxlIjoi55CG5oOz6YeP5YyW5q2l6ZW/6K6h566XIiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIumHj+WMliIsIuiuoeeul+mimCJdLCJkaWZmaWN1bHR5Ijoi6L+b6Zi2IiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjMS0wMzAiLCJ2ZXJzaW9uSWQiOjQxNCwidGl0bGUiOiLnq6/ngrnmmKDlsITnlLXljovmjaLnrpciLCJ0b3BpY1RpdGxlIjoiQURDIOmAmueUqOWfuuehgCIsInRhZ3MiOlsiQURDIiwi5Y+C6ICD55S15Y6LIiwi6K6h566X6aKYIl0sImRpZmZpY3VsdHkiOiLov5vpmLYiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiJnZW5lcmFsLWFkYyIsInF1ZXN0aW9uSWQiOiJhZGMxLTAzMyIsInZlcnNpb25JZCI6NDE1LCJ0aXRsZSI6IuW5s+Wdh+WAvOS4jue0r+WKoOa6ouWHuiIsInRvcGljVGl0bGUiOiJBREMg6YCa55So5Z+656GAIiwidGFncyI6WyJBREMiLCLlubPlnYfmu6Tms6IiLCLmlbTmlbDmuqLlh7oiLCLorqHnrpfpopgiXSwiZGlmZmljdWx0eSI6Iui/m+mYtiIsImFyY2hpdmVkIjpmYWxzZSwiZmF2b3JpdGUiOmZhbHNlLCJwcmFjdGljZWQiOmZhbHNlLCJjb250ZW50VXBkYXRlZCI6ZmFsc2UsImN1cnJlbnRSYXRpbmciOm51bGx9LHsidG9waWNJZCI6ImMtZGF0YS1hbmQtcmVnaXN0ZXJzIiwicXVlc3Rpb25JZCI6InVhcnQxLTAxMSIsInZlcnNpb25JZCI6NDE2LCJ0aXRsZSI6IuWtl+espuS4suWvueixoeaJgOmcgOepuumXtCIsInRvcGljVGl0bGUiOiJD6K+t6KiA5pWw5o2u5LiO5a+E5a2Y5Zmo6K6/6ZeuIiwidGFncyI6WyJD6K+t6KiAIiwi5a2X56ym5LiyIiwi5Y2V6YCJ6aKYIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfV19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7c3ec67379e123384e14-afa76dd7f6fdb8a1b258",
+          "file": "personal-bank.spec.ts",
+          "line": 141,
+          "column": 5
+        },
+        {
+          "title": "旧118题学习记录保护、更新后旧轮/新轮、正常重开与419题完整备份恢复",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15199,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('完整备份已导出并校验。', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('完整备份已导出并校验。', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('完整备份已导出并校验。', { exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('完整备份已导出并校验。', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('完整备份已导出并校验。', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('完整备份已导出并校验。', { exact: true })\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts:303:66",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts",
+                      "column": 66,
+                      "line": 303
+                    },
+                    "snippet": "  301 |     await openPage(page, '设置与数据')\n  302 |     await page.getByRole('button', { name: '导出完整备份', exact: true }).click()\n> 303 |     await expect(page.getByText('完整备份已导出并校验。', { exact: true })).toBeVisible()\n      |                                                                  ^\n  304 |     const favorite = await page.evaluate(() =>\n  305 |       (globalThis as unknown as { desktop: DesktopApi }).desktop.library.setFavorite({\n  306 |         topicId: 'stm32f103-gpio',"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts",
+                        "column": 66,
+                        "line": 303
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('完整备份已导出并校验。', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('完整备份已导出并校验。', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('完整备份已导出并校验。', { exact: true })\u001b[22m\n\n\n  301 |     await openPage(page, '设置与数据')\n  302 |     await page.getByRole('button', { name: '导出完整备份', exact: true }).click()\n> 303 |     await expect(page.getByText('完整备份已导出并校验。', { exact: true })).toBeVisible()\n      |                                                                  ^\n  304 |     const favorite = await page.evaluate(() =>\n  305 |       (globalThis as unknown as { desktop: DesktopApi }).desktop.library.setFavorite({\n  306 |         topicId: 'stm32f103-gpio',\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts:303:66"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T10:14:45.388Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "runtime.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcbm9kZV9tb2R1bGVzXFxlbGVjdHJvblxcZGlzdFxcZWxlY3Ryb24uZXhlIiwiYXBwUGF0aCI6IkU6XFxNeV9Qcm9qZWN0c1xcZW1iZWRkZWQtcHJhY3RpY2VcXG91dFxcbWFpbiIsIm5hbWUiOiJFbGVjdHJvbiIsInZlcnNpb24iOiI0Mi4xMS4xNSIsInBhY2thZ2VkIjpmYWxzZSwidXNlckRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtMFRQSmlCIiwiZWxlY3Ryb24iOiI0Mi4xMS4xNSJ9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\v000-personal-20261024\\targeted-02\\personal-bank-旧118题学习记录保护、更新后旧轮-新轮、正常重开与419题完整备份恢复-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts",
+                    "column": 66,
+                    "line": 303
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7c3ec67379e123384e14-bd14a52fa15f074275bf",
+          "file": "personal-bank.spec.ts",
+          "line": 213,
+          "column": 5
+        },
+        {
+          "title": "全量419题首次/重复导入、13专题归属、板块计数和三级难度筛选",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4189,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T10:15:00.980Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "runtime.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxccmVsZWFzZVxcVjAuMC4wLXBlcnNvbmFsLTIwMjYxMDI0LjRcXHdpbi11bnBhY2tlZFxcZW1iZWRkZWQtcHJhY3RpY2UuZXhlIiwiYXBwUGF0aCI6IkU6XFxNeV9Qcm9qZWN0c1xcZW1iZWRkZWQtcHJhY3RpY2VcXHJlbGVhc2VcXFYwLjAuMC1wZXJzb25hbC0yMDI2MTAyNC40XFx3aW4tdW5wYWNrZWRcXHJlc291cmNlc1xcYXBwLmFzYXIiLCJuYW1lIjoiZW1iZWRkZWQtcHJhY3RpY2UiLCJ2ZXJzaW9uIjoiMC4wLjAiLCJwYWNrYWdlZCI6dHJ1ZSwidXNlckRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtS0x3YXo1IiwiZWxlY3Ryb24iOiI0Mi4xMS4xNSJ9"
+                    },
+                    {
+                      "name": "419-topic-navigation.json",
+                      "contentType": "application/json",
+                      "body": "eyJyZXZpc2lvbiI6MTksInRvdGFsIjo0MTksInBhZ2UiOjEsInBhZ2VTaXplIjoyMCwidGFnT3B0aW9ucyI6WyJBQ0siLCJBREMiLCJBRERSIiwiQUYiLCJBRklPIiwiQVJMTyIsIkJFUlIiLCJCUlIiLCJCU1JSIiwiQlRGIiwiQlVTWSIsIkNDUiIsIkNQSEEiLCJDUE9MIiwiQ1IxIiwiQ1IyIiwiQ1JIIiwiQ1JMIiwiQ+ivreiogCIsIkRNQSIsIkVFUFJPTSIsIkVPQyIsIkdQSU8iLCJJMkMiLCJJRFIiLCJMRUQiLCJOQUNLIiwiTk9SIiwiT0RSIiwiT1JFIiwiT1ZSIiwiUE9TIiwiUkNDIiwiUlhORSIsIlNCIiwiU1BJIiwiU1BMIiwiU1IiLCJUQyIsIlRYRSIsIlVBUlQiLCJXRUwiLCJ2b2xhdGlsZSIsIuS4iuS4i+aLiSIsIuS4iuaLieeUtemYuyIsIuS4reaWrSIsIuS6i+S7tiIsIuS6i+S7tuWIhuaekCIsIuS7o+eggeWuoeafpSIsIuS9jeWtl+autSIsIuS9jeW6jyIsIuS9jeaOqeeggSIsIuS9jeaTjeS9nCIsIuS/oeWPt+e6vyIsIuWFqOWPjOW3pSIsIuWGmeWRqOacnyIsIuWHveaVsOWIhuaekCIsIuWHveaVsOi+qOaekCIsIuWIhui+qOeOhyIsIuWIhui+qOeOh+S4jumHj+WMliIsIuWIneWni+WMliIsIuWIneWni+WMluaXtuW6jyIsIuWIpOaWremimCIsIuWLmOivryIsIuWNj+iuruWIhuaekCIsIuWNj+iuruWfuuehgCIsIuWNj+iuruiuvuiuoSIsIuWNlemAiemimCIsIuWPguiAg+eUteWOiyIsIuWPkemAgeaXtuW6jyIsIuWRveS7pCIsIuWZqOS7tuWNj+iuriIsIuWcsOWdgCIsIuWcsOWdgOe8lueggSIsIuWhq+epuumimCIsIuWkjeeUqOWKn+iDvSIsIuWkluiuvuWunuS+iyIsIuWkmumAiemimCIsIuWtl+espuS4siIsIuWtl+espue8lueggSIsIuWtl+iKguW6jyIsIuWvhOWtmOWZqCIsIuW4p+agvOW8jyIsIuW5s+Wdh+a7pOazoiIsIuW5tuWPkeWIhuaekCIsIuW8gOa8jyIsIuW8gOa8j+S4juS4iuaLiSIsIuW8leiEmuaYoOWwhCIsIuaAu+e6v+aBouWkjSIsIuaAu+e6v+aXtuW6jyIsIuaDheaZr+WIhuaekCIsIuaJq+aPj+W6j+WIlyIsIuaMiemUriIsIuaOkuW6j+mimCIsIuaOpeWPo+iuvuiuoSIsIuaOpeaUtuaXtuW6jyIsIuaVhemanOWIhuaekCIsIuaVhemanOWumuS9jSIsIuaVhemanOaOkuafpSIsIuaVsOaNruS/neaKpCIsIuaVsOaNruWvhOWtmOWZqCIsIuaVsOaNruWvuem9kCIsIuaVtOaVsOa6ouWHuiIsIuaWueWQkeWIhuaekCIsIuaXtuW6j+WIhuaekCIsIuaXtumSnyIsIuaXtumSn+WIhumikSIsIuaXtumSn+agkSIsIuagoeWHhiIsIuagoemqjOS9jSIsIuamguW/tei+qOaekCIsIuamguW/temimCIsIuaooeWdl+iuvuiuoSIsIuaooeW8j+i+qOaekCIsIua1geeoi+WIhuaekCIsIua1geeoi+iuvuiuoSIsIua1i+ivleiuvuiuoSIsIua2iOaBr+i+ueeVjCIsIua2iOaKliIsIua6kOeggeWIhuaekCIsIueJh+mAieaXtuW6jyIsIueJqeeQhui/nuaOpSIsIueKtuaAgeWIhuWxgiIsIueKtuaAgeaOqOWvvCIsIueKtuaAgeacuiIsIueKtuaAgeagh+W/lyIsIueUteW5s+WIhuaekCIsIueUteawlOaOpeWPoyIsIueUteawlOeJueaApyIsIueUtei3r+WIhuaekCIsIue8k+WGsuWMuiIsIue8luivkeaooeW8jyIsIuiuoeeul+WIhuaekCIsIuiuoeeul+mimCIsIuiuvuWkh+Wvu+WdgCIsIuiwg+eUqOmTviIsIuiwg+ivleWJr+S9nOeUqCIsIuiwg+ivleW3peWFtyIsIuiwg+ivleaWueazlSIsIui1hOaWmeaguOWvuSIsIui2heaXtiIsIui9rOaNouaXtumXtCIsIui9rOaNouaooeW8jyIsIui9ruivoiIsIui9r+S7tua2iOaKliIsIui+k+WFpeaooeW8jyIsIui+k+WHuuaooeW8jyIsIui+ueeVjOWIhuaekCIsIui/lOWbnuWAvCIsIumAmumBk+aYoOWwhCIsIumHh+agt+S/neaMgSIsIumHh+agt+W7uueriyIsIumHjeWkjVNUQVJUIiwi6YeP5YyWIiwi6ZSZ6K+v5YiG57G7Iiwi6ZSZ6K+v5aSE55CGIiwi6ZSZ6K+v5oGi5aSNIiwi6ZSZ6K+v5qCH5b+XIiwi6aG15YaZIiwi6aG157yW56iLIiwi6aG16L6555WMIiwi6amx5Yqo6K6+6K6hIiwi6amx5Yqo6YCf5bqmIiwi6aqM6K+B6K6+6K6hIl0sImNhdGVnb3JpZXMiOlt7ImNhdGVnb3J5SWQiOiJjNzAxY2IzYS1kYjZhLTQyYjEtYjg3OS1lNmYzODdmOTVmMjkiLCJ0aXRsZSI6IkPor63oqIAifSx7ImNhdGVnb3J5SWQiOiJlODIzODY5OS1kOTllLTRlOTEtOTllYS1jN2RhNzU4ZGI3YTYiLCJ0aXRsZSI6Ik1DVeS4juWkluiuvuWOn+eQhiJ9LHsiY2F0ZWdvcnlJZCI6ImQwMzgyYjZjLWRlM2YtNGE3Zi05ZGEwLTcyYzA2NmZmYTdjYyIsInRpdGxlIjoiU1RNMzIifSx7ImNhdGVnb3J5SWQiOiIxMzkzZTBmYi00NDNhLTQyMTktYWNhYy1kZTZjNWQ3MWQ3M2YiLCJ0aXRsZSI6IuWtmOWCqOS4juaWh+S7tuezu+e7nyJ9LHsiY2F0ZWdvcnlJZCI6ImQ4Y2U3MGY5LWQyNTgtNGJlNy05Y2MzLTE3MDVjZDg2NDVlNyIsInRpdGxlIjoi6YCa5L+h5Y2P6K6uIn1dLCJ0b3BpY3MiOlt7InRvcGljSWQiOiIyNGxjMjU2IiwidGl0bGUiOiIyNExDMjU2IEVFUFJPTSIsImNhdGVnb3J5SWQiOiIxMzkzZTBmYi00NDNhLTQyMTktYWNhYy1kZTZjNWQ3MWQ3M2YiLCJhY3RpdmVDb3VudCI6NCwiYXJjaGl2ZWRDb3VudCI6MH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJ0aXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJjYXRlZ29yeUlkIjoiZTgyMzg2OTktZDk5ZS00ZTkxLTk5ZWEtYzdkYTc1OGRiN2E2IiwiYWN0aXZlQ291bnQiOjE1LCJhcmNoaXZlZENvdW50IjowfSx7InRvcGljSWQiOiJjLWRhdGEtYW5kLXJlZ2lzdGVycyIsInRpdGxlIjoiQ+ivreiogOaVsOaNruS4juWvhOWtmOWZqOiuv+mXriIsImNhdGVnb3J5SWQiOiJjNzAxY2IzYS1kYjZhLTQyYjEtYjg3OS1lNmYzODdmOTVmMjkiLCJhY3RpdmVDb3VudCI6NCwiYXJjaGl2ZWRDb3VudCI6MH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1ncGlvIiwidGl0bGUiOiJHUElPIOmAmueUqOWfuuehgCIsImNhdGVnb3J5SWQiOiJlODIzODY5OS1kOTllLTRlOTEtOTllYS1jN2RhNzU4ZGI3YTYiLCJhY3RpdmVDb3VudCI6MiwiYXJjaGl2ZWRDb3VudCI6MH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1pMmMiLCJ0aXRsZSI6IkkyQyDpgJrnlKjln7rnoYAiLCJjYXRlZ29yeUlkIjoiZDhjZTcwZjktZDI1OC00YmU3LTljYzMtMTcwNWNkODY0NWU3IiwiYWN0aXZlQ291bnQiOjM5LCJhcmNoaXZlZENvdW50IjowfSx7InRvcGljSWQiOiJnZW5lcmFsLXNwaSIsInRpdGxlIjoiU1BJIOmAmueUqOWfuuehgCIsImNhdGVnb3J5SWQiOiJkOGNlNzBmOS1kMjU4LTRiZTctOWNjMy0xNzA1Y2Q4NjQ1ZTciLCJhY3RpdmVDb3VudCI6NywiYXJjaGl2ZWRDb3VudCI6MH0seyJ0b3BpY0lkIjoic3RtMzJmMTAzLWFkYyIsInRpdGxlIjoiU1RNMzJGMSBBREMiLCJjYXRlZ29yeUlkIjoiZDAzODJiNmMtZGUzZi00YTdmLTlkYTAtNzJjMDY2ZmZhN2NjIiwiYWN0aXZlQ291bnQiOjI4LCJhcmNoaXZlZENvdW50IjowfSx7InRvcGljSWQiOiJzdG0zMmYxMDMtaTJjIiwidGl0bGUiOiJTVE0zMkYxIEkyQyIsImNhdGVnb3J5SWQiOiJkMDM4MmI2Yy1kZTNmLTRhN2YtOWRhMC03MmMwNjZmZmE3Y2MiLCJhY3RpdmVDb3VudCI6MTI0LCJhcmNoaXZlZENvdW50IjowfSx7InRvcGljSWQiOiJzdG0zMmYxMDMtc3BpIiwidGl0bGUiOiJTVE0zMkYxIFNQSSIsImNhdGVnb3J5SWQiOiJkMDM4MmI2Yy1kZTNmLTRhN2YtOWRhMC03MmMwNjZmZmE3Y2MiLCJhY3RpdmVDb3VudCI6MTUsImFyY2hpdmVkQ291bnQiOjB9LHsidG9waWNJZCI6Im01LXRyaWFsLXVhcnQtbGV2ZWwtMiIsInRpdGxlIjoiU1RNMzJGMSBVQVJUIOS4juWvhOWtmOWZqCIsImNhdGVnb3J5SWQiOiJkMDM4MmI2Yy1kZTNmLTRhN2YtOWRhMC03MmMwNjZmZmE3Y2MiLCJhY3RpdmVDb3VudCI6NjgsImFyY2hpdmVkQ291bnQiOjB9LHsidG9waWNJZCI6InN0bTMyZjEwMy1ncGlvIiwidGl0bGUiOiJTVE0zMkYxMDNSQ1Q2IEdQSU8g6Zi25q616Ieq5rWL6aKYIiwiY2F0ZWdvcnlJZCI6ImQwMzgyYjZjLWRlM2YtNGE3Zi05ZGEwLTcyYzA2NmZmYTdjYyIsImFjdGl2ZUNvdW50Ijo3OCwiYXJjaGl2ZWRDb3VudCI6MH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC11YXJ0IiwidGl0bGUiOiJVQVJUIOmAmueUqOWfuuehgCIsImNhdGVnb3J5SWQiOiJkOGNlNzBmOS1kMjU4LTRiZTctOWNjMy0xNzA1Y2Q4NjQ1ZTciLCJhY3RpdmVDb3VudCI6MTcsImFyY2hpdmVkQ291bnQiOjB9LHsidG9waWNJZCI6IncyNXExNi1zcGktbm9yIiwidGl0bGUiOiJXMjVRMTYgU1BJIE5PUiIsImNhdGVnb3J5SWQiOiIxMzkzZTBmYi00NDNhLTQyMTktYWNhYy1kZTZjNWQ3MWQ3M2YiLCJhY3RpdmVDb3VudCI6MTgsImFyY2hpdmVkQ291bnQiOjB9XSwicXVlc3Rpb25zIjpbeyJ0b3BpY0lkIjoiMjRsYzI1NiIsInF1ZXN0aW9uSWQiOiJpMmMxLTAyOSIsInZlcnNpb25JZCI6MzMyLCJ0aXRsZSI6IjI0TEMyNTblhoXpg6jlnLDlnYDlrr3luqYiLCJ0b3BpY1RpdGxlIjoiMjRMQzI1NiBFRVBST00iLCJ0YWdzIjpbIkVFUFJPTSIsIuWcsOWdgCIsIuWNlemAiemimCJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiMjRsYzI1NiIsInF1ZXN0aW9uSWQiOiJpMmMxLTAzMCIsInZlcnNpb25JZCI6MzMzLCJ0aXRsZSI6IkVFUFJPTeW6lOetlOS4juWGmeWujOaIkCIsInRvcGljVGl0bGUiOiIyNExDMjU2IEVFUFJPTSIsInRhZ3MiOlsiRUVQUk9NIiwi5YaZ5ZGo5pyfIiwi5Y2V6YCJ6aKYIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiIyNGxjMjU2IiwicXVlc3Rpb25JZCI6ImkyYzEtMDUxIiwidmVyc2lvbklkIjozMzQsInRpdGxlIjoi5pWw5o2uQUNL562J5LqO5oyB5LmF5YyW5ZCXIiwidG9waWNUaXRsZSI6IjI0TEMyNTYgRUVQUk9NIiwidGFncyI6WyJFRVBST00iLCLlhpnlkajmnJ8iLCLliKTmlq3popgiXSwiZGlmZmljdWx0eSI6IuWfuuehgCIsImFyY2hpdmVkIjpmYWxzZSwiZmF2b3JpdGUiOmZhbHNlLCJwcmFjdGljZWQiOmZhbHNlLCJjb250ZW50VXBkYXRlZCI6ZmFsc2UsImN1cnJlbnRSYXRpbmciOm51bGx9LHsidG9waWNJZCI6IjI0bGMyNTYiLCJxdWVzdGlvbklkIjoiaTJjMS0wNzMiLCJ2ZXJzaW9uSWQiOjMzNSwidGl0bGUiOiJFRVBST03ot6jpobXmi4bliIYiLCJ0b3BpY1RpdGxlIjoiMjRMQzI1NiBFRVBST00iLCJ0YWdzIjpbIkVFUFJPTSIsIumhteWGmSIsIuiuoeeul+mimCJdLCJkaWZmaWN1bHR5Ijoi57u85ZCIIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjLWdlbmVyYWwtMDAxIiwidmVyc2lvbklkIjo0MDEsInRpdGxlIjoi5Yy65YiG5YiG6L6o546H44CB57yW56CB5pWw6YeP5LiO55CG5oOz6YeP5YyW5q2l6ZW/IiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIuWIhui+qOeOh+S4jumHj+WMliIsIuiuoeeul+mimCJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjLWdlbmVyYWwtMDAyIiwidmVyc2lvbklkIjo0MDIsInRpdGxlIjoi6auY5rqQ6Zi75oqX5Li65LuA5LmI5Y+v6IO96ZyA6KaB5pu06ZW/6YeH5qC35pe26Ze0IiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIumHh+agt+S/neaMgSIsIueUteawlOaOpeWPoyIsIuaVhemanOaOkuafpSJdLCJkaWZmaWN1bHR5Ijoi6L+b6Zi2IiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjMS0wMDEiLCJ2ZXJzaW9uSWQiOjQwMywidGl0bGUiOiJBREPnmoTln7rmnKzlip/og70iLCJ0b3BpY1RpdGxlIjoiQURDIOmAmueUqOWfuuehgCIsInRhZ3MiOlsiQURDIiwi6YeP5YyWIiwi5Y2V6YCJ6aKYIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiJnZW5lcmFsLWFkYyIsInF1ZXN0aW9uSWQiOiJhZGMxLTAwMiIsInZlcnNpb25JZCI6NDA0LCJ0aXRsZSI6IjEy5L2N57yW56CB6IyD5Zu0IiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIuWIhui+qOeOhyIsIuWNlemAiemimCJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjMS0wMDMiLCJ2ZXJzaW9uSWQiOjQwNSwidGl0bGUiOiLljYrph4/nqIvnmoTov5HkvLznvJbnoIEiLCJ0b3BpY1RpdGxlIjoiQURDIOmAmueUqOWfuuehgCIsInRhZ3MiOlsiQURDIiwi5Y+C6ICD55S15Y6LIiwi5Y2V6YCJ6aKYIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiJnZW5lcmFsLWFkYyIsInF1ZXN0aW9uSWQiOiJhZGMxLTAwNiIsInZlcnNpb25JZCI6NDA2LCJ0aXRsZSI6IumrmOa6kOmYu+aKl+S4jumHh+agt+aXtumXtCIsInRvcGljVGl0bGUiOiJBREMg6YCa55So5Z+656GAIiwidGFncyI6WyJBREMiLCLph4fmoLflu7rnq4siLCLljZXpgInpopgiXSwiZGlmZmljdWx0eSI6IuWfuuehgCIsImFyY2hpdmVkIjpmYWxzZSwiZmF2b3JpdGUiOmZhbHNlLCJwcmFjdGljZWQiOmZhbHNlLCJjb250ZW50VXBkYXRlZCI6ZmFsc2UsImN1cnJlbnRSYXRpbmciOm51bGx9LHsidG9waWNJZCI6ImdlbmVyYWwtYWRjIiwicXVlc3Rpb25JZCI6ImFkYzEtMDEyIiwidmVyc2lvbklkIjo0MDcsInRpdGxlIjoi5bmz5Z2H5ruk5rOi6IO95YGa5LuA5LmIIiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIuW5s+Wdh+a7pOazoiIsIuWNlemAiemimCJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjMS0wMTMiLCJ2ZXJzaW9uSWQiOjQwOCwidGl0bGUiOiLnvJbnoIHmlbDkuI7mnIDpq5jnoIHliKTmlq0iLCJ0b3BpY1RpdGxlIjoiQURDIOmAmueUqOWfuuehgCIsInRhZ3MiOlsiQURDIiwi5YiG6L6o546HIiwi5Yik5pat6aKYIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiJnZW5lcmFsLWFkYyIsInF1ZXN0aW9uSWQiOiJhZGMxLTAxNiIsInZlcnNpb25JZCI6NDA5LCJ0aXRsZSI6IuacgOefremHh+agt+aXtumXtOaYr+WQpuacgOS9syIsInRvcGljVGl0bGUiOiJBREMg6YCa55So5Z+656GAIiwidGFncyI6WyJBREMiLCLph4fmoLflu7rnq4siLCLliKTmlq3popgiXSwiZGlmZmljdWx0eSI6IuWfuuehgCIsImFyY2hpdmVkIjpmYWxzZSwiZmF2b3JpdGUiOmZhbHNlLCJwcmFjdGljZWQiOmZhbHNlLCJjb250ZW50VXBkYXRlZCI6ZmFsc2UsImN1cnJlbnRSYXRpbmciOm51bGx9LHsidG9waWNJZCI6ImdlbmVyYWwtYWRjIiwicXVlc3Rpb25JZCI6ImFkYzEtMDIyIiwidmVyc2lvbklkIjo0MTAsInRpdGxlIjoi5bmz5Z2H5qyh5pWw5LiO5Zu65a6a6K+v5beuIiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIuW5s+Wdh+a7pOazoiIsIuWIpOaWremimCJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjMS0wMjMiLCJ2ZXJzaW9uSWQiOjQxMSwidGl0bGUiOiLkvY3mlbDnvJbnoIHmlbDkuI7mnIDpq5jnoIEiLCJ0b3BpY1RpdGxlIjoiQURDIOmAmueUqOWfuuehgCIsInRhZ3MiOlsiQURDIiwi5YiG6L6o546HIiwi5qaC5b+16L6o5p6QIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiJnZW5lcmFsLWFkYyIsInF1ZXN0aW9uSWQiOiJhZGMxLTAyNCIsInZlcnNpb25JZCI6NDEyLCJ0aXRsZSI6IuWPguiAg+eUteWOi+W9seWTjeaNoueulyIsInRvcGljVGl0bGUiOiJBREMg6YCa55So5Z+656GAIiwidGFncyI6WyJBREMiLCLlj4LogIPnlLXljosiLCLmpoLlv7XovqjmnpAiXSwiZGlmZmljdWx0eSI6Iui/m+mYtiIsImFyY2hpdmVkIjpmYWxzZSwiZmF2b3JpdGUiOmZhbHNlLCJwcmFjdGljZWQiOmZhbHNlLCJjb250ZW50VXBkYXRlZCI6ZmFsc2UsImN1cnJlbnRSYXRpbmciOm51bGx9LHsidG9waWNJZCI6ImdlbmVyYWwtYWRjIiwicXVlc3Rpb25JZCI6ImFkYzEtMDI5IiwidmVyc2lvbklkIjo0MTMsInRpdGxlIjoi55CG5oOz6YeP5YyW5q2l6ZW/6K6h566XIiwidG9waWNUaXRsZSI6IkFEQyDpgJrnlKjln7rnoYAiLCJ0YWdzIjpbIkFEQyIsIumHj+WMliIsIuiuoeeul+mimCJdLCJkaWZmaWN1bHR5Ijoi6L+b6Zi2IiwiYXJjaGl2ZWQiOmZhbHNlLCJmYXZvcml0ZSI6ZmFsc2UsInByYWN0aWNlZCI6ZmFsc2UsImNvbnRlbnRVcGRhdGVkIjpmYWxzZSwiY3VycmVudFJhdGluZyI6bnVsbH0seyJ0b3BpY0lkIjoiZ2VuZXJhbC1hZGMiLCJxdWVzdGlvbklkIjoiYWRjMS0wMzAiLCJ2ZXJzaW9uSWQiOjQxNCwidGl0bGUiOiLnq6/ngrnmmKDlsITnlLXljovmjaLnrpciLCJ0b3BpY1RpdGxlIjoiQURDIOmAmueUqOWfuuehgCIsInRhZ3MiOlsiQURDIiwi5Y+C6ICD55S15Y6LIiwi6K6h566X6aKYIl0sImRpZmZpY3VsdHkiOiLov5vpmLYiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfSx7InRvcGljSWQiOiJnZW5lcmFsLWFkYyIsInF1ZXN0aW9uSWQiOiJhZGMxLTAzMyIsInZlcnNpb25JZCI6NDE1LCJ0aXRsZSI6IuW5s+Wdh+WAvOS4jue0r+WKoOa6ouWHuiIsInRvcGljVGl0bGUiOiJBREMg6YCa55So5Z+656GAIiwidGFncyI6WyJBREMiLCLlubPlnYfmu6Tms6IiLCLmlbTmlbDmuqLlh7oiLCLorqHnrpfpopgiXSwiZGlmZmljdWx0eSI6Iui/m+mYtiIsImFyY2hpdmVkIjpmYWxzZSwiZmF2b3JpdGUiOmZhbHNlLCJwcmFjdGljZWQiOmZhbHNlLCJjb250ZW50VXBkYXRlZCI6ZmFsc2UsImN1cnJlbnRSYXRpbmciOm51bGx9LHsidG9waWNJZCI6ImMtZGF0YS1hbmQtcmVnaXN0ZXJzIiwicXVlc3Rpb25JZCI6InVhcnQxLTAxMSIsInZlcnNpb25JZCI6NDE2LCJ0aXRsZSI6IuWtl+espuS4suWvueixoeaJgOmcgOepuumXtCIsInRvcGljVGl0bGUiOiJD6K+t6KiA5pWw5o2u5LiO5a+E5a2Y5Zmo6K6/6ZeuIiwidGFncyI6WyJD6K+t6KiAIiwi5a2X56ym5LiyIiwi5Y2V6YCJ6aKYIl0sImRpZmZpY3VsdHkiOiLln7rnoYAiLCJhcmNoaXZlZCI6ZmFsc2UsImZhdm9yaXRlIjpmYWxzZSwicHJhY3RpY2VkIjpmYWxzZSwiY29udGVudFVwZGF0ZWQiOmZhbHNlLCJjdXJyZW50UmF0aW5nIjpudWxsfV19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7c3ec67379e123384e14-6b34bab0bca10eb9d383",
+          "file": "personal-bank.spec.ts",
+          "line": 141,
+          "column": 5
+        },
+        {
+          "title": "旧118题学习记录保护、更新后旧轮/新轮、正常重开与419题完整备份恢复",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15697,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('完整备份已导出并校验。', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('完整备份已导出并校验。', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('完整备份已导出并校验。', { exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('完整备份已导出并校验。', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('完整备份已导出并校验。', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('完整备份已导出并校验。', { exact: true })\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts:303:66",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts",
+                      "column": 66,
+                      "line": 303
+                    },
+                    "snippet": "  301 |     await openPage(page, '设置与数据')\n  302 |     await page.getByRole('button', { name: '导出完整备份', exact: true }).click()\n> 303 |     await expect(page.getByText('完整备份已导出并校验。', { exact: true })).toBeVisible()\n      |                                                                  ^\n  304 |     const favorite = await page.evaluate(() =>\n  305 |       (globalThis as unknown as { desktop: DesktopApi }).desktop.library.setFavorite({\n  306 |         topicId: 'stm32f103-gpio',"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts",
+                        "column": 66,
+                        "line": 303
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('完整备份已导出并校验。', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('完整备份已导出并校验。', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('完整备份已导出并校验。', { exact: true })\u001b[22m\n\n\n  301 |     await openPage(page, '设置与数据')\n  302 |     await page.getByRole('button', { name: '导出完整备份', exact: true }).click()\n> 303 |     await expect(page.getByText('完整备份已导出并校验。', { exact: true })).toBeVisible()\n      |                                                                  ^\n  304 |     const favorite = await page.evaluate(() =>\n  305 |       (globalThis as unknown as { desktop: DesktopApi }).desktop.library.setFavorite({\n  306 |         topicId: 'stm32f103-gpio',\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts:303:66"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T10:15:05.192Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "runtime.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxccmVsZWFzZVxcVjAuMC4wLXBlcnNvbmFsLTIwMjYxMDI0LjRcXHdpbi11bnBhY2tlZFxcZW1iZWRkZWQtcHJhY3RpY2UuZXhlIiwiYXBwUGF0aCI6IkU6XFxNeV9Qcm9qZWN0c1xcZW1iZWRkZWQtcHJhY3RpY2VcXHJlbGVhc2VcXFYwLjAuMC1wZXJzb25hbC0yMDI2MTAyNC40XFx3aW4tdW5wYWNrZWRcXHJlc291cmNlc1xcYXBwLmFzYXIiLCJuYW1lIjoiZW1iZWRkZWQtcHJhY3RpY2UiLCJ2ZXJzaW9uIjoiMC4wLjAiLCJwYWNrYWdlZCI6dHJ1ZSwidXNlckRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtbW1uNDZtIiwiZWxlY3Ryb24iOiI0Mi4xMS4xNSJ9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\v000-personal-20261024\\targeted-02\\personal-bank-旧118题学习记录保护、更新后旧轮-新轮、正常重开与419题完整备份恢复-packaged\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts",
+                    "column": 66,
+                    "line": 303
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7c3ec67379e123384e14-4408fd836f3d56b07318",
+          "file": "personal-bank.spec.ts",
+          "line": 213,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T10:14:40.483Z",
+    "duration": 40425.695,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

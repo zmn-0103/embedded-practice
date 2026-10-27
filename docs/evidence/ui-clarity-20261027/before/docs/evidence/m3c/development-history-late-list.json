@@ -1,0 +1,56 @@
+{
+  "channel": "history:list",
+  "held": 1,
+  "returned": {
+    "started": 1,
+    "returned": 1
+  },
+  "target": {
+    "topicId": "history-a",
+    "questionId": "q-2",
+    "currentVersionId": 2,
+    "archived": false,
+    "total": 2,
+    "page": 1,
+    "pageSize": 20,
+    "entries": [
+      {
+        "sessionId": "d60d9b51-1bf7-4817-a242-8377a1809b0a",
+        "position": 1,
+        "versionId": 2,
+        "versionSequence": 1,
+        "isCurrentVersion": true,
+        "title": "历史题 2",
+        "topicTitle": "历史专题 A",
+        "mode": "sequential",
+        "sessionStatus": "finished",
+        "createdAt": "2026-10-21T09:27:49.744Z",
+        "endedAt": "2026-10-21T09:27:49.745Z",
+        "revealedAt": null,
+        "rating": null,
+        "ratedAt": null,
+        "skippedAt": "2026-10-21T09:27:49.745Z",
+        "hasDraft": false
+      },
+      {
+        "sessionId": "1bd8c85e-ebfe-4828-acb7-fef38906aa97",
+        "position": 1,
+        "versionId": 2,
+        "versionSequence": 1,
+        "isCurrentVersion": true,
+        "title": "历史题 2",
+        "topicTitle": "历史专题 A",
+        "mode": "sequential",
+        "sessionStatus": "finished",
+        "createdAt": "2026-10-21T09:27:49.734Z",
+        "endedAt": "2026-10-21T09:27:49.741Z",
+        "revealedAt": null,
+        "rating": null,
+        "ratedAt": null,
+        "skippedAt": "2026-10-21T09:27:49.741Z",
+        "hasDraft": false
+      }
+    ]
+  },
+  "unchanged": true
+}

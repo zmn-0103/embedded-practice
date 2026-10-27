@@ -1,0 +1,15 @@
+{
+  "dataDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp/embedded-practice-ui-v6-source-gFZh9Q",
+  "runtime": {
+    "packaged": true,
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp/embedded-practice-ui-v6-source-gFZh9Q"
+  },
+  "version": {
+    "user_version": 6
+  },
+  "sourceExecutable": "release/win-unpacked/embedded-practice.exe",
+  "sourceAsarSha256": "ff9cb31b662f2e9a029c5241aa7e51a81feb7cf8807d8eeee4093f904d8410d7",
+  "fixture": "tests/fixtures/schema-v6.sql",
+  "sha256": "8ff293b8d256fd597c2a537ab51edd289a4bf8ee1cb3dfaaa1326969d40d5294",
+  "initialPathGuard": "初次直接比较混合斜杠的路径字符串而停止输出；改为 path.resolve 比较，未重启或改数据库。"
+}

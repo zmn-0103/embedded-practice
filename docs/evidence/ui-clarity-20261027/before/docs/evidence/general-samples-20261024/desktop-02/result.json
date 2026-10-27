@@ -1,0 +1,201 @@
+{
+  "startedAt": "2026-10-24T02:48:46.143Z",
+  "dataDirectory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-general-samples-zcMB4a\\中文 数据",
+  "events": [
+    {
+      "phase": "import",
+      "files": [
+        "question-banks/general/GPIO通用基础.md",
+        "question-banks/general/UART通用基础.md",
+        "question-banks/general/SPI通用基础.md",
+        "question-banks/general/I2C通用基础.md",
+        "question-banks/general/ADC通用基础.md"
+      ],
+      "counts": [
+        "10",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "phase": "import",
+      "files": [
+        "question-banks/general/GPIO通用基础.md",
+        "question-banks/general/UART通用基础.md",
+        "question-banks/general/SPI通用基础.md",
+        "question-banks/general/I2C通用基础.md",
+        "question-banks/general/ADC通用基础.md"
+      ],
+      "counts": [
+        "0",
+        "0",
+        "0",
+        "10",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "errors": [],
+  "checks": {
+    "tenQuestionAnswerPairsAndMetadataExact": true,
+    "categoryQueueDraftAndRatingsSurviveCloseAndReimport": true,
+    "allTenAnswersHiddenThenRevealedAndRated": true,
+    "inputsUnchangedByRun": true
+  },
+  "exercisedQuestionIds": [
+    "adc-general-001",
+    "adc-general-002",
+    "gpio-general-001",
+    "gpio-general-002",
+    "i2c-general-001",
+    "i2c-general-002",
+    "spi-general-001",
+    "spi-general-002",
+    "uart-general-001",
+    "uart-general-002"
+  ],
+  "boundary": "新建临时库；显式结构9解包EXE；仅文件选择框替身。自评和草稿为自动化合成输入，不代表用户掌握、内容审阅、原生输入、硬件或安装验收。",
+  "runtime": {
+    "executable": "E:\\My_Projects\\embedded-practice\\release\\practice-plans-20261024\\win-unpacked\\embedded-practice.exe",
+    "sha256": "2a2aa6340bb8aa2aeae3334493ced1466f1ad851bb8a3e4bacc973c17b331990",
+    "userData": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-general-samples-zcMB4a\\中文 数据",
+    "packaged": true,
+    "versions": {
+      "node": "24.19.0",
+      "acorn": "8.17.0",
+      "ada": "3.4.4",
+      "amaro": "1.1.10",
+      "ares": "1.34.6",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.2",
+      "llhttp": "9.4.3",
+      "merve": "1.2.2",
+      "modules": "146",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.69.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "openssl": "0.0.0",
+      "simdjson": "4.6.4",
+      "simdutf": "7.7.0",
+      "sqlite": "3.53.3",
+      "tz": "2025c",
+      "undici": "7.29.0",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "14.8.178.38-electron.0",
+      "zlib": "1.3.2.1-motley",
+      "zstd": "1.6.0",
+      "electron": "42.11.15",
+      "chrome": "148.0.7778.280"
+    },
+    "size": [
+      1140,
+      780
+    ]
+  },
+  "actualExecutable": "E:\\My_Projects\\embedded-practice\\release\\practice-plans-20261024\\win-unpacked\\embedded-practice.exe",
+  "schema": 9,
+  "protectedBeforeSha256": "4e176ae9e657b5d7bdb1e2a97afe6a362860c114029266f7b0dc034f2fe2b155",
+  "protectedAfterReimportSha256": "4e176ae9e657b5d7bdb1e2a97afe6a362860c114029266f7b0dc034f2fe2b155",
+  "finalDatabase": {
+    "bytes": 172032,
+    "counts": {
+      "topics": 5,
+      "questions": 10,
+      "question_versions": 10,
+      "image_resources": 0,
+      "practice_sessions": 1,
+      "practice_items": 10
+    },
+    "integrity": [
+      {
+        "integrity_check": "ok"
+      }
+    ],
+    "foreignKeys": [],
+    "images": [],
+    "versions": [
+      {
+        "questionId": "adc-general-001",
+        "versionId": 9,
+        "sequence": 1,
+        "question": "一个理想的单极性 ADC 输出 12 位无符号直二进制编码，输入量程为 0～3.3 V。按“满量程跨度除以编码数量”定义理想量化步长，不采用端点映射公式。\n\n请分别给出编码数量、最小与最大编码、一个理想量化步长对应的毫伏值。为什么“最大编码是 4095”不表示编码数量只有 4095？仅凭 12 位分辨率，能否保证实际测量误差小于一个量化步长？",
+        "answer": "**核心结论：** 12 位共有 `2^12 = 4096` 个编码，从 0 到 4095。理想量化步长为 `3.3 V / 4096 ≈ 0.805664 mV`。\n\n**必要解释：** 最大编码是从零开始编号的最后一个值，编码数量还要包括 0。量化步长使用 `2^N`；把最大编码映射到量程端点的近似换算会使用 `2^N - 1`，两者用途不同，不能混用。\n\n**成立条件：** 本题只讨论给定编码方式与理想步长。真实系统还受参考电压、偏移、增益、非线性、噪声及输入电路影响；位数不能单独保证测量准确度，也不能由此断言所有 ADC 都采用无符号编码。\n\n#### 技术依据\n\n[NXP AN5250，第 2.3.2 节：分辨率及 LSB](https://www.nxp.com/docs/en/application-note/AN5250.pdf)、[Analog Devices：ADC 准确度与误差来源](https://www.analog.com/en/resources/technical-articles/an-inside-look-at-high-speed-analog-to-digital-converter-accuracy-part-one.html)。只使用通用量化与误差概念，不沿用示例芯片配置。"
+      },
+      {
+        "questionId": "adc-general-002",
+        "versionId": 10,
+        "sequence": 1,
+        "question": "某 SAR ADC 的输入端具有采样开关和保持电容。现测量一个稳定且在量程内的直流电压，信号源阻抗较高。假设本次采样开始时电容电压明显低于输入电压；采样窗口很短，其他误差暂忽略。结果出现偏低，延长采样窗口后读数逐渐接近期望值。\n\n请从电容建立过程解释这一现象。延长“采样窗口”和“转换结束后再多等一会儿”是否等价？请提出两项可以检查或改善的方向，并说明能否据此保证任意 ADC 都恢复准确。",
+        "answer": "**核心结论：** 采样期间电容通过信号源阻抗和内部开关等通路充电。高阻抗使建立变慢；按本题初始条件，过早进入保持、转换阶段会保留偏低电压。\n\n**必要解释：** 延长采样窗口给电容更多建立时间；转换完成后额外等待不会补充已经结束的这次采样。可核对所需建立时间并增加采样窗口，或降低信号源等效阻抗、使用满足要求的缓冲器；同时确认采样速率是否允许调整。\n\n**成立条件：** 应结合输入等效模型、源阻抗、通道切换和数据手册要求判断。偏差方向取决于初始电压等条件；本题不把所有读数偏低归因于采样时间，也不把 SAR 电容模型推广到所有 ADC 架构。\n\n#### 技术依据\n\n[Microchip：SAR ADC 采样建立时间、源阻抗与保持电容](https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/acquisition-time/)。本题为条件分析，没有板上测量或滤波效果验收。"
+      },
+      {
+        "questionId": "gpio-general-001",
+        "versionId": 1,
+        "sequence": 1,
+        "question": "比较两种输出结构：推挽输出可以主动驱动高、低电平；开漏输出只能主动拉低，关闭下拉管时释放线路。开漏线路通过一个合适的电阻上拉到 3.3 V，所有连接器件共地，且允许该电压、电流和时序条件。\n\n开漏输出“释放线路”和“主动输出高电平”有什么区别？没有有效上拉时，能否保证释放后的线路为高电平？为什么不能仅因引脚支持开漏，就认定可以上拉到任意电压？",
+        "answer": "**核心结论：** 推挽用输出级主动建立高、低电平；开漏释放时呈高阻，由上拉和外部负载共同决定电压，并非主动驱动高电平。\n\n**必要解释：** 本题中，无器件拉低且负载合适时，上拉使线路回到高电平；取消有效上拉后，释放状态可能悬空，不能保证读为高。上升速度受上拉电阻与线路电容影响；电阻也要满足拉低电流限制。\n\n**成立条件：** 上拉电压必须符合所有连接引脚的额定值、供电状态和输入门限。开漏结构本身不等于任意电压容忍或安全的电平转换。\n\n#### 技术依据\n\n[TI SCPA070，第 7 节：推挽与开漏输出结构](https://www.ti.com/lit/pdf/scpa070)。本题只提取电气原理，不使用该器件的寄存器配置。"
+      },
+      {
+        "questionId": "gpio-general-002",
+        "versionId": 2,
+        "sequence": 1,
+        "question": "某机械按键松开时由上拉保持高电平，按下时接地。程序上电时按键已松开，每 1 ms 采样一次。一次按下可能出现高低反复，长按期间保持低电平。\n\n需求是每次有效按下只产生一个事件，长按不重复触发。拟采用“候选电平从首次观测起，连续观测保持至少 10 ms 才更新确认状态；观测到变化则重新计时”的规则。请描述所需状态，以及按下、长按和松开时如何处理。两次采样相同是否足以证明中间没有抖动？",
+        "answer": "**核心结论：** 分别保存确认状态、候选电平和候选起始时刻。候选变化时重新计时；候选持续满足规则后，才更新确认状态。\n\n**必要解释：** 确认状态从高变低时发出一次按下事件；确认状态一直为低时不再发出。稳定松开后确认状态回到高，才允许下一次按下产生事件。等待期间可继续做其他工作，无需忙等 10 ms。\n\n**成立条件：** 10 ms 是本题策略参数，需按真实按键、采样周期和响应要求确定。两次相同不能证明两次之间一直稳定；周期采样也可能漏掉更短的变化。消抖与长按、连发等事件规则需要分别设计。\n\n#### 技术依据\n\n[TI SCEA094：机械开关抖动与误触发](https://www.ti.com/document-viewer/lit/html/scea094)、[Microchip：消抖方案及其取舍](https://onlinedocs.microchip.com/oxy/GUID-7FD12F93-9B28-4EF0-B36F-3A147484BEA1-en-US-3/GUID-4FD2FC7D-3F31-40C0-8745-7CEB40796CF5.html)。状态转换是按本题需求提出的设计思路，没有提供或验证硬件实现。"
+      },
+      {
+        "questionId": "i2c-general-001",
+        "versionId": 7,
+        "sequence": 1,
+        "question": "某 I2C 目标设备的 7 位地址为 `0x29`。采用普通 7 位寻址，START 后的地址字节按“7 位地址在高 7 位，最低位 R/W：写为 0、读为 1”组成，不讨论 10 位寻址或特殊地址。\n\n请计算写方向、读方向的线上地址字节。若换用一个未说明参数格式的驱动接口，能否据此认定它一定要传 `0x29`，或者一定要传左移后的值？请解释。",
+        "answer": "**核心结论：** 写方向为 `(0x29 << 1) | 0 = 0x52`；读方向为 `(0x29 << 1) | 1 = 0x53`。二者的 7 位目标地址相同，差别在读写方向。\n\n**必要解释：** 7 位设备地址、线上地址字节和驱动接口参数是三个层面的概念。有的接口接收原始 7 位地址并自行编码，有的要求调用者预先移位，还可能另传方向参数，必须查接口契约。\n\n**常见误区：** 看到数据手册或分析仪显示一个数就直接作为接口参数，或重复移位；应先确认文档显示的是 7 位地址还是包含 R/W 的 8 位值。\n\n#### 技术依据\n\n[NXP UM10204 Rev.7.0，第 3.1.10 节：目标地址与 R/W 位](https://www.nxp.com/docs/en/user-guide/UM10204.pdf)。驱动参数由具体接口决定，不从协议位格式推定某个库的行为。"
+      },
+      {
+        "questionId": "i2c-general-002",
+        "versionId": 8,
+        "sequence": 1,
+        "question": "单控制器 I2C 总线上，目标设备的 7 位地址为 `0x29`。器件协议明确要求：先写入一个 8 位寄存器指针 `0x10`，不发送 STOP，使用重复 START 切换为读方向，再连续读取 2 字节；内部地址自动递增。最后一个字节由控制器发送 NACK，随后 STOP。假设目标设备正常应答，线路与时序满足要求。\n\n请写出完整事务，标明每个地址或数据字节的方向，以及 ACK/NACK 由谁产生。为什么不能把“寄存器指针、地址递增、重复 START”视为所有 I2C 器件都相同的规定？",
+        "answer": "**核心结论：** 事务为：START → 控制器发 `0x52` → 目标 ACK → 控制器发 `0x10` → 目标 ACK → 重复 START → 控制器发 `0x53` → 目标 ACK → 目标发第 1 字节 → 控制器 ACK → 目标发第 2 字节 → 控制器 NACK → STOP。\n\n**必要解释：** 字节的接收方在第九个时钟应答，控制器提供时钟。读地址仍由控制器发送，因此其 ACK 来自目标；读数据的接收方则变成控制器。末字节 NACK 表示不再继续读取，本题中是正常收尾。\n\n**成立条件：** 重复 START 在不先释放总线的情况下开始新的寻址阶段。寄存器指针宽度、递增方式及是否允许先 STOP 再读，须遵循目标器件协议；本题已明确要求组合事务。\n\n#### 技术依据\n\n[NXP UM10204 Rev.7.0，第 3.1.4、3.1.6、3.1.10 节及图 13：重复 START、应答与组合格式](https://www.nxp.com/docs/en/user-guide/UM10204.pdf)。寄存器行为是题设条件，不是对所有器件的推广。"
+      },
+      {
+        "questionId": "spi-general-001",
+        "versionId": 5,
+        "sequence": 1,
+        "question": "某四线 SPI 链路使用常见的 CPOL/CPHA 定义：CPOL 决定 SCK 空闲电平，CPHA=0 在离开空闲电平的第一个边沿采样，CPHA=1 在第二个边沿采样。双方工作模式一致，并满足器件规定的建立、保持与片选时序。\n\n当 CPOL=0、CPHA=0 时，SCK 空闲电平和采样边沿分别是什么？仅把双方 CPOL 改为 1、CPHA 仍为 0 时，采样边沿如何变化？为什么不能把“CPHA=0”直接等同于“上升沿采样”？",
+        "answer": "**核心结论：** CPOL=0、CPHA=0 时空闲为低，第一边沿为上升沿，因此在上升沿采样。CPOL=1、CPHA=0 时空闲为高，第一边沿变成下降沿，因此在下降沿采样。\n\n**必要解释：** 相位描述的是相对空闲电平的第一或第二边沿；上升、下降由极性共同决定。CPHA=0 时，首个被采样的数据位必须在第一个采样边沿前准备好。\n\n**成立条件：** 模式编号和配置名称需与实际器件时序图核对。模式一致只是必要条件，还要满足频率、数据建立/保持时间和片选要求，不能只看配置常量名称。\n\n#### 技术依据\n\n[Analog Devices：SPI 模式表与时序](https://www.analog.com/en/resources/analog-dialogue/articles/2018/08/13/15/31/introduction-to-spi-interface.html)、[AN-1248：由器件时序判断接口兼容性](https://www.analog.com/en/resources/app-notes/an-1248.html)。"
+      },
+      {
+        "questionId": "spi-general-002",
+        "versionId": 6,
+        "sequence": 1,
+        "question": "某四线全双工 SPI 器件规定：片选低有效，一次读取事务保持片选为低；先发送 1 字节命令，随后紧接 2 字节返回数据。每帧 8 bit，没有地址阶段、额外等待时钟或间隔要求；命令阶段的返回字节无意义。数据阶段器件允许控制器发送任意占位字节，模式与电气条件均已匹配。\n\n控制器发送命令后，能否停止产生 SCK、只等待 2 字节自动到来？请描述收发顺序，计算完整事务需要多少个 SCK 周期，并说明何时才能释放片选。无需写寄存器或驱动代码。",
+        "answer": "**核心结论：** 不能停止时钟后等待数据自行到来。控制器发送命令并处理、丢弃命令阶段的接收字节，再发送两个占位字节，为器件提供时钟，同时取得两个有效返回字节。\n\n**必要解释：** 每帧 8 个 SCK 周期，本题共 3 帧，因此需要 `3 × 8 = 24` 个周期。控制器提供时钟，MOSI 与 MISO 在传输时并行工作；发送占位数据并不表示把这些值写入器件业务寄存器。\n\n**成立条件：** 最后一帧实际完成且满足片选保持时间后才能释放片选。发送缓冲可写不必然表示线路已结束。实际事务的命令、占位值、额外时钟和片选边界都由目标器件协议决定；等待仍须处理错误与超时。\n\n#### 技术依据\n\n[Analog Devices：SPI 时钟、独立收发线与全双工传输](https://www.analog.com/en/resources/analog-dialogue/articles/2018/08/13/15/31/introduction-to-spi-interface.html)。24 周期及三帧事务由本题完整给定的协议推导，不代表某款 Flash 的命令。"
+      },
+      {
+        "questionId": "uart-general-001",
+        "versionId": 3,
+        "sequence": 1,
+        "question": "某普通二进制异步 UART 使用 115200 baud、8N1：每帧 1 个起始位、8 个数据位、无校验位、1 个停止位，每个符号承载 1 bit。连续发送 100 字节有效数据，没有额外帧间空闲、流控暂停、重发或应用层附加字节。\n\n请计算这批数据的理论线上传输时间和理论最大有效字节率。为什么 115200 baud 在这些条件下不等于每秒 115200 字节？为什么实际软件观察到的耗时可能更长？",
+        "answer": "**核心结论：** 每字节在线路上占 10 bit，100 字节占 1000 bit。理论时间为 `1000 / 115200 s ≈ 8.681 ms`；理论最大有效字节率为 `115200 / 10 = 11520 字节/秒`。\n\n**必要解释：** 起始位和停止位消耗传输时间，却不属于 8 位有效数据。这里每符号 1 bit，波特率的数值等于线路 bit 率；仍需按帧开销换算字节率。\n\n**成立条件：** 上述计算只覆盖给定字节流在线路上的时间。额外协议字节、调度、缓冲、流控和软件显示延迟都可能增加观察耗时；更改帧格式后应重新计算。\n\n#### 技术依据\n\n[Microchip USART Frame Formats：起始位、数据位、校验位和停止位](https://onlinedocs.microchip.com/oxy/GUID-7BB81102-57F6-474D-9BFE-B2AF8EA02A1E-en-US-5/GUID-F84E04E8-3235-4E21-89A9-D1911E9B91DD.html)。数值为按题设计算的理论结果，不是串口实测。"
+      },
+      {
+        "questionId": "uart-general-002",
+        "versionId": 4,
+        "sequence": 1,
+        "question": "应用约定 UART 字节流以 LF（`0x0A`）结束一条文本消息，LF 不存入消息。消息正文只允许可打印 ASCII 字符，不含 CR、LF 或 NUL；允许空消息。接收端使用容量为 32 字节的字符数组，交付时必须组成以 `\\0` 结尾的 C 字符串。\n\n请说明最多能交付多少字节正文、何时写入 `\\0`，以及如何接收刚好达到上限的消息。若消息超长，要求整条丢弃，不能把尾部误当下一条消息，应如何处理到下一条正常消息？UART 硬件能否自动完成这些应用约定？",
+        "answer": "**核心结论：** 最多保存 31 字节正文，另留 1 字节给 `\\0`。正常收到 LF 时在当前长度处写入 `\\0`，交付后重置长度；长度为 0 时交付空字符串。\n\n**必要解释：** 先识别 LF，再处理普通正文。已有 31 字节时，下一字节为 LF 仍是有效消息；若下一字节是普通正文，则判为超长，进入丢弃状态。丢弃期间不再写入数组或交付，直到收到 LF 才清空状态并开始接收下一条，不能立刻从超长消息中间重新计数。\n\n**成立条件：** 这是给定文本协议的处理策略。UART 传递字符帧，不替应用决定 LF 分隔、最大长度和超长恢复规则；`\\0` 是内存中的 C 字符串终止符，不是本协议在线路上的消息结束符。若改用二进制载荷，需另定分帧和长度规则。\n\n#### 技术依据\n\n[SEI CERT C STR31-C：字符数据与空终止符的空间要求](https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/characters-and-strings-str/str31-c/)。丢弃到 LF 的恢复策略来自本题协议要求，没有提供或验证驱动代码。"
+      }
+    ]
+  },
+  "completed": true,
+  "finishedAt": "2026-10-24T02:49:04.019Z"
+}

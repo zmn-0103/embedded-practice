@@ -1,0 +1,209 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\ep-review-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=tmp/merge-review-20261026/playwright.config.ts",
+      "--output=tmp/merge-review-20261026/probe-01",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/ep-review-20261026/tmp/merge-review-20261026",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/ep-review-20261026/tmp/merge-review-20261026/probe-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/ep-review-20261026/tmp/merge-review-20261026",
+        "testIgnore": [],
+        "testMatch": [
+          "probe.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026\\probe-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026",
+        "snapshotDir": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026",
+        "testIgnore": [],
+        "testMatch": "probe.spec.ts",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "probe.spec.ts",
+      "file": "probe.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "已提交版本：IPC错误码、拒绝跳题不写入及运行身份",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 943,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T11:23:58.718Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "ipc-and-identity.json",
+                      "contentType": "application/json",
+                      "body": "eyJpZGVudGl0eSI6eyJhcHBQYXRoIjoiRTpcXE15X1Byb2plY3RzXFxlcC1yZXZpZXctMjAyNjEwMjZcXG91dFxcbWFpbiIsInVzZXJEYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLXlySllLWSIsImV4ZWN1dGFibGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJwYWNrYWdlZCI6ZmFsc2V9LCJyZXN1bHQiOnsiaGlkZGVuIjp7Im9rIjp0cnVlLCJ2YWx1ZSI6eyJzZXNzaW9uIjp7InNlc3Npb25JZCI6IjNlYmMyMjBjLTY0YjQtNDIxNC05MWRkLTQxNzdmZjI0YWYwNSIsInN0YXR1cyI6ImFjdGl2ZSIsInBvc2l0aW9uIjowLCJyZXZpc2lvbiI6MCwidG90YWwiOjEsIm1vZGUiOiJzZXF1ZW50aWFsIiwidG9waWNJZCI6bnVsbCwiY2F0ZWdvcnkiOnsia2luZCI6ImFsbCJ9LCJmaWx0ZXJzIjp7InF1ZXJ5IjoiIiwidGFnIjpudWxsLCJkaWZmaWN1bHR5IjpudWxsLCJtYXN0ZXJ5IjoiYWxsIiwiZmF2b3JpdGVzT25seSI6ZmFsc2V9LCJjcmVhdGVkQXQiOiIyMDI2LTEwLTI2VDExOjIzOjU5LjQ5MFoiLCJlbmRlZEF0IjpudWxsLCJjb3VudHMiOnsicmV2ZWFsZWQiOjAsInJhdGVkIjowLCJ1bnJhdGVkIjowLCJza2lwcGVkIjowLCJyYXRpbmdzIjp7IuS4jeS8miI6MCwi5LiN54afIjowLCLmjozmj6EiOjB9fX0sIml0ZW0iOnsicG9zaXRpb24iOjAsInRvcGljSWQiOiJyZXZpZXctcHJvYmUiLCJxdWVzdGlvbklkIjoicHJvYmUtMSIsInZlcnNpb25JZCI6MSwidGl0bGUiOiLlrqHmoLjpopgiLCJ0b3BpY1RpdGxlIjoi5a6h5qC45aS55YW3IiwidGFncyI6WyLmo4Dmn6UiXSwiZGlmZmljdWx0eSI6IuWfuuehgCIsImJvZHkiOnsibWFya2Rvd24iOiLni6znq4vpopjlubIiLCJkZWZpbml0aW9ucyI6W10sImltYWdlQmluZGluZ3MiOltdfSwiZHJhZnQiOnsicmV2aXNpb24iOjAsInRleHQiOiIifSwicmF0aW5nIjpudWxsLCJza2lwcGVkQXQiOm51bGwsInJldmVhbGVkIjpmYWxzZSwicmV2ZWFsZWRBdCI6bnVsbH19fSwibmV4dEhpZGRlbiI6eyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJSRVZFQUxfUkVRVUlSRUQiLCJtZXNzYWdlIjoi6K+35YWI5o+t5pmT77yM5oiW6YCJ5oup6Lez6L+H5pys6aKY44CCIn19LCJiZWZvcmUiOnsib2siOnRydWUsInZhbHVlIjp7InNlc3Npb24iOnsic2Vzc2lvbklkIjoiM2ViYzIyMGMtNjRiNC00MjE0LTkxZGQtNDE3N2ZmMjRhZjA1Iiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjAsInJldmlzaW9uIjoxLCJ0b3RhbCI6MSwibW9kZSI6InNlcXVlbnRpYWwiLCJ0b3BpY0lkIjpudWxsLCJjYXRlZ29yeSI6eyJraW5kIjoiYWxsIn0sImZpbHRlcnMiOnsicXVlcnkiOiIiLCJ0YWciOm51bGwsImRpZmZpY3VsdHkiOm51bGwsIm1hc3RlcnkiOiJhbGwiLCJmYXZvcml0ZXNPbmx5IjpmYWxzZX0sImNyZWF0ZWRBdCI6IjIwMjYtMTAtMjZUMTE6MjM6NTkuNDkwWiIsImVuZGVkQXQiOm51bGwsImNvdW50cyI6eyJyZXZlYWxlZCI6MSwicmF0ZWQiOjAsInVucmF0ZWQiOjEsInNraXBwZWQiOjAsInJhdGluZ3MiOnsi5LiN5LyaIjowLCLkuI3nhp8iOjAsIuaOjOaPoSI6MH19fSwiaXRlbSI6eyJwb3NpdGlvbiI6MCwidG9waWNJZCI6InJldmlldy1wcm9iZSIsInF1ZXN0aW9uSWQiOiJwcm9iZS0xIiwidmVyc2lvbklkIjoxLCJ0aXRsZSI6IuWuoeaguOmimCIsInRvcGljVGl0bGUiOiLlrqHmoLjlpLnlhbciLCJ0YWdzIjpbIuajgOafpSJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYm9keSI6eyJtYXJrZG93biI6IueLrOeri+mimOW5siIsImRlZmluaXRpb25zIjpbXSwiaW1hZ2VCaW5kaW5ncyI6W119LCJkcmFmdCI6eyJyZXZpc2lvbiI6MCwidGV4dCI6IiJ9LCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbCwicmV2ZWFsZWQiOnRydWUsInJldmVhbGVkQXQiOiIyMDI2LTEwLTI2VDExOjIzOjU5LjQ5OFoiLCJhbnN3ZXIiOnsibWFya2Rvd24iOiLni6znq4vnrZTmoYgiLCJkZWZpbml0aW9ucyI6W10sImltYWdlQmluZGluZ3MiOltdfX19fSwic2tpcCI6eyJvayI6ZmFsc2UsImVycm9yIjp7ImNvZGUiOiJBTFJFQURZX1JFVkVBTEVEIiwibWVzc2FnZSI6IuacrOmimOW3sue7j+aPreaZk++8jOivt+mAieaLqeS4i+S4gOmimOaIluaaguS4jeivhOS7t+OAgiJ9fSwiYWZ0ZXIiOnsib2siOnRydWUsInZhbHVlIjp7InNlc3Npb24iOnsic2Vzc2lvbklkIjoiM2ViYzIyMGMtNjRiNC00MjE0LTkxZGQtNDE3N2ZmMjRhZjA1Iiwic3RhdHVzIjoiYWN0aXZlIiwicG9zaXRpb24iOjAsInJldmlzaW9uIjoxLCJ0b3RhbCI6MSwibW9kZSI6InNlcXVlbnRpYWwiLCJ0b3BpY0lkIjpudWxsLCJjYXRlZ29yeSI6eyJraW5kIjoiYWxsIn0sImZpbHRlcnMiOnsicXVlcnkiOiIiLCJ0YWciOm51bGwsImRpZmZpY3VsdHkiOm51bGwsIm1hc3RlcnkiOiJhbGwiLCJmYXZvcml0ZXNPbmx5IjpmYWxzZX0sImNyZWF0ZWRBdCI6IjIwMjYtMTAtMjZUMTE6MjM6NTkuNDkwWiIsImVuZGVkQXQiOm51bGwsImNvdW50cyI6eyJyZXZlYWxlZCI6MSwicmF0ZWQiOjAsInVucmF0ZWQiOjEsInNraXBwZWQiOjAsInJhdGluZ3MiOnsi5LiN5LyaIjowLCLkuI3nhp8iOjAsIuaOjOaPoSI6MH19fSwiaXRlbSI6eyJwb3NpdGlvbiI6MCwidG9waWNJZCI6InJldmlldy1wcm9iZSIsInF1ZXN0aW9uSWQiOiJwcm9iZS0xIiwidmVyc2lvbklkIjoxLCJ0aXRsZSI6IuWuoeaguOmimCIsInRvcGljVGl0bGUiOiLlrqHmoLjlpLnlhbciLCJ0YWdzIjpbIuajgOafpSJdLCJkaWZmaWN1bHR5Ijoi5Z+656GAIiwiYm9keSI6eyJtYXJrZG93biI6IueLrOeri+mimOW5siIsImRlZmluaXRpb25zIjpbXSwiaW1hZ2VCaW5kaW5ncyI6W119LCJkcmFmdCI6eyJyZXZpc2lvbiI6MCwidGV4dCI6IiJ9LCJyYXRpbmciOm51bGwsInNraXBwZWRBdCI6bnVsbCwicmV2ZWFsZWQiOnRydWUsInJldmVhbGVkQXQiOiIyMDI2LTEwLTI2VDExOjIzOjU5LjQ5OFoiLCJhbnN3ZXIiOnsibWFya2Rvd24iOiLni6znq4vnrZTmoYgiLCJkZWZpbml0aW9ucyI6W10sImltYWdlQmluZGluZ3MiOltdfX19fX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9223f0ac28d4fb57516f-8e8a9fe0e207d688bc54",
+          "file": "probe.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "已提交版本：恢复目录创建故障保留真实诊断",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 841,
+                  "error": {
+                    "message": "Error: page.evaluate: Error: {\"ok\":false,\"error\":{\"code\":\"FILE_ERROR\",\"message\":\"请选择运行数据目录以外的位置，避免覆盖正在使用的数据。\"}}\n    at eval (eval at evaluate (:370:30), <anonymous>:4:31)\n    at async <anonymous>:396:30",
+                    "stack": "Error: page.evaluate: Error: {\"ok\":false,\"error\":{\"code\":\"FILE_ERROR\",\"message\":\"请选择运行数据目录以外的位置，避免覆盖正在使用的数据。\"}}\n    at eval (eval at evaluate (:370:30), <anonymous>:4:31)\n    at async <anonymous>:396:30\n    at eval (eval at evaluate (:370:30), <anonymous>:4:31)\n    at async <anonymous>:396:30\n    at E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026\\probe.spec.ts:55:33",
+                    "location": {
+                      "file": "eval at evaluate (:370:30), <anonymous>",
+                      "column": 31,
+                      "line": 4
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "eval at evaluate (:370:30), <anonymous>",
+                        "column": 31,
+                        "line": 4
+                      },
+                      "message": "Error: page.evaluate: Error: {\"ok\":false,\"error\":{\"code\":\"FILE_ERROR\",\"message\":\"请选择运行数据目录以外的位置，避免覆盖正在使用的数据。\"}}\n    at eval (eval at evaluate (:370:30), <anonymous>:4:31)\n    at async <anonymous>:396:30\n    at eval (eval at evaluate (:370:30), <anonymous>:4:31)\n    at async <anonymous>:396:30\n    at E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026\\probe.spec.ts:55:33"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T11:23:59.692Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\ep-review-20261026\\tmp\\merge-review-20261026\\probe-01\\probe-已提交版本：恢复目录创建故障保留真实诊断-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "eval at evaluate (:370:30), <anonymous>",
+                    "column": 31,
+                    "line": 4
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "9223f0ac28d4fb57516f-6747ddc7f54982472469",
+          "file": "probe.spec.ts",
+          "line": 44,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-26T11:23:58.330Z",
+    "duration": 2245.915,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

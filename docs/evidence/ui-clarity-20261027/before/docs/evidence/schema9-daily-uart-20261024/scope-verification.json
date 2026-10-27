@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-24",
+  "baselineFiles": 5068,
+  "baselineSourceFiles": 301,
+  "modifiedExistingFiles": [
+    "README.md",
+    "docs/M5题目审阅与试用反馈.md",
+    "docs/README.md",
+    "docs/UART30题来源与技术核对.md",
+    "docs/代码复查记录.md",
+    "docs/开发记录.md",
+    "docs/当前试用版本交付说明.md",
+    "docs/题库分类与标签规范.md",
+    "docs/验收记录.md",
+    "question-banks/trials/README.md",
+    "question-banks/trials/STM32F103-UART第二层-30题试用.md"
+  ],
+  "newSourceFiles": [
+    "docs/结构9定向试用与UART修订.md",
+    "question-banks/trials/UART答案修订清单.json",
+    "scripts/check-uart-content.mjs"
+  ],
+  "unchangedBaselineFiles": 5057,
+  "preservedExistingEvidenceFiles": 4767,
+  "programFilesVerified": 124,
+  "programDifferences": [],
+  "programAddedFiles": [],
+  "backupCopiesVerified": 11,
+  "backupErrors": [],
+  "unexpectedModifiedFiles": [],
+  "missingBaselineFiles": [],
+  "unexpectedNewFiles": [],
+  "utf8FilesChecked": 16,
+  "utf8Errors": [],
+  "originalRecordsPreserved": true,
+  "contentDifferenceVerified": true,
+  "userReviewColumnsAndActualFeedbackPreserved": true,
+  "allThirtyAwaitUserReview": true,
+  "runtimeRevisionMapValuesMatchFinalMap": true,
+  "compilerSourceAndResultsMatch": true,
+  "oldReferencesPreserved": true,
+  "checksPassed": true
+}

@@ -1,0 +1,24 @@
+{
+  "scenarios": [
+    {
+      "mode": "development",
+      "directory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-review-1UKs2T",
+      "injection": "Hold first successful favorite response after real database write; return it after a newer cancellation has completed.",
+      "beforeStaleResponse": "Review · q-1Q1",
+      "afterStaleResponse": "Review · q-1Q1已收藏",
+      "databaseFavorite": false,
+      "detailFavorite": "false"
+    },
+    {
+      "mode": "packaged",
+      "directory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-review-ousBuM",
+      "injection": "Hold first successful favorite response after real database write; return it after a newer cancellation has completed.",
+      "beforeStaleResponse": "Review · q-1Q1",
+      "afterStaleResponse": "Review · q-1Q1已收藏",
+      "databaseFavorite": false,
+      "detailFavorite": "false"
+    }
+  ],
+  "packageMismatches": [],
+  "packageComparedFiles": 19
+}

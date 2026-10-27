@@ -1,0 +1,311 @@
+import { mkdir, mkdtemp, readFile, writeFile } from 'node:fs/promises'
+import { basename, dirname, join, relative, resolve } from 'node:path'
+import { tmpdir } from 'node:os'
+import { fileURLToPath } from 'node:url'
+import { DatabaseSync } from 'node:sqlite'
+import { assert, expect, hash, importBank, launch, openPage } from './m5-desktop-harness.mjs'
+
+export { launch, openPage }
+
+export async function createExperienceRun(samplesFile, outputDirectory) {
+  const samples = JSON.parse(await readFile(resolve(samplesFile), 'utf8'))
+  const root = resolve(samples.root)
+  assert.equal(relative(resolve(tmpdir()), dirname(root)), '')
+  assert(basename(root).startsWith('embedded-practice-m5d-'))
+  assert.equal(hash(await readFile(samples.bank)), samples.bankSha256)
+  assert.equal(hash(await readFile(samples.code)), samples.codeSha256)
+  for (const image of samples.images) assert.equal(hash(await readFile(image.path)), image.sha256)
+  const output = resolve(outputDirectory)
+  await mkdir(output)
+  const dataDirectory = await mkdtemp(join(root, '体验 数据-'))
+  const report = {
+    startedAt: new Date().toISOString(),
+    dataDirectory,
+    samplesFile: resolve(samplesFile),
+    scope: 'real unpacked Electron; explicit file-dialog selection replacement; real OS clipboard',
+    events: [],
+    errors: [],
+    checks: [],
+  }
+  const run = {
+    samples,
+    dataDirectory,
+    output,
+    report,
+    async save() {
+      await writeFile(join(output, 'result.json'), JSON.stringify(report, null, 2) + '\n')
+    },
+  }
+  await run.save()
+  return run
+}
+
+export async function captureExperience(instance, run, label) {
+  const desktop = await instance.application.evaluate(({ BrowserWindow, screen }) => {
+    const window = BrowserWindow.getAllWindows()[0]
+    return {
+      windowBounds: window.getBounds(),
+      display: screen.getDisplayMatching(window.getBounds()),
+      zoomFactor: window.webContents.getZoomFactor(),
+    }
+  })
+  const reading = await instance.page.evaluate(() => ({
+    viewport: { width: innerWidth, height: innerHeight, dpr: devicePixelRatio },
+    theme: document.documentElement.dataset.theme,
+    fontSize: document.documentElement.dataset.fontSize,
+    scroll: { x: scrollX, y: scrollY },
+    pageWidth: document.documentElement.scrollWidth,
+    focus: {
+      tag: document.activeElement?.tagName,
+      text: document.activeElement?.textContent?.slice(0, 100),
+    },
+  }))
+  await instance.page.screenshot({ path: join(run.output, `${label}.png`) })
+  const value = { label, ...desktop, ...reading }
+  run.report.events.push(value)
+  await run.save()
+  return value
+}
+
+export function snapshotExperience(directory) {
+  assert(basename(resolve(directory)).startsWith('体验 数据-'))
+  assert.equal(relative(resolve(tmpdir()), dirname(dirname(resolve(directory)))), '')
+  assert(basename(dirname(resolve(directory))).startsWith('embedded-practice-m5d-'))
+  const database = new DatabaseSync(join(directory, 'practice.sqlite3'), { readOnly: true })
+  try {
+    return {
+      integrity: database.prepare('PRAGMA integrity_check').all(),
+      foreignKeys: database.prepare('PRAGMA foreign_key_check').all(),
+      schema: database.prepare('PRAGMA user_version').get(),
+      sessions: database
+        .prepare('SELECT id, status, position, filters_json FROM practice_sessions')
+        .all(),
+      items: database
+        .prepare(
+          'SELECT position, draft, draft_revision, revealed_at, rating FROM practice_items ORDER BY session_id, position',
+        )
+        .all(),
+      settings: database.prepare('SELECT theme, font_size FROM appearance_settings').all(),
+    }
+  } finally {
+    database.close()
+  }
+}
+
+export async function prepareExperience(instance, run) {
+  await importBank(instance, run.samples.bank, run, '3-question reading fixture')
+  await openPage(instance.page, '开始练习')
+  await instance.page.getByRole('button', { name: '开始练习', exact: true }).click()
+  await expect(instance.page.getByLabel('练习进度')).toHaveText('第 1 / 3 题 · 顺序练习')
+}
+
+async function action(page, name) {
+  const button = page.getByRole('button', { name, exact: true })
+  await expect(button).toBeEnabled()
+  await button.click()
+}
+
+async function check(run) {
+  let instance
+  let clipboard
+  async function step(name, work) {
+    const result = { name, startedAt: new Date().toISOString(), status: 'running' }
+    run.report.checks.push(result)
+    await run.save()
+    await work()
+    result.status = 'passed'
+    await run.save()
+  }
+  try {
+    instance = await launch(run)
+    const { page, application } = instance
+    clipboard = await application.evaluate(({ clipboard }) => clipboard.readText())
+    await step('import, unrevealed answer and exact long code', async () => {
+      await prepareExperience(instance, run)
+      await expect(page.locator('.reference-answer')).toHaveCount(0)
+      await expect(page.locator('body')).not.toContainText('M5-LONG-ANSWER-SECRET')
+      const code = await readFile(run.samples.code, 'utf8')
+      assert.equal(await page.locator('.code-block code').textContent(), code)
+      const pre = page.locator('.code-block pre')
+      const scrolling = await pre.evaluate((element) => {
+        element.scrollLeft = 500
+        return {
+          width: element.clientWidth,
+          fullWidth: element.scrollWidth,
+          left: element.scrollLeft,
+          height: element.clientHeight,
+        }
+      })
+      assert(scrolling.fullWidth > scrolling.width && scrolling.left > 0)
+      assert(scrolling.height > 3 * (await page.evaluate(() => innerHeight)))
+      await action(page, '复制代码')
+      await expect(page.getByText('已复制', { exact: true })).toBeVisible()
+      const copied = await application.evaluate(({ clipboard }) => clipboard.readText())
+      assert.equal(copied, code)
+      run.report.events.push({
+        label: 'code-copy',
+        sha256: hash(Buffer.from(copied)),
+        ...scrolling,
+      })
+      await captureExperience(instance, run, '01-long-code')
+    })
+    await step('60 answer paragraphs, bottom navigation and previous question focus', async () => {
+      await action(page, '查看参考答案')
+      await expect(page.locator('.reference-answer p')).toHaveCount(61)
+      await page.locator('.reference-answer p').last().scrollIntoViewIfNeeded()
+      await expect(
+        page.getByRole('button', { name: '暂不评价，下一题', exact: true }),
+      ).toBeInViewport()
+      await captureExperience(instance, run, '02-long-answer-bottom')
+      await action(page, '暂不评价，下一题')
+      await expect(page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')
+      await expect(page.locator('.practice-heading h2')).toBeFocused()
+      await expect(page.locator('.practice-heading h2')).toBeInViewport()
+      await action(page, '上一题')
+      await expect(page.locator('.practice-heading h2')).toHaveText('多屏代码与长答案')
+      await expect(page.locator('.practice-heading h2')).toBeFocused()
+      await expect(page.locator('.practice-heading h2')).toBeInViewport()
+    })
+    await step('light 15px and dark 22px persisted display settings', async () => {
+      for (const [theme, fontSize] of [
+        ['light', '15'],
+        ['dark', '22'],
+      ]) {
+        await action(page, '返回首页')
+        await openPage(page, '设置与数据')
+        await page.getByLabel('显示主题', { exact: true }).selectOption(theme)
+        await page.getByLabel('正文字号', { exact: true }).selectOption(fontSize)
+        await action(page, '保存显示设置')
+        await expect(page.getByText('显示设置已保存。', { exact: true })).toBeVisible()
+        await openPage(page, '开始练习')
+        await action(page, '继续练习')
+        await expect(page.locator('html')).toHaveAttribute('data-theme', theme)
+        await expect(page.locator('html')).toHaveAttribute('data-font-size', fontSize)
+        const display = await captureExperience(instance, run, `03-${theme}-${fontSize}`)
+        assert(display.pageWidth <= display.viewport.width)
+      }
+      await action(page, '暂不评价，下一题')
+      await expect(page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')
+    })
+    await step('large PNG JPEG WebP decoding, zoom, scrolling, Escape and focus', async () => {
+      for (const image of run.samples.images) {
+        const opener = page.getByRole('button', {
+          name: `放大查看：${image.format} 大图`,
+          exact: true,
+        })
+        await opener.scrollIntoViewIfNeeded()
+        await expect(opener.locator('img')).toHaveJSProperty('naturalWidth', image.width)
+        await expect(opener.locator('img')).toHaveJSProperty('naturalHeight', image.height)
+        await opener.click()
+        const dialog = page.getByRole('dialog')
+        await expect(dialog).toBeVisible()
+        await action(page, '放大图片')
+        await expect(dialog.locator('img')).toHaveAttribute('width', String(image.width * 1.5))
+        const pan = await dialog.locator('.image-zoom-scroll').evaluate((element) => {
+          element.scrollTo(element.scrollWidth, element.scrollHeight)
+          return {
+            left: element.scrollLeft,
+            top: element.scrollTop,
+            width: element.clientWidth,
+            height: element.clientHeight,
+          }
+        })
+        assert(pan.left > 0 && pan.top > 0)
+        await captureExperience(instance, run, `04-${image.format}-zoom`)
+        await action(page, '缩小图片')
+        await expect(dialog.locator('img')).toHaveAttribute('width', String(image.width))
+        if (image.format === 'JPEG') await action(page, '关闭图片')
+        else await page.keyboard.press('Escape')
+        await expect(dialog).toHaveCount(0)
+        await expect(opener).toBeFocused()
+        run.report.events.push({ label: 'image-pan', format: image.format, ...pan })
+      }
+    })
+    await step('pending autosave completes while large image dialog stays mounted', async () => {
+      const text = 'M5 大图预览保存\n    四个空格\n\tTab 缩进'
+      await page.getByLabel('我的答案', { exact: true }).fill(text)
+      const pending = await page.locator('.practice-save').textContent()
+      assert.notEqual(pending, '已保存')
+      await page.getByRole('button', { name: '放大查看：WEBP 大图', exact: true }).click()
+      const dialog = page.getByRole('dialog')
+      await expect(dialog).toBeVisible()
+      const atOpen = await page.locator('.practice-save').textContent()
+      assert.notEqual(atOpen, '已保存', '必须在保存完成前打开预览，才能证明跨自动保存保持')
+      await expect(page.locator('.practice-save')).toHaveText('已保存')
+      await expect(dialog).toBeVisible()
+      await captureExperience(instance, run, '05-autosave-preview')
+      await page.keyboard.press('Escape')
+      run.report.events.push({
+        label: 'autosave-in-preview',
+        pending,
+        atOpen,
+        textSha256: hash(Buffer.from(text)),
+      })
+    })
+    await step('normal close, independent reopen and exact saved draft', async () => {
+      // 先恢复测试前的文本剪贴板，重开失败时也不遗留本次样本。
+      await application.evaluate(({ clipboard }, text) => clipboard.writeText(text), clipboard)
+      const finished = application.waitForEvent('close')
+      await application.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0].close())
+      await finished
+      instance = undefined
+      instance = await launch(run)
+      await action(instance.page, '继续练习')
+      await expect(instance.page.getByLabel('练习进度')).toHaveText('第 2 / 3 题 · 顺序练习')
+      await expect(instance.page.getByLabel('我的答案', { exact: true })).toHaveValue(
+        'M5 大图预览保存\n    四个空格\n\tTab 缩进',
+      )
+      await expect(instance.page.locator('html')).toHaveAttribute('data-theme', 'dark')
+      await expect(instance.page.locator('html')).toHaveAttribute('data-font-size', '22')
+      await captureExperience(instance, run, '06-reopened')
+    })
+    run.report.status = 'passed'
+  } catch (error) {
+    run.report.status = 'failed'
+    const current = run.report.checks.find((entry) => entry.status === 'running')
+    if (current) current.status = 'failed'
+    run.report.errors.push({ phase: 'experience', message: String(error), stack: error.stack })
+    if (instance)
+      await instance.page.screenshot({ path: join(run.output, 'failure.png') }).catch(() => {})
+    throw error
+  } finally {
+    if (instance) {
+      if (clipboard !== undefined)
+        await instance.application
+          .evaluate(({ clipboard }, text) => clipboard.writeText(text), clipboard)
+          .catch((error) =>
+            run.report.errors.push({ phase: 'clipboard restore', message: String(error) }),
+          )
+      await instance.application
+        .close()
+        .catch((error) => run.report.errors.push({ phase: 'close', message: String(error) }))
+    }
+    try {
+      run.report.database = snapshotExperience(run.dataDirectory)
+      assert.deepEqual(
+        run.report.database.integrity.map((row) => row.integrity_check),
+        ['ok'],
+      )
+      assert.deepEqual(run.report.database.foreignKeys, [])
+      assert.equal(run.report.database.schema.user_version, 6)
+    } catch (error) {
+      run.report.errors.push({ phase: 'database verification', message: String(error) })
+    }
+    if (run.report.errors.length > 0) run.report.status = 'failed'
+    run.report.finishedAt = new Date().toISOString()
+    await run.save()
+  }
+}
+
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const run = await createExperienceRun(process.argv[2], process.argv[3])
+  await check(run)
+  assert.equal(run.report.status, 'passed', '检查或收尾存在失败，详见原始 result.json')
+  console.log(
+    JSON.stringify(
+      { status: run.report.status, checks: run.report.checks, output: run.output },
+      null,
+      2,
+    ),
+  )
+}

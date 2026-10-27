@@ -1,0 +1,160 @@
+{
+  "capturedAt": "2026-10-22T07:14:02.512163+00:00",
+  "path": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\中文 验收数据\\practice.sqlite3",
+  "readOnly": true,
+  "schemaVersion": 6,
+  "applicationId": 1162891825,
+  "integrity": [
+    "ok"
+  ],
+  "foreignKeys": [],
+  "tables": {
+    "library_meta": {
+      "count": 1,
+      "sha256": "33664f53b95d0933398c7d8221f513283de57024e3982a2ef1780a6a3bb89656"
+    },
+    "topics": {
+      "count": 2,
+      "sha256": "b07bf3c1412b83cc1e758238006e87a72ddbcb43836855130d97ee3d2d682726"
+    },
+    "questions": {
+      "count": 80,
+      "sha256": "9c763c1710be433a52d8fcf8e1810a0113e4bd884c4c64b263095b9b602edc9c"
+    },
+    "question_versions": {
+      "count": 80,
+      "sha256": "cc22b0012d51518d478949cbfa19887fd8d3d51955c7038400b678864e85d7ea"
+    },
+    "image_resources": {
+      "count": 3,
+      "sha256": "60e3d712fef7b74ca79f69c9e1c2e2ca8dd4811d092d1c626b712644c99af336"
+    },
+    "version_images": {
+      "count": 3,
+      "sha256": "623b18b746a09f22382b09ed92ad6851f23bf3d8d5df45b90db7b4595206cabf"
+    },
+    "question_user_state": {
+      "count": 80,
+      "sha256": "9beba2bd36fdf4b6befd3eda8fadc8bac99a12b18cd4bd9d5192d9df4f836f53"
+    },
+    "import_receipts": {
+      "count": 2,
+      "sha256": "432db0a8a90f4680ee11a71c9c0787f2e6f748e26df9eb06d65634b384b54b96"
+    },
+    "practice_sessions": {
+      "count": 2,
+      "sha256": "6541421b46b2f7f806d47ebff5c449b75241a0d6709e3c3baba812ce151fb025",
+      "rows": [
+        {
+          "id": "509fb90a-9f2b-4d23-a578-5306e0946e58",
+          "mode": "sequential",
+          "topic_id": null,
+          "status": "ended",
+          "position": 2,
+          "revision": 5,
+          "created_at": "2026-10-22T07:00:16.717Z",
+          "ended_at": "2026-10-22T07:01:30.168Z",
+          "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+        },
+        {
+          "id": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+          "mode": "sequential",
+          "topic_id": null,
+          "status": "active",
+          "position": 0,
+          "revision": 4,
+          "created_at": "2026-10-22T07:03:30.707Z",
+          "ended_at": null,
+          "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+        }
+      ]
+    },
+    "practice_items": {
+      "count": 40,
+      "sha256": "36495fcf28cf205f3127f1cc7ff77141804282eb5ba7198932c9b9cc17aa9efa"
+    },
+    "practice_receipts": {
+      "count": 11,
+      "sha256": "0bff0bc66e8c800051667fedac142cae2a5bbd585c4cebcaef2b827e3804f447"
+    },
+    "appearance_settings": {
+      "count": 1,
+      "sha256": "01952c4fd727927d3080d3ac8f4e505f960971e9631200f47e47d5d8f30653a0",
+      "rows": [
+        {
+          "id": 1,
+          "theme": "system",
+          "font_size": 17
+        }
+      ]
+    }
+  },
+  "images": [
+    {
+      "hash": "200a7848eb435a30c8a06c9762b87732ec6971ca01fd384fe08aacf383b2d639",
+      "actualSha256": "200a7848eb435a30c8a06c9762b87732ec6971ca01fd384fe08aacf383b2d639",
+      "format": "jpeg",
+      "width": 2,
+      "height": 3,
+      "bytes": 661
+    },
+    {
+      "hash": "4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad",
+      "actualSha256": "4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad",
+      "format": "png",
+      "width": 2,
+      "height": 3,
+      "bytes": 80
+    },
+    {
+      "hash": "b1f3ff00ba1d62d206025ce07b1ed6cdf87e8c018608d8d1984fe463f4e6e534",
+      "actualSha256": "b1f3ff00ba1d62d206025ce07b1ed6cdf87e8c018608d8d1984fe463f4e6e534",
+      "format": "webp",
+      "width": 2,
+      "height": 3,
+      "bytes": 48
+    }
+  ],
+  "favorites": [
+    {
+      "topic_id": "stm32f103-gpio",
+      "question_id": "gpio-001",
+      "favorite": 1,
+      "last_rating": "不熟"
+    }
+  ],
+  "drafts": [
+    {
+      "session": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+      "position": 0,
+      "bytes": 22,
+      "sha256": "d9aec89622246097a42d3bc28ae0d76f205d5bc22859062915c1be7b66a92db9",
+      "rating": "不熟",
+      "revealed": "2026-10-22T07:03:41.484Z"
+    },
+    {
+      "session": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+      "position": 1,
+      "bytes": 22,
+      "sha256": "834abff5de7a8548349af1d4b8fe431532929ed79fd50def6b5dbf76fc443f6d",
+      "rating": null,
+      "revealed": "2026-10-22T07:03:52.775Z"
+    },
+    {
+      "session": "509fb90a-9f2b-4d23-a578-5306e0946e58",
+      "position": 0,
+      "bytes": 16,
+      "sha256": "c89d39bfe55e58d315d6b3106a9a3b03ea1c51be1b64077cb65dffaeace11e3a",
+      "rating": null,
+      "revealed": "2026-10-22T07:00:41.563Z"
+    },
+    {
+      "session": "509fb90a-9f2b-4d23-a578-5306e0946e58",
+      "position": 1,
+      "bytes": 25,
+      "sha256": "d965e1d33c2e744f2a4a6fac547fd47643119a30b19a571c18298712a368285f",
+      "rating": null,
+      "revealed": "2026-10-22T07:01:22.346Z"
+    }
+  ]
+}

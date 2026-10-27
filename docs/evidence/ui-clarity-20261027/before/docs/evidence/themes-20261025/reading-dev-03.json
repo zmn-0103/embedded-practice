@@ -1,0 +1,199 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\playwright\\cli.js",
+      "test",
+      "tests/e2e/themes-reading.spec.ts",
+      "--grep",
+      "Claude长内容",
+      "--project=development",
+      "--output=docs/evidence/themes-20261025/reading-dev-03",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/themes-20261025/reading-dev-03",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/themes-20261025/reading-dev-03",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\themes-20261025\\reading-dev-03",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "themes-reading.spec.ts",
+      "file": "themes-reading.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Claude长内容练习：宽屏右侧属性/窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1925,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m858.203125\u001b[39m\nReceived:   \u001b[31m940.953125\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m858.203125\u001b[39m\nReceived:   \u001b[31m940.953125\u001b[39m\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-reading.spec.ts:210:35",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-reading.spec.ts",
+                      "column": 35,
+                      "line": 210
+                    },
+                    "snippet": "  208 |       expect(actions).not.toBeNull()\n  209 |       expect(inputBounds!.y).toBeGreaterThanOrEqual(0)\n> 210 |       expect(inputBounds!.y + 50).toBeLessThan(actions!.y)\n      |                                   ^\n  211 |       await expect(page.getByRole('button', { name: '查看参考答案', exact: true })).toBeVisible()\n  212 |       await noDocumentOverflow(page)\n  213 |     }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-reading.spec.ts",
+                        "column": 35,
+                        "line": 210
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m858.203125\u001b[39m\nReceived:   \u001b[31m940.953125\u001b[39m\n\n  208 |       expect(actions).not.toBeNull()\n  209 |       expect(inputBounds!.y).toBeGreaterThanOrEqual(0)\n> 210 |       expect(inputBounds!.y + 50).toBeLessThan(actions!.y)\n      |                                   ^\n  211 |       await expect(page.getByRole('button', { name: '查看参考答案', exact: true })).toBeVisible()\n  212 |       await noDocumentOverflow(page)\n  213 |     }\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-reading.spec.ts:210:35"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T05:39:09.087Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "claude-practice-1440.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\themes-20261025\\reading-dev-03\\themes-reading-Claude长内容练习：宽屏右侧属性-窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓-development\\attachments\\claude-practice-1440-png-be7bcbba8d9057236b58f43a655000d19b342078.png"
+                    },
+                    {
+                      "name": "focus-geometry-1440.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnB1dEJvdW5kcyI6eyJ4IjozMDQsInkiOjg5MC45NTMxMjUsIndpZHRoIjo4MDMsImhlaWdodCI6MzE2LjM3NX0sImFjdGlvbnMiOnsieCI6Mjg4LCJ5Ijo4NTguMjAzMTI1LCJ3aWR0aCI6ODM1LCJoZWlnaHQiOjk0Ljc5Njg3NX0sImltYWdlc0JlZm9yZUZvY3VzIjpbeyJjb21wbGV0ZSI6ZmFsc2UsIndpZHRoIjowLCJoZWlnaHQiOjB9XSwiaW1hZ2VzQWZ0ZXJGb2N1cyI6W3siY29tcGxldGUiOnRydWUsIndpZHRoIjoyNTYwLCJoZWlnaHQiOjQ2Nn1dLCJmb2N1c2VkIjoicHJhY3RpY2UtYW5zd2VyIn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\themes-20261025\\reading-dev-03\\themes-reading-Claude长内容练习：宽屏右侧属性-窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-reading.spec.ts",
+                    "column": 35,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "de2dbe63ffb914e5ba41-9f3eb5c521f54e9e70da",
+          "file": "themes-reading.spec.ts",
+          "line": 139,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-25T05:39:08.552Z",
+    "duration": 2508.011,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

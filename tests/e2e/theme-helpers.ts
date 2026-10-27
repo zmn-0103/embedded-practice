@@ -31,7 +31,7 @@ export async function verifyThemeTarget(
     if (!target) throw new Error('必须显式指定本轮新EXE')
     expect(actual.exe.toLowerCase()).toBe(resolve(target).toLowerCase())
   }
-  await expect(page.locator('footer')).toContainText('20261026.3-v002')
+  await expect(page.locator('footer')).toContainText('20261027.2-ui-adaptive')
   expect(
     withHistoryDatabase(directory, (database) => database.prepare('PRAGMA user_version').get()),
   ).toEqual({ user_version: 10 })

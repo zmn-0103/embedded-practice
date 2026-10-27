@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-20T04:08:33.537Z",
+  "utf8TextFiles": 140,
+  "markdownDocuments": 29,
+  "localDocumentLinks": 189,
+  "reviewedCodeFiles": 12,
+  "reviewedPaths": [
+    "src/shared/contracts/question-bank.ts",
+    "src/main/workers/import-protocol.ts",
+    "src/main/workers/import-worker.ts",
+    "src/main/workers/import-task-runner.ts",
+    "src/main/services/library/import-preparation.ts",
+    "electron.vite.config.ts",
+    "tests/unit/import-protocol.test.ts",
+    "tests/helpers/fake-import-worker.ts",
+    "tests/unit/import-task-runner.test.ts",
+    "tests/unit/import-task-failures.test.ts",
+    "tests/e2e/import-worker-exercise.ts",
+    "tests/e2e/import-worker.spec.ts"
+  ],
+  "planSha256": "4217BEA47B9CB28E5A1B8E976BACB57EB769BB25503981A4E0652EA0171E1C73",
+  "originalPlanMatches": true,
+  "unchangedBaselineFiles": 36,
+  "dependenciesUnchanged": true,
+  "failures": [],
+  "limits": "Static document links are parsed as Markdown links; code examples and image references are excluded. Recorded review coverage is not runtime proof. Historical evidence is retained."
+}

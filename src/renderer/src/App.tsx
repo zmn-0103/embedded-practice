@@ -28,7 +28,7 @@ const pages = [
   { id: 'settings', label: '设置与数据', path: 'M4 7h16M4 17h16M9 4v6m6 4v6' },
 ] as const
 type PageId = (typeof pages)[number]['id']
-const BUILD_LABEL = '20261026.3-v002'
+const BUILD_LABEL = '20261027.2-ui-adaptive'
 
 export function App() {
   const [state, setState] = useState<ViewState>({ status: 'loading' })

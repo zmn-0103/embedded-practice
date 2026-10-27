@@ -1,0 +1,246 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=development",
+      "--grep",
+      "M2 第四批"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-window.spec.ts",
+      "file": "practice-window.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "M2 第四批：100% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2040,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T13:14:58.091Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLCJmb2N1c2VkIjp7IngiOjkyLCJ5IjoyMjIuNDUsImhpdElkIjoicHJhY3RpY2UtYW5zd2VyIiwic2Nyb2xsWSI6ODc0fSwiZWRpdG9yQm94Ijp7IngiOjc4LCJ5Ijo0MjYuMjUsIndpZHRoIjo5NTMsImhlaWdodCI6MjM3LjEyNX0sInBhbmVsQm94Ijp7IngiOjYxLCJ5Ijo2NDAuMjAzMTI1LCJ3aWR0aCI6OTg3LCJoZWlnaHQiOjkyLjc5Njg3NX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-729a24e602cba4f48937",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：125% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2065,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T13:15:00.160Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjI1LCJmb2N1c2VkIjp7IngiOjc1LjQwMDAwMjI4ODgxODM2LCJ5Ijo3NS42MDAwMDIyODg4MTgzNiwiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDIwLjc5OTk4Nzc5Mjk2ODh9LCJlZGl0b3JCb3giOnsieCI6NjEuNjAwMDAyMjg4ODE4MzYsInkiOjM1Miwid2lkdGgiOjc2NC4wMDAwMzQzMzIyNzU0LCJoZWlnaHQiOjIzNi43OTk5ODc3OTI5Njg3NX0sInBhbmVsQm94Ijp7IngiOjQ0Ljc5OTk5OTIzNzA2MDU1LCJ5Ijo0OTIuODAwMDE4MzEwNTQ2OSwid2lkdGgiOjc5Ny42MDAwMjUxNzcwMDIsImhlaWdodCI6OTEuOTk5OTY5NDgyNDIxODh9fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-7493a7afa48faaf2259e",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        },
+        {
+          "title": "M2 第四批：150% 页面缩放下键盘输入不被操作区遮挡",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2009,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T13:15:02.233Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-input-focus.json",
+                      "contentType": "application/json",
+                      "body": "eyJ6b29tRmFjdG9yIjoxLjUsImZvY3VzZWQiOnsieCI6NzUuMDAwMDAyODc2NDY0ODMsInkiOjI2LjE3OTE2NywiaGl0SWQiOiJwcmFjdGljZS1hbnN3ZXIiLCJzY3JvbGxZIjoxMDY2fSwiZWRpdG9yQm94Ijp7IngiOjYxLjMzMzMzNTg3NjQ2NDg0NCwieSI6MzAyLjk3OTE4NzAxMTcxODc1LCJ3aWR0aCI6NjE2LjY2NjY2NDEyMzUzNTIsImhlaWdodCI6MjM2LjV9LCJwYW5lbEJveCI6eyJ4Ijo0NC42NjY2Njc5MzgyMzI0MiwieSI6Mzk0LjU0MTY4NzAxMTcxODc1LCJ3aWR0aCI6NjUwLjAwMDAxOTA3MzQ4NjMsImhlaWdodCI6OTEuNDU4MzEyOTg4MjgxMjV9fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a21a7d7e5f50a2624a2-bb0ae361e7cbf360ea94",
+          "file": "practice-window.spec.ts",
+          "line": 741,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-20T13:14:57.399Z",
+    "duration": 6872.342,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-10-20T12:44:55.544Z",
+  "unit": {
+    "total": 405,
+    "passed": 405,
+    "failed": 0,
+    "pending": 0
+  },
+  "before": {
+    "startTime": "2026-10-20T12:32:23.837Z",
+    "duration": 85156.486,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  },
+  "baseline": {
+    "startTime": "2026-10-20T12:36:03.490Z",
+    "duration": 4348.478999999999,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "development": {
+    "startTime": "2026-10-20T12:40:28.052Z",
+    "duration": 84356.81999999999,
+    "expected": 46,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "packaged": {
+    "startTime": "2026-10-20T12:42:49.518Z",
+    "duration": 84518.856,
+    "expected": 46,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "initialFailureClassification": {
+    "confirmedUiGaps": 4,
+    "testHarnessWrongProcessTarget": 1
+  },
+  "beforePositions": [
+    {
+      "zoomPercent": 100,
+      "beforeScrollY": 2833,
+      "beforeTitleY": -2633.234375,
+      "afterScrollY": 0,
+      "afterTitleY": 199.765625
+    },
+    {
+      "zoomPercent": 125,
+      "beforeScrollY": 2980,
+      "beforeTitleY": -2780.400146484375,
+      "afterScrollY": 0,
+      "afterTitleY": 199.60000610351562
+    },
+    {
+      "zoomPercent": 150,
+      "beforeScrollY": 3076.666748046875,
+      "beforeTitleY": -2877.21875,
+      "afterScrollY": 0,
+      "afterTitleY": 199.4479217529297
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "development-long-content-next-100.png",
+      "zoomPercent": 100,
+      "width": 1124,
+      "height": 741
+    },
+    {
+      "path": "development-long-content-next-125.png",
+      "zoomPercent": 125,
+      "width": 1124,
+      "height": 741
+    },
+    {
+      "path": "development-long-content-next-150.png",
+      "zoomPercent": 150,
+      "width": 1124,
+      "height": 741
+    },
+    {
+      "path": "packaged-long-content-next-100.png",
+      "zoomPercent": 100,
+      "width": 1124,
+      "height": 741
+    },
+    {
+      "path": "packaged-long-content-next-125.png",
+      "zoomPercent": 125,
+      "width": 1124,
+      "height": 741
+    },
+    {
+      "path": "packaged-long-content-next-150.png",
+      "zoomPercent": 150,
+      "width": 1124,
+      "height": 741
+    }
+  ],
+  "extracted": [
+    "before-long-content-advance-100.json",
+    "before-long-content-advance-125.json",
+    "before-long-content-advance-150.json",
+    "baseline-forced-stop-confirmed.json",
+    "baseline-forced-stop-recovered.json",
+    "development-long-content-advance-100.json",
+    "development-long-content-advance-125.json",
+    "development-long-content-advance-150.json",
+    "development-long-content-finished.json",
+    "development-forced-stop-confirmed.json",
+    "development-forced-stop-recovered.json",
+    "packaged-long-content-advance-100.json",
+    "packaged-long-content-advance-125.json",
+    "packaged-long-content-advance-150.json",
+    "packaged-long-content-finished.json",
+    "packaged-forced-stop-confirmed.json",
+    "packaged-forced-stop-recovered.json",
+    "development-long-content-next-100.png",
+    "development-long-content-next-125.png",
+    "development-long-content-next-150.png",
+    "packaged-long-content-next-100.png",
+    "packaged-long-content-next-125.png",
+    "packaged-long-content-next-150.png"
+  ]
+}

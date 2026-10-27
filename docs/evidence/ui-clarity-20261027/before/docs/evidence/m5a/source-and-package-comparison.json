@@ -1,0 +1,39 @@
+{
+  "baselineFiles": 173,
+  "changedDocumentation": [
+    "README.md",
+    "docs/README.md",
+    "docs/验收记录.md"
+  ],
+  "unexpectedDifferences": [],
+  "productionAndTestsUnchanged": true,
+  "currentSourceFiles": 175,
+  "package": [
+    {
+      "path": "release/win-unpacked/embedded-practice.exe",
+      "bytes": 234328064,
+      "sha256": "eeac64484ef0f1208273b625e95796ad94705abd9529db602dceeabfe102d3a6",
+      "matchesM4c": true
+    },
+    {
+      "path": "release/win-unpacked/resources/app.asar",
+      "bytes": 3669491,
+      "sha256": "ff9cb31b662f2e9a029c5241aa7e51a81feb7cf8807d8eeee4093f904d8410d7",
+      "matchesM4c": true
+    },
+    {
+      "path": "release/win-unpacked/resources/app.asar.unpacked/node_modules/better-sqlite3/build/Release/better_sqlite3.node",
+      "bytes": 1920512,
+      "sha256": "24e2e3ca5a829572239718fbca35b873ba4975655d29c56a93f1880e3775d9b8",
+      "matchesM4c": true
+    },
+    {
+      "path": "release/embedded-practice-0.1.0-x64-setup.exe",
+      "bytes": 105194654,
+      "sha256": "641eef07330151d6343047c3aad2639a70c442b46a26426cd74b281d73a091d8",
+      "matchesM4c": true
+    }
+  ],
+  "m4cEvidenceFilesChecked": 681,
+  "m4cEvidenceDifferences": []
+}

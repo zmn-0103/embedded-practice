@@ -1,0 +1,255 @@
+{
+  "unit": {
+    "files": 24,
+    "total": 503,
+    "passed": 503,
+    "baseline": 492,
+    "missing": [],
+    "comparison": "file and title multiset, retaining parameterized duplicates"
+  },
+  "finalStats": {
+    "startTime": "2026-10-21T15:10:27.516Z",
+    "duration": 385420.62,
+    "expected": 202,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": {
+    "development": {
+      "total": 101,
+      "baseline": 92,
+      "missing": [],
+      "new": [
+        {
+          "file": "session-filters-migration.spec.ts",
+          "title": "v5 升级至 v6 保留全业务、原回执与显示设置，旧筛选明确未知"
+        },
+        {
+          "file": "session-filters-migration.spec.ts",
+          "title": "v5 筛选迁移 backup-blocked 停止或回滚，原库保留"
+        },
+        {
+          "file": "session-filters-migration.spec.ts",
+          "title": "v5 筛选迁移 column-conflict 停止或回滚，原库保留"
+        },
+        {
+          "file": "session-filters-migration.spec.ts",
+          "title": "v5 筛选迁移 foreign-key 停止或回滚，原库保留"
+        },
+        {
+          "file": "session-filters.spec.ts",
+          "title": "random 建轮原筛选重开保持，修改首页与题库不重抽固定队列"
+        },
+        {
+          "file": "session-filters.spec.ts",
+          "title": "sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列"
+        },
+        {
+          "file": "session-filters.spec.ts",
+          "title": "损坏筛选快照不能冒充旧未知或默认条件，修复后原轮可读"
+        },
+        {
+          "file": "session-filters.spec.ts",
+          "title": "省略条件的新轮保存明确默认快照，旧请求形状重试仍幂等"
+        },
+        {
+          "file": "session-filters.spec.ts",
+          "title": "筛选快照与替换旧轮原子提交，失败回滚和丢响应重试不改快照"
+        }
+      ]
+    },
+    "packaged": {
+      "total": 101,
+      "baseline": 92,
+      "missing": [],
+      "new": [
+        {
+          "file": "session-filters-migration.spec.ts",
+          "title": "v5 升级至 v6 保留全业务、原回执与显示设置，旧筛选明确未知"
+        },
+        {
+          "file": "session-filters-migration.spec.ts",
+          "title": "v5 筛选迁移 backup-blocked 停止或回滚，原库保留"
+        },
+        {
+          "file": "session-filters-migration.spec.ts",
+          "title": "v5 筛选迁移 column-conflict 停止或回滚，原库保留"
+        },
+        {
+          "file": "session-filters-migration.spec.ts",
+          "title": "v5 筛选迁移 foreign-key 停止或回滚，原库保留"
+        },
+        {
+          "file": "session-filters.spec.ts",
+          "title": "random 建轮原筛选重开保持，修改首页与题库不重抽固定队列"
+        },
+        {
+          "file": "session-filters.spec.ts",
+          "title": "sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列"
+        },
+        {
+          "file": "session-filters.spec.ts",
+          "title": "损坏筛选快照不能冒充旧未知或默认条件，修复后原轮可读"
+        },
+        {
+          "file": "session-filters.spec.ts",
+          "title": "省略条件的新轮保存明确默认快照，旧请求形状重试仍幂等"
+        },
+        {
+          "file": "session-filters.spec.ts",
+          "title": "筛选快照与替换旧轮原子提交，失败回滚和丢响应重试不改快照"
+        }
+      ]
+    }
+  },
+  "intentionalTitleRename": {
+    "v3 升级至 v5：备份、全部旧记录、原请求回执与顺序会话恢复保持": "v3 升级至 v6：备份、全部旧记录、原请求回执与顺序会话恢复保持",
+    "v4 升级至 v5：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级": "v4 升级至 v6：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级"
+  },
+  "attachments": [
+    {
+      "project": "development",
+      "test": "v5 升级至 v6 保留全业务、原回执与显示设置，旧筛选明确未知",
+      "name": "development-filters-v5-preserved.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "v5 筛选迁移 backup-blocked 停止或回滚，原库保留",
+      "name": "development-filters-v5-backup-blocked.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "v5 筛选迁移 column-conflict 停止或回滚，原库保留",
+      "name": "development-filters-v5-column-conflict.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "v5 筛选迁移 foreign-key 停止或回滚，原库保留",
+      "name": "development-filters-v5-foreign-key.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "v5 升级至 v6 保留全业务、原回执与显示设置，旧筛选明确未知",
+      "name": "packaged-filters-v5-preserved.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "v5 筛选迁移 backup-blocked 停止或回滚，原库保留",
+      "name": "packaged-filters-v5-backup-blocked.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "v5 筛选迁移 column-conflict 停止或回滚，原库保留",
+      "name": "packaged-filters-v5-column-conflict.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "v5 筛选迁移 foreign-key 停止或回滚，原库保留",
+      "name": "packaged-filters-v5-foreign-key.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "name": "development-original-filters-sequential.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "name": "development-filters-reopen-sequential.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "random 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "name": "development-original-filters-random.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "random 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "name": "development-filters-reopen-random.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "筛选快照与替换旧轮原子提交，失败回滚和丢响应重试不改快照",
+      "name": "development-filters-atomic-retry.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "name": "packaged-original-filters-sequential.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "sequential 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "name": "packaged-filters-reopen-sequential.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "random 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "name": "packaged-original-filters-random.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "random 建轮原筛选重开保持，修改首页与题库不重抽固定队列",
+      "name": "packaged-filters-reopen-random.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "筛选快照与替换旧轮原子提交，失败回滚和丢响应重试不改快照",
+      "name": "packaged-filters-atomic-retry.json",
+      "type": "application/json"
+    }
+  ],
+  "earlierRuns": {
+    "targetedFirst": {
+      "startTime": "2026-10-21T14:57:28.192Z",
+      "duration": 85517.773,
+      "expected": 17,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "reopenFixed": {
+      "startTime": "2026-10-21T15:00:09.682Z",
+      "duration": 12609.482,
+      "expected": 5,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "fullFirst": {
+      "startTime": "2026-10-21T15:02:32.841Z",
+      "duration": 385927.064,
+      "expected": 200,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "constraintFixed": {
+      "startTime": "2026-10-21T15:10:04.000Z",
+      "duration": 3143.291,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "originalReviewSha256": "13df050fa1715118e1fb131d2bbe9f650ab413aac4f092dc9bf5b9ef92154721"
+}

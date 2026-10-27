@@ -1,0 +1,32 @@
+{
+  "purpose": "用户授权的个人升级前完整备份；不是临时库回归测试",
+  "runtime": {
+    "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.0-personal-20261024.4\\win-unpacked\\embedded-practice.exe",
+    "userData": "C:\\Users\\pc\\AppData\\Roaming\\embedded-practice",
+    "version": "0.0.0",
+    "packaged": true
+  },
+  "dialogBoundary": "选择目标由自动化指定；实际SQLite一致性完整备份服务执行",
+  "backup": {
+    "filePath": "E:\\My_Projects\\embedded-practice\\backups\\个人使用\\V0.0.1升级前-20261025-150100\\升级前完整备份-schema9.sqlite3",
+    "summary": {
+      "createdAt": "2026-10-25T07:01:37.844Z",
+      "appVersion": "0.0.0",
+      "schemaVersion": 9,
+      "requiresMigration": false,
+      "categories": 5,
+      "practicePlans": 0,
+      "topics": 13,
+      "questions": 419,
+      "archivedQuestions": 0,
+      "versions": 419,
+      "images": 0,
+      "sessions": 1,
+      "drafts": 0,
+      "favorites": 0,
+      "ratings": 0,
+      "activeSession": false
+    }
+  },
+  "bytes": 970752
+}

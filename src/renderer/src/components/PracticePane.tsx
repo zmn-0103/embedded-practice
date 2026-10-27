@@ -15,15 +15,16 @@ function keepAnswerVisible(input: HTMLTextAreaElement, actions: HTMLDivElement) 
   if (!input.isConnected || document.activeElement !== input) return
   const box = input.getBoundingClientRect()
   const style = window.getComputedStyle(input)
-  const firstLineBottom =
-    box.top +
+  const firstLineHeight =
     Number.parseFloat(style.borderTopWidth) +
     Number.parseFloat(style.paddingTop) +
     Number.parseFloat(style.lineHeight)
-  if (
-    box.top < 0 ||
-    firstLineBottom > Math.min(actions.getBoundingClientRect().top, window.innerHeight)
+  const visibleBottom = Math.min(actions.getBoundingClientRect().top, window.innerHeight)
+  const desiredVisibleHeight = Math.min(
+    box.height,
+    Math.max(firstLineHeight, visibleBottom - Number.parseFloat(style.scrollMarginTop)),
   )
+  if (box.top < 0 || box.top + desiredVisibleHeight > visibleBottom)
     input.scrollIntoView({ block: 'start' })
 }
 
@@ -153,7 +154,7 @@ export function PracticePane({
     <section ref={workspace} className="practice-workspace" aria-label={modeLabel}>
       <div className="practice-heading">
         <div className="practice-heading-actions">
-          <button type="button" className="primary" disabled={actionsBlocked} onClick={onHome}>
+          <button type="button" disabled={actionsBlocked} onClick={onHome}>
             保存并返回
           </button>
           <PracticeFavorite
@@ -268,8 +269,20 @@ export function PracticePane({
             if (event.repeat && (event.key === 'Enter' || event.key === ' ')) event.preventDefault()
           }}
         >
-          <div className="practice-save" aria-live="polite">
-            {state.closing ? '正在准备关闭…' : labels[state.saveStatus]}
+          <div className="practice-action-status">
+            <p className="practice-stage" aria-live="polite">
+              <strong>{item.revealed ? '保存并继续' : '思考与作答'}</strong>
+              <span>
+                {item.revealed
+                  ? session.position + 1 === session.total
+                    ? '选择自评后保存并完成本轮'
+                    : '选择自评后保存并进入下一题'
+                  : '查看参考答案后，再自行评价'}
+              </span>
+            </p>
+            <div className="practice-save" aria-live="polite">
+              {state.closing ? '正在准备关闭…' : labels[state.saveStatus]}
+            </div>
           </div>
           {state.error && (
             <div role="alert" className="error-message">
@@ -277,6 +290,7 @@ export function PracticePane({
               {(state.pending || state.saveStatus === 'failed') && (
                 <button
                   type="button"
+                  className="primary"
                   disabled={state.busy || state.closing || homeBusy || repeatBlocked}
                   onClick={() => {
                     void controller.retry()
@@ -300,6 +314,7 @@ export function PracticePane({
                 </button>
                 <button
                   type="button"
+                  className="quiet-action"
                   disabled={actionsBlocked}
                   onClick={(event) => perform(event, { kind: 'navigate', direction: 'skip' })}
                 >
@@ -321,6 +336,7 @@ export function PracticePane({
                 ))}
                 <button
                   type="button"
+                  className="quiet-action"
                   disabled={actionsBlocked}
                   onClick={(event) => perform(event, { kind: 'rate', rating: null })}
                 >

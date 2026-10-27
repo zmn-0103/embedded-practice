@@ -1,0 +1,10 @@
+{
+  "files": 5,
+  "questions": 10,
+  "mappedOriginalQuestions": 49,
+  "pendingUserReview": 10,
+  "questionSha256Unique": true,
+  "forbiddenPattern": "/STM32|F103|W25Q|24LC|Keil|GPIO_Mode|RCC_|USART\\d|I2C_Send7bitAddress|CRL|CRH|PCLK|NVIC|0x4001|\\b(?:PA|PB|PC)\\d{1,2}\\b/u",
+  "forbiddenMatches": [],
+  "nulOrReplacementCharacters": []
+}

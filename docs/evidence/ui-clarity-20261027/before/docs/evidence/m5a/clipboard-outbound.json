@@ -1,0 +1,9 @@
+{
+  "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\剪贴板 验收.txt",
+  "expectedLf": "int a = 2;\nint b = 3;\nint sum = a + b;\n/* 格式测试文本：\n## fake-question | 不是新题\n### 参考答案\n*/\n",
+  "actualText": "int a = 2;\r\nint b = 3;\r\nint sum = a + b;\r\n/* 格式测试文本：\r\n## fake-question | 不是新题\r\n### 参考答案\r\n*/\r\n",
+  "exactMatch": false,
+  "matchAfterWindowsLineEndings": true,
+  "actualCrLf": 7,
+  "actualLf": 7
+}

@@ -1,0 +1,358 @@
+{
+  "createdAt": "2026-10-20T10:47:40.8609967+08:00",
+  "stage": "M1 second increment - file and image snapshots",
+  "appVersion": "0.1.0",
+  "environment": {
+    "os": "Windows 11 Home x64 10.0.26200",
+    "node": "24.19.0",
+    "npm": "11.17.0",
+    "electron": "42.11.15",
+    "betterSqlite3": "12.11.1",
+    "imageSize": "2.0.4",
+    "fixtureGenerator": "Pillow 12.3.0"
+  },
+  "checks": {
+    "typeAndFormat": "passed",
+    "unitPassed": 212,
+    "unitFailed": 0,
+    "unitSkipped": 0,
+    "desktopPassed": 5,
+    "desktopFailed": 0,
+    "desktopSkipped": 0
+  },
+  "boundary": "Actual Node file/image tests plus injected read failures and timestamp changes. 200MiB checked by budget logic. Existing Electron startup regression only; no worker/UI/database import or new installer.",
+  "files": [
+    {
+      "file": ".prettierrc.json",
+      "sha256": "92BC76807B2F2C249F23A3D3C9A9A78E130DF5CF713A876C082077DA43ED10E4"
+    },
+    {
+      "file": "计划书.md",
+      "sha256": "4217BEA47B9CB28E5A1B8E976BACB57EB769BB25503981A4E0652EA0171E1C73"
+    },
+    {
+      "file": "AGENTS.md",
+      "sha256": "BAE38F3A08AE9764D72FA8FE0DCABD3A7BF257A84B3026DB6F56427D72759BBE"
+    },
+    {
+      "file": "docs/产品说明.md",
+      "sha256": "0A56EF12D817C2CF83F8372C5DCA935AD8B8AF5F1397DBAE8E993BE3D981AE4F"
+    },
+    {
+      "file": "docs/代码复查记录.md",
+      "sha256": "95D20A3DD0A7F0AF41F2621B5A456697FA1B146C902E320BB52C5EAA32420FFA"
+    },
+    {
+      "file": "docs/开发说明.md",
+      "sha256": "74CD79CC644FC1679313007021454D8762DF6D90FCBD5C96269D267E37CA13CB"
+    },
+    {
+      "file": "docs/验收记录.md",
+      "sha256": "0179C3C3E65C4780926350549F10D96588AB8F1C68BDF5E831A4E0C610E25A43"
+    },
+    {
+      "file": "docs/architecture/M0启动与存储.md",
+      "sha256": "6243A6BAE70C444F98D85071E3657A3ACB3433E135969315166D2B9C3A23E724"
+    },
+    {
+      "file": "docs/architecture/M1结构解析.md",
+      "sha256": "49640178A7B996A914A9772BA3722E70BC055FB88BC38F6FCAB58B4AFD5EB74A"
+    },
+    {
+      "file": "docs/architecture/M1文件与图片快照.md",
+      "sha256": "9A4A07E77B26DEC454F96BB822CE423D969D6626F68299B85062D693A8886D82"
+    },
+    {
+      "file": "docs/evidence/m1b/check-output.txt",
+      "sha256": "D4E638ED9B282AD1FA26FD4FD98D8398E9AB3151FD12364EB51783F9B9610C5B"
+    },
+    {
+      "file": "docs/evidence/m1b/desktop-output.txt",
+      "sha256": "7C6D3021FF584A6736654FC973B37004682D9C160A78D0B6EFDF7474BE644C42"
+    },
+    {
+      "file": "docs/evidence/m1b/desktop-tests.json",
+      "sha256": "25CDB573410E9BAEF1A787D80DB7AE673B187E47901C7190B03A7D1330882A4B"
+    },
+    {
+      "file": "docs/evidence/m1b/README.md",
+      "sha256": "7D6D76DF9646F05C55C67D54D7B3F5D893B8C4EB3B8DF8F769B2329F51EBE698"
+    },
+    {
+      "file": "docs/evidence/m1b/static-checks.json",
+      "sha256": "BFA47D220CD9ADAC9B9E9ECBDF3A1B6BBBABFD1A0E8D26E324E6606EF08FEE78"
+    },
+    {
+      "file": "docs/evidence/m1b/unit-tests.json",
+      "sha256": "6F1004AEFAC65276EF2580707CB040DE642CD7BEA60216D8F736356BCCAD4592"
+    },
+    {
+      "file": "docs/licenses/image-size-MIT.txt",
+      "sha256": "3109783DAD7527B490AABC49C3CB148573C19B41B843E70CF9388A93F3D7FCCD"
+    },
+    {
+      "file": "docs/M1第二批行为与验收.md",
+      "sha256": "8637E857C1D497BC83E5DEBFBD6CC9E0DC83A16DFBA21E5EC6F9303F4E85586E"
+    },
+    {
+      "file": "docs/M1第一批行为与验收.md",
+      "sha256": "91BFB76E08A641C339744475CE9BBCFE7E55C40FA333D3774EA7FEA0B605089D"
+    },
+    {
+      "file": "docs/MarkdownV1题库格式.md",
+      "sha256": "9AF68E33EC00544C983C7AFEDA6C0116B784B0DCA3F53BADC49862E9606B9DC8"
+    },
+    {
+      "file": "docs/README.md",
+      "sha256": "9285FACBD95CE78582A4CDAC19D4AD2C494CD51194FE8A6ACD9958913C03A8D4"
+    },
+    {
+      "file": "electron-builder.yml",
+      "sha256": "B964603892BE8ACBFFF6D891562BFC003C4CCE66ACA92EBD86829DBAF59AB386"
+    },
+    {
+      "file": "electron.vite.config.ts",
+      "sha256": "37C5B0A38FAA67C1ED2E7F622EC7D530CB6E4154A5FCFB6B367B105B2FDF7645"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "52BF4902EFF419BED6C34760C3ED1358DFAF8699D9641486AF79A0537AB68BD6"
+    },
+    {
+      "file": "package.json",
+      "sha256": "5B25A2BDF7A26B70E7FD4E47DFEB23E398E76246488575E849D09E6DEE875CDB"
+    },
+    {
+      "file": "playwright.config.ts",
+      "sha256": "9B5B8138C57D8AD41D079D62E120E49D9307F12142BE29C72BBD75F49B58728E"
+    },
+    {
+      "file": "question-banks/examples/格式示例.md",
+      "sha256": "11B5F8D3DA26C39E0B128915C6C2F52963D5B0C16E470C9A16568F9FA45C06F3"
+    },
+    {
+      "file": "question-banks/examples/assets/测试.webp",
+      "sha256": "B1F3FF00BA1D62D206025CE07B1ED6CDF87E8C018608D8D1984FE463F4E6E534"
+    },
+    {
+      "file": "question-banks/examples/assets/带 空格.jpg",
+      "sha256": "200A7848EB435A30C8A06C9762B87732EC6971CA01FD384FE08AACF383B2D639"
+    },
+    {
+      "file": "question-banks/examples/assets/中文测试图.png",
+      "sha256": "4BDE795C8AF51F0BDC1DE0DB1ADC89ED741BF52E777A3B52CA38015EE1B16FAD"
+    },
+    {
+      "file": "question-banks/examples/README.md",
+      "sha256": "B37C00450BB8B73E25769BB7307319FC3632AD8E386806C84DA29F8098588DA7"
+    },
+    {
+      "file": "question-banks/README.md",
+      "sha256": "55DB16E31543FBD71EAD89DCD5B5D1459C6A95E1364CFBC279EFAB4161CBA5FF"
+    },
+    {
+      "file": "question-banks/sources/STM32F103RCT6-GPIO-题答对应.json",
+      "sha256": "188AE40A71DBE706FDE6BE90E6C1F08B522E8E9511D2B95B01680281D20D263D"
+    },
+    {
+      "file": "question-banks/sources/STM32F103RCT6-GPIO-原始自测题.txt",
+      "sha256": "0D9D53AF62B098B5108E7E972FB271AB5130AE1C7FBA3180CC00E6D31A01A39F"
+    },
+    {
+      "file": "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+      "sha256": "494512D817DE9AD0CD3A74CB3DE8E375005AC56E02F3F3FC26F4B89383FBF8E2"
+    },
+    {
+      "file": "question-banks/templates/专题模板.md",
+      "sha256": "11FB5AA961E56DB7AA4B6D9571FF70AE6F56A07899BB500639F498A9F71E40C3"
+    },
+    {
+      "file": "question-banks/templates/README.md",
+      "sha256": "635FF121D9928326E1BF8ED0FDE3C195A80D55CB174B9F63236CAE49DCA8FEE0"
+    },
+    {
+      "file": "README.md",
+      "sha256": "F8A8F254747F8D9C471E08E7CF2D7A775FA8DD70F0DB2DA7321B7DFE97F42B6F"
+    },
+    {
+      "file": "src/main/database/startup-store.ts",
+      "sha256": "69AD40B82F1F098EC6E830DF003116A0899EBFEB3FA6E701B3C51A89337B0D1E"
+    },
+    {
+      "file": "src/main/index.ts",
+      "sha256": "14E31182993FF1074C7844B48523D5A0BED0A1B3D332F3CE795772AE4D303E77"
+    },
+    {
+      "file": "src/main/ipc/application.ts",
+      "sha256": "19292B8163B4E1C0DB915F0A0BEB4B8E786B27A4BAE0DF21DA92BE9C7295BD13"
+    },
+    {
+      "file": "src/main/services/library/image-references.ts",
+      "sha256": "470EF58A498B933FD15AF9744334960063C0203C59C6C2EE30F781BD37F7F2A1"
+    },
+    {
+      "file": "src/main/services/library/import-budget.ts",
+      "sha256": "F6817017469F7D7BFB9AB2638C66DCA327C66AE0808CB69F376961E52DF4A49F"
+    },
+    {
+      "file": "src/main/services/library/markdown-document.ts",
+      "sha256": "A894FEC1E957E26E7DCD05BFC4CA7BF262B5B042327698779B694D45BBDDDBBD"
+    },
+    {
+      "file": "src/main/services/library/parse-question-bank.ts",
+      "sha256": "71445481DAFD99DB70D4869368FC436C479B91646F46765606602969A528723F"
+    },
+    {
+      "file": "src/main/services/library/parse-question.ts",
+      "sha256": "232870179033C8FD5114DAE7A4E913F4A105B33A03C0B8A80CFD111C6DF41528"
+    },
+    {
+      "file": "src/main/services/library/prepare-import.ts",
+      "sha256": "9687A1BA070ED731B7D2A42110D3BC7245C6F061E00CF980C297496A6137DE69"
+    },
+    {
+      "file": "src/main/services/library/question-metadata.ts",
+      "sha256": "BD7BC763902D7B655047F875817410EE9249078F0C43CB55103B556F8E9AB14E"
+    },
+    {
+      "file": "src/main/services/resources/read-file-snapshot.ts",
+      "sha256": "ABA650EF9D5DCB6EF5A3AD900EB4076C2B8B7B1719DC6D1746D8D184566093BD"
+    },
+    {
+      "file": "src/main/services/resources/read-image.ts",
+      "sha256": "CE7CC2CD650B1A4D569E613643CB842F265D30CF666C7D466E9DA1F740B0D9AE"
+    },
+    {
+      "file": "src/main/window.ts",
+      "sha256": "C2493BE2646CB90354AF8E041B1BE943B789EAA0683FD5DF95DC799C68C5DCD7"
+    },
+    {
+      "file": "src/preload/index.ts",
+      "sha256": "40B25470917BAB5E59A0510EDB704CFC79760335BD5DED0F0D21FB83A74EB8B4"
+    },
+    {
+      "file": "src/renderer/index.html",
+      "sha256": "F8790587D9EB16C142E3F47437BF6EC8C28CC5706C9DB986AD46AC174AC131DC"
+    },
+    {
+      "file": "src/renderer/src/App.tsx",
+      "sha256": "0D023D81694D54FF1316C3D7ABA13BBBC3A3CBFA1C19C0F2DDDBA7E01063B93B"
+    },
+    {
+      "file": "src/renderer/src/env.d.ts",
+      "sha256": "F9C102558631B913449D3BF4A860980BA8C1BEC9DAD975F60B77BFBB042F0BFA"
+    },
+    {
+      "file": "src/renderer/src/main.tsx",
+      "sha256": "CBAE0E49F9288480C5FCE1C76EFF4723F29D660CFCB4BC6083BC3652B47917AD"
+    },
+    {
+      "file": "src/renderer/src/styles/global.css",
+      "sha256": "0C1B7D33600D219734556FF0A18320938BB44C9F281B6F6F703C5E98544B25F4"
+    },
+    {
+      "file": "src/shared/contracts/application.ts",
+      "sha256": "282F08E7B35E07F9718E552CA89F93168EF77DDDFD0E5E0998E8506E52362A5E"
+    },
+    {
+      "file": "src/shared/contracts/image-path.ts",
+      "sha256": "5D45F4DF2479DEA4596ED992EAB8821E76B3EE45F6182EC8B6B68A6AC8E3CE41"
+    },
+    {
+      "file": "src/shared/contracts/import-snapshot.ts",
+      "sha256": "605235257AF0D8865CBE66355E7F726233AE4EED9F8C51F1A6BD3988B6FAABA7"
+    },
+    {
+      "file": "src/shared/contracts/question-bank.ts",
+      "sha256": "63BD34E3659DC57FEC994FDF61092E6DFA1C560DA3EDD416CC677A5928A06050"
+    },
+    {
+      "file": "tests/e2e/database-errors.spec.ts",
+      "sha256": "1155D6932E6FC51F200B6A52A33E8FEE31F853C60FFC995FB501ABF26E013FCB"
+    },
+    {
+      "file": "tests/e2e/helpers.ts",
+      "sha256": "837C17DE05F0738E2C7C288BCAC0BB820675191F260383DC7F8A7DCE62E73381"
+    },
+    {
+      "file": "tests/e2e/startup.spec.ts",
+      "sha256": "78738FEAF1CB61812A9A7B54B77F7E1EC1D217AFD43ED89ED718975B4311D770"
+    },
+    {
+      "file": "tests/fixtures/images/README.md",
+      "sha256": "E6064A8A42A20A7BCD1141078320339EBCC9D0080CDED1B1F40F361BA5EC703E"
+    },
+    {
+      "file": "tests/fixtures/images/small.jpg",
+      "sha256": "200A7848EB435A30C8A06C9762B87732EC6971CA01FD384FE08AACF383B2D639"
+    },
+    {
+      "file": "tests/fixtures/images/small.png",
+      "sha256": "4BDE795C8AF51F0BDC1DE0DB1ADC89ED741BF52E777A3B52CA38015EE1B16FAD"
+    },
+    {
+      "file": "tests/fixtures/images/small.webp",
+      "sha256": "B1F3FF00BA1D62D206025CE07B1ED6CDF87E8C018608D8D1984FE463F4E6E534"
+    },
+    {
+      "file": "tests/fixtures/markdown/合法专题.md",
+      "sha256": "F499ACB81560265FF05E4A619AA7D415A18CD891505459E8DC945A6EACD2B9A1"
+    },
+    {
+      "file": "tests/fixtures/markdown/README.md",
+      "sha256": "A61C82132CA322833D6B2CCA75CF2EEC706E0F02CC10C3F1FF3E3DB569211533"
+    },
+    {
+      "file": "tests/helpers/import-directory.ts",
+      "sha256": "FBB8A167B270117AC6B7AD89C4659A234D30EBFE5F020D606A963836F33CA8B3"
+    },
+    {
+      "file": "tests/unit/application.test.ts",
+      "sha256": "2083F4BD62EB3826453FE6B10063B9EC8C29A253B7D6B3304A8E4C62E523FD29"
+    },
+    {
+      "file": "tests/unit/gpio-question-bank.test.ts",
+      "sha256": "2366AA434B4EA42EE64FBF4D6D3697767754BFE002BE40623F95EDDE1B2E3978"
+    },
+    {
+      "file": "tests/unit/import-budget.test.ts",
+      "sha256": "2370AF7032412B46EAEC315F6584E133913BF38FB85344189C2E68642F1E5698"
+    },
+    {
+      "file": "tests/unit/import-limits.test.ts",
+      "sha256": "56E27AFB4D6FA5FAB09CC2B7B4B47413B479417572977A6C4AE65397A9C500DD"
+    },
+    {
+      "file": "tests/unit/markdown-images.test.ts",
+      "sha256": "57606880E9B0D960A3AEC92EC8D7B4C08A9365CD74A07D3527F5887BC4506F9E"
+    },
+    {
+      "file": "tests/unit/markdown-metadata.test.ts",
+      "sha256": "F4E635C0903044B10C63F24580E3F395B64F72EB157C23D1EA0DA98D3007889F"
+    },
+    {
+      "file": "tests/unit/markdown-structure.test.ts",
+      "sha256": "A6FEC1BCBED64B2B34A411C2BBFC7A773FC2E9D8C7EFCB9FC2B679435212CF99"
+    },
+    {
+      "file": "tests/unit/prepare-import.test.ts",
+      "sha256": "92B0274EFCBCC30639A0293CD3BFCF8C0B2BB8ADED26C3FF2C4E9FB100E41CB3"
+    },
+    {
+      "file": "tests/unit/read-file-snapshot.test.ts",
+      "sha256": "89880B248F89B5EEF6F71E4AB7DD4E9260F4434386A97A95D51C009069724CF1"
+    },
+    {
+      "file": "tests/unit/read-image.test.ts",
+      "sha256": "CECA40543929E3647D0184E970D42F4BFE076662711F2DA473D528B69EA29EBE"
+    },
+    {
+      "file": "tsconfig.node.json",
+      "sha256": "EA7F86FD9B466ADC13AD169F2C434B44BD3B54DA5884194276CADF561038DF28"
+    },
+    {
+      "file": "tsconfig.web.json",
+      "sha256": "71A9F286BAFA88047E2790CEDD822DFA8024FA36C5C708F7606ABD94AE85F8AD"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "file": "desktop-full-first.json",
+    "stats": {
+      "startTime": "2026-10-22T03:28:39.495Z",
+      "duration": 496013.74899999995,
+      "expected": 298,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "results": 298,
+    "failed": []
+  },
+  {
+    "file": "desktop-full-second.json",
+    "stats": {
+      "startTime": "2026-10-22T03:42:41.171Z",
+      "duration": 496745.489,
+      "expected": 299,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "results": 300,
+    "failed": [
+      {
+        "project": "development",
+        "title": "v5 筛选迁移 backup-blocked 停止或回滚，原库保留",
+        "status": "unexpected",
+        "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('status')\nExpected substring: \u001b[32m\"本地数据暂不可用\"\u001b[39m\nError: strict mode violation: getByRole('status') resolved to 2 elements:\n    1) <section role=\"status\" class=\"service-status status-error\">…</section> aka getByText('本地数据暂不可用，请检查数据目录权限或诊断日志后重启。原数据库会保留。重新检查')\n    2) <p role=\"status\">正在读取数据位置…</p> aka getByText('正在读取数据位置…')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('status') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('status')\u001b[22m\n"
+      }
+    ]
+  },
+  {
+    "file": "desktop-status-target.json",
+    "stats": {
+      "startTime": "2026-10-22T03:52:48.319Z",
+      "duration": 11443.203,
+      "expected": 14,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "results": 14,
+    "failed": []
+  },
+  {
+    "file": "desktop-case-final.json",
+    "stats": {
+      "startTime": "2026-10-22T03:42:25.797Z",
+      "duration": 4395.775000000001,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "results": 2,
+    "failed": []
+  }
+]

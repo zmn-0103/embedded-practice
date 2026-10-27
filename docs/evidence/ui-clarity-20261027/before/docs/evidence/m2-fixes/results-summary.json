@@ -1,0 +1,56 @@
+{
+  "beforeFix": {
+    "startTime": "2026-10-20T12:13:21.885Z",
+    "duration": 61813.409999999996,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  },
+  "unit": {
+    "total": 405,
+    "passed": 405,
+    "failed": 0,
+    "pending": 0
+  },
+  "development": {
+    "startTime": "2026-10-20T12:16:28.489Z",
+    "duration": 68378.901,
+    "expected": 41,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "packaged": {
+    "startTime": "2026-10-20T12:18:42.611Z",
+    "duration": 66427.68800000001,
+    "expected": 41,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "extracted": [
+    "development-repeat-skip-50ms.json",
+    "development-repeat-previous-50ms.json",
+    "development-repeat-skip-100ms.json",
+    "development-repeat-previous-100ms.json",
+    "development-repeat-skip-250ms.json",
+    "development-repeat-previous-250ms.json",
+    "development-repeat-keyboard-Enter.json",
+    "development-repeat-keyboard-Space.json",
+    "development-repeat-held-key.json",
+    "development-image-autosave.json",
+    "development-image-after-autosave.png",
+    "packaged-repeat-skip-50ms.json",
+    "packaged-repeat-previous-50ms.json",
+    "packaged-repeat-skip-100ms.json",
+    "packaged-repeat-previous-100ms.json",
+    "packaged-repeat-skip-250ms.json",
+    "packaged-repeat-previous-250ms.json",
+    "packaged-repeat-keyboard-Enter.json",
+    "packaged-repeat-keyboard-Space.json",
+    "packaged-repeat-held-key.json",
+    "packaged-image-autosave.json",
+    "packaged-image-after-autosave.png"
+  ]
+}

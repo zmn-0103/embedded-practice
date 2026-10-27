@@ -1,0 +1,430 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=development"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/desktop-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "database-errors.spec.ts",
+      "file": "database-errors.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "损坏文件报错且原文件不变",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 716,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T03:20:14.916Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d6c8eb0f1733ea9b613-a46f1b8040e759c2d005",
+          "file": "database-errors.spec.ts",
+          "line": 24,
+          "column": 7
+        },
+        {
+          "title": "无应用标识的非空库报错且原文件不变",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 601,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T03:20:15.661Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d6c8eb0f1733ea9b613-4eac969d868e89ef6ae1",
+          "file": "database-errors.spec.ts",
+          "line": 24,
+          "column": 7
+        },
+        {
+          "title": "不受支持的结构版本报错且原文件不变",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 594,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T03:20:16.269Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d6c8eb0f1733ea9b613-67fbf42bb29f7218ef6e",
+          "file": "database-errors.spec.ts",
+          "line": 24,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "import-worker.spec.ts",
+      "file": "import-worker.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "真实线程准备题库与三种图片，停止后来源可移动",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 657,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T03:20:16.875Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "worker-snapshot.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJxdWVzdGlvbkNvdW50IjogODAsCiAgInRvcGljQ291bnQiOiAyLAogICJtYWluVGhyZWFkUHVsc2VzIjogMTcsCiAgInJlc291cmNlcyI6IFsKICAgIHsKICAgICAgImhhc2giOiAiNGJkZTc5NWM4YWY1MWYwYmRjMWRlMGRiMWFkYzg5ZWQ3NDFiZjUyZTc3N2EzYjUyY2EzODAxNWVlMWIxNmZhZCIsCiAgICAgICJhY3R1YWxIYXNoIjogIjRiZGU3OTVjOGFmNTFmMGJkYzFkZTBkYjFhZGM4OWVkNzQxYmY1MmU3NzdhM2I1MmNhMzgwMTVlZTFiMTZmYWQiLAogICAgICAiZm9ybWF0IjogInBuZyIsCiAgICAgICJ3aWR0aCI6IDIsCiAgICAgICJoZWlnaHQiOiAzLAogICAgICAiYnl0ZUxlbmd0aCI6IDgwLAogICAgICAiaXNVaW50OEFycmF5IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgImhhc2giOiAiMjAwYTc4NDhlYjQzNWEzMGM4YTA2Yzk3NjJiODc3MzJlYzY5NzFjYTAxZmQzODRmZTA4YWFjZjM4M2IyZDYzOSIsCiAgICAgICJhY3R1YWxIYXNoIjogIjIwMGE3ODQ4ZWI0MzVhMzBjOGEwNmM5NzYyYjg3NzMyZWM2OTcxY2EwMWZkMzg0ZmUwOGFhY2YzODNiMmQ2MzkiLAogICAgICAiZm9ybWF0IjogImpwZWciLAogICAgICAid2lkdGgiOiAyLAogICAgICAiaGVpZ2h0IjogMywKICAgICAgImJ5dGVMZW5ndGgiOiA2NjEsCiAgICAgICJpc1VpbnQ4QXJyYXkiOiB0cnVlCiAgICB9LAogICAgewogICAgICAiaGFzaCI6ICJiMWYzZmYwMGJhMWQ2MmQyMDYwMjVjZTA3YjFlZDZjZGY4N2U4YzAxODYwOGQ4ZDE5ODRmZTQ2M2Y0ZTZlNTM0IiwKICAgICAgImFjdHVhbEhhc2giOiAiYjFmM2ZmMDBiYTFkNjJkMjA2MDI1Y2UwN2IxZWQ2Y2RmODdlOGMwMTg2MDhkOGQxOTg0ZmU0NjNmNGU2ZTUzNCIsCiAgICAgICJmb3JtYXQiOiAid2VicCIsCiAgICAgICJ3aWR0aCI6IDIsCiAgICAgICJoZWlnaHQiOiAzLAogICAgICAiYnl0ZUxlbmd0aCI6IDQ4LAogICAgICAiaXNVaW50OEFycmF5IjogdHJ1ZQogICAgfQogIF0sCiAgImNyZWF0ZWRUaHJlYWRJZHMiOiBbCiAgICAxCiAgXSwKICAiZXhpdGVkVGhyZWFkSWRzIjogWwogICAgMQogIF0sCiAgIm1haW5UaHJlYWRJZCI6IDAsCiAgImVycm9ycyI6IFtdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "edb9a8bc11c7e00d130b-30588804803848c6510c",
+          "file": "import-worker.spec.ts",
+          "line": 38,
+          "column": 5
+        },
+        {
+          "title": "真实线程支持忙碌、失败后重试、取消与期限",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 697,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T03:20:17.538Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "worker-controls.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJidXN5IjogIklNUE9SVF9CVVNZIiwKICAibWlzc2luZyI6ICJGSUxFX1VOUkVBREFCTEUiLAogICJyZWNvdmVyZWRRdWVzdGlvbnMiOiA4MCwKICAiY2FuY2VsbGVkIjogIldPUktFUl9DQU5DRUxMRUQiLAogICJ0aW1lZE91dCI6ICJXT1JLRVJfVElNRU9VVCIsCiAgImNyZWF0ZWRUaHJlYWRJZHMiOiBbCiAgICAxLAogICAgMiwKICAgIDMsCiAgICA0CiAgXSwKICAiZXhpdGVkVGhyZWFkSWRzIjogWwogICAgMSwKICAgIDIsCiAgICAzLAogICAgNAogIF0sCiAgIm1haW5UaHJlYWRJZCI6IDAsCiAgImVycm9ycyI6IFtdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "edb9a8bc11c7e00d130b-3613755018e2b2aa4fb6",
+          "file": "import-worker.spec.ts",
+          "line": 79,
+          "column": 5
+        },
+        {
+          "title": "关闭服务等待真实线程停止并拒绝新任务",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 552,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T03:20:18.242Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "worker-shutdown.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYW5jZWxsZWQiOiAiV09SS0VSX0NBTkNFTExFRCIsCiAgImFmdGVyQ2xvc2UiOiAiV09SS0VSX0NBTkNFTExFRCIsCiAgImNyZWF0ZWRUaHJlYWRJZHMiOiBbCiAgICAxCiAgXSwKICAiZXhpdGVkVGhyZWFkSWRzIjogWwogICAgMQogIF0sCiAgIm1haW5UaHJlYWRJZCI6IDAsCiAgImVycm9ycyI6IFtdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "edb9a8bc11c7e00d130b-b4a968b9032624b5ca9e",
+          "file": "import-worker.spec.ts",
+          "line": 105,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "startup.spec.ts",
+      "file": "startup.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "关闭重开后读回 SQLite 记录",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1383,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T03:20:18.804Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9d5cd95b3f2ad7194fa4-193a7b74ae9967c2292d",
+          "file": "startup.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "窗口隔离与生产内容策略生效",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 519,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T03:20:20.194Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9d5cd95b3f2ad7194fa4-4622e9d3f750f9119928",
+          "file": "startup.spec.ts",
+          "line": 37,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-20T03:20:14.607Z",
+    "duration": 6143.817000000001,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

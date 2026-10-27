@@ -1,0 +1,365 @@
+{
+  "unit": {
+    "files": 24,
+    "total": 492,
+    "passed": 492,
+    "baseline": 474,
+    "missing": [],
+    "comparison": "multiset of file and title, including repeated parameterized case names"
+  },
+  "finalStats": {
+    "startTime": "2026-10-21T10:58:05.751Z",
+    "duration": 331715.452,
+    "expected": 184,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": {
+    "development": {
+      "total": 92,
+      "baseline": 81,
+      "missing": [],
+      "new": [
+        {
+          "file": "settings-migration.spec.ts",
+          "title": "v4 升级至 v5：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级"
+        },
+        {
+          "file": "settings-migration.spec.ts",
+          "title": "v4 显示设置升级 backup-blocked 时停止/回滚且保留原库"
+        },
+        {
+          "file": "settings-migration.spec.ts",
+          "title": "v4 显示设置升级 foreign-key 时停止/回滚且保留原库"
+        },
+        {
+          "file": "settings-migration.spec.ts",
+          "title": "v4 显示设置升级 table-conflict 时停止/回滚且保留原库"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "四入口初始空库、独立页面、地址与显示默认值保持"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "损坏设置读取报错且不伪造默认成功，修复重读保留业务数据"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "显示设置正常关闭独立重开，保留草稿位置自评收藏与历史"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "真实设置写入失败及提交后响应丢失，原目标重试不改变学习数据"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "设置保存处理中正常关闭等待结果，失败返回窗口后重试"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "设置保存处理中正常关闭等待结果，成功关闭独立重开"
+        }
+      ]
+    },
+    "packaged": {
+      "total": 92,
+      "baseline": 81,
+      "missing": [],
+      "new": [
+        {
+          "file": "settings-migration.spec.ts",
+          "title": "v4 升级至 v5：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级"
+        },
+        {
+          "file": "settings-migration.spec.ts",
+          "title": "v4 显示设置升级 backup-blocked 时停止/回滚且保留原库"
+        },
+        {
+          "file": "settings-migration.spec.ts",
+          "title": "v4 显示设置升级 foreign-key 时停止/回滚且保留原库"
+        },
+        {
+          "file": "settings-migration.spec.ts",
+          "title": "v4 显示设置升级 table-conflict 时停止/回滚且保留原库"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "四入口初始空库、独立页面、地址与显示默认值保持"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "损坏设置读取报错且不伪造默认成功，修复重读保留业务数据"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "显示设置正常关闭独立重开，保留草稿位置自评收藏与历史"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "真实设置写入失败及提交后响应丢失，原目标重试不改变学习数据"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "设置保存处理中正常关闭等待结果，失败返回窗口后重试"
+        },
+        {
+          "file": "settings-window.spec.ts",
+          "title": "设置保存处理中正常关闭等待结果，成功关闭独立重开"
+        }
+      ]
+    }
+  },
+  "intentionalTitleRename": {
+    "v3 升级至 v4：备份、全部旧记录、原请求回执与顺序会话恢复保持": "v3 升级至 v5：备份、全部旧记录、原请求回执与顺序会话恢复保持"
+  },
+  "attachments": [
+    {
+      "project": "development",
+      "test": "v4 升级至 v5：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级",
+      "name": "development-settings-v4-preserved.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "v4 显示设置升级 backup-blocked 时停止/回滚且保留原库",
+      "name": "development-settings-v4-backup-blocked.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "v4 显示设置升级 table-conflict 时停止/回滚且保留原库",
+      "name": "development-settings-v4-table-conflict.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "v4 显示设置升级 foreign-key 时停止/回滚且保留原库",
+      "name": "development-settings-v4-foreign-key.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "v4 升级至 v5：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级",
+      "name": "packaged-settings-v4-preserved.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "v4 显示设置升级 backup-blocked 时停止/回滚且保留原库",
+      "name": "packaged-settings-v4-backup-blocked.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "v4 显示设置升级 table-conflict 时停止/回滚且保留原库",
+      "name": "packaged-settings-v4-table-conflict.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "v4 显示设置升级 foreign-key 时停止/回滚且保留原库",
+      "name": "packaged-settings-v4-foreign-key.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "四入口初始空库、独立页面、地址与显示默认值保持",
+      "name": "development-settings-default.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "development-settings-light-15.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "development-reading-light-15.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "development-practice-light-15.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "development-settings-system-17.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "development-reading-system-17.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "development-practice-system-17.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "development-settings-dark-22.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "development-reading-dark-22.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "development-practice-dark-22.png",
+      "type": "image/png"
+    },
+    {
+      "project": "development",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "development-appearance-rendering.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "显示设置正常关闭独立重开，保留草稿位置自评收藏与历史",
+      "name": "development-appearance-reopened.json",
+      "type": "application/json"
+    },
+    {
+      "project": "development",
+      "test": "真实设置写入失败及提交后响应丢失，原目标重试不改变学习数据",
+      "name": "development-appearance-write-retries.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "四入口初始空库、独立页面、地址与显示默认值保持",
+      "name": "packaged-settings-default.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "packaged-settings-light-15.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "packaged-reading-light-15.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "packaged-practice-light-15.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "packaged-settings-system-17.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "packaged-reading-system-17.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "packaged-practice-system-17.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "packaged-settings-dark-22.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "packaged-reading-dark-22.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "packaged-practice-dark-22.png",
+      "type": "image/png"
+    },
+    {
+      "project": "packaged",
+      "test": "系统与手动主题、15/17/22px 实际正文代码表格输入框及隐藏答案",
+      "name": "packaged-appearance-rendering.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "显示设置正常关闭独立重开，保留草稿位置自评收藏与历史",
+      "name": "packaged-appearance-reopened.json",
+      "type": "application/json"
+    },
+    {
+      "project": "packaged",
+      "test": "真实设置写入失败及提交后响应丢失，原目标重试不改变学习数据",
+      "name": "packaged-appearance-write-retries.json",
+      "type": "application/json"
+    }
+  ],
+  "firstRuns": {
+    "navigation": {
+      "startTime": "2026-10-21T10:50:24.780Z",
+      "duration": 176009.036,
+      "expected": 84,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "settings": {
+      "startTime": "2026-10-21T10:55:38.186Z",
+      "duration": 21879.34,
+      "expected": 6,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "migration": {
+      "startTime": "2026-10-21T10:43:42.185Z",
+      "duration": 4099.151,
+      "expected": 4,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "fixes": {
+      "startTime": "2026-10-21T10:56:40.301Z",
+      "duration": 16143.931,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  }
+}

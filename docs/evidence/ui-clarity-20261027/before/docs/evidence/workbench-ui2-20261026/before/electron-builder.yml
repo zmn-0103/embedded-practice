@@ -1,0 +1,27 @@
+appId: local.embeddedPractice
+productName: 嵌入式刷题本
+directories:
+  output: release
+  buildResources: resources
+files:
+  - out/**/*
+  - package.json
+  - docs/licenses/**/*
+asar: true
+asarUnpack:
+  - '**/*.node'
+npmRebuild: true
+publish: null
+win:
+  executableName: embedded-practice
+  target:
+    - target: nsis
+      arch:
+        - x64
+  signExecutable: false
+nsis:
+  artifactName: embedded-practice-${version}-${arch}-setup.${ext}
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  deleteAppDataOnUninstall: false

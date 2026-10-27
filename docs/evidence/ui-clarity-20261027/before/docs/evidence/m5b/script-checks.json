@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "command": "npx --no-install prettier --check 'scripts/*.mjs'",
+      "exitCode": 0,
+      "result": "All four matched files use Prettier style."
+    },
+    {
+      "command": "node --check scripts/prepare-m5-samples.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node --check scripts/m5-desktop-harness.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node --check scripts/measure-m5-performance.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node --check scripts/check-m5-trial.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "summarize([1,2]).median and summarize([3,1,2]).median",
+      "exitCode": 0,
+      "expected": [
+        1.5,
+        2
+      ]
+    }
+  ],
+  "notRun": [
+    "Full unit suite",
+    "Full desktop suite",
+    "New application build",
+    "Installer execution",
+    "Real system offline acceptance"
+  ],
+  "measurementRuns": [
+    {
+      "path": "performance-01/result.json",
+      "completed": true,
+      "automaticRetries": 0
+    },
+    {
+      "path": "trial-01/result.json",
+      "completed": true,
+      "automaticRetries": 0
+    }
+  ]
+}

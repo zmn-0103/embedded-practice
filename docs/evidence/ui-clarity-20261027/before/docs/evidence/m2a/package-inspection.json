@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-10-20T07:41:17.981Z",
+  "archive": "release/win-unpacked/resources/app.asar",
+  "sha256": "78854f3308cd480208daaf98197d7c4fa6e4a6e766af590af417e18ce05215d4",
+  "entries": [
+    {
+      "file": "out/main/import-preparation.js",
+      "bytes": 4789,
+      "sha256": "3a537683edf96c14894a409aef0047b9c8b6a606db7ea273b3265de28c0858a9",
+      "matches": true
+    },
+    {
+      "file": "out/main/import-protocol-CjaQDko1.js",
+      "bytes": 6668,
+      "sha256": "e68edce92e63bcdb04de6fab340b0fb33b14e465e34e57ef7bcb288745de6942",
+      "matches": true
+    },
+    {
+      "file": "out/main/import-worker-CTPDu8a3.js",
+      "bytes": 760657,
+      "sha256": "b9f98f49195219995f2a0445832c045e9e587d5b2164ed70586bdbcbd86653d6",
+      "matches": true
+    },
+    {
+      "file": "out/main/index.js",
+      "bytes": 19711,
+      "sha256": "af634bd09f95181290005cb5e2c79e54f15d52200ab92775b53a31ae6dad997f",
+      "matches": true
+    },
+    {
+      "file": "out/main/library-import.js",
+      "bytes": 19859,
+      "sha256": "294c3bb255d4fcd575557144bc19f0459a4209b0a58f98c439ce480a1571aae6",
+      "matches": true
+    },
+    {
+      "file": "out/main/open-database-BfSHrmmv.js",
+      "bytes": 22512,
+      "sha256": "1bfb0f514d60af723c47575cb479411ed8e779b6ecbc391919179793978af049",
+      "matches": true
+    },
+    {
+      "file": "out/main/practice.js",
+      "bytes": 16561,
+      "sha256": "2574ec73b6ecf30145f0d4c7386f10415664f751cc43af8e707ac1bd766b8773",
+      "matches": true
+    },
+    {
+      "file": "out/main/question-bank-DgNu3Pwr.js",
+      "bytes": 185069,
+      "sha256": "b7f933d0d59e533b528ead424e14653e39e3e6dfb867f02d7c837353aa198b4d",
+      "matches": true
+    },
+    {
+      "file": "out/main/rolldown-runtime-Dbql6lyJ.js",
+      "bytes": 1736,
+      "sha256": "0494dbd5eac31d4e7a2fe7c72fd882986b5f881d3fbca1a83ecaddea02165a84",
+      "matches": true
+    },
+    {
+      "file": "out/preload/index.js",
+      "bytes": 180580,
+      "sha256": "a020e9f58aa6247b8c892d5d0212daef2355126dcb1882335bde49e7fcf312bd",
+      "matches": true
+    },
+    {
+      "file": "out/renderer/assets/index-Cf9_1AVP.js",
+      "bytes": 1376476,
+      "sha256": "148984700ec959f3217e8417d218644044fe2f5fc6f80c8352ab005c5cafba42",
+      "matches": true
+    },
+    {
+      "file": "out/renderer/assets/index-FKH_CDIo.css",
+      "bytes": 7947,
+      "sha256": "d5aa98ad75e5f7ddac07c2eabaeb46789ff40ebfc3ec9d237cc114c7a19617f9",
+      "matches": true
+    },
+    {
+      "file": "out/renderer/index.html",
+      "bytes": 719,
+      "sha256": "76a1f9eb42f6c2e6307bf652bbe716176cf0a9ff13d58ad94484d94acf36d160",
+      "matches": true
+    }
+  ],
+  "nsis": {
+    "file": "release/embedded-practice-0.1.0-x64-setup.exe",
+    "sha256": "641eef07330151d6343047c3aad2639a70c442b46a26426cd74b281d73a091d8"
+  }
+}

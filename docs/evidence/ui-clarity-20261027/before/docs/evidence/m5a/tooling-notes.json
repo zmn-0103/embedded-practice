@@ -1,0 +1,15 @@
+{
+  "errors": [
+    {
+      "action": "first final artifact validation",
+      "error": "Two links referenced the validation report and manifest before they were generated.",
+      "correction": "Generate reports, then validate every actual link and hash."
+    },
+    {
+      "action": "second final artifact validation",
+      "error": "Native JPEG screenshot bytes were saved with .png filenames.",
+      "correction": "89 generated screenshot files renamed within this evidence directory to .jpg; SHA-256 unchanged, mapping preserved. The user-provided PNG retained its name."
+    }
+  ],
+  "boundary": "Only evidence metadata and filenames changed; no application source, data or historical evidence changed. Native tool errors remain in native-steps.json."
+}

@@ -1,0 +1,75 @@
+{
+  "rawReport": "performance-01/result.json",
+  "statistics": {
+    "searchPaintMs": {
+      "count": 30,
+      "min": 17.19999999552965,
+      "median": 22.149999998509884,
+      "p95": 22.799999997019768,
+      "max": 24.299999997019768
+    },
+    "switchPaintMs": {
+      "count": 30,
+      "min": 12.199999995529652,
+      "median": 29.5,
+      "p95": 57.400000005960464,
+      "max": 58.399999998509884
+    },
+    "switchActionReadyMs": {
+      "count": 30,
+      "min": 502.19999999552965,
+      "median": 507.30000000074506,
+      "p95": 509.3999999985099,
+      "max": 509.3999999985099
+    },
+    "normalStartupMs": {
+      "count": 5,
+      "min": 525.1780999999974,
+      "median": 547.6862999999976,
+      "p95": 568.4938000000002,
+      "max": 568.4938000000002
+    }
+  },
+  "targets": {
+    "searchUnder500ms": true,
+    "contentSwitchUnder200ms": true,
+    "normalStartupUnder3000ms": true,
+    "preparingFeedbackObserved": true,
+    "committingFeedbackObserved": true
+  },
+  "postprocessingNote": "Original report retained its upper middle value for even sample median. This derived report uses the standard mean of the middle two; every raw sample, maximum, target and run result is unchanged. Future harness summarize is corrected.",
+  "sourceTotalBytes": 19324902,
+  "databaseBytes": 21798912,
+  "import": {
+    "label": "5000题与500张图真实导入",
+    "file": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5b-LsU3tY\\性能 样本\\5000题 性能样本.md",
+    "preparing": {
+      "elapsedMs": 2390.5,
+      "timerTicks": 119,
+      "maxTimerGapMs": 34.399999998509884,
+      "messages": [
+        "匹配 0 题",
+        "正在选择并检查题库文件与图片…取消准备"
+      ]
+    },
+    "committing": {
+      "elapsedMs": 284.8999999985099,
+      "timerTicks": 13,
+      "maxTimerGapMs": 37.100000001490116,
+      "messages": [
+        "匹配 0 题",
+        "正在保存整批题库，请稍候…",
+        "导入完成：新增 5000，内容更新 0，信息变更 0，不变 0，归档 0，恢复 0。",
+        "正在查找匹配题目…"
+      ]
+    },
+    "counts": [
+      "5000",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  }
+}

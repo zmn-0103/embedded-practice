@@ -1,0 +1,200 @@
+{
+  "productionCount": 5,
+  "testFixtureCount": 11,
+  "allReviewed": true,
+  "changes": [
+    {
+      "path": "src/main/database/open-database.ts",
+      "new": false,
+      "sha256": "085d4a8bf1551273aeedc2ff4bf6a8a4eb1bd640313ac2db6c21e56e809a665c",
+      "reviewed": true
+    },
+    {
+      "path": "src/main/database/practice-schema.ts",
+      "new": false,
+      "sha256": "614f8f5363fa7a9286aea4c918f6808ec0801fa4394fb69850cc32734ecadd51",
+      "reviewed": true
+    },
+    {
+      "path": "src/main/database/repositories/practice-repository.ts",
+      "new": false,
+      "sha256": "6820d0cc361aa67ddd48def7e7515a2a451f0959e328f5cc4f2a4e66edb3991e",
+      "reviewed": true
+    },
+    {
+      "path": "src/renderer/src/components/PracticeWorkspace.tsx",
+      "new": false,
+      "sha256": "2884475454da2c97facf0ccfb9d52a6d35ab604faed6c8973427c572c6db5588",
+      "reviewed": true
+    },
+    {
+      "path": "src/shared/contracts/practice.ts",
+      "new": false,
+      "sha256": "a9ab93d1a28f0f73ff3929f51b4a34686db5580504c9f764fbadff1b1119af31",
+      "reviewed": true
+    },
+    {
+      "path": "tests/e2e/history-versions.spec.ts",
+      "new": false,
+      "sha256": "7a0114d931adb0db08fe609d214a8e5060e90b670d50ab71d74d5db849e7031a",
+      "reviewed": true
+    },
+    {
+      "path": "tests/e2e/library-import.spec.ts",
+      "new": false,
+      "sha256": "4ad028ec11bc005d349831f13cd3b7cea03702f30d628dffa9056936648f814b",
+      "reviewed": true
+    },
+    {
+      "path": "tests/e2e/practice-mode-migration.spec.ts",
+      "new": false,
+      "sha256": "d56a6c2ef49f6c8775d48c6011026a49ab2c111c4998a281415e89c38f46a0a4",
+      "reviewed": true
+    },
+    {
+      "path": "tests/e2e/practice.spec.ts",
+      "new": false,
+      "sha256": "6c04568814f4f13dd6710d120a232d3f4fc1ec4f1575365e248803272fdc2b6f",
+      "reviewed": true
+    },
+    {
+      "path": "tests/e2e/session-filters-migration.spec.ts",
+      "new": true,
+      "sha256": "1eb2d7c95ed2d49511dffcb643a25667f99865b6b90e80fa2a520a738fa8b7b8",
+      "reviewed": true
+    },
+    {
+      "path": "tests/e2e/session-filters.spec.ts",
+      "new": true,
+      "sha256": "0a8dcd45a6d80cf920e99fbba6b0f53d2e24fb179ad1ce6ec1a44188153ab680",
+      "reviewed": true
+    },
+    {
+      "path": "tests/e2e/settings-migration.spec.ts",
+      "new": false,
+      "sha256": "c2f05ca1d61fda5ed6cad4b2f5c3fa1810d32d69e58002a440ab99c4b96fcb76",
+      "reviewed": true
+    },
+    {
+      "path": "tests/fixtures/schema-v5.sql",
+      "new": true,
+      "sha256": "173cc03df94d26482c10269784de6f857b412c8f3830dde08e307755eaca9564",
+      "reviewed": true
+    },
+    {
+      "path": "tests/integration/practice-exercise.ts",
+      "new": false,
+      "sha256": "c177e241295219137c65245e598a1e61b8fc317e86eac717d891c8bc5797edc9",
+      "reviewed": true
+    },
+    {
+      "path": "tests/unit/practice-contract.test.ts",
+      "new": false,
+      "sha256": "83e57a9dc762de839ba400fd505c96e892b39a9986aa60e0de311c6fc728f775",
+      "reviewed": true
+    },
+    {
+      "path": "tests/unit/practice-controller.test.ts",
+      "new": false,
+      "sha256": "1369f79aa891488ca4d10a1318d4ea0cf350064b6399b46002100f5ec52f91d7",
+      "reviewed": true
+    }
+  ],
+  "protected": [
+    {
+      "path": "计划书.md",
+      "unchanged": true,
+      "sha256": "4217bea47b9cb28e5a1b8e976bacb57eb769bb25503981a4e0652ea0171e1c73"
+    },
+    {
+      "path": "package.json",
+      "unchanged": true,
+      "sha256": "67887afccf13dc4625e6b26142057124b0b6cfaad897f70193aad2ec334d4522"
+    },
+    {
+      "path": "package-lock.json",
+      "unchanged": true,
+      "sha256": "8eba923818767dbd7f8c65b2ecb12d763004d131a0418df9902e2e728ecddb2e"
+    },
+    {
+      "path": "electron.vite.config.ts",
+      "unchanged": true,
+      "sha256": "38f81fce515839c5361fc2cf3a1d43f749336792166604c8f49825ca573a481e"
+    },
+    {
+      "path": "electron-builder.yml",
+      "unchanged": true,
+      "sha256": "fbd78d3cd6165705cd1e65d9bdc7d0bfc9316e5b7ce3ca329b2802c1d3ac31df"
+    },
+    {
+      "path": "src/renderer/src/practice-controller.ts",
+      "unchanged": true,
+      "sha256": "21e48b13efa17879bc0f686996ab842da789bfbd9dad0a79da2c4f308e83c98f"
+    },
+    {
+      "path": "question-banks/README.md",
+      "unchanged": true,
+      "sha256": "55db16e31543fbd71ead89dcd5b5d1459c6a95e1364cfbc279efab4161cba5ff"
+    },
+    {
+      "path": "question-banks/STM32F103RCT6-GPIO阶段自测题.md",
+      "unchanged": true,
+      "sha256": "494512d817de9ad0cd3a74cb3de8e375005ac56e02f3f3fc26f4b89383fbf8e2"
+    },
+    {
+      "path": "question-banks/examples/README.md",
+      "unchanged": true,
+      "sha256": "b37c00450bb8b73e25769bb7307319fc3632ad8e386806c84da29f8098588da7"
+    },
+    {
+      "path": "question-banks/examples/格式示例.md",
+      "unchanged": true,
+      "sha256": "11b5f8d3da26c39e0b128915c6c2f52963d5b0c16e470c9a16568f9fa45c06f3"
+    },
+    {
+      "path": "question-banks/sources/STM32F103RCT6-GPIO-原始自测题.txt",
+      "unchanged": true,
+      "sha256": "0d9d53af62b098b5108e7e972fb271ab5130ae1c7fba3180cc00e6d31a01a39f"
+    },
+    {
+      "path": "question-banks/sources/STM32F103RCT6-GPIO-题答对应.json",
+      "unchanged": true,
+      "sha256": "188ae40a71dbe706fde6be90e6c1f08b522e8e9511d2b95b01680281d20d263d"
+    },
+    {
+      "path": "question-banks/templates/.gitkeep",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "question-banks/templates/README.md",
+      "unchanged": true,
+      "sha256": "635ff121d9928326e1bf8ed0fde3c195a80d55cb174b9f63236cae49dca8fee0"
+    },
+    {
+      "path": "question-banks/templates/专题模板.md",
+      "unchanged": true,
+      "sha256": "11fb5aa961e56db7aa4b6d9571ff70ae6f56a07899bb500639f498a9f71e40c3"
+    },
+    {
+      "path": "question-banks/examples/assets/.gitkeep",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "question-banks/examples/assets/中文测试图.png",
+      "unchanged": true,
+      "sha256": "4bde795c8af51f0bdc1de0db1adc89ed741bf52e777a3b52ca38015ee1b16fad"
+    },
+    {
+      "path": "question-banks/examples/assets/带 空格.jpg",
+      "unchanged": true,
+      "sha256": "200a7848eb435a30c8a06c9762b87732ec6971ca01fd384fe08aacf383b2d639"
+    },
+    {
+      "path": "question-banks/examples/assets/测试.webp",
+      "unchanged": true,
+      "sha256": "b1f3ff00ba1d62d206025ce07b1ed6cdf87e8c018608d8d1984fe463f4e6e534"
+    }
+  ]
+}

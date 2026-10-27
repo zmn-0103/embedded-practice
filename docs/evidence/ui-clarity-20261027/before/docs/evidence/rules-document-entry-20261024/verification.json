@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "checksPassed": true,
+  "scope": "规则与文档入口优化；静态验证",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "node": "v24.19.0",
+    "repository": "E:\\My_Projects\\embedded-practice",
+    "head": "2aedaa764b78a741151010be3fe295159b3128ec"
+  },
+  "modifiedExistingDocuments": [
+    "AGENTS.md",
+    "README.md",
+    "docs/README.md",
+    "docs/开发记录.md",
+    "docs/开发说明.md",
+    "docs/练习保存与统计契约.md",
+    "docs/项目模块职责.md",
+    "docs/验收记录.md"
+  ],
+  "newLocalRules": [
+    "docs/AGENTS.md",
+    "scripts/AGENTS.md",
+    "tests/AGENTS.md"
+  ],
+  "rootReadmeLinesBefore": 232,
+  "rootReadmeLinesAfter": 39,
+  "migratedHistoryParagraphs": 43,
+  "originalRulesAndRecordsPreserved": true,
+  "historySectionsPreserved": {
+    "rootHistory": true,
+    "rootEngineering": true,
+    "indexHistory": true,
+    "indexPlanning": true
+  },
+  "backupsVerified": 8,
+  "documentsChecked": 67,
+  "localLinksChecked": 960,
+  "titleAnchorsChecked": 20,
+  "missingFinalLinks": [],
+  "utf8ChangedAndNewDocumentsChecked": 12,
+  "utf8Errors": [],
+  "trackedFilesBefore": 5041,
+  "unchangedTrackedFiles": 5033,
+  "preservedExistingEvidenceFiles": 4743,
+  "preservedProgramFiles": 124,
+  "currentBuildVerifiedFromSource": "20261024.1-plans",
+  "currentSchemaVerifiedFromSource": 9,
+  "documentReviews": [
+    {
+      "round": 1,
+      "focus": "规则、契约与实际目标一致；数据隔离、原约束、历史原文及链接边界完整",
+      "documents": [
+        "AGENTS.md",
+        "README.md",
+        "docs/README.md",
+        "docs/开发记录.md",
+        "docs/开发说明.md",
+        "docs/练习保存与统计契约.md",
+        "docs/项目模块职责.md",
+        "docs/验收记录.md",
+        "docs/AGENTS.md",
+        "scripts/AGENTS.md",
+        "tests/AGENTS.md",
+        "docs/evidence/rules-document-entry-20261024/README.md"
+      ],
+      "result": "通过；首轮新证据说明有一处日志链接名错误，原结果保留并已修正"
+    },
+    {
+      "round": 2,
+      "focus": "职责、体量、可读性与重复；局部规则仅补差异，历史标题明确下移",
+      "documents": [
+        "AGENTS.md",
+        "README.md",
+        "docs/README.md",
+        "docs/开发记录.md",
+        "docs/开发说明.md",
+        "docs/练习保存与统计契约.md",
+        "docs/项目模块职责.md",
+        "docs/验收记录.md",
+        "docs/AGENTS.md",
+        "scripts/AGENTS.md",
+        "tests/AGENTS.md",
+        "docs/evidence/rules-document-entry-20261024/README.md"
+      ],
+      "result": "通过；未扩展业务功能或复制整套根规则"
+    }
+  ],
+  "failuresAndHandling": [
+    {
+      "check": "首轮 Markdown 链接",
+      "missing": [
+        {
+          "document": "docs/evidence/rules-document-entry-20261024/README.md",
+          "line": 20,
+          "target": "docs/evidence/rules-document-entry-20261024/diff-check-01.txt",
+          "reason": "missing-path"
+        }
+      ],
+      "record": "links-verification-01.json",
+      "handling": "修正新证据说明中的日志名，最终 960 个本地链接通过，未覆盖首报告"
+    },
+    {
+      "check": "默认 Git 空白检查",
+      "exitCode": 2,
+      "crlfDiagnostics": 11,
+      "record": "diff-check-default.txt",
+      "handling": "保留原 CRLF；显式允许 CR 行尾后复查，不改变对真实多余空白的检查"
+    }
+  ],
+  "finalCrlfAwareWhitespaceCheckExitCode": 0,
+  "limitations": {
+    "applicationCodeModified": false,
+    "testLogicModified": false,
+    "scriptLogicModified": false,
+    "questionBankModified": false,
+    "planModified": false,
+    "dependenciesModified": false,
+    "programModified": false,
+    "formalDatabaseAccessed": false,
+    "applicationRun": false,
+    "unitTestsRerun": false,
+    "desktopTestsRerun": false,
+    "buildRerun": false,
+    "performanceRerun": false,
+    "manualAcceptancePerformed": false,
+    "installationPerformed": false,
+    "vmwareResumed": false,
+    "committed": false,
+    "pushed": false,
+    "defaultExecutableFallbackRemoved": false
+  }
+}

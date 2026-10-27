@@ -1,0 +1,114 @@
+{
+  "codeCount": 21,
+  "productionCount": 12,
+  "testCount": 9,
+  "changedCode": [
+    {
+      "path": "src/main/index.ts",
+      "beforeSha256": "b4d831543a60607c69308eb00fbf0724c83e2413cdcb35a1556f815b1dcb46f4",
+      "sha256": "e1fbad2aa70ad2f1235dcba545430815bcaed7cb61efd3bf542ae8e2448dbc21"
+    },
+    {
+      "path": "src/main/ipc/backup.ts",
+      "beforeSha256": "d4126eaf030d0dc2f52de42d6efa2edf379497faf603c3d27ae6d3b0479d3f7f",
+      "sha256": "fdeaf2c22c9bbe5f0cb9301d9fe65bd0e9ec3aeee1cf91d69b7c16acdc12d0c7"
+    },
+    {
+      "path": "src/main/ipc/library.ts",
+      "beforeSha256": "7635ccb02817a69c499eb1000d47e779e1f358e71708682c24f1a68140fc1385",
+      "sha256": "820c100e0f48ac1195c210a39f28fd8f88473185aa3b552c4050d8a9588e0a97"
+    },
+    {
+      "path": "src/main/ipc/practice.ts",
+      "beforeSha256": "e13437a9914e0c3d7d1e53c28d1699404e898edff87614c11e68d785272915a2",
+      "sha256": "2dde411ad556664d7f391fa371b471279fc399ef381bdc85b8b6e0703b8f35a0"
+    },
+    {
+      "path": "src/main/services/backup/backup.ts",
+      "beforeSha256": "15ff0a91ebb98520290f6ded78d2930d25fa23fbb5814d83e06a0ead8b084679",
+      "sha256": "2c9185cc0c536c92913c246c543008a7fc57bbc6f777c0fdb11079c68575e07f"
+    },
+    {
+      "path": "src/main/services/backup/restore-files.ts",
+      "beforeSha256": null,
+      "sha256": "a14b919ff59ebfd8cd76e94b458d4cf09840ae479a17249f2f805ca963708766"
+    },
+    {
+      "path": "src/preload/index.ts",
+      "beforeSha256": "9d1cee602148d46e8632862ffcab5d2bea3d6c74037f4f0d78ee82d78345dd28",
+      "sha256": "cae0ee22b6a533cffda865095f77927ba3d14610e4f04c800e42257ed65a3e01"
+    },
+    {
+      "path": "src/renderer/src/components/BackupPanel.tsx",
+      "beforeSha256": "aafa385fc6b81cb584ca12791e4f9f2d0f7a0e9f8cca08282ce8bb0e8f965740",
+      "sha256": "d56518ad0e827d4d7b1d931c254652905fcf4b21ef9a3cb6ad455f91c6089c07"
+    },
+    {
+      "path": "src/renderer/src/components/PracticeWorkspace.tsx",
+      "beforeSha256": "2884475454da2c97facf0ccfb9d52a6d35ab604faed6c8973427c572c6db5588",
+      "sha256": "1ee66d7a11257866a6a89338ea5f582e64174e79dbb464cf17313be05b21ea9b"
+    },
+    {
+      "path": "src/shared/contracts/backup.ts",
+      "beforeSha256": "f106437b8cfe99833e27941adf0e7a2b27c7943fca9138c6fff1c44555163df1",
+      "sha256": "bde9512d4bc26313393c815bebf2b67878bd57f43c14e6733c28493278c01f23"
+    },
+    {
+      "path": "src/shared/contracts/practice-desktop.ts",
+      "beforeSha256": "a25b1754b042290968df85d332f407032adfd64bc393160462110a65bea7ac5b",
+      "sha256": "f5821e1d584d5ffa03255b78d140925162eab660aeebb40bcd20a73f667f5f20"
+    },
+    {
+      "path": "tests/e2e/backup-legacy.spec.ts",
+      "beforeSha256": "6600fe93755998f01cecc00aeda56d0f04013fe324caaf62bbe84361f76e9435",
+      "sha256": "073b4014921ef87159d42abb78cef22dad1c919b8c296f8451b1f54abda2ee83"
+    },
+    {
+      "path": "tests/e2e/backup-window.spec.ts",
+      "beforeSha256": "9328dde1d7f12234b006ba7650a8878f3f36ac3e61716a4e475c9af3bbbac7de",
+      "sha256": "84adef9cff005d7121917744b137e9cb82b8a1df695ecaf7a7354d5878adc5a0"
+    },
+    {
+      "path": "tests/e2e/history-helpers.ts",
+      "beforeSha256": "96f9961389c101d86cc1a574930fbbef98563f281421f7a61fc3c26a0873624d",
+      "sha256": "09bba3cb35af7157d4b34ae60780842674249a8f29e3f0a8e75796ca0205a78d"
+    },
+    {
+      "path": "tests/e2e/restore-window.spec.ts",
+      "beforeSha256": null,
+      "sha256": "2057a0a2583bc9efe8ba36adc99d7491c10c8446609e5590768fcb183e880720"
+    },
+    {
+      "path": "tests/e2e/startup.spec.ts",
+      "beforeSha256": "4be971777f0697cf941026e5b613ce7abb181b369aad4bcaa0b465510dda99f1",
+      "sha256": "a60953463cb387641a6a44ce3feaa481d19e2533038f8afeb02b43defe2c6c73"
+    },
+    {
+      "path": "tests/unit/backup-contract.test.ts",
+      "beforeSha256": "6e3ff91210d67027c67b9b73f142bd3944007b2dab85b4e2528e758661f18554",
+      "sha256": "888d87e5f7c95cbd07469d3006fb9d32307098c30b8e82f4d0948a9862ab0f2c"
+    },
+    {
+      "path": "tests/unit/backup-ipc.test.ts",
+      "beforeSha256": "8fb43d842a84ce4f938c47421140851e66ef7b91c8dffec47ca1bab1c413859a",
+      "sha256": "7f2b9ecb1e0aa30ca6a623153798806f028ba02cc8ece2a248c2096ee0f5a612"
+    },
+    {
+      "path": "tests/unit/practice-controller.test.ts",
+      "beforeSha256": "1369f79aa891488ca4d10a1318d4ea0cf350064b6399b46002100f5ec52f91d7",
+      "sha256": "73b61d7a572110bbec88e4b1e72e1865753438f304d14801e9c312e8c86edd4c"
+    },
+    {
+      "path": "tests/unit/practice-ipc.test.ts",
+      "beforeSha256": "a9a86783a359a22be028d215f7ece063be5c288d50a68be371083fdd9c83355e",
+      "sha256": "77cdb6580a30eed09a057202080163cfd5fa01f6bf5ba2583cb9e74dab358648"
+    },
+    {
+      "path": "electron.vite.config.ts",
+      "beforeSha256": "63d874a79ca567f714660a82697379de9a3f1613e0d85a13504ccda69e46ddaf",
+      "sha256": "593ebf95df0342dd9d5aa5c08148c8f98e8b5635331583192acc0d461718fe15"
+    }
+  ],
+  "missingReview": [],
+  "scope": "实际代码文件与改前快照比较；不把 rg 忽略的 .gitkeep 当成新增代码"
+}

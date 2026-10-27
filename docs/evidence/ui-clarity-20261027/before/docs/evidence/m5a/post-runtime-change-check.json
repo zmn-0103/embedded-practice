@@ -1,0 +1,145 @@
+{
+  "capturedAt": "2026-10-22T12:11:27.908705+00:00",
+  "observation": "Current native windows and process inventory contain no embedded-practice or Notepad process. Closure cause is unknown; not signed off as agent normal close.",
+  "databases": {
+    "original": {
+      "path": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\中文 验收数据\\practice.sqlite3",
+      "integrity": [
+        "ok"
+      ],
+      "foreignKeys": [],
+      "sessions": [
+        {
+          "id": "509fb90a-9f2b-4d23-a578-5306e0946e58",
+          "mode": "sequential",
+          "topic_id": null,
+          "status": "ended",
+          "position": 2,
+          "revision": 5,
+          "created_at": "2026-10-22T07:00:16.717Z",
+          "ended_at": "2026-10-22T07:01:30.168Z",
+          "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+        },
+        {
+          "id": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+          "mode": "sequential",
+          "topic_id": null,
+          "status": "active",
+          "position": 0,
+          "revision": 4,
+          "created_at": "2026-10-22T07:03:30.707Z",
+          "ended_at": null,
+          "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+        }
+      ],
+      "questions": 80,
+      "images": 3,
+      "imageHashesValid": true,
+      "drafts": [
+        {
+          "session": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+          "position": 0,
+          "bytes": 22,
+          "sha256": "d9aec89622246097a42d3bc28ae0d76f205d5bc22859062915c1be7b66a92db9"
+        },
+        {
+          "session": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+          "position": 1,
+          "bytes": 22,
+          "sha256": "834abff5de7a8548349af1d4b8fe431532929ed79fd50def6b5dbf76fc443f6d"
+        },
+        {
+          "session": "509fb90a-9f2b-4d23-a578-5306e0946e58",
+          "position": 0,
+          "bytes": 16,
+          "sha256": "c89d39bfe55e58d315d6b3106a9a3b03ea1c51be1b64077cb65dffaeace11e3a"
+        },
+        {
+          "session": "509fb90a-9f2b-4d23-a578-5306e0946e58",
+          "position": 1,
+          "bytes": 25,
+          "sha256": "d965e1d33c2e744f2a4a6fac547fd47643119a30b19a571c18298712a368285f"
+        }
+      ]
+    },
+    "fresh": {
+      "path": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-m5a-8c42e167592247f09e535156d916baf8\\全新 恢复数据\\practice.sqlite3",
+      "integrity": [
+        "ok"
+      ],
+      "foreignKeys": [],
+      "sessions": [
+        {
+          "id": "509fb90a-9f2b-4d23-a578-5306e0946e58",
+          "mode": "sequential",
+          "topic_id": null,
+          "status": "ended",
+          "position": 2,
+          "revision": 5,
+          "created_at": "2026-10-22T07:00:16.717Z",
+          "ended_at": "2026-10-22T07:01:30.168Z",
+          "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+        },
+        {
+          "id": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+          "mode": "sequential",
+          "topic_id": null,
+          "status": "finished",
+          "position": 20,
+          "revision": 42,
+          "created_at": "2026-10-22T07:03:30.707Z",
+          "ended_at": "2026-10-22T07:27:34.017Z",
+          "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+        },
+        {
+          "id": "ad44aadd-b761-4954-9152-63ed001301bf",
+          "mode": "sequential",
+          "topic_id": "format-example",
+          "status": "active",
+          "position": 1,
+          "revision": 1,
+          "created_at": "2026-10-22T07:29:20.783Z",
+          "ended_at": null,
+          "filters_json": "{\"query\":\"\",\"tag\":null,\"difficulty\":null,\"mastery\":\"all\",\"favoritesOnly\":false}"
+        }
+      ],
+      "questions": 80,
+      "images": 3,
+      "imageHashesValid": true,
+      "drafts": [
+        {
+          "session": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+          "position": 0,
+          "bytes": 22,
+          "sha256": "d9aec89622246097a42d3bc28ae0d76f205d5bc22859062915c1be7b66a92db9"
+        },
+        {
+          "session": "1c700c22-98f3-43e4-9fd1-c0b973c04c6f",
+          "position": 1,
+          "bytes": 22,
+          "sha256": "834abff5de7a8548349af1d4b8fe431532929ed79fd50def6b5dbf76fc443f6d"
+        },
+        {
+          "session": "509fb90a-9f2b-4d23-a578-5306e0946e58",
+          "position": 0,
+          "bytes": 16,
+          "sha256": "c89d39bfe55e58d315d6b3106a9a3b03ea1c51be1b64077cb65dffaeace11e3a"
+        },
+        {
+          "session": "509fb90a-9f2b-4d23-a578-5306e0946e58",
+          "position": 1,
+          "bytes": 25,
+          "sha256": "d965e1d33c2e744f2a4a6fac547fd47643119a30b19a571c18298712a368285f"
+        },
+        {
+          "session": "ad44aadd-b761-4954-9152-63ed001301bf",
+          "position": 0,
+          "bytes": 116,
+          "sha256": "811d5b4cd971d704074bc5c51eea55b3af3e8345ab9a686c849a041f1ce2dcd1"
+        }
+      ]
+    }
+  },
+  "selectedBackupSha256": "1b4c412555564c35e5c94980d2a477ef4c42c5130cc4556ff65cc068c4761354",
+  "selectedBackupUnchanged": true
+}

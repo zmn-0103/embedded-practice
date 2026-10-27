@@ -1,0 +1,179 @@
+{
+  "schema": 9,
+  "integrity": {
+    "integrity_check": "ok"
+  },
+  "dataDirectory": "C:/Users/pc/AppData/Roaming/embedded-practice",
+  "recoveryDirectory": "E:\\My_Projects\\embedded-practice\\backups\\个人使用\\V0.0.1升级前-20261025-150100",
+  "tables": {
+    "app_startup": {
+      "columns": [
+        "id",
+        "launch_count",
+        "last_started_at"
+      ],
+      "count": 1,
+      "sha256": "62e821bf561ded0360f118e05abfdf7a35f10de531b942c75754c12f78dbcaed"
+    },
+    "library_meta": {
+      "columns": [
+        "id",
+        "revision"
+      ],
+      "count": 1,
+      "sha256": "9053b818386a660e67aae7648afd9033bf2b5dbecf5593e88cf20a964b2f5690"
+    },
+    "topics": {
+      "columns": [
+        "topic_id",
+        "title",
+        "source_name",
+        "category_id"
+      ],
+      "count": 13,
+      "sha256": "72fe7140270b0b85381078cd46bcfd1bf3eb5b425856fb7b696298a064d1d37a"
+    },
+    "questions": {
+      "columns": [
+        "id",
+        "topic_id",
+        "question_id",
+        "title",
+        "tags_json",
+        "difficulty",
+        "position",
+        "archived",
+        "current_version_id"
+      ],
+      "count": 419,
+      "sha256": "c61010349ca2ff92117ab606fb3381ea356b0e8f7a8e2678b55388ccc3fdc236"
+    },
+    "question_versions": {
+      "columns": [
+        "id",
+        "question_id",
+        "sequence",
+        "title",
+        "question_markdown",
+        "answer_markdown",
+        "definitions_json",
+        "image_bindings_json",
+        "content_hash",
+        "created_at"
+      ],
+      "count": 419,
+      "sha256": "5a61c97bf21d85e4e9d0d191709997fcdd424e0db9fc53f34a0ee14d1dd88d74"
+    },
+    "image_resources": {
+      "columns": [
+        "hash",
+        "format",
+        "width",
+        "height",
+        "bytes"
+      ],
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "version_images": {
+      "columns": [
+        "version_id",
+        "resource_hash"
+      ],
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "question_user_state": {
+      "columns": [
+        "question_id",
+        "favorite",
+        "last_rating",
+        "last_rated_version_id"
+      ],
+      "count": 419,
+      "sha256": "05fc9d7648215e844d80a4db3795c36ae3e39feb4361ae7c0564506e21ba076f"
+    },
+    "import_receipts": {
+      "columns": [
+        "token",
+        "committed_at",
+        "result_json"
+      ],
+      "count": 1,
+      "sha256": "bb836406044cf6791f5858af6a14bad02a6743d6561ccdd80c89f0a2d12550f7"
+    },
+    "practice_items": {
+      "columns": [
+        "session_id",
+        "position",
+        "question_id",
+        "version_id",
+        "title",
+        "topic_title",
+        "tags_json",
+        "difficulty",
+        "draft",
+        "draft_revision",
+        "revealed_at",
+        "rating",
+        "rated_at",
+        "skipped_at"
+      ],
+      "count": 20,
+      "sha256": "9850e87f6cb0ea3749d9ed7e12bcea98ad66dee649f88df5dffeb749ab89ac7c"
+    },
+    "practice_receipts": {
+      "columns": [
+        "request_id",
+        "payload_hash",
+        "result_json",
+        "created_at"
+      ],
+      "count": 6,
+      "sha256": "49eeb92d50180f8c0cbd9890b88acde4d7f4735a51927b18143d07f632b69618"
+    },
+    "practice_sessions": {
+      "columns": [
+        "id",
+        "mode",
+        "topic_id",
+        "status",
+        "position",
+        "revision",
+        "created_at",
+        "ended_at",
+        "filters_json",
+        "category_scope_json"
+      ],
+      "count": 1,
+      "sha256": "b063bbde16357de495980eff995bdf02e3ecd62c450f06ade523fde090a6054d"
+    },
+    "appearance_settings": {
+      "columns": [
+        "id",
+        "theme",
+        "font_size",
+        "palette"
+      ],
+      "count": 1,
+      "sha256": "88b6ba6032f231549a43e06dea2f6f03aadaae929fc95ed19f7c844acd0d99c9"
+    },
+    "categories": {
+      "columns": [
+        "category_id",
+        "title"
+      ],
+      "count": 5,
+      "sha256": "a8a69fdd54b1e82a8661de00e2574c90741b00be8f31625c31e9b1502574e084"
+    },
+    "practice_plans": {
+      "columns": [
+        "plan_id",
+        "name",
+        "options_json"
+      ],
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "purpose": "用户授权的实际桌面更新后只读一致性核对，不计入自动化测试",
+  "formal_data": "C:\\Users\\pc\\AppData\\Roaming\\embedded-practice",
+  "version": "0.0.2",
+  "build": "20261026.4-v002",
+  "schema": 10,
+  "integrity": "ok",
+  "foreign_key_errors": 0,
+  "business_tables_preserved": 15,
+  "tables": {
+    "app_startup": {
+      "count": 1,
+      "sha256": "9cce216eca95084755fc6302e69af714b32aa3f070ed3550c4249f29a50430ab"
+    },
+    "appearance_settings": {
+      "count": 1,
+      "sha256": "55e748eaf9fb77b2bbb9ce581e9bcb4585e7e00b9e75762f4aa0fc974f6345c4"
+    },
+    "categories": {
+      "count": 5,
+      "sha256": "795766407c7a5a97c400740203e6859b22f1c01b17cfc87db834dc8a5330190d"
+    },
+    "image_resources": {
+      "count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "import_receipts": {
+      "count": 1,
+      "sha256": "a220a5e8fcdf229f8e63ef770a688ff4569345b4aa53ae1671701305a419fa61"
+    },
+    "installed_themes": {
+      "count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "library_meta": {
+      "count": 1,
+      "sha256": "1a4242d70c83104a1e3c1727cbc7c4ce9d3220ed48ad42f715d02b90479d6bcd"
+    },
+    "practice_items": {
+      "count": 20,
+      "sha256": "ffd2dfd1249b266a3418a7d10ccb45d07acf8edf2db1a8a8d3464f784050b8db"
+    },
+    "practice_plans": {
+      "count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "practice_receipts": {
+      "count": 6,
+      "sha256": "8ac63e52d59bf878e795b68c37f254e00e362a915a2471dcc02dcbc54cfaab60"
+    },
+    "practice_sessions": {
+      "count": 1,
+      "sha256": "ce1e07b8e8b2e58b84ac05cf213bcbd745087ae51582557695dcd118a0917fdc"
+    },
+    "question_user_state": {
+      "count": 419,
+      "sha256": "c27b6762a00d38c9438d1c68a89ac18e279a8aa34282c69965087e66b133c7b0"
+    },
+    "question_versions": {
+      "count": 419,
+      "sha256": "963ec6c741929d94ca23576925161f5b44e4ad8e9b06de4e7fb25cb5352d7fcc"
+    },
+    "questions": {
+      "count": 419,
+      "sha256": "b165f17af6754a1264b8013c12aca62b01a6cd677e5155b5f06661181a69f7ef"
+    },
+    "topics": {
+      "count": 13,
+      "sha256": "acf54734788e393aec278f5055b06ad00c0a6dac71b168b61fe2bdade74f2edf"
+    },
+    "version_images": {
+      "count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "startup_before": 14,
+  "startup_after": 15,
+  "only_startup_record_changed": true,
+  "after_snapshot": "E:\\My_Projects\\embedded-practice\\backups\\个人使用\\V0.0.2桌面更新前-20261026-202244\\升级后SQLite一致性备份.sqlite3",
+  "valid_full_backup_from_verified_copy": "E:\\My_Projects\\embedded-practice\\backups\\个人使用\\V0.0.2桌面更新前-20261026-202244\\v002-verified-copy-export.sqlite3",
+  "checked_at": "2026-10-26T20:41:10.340142+08:00"
+}

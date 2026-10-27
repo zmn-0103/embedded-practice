@@ -1,0 +1,978 @@
+[
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\index.ts",
+    "Hash": "A561F06A41870A89AC23BBE85E196BB4FDF98177F9164EAB58D8C13D9B9B9ED2"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\raw.d.ts",
+    "Hash": "C780995A49F68475718978985CBE38BC3E1A3DC33501B3CEF018FE2D7CE868D9"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\window.ts",
+    "Hash": "C2493BE2646CB90354AF8E041B1BE943B789EAA0683FD5DF95DC799C68C5DCD7"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\category-schema.ts",
+    "Hash": "50A4166277F5997C2F4F128FB72DE6491E70AD37C458318D029244A45AB2AE60"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\library-schema.ts",
+    "Hash": "A347613CDB25A85274A24C9598F49B83BB6DC90A7AF4A1686D587E2563904509"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\open-database.ts",
+    "Hash": "12E5E28A6746DEC15825F264BAF904A35E0D821D7E1B021C7EBF9F2A511AFB5A"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\practice-plan-schema.ts",
+    "Hash": "31C6B51594FE633A5D18E7526D395DED273544D1A895E90AE9E4C9E2927CC784"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\practice-schema.ts",
+    "Hash": "614F8F5363FA7A9286AEA4C918F6808EC0801FA4394FB69850CC32734ECADD51"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\settings-schema.ts",
+    "Hash": "5E836CDE251C89D68BDAD9043A228889BED168E9A0F44512231D27A92237F79A"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\startup-store.ts",
+    "Hash": "347C2B9D4E1795A38D294FEC99A45CE285320297E41E4044754F0B7490C3EA87"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\migrations\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\category-repository.ts",
+    "Hash": "7A15179C1F07AF0D5A31FA342033AF5DF2C0460286D9CEE6B79C7D3FCD36FA5A"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\favorite-repository.ts",
+    "Hash": "61D426C54E32EE25476186DB25EE53ADFED841CB751BCF410FA01448F3609AE6"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\history-reader.ts",
+    "Hash": "60873B64820A4CA3FA48F8F4A5AB11289A19B2E31B7033BDE353E652E0E7FC99"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\learning-reader.ts",
+    "Hash": "F3745F129ED00DB4D84C9CDE1139B195B9416D97D5053B8BEFCC6BCFDD450988"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\library-reader.ts",
+    "Hash": "BC7C1EFA6345B40E75C649F46B67BB9EF78700447A76102704034C019D055601"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\library-repository.ts",
+    "Hash": "057F0E68130AD722D5B81C550B4B327712F4AB95AE897E7D71CA3764B6662ACB"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\practice-plan-repository.ts",
+    "Hash": "E836F15AE2935DED14874843655AE7D83AAF6D82C42DEFD5C9C6F42755E92FA5"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\practice-repository.ts",
+    "Hash": "FB9354E3E259894C59F2536B1E547A7B95456B12D7429539D7582733100C1242"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\question-selection.ts",
+    "Hash": "952C44D5A698F8E94B97A170E296BA2412C08D8D702A864F34BA776DA1AA5ABB"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\settings-repository.ts",
+    "Hash": "D14242D18B18E3107891E6ECD0A35B5E845E33E6AE4B3CB43BEF49CEADA6E279"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\theme-repository.ts",
+    "Hash": "DDCE45553AD27117A6C1BD0BA57C50D059930509A34C2F6CC15DFD1181395DF4"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\database\\repositories\\topic-navigation.ts",
+    "Hash": "FF3EA3C0331077607984CF263CD08F2F7DD91E9D1E69011740F24C33CBF19AA1"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\ipc\\application.ts",
+    "Hash": "B137C52112B1837D2565333090C6D5AC2B1A642051DDCB98D008689D40994C42"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\ipc\\backup.ts",
+    "Hash": "FDEAF2C22C9BBE5F0CB9301D9FE65BD0E9EC3AEEE1CF91D69B7C16ACDC12D0C7"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\ipc\\data-locations.ts",
+    "Hash": "0C93CE230045BD8B1B7B6824C9767556FE0425B1295D6CA1D820B00988FDCF48"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\ipc\\library.ts",
+    "Hash": "E116B098E9AD0576747A6E0E9F493C3395656D8840E9166080F3716A2294C456"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\ipc\\practice.ts",
+    "Hash": "2DDE411AD556664D7F391FA371B471279FC399EF381BDC85B8B6E0703B8F35A0"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\ipc\\trusted-sender.ts",
+    "Hash": "FEEDF8C8EC5100CC32F8BD99530E09BB486488AEC727A4E5FCE6DABEC47B3301"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\backup\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\backup\\backup.ts",
+    "Hash": "D15F38368D8C5982C3840AA9B53B97EBC28B0CD71DE9536F7FCA4A132E95AB7E"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\backup\\restore-files.ts",
+    "Hash": "444D76BAACDB600B8B5C708D525C54B8376D63AD3E618A1880E52BF9B9012BEE"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\backup\\validate-backup.ts",
+    "Hash": "48B5FDFBC30637A81638898B98804266A00A6984AAD360EA5AD1E94EB129919B"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\compare-import.ts",
+    "Hash": "F5707758F2F3656CCAB418D53DC16FC34A523ED5C0BA93D744F568ECA5E662C0"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\content-fingerprint.ts",
+    "Hash": "9E9BB06292E831F674F26D1F8966EB61B4758F60EABE8A17C78EDBA1E1795FCC"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\image-references.ts",
+    "Hash": "470EF58A498B933FD15AF9744334960063C0203C59C6C2EE30F781BD37F7F2A1"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\import-budget.ts",
+    "Hash": "F6817017469F7D7BFB9AB2638C66DCA327C66AE0808CB69F376961E52DF4A49F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\import-preparation.ts",
+    "Hash": "7CA2A80E5688846E27B9A8D58424B9AA73A2C9233E6BA41ADA7B24D36EC01E2B"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\import-session.ts",
+    "Hash": "BFA7988331CBB4BE6A634D5B95252DD0387133870A02A44F32389BCA2732FB39"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\library-import.ts",
+    "Hash": "FF2BB6721A27D27F69835F6CDAC893CED3EBBC1B21A362C3EDF371BD763C1297"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\markdown-document.ts",
+    "Hash": "A894FEC1E957E26E7DCD05BFC4CA7BF262B5B042327698779B694D45BBDDDBBD"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\parse-question-bank.ts",
+    "Hash": "71445481DAFD99DB70D4869368FC436C479B91646F46765606602969A528723F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\parse-question.ts",
+    "Hash": "73553F04EAAD74FB20348AD4F9492DE59C4EB06D3CC0D0DD68F510BD2F3CC715"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\prepare-import.ts",
+    "Hash": "22168D0EFDAB6DC3CBE35CE4683E074D0D9E1708577395C0737342E2907D94B8"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\library\\question-metadata.ts",
+    "Hash": "BD7BC763902D7B655047F875817410EE9249078F0C43CB55103B556F8E9AB14E"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\practice\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\practice\\practice.ts",
+    "Hash": "113F18117BD4F15B252A962B8F313C771404D69B13FF0DC3002EC7A52251F6D7"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\resources\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\resources\\image-protocol.ts",
+    "Hash": "AC365365F249546E4310FA3BC92C72D5D8370FABE1A482945935702FCE9B2556"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\resources\\read-file-snapshot.ts",
+    "Hash": "ABA650EF9D5DCB6EF5A3AD900EB4076C2B8B7B1719DC6D1746D8D184566093BD"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\services\\resources\\read-image.ts",
+    "Hash": "CE7CC2CD650B1A4D569E613643CB842F265D30CF666C7D466E9DA1F740B0D9AE"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\workers\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\workers\\import-protocol.ts",
+    "Hash": "8151DA4DFCF40CE6CB14EC0B985D7F8BE6F83CB0A1EF52C1D95063FC6776A324"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\workers\\import-task-runner.ts",
+    "Hash": "2E8DE32175EBB0DD6368B1BA5374783213F7D767A09052D585A85B08DB0B275A"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\main\\workers\\import-worker.ts",
+    "Hash": "E29A41A12D71FFF39267C676208A6315BF8DD79A1C8881C072876D4B33C4E5D2"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\preload\\index.ts",
+    "Hash": "285C8CF834736F7D316DDBE45875C57E1708618C62AA3853F368224FDC190E90"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\index.html",
+    "Hash": "D80666EEB66982ED34DB9AA2407D6FA810DC8A9B4548E30B5FDE608E79D21DEC"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\App.tsx",
+    "Hash": "0A2DD4AEA12E1DC61D7BC84CE3716BAAE3177DF298B15F0A410F9E22F09DB794"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\board-catalog.ts",
+    "Hash": "9668A8DF03B5658D61973FB6A50BD7A5839D0A3FD955FD8E5EC828498DB3060B"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\env.d.ts",
+    "Hash": "F9C102558631B913449D3BF4A860980BA8C1BEC9DAD975F60B77BFBB042F0BFA"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\main.tsx",
+    "Hash": "B00E1D018A13A7963F919DAFD22F6B519EDCE2BA70210D3A4566C5B7EFFB7603"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\markdown-source.ts",
+    "Hash": "632379573347263A5CD22407401A4CA711C7FA219E01330B6D92A74F6F905ED5"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\practice-controller.ts",
+    "Hash": "21E48B13EFA17879BC0F686996AB842DA789BFBD9DAD0A79DA2C4F308E83C98F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\useAppearance.ts",
+    "Hash": "A7F108388253D98CE2C56EB5AF5D705DF5507D143529CD2A900E00C62EBD07AD"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\usePracticePlans.ts",
+    "Hash": "ED6F820DF4DF620BEA3828B61AB373C5C9438705A145377CA7DE8C2711DB0E35"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\AppearanceSwitcher.tsx",
+    "Hash": "4B6C9DBF93FE5223415C3C95E53CE633B7D67A1E2BEE6CCA24224FAB74673DD4"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\BackupPanel.tsx",
+    "Hash": "3C753217C591EF700C43EF385BDE839C2565E0BDF04087912BAF716068CC2324"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\BoardEntrance.tsx",
+    "Hash": "E14AFBF12E42FF98C4B253FA18F99909C403545263B857D1CECB5BDBD20B202E"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\CategoryManager.tsx",
+    "Hash": "AB489E5B1FE3DF4309EFC021FF16B577184977507E6ACC7CD1394FA150BB0E83"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\CodeBlock.tsx",
+    "Hash": "F08EFBEB0D71F8F3B352B1D6835BF6DDB5E1F78CC631053971DC7BB8F911F4EB"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\DataLocationsPanel.tsx",
+    "Hash": "1202C4E32A5E1619F5FA23AFC11BCDCE31A4029A40E1AB1024BBEFFB3314CED3"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\DifficultyBadge.tsx",
+    "Hash": "89EF252C028D611954D47BFEB29B51C26BAA10E1913D0BDCBF4BA8262657342E"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\ImportPanel.tsx",
+    "Hash": "9F8EBB0C9454B1D8AA3B5178075063DE6D17E0F7D7C3987C2E23D302539BC82A"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\LearningOverview.tsx",
+    "Hash": "808CB1B77C7201A45F6B9CB2272617BA48B02AB5D691EE1DEC16E55E23F82C43"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\LearningRecords.tsx",
+    "Hash": "60DC21C371F105489AACE6812FAC03FF31F90560B5F3A8A1EEA485FF66F691A9"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\LibraryBrowser.tsx",
+    "Hash": "E8A9C513126675418A43FEF8B4FD2B2ECFF69040D4CB364C5F07B5E3BCBE4C19"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\MarkdownContent.tsx",
+    "Hash": "9EC46814B970AFAEB9AA5739F2BE519C69D5E014A9D378003A224C5D9CCB4DC0"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\PracticeFavorite.tsx",
+    "Hash": "86175D1EA876BBAA94411E01B0124053D2F8DA1F236D3381BE93B0E86B361BC7"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\PracticePane.tsx",
+    "Hash": "F02985B4A5F20D9D01E6D159CAFA5B91A086219040F31C0A90312749D987E969"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\PracticePlans.tsx",
+    "Hash": "3C91EBD4D4B256FCB41529FE0A26DB2079EC4454A6EFA9DC7E31B6E50D1B6060"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\PracticeWorkspace.tsx",
+    "Hash": "E682B4BA4AE622F1F43BF53249F3F84F76E3DF02AFB4B4C5BB750A3653E41308"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\QuestionFilterFields.tsx",
+    "Hash": "6CDD22A0EAAF2B37CAE14E99C292634457D49D44FDBDA63567408BC14C3D0518"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\QuestionHistory.tsx",
+    "Hash": "C5CB5FD235B74A37F784515E2CF8407AD142B4D9AD28FE02B82D1A5E33FB3C2C"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\ResourceImage.tsx",
+    "Hash": "BD477F0640A30763F8DCD3998323644670D4F462E523343A7F85E80C76563B1D"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\SettingsPane.tsx",
+    "Hash": "24F2ED6A2E271661CDC68ADEA38D21CFF0E4B2742C68FA24E6AF8FB7711C637A"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\TagPicker.tsx",
+    "Hash": "6981115F34D144017EB2AA5577FBB24A9BA1679D9F27DF1F1661D2887DC76E3F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\ThemeManager.tsx",
+    "Hash": "A1502927F6572815BCCA42B139871D4D1995ABB7772D3DF74B7D0E7A7414CEEF"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\ThemePreview.tsx",
+    "Hash": "7F00E54D9FA882BDEA8EAF635E78F9BD9015CD51F4D3D4B128B22F085EAC3336"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\components\\TopicNavigator.tsx",
+    "Hash": "319D715F00820715490EF9E92EDD835D2E4BA64D636E8729E33EEE96444073AF"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\pages\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\styles\\global.css",
+    "Hash": "78F42A725EAA30A157CAE3B044E7A24F88E04CACFAA17A358FB2FA4D9FAA930C"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\styles\\themes.css",
+    "Hash": "5B7C32A7EC966C8A66BC2039518B970ADB90321459739A42030CB6C43DFB4BEA"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\styles\\workbench-pages.css",
+    "Hash": "743AB3E19ABFABC18F22E20032C5D8CAE5CEE007E70AA51D543BAE72D8732E6D"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\renderer\\src\\styles\\workbench-shell.css",
+    "Hash": "37EAD8221CD68AE3102F633ACF6546D730270770E36100DC8585A12546A3A6DE"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\themes.ts",
+    "Hash": "90D30C0492269EA648AA9313C1787679FCE61EB94EB015AB18A7A9CFED60611C"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\application.ts",
+    "Hash": "F32E2E0D1EE6766F595FB21ABF8437B1AD3F1FCDED2A1254F981E93D84BBE783"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\backup.ts",
+    "Hash": "C6F8B280BF09F04FB8A8657523913E64EB9C76E4D3EC7C521DA817CC7DA61909"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\categories.ts",
+    "Hash": "889AD87F529A188E0F2F51A4BD3A0ABA7F77EF0025C6C531592E600930E49539"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\content-urls.ts",
+    "Hash": "EE1B9A05F308CFC81F4CEE1070BA590BF69E2EC8D98CD4D0B97CE7047C09D9F2"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\data-locations.ts",
+    "Hash": "DA7852F412FCA27F62FD164C40D731E21529B6804476D4663A58649E6C5FC3DE"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\history.ts",
+    "Hash": "C23E91C991975BFEF3A83AD7F9FC6E6F33EB787D6A3665BBE59DF06946FB2CE3"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\image-path.ts",
+    "Hash": "5D45F4DF2479DEA4596ED992EAB8821E76B3EE45F6182EC8B6B68A6AC8E3CE41"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\import-snapshot.ts",
+    "Hash": "76749CA4EEDEEE57F22F7EA6E53A5D4E774BCFC32B01362A72D5815A995182AF"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\learning.ts",
+    "Hash": "3A6C44F82F15082638A13421462D6EE8B4AEAD667643C6B63AEA52B5CD39F393"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\library-desktop.ts",
+    "Hash": "6EDD5E292FCB1FC73B7B6AA75BB36D90FFF2709FA6ED09AADE9F328D2BFCD421"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\library-import.ts",
+    "Hash": "8EAC3A2DE1784A8340BAF2A187338E7CF95AC212712B70E35895E1768246478F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\practice-desktop.ts",
+    "Hash": "F5821E1D584D5FFA03255B78D140925162EAB660AEEBB40BCD20A73F667F5F20"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\practice-plans.ts",
+    "Hash": "B9644DDDB5899712B858D1B84EDFE136EEBB7E967C9434FE62F334087B4BB8E9"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\practice.ts",
+    "Hash": "3E827FE204D96AC41E0E1ACA7BC3770D021F1502EE50E949D009FFFA70E11AA1"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\question-bank.ts",
+    "Hash": "F645E655080C21954664937F52C1D025C4F75662786B52B29E4FDAB2792D892F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\question-filters.ts",
+    "Hash": "550F3F72F1A18FA94EDAE4870F4F4FDEB365E6FF4877964090B377119FEAC9A5"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\settings.ts",
+    "Hash": "2AE6D813D14B1BFCCCCB254F1FF7B1F2D9890B6A285D6418FAA9D8F38C59BF57"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\src\\shared\\contracts\\themes.ts",
+    "Hash": "F3EC27223ADFD487A55E309EDF6A370769FC42FFC7D774FF071BF869FE67AC92"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\AGENTS.md",
+    "Hash": "DA114A4C232D5A2FD76FF17BCE265A5CF48FAC391225550E5F743699C3EED11A"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\components\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-legacy.spec.ts",
+    "Hash": "D043AFBDD5B11C823BBCD66E090B87808B511ED1667ACA20D0461182AD52D5F6"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\backup-window.spec.ts",
+    "Hash": "004F109DD734B990922E3245B06CBB1B76B3312EB75903BA70871A40F415A379"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\board-entry.spec.ts",
+    "Hash": "F130DF9139AEF17A3594A94CC8EE74097B1604D153475DCFE81ECD659D1BD7B4"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\category-helpers.ts",
+    "Hash": "395D4F23657DA582934894FD539A117A5F2E09CC6BEA47FABAF81982AC656588"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\category-migration.spec.ts",
+    "Hash": "8629EB68E6B33938CCE0B8E4E6198984C3A6CE897277BB7FCA8A7B31E7BA0154"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\category-practice.spec.ts",
+    "Hash": "A416C7FA60EE01DA7E4A57238685E4635C93FE50C5396DB9CB9C2C90F0BE6508"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\category-tree.spec.ts",
+    "Hash": "8CCBFB85C47DC167DC6A1044C61E754A4D5880C9D6CA135272E2AF2F598187A6"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\data-locations.spec.ts",
+    "Hash": "9E6DFF5B437F407D8B967A832E095D7A1BC8CC5799BFC1E285E50BA144320718"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\database-errors.spec.ts",
+    "Hash": "F5AA2B9BEB83A3F7DBA66F1E5DDEF15B443B9A3672EB422C315CB3484A82C405"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\findability.spec.ts",
+    "Hash": "C9D805C6EF6D54BD1B07BBCA732D9983889FF37F77E42F81C41855E5B90BD2DD"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\helpers.ts",
+    "Hash": "58D983DB7CF32B9F61A53F2C96BCD56058C2514E34D6D475C9607CDB68804931"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts",
+    "Hash": "82B2A9E80705FDB339C536FA12EFD1993995ABA7AB664C4A58EF9A1C17640A8B"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-versions.spec.ts",
+    "Hash": "F6117FD1943F42F785D4E4C27C801F56B665EFCA217D45759A5CE2D4EFC2A8DB"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-window.spec.ts",
+    "Hash": "7336045EB9F996C7CA9C360657DB44E9C320AC09B8BF9740B904D698A4B4B19B"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\import-worker-exercise.ts",
+    "Hash": "2B5DE8F3DE25AFC4480B73A4CEB82DACF248AA1208BF310EAF43A142378AB91D"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\import-worker.spec.ts",
+    "Hash": "530DB3DE2EBA3A4468E3C0B3501B2B50C1FFEEE0AE053632A71450B070E1D66C"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-helpers.ts",
+    "Hash": "7B62177A287774605D06ACED54F7015FAE46FB5FACDD1B3688241D2BC1C34BF7"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-management.spec.ts",
+    "Hash": "069C783204181675FE9F4957A6CC1518B4A873A15E4AF9451645CE00C3091D2D"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-records-errors.spec.ts",
+    "Hash": "069ED2689F78FC4BBEE06084F412F3DF49CBDE240FF1FDD1FC3DC1A7F700E572"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\learning-records.spec.ts",
+    "Hash": "45EE28B8CEE154D0B4CEA40F93B721AD118DE36E3C4F377E7FF7570E96FDFB90"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\library-import.spec.ts",
+    "Hash": "63729F4CC349C94B6D13E345D00D8A464E0950A24BCE19CE0DE630D53E8A93DE"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\library-window.spec.ts",
+    "Hash": "10D566A068D31BDE7FBA74DD89C7C82607BF16CB88942F2D56A52DDEA43C270C"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\palette-migration.spec.ts",
+    "Hash": "B63546F34C16046ECCDE76B4F0D426C565AEFAD5F6428F770FC13D1852880F1C"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\personal-bank.spec.ts",
+    "Hash": "B5C7C56BCCFEB9EDA9B0B98D22298620506C8AAE8D068ED2912639AC016F9E5E"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-mode-migration.spec.ts",
+    "Hash": "1E5DD65D4D13245FE766AF54B46099718EDBD96E1B5BD121989EF779F33A4B73"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-plan-helpers.ts",
+    "Hash": "D659E93727817913670CCF983B54E72B8A2D83B5267A6152FD60104DCBCFFEC6"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-plans-errors.spec.ts",
+    "Hash": "EBA3A5B18B9EF0F29861E4B3547622FD0936339BC4390257719CA618B16E4A17"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-plans-migration.spec.ts",
+    "Hash": "672934F440159B734F1031A51629F8B7204EFEFA279E77D0D775BDEA8D0B8844"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-plans.spec.ts",
+    "Hash": "03D7270704824411F12A30EC8923C9602373BC5407DAB059C2A2DCDF208E9AEA"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-window.spec.ts",
+    "Hash": "E9BEB23C286F87F3E120AEE4E91E18C92FE822E09D8391383F9B7B874DF7FBE5"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice.spec.ts",
+    "Hash": "DB685E4472C5DDC6862A3347BD78010E836163B373F024DF0A02B5059EBF7B43"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\random-practice.spec.ts",
+    "Hash": "16D7C7491718691FBDB2CFA3C51E655A84CD249641153B9331652C090B3312EA"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\restore-window.spec.ts",
+    "Hash": "3E715B80F8E6DBC1F01D759CE784833AA1A8DED8310EA871BBE0A6FBA084959D"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\session-filters-migration.spec.ts",
+    "Hash": "5ED7445B8A6A307AC418C0DE3A8DB89552F4189DFFD67B4588C61813254B29E8"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\session-filters.spec.ts",
+    "Hash": "4B2D8C966A6DF7DF167059957B6497350614FD8AA3758F655A3B025C1C35816E"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\settings-migration.spec.ts",
+    "Hash": "5EF288E240D2386BD7397FF473638BDEC2B179C86699CD36914264686E1552BA"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\settings-palettes.spec.ts",
+    "Hash": "488092729EA5E610AA99B1C840750EBD8CD82AB56ECBF7C6CD1A057ADEA26653"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\settings-window.spec.ts",
+    "Hash": "AB2AD9D7C5AFC971356910A62A9D66E739F5E1F8BD157FC45A40F26E19708528"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\startup.spec.ts",
+    "Hash": "9F835ADDCD72E186EA4D580BAA026457FF47398E57D460F09B44D2063411DC36"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\theme-helpers.ts",
+    "Hash": "99F91752E159ABD1F94417789F046E23B89F4886180DDBA37C939D419488629E"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-backup.spec.ts",
+    "Hash": "00FE450DBE906B356A3385E9C491241C5E720BD0BC5E1EF53BC5E5D79E3C2353"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-database.spec.ts",
+    "Hash": "3A0191C0E8F3D13BF7747DD90C5EE9C7E6E034371939E0F95E0BAD2A34FDC1D3"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-layout.spec.ts",
+    "Hash": "50F57BD46C7E694B935C8C96EE6272278B1C6D13A19F6C7293D6897B57867212"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-migration.spec.ts",
+    "Hash": "D8164DDEE1A03483D1AC1554D8129FBEEA4D0F39EB23417070B51E9C115560F1"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-reading.spec.ts",
+    "Hash": "1FDA08E1177206BD22B54039A0CDE493B5A0C97834C981497DBFFAA2A594D1A7"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\themes-window.spec.ts",
+    "Hash": "0F10110ECE63A02AB027AD91B342141002CACBC2678DF247F61F0CBF7A88BEA3"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\workbench-browser.spec.ts",
+    "Hash": "A9CCFDDA9AD9AA09E07B36B21923C456585EF0D148BE49F30E056C6976669F1A"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\workbench-errors.spec.ts",
+    "Hash": "23D51A9EE44B324D4878D35352EA61BF7EDA9EE5BCB11E624F02199EABC8E300"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\workbench-helpers.ts",
+    "Hash": "39434107BE875E994ABF104F0C4015FA1FF255662625D4B2DE51CDF50276B6FF"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\workbench-overview.spec.ts",
+    "Hash": "CB120D4CF4C67FB5F187BDC1ABA824C128525DBBA1715B96D1E584FDBDCBA01F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\workbench-practice.spec.ts",
+    "Hash": "E8B9784AB98FB005E5FC9C36726F99119EE81F5280A49F4BDA61EE8520E2640C"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\workbench-ui2.spec.ts",
+    "Hash": "BB9B0BADD7DD69778D181B2688C7575375BDC5C308B467F0FACA27AD71704CDE"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\workbench-ui3.spec.ts",
+    "Hash": "962EC0C6B3CAC3045EE89AA8398E94107232B432BA25D6E29BF67D57B491684F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\practice-v3-schema.ts",
+    "Hash": "2A986C789F93CB971CC70A33737C424C120C025782A12D2FA16B414848805974"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\schema-v4.sql",
+    "Hash": "208EC1A8629ACA2F3A35AA3E224E0B1A9329A252CC942D71C4C0B5E2DEA06FB6"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\schema-v5.sql",
+    "Hash": "173CC03DF94D26482C10269784DE6F857B412C8F3830DDE08E307755EACA9564"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\schema-v6.sql",
+    "Hash": "8FF293B8D256FD597C2A537AB51EDD289A4BF8EE1CB3DFAAA1326969D40D5294"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\schema-v7.sql",
+    "Hash": "D34FB39A03DD6BBBD171BF7DFC021C38416B2C657A07D88BEE2E009B3EB56E2A"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\schema-v8.sql",
+    "Hash": "E63CCBB03C6B1A0BD7C9570670F53A3787998AAF6274E619531A0BDBA9B7F5BF"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\schema-v9.sql",
+    "Hash": "1C9A8173BF0E29BFC090BEB19C48C69B1923FBB8F5F68B551C6D380C3E43B5EF"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\images\\README.md",
+    "Hash": "E6064A8A42A20A7BCD1141078320339EBCC9D0080CDED1B1F40F361BA5EC703E"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\images\\small.jpg",
+    "Hash": "200A7848EB435A30C8A06C9762B87732EC6971CA01FD384FE08AACF383B2D639"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\images\\small.png",
+    "Hash": "4BDE795C8AF51F0BDC1DE0DB1ADC89ED741BF52E777A3B52CA38015EE1B16FAD"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\images\\small.webp",
+    "Hash": "B1F3FF00BA1D62D206025CE07B1ED6CDF87E8C018608D8D1984FE463F4E6E534"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\markdown\\合法专题.md",
+    "Hash": "F499ACB81560265FF05E4A619AA7D415A18CD891505459E8DC945A6EACD2B9A1"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\fixtures\\markdown\\README.md",
+    "Hash": "A61C82132CA322833D6B2CCA75CF2EEC706E0F02CC10C3F1FF3E3DB569211533"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\helpers\\fake-import-worker.ts",
+    "Hash": "D7DE3D70678262DFCF9E425E914759A60161A26DFCE7E4F85E76D3AE7645BD58"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\helpers\\import-directory.ts",
+    "Hash": "FBB8A167B270117AC6B7AD89C4659A234D30EBFE5F020D606A963836F33CA8B3"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\integration\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\integration\\history-seed.ts",
+    "Hash": "40165251A85D0051BE02950BAA36088040A64162D538A1DE881BBDE4C6BE0D90"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\integration\\library-import-exercise.ts",
+    "Hash": "6FC5B44F0DCD84C9756DBAD047901C3940D72BB88F18DF89EBF96A6CAB8B6028"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\integration\\practice-exercise.ts",
+    "Hash": "966B37B83CA98A3A82BAA5A045AAE1BC23045E837115C7ED163E0103652C846F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\integration\\random-practice-exercise.ts",
+    "Hash": "18DECCBBC05AB78CEA1AE675EF60A5F321FE6F65C9529D010AF5F22F27EA1F9D"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\integration\\theme-exercise.ts",
+    "Hash": "FD8C9BC550E9BA17F6926D5A90E88C8B2B9EB4EE7389652BF8E7E51E6E4780E4"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\application.test.ts",
+    "Hash": "2083F4BD62EB3826453FE6B10063B9EC8C29A253B7D6B3304A8E4C62E523FD29"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\backup-contract.test.ts",
+    "Hash": "AAEE10330F62BBFFCC9BB5A29BF9855E9828445496D1DC511F1E690733ADE1AF"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\backup-ipc.test.ts",
+    "Hash": "C3B5DF08083BF8C3BF907B21BDCD6454D4CC09013F7BDF5A431318CD555FBA32"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\board-catalog.test.ts",
+    "Hash": "8141F199C7EB5C87832DDC99340D6104DEB0198BDA801A108ABA08CD043FD3A9"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\category-contract.test.ts",
+    "Hash": "C77D96663103602E3AFEADB8DF204AE8111A65F286D92B647BD4AD32160AF996"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\data-locations-contract.test.ts",
+    "Hash": "F6E5F391B1ED6BE60ABF6956453E0E7E17B53188849790182D6152DC4B57D471"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\data-locations-ipc.test.ts",
+    "Hash": "FEAFBD60B1ACFCECD94D534BE08E483F80C3F656B1F8F2A87337F1D45488EFF6"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\desktop-contract.test.ts",
+    "Hash": "E0003AAA95ADD44562C51A14D2BEAE648B9E80CA1C1EEE7991558EABD35D30DF"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\gpio-question-bank.test.ts",
+    "Hash": "01A2C6F58FEC798F2E5702145A42791C50626E934FAAC1B2C3AFF853F92FAD4C"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\history-contract.test.ts",
+    "Hash": "3721748A2BB691D978DE9F375A2AE2C3F7F9774F234F9C70399575DF13BFA35F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\import-budget.test.ts",
+    "Hash": "2370AF7032412B46EAEC315F6584E133913BF38FB85344189C2E68642F1E5698"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\import-comparison.test.ts",
+    "Hash": "F44463CB589AE51FF53E45CDF5CBDB98B6B7D24AD67FB9DE8C8A6453C4EE1924"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\import-limits.test.ts",
+    "Hash": "56E27AFB4D6FA5FAB09CC2B7B4B47413B479417572977A6C4AE65397A9C500DD"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\import-protocol.test.ts",
+    "Hash": "F817DCF5B46C942205803B6DAB7FF67011E046FEB62F9BF92CBF55EC6EDA136E"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\import-session.test.ts",
+    "Hash": "56F72E94FEC0D105E5C5F7D2CD68862DB25443A746FD0AC8CADCC4FE578921E7"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\import-task-failures.test.ts",
+    "Hash": "47522A5DFE69C18C5257F3252859C05798C9E7B8344E68587E0D81B3E54D93F7"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\import-task-runner.test.ts",
+    "Hash": "022C513BDB4FE4FBB7D4C2EFB9AB0D15BA9639459D98E7FCA82A641B10B18581"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\learning-contract.test.ts",
+    "Hash": "9C43DDB106C8A08A184E7960E002EF1B9D7FA415C5F2697C8B56D4F8C4917ACE"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\library-ipc.test.ts",
+    "Hash": "C13C748E0A03B0FF4032049A55DB02CBF0FB6074CB0B46AE2AF89F472C6138FE"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\markdown-images.test.ts",
+    "Hash": "57606880E9B0D960A3AEC92EC8D7B4C08A9365CD74A07D3527F5887BC4506F9E"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\markdown-metadata.test.ts",
+    "Hash": "F4E635C0903044B10C63F24580E3F395B64F72EB157C23D1EA0DA98D3007889F"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\markdown-structure.test.ts",
+    "Hash": "A6FEC1BCBED64B2B34A411C2BBFC7A773FC2E9D8C7EFCB9FC2B679435212CF99"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\personal-bank.test.ts",
+    "Hash": "33C79BA9FAF383E366D564806559B3FEE34E3F17B185DD5700123148660B4917"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\practice-contract.test.ts",
+    "Hash": "34E248798441535334A3082A8CC2233E669AD4FE5D1C0440C3E9363AA6CFDB2A"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\practice-controller.test.ts",
+    "Hash": "B915B67F88034AB676C6E79B19886215091FE84D6064C119A9175166F70EE1E1"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\practice-ipc.test.ts",
+    "Hash": "77CDB6580A30EED09A057202080163CFD5FA01F6BF5BA2583CB9E74DAB358648"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\practice-plans-contract.test.ts",
+    "Hash": "10D1583FA3538FE720194F4AA6679E1874F376D7C6D212D7AF7D6472EBEE2C32"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\prepare-import.test.ts",
+    "Hash": "92B0274EFCBCC30639A0293CD3BFCF8C0B2BB8ADED26C3FF2C4E9FB100E41CB3"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\question-filters.test.ts",
+    "Hash": "93EA203953D28AACF4F948DCBA82B680715898ACB7BCAADEA06E52370A1263E1"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\read-file-snapshot.test.ts",
+    "Hash": "89880B248F89B5EEF6F71E4AB7DD4E9260F4434386A97A95D51C009069724CF1"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\read-image.test.ts",
+    "Hash": "CECA40543929E3647D0184E970D42F4BFE076662711F2DA473D528B69EA29EBE"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\restore-transaction.test.ts",
+    "Hash": "6592140FB4BD5B4713ACCC113E43F14C218B4137FF02E9E64F2138752D522011"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\settings-contract.test.ts",
+    "Hash": "C1BF39E804B2AF1CCA1E720C8F6CA76473E0024D0191C155F9E7E1D236F99714"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\themes-contract.test.ts",
+    "Hash": "65E95FBD87E513A6F3C8ACB6F53D7F8F4D8D7D3FA69A5E7B102758EA0DF64BD7"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\tests\\unit\\workbench-contract.test.ts",
+    "Hash": "68EE8EE1C5B3FFED466D7C1122E0C0E34B848113B0BF2D1186F9A3EF10DB4F58"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\.gitkeep",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\AGENTS.md",
+    "Hash": "3393E055A947D888D03556D08FC62B97F9BB36236351A71D55890977955078EF"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\build-personal-bank.mjs",
+    "Hash": "A79D4778A5A0C534A48E7ABF2143DCC75AC5523DB6CB3BD676138829B89E1DC3"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\check-general-samples.mjs",
+    "Hash": "95647B7BFA01A9F3015C1A0DB02012B772FA8B11726CF59835D88A00A1D5AE85"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\check-m5-experience.mjs",
+    "Hash": "F5A29C016F010302DB030E55A2C5F09F2D78B3A8FDBE0A5EE2CA42C47697C1E9"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\check-m5-trial.mjs",
+    "Hash": "574F0584676206799BDFF50C791AE78A3816CCBF5130093E145E38CDE823D12D"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\check-uart-content.mjs",
+    "Hash": "5409AE8F6516CFD6F8E8898B6E524E700560CEE7F97EE048D30F699704045722"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\check-uart-metadata.mjs",
+    "Hash": "75EA77BAA83673E798AECDF33DD078CF1ABC4BCB1B8AF80E8B151079AAB265F4"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\m5-desktop-harness.mjs",
+    "Hash": "F0F7095FD4BD73BDFF7CDA5FC66886E8D1A489CB86138FDC3669255D12F7A522"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\measure-category-performance.mjs",
+    "Hash": "1FA600E855653C05A41622902EC468F1A9545A05DE1558256EC3226AF0D80C18"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\measure-findability-performance.mjs",
+    "Hash": "0A420FBFC31E572F425961AE85AFFA10B90BD49FF1DAB22BD9324A6BE2560443"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\measure-m5-performance.mjs",
+    "Hash": "7DFFBBB44745D5CAED5CFB76398D4EC8B7139B74CC096D9FC8F413F9477688F6"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\prepare-m5-experience.py",
+    "Hash": "3DB6082AC735C2067F567F0662F7008D5DA44D6640429C2EBC4C6C5DCBD9C474"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\prepare-m5-installation-kit.ps1",
+    "Hash": "836133911B13C2F09CC161B57D2DAC30E6A5CE7B92AC7BCF228A1F7B83E94F29"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\prepare-m5-samples.mjs",
+    "Hash": "D88A433AF8CB393F968AD8D61C4A667D5908D3270279AAA54218A3F36541EF33"
+  },
+  {
+    "Path": "E:\\My_Projects\\embedded-practice\\scripts\\render-board-design.mjs",
+    "Hash": "C9B51FC8D63C6BB9D8507F0EDE2C403FC6249C73CB9DF7815E6E48880EB8393E"
+  }
+]

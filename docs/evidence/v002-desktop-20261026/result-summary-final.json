@@ -1,0 +1,22 @@
+{
+  "project": "packaged",
+  "target": "E:/My_Projects/embedded-practice/release/V0.0.2-20261026.4/win-unpacked/embedded-practice.exe",
+  "build": "20261026.4-v002",
+  "stats": {
+    "startTime": "2026-10-26T12:26:43.578Z",
+    "duration": 527021.218,
+    "expected": 255,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "testCount": 255,
+  "allPassedWithoutRetry": true,
+  "unitFiles": 35,
+  "unitTests": 660,
+  "sourceCheck": true,
+  "pack": true,
+  "buildPassed": true,
+  "originalSummary": "result-summary.json",
+  "metadataCorrection": "original summary reused build as both label and boolean; raw test report unchanged"
+}

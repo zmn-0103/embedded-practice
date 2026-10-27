@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-20T07:43:20.417Z",
+  "utf8Files": 243,
+  "markdownFiles": 37,
+  "localLinks": 411,
+  "changedCodeFiles": 10,
+  "changedCode": [
+    "electron.vite.config.ts",
+    "src/main/database/open-database.ts",
+    "src/main/database/practice-schema.ts",
+    "src/main/database/repositories/practice-repository.ts",
+    "src/main/services/practice/practice.ts",
+    "src/shared/contracts/practice.ts",
+    "tests/e2e/library-import.spec.ts",
+    "tests/e2e/practice.spec.ts",
+    "tests/integration/practice-exercise.ts",
+    "tests/unit/practice-contract.test.ts"
+  ],
+  "protectedFileCount": 29,
+  "planSha256": "4217bea47b9cb28e5a1b8e976bacb57eb769bb25503981a4e0652ea0171e1c73",
+  "unit": {
+    "files": 18,
+    "total": 375,
+    "passed": 375,
+    "skipped": 0
+  },
+  "runtime": {
+    "development": {
+      "startTime": "2026-10-20T07:36:22.437Z",
+      "duration": 24550.881,
+      "expected": 27,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "packaged": {
+      "startTime": "2026-10-20T07:36:47.714Z",
+      "duration": 24010.992000000002,
+      "expected": 27,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "packageBuildFiles": 13,
+  "branch": "main",
+  "hasCommit": false,
+  "failures": []
+}
