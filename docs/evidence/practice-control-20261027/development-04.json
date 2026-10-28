@@ -1,0 +1,548 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/practice-control-storage.spec.ts",
+      "tests/e2e/practice-control-layout.spec.ts",
+      "--project=development",
+      "--output=docs/evidence/practice-control-20261027/development-04",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/practice-control-20261027/development-04",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/practice-control-20261027/development-04",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-control-layout.spec.ts",
+      "file": "practice-control-layout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "选题与清单在900宽/100%/light可见且可操作",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2641,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T10:55:45.105Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLW0xUEZRNiIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "sets-popup.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在900宽-100-light可见且可操作-development\\attachments\\sets-popup-png-604cb274cd38be6a3cec32110b4cc83388955533.png"
+                    },
+                    {
+                      "name": "selected-confirm.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在900宽-100-light可见且可操作-development\\attachments\\selected-confirm-png-acbc50cd1725db9e9916d723f57bfcda394b3ac9.png"
+                    },
+                    {
+                      "name": "outline-open.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在900宽-100-light可见且可操作-development\\attachments\\outline-open-png-2034469cc99a86f93a183462fe66f0a6d6968a99.png"
+                    },
+                    {
+                      "name": "outline-jumped-answer.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在900宽-100-light可见且可操作-development\\attachments\\outline-jumped-answer-png-ff67a17e8353e7c3a27bc8d01d7b42d3e6cd95da.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ae09aa9ece1e391bedc-6c5c2e131cf3bc0cfe04",
+          "file": "practice-control-layout.spec.ts",
+          "line": 11,
+          "column": 7
+        },
+        {
+          "title": "选题与清单在900宽/125%/dark可见且可操作",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2624,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T10:55:47.776Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLWlwbkN6OCIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "sets-popup.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在900宽-125-dark可见且可操作-development\\attachments\\sets-popup-png-74689253d6168c8d823c56e835c3dcba5586ec45.png"
+                    },
+                    {
+                      "name": "selected-confirm.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在900宽-125-dark可见且可操作-development\\attachments\\selected-confirm-png-60b113534660dd473d8b1976f0b3ad81e8e4bfe6.png"
+                    },
+                    {
+                      "name": "outline-open.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在900宽-125-dark可见且可操作-development\\attachments\\outline-open-png-41356c55eeb615f7d8339e70205d62a2b2cd4fc5.png"
+                    },
+                    {
+                      "name": "outline-jumped-answer.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在900宽-125-dark可见且可操作-development\\attachments\\outline-jumped-answer-png-14859d1541e74101f7a3234195db95bd6ae9e8f3.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ae09aa9ece1e391bedc-ae5f13b7768a0eb01154",
+          "file": "practice-control-layout.spec.ts",
+          "line": 11,
+          "column": 7
+        },
+        {
+          "title": "选题与清单在1200宽/150%/dark可见且可操作",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2557,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T10:55:50.407Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLTBuTE02NSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "sets-popup.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在1200宽-150-dark可见且可操作-development\\attachments\\sets-popup-png-a20bce2a786d65bff9a9a9c460594178145f1967.png"
+                    },
+                    {
+                      "name": "selected-confirm.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在1200宽-150-dark可见且可操作-development\\attachments\\selected-confirm-png-61500350eec1347687c200232fa161393ae11930.png"
+                    },
+                    {
+                      "name": "outline-open.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在1200宽-150-dark可见且可操作-development\\attachments\\outline-open-png-71104e24a057ce55783af526a08949cf81e3663a.png"
+                    },
+                    {
+                      "name": "outline-jumped-answer.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-layout-选题与清单在1200宽-150-dark可见且可操作-development\\attachments\\outline-jumped-answer-png-b573de18ceb09eebbda2f5119bacb3ee46261c4f.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ae09aa9ece1e391bedc-f018710e2e954f41eafb",
+          "file": "practice-control-layout.spec.ts",
+          "line": 11,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "practice-control-storage.spec.ts",
+      "file": "practice-control-storage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "结构11受保护升级12，原再练/草稿/自定义对象不变，预览旧备份仅迁移副本",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1090,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T10:55:52.976Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11ad8d28681458d2def8-d90eebb61e64da7d81b0",
+          "file": "practice-control-storage.spec.ts",
+          "line": 56,
+          "column": 5
+        },
+        {
+          "title": "结构11迁移失败backup-blocked回滚全部DDL并保持原数据",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 745,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T10:55:54.072Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11ad8d28681458d2def8-851f776da3bd1f0983a8",
+          "file": "practice-control-storage.spec.ts",
+          "line": 129,
+          "column": 7
+        },
+        {
+          "title": "结构11迁移失败column-conflict回滚全部DDL并保持原数据",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 711,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T10:55:54.823Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11ad8d28681458d2def8-03564f1b71a5f29a9561",
+          "file": "practice-control-storage.spec.ts",
+          "line": 129,
+          "column": 7
+        },
+        {
+          "title": "结构11迁移失败table-conflict回滚全部DDL并保持原数据",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 717,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T10:55:55.540Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11ad8d28681458d2def8-d948f652fe89bf57aa65",
+          "file": "practice-control-storage.spec.ts",
+          "line": 129,
+          "column": 7
+        },
+        {
+          "title": "结构11迁移失败foreign-key回滚全部DDL并保持原数据",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 730,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T10:55:56.263Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11ad8d28681458d2def8-7b6c5b75de9e5dd15cf2",
+          "file": "practice-control-storage.spec.ts",
+          "line": 129,
+          "column": 7
+        },
+        {
+          "title": "完整备份恢复题单顺序/失效身份/固定版本/来源与草稿，坏题单拒绝且不改当前库",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 33439,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-control-storage.spec.ts",
+                        "column": 39,
+                        "line": 267
+                      },
+                      "message": "TimeoutError: electronApplication.waitForEvent: Timeout 30000ms exceeded while waiting for event \"close\"\n\n  265 |     await empty.page.getByRole('button', { name: '选择备份并预览', exact: true }).click()\n  266 |     await expect(empty.page.getByLabel('恢复预览摘要', { exact: true })).toContainText('固定题单')\n> 267 |     const exiting = empty.application.waitForEvent('close')\n      |                                       ^\n  268 |     await empty.page.getByRole('button', { name: '恢复此备份…', exact: true }).click()\n  269 |     await exiting\n  270 |     const restored = await launchApplication(destination, info.project.name)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-control-storage.spec.ts:267:39"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T10:55:56.998Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLVdzWWk0TSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "control-restore-failed-directory",
+                      "contentType": "text/plain",
+                      "body": "QzpcVXNlcnNccGNcQXBwRGF0YVxMb2NhbFxUZW1wXGVtYmVkZGVkLXByYWN0aWNlLWNvbnRyb2wtcmVzdG9yZS1uYUNkV2U="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\development-04\\practice-control-storage-完-098a6-失效身份-固定版本-来源与草稿，坏题单拒绝且不改当前库-development\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "11ad8d28681458d2def8-c7ba93dd20f867643a4a",
+          "file": "practice-control-storage.spec.ts",
+          "line": 170,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T10:55:44.634Z",
+    "duration": 45832.45,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "build": "20261028.1-content-updates",
+  "schemaVersion": 13,
+  "release": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-content-updates-20261028.1",
+  "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-content-updates-20261028.1\\win-unpacked\\embedded-practice.exe",
+  "unit": {
+    "files": 42,
+    "passed": 724,
+    "failed": 0
+  },
+  "firstPackaged": {
+    "startTime": "2026-10-28T02:50:22.562Z",
+    "duration": 739781.711,
+    "expected": 341,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "packaged": {
+    "startTime": "2026-10-28T03:04:54.841Z",
+    "duration": 684598.71,
+    "expected": 342,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scenarios": 342,
+  "newScenarios": 13,
+  "retries": 0,
+  "sourceFilesPreserved": 301,
+  "productionFiles": 144,
+  "testFiles": 149,
+  "configurationFilesUnchanged": 8,
+  "beforeFiles": 372,
+  "originalPlanPrefixBytes": 47802,
+  "previousDeliveryFilesUnchanged": 158,
+  "originalAssetsUnchanged": 17,
+  "compatibility": {
+    "completed": true,
+    "dataUnchanged": true,
+    "previousExe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-assets-20261027.5-r3\\win-unpacked\\embedded-practice.exe"
+  },
+  "archiveSha256": "4581a7c846551db8551b185db2e8cd5a35b2aef9320e884305b57c296bd89b3c",
+  "exeSha256": "7d8ba9eb9463f69d9b1a0ab06fbe2502ff00b02d5c8aaf7dd03efc2d182860a4",
+  "images": [
+    {
+      "file": "界面预览/01-题干差异-宽窗浅色.png",
+      "scenario": "内容差异和更新选题在1440px/100%/22px/松间绿可读可操作",
+      "attachment": "content-updates-layout-question.png",
+      "capture": "Electron capturePage实际窗口",
+      "bytes": 139215,
+      "sha256": "91e000f16b455fbe693dd160a7a57373ea31fc8375619e15a267e3d6b2814b69"
+    },
+    {
+      "file": "界面预览/02-更新复习确认-宽窗.png",
+      "scenario": "内容差异和更新选题在1440px/100%/22px/松间绿可读可操作",
+      "attachment": "content-updates-layout-selection.png",
+      "capture": "Electron capturePage实际窗口",
+      "bytes": 100682,
+      "sha256": "e3d32fce6f5217c03aa56d1e53a03c3748e0c1831e1308b8e12016ab01020900"
+    },
+    {
+      "file": "界面预览/03-题干差异-小窗深色.png",
+      "scenario": "内容差异和更新选题在900px/125%/22px/暖沙金可读可操作",
+      "attachment": "content-updates-layout-question.png",
+      "capture": "Electron capturePage实际窗口",
+      "bytes": 104329,
+      "sha256": "d22a89ddcf1ac0d35a52d6bc84e8e85fdc5f880306625ff622aafc66796f4099"
+    },
+    {
+      "file": "界面预览/04-更新复习确认-小窗.png",
+      "scenario": "内容差异和更新选题在900px/125%/22px/暖沙金可读可操作",
+      "attachment": "content-updates-layout-selection.png",
+      "capture": "Electron capturePage实际窗口",
+      "bytes": 113659,
+      "sha256": "b0332166922f4084d50baf9f1255daf71779aec00ce25fcd62936acf4cb354d7"
+    },
+    {
+      "file": "界面预览/05-题干差异-大字号缩放.png",
+      "scenario": "内容差异和更新选题在1200px/150%/22px/Claude 风格可读可操作",
+      "attachment": "content-updates-layout-question.png",
+      "capture": "Electron capturePage实际窗口",
+      "bytes": 107974,
+      "sha256": "63ab3d66fd972b95321862f39031da430ee2a1a4d27b5702a411473d4f7e2e01"
+    },
+    {
+      "file": "界面预览/06-更新复习确认-缩放.png",
+      "scenario": "内容差异和更新选题在1200px/150%/22px/Claude 风格可读可操作",
+      "attachment": "content-updates-layout-selection.png",
+      "capture": "Electron capturePage实际窗口",
+      "bytes": 126210,
+      "sha256": "4295c558d6dd584d7a98e7210f9f8b05413ae42c1de0dc403b5fbbe4893e1d54"
+    },
+    {
+      "file": "界面预览/07-版本选择与题干差异.png",
+      "scenario": "差异主动打开才读题干，答案明确查看才读/挂载，改选旧版重新隐藏且只读",
+      "attachment": "question-differences.png",
+      "capture": "Electron capturePage实际窗口",
+      "bytes": 142598,
+      "sha256": "d85b278a60a383458365a8c6bf93852a2b6db0e1d09d4ab5a2dc65623818a103"
+    },
+    {
+      "file": "界面预览/08-主动查看答案差异.png",
+      "scenario": "差异主动打开才读题干，答案明确查看才读/挂载，改选旧版重新隐藏且只读",
+      "attachment": "answer-differences.png",
+      "capture": "Electron capturePage实际窗口",
+      "bytes": 132250,
+      "sha256": "a904a14901d59f54c82e9efce578e3fbce238ae5287e4ce70f77153b7ffdbbeb"
+    },
+    {
+      "file": "界面预览/09-仅图片变化对照.png",
+      "scenario": "仅图片变化仍可看两版入库图片，来源移走仍完整，不误称文字同即内容同",
+      "attachment": "image-differences.png",
+      "capture": "Electron capturePage实际窗口",
+      "bytes": 140378,
+      "sha256": "896441dadc1b2fdca6004b1a1edda523101b8da1d25b01b09eab23cca035388e"
+    },
+    {
+      "file": "界面预览/10-混选不可用项提示.png",
+      "scenario": "更新筛选跨页勾选与固定题单保持，普通项须明确移除，随机仅含确认题并固定版本",
+      "attachment": "updated-selection-unavailable.png",
+      "capture": "Electron capturePage实际窗口",
+      "bytes": 89331,
+      "sha256": "cd21e90b70b062921cdeab378251be17f28e33736bbf237f52cc12d5452612c1"
+    }
+  ]
+}

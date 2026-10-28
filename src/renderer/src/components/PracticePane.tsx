@@ -8,6 +8,10 @@ import { MarkdownContent } from './MarkdownContent'
 import { QuestionHistory } from './QuestionHistory'
 import { DifficultyBadge } from './DifficultyBadge'
 import { PracticeFavorite } from './PracticeFavorite'
+import { PracticeRepeat, type PracticeRepeatActions } from './PracticeRepeat'
+import { PracticeOutline } from './PracticeOutline'
+import { PersonalNote } from './PersonalNote'
+import { useNoteSaves } from '../note-saves'
 
 const ACTION_REPEAT_GUARD_MS = 500
 
@@ -35,6 +39,7 @@ export function PracticePane({
   onHome,
   onDataBusy,
   onDataOperation,
+  repeat,
 }: {
   state: PracticeEditorState
   controller: PracticeController
@@ -42,7 +47,16 @@ export function PracticePane({
   onHome: () => void
   onDataBusy: (busy: boolean) => void
   onDataOperation: (work: Promise<boolean>) => void
+  repeat: PracticeRepeatActions
 }) {
+  const noteSaves = useNoteSaves()
+  const afterNotesSaved = async (action: PracticeAction) =>
+    (await noteSaves.flush()) && controller.perform(action)
+  const goHome = () => {
+    void noteSaves.flush().then((saved) => {
+      if (saved) onHome()
+    })
+  }
   const title = useRef<HTMLHeadingElement>(null)
   const actions = useRef<HTMLDivElement>(null)
   const reading = useRef<HTMLDivElement>(null)
@@ -99,7 +113,8 @@ export function PracticePane({
   if (!view) return null
   const { session, item } = view
   const modeLabel = session.mode === 'random' ? '随机练习' : '顺序练习'
-  const blocked = state.busy || state.closing || state.pending || homeBusy || favoriteBusy
+  const blocked =
+    state.busy || state.closing || state.pending || homeBusy || favoriteBusy || noteSaves.flushing
   const actionsBlocked = blocked || repeatBlocked
   function perform(event: MouseEvent<HTMLButtonElement>, action: PracticeAction) {
     if (blocked || repeatTimer.current !== undefined || event.detail > 1) return
@@ -109,7 +124,7 @@ export function PracticePane({
       repeatTimer.current = undefined
       setRepeatBlocked(false)
     }, ACTION_REPEAT_GUARD_MS)
-    void controller.perform(action)
+    void afterNotesSaved(action)
   }
   if (!item)
     return (
@@ -139,7 +154,8 @@ export function PracticePane({
         <p>
           揭晓未评价 {session.counts.unrated} 题，仍未揭晓的跳过题 {session.counts.skipped} 题。
         </p>
-        <button type="button" disabled={actionsBlocked} onClick={onHome}>
+        <PracticeRepeat key={session.sessionId} session={session} actions={repeat} />
+        <button type="button" disabled={actionsBlocked || repeat.pending} onClick={goHome}>
           返回首页
         </button>
       </section>
@@ -153,8 +169,11 @@ export function PracticePane({
   return (
     <section ref={workspace} className="practice-workspace" aria-label={modeLabel}>
       <div className="practice-heading">
+        {session.repeat && (
+          <p className="muted">本轮为再练，沿用来源轮保存的题目与参考答案版本。</p>
+        )}
         <div className="practice-heading-actions">
-          <button type="button" disabled={actionsBlocked} onClick={onHome}>
+          <button type="button" disabled={actionsBlocked} onClick={goHome}>
             保存并返回
           </button>
           <PracticeFavorite
@@ -179,6 +198,12 @@ export function PracticePane({
           {item.title}
         </h2>
       </div>
+      <PracticeOutline
+        key={session.sessionId}
+        session={session}
+        disabled={actionsBlocked}
+        onJump={(position) => afterNotesSaved({ kind: 'jump', position })}
+      />
       <aside id="practice-context" className="practice-context" aria-label="练习辅助面板">
         <dl>
           <dt>已揭晓</dt>
@@ -235,6 +260,7 @@ export function PracticePane({
                 questionId={item.questionId}
                 excludeSessionId={session.sessionId}
               />
+              <PersonalNote identity={{ topicId: item.topicId, questionId: item.questionId }} />
             </>
           ) : (
             <section className="answer-placeholder" aria-label="参考答案未揭晓">
@@ -346,7 +372,7 @@ export function PracticePane({
             )}
           </div>
           <div className="practice-navigation" aria-label="本轮导航">
-            <button type="button" disabled={actionsBlocked} onClick={onHome}>
+            <button type="button" disabled={actionsBlocked} onClick={goHome}>
               保存后返回
             </button>
             <button

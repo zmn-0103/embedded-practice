@@ -87,7 +87,7 @@ export function BackupPanel({
     <section id="backup-section" tabIndex={-1} aria-label="完整备份与恢复预览">
       <h3>备份与恢复</h3>
       <p>
-        完整备份包含题库、历史版本、图片、学习记录、收藏、练习进度、已安装主题及显示布局设置。
+        完整备份包含题库、历史版本、图片、学习记录、个人笔记、固定题单、收藏、练习进度、已安装主题及显示布局设置。
         备份仅包含已经保存的数据；调整显示后请先保存，再导出。
       </p>
       <div className="import-actions">
@@ -128,6 +128,8 @@ export function BackupPanel({
               [
                 ['分类', summary.categories],
                 ['练习方案', summary.practicePlans],
+                ['固定题单', summary.questionSets ?? 0],
+                ['个人笔记', summary.personalNotes ?? 0],
                 ['已安装主题', summary.installedThemes],
                 ['专题', summary.topics],
                 ['题目总数', summary.questions],

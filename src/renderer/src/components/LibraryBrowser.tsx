@@ -23,16 +23,27 @@ import {
 import { TopicNavigator } from './TopicNavigator'
 import { CategoryManager } from './CategoryManager'
 import { DifficultyBadge } from './DifficultyBadge'
+import { QuestionSets } from './QuestionSets'
+import { PersonalNote } from './PersonalNote'
+import { ContentUpdates } from './ContentUpdates'
+import { useNoteSaves } from '../note-saves'
+import {
+  MAX_QUESTION_SET_ITEMS,
+  questionIdentityKey,
+} from '../../../shared/contracts/question-sets'
 
 function QuestionView({
   identity,
   current,
+  favoritesOnly,
   onFavoriteSaved,
 }: {
   identity: QuestionIdentity
   current: LibraryPage['questions'][number] | undefined
+  favoritesOnly: boolean
   onFavoriteSaved: () => void
 }) {
+  const noteSaves = useNoteSaves()
   const [detail, setDetail] = useState<QuestionDetail>()
   const [answer, setAnswer] = useState<ContentBody>()
   const [error, setError] = useState('')
@@ -93,14 +104,20 @@ function QuestionView({
     setFavoriteBusy(true)
     setError('')
     const epoch = generation.current
+    let awaitingRemoval = false
     try {
+      if (!(await noteSaves.flush()) || epoch !== generation.current) return
       const result = await window.desktop.library.setFavorite({
         topicId: detail.topicId,
         questionId: detail.questionId,
         favorite: !detail.favorite,
       })
       // 已切走的详情只通知重新读取，不把旧响应值写进父级列表。
-      if (result.ok) onFavoriteSaved()
+      if (result.ok) {
+        // 收藏筛选中的详情在列表响应到达后才卸载，期间不能重新放开笔记编辑。
+        awaitingRemoval = favoritesOnly && !result.value.favorite
+        onFavoriteSaved()
+      }
       if (epoch !== generation.current) return
       if (result.ok) {
         setDetail((previous) => previous && { ...previous, favorite: result.value.favorite })
@@ -108,7 +125,7 @@ function QuestionView({
     } catch {
       if (epoch === generation.current) setError('收藏保存尚未确认，请重试相同设置。')
     } finally {
-      if (epoch === generation.current) {
+      if (epoch === generation.current && !awaitingRemoval) {
         favoritePending.current = false
         setFavoriteBusy(false)
       }
@@ -189,6 +206,13 @@ function QuestionView({
           {favoriteBusy ? '正在保存收藏…' : detail.favorite ? '取消收藏' : '收藏本题'}
         </button>
       </header>
+      <ContentUpdates
+        identity={{
+          topicId: detail.topicId,
+          questionId: detail.questionId,
+          versionId: detail.versionId,
+        }}
+      />
       <h4>题目</h4>
       <MarkdownContent
         key={`q-${detail.versionId}`}
@@ -223,6 +247,7 @@ function QuestionView({
         </section>
       )}
       <QuestionHistory topicId={detail.topicId} questionId={detail.questionId} />
+      <PersonalNote identity={identity} readOnly={favoriteBusy} />
     </article>
   )
 }
@@ -246,6 +271,12 @@ interface LibraryBrowserProps {
   onCategoryBusy?: (busy: boolean) => void
   onCategoryOperation?: (work: Promise<boolean>) => void
   entry?: LibraryEntry | undefined
+  onPracticeQuestions?: (
+    items: QuestionIdentity[],
+    sourceName: string,
+    contentUpdatedOnly?: boolean,
+  ) => void
+  onResumeReady?: () => void
 }
 
 export function LibraryBrowser(props: LibraryBrowserProps) {
@@ -279,10 +310,32 @@ function LibraryContent({
   onCategoryBusy,
   onCategoryOperation,
   entry,
+  onPracticeQuestions,
+  onResumeReady,
 }: LibraryBrowserProps) {
+  const [picked, setPicked] = useState<QuestionIdentity[]>([])
+  const [pickError, setPickError] = useState('')
+  const [setsBlocked, setSetsBlocked] = useState(false)
+  const [categoryBusy, setCategoryBusy] = useState(false)
+  const localBusy = useRef({ sets: false, category: false })
+  function reportBusy(kind: 'sets' | 'category', value: boolean) {
+    localBusy.current[kind] = value
+    if (kind === 'sets') setSetsBlocked(value)
+    else setCategoryBusy(value)
+    onCategoryBusy?.(localBusy.current.sets || localBusy.current.category)
+  }
+  function changePicked(next: QuestionIdentity[]) {
+    if (next.length > MAX_QUESTION_SET_ITEMS) {
+      setPickError(`最多勾选${MAX_QUESTION_SET_ITEMS}题，本次没有截断或改变原勾选。请分批练习。`)
+      return
+    }
+    setPickError('')
+    setPicked(next)
+  }
   // 学习记录父级按范围建立 key；范围在本次挂载中固定，其他筛选仍可独立调整。
   const clearHelpId = useId()
-  const [request, setRequest] = useState<ListRequest>(() => ({
+  const noteSaves = useNoteSaves()
+  const [request, setRequestState] = useState<ListRequest>(() => ({
     topicId: scope?.topicId ?? null,
     category: scope?.category ?? entry?.category ?? ALL_CATEGORIES,
     archived: scope?.archived ?? entry?.archived ?? false,
@@ -291,6 +344,15 @@ function LibraryContent({
     contentUpdatedOnly: entry?.contentUpdatedOnly,
     ...(scope ? { filters: { ...EMPTY_QUESTION_FILTERS, favoritesOnly: true } } : {}),
   }))
+  function setRequest(next: ListRequest) {
+    if (!noteSaves.hasPending()) {
+      setRequestState(next)
+      return
+    }
+    void noteSaves.flush().then((saved) => {
+      if (saved) setRequestState(next)
+    })
+  }
   const [data, setData] = useState<LibraryPage>()
   const [selected, setSelected] = useState<QuestionIdentity>()
   const [error, setError] = useState('')
@@ -305,6 +367,8 @@ function LibraryContent({
   const [contentUpdatedOnly, setContentUpdatedOnly] = useState(entry?.contentUpdatedOnly ?? false)
   const [detailOpen, setDetailOpen] = useState(false)
   const resolvedRequest = useRef<ListRequest | undefined>(undefined)
+  const wasVisible = useRef(visible)
+  const resumeRequest = useRef<ListRequest | undefined>(undefined)
   const heading = useRef<HTMLElement>(null)
   const readerPane = useRef<HTMLDivElement>(null)
   const listPosition = useRef({ window: 0, top: 0 })
@@ -339,7 +403,14 @@ function LibraryContent({
     heading.current?.querySelector('.question-list-scroll')?.scrollTo(0, 0)
   }, [request, refresh, attempt])
   useEffect(() => {
-    if (!visible) return
+    if (!visible) {
+      wasVisible.current = false
+      return
+    }
+    if (!wasVisible.current) {
+      wasVisible.current = true
+      resumeRequest.current = request
+    }
     let active = true
     setLoading(true)
     setError('')
@@ -372,6 +443,13 @@ function LibraryContent({
       active = false
     }
   }, [request, refresh, attempt, favoriteRefresh, visible, invalidation])
+  useLayoutEffect(() => {
+    if (!visible || loading || error || !resumeRequest.current) return
+    const previous = resumeRequest.current
+    resumeRequest.current = undefined
+    // 返回后的刷新会暂时收起长正文，等待实际内容恢复后再还原窗口位置。
+    if (previous === request && resolvedRequest.current === request) onResumeReady?.()
+  }, [visible, loading, error, data, request, onResumeReady])
   if (error && !data)
     return (
       <section className="library-empty">
@@ -434,9 +512,23 @@ function LibraryContent({
         setFavoriteRefresh((value) => value + 1)
         onCategoryChanged?.()
       }}
-      onBusyChange={onCategoryBusy}
+      onBusyChange={(value) => reportBusy('category', value)}
       onOperation={onCategoryOperation}
     />
+  )
+  const selectionPanel = !scope && onPracticeQuestions && (
+    <details className="question-selection-panel">
+      <summary>勾选组卷与题单（{picked.length}题）</summary>
+      <QuestionSets
+        items={picked}
+        refresh={refresh}
+        disabled={loading || categoryBusy || (categoryDisabled && !setsBlocked)}
+        onChange={changePicked}
+        onPractice={onPracticeQuestions}
+        onBlocked={(value) => reportBusy('sets', value)}
+        onOperation={(work) => onCategoryOperation?.(work)}
+      />
+    </details>
   )
   const resultDescription = (
     <>
@@ -478,6 +570,7 @@ function LibraryContent({
         <p>选择一个或多个 Markdown 文件，先核对变更，再确认保存。</p>
         <p>也可以导出模板，在程序外填写自己的专题。</p>
         {navigation}
+        {selectionPanel}
         {management}
       </section>
     )
@@ -491,7 +584,10 @@ function LibraryContent({
       aria-busy={!resultsReady}
       data-reading={detailOpen && Boolean(selected) && resultsReady}
     >
-      <div className="library-management-tools">{management}</div>
+      <div className="library-management-tools">
+        {selectionPanel}
+        {management}
+      </div>
       <div className="library-controls">
         <div
           className="library-scope-controls"
@@ -617,7 +713,35 @@ function LibraryContent({
           ) : (
             resultDescription
           )}
-          {!scope && <p className="muted">准备作答时，进入“开始练习”设置本轮条件。</p>}
+          {!scope && !onPracticeQuestions && (
+            <p className="muted">准备作答时，进入“开始练习”设置本轮条件。</p>
+          )}
+          {!scope && onPracticeQuestions && (
+            <div className="button-row library-pick-tools">
+              <span aria-live="polite">已勾选 {picked.length} 题</span>
+              <button
+                type="button"
+                disabled={
+                  loading ||
+                  categoryDisabled ||
+                  !resultsReady ||
+                  !data.questions.some((q) => !q.archived)
+                }
+                onClick={() => {
+                  const known = new Set(picked.map(questionIdentityKey))
+                  changePicked([
+                    ...picked,
+                    ...data.questions
+                      .filter((q) => !q.archived && !known.has(questionIdentityKey(q)))
+                      .map(({ topicId, questionId }) => ({ topicId, questionId })),
+                  ])
+                }}
+              >
+                勾选本页有效题
+              </button>
+              {pickError && <p role="alert">{pickError}</p>}
+            </div>
+          )}
         </div>
         {loading && <p aria-live="polite">正在筛选题库…</p>}
         {error && (
@@ -644,7 +768,41 @@ function LibraryContent({
             <div className="question-list-scroll" hidden={!resultsReady}>
               <ul>
                 {data.questions.map((question) => (
-                  <li key={`${question.topicId}/${question.questionId}`}>
+                  <li
+                    key={`${question.topicId}/${question.questionId}`}
+                    className={!scope && onPracticeQuestions ? 'question-selection-row' : undefined}
+                  >
+                    {!scope && onPracticeQuestions && (
+                      <input
+                        type="checkbox"
+                        aria-label={`勾选题目：${question.topicId} / ${question.questionId} ${question.title}`}
+                        checked={picked.some(
+                          (item) => questionIdentityKey(item) === questionIdentityKey(question),
+                        )}
+                        disabled={
+                          loading ||
+                          categoryDisabled ||
+                          Boolean(error) ||
+                          (question.archived &&
+                            !picked.some(
+                              (item) => questionIdentityKey(item) === questionIdentityKey(question),
+                            ))
+                        }
+                        onChange={(event) =>
+                          changePicked(
+                            event.currentTarget.checked
+                              ? [
+                                  ...picked,
+                                  { topicId: question.topicId, questionId: question.questionId },
+                                ]
+                              : picked.filter(
+                                  (item) =>
+                                    questionIdentityKey(item) !== questionIdentityKey(question),
+                                ),
+                          )
+                        }
+                      />
+                    )}
                     <button
                       className="question-row"
                       type="button"
@@ -656,23 +814,31 @@ function LibraryContent({
                           : undefined
                       }
                       onClick={() => {
-                        listPosition.current = {
-                          window: window.scrollY,
-                          top:
-                            heading.current?.querySelector('.question-list-scroll')?.scrollTop ?? 0,
-                        }
-                        setSelected((previous) =>
-                          previous?.topicId === question.topicId &&
-                          previous.questionId === question.questionId
-                            ? previous
-                            : { topicId: question.topicId, questionId: question.questionId },
-                        )
-                        setDetailOpen(true)
-                        readerPane.current?.scrollTo(0, 0)
-                        if (window.matchMedia('(max-width: 1439px)').matches)
-                          requestAnimationFrame(() =>
-                            heading.current?.scrollIntoView({ block: 'start' }),
+                        const select = () => {
+                          listPosition.current = {
+                            window: window.scrollY,
+                            top:
+                              heading.current?.querySelector('.question-list-scroll')?.scrollTop ??
+                              0,
+                          }
+                          setSelected((previous) =>
+                            previous?.topicId === question.topicId &&
+                            previous.questionId === question.questionId
+                              ? previous
+                              : { topicId: question.topicId, questionId: question.questionId },
                           )
+                          setDetailOpen(true)
+                          readerPane.current?.scrollTo(0, 0)
+                          if (window.matchMedia('(max-width: 1439px)').matches)
+                            requestAnimationFrame(() =>
+                              heading.current?.scrollIntoView({ block: 'start' }),
+                            )
+                        }
+                        if (noteSaves.hasPending())
+                          void noteSaves.flush().then((saved) => {
+                            if (saved) select()
+                          })
+                        else select()
                       }}
                     >
                       <span className="question-row-title">{question.title}</span>
@@ -762,6 +928,7 @@ function LibraryContent({
             <QuestionView
               key={`${refresh}/${attempt}/${selected.topicId}/${selected.questionId}`}
               identity={selected}
+              favoritesOnly={request.filters?.favoritesOnly === true}
               current={data.questions.find(
                 (question) =>
                   question.topicId === selected.topicId &&

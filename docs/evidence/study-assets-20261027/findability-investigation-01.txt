@@ -1,0 +1,39 @@
+
+Running 1 test using 1 worker
+
+(node:25148) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [packaged] › tests\e2e\findability.spec.ts:83:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置 (11.7s)
+
+
+  1) [packaged] › tests\e2e\findability.spec.ts:83:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置 ────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2412
+    Received: 72
+
+    Call Log:
+    - Timeout 10000ms exceeded while waiting on the predicate
+
+      100 |       'FIND-ANSWER-find-a-21',
+      101 |     )
+    > 102 |     await expect.poll(() => page.evaluate(() => Reflect.get(globalThis, 'scrollY'))).toBe(before)
+          |                                                                                      ^
+      103 |     await capture(application, info, 'library-reading-restored.png')
+      104 |     await page.getByRole('button', { name: '返回题目列表', exact: true }).click()
+      105 |     await expect(page.getByRole('button', { name: '筛选题库', exact: true })).toBeEnabled()
+        at E:\My_Projects\embedded-practice\tests\e2e\findability.spec.ts:102:86
+
+    Error Context: docs\evidence\study-assets-20261027\findability-investigation-01\findability-找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置-packaged\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs\evidence\study-assets-20261027\findability-investigation-01\findability-找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置-packaged\trace.zip
+    Usage:
+
+        npx playwright show-trace docs\evidence\study-assets-20261027\findability-investigation-01\findability-找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置-packaged\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [packaged] › tests\e2e\findability.spec.ts:83:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置 ─────────────────

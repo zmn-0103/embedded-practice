@@ -1,0 +1,134 @@
+{
+  "build": "20261027.5-study-assets",
+  "schemaVersion": 13,
+  "release": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-assets-20261027.5-r3",
+  "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-assets-20261027.5-r3\\win-unpacked\\embedded-practice.exe",
+  "finalUnit": {
+    "files": 40,
+    "passed": 709,
+    "failed": 0
+  },
+  "firstPackaged": {
+    "startTime": "2026-10-27T15:37:47.085Z",
+    "duration": 737891.9160000001,
+    "expected": 325,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  },
+  "finalPackaged": {
+    "startTime": "2026-10-27T15:52:03.304Z",
+    "duration": 700607.517,
+    "expected": 329,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "finalScenarios": 329,
+  "retries": 0,
+  "sourceFilesPreserved": 287,
+  "configurationFilesUnchanged": 8,
+  "originalPlanPrefixBytes": 46407,
+  "previousDeliveryFilesUnchanged": 155,
+  "originalAssetsUnchanged": 17,
+  "images": [
+    {
+      "title": "笔记/作答对照/轮次与导出在1440px/100%/22px/松间绿可读可操作",
+      "attachment": "study-note.png",
+      "file": "界面预览/01-笔记-宽窗.png",
+      "capture": "Electron capturePage窗口",
+      "bytes": 139628,
+      "sha256": "e9c9f54fdb20cdcfcd73263f87dbb41347ec827909e1cc7509a459631c6dc44b"
+    },
+    {
+      "title": "笔记/作答对照/轮次与导出在1440px/100%/22px/松间绿可读可操作",
+      "attachment": "study-comparison.png",
+      "file": "界面预览/02-作答对照-宽窗窄栏.png",
+      "capture": "Electron capturePage窗口",
+      "bytes": 129197,
+      "sha256": "af449856873077337f9d05c98f7c4d2223d4dae66f337f4552b10f91b7b6a27f"
+    },
+    {
+      "title": "笔记/作答对照/轮次与导出在1440px/100%/22px/松间绿可读可操作",
+      "attachment": "study-round-export.png",
+      "file": "界面预览/03-按轮导出-浅色.png",
+      "capture": "Electron capturePage窗口",
+      "bytes": 143670,
+      "sha256": "e020ea8efbcda4a8f31354705bbdc829bdc25188a2ed16834e802e9cde78861a"
+    },
+    {
+      "title": "笔记/作答对照/轮次与导出在900px/125%/22px/暖沙金可读可操作",
+      "attachment": "study-note.png",
+      "file": "界面预览/04-笔记-小窗深色.png",
+      "capture": "Electron capturePage窗口",
+      "bytes": 100569,
+      "sha256": "26339fb1aee37711941e40bcaf45f3a9cf25d6706c95758dbbcabf275829fd93"
+    },
+    {
+      "title": "笔记/作答对照/轮次与导出在900px/125%/22px/暖沙金可读可操作",
+      "attachment": "study-comparison.png",
+      "file": "界面预览/05-作答对照-小窗.png",
+      "capture": "Electron capturePage窗口",
+      "bytes": 79005,
+      "sha256": "a33e63be6a7a1d344437a7b4934b05ec5d92360720101d90a155d1898cbc3be0"
+    },
+    {
+      "title": "笔记/作答对照/轮次与导出在900px/125%/22px/暖沙金可读可操作",
+      "attachment": "study-round-export.png",
+      "file": "界面预览/06-按轮导出-小窗.png",
+      "capture": "Electron capturePage窗口",
+      "bytes": 133249,
+      "sha256": "9909b12e94270680f5f7d3910adb24fcb53c9b2f5979e0b9dbd88cb122a8e454"
+    },
+    {
+      "title": "笔记/作答对照/轮次与导出在1200px/150%/22px/Claude 风格可读可操作",
+      "attachment": "study-note.png",
+      "file": "界面预览/07-笔记-大字号缩放.png",
+      "capture": "Electron capturePage窗口",
+      "bytes": 115937,
+      "sha256": "32cf74a3af5d8d1c02c9ea3991d35f3cff2d0bba4307e37df2e07a71dae032be"
+    },
+    {
+      "title": "笔记/作答对照/轮次与导出在1200px/150%/22px/Claude 风格可读可操作",
+      "attachment": "study-comparison.png",
+      "file": "界面预览/08-作答对照-缩放.png",
+      "capture": "Electron capturePage窗口",
+      "bytes": 85425,
+      "sha256": "c19f417492bc4121252a179c1e7d16e854d4c52b8cc5e0bd354ca3f68a89b65f"
+    },
+    {
+      "title": "笔记/作答对照/轮次与导出在1200px/150%/22px/Claude 风格可读可操作",
+      "attachment": "study-round-export.png",
+      "file": "界面预览/09-按轮导出-缩放.png",
+      "capture": "Electron capturePage窗口",
+      "bytes": 105600,
+      "sha256": "2018b5d42cb4aa9580c5b5ea2f453ca39fa78a2f1771f171e5ce7d73e6664bf7"
+    },
+    {
+      "title": "学习记录按轮查看原范围和单题作答，读取失败可重试，查看不写学习记录",
+      "attachment": "round-review.png",
+      "file": "界面预览/10-单题轮次复盘.png",
+      "capture": "Electron页面内容长图",
+      "bytes": 128401,
+      "sha256": "82c1a9467e7815710e1d95d2bc4ea1f20e07920a279300d46961e9dd97fc2ff7"
+    },
+    {
+      "title": "同题两次作答主动确认才读，版本不同提示，自己的回答并列且不挂参考答案",
+      "attachment": "answer-comparison.png",
+      "file": "界面预览/11-不同版本作答对照.png",
+      "capture": "Electron页面内容长图",
+      "bytes": 150020,
+      "sha256": "b82f03e34702ba992c5a43a105fc16bc94d52db449a211f83571fa685ff811f1"
+    },
+    {
+      "title": "题单主动选择三类材料，正文/代码/图片可离开来源使用，默认不含个人内容或答案",
+      "attachment": "material-export.png",
+      "file": "界面预览/12-固定题单导出.png",
+      "capture": "Electron capturePage窗口",
+      "bytes": 185555,
+      "sha256": "c675a9066443e1a20dae7d43d6cd618f5a9a63764c29f1af514876b5675f997b"
+    }
+  ],
+  "archiveSha256": "c19b1ec8c59e9554e5041017c781742fc5a366627b1e99bd5f676a2570940582",
+  "exeSha256": "a3d14dab72d2a690a5e06a7abcb54f3598672c9dcf7d8a359c36a3a033bc097f"
+}

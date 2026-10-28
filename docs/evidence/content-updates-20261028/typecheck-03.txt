@@ -1,0 +1,5 @@
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/content-updates-window.spec.ts(53,27): error TS7006: Parameter 'url' implicitly has an 'any' type.

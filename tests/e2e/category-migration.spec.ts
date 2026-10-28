@@ -89,6 +89,9 @@ test('结构7分类迁移：一致性保护、原业务/条件/回执/自定义�
     categories: [],
     practice_plans: [],
     installed_themes: [],
+    question_sets: [],
+    question_set_items: [],
+    personal_notes: [],
     appearance_settings: original.before.appearance_settings!.map((row) => ({
       ...row,
       theme_id: `builtin.${row['palette']}`,
@@ -98,6 +101,9 @@ test('结构7分类迁移：一致性保护、原业务/条件/回执/自定义�
     topics: original.before.topics!.map((row) => ({ ...row, category_id: null })),
     practice_sessions: original.before.practice_sessions!.map((row) => ({
       ...row,
+      repeat_source_id: null,
+      repeat_selection: null,
+      selection_name: null,
       category_scope_json: '{"kind":"all"}',
     })),
   }
@@ -106,7 +112,7 @@ test('结构7分类迁移：一致性保护、原业务/条件/回执/自定义�
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     expect(withHistoryDatabase(testDataDirectory, records)).toEqual(expected)
     withHistoryDatabase(testDataDirectory, (db) => {
-      expect(db.prepare('PRAGMA user_version').get()).toEqual({ user_version: 10 })
+      expect(db.prepare('PRAGMA user_version').get()).toEqual({ user_version: 13 })
       expect(db.prepare('PRAGMA foreign_key_check').all()).toEqual([])
       expect(
         db

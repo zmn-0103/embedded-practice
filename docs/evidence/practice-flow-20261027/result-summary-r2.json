@@ -1,0 +1,31 @@
+{
+  "baseline": "72339b941711d8966ac482c08ce6efe70068c774",
+  "branch": "codex/practice-flow-20261027",
+  "productVersion": "0.0.2",
+  "build": "20261027.3-practice-flow",
+  "schemaVersion": 11,
+  "executable": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-practice-flow-20261027.3-r2\\win-unpacked\\embedded-practice.exe",
+  "unit": {
+    "files": 36,
+    "passed": 674
+  },
+  "developmentTargeted": {
+    "passed": 47,
+    "failed": 0
+  },
+  "packaged": {
+    "startTime": "2026-10-27T09:47:24.007Z",
+    "duration": 608479.116,
+    "expected": 288,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "cases": 288,
+    "allSingleAttempt": true,
+    "errors": []
+  },
+  "sourcesAndTestsUnchangedDuringFinalFullRun": true,
+  "originalPlanBytePrefixPreserved": true,
+  "personalDataTouched": false,
+  "newDevelopmentCommitted": false
+}

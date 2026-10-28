@@ -1,0 +1,31 @@
+
+Running 3 tests using 1 worker
+
+(node:4064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [development] › tests\e2e\content-updates-window.spec.ts:16:5 › 仅图片变化仍可看两版入库图片，来源移走仍完整，不误称文字同即内容同 (2.0s)
+(node:21324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [development] › tests\e2e\content-updates-window.spec.ts:69:5 › 答案差异慢响应在改选旧版后丢弃，版本读取失败保留错误并可重试，答案单独变化可识别 (1.8s)
+  ok 3 [development] › tests\e2e\content-updates-window.spec.ts:141:5 › 切到另一题后迟到的题干差异不能覆盖或泄漏旧题，首次题仅显示无更早版本 (1.6s)
+
+
+  1) [development] › tests\e2e\content-updates-window.spec.ts:16:5 › 仅图片变化仍可看两版入库图片，来源移走仍完整，不误称文字同即内容同 
+
+    Error: page.evaluate: TypeError: Failed to fetch
+        at eval (eval at evaluate (:370:30), <anonymous>:1:82)
+        at Array.map (<anonymous>)
+        at eval (eval at evaluate (:370:30), <anonymous>:1:26)
+        at UtilityScript.evaluate (<anonymous>:372:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at eval (eval at evaluate (:370:30), <anonymous>:1:82)
+        at eval (eval at evaluate (:370:30), <anonymous>:1:26)
+        at UtilityScript.evaluate (<anonymous>:372:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at E:\My_Projects\embedded-practice\tests\e2e\content-updates-window.spec.ts:50:30
+
+    Error Context: docs\evidence\content-updates-20261028\development-03\content-updates-window-仅图片变化仍可看两版入库图片，来源移走仍完整，不误称文字同即内容同-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\content-updates-window.spec.ts:16:5 › 仅图片变化仍可看两版入库图片，来源移走仍完整，不误称文字同即内容同 
+  2 passed (6.4s)

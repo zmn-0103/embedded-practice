@@ -1,0 +1,12 @@
+
+Running 5 tests using 1 worker
+
+(node:32244) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\study-storage.spec.ts:45:5 › 结构12先保护备份再升13，仅新增空笔记表，原题单/来源/草稿与自定义对象保持 (1.1s)
+  ok 2 [development] › tests\e2e\study-storage.spec.ts:106:7 › 结构12笔记迁移失败backup-blocked完整回滚，原库与原DDL不变 (727ms)
+  ok 3 [development] › tests\e2e\study-storage.spec.ts:106:7 › 结构12笔记迁移失败table-conflict完整回滚，原库与原DDL不变 (697ms)
+  ok 4 [development] › tests\e2e\study-storage.spec.ts:106:7 › 结构12笔记迁移失败foreign-key完整回滚，原库与原DDL不变 (701ms)
+  ok 5 [development] › tests\e2e\study-storage.spec.ts:145:5 › 完整备份恢复笔记/清空修订/轮次/题单/活动草稿，五类坏笔记拒绝且不改原库 (3.9s)
+
+  5 passed (7.6s)

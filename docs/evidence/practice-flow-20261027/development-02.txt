@@ -1,0 +1,13 @@
+
+Running 6 tests using 1 worker
+
+(node:39916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\practice-flow-plans.spec.ts:48:5 › 联合筛选列表/匹配数/建轮一致，旧自评排除，练旧版本不覆盖最新版本已掌握 (1.6s)
+  ok 2 [development] › tests\e2e\practice-flow-plans.spec.ts:123:5 › 方案界面重命名/更新/另存及填入不建轮，联合条件持久化且原活动轮不变 (2.1s)
+  ok 3 [development] › tests\e2e\practice-flow-plans.spec.ts:185:5 › 方案更新原条件重试幂等、过期/同名/删除后编辑拒绝，真实写失败保留原方案 (1.2s)
+  ok 4 [development] › tests\e2e\practice-repeat.spec.ts:16:5 › 再练只取来源轮五种状态，原内容/队列/作答保留，原请求重复不建副本 (1.5s)
+  ok 5 [development] › tests\e2e\practice-repeat.spec.ts:95:5 › 再练随机只重排原题，重开保持；空结果/来源不存在/活动来源/写失败均不结束活动轮 (2.1s)
+  ok 6 [development] › tests\e2e\practice-repeat.spec.ts:193:5 › 结果页明确本轮范围/题数/旧版本，丢失开始响应可原请求重试且新轮隐藏答案 (9.7s)
+
+  6 passed (19.0s)

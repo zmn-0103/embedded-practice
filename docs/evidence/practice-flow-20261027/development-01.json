@@ -1,0 +1,443 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/practice-repeat.spec.ts",
+      "tests/e2e/practice-flow-plans.spec.ts",
+      "--project=development",
+      "--output=docs/evidence/practice-flow-20261027/development-01",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/practice-flow-20261027/development-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/practice-flow-20261027/development-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-flow-20261027\\development-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-flow-plans.spec.ts",
+      "file": "practice-flow-plans.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "联合筛选列表/匹配数/建轮一致，旧自评排除，练旧版本不覆盖最新版本已掌握",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2258,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:21:06.677Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-flow-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLThxNFBwTCIsInBhY2thZ2VkIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f1b293e198f7d93ecb4b-9d06a5084ae0f7aedd70",
+          "file": "practice-flow-plans.spec.ts",
+          "line": 48,
+          "column": 5
+        },
+        {
+          "title": "方案界面重命名/更新/另存及填入不建轮，联合条件持久化且原活动轮不变",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 32455,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-flow-plans.spec.ts",
+                        "column": 67,
+                        "line": 130
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '开始练习', exact: true })\u001b[22m\n\n\n  128 |     await finishFlow(page)\n  129 |     await page.reload()\n> 130 |     await page.getByRole('button', { name: '开始练习', exact: true }).click()\n      |                                                                   ^\n  131 |     await page.getByRole('textbox', { name: '我的答案', exact: true }).fill('活动轮原草稿')\n  132 |     await page.getByRole('button', { name: '保存并返回', exact: true }).click()\n  133 |     const before = historySnapshot(testDataDirectory)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-flow-plans.spec.ts:130:67"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:21:08.962Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-flow-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLWFNWVNTNyIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-flow-20261027\\development-01\\practice-flow-plans-方案界面重命名-更新-另存及填入不建轮，联合条件持久化且原活动轮不变-development\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f1b293e198f7d93ecb4b-8cac1d5063b461103571",
+          "file": "practice-flow-plans.spec.ts",
+          "line": 123,
+          "column": 5
+        },
+        {
+          "title": "方案更新原条件重试幂等、过期/同名/删除后编辑拒绝，真实写失败保留原方案",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1338,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:21:41.833Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-flow-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLXd2TTVqZCIsInBhY2thZ2VkIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f1b293e198f7d93ecb4b-20ab008430b62b8ebef6",
+          "file": "practice-flow-plans.spec.ts",
+          "line": 184,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "practice-repeat.spec.ts",
+      "file": "practice-repeat.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "再练只取来源轮五种状态，原内容/队列/作答保留，原请求重复不建副本",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1394,
+                  "error": {
+                    "message": "Error: CHECK constraint failed: (last_rating IS NULL) = (last_rated_version_id IS NULL)",
+                    "stack": "Error: CHECK constraint failed: (last_rating IS NULL) = (last_rated_version_id IS NULL)\n    at work (E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-repeat.spec.ts:35:18)\n    at withHistoryDatabase (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:92:12)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-repeat.spec.ts:33:24",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-repeat.spec.ts",
+                      "column": 18,
+                      "line": 35
+                    },
+                    "snippet": "  33 |     withHistoryDatabase(\n  34 |       testDataDirectory,\n> 35 |       (db) => db.exec(\"UPDATE question_user_state SET last_rating='掌握'\"),\n     |                  ^\n  36 |       false,\n  37 |     )\n  38 |     const selections: [RepeatPractice['selection'], string[]][] = ["
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-repeat.spec.ts",
+                        "column": 18,
+                        "line": 35
+                      },
+                      "message": "Error: CHECK constraint failed: (last_rating IS NULL) = (last_rated_version_id IS NULL)\n\n  33 |     withHistoryDatabase(\n  34 |       testDataDirectory,\n> 35 |       (db) => db.exec(\"UPDATE question_user_state SET last_rating='掌握'\"),\n     |                  ^\n  36 |       false,\n  37 |     )\n  38 |     const selections: [RepeatPractice['selection'], string[]][] = [\n    at work (E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-repeat.spec.ts:35:18)\n    at withHistoryDatabase (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:92:12)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-repeat.spec.ts:33:24"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:21:43.201Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-flow-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLUl3ejdsbSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-flow-20261027\\development-01\\practice-repeat-再练只取来源轮五种状态，原内容-队列-作答保留，原请求重复不建副本-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-repeat.spec.ts",
+                    "column": 18,
+                    "line": 35
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3cc4b6c3b899c999b8d2-1fc9659419119acc90e2",
+          "file": "practice-repeat.spec.ts",
+          "line": 16,
+          "column": 5
+        },
+        {
+          "title": "再练随机只重排原题，重开保持；空结果/来源不存在/活动来源/写失败均不结束活动轮",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:21:44.945Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-flow-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLUVjZGlWeiIsInBhY2thZ2VkIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3cc4b6c3b899c999b8d2-d8fad3f81c63a5b6287a",
+          "file": "practice-repeat.spec.ts",
+          "line": 92,
+          "column": 5
+        },
+        {
+          "title": "结果页明确本轮范围/题数/旧版本，丢失开始响应可原请求重试且新轮隐藏答案",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 39168,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-repeat.spec.ts",
+                        "column": 54,
+                        "line": 189
+                      },
+                      "message": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('form', { name: '本轮题目再练', exact: true }).getByLabel('再练范围', { exact: true })\u001b[22m\n\n\n  187 |     await expect(repeat).toContainText('共 2 题')\n  188 |     await expect(repeat).toContainText('其后更新或归档也不替换内容')\n> 189 |     await repeat.getByLabel('再练范围', { exact: true }).selectOption('skipped')\n      |                                                      ^\n  190 |     await expect(repeat).toContainText('共 1 题')\n  191 |     await repeat.getByLabel('再练范围', { exact: true }).selectOption('weak')\n  192 |     await application.evaluate(({ ipcMain }) => {\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-repeat.spec.ts:189:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:21:46.500Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-flow-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLVdiVFpXRiIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-flow-20261027\\development-01\\practice-repeat-结果页明确本轮范围-题数-旧版本，丢失开始响应可原请求重试且新轮隐藏答案-development\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3cc4b6c3b899c999b8d2-23b477fe175e5b444853",
+          "file": "practice-repeat.spec.ts",
+          "line": 170,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T09:21:05.448Z",
+    "duration": 80246.817,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

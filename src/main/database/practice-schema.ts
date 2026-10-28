@@ -65,3 +65,11 @@ export const sessionFiltersMigration = `
   ALTER TABLE practice_sessions ADD COLUMN filters_json TEXT
     CHECK (filters_json IS NULL OR (json_valid(filters_json) AND json_type(filters_json) = 'object'));
 `
+
+// 新语义使用独立结构版本；来源轮与选择范围随完整备份保留。
+export const repeatPracticeMigration = `
+  ALTER TABLE practice_sessions ADD COLUMN repeat_source_id TEXT REFERENCES practice_sessions(id);
+  ALTER TABLE practice_sessions ADD COLUMN repeat_selection TEXT
+    CHECK (repeat_selection IN ('unknown', 'weak', 'skipped', 'unrated', 'all'))
+    CHECK ((repeat_source_id IS NULL) = (repeat_selection IS NULL));
+`

@@ -1,0 +1,11 @@
+
+Running 4 tests using 1 worker
+
+(node:27228) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\updated-practice-state.spec.ts:17:5 › 更新题预览后已揭晓/版本更新/归档均整轮拒绝，原活动轮与完整学习数据不变 (2.8s)
+  ok 2 [development] › tests\e2e\updated-practice-state.spec.ts:66:5 › 更新建轮真实插入失败回滚原轮/队列/回执，同请求重试成功且揭晓后再重放不重复 (2.1s)
+  ok 3 [development] › tests\e2e\updated-practice.spec.ts:7:5 › 更新筛选跨页勾选与固定题单保持，普通项须明确移除，随机仅含确认题并固定版本 (4.1s)
+  ok 4 [development] › tests\e2e\updated-practice.spec.ts:81:5 › 更新复习开始响应丢失后按原请求重试，揭晓已消除待复习也从回执恢复同一轮 (1.5s)
+
+  4 passed (11.4s)

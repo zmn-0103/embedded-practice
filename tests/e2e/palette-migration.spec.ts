@@ -39,8 +39,8 @@ async function legacy(directory: string) {
       INSERT INTO topics VALUES('palette-legacy','旧配色专题','旧配色.md');
       INSERT INTO questions VALUES(1,'palette-legacy','q-1','旧题','[]','基础',0,0,NULL);
       UPDATE appearance_settings SET theme='dark',font_size=20;
-      CREATE TABLE personal_notes(id INTEGER PRIMARY KEY, note TEXT) STRICT;
-      INSERT INTO personal_notes VALUES(1,'结构六的额外表必须保留');
+      CREATE TABLE private_palette_notes(id INTEGER PRIMARY KEY, note TEXT) STRICT;
+      INSERT INTO private_palette_notes VALUES(1,'结构六的额外表必须保留');
       CREATE INDEX legacy_theme ON appearance_settings(theme);
       CREATE TRIGGER legacy_theme_probe AFTER UPDATE ON appearance_settings BEGIN SELECT 1; END;`)
     const bytes = await readFile(resolve('tests/fixtures/images/small.png'))
@@ -93,9 +93,15 @@ test('真实结构6先保护备份再追加配色，全部业务/自定义对象
     categories: [],
     practice_plans: [],
     installed_themes: [],
+    question_sets: [],
+    question_set_items: [],
+    personal_notes: [],
     topics: before.topics!.map((row) => ({ ...row, category_id: null })),
     practice_sessions: before.practice_sessions!.map((row) => ({
       ...row,
+      repeat_source_id: null,
+      repeat_selection: null,
+      selection_name: null,
       category_scope_json: '{"kind":"all"}',
     })),
     appearance_settings: before.appearance_settings!.map((row) => ({
@@ -111,7 +117,7 @@ test('真实结构6先保护备份再追加配色，全部业务/自定义对象
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     withHistoryDatabase(testDataDirectory, (database) => {
       expect(records(database)).toEqual(expected)
-      expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 10 })
+      expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 13 })
       expect(database.prepare('PRAGMA foreign_key_check').all()).toEqual([])
       expect(
         database
@@ -172,7 +178,12 @@ test('真实结构6先保护备份再追加配色，全部业务/自定义对象
   }
 })
 
-for (const failure of ['backup-blocked', 'column-conflict', 'foreign-key'] as const) {
+for (const failure of [
+  'backup-blocked',
+  'column-conflict',
+  'foreign-key',
+  'notes-table-conflict',
+] as const) {
   test(`结构6配色迁移 ${failure} 停止/回滚，不修补未知结构`, async ({
     testDataDirectory,
   }, info) => {
@@ -186,7 +197,9 @@ for (const failure of ['backup-blocked', 'column-conflict', 'foreign-key'] as co
           database.exec(
             failure === 'column-conflict'
               ? 'ALTER TABLE appearance_settings ADD COLUMN palette TEXT'
-              : "PRAGMA foreign_keys=OFF; UPDATE question_user_state SET last_rating='掌握',last_rated_version_id=999999",
+              : failure === 'notes-table-conflict'
+                ? "CREATE TABLE personal_notes(id INTEGER PRIMARY KEY, note TEXT) STRICT; INSERT INTO personal_notes VALUES(1,'同名未知表必须完整保留')"
+                : "PRAGMA foreign_keys=OFF; UPDATE question_user_state SET last_rating='掌握',last_rated_version_id=999999",
           ),
         false,
       )

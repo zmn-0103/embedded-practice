@@ -6,6 +6,7 @@ import {
   navigatePracticeSchema,
   ratePracticeSchema,
   readPracticeSchema,
+  readPracticeOutlineSchema,
   revealPracticeSchema,
   saveDraftSchema,
   startPracticeSchema,
@@ -17,6 +18,7 @@ import {
   practiceDraftResultSchema,
   practiceEmptyResultSchema,
   practiceReadResultSchema,
+  practiceOutlineResultSchema,
 } from '../../shared/contracts/practice-desktop'
 import type { PracticeService } from '../services/practice/practice'
 import { isTrustedRequest } from './trusted-sender'
@@ -96,6 +98,12 @@ export function registerPracticeIpc(
     )
   }
   business(PRACTICE_CHANNELS.read, readPracticeSchema, practiceReadResultSchema, service?.read)
+  business(
+    PRACTICE_CHANNELS.outline,
+    readPracticeOutlineSchema,
+    practiceOutlineResultSchema,
+    service?.outline,
+  )
   business(
     PRACTICE_CHANNELS.start,
     startPracticeSchema,

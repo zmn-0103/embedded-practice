@@ -9,10 +9,13 @@ import {
 import { createSettingsRepository } from '../../database/repositories/settings-repository'
 import { createThemeRepository } from '../../database/repositories/theme-repository'
 import { questionFiltersSchema } from '../../../shared/contracts/question-filters'
+import { repeatPracticeSchema } from '../../../shared/contracts/practice'
 import { contentBodySchema } from '../../../shared/contracts/library-desktop'
 import { categorySchema, categorySnapshotSchema } from '../../../shared/contracts/categories'
 import { MAX_PRACTICE_PLANS, practicePlanSchema } from '../../../shared/contracts/practice-plans'
 import { APPLICATION_ID, SCHEMA_VERSION } from '../../database/open-database'
+import { createQuestionSetRepository } from '../../database/repositories/question-set-repository'
+import { noteSchema } from '../../../shared/contracts/study'
 
 export const BACKUP_FORMAT_VERSION = 1
 export class BackupFault extends Error {
@@ -85,6 +88,9 @@ const requiredColumns = {
   library_meta: 'id, revision',
   categories: 'category_id, title',
   practice_plans: 'plan_id, name, options_json',
+  question_sets: 'set_id, name',
+  question_set_items: 'set_id, position, topic_id, question_id',
+  personal_notes: 'question_id, revision, text, updated_at',
   topics: 'topic_id, title, source_name, category_id',
   questions:
     'id, topic_id, question_id, title, tags_json, difficulty, position, archived, current_version_id',
@@ -95,7 +101,7 @@ const requiredColumns = {
   question_user_state: 'question_id, favorite, last_rating, last_rated_version_id',
   import_receipts: 'token, committed_at, result_json',
   practice_sessions:
-    'id, mode, topic_id, status, position, revision, created_at, ended_at, filters_json, category_scope_json',
+    'id, mode, topic_id, status, position, revision, created_at, ended_at, filters_json, category_scope_json, repeat_source_id, repeat_selection, selection_name',
   practice_items:
     'session_id, position, question_id, version_id, title, topic_title, tags_json, difficulty, draft, draft_revision, revealed_at, rating, rated_at, skipped_at',
   practice_receipts: 'request_id, payload_hash, result_json, created_at',
@@ -139,6 +145,36 @@ export function readBackupSummary(
   )
     throw new BackupFault('INVALID_BACKUP', '备份中的练习方案数量或唯一性无效。')
   for (const row of plans) practicePlanSchema.parse({ ...row, options: JSON.parse(row.options) })
+  if (
+    database
+      .prepare('SELECT 1 FROM question_sets GROUP BY set_id HAVING count(*)>1 LIMIT 1')
+      .get() ||
+    database
+      .prepare('SELECT 1 FROM question_sets GROUP BY lower(name) HAVING count(*)>1 LIMIT 1')
+      .get() ||
+    database
+      .prepare(
+        'SELECT 1 FROM question_set_items i WHERE NOT EXISTS (SELECT 1 FROM question_sets s WHERE s.set_id=i.set_id) LIMIT 1',
+      )
+      .get()
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份中的固定题单身份、名称或成员关联无效。')
+  const sets = createQuestionSetRepository(database)
+  const questionSets = sets.listQuestionSets()
+  for (const item of questionSets) sets.readQuestionSet(item.setId)
+  if (
+    database
+      .prepare('SELECT 1 FROM personal_notes GROUP BY question_id HAVING count(*)>1 LIMIT 1')
+      .get()
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份包含重复个人笔记。')
+  for (const row of database
+    .prepare(
+      `SELECT q.topic_id AS topicId,q.question_id AS questionId,
+    n.revision,n.text,n.updated_at AS updatedAt FROM personal_notes n LEFT JOIN questions q ON q.id=n.question_id`,
+    )
+    .iterate())
+    noteSchema.refine((note) => note.revision > 0).parse(row)
   for (const row of database
     .prepare('SELECT category_id AS categoryId, title FROM categories')
     .iterate()) {
@@ -161,12 +197,38 @@ export function readBackupSummary(
     throw new BackupFault('INVALID_BACKUP', '备份中的分类或专题归属无效，请选择其他备份。')
   for (const row of database
     .prepare(
-      'SELECT filters_json AS filters, category_scope_json AS category FROM practice_sessions',
+      `SELECT filters_json AS filters, category_scope_json AS category,
+        repeat_source_id AS sourceId, repeat_selection AS selection,
+        selection_name AS selectionName FROM practice_sessions`,
     )
-    .iterate() as Iterable<{ filters: string | null; category: string }>) {
+    .iterate() as Iterable<{
+    filters: string | null
+    category: string
+    sourceId: string | null
+    selection: string | null
+    selectionName: string | null
+  }>) {
     if (row.filters !== null) questionFiltersSchema.parse(JSON.parse(row.filters))
     categorySnapshotSchema.parse(JSON.parse(row.category))
+    if (row.selectionName !== null)
+      z.string()
+        .min(1)
+        .max(80)
+        .refine((name) => name === name.trim() && !/[\u0000-\u001f\u007f]/u.test(name))
+        .parse(row.selectionName)
+    if (row.sourceId !== null || row.selection !== null)
+      repeatPracticeSchema.parse({ sessionId: row.sourceId, selection: row.selection })
   }
+  if (
+    database
+      .prepare(
+        `SELECT 1 FROM practice_sessions s
+        JOIN practice_sessions source ON source.id = s.repeat_source_id
+        WHERE source.status = 'active' OR source.id = s.id LIMIT 1`,
+      )
+      .get()
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份中的再练来源无效，请选择完整备份。')
   for (const row of database
     .prepare(
       `SELECT question_markdown AS question, answer_markdown AS answer,
@@ -207,6 +269,8 @@ export function readBackupSummary(
     requiresMigration: header.schemaVersion < SCHEMA_VERSION,
     categories: count('categories'),
     practicePlans: plans.length,
+    questionSets: questionSets.length,
+    personalNotes: count('personal_notes', 'WHERE length(CAST(text AS BLOB))>0'),
     installedThemes: themes.entries.filter((entry) => !entry.builtIn).length,
     appearance: settings,
     topics: count('topics'),

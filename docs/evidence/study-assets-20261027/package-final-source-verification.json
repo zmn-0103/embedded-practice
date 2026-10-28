@@ -1,0 +1,125 @@
+{
+  "build": "20261027.5-study-assets",
+  "schemaVersion": 13,
+  "archive": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-assets-20261027.5-r3\\win-unpacked\\resources\\app.asar",
+  "archiveSha256": "c19b1ec8c59e9554e5041017c781742fc5a366627b1e99bd5f676a2570940582",
+  "exeSha256": "a3d14dab72d2a690a5e06a7abcb54f3598672c9dcf7d8a359c36a3a033bc097f",
+  "packaged": {
+    "name": "embedded-practice",
+    "version": "0.0.2",
+    "private": true,
+    "description": "个人使用的 Windows 离线嵌入式刷题本",
+    "license": "UNLICENSED",
+    "main": "./out/main/index.js",
+    "packageManager": "npm@11.17.0",
+    "engines": {
+      "node": ">=24.19.0 <25"
+    },
+    "dependencies": {
+      "better-sqlite3": "12.11.1"
+    }
+  },
+  "outputFiles": [
+    {
+      "path": "out\\main\\backup.js",
+      "bytes": 10623,
+      "sha256": "c51bd8765bf8c34c6d4651dda25f884175fad563927cc18382ffba986e3dcca6"
+    },
+    {
+      "path": "out\\main\\image-path-DkzouUrA.js",
+      "bytes": 458882,
+      "sha256": "a4a73f30fa5c837f3327db5fa937991a13d5e02aaf45fdf42bf9313e9a62cf88"
+    },
+    {
+      "path": "out\\main\\import-preparation.js",
+      "bytes": 4789,
+      "sha256": "76a9c5e71005d92b20063ee7b7acac64c6ec3af6742c3de0fedf17fa34212062"
+    },
+    {
+      "path": "out\\main\\import-protocol-CjaQDko1.js",
+      "bytes": 6668,
+      "sha256": "e68edce92e63bcdb04de6fab340b0fb33b14e465e34e57ef7bcb288745de6942"
+    },
+    {
+      "path": "out\\main\\import-worker-w1UKyfjU.js",
+      "bytes": 303975,
+      "sha256": "f682653e067a14727c34bf04563f7aed44d45ba057faf6d2e6d960123b1999dd"
+    },
+    {
+      "path": "out\\main\\index.js",
+      "bytes": 54967,
+      "sha256": "974a2ad6a6bccdac95e13d36c25486602d0ff43a64fb1ac188bbb02f6538c2b4"
+    },
+    {
+      "path": "out\\main\\library-import.js",
+      "bytes": 107214,
+      "sha256": "dee011d6c57d34eec995c90231f8eae58ebe87b7e6a34cb4737619735a6bfcd3"
+    },
+    {
+      "path": "out\\main\\open-database-DzQNcP9l.js",
+      "bytes": 42509,
+      "sha256": "32db33d5f779682d8a0f233f6b7cf012b0eaa0816ebd20db942e89f484b832bb"
+    },
+    {
+      "path": "out\\main\\practice.js",
+      "bytes": 22650,
+      "sha256": "79d9cdc674e8f354d0ae18068cfa087b80901ebf519600024c4524cc2b02a10d"
+    },
+    {
+      "path": "out\\main\\question-bank-DgNu3Pwr.js",
+      "bytes": 185069,
+      "sha256": "b7f933d0d59e533b528ead424e14653e39e3e6dfb867f02d7c837353aa198b4d"
+    },
+    {
+      "path": "out\\main\\question-selection-D6lVnyhC.js",
+      "bytes": 3361,
+      "sha256": "278c9696a0a627c11afc588d99c5367c08fc38fd89d3bacb051c832943733ed4"
+    },
+    {
+      "path": "out\\main\\read-file-snapshot-CMVe8RMv.js",
+      "bytes": 2283,
+      "sha256": "1f55cc93d283d9825bb3512b6d5402fbe2b50474d3f7aae8564133605ace5462"
+    },
+    {
+      "path": "out\\main\\restore-files.js",
+      "bytes": 23663,
+      "sha256": "9633156eead290bd7b76ff016fc4fe33b33c37acef4dec5f72a0bf2d35c06119"
+    },
+    {
+      "path": "out\\main\\rolldown-runtime-Dbql6lyJ.js",
+      "bytes": 1736,
+      "sha256": "0494dbd5eac31d4e7a2fe7c72fd882986b5f881d3fbca1a83ecaddea02165a84"
+    },
+    {
+      "path": "out\\main\\settings-repository-Clms0DIU.js",
+      "bytes": 36052,
+      "sha256": "68397ffa921b01cc9f0c9c1677227bb568f30da5815089268a59f027b2f24ae6"
+    },
+    {
+      "path": "out\\preload\\index.js",
+      "bytes": 212139,
+      "sha256": "619ca22f63f8860e9d4534b45cc1aef78f42ddcd775e22447a5d9b878d8d4745"
+    },
+    {
+      "path": "out\\renderer\\assets\\index-CGm34hBT.js",
+      "bytes": 1996827,
+      "sha256": "f391a65c2b204c30f0e319535c797d6b6c6c12ee338a30cab071b574e503bc5f"
+    },
+    {
+      "path": "out\\renderer\\assets\\index-DnuIpSAC.css",
+      "bytes": 74440,
+      "sha256": "05ea45c969b7af1b43c0d2c2849c4949a1ec4bc5d8398163ef9ebcfde651ed8a"
+    },
+    {
+      "path": "out\\renderer\\index.html",
+      "bytes": 719,
+      "sha256": "23a36edae5c94f1f6ffb2116d87901a425266e9862614d015977dc3ec8fb9bf6"
+    }
+  ],
+  "native": {
+    "path": "node_modules\\better-sqlite3\\build\\Release\\better_sqlite3.node",
+    "bytes": 1920512,
+    "sha256": "24e2e3ca5a829572239718fbca35b873ba4975655d29c56a93f1880e3775d9b8"
+  },
+  "previousDeliveryFilesUnchanged": 155
+}

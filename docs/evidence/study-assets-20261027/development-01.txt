@@ -1,0 +1,11 @@
+
+Running 4 tests using 1 worker
+
+(node:31600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\personal-notes.spec.ts:14:5 › 个人笔记CAS/幂等/清空修订，重导入和归档不覆盖，学习记录逐行保持 (2.5s)
+  ok 2 [development] › tests\e2e\personal-notes.spec.ts:68:5 › 笔记主动读取，独立作答揭晓前零请求，跨页同步/切题/正常重开保留 (4.2s)
+  ok 3 [development] › tests\e2e\personal-notes.spec.ts:146:5 › 真实笔记写失败阻止切题和正常退出，原输入保留并可按原修订重试 (1.5s)
+  ok 4 [development] › tests\e2e\personal-notes.spec.ts:204:5 › 笔记已提交但响应丢失，原请求重试不增修订或改时间 (1.3s)
+
+  4 passed (10.2s)

@@ -136,7 +136,7 @@ async function legacy(directory: string) {
   }
 }
 
-test('v5 升级至 v10 保留全业务、原回执与显示设置，旧筛选明确未知', async ({
+test('v5 升级至 v13 保留全业务、原回执与显示设置，旧筛选明确未知', async ({
   testDataDirectory,
 }, info) => {
   const original = await legacy(testDataDirectory)
@@ -152,6 +152,9 @@ test('v5 升级至 v10 保留全业务、原回执与显示设置，旧筛选明
     })),
     practice_sessions: original.before.practice_sessions!.map((row) => ({
       ...row,
+      repeat_source_id: null,
+      repeat_selection: null,
+      selection_name: null,
       filters_json: null,
       category_scope_json: '{"kind":"all"}',
     })),
@@ -161,7 +164,7 @@ test('v5 升级至 v10 保留全业务、原回执与显示设置，旧筛选明
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     withHistoryDatabase(testDataDirectory, (database) => {
       expect(records(database)).toEqual(expected)
-      expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 10 })
+      expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 13 })
       expect(database.prepare('PRAGMA integrity_check').all()).toEqual([{ integrity_check: 'ok' }])
       expect(database.prepare('PRAGMA foreign_key_check').all()).toEqual([])
       expect(

@@ -13,6 +13,7 @@ import {
   categorySelectionParameters,
   categorySelectionWhere,
   currentRatingSql,
+  contentUpdatedSql,
   practicedSql,
   questionOrderSql,
   questionSelectionFrom,
@@ -43,16 +44,16 @@ interface InfoRow {
 
 export function createLibraryReader(database: Database.Database) {
   const navigation = createTopicNavigationReader(database)
-  // 与列表原有更新标记使用同一当前版本口径；只影响浏览，不改变建轮条件。
+  // 浏览标记与明确更新组卷共用当前版本口径，普通条件选题保持原规则。
   const listWhere = `${questionSelectionWhere}
-    AND (@contentUpdatedOnly = 0 OR (v.sequence > 1 AND (${practicedSql}) = 0))`
+    AND (@contentUpdatedOnly = 0 OR ${contentUpdatedSql})`
   const total = database.prepare(`SELECT count(*) AS total ${questionSelectionFrom}
     WHERE ${listWhere}`)
   const infoColumns = `q.topic_id AS topicId, q.question_id AS questionId, q.current_version_id AS versionId,
     q.title, t.title AS topicTitle, q.tags_json AS tags, q.difficulty, q.archived,
     COALESCE(s.favorite, 0) AS favorite, ${practicedSql} AS practiced,
     ${currentRatingSql} AS currentRating,
-    CASE WHEN v.sequence > 1 AND (${practicedSql}) = 0 THEN 1 ELSE 0 END AS contentUpdated`
+    CASE WHEN ${contentUpdatedSql} THEN 1 ELSE 0 END AS contentUpdated`
   const pageQuery = database.prepare(`SELECT ${infoColumns} ${questionSelectionFrom}
     WHERE ${listWhere} ORDER BY ${questionOrderSql} LIMIT @limit OFFSET @offset`)
   const detailQuery = database.prepare(`SELECT ${infoColumns}, v.question_markdown AS markdown,

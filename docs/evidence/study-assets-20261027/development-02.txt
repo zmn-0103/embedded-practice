@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:5616) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\study-review.spec.ts:10:5 › 轮次分页/专题交集仅结束轮，未作答项也可复盘且不补造历史，历史跨页选两次 (1.5s)
+  ok 2 [development] › tests\e2e\study-review.spec.ts:93:5 › 学习记录按轮查看原范围和单题作答，读取失败可重试，查看不写学习记录 (1.4s)
+  ok 3 [development] › tests\e2e\study-review.spec.ts:144:5 › 同题两次作答主动确认才读，版本不同提示，自己的回答并列且不挂参考答案 (1.5s)
+
+  3 passed (4.9s)

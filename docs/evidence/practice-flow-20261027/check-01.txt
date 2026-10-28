@@ -1,0 +1,15 @@
+
+> embedded-practice@0.0.2 check
+> npm run typecheck && npm run format:check
+
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+
+> embedded-practice@0.0.2 format:check
+> prettier --check "src/**/*.{ts,tsx,css,html}" "tests/**/*.ts" "*.{json,ts,yml}"
+
+Checking formatting...
+[warn] src/main/services/backup/validate-backup.ts
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.

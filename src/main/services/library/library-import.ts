@@ -1,4 +1,4 @@
-import { isAbsolute } from 'node:path'
+import { dirname, isAbsolute } from 'node:path'
 import { openPracticeDatabase } from '../../database/open-database'
 import { createLibraryRepository } from '../../database/repositories/library-repository'
 import { createLibraryReader } from '../../database/repositories/library-reader'
@@ -8,6 +8,15 @@ import { createLearningReader } from '../../database/repositories/learning-reade
 import { createSettingsRepository } from '../../database/repositories/settings-repository'
 import { createCategoryRepository } from '../../database/repositories/category-repository'
 import { createPracticePlanRepository } from '../../database/repositories/practice-plan-repository'
+import { createQuestionSetRepository } from '../../database/repositories/question-set-repository'
+import { createNoteRepository } from '../../database/repositories/note-repository'
+import { createRoundReader } from '../../database/repositories/round-reader'
+import { createContentUpdateReader } from '../../database/repositories/content-update-reader'
+import {
+  createMaterialReader,
+  type MaterialBundle,
+} from '../../database/repositories/material-reader'
+import { writeMaterial } from '../study/write-material'
 import { createThemeRepository } from '../../database/repositories/theme-repository'
 import { createImportPreparationService } from './import-preparation'
 import { createImportSession } from './import-session'
@@ -27,6 +36,11 @@ export async function openLibraryImportService(
     const settings = createSettingsRepository(database)
     const categories = createCategoryRepository(database)
     const plans = createPracticePlanRepository(database)
+    const questionSets = createQuestionSetRepository(database)
+    const notes = createNoteRepository(database)
+    const rounds = createRoundReader(database)
+    const contentUpdates = createContentUpdateReader(database)
+    const materials = createMaterialReader(database)
     const themes = createThemeRepository(database)
     const session = createImportSession(
       createLibraryRepository(database),
@@ -42,6 +56,13 @@ export async function openLibraryImportService(
       ...settings,
       ...categories,
       ...plans,
+      ...questionSets,
+      ...notes,
+      ...rounds,
+      ...contentUpdates,
+      ...materials,
+      writeMaterialBundle: (bundle: MaterialBundle, filePath: string, signal: AbortSignal) =>
+        writeMaterial(bundle, filePath, dirname(databasePath), signal, reportError),
       ...themes,
       preview: session.preview,
       commit: session.commit,

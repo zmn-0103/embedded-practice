@@ -1,0 +1,35 @@
+
+Running 6 tests using 1 worker
+
+(node:24648) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\practice-control-storage.spec.ts:56:5 › 结构11受保护升级12，原再练/草稿/自定义对象不变，预览旧备份仅迁移副本 (2.3s)
+  ok 2 [development] › tests\e2e\practice-control-storage.spec.ts:129:7 › 结构11迁移失败backup-blocked回滚全部DDL并保持原数据 (841ms)
+  ok 3 [development] › tests\e2e\practice-control-storage.spec.ts:129:7 › 结构11迁移失败column-conflict回滚全部DDL并保持原数据 (897ms)
+  ok 4 [development] › tests\e2e\practice-control-storage.spec.ts:129:7 › 结构11迁移失败table-conflict回滚全部DDL并保持原数据 (868ms)
+  ok 5 [development] › tests\e2e\practice-control-storage.spec.ts:129:7 › 结构11迁移失败foreign-key回滚全部DDL并保持原数据 (856ms)
+  x  6 [development] › tests\e2e\practice-control-storage.spec.ts:170:5 › 完整备份恢复题单顺序/失效身份/固定版本/来源与草稿，坏题单拒绝且不改当前库 (2.5s)
+
+
+  1) [development] › tests\e2e\practice-control-storage.spec.ts:170:5 › 完整备份恢复题单顺序/失效身份/固定版本/来源与草稿，坏题单拒绝且不改当前库 
+
+    Error: UNIQUE constraint failed: question_set_items.set_id, question_set_items.position
+
+      240 |       const db = new DatabaseSync(damaged)
+      241 |       try {
+    > 242 |         db.exec(sql!)
+          |            ^
+      243 |       } finally {
+      244 |         db.close()
+      245 |       }
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-control-storage.spec.ts:242:12
+
+    attachment #2: control-restore-failed-directory (text/plain) ───────────────────────────────────
+    C:\Users\pc\AppData\Local\Temp\embedded-practice-control-restore-jy0GzS
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\evidence\practice-control-20261027\development-03\practice-control-storage-完-098a6-失效身份-固定版本-来源与草稿，坏题单拒绝且不改当前库-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\practice-control-storage.spec.ts:170:5 › 完整备份恢复题单顺序/失效身份/固定版本/来源与草稿，坏题单拒绝且不改当前库 
+  5 passed (8.9s)

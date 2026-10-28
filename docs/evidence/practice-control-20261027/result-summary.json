@@ -1,0 +1,165 @@
+{
+  "build": "20261027.4-practice-control",
+  "version": "0.0.2",
+  "schema": 12,
+  "environment": {
+    "os": "Windows NT 10.0.26200.0",
+    "node": "24.19.0",
+    "npm": "11.17.0",
+    "electron": "42.11.15",
+    "arch": "x64"
+  },
+  "units": {
+    "numTotalTestSuites": 70,
+    "numTotalTests": 691,
+    "numPassedTests": 691,
+    "numFailedTests": 0,
+    "success": true,
+    "fileCount": 37
+  },
+  "reports": {
+    "development-05": {
+      "startTime": "2026-10-27T10:58:44.139Z",
+      "duration": 49377.03999999999,
+      "expected": 27,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "packaged-01": {
+      "startTime": "2026-10-27T11:00:33.023Z",
+      "duration": 673858.623,
+      "expected": 297,
+      "skipped": 0,
+      "unexpected": 13,
+      "flaky": 0
+    },
+    "packaged-02": {
+      "startTime": "2026-10-27T14:07:03.972Z",
+      "duration": 86972.31599999999,
+      "expected": 51,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "packaged-03": {
+      "startTime": "2026-10-27T14:09:24.667Z",
+      "duration": 6292.996999999999,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "packagedDistinctScenarios": 310,
+  "packagedDistinctWithPassingEvidence": 310,
+  "singleFullRunAllPassed": false,
+  "firstFullFailures": [
+    {
+      "file": "board-entry.spec.ts",
+      "title": "板块入口：900/1440窗口、四配色明暗、22px与键盘可用，难度文字对比度通过",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "category-migration.spec.ts",
+      "title": "结构7分类迁移：一致性保护、原业务/条件/回执/自定义对象保持，旧专题未分类与旧轮不限分类",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "palette-migration.spec.ts",
+      "title": "真实结构6先保护备份再追加配色，全部业务/自定义对象/显示和条件保持",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "practice-mode-migration.spec.ts",
+      "title": "v3 升级至 v11：备份、全部旧记录、原请求回执与顺序会话恢复保持",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "practice-plans-migration.spec.ts",
+      "title": "结构8方案升级：只追加空方案表，原分类/条件/草稿/自定义对象与保护备份保持",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "session-filters-migration.spec.ts",
+      "title": "v5 升级至 v11 保留全业务、原回执与显示设置，旧筛选明确未知",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "settings-migration.spec.ts",
+      "title": "v4 升级至 v11：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "startup.spec.ts",
+      "title": "窗口隔离与生产内容策略生效",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "themes-migration.spec.ts",
+      "title": "结构9/forest先保护备份再迁移主题，原明暗/字号/学习数据/方案逐行保持",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "themes-migration.spec.ts",
+      "title": "结构9/ocean先保护备份再迁移主题，原明暗/字号/学习数据/方案逐行保持",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "themes-migration.spec.ts",
+      "title": "结构9/sand先保护备份再迁移主题，原明暗/字号/学习数据/方案逐行保持",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "themes-migration.spec.ts",
+      "title": "结构9/lilac先保护备份再迁移主题，原明暗/字号/学习数据/方案逐行保持",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    },
+    {
+      "file": "ui-adaptive.spec.ts",
+      "title": "第二批缩放：Claude 风格/dark/1440px/22px/200%",
+      "status": "failed",
+      "retries": [
+        0
+      ]
+    }
+  ],
+  "sourceUnchangedDuringPackagedRuns": true,
+  "diagnosticNote": "ui-adaptive Claude/dark/1440/22/200 first full snapshot had extra tong text/revision 1 to 5; cause unknown. Test unmodified; targeted suite plus two explicit repeat cases passed. Original failure preserved."
+}

@@ -1,0 +1,5 @@
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/practice-flow-storage.spec.ts(2,20): error TS6133: 'mkdir' is declared but its value is never read.

@@ -1,0 +1,10 @@
+
+> embedded-practice@0.0.2 check
+> npm run typecheck && npm run format:check
+
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/practice-flow-plans.spec.ts(143,21): error TS2304: Cannot find name 'getComputedStyle'.
+tests/e2e/practice-flow-plans.spec.ts(153,23): error TS2304: Cannot find name 'getComputedStyle'.

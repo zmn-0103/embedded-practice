@@ -1,0 +1,79 @@
+
+Running 6 tests using 1 worker
+
+(node:28056) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\practice-flow-plans.spec.ts:48:5 › 联合筛选列表/匹配数/建轮一致，旧自评排除，练旧版本不覆盖最新版本已掌握 (2.3s)
+  x  2 [development] › tests\e2e\practice-flow-plans.spec.ts:123:5 › 方案界面重命名/更新/另存及填入不建轮，联合条件持久化且原活动轮不变 (32.5s)
+(node:13860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 3 [development] › tests\e2e\practice-flow-plans.spec.ts:184:5 › 方案更新原条件重试幂等、过期/同名/删除后编辑拒绝，真实写失败保留原方案 (1.3s)
+  x  4 [development] › tests\e2e\practice-repeat.spec.ts:16:5 › 再练只取来源轮五种状态，原内容/队列/作答保留，原请求重复不建副本 (1.4s)
+(node:34724) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 5 [development] › tests\e2e\practice-repeat.spec.ts:92:5 › 再练随机只重排原题，重开保持；空结果/来源不存在/活动来源/写失败均不结束活动轮 (1.5s)
+  x  6 [development] › tests\e2e\practice-repeat.spec.ts:170:5 › 结果页明确本轮范围/题数/旧版本，丢失开始响应可原请求重试且新轮隐藏答案 (39.2s)
+
+
+  1) [development] › tests\e2e\practice-flow-plans.spec.ts:123:5 › 方案界面重命名/更新/另存及填入不建轮，联合条件持久化且原活动轮不变 
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.click: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: '开始练习', exact: true })
+
+
+      128 |     await finishFlow(page)
+      129 |     await page.reload()
+    > 130 |     await page.getByRole('button', { name: '开始练习', exact: true }).click()
+          |                                                                   ^
+      131 |     await page.getByRole('textbox', { name: '我的答案', exact: true }).fill('活动轮原草稿')
+      132 |     await page.getByRole('button', { name: '保存并返回', exact: true }).click()
+      133 |     const before = historySnapshot(testDataDirectory)
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-flow-plans.spec.ts:130:67
+
+    Error Context: docs\evidence\practice-flow-20261027\development-01\practice-flow-plans-方案界面重命名-更新-另存及填入不建轮，联合条件持久化且原活动轮不变-development\error-context.md
+
+  2) [development] › tests\e2e\practice-repeat.spec.ts:16:5 › 再练只取来源轮五种状态，原内容/队列/作答保留，原请求重复不建副本 ────
+
+    Error: CHECK constraint failed: (last_rating IS NULL) = (last_rated_version_id IS NULL)
+
+      33 |     withHistoryDatabase(
+      34 |       testDataDirectory,
+    > 35 |       (db) => db.exec("UPDATE question_user_state SET last_rating='掌握'"),
+         |                  ^
+      36 |       false,
+      37 |     )
+      38 |     const selections: [RepeatPractice['selection'], string[]][] = [
+        at work (E:\My_Projects\embedded-practice\tests\e2e\practice-repeat.spec.ts:35:18)
+        at withHistoryDatabase (E:\My_Projects\embedded-practice\tests\e2e\history-helpers.ts:92:12)
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-repeat.spec.ts:33:24
+
+    Error Context: docs\evidence\practice-flow-20261027\development-01\practice-repeat-再练只取来源轮五种状态，原内容-队列-作答保留，原请求重复不建副本-development\error-context.md
+
+  3) [development] › tests\e2e\practice-repeat.spec.ts:170:5 › 结果页明确本轮范围/题数/旧版本，丢失开始响应可原请求重试且新轮隐藏答案 
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.selectOption: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('form', { name: '本轮题目再练', exact: true }).getByLabel('再练范围', { exact: true })
+
+
+      187 |     await expect(repeat).toContainText('共 2 题')
+      188 |     await expect(repeat).toContainText('其后更新或归档也不替换内容')
+    > 189 |     await repeat.getByLabel('再练范围', { exact: true }).selectOption('skipped')
+          |                                                      ^
+      190 |     await expect(repeat).toContainText('共 1 题')
+      191 |     await repeat.getByLabel('再练范围', { exact: true }).selectOption('weak')
+      192 |     await application.evaluate(({ ipcMain }) => {
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-repeat.spec.ts:189:54
+
+    Error Context: docs\evidence\practice-flow-20261027\development-01\practice-repeat-结果页明确本轮范围-题数-旧版本，丢失开始响应可原请求重试且新轮隐藏答案-development\error-context.md
+
+  3 failed
+    [development] › tests\e2e\practice-flow-plans.spec.ts:123:5 › 方案界面重命名/更新/另存及填入不建轮，联合条件持久化且原活动轮不变 
+    [development] › tests\e2e\practice-repeat.spec.ts:16:5 › 再练只取来源轮五种状态，原内容/队列/作答保留，原请求重复不建副本 ─────
+    [development] › tests\e2e\practice-repeat.spec.ts:170:5 › 结果页明确本轮范围/题数/旧版本，丢失开始响应可原请求重试且新轮隐藏答案 ─
+  3 passed (1.3m)

@@ -1,0 +1,401 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/note-favorite.spec.ts",
+      "--project=development",
+      "--output=test-results/note-favorite-development-02",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results/note-favorite-development-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/test-results/note-favorite-development-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\test-results\\note-favorite-development-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "note-favorite.spec.ts",
+      "file": "note-favorite.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11530,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\u001b[22m\n\u001b[2m    23 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\u001b[22m\n\u001b[2m    23 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\note-favorite.spec.ts:90:36",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\note-favorite.spec.ts",
+                      "column": 36,
+                      "line": 90
+                    },
+                    "snippet": "  88 |         '.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]',\n  89 |       )\n> 90 |       await expect(retainedEditor).toHaveCount(1)\n     |                                    ^\n  91 |       await expect(retainedEditor).toHaveAttribute('readonly', '')\n  92 |       await application.evaluate(() => Reflect.get(globalThis, '__releaseFavoriteList')())\n  93 |       await expect(retainedEditor).toHaveCount(0)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\note-favorite.spec.ts",
+                        "column": 36,
+                        "line": 90
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\u001b[22m\n\u001b[2m    23 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  88 |         '.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]',\n  89 |       )\n> 90 |       await expect(retainedEditor).toHaveCount(1)\n     |                                    ^\n  91 |       await expect(retainedEditor).toHaveAttribute('readonly', '')\n  92 |       await application.evaluate(() => Reflect.get(globalThis, '__releaseFavoriteList')())\n  93 |       await expect(retainedEditor).toHaveCount(0)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\note-favorite.spec.ts:90:36"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T04:25:18.033Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLTFyNWF5SSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "favorite-note-readonly.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\note-favorite-development-02\\note-favorite-学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入-development\\attachments\\favorite-note-readonly-png-89f3535eb11a17c7737a8f83b9fd3775ae639fbe.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\note-favorite-development-02\\note-favorite-学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\note-favorite.spec.ts",
+                    "column": 36,
+                    "line": 90
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "db989a711fc377abf553-8ec185b70926c4b5d5e5",
+          "file": "note-favorite.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "学习记录收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1501,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T04:25:29.925Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLUNURWlQSSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "favorite-note-save-failed.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\note-favorite-development-02\\note-favorite-学习记录收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续-development\\attachments\\favorite-note-save-failed-png-a11d257a2d0b852e972f359115c824e0100fd575.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "db989a711fc377abf553-0d6ed7808446419d6f8b",
+          "file": "note-favorite.spec.ts",
+          "line": 106,
+          "column": 7
+        },
+        {
+          "title": "题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11567,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\u001b[22m\n\u001b[2m    23 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\u001b[22m\n\u001b[2m    23 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\note-favorite.spec.ts:90:36",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\note-favorite.spec.ts",
+                      "column": 36,
+                      "line": 90
+                    },
+                    "snippet": "  88 |         '.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]',\n  89 |       )\n> 90 |       await expect(retainedEditor).toHaveCount(1)\n     |                                    ^\n  91 |       await expect(retainedEditor).toHaveAttribute('readonly', '')\n  92 |       await application.evaluate(() => Reflect.get(globalThis, '__releaseFavoriteList')())\n  93 |       await expect(retainedEditor).toHaveCount(0)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\note-favorite.spec.ts",
+                        "column": 36,
+                        "line": 90
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]')\u001b[22m\n\u001b[2m    23 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  88 |         '.question-reader .personal-note textarea[aria-label=\"我的复习笔记\"]',\n  89 |       )\n> 90 |       await expect(retainedEditor).toHaveCount(1)\n     |                                    ^\n  91 |       await expect(retainedEditor).toHaveAttribute('readonly', '')\n  92 |       await application.evaluate(() => Reflect.get(globalThis, '__releaseFavoriteList')())\n  93 |       await expect(retainedEditor).toHaveCount(0)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\note-favorite.spec.ts:90:36"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T04:25:31.456Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLWRoZm5CQiIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "favorite-note-readonly.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\note-favorite-development-02\\note-favorite-题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入-development\\attachments\\favorite-note-readonly-png-536b7d05d64411393b196555ef4b8bc14686b55a.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\note-favorite-development-02\\note-favorite-题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\note-favorite.spec.ts",
+                    "column": 36,
+                    "line": 90
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "db989a711fc377abf553-ef9f3ad955867fcfc8c1",
+          "file": "note-favorite.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "题库收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1579,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T04:25:43.379Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLXZLcFNQaiIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "favorite-note-save-failed.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\test-results\\note-favorite-development-02\\note-favorite-题库收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续-development\\attachments\\favorite-note-save-failed-png-8dad568bfd27d981c838e292a1e96425662fb7b0.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "db989a711fc377abf553-fb2626659e8f7f4f4a03",
+          "file": "note-favorite.spec.ts",
+          "line": 106,
+          "column": 7
+        },
+        {
+          "title": "普通题库：收藏写入失败恢复编辑，成功刷新保留详情并恢复笔记编辑",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1376,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T04:25:44.988Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLWhteThmSSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "db989a711fc377abf553-d63a18399f4e4d30805a",
+          "file": "note-favorite.spec.ts",
+          "line": 167,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T04:25:17.606Z",
+    "duration": 28784.018,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

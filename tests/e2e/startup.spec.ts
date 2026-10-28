@@ -58,7 +58,10 @@ test('窗口隔离与生产内容策略生效', async ({ testDataDirectory }, te
       api: [
         'getAppStatus',
         'library',
+        'contentUpdates',
         'practicePlans',
+        'questionSets',
+        'study',
         'history',
         'learning',
         'settings',
@@ -71,10 +74,27 @@ test('窗口隔离与生产内容策略生效', async ({ testDataDirectory }, te
     expect(
       await page.evaluate(() =>
         Object.keys(
+          (globalThis as unknown as { desktop: DesktopApi }).desktop.contentUpdates,
+        ).sort(),
+      ),
+    ).toEqual(['compare', 'versions'])
+    expect(
+      await page.evaluate(() =>
+        Object.keys(
           (globalThis as unknown as { desktop: DesktopApi }).desktop.practicePlans,
         ).sort(),
       ),
     ).toEqual(['change', 'list'])
+    expect(
+      await page.evaluate(() =>
+        Object.keys((globalThis as unknown as { desktop: DesktopApi }).desktop.questionSets).sort(),
+      ),
+    ).toEqual(['change', 'list', 'preview'])
+    expect(
+      await page.evaluate(() =>
+        Object.keys((globalThis as unknown as { desktop: DesktopApi }).desktop.study).sort(),
+      ),
+    ).toEqual(['exportMaterial', 'listRounds', 'readEntry', 'readNote', 'readRound', 'saveNote'])
     expect(
       await page.evaluate(() =>
         Object.keys((globalThis as unknown as { desktop: DesktopApi }).desktop.library).sort(),
@@ -130,6 +150,7 @@ test('窗口隔离与生产内容策略生效', async ({ testDataDirectory }, te
       'navigate',
       'onBeforeClose',
       'onCloseCancelled',
+      'outline',
       'rateAndAdvance',
       'read',
       'ready',

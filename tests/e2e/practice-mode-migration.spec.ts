@@ -126,7 +126,7 @@ async function legacy(directory: string, fault = '') {
   }
 }
 
-test('v3 升级至 v10：备份、全部旧记录、原请求回执与顺序会话恢复保持', async ({
+test('v3 升级至 v13：备份、全部旧记录、原请求回执与顺序会话恢复保持', async ({
   testDataDirectory,
 }, info) => {
   const original = await legacy(testDataDirectory)
@@ -169,11 +169,14 @@ test('v3 升级至 v10：备份、全部旧记录、原请求回执与顺序会�
       topics: original.before.topics!.map((row) => ({ ...row, category_id: null })),
       practice_sessions: original.before.practice_sessions!.map((row) => ({
         ...row,
+        repeat_source_id: null,
+        repeat_selection: null,
+        selection_name: null,
         filters_json: null,
         category_scope_json: '{"kind":"all"}',
       })),
     })
-    expect(current.prepare('PRAGMA user_version').get()).toMatchObject({ user_version: 10 })
+    expect(current.prepare('PRAGMA user_version').get()).toMatchObject({ user_version: 13 })
     expect(current.prepare('PRAGMA foreign_key_check').all()).toEqual([])
     current.exec('PRAGMA foreign_keys = ON; BEGIN')
     const insert = current.prepare(

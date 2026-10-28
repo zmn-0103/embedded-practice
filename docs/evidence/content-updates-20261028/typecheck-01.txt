@@ -1,0 +1,5 @@
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/unit/library-ipc.test.ts(87,9): error TS2739: Type '{ readNote: Mock<() => never>; saveNote: Mock<() => never>; listRounds: Mock<() => never>; readRound: Mock<() => never>; readRoundEntry: Mock<() => never>; prepareMaterial: Mock<...>; ... 25 more ...; readLearningSummary: Mock<...>; }' is missing the following properties from type '{ preview: (filePaths: readonly string[], signal?: AbortSignal | undefined) => Promise<ImportResult<{ token: string; expiresAt: string; summary: { counts: { added: number; updated: number; metadata: number; unchanged: number; archived: number; restored: number; newVersions: number; }; topics: { ...; }[]; }; }>>; ......': listContentVersions, compareContentVersions

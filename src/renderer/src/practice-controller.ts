@@ -15,7 +15,8 @@ export const DRAFT_SAVE_DELAY_MS = 500
 export type PracticeAction =
   | { kind: 'reveal' }
   | { kind: 'rate'; rating: RatePractice['rating'] }
-  | { kind: 'navigate'; direction: NavigatePractice['direction'] }
+  | { kind: 'navigate'; direction: Exclude<NavigatePractice['direction'], 'jump'> }
+  | { kind: 'jump'; position: number }
   | { kind: 'end' }
 type PendingCommand = (
   | { method: 'reveal' | 'end'; input: RevealPractice }
@@ -243,6 +244,11 @@ export function createPracticeController(api: PracticeDesktopApi) {
           pending = { method: 'rateAndAdvance', input: { ...input, rating: action.rating } }
         else if (action.kind === 'navigate')
           pending = { method: 'navigate', input: { ...input, direction: action.direction } }
+        else if (action.kind === 'jump')
+          pending = {
+            method: 'navigate',
+            input: { ...input, direction: 'jump', targetPosition: action.position },
+          }
         else pending = { method: action.kind, input }
         update({ pending: true })
         return executePending()

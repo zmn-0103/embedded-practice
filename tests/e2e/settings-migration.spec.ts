@@ -134,7 +134,7 @@ function snapshot(directory: string) {
   )
 }
 
-test('v4 升级至 v10：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级', async ({
+test('v4 升级至 v13：一致性备份、完整业务与随机原轮保留，显示设置重开不重复升级', async ({
   testDataDirectory,
 }, info) => {
   const activeId = await seedV4(testDataDirectory)
@@ -144,6 +144,9 @@ test('v4 升级至 v10：一致性备份、完整业务与随机原轮保留，�
     topics: before.topics!.map((row) => ({ ...row, category_id: null })),
     practice_sessions: before.practice_sessions!.map((row) => ({
       ...row,
+      repeat_source_id: null,
+      repeat_selection: null,
+      selection_name: null,
       filters_json: null,
       category_scope_json: '{"kind":"all"}',
     })),
@@ -178,7 +181,7 @@ test('v4 升级至 v10：一致性备份、完整业务与随机原轮保留，�
     withHistoryDatabase(
       testDataDirectory,
       (database) => {
-        expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 10 })
+        expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 13 })
         expect(
           database
             .prepare(

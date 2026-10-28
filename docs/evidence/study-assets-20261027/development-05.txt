@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:28604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\study-material.spec.ts:16:5 › 题单主动选择三类材料，正文/代码/图片可离开来源使用，默认不含个人内容或答案 (1.9s)
+  ok 2 [development] › tests\e2e\study-material.spec.ts:106:5 › 轮次材料固定旧版本/本轮作答，题单采用新版本且不套旧作答；归档/坏资源/取消不覆盖文件 (1.9s)
+  ok 3 [development] › tests\e2e\study-material.spec.ts:192:5 › 活动轮/超500题整批拒绝；应用数据和非Markdown目标不写入 (1.3s)
+
+  3 passed (5.6s)

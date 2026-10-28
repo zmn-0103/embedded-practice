@@ -24,6 +24,7 @@ export const currentRatingSql = `CASE WHEN s.last_rated_version_id = q.current_v
 export const practicedSql = `CASE WHEN (${currentRatingSql}) IS NOT NULL OR EXISTS (
   SELECT 1 FROM practice_items p WHERE p.version_id = q.current_version_id
   AND p.revealed_at IS NOT NULL) THEN 1 ELSE 0 END`
+export const contentUpdatedSql = `(v.sequence > 1 AND (${practicedSql}) = 0)`
 export const questionSelectionWhere = `q.archived = @archived
   AND ${categorySelectionWhere}
   AND (@topicId IS NULL OR q.topic_id = @topicId)
@@ -31,6 +32,7 @@ export const questionSelectionWhere = `q.archived = @archived
   AND (@difficulty IS NULL OR q.difficulty = @difficulty)
   AND (@favoritesOnly = 0 OR s.favorite = 1)
   AND (@mastery = 'all' OR (@mastery = 'unpracticed' AND (${practicedSql}) = 0)
+    OR (@mastery = '不会＋不熟' AND (${currentRatingSql}) IN ('不会', '不熟'))
     OR (${currentRatingSql}) = @mastery)
   AND (@query = '' OR instr(lower(q.title), lower(@query)) > 0
     OR instr(lower(v.question_markdown), lower(@query)) > 0

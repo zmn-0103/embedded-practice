@@ -5,6 +5,7 @@ import {
   navigatePracticeSchema,
   ratePracticeSchema,
   readPracticeSchema,
+  readPracticeOutlineSchema,
   revealPracticeSchema,
   saveDraftSchema,
   startPracticeSchema,
@@ -66,6 +67,11 @@ export async function openPracticeService(
         invoke(readPracticeSchema, input, ({ sessionId }) => repository.read(sessionId), {
           code: 'DATABASE_UNAVAILABLE',
           message: '无法读取练习，请检查本地诊断日志后重试。',
+        }),
+      outline: (input: unknown) =>
+        invoke(readPracticeOutlineSchema, input, repository.outline, {
+          code: 'DATABASE_UNAVAILABLE',
+          message: '无法读取本轮清单，请重试。',
         }),
       start: (input: unknown) => invoke(startPracticeSchema, input, repository.start, writeError),
       saveDraft: (input: unknown) =>

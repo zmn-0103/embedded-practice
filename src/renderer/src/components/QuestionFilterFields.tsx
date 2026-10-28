@@ -80,6 +80,7 @@ export function QuestionFilterFields({
         >
           <option value="all">全部状态</option>
           <option value="unpracticed">未练习</option>
+          <option value="不会＋不熟">不会＋不熟</option>
           {(['不会', '不熟', '掌握'] as const).map((rating) => (
             <option key={rating} value={rating}>
               {rating}

@@ -8,6 +8,9 @@ import type { BackupDesktopApi } from './backup'
 import type { DataLocationsDesktopApi } from './data-locations'
 import type { PracticePlansDesktopApi } from './practice-plans'
 import type { ThemesDesktopApi } from './themes'
+import type { QuestionSetsDesktopApi } from './question-sets'
+import type { StudyDesktopApi } from './study'
+import type { ContentUpdatesDesktopApi } from './content-updates'
 
 export const APP_STATUS_CHANNEL = 'app:get-status'
 
@@ -38,6 +41,9 @@ export interface DesktopApi {
   getAppStatus(): Promise<AppStatusResult>
   readonly library: LibraryDesktopApi
   readonly practicePlans: PracticePlansDesktopApi
+  readonly questionSets: QuestionSetsDesktopApi
+  readonly study: StudyDesktopApi
+  readonly contentUpdates: ContentUpdatesDesktopApi
   readonly practice: PracticeDesktopApi
   readonly history: HistoryDesktopApi
   readonly learning: LearningDesktopApi

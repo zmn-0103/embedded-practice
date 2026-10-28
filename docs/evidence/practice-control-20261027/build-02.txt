@@ -1,0 +1,14 @@
+
+> embedded-practice@0.0.2 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/practice-control-layout.spec.ts(26,15): error TS2304: Cannot find name 'requestAnimationFrame'.
+tests/e2e/practice-control-layout.spec.ts(26,43): error TS2304: Cannot find name 'requestAnimationFrame'.
+tests/e2e/practice-control-layout.spec.ts(40,18): error TS2304: Cannot find name 'innerWidth'.
+tests/e2e/practice-control-layout.spec.ts(41,24): error TS2584: Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.
+tests/e2e/practice-control-layout.spec.ts(58,18): error TS2304: Cannot find name 'innerWidth'.
+tests/e2e/practice-control-layout.spec.ts(59,19): error TS2304: Cannot find name 'innerHeight'.

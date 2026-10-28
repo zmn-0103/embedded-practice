@@ -1,0 +1,329 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/practice-flow-storage.spec.ts",
+      "--project=development",
+      "--output=docs/evidence/practice-flow-20261027/storage-01",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/practice-flow-20261027/storage-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/practice-flow-20261027/storage-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-flow-20261027\\storage-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-flow-storage.spec.ts",
+      "file": "practice-flow-storage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "结构10升级前保护备份，原队列/草稿/方案/自定义对象逐行保持，旧备份只在副本迁移",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1131,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:26:09.842Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "98cde5a19c0255047a81-612c9ab9fb58e9b05efb",
+          "file": "practice-flow-storage.spec.ts",
+          "line": 67,
+          "column": 5
+        },
+        {
+          "title": "结构10迁移失败backup-blocked保留原结构与数据，不重建空库",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 782,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:26:11.002Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "98cde5a19c0255047a81-35555f4746c185372d44",
+          "file": "practice-flow-storage.spec.ts",
+          "line": 128,
+          "column": 7
+        },
+        {
+          "title": "结构10迁移失败column-conflict保留原结构与数据，不重建空库",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 767,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:26:11.794Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "98cde5a19c0255047a81-8e6d9c93c5b89479927c",
+          "file": "practice-flow-storage.spec.ts",
+          "line": 128,
+          "column": 7
+        },
+        {
+          "title": "结构10迁移失败foreign-key保留原结构与数据，不重建空库",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 71,
+                  "error": {
+                    "message": "Error: FOREIGN KEY constraint failed",
+                    "stack": "Error: FOREIGN KEY constraint failed\n    at work (E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-flow-storage.spec.ts:138:14)\n    at withHistoryDatabase (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:92:12)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-flow-storage.spec.ts:135:26",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-flow-storage.spec.ts",
+                      "column": 14,
+                      "line": 138
+                    },
+                    "snippet": "  136 |         testDataDirectory,\n  137 |         (db) =>\n> 138 |           db.exec(\n      |              ^\n  139 |             fault === 'column-conflict'\n  140 |               ? 'ALTER TABLE practice_sessions ADD COLUMN repeat_source_id TEXT'\n  141 |               : 'UPDATE questions SET current_version_id=999',"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-flow-storage.spec.ts",
+                        "column": 14,
+                        "line": 138
+                      },
+                      "message": "Error: FOREIGN KEY constraint failed\n\n  136 |         testDataDirectory,\n  137 |         (db) =>\n> 138 |           db.exec(\n      |              ^\n  139 |             fault === 'column-conflict'\n  140 |               ? 'ALTER TABLE practice_sessions ADD COLUMN repeat_source_id TEXT'\n  141 |               : 'UPDATE questions SET current_version_id=999',\n    at work (E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-flow-storage.spec.ts:138:14)\n    at withHistoryDatabase (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:92:12)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-flow-storage.spec.ts:135:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:26:12.568Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-flow-20261027\\storage-01\\practice-flow-storage-结构10迁移失败foreign-key保留原结构与数据，不重建空库-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-flow-storage.spec.ts",
+                    "column": 14,
+                    "line": 138
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "98cde5a19c0255047a81-dbf989ba0a962a009c51",
+          "file": "practice-flow-storage.spec.ts",
+          "line": 128,
+          "column": 7
+        },
+        {
+          "title": "完整备份恢复再练来源/固定旧版本/联合方案与草稿，坏来源拒绝且不覆盖当前数据",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3649,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T09:26:13.060Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-flow-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLVRhcFUzdSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "98cde5a19c0255047a81-e41a8edbf866a584962e",
+          "file": "practice-flow-storage.spec.ts",
+          "line": 161,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T09:26:09.297Z",
+    "duration": 7454.363,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

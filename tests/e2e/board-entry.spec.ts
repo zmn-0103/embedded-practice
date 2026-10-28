@@ -60,11 +60,11 @@ async function runtime(
     expect(resolve(actual.appPath)).toBe(resolve('out/main'))
     expect(actual.arguments).toContain(resolve('out/main/index.js'))
   }
-  await expect(page.locator('footer')).toContainText('20261027.2-ui-adaptive')
+  await expect(page.locator('footer')).toContainText('20261028.2-note-favorite-fix')
   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())
-  expect(schema).toEqual({ user_version: 10 })
+  expect(schema).toEqual({ user_version: 13 })
   await info.attach('runtime.json', {
-    body: JSON.stringify({ ...actual, schema, build: '20261027.2-ui-adaptive' }, null, 2),
+    body: JSON.stringify({ ...actual, schema, build: '20261028.2-note-favorite-fix' }, null, 2),
     contentType: 'application/json',
   })
 }
@@ -479,6 +479,10 @@ test('板块入口：900/1440窗口、四配色明暗、22px与键盘可用，�
         await expect(page.getByText('共 23 题', { exact: true })).toBeVisible()
         await expect(page.getByLabel('题库浏览', { exact: true })).toBeFocused()
         await page.getByLabel('题库浏览', { exact: true }).press('Tab')
+        const selectionSummary = page.locator('.question-selection-panel > summary')
+        await expect(selectionSummary).toBeFocused()
+        await expect(page.locator('.question-selection-panel')).not.toHaveAttribute('open')
+        await selectionSummary.press('Tab')
         const managementSummary = page.locator(
           '.library-management-tools .category-manager > summary',
         )

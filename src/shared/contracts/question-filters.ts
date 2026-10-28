@@ -10,7 +10,7 @@ export const questionFiltersSchema = z.strictObject({
     .transform((value) => value || null)
     .nullable(),
   difficulty: questionDifficultySchema.or(z.literal('未分级')).nullable(),
-  mastery: z.enum(['all', 'unpracticed', '不会', '不熟', '掌握']),
+  mastery: z.enum(['all', 'unpracticed', '不会', '不熟', '掌握', '不会＋不熟']),
   favoritesOnly: z.boolean(),
 })
 

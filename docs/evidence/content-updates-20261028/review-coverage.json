@@ -1,0 +1,147 @@
+{
+  "production": 19,
+  "tests": 16,
+  "baselineNote": "改前快照未含12个.gitkeep空目录标记，按上一批冻结哈希确认未变，不误记本批改动",
+  "changed": [
+    {
+      "path": "src\\main\\database\\repositories\\content-update-reader.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\main\\database\\repositories\\library-reader.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\main\\database\\repositories\\practice-repository.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\main\\database\\repositories\\question-selection.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\main\\database\\repositories\\question-set-repository.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\main\\ipc\\library.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\main\\services\\library\\library-import.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\preload\\index.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\renderer\\src\\App.tsx",
+      "reviewed": true
+    },
+    {
+      "path": "src\\renderer\\src\\components\\ContentComparison.tsx",
+      "reviewed": true
+    },
+    {
+      "path": "src\\renderer\\src\\components\\ContentUpdates.tsx",
+      "reviewed": true
+    },
+    {
+      "path": "src\\renderer\\src\\components\\LibraryBrowser.tsx",
+      "reviewed": true
+    },
+    {
+      "path": "src\\renderer\\src\\components\\QuestionSets.tsx",
+      "reviewed": true
+    },
+    {
+      "path": "src\\renderer\\src\\components\\SelectedPractice.tsx",
+      "reviewed": true
+    },
+    {
+      "path": "src\\renderer\\src\\content-diff.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\renderer\\src\\styles\\workbench-pages.css",
+      "reviewed": true
+    },
+    {
+      "path": "src\\shared\\contracts\\application.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\shared\\contracts\\content-updates.ts",
+      "reviewed": true
+    },
+    {
+      "path": "src\\shared\\contracts\\question-sets.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\board-entry.spec.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\content-differences.spec.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\content-updates-helpers.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\content-updates-layout.spec.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\content-updates-storage.spec.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\content-updates-window.spec.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\personal-bank.spec.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\practice-control-helpers.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\practice-flow-helpers.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\startup.spec.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\theme-helpers.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\updated-practice-state.spec.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\e2e\\updated-practice.spec.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\unit\\content-diff.test.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\unit\\content-updates-contract.test.ts",
+      "reviewed": true
+    },
+    {
+      "path": "tests\\unit\\library-ipc.test.ts",
+      "reviewed": true
+    }
+  ]
+}

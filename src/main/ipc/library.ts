@@ -52,6 +52,38 @@ import {
 } from '../../shared/contracts/practice-plans'
 import { PracticePlanFault } from '../database/repositories/practice-plan-repository'
 import {
+  QUESTION_SET_CHANNELS,
+  questionSetChangeSchema,
+  questionSetChangeResultSchema,
+  questionSetPreviewRequestSchema,
+  questionSetPreviewResultSchema,
+  questionSetListResultSchema,
+} from '../../shared/contracts/question-sets'
+import { QuestionSetFault } from '../database/repositories/question-set-repository'
+import {
+  STUDY_CHANNELS,
+  saveNoteSchema,
+  readNoteResultSchema,
+  saveNoteResultSchema,
+  roundListRequestSchema,
+  roundListResultSchema,
+  roundRequestSchema,
+  roundPageResultSchema,
+  roundEntryRequestSchema,
+  roundEntryResultSchema,
+  materialRequestSchema,
+  exportMaterialResultSchema,
+  type StudyError,
+} from '../../shared/contracts/study'
+import { StudyFault } from '../database/repositories/study-fault'
+import {
+  CONTENT_UPDATE_CHANNELS,
+  contentVersionsRequestSchema,
+  contentComparisonRequestSchema,
+  contentVersionsResultSchema,
+  contentComparisonResultSchema,
+} from '../../shared/contracts/content-updates'
+import {
   SETTINGS_CHANNELS,
   appearanceSchema,
   settingsResultSchema,
@@ -84,6 +116,9 @@ export function registerLibraryIpc(
   let operation: { controller: AbortController; completion: Promise<unknown> } | undefined
   let closing: Promise<void> | undefined
   const channels = [
+    ...Object.values(CONTENT_UPDATE_CHANNELS),
+    ...Object.values(STUDY_CHANNELS),
+    ...Object.values(QUESTION_SET_CHANNELS),
     ...Object.values(LIBRARY_CHANNELS),
     ...Object.values(HISTORY_CHANNELS),
     LEARNING_CHANNEL,
@@ -93,7 +128,10 @@ export function registerLibraryIpc(
     ...Object.values(THEME_CHANNELS),
   ]
   const noArguments = z.tuple([])
-  function fail(code: DesktopError['code'] | ThemeError['code'], message: string) {
+  function fail(
+    code: DesktopError['code'] | ThemeError['code'] | StudyError['code'],
+    message: string,
+  ) {
     return { ok: false as const, error: { code, message } }
   }
   const unavailable = () =>
@@ -160,13 +198,80 @@ export function registerLibraryIpc(
       try {
         return output.parse(await action(parsed.data, event))
       } catch (error) {
-        if (error instanceof ThemeFault) return fail(error.code, error.message)
+        if (error instanceof ThemeFault || error instanceof StudyFault)
+          return fail(error.code, error.message)
         report(error)
         return failureMessage ? fail('DATABASE_UNAVAILABLE', failureMessage) : unavailable()
       }
     })
   }
   const settingsUnavailable = '显示设置暂不可用，请重试或检查本地诊断日志。'
+  handle(
+    CONTENT_UPDATE_CHANNELS.versions,
+    z.tuple([contentVersionsRequestSchema]),
+    contentVersionsResultSchema,
+    ([input]) =>
+      service ? { ok: true, value: service.listContentVersions(input) } : unavailable(),
+  )
+  handle(
+    CONTENT_UPDATE_CHANNELS.compare,
+    z.tuple([contentComparisonRequestSchema]),
+    contentComparisonResultSchema,
+    ([input]) =>
+      service ? { ok: true, value: service.compareContentVersions(input) } : unavailable(),
+  )
+  handle(STUDY_CHANNELS.readNote, z.tuple([identitySchema]), readNoteResultSchema, ([input]) =>
+    service ? { ok: true, value: service.readNote(input) } : unavailable(),
+  )
+  handle(STUDY_CHANNELS.saveNote, z.tuple([saveNoteSchema]), saveNoteResultSchema, ([input]) =>
+    service ? { ok: true, value: service.saveNote(input) } : unavailable(),
+  )
+  handle(
+    STUDY_CHANNELS.listRounds,
+    z.tuple([roundListRequestSchema]),
+    roundListResultSchema,
+    ([input]) => (service ? { ok: true, value: service.listRounds(input) } : unavailable()),
+  )
+  handle(
+    STUDY_CHANNELS.readRound,
+    z.tuple([roundRequestSchema]),
+    roundPageResultSchema,
+    ([input]) => (service ? { ok: true, value: service.readRound(input) } : unavailable()),
+  )
+  handle(
+    STUDY_CHANNELS.readEntry,
+    z.tuple([roundEntryRequestSchema]),
+    roundEntryResultSchema,
+    ([input]) => (service ? { ok: true, value: service.readRoundEntry(input) } : unavailable()),
+  )
+  handle(
+    STUDY_CHANNELS.exportMaterial,
+    z.tuple([materialRequestSchema]),
+    exportMaterialResultSchema,
+    ([input]) => {
+      if (!service) return unavailable()
+      if (operation) return fail('BUSY', '已有文件选择或准备任务，请等待完成。')
+      const bundle = service.prepareMaterial(input)
+      return runOperation(async (signal) => {
+        const selected = await abortableDialog(
+          () =>
+            dialog.showSaveDialog(window, {
+              title: '导出复习材料',
+              defaultPath: '复习材料.md',
+              filters: [{ name: 'Markdown', extensions: ['md'] }],
+            }),
+          signal,
+          { canceled: true, filePath: '' },
+        )
+        if (signal.aborted || selected.canceled) return fail('CANCELLED', '已取消材料导出。')
+        if (!selected.filePath) return fail('INVALID_REQUEST', '请选择材料保存位置。')
+        return {
+          ok: true,
+          value: await service.writeMaterialBundle(bundle, selected.filePath, signal),
+        }
+      })
+    },
+  )
   handle(THEME_CHANNELS.list, noArguments, themeCatalogResultSchema, () =>
     service ? { ok: true, value: service.listThemes() } : unavailable(),
   )
@@ -248,6 +353,38 @@ export function registerLibraryIpc(
   )
   handle(PRACTICE_PLAN_CHANNELS.list, noArguments, practicePlansResultSchema, () =>
     service ? { ok: true, value: service.listPracticePlans() } : unavailable(),
+  )
+  handle(QUESTION_SET_CHANNELS.list, noArguments, questionSetListResultSchema, () =>
+    service ? { ok: true, value: service.listQuestionSets() } : unavailable(),
+  )
+  handle(
+    QUESTION_SET_CHANNELS.preview,
+    z.tuple([questionSetPreviewRequestSchema]),
+    questionSetPreviewResultSchema,
+    ([input]) => {
+      if (!service) return unavailable()
+      try {
+        return { ok: true, value: service.previewQuestionSet(input) }
+      } catch (error) {
+        if (error instanceof QuestionSetFault) return fail(error.code, error.message)
+        throw error
+      }
+    },
+  )
+  handle(
+    QUESTION_SET_CHANNELS.change,
+    z.tuple([questionSetChangeSchema]),
+    questionSetChangeResultSchema,
+    ([input]) => {
+      if (!service) return unavailable()
+      try {
+        service.changeQuestionSet(input)
+        return { ok: true, value: null }
+      } catch (error) {
+        if (error instanceof QuestionSetFault) return fail(error.code, error.message)
+        throw error
+      }
+    },
   )
   handle(
     PRACTICE_PLAN_CHANNELS.change,

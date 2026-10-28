@@ -1,0 +1,13 @@
+
+Running 6 tests using 1 worker
+
+(node:43672) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\practice-control.spec.ts:36:5 › 指定身份顺序/随机仅选这些题，重开及题库更新不改变已建队列/版本/草稿 (3.0s)
+  ok 2 [development] › tests\e2e\practice-control.spec.ts:127:5 › 开始前版本/归档/缺项变化拒绝整轮，真实插入失败保留原活动轮和全部记录 (1.5s)
+  ok 3 [development] › tests\e2e\practice-control.spec.ts:196:5 › 本轮清单只读元数据且50题分页，跳过/未评价分开，跳题保存/越界/回执及写失败可恢复 (1.3s)
+  ok 4 [development] › tests\e2e\practice-outline-window.spec.ts:6:5 › 清单查看不揭晓不写库，跳题保存失败原位保留，重试后可回看原输入 (3.3s)
+  ok 5 [development] › tests\e2e\practice-outline-window.spec.ts:70:5 › 清单跳题已提交响应未知，只能重试原目标，界面与数据库恢复一致 (2.4s)
+  ok 6 [development] › tests\e2e\practice-outline-window.spec.ts:121:5 › 清单读取失败可重试，52题分页和定位当前题不会改变固定队列 (1.6s)
+
+  6 passed (13.9s)

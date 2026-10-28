@@ -759,7 +759,7 @@ test('保护性备份可直接从本数据目录选择并恢复，来源文件�
       const launched = await launchApplication(testDataDirectory, info.project.name, '备份恢复')
       reopened = launched.application
       const protection = await preview(reopened, launched.page, first.value.protectionPath)
-      expect(protection.summary.schemaVersion).toBe(10)
+      expect(protection.summary.schemaVersion).toBe(13)
       exited = reopened.waitForEvent('close')
       const second = await restore(launched.page, protection.token)
       expect(second.ok).toBe(true)

@@ -1,0 +1,24 @@
+
+Running 17 tests using 1 worker
+
+(node:3852) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\findability.spec.ts:83:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置 (2.8s)
+  ok  2 [development] › tests\e2e\findability.spec.ts:149:5 › 找题：标签候选跨分页、独立于筛选、限定专题，支持鼠标/键盘/无匹配/清除 (1.9s)
+  ok  3 [development] › tests\e2e\findability.spec.ts:209:5 › 找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择 (1.8s)
+  ok  4 [development] › tests\e2e\findability.spec.ts:280:5 › 找题：导入元数据使候选缓存失效，归档范围隔离，清除旧题选择 (1.9s)
+  ok  5 [development] › tests\e2e\findability.spec.ts:305:5 › 找题：返回后读取失败保留条件和页码，重试仍查询原范围 (1.7s)
+  ok  6 [development] › tests\e2e\findability.spec.ts:340:5 › 找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情 (1.8s)
+  ok  7 [development] › tests\e2e\findability.spec.ts:366:5 › 找题：首页快捷条件不替换旧轮，明确开始/无匹配/继续保留原契约 (6.9s)
+  ok  8 [development] › tests\e2e\study-layout.spec.ts:12:7 › 笔记/作答对照/轮次与导出在1440px/100%/22px/松间绿可读可操作 (2.4s)
+  ok  9 [development] › tests\e2e\study-layout.spec.ts:12:7 › 笔记/作答对照/轮次与导出在900px/125%/22px/暖沙金可读可操作 (2.7s)
+  ok 10 [development] › tests\e2e\study-layout.spec.ts:12:7 › 笔记/作答对照/轮次与导出在1200px/150%/22px/Claude 风格可读可操作 (2.5s)
+  ok 11 [development] › tests\e2e\workbench-ui2.spec.ts:28:5 › 第二轮画面：第1/10/20项详情均在视口，列表不回顶，分页/主题/字号和窄窗返回保持上下文 (2.4s)
+  ok 12 [development] › tests\e2e\workbench-ui2.spec.ts:82:5 › 第二轮画面：短题首屏包含题干/输入/揭晓/返回，22px保存失败在当前操作附近且预留高度 (4.2s)
+  ok 13 [development] › tests\e2e\workbench-ui2.spec.ts:151:5 › 第二轮画面：1440→900→1440导航按钮声明对应画面，窄窗不写宽窗偏好 (1.6s)
+  ok 14 [development] › tests\e2e\workbench-ui2.spec.ts:186:5 › 第二轮画面：设置真正切区，导航/标题在视口，未应用外观保留且不自动保存 (2.0s)
+  ok 15 [development] › tests\e2e\workbench-ui2.spec.ts:217:5 › 第二轮画面：学习记录首屏可读至少3条，列表筛选不改变范围统计 (1.6s)
+  ok 16 [development] › tests\e2e\workbench-ui2.spec.ts:253:5 › 第二轮画面：13专题导入预览风险/确认可达，关闭后回原题库筛选和选中位置 (1.9s)
+  ok 17 [development] › tests\e2e\workbench-ui2.spec.ts:302:5 › 第二轮画面：空库主操作为导入，板块分组和配置摘要可见，主题字号守原范围 (1.5s)
+
+  17 passed (42.6s)

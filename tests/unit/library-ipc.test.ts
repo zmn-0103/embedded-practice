@@ -23,6 +23,11 @@ import { CATEGORY_CHANNEL } from '../../src/shared/contracts/categories'
 import { CategoryFault } from '../../src/main/database/repositories/category-repository'
 import { PRACTICE_PLAN_CHANNELS } from '../../src/shared/contracts/practice-plans'
 import { PracticePlanFault } from '../../src/main/database/repositories/practice-plan-repository'
+import { QUESTION_SET_CHANNELS } from '../../src/shared/contracts/question-sets'
+import { QuestionSetFault } from '../../src/main/database/repositories/question-set-repository'
+import { STUDY_CHANNELS } from '../../src/shared/contracts/study'
+import { StudyFault } from '../../src/main/database/repositories/study-fault'
+import { CONTENT_UPDATE_CHANNELS } from '../../src/shared/contracts/content-updates'
 import { EMPTY_QUESTION_FILTERS } from '../../src/shared/contracts/question-filters'
 import type { ImportPreview } from '../../src/shared/contracts/library-import'
 import { withImportDirectory } from '../helpers/import-directory'
@@ -81,6 +86,39 @@ function setup() {
   } as unknown as BrowserWindow
   const event = { senderFrame: frame, sender: contents } as unknown as IpcMainInvokeEvent
   const service: LibraryImportService = {
+    listContentVersions: vi.fn(() => {
+      throw new Error('本场景未模拟内容版本')
+    }),
+    compareContentVersions: vi.fn(() => {
+      throw new Error('本场景未模拟内容差异')
+    }),
+    readNote: vi.fn(() => {
+      throw new Error('本场景未模拟笔记读取')
+    }),
+    saveNote: vi.fn(() => {
+      throw new Error('本场景未模拟笔记保存')
+    }),
+    listRounds: vi.fn(() => {
+      throw new Error('本场景未模拟轮次读取')
+    }),
+    readRound: vi.fn(() => {
+      throw new Error('本场景未模拟轮次清单')
+    }),
+    readRoundEntry: vi.fn(() => {
+      throw new Error('本场景未模拟轮次详情')
+    }),
+    prepareMaterial: vi.fn(() => {
+      throw new Error('本场景未模拟材料准备')
+    }),
+    writeMaterialBundle: vi.fn(async () => {
+      throw new Error('本场景未模拟材料写入')
+    }),
+    listQuestionSets: vi.fn(() => []),
+    readQuestionSet: vi.fn(() => {
+      throw new Error('未请求此题单')
+    }),
+    previewQuestionSet: vi.fn(() => ({ definition: null, items: [] })),
+    changeQuestionSet: vi.fn(() => {}),
     preview: vi.fn(async () => ({ ok: true as const, value: preview })),
     commit: vi.fn(() => ({ ok: true as const, value: { revision: 1, summary: preview.summary } })),
     discard: vi.fn(() => ({ ok: true as const, value: null })),
@@ -158,6 +196,272 @@ afterEach(async () => {
 })
 
 describe('题库 IPC 的来源、参数与任务边界（受控原生能力）', () => {
+  it('内容版本/差异严格参数和来源、暂停关闭保护，元数据不自动查询正文', async () => {
+    const { invoke, service, frame, registration, event } = setup()
+    const request = { topicId: 'unit', questionId: 'q-1', versionId: 3, page: 1 }
+    const metadata = { versionId: 3, sequence: 3, createdAt: '2026-10-28T00:00:00.000Z' }
+    const value = {
+      topicId: 'unit',
+      questionId: 'q-1',
+      target: metadata,
+      page: 1,
+      pageSize: 20 as const,
+      total: 0,
+      versions: [],
+    }
+    vi.mocked(service.listContentVersions).mockReturnValue(value)
+    expect(await invoke(CONTENT_UPDATE_CHANNELS.versions, request)).toEqual({ ok: true, value })
+    expect(service.compareContentVersions).not.toHaveBeenCalled()
+    for (const bad of [
+      { ...request, page: 0 },
+      { ...request, part: 'answer' },
+      { ...request, filePath: 'C:/private' },
+    ])
+      expect(await invoke(CONTENT_UPDATE_CHANNELS.versions, bad)).toMatchObject({
+        error: { code: 'INVALID_REQUEST' },
+      })
+    expect(
+      await invoke(CONTENT_UPDATE_CHANNELS.compare, {
+        ...request,
+        previousVersionId: 1,
+        part: 'answer',
+      }),
+    ).toMatchObject({ error: { code: 'INVALID_REQUEST' } })
+    frame.url = 'https://example.com'
+    for (const channel of Object.values(CONTENT_UPDATE_CHANNELS))
+      expect(await invoke(channel, {})).toMatchObject({ error: { code: 'FORBIDDEN' } })
+    frame.url = 'file:///app/index.html'
+    await registration.pause()
+    for (const channel of Object.values(CONTENT_UPDATE_CHANNELS))
+      expect(await invoke(channel, {})).toMatchObject({ error: { code: 'SERVICE_CLOSED' } })
+    registration.resume()
+    const handlers = Object.values(CONTENT_UPDATE_CHANNELS).map((channel) =>
+      native.handlers.get(channel)!,
+    )
+    await registration.close()
+    for (const handler of handlers)
+      expect(await handler(event, {})).toMatchObject({ error: { code: 'SERVICE_CLOSED' } })
+    for (const channel of Object.values(CONTENT_UPDATE_CHANNELS))
+      expect(native.handlers.has(channel)).toBe(false)
+  })
+  it('内容分区明确传递；未知SQL异常/坏输出不泄漏，失效版本明确返回', async () => {
+    const { invoke, service, report } = setup()
+    const request = {
+      topicId: 'unit',
+      questionId: 'q-1',
+      versionId: 3,
+      previousVersionId: 1,
+      part: 'question',
+    }
+    const body = { markdown: '只有题干', definitions: [], imageBindings: [] }
+    const value = {
+      topicId: 'unit',
+      questionId: 'q-1',
+      part: 'question' as const,
+      previous: { versionId: 1, sequence: 1, createdAt: '2026-10-27T00:00:00.000Z', body },
+      current: { versionId: 3, sequence: 3, createdAt: '2026-10-28T00:00:00.000Z', body },
+    }
+    vi.mocked(service.compareContentVersions).mockReturnValueOnce(value)
+    expect(await invoke(CONTENT_UPDATE_CHANNELS.compare, request)).toEqual({ ok: true, value })
+    expect(service.compareContentVersions).toHaveBeenLastCalledWith(request)
+    vi.mocked(service.compareContentVersions).mockImplementationOnce(() => {
+      throw new StudyFault('NOT_FOUND', '目标已更新，请刷新题库。')
+    })
+    expect(await invoke(CONTENT_UPDATE_CHANNELS.compare, request)).toMatchObject({
+      error: { code: 'NOT_FOUND' },
+    })
+    vi.mocked(service.compareContentVersions).mockImplementationOnce(() => {
+      throw new Error('private SQL path')
+    })
+    const failure = await invoke(CONTENT_UPDATE_CHANNELS.compare, request)
+    expect(failure).toMatchObject({ error: { code: 'DATABASE_UNAVAILABLE' } })
+    expect(JSON.stringify(failure)).not.toContain('private')
+    vi.mocked(service.compareContentVersions).mockReturnValueOnce({
+      ...value,
+      previous: value.current,
+    })
+    expect(await invoke(CONTENT_UPDATE_CHANNELS.compare, request)).toMatchObject({
+      error: { code: 'DATABASE_UNAVAILABLE' },
+    })
+    expect(report).toHaveBeenCalledTimes(2)
+  })
+  it('积累六接口严格来源/参数/暂停/关闭，笔记冲突明确且输出与异常不泄漏', async () => {
+    const { invoke, service, frame, registration, event } = setup()
+    const identity = { topicId: 'unit', questionId: 'q-1' }
+    const note = { ...identity, revision: 0, text: '', updatedAt: null }
+    vi.mocked(service.readNote).mockReturnValue(note)
+    expect(await invoke(STUDY_CHANNELS.readNote, identity)).toEqual({ ok: true, value: note })
+    for (const args of [[], [{ ...identity, path: 'C:/private' }], [identity, 'extra']])
+      expect(await invoke(STUDY_CHANNELS.readNote, ...args)).toMatchObject({
+        error: { code: 'INVALID_REQUEST' },
+      })
+    const save = { ...identity, expectedRevision: 0, text: '我的理解' }
+    vi.mocked(service.saveNote).mockImplementationOnce(() => {
+      throw new StudyFault('NOTE_CONFLICT', '请先核对已有笔记。')
+    })
+    expect(await invoke(STUDY_CHANNELS.saveNote, save)).toMatchObject({
+      error: { code: 'NOTE_CONFLICT', message: '请先核对已有笔记。' },
+    })
+    vi.mocked(service.saveNote).mockImplementationOnce(() => {
+      throw new Error('private SQL path')
+    })
+    const unknown = await invoke(STUDY_CHANNELS.saveNote, save)
+    expect(unknown).toMatchObject({ error: { code: 'DATABASE_UNAVAILABLE' } })
+    expect(JSON.stringify(unknown)).not.toContain('private')
+    vi.mocked(service.readNote).mockReturnValueOnce({ ...note, text: 'bad revision zero' })
+    expect(await invoke(STUDY_CHANNELS.readNote, identity)).toMatchObject({
+      error: { code: 'DATABASE_UNAVAILABLE' },
+    })
+    expect(await invoke(STUDY_CHANNELS.listRounds, { topicId: null, page: 0 })).toMatchObject({
+      error: { code: 'INVALID_REQUEST' },
+    })
+    expect(
+      await invoke(STUDY_CHANNELS.readRound, { sessionId: randomUUID(), page: 1, answer: true }),
+    ).toMatchObject({ error: { code: 'INVALID_REQUEST' } })
+    expect(
+      await invoke(STUDY_CHANNELS.readEntry, { sessionId: randomUUID(), position: -1 }),
+    ).toMatchObject({ error: { code: 'INVALID_REQUEST' } })
+    frame.url = 'https://example.com'
+    for (const channel of Object.values(STUDY_CHANNELS))
+      expect(await invoke(channel, {})).toMatchObject({ error: { code: 'FORBIDDEN' } })
+    frame.url = 'file:///app/index.html'
+    await registration.pause()
+    for (const channel of Object.values(STUDY_CHANNELS))
+      expect(await invoke(channel, {})).toMatchObject({ error: { code: 'SERVICE_CLOSED' } })
+    registration.resume()
+    const handlers = Object.values(STUDY_CHANNELS).map((channel) => native.handlers.get(channel)!)
+    await registration.close()
+    for (const handler of handlers)
+      expect(await handler(event, {})).toMatchObject({ error: { code: 'SERVICE_CLOSED' } })
+    expect(native.handlers.size).toBe(0)
+    expect(service.prepareMaterial).not.toHaveBeenCalled()
+  })
+  it('材料只接收来源与模式，系统对话框选择后才调用绑定写入，取消不写入', async () => {
+    const { invoke, service } = setup()
+    const request = { source: { kind: 'set', setId: randomUUID() }, mode: 'questions' }
+    const bundle = {
+      markdown: '# 题目',
+      count: 1,
+      assetsName: `review-assets-${randomUUID()}`,
+      images: [],
+    }
+    vi.mocked(service.prepareMaterial).mockReturnValue(bundle)
+    for (const bad of [
+      { ...request, filePath: 'C:/private' },
+      { ...request, markdown: '# 伪造' },
+      { ...request, source: { ...request.source, sessionId: randomUUID() } },
+    ])
+      expect(await invoke(STUDY_CHANNELS.exportMaterial, bad)).toMatchObject({
+        error: { code: 'INVALID_REQUEST' },
+      })
+    expect(service.prepareMaterial).not.toHaveBeenCalled()
+    expect(await invoke(STUDY_CHANNELS.exportMaterial, request)).toMatchObject({
+      error: { code: 'CANCELLED' },
+    })
+    expect(service.writeMaterialBundle).not.toHaveBeenCalled()
+    const target = resolve('chosen.md')
+    native.dialog.showSaveDialog.mockResolvedValueOnce({ canceled: false, filePath: target })
+    vi.mocked(service.writeMaterialBundle).mockResolvedValueOnce({
+      filePath: target,
+      assetsPath: null,
+      questions: 1,
+      images: 0,
+    })
+    expect(await invoke(STUDY_CHANNELS.exportMaterial, request)).toEqual({
+      ok: true,
+      value: { filePath: target, assetsPath: null, questions: 1, images: 0 },
+    })
+    expect(service.prepareMaterial).toHaveBeenLastCalledWith(request)
+    expect(service.writeMaterialBundle).toHaveBeenCalledExactlyOnceWith(
+      bundle,
+      target,
+      expect.any(AbortSignal),
+    )
+  })
+  it('材料选择位置期间拒绝重复任务，关闭取消悬空对话框且不写入', async () => {
+    const { invoke, service, registration } = setup()
+    vi.mocked(service.prepareMaterial).mockReturnValue({
+      markdown: '# 题目',
+      count: 1,
+      assetsName: `review-assets-${randomUUID()}`,
+      images: [],
+    })
+    let finish!: (value: { canceled: boolean; filePath: string }) => void
+    native.dialog.showSaveDialog.mockImplementationOnce(
+      () =>
+        new Promise((resolve) => {
+          finish = resolve
+        }),
+    )
+    const request = { source: { kind: 'set', setId: randomUUID() }, mode: 'personal' }
+    const pending = invoke(STUDY_CHANNELS.exportMaterial, request)
+    await vi.waitFor(() => expect(native.dialog.showSaveDialog).toHaveBeenCalledOnce())
+    expect(await invoke(STUDY_CHANNELS.exportMaterial, request)).toMatchObject({
+      error: { code: 'BUSY' },
+    })
+    await registration.close()
+    expect(await pending).toMatchObject({ error: { code: 'CANCELLED' } })
+    finish({ canceled: false, filePath: resolve('late.md') })
+    await Promise.resolve()
+    expect(service.writeMaterialBundle).not.toHaveBeenCalled()
+    expect(service.prepareMaterial).toHaveBeenCalledOnce()
+  })
+  it('题单严格参数/来源/暂停/关闭受同一守卫保护，业务错误明确且异常不泄漏', async () => {
+    const { invoke, registration, service, frame, event } = setup()
+    const command = {
+      kind: 'save',
+      setId: randomUUID(),
+      name: '  明确题单  ',
+      items: [{ topicId: 'unit', questionId: 'q-1' }],
+    }
+    expect(await invoke(QUESTION_SET_CHANNELS.list)).toEqual({ ok: true, value: [] })
+    expect(await invoke(QUESTION_SET_CHANNELS.preview, { items: [] })).toEqual({
+      ok: true,
+      value: { definition: null, items: [] },
+    })
+    expect(await invoke(QUESTION_SET_CHANNELS.change, command)).toEqual({ ok: true, value: null })
+    expect(service.changeQuestionSet).toHaveBeenCalledExactlyOnceWith({
+      ...command,
+      name: '明确题单',
+    })
+    for (const bad of [
+      { ...command, sql: 'DELETE' },
+      { ...command, items: [] },
+      { ...command, items: [command.items[0], command.items[0]] },
+    ])
+      expect(await invoke(QUESTION_SET_CHANNELS.change, bad)).toMatchObject({
+        error: { code: 'INVALID_REQUEST' },
+      })
+    expect(
+      await invoke(QUESTION_SET_CHANNELS.preview, { items: [], setId: command.setId }),
+    ).toMatchObject({ error: { code: 'INVALID_REQUEST' } })
+    vi.mocked(service.changeQuestionSet).mockImplementationOnce(() => {
+      throw new QuestionSetFault('NOT_FOUND', '原题已失效。')
+    })
+    expect(await invoke(QUESTION_SET_CHANNELS.change, command)).toMatchObject({
+      error: { code: 'NOT_FOUND', message: '原题已失效。' },
+    })
+    vi.mocked(service.changeQuestionSet).mockImplementationOnce(() => {
+      throw new Error('private SQL secret path')
+    })
+    const failure = await invoke(QUESTION_SET_CHANNELS.change, command)
+    expect(failure).toMatchObject({
+      error: { code: 'DATABASE_UNAVAILABLE' },
+    })
+    expect(JSON.stringify(failure)).not.toContain('secret')
+    frame.url = 'https://example.com'
+    for (const channel of Object.values(QUESTION_SET_CHANNELS))
+      expect(await invoke(channel, command)).toMatchObject({ error: { code: 'FORBIDDEN' } })
+    frame.url = 'file:///app/index.html'
+    await registration.pause()
+    for (const channel of Object.values(QUESTION_SET_CHANNELS))
+      expect(await invoke(channel)).toMatchObject({ error: { code: 'SERVICE_CLOSED' } })
+    registration.resume()
+    const handler = native.handlers.get(QUESTION_SET_CHANNELS.list)!
+    await registration.close()
+    expect(await handler(event)).toMatchObject({ error: { code: 'SERVICE_CLOSED' } })
+    expect(native.handlers.size).toBe(0)
+  })
   it('方案只读/写入重新校验来源和严格参数，恢复暂停与关闭不执行', async () => {
     const { service, invoke, frame, registration, event } = setup()
     const command = {

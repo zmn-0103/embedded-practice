@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react'
 import type { LibraryPage } from '../../../shared/contracts/library-desktop'
-import type { PracticeAck, PracticeView, StartPractice } from '../../../shared/contracts/practice'
+import type {
+  PracticeAck,
+  PracticeView,
+  RepeatPractice,
+  StartPractice,
+} from '../../../shared/contracts/practice'
 import {
   EMPTY_QUESTION_FILTERS,
   type QuestionFilters,
@@ -17,11 +22,14 @@ import {
 import { TopicNavigator } from './TopicNavigator'
 import { PracticePlans } from './PracticePlans'
 import { difficultyLabel } from './DifficultyBadge'
+import { SelectedPractice, type SelectedPracticeIntent } from './SelectedPractice'
+import type { SelectedPractice as SelectedInput } from '../../../shared/contracts/question-sets'
 
 const shortcuts: { label: string; filters: QuestionFilters }[] = [
   { label: '全部题目', filters: { ...EMPTY_QUESTION_FILTERS } },
   { label: '练不会', filters: { ...EMPTY_QUESTION_FILTERS, mastery: '不会' } },
   { label: '练不熟', filters: { ...EMPTY_QUESTION_FILTERS, mastery: '不熟' } },
+  { label: '练不会＋不熟', filters: { ...EMPTY_QUESTION_FILTERS, mastery: '不会＋不熟' } },
   { label: '练收藏', filters: { ...EMPTY_QUESTION_FILTERS, favoritesOnly: true } },
 ]
 
@@ -34,6 +42,8 @@ export function PracticeWorkspace({
   homeContent,
   homeLabel = '板块与继续练习',
   showResume = true,
+  selectionRequest,
+  onSelectQuestions,
 }: {
   refresh: number
   onActiveChange: (active: boolean) => void
@@ -50,6 +60,8 @@ export function PracticeWorkspace({
       }) => ReactNode)
   homeLabel?: string
   showResume?: boolean
+  selectionRequest?: SelectedPracticeIntent | undefined
+  onSelectQuestions?: () => void
 }) {
   const api = window.desktop.practice
   const [controller] = useState(() => createPracticeController(api))
@@ -68,6 +80,7 @@ export function PracticeWorkspace({
   const [ready, setReady] = useState(false)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
+  const [selectedIntent, setSelectedIntent] = useState<SelectedPracticeIntent>()
   const mounted = useRef(false)
   const generation = useRef(0)
   const lifecycle = useRef(0)
@@ -76,6 +89,12 @@ export function PracticeWorkspace({
   const [plansBusy, setPlansBusy] = useState(false)
   const work = useRef<Promise<void> | undefined>(undefined)
   const pendingStart = useRef<{ input: StartPractice; ack?: PracticeAck } | undefined>(undefined)
+  useEffect(() => {
+    if (selectionRequest) {
+      setSelectedIntent(structuredClone(selectionRequest))
+      setError('')
+    }
+  }, [selectionRequest?.id])
 
   async function loadHome() {
     const epoch = ++generation.current
@@ -120,28 +139,57 @@ export function PracticeWorkspace({
   function enter(view: PracticeView) {
     if (!controller.open(view)) throw new Error('当前输入尚未确认，不能替换练习。')
     generation.current++
+    setSelectedIntent(undefined)
     onActiveChange(true)
     setPage('practice')
     window.scrollTo(0, 0)
   }
-  function start() {
+  function start(
+    repeat?: RepeatPractice,
+    repeatMode: StartPractice['mode'] = 'sequential',
+    selected?: SelectedInput,
+  ) {
     run(async () => {
       const job = pendingStart.current ?? {
-        input: {
-          requestId: globalThis.crypto.randomUUID(),
-          topicId,
-          category: { ...category },
-          count,
-          mode,
-          filters: { ...filters },
-          replace: active
+        input: selected
+          ? {
+              requestId: globalThis.crypto.randomUUID(),
+              topicId: null,
+              count: 'all' as const,
+              mode: repeatMode,
+              selected,
+              replace: active
+                ? {
+                    sessionId: active.session.sessionId,
+                    position: active.session.position,
+                    revision: active.session.revision,
+                  }
+                : null,
+            }
+          : repeat
             ? {
-                sessionId: active.session.sessionId,
-                position: active.session.position,
-                revision: active.session.revision,
+                requestId: globalThis.crypto.randomUUID(),
+                topicId: null,
+                count: 'all' as const,
+                replace: null,
+                mode: repeatMode,
+                repeat,
               }
-            : null,
-        },
+            : {
+                requestId: globalThis.crypto.randomUUID(),
+                topicId,
+                category: { ...category },
+                count,
+                mode,
+                filters: { ...filters },
+                replace: active
+                  ? {
+                      sessionId: active.session.sessionId,
+                      position: active.session.position,
+                      revision: active.session.revision,
+                    }
+                  : null,
+              },
       }
       pendingStart.current = job
       if (!job.ack) {
@@ -258,6 +306,12 @@ export function PracticeWorkspace({
         onHome={home}
         onDataBusy={onDataBusy}
         onDataOperation={onDataOperation}
+        repeat={{
+          busy: busy || state.busy || state.closing || Boolean(state.pending),
+          pending: Boolean(pendingStart.current),
+          error,
+          start,
+        }}
       />
     )
   const hasQuestions = matchingCount !== undefined && matchingCount > 0
@@ -288,9 +342,16 @@ export function PracticeWorkspace({
           </button>
           <details aria-label="本轮创建条件">
             <summary>本轮创建条件</summary>
+            {active.session.repeat && (
+              <p>本轮为再练，沿用来源轮保存的内容；以下为来源轮的创建条件。</p>
+            )}
             <p>创建时的条件仅供回看，继续练习使用原固定队列。</p>
             <p>分类：{categorySnapshotLabel(active.session.category)}</p>
-            {active.session.filters === null ? (
+            {active.session.selectionName ? (
+              <p>
+                固定选题来源：{active.session.selectionName}。只练当时确认的题目，继续时使用原队列。
+              </p>
+            ) : active.session.filters === null ? (
               <p>此旧会话未保存筛选条件，原条件未知。</p>
             ) : (
               <dl>
@@ -324,10 +385,35 @@ export function PracticeWorkspace({
       {typeof homeContent === 'function'
         ? homeContent({ active, ready, busy: blocked || Boolean(pendingStart.current), resume })
         : homeContent}
-      <div className="practice-options" hidden={Boolean(homeContent)}>
+      {selectedIntent && !homeContent && (
+        <SelectedPractice
+          key={selectedIntent.id}
+          intent={selectedIntent}
+          refresh={refresh}
+          busy={blocked}
+          pending={Boolean(pendingStart.current)}
+          error={error}
+          replacing={Boolean(active)}
+          onCancel={() => {
+            setSelectedIntent(undefined)
+            setError('')
+          }}
+          onStart={(selection, order) => start(undefined, order, selection)}
+        />
+      )}
+      <div className="practice-options" hidden={Boolean(homeContent) || Boolean(selectedIntent)}>
         <p className="eyebrow">{active ? '也可以重新选择题目' : '按自己的节奏，认真完成一轮'}</p>
         <h2>{active ? '开始新一轮' : '开始一轮练习'}</h2>
         <div className="practice-configuration">
+          {onSelectQuestions && (
+            <button
+              type="button"
+              disabled={blocked || Boolean(pendingStart.current)}
+              onClick={onSelectQuestions}
+            >
+              从题库勾选或载入固定题单
+            </button>
+          )}
           <h3>1. 选题范围</h3>
           <details className="topic-navigation-panel">
             <summary>按分类选择专题</summary>
@@ -479,7 +565,7 @@ export function PracticeWorkspace({
               type="button"
               className={active ? undefined : 'primary'}
               disabled={blocked || (!pendingStart.current && !hasQuestions)}
-              onClick={start}
+              onClick={() => start()}
             >
               {pendingStart.current ? '重试开始本轮' : active ? '结束本轮并开始新练习' : '开始练习'}
             </button>
@@ -509,7 +595,7 @@ export function PracticeWorkspace({
           }}
         />
       </div>
-      {error && (
+      {error && !selectedIntent && (
         <div role="alert" className="error-message">
           <p>{error}</p>
           {!pendingStart.current && (

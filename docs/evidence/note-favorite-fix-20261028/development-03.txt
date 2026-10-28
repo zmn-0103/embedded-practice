@@ -1,0 +1,12 @@
+
+Running 5 tests using 1 worker
+
+(node:8704) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\note-favorite.spec.ts:30:7 › 学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入 (1.6s)
+  ok 2 [development] › tests\e2e\note-favorite.spec.ts:110:7 › 学习记录收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续 (1.5s)
+  ok 3 [development] › tests\e2e\note-favorite.spec.ts:30:7 › 题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入 (1.7s)
+  ok 4 [development] › tests\e2e\note-favorite.spec.ts:110:7 › 题库收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续 (1.4s)
+  ok 5 [development] › tests\e2e\note-favorite.spec.ts:171:5 › 普通题库：收藏写入失败恢复编辑，成功刷新保留详情并恢复笔记编辑 (1.5s)
+
+  5 passed (8.2s)

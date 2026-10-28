@@ -35,6 +35,25 @@ function setup() {
   const id = randomUUID()
   const ack = { sessionId: id, position: 0, revision: 0, total: 1, status: 'active' as const }
   const service: PracticeService = {
+    outline: vi.fn(() => ({
+      ok: true as const,
+      value: {
+        ...ack,
+        page: 1,
+        items: [
+          {
+            position: 0,
+            topicId: 'fixture',
+            questionId: 'q-1',
+            title: '题1',
+            topicTitle: '样本',
+            revealed: false,
+            rating: null,
+            skipped: false,
+          },
+        ],
+      },
+    })),
     read: vi.fn(() => ({ ok: true as const, value: null })),
     start: vi.fn(() => ({ ok: true as const, value: ack })),
     saveDraft: vi.fn(() => ({
@@ -79,7 +98,7 @@ test.each(['sender', 'frame', 'url', 'destroyed', 'frameDestroyed'])(
     expect(service.read).not.toHaveBeenCalled()
   },
 )
-test('七项业务只转发严格白名单参数，来源与输出分别验证', async () => {
+test('八项业务只转发严格白名单参数，来源与输出分别验证', async () => {
   const { id, invoke, service } = setup()
   const command = {
     requestId: randomUUID(),
@@ -88,6 +107,7 @@ test('七项业务只转发严格白名单参数，来源与输出分别验证',
   }
   const requests = [
     ['read', { sessionId: null }],
+    ['outline', { sessionId: id, page: 1 }],
     ['start', { requestId: randomUUID(), topicId: null, count: 20, replace: null }],
     ['saveDraft', { sessionId: id, position: 0, draft: command.draft }],
     ['reveal', command],

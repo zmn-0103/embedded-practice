@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:21644) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\content-updates-storage.spec.ts:21:5 › 更新复习重开及完整备份恢复保留原队列/版本/草稿/笔记，后续更新归档不替换旧轮 (4.5s)
+
+  1 passed (5.0s)

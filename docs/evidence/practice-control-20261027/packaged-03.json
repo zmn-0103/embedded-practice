@@ -1,0 +1,216 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/ui-adaptive.spec.ts",
+      "--grep",
+      "第二批缩放：Claude",
+      "--repeat-each=2",
+      "--project=packaged",
+      "--output=docs/evidence/practice-control-20261027/packaged-03",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/practice-control-20261027/packaged-03",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/practice-control-20261027/packaged-03",
+        "repeatEach": 2,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\packaged-03",
+        "repeatEach": 2,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ui-adaptive.spec.ts",
+      "file": "ui-adaptive.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "第二批缩放：Claude 风格/dark/1440px/22px/200%",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2675,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T14:09:25.159Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "zoom.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\packaged-03\\ui-adaptive-第二批缩放：Claude-风格-dark-1440px-22px-200--packaged\\attachments\\zoom-png-c72de0572611f90f73de09a94d8472286ef5e5eb.png"
+                    },
+                    {
+                      "name": "layout.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJydW50aW1lIjogewogICAgImV4ZSI6ICJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItcHJhY3RpY2UtY29udHJvbC0yMDI2MTAyNy40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsCiAgICAidXNlckRhdGEiOiAiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLTRRZ3J4RCIsCiAgICAicGFja2FnZWQiOiB0cnVlLAogICAgInZlcnNpb24iOiAiMC4wLjIiCiAgfSwKICAibGF5b3V0IjogewogICAgIndpZHRoIjogMTQ0MCwKICAgICJmb250IjogMjIsCiAgICAiem9vbSI6IDIsCiAgICAidGhlbWUiOiAiQ2xhdWRlIOmjjuagvCIsCiAgICAibW9kZSI6ICJkYXJrIgogIH0sCiAgIm1ldHJpY3MiOiB7CiAgICAidmlld3BvcnQiOiB7CiAgICAgICJ3aWR0aCI6IDcyMCwKICAgICAgImhlaWdodCI6IDQ1MAogICAgfSwKICAgICJhY3Rpb25zIjogewogICAgICAidG9wIjogMzYyLjgwNDY4NzUsCiAgICAgICJoZWlnaHQiOiA3OS4xOTUzMTI1LAogICAgICAicmF0aW8iOiAwLjE3NTk4OTU4MzMzMzMzMzM0CiAgICB9LAogICAgImlucHV0IjogewogICAgICAidG9wIjogMjQuMjE4NzUsCiAgICAgICJoZWlnaHQiOiAyMDAsCiAgICAgICJ2aXNpYmxlIjogMjAwCiAgICB9CiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4d3c90a69ab5db27bac-c266fe91fcb39ae40ec0",
+          "file": "ui-adaptive.spec.ts",
+          "line": 22,
+          "column": 7
+        },
+        {
+          "title": "第二批缩放：Claude 风格/dark/1440px/22px/200%",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2638,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T14:09:28.275Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "zoom.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\practice-control-20261027\\packaged-03\\ui-adaptive-第二批缩放：Claude-风格-dark-1440px-22px-200--packaged-repeat1\\attachments\\zoom-png-457dac8c96b807c0fc38b79298bbc9766f200bcc.png"
+                    },
+                    {
+                      "name": "layout.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJydW50aW1lIjogewogICAgImV4ZSI6ICJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItcHJhY3RpY2UtY29udHJvbC0yMDI2MTAyNy40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsCiAgICAidXNlckRhdGEiOiAiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLThoQVJvSSIsCiAgICAicGFja2FnZWQiOiB0cnVlLAogICAgInZlcnNpb24iOiAiMC4wLjIiCiAgfSwKICAibGF5b3V0IjogewogICAgIndpZHRoIjogMTQ0MCwKICAgICJmb250IjogMjIsCiAgICAiem9vbSI6IDIsCiAgICAidGhlbWUiOiAiQ2xhdWRlIOmjjuagvCIsCiAgICAibW9kZSI6ICJkYXJrIgogIH0sCiAgIm1ldHJpY3MiOiB7CiAgICAidmlld3BvcnQiOiB7CiAgICAgICJ3aWR0aCI6IDcyMCwKICAgICAgImhlaWdodCI6IDQ1MAogICAgfSwKICAgICJhY3Rpb25zIjogewogICAgICAidG9wIjogMzYyLjgwNDY4NzUsCiAgICAgICJoZWlnaHQiOiA3OS4xOTUzMTI1LAogICAgICAicmF0aW8iOiAwLjE3NTk4OTU4MzMzMzMzMzM0CiAgICB9LAogICAgImlucHV0IjogewogICAgICAidG9wIjogMjQuMjE4NzUsCiAgICAgICJoZWlnaHQiOiAyMDAsCiAgICAgICJ2aXNpYmxlIjogMjAwCiAgICB9CiAgfQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d4d3c90a69ab5db27bac-7e498c22725761c56749",
+          "file": "ui-adaptive.spec.ts",
+          "line": 22,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T14:09:24.667Z",
+    "duration": 6292.996999999999,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

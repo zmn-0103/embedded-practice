@@ -67,6 +67,9 @@ function ok<T>(value: T): PracticeDesktopResult<T> {
 const controllers: PracticeController[] = []
 function setup(initial = view()) {
   const api: PracticeDesktopApi = {
+    outline: vi.fn(async () => {
+      throw new Error('本控制器测试不主动读取清单')
+    }),
     read: vi.fn(async () => ok(view(1))),
     start: vi.fn(async () => ok(ack())),
     saveDraft: vi.fn(async (input) =>
@@ -219,6 +222,46 @@ describe('输入停止与串行草稿保存', () => {
 })
 
 describe('操作回执、重试和关闭输入锁', () => {
+  test('清单跳题先保存输入，保存失败留在原题且不提交目标', async () => {
+    const { controller, api } = setup()
+    controller.edit('跳题前必须保留')
+    vi.mocked(api.saveDraft).mockResolvedValueOnce({
+      ok: false,
+      error: { code: 'WRITE_FAILED', message: '保存失败' },
+    })
+    expect(await controller.perform({ kind: 'jump', position: 2 })).toBe(false)
+    expect(api.navigate).not.toHaveBeenCalled()
+    expect(controller.getState()).toMatchObject({
+      draft: { text: '跳题前必须保留' },
+      view: { session: { position: 0 } },
+    })
+    vi.mocked(api.read).mockResolvedValueOnce(ok(view(2)))
+    vi.mocked(api.navigate).mockResolvedValueOnce(ok(ack(2)))
+    expect(await controller.perform({ kind: 'jump', position: 2 })).toBe(true)
+    expect(vi.mocked(api.navigate).mock.calls[0]?.[0]).toMatchObject({
+      direction: 'jump',
+      targetPosition: 2,
+      cursor: { position: 0, revision: 0 },
+      draft: { revision: 1, text: '跳题前必须保留' },
+    })
+    expect(api.reveal).not.toHaveBeenCalled()
+    expect(controller.getState().view?.session.position).toBe(2)
+  })
+  test('跳题响应未知保留原目标和回执身份，拒绝另一目标并阻止关闭', async () => {
+    const { controller, api } = setup()
+    vi.mocked(api.navigate).mockRejectedValueOnce(new Error('提交后响应丢失'))
+    expect(await controller.perform({ kind: 'jump', position: 2 })).toBe(false)
+    expect(await controller.perform({ kind: 'jump', position: 1 })).toBe(false)
+    expect(await controller.prepareClose()).toBe(false)
+    vi.mocked(api.read).mockResolvedValueOnce(ok(view(2)))
+    vi.mocked(api.navigate).mockResolvedValueOnce(ok(ack(2)))
+    expect(await controller.retry()).toBe(true)
+    const calls = vi.mocked(api.navigate).mock.calls
+    expect(calls).toHaveLength(2)
+    expect(calls[1]?.[0]).toEqual(calls[0]?.[0])
+    expect(calls[1]?.[0].targetPosition).toBe(2)
+    expect(controller.getState().view?.item?.revealed).toBe(false)
+  })
   test('重复操作只发送一次，空输入允许揭晓', async () => {
     const { controller, api } = setup()
     const pending = deferred<PracticeDesktopResult<PracticeAck>>()

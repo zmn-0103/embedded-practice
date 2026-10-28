@@ -1,0 +1,34 @@
+
+Running 5 tests using 1 worker
+
+(node:17756) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\practice-flow-storage.spec.ts:67:5 › 结构10升级前保护备份，原队列/草稿/方案/自定义对象逐行保持，旧备份只在副本迁移 (1.1s)
+  ok 2 [development] › tests\e2e\practice-flow-storage.spec.ts:128:7 › 结构10迁移失败backup-blocked保留原结构与数据，不重建空库 (782ms)
+  ok 3 [development] › tests\e2e\practice-flow-storage.spec.ts:128:7 › 结构10迁移失败column-conflict保留原结构与数据，不重建空库 (767ms)
+  x  4 [development] › tests\e2e\practice-flow-storage.spec.ts:128:7 › 结构10迁移失败foreign-key保留原结构与数据，不重建空库 (71ms)
+(node:27512) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 5 [development] › tests\e2e\practice-flow-storage.spec.ts:161:5 › 完整备份恢复再练来源/固定旧版本/联合方案与草稿，坏来源拒绝且不覆盖当前数据 (3.6s)
+
+
+  1) [development] › tests\e2e\practice-flow-storage.spec.ts:128:7 › 结构10迁移失败foreign-key保留原结构与数据，不重建空库 
+
+    Error: FOREIGN KEY constraint failed
+
+      136 |         testDataDirectory,
+      137 |         (db) =>
+    > 138 |           db.exec(
+          |              ^
+      139 |             fault === 'column-conflict'
+      140 |               ? 'ALTER TABLE practice_sessions ADD COLUMN repeat_source_id TEXT'
+      141 |               : 'UPDATE questions SET current_version_id=999',
+        at work (E:\My_Projects\embedded-practice\tests\e2e\practice-flow-storage.spec.ts:138:14)
+        at withHistoryDatabase (E:\My_Projects\embedded-practice\tests\e2e\history-helpers.ts:92:12)
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-flow-storage.spec.ts:135:26
+
+    Error Context: docs\evidence\practice-flow-20261027\storage-01\practice-flow-storage-结构10迁移失败foreign-key保留原结构与数据，不重建空库-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\practice-flow-storage.spec.ts:128:7 › 结构10迁移失败foreign-key保留原结构与数据，不重建空库 
+  4 passed (7.5s)

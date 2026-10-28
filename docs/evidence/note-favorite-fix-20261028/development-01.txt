@@ -1,0 +1,82 @@
+
+Running 5 tests using 1 worker
+
+(node:12148) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [development] › tests\e2e\note-favorite.spec.ts:30:7 › 学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入 (12.8s)
+(node:24160) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [development] › tests\e2e\note-favorite.spec.ts:103:7 › 学习记录收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续 (1.8s)
+  x  3 [development] › tests\e2e\note-favorite.spec.ts:30:7 › 题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入 (11.9s)
+(node:13484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 [development] › tests\e2e\note-favorite.spec.ts:103:7 › 题库收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续 (1.5s)
+  ok 5 [development] › tests\e2e\note-favorite.spec.ts:164:5 › 普通题库：收藏写入失败恢复编辑，成功刷新保留详情并恢复笔记编辑 (1.5s)
+
+
+  1) [development] › tests\e2e\note-favorite.spec.ts:30:7 › 学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入 ─
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByLabel('题目内容').locator('.personal-note').getByRole('textbox', { name: '我的复习笔记', exact: true })
+    Expected: 1
+    Received: 0
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveCount" getByLabel('题目内容').locator('.personal-note').getByRole('textbox', { name: '我的复习笔记', exact: true }) with timeout 10000ms
+      - waiting for getByLabel('题目内容').locator('.personal-note').getByRole('textbox', { name: '我的复习笔记', exact: true })
+        23 × locator resolved to 0 elements
+           - unexpected value "0"
+
+
+      85 |         )
+      86 |         .toBe('function')
+    > 87 |       await expect(editor).toHaveCount(1)
+         |                            ^
+      88 |       await expect(editor).toHaveAttribute('readonly', '')
+      89 |       await application.evaluate(() => Reflect.get(globalThis, '__releaseFavoriteList')())
+      90 |       await expect(editor).toHaveCount(0)
+        at E:\My_Projects\embedded-practice\tests\e2e\note-favorite.spec.ts:87:28
+
+    attachment #2: favorite-note-readonly.png (image/png) ──────────────────────────────────────────
+    test-results\note-favorite-development-01\note-favorite-学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入-development\attachments\favorite-note-readonly-png-dbcc2f025cbca3d93e7abc29f5c278e513ed4386.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\note-favorite-development-01\note-favorite-学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入-development\error-context.md
+
+  2) [development] › tests\e2e\note-favorite.spec.ts:30:7 › 题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入 ───
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByLabel('题目内容').locator('.personal-note').getByRole('textbox', { name: '我的复习笔记', exact: true })
+    Expected: 1
+    Received: 0
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveCount" getByLabel('题目内容').locator('.personal-note').getByRole('textbox', { name: '我的复习笔记', exact: true }) with timeout 10000ms
+      - waiting for getByLabel('题目内容').locator('.personal-note').getByRole('textbox', { name: '我的复习笔记', exact: true })
+        23 × locator resolved to 0 elements
+           - unexpected value "0"
+
+
+      85 |         )
+      86 |         .toBe('function')
+    > 87 |       await expect(editor).toHaveCount(1)
+         |                            ^
+      88 |       await expect(editor).toHaveAttribute('readonly', '')
+      89 |       await application.evaluate(() => Reflect.get(globalThis, '__releaseFavoriteList')())
+      90 |       await expect(editor).toHaveCount(0)
+        at E:\My_Projects\embedded-practice\tests\e2e\note-favorite.spec.ts:87:28
+
+    attachment #2: favorite-note-readonly.png (image/png) ──────────────────────────────────────────
+    test-results\note-favorite-development-01\note-favorite-题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入-development\attachments\favorite-note-readonly-png-c03d583e5f025a18cb3e8d62fbb50ffd5fb766fc.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\note-favorite-development-01\note-favorite-题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入-development\error-context.md
+
+  2 failed
+    [development] › tests\e2e\note-favorite.spec.ts:30:7 › 学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入 ──
+    [development] › tests\e2e\note-favorite.spec.ts:30:7 › 题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入 ────
+  3 passed (30.9s)

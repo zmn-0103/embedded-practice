@@ -66,7 +66,7 @@ function exportedRecords(path: string) {
     expect(db.prepare('PRAGMA integrity_check').all()).toEqual([{ integrity_check: 'ok' }])
     expect(db.prepare('PRAGMA foreign_key_check').all()).toEqual([])
     expect(db.prepare('PRAGMA application_id').get()).toEqual({ application_id: 0x45505231 })
-    expect(db.prepare('PRAGMA user_version').get()).toEqual({ user_version: 10 })
+    expect(db.prepare('PRAGMA user_version').get()).toEqual({ user_version: 13 })
     return records(db)
   } finally {
     db.close()
@@ -258,7 +258,7 @@ test('完整备份导出覆盖版本图片历史草稿收藏固定随机队列�
       try {
         expect(db.prepare('SELECT * FROM backup_manifest').get()).toMatchObject({
           format_version: 1,
-          schema_version: 10,
+          schema_version: 13,
           created_at: expect.stringMatching(/^2026-/),
           app_version: appVersion,
         })
@@ -340,7 +340,7 @@ test('备份取消与预览取消保留原状态，空库可导出并预览', as
         images: 0,
         sessions: 0,
         activeSession: false,
-        schemaVersion: 10,
+        schemaVersion: 13,
         requiresMigration: false,
       })
       await select(application, 'preview', file.filePath)

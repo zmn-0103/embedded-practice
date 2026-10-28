@@ -100,6 +100,15 @@ for (const [palette, mode, size] of [
     const expected = {
       ...before,
       installed_themes: [],
+      question_sets: [],
+      question_set_items: [],
+      personal_notes: [],
+      practice_sessions: before.practice_sessions!.map((row) => ({
+        ...row,
+        repeat_source_id: null,
+        repeat_selection: null,
+        selection_name: null,
+      })),
       appearance_settings: before['appearance_settings']!.map((row) => ({
         ...row,
         theme_id: `builtin.${palette}`,
@@ -117,7 +126,7 @@ for (const [palette, mode, size] of [
         withHistoryDatabase(testDataDirectory, (database) =>
           database.prepare('PRAGMA user_version').get(),
         ),
-      ).toEqual({ user_version: 10 })
+      ).toEqual({ user_version: 13 })
       await page.getByRole('button', { name: '继续练习', exact: true }).click()
       await expect(page.getByRole('textbox', { name: '我的答案', exact: true })).toHaveValue(
         '结构9草稿\n    retained9();',

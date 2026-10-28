@@ -416,7 +416,7 @@ test('M1 v2 升级前一致性备份并保留题库、图片、收藏和旧自�
     expect(backup.prepare('SELECT launch_count FROM app_startup').get()).toMatchObject({
       launch_count: 7,
     })
-    expect(current.prepare('PRAGMA user_version').get()).toMatchObject({ user_version: 10 })
+    expect(current.prepare('PRAGMA user_version').get()).toMatchObject({ user_version: 13 })
     expect(current.prepare('SELECT * FROM question_user_state').get()).toMatchObject({
       favorite: 1,
       last_rating: '掌握',

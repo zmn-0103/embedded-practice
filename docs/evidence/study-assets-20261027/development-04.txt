@@ -1,0 +1,49 @@
+
+Running 3 tests using 1 worker
+
+(node:18960) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [development] › tests\e2e\study-material.spec.ts:16:5 › 题单主动选择三类材料，正文/代码/图片可离开来源使用，默认不含个人内容或答案 (32.5s)
+(node:11308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [development] › tests\e2e\study-material.spec.ts:103:5 › 轮次材料固定旧版本/本轮作答，题单采用新版本且不套旧作答；归档/坏资源/取消不覆盖文件 (2.0s)
+  ok 3 [development] › tests\e2e\study-material.spec.ts:189:5 › 活动轮/超500题整批拒绝；应用数据和非Markdown目标不写入 (1.4s)
+
+
+  1) [development] › tests\e2e\study-material.spec.ts:16:5 › 题单主动选择三类材料，正文/代码/图片可离开来源使用，默认不含个人内容或答案 
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.selectOption: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('勾选组卷与固定题单', { exact: true }).getByLabel('选用固定题单', { exact: true })
+        - locator resolved to <select aria-label="选用固定题单">…</select>
+      - attempting select option action
+        2 × waiting for element to be visible and enabled
+          - did not find some options
+        - retrying select option action
+        - waiting 20ms
+        2 × waiting for element to be visible and enabled
+          - did not find some options
+        - retrying select option action
+          - waiting 100ms
+        59 × waiting for element to be visible and enabled
+           - did not find some options
+         - retrying select option action
+           - waiting 500ms
+
+
+      57 |     await page.locator('.question-selection-panel > summary').click()
+      58 |     const panel = page.getByLabel('勾选组卷与固定题单', { exact: true })
+    > 59 |     await panel.getByLabel('选用固定题单', { exact: true }).selectOption(setId)
+         |                                                       ^
+      60 |     const exporter = panel.locator('.material-export')
+      61 |     await exporter.locator('summary').click()
+      62 |     await expect(exporter.getByLabel('复习材料包含内容')).toHaveValue('questions')
+        at E:\My_Projects\embedded-practice\tests\e2e\study-material.spec.ts:59:55
+
+    Error Context: docs\evidence\study-assets-20261027\development-04\study-material-题单主动选择三类材料，正文-代码-图片可离开来源使用，默认不含个人内容或答案-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\study-material.spec.ts:16:5 › 题单主动选择三类材料，正文/代码/图片可离开来源使用，默认不含个人内容或答案 ─
+  2 passed (36.7s)

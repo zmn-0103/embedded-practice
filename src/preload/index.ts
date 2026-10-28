@@ -1,6 +1,26 @@
 import { contextBridge, ipcRenderer, type IpcRendererEvent } from 'electron'
 import { CATEGORY_CHANNEL } from '../shared/contracts/categories'
 import {
+  CONTENT_UPDATE_CHANNELS,
+  contentVersionsResultSchema,
+  contentComparisonResultSchema,
+} from '../shared/contracts/content-updates'
+import {
+  STUDY_CHANNELS,
+  readNoteResultSchema,
+  saveNoteResultSchema,
+  roundListResultSchema,
+  roundPageResultSchema,
+  roundEntryResultSchema,
+  exportMaterialResultSchema,
+} from '../shared/contracts/study'
+import {
+  QUESTION_SET_CHANNELS,
+  questionSetListResultSchema,
+  questionSetPreviewResultSchema,
+  questionSetChangeResultSchema,
+} from '../shared/contracts/question-sets'
+import {
   PRACTICE_PLAN_CHANNELS,
   practicePlansResultSchema,
   practicePlanChangeResultSchema,
@@ -27,6 +47,7 @@ import {
   practiceDraftResultSchema,
   practiceEmptyResultSchema,
   practiceReadResultSchema,
+  practiceOutlineResultSchema,
 } from '../shared/contracts/practice-desktop'
 import {
   HISTORY_CHANNELS,
@@ -83,12 +104,50 @@ const desktopApi: DesktopApi = {
     setFavorite: async (setting) =>
       favoriteResultSchema.parse(await ipcRenderer.invoke(LIBRARY_CHANNELS.setFavorite, setting)),
   },
+  contentUpdates: {
+    versions: async (input) =>
+      contentVersionsResultSchema.parse(
+        await ipcRenderer.invoke(CONTENT_UPDATE_CHANNELS.versions, input),
+      ),
+    compare: async (input) =>
+      contentComparisonResultSchema.parse(
+        await ipcRenderer.invoke(CONTENT_UPDATE_CHANNELS.compare, input),
+      ),
+  },
   practicePlans: {
     list: async () =>
       practicePlansResultSchema.parse(await ipcRenderer.invoke(PRACTICE_PLAN_CHANNELS.list)),
     change: async (change) =>
       practicePlanChangeResultSchema.parse(
         await ipcRenderer.invoke(PRACTICE_PLAN_CHANNELS.change, change),
+      ),
+  },
+  questionSets: {
+    list: async () =>
+      questionSetListResultSchema.parse(await ipcRenderer.invoke(QUESTION_SET_CHANNELS.list)),
+    preview: async (input) =>
+      questionSetPreviewResultSchema.parse(
+        await ipcRenderer.invoke(QUESTION_SET_CHANNELS.preview, input),
+      ),
+    change: async (input) =>
+      questionSetChangeResultSchema.parse(
+        await ipcRenderer.invoke(QUESTION_SET_CHANNELS.change, input),
+      ),
+  },
+  study: {
+    readNote: async (input) =>
+      readNoteResultSchema.parse(await ipcRenderer.invoke(STUDY_CHANNELS.readNote, input)),
+    saveNote: async (input) =>
+      saveNoteResultSchema.parse(await ipcRenderer.invoke(STUDY_CHANNELS.saveNote, input)),
+    listRounds: async (input) =>
+      roundListResultSchema.parse(await ipcRenderer.invoke(STUDY_CHANNELS.listRounds, input)),
+    readRound: async (input) =>
+      roundPageResultSchema.parse(await ipcRenderer.invoke(STUDY_CHANNELS.readRound, input)),
+    readEntry: async (input) =>
+      roundEntryResultSchema.parse(await ipcRenderer.invoke(STUDY_CHANNELS.readEntry, input)),
+    exportMaterial: async (input) =>
+      exportMaterialResultSchema.parse(
+        await ipcRenderer.invoke(STUDY_CHANNELS.exportMaterial, input),
       ),
   },
   history: {
@@ -131,6 +190,8 @@ const desktopApi: DesktopApi = {
       ),
   },
   practice: {
+    outline: async (input) =>
+      practiceOutlineResultSchema.parse(await ipcRenderer.invoke(PRACTICE_CHANNELS.outline, input)),
     read: async (input) =>
       practiceReadResultSchema.parse(await ipcRenderer.invoke(PRACTICE_CHANNELS.read, input)),
     start: async (input) =>

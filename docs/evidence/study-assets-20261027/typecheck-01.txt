@@ -1,0 +1,11 @@
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+src/main/services/study/export-markdown.ts(79,29): error TS2740: Type 'Processor<Root, undefined, undefined, undefined, undefined>' is missing the following properties from type 'Options[]': pop, push, concat, join, and 28 more.
+src/main/services/study/export-markdown.ts(79,56): error TS2769: No overload matches this call.
+  Overload 1 of 4, '(dataset: Data): Processor<Root, undefined, undefined, undefined, undefined>', gave the following error.
+    Type '"toMarkdownExtensions"' has no properties in common with type 'Data'.
+  Overload 2 of 4, '(key: keyof Data): Settings | Extension[] | (Extension | Extension[])[] | undefined', gave the following error.
+    Argument of type '"toMarkdownExtensions"' is not assignable to parameter of type 'keyof Data'.
+tests/unit/library-ipc.test.ts(85,9): error TS2740: Type '{ listQuestionSets: Mock<() => never[]>; readQuestionSet: Mock<() => never>; previewQuestionSet: Mock<() => { definition: null; items: never[]; }>; changeQuestionSet: Mock<() => void>; ... 20 more ...; readLearningSummary: Mock<...>; }' is missing the following properties from type '{ preview: (filePaths: readonly string[], signal?: AbortSignal | undefined) => Promise<ImportResult<{ token: string; expiresAt: string; summary: { counts: { added: number; updated: number; metadata: number; unchanged: number; archived: number; restored: number; newVersions: number; }; topics: { ...; }[]; }; }>>; ......': writeMaterialBundle, prepareMaterial, listRounds, readRound, and 3 more.

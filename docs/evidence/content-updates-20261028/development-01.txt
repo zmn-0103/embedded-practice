@@ -1,0 +1,9 @@
+
+Running 2 tests using 1 worker
+
+(node:15324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\content-differences.spec.ts:16:5 › 版本元数据20条分页/无答案，分区内容严格同题/旧先新后，查询不改学习状态 (6.0s)
+  ok 2 [development] › tests\e2e\content-differences.spec.ts:85:5 › 差异主动打开才读题干，答案明确查看才读/挂载，改选旧版重新隐藏且只读 (1.8s)
+
+  2 passed (8.4s)

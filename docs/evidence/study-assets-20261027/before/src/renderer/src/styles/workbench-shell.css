@@ -1,0 +1,343 @@
+/* 统一框架与主题解耦，颜色、字体及密度继续来自现有主题令牌。 */
+.app-shell.workbench {
+  --navigation-width: 208px;
+  display: grid;
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: var(--navigation-width) minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  column-gap: 0;
+  background: linear-gradient(
+    90deg,
+    var(--sidebar) 0 var(--navigation-width),
+    var(--background) var(--navigation-width)
+  );
+}
+.workbench .app-header {
+  grid-column: 1;
+  grid-row: 1;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  align-self: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 0;
+  padding: 24px 16px 16px;
+  background: var(--sidebar);
+}
+.workbench .brand-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+.workbench .brand-mark svg {
+  width: 24px;
+  height: 24px;
+}
+.workbench .brand-copy {
+  min-width: 0;
+  max-width: 100%;
+  flex: 1;
+}
+.workbench .brand-copy h1 {
+  font-size: 16px;
+  white-space: normal;
+  text-wrap: balance;
+}
+.workbench .brand-caption {
+  font-size: 13px;
+}
+.workbench .navigation-toggle {
+  margin-left: auto;
+  padding: 2px 10px;
+}
+.workbench .page-navigation {
+  grid-column: 1;
+  grid-row: 2;
+  position: sticky;
+  top: 124px;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  gap: 8px;
+  margin: 0;
+  padding: 8px 12px 24px;
+  background: transparent;
+  border: 0;
+}
+.workbench .page-navigation a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: normal;
+}
+.workbench .page-navigation svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.workbench .page-navigation [aria-current='page'] {
+  color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: none;
+}
+.workbench .page-navigation a:last-of-type {
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.workbench .navigation-practice-note {
+  margin: 8px 0;
+  padding: 0 8px;
+  font-size: 12px;
+}
+.workbench > main {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0 24px 24px;
+}
+.workbench .workspace-heading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  min-height: 64px;
+  margin: 0 0 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.workspace-location,
+.workspace-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.workspace-location {
+  font-size: 13px;
+}
+.workspace-location strong {
+  color: var(--text);
+  padding-left: 12px;
+  border-left: 1px solid var(--line);
+}
+.workspace-tools {
+  margin-left: auto;
+}
+.workspace-tools > button {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+.workbench .quick-appearance {
+  flex-basis: auto;
+  font-size: 14px;
+}
+.workbench .quick-appearance summary {
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+}
+.workbench .quick-appearance-panel {
+  z-index: 60;
+  left: auto;
+  right: 0;
+  width: min(280px, 70vw);
+}
+.workbench footer {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin: 0;
+  padding: 12px 24px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+.workbench button,
+.workbench select,
+.workbench input {
+  border-radius: 8px;
+}
+.workbench
+  :is(.practice-workspace, .library-workspace, .learning-records, .settings-pane, .import-panel) {
+  margin-top: 16px;
+  padding: var(--theme-spacing);
+  border: 1px solid var(--line);
+  border-radius: var(--theme-radius);
+  box-shadow: none;
+}
+.workbench :is(.practice-workspace, .library-workspace, .learning-records, .settings-pane) {
+  overflow-wrap: anywhere;
+}
+.workbench .count-grid {
+  gap: 12px;
+}
+.workbench .count-grid > div {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--theme-radius);
+  background: var(--surface);
+}
+.workbench .service-status {
+  margin-top: 24px;
+}
+.workbench .library-toolbar {
+  gap: 12px;
+}
+.workbench .import-panel {
+  background: var(--surface);
+}
+.workbench .settings-pane > section {
+  padding: 24px 0;
+}
+.workbench .library-filters {
+  gap: 12px;
+}
+.workbench :is(.category-manager, .topic-navigation) input:not([type='checkbox']) {
+  min-width: 0;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.workbench
+  :is(.library-filters, .practice-plans, .category-manager)
+  :is(input:not([type='checkbox']), select) {
+  max-width: 100%;
+}
+.workbench .theme-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.workbench .appearance-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.85fr);
+  gap: 24px;
+}
+.workbench .appearance-preview {
+  position: sticky;
+  top: 24px;
+}
+.workbench .board-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 16px;
+}
+.workbench .board-card {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--theme-radius);
+  background: var(--surface);
+}
+.workbench .board-card h3 {
+  font-size: 1rem;
+}
+.workbench .board-card .board-kind {
+  font-size: 13px;
+}
+.workbench .board-controls,
+.workbench .board-heading {
+  gap: 16px;
+}
+.workbench .board-heading {
+  margin-bottom: 24px;
+}
+.workbench .board-card ul {
+  padding-left: 20px;
+}
+:root[data-navigation-collapsed='true'] .app-shell.workbench {
+  --navigation-width: 72px;
+}
+:root[data-navigation-collapsed='true'] .workbench .navigation-label,
+:root[data-navigation-collapsed='true'] .workbench .brand-copy,
+:root[data-navigation-collapsed='true'] .workbench .navigation-practice-note {
+  display: none;
+}
+:root[data-navigation-collapsed='true'] .workbench .app-header {
+  padding: 16px 8px;
+  flex-direction: column;
+  align-items: center;
+}
+:root[data-navigation-collapsed='true'] .workbench .navigation-toggle {
+  margin: 0 auto;
+}
+:root[data-navigation-collapsed='true'] .workbench .page-navigation {
+  padding: 8px;
+}
+:root[data-navigation-collapsed='true'] .workbench .page-navigation a {
+  justify-content: center;
+  padding: 10px 4px;
+}
+@media (max-width: 1199px) {
+  .app-shell.workbench {
+    --navigation-width: 72px;
+  }
+  .workbench .navigation-label,
+  .workbench .brand-copy,
+  .workbench .navigation-practice-note {
+    display: none;
+  }
+  .workbench .app-header {
+    padding: 16px 8px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .workbench .navigation-toggle {
+    display: none;
+  }
+  .workbench .page-navigation {
+    top: 80px;
+    padding: 8px;
+  }
+  .workbench .page-navigation a {
+    justify-content: center;
+    padding: 10px 4px;
+  }
+  .workbench .appearance-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .workbench .appearance-preview {
+    position: static;
+  }
+}
+@media (max-width: 719px) {
+  .workbench > main {
+    padding: 0 12px 16px;
+  }
+  .workbench .workspace-heading {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .workbench .workspace-location {
+    font-size: 13px;
+  }
+  .workbench .local-indicator {
+    display: none;
+  }
+  .workbench
+    :is(.practice-workspace, .library-workspace, .learning-records, .settings-pane, .import-panel) {
+    padding: 12px;
+  }
+  .workbench footer {
+    padding: 12px;
+  }
+  .workbench .theme-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

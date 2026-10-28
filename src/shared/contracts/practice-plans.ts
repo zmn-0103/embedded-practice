@@ -27,6 +27,11 @@ export const practicePlanSchema = z.strictObject({
 })
 export const practicePlanChangeSchema = z.discriminatedUnion('kind', [
   practicePlanSchema.extend({ kind: z.literal('save'), name: z.string().trim().pipe(nameSchema) }),
+  practicePlanSchema.extend({
+    kind: z.literal('update'),
+    name: z.string().trim().pipe(nameSchema),
+    expected: practicePlanSchema.omit({ planId: true }),
+  }),
   z.strictObject({ kind: z.literal('delete'), planId: z.uuid() }),
 ])
 const errorSchema = z.strictObject({

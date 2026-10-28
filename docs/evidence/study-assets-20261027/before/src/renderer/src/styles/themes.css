@@ -1,0 +1,173 @@
+/* 主题参数只影响外观；业务组件及练习动作栏保持同一 DOM。 */
+.app-header {
+  flex-wrap: wrap;
+  z-index: 45;
+}
+.quick-appearance {
+  position: relative;
+  flex-basis: 100%;
+  font-size: 13px;
+}
+.quick-appearance summary {
+  width: fit-content;
+  cursor: pointer;
+  color: var(--muted);
+}
+.quick-appearance-panel {
+  position: absolute;
+  z-index: 60;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 240px;
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--theme-radius);
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 8px 24px #0002;
+}
+.quick-appearance-panel label {
+  display: grid;
+  gap: 8px;
+}
+.quick-appearance-panel select {
+  width: 100%;
+  min-width: 0;
+}
+.quick-appearance-panel .muted {
+  font-size: 12px;
+}
+.theme-manager {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.theme-manager-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.theme-manager-heading h3 {
+  margin: 0 0 8px;
+}
+.theme-import-preview {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+  padding: var(--theme-spacing);
+  background: var(--background);
+  border: 1px solid var(--line);
+  border-radius: var(--theme-radius);
+}
+.theme-import-preview h4 {
+  margin: 0;
+}
+.installed-theme-actions {
+  padding: 0;
+  list-style: none;
+}
+.installed-theme-actions li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+.theme-remove-confirm {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--error);
+  border-radius: var(--theme-radius);
+}
+.theme-demo {
+  display: grid;
+  gap: 14px;
+}
+.demo-sidebar,
+.demo-aux {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  border-radius: var(--theme-radius);
+  background: var(--sidebar);
+  color: var(--muted);
+  font-size: 12px;
+}
+.demo-sidebar strong {
+  color: var(--accent);
+}
+.demo-body {
+  min-width: 0;
+}
+.demo-input-label {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+}
+.demo-input-label input {
+  width: 100%;
+  min-width: 0;
+  background: var(--surface);
+  color: var(--text);
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--theme-radius);
+  font: inherit;
+}
+.demo-body .preview-action {
+  margin: 14px 0;
+  border-radius: var(--theme-radius);
+}
+.demo-body .demo-error {
+  font-size: 12px;
+  padding: 8px;
+  background: var(--error-soft);
+  color: var(--error);
+  border-radius: var(--theme-radius);
+}
+.appearance-preview pre {
+  background: var(--code-background);
+}
+.theme-swatch[data-theme='light'] {
+  color-scheme: light;
+}
+.theme-swatch[data-theme='dark'] {
+  color-scheme: dark;
+}
+.theme-choice .theme-description {
+  font-size: 12px;
+}
+.theme-manager .appearance-preview {
+  max-width: 720px;
+}
+.practice-context {
+  display: none;
+}
+.settings-pane,
+.practice-workspace,
+.library-workspace,
+.import-panel,
+.learning-records {
+  border-radius: var(--theme-radius);
+}
+
+/* 工作台布局由独立界面样式统一管理，主题仅提供受控变量。 */
+@media (prefers-color-scheme: dark) {
+  .theme-swatch[data-theme='system'] {
+    color-scheme: dark;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .theme-swatch[data-theme='system'] {
+    color-scheme: light;
+  }
+}

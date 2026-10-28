@@ -5,6 +5,8 @@ import {
   practiceErrorCodeSchema,
   practiceIdSchema,
   practiceViewSchema,
+  practiceOutlineSchema,
+  type PracticeOutline,
   type NavigatePractice,
   type PracticeAck,
   type PracticeView,
@@ -17,6 +19,7 @@ import {
 
 export const PRACTICE_CHANNELS = {
   read: 'practice:read',
+  outline: 'practice:outline',
   start: 'practice:start',
   saveDraft: 'practice:save-draft',
   reveal: 'practice:reveal',
@@ -39,6 +42,7 @@ function resultSchema<T extends z.ZodType>(value: T) {
   ])
 }
 export const practiceReadResultSchema = resultSchema(practiceViewSchema.nullable())
+export const practiceOutlineResultSchema = resultSchema(practiceOutlineSchema)
 export const practiceCommandResultSchema = resultSchema(practiceAckSchema)
 export const practiceDraftResultSchema = resultSchema(draftAckSchema)
 export const practiceEmptyResultSchema = resultSchema(z.null())
@@ -49,6 +53,10 @@ export type PracticeDesktopResult<T> =
   { ok: true; value: T } | { ok: false; error: z.infer<typeof errorSchema> }
 export interface PracticeDesktopApi {
   read(input: { sessionId: string | null }): Promise<PracticeDesktopResult<PracticeView | null>>
+  outline(input: {
+    sessionId: string
+    page: number
+  }): Promise<PracticeDesktopResult<PracticeOutline>>
   start(input: StartPractice): Promise<PracticeDesktopResult<PracticeAck>>
   saveDraft(input: SaveDraft): Promise<PracticeDesktopResult<DraftAck>>
   reveal(input: RevealPractice): Promise<PracticeDesktopResult<PracticeAck>>

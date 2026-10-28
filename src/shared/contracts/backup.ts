@@ -16,6 +16,8 @@ export const backupSummarySchema = z.strictObject({
   requiresMigration: z.boolean(),
   categories: count,
   practicePlans: count,
+  questionSets: count.optional(),
+  personalNotes: count.optional(),
   installedThemes: count.max(MAX_INSTALLED_THEMES),
   appearance: appearanceSchema,
   topics: count,

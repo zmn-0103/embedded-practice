@@ -1,0 +1,264 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/study-material.spec.ts",
+      "--project=development",
+      "--output=docs/evidence/study-assets-20261027/development-04",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/study-assets-20261027/development-04",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/docs/evidence/study-assets-20261027/development-04",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\study-assets-20261027\\development-04",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "study-material.spec.ts",
+      "file": "study-material.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "题单主动选择三类材料，正文/代码/图片可离开来源使用，默认不含个人内容或答案",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 32468,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\study-material.spec.ts",
+                        "column": 55,
+                        "line": 59
+                      },
+                      "message": "TimeoutError: locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('勾选组卷与固定题单', { exact: true }).getByLabel('选用固定题单', { exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <select aria-label=\"选用固定题单\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    59 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  57 |     await page.locator('.question-selection-panel > summary').click()\n  58 |     const panel = page.getByLabel('勾选组卷与固定题单', { exact: true })\n> 59 |     await panel.getByLabel('选用固定题单', { exact: true }).selectOption(setId)\n     |                                                       ^\n  60 |     const exporter = panel.locator('.material-export')\n  61 |     await exporter.locator('summary').click()\n  62 |     await expect(exporter.getByLabel('复习材料包含内容')).toHaveValue('questions')\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\study-material.spec.ts:59:55"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T15:31:37.722Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLXNDd3ZtbyIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\docs\\evidence\\study-assets-20261027\\development-04\\study-material-题单主动选择三类材料，正文-代码-图片可离开来源使用，默认不含个人内容或答案-development\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "80ed0c4e5b2a99268150-ec36988c2d1a64137331",
+          "file": "study-material.spec.ts",
+          "line": 16,
+          "column": 5
+        },
+        {
+          "title": "轮次材料固定旧版本/本轮作答，题单采用新版本且不套旧作答；归档/坏资源/取消不覆盖文件",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2041,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T15:32:10.566Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLXhjSmZFTyIsInBhY2thZ2VkIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "80ed0c4e5b2a99268150-2668a429c0b25caaa7b7",
+          "file": "study-material.spec.ts",
+          "line": 103,
+          "column": 5
+        },
+        {
+          "title": "活动轮/超500题整批拒绝；应用数据和非Markdown目标不写入",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1352,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T15:32:12.640Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLW1TQ2k1aSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "80ed0c4e5b2a99268150-7e9a108d6e248d3c6425",
+          "file": "study-material.spec.ts",
+          "line": 189,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T15:31:37.273Z",
+    "duration": 36746.244,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

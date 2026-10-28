@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:25412) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\content-updates-layout.spec.ts:13:7 › 内容差异和更新选题在1440px/100%/22px/松间绿可读可操作 (2.0s)
+  ok 2 [development] › tests\e2e\content-updates-layout.spec.ts:13:7 › 内容差异和更新选题在900px/125%/22px/暖沙金可读可操作 (2.1s)
+  ok 3 [development] › tests\e2e\content-updates-layout.spec.ts:13:7 › 内容差异和更新选题在1200px/150%/22px/Claude 风格可读可操作 (2.0s)
+
+  3 passed (6.9s)

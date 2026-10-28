@@ -1,0 +1,23 @@
+SyntaxError: E:\My_Projects\embedded-practice\tests\e2e\content-updates-window.spec.ts: Missing semicolon. (31:122)
+
+  29 |     const images = question.getByRole('img', { name: '历史图', exact: true })
+  30 |     await expect(images).toHaveCount(2)
+> 31 |     await expect.poll(() => images.evaluateAll(elements => elements.map(element => Reflect.get(element, 'naturalWidth'))))).toEqual([2, 3])
+     |                                                                                                                           ^
+  32 |     const urls = await images.evaluateAll(elements => elements.map(element => element.getAttribute('src')!))
+  33 |     expect(urls.every(url => url.startsWith('practice-image://'))).toBe(true)
+  34 |     const bytes = await page.evaluate(urls => Promise.all(urls.map(async url => Array.from(new Uint8Array(await (await fetch(url)).arrayBuffer())))), urls)
+
+   at content-updates-window.spec.ts:31
+
+  29 |     const images = question.getByRole('img', { name: '历史图', exact: true })
+  30 |     await expect(images).toHaveCount(2)
+> 31 |     await expect.poll(() => images.evaluateAll(elements => elements.map(element => Reflect.get(element, 'naturalWidth'))))).toEqual([2, 3])
+     |                                                                                                                          ^
+  32 |     const urls = await images.evaluateAll(elements => elements.map(element => element.getAttribute('src')!))
+  33 |     expect(urls.every(url => url.startsWith('practice-image://'))).toBe(true)
+  34 |     const bytes = await page.evaluate(urls => Promise.all(urls.map(async url => Array.from(new Uint8Array(await (await fetch(url)).arrayBuffer())))), urls)
+Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+

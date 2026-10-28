@@ -1,0 +1,32 @@
+{
+  "completed": true,
+  "unit": {
+    "files": 42,
+    "passed": 724,
+    "failed": 0
+  },
+  "finalPackaged": {
+    "startTime": "2026-10-28T03:04:54.841Z",
+    "duration": 684598.71,
+    "expected": 342,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "firstFailurePreserved": {
+    "startTime": "2026-10-28T02:50:22.562Z",
+    "duration": 739781.711,
+    "expected": 341,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "filesVerified": 156,
+  "totalBytes": 391746155,
+  "sourceFilesVerified": 301,
+  "previousDeliveryFilesVerified": 158,
+  "originalPlanPrefixBytes": 47802,
+  "archiveSha256": "4581a7c846551db8551b185db2e8cd5a35b2aef9320e884305b57c296bd89b3c",
+  "images": 10,
+  "limitations": "首轮分类来源准备失败原因未知；安装/系统DPI/IME/多屏/硬件/长期和完整人工未验；VMware原跳过保持"
+}

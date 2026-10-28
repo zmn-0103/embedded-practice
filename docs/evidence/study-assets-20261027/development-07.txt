@@ -1,0 +1,26 @@
+
+Running 19 tests using 1 worker
+
+(node:33684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\findability.spec.ts:83:5 › 找题：切页保留筛选、页码、题目、已展开答案与窗口阅读位置 (2.9s)
+  ok  2 [development] › tests\e2e\findability.spec.ts:149:5 › 找题：标签候选跨分页、独立于筛选、限定专题，支持鼠标/键盘/无匹配/清除 (1.9s)
+  ok  3 [development] › tests\e2e\findability.spec.ts:209:5 › 找题：离页前的慢响应不能覆盖返回后已完成的新筛选和选择 (2.0s)
+  ok  4 [development] › tests\e2e\findability.spec.ts:280:5 › 找题：导入元数据使候选缓存失效，归档范围隔离，清除旧题选择 (2.0s)
+  ok  5 [development] › tests\e2e\findability.spec.ts:305:5 › 找题：返回后读取失败保留条件和页码，重试仍查询原范围 (1.8s)
+  ok  6 [development] › tests\e2e\findability.spec.ts:340:5 › 找题：隐藏期间的收藏变化返回时重读，移除不再匹配的详情 (1.9s)
+  ok  7 [development] › tests\e2e\findability.spec.ts:366:5 › 找题：首页快捷条件不替换旧轮，明确开始/无匹配/继续保留原契约 (7.1s)
+  ok  8 [development] › tests\e2e\palette-migration.spec.ts:87:5 › 真实结构6先保护备份再追加配色，全部业务/自定义对象/显示和条件保持 (2.1s)
+  ok  9 [development] › tests\e2e\palette-migration.spec.ts:187:7 › 结构6配色迁移 backup-blocked 停止/回滚，不修补未知结构 (857ms)
+  ok 10 [development] › tests\e2e\palette-migration.spec.ts:187:7 › 结构6配色迁移 column-conflict 停止/回滚，不修补未知结构 (840ms)
+  ok 11 [development] › tests\e2e\palette-migration.spec.ts:187:7 › 结构6配色迁移 foreign-key 停止/回滚，不修补未知结构 (892ms)
+  ok 12 [development] › tests\e2e\palette-migration.spec.ts:187:7 › 结构6配色迁移 notes-table-conflict 停止/回滚，不修补未知结构 (824ms)
+  ok 13 [development] › tests\e2e\personal-notes.spec.ts:14:5 › 个人笔记CAS/幂等/清空修订，重导入和归档不覆盖，学习记录逐行保持 (1.6s)
+  ok 14 [development] › tests\e2e\personal-notes.spec.ts:68:5 › 笔记主动读取，独立作答揭晓前零请求，跨页同步/切题/正常重开保留 (5.3s)
+  ok 15 [development] › tests\e2e\personal-notes.spec.ts:146:5 › 真实笔记写失败阻止切题和正常退出，原输入保留并可按原修订重试 (2.4s)
+  ok 16 [development] › tests\e2e\personal-notes.spec.ts:204:5 › 笔记已提交但响应丢失，原请求重试不增修订或改时间 (2.2s)
+  ok 17 [development] › tests\e2e\study-layout.spec.ts:12:7 › 笔记/作答对照/轮次与导出在1440px/100%/22px/松间绿可读可操作 (2.4s)
+  ok 18 [development] › tests\e2e\study-layout.spec.ts:12:7 › 笔记/作答对照/轮次与导出在900px/125%/22px/暖沙金可读可操作 (2.5s)
+  ok 19 [development] › tests\e2e\study-layout.spec.ts:12:7 › 笔记/作答对照/轮次与导出在1200px/150%/22px/Claude 风格可读可操作 (2.7s)
+
+  19 passed (45.5s)

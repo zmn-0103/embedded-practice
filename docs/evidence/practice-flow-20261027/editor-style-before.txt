@@ -1,0 +1,36 @@
+
+Running 1 test using 1 worker
+
+(node:32916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [packaged] › tests\e2e\practice-flow-plans.spec.ts:123:5 › 方案界面重命名/更新/另存及填入不建轮，联合条件持久化且原活动轮不变 (1.7s)
+
+
+  1) [packaged] › tests\e2e\practice-flow-plans.spec.ts:123:5 › 方案界面重命名/更新/另存及填入不建轮，联合条件持久化且原活动轮不变 ─
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 2
+    + Received  + 2
+
+      Object {
+    -   "background": "rgb(252, 253, 251)",
+    -   "padding": "7px 10px",
+    +   "background": "rgb(255, 255, 255)",
+    +   "padding": "1px 2px",
+        "radius": "8px",
+      }
+
+      158 |         }
+      159 |       }),
+    > 160 |     ).toEqual(inputStyle)
+          |       ^
+      161 |     await panel.getByLabel('新方案名称', { exact: true }).fill('薄弱复习10')
+      162 |     await panel.getByRole('button', { name: '确认更新方案', exact: true }).click()
+      163 |     await expect(panel.getByRole('status')).toHaveText('练习方案已更新，当前练习保持。')
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-flow-plans.spec.ts:160:7
+
+    Error Context: docs\evidence\practice-flow-20261027\editor-style-before\practice-flow-plans-方案界面重命名-更新-另存及填入不建轮，联合条件持久化且原活动轮不变-packaged\error-context.md
+
+  1 failed
+    [packaged] › tests\e2e\practice-flow-plans.spec.ts:123:5 › 方案界面重命名/更新/另存及填入不建轮，联合条件持久化且原活动轮不变 ──

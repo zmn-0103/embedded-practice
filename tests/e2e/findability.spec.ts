@@ -85,6 +85,23 @@ test('找题：切页保留筛选、页码、题目、已展开答案与窗口�
 }, info) => {
   const { application, page } = await prepare(testDataDirectory, info.project.name)
   try {
+    await page.locator('html').evaluate((root) => {
+      const browser = root.ownerDocument.defaultView!
+      const original = browser.scrollTo.bind(browser)
+      const trace: unknown[] = []
+      Reflect.set(globalThis, '__readingTrace', trace)
+      browser.scrollTo = (...args: unknown[]) => {
+        const before = browser.scrollY
+        Reflect.apply(original, browser, args)
+        trace.push({
+          args,
+          before,
+          after: browser.scrollY,
+          height: root.scrollHeight,
+          busy: root.ownerDocument.querySelector('.library-browser')?.getAttribute('aria-busy'),
+        })
+      }
+    })
     await secondPage(page)
     await page.getByRole('button', { name: /A 找题专题.*q-21/ }).click()
     await page.getByRole('button', { name: '展开参考答案', exact: true }).click()
@@ -94,11 +111,24 @@ test('找题：切页保留筛选、页码、题目、已展开答案与窗口�
     await openPage(page, '设置与数据')
     expect(await page.content()).not.toContain('FIND-ANSWER-find-a-21')
     expect(await page.locator('body').ariaSnapshot()).not.toContain('FIND-ANSWER-find-a-21')
+    // 返回时让题目清单晚于首次布局，验证恢复等待实际内容，而非依赖本机读取时序。
+    await application.evaluate(({ ipcMain }) => {
+      const original = Reflect.get(ipcMain, '_invokeHandlers').get('library:list-questions')
+      ipcMain.removeHandler('library:list-questions')
+      ipcMain.handle('library:list-questions', async (event, input) => {
+        await new Promise((resolve) => setTimeout(resolve, 150))
+        return original(event, input)
+      })
+    })
     await openPage(page, '题库')
     await expect(page.getByRole('heading', { name: '保留位置问题 21', exact: true })).toBeVisible()
     await expect(page.getByRole('region', { name: '参考答案', exact: true })).toContainText(
       'FIND-ANSWER-find-a-21',
     )
+    await info.attach('reading-position-diagnostics.json', {
+      body: JSON.stringify(await page.evaluate(() => Reflect.get(globalThis, '__readingTrace'))),
+      contentType: 'application/json',
+    })
     await expect.poll(() => page.evaluate(() => Reflect.get(globalThis, 'scrollY'))).toBe(before)
     await capture(application, info, 'library-reading-restored.png')
     await page.getByRole('button', { name: '返回题目列表', exact: true }).click()

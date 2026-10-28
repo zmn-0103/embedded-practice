@@ -1,0 +1,134 @@
+{
+  "build": "20261028.2-note-favorite-fix",
+  "unit": {
+    "files": 42,
+    "passed": 724
+  },
+  "targeted": {
+    "startTime": "2026-10-28T04:29:04.321Z",
+    "duration": 56789.552,
+    "expected": 27,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "output": [
+    {
+      "path": "out\\main\\backup.js",
+      "bytes": 10638,
+      "sha256": "ba3549e862d9115dd5b54bea75eb3aebe017e76166564cabf99d6178bf6c866b"
+    },
+    {
+      "path": "out\\main\\image-path-DkzouUrA.js",
+      "bytes": 458882,
+      "sha256": "a4a73f30fa5c837f3327db5fa937991a13d5e02aaf45fdf42bf9313e9a62cf88"
+    },
+    {
+      "path": "out\\main\\import-preparation.js",
+      "bytes": 4789,
+      "sha256": "76a9c5e71005d92b20063ee7b7acac64c6ec3af6742c3de0fedf17fa34212062"
+    },
+    {
+      "path": "out\\main\\import-protocol-CjaQDko1.js",
+      "bytes": 6668,
+      "sha256": "e68edce92e63bcdb04de6fab340b0fb33b14e465e34e57ef7bcb288745de6942"
+    },
+    {
+      "path": "out\\main\\import-worker-w1UKyfjU.js",
+      "bytes": 303975,
+      "sha256": "f682653e067a14727c34bf04563f7aed44d45ba057faf6d2e6d960123b1999dd"
+    },
+    {
+      "path": "out\\main\\index.js",
+      "bytes": 55952,
+      "sha256": "64ac11268d31e311ed9de14e474059225f5ca999b019e7e953ab08dd7b96a8df"
+    },
+    {
+      "path": "out\\main\\library-import.js",
+      "bytes": 113688,
+      "sha256": "b07c8606345a71ce03ed3e18b51a800015e61189e819f814cb05a970a6a8261b"
+    },
+    {
+      "path": "out\\main\\practice.js",
+      "bytes": 23004,
+      "sha256": "1d6d3ebcd9538d67a14dcafe106bbd31faa43f0b980d15ca899d30bfbd71f5d1"
+    },
+    {
+      "path": "out\\main\\question-bank-DgNu3Pwr.js",
+      "bytes": 185069,
+      "sha256": "b7f933d0d59e533b528ead424e14653e39e3e6dfb867f02d7c837353aa198b4d"
+    },
+    {
+      "path": "out\\main\\question-selection-BQLrMPVl.js",
+      "bytes": 46255,
+      "sha256": "7ff3adc1e9dce953d954d4407629a3aa27ba37a80dbb9ee2113dbf410e17b2ed"
+    },
+    {
+      "path": "out\\main\\read-file-snapshot-CMVe8RMv.js",
+      "bytes": 2283,
+      "sha256": "1f55cc93d283d9825bb3512b6d5402fbe2b50474d3f7aae8564133605ace5462"
+    },
+    {
+      "path": "out\\main\\restore-files.js",
+      "bytes": 23713,
+      "sha256": "ec56ca2e4b68cd1d4d6511d1787f0ae308de81880309d6ffe5506a8f8c509175"
+    },
+    {
+      "path": "out\\main\\rolldown-runtime-Dbql6lyJ.js",
+      "bytes": 1736,
+      "sha256": "0494dbd5eac31d4e7a2fe7c72fd882986b5f881d3fbca1a83ecaddea02165a84"
+    },
+    {
+      "path": "out\\main\\settings-repository-BH9Gne9E.js",
+      "bytes": 36571,
+      "sha256": "043349b327e341bca7d5ec6b433fdbb7b976097233a4b9254b192cf1ebe4e70f"
+    },
+    {
+      "path": "out\\preload\\index.js",
+      "bytes": 214749,
+      "sha256": "68292b7b6196d6b4a4eabdb414b49d33c1ed47951102af037616c13eadbbfd5f"
+    },
+    {
+      "path": "out\\renderer\\assets\\index-CBqKXBG2.js",
+      "bytes": 2012779,
+      "sha256": "29c0395add6dfe4d131064d6bac9e20e5a98f66b2e3b7a84cd9f2d14d549d19f"
+    },
+    {
+      "path": "out\\renderer\\assets\\index-QrTtFKms.css",
+      "bytes": 75390,
+      "sha256": "e1f7536f498dd6c07bf06edd67e046a76a9ed0541ce07aca0f5e80c4ae4992e5"
+    },
+    {
+      "path": "out\\renderer\\index.html",
+      "bytes": 719,
+      "sha256": "6d8cfa590b54bc28ef3fdaead379d3e1927f33f370fa7ebae06d7955c83deaf4"
+    }
+  ],
+  "archiveSha256": "eaae85a9656abe4964910b30589eceffe636430f3c7c1a35b808c529b699f56f",
+  "sourceFiles": 302,
+  "previousDeliveryFilesUnchanged": 156,
+  "deliveryFiles": 150,
+  "deliveryBytes": 390982902,
+  "images": [
+    {
+      "file": "学习记录-等待时只读.png",
+      "scenario": "学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入",
+      "sha256": "9b4ba6b87901edfeffdc9c4ba8810620f57929c57955186d6a41963959053ba4"
+    },
+    {
+      "file": "学习记录-保存失败保留输入.png",
+      "scenario": "学习记录收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续",
+      "sha256": "94a74931149c4e7d4311b857faa9412c91613034b318b822860299bca31a87c6"
+    },
+    {
+      "file": "题库-等待时只读.png",
+      "scenario": "题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入",
+      "sha256": "ffd8bc76653ba5c3ccdd3c33ff810283ec7a0a20d41de0bda07384b53e12d8e4"
+    },
+    {
+      "file": "题库-保存失败保留输入.png",
+      "scenario": "题库收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续",
+      "sha256": "14b085ca85d89876763fe8474f405c8342e043850058ecf7e42e53407a8e6a86"
+    }
+  ]
+}

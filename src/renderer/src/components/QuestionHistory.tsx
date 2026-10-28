@@ -6,6 +6,7 @@ import type {
   HistorySummary,
 } from '../../../shared/contracts/history'
 import { MarkdownContent } from './MarkdownContent'
+import { AnswerComparison } from './AnswerComparison'
 
 interface HistoryProps {
   topicId: string
@@ -54,6 +55,10 @@ function SavedEntry(request: HistoryEntryRequest) {
       </div>
     )
   if (!entry) return <p aria-live="polite">正在读取本次记录…</p>
+  return <HistoryEntryContent entry={entry} />
+}
+
+export function HistoryEntryContent({ entry }: { entry: HistoryEntry }) {
   return (
     <div className="history-entry" aria-label="历史记录详情">
       <section aria-label="历史作答">
@@ -86,6 +91,8 @@ function HistoryRecords({ topicId, questionId, excludeSessionId }: HistoryProps)
   const [attempt, setAttempt] = useState(0)
   const [error, setError] = useState('')
   const [selected, setSelected] = useState<string>()
+  const [pair, setPair] = useState<HistorySummary[]>([])
+  const [comparing, setComparing] = useState(false)
   useEffect(() => {
     let active = true
     setData(undefined)
@@ -118,6 +125,37 @@ function HistoryRecords({ topicId, questionId, excludeSessionId }: HistoryProps)
   return (
     <section aria-label="本题历史" className="history-records">
       {excludeSessionId && <p className="muted">本轮记录不在此处重复展示。</p>}
+      <div className="history-compare-controls">
+        <p>可跨页选择两条记录，确认后对照自己的作答。已选 {pair.length} / 2 条。</p>
+        {pair.map((item) => (
+          <p className="muted" key={`${item.sessionId}/${item.position}`}>
+            {date(item.createdAt)} · 内容版本 {item.versionSequence} · {item.rating ?? '未自评'}
+          </p>
+        ))}
+        <div className="button-row">
+          <button type="button" disabled={pair.length !== 2} onClick={() => setComparing(true)}>
+            对照这两次作答
+          </button>
+          <button
+            type="button"
+            disabled={!pair.length}
+            onClick={() => {
+              setPair([])
+              setComparing(false)
+            }}
+          >
+            清空对照选择
+          </button>
+        </div>
+      </div>
+      {comparing && pair.length === 2 && (
+        <AnswerComparison
+          requests={[
+            { topicId, questionId, sessionId: pair[0]!.sessionId, position: pair[0]!.position },
+            { topicId, questionId, sessionId: pair[1]!.sessionId, position: pair[1]!.position },
+          ]}
+        />
+      )}
       {error ? (
         <div role="alert" className="error-message">
           <p>{error}</p>
@@ -181,6 +219,39 @@ function HistoryRecords({ topicId, questionId, excludeSessionId }: HistoryProps)
                       </div>
                     )}
                   </dl>
+                  <label>
+                    <input
+                      type="checkbox"
+                      aria-label={`选入作答对照：${date(item.createdAt)} 第${item.position + 1}题`}
+                      checked={pair.some(
+                        (value) =>
+                          value.sessionId === item.sessionId && value.position === item.position,
+                      )}
+                      disabled={
+                        pair.length === 2 &&
+                        !pair.some(
+                          (value) =>
+                            value.sessionId === item.sessionId && value.position === item.position,
+                        )
+                      }
+                      onChange={(event) => {
+                        const checked = event.currentTarget.checked
+                        setComparing(false)
+                        setPair((previous) =>
+                          checked
+                            ? previous.length < 2
+                              ? [...previous, item]
+                              : previous
+                            : previous.filter(
+                                (value) =>
+                                  value.sessionId !== item.sessionId ||
+                                  value.position !== item.position,
+                              ),
+                        )
+                      }}
+                    />{' '}
+                    选入作答对照
+                  </label>
                   <button
                     type="button"
                     aria-expanded={expanded}

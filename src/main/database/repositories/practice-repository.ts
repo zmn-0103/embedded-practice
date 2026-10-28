@@ -1,9 +1,12 @@
-import { createHash, randomUUID } from 'node:crypto'
+import { createHash, randomInt, randomUUID } from 'node:crypto'
 import type Database from 'better-sqlite3'
 import {
   draftAckSchema,
   practiceAckSchema,
   practiceViewSchema,
+  repeatPracticeSchema,
+  PRACTICE_OUTLINE_PAGE_SIZE,
+  practiceOutlineSchema,
   type Draft,
   type DraftAck,
   type NavigatePractice,
@@ -12,6 +15,7 @@ import {
   type PracticeError,
   type PracticeView,
   type RatePractice,
+  type RepeatPractice,
   type RevealPractice,
   type SaveDraft,
   type StartPractice,
@@ -27,6 +31,7 @@ import {
   questionSelectionFrom,
   questionSelectionParameters,
   questionSelectionWhere,
+  contentUpdatedSql,
 } from './question-selection'
 
 export class PracticeFault extends Error {
@@ -43,6 +48,9 @@ interface SessionRow {
   topicId: string | null
   filtersJson: string | null
   categoryJson: string
+  repeatSourceId: string | null
+  repeatSelection: RepeatPractice['selection'] | null
+  selectionName: string | null
   status: PracticeAck['status']
   position: number
   revision: number
@@ -73,6 +81,8 @@ export function createPracticeRepository(database: Database.Database) {
   const sessionQuery = database.prepare(`SELECT s.id, s.mode, s.topic_id AS topicId, s.status,
     s.position, s.revision, s.created_at AS createdAt, s.ended_at AS endedAt, s.filters_json AS filtersJson,
     s.category_scope_json AS categoryJson,
+    s.repeat_source_id AS repeatSourceId, s.repeat_selection AS repeatSelection,
+    s.selection_name AS selectionName,
     (SELECT count(*) FROM practice_items i WHERE i.session_id = s.id) AS total
     FROM practice_sessions s WHERE s.id = ?`)
   const activeQuery = database.prepare("SELECT id FROM practice_sessions WHERE status = 'active'")
@@ -95,9 +105,23 @@ export function createPracticeRepository(database: Database.Database) {
   const queueQuery = database.prepare(`${queueSql} ORDER BY ${questionOrderSql} LIMIT @limit`)
   // 先对完整匹配集随机排序再限量；只在首次建轮事务内执行，继续与重试不重抽。
   const randomQueueQuery = database.prepare(`${queueSql} ORDER BY random(), q.id LIMIT @limit`)
+  const selectedQuestionQuery = database.prepare(`SELECT q.id AS questionId,
+    q.current_version_id AS versionId,q.title,t.title AS topicTitle,q.tags_json AS tags,q.difficulty
+    ${questionSelectionFrom}
+    WHERE q.topic_id=? AND q.question_id=? AND q.current_version_id=? AND q.archived=0
+    AND CASE WHEN ?=0 THEN 1 WHEN ${contentUpdatedSql} THEN 1 ELSE 0 END`)
+  const repeatQueueQuery = database.prepare(`SELECT question_id AS questionId,
+    version_id AS versionId, title, topic_title AS topicTitle, tags_json AS tags, difficulty
+    FROM practice_items WHERE session_id = @sessionId AND (
+      @selection = 'all' OR (@selection = 'unknown' AND rating = '不会')
+      OR (@selection = 'weak' AND rating IN ('不会', '不熟'))
+      OR (@selection = 'skipped' AND skipped_at IS NOT NULL AND revealed_at IS NULL)
+      OR (@selection = 'unrated' AND revealed_at IS NOT NULL AND rating IS NULL))
+    ORDER BY CASE WHEN @random = 1 THEN random() ELSE position END, position`)
   const insertSession = database.prepare(`INSERT INTO practice_sessions
-    (id, mode, topic_id, status, position, revision, created_at, filters_json, category_scope_json)
-    VALUES (?, ?, ?, 'active', 0, 0, ?, ?, ?)`)
+    (id, mode, topic_id, status, position, revision, created_at, filters_json, category_scope_json,
+      repeat_source_id, repeat_selection, selection_name)
+    VALUES (?, ?, ?, 'active', 0, 0, ?, ?, ?, ?, ?, ?)`)
   const insertItem = database.prepare(`INSERT INTO practice_items
     (session_id, position, question_id, version_id, title, topic_title, tags_json, difficulty)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`)
@@ -109,7 +133,11 @@ export function createPracticeRepository(database: Database.Database) {
   const rateState =
     database.prepare(`INSERT INTO question_user_state (question_id, last_rating, last_rated_version_id)
     VALUES (?, ?, ?) ON CONFLICT(question_id) DO UPDATE
-    SET last_rating = excluded.last_rating, last_rated_version_id = excluded.last_rated_version_id`)
+    SET last_rating = excluded.last_rating, last_rated_version_id = excluded.last_rated_version_id
+    WHERE question_user_state.last_rated_version_id IS NOT
+      (SELECT current_version_id FROM questions WHERE id = excluded.question_id)
+    OR excluded.last_rated_version_id =
+      (SELECT current_version_id FROM questions WHERE id = excluded.question_id)`)
   const skipItem = database.prepare(`UPDATE practice_items SET skipped_at = COALESCE(skipped_at, ?)
     WHERE session_id = ? AND position = ?`)
   const countsQuery = database.prepare(`SELECT
@@ -129,6 +157,11 @@ export function createPracticeRepository(database: Database.Database) {
   const answerQuery = database.prepare(
     'SELECT answer_markdown AS markdown FROM question_versions WHERE id = ?',
   )
+  const outlineQuery = database.prepare(`SELECT i.position,q.topic_id AS topicId,
+    q.question_id AS questionId,i.title,i.topic_title AS topicTitle,
+    i.revealed_at IS NOT NULL AS revealed,i.rating,i.skipped_at IS NOT NULL AS skipped
+    FROM practice_items i JOIN questions q ON q.id=i.question_id
+    WHERE i.session_id=? ORDER BY i.position LIMIT ${PRACTICE_OUTLINE_PAGE_SIZE} OFFSET ?`)
 
   function session(id: string): SessionRow {
     const row = sessionQuery.get(id) as SessionRow | undefined
@@ -263,6 +296,14 @@ export function createPracticeRepository(database: Database.Database) {
       topicId: row.topicId,
       filters:
         row.filtersJson === null ? null : questionFiltersSchema.parse(JSON.parse(row.filtersJson)),
+      repeat:
+        row.repeatSourceId === null && row.repeatSelection === null
+          ? null
+          : repeatPracticeSchema.parse({
+              sessionId: row.repeatSourceId,
+              selection: row.repeatSelection,
+            }),
+      selectionName: row.selectionName,
       createdAt: row.createdAt,
       endedAt: row.endedAt,
       counts: {
@@ -327,8 +368,34 @@ export function createPracticeRepository(database: Database.Database) {
             },
     })
   })
+  const outlineTransaction = database.transaction((id: string, page: number) => {
+    const row = session(id)
+    if (page > Math.ceil(row.total / PRACTICE_OUTLINE_PAGE_SIZE))
+      throw new PracticeFault('BOUNDARY', '本轮没有这一页题目，请重新读取清单。')
+    const items = outlineQuery.all(id, (page - 1) * PRACTICE_OUTLINE_PAGE_SIZE) as {
+      position: number
+      topicId: string
+      questionId: string
+      title: string
+      topicTitle: string
+      revealed: number
+      rating: string | null
+      skipped: number
+    }[]
+    return practiceOutlineSchema.parse({
+      ...ack(row),
+      page,
+      items: items.map((item) => ({
+        ...item,
+        revealed: Boolean(item.revealed),
+        skipped: Boolean(item.skipped),
+      })),
+    })
+  })
   return {
     read: (id: string | null) => readTransaction.deferred(id),
+    outline: ({ sessionId, page }: { sessionId: string; page: number }) =>
+      outlineTransaction.deferred(sessionId, page),
     start(input: StartPractice): PracticeAck {
       return command('start', input, () => {
         const active = activeQuery.get() as { id: string } | undefined
@@ -340,6 +407,9 @@ export function createPracticeRepository(database: Database.Database) {
         if (input.replace && input.replace.sessionId !== active?.id)
           throw new PracticeFault('SESSION_CONFLICT', '活动练习已变化，请重新读取后决定是否结束。')
         const old = input.replace ? current(input.replace) : undefined
+        const source = input.repeat ? session(input.repeat.sessionId) : undefined
+        if (source?.status === 'active')
+          throw new PracticeFault('SESSION_CONFLICT', '来源轮尚未结束，请先完成或结束该轮。')
         const mode = input.mode ?? 'sequential'
         const filters = questionFiltersSchema.parse(input.filters ?? EMPTY_QUESTION_FILTERS)
         const category = categoryScopeSchema.parse(input.category ?? { kind: 'all' })
@@ -347,27 +417,65 @@ export function createPracticeRepository(database: Database.Database) {
           category.kind === 'category'
             ? (categoryQuery.get(category.categoryId) as { title: string } | undefined)
             : undefined
-        if (category.kind === 'category' && !namedCategory)
+        if (!source && category.kind === 'category' && !namedCategory)
           throw new PracticeFault('NO_QUESTIONS', '分类已移除，请重新选择；原练习已保留。')
         const categorySnapshot = categorySnapshotSchema.parse(
-          category.kind === 'category' ? { ...category, title: namedCategory!.title } : category,
+          source
+            ? JSON.parse(source.categoryJson)
+            : category.kind === 'category'
+              ? { ...category, title: namedCategory!.title }
+              : category,
         )
-        const queue = (mode === 'random' ? randomQueueQuery : queueQuery).all({
-          ...questionSelectionParameters({ ...input, filters, category }),
-          limit: input.count === 'all' ? -1 : input.count,
-        }) as QueueRow[]
+        const queue = (
+          input.selected
+            ? input.selected.items.map((item) => {
+                const found = selectedQuestionQuery.get(
+                  item.topicId,
+                  item.questionId,
+                  item.versionId,
+                  Number(input.selected!.contentUpdatedOnly ?? false),
+                ) as QueueRow | undefined
+                if (!found)
+                  throw new PracticeFault(
+                    'SESSION_CONFLICT',
+                    input.selected!.contentUpdatedOnly
+                      ? '勾选题目的内容、归档或待复习状态已变化，请重新预览更新题；原练习保持。'
+                      : '勾选题目的内容或归档状态已变化，请重新预览；原练习保持。',
+                  )
+                return found
+              })
+            : input.repeat
+              ? repeatQueueQuery.all({ ...input.repeat, random: Number(mode === 'random') })
+              : (mode === 'random' ? randomQueueQuery : queueQuery).all({
+                  ...questionSelectionParameters({ ...input, filters, category }),
+                  limit: input.count === 'all' ? -1 : input.count,
+                })
+        ) as QueueRow[]
+        if (input.selected && mode === 'random')
+          for (let index = queue.length - 1; index > 0; index--) {
+            const target = randomInt(index + 1)
+            ;[queue[index], queue[target]] = [queue[target]!, queue[index]!]
+          }
         if (!queue.length)
-          throw new PracticeFault('NO_QUESTIONS', '没有匹配的活动题目，不创建空练习。')
+          throw new PracticeFault(
+            'NO_QUESTIONS',
+            input.repeat
+              ? '来源轮没有所选状态的题目，未创建新轮。'
+              : '没有匹配的活动题目，不创建空练习。',
+          )
         const now = new Date().toISOString()
         if (old) updateCursor.run(old.position, 'ended', now, old.id)
         const id = randomUUID()
         insertSession.run(
           id,
           mode,
-          input.topicId,
+          source ? source.topicId : input.topicId,
           now,
-          JSON.stringify(filters),
+          source ? source.filtersJson : input.selected ? null : JSON.stringify(filters),
           JSON.stringify(categorySnapshot),
+          input.repeat?.sessionId ?? null,
+          input.repeat?.selection ?? null,
+          input.selected?.sourceName ?? source?.selectionName ?? null,
         )
         queue.forEach((question, position) =>
           insertItem.run(
@@ -438,6 +546,12 @@ export function createPracticeRepository(database: Database.Database) {
       return command('navigate', input, () => {
         const row = current(input.cursor)
         const question = item(row.id, row.position)
+        if (input.direction === 'jump') {
+          if (input.targetPosition === undefined || input.targetPosition >= row.total)
+            throw new PracticeFault('BOUNDARY', '目标题目不在本轮固定队列中。')
+          save(row.id, row.position, input.draft)
+          return move(row, input.targetPosition)
+        }
         if (input.direction === 'previous' && row.position === 0)
           throw new PracticeFault('BOUNDARY', '当前已经是第一题。')
         if (input.direction === 'next' && !question.revealedAt)

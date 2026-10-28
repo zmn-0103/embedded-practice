@@ -65,7 +65,13 @@ export function usePracticePlans(
           return false
         }
         release()
-        setMessage(command.kind === 'save' ? '练习方案已保存。' : '练习方案已删除，练习记录保持。')
+        setMessage(
+          command.kind === 'save'
+            ? '练习方案已保存。'
+            : command.kind === 'update'
+              ? '练习方案已更新，当前练习保持。'
+              : '练习方案已删除，练习记录保持。',
+        )
         return true
       } catch {
         if (mounted.current) setError('方案操作结果尚未确认，请按原操作重试或停止重试后核对列表。')

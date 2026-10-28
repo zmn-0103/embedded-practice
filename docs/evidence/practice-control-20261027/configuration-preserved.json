@@ -1,0 +1,42 @@
+[
+  {
+    "path": "package.json",
+    "method": "exact bytes against second-batch before snapshot",
+    "sha256": "35d9e9fa52130a93ec97a63108409a13b09772d04ae13bc8d75a20576c1d6629"
+  },
+  {
+    "path": "package-lock.json",
+    "method": "exact bytes against second-batch before snapshot",
+    "sha256": "7a5109717d33cff94a7a8f3b30a5a0f282fc05db07279c913c57740bb7d0e45a"
+  },
+  {
+    "path": "electron-builder.yml",
+    "method": "exact bytes against second-batch before snapshot",
+    "sha256": "fbd78d3cd6165705cd1e65d9bdc7d0bfc9316e5b7ce3ca329b2802c1d3ac31df"
+  },
+  {
+    "path": "electron.vite.config.ts",
+    "method": "exact bytes against second-batch before snapshot",
+    "sha256": "593ebf95df0342dd9d5aa5c08148c8f98e8b5635331583192acc0d461718fe15"
+  },
+  {
+    "path": "tsconfig.node.json",
+    "method": "exact bytes against second-batch before snapshot",
+    "sha256": "d1d27b99bea65582471788982fe23c559e3e7ce7572c0a634ff717498b08fe29"
+  },
+  {
+    "path": "tsconfig.web.json",
+    "method": "exact bytes against second-batch before snapshot",
+    "sha256": "71a9f286bafa88047e2790cedd822dfa8024fa36c5c708f7606abd94ae85f8ad"
+  },
+  {
+    "path": "playwright.config.ts",
+    "method": "exact bytes against second-batch before snapshot",
+    "sha256": "9b5b8138c57d8ad41d079d62e120e49d9307f12142be29c72bbd75f49b58728e"
+  },
+  {
+    "path": "vitest.config.ts",
+    "method": "clean against base commit (not in before snapshot)",
+    "sha256": "a8e4b73b2bd6e9dd4914b87475c7ef761956df981e0f19626773310455de7a67"
+  }
+]

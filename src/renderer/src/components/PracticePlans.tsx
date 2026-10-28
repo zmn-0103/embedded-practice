@@ -1,8 +1,9 @@
-import { useId, useState } from 'react'
+import { useId, useRef, useState } from 'react'
 import { matchesCategory, type LibraryNavigation } from '../../../shared/contracts/categories'
 import type { PracticePlan, PracticePlanOptions } from '../../../shared/contracts/practice-plans'
 import { usePracticePlans } from '../usePracticePlans'
 import { difficultyLabel } from './DifficultyBadge'
+import { questionFilterSummary } from './QuestionFilterFields'
 
 // 与 practice_plans 的 name COLLATE NOCASE 一致：只折叠 ASCII，避免预检比数据库更严。
 const foldName = (value: string) => value.replace(/[A-Z]/g, (letter) => letter.toLowerCase())
@@ -30,6 +31,13 @@ export function PracticePlans({
   const [name, setName] = useState('')
   const [selectedId, setSelectedId] = useState('')
   const [deleting, setDeleting] = useState<PracticePlan>()
+  const [editing, setEditing] = useState<{
+    original: PracticePlan
+    options: PracticePlanOptions
+    name: string
+    conditions: boolean
+  }>()
+  const nameInput = useRef<HTMLInputElement>(null)
   const dialogId = useId()
   const selected = model.plans.find((plan) => plan.planId === selectedId)
   const config = selected?.options
@@ -51,8 +59,8 @@ export function PracticePlans({
   return (
     <details className="practice-plans" open>
       <summary>保存的练习方案（{model.plans.length}）</summary>
-      <p className="muted">方案只填入条件，点击开始才建新轮。同名方案不会覆盖。</p>
-      <fieldset disabled={locked || Boolean(deleting)}>
+      <p className="muted">方案只填入条件，点击开始才建新轮。修改方案不会改变当前练习。</p>
+      <fieldset disabled={locked || Boolean(deleting) || Boolean(editing)}>
         <legend>保存当前条件</legend>
         <form
           className="library-filters"
@@ -70,6 +78,7 @@ export function PracticePlans({
           <label>
             方案名称
             <input
+              ref={nameInput}
               type="text"
               aria-label="方案名称"
               maxLength={60}
@@ -149,9 +158,108 @@ export function PracticePlans({
             <button type="button" disabled={!selected} onClick={() => setDeleting(selected)}>
               删除所选方案…
             </button>
+            <button
+              type="button"
+              onClick={() =>
+                setEditing({
+                  original: structuredClone(selected),
+                  options: structuredClone(selected.options),
+                  name: selected.name,
+                  conditions: false,
+                })
+              }
+            >
+              重命名方案…
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                setEditing({
+                  original: structuredClone(selected),
+                  options: structuredClone(options),
+                  name: selected.name,
+                  conditions: true,
+                })
+              }
+            >
+              用当前条件更新方案…
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setName(`${selected.name.slice(0, 57)} 副本`)
+                nameInput.current?.focus()
+              }}
+            >
+              另存当前条件…
+            </button>
           </div>
         )}
       </fieldset>
+      {editing && (
+        <form
+          className="practice-plan-confirmation"
+          aria-label="编辑练习方案"
+          onSubmit={(event) => {
+            event.preventDefault()
+            if (locked) return
+            model.perform({
+              kind: 'update',
+              planId: editing.original.planId,
+              name: editing.name,
+              options: editing.options,
+              expected: { name: editing.original.name, options: editing.original.options },
+            })
+            setEditing(undefined)
+          }}
+        >
+          <p>
+            {editing.conditions
+              ? `将用当前条件更新“${editing.original.name}”。`
+              : `重命名“${editing.original.name}”，选题条件保持。`}
+          </p>
+          {editing.conditions && (
+            <p className="muted">
+              {questionFilterSummary(editing.options.filters)} ·{' '}
+              {editing.options.mode === 'random' ? '随机' : '顺序'} ·{' '}
+              {editing.options.count === 'all' ? '全部' : editing.options.count}题
+              。分类和专题使用打开此表单时的当前范围。
+            </p>
+          )}
+          <label>
+            新方案名称
+            <input
+              autoFocus
+              type="text"
+              required
+              maxLength={60}
+              value={editing.name}
+              disabled={locked}
+              onChange={(event) => setEditing({ ...editing, name: event.currentTarget.value })}
+            />
+          </label>
+          <div className="button-row">
+            <button type="button" disabled={locked} onClick={() => setEditing(undefined)}>
+              取消编辑方案
+            </button>
+            <button
+              type="submit"
+              className="primary"
+              disabled={
+                locked ||
+                !editing.name.trim() ||
+                model.plans.some(
+                  (plan) =>
+                    plan.planId !== editing.original.planId &&
+                    foldName(plan.name) === foldName(editing.name.trim()),
+                )
+              }
+            >
+              确认更新方案
+            </button>
+          </div>
+        </form>
+      )}
       {deleting && (
         <div role="alertdialog" aria-labelledby={dialogId} className="practice-plan-confirmation">
           <p id={dialogId}>删除方案“{deleting.name}”？题目、当前练习和记录都会保留。</p>
@@ -191,7 +299,8 @@ export function PracticePlans({
       {model.pending && !model.busy && (
         <div>
           <p>
-            待确认：{model.pending.kind === 'save' ? `保存“${model.pending.name}”` : '删除原方案'}
+            待确认：
+            {model.pending.kind === 'delete' ? '删除原方案' : `保存“${model.pending.name}”`}
             。重试保持原条件和目标。
           </p>
           <button

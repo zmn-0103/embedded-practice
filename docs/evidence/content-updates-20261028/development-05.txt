@@ -1,0 +1,42 @@
+
+Running 2 tests using 1 worker
+
+(node:22732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [development] › tests\e2e\updated-practice.spec.ts:7:5 › 更新筛选跨页勾选与固定题单保持，普通项须明确移除，随机仅含确认题并固定版本 (32.5s)
+(node:30392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [development] › tests\e2e\updated-practice.spec.ts:81:5 › 更新复习开始响应丢失后按原请求重试，揭晓已消除待复习也从回执恢复同一轮 (1.6s)
+
+
+  1) [development] › tests\e2e\updated-practice.spec.ts:7:5 › 更新筛选跨页勾选与固定题单保持，普通项须明确移除，随机仅含确认题并固定版本 
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.click: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: '揭晓参考答案', exact: true })
+
+
+      66 |     await expect(page.getByLabel('练习参考答案', { exact: true })).toHaveCount(0)
+      67 |     await expect(page.locator('.practice-reference-column .personal-note')).toHaveCount(0)
+    > 68 |     await page.getByRole('button', { name: '揭晓参考答案', exact: true }).click()
+         |                                                                     ^
+      69 |     await expect(page.getByLabel('练习参考答案', { exact: true })).toBeVisible()
+      70 |     expect(queue()).toEqual(fixed)
+      71 |     expect((await previewSet(page, { setId })).definition).toEqual(original)
+        at E:\My_Projects\embedded-practice\tests\e2e\updated-practice.spec.ts:68:69
+
+    attachment #2: updated-selection-unavailable.png (image/png) ───────────────────────────────────
+    test-results\content-updates-development-05\updated-practice-更新筛选跨页勾选与固定题单保持，普通项须明确移除，随机仅含确认题并固定版本-development\attachments\updated-selection-unavailable-png-47f1a095631856717439904f45663dfb4997632a.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: updated-selection-confirm.png (image/png) ───────────────────────────────────────
+    test-results\content-updates-development-05\updated-practice-更新筛选跨页勾选与固定题单保持，普通项须明确移除，随机仅含确认题并固定版本-development\attachments\updated-selection-confirm-png-aa65c9780a7ddb538cf99187a7554332c6ee3144.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\content-updates-development-05\updated-practice-更新筛选跨页勾选与固定题单保持，普通项须明确移除，随机仅含确认题并固定版本-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\updated-practice.spec.ts:7:5 › 更新筛选跨页勾选与固定题单保持，普通项须明确移除，随机仅含确认题并固定版本 ─
+  1 passed (35.0s)

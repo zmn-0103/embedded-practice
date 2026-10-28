@@ -1,0 +1,128 @@
+{
+  "build": "20261028.1-content-updates",
+  "schemaVersion": 13,
+  "release": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-content-updates-20261028.1",
+  "archive": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-content-updates-20261028.1\\win-unpacked\\resources\\app.asar",
+  "archiveSha256": "4581a7c846551db8551b185db2e8cd5a35b2aef9320e884305b57c296bd89b3c",
+  "exe": {
+    "path": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-content-updates-20261028.1\\win-unpacked\\embedded-practice.exe",
+    "bytes": 234328576,
+    "sha256": "7d8ba9eb9463f69d9b1a0ab06fbe2502ff00b02d5c8aaf7dd03efc2d182860a4"
+  },
+  "metadata": {
+    "name": "embedded-practice",
+    "version": "0.0.2",
+    "private": true,
+    "description": "个人使用的 Windows 离线嵌入式刷题本",
+    "license": "UNLICENSED",
+    "main": "./out/main/index.js",
+    "packageManager": "npm@11.17.0",
+    "engines": {
+      "node": ">=24.19.0 <25"
+    },
+    "dependencies": {
+      "better-sqlite3": "12.11.1"
+    }
+  },
+  "native": {
+    "path": "node_modules/better-sqlite3/build/Release/better_sqlite3.node",
+    "bytes": 1920512,
+    "sha256": "24e2e3ca5a829572239718fbca35b873ba4975655d29c56a93f1880e3775d9b8"
+  },
+  "outputFiles": [
+    {
+      "path": "out\\main\\backup.js",
+      "bytes": 10638,
+      "sha256": "ba3549e862d9115dd5b54bea75eb3aebe017e76166564cabf99d6178bf6c866b"
+    },
+    {
+      "path": "out\\main\\image-path-DkzouUrA.js",
+      "bytes": 458882,
+      "sha256": "a4a73f30fa5c837f3327db5fa937991a13d5e02aaf45fdf42bf9313e9a62cf88"
+    },
+    {
+      "path": "out\\main\\import-preparation.js",
+      "bytes": 4789,
+      "sha256": "76a9c5e71005d92b20063ee7b7acac64c6ec3af6742c3de0fedf17fa34212062"
+    },
+    {
+      "path": "out\\main\\import-protocol-CjaQDko1.js",
+      "bytes": 6668,
+      "sha256": "e68edce92e63bcdb04de6fab340b0fb33b14e465e34e57ef7bcb288745de6942"
+    },
+    {
+      "path": "out\\main\\import-worker-w1UKyfjU.js",
+      "bytes": 303975,
+      "sha256": "f682653e067a14727c34bf04563f7aed44d45ba057faf6d2e6d960123b1999dd"
+    },
+    {
+      "path": "out\\main\\index.js",
+      "bytes": 55952,
+      "sha256": "64ac11268d31e311ed9de14e474059225f5ca999b019e7e953ab08dd7b96a8df"
+    },
+    {
+      "path": "out\\main\\library-import.js",
+      "bytes": 113688,
+      "sha256": "b07c8606345a71ce03ed3e18b51a800015e61189e819f814cb05a970a6a8261b"
+    },
+    {
+      "path": "out\\main\\practice.js",
+      "bytes": 23004,
+      "sha256": "1d6d3ebcd9538d67a14dcafe106bbd31faa43f0b980d15ca899d30bfbd71f5d1"
+    },
+    {
+      "path": "out\\main\\question-bank-DgNu3Pwr.js",
+      "bytes": 185069,
+      "sha256": "b7f933d0d59e533b528ead424e14653e39e3e6dfb867f02d7c837353aa198b4d"
+    },
+    {
+      "path": "out\\main\\question-selection-BQLrMPVl.js",
+      "bytes": 46255,
+      "sha256": "7ff3adc1e9dce953d954d4407629a3aa27ba37a80dbb9ee2113dbf410e17b2ed"
+    },
+    {
+      "path": "out\\main\\read-file-snapshot-CMVe8RMv.js",
+      "bytes": 2283,
+      "sha256": "1f55cc93d283d9825bb3512b6d5402fbe2b50474d3f7aae8564133605ace5462"
+    },
+    {
+      "path": "out\\main\\restore-files.js",
+      "bytes": 23713,
+      "sha256": "ec56ca2e4b68cd1d4d6511d1787f0ae308de81880309d6ffe5506a8f8c509175"
+    },
+    {
+      "path": "out\\main\\rolldown-runtime-Dbql6lyJ.js",
+      "bytes": 1736,
+      "sha256": "0494dbd5eac31d4e7a2fe7c72fd882986b5f881d3fbca1a83ecaddea02165a84"
+    },
+    {
+      "path": "out\\main\\settings-repository-BH9Gne9E.js",
+      "bytes": 36571,
+      "sha256": "043349b327e341bca7d5ec6b433fdbb7b976097233a4b9254b192cf1ebe4e70f"
+    },
+    {
+      "path": "out\\preload\\index.js",
+      "bytes": 214749,
+      "sha256": "68292b7b6196d6b4a4eabdb414b49d33c1ed47951102af037616c13eadbbfd5f"
+    },
+    {
+      "path": "out\\renderer\\assets\\index-CEm5TkLh.js",
+      "bytes": 2012275,
+      "sha256": "b2dd434f167e0875af15d5704ccf07b742904c228214727c558e7239c55a7baf"
+    },
+    {
+      "path": "out\\renderer\\assets\\index-QrTtFKms.css",
+      "bytes": 75390,
+      "sha256": "e1f7536f498dd6c07bf06edd67e046a76a9ed0541ce07aca0f5e80c4ae4992e5"
+    },
+    {
+      "path": "out\\renderer\\index.html",
+      "bytes": 719,
+      "sha256": "e6459270b43ffd50cc34c42f95f732507c5a4d8484a8f157bb51c0ea2e0d71e6"
+    }
+  ],
+  "previousRelease": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-assets-20261027.5-r3",
+  "previousManifestSha256": "48f593fc7aaaa827e3846de6a9171e058489801f2d8ee197dcd9a58f048f4f41",
+  "previousDeliveryFilesUnchanged": 158,
+  "configurationFilesUnchanged": 8
+}

@@ -1,0 +1,9 @@
+
+> embedded-practice@0.0.2 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/study-layout.spec.ts(48,69): error TS18046: 'child' is of type 'unknown'.

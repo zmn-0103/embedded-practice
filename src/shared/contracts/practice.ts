@@ -3,12 +3,17 @@ import { contentBodySchema } from './library-desktop'
 import { bankIdentifierSchema, questionDifficultySchema } from './question-bank'
 import { masteryRatingSchema, questionFiltersSchema } from './question-filters'
 import { categoryScopeSchema, categorySnapshotSchema } from './categories'
+import { selectedPracticeSchema } from './question-sets'
 
 export const MAX_DRAFT_BYTES = 1024 * 1024
 const counter = z.number().int().nonnegative()
 export const practiceIdSchema = z.uuid()
 export const ratingSchema = masteryRatingSchema
 export const practiceModeSchema = z.enum(['sequential', 'random'])
+export const repeatPracticeSchema = z.strictObject({
+  sessionId: practiceIdSchema,
+  selection: z.enum(['unknown', 'weak', 'skipped', 'unrated', 'all']),
+})
 export const draftSchema = z.strictObject({
   revision: counter,
   text: z
@@ -25,15 +30,33 @@ export const cursorSchema = z.strictObject({
   position: counter,
   revision: counter,
 })
-export const startPracticeSchema = z.strictObject({
-  requestId: practiceIdSchema,
-  topicId: bankIdentifierSchema.nullable(),
-  category: categoryScopeSchema.optional(),
-  count: z.union([z.literal(10), z.literal(20), z.literal(50), z.literal('all')]),
-  replace: cursorSchema.nullable(),
-  filters: questionFiltersSchema.optional(),
-  mode: practiceModeSchema.optional(),
-})
+export const startPracticeSchema = z
+  .strictObject({
+    requestId: practiceIdSchema,
+    topicId: bankIdentifierSchema.nullable(),
+    category: categoryScopeSchema.optional(),
+    count: z.union([z.literal(10), z.literal(20), z.literal(50), z.literal('all')]),
+    replace: cursorSchema.nullable(),
+    filters: questionFiltersSchema.optional(),
+    mode: practiceModeSchema.optional(),
+    repeat: repeatPracticeSchema.optional(),
+    selected: selectedPracticeSchema.optional(),
+  })
+  .refine(
+    (input) =>
+      !(input.repeat && input.selected) &&
+      (!(input.repeat || input.selected) ||
+        (input.topicId === null &&
+          input.count === 'all' &&
+          (!input.category || input.category.kind === 'all') &&
+          (!input.filters ||
+            (input.filters.query === '' &&
+              input.filters.tag === null &&
+              input.filters.difficulty === null &&
+              input.filters.mastery === 'all' &&
+              !input.filters.favoritesOnly)))),
+    { message: '再练或勾选组卷不能混用，也不能叠加题库筛选或限量。' },
+  )
 export const readPracticeSchema = z.strictObject({ sessionId: practiceIdSchema.nullable() })
 export const saveDraftSchema = z.strictObject({
   sessionId: practiceIdSchema,
@@ -46,10 +69,23 @@ export const revealPracticeSchema = z.strictObject({
   draft: draftSchema,
 })
 export const ratePracticeSchema = revealPracticeSchema.extend({ rating: ratingSchema.nullable() })
-export const navigatePracticeSchema = revealPracticeSchema.extend({
-  direction: z.enum(['previous', 'next', 'skip']),
-})
+export const navigatePracticeSchema = revealPracticeSchema
+  .extend({
+    direction: z.enum(['previous', 'next', 'skip', 'jump']),
+    targetPosition: counter.optional(),
+  })
+  .refine((input) =>
+    input.direction === 'jump'
+      ? input.targetPosition !== undefined
+      : input.targetPosition === undefined,
+  )
 export const endPracticeSchema = revealPracticeSchema
+
+export const PRACTICE_OUTLINE_PAGE_SIZE = 50
+export const readPracticeOutlineSchema = z.strictObject({
+  sessionId: practiceIdSchema,
+  page: z.number().int().positive(),
+})
 
 export const practiceAckSchema = z
   .strictObject({
@@ -67,12 +103,42 @@ export const draftAckSchema = z.strictObject({
   position: counter,
   draftRevision: counter,
 })
+export const practiceOutlineSchema = practiceAckSchema
+  .safeExtend({
+    page: z.number().int().positive(),
+    items: z
+      .array(
+        z
+          .strictObject({
+            position: counter,
+            topicId: bankIdentifierSchema,
+            questionId: bankIdentifierSchema,
+            title: z.string().min(1),
+            topicTitle: z.string().min(1),
+            revealed: z.boolean(),
+            rating: ratingSchema.nullable(),
+            skipped: z.boolean(),
+          })
+          .refine((item) => item.revealed || item.rating === null),
+      )
+      .max(PRACTICE_OUTLINE_PAGE_SIZE),
+  })
+  .refine(({ page, total, items }) => {
+    const offset = (page - 1) * PRACTICE_OUTLINE_PAGE_SIZE
+    return (
+      offset < total &&
+      items.length === Math.min(PRACTICE_OUTLINE_PAGE_SIZE, total - offset) &&
+      items.every((item, index) => item.position === offset + index)
+    )
+  })
 const summarySchema = practiceAckSchema
   .safeExtend({
     mode: practiceModeSchema,
     topicId: bankIdentifierSchema.nullable(),
     category: categorySnapshotSchema,
     filters: questionFiltersSchema.nullable(),
+    repeat: repeatPracticeSchema.nullable().optional(),
+    selectionName: selectedPracticeSchema.shape.sourceName.nullable().optional(),
     createdAt: z.iso.datetime(),
     endedAt: z.iso.datetime().nullable(),
     counts: z.strictObject({
@@ -144,6 +210,7 @@ export type PracticeResult<T> = { ok: true; value: T } | { ok: false; error: Pra
 export type PracticeCursor = z.infer<typeof cursorSchema>
 export type Draft = z.infer<typeof draftSchema>
 export type StartPractice = z.infer<typeof startPracticeSchema>
+export type RepeatPractice = z.infer<typeof repeatPracticeSchema>
 export type SaveDraft = z.infer<typeof saveDraftSchema>
 export type RevealPractice = z.infer<typeof revealPracticeSchema>
 export type RatePractice = z.infer<typeof ratePracticeSchema>
@@ -151,3 +218,5 @@ export type NavigatePractice = z.infer<typeof navigatePracticeSchema>
 export type PracticeAck = z.infer<typeof practiceAckSchema>
 export type DraftAck = z.infer<typeof draftAckSchema>
 export type PracticeView = z.infer<typeof practiceViewSchema>
+export type PracticeOutline = z.infer<typeof practiceOutlineSchema>
+export { summarySchema as practiceSessionSummarySchema }

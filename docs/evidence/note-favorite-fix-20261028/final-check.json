@@ -1,0 +1,22 @@
+{
+  "completed": true,
+  "sourceFilesVerified": 302,
+  "deliveryFilesVerified": 150,
+  "bytes": 390982902,
+  "assetsVerified": 17,
+  "changedSources": [
+    "src\\renderer\\src\\App.tsx",
+    "src\\renderer\\src\\components\\LibraryBrowser.tsx",
+    "src\\renderer\\src\\components\\PersonalNote.tsx",
+    "tests\\e2e\\board-entry.spec.ts",
+    "tests\\e2e\\note-favorite.spec.ts",
+    "tests\\e2e\\personal-bank.spec.ts",
+    "tests\\e2e\\practice-control-helpers.ts",
+    "tests\\e2e\\practice-flow-helpers.ts",
+    "tests\\e2e\\theme-helpers.ts"
+  ],
+  "unitPassed": 724,
+  "targetedPassed": 27,
+  "fullSuiteRerun": false,
+  "originalReviewFourUnknownFailuresRetained": true
+}

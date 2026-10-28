@@ -1,0 +1,1 @@
+首次来源核对调用Git未显式指定UTF-8，Windows默认GBK解码中文路径报UnicodeDecodeError；未修改源码或旧证据。显式UTF-8后source-final.json通过。

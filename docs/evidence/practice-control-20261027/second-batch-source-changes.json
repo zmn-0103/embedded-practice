@@ -1,0 +1,158 @@
+[
+  {
+    "path": "src/main/database/open-database.ts",
+    "new": false,
+    "bytes": 6247,
+    "sha256": "15ded00def78ee769f1b000640be893cae5dd25ade44fd81149a52ee492396e4"
+  },
+  {
+    "path": "src/main/database/question-set-schema.ts",
+    "new": true,
+    "bytes": 891,
+    "sha256": "6c5275ff88ef545d220626215ba31ef5b1f9ce25e31547316f0c64ebdc21658d"
+  },
+  {
+    "path": "src/main/database/repositories/practice-repository.ts",
+    "new": false,
+    "bytes": 24272,
+    "sha256": "3b4a7a481d3cb74cded4c610efd5c1465c1490ac8d1bdbf16dfed2c57954ce89"
+  },
+  {
+    "path": "src/main/database/repositories/question-set-repository.ts",
+    "new": true,
+    "bytes": 6004,
+    "sha256": "a8b3e28563ac6cbcb6a7b07c83e19d73bfb28ab47d9cdf77667383db7d1bc300"
+  },
+  {
+    "path": "src/main/ipc/library.ts",
+    "new": false,
+    "bytes": 18636,
+    "sha256": "6ed9e65b4a8f7fe1737a2e8f46f88fea34ce3311de7219480f2f3a5c5e60a70a"
+  },
+  {
+    "path": "src/main/ipc/practice.ts",
+    "new": false,
+    "bytes": 6279,
+    "sha256": "657de1de6c13b9de7510e8164ab91c17ef820cb100272f6d0b07b6a85b3badf5"
+  },
+  {
+    "path": "src/main/services/backup/validate-backup.ts",
+    "new": false,
+    "bytes": 12184,
+    "sha256": "6b86c10939717d8d89e17037ef207f00c8822cbfab8115d823670c9cb45eac52"
+  },
+  {
+    "path": "src/main/services/library/library-import.ts",
+    "new": false,
+    "bytes": 3074,
+    "sha256": "5b2009413f3403b5ed085f4b42a0d6fa6371eb8000d90fa8a602c8f34bd0a73e"
+  },
+  {
+    "path": "src/main/services/practice/practice.ts",
+    "new": false,
+    "bytes": 3823,
+    "sha256": "ba6e1e07ed927f556531bc17736f5d5a6927c9a77a467127a5a8e8f66fe2903a"
+  },
+  {
+    "path": "src/preload/index.ts",
+    "new": false,
+    "bytes": 8044,
+    "sha256": "b9421d2600a509ac3c10dcdc211eacf0f4905a1e94a10b4baa7c998971b9a550"
+  },
+  {
+    "path": "src/renderer/src/App.tsx",
+    "new": false,
+    "bytes": 15683,
+    "sha256": "2622b82a51a7f0dc6c6af8f95594436a501329f72fc094a47938d0378524c9b9"
+  },
+  {
+    "path": "src/renderer/src/components/BackupPanel.tsx",
+    "new": false,
+    "bytes": 7095,
+    "sha256": "666c0a068debdde17d16c2ec8fd1cd19829154c56e51c663bb0ac4a5060e95f8"
+  },
+  {
+    "path": "src/renderer/src/components/LibraryBrowser.tsx",
+    "new": false,
+    "bytes": 33089,
+    "sha256": "82b2d98fefe10e874d9bf2f36dc16d7cdefd9cc94399b04da1aee98aa3816fcb"
+  },
+  {
+    "path": "src/renderer/src/components/PracticeOutline.tsx",
+    "new": true,
+    "bytes": 3941,
+    "sha256": "75680c4bced4fd7112cea990b2ba1cfb3627f327b173e2ab42376ee94ff3319a"
+  },
+  {
+    "path": "src/renderer/src/components/PracticePane.tsx",
+    "new": false,
+    "bytes": 15038,
+    "sha256": "7e7dcfbf2a75f4276f89aa8ac34c71004553b929beef9e71a83a72820bb8e45a"
+  },
+  {
+    "path": "src/renderer/src/components/PracticeWorkspace.tsx",
+    "new": false,
+    "bytes": 22862,
+    "sha256": "5bceaaccdb46a4af15ab7c36d3894a8dc3075d40dd18c3862068fc0532ad75e1"
+  },
+  {
+    "path": "src/renderer/src/components/QuestionSets.tsx",
+    "new": true,
+    "bytes": 10904,
+    "sha256": "e4763c72c2561a8d122ab2f24756d32a58d012e47bd8e3a5cb574136ee522c73"
+  },
+  {
+    "path": "src/renderer/src/components/SelectedPractice.tsx",
+    "new": true,
+    "bytes": 6041,
+    "sha256": "c62251a465c5eeccac1a1acae77d4e252ca56d56d6af42970dab9a25a238c871"
+  },
+  {
+    "path": "src/renderer/src/practice-controller.ts",
+    "new": false,
+    "bytes": 9236,
+    "sha256": "3a6836883002da85ef2bee75e341b3dd81b54b8e646901f64e3f41d55b88ca5e"
+  },
+  {
+    "path": "src/renderer/src/styles/workbench-pages.css",
+    "new": false,
+    "bytes": 31393,
+    "sha256": "9ca69c45c2ed2d3c7bb38717a3771b94fd2718137df16fa80e57526be6eb7b29"
+  },
+  {
+    "path": "src/renderer/src/useQuestionSets.ts",
+    "new": true,
+    "bytes": 4136,
+    "sha256": "7ba99a491e041c51b844163b9dea958be16d4efb2c256944c0cf44daa7561acc"
+  },
+  {
+    "path": "src/shared/contracts/application.ts",
+    "new": false,
+    "bytes": 1834,
+    "sha256": "98d8792444eb22d49a70d278f6a18ef0c45fcbd0c8fd135292bcafbb2fbf0a09"
+  },
+  {
+    "path": "src/shared/contracts/backup.ts",
+    "new": false,
+    "bytes": 2898,
+    "sha256": "6acb5be498461aabfd48c4478f56fcbed3af7b9b7ab490b19f5d9f0126021f92"
+  },
+  {
+    "path": "src/shared/contracts/practice-desktop.ts",
+    "new": false,
+    "bytes": 2870,
+    "sha256": "2550b6030a66a5eedec65e3ee24ecccdd6f8efec2ffc4c11c5e8cfe09aaab31e"
+  },
+  {
+    "path": "src/shared/contracts/practice.ts",
+    "new": false,
+    "bytes": 8000,
+    "sha256": "c36b01867802287bcbfea4e9a66f1ef0055176b4da4da14d10d14a492f8d94b0"
+  },
+  {
+    "path": "src/shared/contracts/question-sets.ts",
+    "new": true,
+    "bytes": 3895,
+    "sha256": "7217c0089f270a6ce001adea7a03aa52dc05fa4d5dc5c6b7ba20daa6f6dc0a3b"
+  }
+]
