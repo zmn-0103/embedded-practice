@@ -1,0 +1,21 @@
+
+Running 14 tests using 1 worker
+
+(node:11268) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\oral-timer.spec.ts:15:5 › 切题已成功但坏回包时暂停，原命令重试后保留各题计时和固定队列 (1.8s)
+  ok  2 [development] › tests\e2e\oral-timer.spec.ts:68:7 › 口述计时900宽150%/light/22px可操作，无横向溢出且不遮挡输入/揭晓 (2.6s)
+  ok  3 [development] › tests\e2e\oral-timer.spec.ts:68:7 › 口述计时900宽150%/dark/22px可操作，无横向溢出且不遮挡输入/揭晓 (2.6s)
+  ok  4 [development] › tests\e2e\oral-timer.spec.ts:109:5 › 口述计时默认关闭/单调截止/暂停，到时不揭晓评价/读取旧内容/写学习记录 (2.3s)
+  ok  5 [development] › tests\e2e\oral-timer.spec.ts:191:5 › 计时分题保留和本题时长/重置，保存返回后暂停继续，关闭重开只重置计时 (2.8s)
+  ok  6 [development] › tests\e2e\oral-timer.spec.ts:243:5 › 真实短时间倒数，窗口隐藏/失焦暂停，恢复焦点不自动继续 (4.4s)
+  ok  7 [development] › tests\e2e\oral-timer.spec.ts:278:5 › 保存失败暂停且保留输入/余时，重试保存后明确切题不重置旧题计时 (1.8s)
+  ok  8 [development] › tests\e2e\startup.spec.ts:6:5 › 关闭重开后读回 SQLite 记录 (1.9s)
+  ok  9 [development] › tests\e2e\startup.spec.ts:38:5 › 窗口隔离与生产内容策略生效 (833ms)
+  ok 10 [development] › tests\e2e\workbench-ui3.spec.ts:98:5 › 第三轮分类：真实419题与大量展开分类只有树滚动，搜索固定且第20题定位/列表位置保持 (3.4s)
+  ok 11 [development] › tests\e2e\workbench-ui3.spec.ts:185:5 › 第三轮返回：900px/22px长答案顶部中部末尾均可返回，保存失败保留原输入/队列并可重试 (4.5s)
+  ok 12 [development] › tests\e2e\workbench-ui3.spec.ts:262:5 › 第三轮窄窗：17/22px短题输入保持至少180px，唯一揭晓入口常驻且不提前挂载答案或历史 (1.9s)
+  ok 13 [development] › tests\e2e\workbench-ui3.spec.ts:300:5 › 第三轮列表：短题72至88px、明确专题不重复来源，22px长中文标题完整且点击不移动列表 (2.2s)
+  ok 14 [development] › tests\e2e\workbench-ui3.spec.ts:374:5 › 第三轮板块：真实题库有活动轮时首排不超过450px、两排可见，有题筛选不改归属与固定队列 (4.0s)
+
+  14 passed (37.7s)

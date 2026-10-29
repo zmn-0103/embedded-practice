@@ -1,0 +1,9 @@
+
+Running 2 tests using 1 worker
+
+(node:31216) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\review-todos.spec.ts:145:5 › 真实提交后坏响应原操作重试不重复；独立作答前不读取/展示旧原因，揭晓和练习不会完成待办 (3.2s)
+  ok 2 [development] › tests\e2e\review-todos.spec.ts:214:5 › 旧轮复盘编辑当前复习计划，切题先保存，明确完成不改轮次/版本/自评 (1.7s)
+
+  2 passed (5.5s)

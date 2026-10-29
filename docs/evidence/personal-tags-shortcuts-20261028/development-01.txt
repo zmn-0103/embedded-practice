@@ -1,0 +1,222 @@
+
+Running 10 tests using 1 worker
+
+(node:37892) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\personal-tags-storage.spec.ts:56:7 › 结构13升级14保护原笔记/定义和用户表：none (1.9s)
+  ok  2 [development] › tests\e2e\personal-tags-storage.spec.ts:56:7 › 结构13升级14保护原笔记/定义和用户表：backup-blocked (752ms)
+  ok  3 [development] › tests\e2e\personal-tags-storage.spec.ts:56:7 › 结构13升级14保护原笔记/定义和用户表：collision (754ms)
+  ok  4 [development] › tests\e2e\personal-tags-storage.spec.ts:115:5 › 完整备份恢复个人标签/关联/置顶与最近使用，拒绝损坏元数据和关联且源文件不变 (3.4s)
+  x   5 [development] › tests\e2e\personal-tags.spec.ts:27:5 › 个人标签可创建/改名/跨专题批量添加移除并用于题库和方案 (31.6s)
+(node:36604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 [development] › tests\e2e\personal-tags.spec.ts:87:5 › 个人标签重导入/归档保留，失效成员或真实写失败整批回滚，删除不扩大方案 (1.5s)
+  x   7 [development] › tests\e2e\personal-tags.spec.ts:166:5 › 标签等待真实响应期间先保存笔记并锁定新增输入，刷新移除详情后文字保留 (31.7s)
+(node:23788) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [development] › tests\e2e\shortcut-usage.spec.ts:16:5 › 方案置顶优先和最近成功建轮排序，查看/改名/原请求重试不计使用 (1.2s)
+  x   9 [development] › tests\e2e\shortcut-usage.spec.ts:70:5 › 最近使用写失败与建轮一起回滚并保留原活动轮，题单仅原成员完整开始时计使用 (1.2s)
+(node:37440) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 10 [development] › tests\e2e\shortcut-usage.spec.ts:131:5 › 界面置顶/取消置顶方案与题单，题单载入后仍确认组卷并记录使用 (1.7s)
+
+
+  1) [development] › tests\e2e\personal-tags.spec.ts:27:5 › 个人标签可创建/改名/跨专题批量添加移除并用于题库和方案 ───────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.check: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('.question-selection-row').filter({ has: getByText('组卷题 A 1', { exact: true }) }).getByRole('checkbox')
+        - locator resolved to <input type="checkbox" aria-label="勾选题目：control-a / q-1 组卷题 A 1"/>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+      - retrying click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <section tabindex="-1" aria-label="题库浏览" aria-busy="false" data-records="false" data-reading="false" class="library-workspace">…</section> intercepts pointer events
+      - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        14 × waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <section tabindex="-1" aria-label="题库浏览" aria-busy="false" data-records="false" data-reading="false" class="library-workspace">…</section> intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <section tabindex="-1" aria-label="题库浏览" aria-busy="false" data-records="false" data-reading="false" class="library-workspace">…</section> intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+
+
+      47 |       .filter({ has: page.getByText('组卷题 A 1', { exact: true }) })
+      48 |       .getByRole('checkbox')
+    > 49 |       .check()
+         |        ^
+      50 |     await page
+      51 |       .locator('.question-selection-row')
+      52 |       .filter({ has: page.getByText('组卷题 B 2', { exact: true }) })
+        at E:\My_Projects\embedded-practice\tests\e2e\personal-tags.spec.ts:49:8
+
+    Error Context: output\playwright\personal-tags-development-01\personal-tags-个人标签可创建-改名-跨专题批量添加移除并用于题库和方案-development\error-context.md
+
+  2) [development] › tests\e2e\personal-tags.spec.ts:166:5 › 标签等待真实响应期间先保存笔记并锁定新增输入，刷新移除详情后文字保留 ────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.check: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('.question-selection-row').getByRole('checkbox')
+        - locator resolved to <input type="checkbox" aria-label="勾选题目：control-a / q-1 组卷题 A 1"/>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+      - retrying click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <section tabindex="-1" aria-label="题库浏览" aria-busy="false" data-records="false" data-reading="false" class="library-workspace">…</section> intercepts pointer events
+      - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        14 × waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <section tabindex="-1" aria-label="题库浏览" aria-busy="false" data-records="false" data-reading="false" class="library-workspace">…</section> intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+           - waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <main tabindex="-1" id="main-content">…</main> intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+        - <section tabindex="-1" aria-label="题库浏览" aria-busy="false" data-records="false" data-reading="false" class="library-workspace">…</section> intercepts pointer events
+      - retrying click action
+        - waiting 500ms
+
+
+      193 |     await page.getByRole('button', { name: '筛选题库', exact: true }).click()
+      194 |     await expect(page.locator('.question-row')).toHaveCount(1)
+    > 195 |     await page.locator('.question-selection-row').getByRole('checkbox').check()
+          |                                                                         ^
+      196 |     await panel.getByLabel('操作的个人标签').selectOption(tagId)
+      197 |     const note = await openLibraryNote(page)
+      198 |     const editor = note.getByRole('textbox', { name: '我的复习笔记', exact: true })
+        at E:\My_Projects\embedded-practice\tests\e2e\personal-tags.spec.ts:195:73
+
+    Error Context: output\playwright\personal-tags-development-01\personal-tags-标签等待真实响应期间先保存笔记并锁定新增输入，刷新移除详情后文字保留-development\error-context.md
+
+  3) [development] › tests\e2e\shortcut-usage.spec.ts:70:5 › 最近使用写失败与建轮一起回滚并保留原活动轮，题单仅原成员完整开始时计使用 ──
+
+    Error: expect(received).toMatchObject(expected)
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+        "error": Object {
+    -     "code": "DATABASE_UNAVAILABLE",
+    +     "code": "WRITE_FAILED",
+        },
+        "ok": false,
+      }
+
+      111 |       selected: selection,
+      112 |     }
+    > 113 |     expect(await startFlow(page, request)).toMatchObject({
+          |                                            ^
+      114 |       ok: false,
+      115 |       error: { code: 'DATABASE_UNAVAILABLE' },
+      116 |     })
+        at E:\My_Projects\embedded-practice\tests\e2e\shortcut-usage.spec.ts:113:44
+
+    Error Context: output\playwright\personal-tags-development-01\shortcut-usage-最近使用写失败与建轮一起回滚并保留原活动轮，题单仅原成员完整开始时计使用-development\error-context.md
+
+  3 failed
+    [development] › tests\e2e\personal-tags.spec.ts:27:5 › 个人标签可创建/改名/跨专题批量添加移除并用于题库和方案 ────────────
+    [development] › tests\e2e\personal-tags.spec.ts:166:5 › 标签等待真实响应期间先保存笔记并锁定新增输入，刷新移除详情后文字保留 ─────
+    [development] › tests\e2e\shortcut-usage.spec.ts:70:5 › 最近使用写失败与建轮一起回滚并保留原活动轮，题单仅原成员完整开始时计使用 ───
+  7 passed (1.3m)

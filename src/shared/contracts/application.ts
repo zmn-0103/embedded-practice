@@ -11,6 +11,10 @@ import type { ThemesDesktopApi } from './themes'
 import type { QuestionSetsDesktopApi } from './question-sets'
 import type { StudyDesktopApi } from './study'
 import type { ContentUpdatesDesktopApi } from './content-updates'
+import type { PersonalTagsDesktopApi } from './personal-tags'
+import type { ReviewDesktopApi } from './review-todos'
+import type { KnowledgeDesktopApi } from './knowledge'
+import type { PlanningDesktopApi } from './planning'
 
 export const APP_STATUS_CHANNEL = 'app:get-status'
 
@@ -38,6 +42,10 @@ export type StartupRecord = z.infer<typeof startupRecordSchema>
 export type AppStatusResult = z.infer<typeof appStatusResultSchema>
 
 export interface DesktopApi {
+  readonly planning: PlanningDesktopApi
+  readonly knowledge: KnowledgeDesktopApi
+  readonly reviewTodos: ReviewDesktopApi
+  readonly personalTags: PersonalTagsDesktopApi
   getAppStatus(): Promise<AppStatusResult>
   readonly library: LibraryDesktopApi
   readonly practicePlans: PracticePlansDesktopApi

@@ -1,0 +1,104 @@
+import { dirname, isAbsolute } from 'node:path'
+import { openPracticeDatabase } from '../../database/open-database'
+import { createLibraryRepository } from '../../database/repositories/library-repository'
+import { createLibraryReader } from '../../database/repositories/library-reader'
+import { createFavoriteRepository } from '../../database/repositories/favorite-repository'
+import { createHistoryReader } from '../../database/repositories/history-reader'
+import { createLearningReader } from '../../database/repositories/learning-reader'
+import { createSettingsRepository } from '../../database/repositories/settings-repository'
+import { createCategoryRepository } from '../../database/repositories/category-repository'
+import { createPracticePlanRepository } from '../../database/repositories/practice-plan-repository'
+import { createQuestionSetRepository } from '../../database/repositories/question-set-repository'
+import { createPersonalTagRepository } from '../../database/repositories/personal-tag-repository'
+import { createReviewRepository } from '../../database/repositories/review-repository'
+import { createKnowledgeRepository } from '../../database/repositories/knowledge-repository'
+import { createKnowledgeReader } from '../../database/repositories/knowledge-reader'
+import { createPlanningRepository } from '../../database/repositories/planning-repository'
+import { createPlanningReader } from '../../database/repositories/planning-reader'
+import { createNoteRepository } from '../../database/repositories/note-repository'
+import { createRoundReader } from '../../database/repositories/round-reader'
+import { createContentUpdateReader } from '../../database/repositories/content-update-reader'
+import {
+  createMaterialReader,
+  type MaterialBundle,
+} from '../../database/repositories/material-reader'
+import { writeMaterial } from '../study/write-material'
+import { createThemeRepository } from '../../database/repositories/theme-repository'
+import { createImportPreparationService } from './import-preparation'
+import { createImportSession } from './import-session'
+
+// 主进程内部入口；数据位置由应用选择，窗口不能传入数据库路径。
+export async function openLibraryImportService(
+  databasePath: string,
+  reportError: (error: unknown) => void,
+) {
+  if (!isAbsolute(databasePath)) throw new Error('导入数据库必须使用绝对路径。')
+  const database = await openPracticeDatabase(databasePath)
+  try {
+    const reader = createLibraryReader(database)
+    const favorites = createFavoriteRepository(database)
+    const history = createHistoryReader(database)
+    const learning = createLearningReader(database)
+    const settings = createSettingsRepository(database)
+    const categories = createCategoryRepository(database)
+    const plans = createPracticePlanRepository(database)
+    const questionSets = createQuestionSetRepository(database)
+    const personalTags = createPersonalTagRepository(database)
+    const reviews = createReviewRepository(database)
+    const knowledge = createKnowledgeRepository(database)
+    const knowledgeReader = createKnowledgeReader(database)
+    const planning = createPlanningRepository(database)
+    const planningReader = createPlanningReader(database, planning)
+    const notes = createNoteRepository(database)
+    const rounds = createRoundReader(database)
+    const contentUpdates = createContentUpdateReader(database)
+    const materials = createMaterialReader(database)
+    const themes = createThemeRepository(database)
+    const session = createImportSession(
+      createLibraryRepository(database),
+      createImportPreparationService(reportError),
+      reportError,
+    )
+    let closing: Promise<void> | undefined
+    return {
+      ...reader,
+      ...favorites,
+      ...history,
+      ...learning,
+      ...settings,
+      ...categories,
+      ...plans,
+      ...questionSets,
+      ...personalTags,
+      ...reviews,
+      ...knowledge,
+      ...knowledgeReader,
+      ...planning,
+      ...planningReader,
+      ...notes,
+      ...rounds,
+      ...contentUpdates,
+      ...materials,
+      writeMaterialBundle: (bundle: MaterialBundle, filePath: string, signal: AbortSignal) =>
+        writeMaterial(bundle, filePath, dirname(databasePath), signal, reportError),
+      ...themes,
+      preview: session.preview,
+      commit: session.commit,
+      discard: session.discard,
+      close(): Promise<void> {
+        closing ??= session.close().finally(() => database.close())
+        return closing
+      },
+    }
+  } catch (error) {
+    database.close()
+    throw error
+  }
+}
+
+export type LibraryImportService = Awaited<ReturnType<typeof openLibraryImportService>>
+
+// 保持固定的内部入口，供数据库集成测试加载同一实现，不进入预加载 API。
+export { openPracticeDatabase } from '../../database/open-database'
+export { createLibraryRepository } from '../../database/repositories/library-repository'
+export { createImportSession } from './import-session'

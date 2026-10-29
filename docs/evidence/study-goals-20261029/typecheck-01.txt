@@ -1,0 +1,16 @@
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+src/renderer/src/App.tsx(285,48): error TS2345: Argument of type '(previous: SelectedPracticeIntent | undefined) => { items: { topicId: string; questionId: string; }[]; sourceName: string; sourceSetId?: string | undefined; id: number; }' is not assignable to parameter of type 'SetStateAction<SelectedPracticeIntent | undefined>'.
+  Type '(previous: SelectedPracticeIntent | undefined) => { items: { topicId: string; questionId: string; }[]; sourceName: string; sourceSetId?: string | undefined; id: number; }' is not assignable to type '(prevState: SelectedPracticeIntent | undefined) => SelectedPracticeIntent | undefined'.
+    Call signature return types '{ items: { topicId: string; questionId: string; }[]; sourceName: string; sourceSetId?: string | undefined; id: number; }' and 'SelectedPracticeIntent | undefined' are incompatible.
+      The types of 'sourceSetId' are incompatible between these types.
+        Type 'string | undefined' is not assignable to type 'string'.
+          Type 'undefined' is not assignable to type 'string'.
+src/renderer/src/components/PracticeWorkspace.tsx(633,33): error TS2345: Argument of type '(previous: SelectedPracticeIntent | undefined) => { items: { topicId: string; questionId: string; }[]; sourceName: string; sourceSetId?: string | undefined; id: number; }' is not assignable to parameter of type 'SetStateAction<SelectedPracticeIntent | undefined>'.
+  Type '(previous: SelectedPracticeIntent | undefined) => { items: { topicId: string; questionId: string; }[]; sourceName: string; sourceSetId?: string | undefined; id: number; }' is not assignable to type '(prevState: SelectedPracticeIntent | undefined) => SelectedPracticeIntent | undefined'.
+    Call signature return types '{ items: { topicId: string; questionId: string; }[]; sourceName: string; sourceSetId?: string | undefined; id: number; }' and 'SelectedPracticeIntent | undefined' are incompatible.
+      The types of 'sourceSetId' are incompatible between these types.
+        Type 'string | undefined' is not assignable to type 'string'.
+          Type 'undefined' is not assignable to type 'string'.

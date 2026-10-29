@@ -1,0 +1,21 @@
+
+Running 14 tests using 1 worker
+
+(node:3388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\planning-storage.spec.ts:61:7 › 结构16受保护升级17，原知识/待办/笔记/历史/草稿逐表保持：none (967ms)
+  ok  2 [development] › tests\e2e\planning-storage.spec.ts:61:7 › 结构16受保护升级17，原知识/待办/笔记/历史/草稿逐表保持：backup-blocked (891ms)
+  ok  3 [development] › tests\e2e\planning-storage.spec.ts:61:7 › 结构16受保护升级17，原知识/待办/笔记/历史/草稿逐表保持：second-table-collision (876ms)
+  ok  4 [development] › tests\e2e\planning-storage.spec.ts:122:5 › 完整备份恢复目标/配额/独立活动事实，拒绝日期/计数/重复/事件位置损坏并保留源字节 (5.1s)
+  ok  5 [development] › tests\e2e\planning-ui.spec.ts:18:5 › 每日目标保存失败/坏回包保留原命令，退出受保护，冲突明确放弃后可沿用历史目标 (1.9s)
+  ok  6 [development] › tests\e2e\planning-ui.spec.ts:113:5 › 备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史 (1.9s)
+  ok  7 [development] › tests\e2e\planning-ui.spec.ts:173:5 › 配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目 (1.8s)
+  ok  8 [development] › tests\e2e\planning-ui.spec.ts:231:5 › 日历日期可看活动分页与原轮作答笔记，旧日期零事件有明确说明 (1.8s)
+  ok  9 [development] › tests\e2e\planning-ui.spec.ts:264:5 › 目标/日历/配额在900宽150%暗色可操作且中文混排无横向溢出 (1.9s)
+  ok 10 [development] › tests\e2e\planning.spec.ts:28:5 › 备考目标容量/重名与失效范围更新有边界，日历轮次独立分页不漏轮 (1.4s)
+  ok 11 [development] › tests\e2e\planning.spec.ts:95:5 › 每日目标按成功活动去重，待办重开/同题重复自评/归档不抹事实，旧日期不补造 (1.5s)
+  ok 12 [development] › tests\e2e\planning.spec.ts:182:5 › 活动和实际保存同事务回滚，重复回执只计一次，重复揭晓/暂不评价不计自评 (1.2s)
+  ok 13 [development] › tests\e2e\planning.spec.ts:326:5 › 备考题单去重、CAS与删除失效，当前版本覆盖/归档分开，超500不截断 (1.8s)
+  ok 14 [development] › tests\e2e\planning.spec.ts:428:5 › 配额优先方式/不足/重复与候选只读，确认后固定队列，日历两类分页 (1.4s)
+
+  14 passed (25.4s)

@@ -1,0 +1,18 @@
+
+Running 11 tests using 1 worker
+
+(node:37160) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\personal-tags-storage.spec.ts:56:7 › 结构13升级14保护原笔记/定义和用户表：none (1.8s)
+  ok  2 [development] › tests\e2e\personal-tags-storage.spec.ts:56:7 › 结构13升级14保护原笔记/定义和用户表：backup-blocked (1.0s)
+  ok  3 [development] › tests\e2e\personal-tags-storage.spec.ts:56:7 › 结构13升级14保护原笔记/定义和用户表：collision (1.2s)
+  ok  4 [development] › tests\e2e\personal-tags-storage.spec.ts:115:5 › 完整备份恢复个人标签/关联/置顶与最近使用，拒绝损坏元数据和关联且源文件不变 (5.2s)
+  ok  5 [development] › tests\e2e\personal-tags.spec.ts:27:5 › 个人标签管理在900宽/150%缩放/暗色中可操作且浮层保持在视口内 (1.7s)
+  ok  6 [development] › tests\e2e\personal-tags.spec.ts:74:5 › 个人标签可创建/改名/跨专题批量添加移除并用于题库和方案 (2.5s)
+  ok  7 [development] › tests\e2e\personal-tags.spec.ts:142:5 › 个人标签重导入/归档保留，失效成员或真实写失败整批回滚，删除不扩大方案 (1.7s)
+  ok  8 [development] › tests\e2e\personal-tags.spec.ts:221:5 › 标签等待真实响应期间先保存笔记并锁定新增输入，刷新移除详情后文字保留 (2.6s)
+  ok  9 [development] › tests\e2e\shortcut-usage.spec.ts:16:5 › 方案置顶优先和最近成功建轮排序，查看/改名/原请求重试不计使用 (1.4s)
+  ok 10 [development] › tests\e2e\shortcut-usage.spec.ts:70:5 › 最近使用写失败与建轮一起回滚并保留原活动轮，题单仅原成员完整开始时计使用 (1.4s)
+  ok 11 [development] › tests\e2e\shortcut-usage.spec.ts:131:5 › 界面置顶/取消置顶方案与题单，题单载入后仍确认组卷并记录使用 (2.1s)
+
+  11 passed (23.7s)

@@ -1,0 +1,86 @@
+docs/代码复查记录.md:1924: trailing whitespace.
++- review-todos.ts：Bug轮核对严格身份/修订/状态、真实日历日期、原因长度与有效UTF-16、完成时间一致性、分页和白名单结果；本地日历快捷日期不按UTC截断。维护性轮复用既有身份/PAGE_SIZE，只暴露read/save/list，不提供自动完成或任意查询能力。
+docs/代码复查记录.md:1925: trailing whitespace.
++- review-schema.ts：Bug轮按稳定题目单行关联、状态/完成时间对应、修订安全整数和原因上限约束，索引服务状态/日期查询；不级联删除学习题目。维护性轮仅新增一表一索引，不改已有业务表。
+docs/代码复查记录.md:1926: trailing whitespace.
++- open-database.ts（待办批）：Bug轮空库建立结构15、1～14沿原备份/事务链升级，结构14不重复创建标签；未知同名表/外键失败整批回滚。维护性轮仅增加待办迁移和版本15，旧迁移顺序与拒绝未知结构保持。
+docs/代码复查记录.md:1927: trailing whitespace.
++- review-repository.ts：Bug轮检查稳定身份、单条修订CAS/原内容幂等、未安排不能凭空完成、完成时间保留/重新待复习清除、写后结果在事务内校验；失败整体回滚。列表无正文/答案、到期不含无日期、分页同一读事务且归档保留。维护性轮固定SQL/绑定参数，复用20题分页，只保存当前安排，不引入调度器或历史事件系统。
+docs/代码复查记录.md:1928: trailing whitespace.
++- question-filters.ts（最近练习批）：Bug轮只加可选最近窗口/排序枚举，旧JSON缺字段兼容，不改变旧未练或自评语义。维护性轮共享中文标签供两入口使用，不增加日期语法或配置项。
+docs/代码复查记录.md:1929: trailing whitespace.
++- question-selection.ts（最近练习批）：Bug轮当前版本MAX揭晓时间用julianday比较，兼容ISO表示差异；未练包含在7/30窗口，只有自评无时间的旧数据不猜日期。最久排序区分未练/已记录/时间未知，全部值绑定且缺省保持旧顺序。维护性轮列表/匹配/建轮复用同一谓词与排序，阈值每请求一次捕获。
+docs/代码复查记录.md:1930: trailing whitespace.
++- library-desktop.ts（最近练习批）：Bug轮最近揭晓时间仅允许ISO时间/null，字段可选保持旧响应兼容，不携带旧答案或笔记。维护性轮沿现有题目元数据契约，不增加独立查询通道。
+docs/代码复查记录.md:1931: trailing whitespace.
++- library-reader.ts：Bug轮同一事务的总数/分页使用相同阈值和排序，最近条件/最久排序才返回附加时间字段，默认响应形状保持；题目详情不提前读取个人原因。维护性轮沿既有info转换和查询，不保存冗余最近时间。
+docs/代码复查记录.md:1932: trailing whitespace.
++- practice.ts（最近练习批）：Bug轮明确选题/再练仍拒绝最近窗口和优先排序，兼容缺字段或明确不限值；原来源互斥及题数限制保持。维护性轮只扩展原守卫，不添加新建轮形态。
+docs/代码复查记录.md:1933: trailing whitespace.
++- practice-repository.ts（最近练习批）：Bug轮最久优先先限量再随机，只复用原洗牌且排除再练；固定队列/版本/回执事务保持。方案来源比较按明确字段值归一化新旧缺省条件，避免JSON可选键顺序误判。维护性轮不新增随机选题系统或持久化最近时间副本。
+docs/代码复查记录.md:1934: trailing whitespace.
++- library-import.ts（待办批）：Bug轮待办仓库在原连接/生命周期内组合，初始化失败沿原关闭回收。维护性轮无新连接、文件位置或后台调度服务。
+docs/代码复查记录.md:1935: trailing whitespace.
++- ipc/library.ts（待办批）：Bug轮read/save/list均沿来源、严格参数/输出、恢复暂停/关闭包装；修订冲突转换明确中文错误，三通道同时加入注销表。维护性轮只路由既有服务生命周期，不暴露任意SQL或路径。
+docs/代码复查记录.md:1936: trailing whitespace.
++- application.ts（待办批）：Bug轮仅增加只读reviewTodos类型能力；维护性轮使用type import，不把主进程/文件系统暴露到界面。
+docs/代码复查记录.md:1937: trailing whitespace.
++- preload/index.ts（待办批）：Bug轮仅固定read/save/list通道且强校验响应，未知/坏响应留给界面原操作重试。维护性轮与原桥接相同，无通用invoke或事件监听。
+docs/代码复查记录.md:1938: trailing whitespace.
++- validate-backup.ts（待办批）：Bug轮结构15必须含待办列，逐条校验日期/原因/安全修订/状态完成时间，LEFT JOIN身份拒绝孤儿，显式拒绝被移除约束后的重复记录。维护性轮沿原只读校验，不补写源文件或重置未知安排。
+docs/代码复查记录.md:1939: trailing whitespace.
++- note-saves.tsx（待办批）：Bug轮新增保存守卫与笔记分别登记，hasPending/flush/关闭串行等待两类保存，任何失败保持阻止离开；笔记跨编辑器修订同步只作用原笔记集合。维护性轮复用原协调器，只抽出三方法最小守卫，不重构既有笔记控制器。
+docs/代码复查记录.md:1940: trailing whitespace.
++- review-controller.ts：Bug轮读取前不写、明确编辑/加入后500ms保存、单一在途写锁定编辑、原命令未知重试和过期冲突保留输入；响应身份/修订/内容严格核对，离开flush等待确认，dispose只清计时不盲写。维护性轮独立短控制器复用三方法保存守卫，不把待办伪装成笔记，也不新增全局缓存。
+docs/代码复查记录.md:1941: trailing whitespace.
++- ReviewTodoEditor.tsx：Bug轮仅主动打开后读取，500ms输入/日期、明确加入/完成/重开、原操作重试和放弃本地修改确认均接保存守卫；保存中/冲突/未知结果锁输入，重读不会误称新增已保存。维护性轮复用原details/按钮/日期控件和生命周期清理，不新增富文本或自动完成。
+docs/代码复查记录.md:1942: trailing whitespace.
++- QuestionFilterFields.tsx（最近练习批）：Bug轮两入口使用同一枚举和已选条件摘要，时间未知/随机优先规则明确，新增控件在可展开分组内且遵守原disabled。维护性轮复用原主题和原生select/details，不扩大搜索语法。
+docs/代码复查记录.md:1943: trailing whitespace.
++- ReviewTodos.tsx：Bug轮仅展开后分页读取，刷新/改范围/组卷先等待全部保存，读取期间行编辑只读，关闭面板保留已挂载编辑器防止丢输入；勾选独立跨页/筛选/状态保留，归档明确提示并走原预览。维护性轮复用保存协调、20条分页和500题身份契约，无新练习会话或自动完成路径。
+docs/代码复查记录.md:1944: trailing whitespace.
++- LibraryBrowser.tsx（待办批）：Bug轮新增待办入口复用原组卷回调及返回刷新；详情安排沿收藏/标签变更只读守卫，切题仍先flush所有学习数据。最近时间只在应用新条件时显示，未知旧时间明确标注。维护性轮不改原勾选/队列/来源或默认列表密度，不新建导航页。
+docs/代码复查记录.md:1945: trailing whitespace.
++- PracticePane.tsx（待办批）：Bug轮待办编辑器只在revealed分支挂载，揭晓前既不读取也不显示旧原因；原切题/返回flush因此覆盖待办保存。维护性轮只增加揭晓后入口，不改作答、自评、答案或队列。
+docs/代码复查记录.md:1946: trailing whitespace.
++- RoundDetail.tsx（待办批）：Bug轮复盘编辑当前题目安排，不改旧轮快照；切页原flush覆盖安排，文案明确当前计划与历史分开。维护性轮复用同一编辑器/稳定身份，不增加另一份待办或轮次完成规则。
+docs/代码复查记录.md:1947: trailing whitespace.
++- PracticeWorkspace.tsx（最近练习批）：Bug轮活动轮摘要展示已保存的最近条件和最久优先政策，继续仍固定原队列；不把当前匹配变化用于旧轮。维护性轮共享中文标签，只补有值字段，不改变默认快照展示。
+docs/代码复查记录.md:1948: trailing whitespace.
++- PracticePlans.tsx（最近练习批）：Bug轮所选方案明确显示最近窗口及最久优先/随机限量规则，原匹配数、失效引用和填入确认保持。维护性轮使用共享标签，只在新增条件非默认时补充说明。
+docs/代码复查记录.md:1949: trailing whitespace.
++- workbench-pages.css（待办批）：Bug轮待办入口沿分类浮层有界滚动/宽度，管理工具可换行；行编辑器复用笔记主题、原因纯文本换行，最近控件展开不撑宽。维护性轮仅共享选择器和必要布局，不引入新色板或组件库，实际窄窗待运行验证。
+docs/代码复查记录.md:1950: trailing whitespace.
++- global.css（待办批）：Bug轮日期输入复用原受控主题输入规则，作用域仅review-editor；维护性轮只扩展共享选择器，未改原输入与主题参数。
+docs/代码复查记录.md:1951: trailing whitespace.
++- App.tsx（待办批）：Bug轮仅更新构建标签20261029.1-review-todos以区分结构15，原产品版本、默认数据位置和保存/恢复生命周期保持。维护性轮没有新增顶层导航或调度器。
+docs/代码复查记录.md:1952: trailing whitespace.
++- library-ipc.test.ts（待办批）：Bug轮补齐服务替身并覆盖真实通道包装的参数/来源、冲突转换、暂停恢复和关闭注销；错误日期不进入服务。维护性轮沿原setup/清理和精确返回，不把路由替身测试当数据库验证。
+docs/代码复查记录.md:1953: trailing whitespace.
++- review-controller.test.ts：Bug轮覆盖500ms、空安排显式加入/完成/重开、未知响应原命令重试、冲突保留、并发flush和释放不盲写；不把控制器替身当数据库结果。维护性轮统一小型setup和假时钟，按具体故障核对请求/状态，修正未实际覆盖的测试标题。
+docs/代码复查记录.md:1954: trailing whitespace.
++- review-todos-contract.test.ts：Bug轮验证真实闰日/月底、原因上限/UTF-16、完成状态一致、安全修订和严格字段；本地快捷日期跨年及周末当天、滚动7/30天阈值和再练互斥。维护性轮只对公共契约与参数生成做小型表格断言，数据库排序留给真实Electron集成检查。
+docs/代码复查记录.md:1976: trailing whitespace.
++- study-storage.spec.ts（待办批）：Bug轮同步当前构建/schema15及迁移后的空待办表，逐项保留旧PRAGMA夹具/失败原版本；维护性轮只调整精确标识和完整快照，不改业务步骤、不放宽断言。- startup.spec.ts（待办批）：Bug轮明确新增reviewTodos且子能力精确只含list/read/save，其余桌面白名单、隔离及CSP断言保持；维护性轮沿原精确枚举，不开放通用IPC。
+docs/代码复查记录.md:1977: trailing whitespace.
++- board-entry.spec.ts（待办批）：Bug轮同步当前构建/schema15，键盘Tab顺序加入复习待办并验证Enter展开/读取/收起；后续个人标签和分类焦点断言完整保留。维护性轮只补必要入口，原外观/几何/色彩和只读快照检查保持。
+docs/代码复查记录.md:1978: trailing whitespace.
++- schema-v14.sql：Bug轮由上批真实EXE在全新TEMP建立结构14后只读提取26项定义及3项初始化记录，核对版本14、笔记/标签/置顶列齐全且没有待办表；旧夹具不改。维护性轮按既有夹具格式保留原SQLite定义并另存运行对象/来源/SHA256，不依赖当前迁移生成旧结构。
+docs/代码复查记录.md:1979: trailing whitespace.
++- review-helpers.ts：Bug轮所有待办操作经真实desktop API，展开等待本控件读取结束且可编辑，题目选择使用稳定专题/题号；维护性轮只提取复用的准备与定位，未封装产品行为或吞掉失败。
+docs/代码复查记录.md:1980: trailing whitespace.
++- review-storage.spec.ts：Bug轮使用真实结构14夹具和独立数据库，逐表/备份验证成功及两类升级回滚；真实待办CAS/幂等/完成时间/延期/分页/SQL失败、归档重导入和全量恢复/损坏拒绝。维护性轮复用既有准备/快照/安全临时清理，明确SQL故障与对话框替身，原备份与损坏副本逐字节核对，不改旧夹具或数据。
+docs/代码复查记录.md:1981: trailing whitespace.
++- review-storage.spec.ts（首轮修正）：Bug轮首轮4/5，归档保留断言错误假设未来日期项在第二页；按既定有日期优先/无日期最后顺序，它实际在第一页，改为读取两页后按稳定身份精确核对。维护性轮保留27项、分页、归档和逐表断言，不改产品排序或放宽条件，失败报告原样保留。
+docs/代码复查记录.md:1982: trailing whitespace.
++- review-todos.spec.ts：Bug轮核对真实UI加入/日期/完成/重开/关闭保存、SQL失败阻止离开和退出、提交后响应未知原命令重试、冲突明确放弃、揭晓前无读取/旧原因、跨页状态组卷与归档处理，以及窄窗暗色边界。维护性轮复用公共准备与真实API，仅故障/对话框明确替身；精确按钮名、状态和稳定队列，不用截图代替行为断言。
+docs/代码复查记录.md:1983: trailing whitespace.
++- practice-recency.spec.ts：Bug轮真实公开建轮后构造明确日期夹具，验证7/30天等于边界不入选、时区/最大揭晓、旧版本更新与未知时间、未练排序；三轮随机先限量及队列重开保持、来源方案缺省兼容和两入口UI方案复用。维护性轮固定时刻仅限独立测试主进程，小型SQL只设置时间/旧数据样例，不改产品筛选；窄窗截图另有可操作断言。
+docs/代码复查记录.md:1984: trailing whitespace.
++- practice-recency.spec.ts（定向首轮修正）：Bug轮首轮1/3，导入已创建用户状态行，旧自评夹具应UPDATE而非重复INSERT；题库实际使用非compact筛选，无高级筛选外层，改为操作已存在的最近分组。维护性轮只修正测试准备/真实DOM定位，不更改产品/期望时间口径，原失败单独保留。
+docs/代码复查记录.md:1985: trailing whitespace.
++- practice-recency.spec.ts（定向02修正）：Bug轮时间与固定队列2项通过，UI定位同时命中隐藏的练习工作区和题库最近分组；分别限定真实题库条件group与练习workspace。维护性轮使用有意义的容器而非first/取消严格匹配，原UI断言保持，02失败留存。
+docs/代码复查记录.md:1986: trailing whitespace.
++- practice-recency.spec.ts（定向03修正）：Bug轮详情已正确显示未练信息，但文本定位同时命中select选项，限定题目article后精确检查正文。维护性轮保留严格匹配与显示断言，不使用宽泛选择器或增大等待；03报告保留。
+docs/代码复查记录.md:1987: trailing whitespace.
++- review-todos.spec.ts（补齐复盘/切题）：Bug轮揭晓后修改安排再自评验证先保存且不自动完成；新增旧轮复盘按当前稳定身份安排、切题保存/明确完成，并逐表验证旧轮/版本/自评完全保持。维护性轮复用真实建轮与现有复盘入口，不另造历史模型或放宽隐私断言。

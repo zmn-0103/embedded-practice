@@ -1,0 +1,422 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/planning-ui.spec.ts",
+      "--project=development",
+      "--reporter=list,json",
+      "--output=output/playwright/goals-development-ui-01"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/playwright/goals-development-ui-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/playwright/goals-development-ui-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\output\\playwright\\goals-development-ui-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "planning-ui.spec.ts",
+      "file": "planning-ui.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "每日目标保存失败/坏回包保留原命令，退出受保护，冲突明确放弃后可沿用历史目标",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1912,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T05:27:45.783Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLWhjMGpRZSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "goals-daily-saved.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\goals-development-ui-01\\planning-ui-每日目标保存失败-坏回包保留原命令，退出受保护，冲突明确放弃后可沿用历史目标-development\\attachments\\goals-daily-saved-png-f5676b26bcb7b0fef0de7598413c99c04967a511.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53b549d3b4338b8298e6-72930ca1cff53ae3092c",
+          "file": "planning-ui.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11718,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: '揭晓答案', exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: '揭晓答案', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '揭晓答案', exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: '揭晓答案', exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: '揭晓答案', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '揭晓答案', exact: true })\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts:152:75",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts",
+                      "column": 75,
+                      "line": 152
+                    },
+                    "snippet": "  150 |     await again.getByRole('button', { name: '核对整个目标的题目', exact: true }).click()\n  151 |     await page.getByRole('button', { name: '确认开始组卷（3题）', exact: true }).click()\n> 152 |     await expect(page.getByRole('button', { name: '揭晓答案', exact: true })).toBeVisible()\n      |                                                                           ^\n  153 |     const session = withHistoryDatabase(testDataDirectory, (db) =>\n  154 |       db.prepare(\"SELECT id FROM practice_sessions WHERE status='active'\").get(),\n  155 |     ) as { id: string }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts",
+                        "column": 75,
+                        "line": 152
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: '揭晓答案', exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: '揭晓答案', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '揭晓答案', exact: true })\u001b[22m\n\n\n  150 |     await again.getByRole('button', { name: '核对整个目标的题目', exact: true }).click()\n  151 |     await page.getByRole('button', { name: '确认开始组卷（3题）', exact: true }).click()\n> 152 |     await expect(page.getByRole('button', { name: '揭晓答案', exact: true })).toBeVisible()\n      |                                                                           ^\n  153 |     const session = withHistoryDatabase(testDataDirectory, (db) =>\n  154 |       db.prepare(\"SELECT id FROM practice_sessions WHERE status='active'\").get(),\n  155 |     ) as { id: string }\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts:152:75"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T05:27:47.719Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLUFOUXMwQyIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "goals-exam-progress.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\goals-development-ui-01\\planning-ui-备考目标界面去重范围，进入原确认再建固定队列，取消-删除目标不改历史-development\\attachments\\goals-exam-progress-png-4769ffe4559221690824170448b884bc90d53076.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\goals-development-ui-01\\planning-ui-备考目标界面去重范围，进入原确认再建固定队列，取消-删除目标不改历史-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts",
+                    "column": 75,
+                    "line": 152
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "53b549d3b4338b8298e6-719346c94bccb3365505",
+          "file": "planning-ui.spec.ts",
+          "line": 113,
+          "column": 5
+        },
+        {
+          "title": "配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11722,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: '揭晓答案', exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: '揭晓答案', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '揭晓答案', exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: '揭晓答案', exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: '揭晓答案', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '揭晓答案', exact: true })\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts:215:75",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts",
+                      "column": 75,
+                      "line": 215
+                    },
+                    "snippet": "  213 |     expect(flowQueue(testDataDirectory, started.value.sessionId)).toEqual(original)\n  214 |     await page.getByRole('button', { name: '结束原轮并开始组卷（4题）', exact: true }).click()\n> 215 |     await expect(page.getByRole('button', { name: '揭晓答案', exact: true })).toBeVisible()\n      |                                                                           ^\n  216 |     const sessions = withHistoryDatabase(testDataDirectory, (db) =>\n  217 |       db.prepare('SELECT id,status,selection_name FROM practice_sessions ORDER BY rowid').all(),\n  218 |     ) as { id: string; status: string; selection_name: string }[]"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts",
+                        "column": 75,
+                        "line": 215
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: '揭晓答案', exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: '揭晓答案', exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '揭晓答案', exact: true })\u001b[22m\n\n\n  213 |     expect(flowQueue(testDataDirectory, started.value.sessionId)).toEqual(original)\n  214 |     await page.getByRole('button', { name: '结束原轮并开始组卷（4题）', exact: true }).click()\n> 215 |     await expect(page.getByRole('button', { name: '揭晓答案', exact: true })).toBeVisible()\n      |                                                                           ^\n  216 |     const sessions = withHistoryDatabase(testDataDirectory, (db) =>\n  217 |       db.prepare('SELECT id,status,selection_name FROM practice_sessions ORDER BY rowid').all(),\n  218 |     ) as { id: string; status: string; selection_name: string }[]\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts:215:75"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T05:27:59.855Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLWg1RGV4QyIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "goals-quota-preview.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\goals-development-ui-01\\planning-ui-配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目-development\\attachments\\goals-quota-preview-png-60d978ebd84dff0f611f08dd995d5d30e0eb9f7a.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\goals-development-ui-01\\planning-ui-配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts",
+                    "column": 75,
+                    "line": 215
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "53b549d3b4338b8298e6-fdf84e32ed46cd894493",
+          "file": "planning-ui.spec.ts",
+          "line": 173,
+          "column": 5
+        },
+        {
+          "title": "日历日期可看活动分页与原轮作答笔记，旧日期零事件有明确说明",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1669,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T05:28:12.070Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLU1mUUF4OCIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "goals-calendar-round.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\goals-development-ui-01\\planning-ui-日历日期可看活动分页与原轮作答笔记，旧日期零事件有明确说明-development\\attachments\\goals-calendar-round-png-0cb9a6c6e211b316068f29f013e9640063ce749c.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53b549d3b4338b8298e6-0d9d16f816e211b58f0a",
+          "file": "planning-ui.spec.ts",
+          "line": 231,
+          "column": 5
+        },
+        {
+          "title": "目标/日历/配额在900宽150%暗色可操作且中文混排无横向溢出",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31634,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\theme-helpers.ts",
+                        "column": 56,
+                        "line": 76
+                      },
+                      "message": "TimeoutError: locator.check: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('radio', { name: '暖白与石墨', exact: true })\u001b[22m\n\n\n   at theme-helpers.ts:76\n\n  74 | export async function chooseTheme(page: Page, name: string, mode = 'light', fontSize = 17) {\n  75 |   await openPage(page, '设置与数据')\n> 76 |   await page.getByRole('radio', { name, exact: true }).check()\n     |                                                        ^\n  77 |   await page.getByLabel('显示主题', { exact: true }).selectOption(mode)\n  78 |   await page.getByLabel('正文字号', { exact: true }).selectOption(String(fontSize))\n  79 |   await page.getByRole('button', { name: '保存并应用', exact: true }).click()\n    at chooseTheme (E:\\My_Projects\\embedded-practice\\tests\\e2e\\theme-helpers.ts:76:56)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\planning-ui.spec.ts:269:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T05:28:13.763Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLUQzMTlRZiIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\goals-development-ui-01\\planning-ui-目标-日历-配额在900宽150-暗色可操作且中文混排无横向溢出-development\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "53b549d3b4338b8298e6-512f810e4c9a91d48ff4",
+          "file": "planning-ui.spec.ts",
+          "line": 264,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-29T05:27:45.196Z",
+    "duration": 60232.301999999996,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

@@ -223,7 +223,12 @@ test('方案：分类改名沿原ID，移出/移除不扩大范围，删除默�
     await expect(page.getByText('匹配 0 题', { exact: true })).toBeVisible()
     await expect(panel.getByRole('button', { name: '填入条件', exact: true })).toBeDisabled()
     expect(
-      await changePlan(page, { kind: 'save', ...saved, planId: randomUUID(), name: '失效不保存' }),
+      await changePlan(page, {
+        kind: 'save',
+        options: saved.options,
+        planId: randomUUID(),
+        name: '失效不保存',
+      }),
     ).toMatchObject({ error: { code: 'NOT_FOUND' } })
     await categoryChange(page, { kind: 'delete', categoryId: first })
     await page.reload()
@@ -231,11 +236,11 @@ test('方案：分类改名沿原ID，移出/移除不扩大范围，删除默�
     await panel.getByLabel('选用练习方案', { exact: true }).selectOption(saved.planId)
     await expect(panel).toContainText('分类已移除')
     await expect(panel.getByRole('button', { name: '填入条件', exact: true })).toBeDisabled()
-    expect(await readPlans(page)).toEqual([saved])
+    expect(await readPlans(page)).toEqual([{ ...saved, matchingCount: 0 }])
     await panel.getByRole('button', { name: '删除所选方案…', exact: true }).click()
     await expect(panel.getByRole('button', { name: '取消删除方案', exact: true })).toBeFocused()
     await panel.getByRole('button', { name: '取消删除方案', exact: true }).click()
-    expect(await readPlans(page)).toEqual([saved])
+    expect(await readPlans(page)).toEqual([{ ...saved, matchingCount: 0 }])
     await panel.getByRole('button', { name: '删除所选方案…', exact: true }).click()
     await panel.getByRole('button', { name: '确认删除方案', exact: true }).click()
     await expect(panel.getByRole('status')).toContainText('练习方案已删除')

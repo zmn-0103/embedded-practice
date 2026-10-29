@@ -28,8 +28,11 @@ export const questionSetSchema = z.strictObject({
 })
 export const questionSetSummarySchema = questionSetSchema.omit({ items: true }).extend({
   count: z.number().int().min(1).max(MAX_QUESTION_SET_ITEMS),
+  pinned: z.boolean().optional(),
+  lastUsedAt: z.iso.datetime().nullable().optional(),
 })
 export const questionSetChangeSchema = z.discriminatedUnion('kind', [
+  z.strictObject({ kind: z.literal('pin'), setId: z.uuid(), pinned: z.boolean() }),
   questionSetSchema.extend({ kind: z.literal('save'), name: z.string().trim().pipe(nameSchema) }),
   questionSetSchema.extend({
     kind: z.literal('update'),
@@ -62,6 +65,7 @@ export const questionSetPreviewSchema = z.strictObject({
   items: z.array(previewItemSchema).max(MAX_QUESTION_SET_ITEMS),
 })
 export const selectedPracticeSchema = z.strictObject({
+  sourceSetId: z.uuid().optional(),
   contentUpdatedOnly: z.boolean().optional(),
   sourceName: z
     .string()

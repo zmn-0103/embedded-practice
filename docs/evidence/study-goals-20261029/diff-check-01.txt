@@ -1,0 +1,85 @@
+warning: in the working copy of '计划书.md', CRLF will be replaced by LF the next time Git touches it
+docs/代码复查记录.md:2064: trailing whitespace.
++- planning.ts：Bug轮固定八个IPC能力，日期/目标计数/身份/唯一题单和配额总量边界、CAS修订与分页大小均显式校验，活动仅元数据；维护性轮沿现有Zod严格对象/结果封装，不扩展原练习命令或搜索语法。静态复查，运行另记。
+docs/代码复查记录.md:2065: trailing whitespace.
++- planning-schema.ts：Bug轮四张新表仅新增、练习事件复合外键与事件类型/位置一致性约束、修订与计数边界明确，旧数据不回填；维护性轮索引对应日期及轮次查询，失效题单JSON引用有意保留，不改旧表。
+docs/代码复查记录.md:2066: trailing whitespace.
++- planning.ts（状态核对）：Bug轮将日历轮次状态严格对齐原实践契约finished，避免已完成轮读取失败；维护性轮复用原状态语义，不新增转换状态。
+docs/代码复查记录.md:2067: trailing whitespace.
++- open-database.ts：Bug轮新库与1～16迁移统一结构17，16不重复建知识表，迁移前保护备份/事务/外键检查保持，失败不跳过；维护性轮只追加新迁移分支，不合并改写旧迁移。
+docs/代码复查记录.md:2068: trailing whitespace.
++- activity-writer.ts：Bug轮事件主键由业务回执/修订提供、普通INSERT失败外传使同事务回滚，发生日期一次固定为本地日期，不含正文；维护性轮只抽取四个真实业务写入共用的一条插入，不加自动重试或静默忽略。
+docs/代码复查记录.md:2069: trailing whitespace.
++- practice-repository.ts（活动）：Bug轮首次揭晓和非空自评在原回执事务内记账，重复揭晓不新增事件，失败连同草稿/评分/推进一起回滚，requestId沿原幂等协议；维护性轮复用已有题快照和时间，不改变只读读取、队列或掌握统计口径。
+docs/代码复查记录.md:2070: trailing whitespace.
++- note-repository.ts（活动）：Bug轮只在真实正文变更写入后同事务记笔记活动，同内容/旧回执重试不重复，清空已存笔记仍是真实变更；维护性轮不复制正文到活动表，不新增跨事务请求，时间沿已校验的新记录。
+docs/代码复查记录.md:2071: trailing whitespace.
++- review-repository.ts（活动）：Bug轮仅pending→done事务写事实，编辑已完成原因/回执重试不计，重开后新完成保留独立事件并由目标按题去重，失败原状态回滚；维护性轮完成规则不变，不将练习或阅读自动视为完成。
+docs/代码复查记录.md:2072: trailing whitespace.
++- planning-repository.ts：Bug轮每日/目标/配额CAS与原命令幂等、20目标/名称/失效引用边界、500题整体拒绝与稳定身份去重、专题不足不补题/三种排序/只读预览均核对；维护性轮定义、范围和配额事务各自集中，复用原当前自评与最久未练SQL，只有受控排序片段，不新增方案管理体系。
+docs/代码复查记录.md:2073: trailing whitespace.
++- planning-reader.ts：Bug轮自评/待办按稳定题去重、尝试与揭晓/笔记分开，归档/重开不抹事实；日历两类20条分别分页、旧轮UNION去重，目标当前版本覆盖/自评与失效范围分列；维护性轮全部只读事务与绑定参数，共用原自评口径，不回填旧账本或重复展开多题单。
+docs/代码复查记录.md:2074: trailing whitespace.
++- library-import.ts（目标）：Bug轮目标存取/进度读取使用同一数据库句柄，构造失败仍统一关闭，正常关闭与暂停边界保持；维护性轮沿现有仓储组合，不增加连接或替代导入入口。
+docs/代码复查记录.md:2075: trailing whitespace.
++- application.ts（目标）：Bug轮只声明固定planning命名空间，无任意查询/路径入口；维护性轮沿原只读接口组合。
+docs/代码复查记录.md:2076: trailing whitespace.
++- ipc/library.ts（目标）：Bug轮八条白名单严格参数/回包，共用可信frame、关闭/恢复暂停保护和错误隐私；领域冲突/容量错误可辨，数据库写失败提示保留原操作；维护性轮沿固定handle，不暴露仓储内部辅助函数或SQL。
+docs/代码复查记录.md:2077: trailing whitespace.
++- preload/index.ts（目标）：Bug轮固定方法逐一校验回包，坏确认抛出交控制器保留原命令，没有任意channel/文件能力；维护性轮与既有命名空间同形，不复制校验或加兼容回退。
+docs/代码复查记录.md:2078: trailing whitespace.
++- validate-backup.ts（目标）：Bug轮四表必要列、唯一身份/名称、目标上限、严格日期/修订/配额、事件类型/确定主键与真实题目/轮次位置一致均校验，允许已删题单引用用于提示；维护性轮迭代活动避免一次载入全部正文，沿现有副本校验/拒绝坏备份，不修补来源。
+docs/代码复查记录.md:2079: trailing whitespace.
++- planning-controller.ts：Bug轮草稿/原命令分开，未知或坏确认冻结输入并重试同一命令，领域冲突不覆盖，确认核对类型/身份/范围/修订，退出等待实际写入；维护性轮与原保存协调器同形，显式保存/放弃，不自动重试或吞掉未确认状态。
+docs/代码复查记录.md:2080: trailing whitespace.
++- StudyPlanner.tsx：Bug轮目标明确保存/两步放弃、原修订重试和全局离开保护，自身编辑不被全局dirty锁死，今日去重与活动次数分开并标注旧数据边界；维护性轮复用保存协调器、轻量摘要，读请求卸载忽略，不增加自动目标或倒计时。
+docs/代码复查记录.md:2081: trailing whitespace.
++- StudyGoals.tsx：Bug轮目标名称/题单/截止日显式保存，删除两步确认、冲突保留输入、卸载后不跳转；失效题单标注不算完整范围，超过500题仅按题单进入原确认；维护性轮进度按所选目标加载，复用题单和保存协调器，不增加自动完成或掌握判定。
+docs/代码复查记录.md:2082: trailing whitespace.
++- LearningCalendar.tsx：Bug轮点击真实日期读取独立分页活动/轮次，已结束轮复用RoundDetail，活动轮走继续入口，换日/月/分页先保存保护；维护性轮仅月格与原复盘组合，日期有明确标签和旧记录不完整说明，不将颜色视为学习完成。
+docs/代码复查记录.md:2083: trailing whitespace.
++- QuotaComposer.tsx：Bug轮一套结构显式保存/原命令重试/放弃保护，专题去重/题数边界与缺额预览可见，编辑使预览失效，只有完整预览交稳定身份到原确认；维护性轮不直接建轮或重抽旧轮，保存设置与读取候选分别处理，自身dirty不锁死编辑，卸载清理阻塞。
+docs/代码复查记录.md:2084: trailing whitespace.
++- LearningOverview.tsx（目标）：Bug轮总览原继续练习/快捷筛选保持，新目标区接收原活动轮与保存操作回调；维护性轮只组合独立面板，不改旧统计计算或挤占首屏主要入口。
+docs/代码复查记录.md:2085: trailing whitespace.
++- App.tsx（目标）：Bug轮目标范围保留sourceSetId进入原SelectedPractice、导航定位与保存守卫保持，构建标识明确更新；维护性轮仅传递固定范围/原操作回调，不复制建轮或改变数据目录。
+docs/代码复查记录.md:2086: trailing whitespace.
++- PracticeWorkspace.tsx（配额）：Bug轮配额/方案阻塞分别保存再合并，开始/继续/关闭/方案应用都检查配额待确认，配额只把身份交原SelectedPractice；维护性轮不改建轮回执/替换契约，面板在实际选题页按需挂载，不覆盖其他组件busy。
+docs/代码复查记录.md:2087: trailing whitespace.
++- workbench-pages.css（目标）：Bug轮目标/配额表单和七列月历用minmax/换行避免固定宽度溢出，明暗主题使用已有变量、日期有选中/焦点状态；维护性轮限定新组件选择器，复用主题边框/圆角/表面，不建第二套设计系统。
+docs/代码复查记录.md:2088: trailing whitespace.
++- library-ipc.test.ts（目标夹具）：Bug轮显式补齐强类型服务能力，未使用的操作抛错避免伪造通过，月份/空定义只作隔离；维护性轮沿原mock边界，真实存储另做Electron验证。
+docs/代码复查记录.md:2089: trailing whitespace.
++- App.tsx（精确可选类型）：Bug轮按原意图类型仅在存在时传sourceSetId，修正首轮类型检查发现的可选undefined差异；维护性轮沿原题单入口写法，不放宽严格类型。
+docs/代码复查记录.md:2090: trailing whitespace.
++- PracticeWorkspace.tsx（精确可选类型）：Bug轮配额意图同样只传实际存在的sourceSetId，类型边界保持；维护性轮不新增转换抽象。
+docs/代码复查记录.md:2137: trailing whitespace.
++- startup.spec.ts（目标白名单）：Bug轮精确验证planning八个方法和总API顺序，原隔离/CSP/禁用require断言保持；维护性轮未放宽白名单或改成包含判断。
+docs/代码复查记录.md:2138: trailing whitespace.
++- planning.test.ts：Bug轮8项验证闰日/越界/重复专题/总量/坏Unicode/严格回包、原命令与并发保存/冲突/坏确认/离开保护，真正异步屏障；维护性轮mock只隔离传输故障，业务事务另用真实SQLite，不测试实现行数。
+docs/代码复查记录.md:2139: trailing whitespace.
++- planning-helpers.ts：Bug轮固定真实preload调用，错误明确抛出、可选题单仅在存在时传入；维护性轮仅收敛多测试重复读取，不提供假数据或绕过正式API。
+docs/代码复查记录.md:2140: trailing whitespace.
++- planning.spec.ts：Bug轮4个真实Electron/SQLite场景覆盖活动去重/幂等/四类失败回滚、旧记录空白、题单去重/失效/CAS/当前版本/超量、三种配额优先与固定队列/日历分页；维护性轮只故障触发器注入，精确比对全业务表和队列，不用mock替代存储。
+docs/代码复查记录.md:2141: trailing whitespace.
++- planning.spec.ts（真实读取修正）：Bug轮当前活动轮直接调用现有practice.read，修正不存在的测试辅助导入；维护性轮不为单次读取添加新包装或放宽队列断言。
+docs/代码复查记录.md:2142: trailing whitespace.
++- planning.spec.ts（大范围夹具修正）：Bug轮首轮3/4通过，失败因旧题单禁止新加归档题导致准备未建目标；改用500个活动题加另一专题一题，并逐步确认准备成功，原超500拒绝断言不放宽；维护性轮保留首轮失败报告，不修改题单既有边界。
+docs/代码复查记录.md:2143: trailing whitespace.
++- schema-v16.sql：Bug轮从上一批真实EXE/独立TEMP提取33个SQLite对象和初始化记录，核对结构16/EXE/数据目录，源hash与运行对象另存；维护性轮保留原SQL定义，旧15及更早夹具不改，不用当前迁移反造旧结构。
+docs/代码复查记录.md:2144: trailing whitespace.
++- planning-storage.spec.ts：Bug轮真实16夹具三种升级情形、全表/旧活动与保护备份核对，生产完整导出恢复及14类坏备份/源字节保持，账本日期不回算；维护性轮独立TEMP并验证清理根目录，旧SQL/hash和历史报告不覆盖，不用内部快照替代导出。
+docs/代码复查记录.md:2145: trailing whitespace.
++- planning-ui.spec.ts：Bug轮5项真实界面覆盖每日未知回包/冲突/退出/明确沿用、备考范围去重/取消与固定队列、配额不足和原轮保护、日历分页/旧轮回看、900宽150%暗色几何；维护性轮只注入数据库/传输/对话框故障，数据与队列精确核对，截图取原生窗口，不把缩放等同系统DPI。
+docs/代码复查记录.md:2146: trailing whitespace.
++- planning-ui.spec.ts（类型清理）：Bug轮移除未使用的类型导入，严格noUnused检查保持；维护性轮无行为或断言变化。
+docs/代码复查记录.md:2147: trailing whitespace.
++- planning-ui.spec.ts（格式复核）：移除导入后按既有格式器整理首行；两轮复核无测试逻辑或范围变化。
+docs/代码复查记录.md:2148: trailing whitespace.
++- planning.spec.ts（容量和轮次分页补证）：Bug轮第5项验证20目标/ASCII重名/不存在题单更新/删除幂等不复活，并真实21轮核对两页无重复遗漏与42活动独立分页；维护性轮补未覆盖边界，不扩大全量样本或降低原断言。
+docs/代码复查记录.md:2149: trailing whitespace.
++- planning-ui.spec.ts（首轮定位修正）：Bug轮现场显示两条范围已成功建轮，失败是测试使用不存在的“揭晓答案”；改为现有准确名称“查看参考答案”。窄窗场景改用实际内置“松间绿”主题，原主题名不存在；维护性轮仅修定位/准备，不改产品、不延长等待、不放宽数量/队列/几何断言，2/5首轮报告保持。
+docs/代码复查记录.md:2150: trailing whitespace.
++- planning-ui.spec.ts（画面证据）：Bug轮实际查看图片发现窄窗月历格在截图下方，截图前明确定位日历格/配额预览，补宽窗月历；维护性轮仅调整取景，不改操作/几何断言，不把现有格不可见误报为产品不可操作。
+docs/代码复查记录.md:2151: trailing whitespace.
++- 安全试用目标与配额.cmd：Bug轮启动前核对相邻EXE与LOCALAPPDATA，显式独立study-goals-trial-20261029.3并清除开发启动变量，不覆盖旧库/桌面；维护性轮沿已用安全入口，无安装、删除、自动导入或正式数据迁移。入口静态检查，实际运行另走明确EXE/新TEMP。

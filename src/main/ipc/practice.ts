@@ -157,6 +157,18 @@ export function registerPracticeIpc(
   function onNavigation(_event: unknown, _url: string, _inPlace: boolean, isMainFrame: boolean) {
     if (isMainFrame) invalidate()
   }
+  function pauseTimer() {
+    if (closed || contents.isDestroyed()) return
+    try {
+      contents.send(PRACTICE_CHANNELS.timerPause)
+    } catch (error) {
+      report(error)
+    }
+  }
+  // 原生最小化/隐藏不保证触发页面可见性变化，直接通知暂停且不自动恢复。
+  window.on('blur', pauseTimer)
+  window.on('minimize', pauseTimer)
+  window.on('hide', pauseTimer)
   contents.on('did-start-navigation', onNavigation)
   contents.on('render-process-gone', invalidate)
   contents.once('destroyed', invalidate)
@@ -200,6 +212,9 @@ export function registerPracticeIpc(
       contents.removeListener('did-start-navigation', onNavigation)
       contents.removeListener('render-process-gone', invalidate)
       contents.removeListener('destroyed', invalidate)
+      window.removeListener('blur', pauseTimer)
+      window.removeListener('minimize', pauseTimer)
+      window.removeListener('hide', pauseTimer)
     },
   }
 }

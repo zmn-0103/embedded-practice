@@ -43,9 +43,9 @@ export async function prepareControl(directory: string, info: TestInfo, total = 
       if (!target) throw new Error('必须显式指定本轮EXE')
       expect(actual.exe.toLowerCase()).toBe(resolve(target).toLowerCase())
     }
-    await expect(instance.page.locator('footer')).toContainText('20261028.2-note-favorite-fix')
+    await expect(instance.page.locator('footer')).toContainText('20261029.4-oral-timer')
     expect(withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())).toEqual(
-      { user_version: 13 },
+      { user_version: 17 },
     )
     await info.attach('practice-control-runtime', {
       body: JSON.stringify(actual),

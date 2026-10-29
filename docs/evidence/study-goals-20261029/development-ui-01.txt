@@ -1,0 +1,102 @@
+
+Running 5 tests using 1 worker
+
+(node:11624) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\planning-ui.spec.ts:18:5 › 每日目标保存失败/坏回包保留原命令，退出受保护，冲突明确放弃后可沿用历史目标 (1.9s)
+  x  2 [development] › tests\e2e\planning-ui.spec.ts:113:5 › 备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史 (11.7s)
+(node:25448) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  3 [development] › tests\e2e\planning-ui.spec.ts:173:5 › 配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目 (11.7s)
+(node:29804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 [development] › tests\e2e\planning-ui.spec.ts:231:5 › 日历日期可看活动分页与原轮作答笔记，旧日期零事件有明确说明 (1.7s)
+  x  5 [development] › tests\e2e\planning-ui.spec.ts:264:5 › 目标/日历/配额在900宽150%暗色可操作且中文混排无横向溢出 (31.6s)
+
+
+  1) [development] › tests\e2e\planning-ui.spec.ts:113:5 › 备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史 ──────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: '揭晓答案', exact: true })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: '揭晓答案', exact: true }) with timeout 10000ms
+      - waiting for getByRole('button', { name: '揭晓答案', exact: true })
+
+
+      150 |     await again.getByRole('button', { name: '核对整个目标的题目', exact: true }).click()
+      151 |     await page.getByRole('button', { name: '确认开始组卷（3题）', exact: true }).click()
+    > 152 |     await expect(page.getByRole('button', { name: '揭晓答案', exact: true })).toBeVisible()
+          |                                                                           ^
+      153 |     const session = withHistoryDatabase(testDataDirectory, (db) =>
+      154 |       db.prepare("SELECT id FROM practice_sessions WHERE status='active'").get(),
+      155 |     ) as { id: string }
+        at E:\My_Projects\embedded-practice\tests\e2e\planning-ui.spec.ts:152:75
+
+    attachment #2: goals-exam-progress.png (image/png) ─────────────────────────────────────────────
+    output\playwright\goals-development-ui-01\planning-ui-备考目标界面去重范围，进入原确认再建固定队列，取消-删除目标不改历史-development\attachments\goals-exam-progress-png-4769ffe4559221690824170448b884bc90d53076.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\goals-development-ui-01\planning-ui-备考目标界面去重范围，进入原确认再建固定队列，取消-删除目标不改历史-development\error-context.md
+
+  2) [development] › tests\e2e\planning-ui.spec.ts:173:5 › 配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目 ───────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: '揭晓答案', exact: true })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: '揭晓答案', exact: true }) with timeout 10000ms
+      - waiting for getByRole('button', { name: '揭晓答案', exact: true })
+
+
+      213 |     expect(flowQueue(testDataDirectory, started.value.sessionId)).toEqual(original)
+      214 |     await page.getByRole('button', { name: '结束原轮并开始组卷（4题）', exact: true }).click()
+    > 215 |     await expect(page.getByRole('button', { name: '揭晓答案', exact: true })).toBeVisible()
+          |                                                                           ^
+      216 |     const sessions = withHistoryDatabase(testDataDirectory, (db) =>
+      217 |       db.prepare('SELECT id,status,selection_name FROM practice_sessions ORDER BY rowid').all(),
+      218 |     ) as { id: string; status: string; selection_name: string }[]
+        at E:\My_Projects\embedded-practice\tests\e2e\planning-ui.spec.ts:215:75
+
+    attachment #2: goals-quota-preview.png (image/png) ─────────────────────────────────────────────
+    output\playwright\goals-development-ui-01\planning-ui-配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目-development\attachments\goals-quota-preview-png-60d978ebd84dff0f611f08dd995d5d30e0eb9f7a.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\goals-development-ui-01\planning-ui-配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目-development\error-context.md
+
+  3) [development] › tests\e2e\planning-ui.spec.ts:264:5 › 目标/日历/配额在900宽150%暗色可操作且中文混排无横向溢出 ────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.check: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('radio', { name: '暖白与石墨', exact: true })
+
+
+       at theme-helpers.ts:76
+
+      74 | export async function chooseTheme(page: Page, name: string, mode = 'light', fontSize = 17) {
+      75 |   await openPage(page, '设置与数据')
+    > 76 |   await page.getByRole('radio', { name, exact: true }).check()
+         |                                                        ^
+      77 |   await page.getByLabel('显示主题', { exact: true }).selectOption(mode)
+      78 |   await page.getByLabel('正文字号', { exact: true }).selectOption(String(fontSize))
+      79 |   await page.getByRole('button', { name: '保存并应用', exact: true }).click()
+        at chooseTheme (E:\My_Projects\embedded-practice\tests\e2e\theme-helpers.ts:76:56)
+        at E:\My_Projects\embedded-practice\tests\e2e\planning-ui.spec.ts:269:5
+
+    Error Context: output\playwright\goals-development-ui-01\planning-ui-目标-日历-配额在900宽150-暗色可操作且中文混排无横向溢出-development\error-context.md
+
+  3 failed
+    [development] › tests\e2e\planning-ui.spec.ts:113:5 › 备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史 ───────
+    [development] › tests\e2e\planning-ui.spec.ts:173:5 › 配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目 ────────────
+    [development] › tests\e2e\planning-ui.spec.ts:264:5 › 目标/日历/配额在900宽150%暗色可操作且中文混排无横向溢出 ─────────
+  2 passed (1.0m)

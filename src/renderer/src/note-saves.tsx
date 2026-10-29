@@ -1,12 +1,35 @@
 import { createContext, useCallback, useContext, useMemo, useRef, useState } from 'react'
 import type { NoteController } from './note-controller'
+export interface LearningSaveGuard {
+  hasPending(): boolean
+  flush(): Promise<boolean>
+  subscribe(listener: () => void): () => void
+}
 
 export function useNoteSaveCoordinator() {
   const savers = useRef(new Set<NoteController>())
+  const guards = useRef(new Set<LearningSaveGuard>())
   const job = useRef<Promise<boolean> | undefined>(undefined)
   const [blocked, setBlocked] = useState(false)
   const [flushing, setFlushing] = useState(false)
-  const hasPending = useCallback(() => [...savers.current].some((saver) => saver.hasPending()), [])
+  const hasPending = useCallback(
+    () => [...savers.current, ...guards.current].some((saver) => saver.hasPending()),
+    [],
+  )
+  const registerGuard = useCallback(
+    (guard: LearningSaveGuard) => {
+      guards.current.add(guard)
+      const refresh = () => setBlocked(hasPending())
+      const unsubscribe = guard.subscribe(refresh)
+      refresh()
+      return () => {
+        unsubscribe()
+        guards.current.delete(guard)
+        refresh()
+      }
+    },
+    [hasPending],
+  )
   const register = useCallback(
     (saver: NoteController) => {
       savers.current.add(saver)
@@ -46,6 +69,7 @@ export function useNoteSaveCoordinator() {
     setFlushing(true)
     const pending = (async () => {
       for (const saver of [...savers.current]) if (!(await saver.flush())) return false
+      for (const guard of [...guards.current]) if (!(await guard.flush())) return false
       return !hasPending()
     })()
       .catch(() => false)
@@ -58,8 +82,8 @@ export function useNoteSaveCoordinator() {
     return pending
   }, [hasPending])
   return useMemo(
-    () => ({ register, flush, hasPending, blocked, flushing }),
-    [register, flush, hasPending, blocked, flushing],
+    () => ({ register, registerGuard, flush, hasPending, blocked, flushing }),
+    [register, registerGuard, flush, hasPending, blocked, flushing],
   )
 }
 export const NoteSaveContext = createContext<ReturnType<typeof useNoteSaveCoordinator> | null>(null)

@@ -28,6 +28,10 @@ import { QuestionSetFault } from '../../src/main/database/repositories/question-
 import { STUDY_CHANNELS } from '../../src/shared/contracts/study'
 import { StudyFault } from '../../src/main/database/repositories/study-fault'
 import { CONTENT_UPDATE_CHANNELS } from '../../src/shared/contracts/content-updates'
+import { PERSONAL_TAG_CHANNELS } from '../../src/shared/contracts/personal-tags'
+import { PersonalTagFault } from '../../src/main/database/repositories/personal-tag-repository'
+import { REVIEW_CHANNELS } from '../../src/shared/contracts/review-todos'
+import { ReviewFault } from '../../src/main/database/repositories/review-repository'
 import { EMPTY_QUESTION_FILTERS } from '../../src/shared/contracts/question-filters'
 import type { ImportPreview } from '../../src/shared/contracts/library-import'
 import { withImportDirectory } from '../helpers/import-directory'
@@ -86,6 +90,40 @@ function setup() {
   } as unknown as BrowserWindow
   const event = { senderFrame: frame, sender: contents } as unknown as IpcMainInvokeEvent
   const service: LibraryImportService = {
+    planningDefinitions: vi.fn(() => ({ daily: null, previous: null, goals: [], sets: [] })),
+    readGoalDefinition: vi.fn(() => {
+      throw new Error('本场景未模拟目标定义')
+    }),
+    readQuotaSettings: vi.fn(() => null),
+    readPlanningScope: vi.fn(() => {
+      throw new Error('本场景未模拟目标范围')
+    }),
+    previewQuota: vi.fn(() => {
+      throw new Error('本场景未模拟配额预览')
+    }),
+    changePlanning: vi.fn(() => null),
+    readPlanningHome: vi.fn(() => {
+      throw new Error('本场景未模拟学习目标')
+    }),
+    readPlanningMonth: vi.fn(() => ({ month: '2026-10', days: [] })),
+    readPlanningDay: vi.fn(() => {
+      throw new Error('本场景未模拟当日记录')
+    }),
+    readGoalProgress: vi.fn(() => {
+      throw new Error('本场景未模拟目标进度')
+    }),
+    searchKnowledge: vi.fn(() => ({ page: 1, pageSize: 20 as const, total: 0, items: [] })),
+    listRelations: vi.fn(() => ({ page: 1, pageSize: 20 as const, total: 0, items: [] })),
+    changeRelation: vi.fn(() => null),
+    recentKnowledgeSearches: vi.fn(() => []),
+    changeKnowledgeRecent: vi.fn(() => {}),
+    readReview: vi.fn(() => null),
+    saveReview: vi.fn(() => {
+      throw new Error('本场景未模拟待办保存')
+    }),
+    listReviews: vi.fn(() => ({ page: 1, pageSize: 20 as const, total: 0, items: [] })),
+    listPersonalTags: vi.fn(() => []),
+    changePersonalTag: vi.fn(() => {}),
     listContentVersions: vi.fn(() => {
       throw new Error('本场景未模拟内容版本')
     }),
@@ -182,6 +220,98 @@ function setup() {
   const invoke = (name: string, ...args: unknown[]) => native.handlers.get(name)!(event, ...args)
   return { service, registration, invoke, frame, contents, event, report }
 }
+
+it('复习待办接口限制来源/参数，冲突不吞掉，恢复暂停与关闭拒绝在途入口', async () => {
+  const { service, registration, invoke, frame, event } = setup()
+  const identity = { topicId: 'uart', questionId: 'dma' }
+  const todo = {
+    ...identity,
+    state: 'pending' as const,
+    dueDate: null,
+    reason: '再口述',
+    revision: 1,
+    updatedAt: '2026-10-29T00:00:00.000Z',
+    completedAt: null,
+  }
+  const command = {
+    ...identity,
+    state: todo.state,
+    dueDate: todo.dueDate,
+    reason: todo.reason,
+    expectedRevision: 0,
+  }
+  expect(await invoke(REVIEW_CHANNELS.read, identity)).toEqual({ ok: true, value: null })
+  vi.mocked(service.saveReview).mockReturnValueOnce(todo)
+  expect(await invoke(REVIEW_CHANNELS.save, command)).toEqual({ ok: true, value: todo })
+  expect(service.saveReview).toHaveBeenCalledWith(command)
+  expect(await invoke(REVIEW_CHANNELS.save, { ...command, dueDate: '2026-02-30' })).toMatchObject({
+    ok: false,
+    error: { code: 'INVALID_REQUEST' },
+  })
+  expect(
+    await invoke(REVIEW_CHANNELS.list, { state: 'pending', due: 'all', page: 1 }),
+  ).toMatchObject({ ok: true, value: { total: 0 } })
+  vi.mocked(service.saveReview).mockImplementationOnce(() => {
+    throw new ReviewFault('CONFLICT', '安排已变化')
+  })
+  expect(await invoke(REVIEW_CHANNELS.save, command)).toMatchObject({
+    ok: false,
+    error: { code: 'CONFLICT' },
+  })
+  const url = frame.url
+  frame.url = 'https://untrusted.example/'
+  expect(await invoke(REVIEW_CHANNELS.read, identity)).toMatchObject({
+    ok: false,
+    error: { code: 'FORBIDDEN' },
+  })
+  frame.url = url
+  await registration.pause()
+  expect(await invoke(REVIEW_CHANNELS.save, command)).toMatchObject({
+    ok: false,
+    error: { code: 'SERVICE_CLOSED' },
+  })
+  registration.resume()
+  const captured = native.handlers.get(REVIEW_CHANNELS.read)!
+  await registration.close()
+  expect(await captured(event, identity)).toMatchObject({
+    ok: false,
+    error: { code: 'SERVICE_CLOSED' },
+  })
+  expect(native.handlers.size).toBe(0)
+})
+
+it('个人标签接口校验来源/参数/暂停/关闭并传播明确业务错误', async () => {
+  const { service, registration, invoke, frame } = setup()
+  expect(await invoke(PERSONAL_TAG_CHANNELS.list)).toEqual({ ok: true, value: [] })
+  const command = { kind: 'save', tagId: 'b1901446-c0da-4c48-a293-90a04ac32d76', name: '易混淆' }
+  expect(await invoke(PERSONAL_TAG_CHANNELS.change, command)).toEqual({ ok: true, value: null })
+  expect(service.changePersonalTag).toHaveBeenCalledWith(command)
+  expect(await invoke(PERSONAL_TAG_CHANNELS.change, { ...command, sql: 'DELETE' })).toMatchObject({
+    ok: false,
+    error: { code: 'INVALID_REQUEST' },
+  })
+  vi.mocked(service.changePersonalTag).mockImplementationOnce(() => {
+    throw new PersonalTagFault('NOT_FOUND', '标签已删除')
+  })
+  expect(await invoke(PERSONAL_TAG_CHANNELS.change, command)).toMatchObject({
+    ok: false,
+    error: { code: 'NOT_FOUND' },
+  })
+  const original = frame.url
+  frame.url = 'https://untrusted.example/'
+  for (const channel of Object.values(PERSONAL_TAG_CHANNELS))
+    expect(
+      await invoke(channel, ...(channel === PERSONAL_TAG_CHANNELS.change ? [command] : [])),
+    ).toMatchObject({ ok: false, error: { code: 'FORBIDDEN' } })
+  frame.url = original
+  await registration.pause()
+  expect(await invoke(PERSONAL_TAG_CHANNELS.list)).toMatchObject({
+    ok: false,
+    error: { code: 'SERVICE_CLOSED' },
+  })
+  registration.resume()
+  expect(await invoke(PERSONAL_TAG_CHANNELS.list)).toEqual({ ok: true, value: [] })
+})
 beforeEach(() => {
   native.handlers.clear()
   native.dialog.showOpenDialog

@@ -61,6 +61,54 @@ import {
 } from '../../shared/contracts/question-sets'
 import { QuestionSetFault } from '../database/repositories/question-set-repository'
 import {
+  PERSONAL_TAG_CHANNELS,
+  personalTagChangeSchema,
+  personalTagListResultSchema,
+  personalTagChangeResultSchema,
+} from '../../shared/contracts/personal-tags'
+import { PersonalTagFault } from '../database/repositories/personal-tag-repository'
+import {
+  REVIEW_CHANNELS,
+  saveReviewSchema,
+  reviewListRequestSchema,
+  readReviewResultSchema,
+  saveReviewResultSchema,
+  reviewListResultSchema,
+} from '../../shared/contracts/review-todos'
+import { ReviewFault } from '../database/repositories/review-repository'
+import {
+  KNOWLEDGE_CHANNELS,
+  knowledgeSearchSchema,
+  knowledgeSearchResultSchema,
+  recentSearchResultSchema,
+  recentSearchChangeSchema,
+  knowledgeEmptyResultSchema,
+  relationListRequestSchema,
+  relationListResultSchema,
+  relationChangeSchema,
+  relationChangeResultSchema,
+} from '../../shared/contracts/knowledge'
+import { KnowledgeFault } from '../database/repositories/knowledge-repository'
+import {
+  PLANNING_CHANNELS,
+  planningHomeRequestSchema,
+  planningHomeResultSchema,
+  planningMonthRequestSchema,
+  planningMonthResultSchema,
+  planningDayRequestSchema,
+  planningDayResultSchema,
+  planningGoalRequestSchema,
+  goalProgressResultSchema,
+  planningScopeRequestSchema,
+  planningScopeResultSchema,
+  quotaSettingResultSchema,
+  quotaPreviewRequestSchema,
+  quotaPreviewResultSchema,
+  planningChangeSchema,
+  planningChangeResultSchema,
+} from '../../shared/contracts/planning'
+import { PlanningFault } from '../database/repositories/planning-repository'
+import {
   STUDY_CHANNELS,
   saveNoteSchema,
   readNoteResultSchema,
@@ -116,6 +164,10 @@ export function registerLibraryIpc(
   let operation: { controller: AbortController; completion: Promise<unknown> } | undefined
   let closing: Promise<void> | undefined
   const channels = [
+    ...Object.values(PLANNING_CHANNELS),
+    ...Object.values(KNOWLEDGE_CHANNELS),
+    ...Object.values(REVIEW_CHANNELS),
+    ...Object.values(PERSONAL_TAG_CHANNELS),
     ...Object.values(CONTENT_UPDATE_CHANNELS),
     ...Object.values(STUDY_CHANNELS),
     ...Object.values(QUESTION_SET_CHANNELS),
@@ -129,7 +181,12 @@ export function registerLibraryIpc(
   ]
   const noArguments = z.tuple([])
   function fail(
-    code: DesktopError['code'] | ThemeError['code'] | StudyError['code'],
+    code:
+      | DesktopError['code']
+      | ThemeError['code']
+      | StudyError['code']
+      | 'CONFLICT'
+      | 'LIMIT_EXCEEDED',
     message: string,
   ) {
     return { ok: false as const, error: { code, message } }
@@ -198,7 +255,12 @@ export function registerLibraryIpc(
       try {
         return output.parse(await action(parsed.data, event))
       } catch (error) {
-        if (error instanceof ThemeFault || error instanceof StudyFault)
+        if (
+          error instanceof ThemeFault ||
+          error instanceof StudyFault ||
+          error instanceof KnowledgeFault ||
+          error instanceof PlanningFault
+        )
           return fail(error.code, error.message)
         report(error)
         return failureMessage ? fail('DATABASE_UNAVAILABLE', failureMessage) : unavailable()
@@ -206,6 +268,83 @@ export function registerLibraryIpc(
     })
   }
   const settingsUnavailable = '显示设置暂不可用，请重试或检查本地诊断日志。'
+  handle(
+    PLANNING_CHANNELS.home,
+    z.tuple([planningHomeRequestSchema]),
+    planningHomeResultSchema,
+    ([input]) => (service ? { ok: true, value: service.readPlanningHome(input) } : unavailable()),
+  )
+  handle(
+    PLANNING_CHANNELS.month,
+    z.tuple([planningMonthRequestSchema]),
+    planningMonthResultSchema,
+    ([input]) => (service ? { ok: true, value: service.readPlanningMonth(input) } : unavailable()),
+  )
+  handle(
+    PLANNING_CHANNELS.day,
+    z.tuple([planningDayRequestSchema]),
+    planningDayResultSchema,
+    ([input]) => (service ? { ok: true, value: service.readPlanningDay(input) } : unavailable()),
+  )
+  handle(
+    PLANNING_CHANNELS.progress,
+    z.tuple([planningGoalRequestSchema]),
+    goalProgressResultSchema,
+    ([input]) => (service ? { ok: true, value: service.readGoalProgress(input) } : unavailable()),
+  )
+  handle(
+    PLANNING_CHANNELS.scope,
+    z.tuple([planningScopeRequestSchema]),
+    planningScopeResultSchema,
+    ([input]) => (service ? { ok: true, value: service.readPlanningScope(input) } : unavailable()),
+  )
+  handle(PLANNING_CHANNELS.quota, noArguments, quotaSettingResultSchema, () =>
+    service ? { ok: true, value: service.readQuotaSettings() } : unavailable(),
+  )
+  handle(
+    PLANNING_CHANNELS.previewQuota,
+    z.tuple([quotaPreviewRequestSchema]),
+    quotaPreviewResultSchema,
+    ([input]) => (service ? { ok: true, value: service.previewQuota(input) } : unavailable()),
+  )
+  handle(
+    PLANNING_CHANNELS.change,
+    z.tuple([planningChangeSchema]),
+    planningChangeResultSchema,
+    ([input]) => (service ? { ok: true, value: service.changePlanning(input) } : unavailable()),
+    '保存结果尚未确认，请保留输入并重试原操作。',
+  )
+  handle(
+    KNOWLEDGE_CHANNELS.search,
+    z.tuple([knowledgeSearchSchema]),
+    knowledgeSearchResultSchema,
+    ([input]) => (service ? { ok: true, value: service.searchKnowledge(input) } : unavailable()),
+  )
+  handle(KNOWLEDGE_CHANNELS.recent, noArguments, recentSearchResultSchema, () =>
+    service ? { ok: true, value: service.recentKnowledgeSearches() } : unavailable(),
+  )
+  handle(
+    KNOWLEDGE_CHANNELS.changeRecent,
+    z.tuple([recentSearchChangeSchema]),
+    knowledgeEmptyResultSchema,
+    ([input]) => {
+      if (!service) return unavailable()
+      service.changeKnowledgeRecent(input)
+      return { ok: true, value: null }
+    },
+  )
+  handle(
+    KNOWLEDGE_CHANNELS.relations,
+    z.tuple([relationListRequestSchema]),
+    relationListResultSchema,
+    ([input]) => (service ? { ok: true, value: service.listRelations(input) } : unavailable()),
+  )
+  handle(
+    KNOWLEDGE_CHANNELS.changeRelation,
+    z.tuple([relationChangeSchema]),
+    relationChangeResultSchema,
+    ([input]) => (service ? { ok: true, value: service.changeRelation(input) } : unavailable()),
+  )
   handle(
     CONTENT_UPDATE_CHANNELS.versions,
     z.tuple([contentVersionsRequestSchema]),
@@ -353,6 +492,48 @@ export function registerLibraryIpc(
   )
   handle(PRACTICE_PLAN_CHANNELS.list, noArguments, practicePlansResultSchema, () =>
     service ? { ok: true, value: service.listPracticePlans() } : unavailable(),
+  )
+  handle(PERSONAL_TAG_CHANNELS.list, noArguments, personalTagListResultSchema, () =>
+    service ? { ok: true, value: service.listPersonalTags() } : unavailable(),
+  )
+  handle(REVIEW_CHANNELS.read, z.tuple([identitySchema]), readReviewResultSchema, ([input]) => {
+    if (!service) return unavailable()
+    try {
+      return { ok: true, value: service.readReview(input) }
+    } catch (error) {
+      if (error instanceof ReviewFault) return fail(error.code, error.message)
+      throw error
+    }
+  })
+  handle(REVIEW_CHANNELS.save, z.tuple([saveReviewSchema]), saveReviewResultSchema, ([input]) => {
+    if (!service) return unavailable()
+    try {
+      return { ok: true, value: service.saveReview(input) }
+    } catch (error) {
+      if (error instanceof ReviewFault) return fail(error.code, error.message)
+      throw error
+    }
+  })
+  handle(
+    REVIEW_CHANNELS.list,
+    z.tuple([reviewListRequestSchema]),
+    reviewListResultSchema,
+    ([input]) => (service ? { ok: true, value: service.listReviews(input) } : unavailable()),
+  )
+  handle(
+    PERSONAL_TAG_CHANNELS.change,
+    z.tuple([personalTagChangeSchema]),
+    personalTagChangeResultSchema,
+    ([input]) => {
+      if (!service) return unavailable()
+      try {
+        service.changePersonalTag(input)
+        return { ok: true, value: null }
+      } catch (error) {
+        if (error instanceof PersonalTagFault) return fail(error.code, error.message)
+        throw error
+      }
+    },
   )
   handle(QUESTION_SET_CHANNELS.list, noArguments, questionSetListResultSchema, () =>
     service ? { ok: true, value: service.listQuestionSets() } : unavailable(),

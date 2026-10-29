@@ -181,7 +181,7 @@ test('v4 升级至 v13：一致性备份、完整业务与随机原轮保留，�
     withHistoryDatabase(
       testDataDirectory,
       (database) => {
-        expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 13 })
+        expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 17 })
         expect(
           database
             .prepare(

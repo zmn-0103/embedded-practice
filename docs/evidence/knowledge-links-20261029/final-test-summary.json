@@ -1,0 +1,168 @@
+{
+  "build": "20261029.2-knowledge-links",
+  "schema": 16,
+  "unit": {
+    "files": 46,
+    "total": 755,
+    "passed": 755,
+    "report": "unit-02.json"
+  },
+  "packaged": {
+    "report": "packaged-full-01.json",
+    "startTime": "2026-10-29T04:26:33.615Z",
+    "duration": 830272.008,
+    "expected": 385,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "total": 385,
+    "retries": 0,
+    "singleCompleteGreenRun": true
+  },
+  "newFeatureCases": [
+    {
+      "file": "knowledge-storage.spec.ts",
+      "title": "结构15受保护升级16，旧待办/笔记/标签/方案/草稿保持：none",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 1035
+        }
+      ]
+    },
+    {
+      "file": "knowledge-storage.spec.ts",
+      "title": "结构15受保护升级16，旧待办/笔记/标签/方案/草稿保持：backup-blocked",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 849
+        }
+      ]
+    },
+    {
+      "file": "knowledge-storage.spec.ts",
+      "title": "结构15受保护升级16，旧待办/笔记/标签/方案/草稿保持：second-table-collision",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 1031
+        }
+      ]
+    },
+    {
+      "file": "knowledge-storage.spec.ts",
+      "title": "完整备份恢复关联/说明/最近搜索，拒绝重复/自关联/孤儿/非法文字日期且保留源字节",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 4965
+        }
+      ]
+    },
+    {
+      "file": "knowledge-ui.spec.ts",
+      "title": "积累检索分类/最近词/跨页，详情返回保留条件/结果/滚动，保存笔记后明确刷新",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 1985
+        }
+      ]
+    },
+    {
+      "file": "knowledge-ui.spec.ts",
+      "title": "关联UI真实失败/退出保护、提交后坏回包原命令重试，过期冲突保留后明确放弃及删除",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 2158
+        }
+      ]
+    },
+    {
+      "file": "knowledge-ui.spec.ts",
+      "title": "双向前置/对照笔记先保存，从关联题进入原确认并采用固定当前版本",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 2256
+        }
+      ]
+    },
+    {
+      "file": "knowledge-ui.spec.ts",
+      "title": "练习揭晓前不读关联/搜索，旧轮复盘对照当前题干且不改旧轮次",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 2772
+        }
+      ]
+    },
+    {
+      "file": "knowledge-ui.spec.ts",
+      "title": "我的积累与关联对照在900宽/150%暗色可操作、中文混排不横向溢出",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 1883
+        }
+      ]
+    },
+    {
+      "file": "knowledge.spec.ts",
+      "title": "知识关联真实事务：两端同记录/方向、重复与CAS/幂等、删除不复活、失败回滚和归档分页",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 1843
+        }
+      ]
+    },
+    {
+      "file": "knowledge.spec.ts",
+      "title": "我的积累按来源合并片段，字面特殊字符/超长笔记有界、当前版本/归档与答案隔离",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 2022
+        }
+      ]
+    },
+    {
+      "file": "knowledge.spec.ts",
+      "title": "最近关键词保留成功次序的10个，重复提升、查询只读/分页不记词、真实写失败整批回滚",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0,
+          "duration": 1286
+        }
+      ]
+    }
+  ]
+}

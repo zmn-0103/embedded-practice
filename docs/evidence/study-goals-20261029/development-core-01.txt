@@ -1,0 +1,42 @@
+
+Running 4 tests using 1 worker
+
+(node:17264) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\planning.spec.ts:28:5 › 每日目标按成功活动去重，待办重开/同题重复自评/归档不抹事实，旧日期不补造 (2.5s)
+  ok 2 [development] › tests\e2e\planning.spec.ts:115:5 › 活动和实际保存同事务回滚，重复回执只计一次，重复揭晓/暂不评价不计自评 (1.5s)
+  x  3 [development] › tests\e2e\planning.spec.ts:259:5 › 备考题单去重、CAS与删除失效，当前版本覆盖/归档分开，超500不截断 (1.9s)
+(node:11632) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 [development] › tests\e2e\planning.spec.ts:355:5 › 配额优先方式/不足/重复与候选只读，确认后固定队列，日历两类分页 (1.5s)
+
+
+  1) [development] › tests\e2e\planning.spec.ts:259:5 › 备考题单去重、CAS与删除失效，当前版本覆盖/归档分开，超500不截断 ────────
+
+    Error: expect(received).toMatchObject(expected)
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+        "error": Object {
+    -     "code": "LIMIT_EXCEEDED",
+    +     "code": "NOT_FOUND",
+        },
+        "ok": false,
+      }
+
+      340 |       setIds: [large, tail],
+      341 |     })
+    > 342 |     expect(await goalScope(page, largeGoal)).toMatchObject({
+          |                                              ^
+      343 |       ok: false,
+      344 |       error: { code: 'LIMIT_EXCEEDED' },
+      345 |     })
+        at E:\My_Projects\embedded-practice\tests\e2e\planning.spec.ts:342:46
+
+    Error Context: output\playwright\goals-development-core-01\planning-备考题单去重、CAS与删除失效，当前版本覆盖-归档分开，超500不截断-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\planning.spec.ts:259:5 › 备考题单去重、CAS与删除失效，当前版本覆盖/归档分开，超500不截断 ─────────
+  3 passed (8.7s)

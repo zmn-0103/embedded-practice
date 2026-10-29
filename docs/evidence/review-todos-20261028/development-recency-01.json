@@ -1,0 +1,293 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=development",
+      "tests/e2e/practice-recency.spec.ts",
+      "--reporter=list,json",
+      "--output=output/playwright/review-development-recency-01"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/playwright/review-development-recency-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/playwright/review-development-recency-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\output\\playwright\\review-development-recency-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-recency.spec.ts",
+      "file": "practice-recency.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1176,
+                  "error": {
+                    "message": "Error: UNIQUE constraint failed: question_user_state.question_id",
+                    "stack": "Error: UNIQUE constraint failed: question_user_state.question_id\n    at work (E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts:73:12)\n    at withHistoryDatabase (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:92:12)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts:53:24",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts",
+                      "column": 12,
+                      "line": 73
+                    },
+                    "snippet": "  71 |             `q-${number}`,\n  72 |           )\n> 73 |         db.exec(\n     |            ^\n  74 |           \"INSERT INTO question_user_state(question_id,favorite,last_rating,last_rated_version_id) SELECT id,0,'不熟',current_version_id FROM questions WHERE topic_id='control-a' AND question_id='q-6'\",\n  75 |         )\n  76 |       },"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts",
+                        "column": 12,
+                        "line": 73
+                      },
+                      "message": "Error: UNIQUE constraint failed: question_user_state.question_id\n\n  71 |             `q-${number}`,\n  72 |           )\n> 73 |         db.exec(\n     |            ^\n  74 |           \"INSERT INTO question_user_state(question_id,favorite,last_rating,last_rated_version_id) SELECT id,0,'不熟',current_version_id FROM questions WHERE topic_id='control-a' AND question_id='q-6'\",\n  75 |         )\n  76 |       },\n    at work (E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts:73:12)\n    at withHistoryDatabase (E:\\My_Projects\\embedded-practice\\tests\\e2e\\history-helpers.ts:92:12)\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts:53:24"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:45:13.657Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLXFLZW96dyIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\review-development-recency-01\\practice-recency-当前版本最近揭晓：7-30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts",
+                    "column": 12,
+                    "line": 73
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-173767888bf6d43dd9fb",
+          "file": "practice-recency.spec.ts",
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "最久优先先限10题再随机，固定队列不随历史变化/重新打开重排；方案兼容显式默认值",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2028,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:45:15.278Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLVA2MDMxOSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-bcf66ddbdbd35d29d6a2",
+          "file": "practice-recency.spec.ts",
+          "line": 180,
+          "column": 5
+        },
+        {
+          "title": "题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 32453,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts",
+                        "column": 64,
+                        "line": 297
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.advanced-question-filters > summary')\u001b[22m\n\n\n  295 |       window.webContents.setZoomFactor(1.5)\n  296 |     })\n> 297 |     await page.locator('.advanced-question-filters > summary').click()\n      |                                                                ^\n  298 |     await page.locator('.recent-practice-filters > summary').click()\n  299 |     await page.getByLabel('题库最近练习', { exact: true }).selectOption('7d')\n  300 |     await page.getByLabel('题库选题优先级', { exact: true }).selectOption('oldest')\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts:297:64"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:45:17.331Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLUxWMWRtcSIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\review-development-recency-01\\practice-recency-题库和练习共用最近筛选，可保存-填入方案；窄窗暗色控件和结果可操作-development\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-eba72ea55ee541cbd3f4",
+          "file": "practice-recency.spec.ts",
+          "line": 285,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T16:45:13.046Z",
+    "duration": 36762.414,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

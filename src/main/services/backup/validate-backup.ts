@@ -16,6 +16,15 @@ import { MAX_PRACTICE_PLANS, practicePlanSchema } from '../../../shared/contract
 import { APPLICATION_ID, SCHEMA_VERSION } from '../../database/open-database'
 import { createQuestionSetRepository } from '../../database/repositories/question-set-repository'
 import { noteSchema } from '../../../shared/contracts/study'
+import { MAX_PERSONAL_TAGS, personalTagSchema } from '../../../shared/contracts/personal-tags'
+import { reviewTodoSchema } from '../../../shared/contracts/review-todos'
+import { relationSchema, recentSearchSchema } from '../../../shared/contracts/knowledge'
+import {
+  dailyTargetSchema,
+  examGoalSchema,
+  quotaSettingSchema,
+  daySchema,
+} from '../../../shared/contracts/planning'
 
 export const BACKUP_FORMAT_VERSION = 1
 export class BackupFault extends Error {
@@ -87,8 +96,18 @@ const requiredColumns = {
   app_startup: 'id, launch_count, last_started_at',
   library_meta: 'id, revision',
   categories: 'category_id, title',
-  practice_plans: 'plan_id, name, options_json',
-  question_sets: 'set_id, name',
+  practice_plans: 'plan_id, name, options_json, pinned, last_used_at',
+  question_sets: 'set_id, name, pinned, last_used_at',
+  personal_tags: 'tag_id, name',
+  question_personal_tags: 'question_id, tag_id',
+  review_todos: 'question_id, revision, state, due_date, reason, updated_at, completed_at',
+  question_relations:
+    'relation_id, source_question_id, target_question_id, kind, explanation, revision, updated_at',
+  recent_knowledge_searches: 'rowid, query, searched_at',
+  daily_targets: 'day, rating_target, review_target, revision, updated_at',
+  study_goals: 'goal_id, name, deadline, set_ids_json, revision, updated_at',
+  quota_settings: 'id, rows_json, revision, updated_at',
+  learning_activities: 'activity_id, kind, question_id, session_id, position, occurred_at, day',
   question_set_items: 'set_id, position, topic_id, question_id',
   personal_notes: 'question_id, revision, text, updated_at',
   topics: 'topic_id, title, source_name, category_id',
@@ -123,6 +142,171 @@ export function readBackupSummary(
     database.prepare(`SELECT ${columns} FROM ${table} LIMIT 0`).all()
   }
   const settings = createSettingsRepository(database).readSettings()
+  for (const [table, key] of [
+    ['daily_targets', 'day'],
+    ['study_goals', 'goal_id'],
+    ['study_goals', 'lower(name)'],
+    ['learning_activities', 'activity_id'],
+  ] as const)
+    if (database.prepare(`SELECT 1 FROM ${table} GROUP BY ${key} HAVING count(*)>1 LIMIT 1`).get())
+      throw new BackupFault('INVALID_BACKUP', '备份中的目标或活动身份重复。')
+  for (const row of database
+    .prepare(
+      'SELECT day,rating_target AS ratingTarget,review_target AS reviewTarget,revision,updated_at AS updatedAt FROM daily_targets',
+    )
+    .iterate())
+    dailyTargetSchema.parse({ type: 'daily', ...(row as object) })
+  const goals = database
+    .prepare(
+      'SELECT goal_id AS goalId,name,deadline,set_ids_json AS setIdsJson,revision,updated_at AS updatedAt FROM study_goals LIMIT 21',
+    )
+    .all() as Record<string, unknown>[]
+  if (goals.length > 20) throw new BackupFault('INVALID_BACKUP', '备考目标数量超出上限。')
+  for (const { setIdsJson, ...row } of goals)
+    examGoalSchema.parse({ type: 'exam', ...row, setIds: JSON.parse(setIdsJson as string) })
+  const quotas = database
+    .prepare(
+      'SELECT id,rows_json AS rowsJson,revision,updated_at AS updatedAt FROM quota_settings LIMIT 2',
+    )
+    .all() as Record<string, unknown>[]
+  if (quotas.length > 1 || quotas.some((row) => row.id !== 1))
+    throw new BackupFault('INVALID_BACKUP', '配额设置身份无效。')
+  for (const { rowsJson, ...row } of quotas)
+    quotaSettingSchema.parse({
+      type: 'quota',
+      rows: JSON.parse(rowsJson as string),
+      revision: row.revision,
+      updatedAt: row.updatedAt,
+    })
+  const activityRow = z.strictObject({
+    activityId: z.string().min(1),
+    kind: z.enum(['rating', 'reveal', 'review', 'note']),
+    questionId: z.number().int().positive(),
+    sessionId: z.uuid().nullable(),
+    position: z.number().int().nonnegative().nullable(),
+    occurredAt: z.iso.datetime(),
+    day: daySchema,
+    existingQuestionId: z.number().int().positive(),
+    itemQuestionId: z.number().int().positive().nullable(),
+    revealedAt: z.string().nullable(),
+    rating: z.string().nullable(),
+  })
+  for (const raw of database
+    .prepare(
+      `SELECT a.activity_id AS activityId,a.kind,a.question_id AS questionId,a.session_id AS sessionId,a.position,a.occurred_at AS occurredAt,a.day,q.id AS existingQuestionId,i.question_id AS itemQuestionId,i.revealed_at AS revealedAt,i.rating FROM learning_activities a LEFT JOIN questions q ON q.id=a.question_id LEFT JOIN practice_items i ON i.session_id=a.session_id AND i.position=a.position`,
+    )
+    .iterate()) {
+    const row = activityRow.parse(raw)
+    if (row.kind === 'rating' || row.kind === 'reveal') {
+      if (
+        row.sessionId === null ||
+        row.position === null ||
+        row.itemQuestionId !== row.questionId ||
+        row.revealedAt === null ||
+        (row.kind === 'rating' && row.rating === null) ||
+        !z.uuid().safeParse(row.activityId.slice(row.kind.length + 1)).success ||
+        !row.activityId.startsWith(`${row.kind}:`)
+      )
+        throw new BackupFault('INVALID_BACKUP', '练习活动关联或身份无效。')
+    } else {
+      const prefix = `${row.kind}:${row.questionId}:`,
+        revisionText = row.activityId.slice(prefix.length),
+        revision = Number(revisionText)
+      if (
+        row.sessionId !== null ||
+        row.position !== null ||
+        !row.activityId.startsWith(prefix) ||
+        !/^[1-9][0-9]*$/.test(revisionText) ||
+        !Number.isSafeInteger(revision)
+      )
+        throw new BackupFault('INVALID_BACKUP', '学习活动关联或身份无效。')
+    }
+  }
+  if (
+    database
+      .prepare('SELECT 1 FROM question_relations GROUP BY relation_id HAVING count(*)>1 LIMIT 1')
+      .get() ||
+    database
+      .prepare(
+        'SELECT 1 FROM question_relations GROUP BY min(source_question_id,target_question_id),max(source_question_id,target_question_id),kind HAVING count(*)>1 LIMIT 1',
+      )
+      .get()
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份中的题目关联身份或题目对重复。')
+  for (const row of database
+    .prepare(
+      `SELECT r.relation_id AS relationId,r.kind,r.explanation,r.revision,r.updated_at AS updatedAt,
+    s.topic_id AS sourceTopicId,s.question_id AS sourceQuestionId,t.topic_id AS targetTopicId,t.question_id AS targetQuestionId
+    FROM question_relations r LEFT JOIN questions s ON s.id=r.source_question_id LEFT JOIN questions t ON t.id=r.target_question_id`,
+    )
+    .iterate() as Iterable<Record<string, unknown>>) {
+    const { sourceTopicId, sourceQuestionId, targetTopicId, targetQuestionId, ...rest } = row
+    relationSchema.parse({
+      ...rest,
+      source: { topicId: sourceTopicId, questionId: sourceQuestionId },
+      target: { topicId: targetTopicId, questionId: targetQuestionId },
+    })
+  }
+  const searches = database
+    .prepare('SELECT query,searched_at AS searchedAt FROM recent_knowledge_searches LIMIT 11')
+    .all()
+  if (
+    searches.length > 10 ||
+    database
+      .prepare('SELECT 1 FROM recent_knowledge_searches GROUP BY query HAVING count(*)>1 LIMIT 1')
+      .get()
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份中的最近搜索数量或身份无效。')
+  searches.forEach((row) => recentSearchSchema.parse(row))
+  const tags = database
+    .prepare(`SELECT tag_id AS tagId,name FROM personal_tags LIMIT ${MAX_PERSONAL_TAGS + 1}`)
+    .all()
+  if (
+    tags.length > MAX_PERSONAL_TAGS ||
+    database
+      .prepare('SELECT 1 FROM personal_tags GROUP BY tag_id HAVING count(*)>1 LIMIT 1')
+      .get() ||
+    database
+      .prepare('SELECT 1 FROM personal_tags GROUP BY lower(name) HAVING count(*)>1 LIMIT 1')
+      .get()
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份中的个人标签数量或名称无效。')
+  for (const tag of tags) personalTagSchema.parse(tag)
+  if (
+    database
+      .prepare('SELECT 1 FROM review_todos GROUP BY question_id HAVING count(*)>1 LIMIT 1')
+      .get()
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份包含重复复习待办。')
+  for (const row of database
+    .prepare(
+      `SELECT q.topic_id AS topicId,q.question_id AS questionId,
+    r.revision,r.state,r.due_date AS dueDate,r.reason,r.updated_at AS updatedAt,r.completed_at AS completedAt
+    FROM review_todos r LEFT JOIN questions q ON q.id=r.question_id`,
+    )
+    .iterate())
+    reviewTodoSchema.parse(row)
+  if (
+    database
+      .prepare(
+        `SELECT 1 FROM question_personal_tags i LEFT JOIN questions q ON q.id=i.question_id
+    LEFT JOIN personal_tags t ON t.tag_id=i.tag_id WHERE q.id IS NULL OR t.tag_id IS NULL LIMIT 1`,
+      )
+      .get() ||
+    database
+      .prepare(
+        'SELECT 1 FROM question_personal_tags GROUP BY question_id,tag_id HAVING count(*)>1 LIMIT 1',
+      )
+      .get()
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份中的个人标签题目关联损坏或重复。')
+  const shortcuts = database.prepare(`SELECT pinned,last_used_at AS lastUsedAt FROM practice_plans
+    UNION ALL SELECT pinned,last_used_at AS lastUsedAt FROM question_sets`)
+  const shortcutSchema = z.strictObject({
+    pinned: z.union([z.literal(0), z.literal(1)]),
+    lastUsedAt: z.iso.datetime().nullable(),
+  })
+  for (const row of shortcuts.iterate()) shortcutSchema.parse(row)
   const themes = createThemeRepository(database).listThemes()
   if (
     themes.issues.length ||

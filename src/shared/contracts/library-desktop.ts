@@ -56,6 +56,7 @@ export const questionInfoSchema = versionIdentitySchema.extend({
   practiced: z.boolean(),
   contentUpdated: z.boolean(),
   currentRating: masteryRatingSchema.nullable(),
+  lastPracticedAt: z.iso.datetime().nullable().optional(),
 })
 export const questionDetailSchema = questionInfoSchema.extend({ body: contentBodySchema })
 export const libraryPageSchema = z.strictObject({

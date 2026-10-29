@@ -150,7 +150,7 @@ test('Claude长内容练习：宽屏右侧属性/窄屏可展开辅助、输入�
     await chooseTheme(page, 'Claude 风格', 'dark', 22)
     await openPage(page, '开始练习')
     await page.getByLabel('练习专题', { exact: true }).selectOption('theme-many')
-    await page.locator('.practice-filter-options summary').click()
+    await page.locator('.practice-filter-options > summary').click()
     await page.getByRole('searchbox', { name: '练习搜索', exact: true }).fill('主题阅读 25')
     await expect(page.getByText('匹配 1 题', { exact: true })).toBeVisible()
     await page.getByRole('button', { name: '开始练习', exact: true }).click()

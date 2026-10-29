@@ -1,0 +1,209 @@
+
+> embedded-practice@0.0.2 test
+> vitest run tests/unit --reporter=default --reporter=json --outputFile=docs/evidence/personal-tags-shortcuts-20261028/unit-01.json
+
+
+ RUN  v5.0.5 E:/My_Projects/embedded-practice
+
+ ✓ tests/unit/import-limits.test.ts (3 tests) 1725ms
+   ✓ 批次限额实际文件链路 (3)
+     ✓ 两个合法专题合计 10,001 题时拒绝整个批次 1717ms
+ ✓ tests/unit/markdown-structure.test.ts (29 tests) 1843ms
+   ✓ Markdown 语法树分题与原文保留 (29)
+     ✓ 题量超过 10,000 时明确拒绝，不静默截断 1778ms
+ ✓ tests/unit/prepare-import.test.ts (11 tests) 169ms
+ ✓ tests/unit/backup-ipc.test.ts (20 tests) 204ms
+ ❯ tests/unit/library-ipc.test.ts (43 tests | 5 failed) 170ms
+   ✓ 个人标签接口校验来源/参数/暂停/关闭并传播明确业务错误 8ms
+   ❯ 题库 IPC 的来源、参数与任务边界（受控原生能力） (32)
+     ✓ 内容版本/差异严格参数和来源、暂停关闭保护，元数据不自动查询正文 3ms
+     ✓ 内容分区明确传递；未知SQL异常/坏输出不泄漏，失效版本明确返回 3ms
+     × 积累六接口严格来源/参数/暂停/关闭，笔记冲突明确且输出与异常不泄漏 8ms
+     ✓ 材料只接收来源与模式，系统对话框选择后才调用绑定写入，取消不写入 4ms
+     ✓ 材料选择位置期间拒绝重复任务，关闭取消悬空对话框且不写入 1ms
+     × 题单严格参数/来源/暂停/关闭受同一守卫保护，业务错误明确且异常不泄漏 3ms
+     ✓ 方案只读/写入重新校验来源和严格参数，恢复暂停与关闭不执行 2ms
+     ✓ 方案目标错误明确返回，未知异常不泄漏SQL或路径 1ms
+     ✓ 分类写入重新校验来源/参数，暂停与关闭后不写入 1ms
+     ✓ 分类目标错误明确返回，未知写入异常不泄露SQL或路径 1ms
+     × 显示设置严格读取/保存完整目标，原样返回且来源与关闭态受控 2ms
+     ✓ 设置读取/保存异常及非法输出不返回默认成功，使用显示设置文案 1ms
+     ✓ 总览只接受明确范围并验证可信来源，关闭后不再读取 2ms
+     ✓ 总览异常与非法正文输出不伪造零成功，响应/诊断不泄露正文 1ms
+     ✓ 历史查询只接受稳定身份/页码，缺失记录及不可信来源明确拒绝 2ms
+     ✓ 未揭晓历史无答案；错误输出的旧作答不进入响应或诊断 2ms
+     ✓ 历史读取异常不返回内部路径或伪造空历史成功 1ms
+     ✓ 收藏只允许稳定身份与明确布尔目标，失败不返回成功 2ms
+     ✓ 筛选参数经过共享契约规范化后才交给服务 2ms
+     ✓ 代码复制仅允许限长字符串，不接受额外参数或对象 1ms
+     ✓ 复制失败返回中文错误，不读取系统剪贴板 1ms
+     ✓ 打开选择框而非接受窗口路径，确认只使用归属令牌 2ms
+     ✓ 拒绝不可信来源 frame 1ms
+     ✓ 拒绝不可信来源 sender 0ms
+     ✓ 拒绝不可信来源 url 3ms
+     ✓ 拒绝不可信来源 destroyed 0ms
+     ✓ 同一时间仅一个原生选择任务，取消后晚到选择不会读取来源 1ms
+     ✓ 重载页面使预览令牌失效 1ms
+     × 关闭等待已经开始的准备结束，移除全部监听与入口 56ms
+     ✓ 响应不合契约时返回统一错误，日志不包含响应正文 1ms
+     ✓ 外链重新验证，禁止文件/脚本，允许明确 HTTP 点击 1ms
+     ✓ 模板通过保存框写入独立临时位置，与原模板逐字节一致 7ms
+   ❯ 主题IPC的文件与快照边界 (8)
+     ✓ 预览后来源变化仍安装同一已校验快照，保留凭据支持重复核对 8ms
+     ✓ 损坏JSON不进入安装仓储 3ms
+     ✓ 未知格式不进入安装仓储 3ms
+     ✓ 携带脚本不进入安装仓储 4ms
+     ✓ UTF8损坏不进入安装仓储 2ms
+     ✓ 超过上限不进入安装仓储 3ms
+     × 来源/参数/取消/冲突/恢复暂停与关闭态不绕过边界 2ms
+     ✓ 未完成主题选择在关闭时取消并等待，不写入主题 1ms
+   ✓ 受控图片协议 (2)
+     ✓ 只返回已关联图片字节，固定 MIME 与响应保护 17ms
+     ✓ 不存在或非法 URL 不返回资源，数据库异常不泄露 1ms
+ ✓ tests/unit/personal-bank.test.ts (3 tests) 120ms
+ ✓ tests/unit/data-locations-ipc.test.ts (23 tests) 70ms
+ ✓ tests/unit/read-image.test.ts (18 tests) 70ms
+ ✓ tests/unit/markdown-images.test.ts (25 tests) 64ms
+ ✓ tests/unit/import-comparison.test.ts (13 tests) 66ms
+ ✓ tests/unit/markdown-metadata.test.ts (24 tests) 64ms
+ ✓ tests/unit/study-export.test.ts (5 tests) 35ms
+ ✓ tests/unit/practice-ipc.test.ts (17 tests) 31ms
+ ✓ tests/unit/restore-transaction.test.ts (5 tests) 24ms
+ ✓ tests/unit/practice-contract.test.ts (60 tests) 27ms
+ ✓ tests/unit/practice-controller.test.ts (17 tests) 27ms
+ ✓ tests/unit/write-material.test.ts (3 tests) 23ms
+ ✓ tests/unit/read-file-snapshot.test.ts (5 tests) 21ms
+ ✓ tests/unit/practice-control-contract.test.ts (14 tests) 17ms
+ ✓ tests/unit/content-diff.test.ts (8 tests) 19ms
+ ✓ tests/unit/import-session.test.ts (19 tests) 17ms
+ ✓ tests/unit/desktop-contract.test.ts (24 tests) 17ms
+ ✓ tests/unit/import-protocol.test.ts (28 tests) 12ms
+ ✓ tests/unit/import-task-runner.test.ts (9 tests) 12ms
+ ✓ tests/unit/history-contract.test.ts (19 tests) 12ms
+ ✓ tests/unit/import-task-failures.test.ts (18 tests) 11ms
+ ✓ tests/unit/content-updates-contract.test.ts (5 tests) 12ms
+ ✓ tests/unit/note-controller.test.ts (7 tests) 9ms
+ ✓ tests/unit/gpio-question-bank.test.ts (81 tests) 10ms
+ ✓ tests/unit/practice-flow-contract.test.ts (14 tests) 9ms
+ ✓ tests/unit/category-contract.test.ts (23 tests) 9ms
+ ✓ tests/unit/backup-contract.test.ts (9 tests) 10ms
+ ✓ tests/unit/learning-contract.test.ts (20 tests) 8ms
+ ✓ tests/unit/board-catalog.test.ts (4 tests) 5ms
+ ✓ tests/unit/personal-tags-contract.test.ts (8 tests) 9ms
+ ✓ tests/unit/practice-plans-contract.test.ts (13 tests) 10ms
+ ✓ tests/unit/question-filters.test.ts (11 tests) 9ms
+ ✓ tests/unit/settings-contract.test.ts (22 tests) 9ms
+ ✓ tests/unit/themes-contract.test.ts (30 tests) 9ms
+ ✓ tests/unit/data-locations-contract.test.ts (5 tests) 5ms
+ ✓ tests/unit/application.test.ts (9 tests) 6ms
+ ✓ tests/unit/workbench-contract.test.ts (2 tests) 5ms
+ ✓ tests/unit/import-budget.test.ts (7 tests) 4ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/library-ipc.test.ts > 题库 IPC 的来源、参数与任务边界（受控原生能力） > 积累六接口严格来源/参数/暂停/关闭，笔记冲突明确且输出与异常不泄漏
+AssertionError: expected 2 to be +0 // Object.is equality
+
+- Expected
++ Received
+
+- 0
++ 2
+
+ ❯ tests/unit/library-ipc.test.ts:360:34
+    358|     for (const handler of handlers)
+    359|       expect(await handler(event, {})).toMatchObject({ error: { code: …
+    360|     expect(native.handlers.size).toBe(0)
+       |                                  ^
+    361|     expect(service.prepareMaterial).not.toHaveBeenCalled()
+    362|   })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+ FAIL  tests/unit/library-ipc.test.ts > 题库 IPC 的来源、参数与任务边界（受控原生能力） > 题单严格参数/来源/暂停/关闭受同一守卫保护，业务错误明确且异常不泄漏
+AssertionError: expected 2 to be +0 // Object.is equality
+
+- Expected
++ Received
+
+- 0
++ 2
+
+ ❯ tests/unit/library-ipc.test.ts:487:34
+    485|     await registration.close()
+    486|     expect(await handler(event)).toMatchObject({ error: { code: 'SERVI…
+    487|     expect(native.handlers.size).toBe(0)
+       |                                  ^
+    488|   })
+    489|   it('方案只读/写入重新校验来源和严格参数，恢复暂停与关闭不执行', async () => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯
+
+ FAIL  tests/unit/library-ipc.test.ts > 题库 IPC 的来源、参数与任务边界（受控原生能力） > 显示设置严格读取/保存完整目标，原样返回且来源与关闭态受控
+AssertionError: expected 2 to be +0 // Object.is equality
+
+- Expected
++ Received
+
+- 0
++ 2
+
+ ❯ tests/unit/library-ipc.test.ts:638:34
+    636|     expect(await handler(event, target)).toMatchObject({ error: { code…
+    637|     expect(service.saveSettings).toHaveBeenCalledTimes(1)
+    638|     expect(native.handlers.size).toBe(0)
+       |                                  ^
+    639|   })
+    640|   it('设置读取/保存异常及非法输出不返回默认成功，使用显示设置文案', async () => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/5]⎯
+
+ FAIL  tests/unit/library-ipc.test.ts > 题库 IPC 的来源、参数与任务边界（受控原生能力） > 关闭等待已经开始的准备结束，移除全部监听与入口
+AssertionError: expected 2 to be +0 // Object.is equality
+
+- Expected
++ Received
+
+- 0
++ 2
+
+ ❯ tests/unit/library-ipc.test.ts:959:34
+    957|     expect(await pending).toMatchObject({ error: { code: 'IMPORT_CANCE…
+    958|     await closing
+    959|     expect(native.handlers.size).toBe(0)
+       |                                  ^
+    960|     expect(contents.listenerCount('did-start-navigation')).toBe(0)
+    961|   })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/5]⎯
+
+ FAIL  tests/unit/library-ipc.test.ts > 主题IPC的文件与快照边界 > 来源/参数/取消/冲突/恢复暂停与关闭态不绕过边界
+AssertionError: expected 2 to be +0 // Object.is equality
+
+- Expected
++ Received
+
+- 0
++ 2
+
+ ❯ tests/unit/library-ipc.test.ts:1056:34
+    1054|     await registration.close()
+    1055|     expect(await handler(event)).toMatchObject({ error: { code: 'SERVI…
+    1056|     expect(native.handlers.size).toBe(0)
+       |                                  ^
+    1057|   })
+    1058|   it('未完成主题选择在关闭时取消并等待，不写入主题', async () => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/5]⎯
+
+
+ Test Files  1 failed | 42 passed (43)
+      Tests  5 failed | 728 passed (733)
+   Start at  18:15:13
+   Duration  14.28s (tests 48%, import 45%, transform 6%, worker 1%)
+
+     Import  128 modules were evaluated 176 times · 4.63s total, 45% of tracked time
+             ~1.26s faster with isolate: false — shared modules are evaluated once per worker instead of once per file
+             learn more: https://vitest.dev/guide/improving-performance#test-isolation
+
+JSON report written to E:/My_Projects/embedded-practice/docs/evidence/personal-tags-shortcuts-20261028/unit-01.json

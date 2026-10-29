@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-29T10:01:32.056Z",
+  "build": "20261029.4-oral-timer",
+  "schemaVersion": 17,
+  "unit": {
+    "files": 48,
+    "passed": 778,
+    "failed": 0,
+    "pending": 0,
+    "report": "unit-final-03.json"
+  },
+  "packaged": {
+    "startTime": "2026-10-29T09:46:58.508Z",
+    "duration": 825114.68,
+    "expected": 406,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "durationSeconds": 825.11468,
+    "tests": 406,
+    "resultsPerTest": 1,
+    "retryPerTest": 0,
+    "errors": 0,
+    "oralCases": 7,
+    "report": "packaged-full-01.json"
+  },
+  "development": [
+    {
+      "report": "development-all-04.json",
+      "startTime": "2026-10-29T09:35:53.579Z",
+      "duration": 37719.006,
+      "expected": 14,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    {
+      "report": "development-native-03.json",
+      "startTime": "2026-10-29T09:33:30.566Z",
+      "duration": 5072.182000000001,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    {
+      "report": "development-oral-01.json",
+      "startTime": "2026-10-29T09:24:27.478Z",
+      "duration": 60204.005,
+      "expected": 5,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    {
+      "report": "development-oral-02.json",
+      "startTime": "2026-10-29T09:27:37.474Z",
+      "duration": 44232.234000000004,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    {
+      "report": "development-oral-final-05.json",
+      "startTime": "2026-10-29T09:41:30.253Z",
+      "duration": 18820.724000000002,
+      "expected": 7,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  ],
+  "runtimeAttachmentCount": 105,
+  "screenshotCount": 5
+}

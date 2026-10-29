@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-29T10:02:21.467Z",
+  "branch": "codex/functional-ux-next-20261028",
+  "head": "6fbce18ec4d530420dc1ff524fc0aa008c91c442",
+  "sourceFiles": 359,
+  "productionFiles": 175,
+  "allSourceHashesMatch": true,
+  "beforeByteCopies": 353,
+  "allBeforeCopiesMatch": true,
+  "configurationsPreserved": 8,
+  "bundledFiles": 20,
+  "allBundledHashesMatch": true,
+  "previous": [
+    {
+      "root": "release\\V0.0.2-personal-tags-20261028.3-r2",
+      "files": 147,
+      "totalBytes": 390946859,
+      "allHashesMatch": true,
+      "inventoryMatches": true
+    },
+    {
+      "root": "release\\V0.0.2-review-todos-20261029.1",
+      "files": 150,
+      "totalBytes": 391152639,
+      "allHashesMatch": true,
+      "inventoryMatches": true
+    },
+    {
+      "root": "release\\V0.0.2-knowledge-links-20261029.2",
+      "files": 148,
+      "totalBytes": 391104976,
+      "allHashesMatch": true,
+      "inventoryMatches": true
+    },
+    {
+      "root": "release\\V0.0.2-study-goals-20261029.3-r2",
+      "files": 150,
+      "totalBytes": 391290581,
+      "allHashesMatch": true,
+      "inventoryMatches": true
+    }
+  ],
+  "initialGoalCandidate": {
+    "root": "release/V0.0.2-study-goals-20261029.3",
+    "files": 150,
+    "allHashesMatch": true
+  },
+  "materialsPreserved": 17,
+  "screenshots": 5,
+  "screenshotHashesMatch": true,
+  "originalPlanBytes": 63427,
+  "currentPlanBytes": 64275,
+  "originalPlanPrefixPreserved": true,
+  "delivery": {
+    "root": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-oral-timer-20261029.4",
+    "files": 148,
+    "totalBytes": 391157417,
+    "excludedSelf": "交付文件校验.json",
+    "manifestSha256": "6fcb795b60cedb8d60c37a962628ea2af464e09dca7aac42a8a60c7f23be71ef",
+    "allHashesMatch": true,
+    "inventoryMatches": true
+  }
+}

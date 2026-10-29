@@ -1,0 +1,26 @@
+warning: in the working copy of 'docs/项目模块职责.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of '计划书.md', CRLF will be replaced by LF the next time Git touches it
+docs/验收记录.md:3: trailing whitespace.
++## 2026-10-28 个人标签与常用入口
+docs/验收记录.md:4: trailing whitespace.
++
+docs/验收记录.md:5: trailing whitespace.
++- 明确对象：产品0.0.2、构建20261028.3-personal-tags、结构14；最终EXE为E:/My_Projects/embedded-practice/release/V0.0.2-personal-tags-20261028.3-r2/win-unpacked/embedded-practice.exe。开发工具Node24.19.0/npm11.17.0，解包Electron42.11.15/Windows x64。逐场景新TEMP并核对实际EXE/packaged/页脚/结构/数据位置，未连接正式学习库。
+docs/验收记录.md:6: trailing whitespace.
++- 实际结果：check-04类型/格式、build-05、pack-02通过；43文件733/733单元，开发03为11/11。最终同EXE第二轮完整单次359/359、720.251秒，零失败/跳过/flaky/自动重试；已核对实际JSON场景数与零retry。其后只在既有标签场景增加真实筛选建轮及删除标签后不替换活动轮断言，定向1/1，生产与EXE不变，不计为新增场景。原始摘要、日志和JSON分别保留，不累计定向结果作完整通过。
+docs/验收记录.md:7: trailing whitespace.
++- 新增12专项：标签创建/改名/删除取消及确认、跨专题批量和筛选/方案、重导入/归档保留、失效成员与真实SQL写失败整批回滚；失效方案0题；已提交但响应丢失的原命令重试；真实等待期间笔记先保存、只读和移除详情后文字保留；方案/题单置顶/最近来源核对、查看不计使用、写失败整轮回滚和活动轮保持；UI真实确认开始后记使用；900宽/150%程序缩放/实际暗色浮层与横向边界。
+docs/验收记录.md:8: trailing whitespace.
++- 迁移/恢复：结构13夹具来自哈希固定的原v12 SQL加改前笔记定义，旧夹具未改；验证保护备份、旧笔记/定义/自定义表保持，备份受阻和同名表冲突停止/回滚。完整恢复逐表一致、源备份字节保持；坏日期/置顶/孤儿和移除约束后的重复标签/成员拒绝。其他旧结构迁移及原练习、导入、主题、保存/恢复等在完整359场景内回归。
+docs/验收记录.md:9: trailing whitespace.
++- 历史过程：单元01为728/733，补齐新接口注销后733/733；开发01为7/10，修正管理区浮层与写失败码断言后02为10/10；开发03为11/11。完整01为351/358，7项旧断言随新摘要/版本/白名单/键盘与只读写分离更新；定向02为17/18，目录读取/成功双status导致定位器严格冲突，等待读取结束后精确断言，定向03为19/19。没有放宽业务条件、超时或增加重试。
+docs/验收记录.md:10: trailing whitespace.
++- 证据格式边界：各轮完整文本与失败现场保持；Playwright固定JSON路径使环境目标未生效，开发03/完整01的JSON未独立保留，不能据此声称已保存首轮JSON。定向03及完整02已从实际默认JSON核对内容另存，最终文件统计359/0/0/0且零重试。暗色首次探针实际明色图保持，后用真实设置保存、html暗色断言和实际暗色截图补证。原四批四项未知原因保持，不改写历史。
+docs/验收记录.md:11: trailing whitespace.
++- 文件保护：19项包内out/SQLite与构建逐字节匹配；309最终来源与8配置保持，原计划49411字节前缀保持并追加完整候选原文；上一修复版150文件核对保持，原参考图/SQL不改。安全cmd使用独立LOCALAPPDATA试用目录，仅静态核对；实际检查使用明确EXE和新TEMP。没有提交/推送、替换桌面或迁移正式库。
+docs/验收记录.md:12: trailing whitespace.
++- 未验：未制作/安装NSIS，程序缩放/截图不代替系统DPI、IME、多屏、完整人工、长期/硬件验收；VMware跳过保持。本次仅用户选定的小批，待办、积累搜索、关联题、目标和配额组卷等仍为候选。
+docs/验收记录.md:13: trailing whitespace.
++- 证据：[本批报告](evidence/personal-tags-shortcuts-20261028/README.md)、[完整02 JSON](evidence/personal-tags-shortcuts-20261028/packaged-full-02.json)、[原完整01文本](evidence/personal-tags-shortcuts-20261028/packaged-full-01.txt)、[行为契约](个人标签与常用入口行为.md)、[独立试用](../release/V0.0.2-personal-tags-20261028.3-r2/开始使用.md)。以下为历史记录。
+docs/验收记录.md:14: trailing whitespace.
++

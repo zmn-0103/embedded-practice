@@ -3,6 +3,8 @@ import type { RoundEntry, RoundPage } from '../../../shared/contracts/study'
 import { questionFilterSummary } from './QuestionFilterFields'
 import { HistoryEntryContent } from './QuestionHistory'
 import { PersonalNote } from './PersonalNote'
+import { ReviewTodoEditor } from './ReviewTodoEditor'
+import { QuestionRelations } from './QuestionRelations'
 import { MaterialExport } from './MaterialExport'
 import { useNoteSaves } from '../note-saves'
 
@@ -43,6 +45,9 @@ function RoundEntryView({ sessionId, position }: { sessionId: string; position: 
       {!entry.isCurrentVersion && <p>这条记录采用旧题目版本；下方个人笔记为此题当前保存的笔记。</p>}
       <HistoryEntryContent entry={entry} />
       <PersonalNote identity={{ topicId: entry.topicId, questionId: entry.questionId }} />
+      <p className="muted">复习安排为此题当前计划，与本轮保存的历史内容分开。</p>
+      <ReviewTodoEditor identity={{ topicId: entry.topicId, questionId: entry.questionId }} />
+      <QuestionRelations identity={{ topicId: entry.topicId, questionId: entry.questionId }} />
     </div>
   )
 }

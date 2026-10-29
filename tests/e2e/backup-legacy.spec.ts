@@ -135,7 +135,7 @@ for (const version of [1, 2, 3, 4, 5, 6]) {
       }))
       expect(result.integrity).toEqual([{ integrity_check: 'ok' }])
       expect(result.foreignKeys).toEqual([])
-      expect(result.version).toEqual({ user_version: 13 })
+      expect(result.version).toEqual({ user_version: 17 })
       expect(result.questions).toEqual(version > 1 ? [{ title: '旧备份题' }] : [])
       expect(result.images).toEqual(
         version > 1

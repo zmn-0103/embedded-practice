@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:28972) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\oral-timer.spec.ts:243:5 › 真实短时间倒数，窗口隐藏/失焦暂停，恢复焦点不自动继续 (4.4s)
+
+  1 passed (5.1s)

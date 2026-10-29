@@ -75,7 +75,7 @@ for (const entry of ['学习记录', '题库'] as const) {
         )
         .toBe('function')
       await expect(editor).not.toBeEditable()
-      await expect(note.getByRole('status')).toHaveText('正在保存收藏并更新列表，笔记暂时只读。')
+      await expect(note.getByRole('status')).toHaveText('正在保存更改并更新列表，笔记暂时只读。')
       await editor.focus()
       await page.keyboard.type('LATE-INPUT')
       await expect(editor).toHaveValue(text)

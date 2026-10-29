@@ -24,9 +24,11 @@ export class QuestionSetFault extends Error {
 }
 
 export function createQuestionSetRepository(database: Database.Database) {
-  const names = database.prepare(`SELECT s.set_id AS setId,s.name,count(i.position) AS count
+  const names =
+    database.prepare(`SELECT s.set_id AS setId,s.name,count(i.position) AS count,s.pinned,s.last_used_at AS lastUsedAt
     FROM question_sets s LEFT JOIN question_set_items i ON i.set_id=s.set_id
-    GROUP BY s.set_id ORDER BY s.name COLLATE NOCASE,s.set_id LIMIT ${MAX_QUESTION_SETS + 1}`)
+    GROUP BY s.set_id ORDER BY s.pinned DESC,s.last_used_at DESC,s.name COLLATE NOCASE,s.set_id LIMIT ${MAX_QUESTION_SETS + 1}`)
+  const pin = database.prepare('UPDATE question_sets SET pinned=? WHERE set_id=?')
   const find = database.prepare('SELECT name FROM question_sets WHERE set_id=?')
   const members = database.prepare(`SELECT position,topic_id AS topicId,question_id AS questionId
     FROM question_set_items WHERE set_id=? ORDER BY position LIMIT ${MAX_QUESTION_SET_ITEMS + 1}`)
@@ -36,7 +38,7 @@ export function createQuestionSetRepository(database: Database.Database) {
     WHERE q.topic_id=@topicId AND q.question_id=@questionId`)
   const findName = database.prepare('SELECT 1 FROM question_sets WHERE name=? AND set_id<>?')
   const count = database.prepare('SELECT count(*) FROM question_sets').pluck()
-  const insert = database.prepare('INSERT INTO question_sets VALUES(?,?)')
+  const insert = database.prepare('INSERT INTO question_sets(set_id,name) VALUES(?,?)')
   const update = database.prepare('UPDATE question_sets SET name=? WHERE set_id=?')
   const remove = database.prepare('DELETE FROM question_sets WHERE set_id=?')
   const clear = database.prepare('DELETE FROM question_set_items WHERE set_id=?')
@@ -88,6 +90,11 @@ export function createQuestionSetRepository(database: Database.Database) {
     })
   })
   const change = database.transaction((input: QuestionSetChange) => {
+    if (input.kind === 'pin') {
+      if (!pin.run(Number(input.pinned), input.setId).changes)
+        throw new QuestionSetFault('NOT_FOUND', '题单已删除，请重新读取。')
+      return
+    }
     if (input.kind === 'delete') {
       remove.run(input.setId)
       return
@@ -127,7 +134,16 @@ export function createQuestionSetRepository(database: Database.Database) {
     listQuestionSets() {
       const rows = names.all()
       if (rows.length > MAX_QUESTION_SETS) throw new Error('题单数量超出支持范围。')
-      return rows.map((row) => questionSetSummarySchema.parse(row))
+      return rows.map((row) => {
+        const item = row as {
+          setId: string
+          name: string
+          count: number
+          pinned: number
+          lastUsedAt: string | null
+        }
+        return questionSetSummarySchema.parse({ ...item, pinned: Boolean(item.pinned) })
+      })
     },
     readQuestionSet(setId: string) {
       return readDefinition.deferred(setId)

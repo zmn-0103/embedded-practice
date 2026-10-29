@@ -87,6 +87,7 @@ function setup(initial = view()) {
     finishClose: vi.fn(async () => ok(null)),
     onBeforeClose: vi.fn(() => () => {}),
     onCloseCancelled: vi.fn(() => () => {}),
+    onTimerPause: vi.fn(() => () => {}),
   }
   const controller = createPracticeController(api)
   controller.open(initial)

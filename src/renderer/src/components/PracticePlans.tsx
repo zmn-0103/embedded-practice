@@ -4,6 +4,7 @@ import type { PracticePlan, PracticePlanOptions } from '../../../shared/contract
 import { usePracticePlans } from '../usePracticePlans'
 import { difficultyLabel } from './DifficultyBadge'
 import { questionFilterSummary } from './QuestionFilterFields'
+import { RECENCY_LABELS } from '../../../shared/contracts/question-filters'
 
 // 与 practice_plans 的 name COLLATE NOCASE 一致：只折叠 ASCII，避免预检比数据库更严。
 const foldName = (value: string) => value.replace(/[A-Z]/g, (letter) => letter.toLowerCase())
@@ -12,7 +13,7 @@ interface Props extends LibraryNavigation {
   refresh: number
   options: PracticePlanOptions
   disabled: boolean
-  onApply: (options: PracticePlanOptions) => void
+  onApply: (options: PracticePlanOptions, planId: string) => void
   onBlocked: (blocked: boolean) => void
   onOperation: (work: Promise<boolean>) => void
 }
@@ -51,7 +52,8 @@ export function PracticePlans({
         : '全部分类'
   const invalid =
     config &&
-    (!categoryTitle ||
+    (selected?.personalTagMissing ||
+      !categoryTitle ||
       (config.topicId !== null &&
         (!selectedTopic || !matchesCategory(selectedTopic.categoryId, config.category))))
   const locked =
@@ -60,6 +62,7 @@ export function PracticePlans({
     <details className="practice-plans" open>
       <summary>保存的练习方案（{model.plans.length}）</summary>
       <p className="muted">方案只填入条件，点击开始才建新轮。修改方案不会改变当前练习。</p>
+      <p className="muted">置顶优先，同组按最近成功开始练习排序；查看、编辑和填入条件不计使用。</p>
       <fieldset disabled={locked || Boolean(deleting) || Boolean(editing)}>
         <legend>保存当前条件</legend>
         <form
@@ -114,7 +117,8 @@ export function PracticePlans({
               )}
               {model.plans.map((plan) => (
                 <option key={plan.planId} value={plan.planId}>
-                  {plan.name}
+                  {plan.pinned ? '置顶 · ' : ''}
+                  {plan.name}（匹配{plan.matchingCount ?? '待读取'}题）
                 </option>
               ))}
             </select>
@@ -141,9 +145,22 @@ export function PracticePlans({
             ； 收藏：{config.filters.favoritesOnly ? '只看收藏' : '不限'}。
           </p>
         )}
+        {selected && (
+          <p className="muted">
+            当前匹配{selected.matchingCount ?? '待读取'}题；
+            {selected.lastUsedAt
+              ? `最近开始：${new Date(selected.lastUsedAt).toLocaleString('zh-CN')}`
+              : '尚未成功开始练习'}
+            。{config?.filters.personalTagId ? '已限定个人标签。' : ''}
+            {config?.filters.practiceRecency &&
+              config.filters.practiceRecency !== 'all' &&
+              `最近条件：${RECENCY_LABELS[config.filters.practiceRecency]}。`}
+            {config?.filters.practiceOrder === 'oldest' && '最久未练优先；随机时先选数量再打乱。'}
+          </p>
+        )}
         {invalid && (
           <p className="error-message">
-            方案的分类或专题已不在当前活动范围，请重新选择条件后另存；原条件保持。
+            方案的分类、专题或个人标签已失效，请重新选择条件后更新或另存；原条件保持。
           </p>
         )}
         {selected && (
@@ -151,9 +168,17 @@ export function PracticePlans({
             <button
               type="button"
               disabled={!selected || Boolean(invalid)}
-              onClick={() => selected && onApply(selected.options)}
+              onClick={() => selected && onApply(selected.options, selected.planId)}
             >
               填入条件
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                model.perform({ kind: 'pin', planId: selected.planId, pinned: !selected.pinned })
+              }
+            >
+              {selected.pinned ? '取消置顶方案' : '置顶方案'}
             </button>
             <button type="button" disabled={!selected} onClick={() => setDeleting(selected)}>
               删除所选方案…
@@ -300,7 +325,11 @@ export function PracticePlans({
         <div>
           <p>
             待确认：
-            {model.pending.kind === 'delete' ? '删除原方案' : `保存“${model.pending.name}”`}
+            {model.pending.kind === 'delete'
+              ? '删除原方案'
+              : model.pending.kind === 'pin'
+                ? '更新原方案置顶状态'
+                : `保存“${model.pending.name}”`}
             。重试保持原条件和目标。
           </p>
           <button

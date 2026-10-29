@@ -1,0 +1,51 @@
+src/main/database/open-database.ts 84ms (unchanged)
+src/main/database/personal-tag-schema.ts 2ms (unchanged)
+src/main/database/repositories/personal-tag-repository.ts 12ms
+src/main/database/repositories/practice-plan-repository.ts 14ms
+src/main/database/repositories/practice-repository.ts 43ms
+src/main/database/repositories/question-selection.ts 3ms (unchanged)
+src/main/database/repositories/question-set-repository.ts 12ms
+src/main/ipc/library.ts 37ms
+src/main/services/backup/validate-backup.ts 14ms
+src/main/services/library/library-import.ts 4ms (unchanged)
+src/preload/index.ts 10ms
+src/renderer/src/App.tsx 27ms (unchanged)
+src/renderer/src/components/LibraryBrowser.tsx 51ms
+src/renderer/src/components/PersonalNote.tsx 8ms (unchanged)
+src/renderer/src/components/PersonalTags.tsx 12ms
+src/renderer/src/components/PracticePlans.tsx 15ms
+src/renderer/src/components/PracticeWorkspace.tsx 27ms (unchanged)
+src/renderer/src/components/QuestionFilterFields.tsx 7ms
+src/renderer/src/components/QuestionSets.tsx 16ms
+src/renderer/src/components/SelectedPractice.tsx 8ms
+src/renderer/src/usePracticePlans.ts 3ms
+src/renderer/src/useQuestionSets.ts 6ms
+src/shared/contracts/application.ts 3ms (unchanged)
+src/shared/contracts/personal-tags.ts 3ms
+src/shared/contracts/practice-plans.ts 4ms
+src/shared/contracts/practice.ts 15ms (unchanged)
+src/shared/contracts/question-filters.ts 2ms (unchanged)
+src/shared/contracts/question-sets.ts 7ms (unchanged)
+tests/e2e/backup-legacy.spec.ts 18ms (unchanged)
+tests/e2e/backup-window.spec.ts 45ms (unchanged)
+tests/e2e/board-entry.spec.ts 37ms (unchanged)
+tests/e2e/category-migration.spec.ts 12ms (unchanged)
+tests/e2e/history-versions.spec.ts 15ms (unchanged)
+tests/e2e/library-import.spec.ts 12ms (unchanged)
+tests/e2e/note-favorite.spec.ts 9ms (unchanged)
+tests/e2e/palette-migration.spec.ts 8ms (unchanged)
+tests/e2e/personal-bank.spec.ts 16ms (unchanged)
+tests/e2e/practice-control-helpers.ts 6ms (unchanged)
+tests/e2e/practice-flow-helpers.ts 6ms (unchanged)
+tests/e2e/practice-flow-storage.spec.ts 10ms (unchanged)
+tests/e2e/practice-mode-migration.spec.ts 10ms (unchanged)
+tests/e2e/practice-plans-migration.spec.ts 7ms (unchanged)
+tests/e2e/practice.spec.ts 17ms (unchanged)
+tests/e2e/restore-window.spec.ts 32ms (unchanged)
+tests/e2e/session-filters-migration.spec.ts 11ms (unchanged)
+tests/e2e/settings-migration.spec.ts 9ms (unchanged)
+tests/e2e/study-storage.spec.ts 9ms (unchanged)
+tests/e2e/theme-helpers.ts 5ms (unchanged)
+tests/e2e/themes-migration.spec.ts 9ms (unchanged)
+tests/unit/library-ipc.test.ts 51ms
+tests/unit/personal-tags-contract.test.ts 3ms

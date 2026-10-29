@@ -1,0 +1,70 @@
+src/main/database/open-database.ts 88ms (unchanged)
+src/main/database/personal-tag-schema.ts 2ms (unchanged)
+src/main/database/repositories/library-reader.ts 21ms
+src/main/database/repositories/personal-tag-repository.ts 8ms (unchanged)
+src/main/database/repositories/practice-plan-repository.ts 11ms (unchanged)
+src/main/database/repositories/practice-repository.ts 43ms
+src/main/database/repositories/question-selection.ts 4ms
+src/main/database/repositories/question-set-repository.ts 17ms (unchanged)
+src/main/database/repositories/review-repository.ts 8ms
+src/main/database/review-schema.ts 2ms (unchanged)
+src/main/ipc/library.ts 43ms
+src/main/services/backup/validate-backup.ts 16ms
+src/main/services/library/library-import.ts 4ms (unchanged)
+src/preload/index.ts 9ms
+src/renderer/src/App.tsx 29ms (unchanged)
+src/renderer/src/components/LibraryBrowser.tsx 51ms
+src/renderer/src/components/PersonalNote.tsx 6ms (unchanged)
+src/renderer/src/components/PersonalTags.tsx 14ms (unchanged)
+src/renderer/src/components/PracticePane.tsx 21ms (unchanged)
+src/renderer/src/components/PracticePlans.tsx 15ms
+src/renderer/src/components/PracticeWorkspace.tsx 27ms
+src/renderer/src/components/QuestionFilterFields.tsx 10ms
+src/renderer/src/components/QuestionSets.tsx 24ms (unchanged)
+src/renderer/src/components/ReviewTodoEditor.tsx 8ms
+src/renderer/src/components/ReviewTodos.tsx 17ms
+src/renderer/src/components/RoundDetail.tsx 9ms (unchanged)
+src/renderer/src/components/SelectedPractice.tsx 7ms (unchanged)
+src/renderer/src/note-saves.tsx 5ms
+src/renderer/src/review-controller.ts 8ms
+src/renderer/src/styles/global.css 113ms (unchanged)
+src/renderer/src/styles/workbench-pages.css 65ms
+src/renderer/src/usePracticePlans.ts 4ms (unchanged)
+src/renderer/src/useQuestionSets.ts 4ms (unchanged)
+src/shared/contracts/application.ts 2ms (unchanged)
+src/shared/contracts/library-desktop.ts 7ms (unchanged)
+src/shared/contracts/personal-tags.ts 4ms (unchanged)
+src/shared/contracts/practice-plans.ts 4ms (unchanged)
+src/shared/contracts/practice.ts 10ms (unchanged)
+src/shared/contracts/question-filters.ts 3ms
+src/shared/contracts/question-sets.ts 7ms (unchanged)
+src/shared/contracts/review-todos.ts 7ms
+tests/e2e/backup-legacy.spec.ts 16ms (unchanged)
+tests/e2e/backup-window.spec.ts 37ms (unchanged)
+tests/e2e/board-entry.spec.ts 44ms (unchanged)
+tests/e2e/category-migration.spec.ts 11ms (unchanged)
+tests/e2e/history-versions.spec.ts 15ms (unchanged)
+tests/e2e/library-import.spec.ts 11ms (unchanged)
+tests/e2e/note-favorite.spec.ts 8ms (unchanged)
+tests/e2e/palette-migration.spec.ts 9ms (unchanged)
+tests/e2e/personal-bank.spec.ts 23ms (unchanged)
+tests/e2e/personal-tags-storage.spec.ts 9ms (unchanged)
+tests/e2e/personal-tags.spec.ts 15ms (unchanged)
+tests/e2e/practice-control-helpers.ts 6ms (unchanged)
+tests/e2e/practice-control-storage.spec.ts 11ms (unchanged)
+tests/e2e/practice-flow-helpers.ts 6ms (unchanged)
+tests/e2e/practice-flow-storage.spec.ts 11ms (unchanged)
+tests/e2e/practice-mode-migration.spec.ts 10ms (unchanged)
+tests/e2e/practice-plans-migration.spec.ts 6ms (unchanged)
+tests/e2e/practice-plans.spec.ts 11ms (unchanged)
+tests/e2e/practice.spec.ts 18ms (unchanged)
+tests/e2e/restore-window.spec.ts 30ms (unchanged)
+tests/e2e/session-filters-migration.spec.ts 10ms (unchanged)
+tests/e2e/settings-migration.spec.ts 9ms (unchanged)
+tests/e2e/shortcut-usage.spec.ts 8ms (unchanged)
+tests/e2e/startup.spec.ts 7ms (unchanged)
+tests/e2e/study-storage.spec.ts 9ms (unchanged)
+tests/e2e/theme-helpers.ts 4ms (unchanged)
+tests/e2e/themes-migration.spec.ts 7ms (unchanged)
+tests/unit/library-ipc.test.ts 39ms
+tests/unit/personal-tags-contract.test.ts 4ms (unchanged)

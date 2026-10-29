@@ -1,0 +1,127 @@
+{
+  "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-review-todos-20261029.1\\win-unpacked\\embedded-practice.exe",
+  "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-v15-fixture-ehzIqh",
+  "packaged": true,
+  "build": "离线使用 · 数据保存在本机\nV0.0.2 测试版 · 构建 20261029.1-review-todos",
+  "schema": 15,
+  "sha256": "62c7780f844348980f8cde639107aaf11152a56b191704c194e226bcedd8db95",
+  "objects": [
+    {
+      "type": "table",
+      "name": "app_startup"
+    },
+    {
+      "type": "table",
+      "name": "library_meta"
+    },
+    {
+      "type": "table",
+      "name": "topics"
+    },
+    {
+      "type": "table",
+      "name": "questions"
+    },
+    {
+      "type": "table",
+      "name": "question_versions"
+    },
+    {
+      "type": "table",
+      "name": "image_resources"
+    },
+    {
+      "type": "table",
+      "name": "version_images"
+    },
+    {
+      "type": "table",
+      "name": "question_user_state"
+    },
+    {
+      "type": "table",
+      "name": "import_receipts"
+    },
+    {
+      "type": "index",
+      "name": "questions_topic_order"
+    },
+    {
+      "type": "table",
+      "name": "practice_sessions"
+    },
+    {
+      "type": "index",
+      "name": "practice_one_active"
+    },
+    {
+      "type": "table",
+      "name": "practice_items"
+    },
+    {
+      "type": "table",
+      "name": "practice_receipts"
+    },
+    {
+      "type": "index",
+      "name": "practice_items_version"
+    },
+    {
+      "type": "table",
+      "name": "appearance_settings"
+    },
+    {
+      "type": "table",
+      "name": "categories"
+    },
+    {
+      "type": "index",
+      "name": "topics_category"
+    },
+    {
+      "type": "table",
+      "name": "practice_plans"
+    },
+    {
+      "type": "table",
+      "name": "installed_themes"
+    },
+    {
+      "type": "table",
+      "name": "question_sets"
+    },
+    {
+      "type": "table",
+      "name": "question_set_items"
+    },
+    {
+      "type": "table",
+      "name": "personal_notes"
+    },
+    {
+      "type": "table",
+      "name": "personal_tags"
+    },
+    {
+      "type": "table",
+      "name": "question_personal_tags"
+    },
+    {
+      "type": "index",
+      "name": "personal_tag_questions"
+    },
+    {
+      "type": "table",
+      "name": "review_todos"
+    },
+    {
+      "type": "index",
+      "name": "review_todos_state_due"
+    }
+  ],
+  "quickCheck": [
+    {
+      "quick_check": "ok"
+    }
+  ]
+}

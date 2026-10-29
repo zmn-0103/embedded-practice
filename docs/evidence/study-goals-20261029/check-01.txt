@@ -1,0 +1,9 @@
+
+> embedded-practice@0.0.2 check
+> npm run typecheck && npm run format:check
+
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/planning.spec.ts(18,21): error TS2724: '"./practice-flow-helpers"' has no exported member named 'readFlow'. Did you mean 'endFlow'?

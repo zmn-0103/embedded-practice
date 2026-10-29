@@ -176,7 +176,7 @@ test('v3 升级至 v13：备份、全部旧记录、原请求回执与顺序会�
         category_scope_json: '{"kind":"all"}',
       })),
     })
-    expect(current.prepare('PRAGMA user_version').get()).toMatchObject({ user_version: 13 })
+    expect(current.prepare('PRAGMA user_version').get()).toMatchObject({ user_version: 17 })
     expect(current.prepare('PRAGMA foreign_key_check').all()).toEqual([])
     current.exec('PRAGMA foreign_keys = ON; BEGIN')
     const insert = current.prepare(

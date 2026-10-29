@@ -1,0 +1,19 @@
+
+Running 12 tests using 1 worker
+
+(node:15644) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\knowledge-storage.spec.ts:69:7 › 结构15受保护升级16，旧待办/笔记/标签/方案/草稿保持：none (1.0s)
+  ok  2 [development] › tests\e2e\knowledge-storage.spec.ts:69:7 › 结构15受保护升级16，旧待办/笔记/标签/方案/草稿保持：backup-blocked (837ms)
+  ok  3 [development] › tests\e2e\knowledge-storage.spec.ts:69:7 › 结构15受保护升级16，旧待办/笔记/标签/方案/草稿保持：second-table-collision (743ms)
+  ok  4 [development] › tests\e2e\knowledge-storage.spec.ts:124:5 › 完整备份恢复关联/说明/最近搜索，拒绝重复/自关联/孤儿/非法文字日期且保留源字节 (4.6s)
+  ok  5 [development] › tests\e2e\knowledge-ui.spec.ts:15:5 › 积累检索分类/最近词/跨页，详情返回保留条件/结果/滚动，保存笔记后明确刷新 (1.8s)
+  ok  6 [development] › tests\e2e\knowledge-ui.spec.ts:97:5 › 关联UI真实失败/退出保护、提交后坏回包原命令重试，过期冲突保留后明确放弃及删除 (2.1s)
+  ok  7 [development] › tests\e2e\knowledge-ui.spec.ts:204:5 › 双向前置/对照笔记先保存，从关联题进入原确认并采用固定当前版本 (1.7s)
+  ok  8 [development] › tests\e2e\knowledge-ui.spec.ts:278:5 › 练习揭晓前不读关联/搜索，旧轮复盘对照当前题干且不改旧轮次 (2.6s)
+  ok  9 [development] › tests\e2e\knowledge-ui.spec.ts:346:5 › 我的积累与关联对照在900宽/150%暗色可操作、中文混排不横向溢出 (1.8s)
+  ok 10 [development] › tests\e2e\knowledge.spec.ts:10:5 › 知识关联真实事务：两端同记录/方向、重复与CAS/幂等、删除不复活、失败回滚和归档分页 (1.9s)
+  ok 11 [development] › tests\e2e\knowledge.spec.ts:107:5 › 我的积累按来源合并片段，字面特殊字符/超长笔记有界、当前版本/归档与答案隔离 (1.8s)
+  ok 12 [development] › tests\e2e\knowledge.spec.ts:176:5 › 最近关键词保留成功次序的10个，重复提升、查询只读/分页不记词、真实写失败整批回滚 (1.2s)
+
+  12 passed (23.0s)

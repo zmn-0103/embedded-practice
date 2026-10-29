@@ -27,10 +27,10 @@ function setup() {
     mainFrame: frame,
     send: vi.fn(),
   })
-  const window = {
+  const window = Object.assign(new EventEmitter(), {
     isDestroyed: vi.fn(() => false),
     webContents: contents,
-  } as unknown as BrowserWindow
+  }) as unknown as BrowserWindow
   const event = { sender: contents, senderFrame: frame } as unknown as IpcMainInvokeEvent
   const id = randomUUID()
   const ack = { sessionId: id, position: 0, revision: 0, total: 1, status: 'active' as const }
@@ -72,7 +72,7 @@ function setup() {
   const invoke = (channel: string, ...args: unknown[]) =>
     native.handlers.get(channel)!(event, ...args)
   const lastCloseId = () => (contents.send.mock.lastCall?.[1] as { requestId: string }).requestId
-  return { id, service, registration, invoke, report, event, contents, frame, lastCloseId }
+  return { id, service, registration, invoke, report, event, contents, frame, lastCloseId, window }
 }
 beforeEach(() => {
   native.handlers.clear()
@@ -217,6 +217,36 @@ test('关闭与发送失败不悬挂，移除全部处理器和监听', async ()
   expect(contents.eventNames()).toEqual([])
 })
 
+test('原生失焦/最小化/隐藏只发空计时通知，关闭解绑且销毁不再发送', () => {
+  const { window, contents, registration, service } = setup()
+  for (const name of ['blur', 'minimize', 'hide'] as const) window.emit(name)
+  expect(contents.send.mock.calls).toEqual([
+    [channels.timerPause],
+    [channels.timerPause],
+    [channels.timerPause],
+  ])
+  expect(native.handlers.has(channels.timerPause)).toBe(false)
+  expect(service.navigate).not.toHaveBeenCalled()
+  expect(service.reveal).not.toHaveBeenCalled()
+  contents.isDestroyed.mockReturnValue(true)
+  window.emit('minimize')
+  expect(contents.send).toHaveBeenCalledTimes(3)
+  registration.close()
+  expect(window.eventNames()).toEqual([])
+  window.emit('hide')
+  expect(contents.send).toHaveBeenCalledTimes(3)
+})
+test('计时通知发送失败只报告，不影响业务或关闭清理', async () => {
+  const { window, contents, report, invoke, registration } = setup()
+  contents.send.mockImplementationOnce(() => {
+    throw new Error('injected timer send')
+  })
+  expect(() => window.emit('minimize')).not.toThrow()
+  expect(report).toHaveBeenCalledTimes(1)
+  expect(await invoke(channels.read, { sessionId: null })).toEqual({ ok: true, value: null })
+  registration.close()
+  expect(window.eventNames()).toEqual([])
+})
 test('恢复暂停拒绝业务写入，失败恢复后通知窗口复位关闭状态', async () => {
   const { invoke, registration, contents, service } = setup()
   registration.pause()

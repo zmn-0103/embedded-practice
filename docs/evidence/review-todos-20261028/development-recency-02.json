@@ -1,0 +1,272 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=development",
+      "tests/e2e/practice-recency.spec.ts",
+      "--reporter=list,json",
+      "--output=output/playwright/review-development-recency-02"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/playwright/review-development-recency-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/playwright/review-development-recency-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\output\\playwright\\review-development-recency-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-recency.spec.ts",
+      "file": "practice-recency.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1482,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:46:09.131Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLUU3Ym1rUiIsInBhY2thZ2VkIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-173767888bf6d43dd9fb",
+          "file": "practice-recency.spec.ts",
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "最久优先先限10题再随机，固定队列不随历史变化/重新打开重排；方案兼容显式默认值",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1952,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:46:10.636Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLVpEenZtVyIsInBhY2thZ2VkIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-bcf66ddbdbd35d29d6a2",
+          "file": "practice-recency.spec.ts",
+          "line": 180,
+          "column": 5
+        },
+        {
+          "title": "题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1358,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('.recent-practice-filters > summary') resolved to 2 elements:\n    1) <summary>最近练习与排序</summary> aka getByText('最近练习与排序').first()\n    2) <summary>最近练习与排序</summary> aka getByRole('group', { name: '设置题库条件' }).getByText('最近练习与排序')\n\nCall log:\n\u001b[2m  - waiting for locator('.recent-practice-filters > summary')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('.recent-practice-filters > summary') resolved to 2 elements:\n    1) <summary>最近练习与排序</summary> aka getByText('最近练习与排序').first()\n    2) <summary>最近练习与排序</summary> aka getByRole('group', { name: '设置题库条件' }).getByText('最近练习与排序')\n\nCall log:\n\u001b[2m  - waiting for locator('.recent-practice-filters > summary')\u001b[22m\n\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts:297:62",
+                    "location": {
+                      "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts",
+                      "column": 62,
+                      "line": 297
+                    },
+                    "snippet": "  295 |       window.webContents.setZoomFactor(1.5)\n  296 |     })\n> 297 |     await page.locator('.recent-practice-filters > summary').click()\n      |                                                              ^\n  298 |     await page.getByLabel('题库最近练习', { exact: true }).selectOption('7d')\n  299 |     await page.getByLabel('题库选题优先级', { exact: true }).selectOption('oldest')\n  300 |     await page.getByRole('button', { name: '筛选题库', exact: true }).click()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts",
+                        "column": 62,
+                        "line": 297
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('.recent-practice-filters > summary') resolved to 2 elements:\n    1) <summary>最近练习与排序</summary> aka getByText('最近练习与排序').first()\n    2) <summary>最近练习与排序</summary> aka getByRole('group', { name: '设置题库条件' }).getByText('最近练习与排序')\n\nCall log:\n\u001b[2m  - waiting for locator('.recent-practice-filters > summary')\u001b[22m\n\n\n  295 |       window.webContents.setZoomFactor(1.5)\n  296 |     })\n> 297 |     await page.locator('.recent-practice-filters > summary').click()\n      |                                                              ^\n  298 |     await page.getByLabel('题库最近练习', { exact: true }).selectOption('7d')\n  299 |     await page.getByLabel('题库选题优先级', { exact: true }).selectOption('oldest')\n  300 |     await page.getByRole('button', { name: '筛选题库', exact: true }).click()\n    at E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts:297:62"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T16:46:12.599Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxub2RlX21vZHVsZXNcXGVsZWN0cm9uXFxkaXN0XFxlbGVjdHJvbi5leGUiLCJkYXRhIjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLWFJV2JpdiIsInBhY2thZ2VkIjpmYWxzZX0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\review-development-recency-02\\practice-recency-题库和练习共用最近筛选，可保存-填入方案；窄窗暗色控件和结果可操作-development\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\My_Projects\\embedded-practice\\tests\\e2e\\practice-recency.spec.ts",
+                    "column": 62,
+                    "line": 297
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-eba72ea55ee541cbd3f4",
+          "file": "practice-recency.spec.ts",
+          "line": 285,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T16:46:08.590Z",
+    "duration": 5405.009,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

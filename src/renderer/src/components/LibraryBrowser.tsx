@@ -25,6 +25,10 @@ import { CategoryManager } from './CategoryManager'
 import { DifficultyBadge } from './DifficultyBadge'
 import { QuestionSets } from './QuestionSets'
 import { PersonalNote } from './PersonalNote'
+import { PersonalTags } from './PersonalTags'
+import { ReviewTodoEditor } from './ReviewTodoEditor'
+import { ReviewTodos } from './ReviewTodos'
+import { QuestionRelations } from './QuestionRelations'
 import { ContentUpdates } from './ContentUpdates'
 import { useNoteSaves } from '../note-saves'
 import {
@@ -32,16 +36,22 @@ import {
   questionIdentityKey,
 } from '../../../shared/contracts/question-sets'
 
-function QuestionView({
+export function QuestionView({
   identity,
   current,
   favoritesOnly,
   onFavoriteSaved,
+  editingLocked,
+  showPracticeTime,
+  onPractice,
 }: {
   identity: QuestionIdentity
   current: LibraryPage['questions'][number] | undefined
   favoritesOnly: boolean
   onFavoriteSaved: () => void
+  editingLocked: boolean
+  showPracticeTime: boolean
+  onPractice?: ((items: QuestionIdentity[], name: string) => void) | undefined
 }) {
   const noteSaves = useNoteSaves()
   const [detail, setDetail] = useState<QuestionDetail>()
@@ -192,10 +202,19 @@ function QuestionView({
               : '当前内容尚未练习'}
         </p>
         {detail.contentUpdated && <p className="content-update">内容更新待复习</p>}
+        {showPracticeTime && (
+          <p className="muted">
+            {current?.lastPracticedAt
+              ? `当前版本最近揭晓：${new Date(current.lastPracticedAt).toLocaleString('zh-CN')}`
+              : detail.practiced
+                ? '当前版本已练习，时间未记录'
+                : '当前版本从未练习'}
+          </p>
+        )}
         <button
           type="button"
           aria-pressed={detail.favorite}
-          disabled={favoriteBusy}
+          disabled={favoriteBusy || editingLocked}
           onKeyDown={(event) => {
             if (event.repeat && (event.key === 'Enter' || event.key === ' ')) event.preventDefault()
           }}
@@ -247,7 +266,13 @@ function QuestionView({
         </section>
       )}
       <QuestionHistory topicId={detail.topicId} questionId={detail.questionId} />
-      <PersonalNote identity={identity} readOnly={favoriteBusy} />
+      <PersonalNote identity={identity} readOnly={favoriteBusy || editingLocked} />
+      <ReviewTodoEditor identity={identity} readOnly={favoriteBusy || editingLocked} />
+      <QuestionRelations
+        identity={identity}
+        readOnly={favoriteBusy || editingLocked}
+        onPractice={onPractice}
+      />
     </article>
   )
 }
@@ -275,6 +300,7 @@ interface LibraryBrowserProps {
     items: QuestionIdentity[],
     sourceName: string,
     contentUpdatedOnly?: boolean,
+    sourceSetId?: string,
   ) => void
   onResumeReady?: () => void
 }
@@ -317,12 +343,14 @@ function LibraryContent({
   const [pickError, setPickError] = useState('')
   const [setsBlocked, setSetsBlocked] = useState(false)
   const [categoryBusy, setCategoryBusy] = useState(false)
-  const localBusy = useRef({ sets: false, category: false })
-  function reportBusy(kind: 'sets' | 'category', value: boolean) {
+  const [tagsBlocked, setTagsBlocked] = useState(false)
+  const localBusy = useRef({ sets: false, category: false, tags: false })
+  function reportBusy(kind: 'sets' | 'category' | 'tags', value: boolean) {
     localBusy.current[kind] = value
     if (kind === 'sets') setSetsBlocked(value)
-    else setCategoryBusy(value)
-    onCategoryBusy?.(localBusy.current.sets || localBusy.current.category)
+    else if (kind === 'category') setCategoryBusy(value)
+    else setTagsBlocked(value)
+    onCategoryBusy?.(localBusy.current.sets || localBusy.current.category || localBusy.current.tags)
   }
   function changePicked(next: QuestionIdentity[]) {
     if (next.length > MAX_QUESTION_SET_ITEMS) {
@@ -504,24 +532,39 @@ function LibraryContent({
     </>
   )
   const management = !scope && (
-    <CategoryManager
-      categories={data.categories}
-      topics={data.topics}
-      disabled={loading || categoryDisabled}
-      onChanged={() => {
-        setFavoriteRefresh((value) => value + 1)
-        onCategoryChanged?.()
-      }}
-      onBusyChange={(value) => reportBusy('category', value)}
-      onOperation={onCategoryOperation}
-    />
+    <>
+      <ReviewTodos
+        refresh={refresh + invalidation}
+        disabled={loading || categoryDisabled}
+        onPractice={onPracticeQuestions}
+      />
+      <PersonalTags
+        items={picked}
+        refresh={refresh}
+        disabled={loading || categoryBusy || setsBlocked || (categoryDisabled && !tagsBlocked)}
+        onChanged={() => onCategoryChanged?.()}
+        onBlocked={(value) => reportBusy('tags', value)}
+        onOperation={(work) => onCategoryOperation?.(work)}
+      />
+      <CategoryManager
+        categories={data.categories}
+        topics={data.topics}
+        disabled={loading || categoryDisabled}
+        onChanged={() => {
+          setFavoriteRefresh((value) => value + 1)
+          onCategoryChanged?.()
+        }}
+        onBusyChange={(value) => reportBusy('category', value)}
+        onOperation={onCategoryOperation}
+      />
+    </>
   )
   const selectionPanel = !scope && onPracticeQuestions && (
     <details className="question-selection-panel">
       <summary>勾选组卷与题单（{picked.length}题）</summary>
       <QuestionSets
         items={picked}
-        refresh={refresh}
+        refresh={refresh + invalidation}
         disabled={loading || categoryBusy || (categoryDisabled && !setsBlocked)}
         onChange={changePicked}
         onPractice={onPracticeQuestions}
@@ -652,6 +695,7 @@ function LibraryContent({
         <div className="library-condition-controls" role="group" aria-label="设置题库条件">
           <h3 hidden={Boolean(scope)}>2 · 设置条件</h3>
           <QuestionFilterFields
+            refresh={refresh}
             compact={Boolean(scope)}
             advancedContent={scope ? updatedFilter : undefined}
             prefix="题库"
@@ -864,6 +908,17 @@ function LibraryContent({
                               ? '已揭晓，未自评'
                               : '尚未练习'}
                           {question.favorite && ' · 已收藏'}
+                          {question.lastPracticedAt !== undefined && (
+                            <span>
+                              {' '}
+                              ·{' '}
+                              {question.lastPracticedAt
+                                ? `最近揭晓：${new Date(question.lastPracticedAt).toLocaleDateString('zh-CN')}`
+                                : question.practiced
+                                  ? '练习时间未记录'
+                                  : '当前版本未练'}
+                            </span>
+                          )}
                           {question.contentUpdated && (
                             <span className="content-update"> · 内容更新待复习</span>
                           )}
@@ -928,6 +983,12 @@ function LibraryContent({
             <QuestionView
               key={`${refresh}/${attempt}/${selected.topicId}/${selected.questionId}`}
               identity={selected}
+              editingLocked={tagsBlocked}
+              onPractice={onPracticeQuestions}
+              showPracticeTime={
+                (request.filters?.practiceRecency ?? 'all') !== 'all' ||
+                request.filters?.practiceOrder === 'oldest'
+              }
               favoritesOnly={request.filters?.favoritesOnly === true}
               current={data.questions.find(
                 (question) =>

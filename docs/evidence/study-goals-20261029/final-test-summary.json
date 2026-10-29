@@ -1,0 +1,79 @@
+{
+  "candidate": "r2",
+  "executable": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+  "unit": {
+    "files": 47,
+    "passed": 763,
+    "failed": 0
+  },
+  "packaged": {
+    "cases": 399,
+    "passed": 399,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "automaticRetries": 0,
+    "startTime": "2026-10-29T05:48:36.362Z",
+    "durationSeconds": 846.92352,
+    "featureCases": 14
+  },
+  "initialAndRepair": [
+    {
+      "file": "docs/evidence/study-goals-20261029/packaged-full-01.json",
+      "stats": {
+        "startTime": "2026-10-29T05:32:28.202Z",
+        "duration": 850358.767,
+        "expected": 398,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "cases": 399,
+      "results": 399,
+      "automaticRetries": 0,
+      "failures": [
+        {
+          "file": "restore-window.spec.ts",
+          "title": "保护性备份可直接从本数据目录选择并恢复，来源文件不被覆盖",
+          "status": "unexpected"
+        }
+      ]
+    },
+    {
+      "file": "docs/evidence/study-goals-20261029/packaged-delete-reproduction-01.json",
+      "stats": {
+        "startTime": "2026-10-29T05:45:59.224Z",
+        "duration": 12734.262,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "cases": 1,
+      "results": 1,
+      "automaticRetries": 0,
+      "failures": [
+        {
+          "file": "planning-ui.spec.ts",
+          "title": "备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史",
+          "status": "unexpected"
+        }
+      ]
+    },
+    {
+      "file": "docs/evidence/study-goals-20261029/packaged-r2-confirm-01.json",
+      "stats": {
+        "startTime": "2026-10-29T05:47:34.777Z",
+        "duration": 6740.41,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": 2,
+      "results": 2,
+      "automaticRetries": 0,
+      "failures": []
+    }
+  ]
+}

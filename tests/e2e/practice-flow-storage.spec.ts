@@ -73,9 +73,23 @@ test('结构10升级前保护备份，原队列/草稿/方案/自定义对象逐
     expect((await readAppStatus(instance.page)).ok).toBe(true)
     expect(withHistoryDatabase(testDataDirectory, records)).toEqual({
       ...before,
+      practice_plans: before['practice_plans']!.map((row) => ({
+        ...row,
+        pinned: 0,
+        last_used_at: null,
+      })),
       question_sets: [],
       question_set_items: [],
       personal_notes: [],
+      personal_tags: [],
+      question_personal_tags: [],
+      review_todos: [],
+      question_relations: [],
+      recent_knowledge_searches: [],
+      daily_targets: [],
+      study_goals: [],
+      quota_settings: [],
+      learning_activities: [],
       practice_sessions: before['practice_sessions']!.map((row) => ({
         ...row,
         repeat_source_id: null,
@@ -85,7 +99,7 @@ test('结构10升级前保护备份，原队列/草稿/方案/自定义对象逐
     })
     expect(
       withHistoryDatabase(testDataDirectory, (db) => db.prepare('PRAGMA user_version').get()),
-    ).toEqual({ user_version: 13 })
+    ).toEqual({ user_version: 17 })
     const copies = (await readdir(join(testDataDirectory, 'backups'))).filter((name) =>
       name.startsWith('pre-migration-v10-'),
     )
@@ -255,7 +269,17 @@ test('完整备份恢复再练来源/固定旧版本/联合方案与草稿，坏
     const restored = await launchApplication(restoredDirectory, info.project.name)
     opened.push(restored.application)
     expect(withHistoryDatabase(restoredDirectory, records)).toEqual(before)
-    expect(await readPlans(restored.page)).toEqual([{ planId, name: '联合复习方案', options }])
+    expect(await readPlans(restored.page)).toEqual([
+      {
+        planId,
+        name: '联合复习方案',
+        options,
+        pinned: false,
+        lastUsedAt: null,
+        personalTagMissing: false,
+        matchingCount: 2,
+      },
+    ])
     await restored.page.getByRole('button', { name: '继续练习', exact: true }).click()
     await expect(restored.page.getByRole('textbox', { name: '我的答案', exact: true })).toHaveValue(
       '再练独立草稿',

@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import type { LearningSummary } from '../../../shared/contracts/learning'
 import type { PracticeView } from '../../../shared/contracts/practice'
 import { ALL_CATEGORIES, type CategoryScope } from '../../../shared/contracts/categories'
+import { StudyPlanner } from './StudyPlanner'
+import type { PlanningScope } from '../../../shared/contracts/planning'
 import {
   EMPTY_QUESTION_FILTERS,
   type QuestionFilters,
@@ -15,6 +17,9 @@ export function LearningOverview({
   onBoards,
   onBrowse,
   onImport,
+  onPractice,
+  onBusy,
+  onOperation,
 }: {
   refresh: number
   practice: { active: PracticeView | null; ready: boolean; busy: boolean; resume: () => void }
@@ -22,6 +27,9 @@ export function LearningOverview({
   onConfigure: () => void
   onBoards: () => void
   onImport: (kind: 'import' | 'template') => void
+  onPractice: (scope: PlanningScope) => void
+  onBusy: (busy: boolean) => void
+  onOperation: (work: Promise<boolean>) => void
   onBrowse: (
     filters: QuestionFilters,
     category?: CategoryScope,
@@ -245,6 +253,14 @@ export function LearningOverview({
           </div>
         </>
       )}
+      <StudyPlanner
+        refresh={refresh}
+        disabled={blocked}
+        onPractice={onPractice}
+        onResume={practice.resume}
+        onBusy={onBusy}
+        onOperation={onOperation}
+      />
     </div>
   )
 }

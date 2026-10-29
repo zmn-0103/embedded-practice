@@ -96,6 +96,15 @@ test('真实结构6先保护备份再追加配色，全部业务/自定义对象
     question_sets: [],
     question_set_items: [],
     personal_notes: [],
+    personal_tags: [],
+    question_personal_tags: [],
+    review_todos: [],
+    question_relations: [],
+    recent_knowledge_searches: [],
+    daily_targets: [],
+    study_goals: [],
+    quota_settings: [],
+    learning_activities: [],
     topics: before.topics!.map((row) => ({ ...row, category_id: null })),
     practice_sessions: before.practice_sessions!.map((row) => ({
       ...row,
@@ -117,7 +126,7 @@ test('真实结构6先保护备份再追加配色，全部业务/自定义对象
     await expect(page.getByRole('button', { name: '继续练习', exact: true })).toBeEnabled()
     withHistoryDatabase(testDataDirectory, (database) => {
       expect(records(database)).toEqual(expected)
-      expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 13 })
+      expect(database.prepare('PRAGMA user_version').get()).toEqual({ user_version: 17 })
       expect(database.prepare('PRAGMA foreign_key_check').all()).toEqual([])
       expect(
         database

@@ -273,6 +273,10 @@ th small {
   gap: 8px;
 }
 select,
+.review-editor input,
+.knowledge-explorer input[type='search'],
+.question-relations input[type='search'],
+.personal-tags-panel input,
 .board-controls input[type='search'],
 .practice-plans input[type='text'],
 .question-filter-fields input[type='search'],
@@ -1235,6 +1239,7 @@ button {
 button:focus-visible,
 select:focus-visible,
 input:focus-visible,
+.question-relations textarea:focus-visible,
 summary:focus-visible,
 .practice-input textarea:focus-visible {
   outline: none;
@@ -1465,6 +1470,7 @@ footer {
 }
 
 .topic-navigation-panel,
+.personal-tags-panel,
 .category-manager,
 .practice-plans {
   margin-block: 16px;
@@ -1475,6 +1481,7 @@ footer {
 }
 
 .topic-navigation-panel > summary,
+.personal-tags-panel > summary,
 .category-manager > summary,
 .practice-plans > summary {
   cursor: pointer;

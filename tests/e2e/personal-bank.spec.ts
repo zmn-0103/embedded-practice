@@ -54,10 +54,10 @@ async function runtime(
     )
   else expect(resolve(actual.appPath)).toBe(resolve('out/main'))
   await expect(page.locator('footer span').last()).toHaveText(
-    `V${actual.version} 测试版 · 构建 20261028.2-note-favorite-fix`,
+    `V${actual.version} 测试版 · 构建 20261029.4-oral-timer`,
   )
   expect(withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())).toEqual({
-    user_version: 13,
+    user_version: 17,
   })
   await info.attach('runtime.json', {
     body: JSON.stringify(actual),

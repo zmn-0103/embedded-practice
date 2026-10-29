@@ -1,0 +1,16 @@
+  • electron-builder  version=26.15.3 os=10.0.26200
+  • loaded configuration  file=E:\My_Projects\embedded-practice\electron-builder.yml
+  • author is missed in the package.json  appPackageFile=E:\My_Projects\embedded-practice\package.json
+  • executing @electron/rebuild  electronVersion=42.11.15 arch=x64 buildFromSource=false workspaceRoot=E:\My_Projects\embedded-practice projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • preparing       moduleName=better-sqlite3 arch=x64
+  • finished        moduleName=better-sqlite3 arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=42.11.15 appOutDir=release\V0.0.2-study-goals-20261029.3\win-unpacked
+  • downloaded      label=electron progress=100%
+  • downloaded electron zip extracted successfully  output=E:\My_Projects\embedded-practice\release\V0.0.2-study-goals-20261029.3\win-unpacked
+  • searching for node modules  pm=npm searchDir=E:\My_Projects\embedded-practice
+  • duplicate dependency references  dependencies=["once@1.4.0","once@1.4.0","pump@3.0.4","string_decoder@1.1.1","end-of-stream@1.4.5"]
+  • updating asar integrity executable resource  executablePath=release\V0.0.2-study-goals-20261029.3\win-unpacked\embedded-practice.exe
+  • default Electron icon is used  reason=application icon is not set
+  • file signing skipped via signExecutable configuration  file=release\V0.0.2-study-goals-20261029.3\win-unpacked\embedded-practice.exe

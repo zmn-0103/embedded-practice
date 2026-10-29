@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import type { PracticePlan, PracticePlanChange } from '../../shared/contracts/practice-plans'
+import type { PracticePlanSummary, PracticePlanChange } from '../../shared/contracts/practice-plans'
 
 export function usePracticePlans(
   refresh: number,
@@ -7,7 +7,7 @@ export function usePracticePlans(
   onOperation: (work: Promise<boolean>) => void,
 ) {
   const api = window.desktop.practicePlans
-  const [plans, setPlans] = useState<PracticePlan[]>([])
+  const [plans, setPlans] = useState<PracticePlanSummary[]>([])
   const [pending, setPending] = useState<PracticePlanChange>()
   const [busy, setBusy] = useState(false)
   const [loading, setLoading] = useState(true)
@@ -66,11 +66,15 @@ export function usePracticePlans(
         }
         release()
         setMessage(
-          command.kind === 'save'
-            ? '练习方案已保存。'
-            : command.kind === 'update'
-              ? '练习方案已更新，当前练习保持。'
-              : '练习方案已删除，练习记录保持。',
+          command.kind === 'pin'
+            ? command.pinned
+              ? '方案已置顶。'
+              : '方案已取消置顶。'
+            : command.kind === 'save'
+              ? '练习方案已保存。'
+              : command.kind === 'update'
+                ? '练习方案已更新，当前练习保持。'
+                : '练习方案已删除，练习记录保持。',
         )
         return true
       } catch {

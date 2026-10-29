@@ -62,9 +62,23 @@ test('结构11受保护升级12，原再练/草稿/自定义对象不变，预�
     expect(await readAppStatus(page)).toMatchObject({ ok: true })
     expect(withHistoryDatabase(testDataDirectory, controlRecords)).toEqual({
       ...before,
+      practice_plans: before['practice_plans']!.map((row) => ({
+        ...row,
+        pinned: 0,
+        last_used_at: null,
+      })),
       question_sets: [],
       question_set_items: [],
       personal_notes: [],
+      personal_tags: [],
+      question_personal_tags: [],
+      review_todos: [],
+      question_relations: [],
+      recent_knowledge_searches: [],
+      daily_targets: [],
+      study_goals: [],
+      quota_settings: [],
+      learning_activities: [],
       practice_sessions: before['practice_sessions']!.map((row) => ({
         ...row,
         selection_name: null,
@@ -232,7 +246,7 @@ test('完整备份恢复题单顺序/失效身份/固定版本/来源与草稿�
       ],
       [
         'duplicate-name',
-        "PRAGMA foreign_keys=OFF; CREATE TABLE copied_sets AS SELECT * FROM question_sets; DROP TABLE question_sets; CREATE TABLE question_sets(set_id TEXT,name TEXT) STRICT; INSERT INTO question_sets SELECT * FROM copied_sets; UPDATE question_sets SET name='same'; DROP TABLE copied_sets",
+        "PRAGMA foreign_keys=OFF; CREATE TABLE copied_sets AS SELECT * FROM question_sets; DROP TABLE question_sets; CREATE TABLE question_sets(set_id TEXT,name TEXT,pinned INTEGER,last_used_at TEXT) STRICT; INSERT INTO question_sets SELECT * FROM copied_sets; UPDATE question_sets SET name='same'; DROP TABLE copied_sets",
       ],
       [
         'duplicate-member',

@@ -1,0 +1,53 @@
+
+Running 5 tests using 1 worker
+
+(node:14324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\knowledge-ui.spec.ts:15:5 › 积累检索分类/最近词/跨页，详情返回保留条件/结果/滚动，保存笔记后明确刷新 (1.9s)
+  ok 2 [development] › tests\e2e\knowledge-ui.spec.ts:97:5 › 关联UI真实失败/退出保护、提交后坏回包原命令重试，过期冲突保留后明确放弃及删除 (1.9s)
+  ok 3 [development] › tests\e2e\knowledge-ui.spec.ts:204:5 › 双向前置/对照笔记先保存，从关联题进入原确认并采用固定当前版本 (1.6s)
+  ok 4 [development] › tests\e2e\knowledge-ui.spec.ts:278:5 › 练习揭晓前不读关联/搜索，旧轮复盘对照当前题干且不改旧轮次 (2.6s)
+  x  5 [development] › tests\e2e\knowledge-ui.spec.ts:346:5 › 我的积累与关联对照在900宽/150%暗色可操作、中文混排不横向溢出 (32.5s)
+
+
+  1) [development] › tests\e2e\knowledge-ui.spec.ts:346:5 › 我的积累与关联对照在900宽/150%暗色可操作、中文混排不横向溢出 ─────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.click: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('region', { name: '我的积累检索', exact: true }).locator('.question-relations > summary')
+        - locator resolved to <summary>易混点与关联题</summary>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        59 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      367 |     await captureHistory(application, page, info, 'knowledge-narrow-dark-search.png')
+      368 |     await panel.getByRole('button', { name: '组卷题 A 1 · control-a / q-1', exact: true }).click()
+    > 369 |     await panel.locator('.question-relations > summary').click()
+          |                                                          ^
+      370 |     await panel.getByRole('button', { name: '对照这两题', exact: true }).click()
+      371 |     await expect(panel.getByRole('region', { name: '关联题对照', exact: true })).toContainText(
+      372 |       'CONTROL-OLD-BODY-control-b-1',
+        at E:\My_Projects\embedded-practice\tests\e2e\knowledge-ui.spec.ts:369:58
+
+    attachment #2: knowledge-narrow-dark-search.png (image/png) ────────────────────────────────────
+    output\playwright\knowledge-development-ui-01\knowledge-ui-我的积累与关联对照在900宽-150-暗色可操作、中文混排不横向溢出-development\attachments\knowledge-narrow-dark-search-png-c57b3936eff25e6d9769b1c6224ecdc21a082a50.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\knowledge-development-ui-01\knowledge-ui-我的积累与关联对照在900宽-150-暗色可操作、中文混排不横向溢出-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\knowledge-ui.spec.ts:346:5 › 我的积累与关联对照在900宽/150%暗色可操作、中文混排不横向溢出 ──────
+  4 passed (41.7s)

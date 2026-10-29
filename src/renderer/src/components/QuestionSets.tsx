@@ -24,7 +24,12 @@ export function QuestionSets({
   refresh: number
   disabled: boolean
   onChange: (items: QuestionIdentity[]) => void
-  onPractice: (items: QuestionIdentity[], sourceName: string, contentUpdatedOnly?: boolean) => void
+  onPractice: (
+    items: QuestionIdentity[],
+    sourceName: string,
+    contentUpdatedOnly?: boolean,
+    sourceSetId?: string,
+  ) => void
   onBlocked: (value: boolean) => void
   onOperation: (work: Promise<boolean>) => void
 }) {
@@ -40,7 +45,7 @@ export function QuestionSets({
   const [exportBusy, setExportBusy] = useState(false)
   useEffect(() => {
     const command = model.confirmed
-    if (!command) return
+    if (!command || command.kind === 'pin') return
     if (command.kind === 'delete')
       setLoaded((previous) => (previous?.setId === command.setId ? undefined : previous))
     else setLoaded({ setId: command.setId, name: command.name, items: command.items })
@@ -92,6 +97,8 @@ export function QuestionSets({
     loaded && JSON.stringify(loaded.items) === JSON.stringify(items)
       ? `题单：${loaded.name}`
       : '勾选题目'
+  const sourceSetId =
+    loaded && JSON.stringify(loaded.items) === JSON.stringify(items) ? loaded.setId : undefined
   return (
     <section className="question-sets" aria-label="勾选组卷与固定题单">
       <p className="muted">
@@ -104,14 +111,16 @@ export function QuestionSets({
           <button
             type="button"
             disabled={!items.length || previewBusy || Boolean(previewError)}
-            onClick={() => onPractice(structuredClone(items), sourceName)}
+            onClick={() => onPractice(structuredClone(items), sourceName, false, sourceSetId)}
           >
             确认这批题目并练习…
           </button>
           <button
             type="button"
             disabled={!items.length || previewBusy || Boolean(previewError)}
-            onClick={() => onPractice(structuredClone(items), `内容更新复习：${sourceName}`, true)}
+            onClick={() =>
+              onPractice(structuredClone(items), `内容更新复习：${sourceName}`, true, sourceSetId)
+            }
           >
             复习勾选中的更新题…
           </button>
@@ -222,12 +231,23 @@ export function QuestionSets({
             )}
             {model.sets.map((set) => (
               <option key={set.setId} value={set.setId}>
+                {set.pinned ? '置顶 · ' : ''}
                 {set.name}（{set.count}题）
               </option>
             ))}
           </select>
         </label>
         <div className="button-row">
+          {selected && (
+            <button
+              type="button"
+              onClick={() =>
+                model.perform({ kind: 'pin', setId: selected.setId, pinned: !selected.pinned })
+              }
+            >
+              {selected.pinned ? '取消置顶题单' : '置顶题单'}
+            </button>
+          )}
           <button
             type="button"
             disabled={!selected}
@@ -253,6 +273,15 @@ export function QuestionSets({
         </div>
         {!model.sets.length && !model.loading && (
           <p className="muted">尚无固定题单，可从列表勾选后保存。</p>
+        )}
+        <p className="muted">置顶优先，同组按最近成功开始练习排序；载入、编辑和导出不计使用。</p>
+        {selected && (
+          <p className="muted">
+            {selected.lastUsedAt
+              ? `最近开始：${new Date(selected.lastUsedAt).toLocaleString('zh-CN')}`
+              : '此题单尚未成功开始练习'}
+            。载入后仍需确认本次题目。
+          </p>
         )}
       </fieldset>
       {selected && (

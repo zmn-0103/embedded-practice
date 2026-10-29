@@ -31,10 +31,10 @@ export async function verifyThemeTarget(
     if (!target) throw new Error('必须显式指定本轮新EXE')
     expect(actual.exe.toLowerCase()).toBe(resolve(target).toLowerCase())
   }
-  await expect(page.locator('footer')).toContainText('20261028.2-note-favorite-fix')
+  await expect(page.locator('footer')).toContainText('20261029.4-oral-timer')
   expect(
     withHistoryDatabase(directory, (database) => database.prepare('PRAGMA user_version').get()),
-  ).toEqual({ user_version: 13 })
+  ).toEqual({ user_version: 17 })
   return actual
 }
 export function themeBusinessSnapshot(directory: string) {

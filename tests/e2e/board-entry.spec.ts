@@ -60,11 +60,11 @@ async function runtime(
     expect(resolve(actual.appPath)).toBe(resolve('out/main'))
     expect(actual.arguments).toContain(resolve('out/main/index.js'))
   }
-  await expect(page.locator('footer')).toContainText('20261028.2-note-favorite-fix')
+  await expect(page.locator('footer')).toContainText('20261029.4-oral-timer')
   const schema = withHistoryDatabase(directory, (db) => db.prepare('PRAGMA user_version').get())
-  expect(schema).toEqual({ user_version: 13 })
+  expect(schema).toEqual({ user_version: 17 })
   await info.attach('runtime.json', {
-    body: JSON.stringify({ ...actual, schema, build: '20261028.2-note-favorite-fix' }, null, 2),
+    body: JSON.stringify({ ...actual, schema, build: '20261029.4-oral-timer' }, null, 2),
     contentType: 'application/json',
   })
 }
@@ -192,7 +192,9 @@ test('板块入口：改名移动移除后旧轮队列/草稿/历史/方案逐�
     await assignTopic(instance.page, 'board-a', prepared.personal)
     await categoryChange(instance.page, { kind: 'delete', categoryId: prepared.communication })
     expect(historySnapshot(testDataDirectory)).toEqual(protectedRows)
-    expect(await readPlans(instance.page)).toEqual(plans)
+    expect(await readPlans(instance.page)).toEqual(
+      plans.map((plan) => ({ ...plan, matchingCount: 0 })),
+    )
     await openPage(instance.page, '知识板块')
     await expect(board(instance.page, '通信协议').locator('.board-count')).toHaveText(
       '0 题 · 待补题',
@@ -209,7 +211,9 @@ test('板块入口：改名移动移除后旧轮队列/草稿/历史/方案逐�
     instance = await launchApplication(testDataDirectory, info.project.name, '知识板块')
     await runtime(instance.application, instance.page, testDataDirectory, info)
     expect(historySnapshot(testDataDirectory)).toEqual(protectedRows)
-    expect(await readPlans(instance.page)).toEqual(plans)
+    expect(await readPlans(instance.page)).toEqual(
+      plans.map((plan) => ({ ...plan, matchingCount: 0 })),
+    )
     const panel = await openPlans(instance.page)
     await panel.getByLabel('选用练习方案', { exact: true }).selectOption(plan.planId)
     await expect(panel).toContainText('难度：中（进阶）')
@@ -483,6 +487,23 @@ test('板块入口：900/1440窗口、四配色明暗、22px与键盘可用，�
         await expect(selectionSummary).toBeFocused()
         await expect(page.locator('.question-selection-panel')).not.toHaveAttribute('open')
         await selectionSummary.press('Tab')
+        const reviewSummary = page.locator('.review-todos-panel > summary')
+        await expect(reviewSummary).toBeFocused()
+        await expect(page.locator('.review-todos-panel')).not.toHaveAttribute('open')
+        await reviewSummary.press('Enter')
+        await expect(page.locator('.review-todos-panel')).toHaveAttribute('open')
+        await expect(page.getByText('正在读取复习待办…', { exact: true })).toBeHidden()
+        await reviewSummary.press('Enter')
+        await expect(page.locator('.review-todos-panel')).not.toHaveAttribute('open')
+        await reviewSummary.press('Tab')
+        const personalTagSummary = page.locator('.personal-tags-panel > summary')
+        await expect(personalTagSummary).toBeFocused()
+        await expect(page.locator('.personal-tags-panel')).not.toHaveAttribute('open')
+        await personalTagSummary.press('Enter')
+        await expect(page.locator('.personal-tags-panel')).toHaveAttribute('open')
+        await personalTagSummary.press('Enter')
+        await expect(page.locator('.personal-tags-panel')).not.toHaveAttribute('open')
+        await personalTagSummary.press('Tab')
         const managementSummary = page.locator(
           '.library-management-tools .category-manager > summary',
         )

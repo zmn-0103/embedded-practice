@@ -1,0 +1,71 @@
+{
+  "build": "20261029.1-review-todos",
+  "schema": 15,
+  "unit": {
+    "files": 45,
+    "passed": 747,
+    "total": 747,
+    "report": "unit-01.json"
+  },
+  "full": {
+    "report": "packaged-full-01.json",
+    "startTime": "2026-10-28T16:50:04.900Z",
+    "duration": 758211.797,
+    "expected": 371,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0,
+    "total": 373,
+    "retries": 0,
+    "failures": [
+      {
+        "id": "17b67da23ba24ecc6bf1-7239e52ce3b878e8c01b",
+        "file": "backup-window.spec.ts",
+        "title": "完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库",
+        "project": "packaged",
+        "status": "unexpected",
+        "expectedStatus": "passed",
+        "results": [
+          {
+            "status": "failed",
+            "retry": 0,
+            "duration": 3598
+          }
+        ]
+      },
+      {
+        "id": "de2dbe63ffb914e5ba41-55a6bd0aae97c30190cc",
+        "file": "themes-reading.spec.ts",
+        "title": "Claude长内容练习：宽屏右侧属性/窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓",
+        "project": "packaged",
+        "status": "unexpected",
+        "expectedStatus": "passed",
+        "results": [
+          {
+            "status": "failed",
+            "retry": 0,
+            "duration": 1705
+          }
+        ]
+      }
+    ]
+  },
+  "supplement": {
+    "report": "packaged-regression-fixes-01.json",
+    "startTime": "2026-10-28T17:03:33.327Z",
+    "duration": 41416.218,
+    "expected": 26,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "total": 26,
+    "retries": 0,
+    "allOriginalFailuresCovered": true
+  },
+  "newFeatureCases": {
+    "total": 14,
+    "passed": 14
+  },
+  "singleCompleteGreenRun": false,
+  "productionUnchangedForSupplement": true
+}

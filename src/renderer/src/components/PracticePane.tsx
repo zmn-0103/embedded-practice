@@ -11,7 +11,11 @@ import { PracticeFavorite } from './PracticeFavorite'
 import { PracticeRepeat, type PracticeRepeatActions } from './PracticeRepeat'
 import { PracticeOutline } from './PracticeOutline'
 import { PersonalNote } from './PersonalNote'
+import { ReviewTodoEditor } from './ReviewTodoEditor'
+import { QuestionRelations } from './QuestionRelations'
 import { useNoteSaves } from '../note-saves'
+import { OralTimer } from './OralTimer'
+import type { OralTimerController } from '../oral-timer-controller'
 
 const ACTION_REPEAT_GUARD_MS = 500
 
@@ -35,6 +39,7 @@ function keepAnswerVisible(input: HTMLTextAreaElement, actions: HTMLDivElement) 
 export function PracticePane({
   state,
   controller,
+  oralTimer,
   homeBusy,
   onHome,
   onDataBusy,
@@ -43,6 +48,7 @@ export function PracticePane({
 }: {
   state: PracticeEditorState
   controller: PracticeController
+  oralTimer: OralTimerController
   homeBusy: boolean
   onHome: () => void
   onDataBusy: (busy: boolean) => void
@@ -50,9 +56,12 @@ export function PracticePane({
   repeat: PracticeRepeatActions
 }) {
   const noteSaves = useNoteSaves()
-  const afterNotesSaved = async (action: PracticeAction) =>
-    (await noteSaves.flush()) && controller.perform(action)
+  const afterNotesSaved = async (action: PracticeAction) => {
+    oralTimer.pause('练习操作中')
+    return (await noteSaves.flush()) && controller.perform(action)
+  }
   const goHome = () => {
+    oralTimer.pause('已离开练习')
     void noteSaves.flush().then((saved) => {
       if (saved) onHome()
     })
@@ -197,6 +206,7 @@ export function PracticePane({
         <h2 ref={title} tabIndex={-1}>
           {item.title}
         </h2>
+        <OralTimer controller={oralTimer} disabled={blocked} />
       </div>
       <PracticeOutline
         key={session.sessionId}
@@ -261,6 +271,10 @@ export function PracticePane({
                 excludeSessionId={session.sessionId}
               />
               <PersonalNote identity={{ topicId: item.topicId, questionId: item.questionId }} />
+              <ReviewTodoEditor identity={{ topicId: item.topicId, questionId: item.questionId }} />
+              <QuestionRelations
+                identity={{ topicId: item.topicId, questionId: item.questionId }}
+              />
             </>
           ) : (
             <section className="answer-placeholder" aria-label="参考答案未揭晓">

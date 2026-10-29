@@ -1,0 +1,12 @@
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+src/renderer/src/components/PracticePlans.tsx(308,78): error TS2339: Property 'name' does not exist on type '{ kind: "pin"; planId: string; pinned: boolean; } | { planId: string; options: { category: { kind: "all"; } | { kind: "uncategorized"; } | { kind: "category"; categoryId: string; }; topicId: string | null; mode: "sequential" | "random"; count: 20 | ... 2 more ... | 50; filters: { ...; }; }; kind: "save"; name: strin...'.
+  Property 'name' does not exist on type '{ kind: "pin"; planId: string; pinned: boolean; }'.
+src/renderer/src/useQuestionSets.ts(28,30): error TS2345: Argument of type '{ setId: string; name: string; count: number; pinned?: boolean | undefined; lastUsedAt?: string | null | undefined; }[]' is not assignable to parameter of type 'SetStateAction<{ setId: string; name: string; count: number; pinned?: boolean; lastUsedAt?: string | null; }[]>'.
+  Type '{ setId: string; name: string; count: number; pinned?: boolean | undefined; lastUsedAt?: string | null | undefined; }[]' is not assignable to type '{ setId: string; name: string; count: number; pinned?: boolean; lastUsedAt?: string | null; }[]'.
+    Type '{ setId: string; name: string; count: number; pinned?: boolean | undefined; lastUsedAt?: string | null | undefined; }' is not assignable to type '{ setId: string; name: string; count: number; pinned?: boolean; lastUsedAt?: string | null; }' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+      Types of property 'pinned' are incompatible.
+        Type 'boolean | undefined' is not assignable to type 'boolean'.
+          Type 'undefined' is not assignable to type 'boolean'.

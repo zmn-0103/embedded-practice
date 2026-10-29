@@ -1,0 +1,14 @@
+
+Running 7 tests using 1 worker
+
+(node:31368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\oral-timer.spec.ts:15:5 › 切题已成功但坏回包时暂停，原命令重试后保留各题计时和固定队列 (1.9s)
+  ok 2 [development] › tests\e2e\oral-timer.spec.ts:68:7 › 口述计时900宽150%/light/22px可操作，无横向溢出且不遮挡输入/揭晓 (2.6s)
+  ok 3 [development] › tests\e2e\oral-timer.spec.ts:68:7 › 口述计时900宽150%/dark/22px可操作，无横向溢出且不遮挡输入/揭晓 (2.5s)
+  ok 4 [development] › tests\e2e\oral-timer.spec.ts:116:5 › 口述计时默认关闭/单调截止/暂停，到时不揭晓评价/读取旧内容/写学习记录 (2.4s)
+  ok 5 [development] › tests\e2e\oral-timer.spec.ts:200:5 › 计时分题保留和本题时长/重置，保存返回后暂停继续，关闭重开只重置计时 (2.7s)
+  ok 6 [development] › tests\e2e\oral-timer.spec.ts:252:5 › 真实短时间倒数，窗口隐藏/失焦暂停，恢复焦点不自动继续 (4.3s)
+  ok 7 [development] › tests\e2e\oral-timer.spec.ts:287:5 › 保存失败暂停且保留输入/余时，重试保存后明确切题不重置旧题计时 (1.8s)
+
+  7 passed (18.8s)

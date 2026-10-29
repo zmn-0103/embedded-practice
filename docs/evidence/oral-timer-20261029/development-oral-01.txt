@@ -1,0 +1,67 @@
+
+Running 7 tests using 1 worker
+
+(node:6880) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\oral-timer.spec.ts:15:5 › 切题已成功但坏回包时暂停，原命令重试后保留各题计时和固定队列 (3.2s)
+  ok 2 [development] › tests\e2e\oral-timer.spec.ts:68:7 › 口述计时900宽150%/light/22px可操作，无横向溢出且不遮挡输入/揭晓 (2.6s)
+  ok 3 [development] › tests\e2e\oral-timer.spec.ts:68:7 › 口述计时900宽150%/dark/22px可操作，无横向溢出且不遮挡输入/揭晓 (2.5s)
+  ok 4 [development] › tests\e2e\oral-timer.spec.ts:109:5 › 口述计时默认关闭/单调截止/暂停，到时不揭晓评价/读取旧内容/写学习记录 (2.3s)
+  ok 5 [development] › tests\e2e\oral-timer.spec.ts:191:5 › 计时分题保留和本题时长/重置，保存返回后暂停继续，关闭重开只重置计时 (2.6s)
+  x  6 [development] › tests\e2e\oral-timer.spec.ts:243:5 › 真实短时间倒数，窗口隐藏/失焦暂停，恢复焦点不自动继续 (12.6s)
+(node:25892) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  7 [development] › tests\e2e\oral-timer.spec.ts:272:5 › 保存失败暂停且保留输入/余时，重试按原流程切题不重置旧题计时 (32.4s)
+
+
+  1) [development] › tests\e2e\oral-timer.spec.ts:243:5 › 真实短时间倒数，窗口隐藏/失焦暂停，恢复焦点不自动继续 ──────────────
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('region', { name: '口述计时', exact: true }).getByRole('button', { name: '继续计时', exact: true })
+    Expected: 1
+    Received: 0
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveCount" getByRole('region', { name: '口述计时', exact: true }).getByRole('button', { name: '继续计时', exact: true }) with timeout 10000ms
+      - waiting for getByRole('region', { name: '口述计时', exact: true }).getByRole('button', { name: '继续计时', exact: true })
+        24 × locator resolved to 0 elements
+           - unexpected value "0"
+
+
+      252 |     await expect(panel.getByRole('timer')).not.toHaveText('02:00')
+      253 |     await application.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0]!.minimize())
+    > 254 |     await expect(panel.getByRole('button', { name: '继续计时', exact: true })).toHaveCount(1)
+          |                                                                            ^
+      255 |     const frozen = await panel.getByRole('timer').innerText(),
+      256 |       startedAt = Date.now()
+      257 |     await new Promise((resolve) => setTimeout(resolve, 1500))
+        at E:\My_Projects\embedded-practice\tests\e2e\oral-timer.spec.ts:254:76
+
+    Error Context: output\playwright\oral-development-01\oral-timer-真实短时间倒数，窗口隐藏-失焦暂停，恢复焦点不自动继续-development\error-context.md
+
+  2) [development] › tests\e2e\oral-timer.spec.ts:272:5 › 保存失败暂停且保留输入/余时，重试按原流程切题不重置旧题计时 ───────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.click: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: '重试原操作', exact: true })
+
+
+      302 |     expect(withHistoryDatabase(testDataDirectory, controlRecords)).toEqual(before)
+      303 |     withHistoryDatabase(testDataDirectory, (db) => db.exec('DROP TRIGGER fail_oral'), false)
+    > 304 |     await page.getByRole('button', { name: '重试原操作', exact: true }).click()
+          |                                                                    ^
+      305 |     await expect(page.getByRole('heading', { name: '组卷题 A 2', exact: true })).toBeVisible()
+      306 |     await page.clock.runFor(600)
+      307 |     await page.getByRole('button', { name: '上一题', exact: true }).click()
+        at E:\My_Projects\embedded-practice\tests\e2e\oral-timer.spec.ts:304:68
+
+    Error Context: output\playwright\oral-development-01\oral-timer-保存失败暂停且保留输入-余时，重试按原流程切题不重置旧题计时-development\error-context.md
+
+  2 failed
+    [development] › tests\e2e\oral-timer.spec.ts:243:5 › 真实短时间倒数，窗口隐藏/失焦暂停，恢复焦点不自动继续 ───────────────
+    [development] › tests\e2e\oral-timer.spec.ts:272:5 › 保存失败暂停且保留输入/余时，重试按原流程切题不重置旧题计时 ────────────
+  5 passed (1.0m)

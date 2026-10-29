@@ -91,7 +91,7 @@ test('单题历史真实记录资格、倒序分页、同轮改评、跨专题�
       expect(mismatch).toMatchObject({ error: { code: 'NOT_FOUND' } })
     }
     expect(historySnapshot(testDataDirectory)).toEqual(before)
-    expect(before.schema).toEqual({ user_version: 13 })
+    expect(before.schema).toEqual({ user_version: 17 })
     expect(before.foreignKeys).toEqual([])
     expect(before.integrity).toEqual([{ quick_check: 'ok' }])
     await info.attach('history-query-matrix.json', {

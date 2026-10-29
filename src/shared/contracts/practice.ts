@@ -41,10 +41,12 @@ export const startPracticeSchema = z
     mode: practiceModeSchema.optional(),
     repeat: repeatPracticeSchema.optional(),
     selected: selectedPracticeSchema.optional(),
+    sourcePlanId: practiceIdSchema.optional(),
   })
   .refine(
     (input) =>
       !(input.repeat && input.selected) &&
+      (!(input.repeat || input.selected) || !input.sourcePlanId) &&
       (!(input.repeat || input.selected) ||
         (input.topicId === null &&
           input.count === 'all' &&
@@ -52,6 +54,9 @@ export const startPracticeSchema = z
           (!input.filters ||
             (input.filters.query === '' &&
               input.filters.tag === null &&
+              !input.filters.personalTagId &&
+              (input.filters.practiceRecency ?? 'all') === 'all' &&
+              (input.filters.practiceOrder ?? 'default') === 'default' &&
               input.filters.difficulty === null &&
               input.filters.mastery === 'all' &&
               !input.filters.favoritesOnly)))),

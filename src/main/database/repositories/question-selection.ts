@@ -24,20 +24,31 @@ export const currentRatingSql = `CASE WHEN s.last_rated_version_id = q.current_v
 export const practicedSql = `CASE WHEN (${currentRatingSql}) IS NOT NULL OR EXISTS (
   SELECT 1 FROM practice_items p WHERE p.version_id = q.current_version_id
   AND p.revealed_at IS NOT NULL) THEN 1 ELSE 0 END`
+export const lastPracticeJulianSql = `(SELECT max(julianday(p.revealed_at)) FROM practice_items p
+  WHERE p.version_id=q.current_version_id AND p.revealed_at IS NOT NULL)`
+export const lastPracticedAtSql = `strftime('%Y-%m-%dT%H:%M:%fZ',${lastPracticeJulianSql})`
 export const contentUpdatedSql = `(v.sequence > 1 AND (${practicedSql}) = 0)`
 export const questionSelectionWhere = `q.archived = @archived
   AND ${categorySelectionWhere}
   AND (@topicId IS NULL OR q.topic_id = @topicId)
   AND (@tag IS NULL OR EXISTS (SELECT 1 FROM json_each(q.tags_json) WHERE value = @tag))
+  AND (@personalTagId IS NULL OR EXISTS (SELECT 1 FROM question_personal_tags pt
+    WHERE pt.question_id = q.id AND pt.tag_id = @personalTagId))
   AND (@difficulty IS NULL OR q.difficulty = @difficulty)
   AND (@favoritesOnly = 0 OR s.favorite = 1)
+  AND (@practiceRecency='all' OR (@practiceRecency='never' AND (${practicedSql})=0)
+    OR (@practiceRecency IN ('7d','30d') AND ((${practicedSql})=0
+      OR ${lastPracticeJulianSql}<julianday(@practicedBefore))))
   AND (@mastery = 'all' OR (@mastery = 'unpracticed' AND (${practicedSql}) = 0)
     OR (@mastery = '不会＋不熟' AND (${currentRatingSql}) IN ('不会', '不熟'))
     OR (${currentRatingSql}) = @mastery)
   AND (@query = '' OR instr(lower(q.title), lower(@query)) > 0
     OR instr(lower(v.question_markdown), lower(@query)) > 0
     OR EXISTS (SELECT 1 FROM json_each(q.tags_json) WHERE instr(lower(value), lower(@query)) > 0))`
-export const questionOrderSql = 't.title, t.topic_id, q.position, q.id'
+export const questionOrderSql = `CASE WHEN @practiceOrder='oldest' THEN
+  CASE WHEN (${practicedSql})=0 THEN 0 WHEN ${lastPracticeJulianSql} IS NOT NULL THEN 1 ELSE 2 END END,
+  CASE WHEN @practiceOrder='oldest' THEN ${lastPracticeJulianSql} END,
+  t.title,t.topic_id,q.position,q.id`
 
 export function questionSelectionParameters(request: {
   topicId: string | null
@@ -52,6 +63,15 @@ export function questionSelectionParameters(request: {
     archived: Number(request.archived ?? false),
     query: filters.query,
     tag: filters.tag,
+    personalTagId: filters.personalTagId ?? null,
+    practiceRecency: filters.practiceRecency ?? 'all',
+    practiceOrder: filters.practiceOrder ?? 'default',
+    practicedBefore:
+      filters.practiceRecency === '7d' || filters.practiceRecency === '30d'
+        ? new Date(
+            Date.now() - (filters.practiceRecency === '7d' ? 7 : 30) * 86400000,
+          ).toISOString()
+        : null,
     difficulty: filters.difficulty,
     mastery: filters.mastery,
     favoritesOnly: Number(filters.favoritesOnly),

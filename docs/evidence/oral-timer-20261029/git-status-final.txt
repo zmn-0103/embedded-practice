@@ -1,0 +1,187 @@
+## codex/functional-ux-next-20261028
+ M README.md
+ M docs/README.md
+ M docs/代码复查记录.md
+ M docs/功能体验优化开发计划.md
+ M docs/固定题单与练习清单行为.md
+ M docs/开发记录.md
+ M docs/开发说明.md
+ M docs/当前试用版本交付说明.md
+ M docs/数据保护与桌面边界.md
+ M docs/练习保存与统计契约.md
+ M docs/练习方案行为与验收.md
+ M docs/项目模块职责.md
+ M docs/题库与导入契约.md
+ M docs/验收记录.md
+ M src/main/database/open-database.ts
+ M src/main/database/repositories/library-reader.ts
+ M src/main/database/repositories/note-repository.ts
+ M src/main/database/repositories/practice-plan-repository.ts
+ M src/main/database/repositories/practice-repository.ts
+ M src/main/database/repositories/question-selection.ts
+ M src/main/database/repositories/question-set-repository.ts
+ M src/main/ipc/library.ts
+ M src/main/ipc/practice.ts
+ M src/main/services/backup/validate-backup.ts
+ M src/main/services/library/library-import.ts
+ M src/preload/index.ts
+ M src/renderer/src/App.tsx
+ M src/renderer/src/components/LearningOverview.tsx
+ M src/renderer/src/components/LearningRecords.tsx
+ M src/renderer/src/components/LibraryBrowser.tsx
+ M src/renderer/src/components/PersonalNote.tsx
+ M src/renderer/src/components/PracticePane.tsx
+ M src/renderer/src/components/PracticePlans.tsx
+ M src/renderer/src/components/PracticeWorkspace.tsx
+ M src/renderer/src/components/QuestionFilterFields.tsx
+ M src/renderer/src/components/QuestionSets.tsx
+ M src/renderer/src/components/RoundDetail.tsx
+ M src/renderer/src/components/SelectedPractice.tsx
+ M src/renderer/src/note-saves.tsx
+ M src/renderer/src/styles/global.css
+ M src/renderer/src/styles/workbench-pages.css
+ M src/renderer/src/usePracticePlans.ts
+ M src/renderer/src/useQuestionSets.ts
+ M src/shared/contracts/application.ts
+ M src/shared/contracts/library-desktop.ts
+ M src/shared/contracts/practice-desktop.ts
+ M src/shared/contracts/practice-plans.ts
+ M src/shared/contracts/practice.ts
+ M src/shared/contracts/question-filters.ts
+ M src/shared/contracts/question-sets.ts
+ M tests/e2e/backup-legacy.spec.ts
+ M tests/e2e/backup-window.spec.ts
+ M tests/e2e/board-entry.spec.ts
+ M tests/e2e/category-migration.spec.ts
+ M tests/e2e/history-versions.spec.ts
+ M tests/e2e/library-import.spec.ts
+ M tests/e2e/note-favorite.spec.ts
+ M tests/e2e/palette-migration.spec.ts
+ M tests/e2e/personal-bank.spec.ts
+ M tests/e2e/practice-control-helpers.ts
+ M tests/e2e/practice-control-storage.spec.ts
+ M tests/e2e/practice-flow-helpers.ts
+ M tests/e2e/practice-flow-storage.spec.ts
+ M tests/e2e/practice-mode-migration.spec.ts
+ M tests/e2e/practice-plans-migration.spec.ts
+ M tests/e2e/practice-plans.spec.ts
+ M tests/e2e/practice.spec.ts
+ M tests/e2e/restore-window.spec.ts
+ M tests/e2e/session-filters-migration.spec.ts
+ M tests/e2e/settings-migration.spec.ts
+ M tests/e2e/startup.spec.ts
+ M tests/e2e/study-storage.spec.ts
+ M tests/e2e/theme-helpers.ts
+ M tests/e2e/themes-migration.spec.ts
+ M tests/e2e/themes-reading.spec.ts
+ M tests/unit/library-ipc.test.ts
+ M tests/unit/practice-controller.test.ts
+ M tests/unit/practice-ipc.test.ts
+ M 计划书.md
+?? docs/design/references/
+?? docs/evidence/knowledge-links-20261029/
+?? docs/evidence/oral-timer-20261029/
+?? docs/evidence/personal-tags-shortcuts-20261028/
+?? docs/evidence/review-todos-20261028/
+?? docs/evidence/study-goals-20261029/
+?? docs/个人标签与常用入口行为.md
+?? docs/口述计时行为.md
+?? docs/复习待办与最近练习行为.md
+?? docs/学习目标与配额组卷行为.md
+?? docs/积累检索与知识关联行为.md
+?? output/playwright/goals-development-all-01/
+?? output/playwright/goals-development-core-01/
+?? output/playwright/goals-development-core-02/
+?? output/playwright/goals-development-storage-01/
+?? output/playwright/goals-development-ui-01/
+?? output/playwright/goals-development-ui-02/
+?? output/playwright/goals-packaged-delete-reproduction-01/
+?? output/playwright/goals-packaged-full-01/
+?? output/playwright/goals-packaged-full-r2-02/
+?? output/playwright/goals-packaged-r2-confirm-01/
+?? output/playwright/knowledge-development-all-02/
+?? output/playwright/knowledge-development-all-04/
+?? output/playwright/knowledge-development-core-01/
+?? output/playwright/knowledge-development-entry-03/
+?? output/playwright/knowledge-development-ui-01/
+?? output/playwright/knowledge-packaged-full-01/
+?? output/playwright/oral-development-01/
+?? output/playwright/oral-development-02/
+?? output/playwright/oral-development-all-04/
+?? output/playwright/oral-development-final-05/
+?? output/playwright/oral-development-native-03/
+?? output/playwright/oral-packaged-full-01/
+?? output/playwright/personal-tags-development-01/
+?? output/playwright/personal-tags-development-02/
+?? output/playwright/personal-tags-development-03/
+?? output/playwright/personal-tags-packaged-full-01/
+?? output/playwright/personal-tags-packaged-full-02/
+?? output/playwright/personal-tags-packaged-label-practice-01/
+?? output/playwright/personal-tags-packaged-targeted-02/
+?? output/playwright/personal-tags-packaged-targeted-03/
+?? output/playwright/review-development-recency-01/
+?? output/playwright/review-development-recency-02/
+?? output/playwright/review-development-recency-03/
+?? output/playwright/review-development-recency-04/
+?? output/playwright/review-development-round-01/
+?? output/playwright/review-development-storage-01/
+?? output/playwright/review-development-todos-01/
+?? output/playwright/review-packaged-full-01/
+?? output/playwright/review-packaged-regression-fixes-01/
+?? src/main/database/knowledge-schema.ts
+?? src/main/database/personal-tag-schema.ts
+?? src/main/database/planning-schema.ts
+?? src/main/database/repositories/activity-writer.ts
+?? src/main/database/repositories/knowledge-reader.ts
+?? src/main/database/repositories/knowledge-repository.ts
+?? src/main/database/repositories/personal-tag-repository.ts
+?? src/main/database/repositories/planning-reader.ts
+?? src/main/database/repositories/planning-repository.ts
+?? src/main/database/repositories/review-repository.ts
+?? src/main/database/review-schema.ts
+?? src/renderer/src/components/KnowledgeExplorer.tsx
+?? src/renderer/src/components/LearningCalendar.tsx
+?? src/renderer/src/components/OralTimer.tsx
+?? src/renderer/src/components/PersonalTags.tsx
+?? src/renderer/src/components/QuestionComparison.tsx
+?? src/renderer/src/components/QuestionRelations.tsx
+?? src/renderer/src/components/QuotaComposer.tsx
+?? src/renderer/src/components/ReviewTodoEditor.tsx
+?? src/renderer/src/components/ReviewTodos.tsx
+?? src/renderer/src/components/StudyGoals.tsx
+?? src/renderer/src/components/StudyPlanner.tsx
+?? src/renderer/src/oral-timer-controller.ts
+?? src/renderer/src/planning-controller.ts
+?? src/renderer/src/relation-controller.ts
+?? src/renderer/src/review-controller.ts
+?? src/renderer/src/useOralTimer.ts
+?? src/shared/contracts/knowledge.ts
+?? src/shared/contracts/personal-tags.ts
+?? src/shared/contracts/planning.ts
+?? src/shared/contracts/review-todos.ts
+?? tests/e2e/knowledge-helpers.ts
+?? tests/e2e/knowledge-storage.spec.ts
+?? tests/e2e/knowledge-ui.spec.ts
+?? tests/e2e/knowledge.spec.ts
+?? tests/e2e/oral-timer-helpers.ts
+?? tests/e2e/oral-timer.spec.ts
+?? tests/e2e/personal-tags-storage.spec.ts
+?? tests/e2e/personal-tags.spec.ts
+?? tests/e2e/planning-helpers.ts
+?? tests/e2e/planning-storage.spec.ts
+?? tests/e2e/planning-ui.spec.ts
+?? tests/e2e/planning.spec.ts
+?? tests/e2e/practice-recency.spec.ts
+?? tests/e2e/review-helpers.ts
+?? tests/e2e/review-storage.spec.ts
+?? tests/e2e/review-todos.spec.ts
+?? tests/e2e/shortcut-usage.spec.ts
+?? tests/fixtures/schema-v14.sql
+?? tests/fixtures/schema-v15.sql
+?? tests/fixtures/schema-v16.sql
+?? tests/unit/knowledge.test.ts
+?? tests/unit/oral-timer.test.ts
+?? tests/unit/personal-tags-contract.test.ts
+?? tests/unit/planning.test.ts
+?? tests/unit/review-controller.test.ts
+?? tests/unit/review-todos-contract.test.ts

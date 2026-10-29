@@ -67,6 +67,15 @@ test('结构8方案升级：只追加空方案表，原分类/条件/草稿/自�
       question_sets: [],
       question_set_items: [],
       personal_notes: [],
+      personal_tags: [],
+      question_personal_tags: [],
+      review_todos: [],
+      question_relations: [],
+      recent_knowledge_searches: [],
+      daily_targets: [],
+      study_goals: [],
+      quota_settings: [],
+      learning_activities: [],
       practice_sessions: original.before.practice_sessions!.map((row) => ({
         ...row,
         repeat_source_id: null,
@@ -84,7 +93,7 @@ test('结构8方案升级：只追加空方案表，原分类/条件/草稿/自�
   try {
     expect(withHistoryDatabase(testDataDirectory, records)).toEqual(expected)
     withHistoryDatabase(testDataDirectory, (db) => {
-      expect(db.prepare('PRAGMA user_version').get()).toEqual({ user_version: 13 })
+      expect(db.prepare('PRAGMA user_version').get()).toEqual({ user_version: 17 })
       expect(db.prepare('PRAGMA foreign_key_check').all()).toEqual([])
       expect(
         db

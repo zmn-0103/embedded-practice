@@ -1,0 +1,595 @@
+{
+  "expectedExecutable": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+  "build": "20261029.3-study-goals",
+  "schemaVersion": 17,
+  "entries": [
+    {
+      "test": "版本元数据20条分页/无答案，分区内容严格同题/旧先新后，查询不改学习状态",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-GupUu2",
+      "packaged": true
+    },
+    {
+      "test": "差异主动打开才读题干，答案明确查看才读/挂载，改选旧版重新隐藏且只读",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-K2mhHy",
+      "packaged": true
+    },
+    {
+      "test": "内容差异和更新选题在1440px/100%/22px/松间绿可读可操作",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-aH56uy",
+      "packaged": true
+    },
+    {
+      "test": "内容差异和更新选题在900px/125%/22px/暖沙金可读可操作",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-VGzmvy",
+      "packaged": true
+    },
+    {
+      "test": "内容差异和更新选题在1200px/150%/22px/Claude 风格可读可操作",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-Thf5TW",
+      "packaged": true
+    },
+    {
+      "test": "更新复习重开及完整备份恢复保留原队列/版本/草稿/笔记，后续更新归档不替换旧轮",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-zJ0c3k",
+      "packaged": true
+    },
+    {
+      "test": "仅图片变化仍可看两版入库图片，来源移走仍完整，不误称文字同即内容同",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-8WFMd0",
+      "packaged": true
+    },
+    {
+      "test": "答案差异慢响应在改选旧版后丢弃，版本读取失败保留错误并可重试，答案单独变化可识别",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-gVy0WE",
+      "packaged": true
+    },
+    {
+      "test": "切到另一题后迟到的题干差异不能覆盖或泄漏旧题，首次题仅显示无更早版本",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-RNP0bh",
+      "packaged": true
+    },
+    {
+      "test": "完整备份恢复关联/说明/最近搜索，拒绝重复/自关联/孤儿/非法文字日期且保留源字节",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-R7oBGs",
+      "packaged": true
+    },
+    {
+      "test": "积累检索分类/最近词/跨页，详情返回保留条件/结果/滚动，保存笔记后明确刷新",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-qhYOQt",
+      "packaged": true
+    },
+    {
+      "test": "关联UI真实失败/退出保护、提交后坏回包原命令重试，过期冲突保留后明确放弃及删除",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-lNmBmk",
+      "packaged": true
+    },
+    {
+      "test": "双向前置/对照笔记先保存，从关联题进入原确认并采用固定当前版本",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-fwssVa",
+      "packaged": true
+    },
+    {
+      "test": "练习揭晓前不读关联/搜索，旧轮复盘对照当前题干且不改旧轮次",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-QOTQoc",
+      "packaged": true
+    },
+    {
+      "test": "我的积累与关联对照在900宽/150%暗色可操作、中文混排不横向溢出",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-tm8Eiu",
+      "packaged": true
+    },
+    {
+      "test": "知识关联真实事务：两端同记录/方向、重复与CAS/幂等、删除不复活、失败回滚和归档分页",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-N4yFNe",
+      "packaged": true
+    },
+    {
+      "test": "我的积累按来源合并片段，字面特殊字符/超长笔记有界、当前版本/归档与答案隔离",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-katU4V",
+      "packaged": true
+    },
+    {
+      "test": "最近关键词保留成功次序的10个，重复提升、查询只读/分页不记词、真实写失败整批回滚",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-zQhHpH",
+      "packaged": true
+    },
+    {
+      "test": "学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-aGIoRb",
+      "packaged": true
+    },
+    {
+      "test": "学习记录收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-CyTnY7",
+      "packaged": true
+    },
+    {
+      "test": "题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-47UxTv",
+      "packaged": true
+    },
+    {
+      "test": "题库收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-hXeD0B",
+      "packaged": true
+    },
+    {
+      "test": "普通题库：收藏写入失败恢复编辑，成功刷新保留详情并恢复笔记编辑",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-i5FAeL",
+      "packaged": true
+    },
+    {
+      "test": "个人笔记CAS/幂等/清空修订，重导入和归档不覆盖，学习记录逐行保持",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-1WUHB6",
+      "packaged": true
+    },
+    {
+      "test": "笔记主动读取，独立作答揭晓前零请求，跨页同步/切题/正常重开保留",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-JY9WhN",
+      "packaged": true
+    },
+    {
+      "test": "真实笔记写失败阻止切题和正常退出，原输入保留并可按原修订重试",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-8fHqAF",
+      "packaged": true
+    },
+    {
+      "test": "笔记已提交但响应丢失，原请求重试不增修订或改时间",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-DaflAB",
+      "packaged": true
+    },
+    {
+      "test": "完整备份恢复个人标签/关联/置顶与最近使用，拒绝损坏元数据和关联且源文件不变",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-hbgjWJ",
+      "packaged": true
+    },
+    {
+      "test": "个人标签管理在900宽/150%缩放/暗色中可操作且浮层保持在视口内",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-2oWW9d",
+      "packaged": true
+    },
+    {
+      "test": "个人标签可创建/改名/跨专题批量添加移除并用于题库和方案",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-mIixFm",
+      "packaged": true
+    },
+    {
+      "test": "个人标签已提交但响应丢失时锁定表单，重试原操作不重复创建",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-fQo5wd",
+      "packaged": true
+    },
+    {
+      "test": "个人标签重导入/归档保留，失效成员或真实写失败整批回滚，删除不扩大方案",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-1xpgUN",
+      "packaged": true
+    },
+    {
+      "test": "标签等待真实响应期间先保存笔记并锁定新增输入，刷新移除详情后文字保留",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-5DvFNC",
+      "packaged": true
+    },
+    {
+      "test": "完整备份恢复目标/配额/独立活动事实，拒绝日期/计数/重复/事件位置损坏并保留源字节",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-g3w8ZE",
+      "packaged": true
+    },
+    {
+      "test": "每日目标保存失败/坏回包保留原命令，退出受保护，冲突明确放弃后可沿用历史目标",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-3jOW2Q",
+      "packaged": true
+    },
+    {
+      "test": "备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-N0VaRe",
+      "packaged": true
+    },
+    {
+      "test": "配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-QrCOgG",
+      "packaged": true
+    },
+    {
+      "test": "日历日期可看活动分页与原轮作答笔记，旧日期零事件有明确说明",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-5tIjCY",
+      "packaged": true
+    },
+    {
+      "test": "目标/日历/配额在900宽150%暗色可操作且中文混排无横向溢出",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-Wp0RfQ",
+      "packaged": true
+    },
+    {
+      "test": "备考目标容量/重名与失效范围更新有边界，日历轮次独立分页不漏轮",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-VwLObQ",
+      "packaged": true
+    },
+    {
+      "test": "每日目标按成功活动去重，待办重开/同题重复自评/归档不抹事实，旧日期不补造",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-0GeJTZ",
+      "packaged": true
+    },
+    {
+      "test": "活动和实际保存同事务回滚，重复回执只计一次，重复揭晓/暂不评价不计自评",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-iJPK6m",
+      "packaged": true
+    },
+    {
+      "test": "备考题单去重、CAS与删除失效，当前版本覆盖/归档分开，超500不截断",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-yxpOYX",
+      "packaged": true
+    },
+    {
+      "test": "配额优先方式/不足/重复与候选只读，确认后固定队列，日历两类分页",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-5ixSuB",
+      "packaged": true
+    },
+    {
+      "test": "选题与清单在900宽/100%/light可见且可操作",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-McyMLe",
+      "packaged": true
+    },
+    {
+      "test": "选题与清单在900宽/125%/dark可见且可操作",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-tO7dyC",
+      "packaged": true
+    },
+    {
+      "test": "选题与清单在1200宽/150%/dark可见且可操作",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-N3UC3b",
+      "packaged": true
+    },
+    {
+      "test": "完整备份恢复题单顺序/失效身份/固定版本/来源与草稿，坏题单拒绝且不改当前库",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-Gt6Xx7",
+      "packaged": true
+    },
+    {
+      "test": "指定身份顺序/随机仅选这些题，重开及题库更新不改变已建队列/版本/草稿",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-vu1Tzz",
+      "packaged": true
+    },
+    {
+      "test": "开始前版本/归档/缺项变化拒绝整轮，真实插入失败保留原活动轮和全部记录",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-Crvn1z",
+      "packaged": true
+    },
+    {
+      "test": "本轮清单只读元数据且50题分页，跳过/未评价分开，跳题保存/越界/回执及写失败可恢复",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-9cdP4p",
+      "packaged": true
+    },
+    {
+      "test": "联合筛选列表/匹配数/建轮一致，旧自评排除，练旧版本不覆盖最新版本已掌握",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-ycGGUq",
+      "packaged": true
+    },
+    {
+      "test": "方案界面重命名/更新/另存及填入不建轮，联合条件持久化且原活动轮不变",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-F3vOZK",
+      "packaged": true
+    },
+    {
+      "test": "方案更新原条件重试幂等、过期/同名/删除后编辑拒绝，真实写失败保留原方案",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-Zk72yl",
+      "packaged": true
+    },
+    {
+      "test": "方案编辑已提交但回包丢失，锁定条件并按原名称/原条件重试，不重复另存",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-tkNyQR",
+      "packaged": true
+    },
+    {
+      "test": "完整备份恢复再练来源/固定旧版本/联合方案与草稿，坏来源拒绝且不覆盖当前数据",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-ndG4iV",
+      "packaged": true
+    },
+    {
+      "test": "清单查看不揭晓不写库，跳题保存失败原位保留，重试后可回看原输入",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-DfhtgB",
+      "packaged": true
+    },
+    {
+      "test": "清单跳题已提交响应未知，只能重试原目标，界面与数据库恢复一致",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-EnMx7C",
+      "packaged": true
+    },
+    {
+      "test": "清单读取失败可重试，52题分页和定位当前题不会改变固定队列",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-0j580q",
+      "packaged": true
+    },
+    {
+      "test": "当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-HKseei",
+      "packaged": true
+    },
+    {
+      "test": "最久优先先限10题再随机，固定队列不随历史变化/重新打开重排；方案兼容显式默认值",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-9cHh8M",
+      "packaged": true
+    },
+    {
+      "test": "题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-jcLgqT",
+      "packaged": true
+    },
+    {
+      "test": "再练只取来源轮五种状态，原内容/队列/作答保留，原请求重复不建副本",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-8zru8t",
+      "packaged": true
+    },
+    {
+      "test": "再练随机只重排原题，重开保持；空结果/来源不存在/活动来源/写失败均不结束活动轮",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-NnWHML",
+      "packaged": true
+    },
+    {
+      "test": "结果页明确本轮范围/题数/旧版本，丢失开始响应可原请求重试且新轮隐藏答案",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-zZGEXo",
+      "packaged": true
+    },
+    {
+      "test": "跨专题/分页/页面保持勾选，题单改名更新后只填入确认，开始才建立指定顺序",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-K0fp8h",
+      "packaged": true
+    },
+    {
+      "test": "本页批量勾选去重且不替换之前页，清空勾选保留已保存题单",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-vQKnqg",
+      "packaged": true
+    },
+    {
+      "test": "固定题单载入明确显示归档与失效，移除仅本轮且不补题",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-GhY4CE",
+      "packaged": true
+    },
+    {
+      "test": "题单已写入但响应丢失，正常关闭返回窗口，原UUID重试不重复保存",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-FFf9BE",
+      "packaged": true
+    },
+    {
+      "test": "固定题单保存有序身份，更新幂等/过期冲突/ASCII同名及删除不改变学习记录",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-QKrSvf",
+      "packaged": true
+    },
+    {
+      "test": "题单更新成员真实写失败整单回滚，数量上限拒绝且不截断原定义",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-87NJpn",
+      "packaged": true
+    },
+    {
+      "test": "重导入后题单身份不变，预览最新版本并保留归档/失效项，不自动换题",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-x1Ayno",
+      "packaged": true
+    },
+    {
+      "test": "复习安排真实事务：幂等/CAS/完成与重开、到期分页、写失败回滚及归档重导入保持",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-eWwQjO",
+      "packaged": true
+    },
+    {
+      "test": "完整备份恢复待办与最近条件，拒绝日期/完成状态/重复/孤儿损坏，源字节保持",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-G8gVOa",
+      "packaged": true
+    },
+    {
+      "test": "题目复习安排：明确加入、日期快捷操作和原因自动保存，完成/重开与正常关闭重读",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-xuH1PC",
+      "packaged": true
+    },
+    {
+      "test": "真实待办写失败阻止离开和正常关闭，输入保留；原操作重试及过期冲突明确重读",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-MKI8qo",
+      "packaged": true
+    },
+    {
+      "test": "真实提交后坏响应原操作重试不重复；独立作答前不读取/展示旧原因，揭晓和练习不会完成待办",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-V40XgL",
+      "packaged": true
+    },
+    {
+      "test": "旧轮复盘编辑当前复习计划，切题先保存，明确完成不改轮次/版本/自评",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-w666JF",
+      "packaged": true
+    },
+    {
+      "test": "待办跨页/状态勾选进入原组卷确认，归档阻止开始；当前版本固定且练习不自动完成",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-cONKno",
+      "packaged": true
+    },
+    {
+      "test": "复习待办在900宽/150%缩放/暗色中可编辑、筛选且浮层在视口内",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-npEyra",
+      "packaged": true
+    },
+    {
+      "test": "方案置顶优先和最近成功建轮排序，查看/改名/原请求重试不计使用",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-eE9YC9",
+      "packaged": true
+    },
+    {
+      "test": "最近使用写失败与建轮一起回滚并保留原活动轮，题单仅原成员完整开始时计使用",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-HeCEK1",
+      "packaged": true
+    },
+    {
+      "test": "界面置顶/取消置顶方案与题单，题单载入后仍确认组卷并记录使用",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-zn2JWi",
+      "packaged": true
+    },
+    {
+      "test": "界面置顶/取消置顶方案与题单，题单载入后仍确认组卷并记录使用",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-zn2JWi",
+      "packaged": true
+    },
+    {
+      "test": "笔记/作答对照/轮次与导出在1440px/100%/22px/松间绿可读可操作",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-1Y3UpF",
+      "packaged": true
+    },
+    {
+      "test": "笔记/作答对照/轮次与导出在900px/125%/22px/暖沙金可读可操作",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-gRZX4i",
+      "packaged": true
+    },
+    {
+      "test": "笔记/作答对照/轮次与导出在1200px/150%/22px/Claude 风格可读可操作",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-WVqh0b",
+      "packaged": true
+    },
+    {
+      "test": "题单主动选择三类材料，正文/代码/图片可离开来源使用，默认不含个人内容或答案",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-U8hkFe",
+      "packaged": true
+    },
+    {
+      "test": "轮次材料固定旧版本/本轮作答，题单采用新版本且不套旧作答；归档/坏资源/取消不覆盖文件",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-zBM7UT",
+      "packaged": true
+    },
+    {
+      "test": "活动轮/超500题整批拒绝；应用数据和非Markdown目标不写入",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-Ubjzd4",
+      "packaged": true
+    },
+    {
+      "test": "轮次分页/专题交集仅结束轮，未作答项也可复盘且不补造历史，历史跨页选两次",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-oWiIYi",
+      "packaged": true
+    },
+    {
+      "test": "学习记录按轮查看原范围和单题作答，读取失败可重试，查看不写学习记录",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-GJqaMP",
+      "packaged": true
+    },
+    {
+      "test": "同题两次作答主动确认才读，版本不同提示，自己的回答并列且不挂参考答案",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-FP67mW",
+      "packaged": true
+    },
+    {
+      "test": "完整备份恢复笔记/清空修订/轮次/题单/活动草稿，五类坏笔记拒绝且不改原库",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-tpI15N",
+      "packaged": true
+    },
+    {
+      "test": "更新题预览后已揭晓/版本更新/归档均整轮拒绝，原活动轮与完整学习数据不变",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-O30dSR",
+      "packaged": true
+    },
+    {
+      "test": "更新建轮真实插入失败回滚原轮/队列/回执，同请求重试成功且揭晓后再重放不重复",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-H85H3j",
+      "packaged": true
+    },
+    {
+      "test": "更新筛选跨页勾选与固定题单保持，普通项须明确移除，随机仅含确认题并固定版本",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-KxeyRO",
+      "packaged": true
+    },
+    {
+      "test": "更新复习开始响应丢失后按原请求重试，揭晓已消除待复习也从回执恢复同一轮",
+      "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-study-goals-20261029.3-r2\\win-unpacked\\embedded-practice.exe",
+      "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-jPnC4N",
+      "packaged": true
+    }
+  ]
+}

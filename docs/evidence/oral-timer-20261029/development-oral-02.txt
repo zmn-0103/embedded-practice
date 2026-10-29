@@ -1,0 +1,71 @@
+
+Running 12 tests using 1 worker
+
+(node:28488) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\oral-timer.spec.ts:15:5 › 切题已成功但坏回包时暂停，原命令重试后保留各题计时和固定队列 (1.7s)
+  ok  2 [development] › tests\e2e\oral-timer.spec.ts:68:7 › 口述计时900宽150%/light/22px可操作，无横向溢出且不遮挡输入/揭晓 (2.6s)
+  ok  3 [development] › tests\e2e\oral-timer.spec.ts:68:7 › 口述计时900宽150%/dark/22px可操作，无横向溢出且不遮挡输入/揭晓 (2.6s)
+  ok  4 [development] › tests\e2e\oral-timer.spec.ts:109:5 › 口述计时默认关闭/单调截止/暂停，到时不揭晓评价/读取旧内容/写学习记录 (2.5s)
+  ok  5 [development] › tests\e2e\oral-timer.spec.ts:191:5 › 计时分题保留和本题时长/重置，保存返回后暂停继续，关闭重开只重置计时 (2.8s)
+  x   6 [development] › tests\e2e\oral-timer.spec.ts:243:5 › 真实短时间倒数，窗口隐藏/失焦暂停，恢复焦点不自动继续 (14.2s)
+(node:8764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  7 [development] › tests\e2e\oral-timer.spec.ts:278:5 › 保存失败暂停且保留输入/余时，重试保存后明确切题不重置旧题计时 (1.7s)
+  ok  8 [development] › tests\e2e\workbench-ui3.spec.ts:98:5 › 第三轮分类：真实419题与大量展开分类只有树滚动，搜索固定且第20题定位/列表位置保持 (3.2s)
+  ok  9 [development] › tests\e2e\workbench-ui3.spec.ts:185:5 › 第三轮返回：900px/22px长答案顶部中部末尾均可返回，保存失败保留原输入/队列并可重试 (4.3s)
+  ok 10 [development] › tests\e2e\workbench-ui3.spec.ts:262:5 › 第三轮窄窗：17/22px短题输入保持至少180px，唯一揭晓入口常驻且不提前挂载答案或历史 (1.7s)
+  ok 11 [development] › tests\e2e\workbench-ui3.spec.ts:300:5 › 第三轮列表：短题72至88px、明确专题不重复来源，22px长中文标题完整且点击不移动列表 (2.1s)
+  ok 12 [development] › tests\e2e\workbench-ui3.spec.ts:374:5 › 第三轮板块：真实题库有活动轮时首排不超过450px、两排可见，有题筛选不改归属与固定队列 (3.7s)
+
+
+  1) [development] › tests\e2e\oral-timer.spec.ts:243:5 › 真实短时间倒数，窗口隐藏/失焦暂停，恢复焦点不自动继续 ──────────────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  getByRole('region', { name: '口述计时', exact: true }).getByRole('timer')
+    Expected: "01:59"
+    Received: "01:48"
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveText" getByRole('region', { name: '口述计时', exact: true }).getByRole('timer') with timeout 10000ms
+      - waiting for getByRole('region', { name: '口述计时', exact: true }).getByRole('timer')
+        3 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:58</span>
+          - unexpected value "01:58"
+        3 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:57</span>
+          - unexpected value "01:57"
+        2 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:56</span>
+          - unexpected value "01:56"
+        2 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:55</span>
+          - unexpected value "01:55"
+        2 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:54</span>
+          - unexpected value "01:54"
+        2 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:53</span>
+          - unexpected value "01:53"
+        2 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:52</span>
+          - unexpected value "01:52"
+        2 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:51</span>
+          - unexpected value "01:51"
+        2 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:50</span>
+          - unexpected value "01:50"
+        2 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:49</span>
+          - unexpected value "01:49"
+        2 × locator resolved to <span role="timer" aria-live="off" aria-label="本题剩余时间" class="oral-timer-clock">01:48</span>
+          - unexpected value "01:48"
+
+
+      268 |     })
+      269 |     expect(Date.now() - startedAt).toBeGreaterThanOrEqual(1500)
+    > 270 |     await expect(panel.getByRole('timer')).toHaveText(frozen)
+          |                                            ^
+      271 |     await expect(panel.getByRole('button', { name: '继续计时', exact: true })).toBeEnabled()
+      272 |     expect(withHistoryDatabase(testDataDirectory, controlRecords)).toEqual(before)
+      273 |   } finally {
+        at E:\My_Projects\embedded-practice\tests\e2e\oral-timer.spec.ts:270:44
+
+    Error Context: output\playwright\oral-development-02\oral-timer-真实短时间倒数，窗口隐藏-失焦暂停，恢复焦点不自动继续-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\oral-timer.spec.ts:243:5 › 真实短时间倒数，窗口隐藏/失焦暂停，恢复焦点不自动继续 ───────────────
+  11 passed (44.2s)

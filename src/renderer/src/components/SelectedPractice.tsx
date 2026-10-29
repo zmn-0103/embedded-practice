@@ -7,6 +7,7 @@ import {
 } from '../../../shared/contracts/question-sets'
 
 export interface SelectedPracticeIntent {
+  sourceSetId?: string
   id: number
   sourceName: string
   items: QuestionIdentity[]
@@ -185,6 +186,9 @@ export function SelectedPractice({
             onStart(
               {
                 sourceName: intent.sourceName,
+                ...(intent.sourceSetId && JSON.stringify(items) === JSON.stringify(intent.items)
+                  ? { sourceSetId: intent.sourceSetId }
+                  : {}),
                 items: versions,
                 ...(intent.contentUpdatedOnly ? { contentUpdatedOnly: true } : {}),
               },

@@ -9,8 +9,10 @@ import type {
 import {
   EMPTY_QUESTION_FILTERS,
   type QuestionFilters,
+  RECENCY_LABELS,
 } from '../../../shared/contracts/question-filters'
 import { createPracticeController } from '../practice-controller'
+import { useOralTimer } from '../useOralTimer'
 import { PracticePane } from './PracticePane'
 import { QuestionFilterFields, questionFilterSummary } from './QuestionFilterFields'
 import {
@@ -21,6 +23,7 @@ import {
 } from '../../../shared/contracts/categories'
 import { TopicNavigator } from './TopicNavigator'
 import { PracticePlans } from './PracticePlans'
+import { QuotaComposer } from './QuotaComposer'
 import { difficultyLabel } from './DifficultyBadge'
 import { SelectedPractice, type SelectedPracticeIntent } from './SelectedPractice'
 import type { SelectedPractice as SelectedInput } from '../../../shared/contracts/question-sets'
@@ -67,6 +70,7 @@ export function PracticeWorkspace({
   const [controller] = useState(() => createPracticeController(api))
   const state = useSyncExternalStore(controller.subscribe, controller.getState)
   const [page, setPage] = useState<'home' | 'practice'>('home')
+  const oralTimer = useOralTimer(state, page === 'practice')
   const [topics, setTopics] = useState<LibraryPage['topics']>([])
   const [categories, setCategories] = useState<LibraryPage['categories']>([])
   const [category, setCategory] = useState<CategoryScope>(ALL_CATEGORIES)
@@ -76,6 +80,7 @@ export function PracticeWorkspace({
   const [count, setCount] = useState<StartPractice['count']>(20)
   const [mode, setMode] = useState<NonNullable<StartPractice['mode']>>('sequential')
   const [filters, setFilters] = useState<QuestionFilters>({ ...EMPTY_QUESTION_FILTERS })
+  const [sourcePlanId, setSourcePlanId] = useState<string>()
   const [matchingCount, setMatchingCount] = useState<number>()
   const [ready, setReady] = useState(false)
   const [busy, setBusy] = useState(false)
@@ -87,6 +92,8 @@ export function PracticeWorkspace({
   const busyRef = useRef(false)
   const planBlocked = useRef(false)
   const [plansBusy, setPlansBusy] = useState(false)
+  const quotaBlocked = useRef(false)
+  const [quotaBusy, setQuotaBusy] = useState(false)
   const work = useRef<Promise<void> | undefined>(undefined)
   const pendingStart = useRef<{ input: StartPractice; ack?: PracticeAck } | undefined>(undefined)
   useEffect(() => {
@@ -121,7 +128,7 @@ export function PracticeWorkspace({
     }
   }
   function run(task: () => Promise<void>) {
-    if (busyRef.current || state.closing || planBlocked.current) return
+    if (busyRef.current || state.closing || planBlocked.current || quotaBlocked.current) return
     busyRef.current = true
     setBusy(true)
     setError('')
@@ -182,6 +189,7 @@ export function PracticeWorkspace({
                 count,
                 mode,
                 filters: { ...filters },
+                ...(sourcePlanId ? { sourcePlanId } : {}),
                 replace: active
                   ? {
                       sessionId: active.session.sessionId,
@@ -253,7 +261,8 @@ export function PracticeWorkspace({
           !pendingStart.current &&
           (await controller.prepareClose()) &&
           ((await beforeClose?.()) ?? true) &&
-          !planBlocked.current
+          !planBlocked.current &&
+          !quotaBlocked.current
         const result = await api.finishClose({ requestId: request.requestId, saved })
         if (!saved || !result.ok) controller.cancelClose()
       })().catch(() => {
@@ -302,6 +311,7 @@ export function PracticeWorkspace({
       <PracticePane
         state={state}
         controller={controller}
+        oralTimer={oralTimer}
         homeBusy={busy}
         onHome={home}
         onDataBusy={onDataBusy}
@@ -315,7 +325,7 @@ export function PracticeWorkspace({
       />
     )
   const hasQuestions = matchingCount !== undefined && matchingCount > 0
-  const blocked = busy || state.closing || !ready || plansBusy
+  const blocked = busy || state.closing || !ready || plansBusy || quotaBusy
   return (
     <section
       className="practice-workspace practice-start"
@@ -377,6 +387,19 @@ export function PracticeWorkspace({
                 </dd>
                 <dt>只看收藏</dt>
                 <dd>{active.session.filters.favoritesOnly ? '是' : '否'}</dd>
+                {active.session.filters.practiceRecency &&
+                  active.session.filters.practiceRecency !== 'all' && (
+                    <>
+                      <dt>最近练习条件</dt>
+                      <dd>{RECENCY_LABELS[active.session.filters.practiceRecency]}</dd>
+                    </>
+                  )}
+                {active.session.filters.practiceOrder === 'oldest' && (
+                  <>
+                    <dt>选题优先级</dt>
+                    <dd>最久未练优先，创建后保持原队列</dd>
+                  </>
+                )}
               </dl>
             )}
           </details>
@@ -488,6 +511,7 @@ export function PracticeWorkspace({
           <details className="practice-filter-options">
             <summary>筛选练习题目</summary>
             <QuestionFilterFields
+              refresh={refresh}
               prefix="练习"
               filters={filters}
               tagOptions={tagOptions}
@@ -576,15 +600,17 @@ export function PracticeWorkspace({
           options={{ category, topicId, mode, count, filters }}
           topics={topics}
           categories={categories}
-          disabled={busy || state.closing || !ready}
+          disabled={busy || state.closing || !ready || quotaBusy}
           onBlocked={(value) => {
             planBlocked.current = value
             setPlansBusy(value)
-            onDataBusy(value)
+            onDataBusy(value || quotaBlocked.current)
           }}
           onOperation={onDataOperation}
-          onApply={(options) => {
-            if (planBlocked.current || busyRef.current || state.closing) return
+          onApply={(options, planId) => {
+            if (planBlocked.current || quotaBlocked.current || busyRef.current || state.closing)
+              return
+            setSourcePlanId(planId)
             setCategory({ ...options.category })
             setTopicId(options.topicId)
             setMode(options.mode)
@@ -594,6 +620,30 @@ export function PracticeWorkspace({
             setError('')
           }}
         />
+        {!homeContent && !selectedIntent && (
+          <QuotaComposer
+            topics={topics}
+            refresh={refresh}
+            disabled={busy || state.closing || !ready || plansBusy || Boolean(pendingStart.current)}
+            onBlocked={(value) => {
+              quotaBlocked.current = value
+              setQuotaBusy(value)
+              onDataBusy(value || planBlocked.current)
+            }}
+            onChoose={(scope) => {
+              if (planBlocked.current || quotaBlocked.current || busyRef.current || state.closing)
+                return
+              setSelectedIntent((previous) => ({
+                id: (previous?.id ?? 0) + 1,
+                items: scope.items,
+                sourceName: scope.sourceName,
+                ...(scope.sourceSetId ? { sourceSetId: scope.sourceSetId } : {}),
+              }))
+              setError('')
+              window.scrollTo(0, 0)
+            }}
+          />
+        )}
       </div>
       {error && !selectedIntent && (
         <div role="alert" className="error-message">

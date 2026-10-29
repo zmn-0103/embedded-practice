@@ -1,0 +1,146 @@
+{
+  "configurations": [
+    {
+      "path": "package.json",
+      "sha256": "35d9e9fa52130a93ec97a63108409a13b09772d04ae13bc8d75a20576c1d6629",
+      "preserved": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "7a5109717d33cff94a7a8f3b30a5a0f282fc05db07279c913c57740bb7d0e45a",
+      "preserved": true
+    },
+    {
+      "path": "electron-builder.yml",
+      "sha256": "fbd78d3cd6165705cd1e65d9bdc7d0bfc9316e5b7ce3ca329b2802c1d3ac31df",
+      "preserved": true
+    },
+    {
+      "path": "electron.vite.config.ts",
+      "sha256": "593ebf95df0342dd9d5aa5c08148c8f98e8b5635331583192acc0d461718fe15",
+      "preserved": true
+    },
+    {
+      "path": "playwright.config.ts",
+      "sha256": "9b5b8138c57d8ad41d079d62e120e49d9307f12142be29c72bbd75f49b58728e",
+      "preserved": true
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "a8e4b73b2bd6e9dd4914b87475c7ef761956df981e0f19626773310455de7a67",
+      "preserved": true
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "d1d27b99bea65582471788982fe23c559e3e7ce7572c0a634ff717498b08fe29",
+      "preserved": true
+    },
+    {
+      "path": "tsconfig.web.json",
+      "sha256": "71a9f286bafa88047e2790cedd822dfa8024fa36c5c708f7606abd94ae85f8ad",
+      "preserved": true
+    }
+  ],
+  "previousDeliveries": [
+    {
+      "directory": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-personal-tags-20261028.3-r2",
+      "files": 147,
+      "totalBytes": 390946859,
+      "preserved": true
+    },
+    {
+      "directory": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-review-todos-20261029.1",
+      "files": 150,
+      "totalBytes": 391152639,
+      "preserved": true
+    }
+  ],
+  "preservedMaterials": 17,
+  "materials": [
+    {
+      "path": "题库/C语言__C语言数据与寄存器访问.md",
+      "bytes": 3725,
+      "sha256": "70d3b01aaab714ff092a32fc78e26b932df420cb91f6fa33ecfa9aa316e6002f"
+    },
+    {
+      "path": "题库/MCU与外设原理__ADC通用基础.md",
+      "bytes": 13897,
+      "sha256": "71dba8ba22f7d6b4db314f587d3a9d2a4ec4c883a11fa73380bdf771a107c5fa"
+    },
+    {
+      "path": "题库/MCU与外设原理__GPIO通用基础.md",
+      "bytes": 3356,
+      "sha256": "b1ff87f970ec5b8c34226af201be68dc9ffa7a33bcdd94438470dea92ac3458b"
+    },
+    {
+      "path": "题库/STM32__STM32F103RCT6GPIO阶段自测题.md",
+      "bytes": 92554,
+      "sha256": "33e44ccf74c937da8a86ada3f5bb496880f0d65dbbb4ca6f6ae031ca4dffc77f"
+    },
+    {
+      "path": "题库/STM32__STM32F1ADC.md",
+      "bytes": 38473,
+      "sha256": "4b2f38ad683037dca82b7dcfb9b8aee13b67f77a95ba87eafc5cf707dd3f938c"
+    },
+    {
+      "path": "题库/STM32__STM32F1I2C.md",
+      "bytes": 214384,
+      "sha256": "3c7a7a21f54561519b4b16172ec783df2d941ed6a7bdca4ba7cc760c01c42d06"
+    },
+    {
+      "path": "题库/STM32__STM32F1SPI.md",
+      "bytes": 18748,
+      "sha256": "11b5aaf2b281063021a38475d935eae63ac910814a468b2520cc9a6c57436e83"
+    },
+    {
+      "path": "题库/STM32__STM32F1UART与寄存器.md",
+      "bytes": 91240,
+      "sha256": "7b59a3577cc4f842ab5e5b8cb1400341a2b80ea506a78484f6afda18eea28d00"
+    },
+    {
+      "path": "题库/存储与文件系统__24LC256EEPROM.md",
+      "bytes": 4260,
+      "sha256": "07ab4ec9c1d408ad881b70100b2bb34e40521c8c301bb0615c30ad261cedd3a2"
+    },
+    {
+      "path": "题库/存储与文件系统__W25Q16SPINOR.md",
+      "bytes": 24436,
+      "sha256": "4e9cde2963aa2d3d08a426df1f306db4df720f73c35c21f21e5b405c7f8aeb24"
+    },
+    {
+      "path": "题库/通信协议__I2C通用基础.md",
+      "bytes": 30975,
+      "sha256": "a962f75ebad67fea0d16a320b361ad076c240303cde0d68ccb4ef3408e99a48c"
+    },
+    {
+      "path": "题库/通信协议__SPI通用基础.md",
+      "bytes": 7466,
+      "sha256": "653008e4ea908aff56f04e1f47ae7eda24014ef4e54ed3eefda35818c80a3af3"
+    },
+    {
+      "path": "题库/通信协议__UART通用基础.md",
+      "bytes": 16531,
+      "sha256": "90e1a1e811f49c0882b790a4077ff486abe4fe1f7e8efe347ab89d80e154f4a8"
+    },
+    {
+      "path": "主题示例/circuit-blue.ep-theme.json",
+      "bytes": 1311,
+      "sha256": "f05cbfb3ca14509a315fda333acfb8c165b3301351aae068c650b04f8c7a1048"
+    },
+    {
+      "path": "主题示例/paper-ink.ep-theme.json",
+      "bytes": 1307,
+      "sha256": "15b7958197de6cc125203b6d1a386889b4c541b55344f19117f7da48c06e2b9d"
+    },
+    {
+      "path": "题库来源清单.json",
+      "bytes": 165323,
+      "sha256": "35af52fbee777cdcfe4229dcc48434f6b00acbc690da0159367bc3306e09e3bf"
+    },
+    {
+      "path": "主题包格式与使用.md",
+      "bytes": 8777,
+      "sha256": "098db239e54b4fd538f8b142ca92a8040120ec4b2906954abf850c571ad0ab73"
+    }
+  ]
+}

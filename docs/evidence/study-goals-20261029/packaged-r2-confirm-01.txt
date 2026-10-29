@@ -1,0 +1,9 @@
+
+Running 2 tests using 1 worker
+
+(node:20072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [packaged] › tests\e2e\planning-ui.spec.ts:113:5 › 备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史 (2.5s)
+  ok 2 [packaged] › tests\e2e\restore-window.spec.ts:741:5 › 保护性备份可直接从本数据目录选择并恢复，来源文件不被覆盖 (3.6s)
+
+  2 passed (6.7s)

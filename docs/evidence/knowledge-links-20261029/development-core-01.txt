@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:30140) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\knowledge.spec.ts:10:5 › 知识关联真实事务：两端同记录/方向、重复与CAS/幂等、删除不复活、失败回滚和归档分页 (3.4s)
+  ok 2 [development] › tests\e2e\knowledge.spec.ts:107:5 › 我的积累按来源合并片段，字面特殊字符/超长笔记有界、当前版本/归档与答案隔离 (1.9s)
+  ok 3 [development] › tests\e2e\knowledge.spec.ts:176:5 › 最近关键词保留成功次序的10个，重复提升、查询只读/分页不记词、真实写失败整批回滚 (1.3s)
+
+  3 passed (7.1s)

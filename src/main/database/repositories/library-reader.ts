@@ -19,6 +19,7 @@ import {
   questionSelectionFrom,
   questionSelectionParameters,
   questionSelectionWhere,
+  lastPracticedAtSql,
 } from './question-selection'
 import { createTopicNavigationReader } from './topic-navigation'
 
@@ -40,6 +41,7 @@ interface InfoRow {
   practiced: number
   contentUpdated: number
   currentRating: string | null
+  lastPracticedAt: string | null
 }
 
 export function createLibraryReader(database: Database.Database) {
@@ -52,7 +54,7 @@ export function createLibraryReader(database: Database.Database) {
   const infoColumns = `q.topic_id AS topicId, q.question_id AS questionId, q.current_version_id AS versionId,
     q.title, t.title AS topicTitle, q.tags_json AS tags, q.difficulty, q.archived,
     COALESCE(s.favorite, 0) AS favorite, ${practicedSql} AS practiced,
-    ${currentRatingSql} AS currentRating,
+    ${currentRatingSql} AS currentRating,${lastPracticedAtSql} AS lastPracticedAt,
     CASE WHEN ${contentUpdatedSql} THEN 1 ELSE 0 END AS contentUpdated`
   const pageQuery = database.prepare(`SELECT ${infoColumns} ${questionSelectionFrom}
     WHERE ${listWhere} ORDER BY ${questionOrderSql} LIMIT @limit OFFSET @offset`)
@@ -73,7 +75,7 @@ export function createLibraryReader(database: Database.Database) {
     AND ${categorySelectionWhere}
     ORDER BY tag.value`)
   let tagCache: { revision: number; scope: string; tags: string[] } | undefined
-  function info(row: InfoRow) {
+  function info(row: InfoRow, includePracticeTime = false) {
     return {
       topicId: row.topicId,
       questionId: row.questionId,
@@ -87,6 +89,7 @@ export function createLibraryReader(database: Database.Database) {
       practiced: row.practiced === 1,
       contentUpdated: row.contentUpdated === 1,
       currentRating: row.currentRating,
+      ...(includePracticeTime ? { lastPracticedAt: row.lastPracticedAt } : {}),
     }
   }
   function body(row: ContentRow) {
@@ -136,7 +139,13 @@ export function createLibraryReader(database: Database.Database) {
       pageSize: PAGE_SIZE,
       tagOptions: tagCache.tags,
       ...navigation(),
-      questions: rows.map(info),
+      questions: rows.map((row) =>
+        info(
+          row,
+          (request.filters?.practiceRecency ?? 'all') !== 'all' ||
+            request.filters?.practiceOrder === 'oldest',
+        ),
+      ),
     })
   })
   return {

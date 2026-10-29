@@ -1,0 +1,53 @@
+
+Running 3 tests using 1 worker
+
+(node:41472) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [development] › tests\e2e\practice-recency.spec.ts:34:5 › 当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序 (1.2s)
+(node:34912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [development] › tests\e2e\practice-recency.spec.ts:180:5 › 最久优先先限10题再随机，固定队列不随历史变化/重新打开重排；方案兼容显式默认值 (2.0s)
+  x  3 [development] › tests\e2e\practice-recency.spec.ts:285:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 (32.5s)
+
+
+  1) [development] › tests\e2e\practice-recency.spec.ts:34:5 › 当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序 
+
+    Error: UNIQUE constraint failed: question_user_state.question_id
+
+      71 |             `q-${number}`,
+      72 |           )
+    > 73 |         db.exec(
+         |            ^
+      74 |           "INSERT INTO question_user_state(question_id,favorite,last_rating,last_rated_version_id) SELECT id,0,'不熟',current_version_id FROM questions WHERE topic_id='control-a' AND question_id='q-6'",
+      75 |         )
+      76 |       },
+        at work (E:\My_Projects\embedded-practice\tests\e2e\practice-recency.spec.ts:73:12)
+        at withHistoryDatabase (E:\My_Projects\embedded-practice\tests\e2e\history-helpers.ts:92:12)
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-recency.spec.ts:53:24
+
+    Error Context: output\playwright\review-development-recency-01\practice-recency-当前版本最近揭晓：7-30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序-development\error-context.md
+
+  2) [development] › tests\e2e\practice-recency.spec.ts:285:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 ──
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.click: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('.advanced-question-filters > summary')
+
+
+      295 |       window.webContents.setZoomFactor(1.5)
+      296 |     })
+    > 297 |     await page.locator('.advanced-question-filters > summary').click()
+          |                                                                ^
+      298 |     await page.locator('.recent-practice-filters > summary').click()
+      299 |     await page.getByLabel('题库最近练习', { exact: true }).selectOption('7d')
+      300 |     await page.getByLabel('题库选题优先级', { exact: true }).selectOption('oldest')
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-recency.spec.ts:297:64
+
+    Error Context: output\playwright\review-development-recency-01\practice-recency-题库和练习共用最近筛选，可保存-填入方案；窄窗暗色控件和结果可操作-development\error-context.md
+
+  2 failed
+    [development] › tests\e2e\practice-recency.spec.ts:34:5 › 当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序 
+    [development] › tests\e2e\practice-recency.spec.ts:285:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 ───
+  1 passed (36.8s)

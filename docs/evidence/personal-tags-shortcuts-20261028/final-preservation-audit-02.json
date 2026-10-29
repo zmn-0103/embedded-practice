@@ -1,0 +1,33 @@
+{
+  "sourceFiles": 309,
+  "allSourceFilesMatch": true,
+  "originalPlanBytes": 49411,
+  "originalPlanPrefixPreserved": true,
+  "currentPlanBytes": 60355,
+  "dependencyChecks": [
+    {
+      "path": "package.json",
+      "sha256": "35d9e9fa52130a93ec97a63108409a13b09772d04ae13bc8d75a20576c1d6629",
+      "preserved": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "7a5109717d33cff94a7a8f3b30a5a0f282fc05db07279c913c57740bb7d0e45a",
+      "preserved": true
+    }
+  ],
+  "unchangedConfigurations": [
+    "package.json",
+    "package-lock.json",
+    "electron-builder.yml",
+    "electron.vite.config.ts",
+    "playwright.config.ts",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "tsconfig.web.json"
+  ],
+  "sourceManifest": "source-final-03.json",
+  "finalSupplementalChanges": [
+    "tests/e2e/personal-tags.spec.ts"
+  ]
+}

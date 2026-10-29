@@ -42,7 +42,7 @@ async function seedV12(directory: string) {
   }
 }
 
-test('结构12先保护备份再升13，仅新增空笔记表，原题单/来源/草稿与自定义对象保持', async ({
+test('结构12先保护备份再升17，新增笔记/标签/待办与元数据，原题单/来源/草稿与自定义对象保持', async ({
   testDataDirectory,
 }, info) => {
   const before = await seedV12(testDataDirectory)
@@ -51,11 +51,30 @@ test('结构12先保护备份再升13，仅新增空笔记表，原题单/来源
     expect(await readAppStatus(page)).toMatchObject({ ok: true })
     expect(withHistoryDatabase(testDataDirectory, controlRecords)).toEqual({
       ...before,
+      practice_plans: before['practice_plans']!.map((row) => ({
+        ...row,
+        pinned: 0,
+        last_used_at: null,
+      })),
+      question_sets: before['question_sets']!.map((row) => ({
+        ...row,
+        pinned: 0,
+        last_used_at: null,
+      })),
       personal_notes: [],
+      personal_tags: [],
+      question_personal_tags: [],
+      review_todos: [],
+      question_relations: [],
+      recent_knowledge_searches: [],
+      daily_targets: [],
+      study_goals: [],
+      quota_settings: [],
+      learning_activities: [],
     })
     expect(
       withHistoryDatabase(testDataDirectory, (db) => db.prepare('PRAGMA user_version').get()),
-    ).toEqual({ user_version: 13 })
+    ).toEqual({ user_version: 17 })
     expect(
       withHistoryDatabase(testDataDirectory, (db) =>
         db

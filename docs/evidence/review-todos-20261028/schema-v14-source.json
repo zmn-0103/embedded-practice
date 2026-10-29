@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-10-28T16:38:11.749Z",
+  "exe": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-personal-tags-20261028.3-r2\\win-unpacked\\embedded-practice.exe",
+  "data": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-v14-fixture-Eyfivl",
+  "packaged": true,
+  "buildLabel": "离线使用 · 数据保存在本机\nV0.0.2 测试版 · 构建 20261028.3-personal-tags",
+  "schema": 14,
+  "fixture": "tests/fixtures/schema-v14.sql",
+  "sha256": "b79d0dd96a9eddbf326cce4794e1c6a7c3fd5862a269fc55b00b5dae27dafddb",
+  "exeSha256": "210541ba1fbb755eb7fb13ad08461bd303b8e66a049e5476e3735d75577eb8a9",
+  "objects": [
+    {
+      "type": "table",
+      "name": "app_startup"
+    },
+    {
+      "type": "table",
+      "name": "library_meta"
+    },
+    {
+      "type": "table",
+      "name": "topics"
+    },
+    {
+      "type": "table",
+      "name": "questions"
+    },
+    {
+      "type": "table",
+      "name": "question_versions"
+    },
+    {
+      "type": "table",
+      "name": "image_resources"
+    },
+    {
+      "type": "table",
+      "name": "version_images"
+    },
+    {
+      "type": "table",
+      "name": "question_user_state"
+    },
+    {
+      "type": "table",
+      "name": "import_receipts"
+    },
+    {
+      "type": "index",
+      "name": "questions_topic_order"
+    },
+    {
+      "type": "table",
+      "name": "practice_sessions"
+    },
+    {
+      "type": "index",
+      "name": "practice_one_active"
+    },
+    {
+      "type": "table",
+      "name": "practice_items"
+    },
+    {
+      "type": "table",
+      "name": "practice_receipts"
+    },
+    {
+      "type": "index",
+      "name": "practice_items_version"
+    },
+    {
+      "type": "table",
+      "name": "appearance_settings"
+    },
+    {
+      "type": "table",
+      "name": "categories"
+    },
+    {
+      "type": "index",
+      "name": "topics_category"
+    },
+    {
+      "type": "table",
+      "name": "practice_plans"
+    },
+    {
+      "type": "table",
+      "name": "installed_themes"
+    },
+    {
+      "type": "table",
+      "name": "question_sets"
+    },
+    {
+      "type": "table",
+      "name": "question_set_items"
+    },
+    {
+      "type": "table",
+      "name": "personal_notes"
+    },
+    {
+      "type": "table",
+      "name": "personal_tags"
+    },
+    {
+      "type": "table",
+      "name": "question_personal_tags"
+    },
+    {
+      "type": "index",
+      "name": "personal_tag_questions"
+    }
+  ],
+  "quickCheck": [
+    {
+      "quick_check": "ok"
+    }
+  ]
+}

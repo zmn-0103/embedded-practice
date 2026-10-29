@@ -1,0 +1,45 @@
+
+> embedded-practice@0.0.2 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 484 modules transformed.
+rendering chunks...
+out/main/activity-writer-CNvW91ky.js        0.69 kB
+out/main/rolldown-runtime-Dbql6lyJ.js       1.73 kB
+out/main/read-file-snapshot-CMVe8RMv.js     2.28 kB
+out/main/import-preparation.js              4.78 kB
+out/main/import-protocol-4tPBef__.js        6.66 kB
+out/main/backup.js                         10.60 kB
+out/main/practice.js                       24.79 kB
+out/main/restore-files.js                  31.35 kB
+out/main/settings-repository-CbjzFUUV.js   50.89 kB
+out/main/index.js                          61.71 kB
+out/main/planning-CuWGOXo7.js              65.29 kB
+out/main/library-import.js                147.05 kB
+out/main/question-bank-T0vUgEwC.js        185.29 kB
+out/main/import-worker-D-bUT_rp.js        303.97 kB
+out/main/image-path-DkzouUrA.js           458.88 kB
+
+✓ built in 113ms
+vite v8.3.4 building ssr environment for production...
+transforming...
+✓ 119 modules transformed.
+rendering chunks...
+out/preload/index.js  231.12 kB
+
+✓ built in 28ms
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 640 modules transformed.
+rendering chunks...
+out/renderer/index.html                     0.71 kB
+out/renderer/assets/index-scSqw216.css     80.95 kB
+out/renderer/assets/index-BA0cmIHS.js   2,161.38 kB
+
+✓ built in 125ms

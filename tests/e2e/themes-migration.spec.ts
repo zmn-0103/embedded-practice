@@ -99,10 +99,24 @@ for (const [palette, mode, size] of [
     const before = await seedV9(testDataDirectory, palette, mode, size)
     const expected = {
       ...before,
+      practice_plans: before['practice_plans']!.map((row) => ({
+        ...row,
+        pinned: 0,
+        last_used_at: null,
+      })),
       installed_themes: [],
       question_sets: [],
       question_set_items: [],
       personal_notes: [],
+      personal_tags: [],
+      question_personal_tags: [],
+      review_todos: [],
+      question_relations: [],
+      recent_knowledge_searches: [],
+      daily_targets: [],
+      study_goals: [],
+      quota_settings: [],
+      learning_activities: [],
       practice_sessions: before.practice_sessions!.map((row) => ({
         ...row,
         repeat_source_id: null,
@@ -126,7 +140,7 @@ for (const [palette, mode, size] of [
         withHistoryDatabase(testDataDirectory, (database) =>
           database.prepare('PRAGMA user_version').get(),
         ),
-      ).toEqual({ user_version: 13 })
+      ).toEqual({ user_version: 17 })
       await page.getByRole('button', { name: '继续练习', exact: true }).click()
       await expect(page.getByRole('textbox', { name: '我的答案', exact: true })).toHaveValue(
         '结构9草稿\n    retained9();',

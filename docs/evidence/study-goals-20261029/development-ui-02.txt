@@ -1,0 +1,12 @@
+
+Running 5 tests using 1 worker
+
+(node:26492) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\planning-ui.spec.ts:18:5 › 每日目标保存失败/坏回包保留原命令，退出受保护，冲突明确放弃后可沿用历史目标 (1.8s)
+  ok 2 [development] › tests\e2e\planning-ui.spec.ts:113:5 › 备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史 (1.7s)
+  ok 3 [development] › tests\e2e\planning-ui.spec.ts:173:5 › 配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目 (1.7s)
+  ok 4 [development] › tests\e2e\planning-ui.spec.ts:231:5 › 日历日期可看活动分页与原轮作答笔记，旧日期零事件有明确说明 (1.7s)
+  ok 5 [development] › tests\e2e\planning-ui.spec.ts:264:5 › 目标/日历/配额在900宽150%暗色可操作且中文混排无横向溢出 (1.9s)
+
+  5 passed (9.5s)

@@ -1,0 +1,2888 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "personal-tags.spec.ts",
+      "personal-tags-storage.spec.ts",
+      "shortcut-usage.spec.ts",
+      "review-todos.spec.ts",
+      "practice-recency.spec.ts",
+      "review-storage.spec.ts",
+      "knowledge.spec.ts",
+      "knowledge-ui.spec.ts",
+      "knowledge-storage.spec.ts",
+      "planning.spec.ts",
+      "planning-ui.spec.ts",
+      "planning-storage.spec.ts",
+      "oral-timer.spec.ts",
+      "note-favorite.spec.ts",
+      "--project=packaged",
+      "--output=output/playwright/functional-ux-merge-review-20261029",
+      "--reporter=list,json"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/playwright/functional-ux-merge-review-20261029",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/playwright/functional-ux-merge-review-20261029",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "knowledge-storage.spec.ts",
+      "file": "knowledge-storage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "结构15受保护升级17，旧待办/笔记/标签/方案/草稿保持：none",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1086,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:14.924Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7cac6e6c03048a1789db-978077c30d0f3ecfd46a",
+          "file": "knowledge-storage.spec.ts",
+          "line": 69,
+          "column": 7
+        },
+        {
+          "title": "结构15受保护升级17，旧待办/笔记/标签/方案/草稿保持：backup-blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 805,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:16.034Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7cac6e6c03048a1789db-e48647bf3c4182111dca",
+          "file": "knowledge-storage.spec.ts",
+          "line": 69,
+          "column": 7
+        },
+        {
+          "title": "结构15受保护升级17，旧待办/笔记/标签/方案/草稿保持：second-table-collision",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 836,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:16.851Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7cac6e6c03048a1789db-3414e0efdabd6da7a190",
+          "file": "knowledge-storage.spec.ts",
+          "line": 69,
+          "column": 7
+        },
+        {
+          "title": "完整备份恢复关联/说明/最近搜索，拒绝重复/自关联/孤儿/非法文字日期且保留源字节",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4616,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:17.694Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtMVp0bnNYIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7cac6e6c03048a1789db-d74f242a8a6a22c396dd",
+          "file": "knowledge-storage.spec.ts",
+          "line": 128,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "knowledge-ui.spec.ts",
+      "file": "knowledge-ui.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "积累检索分类/最近词/跨页，详情返回保留条件/结果/滚动，保存笔记后明确刷新",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1718,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:22.325Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtclAzdUZ2IiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "knowledge-search-results.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\knowledge-ui-积累检索分类-最近词-跨页，详情返回保留条件-结果-滚动，保存笔记后明确刷新-packaged\\attachments\\knowledge-search-results-png-819fb1b16f4b984f4533586bb342f47159db8da8.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef690f05b0fd86730d7f-5706d38be7e3d9b665f3",
+          "file": "knowledge-ui.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "关联UI真实失败/退出保护、提交后坏回包原命令重试，过期冲突保留后明确放弃及删除",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1874,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:24.050Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2Utb0tXd0lkIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "knowledge-relation-saved.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\knowledge-ui-关联UI真实失败-退出保护、提交后坏回包原命令重试，过期冲突保留后明确放弃及删除-packaged\\attachments\\knowledge-relation-saved-png-1b27bbbae842335e776b0589035a11796bdfd4b6.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef690f05b0fd86730d7f-964654ab6ae9fb1862fb",
+          "file": "knowledge-ui.spec.ts",
+          "line": 97,
+          "column": 5
+        },
+        {
+          "title": "双向前置/对照笔记先保存，从关联题进入原确认并采用固定当前版本",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1695,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:25.929Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtWGk5ckRjIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "knowledge-pair-comparison.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\knowledge-ui-双向前置-对照笔记先保存，从关联题进入原确认并采用固定当前版本-packaged\\attachments\\knowledge-pair-comparison-png-c1186e4849a9b5fb7476f35dac51fc0b881454cf.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef690f05b0fd86730d7f-db21b32c00c053e3943f",
+          "file": "knowledge-ui.spec.ts",
+          "line": 204,
+          "column": 5
+        },
+        {
+          "title": "练习揭晓前不读关联/搜索，旧轮复盘对照当前题干且不改旧轮次",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2542,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:27.630Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UteWdlS0phIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef690f05b0fd86730d7f-0e6853f9fbdf8a2f683c",
+          "file": "knowledge-ui.spec.ts",
+          "line": 293,
+          "column": 5
+        },
+        {
+          "title": "我的积累与关联对照在900宽/150%暗色可操作、中文混排不横向溢出",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1603,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:30.178Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtWVo4VDVoIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "knowledge-narrow-dark-search.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\knowledge-ui-我的积累与关联对照在900宽-150-暗色可操作、中文混排不横向溢出-packaged\\attachments\\knowledge-narrow-dark-search-png-baec613ac6d36dc0e15aaf6348ebcd5fdd6a3d6e.png"
+                    },
+                    {
+                      "name": "knowledge-narrow-dark-comparison.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\knowledge-ui-我的积累与关联对照在900宽-150-暗色可操作、中文混排不横向溢出-packaged\\attachments\\knowledge-narrow-dark-comparison-png-e1102d4eab240b9079abf70620d9d672f1121daf.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef690f05b0fd86730d7f-f5665812407bc5eecc53",
+          "file": "knowledge-ui.spec.ts",
+          "line": 361,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "knowledge.spec.ts",
+      "file": "knowledge.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "知识关联真实事务：两端同记录/方向、重复与CAS/幂等、删除不复活、失败回滚和归档分页",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1751,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:31.792Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2Uta3JocEY2IiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0828a03cd0e93ee0ce1b-a36f6359949134890e72",
+          "file": "knowledge.spec.ts",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "我的积累按来源合并片段，字面特殊字符/超长笔记有界、当前版本/归档与答案隔离",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1578,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:33.549Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtdVRXRUF4IiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0828a03cd0e93ee0ce1b-5538bf0f69ef34d3b405",
+          "file": "knowledge.spec.ts",
+          "line": 107,
+          "column": 5
+        },
+        {
+          "title": "最近关键词保留成功次序的10个，重复提升、查询只读/分页不记词、真实写失败整批回滚",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1189,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:35.133Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtS3FvdWRWIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0828a03cd0e93ee0ce1b-937bf5fd66874ae9b829",
+          "file": "knowledge.spec.ts",
+          "line": 176,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "note-favorite.spec.ts",
+      "file": "note-favorite.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1584,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:36.331Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtbmtTY3JRIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "favorite-note-readonly.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\note-favorite-学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入-packaged\\attachments\\favorite-note-readonly-png-fd09e40a6c89bd8efa637190723161d45f808549.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "db989a711fc377abf553-858fa7f3b13ac478f7b5",
+          "file": "note-favorite.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "学习记录收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1490,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:37.922Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtemtaeHROIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "favorite-note-save-failed.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\note-favorite-学习记录收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续-packaged\\attachments\\favorite-note-save-failed-png-01b352dcb4c01d3ad98e46f19efcd4164de8e753.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "db989a711fc377abf553-cd789bc44e945a51059b",
+          "file": "note-favorite.spec.ts",
+          "line": 110,
+          "column": 7
+        },
+        {
+          "title": "题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1592,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:39.419Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtUTZvelVjIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "favorite-note-readonly.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\note-favorite-题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入-packaged\\attachments\\favorite-note-readonly-png-f519e596782aa661139c6243ebc5adcffe5ba25f.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "db989a711fc377abf553-bfec1e49ccc8c085c967",
+          "file": "note-favorite.spec.ts",
+          "line": 30,
+          "column": 7
+        },
+        {
+          "title": "题库收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1487,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:41.016Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UteXB4dUo3IiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "favorite-note-save-failed.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\note-favorite-题库收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续-packaged\\attachments\\favorite-note-save-failed-png-4fe792e01092824153f097c4a07b6147174224ea.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "db989a711fc377abf553-ab5d47615bd9f450e105",
+          "file": "note-favorite.spec.ts",
+          "line": 110,
+          "column": 7
+        },
+        {
+          "title": "普通题库：收藏写入失败恢复编辑，成功刷新保留详情并恢复笔记编辑",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:42.508Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtV29OaGhnIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "db989a711fc377abf553-4b36db4a2ed0430bd0b0",
+          "file": "note-favorite.spec.ts",
+          "line": 171,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "oral-timer.spec.ts",
+      "file": "oral-timer.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "切题已成功但坏回包时暂停，原命令重试后保留各题计时和固定队列",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1704,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:44.064Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtckZWRm8zIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "oral-unknown-recovered.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\oral-timer-切题已成功但坏回包时暂停，原命令重试后保留各题计时和固定队列-packaged\\attachments\\oral-unknown-recovered-png-57272757c44da504b26f26391a11aeb9bbcc41e6.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6524919df428a9b2793d-886decfd3edf74985768",
+          "file": "oral-timer.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "口述计时900宽150%/light/22px可操作，无横向溢出且不遮挡输入/揭晓",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2582,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:45.776Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtY0pPU3RKIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "oral-narrow-light.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\oral-timer-口述计时900宽150-light-22px可操作，无横向溢出且不遮挡输入-揭晓-packaged\\attachments\\oral-narrow-light-png-1ffb7fbecf2839cbb141d66f369850daf7bbf8ee.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6524919df428a9b2793d-a4417f0aef049fd7f740",
+          "file": "oral-timer.spec.ts",
+          "line": 68,
+          "column": 7
+        },
+        {
+          "title": "口述计时900宽150%/dark/22px可操作，无横向溢出且不遮挡输入/揭晓",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2605,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:48.363Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtdmlsSkltIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "oral-narrow-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\oral-timer-口述计时900宽150-dark-22px可操作，无横向溢出且不遮挡输入-揭晓-packaged\\attachments\\oral-narrow-dark-png-2bb62684474851c1b5095b9b7d9c1e7db8e6447f.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6524919df428a9b2793d-0d51e0d130c8bdc7a40d",
+          "file": "oral-timer.spec.ts",
+          "line": 68,
+          "column": 7
+        },
+        {
+          "title": "口述计时默认关闭/单调截止/暂停，到时不揭晓评价/读取旧内容/写学习记录",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2461,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:50.974Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtQklKaGZCIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "oral-expired.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\oral-timer-口述计时默认关闭-单调截止-暂停，到时不揭晓评价-读取旧内容-写学习记录-packaged\\attachments\\oral-expired-png-6a66fe13987a2802b91fd8e18915e97503d233a8.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6524919df428a9b2793d-0078ff53bceb237dd670",
+          "file": "oral-timer.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "计时分题保留和本题时长/重置，保存返回后暂停继续，关闭重开只重置计时",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2788,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:53.440Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtTVVYNW9DIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6524919df428a9b2793d-e70e58cc4334cc9f220b",
+          "file": "oral-timer.spec.ts",
+          "line": 200,
+          "column": 5
+        },
+        {
+          "title": "真实短时间倒数，窗口隐藏/失焦暂停，恢复焦点不自动继续",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4256,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:36:56.234Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtY1I1Wmx3IiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6524919df428a9b2793d-a83a21cd4e0b73a89429",
+          "file": "oral-timer.spec.ts",
+          "line": 252,
+          "column": 5
+        },
+        {
+          "title": "保存失败暂停且保留输入/余时，重试保存后明确切题不重置旧题计时",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1751,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:00.496Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtREVMWmFoIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "oral-save-recovered.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\oral-timer-保存失败暂停且保留输入-余时，重试保存后明确切题不重置旧题计时-packaged\\attachments\\oral-save-recovered-png-049acd3475c8e15356554bfd30084263782a8c9c.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6524919df428a9b2793d-1677b4c604109367eff8",
+          "file": "oral-timer.spec.ts",
+          "line": 287,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "personal-tags-storage.spec.ts",
+      "file": "personal-tags-storage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "结构13升级17保护原笔记/定义和用户表：none",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 948,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:02.256Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0d0a727f94c4e0c67d16-853ab752d0b9adae68a8",
+          "file": "personal-tags-storage.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "结构13升级17保护原笔记/定义和用户表：backup-blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 814,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:03.212Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0d0a727f94c4e0c67d16-d1f5ee1ec741d8f9486d",
+          "file": "personal-tags-storage.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "结构13升级17保护原笔记/定义和用户表：collision",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 815,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:04.031Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0d0a727f94c4e0c67d16-7fc7eb67137340e835d3",
+          "file": "personal-tags-storage.spec.ts",
+          "line": 56,
+          "column": 7
+        },
+        {
+          "title": "完整备份恢复个人标签/关联/置顶与最近使用，拒绝损坏元数据和关联且源文件不变",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3674,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:04.853Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtOGNSYU40IiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0d0a727f94c4e0c67d16-88bb991fa0f50f6d9829",
+          "file": "personal-tags-storage.spec.ts",
+          "line": 122,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "personal-tags.spec.ts",
+      "file": "personal-tags.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "个人标签管理在900宽/150%缩放/暗色中可操作且浮层保持在视口内",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1432,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:08.538Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtZUVISnJPIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "personal-tags-narrow-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\personal-tags-个人标签管理在900宽-150-缩放-暗色中可操作且浮层保持在视口内-packaged\\attachments\\personal-tags-narrow-dark-png-db4e2f07dfb49920581ee17166b2eefd813cd12e.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "38be4cc994a84e3e2ec9-cf924a8ee206ca59ceff",
+          "file": "personal-tags.spec.ts",
+          "line": 33,
+          "column": 5
+        },
+        {
+          "title": "个人标签可创建/改名/跨专题批量添加移除并用于题库和方案",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1762,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:09.976Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtazBucGl5IiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "personal-tag-filter.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\personal-tags-个人标签可创建-改名-跨专题批量添加移除并用于题库和方案-packaged\\attachments\\personal-tag-filter-png-e694a81f3bdc6e9c617902894429e7c4d2c2d99b.png"
+                    },
+                    {
+                      "name": "personal-tag-management.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\personal-tags-个人标签可创建-改名-跨专题批量添加移除并用于题库和方案-packaged\\attachments\\personal-tag-management-png-a1d700b15bbf0f2c3eba3012f93a67aa6b91b5c9.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "38be4cc994a84e3e2ec9-0f3d812a595ca5fe6591",
+          "file": "personal-tags.spec.ts",
+          "line": 80,
+          "column": 5
+        },
+        {
+          "title": "个人标签已提交但响应丢失时锁定表单，重试原操作不重复创建",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1268,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:11.744Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtaWVRYUU2IiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "38be4cc994a84e3e2ec9-6963eb72e0d4bf05ec28",
+          "file": "personal-tags.spec.ts",
+          "line": 155,
+          "column": 5
+        },
+        {
+          "title": "个人标签重导入/归档保留，失效成员或真实写失败整批回滚，删除不扩大方案",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1361,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:13.020Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtOW01SThNIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "38be4cc994a84e3e2ec9-2bffe8e3636f51b101d7",
+          "file": "personal-tags.spec.ts",
+          "line": 197,
+          "column": 5
+        },
+        {
+          "title": "标签等待真实响应期间先保存笔记并锁定新增输入，刷新移除详情后文字保留",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2300,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:14.386Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtUXJIeWtMIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "38be4cc994a84e3e2ec9-cb6c9e905b377fd4f0dc",
+          "file": "personal-tags.spec.ts",
+          "line": 303,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "planning-storage.spec.ts",
+      "file": "planning-storage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "结构16受保护升级17，原知识/待办/笔记/历史/草稿逐表保持：none",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 928,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:16.698Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c758f0480272c0e9fdf-dbf7129208672391ad0f",
+          "file": "planning-storage.spec.ts",
+          "line": 61,
+          "column": 7
+        },
+        {
+          "title": "结构16受保护升级17，原知识/待办/笔记/历史/草稿逐表保持：backup-blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 789,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:17.632Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c758f0480272c0e9fdf-4d6bfff454365347b6a0",
+          "file": "planning-storage.spec.ts",
+          "line": 61,
+          "column": 7
+        },
+        {
+          "title": "结构16受保护升级17，原知识/待办/笔记/历史/草稿逐表保持：second-table-collision",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 784,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:18.427Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c758f0480272c0e9fdf-426bd0087773e67c50f5",
+          "file": "planning-storage.spec.ts",
+          "line": 61,
+          "column": 7
+        },
+        {
+          "title": "完整备份恢复目标/配额/独立活动事实，拒绝日期/计数/重复/事件位置损坏并保留源字节",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4698,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:19.217Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtaVd3YXhFIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c758f0480272c0e9fdf-09bc6b53494711ad1ab0",
+          "file": "planning-storage.spec.ts",
+          "line": 122,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "planning-ui.spec.ts",
+      "file": "planning-ui.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "每日目标保存失败/坏回包保留原命令，退出受保护，冲突明确放弃后可沿用历史目标",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1603,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:23.930Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtTWFrcXdZIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "goals-daily-saved.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\planning-ui-每日目标保存失败-坏回包保留原命令，退出受保护，冲突明确放弃后可沿用历史目标-packaged\\attachments\\goals-daily-saved-png-f1292510206d9832566dd45105a8446f42e085cc.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53b549d3b4338b8298e6-9f204f9c556aa07fafea",
+          "file": "planning-ui.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1735,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:25.539Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtRGo1SEYxIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "goals-exam-progress.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\planning-ui-备考目标界面去重范围，进入原确认再建固定队列，取消-删除目标不改历史-packaged\\attachments\\goals-exam-progress-png-15fe3d4c7446370997d7522b5f1c684bd418e893.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53b549d3b4338b8298e6-862db3b09b33a8a1553e",
+          "file": "planning-ui.spec.ts",
+          "line": 113,
+          "column": 5
+        },
+        {
+          "title": "配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1563,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:27.281Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtRW1ZZ3JYIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "goals-quota-preview.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\planning-ui-配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目-packaged\\attachments\\goals-quota-preview-png-b872ea25849e3743d908e51852fc9dde17202e45.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53b549d3b4338b8298e6-ad04d2d3d1eb89553da4",
+          "file": "planning-ui.spec.ts",
+          "line": 183,
+          "column": 5
+        },
+        {
+          "title": "日历日期可看活动分页与原轮作答笔记，旧日期零事件有明确说明",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1633,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:28.850Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtRFYxajgzIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "goals-calendar-month.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\planning-ui-日历日期可看活动分页与原轮作答笔记，旧日期零事件有明确说明-packaged\\attachments\\goals-calendar-month-png-521ee1a9ecb1c588ec416e9e5c5601c158fd09f7.png"
+                    },
+                    {
+                      "name": "goals-calendar-round.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\planning-ui-日历日期可看活动分页与原轮作答笔记，旧日期零事件有明确说明-packaged\\attachments\\goals-calendar-round-png-75999a7ecc6783cec50d92402b3336d8022bd68c.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53b549d3b4338b8298e6-f4e0ce531a65a5075d6c",
+          "file": "planning-ui.spec.ts",
+          "line": 241,
+          "column": 5
+        },
+        {
+          "title": "目标/日历/配额在900宽150%暗色可操作且中文混排无横向溢出",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1753,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:30.488Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtY3gzQUIxIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "goals-narrow-dark-calendar.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\planning-ui-目标-日历-配额在900宽150-暗色可操作且中文混排无横向溢出-packaged\\attachments\\goals-narrow-dark-calendar-png-0449803028eeae0d2f2fd34f4ed75a441866bb44.png"
+                    },
+                    {
+                      "name": "goals-narrow-dark-quota.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\planning-ui-目标-日历-配额在900宽150-暗色可操作且中文混排无横向溢出-packaged\\attachments\\goals-narrow-dark-quota-png-084dea4faa0c2fe87461c97a6730598fbcaa7a2e.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53b549d3b4338b8298e6-f78254d114a0b2a64d59",
+          "file": "planning-ui.spec.ts",
+          "line": 276,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "planning.spec.ts",
+      "file": "planning.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "备考目标容量/重名与失效范围更新有边界，日历轮次独立分页不漏轮",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1343,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:32.252Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtVlM5UEljIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b0549e55fb6efa6229e-9d72f530ab9242f3783c",
+          "file": "planning.spec.ts",
+          "line": 28,
+          "column": 5
+        },
+        {
+          "title": "每日目标按成功活动去重，待办重开/同题重复自评/归档不抹事实，旧日期不补造",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1362,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:33.601Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtdmNpUEN0IiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b0549e55fb6efa6229e-b160e731028c80b2021d",
+          "file": "planning.spec.ts",
+          "line": 95,
+          "column": 5
+        },
+        {
+          "title": "活动和实际保存同事务回滚，重复回执只计一次，重复揭晓/暂不评价不计自评",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1231,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:34.969Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtSGtpU0lVIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b0549e55fb6efa6229e-cf2b4551805e6795ff16",
+          "file": "planning.spec.ts",
+          "line": 182,
+          "column": 5
+        },
+        {
+          "title": "备考题单去重、CAS与删除失效，当前版本覆盖/归档分开，超500不截断",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1643,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:36.205Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtSUluZWMyIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b0549e55fb6efa6229e-b37458d7abb9c94eb650",
+          "file": "planning.spec.ts",
+          "line": 326,
+          "column": 5
+        },
+        {
+          "title": "配额优先方式/不足/重复与候选只读，确认后固定队列，日历两类分页",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1357,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:37.854Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2Uta1dJaURiIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b0549e55fb6efa6229e-fe2c9df401ac9af9dce4",
+          "file": "planning.spec.ts",
+          "line": 428,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "practice-recency.spec.ts",
+      "file": "practice-recency.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1457,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:39.220Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtY0hDekNhIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-3333232d8593d14e9094",
+          "file": "practice-recency.spec.ts",
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "最久优先先限10题再随机，固定队列不随历史变化/重新打开重排；方案兼容显式默认值",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2043,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:40.683Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtQ1ZOdFU4IiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-25bcb2e0a6c2305ce555",
+          "file": "practice-recency.spec.ts",
+          "line": 180,
+          "column": 5
+        },
+        {
+          "title": "题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1942,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:42.732Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtSXJZWUtBIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "recent-library-narrow-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\practice-recency-题库和练习共用最近筛选，可保存-填入方案；窄窗暗色控件和结果可操作-packaged\\attachments\\recent-library-narrow-dark-png-921a5f40b7bef7ba6a570f25d8fb2216e029ae69.png"
+                    },
+                    {
+                      "name": "recent-plan-narrow-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\practice-recency-题库和练习共用最近筛选，可保存-填入方案；窄窗暗色控件和结果可操作-packaged\\attachments\\recent-plan-narrow-dark-png-0796c99acc77793b50d95e07e9280f3c14153256.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-d9c81cfdc6de5b8818fe",
+          "file": "practice-recency.spec.ts",
+          "line": 285,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "review-storage.spec.ts",
+      "file": "review-storage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "结构14受保护升级17，原笔记/标签/元数据/活动轮逐表保持：none",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 913,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:44.683Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e6e9c42a9a77209fc1df-005537d803d20bde47a7",
+          "file": "review-storage.spec.ts",
+          "line": 75,
+          "column": 7
+        },
+        {
+          "title": "结构14受保护升级17，原笔记/标签/元数据/活动轮逐表保持：backup-blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 814,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:45.601Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e6e9c42a9a77209fc1df-5acc39554244e35f4887",
+          "file": "review-storage.spec.ts",
+          "line": 75,
+          "column": 7
+        },
+        {
+          "title": "结构14受保护升级17，原笔记/标签/元数据/活动轮逐表保持：collision",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 780,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:46.422Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e6e9c42a9a77209fc1df-a3289f2ec4021e0a4cc9",
+          "file": "review-storage.spec.ts",
+          "line": 75,
+          "column": 7
+        },
+        {
+          "title": "复习安排真实事务：幂等/CAS/完成与重开、到期分页、写失败回滚及归档重导入保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1699,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:47.209Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtQzdXYXlJIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e6e9c42a9a77209fc1df-c9fe03d01673c0072d66",
+          "file": "review-storage.spec.ts",
+          "line": 133,
+          "column": 5
+        },
+        {
+          "title": "完整备份恢复待办与最近条件，拒绝日期/完成状态/重复/孤儿损坏，源字节保持",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4358,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:48.914Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtNUozcm1CIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e6e9c42a9a77209fc1df-2483e4cc9e0476281978",
+          "file": "review-storage.spec.ts",
+          "line": 231,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "review-todos.spec.ts",
+      "file": "review-todos.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "题目复习安排：明确加入、日期快捷操作和原因自动保存，完成/重开与正常关闭重读",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5156,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:53.283Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtWkRUQTNpIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "review-editor-saved.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\review-todos-题目复习安排：明确加入、日期快捷操作和原因自动保存，完成-重开与正常关闭重读-packaged\\attachments\\review-editor-saved-png-00582d28222ed25bf77c5bacb771af32cba6daf1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75ab2b3002993731b4fd-dd3a34952e14636649fa",
+          "file": "review-todos.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "真实待办写失败阻止离开和正常关闭，输入保留；原操作重试及过期冲突明确重读",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3196,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:37:58.445Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2Utbk0xNGVEIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "review-save-failed.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\review-todos-真实待办写失败阻止离开和正常关闭，输入保留；原操作重试及过期冲突明确重读-packaged\\attachments\\review-save-failed-png-30fa4af17da82cb7b635ea5f591672a6feb87485.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75ab2b3002993731b4fd-93866162c90ea0ba729c",
+          "file": "review-todos.spec.ts",
+          "line": 74,
+          "column": 5
+        },
+        {
+          "title": "真实提交后坏响应原操作重试不重复；独立作答前不读取/展示旧原因，揭晓和练习不会完成待办",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3068,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:38:01.647Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtSEFPeXhCIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75ab2b3002993731b4fd-542f4a55babeed000249",
+          "file": "review-todos.spec.ts",
+          "line": 145,
+          "column": 5
+        },
+        {
+          "title": "旧轮复盘编辑当前复习计划，切题先保存，明确完成不改轮次/版本/自评",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1664,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:38:04.720Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtWTFnZkpPIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "review-round-current-plan.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\review-todos-旧轮复盘编辑当前复习计划，切题先保存，明确完成不改轮次-版本-自评-packaged\\attachments\\review-round-current-plan-png-9fe246c8ed6bf23f7852343c2344ebe3c7cfef0a.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75ab2b3002993731b4fd-01d717227a786fce0489",
+          "file": "review-todos.spec.ts",
+          "line": 214,
+          "column": 5
+        },
+        {
+          "title": "待办跨页/状态勾选进入原组卷确认，归档阻止开始；当前版本固定且练习不自动完成",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1745,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:38:06.390Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtSzhsM0ZwIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "review-selected-practice.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\review-todos-待办跨页-状态勾选进入原组卷确认，归档阻止开始；当前版本固定且练习不自动完成-packaged\\attachments\\review-selected-practice-png-3185ed1e4a5f3a316f7a7458e6f541598d2bdb88.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75ab2b3002993731b4fd-8cd4f556d00a25db9a80",
+          "file": "review-todos.spec.ts",
+          "line": 265,
+          "column": 5
+        },
+        {
+          "title": "复习待办在900宽/150%缩放/暗色中可编辑、筛选且浮层在视口内",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2362,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:38:08.141Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtMThBV1dGIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "review-todos-narrow-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\playwright\\functional-ux-merge-review-20261029\\review-todos-复习待办在900宽-150-缩放-暗色中可编辑、筛选且浮层在视口内-packaged\\attachments\\review-todos-narrow-dark-png-27b0195dbd47a1168c379ddafb12244ae5099f76.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75ab2b3002993731b4fd-29f2ae83f56577b367b6",
+          "file": "review-todos.spec.ts",
+          "line": 315,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "shortcut-usage.spec.ts",
+      "file": "shortcut-usage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "方案置顶优先和最近成功建轮排序，查看/改名/原请求重试不计使用",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:38:10.512Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtTDZoczBaIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6e3cd100891836bde92b-96b995481c5f830e57f6",
+          "file": "shortcut-usage.spec.ts",
+          "line": 16,
+          "column": 5
+        },
+        {
+          "title": "最近使用写失败与建轮一起回滚并保留原活动轮，题单仅原成员完整开始时计使用",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1167,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:38:11.727Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtZElOSWpoIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6e3cd100891836bde92b-cd793e2b90fcd8ebebd9",
+          "file": "shortcut-usage.spec.ts",
+          "line": 70,
+          "column": 5
+        },
+        {
+          "title": "界面置顶/取消置顶方案与题单，题单载入后仍确认组卷并记录使用",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1708,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T10:38:12.900Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtUXROMDI2IiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "shortcut-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxWMC4wLjItb3JhbC10aW1lci0yMDI2MTAyOS40XFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtUXROMDI2IiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6e3cd100891836bde92b-3936b30e8c28fc7d246a",
+          "file": "shortcut-usage.spec.ts",
+          "line": 131,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-29T10:36:13.677Z",
+    "duration": 120974.511,
+    "expected": 64,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

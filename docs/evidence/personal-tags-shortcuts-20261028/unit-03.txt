@@ -1,0 +1,65 @@
+
+> embedded-practice@0.0.2 test
+> vitest run tests/unit --reporter=default --reporter=json --outputFile=docs/evidence/personal-tags-shortcuts-20261028/unit-03.json
+
+
+ RUN  v5.0.5 E:/My_Projects/embedded-practice
+
+ ✓ tests/unit/markdown-structure.test.ts (29 tests) 3004ms
+   ✓ Markdown 语法树分题与原文保留 (29)
+     ✓ 题量超过 10,000 时明确拒绝，不静默截断 2876ms
+ ✓ tests/unit/import-limits.test.ts (3 tests) 2504ms
+   ✓ 批次限额实际文件链路 (3)
+     ✓ 两个合法专题合计 10,001 题时拒绝整个批次 2495ms
+ ✓ tests/unit/backup-ipc.test.ts (20 tests) 191ms
+ ✓ tests/unit/prepare-import.test.ts (11 tests) 428ms
+ ✓ tests/unit/library-ipc.test.ts (43 tests) 264ms
+ ✓ tests/unit/personal-bank.test.ts (3 tests) 163ms
+ ✓ tests/unit/import-comparison.test.ts (13 tests) 75ms
+ ✓ tests/unit/data-locations-ipc.test.ts (23 tests) 96ms
+ ✓ tests/unit/read-image.test.ts (18 tests) 96ms
+ ✓ tests/unit/markdown-metadata.test.ts (24 tests) 128ms
+ ✓ tests/unit/markdown-images.test.ts (25 tests) 79ms
+ ✓ tests/unit/study-export.test.ts (5 tests) 45ms
+ ✓ tests/unit/practice-contract.test.ts (60 tests) 27ms
+ ✓ tests/unit/practice-controller.test.ts (17 tests) 27ms
+ ✓ tests/unit/practice-ipc.test.ts (17 tests) 54ms
+ ✓ tests/unit/restore-transaction.test.ts (5 tests) 32ms
+ ✓ tests/unit/write-material.test.ts (3 tests) 52ms
+ ✓ tests/unit/content-diff.test.ts (8 tests) 22ms
+ ✓ tests/unit/read-file-snapshot.test.ts (5 tests) 35ms
+ ✓ tests/unit/practice-control-contract.test.ts (14 tests) 19ms
+ ✓ tests/unit/import-session.test.ts (19 tests) 35ms
+ ✓ tests/unit/desktop-contract.test.ts (24 tests) 19ms
+ ✓ tests/unit/import-task-runner.test.ts (9 tests) 15ms
+ ✓ tests/unit/import-protocol.test.ts (28 tests) 21ms
+ ✓ tests/unit/content-updates-contract.test.ts (5 tests) 25ms
+ ✓ tests/unit/history-contract.test.ts (19 tests) 24ms
+ ✓ tests/unit/import-task-failures.test.ts (18 tests) 22ms
+ ✓ tests/unit/gpio-question-bank.test.ts (81 tests) 16ms
+ ✓ tests/unit/backup-contract.test.ts (9 tests) 11ms
+ ✓ tests/unit/practice-plans-contract.test.ts (13 tests) 11ms
+ ✓ tests/unit/practice-flow-contract.test.ts (14 tests) 10ms
+ ✓ tests/unit/note-controller.test.ts (7 tests) 15ms
+ ✓ tests/unit/question-filters.test.ts (11 tests) 14ms
+ ✓ tests/unit/category-contract.test.ts (23 tests) 13ms
+ ✓ tests/unit/settings-contract.test.ts (22 tests) 19ms
+ ✓ tests/unit/themes-contract.test.ts (30 tests) 34ms
+ ✓ tests/unit/personal-tags-contract.test.ts (8 tests) 14ms
+ ✓ tests/unit/learning-contract.test.ts (20 tests) 11ms
+ ✓ tests/unit/data-locations-contract.test.ts (5 tests) 9ms
+ ✓ tests/unit/application.test.ts (9 tests) 15ms
+ ✓ tests/unit/workbench-contract.test.ts (2 tests) 7ms
+ ✓ tests/unit/board-catalog.test.ts (4 tests) 14ms
+ ✓ tests/unit/import-budget.test.ts (7 tests) 11ms
+
+ Test Files  43 passed (43)
+      Tests  733 passed (733)
+   Start at  18:42:07
+   Duration  22.07s (tests 48%, import 45%, transform 6%, worker 1%)
+
+     Import  128 modules were evaluated 184 times · 7.14s total, 45% of tracked time
+             ~2.17s faster with isolate: false — shared modules are evaluated once per worker instead of once per file
+             learn more: https://vitest.dev/guide/improving-performance#test-isolation
+
+JSON report written to E:/My_Projects/embedded-practice/docs/evidence/personal-tags-shortcuts-20261028/unit-03.json

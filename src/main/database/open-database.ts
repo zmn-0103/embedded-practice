@@ -14,9 +14,13 @@ import { categoryMigration } from './category-schema'
 import { practicePlanMigration } from './practice-plan-schema'
 import { questionSetMigration } from './question-set-schema'
 import { personalNoteMigration } from './note-schema'
+import { personalTagMigration } from './personal-tag-schema'
+import { reviewTodoMigration } from './review-schema'
+import { knowledgeMigration } from './knowledge-schema'
+import { planningMigration } from './planning-schema'
 
 export const APPLICATION_ID = 0x45505231
-export const SCHEMA_VERSION = 13
+export const SCHEMA_VERSION = 17
 
 const startupSchema = `
   CREATE TABLE app_startup (
@@ -74,7 +78,11 @@ export async function openPracticeDatabase(databasePath: string): Promise<Databa
               themeMigration +
               repeatPracticeMigration +
               questionSetMigration +
-              personalNoteMigration,
+              personalNoteMigration +
+              personalTagMigration +
+              reviewTodoMigration +
+              knowledgeMigration +
+              planningMigration,
           )
           database.pragma(`application_id = ${APPLICATION_ID}`)
           database.pragma(`user_version = ${SCHEMA_VERSION}`)
@@ -93,7 +101,11 @@ export async function openPracticeDatabase(databasePath: string): Promise<Databa
         version === 9 ||
         version === 10 ||
         version === 11 ||
-        version === 12)
+        version === 12 ||
+        version === 13 ||
+        version === 14 ||
+        version === 15 ||
+        version === 16)
     ) {
       await protectBeforeMigration(database, databasePath, version)
       // SQLite 修改父表 CHECK 需替换表，外键开关必须在事务外操作。
@@ -134,7 +146,11 @@ export async function openPracticeDatabase(databasePath: string): Promise<Databa
             if (version < 10) database.exec(themeMigration)
             if (version < 11) database.exec(repeatPracticeMigration)
             if (version < 12) database.exec(questionSetMigration)
-            database.exec(personalNoteMigration)
+            if (version < 13) database.exec(personalNoteMigration)
+            if (version < 14) database.exec(personalTagMigration)
+            if (version < 15) database.exec(reviewTodoMigration)
+            if (version < 16) database.exec(knowledgeMigration)
+            database.exec(planningMigration)
             const foreignKeys = database.pragma('foreign_key_check')
             if (!Array.isArray(foreignKeys) || foreignKeys.length > 0)
               throw new Error('迁移后外键校验失败，回滚升级并保留原数据库。')

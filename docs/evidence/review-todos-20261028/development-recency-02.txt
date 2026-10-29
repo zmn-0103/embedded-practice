@@ -1,0 +1,34 @@
+
+Running 3 tests using 1 worker
+
+(node:44252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\practice-recency.spec.ts:34:5 › 当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序 (1.5s)
+  ok 2 [development] › tests\e2e\practice-recency.spec.ts:180:5 › 最久优先先限10题再随机，固定队列不随历史变化/重新打开重排；方案兼容显式默认值 (2.0s)
+  x  3 [development] › tests\e2e\practice-recency.spec.ts:285:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 (1.4s)
+
+
+  1) [development] › tests\e2e\practice-recency.spec.ts:285:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 ──
+
+    Error: locator.click: Error: strict mode violation: locator('.recent-practice-filters > summary') resolved to 2 elements:
+        1) <summary>最近练习与排序</summary> aka getByText('最近练习与排序').first()
+        2) <summary>最近练习与排序</summary> aka getByRole('group', { name: '设置题库条件' }).getByText('最近练习与排序')
+
+    Call log:
+      - waiting for locator('.recent-practice-filters > summary')
+
+
+      295 |       window.webContents.setZoomFactor(1.5)
+      296 |     })
+    > 297 |     await page.locator('.recent-practice-filters > summary').click()
+          |                                                              ^
+      298 |     await page.getByLabel('题库最近练习', { exact: true }).selectOption('7d')
+      299 |     await page.getByLabel('题库选题优先级', { exact: true }).selectOption('oldest')
+      300 |     await page.getByRole('button', { name: '筛选题库', exact: true }).click()
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-recency.spec.ts:297:62
+
+    Error Context: output\playwright\review-development-recency-02\practice-recency-题库和练习共用最近筛选，可保存-填入方案；窄窗暗色控件和结果可操作-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\practice-recency.spec.ts:285:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 ───
+  2 passed (5.4s)

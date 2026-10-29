@@ -1,9 +1,11 @@
 import type Database from 'better-sqlite3'
+import { createActivityWriter } from './activity-writer'
 import { identitySchema, type QuestionIdentity } from '../../../shared/contracts/library-desktop'
 import { noteSchema, saveNoteSchema, type SaveNote } from '../../../shared/contracts/study'
 import { StudyFault } from './study-fault'
 
 export function createNoteRepository(database: Database.Database) {
+  const recordActivity = createActivityWriter(database)
   const find = database.prepare('SELECT id FROM questions WHERE topic_id=? AND question_id=?')
   const get = database.prepare(
     'SELECT revision,text,updated_at AS updatedAt FROM personal_notes WHERE question_id=?',
@@ -44,6 +46,7 @@ export function createNoteRepository(database: Database.Database) {
     })
     if (previous.revision === 0) insert.run(id, next.revision, next.text, next.updatedAt)
     else update.run(next.revision, next.text, next.updatedAt, id)
+    recordActivity(`note:${id}:${next.revision}`, 'note', id, next.updatedAt!)
     return next
   })
   return {

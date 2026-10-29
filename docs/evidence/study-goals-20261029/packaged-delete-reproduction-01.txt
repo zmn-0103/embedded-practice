@@ -1,0 +1,41 @@
+
+Running 1 test using 1 worker
+
+(node:19152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [packaged] › tests\e2e\planning-ui.spec.ts:113:5 › 备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史 (11.9s)
+
+
+  1) [packaged] › tests\e2e\planning-ui.spec.ts:113:5 › 备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史 ─────────
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('.study-goals').getByRole('alert')
+    Expected: 0
+    Received: 1
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('.study-goals').getByRole('alert') with timeout 10000ms
+      - waiting for locator('.study-goals').getByRole('alert')
+        24 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      173 |     ).toHaveCount(1)
+      174 |     await expect(deleting.getByText('正在读取备考范围…', { exact: true })).toBeHidden()
+    > 175 |     await expect(deleting.getByRole('alert')).toHaveCount(0)
+          |                                               ^
+      176 |     const after = withHistoryDatabase(testDataDirectory, controlRecords)
+      177 |     expect({ ...after, study_goals: before['study_goals'] }).toEqual(before)
+      178 |   } finally {
+        at E:\My_Projects\embedded-practice\tests\e2e\planning-ui.spec.ts:175:47
+
+    attachment #2: goals-exam-progress.png (image/png) ─────────────────────────────────────────────
+    output\playwright\goals-packaged-delete-reproduction-01\planning-ui-备考目标界面去重范围，进入原确认再建固定队列，取消-删除目标不改历史-packaged\attachments\goals-exam-progress-png-eb5ade50715d022787d3805380a145127784bbef.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\goals-packaged-delete-reproduction-01\planning-ui-备考目标界面去重范围，进入原确认再建固定队列，取消-删除目标不改历史-packaged\error-context.md
+
+  1 failed
+    [packaged] › tests\e2e\planning-ui.spec.ts:113:5 › 备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史 ──────────

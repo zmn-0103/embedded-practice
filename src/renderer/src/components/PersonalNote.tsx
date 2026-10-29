@@ -46,7 +46,7 @@ function NoteEditor({ identity, readOnly }: { identity: QuestionIdentity; readOn
       <p className="muted">
         记录理解、遗漏和易混点，跨轮保留，与本轮独立作答分开。停止输入500ms自动保存，最多1MiB；可随题单或已结束轮次导出。
       </p>
-      {readOnly && <p role="status">正在保存收藏并更新列表，笔记暂时只读。</p>}
+      {readOnly && <p role="status">正在保存更改并更新列表，笔记暂时只读。</p>}
       {state.loading && <p role="status">正在读取个人笔记…</p>}
       {state.note && (
         <label>

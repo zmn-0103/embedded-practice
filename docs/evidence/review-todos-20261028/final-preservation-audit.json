@@ -1,0 +1,54 @@
+{
+  "sourceManifest": "source-final-02.json",
+  "sourceFiles": 322,
+  "productionSourceFiles": 154,
+  "productionMatchesPackageFreeze": true,
+  "changesAfterPackage": [
+    "tests/e2e/backup-window.spec.ts",
+    "tests/e2e/themes-reading.spec.ts"
+  ],
+  "configurations": [
+    {
+      "path": "package.json",
+      "preserved": true
+    },
+    {
+      "path": "package-lock.json",
+      "preserved": true
+    },
+    {
+      "path": "electron-builder.yml",
+      "preserved": true
+    },
+    {
+      "path": "electron.vite.config.ts",
+      "preserved": true
+    },
+    {
+      "path": "playwright.config.ts",
+      "preserved": true
+    },
+    {
+      "path": "tsconfig.node.json",
+      "preserved": true
+    },
+    {
+      "path": "tsconfig.web.json",
+      "preserved": true
+    }
+  ],
+  "oldDeliveryFiles": 147,
+  "oldDeliveryAllPreserved": true,
+  "newDeliveryFiles": 150,
+  "newDeliveryBytes": 391152639,
+  "newDeliveryAllVerified": true,
+  "deliveryManifestSha256": "2b2b5273bc612d3ca06768a900e0cfef8f523b0b5bacf6926cdef1d2b64851cc",
+  "preservedMaterials": 17,
+  "originalPlanBytes": 60355,
+  "originalPlanPrefixPreserved": true,
+  "currentPlanBytes": 61459,
+  "packageFiles": 19,
+  "branch": "codex/functional-ux-next-20261028",
+  "head": "6fbce18ec4d530420dc1ff524fc0aa008c91c442",
+  "noAutomaticCommit": true
+}

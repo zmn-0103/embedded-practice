@@ -1,0 +1,85 @@
+ M README.md
+ M docs/README.md
+ M docs/代码复查记录.md
+ M docs/功能体验优化开发计划.md
+ M docs/固定题单与练习清单行为.md
+ M docs/开发记录.md
+ M docs/开发说明.md
+ M docs/当前试用版本交付说明.md
+ M docs/数据保护与桌面边界.md
+ M docs/练习保存与统计契约.md
+ M docs/练习方案行为与验收.md
+ M docs/项目模块职责.md
+ M docs/题库与导入契约.md
+ M docs/验收记录.md
+ M src/main/database/open-database.ts
+ M src/main/database/repositories/practice-plan-repository.ts
+ M src/main/database/repositories/practice-repository.ts
+ M src/main/database/repositories/question-selection.ts
+ M src/main/database/repositories/question-set-repository.ts
+ M src/main/ipc/library.ts
+ M src/main/services/backup/validate-backup.ts
+ M src/main/services/library/library-import.ts
+ M src/preload/index.ts
+ M src/renderer/src/App.tsx
+ M src/renderer/src/components/LibraryBrowser.tsx
+ M src/renderer/src/components/PersonalNote.tsx
+ M src/renderer/src/components/PracticePlans.tsx
+ M src/renderer/src/components/PracticeWorkspace.tsx
+ M src/renderer/src/components/QuestionFilterFields.tsx
+ M src/renderer/src/components/QuestionSets.tsx
+ M src/renderer/src/components/SelectedPractice.tsx
+ M src/renderer/src/styles/global.css
+ M src/renderer/src/styles/workbench-pages.css
+ M src/renderer/src/usePracticePlans.ts
+ M src/renderer/src/useQuestionSets.ts
+ M src/shared/contracts/application.ts
+ M src/shared/contracts/practice-plans.ts
+ M src/shared/contracts/practice.ts
+ M src/shared/contracts/question-filters.ts
+ M src/shared/contracts/question-sets.ts
+ M tests/e2e/backup-legacy.spec.ts
+ M tests/e2e/backup-window.spec.ts
+ M tests/e2e/board-entry.spec.ts
+ M tests/e2e/category-migration.spec.ts
+ M tests/e2e/history-versions.spec.ts
+ M tests/e2e/library-import.spec.ts
+ M tests/e2e/note-favorite.spec.ts
+ M tests/e2e/palette-migration.spec.ts
+ M tests/e2e/personal-bank.spec.ts
+ M tests/e2e/practice-control-helpers.ts
+ M tests/e2e/practice-control-storage.spec.ts
+ M tests/e2e/practice-flow-helpers.ts
+ M tests/e2e/practice-flow-storage.spec.ts
+ M tests/e2e/practice-mode-migration.spec.ts
+ M tests/e2e/practice-plans-migration.spec.ts
+ M tests/e2e/practice-plans.spec.ts
+ M tests/e2e/practice.spec.ts
+ M tests/e2e/restore-window.spec.ts
+ M tests/e2e/session-filters-migration.spec.ts
+ M tests/e2e/settings-migration.spec.ts
+ M tests/e2e/startup.spec.ts
+ M tests/e2e/study-storage.spec.ts
+ M tests/e2e/theme-helpers.ts
+ M tests/e2e/themes-migration.spec.ts
+ M tests/unit/library-ipc.test.ts
+ M 计划书.md
+?? docs/design/references/
+?? docs/evidence/personal-tags-shortcuts-20261028/
+?? docs/个人标签与常用入口行为.md
+?? output/playwright/personal-tags-development-01/
+?? output/playwright/personal-tags-development-02/
+?? output/playwright/personal-tags-development-03/
+?? output/playwright/personal-tags-packaged-full-01/
+?? output/playwright/personal-tags-packaged-full-02/
+?? output/playwright/personal-tags-packaged-label-practice-01/
+?? output/playwright/personal-tags-packaged-targeted-02/
+?? output/playwright/personal-tags-packaged-targeted-03/
+?? src/main/database/personal-tag-schema.ts
+?? src/main/database/repositories/personal-tag-repository.ts
+?? src/renderer/src/components/PersonalTags.tsx
+?? src/shared/contracts/personal-tags.ts
+?? tests/e2e/personal-tags-storage.spec.ts
+?? tests/e2e/personal-tags.spec.ts
+?? tests/e2e/shortcut-usage.spec.ts
+?? tests/unit/personal-tags-contract.test.ts

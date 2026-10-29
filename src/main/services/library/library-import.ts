@@ -9,6 +9,12 @@ import { createSettingsRepository } from '../../database/repositories/settings-r
 import { createCategoryRepository } from '../../database/repositories/category-repository'
 import { createPracticePlanRepository } from '../../database/repositories/practice-plan-repository'
 import { createQuestionSetRepository } from '../../database/repositories/question-set-repository'
+import { createPersonalTagRepository } from '../../database/repositories/personal-tag-repository'
+import { createReviewRepository } from '../../database/repositories/review-repository'
+import { createKnowledgeRepository } from '../../database/repositories/knowledge-repository'
+import { createKnowledgeReader } from '../../database/repositories/knowledge-reader'
+import { createPlanningRepository } from '../../database/repositories/planning-repository'
+import { createPlanningReader } from '../../database/repositories/planning-reader'
 import { createNoteRepository } from '../../database/repositories/note-repository'
 import { createRoundReader } from '../../database/repositories/round-reader'
 import { createContentUpdateReader } from '../../database/repositories/content-update-reader'
@@ -37,6 +43,12 @@ export async function openLibraryImportService(
     const categories = createCategoryRepository(database)
     const plans = createPracticePlanRepository(database)
     const questionSets = createQuestionSetRepository(database)
+    const personalTags = createPersonalTagRepository(database)
+    const reviews = createReviewRepository(database)
+    const knowledge = createKnowledgeRepository(database)
+    const knowledgeReader = createKnowledgeReader(database)
+    const planning = createPlanningRepository(database)
+    const planningReader = createPlanningReader(database, planning)
     const notes = createNoteRepository(database)
     const rounds = createRoundReader(database)
     const contentUpdates = createContentUpdateReader(database)
@@ -57,6 +69,12 @@ export async function openLibraryImportService(
       ...categories,
       ...plans,
       ...questionSets,
+      ...personalTags,
+      ...reviews,
+      ...knowledge,
+      ...knowledgeReader,
+      ...planning,
+      ...planningReader,
       ...notes,
       ...rounds,
       ...contentUpdates,

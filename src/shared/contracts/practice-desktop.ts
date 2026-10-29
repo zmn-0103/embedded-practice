@@ -30,6 +30,7 @@ export const PRACTICE_CHANNELS = {
   finishClose: 'practice:finish-close',
   beforeClose: 'practice:before-close',
   closeCancelled: 'practice:close-cancelled',
+  timerPause: 'practice:timer-pause',
 } as const
 const errorSchema = z.strictObject({
   code: practiceErrorCodeSchema.or(z.literal('FORBIDDEN')),
@@ -67,4 +68,5 @@ export interface PracticeDesktopApi {
   finishClose(input: CloseRequest & { saved: boolean }): Promise<PracticeDesktopResult<null>>
   onBeforeClose(listener: (request: CloseRequest) => void): () => void
   onCloseCancelled(listener: () => void): () => void
+  onTimerPause(listener: () => void): () => void
 }

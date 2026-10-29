@@ -5,6 +5,8 @@ import { ALL_CATEGORIES, matchesCategory } from '../../../shared/contracts/categ
 import { TopicNavigator } from './TopicNavigator'
 import { RoundReview } from './RoundReview'
 import { useNoteSaves } from '../note-saves'
+import type { QuestionIdentity } from '../../../shared/contracts/library-desktop'
+import { KnowledgeExplorer } from './KnowledgeExplorer'
 
 export function LearningRecords({
   refresh,
@@ -12,15 +14,17 @@ export function LearningRecords({
   disabled,
   onBusy,
   onOperation,
+  onPractice,
 }: {
   refresh: number
   onFavoriteSaved: () => void
   disabled: boolean
   onBusy: (busy: boolean) => void
   onOperation: (work: Promise<boolean>) => void
+  onPractice: (items: QuestionIdentity[], name: string) => void
 }) {
   const saves = useNoteSaves()
-  const [view, setView] = useState<'questions' | 'rounds'>('questions')
+  const [view, setView] = useState<'questions' | 'rounds' | 'knowledge'>('questions')
   const [scope, setScopeState] = useState<LearningScope>({
     topicId: null,
     archived: false,
@@ -83,7 +87,7 @@ export function LearningRecords({
       <div className="records-heading">
         <h2>学习记录</h2>
         <div role="tablist" aria-label="学习记录查看方式" className="records-view-tabs">
-          {(['questions', 'rounds'] as const).map((mode) => (
+          {(['questions', 'rounds', 'knowledge'] as const).map((mode) => (
             <button
               type="button"
               role="tab"
@@ -96,12 +100,18 @@ export function LearningRecords({
                 })
               }}
             >
-              {mode === 'questions' ? '按题统计与历史' : '按轮次复盘'}
+              {mode === 'questions'
+                ? '按题统计与历史'
+                : mode === 'rounds'
+                  ? '按轮次复盘'
+                  : '我的积累'}
             </button>
           ))}
         </div>
       </div>
-      {view === 'rounds' ? (
+      {view === 'knowledge' ? (
+        <KnowledgeExplorer refresh={refresh} disabled={disabled} onPractice={onPractice} />
+      ) : view === 'rounds' ? (
         <RoundReview refresh={refresh} topics={topics} onBusy={onBusy} onOperation={onOperation} />
       ) : (
         <>

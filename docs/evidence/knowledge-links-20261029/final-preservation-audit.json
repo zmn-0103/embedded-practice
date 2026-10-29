@@ -1,0 +1,67 @@
+{
+  "branch": "codex/functional-ux-next-20261028",
+  "head": "6fbce18ec4d530420dc1ff524fc0aa008c91c442",
+  "sourceFiles": 337,
+  "productionSourceFiles": 162,
+  "allSourceMatches": true,
+  "configurations": [
+    {
+      "path": "package.json",
+      "preserved": true
+    },
+    {
+      "path": "package-lock.json",
+      "preserved": true
+    },
+    {
+      "path": "electron-builder.yml",
+      "preserved": true
+    },
+    {
+      "path": "electron.vite.config.ts",
+      "preserved": true
+    },
+    {
+      "path": "playwright.config.ts",
+      "preserved": true
+    },
+    {
+      "path": "vitest.config.ts",
+      "preserved": true
+    },
+    {
+      "path": "tsconfig.node.json",
+      "preserved": true
+    },
+    {
+      "path": "tsconfig.web.json",
+      "preserved": true
+    }
+  ],
+  "packageFiles": 19,
+  "packageMatchesBuild": true,
+  "previousDeliveries": [
+    {
+      "directory": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-personal-tags-20261028.3-r2",
+      "files": 147,
+      "totalBytes": 390946859,
+      "preserved": true
+    },
+    {
+      "directory": "E:\\My_Projects\\embedded-practice\\release\\V0.0.2-review-todos-20261029.1",
+      "files": 150,
+      "totalBytes": 391152639,
+      "preserved": true
+    }
+  ],
+  "oldInventoriesUnchanged": true,
+  "preservedMaterials": 17,
+  "newDeliveryFiles": 148,
+  "newDeliveryBytes": 391104976,
+  "manifestExcludesItself": true,
+  "deliveryManifestSha256": "2434a15377576a834770134b52b2f0c9eaec376005a0f016e0a9fa771f8b7864",
+  "originalPlanBytes": 61459,
+  "originalPlanPrefixPreserved": true,
+  "currentPlanBytes": 62511,
+  "noAutomaticCommit": true
+}

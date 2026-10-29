@@ -1,0 +1,17 @@
+
+Running 10 tests using 1 worker
+
+(node:38520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\review-storage.spec.ts:75:7 › 结构14受保护升级15，原笔记/标签/元数据/活动轮逐表保持：none (996ms)
+  ok  2 [development] › tests\e2e\review-storage.spec.ts:75:7 › 结构14受保护升级15，原笔记/标签/元数据/活动轮逐表保持：backup-blocked (759ms)
+  ok  3 [development] › tests\e2e\review-storage.spec.ts:75:7 › 结构14受保护升级15，原笔记/标签/元数据/活动轮逐表保持：collision (708ms)
+  ok  4 [development] › tests\e2e\review-storage.spec.ts:127:5 › 复习安排真实事务：幂等/CAS/完成与重开、到期分页、写失败回滚及归档重导入保持 (1.7s)
+  ok  5 [development] › tests\e2e\review-storage.spec.ts:225:5 › 完整备份恢复待办与最近条件，拒绝日期/完成状态/重复/孤儿损坏，源字节保持 (3.7s)
+  ok  6 [development] › tests\e2e\review-todos.spec.ts:17:5 › 题目复习安排：明确加入、日期快捷操作和原因自动保存，完成/重开与正常关闭重读 (5.0s)
+  ok  7 [development] › tests\e2e\review-todos.spec.ts:74:5 › 真实待办写失败阻止离开和正常关闭，输入保留；原操作重试及过期冲突明确重读 (3.2s)
+  ok  8 [development] › tests\e2e\review-todos.spec.ts:145:5 › 真实提交后坏响应原操作重试不重复；独立作答前不读取/展示旧原因，揭晓和练习不会完成待办 (3.2s)
+  ok  9 [development] › tests\e2e\review-todos.spec.ts:211:5 › 待办跨页/状态勾选进入原组卷确认，归档阻止开始；当前版本固定且练习不自动完成 (1.6s)
+  ok 10 [development] › tests\e2e\review-todos.spec.ts:261:5 › 复习待办在900宽/150%缩放/暗色中可编辑、筛选且浮层在视口内 (2.3s)
+
+  10 passed (24.7s)

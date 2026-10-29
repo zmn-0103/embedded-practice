@@ -1,0 +1,115 @@
+ M README.md
+ M docs/README.md
+ M "docs/\344\273\243\347\240\201\345\244\215\346\237\245\350\256\260\345\275\225.md"
+ M "docs/\345\212\237\350\203\275\344\275\223\351\252\214\344\274\230\345\214\226\345\274\200\345\217\221\350\256\241\345\210\222.md"
+ M "docs/\345\233\272\345\256\232\351\242\230\345\215\225\344\270\216\347\273\203\344\271\240\346\270\205\345\215\225\350\241\214\344\270\272.md"
+ M "docs/\345\274\200\345\217\221\350\256\260\345\275\225.md"
+ M "docs/\345\274\200\345\217\221\350\257\264\346\230\216.md"
+ M "docs/\345\275\223\345\211\215\350\257\225\347\224\250\347\211\210\346\234\254\344\272\244\344\273\230\350\257\264\346\230\216.md"
+ M "docs/\346\225\260\346\215\256\344\277\235\346\212\244\344\270\216\346\241\214\351\235\242\350\276\271\347\225\214.md"
+ M "docs/\347\273\203\344\271\240\344\277\235\345\255\230\344\270\216\347\273\237\350\256\241\345\245\221\347\272\246.md"
+ M "docs/\347\273\203\344\271\240\346\226\271\346\241\210\350\241\214\344\270\272\344\270\216\351\252\214\346\224\266.md"
+ M "docs/\351\241\271\347\233\256\346\250\241\345\235\227\350\201\214\350\264\243.md"
+ M "docs/\351\242\230\345\272\223\344\270\216\345\257\274\345\205\245\345\245\221\347\272\246.md"
+ M "docs/\351\252\214\346\224\266\350\256\260\345\275\225.md"
+ M src/main/database/open-database.ts
+ M src/main/database/repositories/library-reader.ts
+ M src/main/database/repositories/practice-plan-repository.ts
+ M src/main/database/repositories/practice-repository.ts
+ M src/main/database/repositories/question-selection.ts
+ M src/main/database/repositories/question-set-repository.ts
+ M src/main/ipc/library.ts
+ M src/main/services/backup/validate-backup.ts
+ M src/main/services/library/library-import.ts
+ M src/preload/index.ts
+ M src/renderer/src/App.tsx
+ M src/renderer/src/components/LibraryBrowser.tsx
+ M src/renderer/src/components/PersonalNote.tsx
+ M src/renderer/src/components/PracticePane.tsx
+ M src/renderer/src/components/PracticePlans.tsx
+ M src/renderer/src/components/PracticeWorkspace.tsx
+ M src/renderer/src/components/QuestionFilterFields.tsx
+ M src/renderer/src/components/QuestionSets.tsx
+ M src/renderer/src/components/RoundDetail.tsx
+ M src/renderer/src/components/SelectedPractice.tsx
+ M src/renderer/src/note-saves.tsx
+ M src/renderer/src/styles/global.css
+ M src/renderer/src/styles/workbench-pages.css
+ M src/renderer/src/usePracticePlans.ts
+ M src/renderer/src/useQuestionSets.ts
+ M src/shared/contracts/application.ts
+ M src/shared/contracts/library-desktop.ts
+ M src/shared/contracts/practice-plans.ts
+ M src/shared/contracts/practice.ts
+ M src/shared/contracts/question-filters.ts
+ M src/shared/contracts/question-sets.ts
+ M tests/e2e/backup-legacy.spec.ts
+ M tests/e2e/backup-window.spec.ts
+ M tests/e2e/board-entry.spec.ts
+ M tests/e2e/category-migration.spec.ts
+ M tests/e2e/history-versions.spec.ts
+ M tests/e2e/library-import.spec.ts
+ M tests/e2e/note-favorite.spec.ts
+ M tests/e2e/palette-migration.spec.ts
+ M tests/e2e/personal-bank.spec.ts
+ M tests/e2e/practice-control-helpers.ts
+ M tests/e2e/practice-control-storage.spec.ts
+ M tests/e2e/practice-flow-helpers.ts
+ M tests/e2e/practice-flow-storage.spec.ts
+ M tests/e2e/practice-mode-migration.spec.ts
+ M tests/e2e/practice-plans-migration.spec.ts
+ M tests/e2e/practice-plans.spec.ts
+ M tests/e2e/practice.spec.ts
+ M tests/e2e/restore-window.spec.ts
+ M tests/e2e/session-filters-migration.spec.ts
+ M tests/e2e/settings-migration.spec.ts
+ M tests/e2e/startup.spec.ts
+ M tests/e2e/study-storage.spec.ts
+ M tests/e2e/theme-helpers.ts
+ M tests/e2e/themes-migration.spec.ts
+ M tests/e2e/themes-reading.spec.ts
+ M tests/unit/library-ipc.test.ts
+ M "\350\256\241\345\210\222\344\271\246.md"
+?? docs/design/references/
+?? docs/evidence/personal-tags-shortcuts-20261028/
+?? docs/evidence/review-todos-20261028/
+?? "docs/\344\270\252\344\272\272\346\240\207\347\255\276\344\270\216\345\270\270\347\224\250\345\205\245\345\217\243\350\241\214\344\270\272.md"
+?? "docs/\345\244\215\344\271\240\345\276\205\345\212\236\344\270\216\346\234\200\350\277\221\347\273\203\344\271\240\350\241\214\344\270\272.md"
+?? output/playwright/personal-tags-development-01/
+?? output/playwright/personal-tags-development-02/
+?? output/playwright/personal-tags-development-03/
+?? output/playwright/personal-tags-packaged-full-01/
+?? output/playwright/personal-tags-packaged-full-02/
+?? output/playwright/personal-tags-packaged-label-practice-01/
+?? output/playwright/personal-tags-packaged-targeted-02/
+?? output/playwright/personal-tags-packaged-targeted-03/
+?? output/playwright/review-development-recency-01/
+?? output/playwright/review-development-recency-02/
+?? output/playwright/review-development-recency-03/
+?? output/playwright/review-development-recency-04/
+?? output/playwright/review-development-round-01/
+?? output/playwright/review-development-storage-01/
+?? output/playwright/review-development-todos-01/
+?? output/playwright/review-packaged-full-01/
+?? output/playwright/review-packaged-regression-fixes-01/
+?? src/main/database/personal-tag-schema.ts
+?? src/main/database/repositories/personal-tag-repository.ts
+?? src/main/database/repositories/review-repository.ts
+?? src/main/database/review-schema.ts
+?? src/renderer/src/components/PersonalTags.tsx
+?? src/renderer/src/components/ReviewTodoEditor.tsx
+?? src/renderer/src/components/ReviewTodos.tsx
+?? src/renderer/src/review-controller.ts
+?? src/shared/contracts/personal-tags.ts
+?? src/shared/contracts/review-todos.ts
+?? tests/e2e/personal-tags-storage.spec.ts
+?? tests/e2e/personal-tags.spec.ts
+?? tests/e2e/practice-recency.spec.ts
+?? tests/e2e/review-helpers.ts
+?? tests/e2e/review-storage.spec.ts
+?? tests/e2e/review-todos.spec.ts
+?? tests/e2e/shortcut-usage.spec.ts
+?? tests/fixtures/schema-v14.sql
+?? tests/unit/personal-tags-contract.test.ts
+?? tests/unit/review-controller.test.ts
+?? tests/unit/review-todos-contract.test.ts

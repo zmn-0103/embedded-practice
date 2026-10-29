@@ -30,7 +30,7 @@ const pages = [
   { id: 'settings', label: '设置与数据', path: 'M4 7h16M4 17h16M9 4v6m6 4v6' },
 ] as const
 type PageId = (typeof pages)[number]['id']
-const BUILD_LABEL = '20261028.2-note-favorite-fix'
+const BUILD_LABEL = '20261029.4-oral-timer'
 
 export function App() {
   const [state, setState] = useState<ViewState>({ status: 'loading' })
@@ -279,6 +279,18 @@ export function App() {
                         practice={practice}
                         disabled={appearance.busy || dataBusy}
                         onConfigure={() => changePage('practice')}
+                        onBusy={reportLearningDataBusy}
+                        onOperation={trackDataOperation}
+                        onPractice={(scope) => {
+                          setPracticeSelection((previous) => ({
+                            id: (previous?.id ?? 0) + 1,
+                            items: scope.items,
+                            sourceName: scope.sourceName,
+                            ...(scope.sourceSetId ? { sourceSetId: scope.sourceSetId } : {}),
+                          }))
+                          focusPage.current = true
+                          changePage('practice')
+                        }}
                         onBoards={() => changePage('boards')}
                         onImport={(kind) => {
                           setImportAction((previous) => ({ id: (previous?.id ?? 0) + 1, kind }))
@@ -343,11 +355,12 @@ export function App() {
           {libraryVisited && state.status === 'ready' && (
             <div hidden={practicing || page !== 'library'}>
               <LibraryBrowser
-                onPracticeQuestions={(items, sourceName, contentUpdatedOnly) => {
+                onPracticeQuestions={(items, sourceName, contentUpdatedOnly, sourceSetId) => {
                   setPracticeSelection((previous) => ({
                     id: (previous?.id ?? 0) + 1,
                     items: structuredClone(items),
                     sourceName,
+                    ...(sourceSetId ? { sourceSetId } : {}),
                     ...(contentUpdatedOnly ? { contentUpdatedOnly: true } : {}),
                   }))
                   focusPage.current = true
@@ -368,6 +381,15 @@ export function App() {
           )}
           {!practicing && page === 'records' && state.status === 'ready' && (
             <LearningRecords
+              onPractice={(items, sourceName) => {
+                setPracticeSelection((current) => ({
+                  id: (current?.id ?? 0) + 1,
+                  items,
+                  sourceName,
+                }))
+                focusPage.current = true
+                changePage('practice')
+              }}
               disabled={dataBusy}
               onBusy={reportLearningDataBusy}
               onOperation={trackDataOperation}

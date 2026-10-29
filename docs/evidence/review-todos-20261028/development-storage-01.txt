@@ -1,0 +1,36 @@
+
+Running 5 tests using 1 worker
+
+(node:29836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\review-storage.spec.ts:75:7 › 结构14受保护升级15，原笔记/标签/元数据/活动轮逐表保持：none (1.4s)
+  ok 2 [development] › tests\e2e\review-storage.spec.ts:75:7 › 结构14受保护升级15，原笔记/标签/元数据/活动轮逐表保持：backup-blocked (706ms)
+  ok 3 [development] › tests\e2e\review-storage.spec.ts:75:7 › 结构14受保护升级15，原笔记/标签/元数据/活动轮逐表保持：collision (778ms)
+  x  4 [development] › tests\e2e\review-storage.spec.ts:127:5 › 复习安排真实事务：幂等/CAS/完成与重开、到期分页、写失败回滚及归档重导入保持 (1.7s)
+(node:20660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 5 [development] › tests\e2e\review-storage.spec.ts:221:5 › 完整备份恢复待办与最近条件，拒绝日期/完成状态/重复/孤儿损坏，源字节保持 (4.0s)
+
+
+  1) [development] › tests\e2e\review-storage.spec.ts:127:5 › 复习安排真实事务：幂等/CAS/完成与重开、到期分页、写失败回滚及归档重导入保持 
+
+    Error: expect(received).toMatchObject(expected)
+
+    Matcher error: received value must be a non-null object
+
+    Received has value: undefined
+
+      206 |     expect(
+      207 |       (await listReviews(page, { page: 2 })).items.find((item) => item.questionId === 'q-1'),
+    > 208 |     ).toMatchObject({ archived: true })
+          |       ^
+      209 |     await writeFile(file, controlBank('control-a'))
+      210 |     await importHistoryFiles(application, page, [file])
+      211 |     expect(await readReview(page)).toMatchObject({
+        at E:\My_Projects\embedded-practice\tests\e2e\review-storage.spec.ts:208:7
+
+    Error Context: output\playwright\review-development-storage-01\review-storage-复习安排真实事务：幂等-CAS-完成与重开、到期分页、写失败回滚及归档重导入保持-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\review-storage.spec.ts:127:5 › 复习安排真实事务：幂等/CAS/完成与重开、到期分页、写失败回滚及归档重导入保持 
+  4 passed (9.7s)

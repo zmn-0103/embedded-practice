@@ -364,7 +364,18 @@ test('全新目录从完整预览副本恢复全部业务数据并真实自动�
         await newPage.evaluate(() =>
           (globalThis as unknown as { desktop: DesktopApi }).desktop.practicePlans.list(),
         ),
-      ).toEqual({ ok: true, value: [savedPlan] })
+      ).toEqual({
+        ok: true,
+        value: [
+          {
+            ...savedPlan,
+            pinned: false,
+            lastUsedAt: null,
+            personalTagMissing: false,
+            matchingCount: 1,
+          },
+        ],
+      })
       expect((await categoryList(newPage)).categories).toEqual(
         expect.arrayContaining([
           { categoryId, title: '恢复板块新名称' },
@@ -759,7 +770,7 @@ test('保护性备份可直接从本数据目录选择并恢复，来源文件�
       const launched = await launchApplication(testDataDirectory, info.project.name, '备份恢复')
       reopened = launched.application
       const protection = await preview(reopened, launched.page, first.value.protectionPath)
-      expect(protection.summary.schemaVersion).toBe(13)
+      expect(protection.summary.schemaVersion).toBe(17)
       exited = reopened.waitForEvent('close')
       const second = await restore(launched.page, protection.token)
       expect(second.ok).toBe(true)

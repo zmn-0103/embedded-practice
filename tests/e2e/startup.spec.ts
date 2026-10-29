@@ -56,6 +56,10 @@ test('窗口隔离与生产内容策略生效', async ({ testDataDirectory }, te
       process: 'undefined',
       require: 'undefined',
       api: [
+        'planning',
+        'knowledge',
+        'reviewTodos',
+        'personalTags',
         'getAppStatus',
         'library',
         'contentUpdates',
@@ -71,6 +75,26 @@ test('窗口隔离与生产内容策略生效', async ({ testDataDirectory }, te
         'practice',
       ],
     })
+    expect(
+      await page.evaluate(() =>
+        Object.keys((globalThis as unknown as { desktop: DesktopApi }).desktop.planning).sort(),
+      ),
+    ).toEqual(['change', 'day', 'home', 'month', 'previewQuota', 'progress', 'quota', 'scope'])
+    expect(
+      await page.evaluate(() =>
+        Object.keys((globalThis as unknown as { desktop: DesktopApi }).desktop.reviewTodos).sort(),
+      ),
+    ).toEqual(['list', 'read', 'save'])
+    expect(
+      await page.evaluate(() =>
+        Object.keys((globalThis as unknown as { desktop: DesktopApi }).desktop.knowledge).sort(),
+      ),
+    ).toEqual(['changeRecent', 'changeRelation', 'recent', 'relations', 'search'])
+    expect(
+      await page.evaluate(() =>
+        Object.keys((globalThis as unknown as { desktop: DesktopApi }).desktop.personalTags).sort(),
+      ),
+    ).toEqual(['change', 'list'])
     expect(
       await page.evaluate(() =>
         Object.keys(
@@ -150,6 +174,7 @@ test('窗口隔离与生产内容策略生效', async ({ testDataDirectory }, te
       'navigate',
       'onBeforeClose',
       'onCloseCancelled',
+      'onTimerPause',
       'outline',
       'rateAndAdvance',
       'read',

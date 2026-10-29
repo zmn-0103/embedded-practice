@@ -1,0 +1,11 @@
+
+> embedded-practice@0.0.2 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.0.2 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/personal-tags.spec.ts(54,16): error TS2304: Cannot find name 'innerWidth'.
+tests/e2e/personal-tags.spec.ts(55,17): error TS2304: Cannot find name 'innerHeight'.
+tests/e2e/personal-tags.spec.ts(56,22): error TS2584: Cannot find name 'document'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.

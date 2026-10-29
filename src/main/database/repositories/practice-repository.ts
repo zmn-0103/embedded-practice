@@ -1,5 +1,6 @@
 import { createHash, randomInt, randomUUID } from 'node:crypto'
 import type Database from 'better-sqlite3'
+import { createActivityWriter } from './activity-writer'
 import {
   draftAckSchema,
   practiceAckSchema,
@@ -77,6 +78,7 @@ interface QueueRow {
 }
 
 export function createPracticeRepository(database: Database.Database) {
+  const recordActivity = createActivityWriter(database)
   let writeBlocked = false
   const sessionQuery = database.prepare(`SELECT s.id, s.mode, s.topic_id AS topicId, s.status,
     s.position, s.revision, s.created_at AS createdAt, s.ended_at AS endedAt, s.filters_json AS filtersJson,
@@ -412,6 +414,8 @@ export function createPracticeRepository(database: Database.Database) {
           throw new PracticeFault('SESSION_CONFLICT', '来源轮尚未结束，请先完成或结束该轮。')
         const mode = input.mode ?? 'sequential'
         const filters = questionFiltersSchema.parse(input.filters ?? EMPTY_QUESTION_FILTERS)
+        const prioritizeOldest =
+          !input.repeat && !input.selected && filters.practiceOrder === 'oldest'
         const category = categoryScopeSchema.parse(input.category ?? { kind: 'all' })
         const namedCategory =
           category.kind === 'category'
@@ -446,12 +450,12 @@ export function createPracticeRepository(database: Database.Database) {
               })
             : input.repeat
               ? repeatQueueQuery.all({ ...input.repeat, random: Number(mode === 'random') })
-              : (mode === 'random' ? randomQueueQuery : queueQuery).all({
+              : (mode === 'random' && !prioritizeOldest ? randomQueueQuery : queueQuery).all({
                   ...questionSelectionParameters({ ...input, filters, category }),
                   limit: input.count === 'all' ? -1 : input.count,
                 })
         ) as QueueRow[]
-        if (input.selected && mode === 'random')
+        if ((input.selected || prioritizeOldest) && mode === 'random')
           for (let index = queue.length - 1; index > 0; index--) {
             const target = randomInt(index + 1)
             ;[queue[index], queue[target]] = [queue[target]!, queue[index]!]
@@ -489,6 +493,58 @@ export function createPracticeRepository(database: Database.Database) {
             question.difficulty,
           ),
         )
+        // 与建轮和回执同一事务；仅原定义确实用于本次成功建轮时计最近使用。
+        if (input.sourcePlanId) {
+          const plan = database
+            .prepare('SELECT options_json FROM practice_plans WHERE plan_id=?')
+            .get(input.sourcePlanId) as { options_json: string } | undefined
+          if (plan) {
+            const options = JSON.parse(plan.options_json) as {
+              category: unknown
+              topicId: string | null
+              count: unknown
+              mode: unknown
+              filters: unknown
+            }
+            const savedFilters = questionFiltersSchema.parse(options.filters)
+            const filterValues = (value: typeof filters) => [
+              value.query,
+              value.tag,
+              value.difficulty,
+              value.mastery,
+              value.favoritesOnly,
+              value.personalTagId ?? null,
+              value.practiceRecency ?? 'all',
+              value.practiceOrder ?? 'default',
+            ]
+            if (
+              JSON.stringify(options.category) === JSON.stringify(category) &&
+              options.topicId === input.topicId &&
+              options.count === input.count &&
+              options.mode === mode &&
+              JSON.stringify(filterValues(savedFilters)) === JSON.stringify(filterValues(filters))
+            )
+              database
+                .prepare('UPDATE practice_plans SET last_used_at=? WHERE plan_id=?')
+                .run(now, input.sourcePlanId)
+          }
+        }
+        if (input.selected?.sourceSetId) {
+          const members = database
+            .prepare(
+              `SELECT topic_id AS topicId,question_id AS questionId
+            FROM question_set_items WHERE set_id=? ORDER BY position`,
+            )
+            .all(input.selected.sourceSetId)
+          const identities = input.selected.items.map(({ topicId, questionId }) => ({
+            topicId,
+            questionId,
+          }))
+          if (JSON.stringify(members) === JSON.stringify(identities))
+            database
+              .prepare('UPDATE question_sets SET last_used_at=? WHERE set_id=?')
+              .run(now, input.selected.sourceSetId)
+        }
         return ack(session(id))
       })
     },
@@ -523,8 +579,19 @@ export function createPracticeRepository(database: Database.Database) {
     reveal(input: RevealPractice): PracticeAck {
       return command('reveal', input, () => {
         const row = current(input.cursor)
+        const question = item(row.id, row.position)
         save(row.id, row.position, input.draft)
-        revealItem.run(new Date().toISOString(), row.id, row.position)
+        const now = new Date().toISOString()
+        revealItem.run(now, row.id, row.position)
+        if (!question.revealedAt)
+          recordActivity(
+            `reveal:${input.requestId}`,
+            'reveal',
+            question.questionId,
+            now,
+            row.id,
+            row.position,
+          )
         return move(row, row.position)
       })
     },
@@ -536,8 +603,17 @@ export function createPracticeRepository(database: Database.Database) {
           throw new PracticeFault('REVEAL_REQUIRED', '请先揭晓参考答案，再自评或暂不评价。')
         save(row.id, row.position, input.draft)
         if (input.rating !== null) {
-          rateItem.run(input.rating, new Date().toISOString(), row.id, row.position)
+          const now = new Date().toISOString()
+          rateItem.run(input.rating, now, row.id, row.position)
           rateState.run(question.questionId, input.rating, question.versionId)
+          recordActivity(
+            `rating:${input.requestId}`,
+            'rating',
+            question.questionId,
+            now,
+            row.id,
+            row.position,
+          )
         }
         return move(row, row.position + 1)
       })

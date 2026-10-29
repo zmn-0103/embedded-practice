@@ -1,0 +1,40 @@
+
+Running 3 tests using 1 worker
+
+(node:45972) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\practice-recency.spec.ts:34:5 › 当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序 (1.4s)
+  ok 2 [development] › tests\e2e\practice-recency.spec.ts:180:5 › 最久优先先限10题再随机，固定队列不随历史变化/重新打开重排；方案兼容显式默认值 (1.9s)
+  x  3 [development] › tests\e2e\practice-recency.spec.ts:285:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 (1.4s)
+
+
+  1) [development] › tests\e2e\practice-recency.spec.ts:285:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 ──
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('当前版本从未练习', { exact: true })
+    Expected: visible
+    Error: strict mode violation: getByText('当前版本从未练习', { exact: true }) resolved to 3 elements:
+        1) <option value="never">当前版本从未练习</option> aka getByLabel('练习最近练习').getByText('当前版本从未练习')
+        2) <option value="never">当前版本从未练习</option> aka getByLabel('题库最近练习').getByText('当前版本从未练习')
+        3) <p class="muted">当前版本从未练习</p> aka getByRole('article', { name: '题目内容' }).getByText('当前版本从未练习')
+
+    Call log:
+      - Expect "toBeVisible" getByText('当前版本从未练习', { exact: true }) with timeout 10000ms
+      - waiting for getByText('当前版本从未练习', { exact: true })
+
+
+      309 |     await page.locator('.question-row').first().click()
+      310 |     await expect(page.getByRole('article', { name: '题目内容', exact: true })).toBeVisible()
+    > 311 |     await expect(page.getByText('当前版本从未练习', { exact: true })).toBeVisible()
+          |                                                               ^
+      312 |     await captureHistory(application, page, info, 'recent-library-narrow-dark.png')
+      313 |     await openPage(page, '开始练习')
+      314 |     await page.getByLabel('练习专题', { exact: true }).selectOption('control-a')
+        at E:\My_Projects\embedded-practice\tests\e2e\practice-recency.spec.ts:311:63
+
+    Error Context: output\playwright\review-development-recency-03\practice-recency-题库和练习共用最近筛选，可保存-填入方案；窄窗暗色控件和结果可操作-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\practice-recency.spec.ts:285:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 ───
+  2 passed (5.4s)

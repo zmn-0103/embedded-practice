@@ -1,0 +1,33 @@
+
+Running 26 tests using 1 worker
+
+(node:48356) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [packaged] › tests\e2e\backup-window.spec.ts:127:5 › Windows文件编号精度：普通数值相同的独立备份可预览，精确编号相同的别名仍拒绝 (1.3s)
+  ok  2 [packaged] › tests\e2e\backup-window.spec.ts:196:5 › 完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库 (4.1s)
+  ok  3 [packaged] › tests\e2e\backup-window.spec.ts:309:5 › 备份取消与预览取消保留原状态，空库可导出并预览 (1.0s)
+  ok  4 [packaged] › tests\e2e\backup-window.spec.ts:362:5 › 实际备份写入失败保留已有目标与当前数据，清理暂存后可重试 (1.3s)
+  ok  5 [packaged] › tests\e2e\backup-window.spec.ts:405:5 › 备份拒绝当前库伴随文件及目录链接硬链接别名，目标有旧 WAL 时不发布 (855ms)
+  ok  6 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 corrupt，原备份字节及当前数据保持 (1.2s)
+  ok  7 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 foreign-app，原备份字节及当前数据保持 (1.4s)
+  ok  8 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 future，原备份字节及当前数据保持 (1.5s)
+  ok  9 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 missing-table，原备份字节及当前数据保持 (1.5s)
+  ok 10 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 foreign-key，原备份字节及当前数据保持 (1.4s)
+  ok 11 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 metadata，原备份字节及当前数据保持 (1.5s)
+  ok 12 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 image-hash，原备份字节及当前数据保持 (1.4s)
+  ok 13 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 filters，原备份字节及当前数据保持 (1.4s)
+  ok 14 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 body-json，原备份字节及当前数据保持 (1.4s)
+  ok 15 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 palette，原备份字节及当前数据保持 (1.4s)
+  ok 16 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 category-title，原备份字节及当前数据保持 (1.3s)
+  ok 17 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 category-membership，原备份字节及当前数据保持 (1.3s)
+  ok 18 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 category-snapshot，原备份字节及当前数据保持 (1.3s)
+  ok 19 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 plan-options，原备份字节及当前数据保持 (1.3s)
+  ok 20 [packaged] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 plan-name，原备份字节及当前数据保持 (1.4s)
+  ok 21 [packaged] › tests\e2e\backup-window.spec.ts:552:5 › 在途备份阻止重复操作和切页，正常退出等待已验证备份发布 (2.0s)
+  ok 22 [packaged] › tests\e2e\backup-window.spec.ts:605:5 › 发布失败保留既有备份，来源读取中变化时停止预览且清理副本 (1.4s)
+  ok 23 [packaged] › tests\e2e\backup-window.spec.ts:653:5 › 备份期间其他连接的事务写入保持一致性快照 (1.1s)
+  ok 24 [packaged] › tests\e2e\backup-window.spec.ts:713:5 › 导出保留未知自定义表，同名未知元数据表冲突时停止且保留旧目标 (931ms)
+  ok 25 [packaged] › tests\e2e\themes-reading.spec.ts:52:5 › 跨主题保留题库筛选/分页/选中与阅读组件，183行代码/60段答案/大图弹窗在宽窄窗口可用 (3.4s)
+  ok 26 [packaged] › tests\e2e\themes-reading.spec.ts:145:5 › Claude长内容练习：宽屏右侧属性/窄屏可展开辅助、输入首行与底部操作可达，答案严格揭晓 (2.3s)
+
+  26 passed (41.4s)

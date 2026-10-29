@@ -7,7 +7,15 @@ export function useQuestionSets(
   onOperation: (work: Promise<boolean>) => void,
 ) {
   const api = window.desktop.questionSets
-  const [sets, setSets] = useState<{ setId: string; name: string; count: number }[]>([])
+  const [sets, setSets] = useState<
+    {
+      setId: string
+      name: string
+      count: number
+      pinned?: boolean | undefined
+      lastUsedAt?: string | null | undefined
+    }[]
+  >([])
   const [pending, setPending] = useState<QuestionSetChange>()
   const [confirmed, setConfirmed] = useState<QuestionSetChange>()
   const [busy, setBusy] = useState(false)
@@ -67,7 +75,13 @@ export function useQuestionSets(
         release()
         setConfirmed(command)
         setMessage(
-          command.kind === 'delete' ? '题单已删除，题目和练习记录保留。' : '固定题单已保存。',
+          command.kind === 'pin'
+            ? command.pinned
+              ? '题单已置顶。'
+              : '题单已取消置顶。'
+            : command.kind === 'delete'
+              ? '题单已删除，题目和练习记录保留。'
+              : '固定题单已保存。',
         )
         return true
       } catch {

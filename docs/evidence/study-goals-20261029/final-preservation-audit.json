@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-10-29T06:05:28.854Z",
+  "candidate": "r2",
+  "branch": "codex/functional-ux-next-20261028",
+  "head": "6fbce18ec4d530420dc1ff524fc0aa008c91c442",
+  "sourceFiles": 353,
+  "productionSourceFiles": 172,
+  "allSourceMatches": true,
+  "configurations": [
+    {
+      "path": "package.json",
+      "preserved": true
+    },
+    {
+      "path": "package-lock.json",
+      "preserved": true
+    },
+    {
+      "path": "electron-builder.yml",
+      "preserved": true
+    },
+    {
+      "path": "electron.vite.config.ts",
+      "preserved": true
+    },
+    {
+      "path": "playwright.config.ts",
+      "preserved": true
+    },
+    {
+      "path": "vitest.config.ts",
+      "preserved": true
+    },
+    {
+      "path": "tsconfig.node.json",
+      "preserved": true
+    },
+    {
+      "path": "tsconfig.web.json",
+      "preserved": true
+    }
+  ],
+  "packageFiles": 20,
+  "packageMatchesBuild": true,
+  "previousDeliveries": [
+    {
+      "name": "V0.0.2-personal-tags-20261028.3-r2",
+      "files": 147,
+      "totalBytes": 390946859,
+      "preserved": true
+    },
+    {
+      "name": "V0.0.2-review-todos-20261029.1",
+      "files": 150,
+      "totalBytes": 391152639,
+      "preserved": true
+    },
+    {
+      "name": "V0.0.2-knowledge-links-20261029.2",
+      "files": 148,
+      "totalBytes": 391104976,
+      "preserved": true
+    }
+  ],
+  "initialCandidatePreservedFiles": 150,
+  "preservedMaterials": 17,
+  "newDeliveryFiles": 150,
+  "newDeliveryBytes": 391290581,
+  "manifestExcludesItself": true,
+  "deliveryManifestSha256": "c3671de89bea587966d4e682901323bb6a846debee1d0a343e6052a6ab7131ad",
+  "originalPlanBytes": 62511,
+  "originalPlanPrefixPreserved": true,
+  "currentPlanBytes": 63427,
+  "previewImages": 7,
+  "verifiedRuntimeEntries": 98,
+  "noAutomaticCommit": true
+}

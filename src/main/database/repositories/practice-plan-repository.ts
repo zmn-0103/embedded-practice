@@ -4,9 +4,15 @@ import {
   practicePlanChangeSchema,
   practicePlanOptionsSchema,
   practicePlanSchema,
+  practicePlanSummarySchema,
   type PracticePlanChange,
 } from '../../../shared/contracts/practice-plans'
 import { matchesCategory } from '../../../shared/contracts/categories'
+import {
+  questionSelectionFrom,
+  questionSelectionWhere,
+  questionSelectionParameters,
+} from './question-selection'
 
 export class PracticePlanFault extends Error {
   constructor(
@@ -18,8 +24,14 @@ export class PracticePlanFault extends Error {
 }
 
 export function createPracticePlanRepository(database: Database.Database) {
-  const rows = database.prepare(`SELECT plan_id AS planId,name,options_json AS options
-    FROM practice_plans ORDER BY name COLLATE NOCASE,plan_id LIMIT ${MAX_PRACTICE_PLANS + 1}`)
+  const rows =
+    database.prepare(`SELECT plan_id AS planId,name,options_json AS options,pinned,last_used_at AS lastUsedAt
+    FROM practice_plans ORDER BY pinned DESC,last_used_at DESC,name COLLATE NOCASE,plan_id LIMIT ${MAX_PRACTICE_PLANS + 1}`)
+  const matching = database
+    .prepare(`SELECT count(*) ${questionSelectionFrom} WHERE ${questionSelectionWhere}`)
+    .pluck()
+  const tag = database.prepare('SELECT 1 FROM personal_tags WHERE tag_id=?')
+  const pin = database.prepare('UPDATE practice_plans SET pinned=? WHERE plan_id=?')
   const find = database.prepare(
     'SELECT name,options_json AS options FROM practice_plans WHERE plan_id=?',
   )
@@ -33,6 +45,11 @@ export function createPracticePlanRepository(database: Database.Database) {
   const category = database.prepare('SELECT 1 FROM categories WHERE category_id=?')
   const topic = database.prepare('SELECT category_id AS categoryId FROM topics WHERE topic_id=?')
   const change = database.transaction((input: PracticePlanChange) => {
+    if (input.kind === 'pin') {
+      if (!pin.run(Number(input.pinned), input.planId).changes)
+        throw new PracticePlanFault('NOT_FOUND', '方案已删除，请重新读取。')
+      return
+    }
     if (input.kind === 'delete') {
       remove.run(input.planId)
       return
@@ -62,6 +79,8 @@ export function createPracticePlanRepository(database: Database.Database) {
       return
     }
     const scope = input.options.category
+    if (input.options.filters.personalTagId && !tag.get(input.options.filters.personalTagId))
+      throw new PracticePlanFault('NOT_FOUND', '个人标签已删除，请重新选择后保存方案。')
     if (scope.kind === 'category' && !category.get(scope.categoryId))
       throw new PracticePlanFault('NOT_FOUND', '分类已移除，请重新选择后保存方案。')
     if (input.options.topicId !== null) {
@@ -74,11 +93,30 @@ export function createPracticePlanRepository(database: Database.Database) {
   })
   return {
     listPracticePlans() {
-      const found = rows.all() as { planId: string; name: string; options: string }[]
+      const found = rows.all() as {
+        planId: string
+        name: string
+        options: string
+        pinned: number
+        lastUsedAt: string | null
+      }[]
       if (found.length > MAX_PRACTICE_PLANS) throw new Error('方案数量超出支持范围。')
-      return found.map((row) =>
-        practicePlanSchema.parse({ ...row, options: JSON.parse(row.options) }),
-      )
+      return found.map((row) => {
+        const plan = practicePlanSchema.parse({
+          planId: row.planId,
+          name: row.name,
+          options: JSON.parse(row.options),
+        })
+        return practicePlanSummarySchema.parse({
+          ...plan,
+          pinned: Boolean(row.pinned),
+          lastUsedAt: row.lastUsedAt,
+          matchingCount: matching.get(questionSelectionParameters(plan.options)),
+          personalTagMissing: Boolean(
+            plan.options.filters.personalTagId && !tag.get(plan.options.filters.personalTagId),
+          ),
+        })
+      })
     },
     changePracticePlan(input: PracticePlanChange): void {
       const parsed = practicePlanChangeSchema.parse(input)

@@ -1,0 +1,11 @@
+
+Running 4 tests using 1 worker
+
+(node:27808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\planning.spec.ts:28:5 › 每日目标按成功活动去重，待办重开/同题重复自评/归档不抹事实，旧日期不补造 (1.6s)
+  ok 2 [development] › tests\e2e\planning.spec.ts:115:5 › 活动和实际保存同事务回滚，重复回执只计一次，重复揭晓/暂不评价不计自评 (1.3s)
+  ok 3 [development] › tests\e2e\planning.spec.ts:259:5 › 备考题单去重、CAS与删除失效，当前版本覆盖/归档分开，超500不截断 (1.7s)
+  ok 4 [development] › tests\e2e\planning.spec.ts:361:5 › 配额优先方式/不足/重复与候选只读，确认后固定队列，日历两类分页 (1.3s)
+
+  4 passed (6.6s)

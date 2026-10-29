@@ -26,6 +26,7 @@ export const practicePlanSchema = z.strictObject({
   options: practicePlanOptionsSchema,
 })
 export const practicePlanChangeSchema = z.discriminatedUnion('kind', [
+  z.strictObject({ kind: z.literal('pin'), planId: z.uuid(), pinned: z.boolean() }),
   practicePlanSchema.extend({ kind: z.literal('save'), name: z.string().trim().pipe(nameSchema) }),
   practicePlanSchema.extend({
     kind: z.literal('update'),
@@ -49,9 +50,18 @@ const result = <T extends z.ZodType>(value: T) =>
     z.strictObject({ ok: z.literal(true), value }),
     z.strictObject({ ok: z.literal(false), error: errorSchema }),
   ])
-export const practicePlansResultSchema = result(z.array(practicePlanSchema).max(MAX_PRACTICE_PLANS))
+export const practicePlanSummarySchema = practicePlanSchema.extend({
+  pinned: z.boolean().optional(),
+  lastUsedAt: z.iso.datetime().nullable().optional(),
+  matchingCount: z.number().int().nonnegative().optional(),
+  personalTagMissing: z.boolean().optional(),
+})
+export const practicePlansResultSchema = result(
+  z.array(practicePlanSummarySchema).max(MAX_PRACTICE_PLANS),
+)
 export const practicePlanChangeResultSchema = result(z.null())
 export type PracticePlan = z.infer<typeof practicePlanSchema>
+export type PracticePlanSummary = z.infer<typeof practicePlanSummarySchema>
 export type PracticePlanOptions = z.infer<typeof practicePlanOptionsSchema>
 export type PracticePlanChange = z.infer<typeof practicePlanChangeSchema>
 export interface PracticePlansDesktopApi {
