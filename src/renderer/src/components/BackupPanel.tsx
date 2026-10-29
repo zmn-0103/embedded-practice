@@ -65,6 +65,13 @@ export function BackupPanel({
       if (response.ok) {
         restarting = true
         setMessage(`恢复已完成，正在重启。原数据保护性备份：${response.value.protectionPath}`)
+        // 正常路径由重启清空界面；若重启未发生（只读安装目录、调试环境），
+        // 必须在有限时间内释放忙碌状态，否则整个面板与上层导航会永久禁用。
+        window.setTimeout(() => {
+          running.current = false
+          setBusy(undefined)
+          onBusyChange(false)
+        }, 10_000)
       } else {
         setMessage(response.error.message)
         setFailed(response.error.code !== 'CANCELLED')

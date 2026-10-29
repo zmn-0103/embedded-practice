@@ -56,6 +56,30 @@ export function checkIntegrity(database: Database.Database): void {
     throw new BackupFault('INVALID_BACKUP', '备份中的数据关联损坏，请选择其他备份。')
 }
 
+const manifestColumns = 'id,format_version,created_at,app_version,schema_version'
+
+/**
+ * 只校验 backup_manifest 的形状，不比较其中的结构版本。
+ * 导出时该表会被整体重写，因此运行库中残留的历史版本元数据不能阻断导出；
+ * 真正安装备份前的版本一致性由 readBackupHeader 负责。
+ */
+export function assertBackupManifestShape(database: Database.Database): boolean {
+  database.pragma('trusted_schema = OFF')
+  const manifest = database
+    .prepare("SELECT type FROM sqlite_schema WHERE name = 'backup_manifest'")
+    .get() as { type: string } | undefined
+  if (!manifest) return false
+  if (manifest.type !== 'table')
+    throw new BackupFault('INVALID_BACKUP', '备份时间信息损坏，请选择其他备份。')
+  const columns = database.pragma('table_info(backup_manifest)') as { name: string }[]
+  if (columns.map((column) => column.name).join(',') !== manifestColumns)
+    throw new BackupFault(
+      'INVALID_BACKUP',
+      '备份元数据结构无法识别，请保留来源文件并选择兼容备份。',
+    )
+  return true
+}
+
 export function readBackupHeader(database: Database.Database): BackupHeader {
   database.pragma('trusted_schema = OFF')
   if (database.pragma('application_id', { simple: true }) !== APPLICATION_ID)
@@ -64,21 +88,7 @@ export function readBackupHeader(database: Database.Database): BackupHeader {
   if (typeof version !== 'number' || version < 1 || version > SCHEMA_VERSION)
     throw new BackupFault('UNSUPPORTED_BACKUP', '备份结构版本不受支持，请使用兼容版本的程序。')
   checkIntegrity(database)
-  const manifest = database
-    .prepare("SELECT type FROM sqlite_schema WHERE name = 'backup_manifest'")
-    .get() as { type: string } | undefined
-  if (!manifest) return { schemaVersion: version, metadata: null }
-  if (manifest.type !== 'table')
-    throw new BackupFault('INVALID_BACKUP', '备份时间信息损坏，请选择其他备份。')
-  const columns = database.pragma('table_info(backup_manifest)') as { name: string }[]
-  if (
-    columns.map((column) => column.name).join(',') !==
-    'id,format_version,created_at,app_version,schema_version'
-  )
-    throw new BackupFault(
-      'INVALID_BACKUP',
-      '备份元数据结构无法识别，请保留来源文件并选择兼容备份。',
-    )
+  if (!assertBackupManifestShape(database)) return { schemaVersion: version, metadata: null }
   const rows = database
     .prepare(
       `SELECT format_version AS formatVersion, created_at AS createdAt,
@@ -141,6 +151,16 @@ export function readBackupSummary(
       throw new BackupFault('INVALID_BACKUP', '备份缺少必要的数据表，请选择完整备份。')
     database.prepare(`SELECT ${columns} FROM ${table} LIMIT 0`).all()
   }
+  // 列存在不代表单例行可用：缺少 library_meta 行或修订号类型错误的备份装上后，
+  // 题库列表会持续失败，而恢复流程已报告成功。这里提前拒绝。
+  const meta = database.prepare('SELECT revision FROM library_meta WHERE id = 1').get() as
+    { revision: unknown } | undefined
+  if (
+    typeof meta?.revision !== 'number' ||
+    !Number.isSafeInteger(meta.revision) ||
+    meta.revision < 0
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份缺少题库元数据，请选择完整备份。')
   const settings = createSettingsRepository(database).readSettings()
   for (const [table, key] of [
     ['daily_targets', 'day'],

@@ -569,8 +569,17 @@ export function createPracticeRepository(database: Database.Database) {
               position: input.position,
               draftRevision: saved.draftRevision,
             })
-          if (saved.draftRevision >= input.draft.revision) return uncertain()
-        } catch {
+          // 能读回当前状态即说明写入没有生效，结果是确定的：按具体冲突返回。
+          // 若在这里统一返回 unknown，会把可恢复的草稿冲突升级为整个服务停写直到重启。
+          if (saved.draftRevision > input.draft.revision)
+            throw new PracticeFault('DRAFT_STALE', '草稿修订已过期，请读取已保存内容后重新提交。')
+          if (saved.draftRevision === input.draft.revision)
+            throw new PracticeFault(
+              'DRAFT_CONFLICT',
+              '相同修订包含不同草稿，请保留输入并核对已保存内容。',
+            )
+        } catch (readError) {
+          if (readError instanceof PracticeFault) throw readError
           return uncertain()
         }
         throw error

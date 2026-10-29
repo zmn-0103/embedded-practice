@@ -14,6 +14,7 @@ import { PersonalNote } from './PersonalNote'
 import { ReviewTodoEditor } from './ReviewTodoEditor'
 import { QuestionRelations } from './QuestionRelations'
 import { useNoteSaves } from '../note-saves'
+import { MAX_DRAFT_BYTES } from '../../../shared/contracts/practice'
 import { OralTimer } from './OralTimer'
 import type { OralTimerController } from '../oral-timer-controller'
 
@@ -238,6 +239,7 @@ export function PracticePane({
               id="practice-answer"
               aria-labelledby="practice-answer-label"
               rows={6}
+              maxLength={MAX_DRAFT_BYTES}
               value={state.draft.text}
               readOnly={blocked}
               placeholder="写下思路或代码，也可以先思考再揭晓。"

@@ -86,6 +86,11 @@ export function PersonalTags({
           if (result.error.code !== 'DATABASE_UNAVAILABLE') release()
           return false
         }
+        if (command.kind === 'save') {
+          // 创建成功后清空输入；否则再次点击会以新 UUID 重复创建同名标签。
+          // 不在此处选中新标签：列表尚未刷新时会被误显示为“标签已删除”。
+          setName('')
+        }
         setMessage(
           command.kind === 'assign'
             ? `已为明确勾选的${command.items.length}题${command.present ? '添加' : '移除'}个人标签。`
@@ -128,7 +133,7 @@ export function PersonalTags({
           <button
             type="button"
             disabled={!name.trim()}
-            onClick={() => perform({ kind: 'save', tagId: crypto.randomUUID(), name })}
+            onClick={() => perform({ kind: 'save', tagId: crypto.randomUUID(), name: name.trim() })}
           >
             创建个人标签
           </button>
@@ -137,7 +142,12 @@ export function PersonalTags({
             disabled={!selected || !name.trim()}
             onClick={() =>
               selected &&
-              perform({ kind: 'rename', tagId: selected.tagId, name, expectedName: selected.name })
+              perform({
+                kind: 'rename',
+                tagId: selected.tagId,
+                name: name.trim(),
+                expectedName: selected.name,
+              })
             }
           >
             重命名个人标签

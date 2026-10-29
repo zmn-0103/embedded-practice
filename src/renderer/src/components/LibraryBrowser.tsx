@@ -374,16 +374,27 @@ function LibraryContent({
   }))
   function setRequest(next: ListRequest) {
     if (!noteSaves.hasPending()) {
+      setRequestError('')
       setRequestState(next)
       return
     }
     void noteSaves.flush().then((saved) => {
-      if (saved) setRequestState(next)
+      if (saved) {
+        setRequestError('')
+        setRequestState(next)
+      } else {
+        // 静默丢弃会让翻页/筛选看起来"点了没反应"，这里明确说明原因并解除加载态。
+        setRequestError(
+          '当前输入尚未确认保存，筛选或翻页未应用。请先处理笔记、关联或安排中的未保存内容。',
+        )
+        setLoading(false)
+      }
     })
   }
   const [data, setData] = useState<LibraryPage>()
   const [selected, setSelected] = useState<QuestionIdentity>()
   const [error, setError] = useState('')
+  const [requestError, setRequestError] = useState('')
   const [attempt, setAttempt] = useState(0)
   const [favoriteRefresh, setFavoriteRefresh] = useState(0)
   const [filters, setFilters] = useState<QuestionFilters>(() => ({
@@ -716,6 +727,11 @@ function LibraryContent({
             >
               筛选题库
             </button>
+            {requestError && (
+              <p role="alert" className="error-message">
+                {requestError}
+              </p>
+            )}
             {(JSON.stringify(filters) !==
               JSON.stringify(request.filters ?? EMPTY_QUESTION_FILTERS) ||
               contentUpdatedOnly !== Boolean(request.contentUpdatedOnly)) && (
@@ -794,7 +810,16 @@ function LibraryContent({
             <button
               type="button"
               disabled={loading}
-              onClick={() => setAttempt((value) => value + 1)}
+              onClick={() => {
+                // 重新读取会卸载右侧详情；先确认笔记保存，避免未保存文本随组件销毁。
+                if (!noteSaves.hasPending()) {
+                  setAttempt((value) => value + 1)
+                  return
+                }
+                void noteSaves.flush().then((saved) => {
+                  if (saved) setAttempt((value) => value + 1)
+                })
+              }}
             >
               重新读取题库
             </button>

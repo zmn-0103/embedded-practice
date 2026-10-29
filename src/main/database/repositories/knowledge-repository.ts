@@ -103,6 +103,8 @@ export function createKnowledgeRepository(database: Database.Database) {
       )
     const source = id(input.source),
       target = id(input.target)
+    // 表上的 CHECK 只能保证写不进去；提前拒绝才能给出可理解的原因，而不是冒泡成写入失败。
+    if (source === target) throw new KnowledgeFault('INVALID_REQUEST', '不能把题目关联到自身。')
     if (pair.get({ source, target, kind: input.kind, relationId: input.relationId }))
       throw new KnowledgeFault(
         'INVALID_REQUEST',

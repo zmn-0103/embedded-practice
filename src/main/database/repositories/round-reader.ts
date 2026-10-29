@@ -112,7 +112,7 @@ export function createRoundReader(database: Database.Database) {
   const read = database.transaction((input: unknown) => {
     const request = roundRequestSchema.parse(input),
       session = summary(request.sessionId)
-    const page = Math.min(request.page, Math.ceil(session.total / PAGE_SIZE))
+    const page = Math.min(request.page, Math.max(1, Math.ceil(session.total / PAGE_SIZE)))
     const rows = items.all(request.sessionId, (page - 1) * PAGE_SIZE) as ItemRow[]
     return roundPageSchema.parse({
       session,

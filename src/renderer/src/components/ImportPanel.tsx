@@ -248,8 +248,11 @@ export function ImportPanel({
                 onClick={() =>
                   void run('discarding', async () => {
                     const result = await window.desktop.library.discardImport(preview.token)
-                    if (!result.ok && result.error.code !== 'PREVIEW_EXPIRED')
+                    // 服务端预览未释放时保留本地预览，避免界面同时报错又宣称已关闭。
+                    if (!result.ok && result.error.code !== 'PREVIEW_EXPIRED') {
                       setError(result.error)
+                      return
+                    }
                     setPreview(undefined)
                     setNotice('已关闭本次预览，可重新选择文件检查当前题库。')
                   })

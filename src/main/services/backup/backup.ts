@@ -6,6 +6,7 @@ import type { BackupFile, BackupPreview } from '../../../shared/contracts/backup
 import { hashBackupFile } from './restore-files'
 import { APPLICATION_ID, openPracticeDatabase, SCHEMA_VERSION } from '../../database/open-database'
 import {
+  assertBackupManifestShape,
   BACKUP_FORMAT_VERSION,
   BackupFault,
   readBackupHeader,
@@ -113,8 +114,8 @@ export async function openBackupService(
       let summary: BackupFile['summary']
       try {
         // 已存在的同名表只有明确属于本备份格式时才可更新，未知表原样保护。
-        if (backup.prepare("SELECT 1 FROM sqlite_schema WHERE name = 'backup_manifest'").get())
-          readBackupHeader(backup)
+        // 这里只校验形状：运行库可能残留旧结构版本的元数据，导出会整体重写，不能据此拒绝导出。
+        assertBackupManifestShape(backup)
         backup.pragma('journal_mode = DELETE')
         backup.pragma('synchronous = FULL')
         backup.pragma('trusted_schema = OFF')

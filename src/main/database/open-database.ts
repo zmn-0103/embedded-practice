@@ -59,6 +59,8 @@ export async function openPracticeDatabase(databasePath: string): Promise<Databa
     const applicationId = database.pragma('application_id', { simple: true })
     const version = database.pragma('user_version', { simple: true })
     database.pragma('foreign_keys = ON')
+    // 同一文件由启动、题库、练习、备份多个连接共用；短暂的外部占用应等待而不是立即失败。
+    database.pragma('busy_timeout = 5000')
     if (applicationId === 0 && version === 0) {
       const objects = database
         .prepare("SELECT name FROM sqlite_schema WHERE name NOT GLOB 'sqlite_*'")
@@ -90,22 +92,9 @@ export async function openPracticeDatabase(databasePath: string): Promise<Databa
         .immediate()
     } else if (
       applicationId === APPLICATION_ID &&
-      (version === 1 ||
-        version === 2 ||
-        version === 3 ||
-        version === 4 ||
-        version === 5 ||
-        version === 6 ||
-        version === 7 ||
-        version === 8 ||
-        version === 9 ||
-        version === 10 ||
-        version === 11 ||
-        version === 12 ||
-        version === 13 ||
-        version === 14 ||
-        version === 15 ||
-        version === 16)
+      typeof version === 'number' &&
+      version >= 1 &&
+      version < SCHEMA_VERSION
     ) {
       await protectBeforeMigration(database, databasePath, version)
       // SQLite 修改父表 CHECK 需替换表，外键开关必须在事务外操作。

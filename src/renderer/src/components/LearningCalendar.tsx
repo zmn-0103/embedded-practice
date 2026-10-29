@@ -120,6 +120,12 @@ export function LearningCalendar({
                   setRoundPage(1)
                   setRound(undefined)
                 })
+              // 受控 input 在状态未变时不会重绘，清空值会停留在空字符串；
+              // 这里显式提示并回写，避免输入框与下方日历月份不一致。
+              else {
+                setError('请选择有效的月份。')
+                event.currentTarget.value = month
+              }
             }}
           />
         </label>

@@ -75,6 +75,9 @@ export function QuotaComposer({
   const busy = state.saving || saves.flushing || loading || (disabled && !own),
     locked = busy || own
   const draft = state.draft?.kind === 'quota' ? state.draft : undefined
+  const total = draft?.rows.reduce((sum, row) => sum + row.count, 0) ?? 0
+  // 服务端按合计 ≤500 校验；这里先拦住，避免用户只看到“请求参数无效”而不知道原因。
+  const overLimit = total > 500
   async function readPreview(rows: QuotaSetting['rows']) {
     setLoading(true)
     setError('')
@@ -201,16 +204,17 @@ export function QuotaComposer({
                     step={1}
                     required
                     value={row.count}
-                    onChange={(event) =>
+                    onChange={(event) => {
+                      const count = event.currentTarget.valueAsNumber
                       controller.edit({
                         ...draft,
                         rows: draft.rows.map((item, i) =>
                           i === index
-                            ? { ...item, count: event.currentTarget.valueAsNumber }
+                            ? { ...item, count: Number.isFinite(count) ? count : 1 }
                             : item,
                         ),
                       })
-                    }
+                    }}
                   />
                 </label>
                 <label>
@@ -267,10 +271,15 @@ export function QuotaComposer({
             >
               增加配额专题
             </button>
-            <p>合计 {draft.rows.reduce((sum, row) => sum + row.count, 0)} 题 / 500</p>
+            <p
+              role={overLimit ? 'alert' : undefined}
+              className={overLimit ? 'error-message' : undefined}
+            >
+              合计 {total} 题 / 500{overLimit ? '，请减少题数后再保存。' : ''}
+            </p>
           </fieldset>
           <div className="button-row">
-            <button type="submit" disabled={busy || state.conflict}>
+            <button type="submit" disabled={busy || state.conflict || overLimit}>
               {state.pending ? '重试原配额保存' : '保存并预览配额组卷'}
             </button>
             <button type="button" disabled={state.saving} onClick={() => setDiscard(true)}>

@@ -253,11 +253,17 @@ async function startApplication(): Promise<void> {
       return
     }
     store = opened
-    store.recordLaunch()
   } catch (error) {
     reportError(error)
-    store?.close()
     store = undefined
+  }
+  if (store) {
+    try {
+      store.recordLaunch()
+    } catch (error) {
+      // 启动计数只是诊断信息；写入失败不能连带关闭已成功打开的连接、降级全部服务。
+      reportError(error)
+    }
   }
 
   if (store) {
@@ -355,6 +361,8 @@ app.on('before-quit', (event) => {
 starting = startApplication()
 void starting.catch(async (error: unknown) => {
   reportError(error)
+  // 用户在页面加载完成前主动关窗会被记为启动失败，这里不能再弹「无法启动」错误框。
+  if (quitAllowed || stopping) return
   stopping = true
   await closeResources()
   // 恢复事务、数据库结构与权限失败的处置方式不同，界面须给出实际原因。
