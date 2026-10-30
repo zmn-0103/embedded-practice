@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-30",
+  "formalDatabaseOpened": false,
+  "checks": [
+    {
+      "file": "backups\\个人使用\\20261024-185509-导入前.sqlite3",
+      "readOnly": true,
+      "immutable": true,
+      "quickCheck": [
+        "ok"
+      ],
+      "foreignKeyViolations": [],
+      "schema": 9,
+      "counts": {
+        "app_startup": 1,
+        "library_meta": 1,
+        "topics": 0,
+        "questions": 0,
+        "question_versions": 0,
+        "image_resources": 0,
+        "version_images": 0,
+        "question_user_state": 0,
+        "import_receipts": 0,
+        "practice_items": 0,
+        "practice_receipts": 0,
+        "practice_sessions": 0,
+        "appearance_settings": 1,
+        "categories": 0,
+        "practice_plans": 0,
+        "backup_manifest": 1
+      }
+    },
+    {
+      "file": "backups\\个人使用\\20261024-232800-419题与个人进度.sqlite3",
+      "readOnly": true,
+      "immutable": true,
+      "quickCheck": [
+        "ok"
+      ],
+      "foreignKeyViolations": [],
+      "schema": 9,
+      "counts": {
+        "app_startup": 1,
+        "library_meta": 1,
+        "topics": 13,
+        "questions": 419,
+        "question_versions": 419,
+        "image_resources": 0,
+        "version_images": 0,
+        "question_user_state": 419,
+        "import_receipts": 1,
+        "practice_items": 20,
+        "practice_receipts": 4,
+        "practice_sessions": 1,
+        "appearance_settings": 1,
+        "categories": 5,
+        "practice_plans": 0,
+        "backup_manifest": 1
+      }
+    },
+    {
+      "file": "backups\\个人使用\\V0.0.1升级前-20261025-150100\\升级后完整备份-schema10.sqlite3",
+      "readOnly": true,
+      "immutable": true,
+      "quickCheck": [
+        "ok"
+      ],
+      "foreignKeyViolations": [],
+      "schema": 10,
+      "counts": {
+        "app_startup": 1,
+        "library_meta": 1,
+        "topics": 13,
+        "questions": 419,
+        "question_versions": 419,
+        "image_resources": 0,
+        "version_images": 0,
+        "question_user_state": 419,
+        "import_receipts": 1,
+        "practice_items": 20,
+        "practice_receipts": 6,
+        "practice_sessions": 1,
+        "appearance_settings": 1,
+        "categories": 5,
+        "practice_plans": 0,
+        "installed_themes": 0,
+        "backup_manifest": 1
+      }
+    },
+    {
+      "file": "backups\\个人使用\\V0.0.2桌面更新前-20261026-202244\\v002-verified-copy-export.sqlite3",
+      "readOnly": true,
+      "immutable": true,
+      "quickCheck": [
+        "ok"
+      ],
+      "foreignKeyViolations": [],
+      "schema": 10,
+      "counts": {
+        "app_startup": 1,
+        "library_meta": 1,
+        "topics": 13,
+        "questions": 419,
+        "question_versions": 419,
+        "image_resources": 0,
+        "version_images": 0,
+        "question_user_state": 419,
+        "import_receipts": 1,
+        "practice_items": 20,
+        "practice_receipts": 6,
+        "practice_sessions": 1,
+        "appearance_settings": 1,
+        "categories": 5,
+        "practice_plans": 0,
+        "installed_themes": 0,
+        "backup_manifest": 1
+      }
+    },
+    {
+      "file": "backups\\个人使用\\V0.0.2桌面更新前-20261026-202244\\升级后SQLite一致性备份.sqlite3",
+      "readOnly": true,
+      "immutable": true,
+      "quickCheck": [
+        "ok"
+      ],
+      "foreignKeyViolations": [],
+      "schema": 10,
+      "counts": {
+        "app_startup": 1,
+        "library_meta": 1,
+        "topics": 13,
+        "questions": 419,
+        "question_versions": 419,
+        "image_resources": 0,
+        "version_images": 0,
+        "question_user_state": 419,
+        "import_receipts": 1,
+        "practice_items": 20,
+        "practice_receipts": 6,
+        "practice_sessions": 1,
+        "appearance_settings": 1,
+        "categories": 5,
+        "practice_plans": 0,
+        "installed_themes": 0
+      }
+    }
+  ]
+}
