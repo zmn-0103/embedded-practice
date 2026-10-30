@@ -1,0 +1,18 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: 数据库尚未完全关闭：-wal
+    at noSidecars (file:///E:/My_Projects/embedded-practice/scripts/reset-v003-desktop.mjs:94:5)
+    at file:///E:/My_Projects/embedded-practice/scripts/reset-v003-desktop.mjs:288:5
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processImmediate (node:internal/timers:502:9) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0
