@@ -1,0 +1,4620 @@
+{
+  "topics": [
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-adc.md",
+      "topicId": "general-adc",
+      "title": "ADC 通用原理",
+      "board": "MCU与外设原理"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103-adc.md",
+      "topicId": "stm32f103-adc",
+      "title": "STM32F103RCT6 ADC寄存器与机制",
+      "board": "STM32"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-i2c.md",
+      "topicId": "general-i2c",
+      "title": "I2C通用原理与事务",
+      "board": "通信协议"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103-i2c.md",
+      "topicId": "stm32f103-i2c",
+      "title": "STM32F103RCT6 I2C寄存器与状态机",
+      "board": "STM32"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-spi.md",
+      "topicId": "general-spi",
+      "title": "SPI通用原理与时序",
+      "board": "通信协议"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103-spi.md",
+      "topicId": "stm32f103-spi",
+      "title": "STM32F103RCT6 SPI寄存器与机制",
+      "board": "STM32"
+    }
+  ],
+  "sourceMappings": [
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-001"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-001"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-024"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-v003-005"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-002"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 6,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-002"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-v003-006"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-v003-007"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-v003-008"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-v003-009"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-012"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-v003-011"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-v003-012"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-v003-006"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "60-ADC/00-通用知识/ADC 通用知识 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-033"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-004"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-005"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-005"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-007"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-027"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-034"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-021"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-032"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-027"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-009"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-003"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-010"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-data-ways"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-011"
+        },
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-030"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-033"
+        },
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-012"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-040"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第一层-库函数/ADC 第一层 库函数 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-037"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-038"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-041"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-040"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-001"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-002"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-036"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-010"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-010"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "c-data-and-registers",
+          "questionId": "c-volatile-boundary"
+        },
+        {
+          "topicId": "c-data-and-registers",
+          "questionId": "c-field-update"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-002"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-027"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-002"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-003"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-005"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-011"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 7,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-003"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-003"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-011"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-004"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc-reg-004"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-032"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-009"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-009"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-021"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "60-ADC/第二层-寄存器/ADC 第二层 寄存器 自测题.md",
+      "number": 15,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯外设库结构/函数对应或机械地址记忆不作为本版考查目标；相关机制由独立概念题承载。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-003"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-v003-003"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-001"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-061"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-002"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-008"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-062"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-v003-008"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-v003-009"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-v003-010"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-062"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-036"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-v003-012"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/00-通用知识/I2C 通用知识 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-v003-010"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-011"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-012"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-012"
+        },
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-v003-003"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-054"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-061"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-002"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-094"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-v003-016"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第一层-库函数/I2C 第一层 库函数 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "24lc256",
+          "questionId": "i2c1-029"
+        },
+        {
+          "topicId": "24lc256",
+          "questionId": "i2c1-030"
+        },
+        {
+          "topicId": "24lc256",
+          "questionId": "i2c1-073"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-057"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-001"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-071"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-054"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c-clock-001"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c-clock-002"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-024"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-002"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "70-I2C/第二层-寄存器/I2C 第二层 寄存器 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-024"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi1-019"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 2,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi1-019"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-general-001"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 4,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-general-001"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi1-004"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-v003-005"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-general-002"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-v003-007"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-v003-008"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-v003-006"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-v003-009"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-v003-005"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-general-002"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-017"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/00-通用知识/SPI 通用知识 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-v003-007"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-001"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-002"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-004"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 4,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯外设库结构/函数对应或机械地址记忆不作为本版考查目标；相关机制由独立概念题承载。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-021"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 6,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-general-002"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-022"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-014"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-016"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 10,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-017"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-004"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi1-021"
+        },
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-017"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-022"
+        },
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-014"
+        },
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi2-023"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-026"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第一层-库函数/SPI 第一层 库函数 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-023"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 1,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯外设库结构/函数对应或机械地址记忆不作为本版考查目标；相关机制由独立概念题承载。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 2,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯外设库结构/函数对应或机械地址记忆不作为本版考查目标；相关机制由独立概念题承载。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-006"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-005"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 5,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-004"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 6,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-021"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-012"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-021"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-005"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-013"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-007"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-021"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-012"
+        },
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-009"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-004"
+        }
+      ],
+      "reason": "与已列来源考查同一主要机制，合并到同一题并保留本源文件与编号，不另造同义题。"
+    },
+    {
+      "file": "80-SPI/第二层-寄存器/SPI 第二层 寄存器 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi1-021"
+        },
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi-reg-005"
+        }
+      ],
+      "reason": "提取原考点并去除库接口记忆，补齐型号/条件与回答边界，重复内容指向同一主位置。"
+    }
+  ],
+  "legacyMappings": [
+    {
+      "topicId": "general-adc",
+      "questionId": "adc-general-001",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-001"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc-general-002",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-002"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-001",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-001"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-002",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-003",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-006",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-012",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-012"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-013",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-016",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-022",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-012"
+        },
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-v003-008"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-023",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-024",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-024"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-029",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-030",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-030"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-adc",
+      "questionId": "adc1-033",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc1-033"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c-general-001",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c-general-002",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-002"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-001",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-001"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-002",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-003",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-003"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-004",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-003"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-005",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-003"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-006",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-061"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-007",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-061"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-008",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-008"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-009",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-008"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-010",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-026",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-027",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-028",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-034",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-048"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-036",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-036"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-037",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-036"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-040",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-048"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-041",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-003"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-042",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-061"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-048",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-048"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-049",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-003"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-050",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-056",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-048"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-060",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-061",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-061"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-062",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-062"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-068",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-068"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c1-072",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-072"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c2-013",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c2-019",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c2-037",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c2-041",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-048"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c2-049",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c2-055",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c1-048"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c2-066",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c2-067",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-i2c",
+      "questionId": "i2c2-080",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-spi",
+      "questionId": "spi-general-001",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-general-001"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-spi",
+      "questionId": "spi-general-002",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-general-002"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-spi",
+      "questionId": "spi1-001",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi1-019"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-spi",
+      "questionId": "spi1-002",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi1-019"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-spi",
+      "questionId": "spi1-003",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "general-spi",
+      "questionId": "spi1-004",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi1-004"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "general-spi",
+      "questionId": "spi1-019",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-spi",
+          "questionId": "spi1-019"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-004",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-004"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-005",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-005"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-007",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-007"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-008",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-027"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-009",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-009"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-010",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-010"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-011",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-011"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-014",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-004"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-005"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-015",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-005"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-017",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-007"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-018",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-027"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-019",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-010"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-020",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-010"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-021",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-021"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-025",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-004"
+        },
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-005"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-026",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-032"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-027",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-027"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-028",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-010"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-031",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-007"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-032",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-032"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-034",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-034"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-035",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-036",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-036"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-037",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-037"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-038",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-038"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-039",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-adc",
+          "questionId": "adc-v003-009"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-040",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-040"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-adc",
+      "questionId": "adc1-041",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-adc",
+          "questionId": "adc1-041"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-011",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-011"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-012",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-012"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-013",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-012"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-014",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-011"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-015",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-016",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-017",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-061"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-018",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-019",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-020",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-021",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-022",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-023",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-024",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-024"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-025",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-031",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-032",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-033",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-035",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-071"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-038",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-039",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-024"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-043",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-011"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-012"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-044",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-061"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-045",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-046",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-047",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-024"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-052",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-053",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-024"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-054",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-054"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-055",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-057",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-058",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-059",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-071"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-063",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-064",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-065",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-061"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-066",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-067",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-069",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-094"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-070",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c1-071",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-071"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-001",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-001"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-002",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-002"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-003",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-004",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-006",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-007",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-009",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-012"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-010",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-011",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-012",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-012"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-015",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-016",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-061"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-018",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-020",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-022",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-v003-009"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-024",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-071"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-025",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-011"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-012"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-026",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-027",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-028",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-094"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-071"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-029",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-030",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-070"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-072"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-031",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-099"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-044"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-032",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-033",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-034",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-035",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-024"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-039",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-040",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-042",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-072"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-043",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-044",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-044"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-045",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-046",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-047",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-048",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c-clock-001"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c-clock-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-050",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-002"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-061"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-051",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-052",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-024"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-053",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-054",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-056",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-012"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-057",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-057"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-058",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-059",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-012"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-060",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-060"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-061",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-061"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-062",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-063",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-general-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-064",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-065",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-068",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-024"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-069",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-070",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-070"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-071",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-071"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-072",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-072"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-073",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-061"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-074",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-061"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-075",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-062"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-076",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-076"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-077",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-078",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-079",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-081",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-082",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-083",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-084",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-085",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-069"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-086",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-i2c",
+          "questionId": "i2c-v003-012"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-087",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-002"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-088",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-089",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c1-024"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-076"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-090",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-091",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-070"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-092",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-072"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-093",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-093"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-094",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-094"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-095",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-077"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        },
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-079"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-096",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-096"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-097",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-071"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-098",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-078"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-099",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-i2c",
+          "questionId": "i2c2-099"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-i2c",
+      "questionId": "i2c2-100",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi1-005",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi1-006",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-001"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi1-007",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-021"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi1-008",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-021"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi1-018",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi1-021"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi1-020",
+      "action": "归档",
+      "targets": [],
+      "reason": "纯库接口/结构/源码记忆或完整编程审查任务不纳入本版概念题，保留旧身份历史。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi1-021",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi1-021"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi2-001",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-001"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi2-004",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi1-021"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi2-011",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-012"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi2-012",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-012"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi2-017",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-017"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi2-021",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-021"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi2-022",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-012"
+        }
+      ],
+      "reason": "重复考点合并到列明主位置，旧身份保留历史但不继续参与新练习。"
+    },
+    {
+      "topicId": "stm32f103-spi",
+      "questionId": "spi2-024",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-spi",
+          "questionId": "spi2-024"
+        }
+      ],
+      "reason": "同一主要考点更新条件、口述答案与来源，保留组合身份。"
+    }
+  ],
+  "review": [
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-adc.md",
+      "bugReview": "核对4096/4095模型、参考误差与累加上界；每题前提和答案口径一致，无API记忆；14身份唯一。 已由生产parseQuestionBank解析通过；自有引用目标、身份唯一、芯片题题干型号、无库API标识复核通过。",
+      "maintainabilityReview": "将编码、采样、误差、滤波各保留主考点，答案统一短结论/要点/边界；保留同考点旧身份。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190.pdf",
+        "https://www.st.com/en/microcontrollers-microprocessors/stm32f103rc.html"
+      ],
+      "limits": "静态内容复核；通用原理不等同器件实测，用户技术审阅和硬件验证未完成。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103-adc.md",
+      "bugReview": "核对F103 ADC规则扫描EOC序列含义、无OVR、SWSTART使能门槛、校准上电条件、SMPR/SQR编码、DMA1通道1及长度，21身份无重复，无库API记忆题。；补结果获取三方式的职责/扫描完整性复核。 已由生产parseQuestionBank解析通过；自有引用目标、身份唯一、芯片题题干型号、无库API标识复核通过。",
+      "maintainabilityReview": "合并重复单选/判断为机制题；将地址记忆改成给表计算；每题有型号、条件和回答边界。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190.pdf",
+        "https://www.st.com/en/microcontrollers-microprocessors/stm32f103rc.html",
+        "https://github.com/STMicroelectronics/stm32f1xx-hal-driver/blob/master/Inc/stm32f1xx_ll_adc.h",
+        "https://github.com/STMicroelectronics/stm32f1xx-hal-driver/blob/master/Src/stm32f1xx_hal_adc_ex.c"
+      ],
+      "limits": "未编译、下载或实测ADC；参考答案为有来源的候选内容，实际芯片修订和板级条件仍需核实。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-i2c.md",
+      "bugReview": "核对普通Sm/Fm电气、START/STOP、ACK方向、7位地址编码、9脉冲恢复与例外；17身份唯一。ADC内部通道补充明确仅ADC1可达。 已由生产parseQuestionBank解析通过；自有引用目标、身份唯一、芯片题题干型号、无库API标识复核通过。",
+      "maintainabilityReview": "将旧I2C通用重复选择/判断合并为概念题；器件协议均提供题设，避免当作总线共同规定。",
+      "sources": [
+        "https://www.nxp.com/docs/en/user-guide/UM10204.pdf"
+      ],
+      "limits": "静态协议内容复核，无波形或板级实测；不覆盖UFm/10位寻址等特殊模式。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103-i2c.md",
+      "bugReview": "核对APB/映射、ADDR读取副作用、末字节BTF、单/双/N字节ACK/POS/STOP临界顺序，400k快速DUTY整数取值不超上限，25身份唯一；未输出SPL/HAL函数记忆题。；补OAR1本机地址与目标地址区别。 已由生产parseQuestionBank解析通过；自有引用目标、身份唯一、芯片题题干型号、无库API标识复核通过。",
+      "maintainabilityReview": "旧124题按机制合并为25主考点，不复制同义选择/填空/判断；寄存器地址给表计算，故障题保留证据边界。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190.pdf",
+        "https://www.st.com/resource/en/application_note/an2824-stm32f10xxx-ic-optimized-examples-stmicroelectronics.pdf",
+        "https://www.st.com/en/microcontrollers-microprocessors/stm32f103rc.html"
+      ],
+      "limits": "静态对照AN2824与资料；实际芯片修订、ES0340适用规避、接线和波形未完成实物核验，不声称驱动或硬件验收通过。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-spi.md",
+      "bugReview": "修正源SPI15纯数据256μs与总传输280μs口径，明确8bit/SDR/普通数据线；争用不称必然线与/线或；错误现象不作唯一原因。9身份唯一。 已由生产parseQuestionBank解析通过；自有引用目标、身份唯一、芯片题题干型号、无库API标识复核通过。",
+      "maintainabilityReview": "选择题改口述机制题，合并模式和信号职责重复；CS和占位规则都提供题设，器件命令转交存储主位置。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190.pdf"
+      ],
+      "limits": "静态机制与算术复核，无波形实测；器件协议按明确题设，不宣称所有SPI目标规则相同。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103-spi.md",
+      "bugReview": "核对BR101=64分频=1.125MHz、CR1给表推导0x036C、TXE/RXNE/BSY边界、OVR与MODF/CRCERR不同清除、F1 DFF和访问宽度；13身份唯一。 已由生产parseQuestionBank解析通过；自有引用目标、身份唯一、芯片题题干型号、无库API标识复核通过。",
+      "maintainabilityReview": "将API调用对应改为硬件机制描述并保留同考点旧ID，纯库结构与函数记忆不保留；SPI1时钟与目标Flash就绪分层明确。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190.pdf",
+        "https://www.st.com/en/microcontrollers-microprocessors/stm32f103rc.html"
+      ],
+      "limits": "静态手册与算术复核，未编译或测量SPI波形；不同工作模式/硅版本仍需按具体勘误判断。"
+    }
+  ],
+  "validation": {
+    "productionParser": "6专题99题实际解析全部通过，解析ID/标题与清单一致",
+    "sourceCoverage": 135,
+    "legacyCoverage": 228,
+    "sourceActions": {
+      "改写": 102,
+      "合并": 29,
+      "不纳入": 4
+    },
+    "legacyActions": {
+      "更新": 66,
+      "归档": 162
+    },
+    "ownQuestionCount": 99,
+    "scope": "未修改原始笔记或旧题库；未访问应用/个人数据库；未生成备份；未执行硬件或UI验收。"
+  }
+}

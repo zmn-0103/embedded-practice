@@ -1,0 +1,953 @@
+{
+  "topics": [
+    {
+      "file": "question-banks/releases/v003-20261030/topics/can-general.md",
+      "topicId": "general-can",
+      "title": "CAN 通用原理",
+      "board": "通信协议"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/can-registers.md",
+      "topicId": "stm32f103-can",
+      "title": "STM32F103RCT6 CAN 寄存器与机制",
+      "board": "STM32"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/w25q16-mechanisms.md",
+      "topicId": "w25q16-spi-nor",
+      "title": "W25Q16JV 存储机制",
+      "board": "存储与文件系统"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/24lc256-mechanisms.md",
+      "topicId": "24lc256",
+      "title": "24LC256 存储机制",
+      "board": "存储与文件系统"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/c-data.md",
+      "topicId": "c-data-and-registers",
+      "title": "C 语言数据与表示",
+      "board": "C语言"
+    }
+  ],
+  "sourceMappings": [
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-001"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-002"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-003"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-004"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-005"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-006"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-007"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-008"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-009"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-010"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-011"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-012"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-013"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-014"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/00-通用知识/CAN 通用知识 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-can",
+          "questionId": "can-g-015"
+        }
+      ],
+      "reason": "补齐经典CAN/物理层或计算假设，改为可独立口述题。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-001"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-002"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 3,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅背诵SPL配置结构体成员，不进入库无关题库。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-003"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-004"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-005"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-006"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-007"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-008"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-009"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-010"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-011"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-012"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-013"
+        },
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-009"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第一层-库函数/CAN 第一层 库函数 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-014"
+        }
+      ],
+      "reason": "去除SPL接口名，保留资源/状态机/过滤与错误管理；多考点按目标分开。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-015"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 2,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-015"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-003"
+        },
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-004"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 4,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-004"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-017"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-018"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-016"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-007"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-008"
+        },
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-013"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-019"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-011"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-010"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-020"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-021"
+        },
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-014"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    },
+    {
+      "file": "90-CAN/第二层-寄存器/CAN 第二层 寄存器 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-can",
+          "questionId": "can-r-014"
+        }
+      ],
+      "reason": "合并重复，明确型号与给定字段；纠正16位过滤条目不能拼接扩展ID的原说明。"
+    }
+  ],
+  "legacyMappings": [
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-009",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-022"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-010",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-013"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-011",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-014"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-012",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-022"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-013",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-013"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-014",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-014"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-015",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-016"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-016",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-016"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-017",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-017"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-022",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-022"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-023",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-023"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-024",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-017"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-025",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-023"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi1-026",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-026"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi2-008",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-013"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi2-010",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi1-016"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi2-016",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi2-016"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "w25q16-spi-nor",
+      "questionId": "spi2-023",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "w25q16-spi-nor",
+          "questionId": "spi2-023"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "24lc256",
+      "questionId": "i2c1-029",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "24lc256",
+          "questionId": "i2c1-029"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "24lc256",
+      "questionId": "i2c1-030",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "24lc256",
+          "questionId": "i2c1-030"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "24lc256",
+      "questionId": "i2c1-051",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "24lc256",
+          "questionId": "i2c1-030"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "24lc256",
+      "questionId": "i2c1-073",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "24lc256",
+          "questionId": "i2c1-073"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "c-data-and-registers",
+      "questionId": "uart1-011",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "c-data-and-registers",
+          "questionId": "uart1-030"
+        }
+      ],
+      "reason": "重复/纯编码记忆并入主机制题；原身份历史保留。"
+    },
+    {
+      "topicId": "c-data-and-registers",
+      "questionId": "uart1-012",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "c-data-and-registers",
+          "questionId": "uart1-012"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "c-data-and-registers",
+      "questionId": "uart1-019",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "c-data-and-registers",
+          "questionId": "uart1-019"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    },
+    {
+      "topicId": "c-data-and-registers",
+      "questionId": "uart1-030",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "c-data-and-registers",
+          "questionId": "uart1-030"
+        }
+      ],
+      "reason": "保留同考点身份，补独立题设、口述要点与器件边界。"
+    }
+  ],
+  "review": [
+    {
+      "file": "question-banks/releases/v003-20261030/topics/can-general.md",
+      "bugReview": "逐题检查条件、题答对应、计算/字段与边界；答案只在参考答案分区，源45条去向完整。",
+      "maintainabilityReview": "通用与芯片分开，重复考点合并；不考API/参数背诵，给定编码再推导，保留官方来源。",
+      "sources": [
+        "https://www.ti.com/lit/an/sloa101b/sloa101b.pdf"
+      ],
+      "limits": "AI依据核对，未进行用户逐题审阅、板卡或仪器测量；原库新编内容不冒称实验已验证。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/can-registers.md",
+      "bugReview": "逐题检查条件、题答对应、计算/字段与边界；答案只在参考答案分区，源45条去向完整。",
+      "maintainabilityReview": "通用与芯片分开，重复考点合并；不考API/参数背诵，给定编码再推导，保留官方来源。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190.pdf",
+        "https://github.com/STMicroelectronics/stm32f1xx-hal-driver/blob/master/Src/stm32f1xx_hal_can.c",
+        "https://github.com/STMicroelectronics/cmsis-device-f1/blob/master/Include/stm32f103xe.h"
+      ],
+      "limits": "AI依据核对，未进行用户逐题审阅、板卡或仪器测量；原库新编内容不冒称实验已验证。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/w25q16-mechanisms.md",
+      "bugReview": "检查型号/命令条件、页边界算术、完成阶段与题答一致；删除API记忆和外部经历要求。",
+      "maintainabilityReview": "合并旧同考点，保留主身份与去向，口述答案分层，删除无关手册引用。",
+      "sources": [
+        "https://www.winbond.com/resource-files/w25q16jv%20spi%20revd%2008122016.pdf",
+        "https://github.com/STMicroelectronics/stm32f1xx-hal-driver/blob/master/Src/stm32f1xx_hal_spi.c"
+      ],
+      "limits": "依据核对不代表实物/写入/测量验证，未声称用户已审阅。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/24lc256-mechanisms.md",
+      "bugReview": "检查型号/命令条件、页边界算术、完成阶段与题答一致；删除API记忆和外部经历要求。",
+      "maintainabilityReview": "合并旧同考点，保留主身份与去向，口述答案分层，删除无关手册引用。",
+      "sources": [
+        "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA256-24LC256-24FC256-256K-I2C-Serial-EEPROM-DS20001203.pdf"
+      ],
+      "limits": "依据核对不代表实物/写入/测量验证，未声称用户已审阅。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/c-data.md",
+      "bugReview": "检查型号/命令条件、页边界算术、完成阶段与题答一致；删除API记忆和外部经历要求。",
+      "maintainabilityReview": "合并旧同考点，保留主身份与去向，口述答案分层，删除无关手册引用。",
+      "sources": [
+        "https://wiki.sei.cmu.edu/confluence/display/c/STR31-C.+Guarantee+that+storage+for+strings+has+sufficient+space+for+character+data+and+the+null+terminator",
+        "https://gcc.gnu.org/onlinedocs/gcc/Volatiles.html",
+        "https://wiki.sei.cmu.edu/confluence/display/c/CON02-C.+Do+not+use+volatile+as+a+synchronization+primitive"
+      ],
+      "limits": "依据核对不代表实物/写入/测量验证，未声称用户已审阅。"
+    }
+  ]
+}

@@ -1,0 +1,3949 @@
+{
+  "topics": [
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-gpio.md",
+      "topicId": "general-gpio",
+      "title": "GPIO 通用原理与分析",
+      "board": "MCU与外设原理"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-rcc.md",
+      "topicId": "general-rcc",
+      "title": "时钟、复位与时钟树通用原理",
+      "board": "MCU与外设原理"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-exti.md",
+      "topicId": "general-exti",
+      "title": "中断、事件与并发通用原理",
+      "board": "MCU与外设原理"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103-exti.md",
+      "topicId": "stm32f103-exti",
+      "title": "STM32F103RCT6 EXTI与NVIC机制",
+      "board": "STM32"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103-gpio.md",
+      "topicId": "stm32f103-gpio",
+      "title": "STM32F103RCT6 GPIO机制与寄存器",
+      "board": "STM32"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103c8-rcc.md",
+      "topicId": "stm32f103c8-rcc",
+      "title": "STM32F103C8T6 时钟机制与寄存器",
+      "board": "STM32"
+    }
+  ],
+  "sourceMappings": [
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-001"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-003"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-012"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-011"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 7,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-013"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 10,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-006"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-008"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-009"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-015"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 16,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-010"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 17,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-003"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 18,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 19,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-006"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 20,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-009"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 21,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/00-通用知识/EXTI 通用知识 自测题.md",
+      "number": 22,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-010"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 1,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-008"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-009"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-010"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 5,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL初始化结构体成员。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 6,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL结构体默认值。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 7,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "特定SPL初始化函数分支与覆盖实现。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 8,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "特定SPL反初始化接口影响范围。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-003"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-011"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-020"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 12,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "特定SPL清除接口的等价性，W1C硬件机制已单列。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-006"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 16,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-021"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 17,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-020"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 18,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-019"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 19,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-022"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 20,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-023"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 21,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第一层-库函数/EXTI 第一层 库函数 自测题.md",
+      "number": 22,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-001"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-003"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 4,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 5,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 6,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-006"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 10,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-013"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-014"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 16,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-015"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 17,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-016"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 18,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-017"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 19,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-017"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 20,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-018"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 21,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-019"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 22,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-020"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 23,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-020"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 24,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-exti",
+          "questionId": "exti-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 25,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 26,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-019"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "30-EXTI/第二层-寄存器/EXTI 第二层 寄存器 自测题.md",
+      "number": 27,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-023"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-003"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 4,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-001"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 5,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-001"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 6,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-006"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 7,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-008"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-009"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 10,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-010"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-011"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 16,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-012"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 17,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-001"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 18,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 19,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-013"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 20,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 21,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-001"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 22,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-008"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/00-通用知识/GPIO 通用知识 自测题.md",
+      "number": 23,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-009"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 1,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-003"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 3,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL端口时钟调用名称与参数，硬件门控另有题。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 4,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "特定CMSIS函数职责记忆，改由软件频率与真实频率概念覆盖。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 5,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL初始化结构体成员。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 6,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL初始化函数参数。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 7,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 9,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "旧C编译模式的声明习惯不属于本批外设概念考点。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 10,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-019"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-020"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 13,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL输出模式枚举名称，硬件类型另有题。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-001"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 16,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-010"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 17,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 18,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL置位复位接口，寄存器机制另有题。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 19,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL返回类型与枚举，输入电平原理另有题。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 20,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-016"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 21,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-016"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 22,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-006"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 23,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-013"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 24,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 25,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 26,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-013"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 27,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-013"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 28,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 29,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-014"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 30,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-012"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 31,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 32,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 33,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 34,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 35,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 36,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 37,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第一层-库函数/GPIO 第一层 库函数 自测题.md",
+      "number": 38,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-031"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 2,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-025"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-025"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 4,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-025"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 5,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-025"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 6,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-025"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 7,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-025"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-025"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-026"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-079"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-026"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-026"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-026"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-026"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-027"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 16,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-027"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 17,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-029"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 18,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-030"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 19,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-046"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 20,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-046"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 21,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-046"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 22,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-046"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 23,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-046"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 24,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-051"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 25,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-051"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 26,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-051"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 27,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-037"
+        },
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-058"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 28,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-040"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 29,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-038"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 30,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-043"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 31,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-043"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 32,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-043"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 33,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-043"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 34,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-043"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 35,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-016"
+        },
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-058"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 36,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-035"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 37,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-035"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 38,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-035"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 39,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-036"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 40,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-057"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 41,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-057"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 42,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-030"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 43,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "SPL API与底层寄存器对应记忆，不进入库无关主库。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 44,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "特定库初始化源码实现题，通用字段更新机制已单列。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 45,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-080"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 46,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-044"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 47,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-045"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "10-GPIO/第二层-寄存器/GPIO 第二层 寄存器 自测题.md",
+      "number": 48,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-081"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-001"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 2,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-003"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 5,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-006"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-008"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-009"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 10,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-010"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-011"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-012"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-013"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-014"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-015"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 16,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-016"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 17,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 18,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 19,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-010"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/00-通用知识/RCC 通用知识 自测题.md",
+      "number": 20,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-011"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 1,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-020"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-014"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 4,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-006"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 6,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-003"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 7,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 8,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL时钟函数名称与职责。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 9,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL时钟树配置函数名称。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 10,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 12,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "特定CMSIS启动函数对比，不要求记接口职责。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-007"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-008"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-009"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 16,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-008"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 17,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-010"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 18,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-011"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 19,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-012"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 20,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-013"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 21,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-011"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 22,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-008"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 23,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-014"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第一层-库函数/RCC 第一层 库函数 自测题.md",
+      "number": 24,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-rcc",
+          "questionId": "rcc-general-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-001"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 2,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-002"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-003"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 4,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 5,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-012"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 6,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-005"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 7,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-014"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-010"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-015"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-016"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-011"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-exti",
+          "questionId": "exti-f103-017"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-012"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-017"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-017"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 16,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-012"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 17,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-018"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 18,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-011"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 19,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-019"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 20,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-012"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 21,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 22,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-003"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 23,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-011"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 24,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-014"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 25,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "仅考SPL API和寄存器字段对应。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 26,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-004"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 27,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-010"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    },
+    {
+      "file": "20-RCC/第二层-寄存器/RCC 第二层 寄存器 自测题.md",
+      "number": 28,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103c8-rcc",
+          "questionId": "rcc-f103-015"
+        }
+      ],
+      "reason": "按主要考点归入目标题，补齐独立作答条件、回答要点及易错边界；重复题保留来源后合并。"
+    }
+  ],
+  "legacyMappings": [
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-001",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-003"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-002",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-002"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-003",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-003"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-004",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-005",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-005"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-006",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-001"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-007",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-007"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-008",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-006"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-009",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-010",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-010"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-011",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-012",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-013",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-014",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-015",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-016",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-016"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-017",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-007"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-018",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-019",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-019"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-020",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-020"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-021",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-022",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-023",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-024",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-025"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-025",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-025"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-026",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-026"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-027",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-027"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-028",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-027"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-029",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-029"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-030",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-030"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-031",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-031"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-032",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-016"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-033",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-034",
+      "action": "归档",
+      "targets": [],
+      "reason": "旧题仅考库接口、枚举或旧C声明习惯，不在本轮理论主库保留；历史身份由导入归档机制保留。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-035",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-035"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-036",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-036"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-037",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-037"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-038",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-038"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-039",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-025"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-040",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-040"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-041",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-043"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-042",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-043"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-043",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-043"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-044",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-044"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-045",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-045"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-046",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-046"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-047",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-046"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-048",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-046"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-049",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-046"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-050",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-046"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-051",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-051"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-052",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-051"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-053",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-051"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-054",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-040"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-055",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-040"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-056",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-043"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-057",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-057"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-058",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-058"
+        }
+      ],
+      "reason": "考点与旧题一致，保留原topic_id和question_id，改为库无关题干并补充条件与边界。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-059",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-013"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-060",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-061",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-062",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-013"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-063",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-013"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-064",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-005"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-065",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "stm32f103-gpio",
+          "questionId": "gpio-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-066",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-014"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-067",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-012"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-068",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-012"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-069",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-070",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-071",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-072",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-073",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-074",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-075",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-076",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-077",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "stm32f103-gpio",
+      "questionId": "gpio-078",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "相同或重复考点合并至所列目标，旧题从本专题快照省略并归档；不自动转移旧自评或伪造新题历史。"
+    },
+    {
+      "topicId": "general-gpio",
+      "questionId": "gpio-general-001",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-001"
+        }
+      ],
+      "reason": "保留旧通用题身份，扩展同一原理的条件、要点和边界，不复制同考点。"
+    },
+    {
+      "topicId": "general-gpio",
+      "questionId": "gpio-general-002",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-gpio",
+          "questionId": "gpio-general-002"
+        }
+      ],
+      "reason": "保留旧通用题身份，扩展同一原理的条件、要点和边界，不复制同考点。"
+    }
+  ],
+  "review": [
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-gpio.md",
+      "bugReview": "已检查独立题干、芯片型号、字段与计算口径、旧板卡隐含条件、纯API依赖和来源对应；逐题附核心回答、要点及成立边界。修正EXTI持续低电平误作新边沿、共享IRQ分支必然丢失等过强表述。 实际通过生产parseQuestionBank解析（6专题112题）；源编号252条、旧身份80条全覆盖，所有目标解析成功，检查未发现重复ID、缺分区、型号遗漏或纯库API调用依赖。",
+      "maintainabilityReview": "复用稳定题目身份；重复消抖、字段推导与层间考点合并并保留全部源编号。六专题各为完整快照，无占位题或库函数背诵题。 已进行第二轮可维护性检查：核心结论与要点分开，使用具体边界说明；追踪清单不参与软件导入格式，未新增内容读取代码或依赖。",
+      "sources": [
+        "https://www.ti.com/lit/pdf/scpa070",
+        "https://www.ti.com/document-viewer/lit/html/scea094",
+        "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf"
+      ],
+      "limits": "静态内容适配与部分官方资料/头文件交叉核对；未逐题完成技术验收、未进行编译、下载或硬件测量。RM0008全文下载受限；PM0056与DS5792/DS5319线上资料可读，未据此声称全部细节已核验。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-rcc.md",
+      "bugReview": "已检查独立题干、芯片型号、字段与计算口径、旧板卡隐含条件、纯API依赖和来源对应；逐题附核心回答、要点及成立边界。修正EXTI持续低电平误作新边沿、共享IRQ分支必然丢失等过强表述。 实际通过生产parseQuestionBank解析（6专题112题）；源编号252条、旧身份80条全覆盖，所有目标解析成功，检查未发现重复ID、缺分区、型号遗漏或纯库API调用依赖。",
+      "maintainabilityReview": "复用稳定题目身份；重复消抖、字段推导与层间考点合并并保留全部源编号。六专题各为完整快照，无占位题或库函数背诵题。 已进行第二轮可维护性检查：核心结论与要点分开，使用具体边界说明；追踪清单不参与软件导入格式，未新增内容读取代码或依赖。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf"
+      ],
+      "limits": "静态内容适配与部分官方资料/头文件交叉核对；未逐题完成技术验收、未进行编译、下载或硬件测量。RM0008全文下载受限；PM0056与DS5792/DS5319线上资料可读，未据此声称全部细节已核验。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/general-exti.md",
+      "bugReview": "已检查独立题干、芯片型号、字段与计算口径、旧板卡隐含条件、纯API依赖和来源对应；逐题附核心回答、要点及成立边界。修正EXTI持续低电平误作新边沿、共享IRQ分支必然丢失等过强表述。 实际通过生产parseQuestionBank解析（6专题112题）；源编号252条、旧身份80条全覆盖，所有目标解析成功，检查未发现重复ID、缺分区、型号遗漏或纯库API调用依赖。",
+      "maintainabilityReview": "复用稳定题目身份；重复消抖、字段推导与层间考点合并并保留全部源编号。六专题各为完整快照，无占位题或库函数背诵题。 已进行第二轮可维护性检查：核心结论与要点分开，使用具体边界说明；追踪清单不参与软件导入格式，未新增内容读取代码或依赖。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/programming_manual/cd00228163-stm32f10xxx20xxx21xxxl1xxxx-cortexm3-programming-manual-stmicroelectronics.pdf"
+      ],
+      "limits": "静态内容适配与部分官方资料/头文件交叉核对；未逐题完成技术验收、未进行编译、下载或硬件测量。RM0008全文下载受限；PM0056与DS5792/DS5319线上资料可读，未据此声称全部细节已核验。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103-exti.md",
+      "bugReview": "已检查独立题干、芯片型号、字段与计算口径、旧板卡隐含条件、纯API依赖和来源对应；逐题附核心回答、要点及成立边界。修正EXTI持续低电平误作新边沿、共享IRQ分支必然丢失等过强表述。 实际通过生产parseQuestionBank解析（6专题112题）；源编号252条、旧身份80条全覆盖，所有目标解析成功，检查未发现重复ID、缺分区、型号遗漏或纯库API调用依赖。",
+      "maintainabilityReview": "复用稳定题目身份；重复消抖、字段推导与层间考点合并并保留全部源编号。六专题各为完整快照，无占位题或库函数背诵题。 已进行第二轮可维护性检查：核心结论与要点分开，使用具体边界说明；追踪清单不参与软件导入格式，未新增内容读取代码或依赖。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/programming_manual/cd00228163-stm32f10xxx20xxx21xxxl1xxxx-cortexm3-programming-manual-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf",
+        "https://raw.githubusercontent.com/STMicroelectronics/cmsis-device-f1/master/Include/stm32f103xe.h"
+      ],
+      "limits": "静态内容适配与部分官方资料/头文件交叉核对；未逐题完成技术验收、未进行编译、下载或硬件测量。RM0008全文下载受限；PM0056与DS5792/DS5319线上资料可读，未据此声称全部细节已核验。 官方高密度头文件仅用于交叉核对相关布局、优先级实现、IRQ号与共享F103字段；不据此推断C8T6具有高密度型号全部外设。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103-gpio.md",
+      "bugReview": "已检查独立题干、芯片型号、字段与计算口径、旧板卡隐含条件、纯API依赖和来源对应；逐题附核心回答、要点及成立边界。修正EXTI持续低电平误作新边沿、共享IRQ分支必然丢失等过强表述。 实际通过生产parseQuestionBank解析（6专题112题）；源编号252条、旧身份80条全覆盖，所有目标解析成功，检查未发现重复ID、缺分区、型号遗漏或纯库API调用依赖。",
+      "maintainabilityReview": "复用稳定题目身份；重复消抖、字段推导与层间考点合并并保留全部源编号。六专题各为完整快照，无占位题或库函数背诵题。 已进行第二轮可维护性检查：核心结论与要点分开，使用具体边界说明；追踪清单不参与软件导入格式，未新增内容读取代码或依赖。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf",
+        "https://raw.githubusercontent.com/STMicroelectronics/cmsis-device-f1/master/Include/stm32f103xe.h"
+      ],
+      "limits": "静态内容适配与部分官方资料/头文件交叉核对；未逐题完成技术验收、未进行编译、下载或硬件测量。RM0008全文下载受限；PM0056与DS5792/DS5319线上资料可读，未据此声称全部细节已核验。 官方高密度头文件仅用于交叉核对相关布局、优先级实现、IRQ号与共享F103字段；不据此推断C8T6具有高密度型号全部外设。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/stm32f103c8-rcc.md",
+      "bugReview": "已检查独立题干、芯片型号、字段与计算口径、旧板卡隐含条件、纯API依赖和来源对应；逐题附核心回答、要点及成立边界。修正EXTI持续低电平误作新边沿、共享IRQ分支必然丢失等过强表述。 实际通过生产parseQuestionBank解析（6专题112题）；源编号252条、旧身份80条全覆盖，所有目标解析成功，检查未发现重复ID、缺分区、型号遗漏或纯库API调用依赖。",
+      "maintainabilityReview": "复用稳定题目身份；重复消抖、字段推导与层间考点合并并保留全部源编号。六专题各为完整快照，无占位题或库函数背诵题。 已进行第二轮可维护性检查：核心结论与要点分开，使用具体边界说明；追踪清单不参与软件导入格式，未新增内容读取代码或依赖。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf",
+        "https://raw.githubusercontent.com/STMicroelectronics/cmsis-device-f1/master/Include/stm32f103xe.h"
+      ],
+      "limits": "静态内容适配与部分官方资料/头文件交叉核对；未逐题完成技术验收、未进行编译、下载或硬件测量。RM0008全文下载受限；PM0056与DS5792/DS5319线上资料可读，未据此声称全部细节已核验。 官方高密度头文件仅用于交叉核对相关布局、优先级实现、IRQ号与共享F103字段；不据此推断C8T6具有高密度型号全部外设。"
+    }
+  ]
+}

@@ -1,0 +1,3075 @@
+{
+  "topics": [
+    {
+      "file": "question-banks/releases/v003-20261030/topics/UART通用原理.md",
+      "topicId": "general-uart",
+      "title": "UART 通用原理",
+      "board": "通信协议"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/STM32F103RCT6-USART机制与寄存器.md",
+      "topicId": "m5-trial-uart-level-2",
+      "title": "STM32F103RCT6 USART机制与寄存器",
+      "board": "STM32"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/定时器通用原理.md",
+      "topicId": "general-timer",
+      "title": "定时器通用原理",
+      "board": "MCU与外设原理"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/STM32F103RCT6-定时器机制与寄存器.md",
+      "topicId": "stm32f103-timer",
+      "title": "STM32F103RCT6 定时器机制与寄存器",
+      "board": "STM32"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/DMA通用原理与缓冲管理.md",
+      "topicId": "general-dma",
+      "title": "DMA通用原理与缓冲管理",
+      "board": "MCU与外设原理"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/STM32F103RCT6-DMA机制与寄存器.md",
+      "topicId": "stm32f103-dma",
+      "title": "STM32F103RCT6 DMA机制与寄存器",
+      "board": "STM32"
+    }
+  ],
+  "sourceMappings": [
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-v3-general-001"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-v3-general-002"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-001"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-002"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-001"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 6,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-001"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 7,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-002"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-v3-general-003"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-v3-general-004"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-v3-general-005"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-v3-general-009"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-031"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-013"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-v3-general-006"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-v3-general-007"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 16,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-001"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 17,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-001"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 18,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-031"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 19,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-v3-general-008"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/00-通用知识/UART 通用知识 自测题.md",
+      "number": 20,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-v3-general-009"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-003"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-005"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-001"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 4,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯软件库结构体/函数职责或源码对应记忆，不纳入库无关刷题题库。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 5,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯软件库结构体/函数职责或源码对应记忆，不纳入库无关刷题题库。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 6,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-001"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-035"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-003"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-019"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-021"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 11,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯软件库结构体/函数职责或源码对应记忆，不纳入库无关刷题题库。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-041"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-026"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-031"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-031"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 16,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-002"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 17,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-024"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 18,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-002"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 19,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-003"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 20,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-043"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 21,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-046"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 22,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-047"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第一层-库函数/UART 第一层 库函数 自测题.md",
+      "number": 23,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-045"
+        },
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-025"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-028"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-034"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-007"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-030"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-031"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-004"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-029"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 8,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-029"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 9,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-029"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-041"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-030"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-007"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-006"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 14,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-047"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-019"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 16,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-021"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 17,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-024"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 18,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-005"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 19,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-034"
+        }
+      ],
+      "reason": "按RM0008纠正TC也支持写0清，不能保留“只有读SR再写DR”这一绝对结论。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 20,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-036"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 21,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-037"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 22,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯软件库结构体/函数职责或源码对应记忆，不纳入库无关刷题题库。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 23,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯软件库结构体/函数职责或源码对应记忆，不纳入库无关刷题题库。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 24,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-003"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 25,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-032"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 26,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-007"
+        },
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-047"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 27,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-024"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 28,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-005"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 29,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-006"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "40-UART/第二层-寄存器/UART 第二层 寄存器 自测题.md",
+      "number": 30,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-019"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-001"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-002"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-003"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-004"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-003"
+        }
+      ],
+      "reason": "CKD与PSC分工依赖硬件实现，移入明确型号的芯片主位置，避免伪通用。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-006"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-007"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-008"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-009"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-010"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-011"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-012"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-013"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/00-通用知识/Timer 通用知识 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-014"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-001"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-002"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-003"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-004"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-005"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-006"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-007"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-008"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-009"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-010"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-012"
+        },
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-011"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-timer",
+          "questionId": "timer-general-014"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-013"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-014"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-015"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第一层-库函数/Timer 第一层 库函数 自测题.md",
+      "number": 16,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-016"
+        },
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-011"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 1,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-001"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-017"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-001"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-018"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 5,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-007"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-019"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-020"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-021"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-022"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 10,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-006"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-008"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-023"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-024"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-025"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "50-Timer/第二层-寄存器/Timer 第二层 寄存器 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-timer",
+          "questionId": "timer-reg-026"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-001"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 2,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-001"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-003"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 4,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-004"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-003"
+        }
+      ],
+      "reason": "固定映射和同优先级按通道号仲裁是本型号机制，移入芯片专题。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-004"
+        }
+      ],
+      "reason": "固定映射和同优先级按通道号仲裁是本型号机制，移入芯片专题。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-007"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-008"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-009"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 10,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-010"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-011"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 12,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-012"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 13,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-013"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-014"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/00-通用知识/DMA 通用知识 自测题.md",
+      "number": 15,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-015"
+        },
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-016"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-001"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-002"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 3,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-003"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 4,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-001"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 5,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯软件库结构体/函数职责或源码对应记忆，不纳入库无关刷题题库。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 6,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯软件库结构体/函数职责或源码对应记忆，不纳入库无关刷题题库。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 7,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-010"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-018"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-013"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 10,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-013"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 11,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-014"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-003"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-005"
+        },
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-013"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 14,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-017"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第一层-库函数/DMA 第一层 库函数 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-018"
+        },
+        {
+          "topicId": "general-dma",
+          "questionId": "dma-general-014"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 1,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-005"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 2,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-006"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 3,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-007"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 4,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-006"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 5,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-008"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 6,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-009"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 7,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-010"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 8,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-011"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 9,
+      "action": "改写",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-012"
+        }
+      ],
+      "reason": "保留考点并改为独立口述题，补适用条件/边界，删除库函数依赖。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 10,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-011"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 11,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-014"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 12,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-003"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 13,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-013"
+        }
+      ],
+      "reason": "同考点跨层或跨主题重复，合并到所列主位置；不转移历史掌握状态。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 14,
+      "action": "不纳入",
+      "targets": [],
+      "reason": "纯软件库结构体/函数职责或源码对应记忆，不纳入库无关刷题题库。"
+    },
+    {
+      "file": "85-DMA/第二层-寄存器/DMA 第二层 寄存器 自测题.md",
+      "number": 15,
+      "action": "合并",
+      "targets": [
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-018"
+        },
+        {
+          "topicId": "stm32f103-dma",
+          "questionId": "dma-reg-007"
+        }
+      ],
+      "reason": "分别维护错误/中断链和ES0340的GIF/访问宽度勘误，按本型号与修订核对。"
+    }
+  ],
+  "legacyMappings": [
+    {
+      "topicId": "general-uart",
+      "questionId": "uart-general-001",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-001"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart-general-002",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-002"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-001",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-001"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-002",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-002"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-013",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-013"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-016",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-001"
+        }
+      ],
+      "reason": "重复考点合并到保留的主问题；旧题历史保留，不合并或迁移掌握状态。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-021",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-021"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-022",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-002"
+        }
+      ],
+      "reason": "重复考点合并到保留的主问题；旧题历史保留，不合并或迁移掌握状态。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-025",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-025"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-031",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-031"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-032",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-002"
+        }
+      ],
+      "reason": "重复考点合并到保留的主问题；旧题历史保留，不合并或迁移掌握状态。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-033",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-033"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-036",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-036"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-037",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-037"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-039",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart1-025"
+        }
+      ],
+      "reason": "重复考点合并到保留的主问题；旧题历史保留，不合并或迁移掌握状态。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-040",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-001"
+        }
+      ],
+      "reason": "重复考点合并到保留的主问题；旧题历史保留，不合并或迁移掌握状态。"
+    },
+    {
+      "topicId": "general-uart",
+      "questionId": "uart1-042",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "general-uart",
+          "questionId": "uart-general-002"
+        }
+      ],
+      "reason": "重复考点合并到保留的主问题；旧题历史保留，不合并或迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-019",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-019"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-020",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-019"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-021",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-021"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-022",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-007"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-023",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-007"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-024",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-024"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-025",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "c-data-and-registers",
+          "questionId": "c-volatile-boundary"
+        }
+      ],
+      "reason": "通用C的volatile与原子性考点归C主位置维护；旧UART身份归档，不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-026",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-026"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-027",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-027"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-028",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-028"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-029",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-029"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-030",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-030"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-031",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-031"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-032",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-032"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-033",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-035"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-034",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-034"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-035",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-035"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-036",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-036"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-037",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-037"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-038",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-035"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-039",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-030"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-040",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "c-data-and-registers",
+          "questionId": "c-field-update"
+        }
+      ],
+      "reason": "通用rw位字段与并发考点归C主位置，W1C等特殊寄存器另按手册；旧身份归档，不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-041",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-041"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-042",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-035"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-043",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-043"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-044",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-044"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-045",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-045"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-046",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-046"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-047",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-047"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-048",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-024"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-003",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-003"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-004",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart-v3-reg-001"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-005",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-005"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-009",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-021"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-010",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-024"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-014",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-043"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-015",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-041"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-018",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-021"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-020",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-035"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-023",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-041"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-024",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-045"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-026",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-035"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-027",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-019"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-028",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-021"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-029",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-024"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-034",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-043"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-035",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-046"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-038",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-045"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-041",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-041"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart1-043",
+      "action": "归档",
+      "targets": [],
+      "reason": "独立编程和实机调试任务不纳入本次概念口述题库；核心知识已有独立题，保留旧练习历史。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-001",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-028"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-002",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-030"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-003",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-005"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-004",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-029"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-005",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-030"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-006",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-030"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-007",
+      "action": "更新",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-007"
+        }
+      ],
+      "reason": "同一主要考点保持稳定身份，补型号/条件、口述结构并去库依赖；内容形成新版本，不迁移旧版自评到新版。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-008",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-019"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-009",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-019"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-010",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-021"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-011",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-034"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-012",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-035"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-013",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-026"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-014",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-027"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-015",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-035"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-016",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-028"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-017",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart1-005"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    },
+    {
+      "topicId": "m5-trial-uart-level-2",
+      "questionId": "uart2-018",
+      "action": "归档",
+      "targets": [
+        {
+          "topicId": "m5-trial-uart-level-2",
+          "questionId": "uart2-030"
+        }
+      ],
+      "reason": "旧题为重复考点或库函数记忆，归档旧身份并指向所列硬件主问题；不迁移掌握状态。"
+    }
+  ],
+  "review": [
+    {
+      "file": "question-banks/releases/v003-20261030/topics/UART通用原理.md",
+      "bugReview": "逐题检查独立题设、8N1单位、31字节边界、LF/CRLF恢复和电气条件；修正不能普遍共地或统一容差的表述。 电气差异题补TI原厂收发器数据手册，已核对原厂页面。 六专题118题已用当前生产parseQuestionBank直接只读解析通过，核对题答非空、芯片条件、无Obsidian双链及无专属库调用；不代表硬件或用户技术验收。",
+      "maintainabilityReview": "同考点重复题归并，旧ID保留主要原考点；题答分区和答案层级统一，不引入专属库API。",
+      "sources": [
+        "https://onlinedocs.microchip.com/oxy/GUID-7BB81102-57F6-474D-9BFE-B2AF8EA02A1E-en-US-5/GUID-F84E04E8-3235-4E21-89A9-D1911E9B91DD.html",
+        "https://www.st.com/resource/en/reference_manual/rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf",
+        "https://www.ti.com/lit/ds/symlink/max3232.pdf",
+        "https://www.ti.com/lit/ds/symlink/sn65hvd3082e.pdf"
+      ],
+      "limits": "静态题答复核；未进行用户技术审阅或线路实测。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/STM32F103RCT6-USART机制与寄存器.md",
+      "bugReview": "复核TXE/TC、接收溢出保留数据语义、BRR、校验字长与引脚；纠正TC也支持写0清，不保留“仅唯一序列”说法；逐题明确芯片和实例。 补DR读写通路与最多9位而非固定9有效位；地址明确写全以免歧义。 六专题118题已用当前生产parseQuestionBank直接只读解析通过，核对题答非空、芯片条件、无Obsidian双链及无专属库调用；不代表硬件或用户技术验收。",
+      "maintainabilityReview": "删纯API记忆题，合并判断/选择/解释的重复考点，保留主要旧身份；不要求函数名。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf",
+        "https://www.st.com/resource/en/errata_sheet/es0340-stm32f101xcde-stm32f103xcde-device-errata-stmicroelectronics.pdf"
+      ],
+      "limits": "未进行板上收发、芯片修订核验或用户技术审阅；错误恢复还需结合应用协议。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/定时器通用原理.md",
+      "bugReview": "复核计数端点、单位、PWM、捕获与编码器；修正“至多一次回绕”条件不足、捕获预分频不等于降低时间戳节拍分辨率。 六专题118题已用当前生产parseQuestionBank直接只读解析通过，核对题答非空、芯片条件、无Obsidian双链及无专属库调用；不代表硬件或用户技术验收。",
+      "maintainabilityReview": "给通用题补计数和更新模型，芯片CKD语义移交芯片专题；合并跨层重复公式。",
+      "sources": [
+        "https://www.st.com/resource/en/application_note/an4776-generalpurpose-timer-cookbook-for-stm32-microcontrollers-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/reference_manual/rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf"
+      ],
+      "limits": "公式按题设推导；未测波形、保护电路或编码器。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/STM32F103RCT6-定时器机制与寄存器.md",
+      "bugReview": "逐题核对实例/资源、APB倍频、UG受URS/UDIS影响、SR清除、COM仅带互补输出通道及BDTR适用范围；补ES0340边界。 六专题118题已用当前生产parseQuestionBank直接只读解析通过，核对题答非空、芯片条件、无Obsidian双链及无专属库调用；不代表硬件或用户技术验收。",
+      "maintainabilityReview": "库调用题改硬件目标或合并到相同考点；参数计算条件齐全，通用公式不重复造题。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf",
+        "https://www.st.com/resource/en/errata_sheet/es0340-stm32f101xcde-stm32f103xcde-device-errata-stmicroelectronics.pdf"
+      ],
+      "limits": "未测定时器波形、级联、ADC联动或功率保护；需用户技术审阅和实物修订核对。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/DMA通用原理与缓冲管理.md",
+      "bugReview": "检查项数/字节数、自然对齐、循环回绕与事件合并、栈生命周期和volatile边界；补关中断不停止DMA。 六专题118题已用当前生产parseQuestionBank直接只读解析通过，核对题答非空、芯片条件、无Obsidian双链及无专属库调用；不代表硬件或用户技术验收。",
+      "maintainabilityReview": "固定通道映射和仲裁移交芯片专题，通用题给足控制器行为假设；CPU/DMA搬运流程合并维护。",
+      "sources": [
+        "https://wiki.st.com/stm32mcu/wiki/Getting_started_with_DMA",
+        "https://www.st.com/resource/en/reference_manual/rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf"
+      ],
+      "limits": "静态逻辑与数值推导；未实测DMA负载、实时延迟或缓存平台。"
+    },
+    {
+      "file": "question-banks/releases/v003-20261030/topics/STM32F103RCT6-DMA机制与寄存器.md",
+      "bugReview": "核对请求映射、地址通式、Normal完成EN不自动清、CNDTR禁用后改写、MEM2MEM方向/不支持循环；ES0340原文核实GIF竞态和32位寄存器访问。 六专题118题已用当前生产parseQuestionBank直接只读解析通过，核对题答非空、芯片条件、无Obsidian双链及无专属库调用；不代表硬件或用户技术验收。",
+      "maintainabilityReview": "纯SPL成员/函数实现题不纳入；USART TC/IDLE跨题复用UART主位置；源编号保留映射，不重复维护。",
+      "sources": [
+        "https://www.st.com/resource/en/reference_manual/rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf",
+        "https://www.st.com/resource/en/datasheet/stm32f103rc.pdf",
+        "https://www.st.com/resource/en/errata_sheet/es0340-stm32f101xcde-stm32f103xcde-device-errata-stmicroelectronics.pdf"
+      ],
+      "limits": "未实际运行DMA/ADC/USART联动，无板上负载或芯片修订验证；供用户技术审阅。"
+    }
+  ]
+}

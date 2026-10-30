@@ -1,0 +1,9 @@
+
+Running 2 tests using 1 worker
+
+(node:24652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [packaged] › tests\e2e\v003-bank.spec.ts:70:5 › V0.0.3全量首次及重复导入、板块归属、口述揭晓与重开 (5.6s)
+  ok 2 [packaged] › tests\e2e\v003-bank.spec.ts:114:5 › 旧419题更新保留收藏、历史草稿和固定队列，归档与新题身份明确 (4.5s)
+
+  2 passed (10.5s)

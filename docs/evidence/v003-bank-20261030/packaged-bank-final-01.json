@@ -1,0 +1,208 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/v003-bank.spec.ts",
+      "--project=packaged",
+      "--reporter=list,json",
+      "--output=output/playwright/v003-bank-final-01"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/playwright/v003-bank-final-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/playwright/v003-bank-final-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\output\\playwright\\v003-bank-final-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "v003-bank.spec.ts",
+      "file": "v003-bank.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "V0.0.3全量首次及重复导入、板块归属、口述揭晓与重开",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5568,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T04:10:58.128Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "v003-runtime.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxccmVsZWFzZVxcVjAuMC4zLTIwMjYxMDMwLjFcXHdpbi11bnBhY2tlZFxcZW1iZWRkZWQtcHJhY3RpY2UuZXhlIiwidmVyc2lvbiI6IjAuMC4zIiwicGFja2FnZWQiOnRydWUsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtdHQ0OWRwIn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ce2399e0010165acb70-d239fbb987687a902d5b",
+          "file": "v003-bank.spec.ts",
+          "line": 70,
+          "column": 5
+        },
+        {
+          "title": "旧419题更新保留收藏、历史草稿和固定队列，归档与新题身份明确",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4527,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T04:11:03.724Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "v003-runtime.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxccmVsZWFzZVxcVjAuMC4zLTIwMjYxMDMwLjFcXHdpbi11bnBhY2tlZFxcZW1iZWRkZWQtcHJhY3RpY2UuZXhlIiwidmVyc2lvbiI6IjAuMC4zIiwicGFja2FnZWQiOnRydWUsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtS0JEQTFyIn0="
+                    },
+                    {
+                      "name": "old-records-preserved.json",
+                      "contentType": "application/json",
+                      "body": "eyJzZXNzaW9ucyI6MSwiaXRlbXMiOjc4LCJhcmNoaXZlZCI6Mjc2LCJvbGRTdGF0ZUhhc2giOiIyMGYxMTNkYWM0YmRkMmY4NmIyZTYzNDY5OWI0N2YyMGU0MmNlMzU1Y2RkZmJhZGE2MjJlY2IxN2QxMmJjZGM5In0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ce2399e0010165acb70-0bc79f6dcbcf263c675d",
+          "file": "v003-bank.spec.ts",
+          "line": 114,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-30T04:10:57.757Z",
+    "duration": 10516.096000000001,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
