@@ -1,0 +1,1046 @@
+{
+  "stats": {
+    "startTime": "2026-10-29T16:35:03.016Z",
+    "duration": 154852.90600000002,
+    "expected": 94,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 1 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 2 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 3 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 4 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 5 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 6 备份确认恢复后独立启动保留旧题图收藏草稿和设置",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 1 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 2 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 3 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 4 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 5 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-legacy.spec.ts",
+      "title": "结构 6 备份只迁移暂存副本，旧时间未知且来源不变",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "Windows文件编号精度：普通数值相同的独立备份可预览，精确编号相同的别名仍拒绝",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "备份取消与预览取消保留原状态，空库可导出并预览",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "实际备份写入失败保留已有目标与当前数据，清理暂存后可重试",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "备份拒绝当前库伴随文件及目录链接硬链接别名，目标有旧 WAL 时不发布",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 corrupt，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 foreign-app，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 future，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 missing-table，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 foreign-key，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 metadata，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 image-hash，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 filters，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 body-json，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 palette，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 category-title，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 category-membership，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 category-snapshot，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 plan-options，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "恢复预览拒绝 plan-name，原备份字节及当前数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "在途备份阻止重复操作和切页，正常退出等待已验证备份发布",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "发布失败保留既有备份，来源读取中变化时停止预览且清理副本",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "备份期间其他连接的事务写入保持一致性快照",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "backup-window.spec.ts",
+      "title": "导出保留未知自定义表，同名未知元数据表冲突时停止且保留旧目标",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "category-practice.spec.ts",
+      "title": "分类练习：同事务快照、随机队列、移动/改名/移除后的原请求重试和正常重开保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "category-practice.spec.ts",
+      "title": "分类统计：同题多轮去重、当前版本/收藏与归档交集，题库下方保持同一固定范围",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "category-practice.spec.ts",
+      "title": "分类统计：旧分类的晚到摘要不能覆盖新范围或下方题库",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "category-practice.spec.ts",
+      "title": "分类正常关闭等待在途保存：成功后退出重开保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "category-practice.spec.ts",
+      "title": "分类正常关闭等待在途保存：失败返回窗口并保留原目标",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "database-errors.spec.ts",
+      "title": "损坏文件报错且原文件不变",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "database-errors.spec.ts",
+      "title": "无应用标识的非空库报错且原文件不变",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "database-errors.spec.ts",
+      "title": "不受支持的结构版本报错且原文件不变",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "knowledge.spec.ts",
+      "title": "知识关联真实事务：两端同记录/方向、重复与CAS/幂等、删除不复活、失败回滚和归档分页",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "knowledge.spec.ts",
+      "title": "我的积累按来源合并片段，字面特殊字符/超长笔记有界、当前版本/归档与答案隔离",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "knowledge.spec.ts",
+      "title": "最近关键词保留成功次序的10个，重复提升、查询只读/分页不记词、真实写失败整批回滚",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "library-window.spec.ts",
+      "title": "窗口预览确认、三种图片解码、移动来源后独立进程重开",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "library-window.spec.ts",
+      "title": "窗口取消、错误定位、放弃预览、重载与非法请求保护",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "library-window.spec.ts",
+      "title": "分页与归档视图、窗口更新摘要及相同身份恢复",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "library-window.spec.ts",
+      "title": "受控外链与资源关联、严格 CSP、模板导出",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "library-window.spec.ts",
+      "title": "准备期间关闭应用，真实工作线程退出后正常结束",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "note-favorite.spec.ts",
+      "title": "学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "note-favorite.spec.ts",
+      "title": "学习记录收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "note-favorite.spec.ts",
+      "title": "题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "note-favorite.spec.ts",
+      "title": "题库收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "note-favorite.spec.ts",
+      "title": "普通题库：收藏写入失败恢复编辑，成功刷新保留详情并恢复笔记编辑",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "personal-notes.spec.ts",
+      "title": "个人笔记CAS/幂等/清空修订，重导入和归档不覆盖，学习记录逐行保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "personal-notes.spec.ts",
+      "title": "笔记主动读取，独立作答揭晓前零请求，跨页同步/切题/正常重开保留",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "personal-notes.spec.ts",
+      "title": "真实笔记写失败阻止切题和正常退出，原输入保留并可按原修订重试",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "personal-notes.spec.ts",
+      "title": "笔记已提交但响应丢失，原请求重试不增修订或改时间",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "personal-tags.spec.ts",
+      "title": "个人标签管理在900宽/150%缩放/暗色中可操作且浮层保持在视口内",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "personal-tags.spec.ts",
+      "title": "个人标签可创建/改名/跨专题批量添加移除并用于题库和方案",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "personal-tags.spec.ts",
+      "title": "个人标签已提交但响应丢失时锁定表单，重试原操作不重复创建",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "personal-tags.spec.ts",
+      "title": "个人标签重导入/归档保留，失效成员或真实写失败整批回滚，删除不扩大方案",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "personal-tags.spec.ts",
+      "title": "标签等待真实响应期间先保存笔记并锁定新增输入，刷新移除详情后文字保留",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "planning-ui.spec.ts",
+      "title": "每日目标保存失败/坏回包保留原命令，退出受保护，冲突明确放弃后可沿用历史目标",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "planning-ui.spec.ts",
+      "title": "备考目标界面去重范围，进入原确认再建固定队列，取消/删除目标不改历史",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "planning-ui.spec.ts",
+      "title": "配额界面显示缺额，不替换活动轮，确认完整范围后只练明确题目",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "planning-ui.spec.ts",
+      "title": "日历日期可看活动分页与原轮作答笔记，旧日期零事件有明确说明",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "planning-ui.spec.ts",
+      "title": "目标/日历/配额在900宽150%暗色可操作且中文混排无横向溢出",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "planning.spec.ts",
+      "title": "备考目标容量/重名与失效范围更新有边界，日历轮次独立分页不漏轮",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "planning.spec.ts",
+      "title": "每日目标按成功活动去重，待办重开/同题重复自评/归档不抹事实，旧日期不补造",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "planning.spec.ts",
+      "title": "活动和实际保存同事务回滚，重复回执只计一次，重复揭晓/暂不评价不计自评",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "planning.spec.ts",
+      "title": "备考题单去重、CAS与删除失效，当前版本覆盖/归档分开，超500不截断",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "planning.spec.ts",
+      "title": "配额优先方式/不足/重复与候选只读，确认后固定队列，日历两类分页",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "practice.spec.ts",
+      "title": "顺序队列、草稿、揭晓、自评修改、跳过与独立进程恢复",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "practice.spec.ts",
+      "title": "实际题库更新与归档保留本轮版本和真实作答行，新轮使用最新内容",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "practice.spec.ts",
+      "title": "自评推进、结束回执、草稿和揭晓故障分别整笔回滚并可重试",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "practice.spec.ts",
+      "title": "提交后响应异常先确认持久化；核实不可用时停写，重开按原回执确认",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "practice.spec.ts",
+      "title": "草稿真实 UTF-8 字节边界、非法输入和数据库约束",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "practice.spec.ts",
+      "title": "M1 v2 升级前一致性备份并保留题库、图片、收藏和旧自评，重开不重复升级",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "practice.spec.ts",
+      "title": "v2 备份失败时停止，原数据库逐字节保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "practice.spec.ts",
+      "title": "v2 迁移 DDL 冲突回滚且保留原结构和保护性备份",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "random-practice.spec.ts",
+      "title": "随机 SQL 从全部匹配题取样，数量/交集/同键去重/幂等及失败回滚",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "random-practice.spec.ts",
+      "title": "随机窗口保存/自评后正常关窗，独立进程恢复完整原队列",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "random-practice.spec.ts",
+      "title": "随机窗口保存/自评后真实强制终止，独立进程恢复完整原队列",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "random-practice.spec.ts",
+      "title": "随机本轮不受更新/归档影响，新轮使用最新版本并重新隐藏作答",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "random-practice.spec.ts",
+      "title": "随机开始成功响应丢失后锁定原选择，重试只恢复原轮而不再次抽题",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "updated-practice.spec.ts",
+      "title": "更新筛选跨页勾选与固定题单保持，普通项须明确移除，随机仅含确认题并固定版本",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "updated-practice.spec.ts",
+      "title": "更新复习开始响应丢失后按原请求重试，揭晓已消除待复习也从回执恢复同一轮",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "workbench-errors.spec.ts",
+      "title": "工作台窄窗：详情返回重读失败仍显示错误和重试，隐藏旧结果，原条件与学习数据保持",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "workbench-practice.spec.ts",
+      "title": "工作台练习：保存失败保留输入并阻止返回，六入口保存守卫与主题/缩放不重建输入，恢复后继续原轮",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "workbench-practice.spec.ts",
+      "title": "工作台练习：收藏失败重试原目标且独立于自评，空输入揭晓后才挂载答案/历史和自评，新题重新隔离",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    }
+  ]
+}

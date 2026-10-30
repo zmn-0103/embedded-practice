@@ -1,0 +1,22 @@
+{
+  "status": 0,
+  "signal": null
+}
+{
+  "temporary": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-audit-review-3CpeOI",
+  "schemaVersion": 17,
+  "executable": "E:\\My_Projects\\embedded-practice\\node_modules\\electron\\dist\\electron.exe",
+  "entry": "E:\\My_Projects\\embedded-practice\\out\\main\\practice.js",
+  "results": [
+    "过期元数据运行库可导出并预览；导出结构17、原库元数据16保持",
+    "安装入口仍拒绝元数据版本不一致的备份",
+    "缺少library_meta单例行的备份被拒绝",
+    "未知元数据列阻止导出，原库未知列保持",
+    "SQL失败后读回较新修订返回DRAFT_STALE；后续保存正常",
+    "SQL失败后读回同修订不同文本返回DRAFT_CONFLICT；后续保存正常",
+    "SQL失败后读回相同修订与内容返回成功回执",
+    "SQL失败后读回旧修订保留原写入错误；原请求可重试"
+  ],
+  "passed": 8
+}
+
