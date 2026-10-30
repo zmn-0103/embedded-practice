@@ -15,6 +15,7 @@ test-results/
 *.tsbuildinfo
 
 # 本地配置与诊断；可提交不含秘密的配置示例。
+/.workbuddy/
 .env
 .env.*
 !.env.example
