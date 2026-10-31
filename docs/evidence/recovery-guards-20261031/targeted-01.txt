@@ -1,0 +1,92 @@
+
+Running 11 tests using 1 worker
+
+(node:26584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝活动轮越界且原库与源备份不变 (1.2s)
+  ok  2 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝完成轮位置不等于题数且原库与源备份不变 (1.2s)
+  ok  3 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝结束轮越界且原库与源备份不变 (1.2s)
+  ok  4 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝队列空且原库与源备份不变 (1.2s)
+  ok  5 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝队列有洞且原库与源备份不变 (1.2s)
+  ok  6 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝队列不从零开始且原库与源备份不变 (1.2s)
+  x   7 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：损坏保留现场并从健康备份恢复或安全停止 (2.0s)
+(node:12152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   8 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：更新版本保留现场并从健康备份恢复或安全停止 (2.0s)
+(node:17196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   9 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：保护失败保留现场并从健康备份恢复或安全停止 (2.0s)
+(node:12692) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  10 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：替换失败保留现场并从健康备份恢复或安全停止 (2.0s)
+(node:18080) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 [development] › tests\e2e\recovery-guards.spec.ts:208:5 › 主导航等待笔记保存，失败保留输入与位置，再次点击导航重试成功后切页 (1.3s)
+
+
+  1) [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：损坏保留现场并从健康备份恢复或安全停止 ───────────
+
+    Error: ENOENT: no such file or directory, open 'C:\Users\pc\AppData\Local\Temp\embedded-practice-FPBfwd\practice.sqlite3-wal'
+
+      141 |       await expect(launched.page.getByRole('status').filter({ hasText: '已取消' })).toBeVisible()
+      142 |       expect(
+    > 143 |         await Promise.all(['', '-wal', '-shm'].map((s) => readFile(databasePath + s))),
+          |         ^
+      144 |       ).toEqual(originals)
+      145 |       await choose(current, path)
+      146 |       if (kind === '保护失败') {
+        at E:\My_Projects\embedded-practice\tests\e2e\recovery-guards.spec.ts:143:9
+
+    Error Context: output\recovery-guards-20261031\targeted-01\recovery-guards-仅恢复模式：损坏保留现场并从健康备份恢复或安全停止-development\error-context.md
+
+  2) [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：更新版本保留现场并从健康备份恢复或安全停止 ─────────
+
+    Error: ENOENT: no such file or directory, open 'C:\Users\pc\AppData\Local\Temp\embedded-practice-8qrnM4\practice.sqlite3-wal'
+
+      141 |       await expect(launched.page.getByRole('status').filter({ hasText: '已取消' })).toBeVisible()
+      142 |       expect(
+    > 143 |         await Promise.all(['', '-wal', '-shm'].map((s) => readFile(databasePath + s))),
+          |         ^
+      144 |       ).toEqual(originals)
+      145 |       await choose(current, path)
+      146 |       if (kind === '保护失败') {
+        at E:\My_Projects\embedded-practice\tests\e2e\recovery-guards.spec.ts:143:9
+
+    Error Context: output\recovery-guards-20261031\targeted-01\recovery-guards-仅恢复模式：更新版本保留现场并从健康备份恢复或安全停止-development\error-context.md
+
+  3) [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：保护失败保留现场并从健康备份恢复或安全停止 ─────────
+
+    Error: ENOENT: no such file or directory, open 'C:\Users\pc\AppData\Local\Temp\embedded-practice-pnB0rS\practice.sqlite3-shm'
+
+      141 |       await expect(launched.page.getByRole('status').filter({ hasText: '已取消' })).toBeVisible()
+      142 |       expect(
+    > 143 |         await Promise.all(['', '-wal', '-shm'].map((s) => readFile(databasePath + s))),
+          |         ^
+      144 |       ).toEqual(originals)
+      145 |       await choose(current, path)
+      146 |       if (kind === '保护失败') {
+        at E:\My_Projects\embedded-practice\tests\e2e\recovery-guards.spec.ts:143:9
+
+    Error Context: output\recovery-guards-20261031\targeted-01\recovery-guards-仅恢复模式：保护失败保留现场并从健康备份恢复或安全停止-development\error-context.md
+
+  4) [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：替换失败保留现场并从健康备份恢复或安全停止 ─────────
+
+    Error: ENOENT: no such file or directory, open 'C:\Users\pc\AppData\Local\Temp\embedded-practice-i71Bh6\practice.sqlite3-wal'
+
+      141 |       await expect(launched.page.getByRole('status').filter({ hasText: '已取消' })).toBeVisible()
+      142 |       expect(
+    > 143 |         await Promise.all(['', '-wal', '-shm'].map((s) => readFile(databasePath + s))),
+          |         ^
+      144 |       ).toEqual(originals)
+      145 |       await choose(current, path)
+      146 |       if (kind === '保护失败') {
+        at E:\My_Projects\embedded-practice\tests\e2e\recovery-guards.spec.ts:143:9
+
+    Error Context: output\recovery-guards-20261031\targeted-01\recovery-guards-仅恢复模式：替换失败保留现场并从健康备份恢复或安全停止-development\error-context.md
+
+  4 failed
+    [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：损坏保留现场并从健康备份恢复或安全停止 ────────────
+    [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：更新版本保留现场并从健康备份恢复或安全停止 ──────────
+    [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：保护失败保留现场并从健康备份恢复或安全停止 ──────────
+    [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：替换失败保留现场并从健康备份恢复或安全停止 ──────────
+  7 passed (18.5s)

@@ -4,6 +4,7 @@ import {
   copyFile,
   lstat,
   mkdir,
+  mkdtemp,
   open,
   readFile,
   readdir,
@@ -28,6 +29,7 @@ const journalSchema = z.strictObject({
     .max(4),
 })
 type Journal = z.infer<typeof journalSchema>
+export type DatabaseFileHashes = Journal['originals']
 
 async function fileExists(path: string): Promise<boolean> {
   try {
@@ -52,6 +54,41 @@ async function syncFile(path: string) {
   } finally {
     await handle.close()
   }
+}
+async function databaseFiles(database: string): Promise<DatabaseFileHashes> {
+  const files: DatabaseFileHashes = []
+  for (const suffix of suffixes) {
+    if (await fileExists(database + suffix))
+      files.push({ suffix, hash: await hashBackupFile(database + suffix) })
+  }
+  if (!files.some((file) => file.suffix === '')) throw new Error('当前数据库缺失，停止恢复。')
+  return files
+}
+
+// 仅用于启动打不开数据库、且没有业务连接的故障模式；这是原始现场副本，不能当作健康 SQLite 备份。
+export async function preserveUnavailableDatabase(databasePath: string, backups: string) {
+  const originals = await databaseFiles(databasePath)
+  const directory = await mkdtemp(join(backups, 'before-recovery-'))
+  // 失败也保留已复制的现场；没有完整、同步并核对的副本就绝不替换原文件。
+  for (const file of originals) {
+    const target = join(directory, `practice.sqlite3${file.suffix}`)
+    await copyFile(databasePath + file.suffix, target)
+    await syncFile(target)
+    if ((await hashBackupFile(target)) !== file.hash) throw new Error('故障现场副本校验失败。')
+  }
+  if (JSON.stringify(await databaseFiles(databasePath)) !== JSON.stringify(originals))
+    throw new Error('保护期间原数据库发生变化，停止恢复。')
+  const record = await open(join(directory, 'files.json'), 'wx')
+  try {
+    await record.writeFile(
+      JSON.stringify({ format: 1, kind: 'unavailable-database', originals }),
+      'utf8',
+    )
+    await record.sync()
+  } finally {
+    await record.close()
+  }
+  return { protectionPath: directory, originalHashes: originals }
 }
 async function paths(databasePath: string) {
   if (!isAbsolute(databasePath) || basename(databasePath) !== 'practice.sqlite3')
@@ -186,6 +223,7 @@ export async function replaceDatabase(
   candidatePath: string,
   candidateHash: string,
   reportError: (error: unknown) => void,
+  expectedOriginals?: DatabaseFileHashes,
 ): Promise<void> {
   digest.parse(candidateHash)
   const { database, directory } = await paths(databasePath)
@@ -197,12 +235,9 @@ export async function replaceDatabase(
     await copyFile(candidatePath, candidate)
     await syncFile(candidate)
     if ((await hashBackupFile(candidate)) !== candidateHash) throw new Error('预览副本发生变化。')
-    const originals: Journal['originals'] = []
-    for (const suffix of suffixes) {
-      if (await fileExists(database + suffix))
-        originals.push({ suffix, hash: await hashBackupFile(database + suffix) })
-    }
-    if (!originals.some((file) => file.suffix === '')) throw new Error('当前数据库缺失，停止恢复。')
+    const originals = await databaseFiles(database)
+    if (expectedOriginals && JSON.stringify(originals) !== JSON.stringify(expectedOriginals))
+      throw new Error('保护后的原数据库发生变化，停止替换。')
     const journal: Journal = { format: 1, phase: 'prepared', candidateHash, originals }
     await writeJournal(directory, journal)
     armed = true

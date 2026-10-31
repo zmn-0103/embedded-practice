@@ -1,0 +1,28 @@
+
+Running 21 tests using 1 worker
+
+(node:11168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\database-errors.spec.ts:24:7 › 损坏文件报错且原文件不变 (803ms)
+  ok  2 [development] › tests\e2e\database-errors.spec.ts:24:7 › 无应用标识的非空库报错且原文件不变 (799ms)
+  ok  3 [development] › tests\e2e\database-errors.spec.ts:24:7 › 不受支持的结构版本报错且原文件不变 (813ms)
+  ok  4 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝活动轮越界且原库与源备份不变 (1.3s)
+  ok  5 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝完成轮位置不等于题数且原库与源备份不变 (1.2s)
+  ok  6 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝结束轮越界且原库与源备份不变 (1.2s)
+  ok  7 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝队列空且原库与源备份不变 (1.2s)
+  ok  8 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝队列有洞且原库与源备份不变 (1.2s)
+  ok  9 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝队列不从零开始且原库与源备份不变 (1.2s)
+  ok 10 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：损坏保留现场并从健康备份恢复或安全停止 (3.0s)
+  ok 11 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：更新版本保留现场并从健康备份恢复或安全停止 (3.1s)
+  ok 12 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：空主库保留现场并从健康备份恢复或安全停止 (2.9s)
+  ok 13 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：保护失败保留现场并从健康备份恢复或安全停止 (2.1s)
+  ok 14 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：替换失败保留现场并从健康备份恢复或安全停止 (2.1s)
+  ok 15 [development] › tests\e2e\recovery-guards.spec.ts:209:5 › 主导航等待笔记保存，失败保留输入与位置，再次点击导航重试成功后切页 (1.3s)
+  ok 16 [development] › tests\e2e\review-todos.spec.ts:17:5 › 题目复习安排：明确加入、日期快捷操作和原因自动保存，完成/重开与正常关闭重读 (5.1s)
+  ok 17 [development] › tests\e2e\review-todos.spec.ts:74:5 › 真实待办写失败阻止离开和正常关闭，输入保留；原操作重试及过期冲突明确重读 (3.4s)
+  ok 18 [development] › tests\e2e\review-todos.spec.ts:150:5 › 真实提交后坏响应原操作重试不重复；独立作答前不读取/展示旧原因，揭晓和练习不会完成待办 (3.1s)
+  ok 19 [development] › tests\e2e\review-todos.spec.ts:219:5 › 旧轮复盘编辑当前复习计划，切题先保存，明确完成不改轮次/版本/自评 (1.8s)
+  ok 20 [development] › tests\e2e\review-todos.spec.ts:270:5 › 待办跨页/状态勾选进入原组卷确认，归档阻止开始；当前版本固定且练习不自动完成 (1.8s)
+  ok 21 [development] › tests\e2e\review-todos.spec.ts:320:5 › 复习待办在900宽/150%缩放/暗色中可编辑、筛选且浮层在视口内 (2.4s)
+
+  21 passed (42.5s)

@@ -1,0 +1,132 @@
+{
+  "baseline": "ba218d6a6959f95b5b97046993882193b7dbaf9f",
+  "branch": "codex/fix-backup-recovery-navigation",
+  "entry": "E:/My_Projects/embedded-practice/out/main/index.js",
+  "product": "0.0.3",
+  "buildLabel": "20261030.1-v003-bank",
+  "schema": 17,
+  "source": [
+    {
+      "path": "src/main/database/startup-store.ts",
+      "sha256": "891c51ee83fbc1e63e9be62531b42c8560d3f3b8539e80e08a2b295d721dd571"
+    },
+    {
+      "path": "src/main/index.ts",
+      "sha256": "ede7607891b8d1ed155f8edf304763b168604903f8dc709797648cc3e131170a"
+    },
+    {
+      "path": "src/main/services/backup/backup.ts",
+      "sha256": "e34d40887aaa3c1799bae164cf760958f7822d531306bd26df12f93e5a6d6041"
+    },
+    {
+      "path": "src/main/services/backup/restore-files.ts",
+      "sha256": "52e7831ede8184e0cac641af26b62889e3b2e916032e0c17c100849210a0808a"
+    },
+    {
+      "path": "src/main/services/backup/validate-backup.ts",
+      "sha256": "bbc6f0c63a8c797d1f7a5a41643dd67f0b732ed75c39cecbc8df67a50954ee24"
+    },
+    {
+      "path": "src/renderer/src/App.tsx",
+      "sha256": "56a5e1bddd7837522c697243af31efad10b0326250c5b6d4f713a505b567def1"
+    },
+    {
+      "path": "src/renderer/src/components/BackupPanel.tsx",
+      "sha256": "f7a2daea1ce9ea496ada17f1da48f098739b9450520463383bff314e983b4a49"
+    },
+    {
+      "path": "tests/e2e/recency-performance.spec.ts",
+      "sha256": "5af2e3982005c341ca709d59bbd8fce59669f14045a00cfe81e1f193a19b1a1d"
+    },
+    {
+      "path": "tests/e2e/recovery-guards.spec.ts",
+      "sha256": "d694f8b1c4da67b1be18f7b7aee1b7b5483d67ced4d8fed985a89841e0a49827"
+    },
+    {
+      "path": "tests/e2e/review-todos.spec.ts",
+      "sha256": "702ead9d3b7bc292eb6adca12e514b961b7f377b51d82ef6e5f29bfeaf696c69"
+    },
+    {
+      "path": "tests/unit/restore-transaction.test.ts",
+      "sha256": "f067d9efc4f7f04c91d757fa92bf1b0b8c930521b17b376852b4e5c87a317ae5"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "out\\main\\activity-writer-BF_Abeaq.js",
+      "sha256": "3bd306c1c150190303ce6d93e007a8338908b6ebe7d7fc2d59975c1bc39c94fc"
+    },
+    {
+      "path": "out\\main\\backup.js",
+      "sha256": "a029b4ccbfdb16a5b9905702bcd6e930baa0534a82d4b1cce55d88890f4ae453"
+    },
+    {
+      "path": "out\\main\\image-path-DkzouUrA.js",
+      "sha256": "a4a73f30fa5c837f3327db5fa937991a13d5e02aaf45fdf42bf9313e9a62cf88"
+    },
+    {
+      "path": "out\\main\\import-preparation.js",
+      "sha256": "62cd17a65994acc90783b6d4ceec35f5af47433218a19918b4359d8940cbb729"
+    },
+    {
+      "path": "out\\main\\import-protocol-4tPBef__.js",
+      "sha256": "a66468caae08351b33e7e5f67cd77b4a59c8c1175a3381cc37cd67cd04d578a7"
+    },
+    {
+      "path": "out\\main\\import-worker-Bp_6WgOb.js",
+      "sha256": "6e0e98833bf636e204eec0942c3f04d7165328cc7d1c38175224e5f82fc494a9"
+    },
+    {
+      "path": "out\\main\\index.js",
+      "sha256": "dd73313d121427360afbce55777c8795232ae184f27628bb08a4bfad5f269305"
+    },
+    {
+      "path": "out\\main\\library-import.js",
+      "sha256": "03c77ec0df2059cfff4afa7c62cf071a365d6d5f2f3f9d8a973e4c2fb572a7ec"
+    },
+    {
+      "path": "out\\main\\planning-1XMNgR2n.js",
+      "sha256": "147905422e464b920b6179f2219ef19ffbd963609d985bcfc0bae265ed3c1c8d"
+    },
+    {
+      "path": "out\\main\\practice.js",
+      "sha256": "1004e23a3759cf72a8777c580479968a6c71145cecf2acdbb44778031ecb2a15"
+    },
+    {
+      "path": "out\\main\\question-bank-T0vUgEwC.js",
+      "sha256": "fb34d70d269bc8f9720b77e118ea42bbc26663570a0d9acafbfcba97da61e1a5"
+    },
+    {
+      "path": "out\\main\\read-file-snapshot-CMVe8RMv.js",
+      "sha256": "1f55cc93d283d9825bb3512b6d5402fbe2b50474d3f7aae8564133605ace5462"
+    },
+    {
+      "path": "out\\main\\restore-files.js",
+      "sha256": "296ad0382e1978c4cf4af62311c1b50a9c8df386afb466add9e8b229527c1192"
+    },
+    {
+      "path": "out\\main\\rolldown-runtime-Dbql6lyJ.js",
+      "sha256": "0494dbd5eac31d4e7a2fe7c72fd882986b5f881d3fbca1a83ecaddea02165a84"
+    },
+    {
+      "path": "out\\main\\settings-repository-BVJYFZLq.js",
+      "sha256": "9918f369de337845013125af3668c4660eb36f5c2dd5bbf666a13bf251c5b761"
+    },
+    {
+      "path": "out\\preload\\index.js",
+      "sha256": "40c9435fd8afb6c5e058de1bd765543455b59b6fa9709e127160f4ea43bf9368"
+    },
+    {
+      "path": "out\\renderer\\index.html",
+      "sha256": "0f5bbb95133889ee0ef590c2ca505da03e137875e86990ff3a1c3b4895817db0"
+    },
+    {
+      "path": "out\\renderer\\assets\\index-Cr7x74ZG.js",
+      "sha256": "b29824406c079eaabe24dd7a3315555673abcdbb74656f00ead7bacb9233b8d3"
+    },
+    {
+      "path": "out\\renderer\\assets\\index-scSqw216.css",
+      "sha256": "7ec0bb9da80369e95518267bc64ec9f2a9a32d55081b307e5aa16ea79ed7b4a7"
+    }
+  ]
+}

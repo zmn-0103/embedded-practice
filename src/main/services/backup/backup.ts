@@ -3,7 +3,11 @@ import { copyFile, lstat, mkdir, mkdtemp, realpath, rename, rm, stat } from 'nod
 import { basename, dirname, isAbsolute, join, relative, sep } from 'node:path'
 import Database from 'better-sqlite3'
 import type { BackupFile, BackupPreview } from '../../../shared/contracts/backup'
-import { hashBackupFile } from './restore-files'
+import {
+  hashBackupFile,
+  preserveUnavailableDatabase,
+  type DatabaseFileHashes,
+} from './restore-files'
 import { APPLICATION_ID, openPracticeDatabase, SCHEMA_VERSION } from '../../database/open-database'
 import {
   assertBackupManifestShape,
@@ -21,15 +25,18 @@ function inside(directory: string, path: string): boolean {
   return part === '' || (!isAbsolute(part) && part !== '..' && !part.startsWith(`..${sep}`))
 }
 
-// 此连接只读当前库；导出使用 SQLite backup，预览只处理独立副本。
+// 正常模式只读当前库；仅恢复模式不打开故障库。预览始终只处理独立副本。
 export async function openBackupService(
   databasePath: string,
   appVersion: string,
   reportError: (error: unknown) => void,
+  recoveryOnly = false,
 ) {
   if (!isAbsolute(databasePath)) throw new Error('备份服务需要绝对数据库路径。')
   const dataDirectory = await realpath(dirname(databasePath))
-  const source = new Database(databasePath, { readonly: true, fileMustExist: true })
+  const source = recoveryOnly
+    ? undefined
+    : new Database(databasePath, { readonly: true, fileMustExist: true })
   let closed = false
   let active: Promise<unknown> | undefined
   let closing: Promise<void> | undefined
@@ -104,6 +111,8 @@ export async function openBackupService(
     const directory = await mkdtemp(join(dirname(destination), '.embedded-practice-export-'))
     const staged = join(directory, 'backup.sqlite3')
     try {
+      if (!source)
+        throw new BackupFault('DATABASE_UNAVAILABLE', '当前处于仅恢复模式，无法导出健康备份。')
       if (
         source.pragma('application_id', { simple: true }) !== APPLICATION_ID ||
         source.pragma('user_version', { simple: true }) !== SCHEMA_VERSION
@@ -234,13 +243,23 @@ export async function openBackupService(
             relative(backups, await realpath(backups)) !== ''
           )
             throw new BackupFault('FILE_ERROR', '保护性备份目录异常，停止恢复。')
-          const protection = await writeSnapshot(
-            join(backups, `before-restore-${randomUUID()}.sqlite3`),
-          )
+          let protectionPath: string
+          let originalHashes: DatabaseFileHashes | undefined
+          if (recoveryOnly) {
+            const protection = await preserveUnavailableDatabase(databasePath, backups)
+            protectionPath = protection.protectionPath
+            originalHashes = protection.originalHashes
+          } else {
+            const protection = await writeSnapshot(
+              join(backups, `before-restore-${randomUUID()}.sqlite3`),
+            )
+            protectionPath = protection.filePath
+          }
           return {
             candidatePath: selected.path,
             candidateHash: selected.hash,
-            protectionPath: protection.filePath,
+            protectionPath,
+            originalHashes,
             release: () => removeStage(selected.directory),
           }
         } catch (error) {
@@ -253,7 +272,7 @@ export async function openBackupService(
       closed = true
       closing ??= (async () => {
         await active?.catch(() => {})
-        source.close()
+        source?.close()
         await discardPreview()
       })()
       return closing

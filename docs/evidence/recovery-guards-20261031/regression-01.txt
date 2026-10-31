@@ -1,0 +1,110 @@
+
+Running 71 tests using 1 worker
+
+(node:3568) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 1 备份确认恢复后独立启动保留旧题图收藏草稿和设置 (1.9s)
+  ok  2 [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 2 备份确认恢复后独立启动保留旧题图收藏草稿和设置 (2.1s)
+  ok  3 [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 3 备份确认恢复后独立启动保留旧题图收藏草稿和设置 (2.0s)
+  ok  4 [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 4 备份确认恢复后独立启动保留旧题图收藏草稿和设置 (2.0s)
+  ok  5 [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 5 备份确认恢复后独立启动保留旧题图收藏草稿和设置 (2.1s)
+  ok  6 [development] › tests\e2e\backup-legacy.spec.ts:89:7 › 结构 6 备份确认恢复后独立启动保留旧题图收藏草稿和设置 (2.2s)
+  ok  7 [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 1 备份只迁移暂存副本，旧时间未知且来源不变 (1.1s)
+  ok  8 [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 2 备份只迁移暂存副本，旧时间未知且来源不变 (1.2s)
+  ok  9 [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 3 备份只迁移暂存副本，旧时间未知且来源不变 (1.2s)
+  ok 10 [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 4 备份只迁移暂存副本，旧时间未知且来源不变 (1.1s)
+  ok 11 [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 5 备份只迁移暂存副本，旧时间未知且来源不变 (1.3s)
+  ok 12 [development] › tests\e2e\backup-legacy.spec.ts:178:7 › 结构 6 备份只迁移暂存副本，旧时间未知且来源不变 (1.2s)
+  ok 13 [development] › tests\e2e\backup-window.spec.ts:127:5 › Windows文件编号精度：普通数值相同的独立备份可预览，精确编号相同的别名仍拒绝 (1.2s)
+  ok 14 [development] › tests\e2e\backup-window.spec.ts:196:5 › 完整备份导出覆盖版本图片历史草稿收藏固定随机队列条件和设置，预览不改原库 (4.0s)
+  ok 15 [development] › tests\e2e\backup-window.spec.ts:309:5 › 备份取消与预览取消保留原状态，空库可导出并预览 (1.0s)
+  ok 16 [development] › tests\e2e\backup-window.spec.ts:362:5 › 实际备份写入失败保留已有目标与当前数据，清理暂存后可重试 (1.3s)
+  ok 17 [development] › tests\e2e\backup-window.spec.ts:405:5 › 备份拒绝当前库伴随文件及目录链接硬链接别名，目标有旧 WAL 时不发布 (873ms)
+  ok 18 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 corrupt，原备份字节及当前数据保持 (1.3s)
+  ok 19 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 foreign-app，原备份字节及当前数据保持 (1.3s)
+  ok 20 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 future，原备份字节及当前数据保持 (1.3s)
+  ok 21 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 missing-table，原备份字节及当前数据保持 (1.5s)
+  ok 22 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 foreign-key，原备份字节及当前数据保持 (1.4s)
+  ok 23 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 metadata，原备份字节及当前数据保持 (1.4s)
+  ok 24 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 image-hash，原备份字节及当前数据保持 (1.4s)
+  ok 25 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 filters，原备份字节及当前数据保持 (1.5s)
+  ok 26 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 body-json，原备份字节及当前数据保持 (1.6s)
+  ok 27 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 palette，原备份字节及当前数据保持 (1.3s)
+  ok 28 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 category-title，原备份字节及当前数据保持 (1.3s)
+  ok 29 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 category-membership，原备份字节及当前数据保持 (1.3s)
+  ok 30 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 category-snapshot，原备份字节及当前数据保持 (1.3s)
+  ok 31 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 plan-options，原备份字节及当前数据保持 (1.3s)
+  ok 32 [development] › tests\e2e\backup-window.spec.ts:471:7 › 恢复预览拒绝 plan-name，原备份字节及当前数据保持 (1.4s)
+  ok 33 [development] › tests\e2e\backup-window.spec.ts:552:5 › 在途备份阻止重复操作和切页，正常退出等待已验证备份发布 (2.0s)
+  ok 34 [development] › tests\e2e\backup-window.spec.ts:605:5 › 发布失败保留既有备份，来源读取中变化时停止预览且清理副本 (1.2s)
+  ok 35 [development] › tests\e2e\backup-window.spec.ts:653:5 › 备份期间其他连接的事务写入保持一致性快照 (1.1s)
+  ok 36 [development] › tests\e2e\backup-window.spec.ts:713:5 › 导出保留未知自定义表，同名未知元数据表冲突时停止且保留旧目标 (937ms)
+  ok 37 [development] › tests\e2e\note-favorite.spec.ts:30:7 › 学习记录收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入 (1.5s)
+  ok 38 [development] › tests\e2e\note-favorite.spec.ts:110:7 › 学习记录收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续 (1.5s)
+  ok 39 [development] › tests\e2e\note-favorite.spec.ts:30:7 › 题库收藏：保存已有输入后锁住收藏等待与刷新全段，不能接受将被卸载的新输入 (1.7s)
+  ok 40 [development] › tests\e2e\note-favorite.spec.ts:110:7 › 题库收藏：真实笔记保存失败保留编辑器和输入，不发送取消收藏，原保存重试后可继续 (1.4s)
+  ok 41 [development] › tests\e2e\note-favorite.spec.ts:171:5 › 普通题库：收藏写入失败恢复编辑，成功刷新保留详情并恢复笔记编辑 (1.3s)
+  ok 42 [development] › tests\e2e\personal-notes.spec.ts:14:5 › 个人笔记CAS/幂等/清空修订，重导入和归档不覆盖，学习记录逐行保持 (1.3s)
+  ok 43 [development] › tests\e2e\personal-notes.spec.ts:68:5 › 笔记主动读取，独立作答揭晓前零请求，跨页同步/切题/正常重开保留 (4.1s)
+  ok 44 [development] › tests\e2e\personal-notes.spec.ts:146:5 › 真实笔记写失败阻止切题和正常退出，原输入保留并可按原修订重试 (1.4s)
+  ok 45 [development] › tests\e2e\personal-notes.spec.ts:204:5 › 笔记已提交但响应丢失，原请求重试不增修订或改时间 (1.2s)
+  ok 46 [development] › tests\e2e\practice-recency.spec.ts:34:5 › 当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序 (1.3s)
+  ok 47 [development] › tests\e2e\practice-recency.spec.ts:180:5 › 最久优先先限10题再随机，固定队列不随历史变化/重新打开重排；方案兼容显式默认值 (2.0s)
+  ok 48 [development] › tests\e2e\practice-recency.spec.ts:285:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 (2.1s)
+  ok 49 [development] › tests\e2e\restore-window.spec.ts:223:5 › 全新目录从完整预览副本恢复全部业务数据并真实自动重启，源文件变化不影响确认内容 (5.9s)
+  ok 50 [development] › tests\e2e\restore-window.spec.ts:441:7 › 恢复准备 protect 时不替换原库，窗口仍可继续保存 (2.1s)
+  ok 51 [development] › tests\e2e\restore-window.spec.ts:441:7 › 恢复准备 save 时不替换原库，窗口仍可继续保存 (2.3s)
+  ok 52 [development] › tests\e2e\restore-window.spec.ts:441:7 › 恢复准备 tampered 时不替换原库，窗口仍可继续保存 (2.1s)
+  ok 53 [development] › tests\e2e\restore-window.spec.ts:441:7 › 恢复准备 cancel 时不替换原库，窗口仍可继续保存 (2.2s)
+  ok 54 [development] › tests\e2e\restore-window.spec.ts:504:7 › 恢复 publish 后独立进程保留可恢复数据且不创建空库 (2.2s)
+  ok 55 [development] › tests\e2e\restore-window.spec.ts:504:7 › 恢复 close 后独立进程保留可恢复数据且不创建空库 (2.2s)
+  ok 56 [development] › tests\e2e\restore-window.spec.ts:504:7 › 恢复 rollback 后独立进程保留可恢复数据且不创建空库 (2.1s)
+  ok 57 [development] › tests\e2e\restore-window.spec.ts:504:7 › 恢复 crash-moved 后独立进程保留可恢复数据且不创建空库 (2.1s)
+  ok 58 [development] › tests\e2e\restore-window.spec.ts:504:7 › 恢复 crash-installed 后独立进程保留可恢复数据且不创建空库 (2.1s)
+  ok 59 [development] › tests\e2e\restore-window.spec.ts:504:7 › 恢复 crash-committed 后独立进程保留可恢复数据且不创建空库 (2.1s)
+  ok 60 [development] › tests\e2e\restore-window.spec.ts:563:5 › 恢复文件事务保留并回退全部数据库伴随文件，未知事务现场不清理 (959ms)
+  ok 61 [development] › tests\e2e\restore-window.spec.ts:656:5 › 恢复前提交未到自动保存时间的草稿，保护备份包括最终输入且暂停期间拒绝业务写入 (2.2s)
+  ok 62 [development] › tests\e2e\restore-window.spec.ts:741:5 › 保护性备份可直接从本数据目录选择并恢复，来源文件不被覆盖 (3.4s)
+  ok 63 [development] › tests\e2e\review-todos.spec.ts:17:5 › 题目复习安排：明确加入、日期快捷操作和原因自动保存，完成/重开与正常关闭重读 (5.1s)
+  x  64 [development] › tests\e2e\review-todos.spec.ts:74:5 › 真实待办写失败阻止离开和正常关闭，输入保留；原操作重试及过期冲突明确重读 (12.1s)
+(node:15224) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 65 [development] › tests\e2e\review-todos.spec.ts:145:5 › 真实提交后坏响应原操作重试不重复；独立作答前不读取/展示旧原因，揭晓和练习不会完成待办 (3.1s)
+  ok 66 [development] › tests\e2e\review-todos.spec.ts:214:5 › 旧轮复盘编辑当前复习计划，切题先保存，明确完成不改轮次/版本/自评 (1.7s)
+  ok 67 [development] › tests\e2e\review-todos.spec.ts:265:5 › 待办跨页/状态勾选进入原组卷确认，归档阻止开始；当前版本固定且练习不自动完成 (1.8s)
+  ok 68 [development] › tests\e2e\review-todos.spec.ts:315:5 › 复习待办在900宽/150%缩放/暗色中可编辑、筛选且浮层在视口内 (2.3s)
+  ok 69 [development] › tests\e2e\themes-backup.spec.ts:21:5 › 完整备份将两个主题/当前外观/布局偏好/旧队列恢复到独立空目录，坏主题备份不覆盖数据 (3.9s)
+  ok 70 [development] › tests\e2e\themes-database.spec.ts:8:7 › 主题数据库/transactions：真实版本/容量/故障回滚与原学习数据保护 (1.2s)
+  ok 71 [development] › tests\e2e\themes-database.spec.ts:8:7 › 主题数据库/capacity：真实版本/容量/故障回滚与原学习数据保护 (1.2s)
+
+
+  1) [development] › tests\e2e\review-todos.spec.ts:74:5 › 真实待办写失败阻止离开和正常关闭，输入保留；原操作重试及过期冲突明确重读 ────
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByRole('navigation', { name: '主要页面', exact: true }).getByRole('link', { name: '学习总览', exact: true })
+    Expected: "true"
+    Received: "false"
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveAttribute" getByRole('navigation', { name: '主要页面', exact: true }).getByRole('link', { name: '学习总览', exact: true }) with timeout 10000ms
+      - waiting for getByRole('navigation', { name: '主要页面', exact: true }).getByRole('link', { name: '学习总览', exact: true })
+        23 × locator resolved to <a title="学习总览" href="#overview" aria-label="学习总览" aria-disabled="false">…</a>
+           - unexpected value "false"
+
+
+      101 |         .getByRole('navigation', { name: '主要页面', exact: true })
+      102 |         .getByRole('link', { name: '学习总览', exact: true }),
+    > 103 |     ).toHaveAttribute('aria-disabled', 'true')
+          |       ^
+      104 |     await application.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0]!.close())
+      105 |     await expect
+      106 |       .poll(() => application.evaluate(() => Reflect.get(globalThis, '__reviewCloseRejected')))
+        at E:\My_Projects\embedded-practice\tests\e2e\review-todos.spec.ts:103:7
+
+    Error Context: output\recovery-guards-20261031\regression-01\review-todos-真实待办写失败阻止离开和正常关闭，输入保留；原操作重试及过期冲突明确重读-development\error-context.md
+
+  1 failed
+    [development] › tests\e2e\review-todos.spec.ts:74:5 › 真实待办写失败阻止离开和正常关闭，输入保留；原操作重试及过期冲突明确重读 ─────
+  70 passed (2.4m)

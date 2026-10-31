@@ -6,6 +6,7 @@ import { PracticeWorkspace } from './components/PracticeWorkspace'
 import { LearningRecords } from './components/LearningRecords'
 import { SettingsPane } from './components/SettingsPane'
 import { DataLocationsPanel } from './components/DataLocationsPanel'
+import { BackupPanel } from './components/BackupPanel'
 import { useAppearance } from './useAppearance'
 import { AppearanceSwitcher } from './components/AppearanceSwitcher'
 import { LearningOverview } from './components/LearningOverview'
@@ -41,6 +42,7 @@ export function App() {
   const [dataOperationBusy, setDataBusy] = useState(false)
   const notes = useNoteSaveCoordinator()
   const dataBusy = dataOperationBusy || notes.blocked
+  const navigationBusy = dataOperationBusy || notes.flushing
   const learningDataBusyRef = useRef(false)
   function reportLearningDataBusy(value: boolean) {
     learningDataBusyRef.current = value
@@ -173,13 +175,16 @@ export function App() {
             <a
               href={`#${target}`}
               key={target}
-              aria-disabled={state.status !== 'ready' || appearance.busy || dataBusy || practicing}
+              aria-disabled={
+                state.status !== 'ready' || appearance.busy || navigationBusy || practicing
+              }
               aria-label={label}
               title={label}
               aria-current={page === target ? 'page' : undefined}
               onClick={(event) => {
                 event.preventDefault()
-                if (state.status !== 'ready' || appearance.busy || dataBusy || practicing) return
+                if (state.status !== 'ready' || appearance.busy || navigationBusy || practicing)
+                  return
                 changePage(target)
               }}
             >
@@ -422,6 +427,7 @@ export function App() {
             {state.status === 'error' && (
               <button
                 type="button"
+                disabled={dataBusy}
                 onClick={() => {
                   setState({ status: 'loading' })
                   setAttempt((previous) => previous + 1)
@@ -432,7 +438,10 @@ export function App() {
             )}
           </section>
           {state.status === 'error' && (
-            <DataLocationsPanel disabled={dataBusy} onBusyChange={setDataBusy} />
+            <>
+              <BackupPanel recoveryOnly disabled={dataBusy} onBusyChange={setDataBusy} />
+              <DataLocationsPanel disabled={dataBusy} onBusyChange={setDataBusy} />
+            </>
           )}
         </main>
 

@@ -1,0 +1,103 @@
+
+Running 3 tests using 1 worker
+
+(node:27164) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝活动轮越界且原库与源备份不变 (2.9s)
+(node:2268) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  2 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：损坏保留现场并从健康备份恢复或安全停止 (12.5s)
+(node:27604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  3 [development] › tests\e2e\recovery-guards.spec.ts:208:5 › 主导航等待笔记保存，失败保留输入与位置，再次点击导航重试成功后切页 (31.6s)
+
+
+  1) [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝活动轮越界且原库与源备份不变 ───────────────────
+
+    Error: expect(received).toMatchObject(expected)
+
+    - Expected  - 4
+    + Received  + 1
+
+      Object {
+    -   "error": Object {
+    -     "code": "INVALID_BACKUP",
+    -   },
+    -   "ok": false,
+    +   "ok": true,
+      }
+
+      82 |       const bytes = await readFile(path)
+      83 |       await choose(application, path)
+    > 84 |       expect(await backup(page, 'preview')).toMatchObject({
+         |                                             ^
+      85 |         ok: false,
+      86 |         error: { code: 'INVALID_BACKUP' },
+      87 |       })
+        at E:\My_Projects\embedded-practice\tests\e2e\recovery-guards.spec.ts:84:45
+
+    Error Context: output\recovery-guards-20261031\baseline\recovery-guards-备份拒绝活动轮越界且原库与源备份不变-development\error-context.md
+
+  2) [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：损坏保留现场并从健康备份恢复或安全停止 ───────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: '选择备份并预览', exact: true })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: '选择备份并预览', exact: true }) with timeout 10000ms
+      - waiting for getByRole('button', { name: '选择备份并预览', exact: true })
+
+
+      128 |       await expect(
+      129 |         launched.page.getByRole('button', { name: '选择备份并预览', exact: true }),
+    > 130 |       ).toBeVisible()
+          |         ^
+      131 |       await choose(current, path, false)
+      132 |       await launched.page.getByRole('button', { name: '选择备份并预览', exact: true }).click()
+      133 |       await expect(
+        at E:\My_Projects\embedded-practice\tests\e2e\recovery-guards.spec.ts:130:9
+
+    Error Context: output\recovery-guards-20261031\baseline\recovery-guards-仅恢复模式：损坏保留现场并从健康备份恢复或安全停止-development\error-context.md
+
+  3) [development] › tests\e2e\recovery-guards.spec.ts:208:5 › 主导航等待笔记保存，失败保留输入与位置，再次点击导航重试成功后切页 ───
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: locator.click: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('navigation', { name: '主要页面' }).getByRole('link', { name: '学习记录', exact: true })
+        - locator resolved to <a title="学习记录" href="#records" aria-label="学习记录" aria-disabled="true">…</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        58 × waiting for element to be visible, enabled and stable
+           - element is not enabled
+         - retrying click action
+           - waiting 500ms
+
+
+      225 |       .getByRole('navigation', { name: '主要页面' })
+      226 |       .getByRole('link', { name: '学习记录', exact: true })
+    > 227 |     await link.click()
+          |                ^
+      228 |     await expect(note.getByRole('alert')).toBeVisible()
+      229 |     await expect(input).toHaveValue('导航必须先保存的输入')
+      230 |     await expect(page.locator('.app-shell')).toHaveAttribute('data-page', 'library')
+        at E:\My_Projects\embedded-practice\tests\e2e\recovery-guards.spec.ts:227:16
+
+    Error Context: output\recovery-guards-20261031\baseline\recovery-guards-主导航等待笔记保存，失败保留输入与位置，再次点击导航重试成功后切页-development\error-context.md
+
+  3 failed
+    [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝活动轮越界且原库与源备份不变 ────────────────────
+    [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：损坏保留现场并从健康备份恢复或安全停止 ────────────
+    [development] › tests\e2e\recovery-guards.spec.ts:208:5 › 主导航等待笔记保存，失败保留输入与位置，再次点击导航重试成功后切页 ────

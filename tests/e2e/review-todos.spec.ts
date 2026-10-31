@@ -96,11 +96,14 @@ test('真实待办写失败阻止离开和正常关闭，输入保留；原操�
     await text.fill('保存失败仍须保留的原因')
     await expect(editor.getByRole('alert')).toBeVisible()
     await expect(text).toHaveValue('保存失败仍须保留的原因')
-    await expect(
-      page
-        .getByRole('navigation', { name: '主要页面', exact: true })
-        .getByRole('link', { name: '学习总览', exact: true }),
-    ).toHaveAttribute('aria-disabled', 'true')
+    const navigation = page
+      .getByRole('navigation', { name: '主要页面', exact: true })
+      .getByRole('link', { name: '学习总览', exact: true })
+    await expect(navigation).toHaveAttribute('aria-disabled', 'false')
+    await navigation.click()
+    await expect(editor.getByRole('alert')).toBeVisible()
+    await expect(text).toHaveValue('保存失败仍须保留的原因')
+    await expect(page.locator('.app-shell')).toHaveAttribute('data-page', 'library')
     await application.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0]!.close())
     await expect
       .poll(() => application.evaluate(() => Reflect.get(globalThis, '__reviewCloseRejected')))
@@ -109,7 +112,9 @@ test('真实待办写失败阻止离开和正常关闭，输入保留；原操�
     expect(await readReview(page)).toMatchObject({ ok: true, value: { revision: 1 } })
     await captureHistory(application, page, info, 'review-save-failed.png')
     withHistoryDatabase(testDataDirectory, (db) => db.exec('DROP TRIGGER fail_review_ui'), false)
-    await editor.getByRole('button', { name: '重试原待办保存', exact: true }).click()
+    await navigation.click()
+    await expect(page.locator('.app-shell')).toHaveAttribute('data-page', 'overview')
+    await openPage(page, '题库')
     await expect(text).toBeEditable()
     expect(await readReview(page)).toMatchObject({
       ok: true,

@@ -5,9 +5,11 @@ import { backupPreviewSchema } from '../../../shared/contracts/backup'
 export function BackupPanel({
   disabled,
   onBusyChange,
+  recoveryOnly = false,
 }: {
   disabled: boolean
   onBusyChange: (busy: boolean) => void
+  recoveryOnly?: boolean
 }) {
   const running = useRef(false)
   const [busy, setBusy] = useState<'export' | 'preview' | 'restore'>()
@@ -93,20 +95,34 @@ export function BackupPanel({
   return (
     <section id="backup-section" tabIndex={-1} aria-label="完整备份与恢复预览">
       <h3>备份与恢复</h3>
-      <p>
-        完整备份包含题库、历史版本、图片、学习记录、个人笔记、固定题单、收藏、练习进度、已安装主题及显示布局设置。
-        备份仅包含已经保存的数据；调整显示后请先保存，再导出。
-      </p>
+      {recoveryOnly ? (
+        <p role="note">
+          本地数据暂不可用。请选择健康备份进行恢复；原数据会先保留，保护失败时停止恢复。故障现场副本用于排查，不能作为健康备份直接使用。
+        </p>
+      ) : (
+        <p>
+          完整备份包含题库、历史版本、图片、学习记录、个人笔记、固定题单、收藏、练习进度、已安装主题及显示布局设置。
+          备份仅包含已经保存的数据；调整显示后请先保存，再导出。
+        </p>
+      )}
       <div className="import-actions">
-        <button type="button" disabled={disabled || !!busy} onClick={() => void perform('export')}>
-          {busy === 'export' ? '正在导出完整备份…' : '导出完整备份'}
-        </button>
+        {!recoveryOnly && (
+          <button
+            type="button"
+            disabled={disabled || !!busy}
+            onClick={() => void perform('export')}
+          >
+            {busy === 'export' ? '正在导出完整备份…' : '导出完整备份'}
+          </button>
+        )}
         <button type="button" disabled={disabled || !!busy} onClick={() => void perform('preview')}>
           {busy === 'preview' ? '正在校验备份…' : '选择备份并预览'}
         </button>
       </div>
       <p className="muted">
-        恢复将替换当前全部数据并重启。请先预览核对；程序会先保存待保存内容并创建当前数据的保护性备份，保护失败时停止恢复。
+        {recoveryOnly
+          ? '恢复将替换当前全部数据并重启。请先预览核对；程序会保留故障数据库及伴随文件，保护失败时停止恢复。'
+          : '恢复将替换当前全部数据并重启。请先预览核对；程序会先保存待保存内容并创建当前数据的保护性备份，保护失败时停止恢复。'}
       </p>
       {message && (
         <p

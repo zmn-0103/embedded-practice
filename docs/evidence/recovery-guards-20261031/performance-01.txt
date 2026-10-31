@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:16348) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\recency-performance.spec.ts:10:5 › 生成5000题与0/10万/50万历史项的最近练习筛选测量 (33.1s)
+
+  1 passed (34.3s)

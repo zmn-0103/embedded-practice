@@ -1,0 +1,10 @@
+
+> embedded-practice@0.0.3 build
+> npm run typecheck && electron-vite build
+
+
+> embedded-practice@0.0.3 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+tests/e2e/recovery-guards.spec.ts(232,46): error TS2304: Cannot find name 'window'.
+tests/e2e/recovery-guards.spec.ts(235,38): error TS2304: Cannot find name 'window'.

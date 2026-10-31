@@ -35,6 +35,7 @@ let quitAllowed = false
 let cleanup: Promise<void> | undefined
 let starting: Promise<void> | undefined
 let restoring = false
+let recoveryOnly = false
 
 protocol.registerSchemesAsPrivileged([
   { scheme: IMAGE_SCHEME, privileges: { standard: true, secure: true } },
@@ -160,18 +161,21 @@ function restartApplication(): void {
 async function restoreBackup(token: string): Promise<{ protectionPath: string }> {
   if (restoring || closeAttempt || stopping)
     throw new BackupFault('BACKUP_BUSY', '应用正在关闭或恢复，请等待完成。')
-  if (!backup || !library || !practice || !store || !practiceIpc || !libraryIpc)
+  if (
+    !backup ||
+    (!recoveryOnly && (!library || !practice || !store || !practiceIpc || !libraryIpc))
+  )
     throw new BackupFault('DATABASE_UNAVAILABLE', '本地数据服务不完整，请重启后再恢复。')
   restoring = true
   let plan: Awaited<ReturnType<BackupService['prepareRestore']>> | undefined
   let closingStarted = false
   try {
-    if (!(await practiceIpc?.requestClose()))
+    if (!recoveryOnly && !(await practiceIpc?.requestClose()))
       throw new BackupFault(
         'SAVE_FAILED',
         '待保存内容尚未确认，已停止恢复。请返回练习或显示设置重试保存。',
       )
-    practiceIpc.pause()
+    practiceIpc?.pause()
     await dataLocationsIpc?.pause()
     await libraryIpc?.pause()
     plan = await backup.prepareRestore(token)
@@ -184,6 +188,7 @@ async function restoreBackup(token: string): Promise<{ protectionPath: string }>
       plan.candidatePath,
       plan.candidateHash,
       reportError,
+      plan.originalHashes,
     )
     restartApplication()
     return { protectionPath: plan.protectionPath }
@@ -296,21 +301,21 @@ async function startApplication(): Promise<void> {
     }
   }
   if (stopping) return
-  if (store) {
-    try {
-      const opened = await openBackupService(
-        join(dataDirectory, 'practice.sqlite3'),
-        app.getVersion(),
-        reportError,
-      )
-      if (stopping) {
-        await opened.close()
-        return
-      }
-      backup = opened
-    } catch (error) {
-      reportError(error)
+  recoveryOnly = !store
+  try {
+    const opened = await openBackupService(
+      join(dataDirectory, 'practice.sqlite3'),
+      app.getVersion(),
+      reportError,
+      recoveryOnly,
+    )
+    if (stopping) {
+      await opened.close()
+      return
     }
+    backup = opened
+  } catch (error) {
+    reportError(error)
   }
   if (stopping) return
   const { window, rendererUrl } = createMainWindow()

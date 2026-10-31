@@ -1,0 +1,21 @@
+
+Running 14 tests using 1 worker
+
+(node:3796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [development] › tests\e2e\database-errors.spec.ts:24:7 › 损坏文件报错且原文件不变 (798ms)
+  ok  2 [development] › tests\e2e\database-errors.spec.ts:24:7 › 无应用标识的非空库报错且原文件不变 (792ms)
+  ok  3 [development] › tests\e2e\database-errors.spec.ts:24:7 › 不受支持的结构版本报错且原文件不变 (804ms)
+  ok  4 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝活动轮越界且原库与源备份不变 (1.3s)
+  ok  5 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝完成轮位置不等于题数且原库与源备份不变 (1.2s)
+  ok  6 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝结束轮越界且原库与源备份不变 (1.2s)
+  ok  7 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝队列空且原库与源备份不变 (1.2s)
+  ok  8 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝队列有洞且原库与源备份不变 (1.2s)
+  ok  9 [development] › tests\e2e\recovery-guards.spec.ts:56:7 › 备份拒绝队列不从零开始且原库与源备份不变 (1.2s)
+  ok 10 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：损坏保留现场并从健康备份恢复或安全停止 (3.0s)
+  ok 11 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：更新版本保留现场并从健康备份恢复或安全停止 (3.0s)
+  ok 12 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：保护失败保留现场并从健康备份恢复或安全停止 (1.9s)
+  ok 13 [development] › tests\e2e\recovery-guards.spec.ts:101:7 › 仅恢复模式：替换失败保留现场并从健康备份恢复或安全停止 (2.2s)
+  ok 14 [development] › tests\e2e\recovery-guards.spec.ts:208:5 › 主导航等待笔记保存，失败保留输入与位置，再次点击导航重试成功后切页 (1.4s)
+
+  14 passed (21.7s)

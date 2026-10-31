@@ -1,13 +1,70 @@
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { describe, expect, it, vi } from 'vitest'
-import { recoverDatabaseReplacement } from '../../src/main/services/backup/restore-files'
+import {
+  hashBackupFile,
+  preserveUnavailableDatabase,
+  recoverDatabaseReplacement,
+  replaceDatabase,
+} from '../../src/main/services/backup/restore-files'
 import { withImportDirectory } from '../helpers/import-directory'
 
 // 恢复检查只做文件操作；原生绑定按 Electron ABI 构建，单元测试不加载它。
 vi.mock('better-sqlite3', () => ({ default: class {} }))
 
 describe('启动时的恢复事务检查', () => {
+  it('故障原件及全部伴随文件逐字节保护并记录哈希，不冒充 SQLite 健康备份', () =>
+    withImportDirectory(async (root) => {
+      const databasePath = join(root, 'practice.sqlite3')
+      const backups = join(root, 'backups')
+      await mkdir(backups)
+      for (const suffix of ['', '-wal', '-shm', '-journal'])
+        await writeFile(databasePath + suffix, `故障原件${suffix}`)
+      const protection = await preserveUnavailableDatabase(databasePath, backups)
+      for (const file of protection.originalHashes) {
+        expect(
+          await readFile(join(protection.protectionPath, `practice.sqlite3${file.suffix}`)),
+        ).toEqual(await readFile(databasePath + file.suffix))
+        expect(await hashBackupFile(databasePath + file.suffix)).toBe(file.hash)
+      }
+      expect(
+        JSON.parse(await readFile(join(protection.protectionPath, 'files.json'), 'utf8')),
+      ).toMatchObject({ kind: 'unavailable-database', originals: protection.originalHashes })
+    }))
+
+  it('保护后原库变化拒绝替换，保留变化后的原件和先前现场', () =>
+    withImportDirectory(async (root) => {
+      const databasePath = join(root, 'practice.sqlite3')
+      const candidate = join(root, 'candidate.sqlite3')
+      await mkdir(join(root, 'backups'))
+      await writeFile(databasePath, '保护时的故障原件')
+      await writeFile(candidate, '候选内容，尚不进入 SQLite 打开')
+      const protection = await preserveUnavailableDatabase(databasePath, join(root, 'backups'))
+      await writeFile(databasePath, '保护后被其他程序改变')
+      await expect(
+        replaceDatabase(
+          databasePath,
+          candidate,
+          await hashBackupFile(candidate),
+          () => {},
+          protection.originalHashes,
+        ),
+      ).rejects.toMatchObject({ code: 'RESTORE_FAILED' })
+      expect(await readFile(databasePath, 'utf8')).toBe('保护后被其他程序改变')
+      expect(await readFile(join(protection.protectionPath, 'practice.sqlite3'), 'utf8')).toBe(
+        '保护时的故障原件',
+      )
+    }))
+
+  it('故障伴随文件类型异常时拒绝保护，不移动原数据库', () =>
+    withImportDirectory(async (root) => {
+      const databasePath = join(root, 'practice.sqlite3')
+      await writeFile(databasePath, '故障原件')
+      await mkdir(databasePath + '-wal')
+      await expect(preserveUnavailableDatabase(databasePath, root)).rejects.toThrow('文件类型异常')
+      expect(await readFile(databasePath, 'utf8')).toBe('故障原件')
+    }))
+
   it('日志尚未发布时清理未开始的恢复事务并保留原数据库', () =>
     withImportDirectory(async (root) => {
       const databasePath = join(root, 'practice.sqlite3')

@@ -427,6 +427,23 @@ export function readBackupSummary(
     database
       .prepare(
         `SELECT 1 FROM practice_sessions s
+        LEFT JOIN (
+          SELECT session_id, count(*) AS total, count(DISTINCT position) AS positions,
+            min(position) AS first, max(position) AS last
+          FROM practice_items GROUP BY session_id
+        ) q ON q.session_id = s.id
+        WHERE q.total IS NULL OR q.positions <> q.total OR q.first <> 0 OR q.last <> q.total - 1
+          OR (s.status = 'finished' AND s.position <> q.total)
+          OR (s.status <> 'finished' AND s.position >= q.total)
+        LIMIT 1`,
+      )
+      .get()
+  )
+    throw new BackupFault('INVALID_BACKUP', '备份中的练习队列或当前位置无效，请选择完整备份。')
+  if (
+    database
+      .prepare(
+        `SELECT 1 FROM practice_sessions s
         JOIN practice_sessions source ON source.id = s.repeat_source_id
         WHERE source.status = 'active' OR source.id = s.id LIMIT 1`,
       )

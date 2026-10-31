@@ -1,0 +1,13 @@
+
+Running 6 tests using 1 worker
+
+(node:24496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [development] › tests\e2e\review-todos.spec.ts:17:5 › 题目复习安排：明确加入、日期快捷操作和原因自动保存，完成/重开与正常关闭重读 (5.2s)
+  ok 2 [development] › tests\e2e\review-todos.spec.ts:74:5 › 真实待办写失败阻止离开和正常关闭，输入保留；原操作重试及过期冲突明确重读 (3.4s)
+  ok 3 [development] › tests\e2e\review-todos.spec.ts:150:5 › 真实提交后坏响应原操作重试不重复；独立作答前不读取/展示旧原因，揭晓和练习不会完成待办 (3.1s)
+  ok 4 [development] › tests\e2e\review-todos.spec.ts:219:5 › 旧轮复盘编辑当前复习计划，切题先保存，明确完成不改轮次/版本/自评 (1.6s)
+  ok 5 [development] › tests\e2e\review-todos.spec.ts:270:5 › 待办跨页/状态勾选进入原组卷确认，归档阻止开始；当前版本固定且练习不自动完成 (1.8s)
+  ok 6 [development] › tests\e2e\review-todos.spec.ts:320:5 › 复习待办在900宽/150%缩放/暗色中可编辑、筛选且浮层在视口内 (2.3s)
+
+  6 passed (18.1s)
