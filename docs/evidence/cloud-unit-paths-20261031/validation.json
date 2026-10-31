@@ -1,0 +1,87 @@
+{
+  "before": {
+    "command": [
+      "npm",
+      "test",
+      "--",
+      "--reporter=json",
+      "--outputFile=/workspace/artifacts/embedded-practice-validation-rqbd1el0/unit.json"
+    ],
+    "exit_code": 1,
+    "started_at": "2026-10-31T05:12:20.895915+00:00",
+    "finished_at": "2026-10-31T05:12:54.980178+00:00",
+    "log": "/workspace/artifacts/embedded-practice-validation-rqbd1el0/unit.log",
+    "test_files": 49,
+    "numTotalTests": 781,
+    "numPassedTests": 769,
+    "numFailedTests": 12,
+    "numPendingTests": 0,
+    "success": false,
+    "report_sha256": "78c7b54c1fac66329609aaf4e5b0f6b6048f9100bfe044295a521c4804a2470d"
+  },
+  "after": {
+    "command": [
+      "npm",
+      "test",
+      "--",
+      "--reporter=json",
+      "--outputFile=/workspace/artifacts/embedded-practice-path-fix-qdp07_o3/unit-after.json"
+    ],
+    "exit_code": 0,
+    "started_at": "2026-10-31T05:20:42.456494+00:00",
+    "finished_at": "2026-10-31T05:21:04.765187+00:00",
+    "test_files": 49,
+    "numTotalTests": 782,
+    "numPassedTests": 782,
+    "numFailedTests": 0,
+    "numPendingTests": 0,
+    "success": true,
+    "report_sha256": "8c1ba934ce2f695f9f500bde3c7479acb4015bd702268edcf9e8a64b85ed8299"
+  },
+  "focused": {
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/unit/backup-ipc.test.ts",
+      "tests/unit/data-locations-ipc.test.ts",
+      "--reporter=json",
+      "--outputFile=/workspace/artifacts/embedded-practice-path-fix-qdp07_o3/focused.json"
+    ],
+    "exit_code": 0,
+    "started_at": "2026-10-31T05:20:06.022854+00:00",
+    "finished_at": "2026-10-31T05:20:08.254523+00:00",
+    "test_files": 2,
+    "numTotalTests": 44,
+    "numPassedTests": 44,
+    "numFailedTests": 0,
+    "numPendingTests": 0,
+    "success": true,
+    "report_sha256": "d8ea7f8c52f4519945d25a498bf096e42232ab132ea9096734c9c5c025acbccf"
+  },
+  "check": {
+    "command": [
+      "npm",
+      "run",
+      "check"
+    ],
+    "exit_code": 0,
+    "started_at": "2026-10-31T05:20:06.027505+00:00",
+    "finished_at": "2026-10-31T05:20:24.369243+00:00"
+  },
+  "context": {
+    "base_commit": "ba218d6a6959f95b5b97046993882193b7dbaf9f",
+    "platform": "linux",
+    "node": "24.19.0",
+    "npm": "11.9.0",
+    "data_directory": "/tmp/embedded-practice-path-fix-data-1ii3wo5f",
+    "initial_data_directory": "/tmp/embedded-practice-test-data-sa2yr4ke",
+    "source_sha256": {
+      "tests/unit/backup-ipc.test.ts": "75b36ec918409fd138c171cd5cb7a7d7f0bfdc01a61aac13b0b9ef64ccf579f4",
+      "tests/unit/data-locations-ipc.test.ts": "2287d07522fc5d02c1c21dcec03a32e200dd8be1d988a666112a8392d7f04efc"
+    },
+    "scheduled_trigger_verified": false,
+    "named_environment_binding_verified": false,
+    "model_effort_verified": false
+  }
+}

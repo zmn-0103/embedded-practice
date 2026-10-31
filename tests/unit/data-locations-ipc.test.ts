@@ -11,7 +11,16 @@ const native = vi.hoisted(() => ({
   mkdir: vi.fn(),
   lstat: vi.fn(),
   realpath: vi.fn(),
+  pathStyle: undefined as 'win32' | 'posix' | undefined,
 }))
+vi.mock('node:path', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('node:path')>()
+  return {
+    ...actual,
+    relative: (from: string, to: string) =>
+      (native.pathStyle ? actual[native.pathStyle] : actual).relative(from, to),
+  }
+})
 vi.mock('electron', () => ({
   shell: { openPath: native.openPath },
   ipcMain: {
@@ -27,7 +36,7 @@ vi.mock('node:fs/promises', () => ({
   lstat: native.lstat,
   realpath: native.realpath,
 }))
-const directory = resolve('C:/独立 数据/刷题本')
+const directory = resolve('独立 数据', '刷题本')
 const registrations: ReturnType<typeof registerDataLocationsIpc>[] = []
 function setup() {
   const frame = { url: 'file:///app/index.html', isDestroyed: vi.fn(() => false) }
@@ -49,6 +58,7 @@ function setup() {
 }
 beforeEach(() => {
   vi.resetAllMocks()
+  native.pathStyle = undefined
   native.handlers.clear()
   native.openPath.mockResolvedValue('')
   native.mkdir.mockResolvedValue(undefined)
@@ -118,13 +128,20 @@ test('已有空目录可以打开，EEXIST 不当作写入失败', async () => {
   expect(await s.invoke('open', 'logs')).toEqual({ ok: true, value: null })
 })
 
-test('Windows 同一目录大小写不同仍打开真实路径', async () => {
+test.each(['win32', 'posix'] as const)('目录大小写比较遵循 %s 路径语义', async (pathStyle) => {
+  native.pathStyle = pathStyle
   const s = setup()
   const actual = join(directory, 'Logs')
   native.realpath.mockResolvedValueOnce(directory).mockResolvedValueOnce(actual)
   native.mkdir.mockRejectedValueOnce(Object.assign(new Error('exists'), { code: 'EEXIST' }))
-  expect(await s.invoke('open', 'logs')).toEqual({ ok: true, value: null })
-  expect(native.openPath).toHaveBeenCalledExactlyOnceWith(actual)
+  const result = await s.invoke('open', 'logs')
+  if (pathStyle === 'win32') {
+    expect(result).toEqual({ ok: true, value: null })
+    expect(native.openPath).toHaveBeenCalledExactlyOnceWith(actual)
+  } else {
+    expect(result).toMatchObject({ error: { code: 'FILE_ERROR' } })
+    expect(native.openPath).not.toHaveBeenCalled()
+  }
 })
 test.each([
   'missing-root',

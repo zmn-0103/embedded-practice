@@ -1,0 +1,14 @@
+{
+  "report_and_source_hashes": "verified",
+  "new_documentation_local_links": "verified",
+  "all_after_assertions": "passed",
+  "title_uuid_normalization": true,
+  "removed_test_names": [
+    "Windows 同一目录大小写不同仍打开真实路径"
+  ],
+  "added_test_names": [
+    "目录大小写比较遵循 win32 路径语义",
+    "目录大小写比较遵循 posix 路径语义"
+  ],
+  "initial_comparison": "Title comparison without UUID normalization failed because existing parameterized titles include fresh random UUIDs. Original test reports were not modified."
+}
