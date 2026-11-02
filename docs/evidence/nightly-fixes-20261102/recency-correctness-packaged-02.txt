@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:27712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [packaged] › tests\e2e\practice-recency.spec.ts:39:5 › 当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序 (2.1s)
+  ok 2 [packaged] › tests\e2e\practice-recency.spec.ts:240:5 › 最久优先先限10题再随机，固定队列不随历史变化/重新打开重排；方案兼容显式默认值 (2.5s)
+  ok 3 [packaged] › tests\e2e\practice-recency.spec.ts:345:5 › 题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作 (2.6s)
+
+  3 passed (8.0s)

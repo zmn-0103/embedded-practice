@@ -13,13 +13,9 @@ import {
   categorySelectionParameters,
   categorySelectionWhere,
   currentRatingSql,
-  contentUpdatedSql,
-  practicedSql,
-  questionOrderSql,
+  createQuestionSelectionSql,
   questionSelectionFrom,
   questionSelectionParameters,
-  questionSelectionWhere,
-  lastPracticedAtSql,
 } from './question-selection'
 import { createTopicNavigationReader } from './topic-navigation'
 
@@ -47,18 +43,28 @@ interface InfoRow {
 export function createLibraryReader(database: Database.Database) {
   const navigation = createTopicNavigationReader(database)
   // 浏览标记与明确更新组卷共用当前版本口径，普通条件选题保持原规则。
-  const listWhere = `${questionSelectionWhere}
-    AND (@contentUpdatedOnly = 0 OR ${contentUpdatedSql})`
-  const total = database.prepare(`SELECT count(*) AS total ${questionSelectionFrom}
-    WHERE ${listWhere}`)
-  const infoColumns = `q.topic_id AS topicId, q.question_id AS questionId, q.current_version_id AS versionId,
+  const standard = createQuestionSelectionSql()
+  const recent = createQuestionSelectionSql(true)
+  function infoColumns(sql: typeof standard) {
+    return `q.topic_id AS topicId, q.question_id AS questionId, q.current_version_id AS versionId,
     q.title, t.title AS topicTitle, q.tags_json AS tags, q.difficulty, q.archived,
-    COALESCE(s.favorite, 0) AS favorite, ${practicedSql} AS practiced,
-    ${currentRatingSql} AS currentRating,${lastPracticedAtSql} AS lastPracticedAt,
-    CASE WHEN ${contentUpdatedSql} THEN 1 ELSE 0 END AS contentUpdated`
-  const pageQuery = database.prepare(`SELECT ${infoColumns} ${questionSelectionFrom}
-    WHERE ${listWhere} ORDER BY ${questionOrderSql} LIMIT @limit OFFSET @offset`)
-  const detailQuery = database.prepare(`SELECT ${infoColumns}, v.question_markdown AS markdown,
+    COALESCE(s.favorite, 0) AS favorite, ${sql.practicedSql} AS practiced,
+    ${currentRatingSql} AS currentRating,${sql.lastPracticedAtSql} AS lastPracticedAt,
+    CASE WHEN ${sql.contentUpdatedSql} THEN 1 ELSE 0 END AS contentUpdated`
+  }
+  function prepareList(sql: typeof standard) {
+    const where = `${sql.questionSelectionWhere}
+      AND (@contentUpdatedOnly = 0 OR ${sql.contentUpdatedSql})`
+    return {
+      total: database.prepare(`SELECT count(*) AS total ${sql.from} WHERE ${where}`),
+      page: database.prepare(`SELECT ${infoColumns(sql)} ${sql.from}
+        WHERE ${where} ORDER BY ${sql.questionOrderSql} LIMIT @limit OFFSET @offset`),
+    }
+  }
+  const standardList = prepareList(standard)
+  const recentList = prepareList(recent)
+  const detailQuery =
+    database.prepare(`SELECT ${infoColumns(standard)}, v.question_markdown AS markdown,
     v.definitions_json AS definitions, v.image_bindings_json AS imageBindings ${questionSelectionFrom}
     WHERE q.topic_id = ? AND q.question_id = ?`)
   const answerQuery =
@@ -125,9 +131,24 @@ export function createLibraryReader(database: Database.Database) {
         ).map((row) => row.tag),
       }
     }
-    const count = (total.get(parameters) as { total: number }).total
+    // 窄范围继续索引点查；仅全范围的时间筛选/排序值得扫描并聚合全部历史。
+    const broadTimeQuery =
+      parameters.topicId === null &&
+      parameters.categoryKind === 'all' &&
+      parameters.query === '' &&
+      parameters.tag === null &&
+      parameters.personalTagId === null &&
+      parameters.difficulty === null &&
+      parameters.mastery === 'all' &&
+      parameters.favoritesOnly === 0 &&
+      parameters.contentUpdatedOnly === 0 &&
+      (parameters.practiceRecency === '7d' ||
+        parameters.practiceRecency === '30d' ||
+        parameters.practiceOrder === 'oldest')
+    const queries = broadTimeQuery ? recentList : standardList
+    const count = (queries.total.get(parameters) as { total: number }).total
     const page = Math.min(request.page, Math.max(1, Math.ceil(count / PAGE_SIZE)))
-    const rows = pageQuery.all({
+    const rows = queries.page.all({
       ...parameters,
       limit: PAGE_SIZE,
       offset: (page - 1) * PAGE_SIZE,

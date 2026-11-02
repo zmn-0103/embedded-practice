@@ -1,0 +1,14 @@
+
+> embedded-practice@0.0.3 check
+> npm run typecheck && npm run format:check
+
+
+> embedded-practice@0.0.3 typecheck
+> tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json
+
+
+> embedded-practice@0.0.3 format:check
+> prettier --check "src/**/*.{ts,tsx,css,html}" "tests/**/*.ts" "*.{json,ts,yml}"
+
+Checking formatting...
+All matched files use Prettier code style!

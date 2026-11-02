@@ -4,6 +4,10 @@ import { stat } from 'node:fs/promises'
 import { join } from 'node:path'
 import type { DesktopApi } from '../../src/shared/contracts/application'
 import { EMPTY_QUESTION_FILTERS } from '../../src/shared/contracts/question-filters'
+import {
+  createQuestionSelectionSql,
+  questionSelectionParameters,
+} from '../../src/main/database/repositories/question-selection'
 import { expect, launchApplication, test } from './helpers'
 import { stop, withHistoryDatabase } from './history-helpers'
 
@@ -16,6 +20,7 @@ test('生成5000题与0/10万/50万历史项的最近练习筛选测量', async 
       directory: app.getPath('userData'),
       executable: process.execPath,
       electron: process.versions.electron,
+      packaged: app.isPackaged,
     }))
     expect(actual.directory).toBe(testDataDirectory)
     await expect(page.locator('footer')).toContainText('20261030.1-v003-bank')
@@ -117,6 +122,47 @@ test('生成5000题与0/10万/50万历史项的最近练习筛选测量', async 
         }
       }
     }
+    const parameters = questionSelectionParameters({
+      topicId: null,
+      filters: {
+        ...EMPTY_QUESTION_FILTERS,
+        practiceRecency: '7d',
+        practiceOrder: 'oldest',
+      },
+    })
+    const queries = [false, true].map((summary) => {
+      const sql = createQuestionSelectionSql(summary)
+      return {
+        summary,
+        text: `SELECT q.id,${sql.lastPracticedAtSql},${sql.practicedSql}
+        ${sql.from} WHERE ${sql.questionSelectionWhere} ORDER BY ${sql.questionOrderSql} LIMIT 50`,
+      }
+    })
+    const queryPlans = await application.evaluate(
+      ({ app }, { queries, parameters }) => {
+        const path = process.getBuiltinModule('node:path')
+        const load = process
+          .getBuiltinModule('node:module')
+          .createRequire(path.join(app.getAppPath(), 'recency-plan.cjs'))
+        const Database = load('better-sqlite3') as typeof import('better-sqlite3')
+        const database = new Database(path.join(app.getPath('userData'), 'practice.sqlite3'), {
+          readonly: true,
+          fileMustExist: true,
+        })
+        try {
+          return {
+            sqlite: database.prepare('SELECT sqlite_version() AS version').get(),
+            queries: queries.map((query) => ({
+              ...query,
+              plan: database.prepare('EXPLAIN QUERY PLAN ' + query.text).all(parameters),
+            })),
+          }
+        } finally {
+          database.close()
+        }
+      },
+      { queries, parameters },
+    )
     const databaseBytes = (await stat(join(testDataDirectory, 'practice.sqlite3'))).size
     await stop(application)
     const restartAt = performance.now()
@@ -133,8 +179,8 @@ test('生成5000题与0/10万/50万历史项的最近练习筛选测量', async 
           startupWithCopyMs,
           cpu: cpus()[0]?.model,
           windows: release(),
-          scope:
-            '开发Electron，真实生产IPC/SQL，生成题和历史，包含IPC开销；每组首轮预热后7次；不代表真实用户数据或安装器',
+          queryPlans,
+          scope: `${info.project.name} Electron，真实生产IPC/SQL，生成题和历史，包含IPC开销；每组首轮预热后7次，查询计划单独读取；不代表真实用户数据或安装器`,
           measurements: report,
         },
         null,

@@ -1,0 +1,273 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/practice-recency.spec.ts",
+      "--project=packaged",
+      "--reporter=list,json",
+      "--output=output/nightly-20261102/recency-correctness-packaged-02"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/nightly-20261102/recency-correctness-packaged-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/nightly-20261102/recency-correctness-packaged-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\output\\nightly-20261102\\recency-correctness-packaged-02",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "packaged",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "packaged"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "practice-recency.spec.ts",
+      "file": "practice-recency.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅自评未知时间与最久优先顺序",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2105,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T02:17:40.989Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "runtime-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxccmVsZWFzZVxcbmlnaHRseS0yMDI2MTEwMi0wMVxcd2luLXVucGFja2VkXFxlbWJlZGRlZC1wcmFjdGljZS5leGUiLCJkaXJlY3RvcnkiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtUnI4dTNXIiwicGFja2FnZWQiOnRydWUsInZlcnNpb24iOiIwLjAuMyIsInNjaGVtYVZlcnNpb24iOjE3LCJkYXRhYmFzZUF2YWlsYWJsZSI6dHJ1ZSwiYnVpbGRGb290ZXIiOiLnprvnur/kvb/nlKggwrcg5pWw5o2u5L+d5a2Y5Zyo5pys5py6XG5WMC4wLjMg5rWL6K+V54mIIMK3IOaehOW7uiAyMDI2MTAzMC4xLXYwMDMtYmFuayJ9"
+                    },
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxuaWdodGx5LTIwMjYxMTAyLTAxXFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtUnI4dTNXIiwicGFja2FnZWQiOnRydWV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-3333232d8593d14e9094",
+          "file": "practice-recency.spec.ts",
+          "line": 39,
+          "column": 5
+        },
+        {
+          "title": "最久优先先限10题再随机，固定队列不随历史变化/重新打开重排；方案兼容显式默认值",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2452,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T02:17:43.124Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "runtime-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxccmVsZWFzZVxcbmlnaHRseS0yMDI2MTEwMi0wMVxcd2luLXVucGFja2VkXFxlbWJlZGRlZC1wcmFjdGljZS5leGUiLCJkaXJlY3RvcnkiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtSnB0T2hnIiwicGFja2FnZWQiOnRydWUsInZlcnNpb24iOiIwLjAuMyIsInNjaGVtYVZlcnNpb24iOjE3LCJkYXRhYmFzZUF2YWlsYWJsZSI6dHJ1ZSwiYnVpbGRGb290ZXIiOiLnprvnur/kvb/nlKggwrcg5pWw5o2u5L+d5a2Y5Zyo5pys5py6XG5WMC4wLjMg5rWL6K+V54mIIMK3IOaehOW7uiAyMDI2MTAzMC4xLXYwMDMtYmFuayJ9"
+                    },
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxuaWdodGx5LTIwMjYxMTAyLTAxXFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtSnB0T2hnIiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "runtime-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxccmVsZWFzZVxcbmlnaHRseS0yMDI2MTEwMi0wMVxcd2luLXVucGFja2VkXFxlbWJlZGRlZC1wcmFjdGljZS5leGUiLCJkaXJlY3RvcnkiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtSnB0T2hnIiwicGFja2FnZWQiOnRydWUsInZlcnNpb24iOiIwLjAuMyIsInNjaGVtYVZlcnNpb24iOjE3LCJkYXRhYmFzZUF2YWlsYWJsZSI6dHJ1ZSwiYnVpbGRGb290ZXIiOiLnprvnur/kvb/nlKggwrcg5pWw5o2u5L+d5a2Y5Zyo5pys5py6XG5WMC4wLjMg5rWL6K+V54mIIMK3IOaehOW7uiAyMDI2MTAzMC4xLXYwMDMtYmFuayJ9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-25bcb2e0a6c2305ce555",
+          "file": "practice-recency.spec.ts",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "题库和练习共用最近筛选，可保存/填入方案；窄窗暗色控件和结果可操作",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "packaged",
+              "projectName": "packaged",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2588,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T02:17:45.584Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "runtime-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxccmVsZWFzZVxcbmlnaHRseS0yMDI2MTEwMi0wMVxcd2luLXVucGFja2VkXFxlbWJlZGRlZC1wcmFjdGljZS5leGUiLCJkaXJlY3RvcnkiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtOFNnRlR2IiwicGFja2FnZWQiOnRydWUsInZlcnNpb24iOiIwLjAuMyIsInNjaGVtYVZlcnNpb24iOjE3LCJkYXRhYmFzZUF2YWlsYWJsZSI6dHJ1ZSwiYnVpbGRGb290ZXIiOiLnprvnur/kvb/nlKggwrcg5pWw5o2u5L+d5a2Y5Zyo5pys5py6XG5WMC4wLjMg5rWL6K+V54mIIMK3IOaehOW7uiAyMDI2MTAzMC4xLXYwMDMtYmFuayJ9"
+                    },
+                    {
+                      "name": "practice-control-runtime",
+                      "contentType": "application/json",
+                      "body": "eyJleGUiOiJFOlxcTXlfUHJvamVjdHNcXGVtYmVkZGVkLXByYWN0aWNlXFxyZWxlYXNlXFxuaWdodGx5LTIwMjYxMTAyLTAxXFx3aW4tdW5wYWNrZWRcXGVtYmVkZGVkLXByYWN0aWNlLmV4ZSIsImRhdGEiOiJDOlxcVXNlcnNcXHBjXFxBcHBEYXRhXFxMb2NhbFxcVGVtcFxcZW1iZWRkZWQtcHJhY3RpY2UtOFNnRlR2IiwicGFja2FnZWQiOnRydWV9"
+                    },
+                    {
+                      "name": "recent-library-narrow-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\nightly-20261102\\recency-correctness-packaged-02\\practice-recency-题库和练习共用最近筛选，可保存-填入方案；窄窗暗色控件和结果可操作-packaged\\attachments\\recent-library-narrow-dark-png-dc86a5ce01ba6c92dd02296cc1826c0b4a207ff4.png"
+                    },
+                    {
+                      "name": "recent-plan-narrow-dark.png",
+                      "contentType": "image/png",
+                      "path": "E:\\My_Projects\\embedded-practice\\output\\nightly-20261102\\recency-correctness-packaged-02\\practice-recency-题库和练习共用最近筛选，可保存-填入方案；窄窗暗色控件和结果可操作-packaged\\attachments\\recent-plan-narrow-dark-png-00dab1998dafb7742d573f07e86aae5225a46523.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84ab7c37b305ef6b4f67-d9c81cfdc6de5b8818fe",
+          "file": "practice-recency.spec.ts",
+          "line": 345,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-02T02:17:40.266Z",
+    "duration": 7953.756,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "baseline": "95959d3680e92a4ffb94ede12402daacb5c22ae8",
+  "branch": "codex/nightly-report-fixes-20261102",
+  "source": [
+    {
+      "path": "src/main/database/repositories/library-reader.ts",
+      "sha256": "67c82c8d87756cc649be5f6b20c5e267bfa45e8ae4bc8b537ab7128e60d03e7a"
+    },
+    {
+      "path": "src/main/database/repositories/question-selection.ts",
+      "sha256": "60f1e8491bdcfa43671dab677a676ee4074efed7185ff26e7b0eece0627c8ecf"
+    },
+    {
+      "path": "tests/e2e/helpers.ts",
+      "sha256": "176fe8a44eb70396e6700982e8475f1c371fda09397961068b65e9d8ecef1629"
+    },
+    {
+      "path": "tests/e2e/practice-recency.spec.ts",
+      "sha256": "27adc3953731ffe331fbe1254a154e1cceeef3d5565a08ad8756b06519a7a076"
+    },
+    {
+      "path": "tests/e2e/recency-performance.spec.ts",
+      "sha256": "60d0368cd19bd64e622adc2bfa34d0ab31cd618ad071720dd20dafde1a855bb7"
+    },
+    {
+      "path": "tests/unit/backup-ipc.test.ts",
+      "sha256": "75b36ec918409fd138c171cd5cb7a7d7f0bfdc01a61aac13b0b9ef64ccf579f4"
+    },
+    {
+      "path": "tests/unit/data-locations-ipc.test.ts",
+      "sha256": "2287d07522fc5d02c1c21dcec03a32e200dd8be1d988a666112a8392d7f04efc"
+    }
+  ],
+  "linuxNodeArchiveSha256": "14b342e71204f811bde6153be8e04b62aef63c236fef92b55f9c83154b409647",
+  "packageManifest": "package-final-02.json"
+}

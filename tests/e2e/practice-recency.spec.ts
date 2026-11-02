@@ -3,6 +3,11 @@ import { writeFile } from 'node:fs/promises'
 import type { Page } from '@playwright/test'
 import type { DesktopApi } from '../../src/shared/contracts/application'
 import {
+  createQuestionSelectionSql,
+  currentRatingSql,
+  questionSelectionParameters,
+} from '../../src/main/database/repositories/question-selection'
+import {
   EMPTY_QUESTION_FILTERS,
   type QuestionFilters,
 } from '../../src/shared/contracts/question-filters'
@@ -14,7 +19,11 @@ import { changePlan, openPlans, planOptions, readPlans, savePlan } from './pract
 import { arrangeReview } from './review-helpers'
 import { chooseTheme } from './theme-helpers'
 
-function questions(page: Page, change: Partial<QuestionFilters> = {}, topicId = 'control-a') {
+function questions(
+  page: Page,
+  change: Partial<QuestionFilters> = {},
+  topicId: string | null = 'control-a',
+) {
   return page.evaluate(
     (input) =>
       (globalThis as unknown as { desktop: DesktopApi }).desktop.library.listQuestions(input),
@@ -172,6 +181,61 @@ test('当前版本最近揭晓：7/30天精确边界、旧版本重导入、仅�
       'q-7',
       'q-8',
     ])
+    // 以原相关子查询为对照，核对整组结果与顺序；夹具含旧版本、时区、未知日期及多轮记录。
+    for (const practiceRecency of ['all', 'never', '7d', '30d'] as const) {
+      for (const practiceOrder of ['default', 'oldest'] as const) {
+        for (const mastery of ['all', 'unpracticed', '不会＋不熟', '掌握'] as const) {
+          const filters = { ...EMPTY_QUESTION_FILTERS, practiceRecency, practiceOrder, mastery }
+          const parameters = {
+            ...questionSelectionParameters({ topicId: null, filters }),
+            practicedBefore:
+              practiceRecency === '7d' || practiceRecency === '30d'
+                ? new Date(now - (practiceRecency === '7d' ? 7 : 30) * 86400000).toISOString()
+                : null,
+          }
+          const reference = withHistoryDatabase(testDataDirectory, (db) => {
+            const select = (sql: ReturnType<typeof createQuestionSelectionSql>) =>
+              db
+                .prepare(
+                  `SELECT q.question_id AS questionId,q.current_version_id AS versionId,
+                ${sql.practicedSql} AS practiced,${currentRatingSql} AS currentRating,
+                CASE WHEN ${sql.contentUpdatedSql} THEN 1 ELSE 0 END AS contentUpdated,
+                ${sql.lastPracticedAtSql} AS lastPracticedAt ${sql.from}
+                WHERE ${sql.questionSelectionWhere} ORDER BY ${sql.questionOrderSql}`,
+                )
+                .all(parameters)
+            const expected = select(createQuestionSelectionSql())
+            expect(select(createQuestionSelectionSql(true))).toEqual(expected)
+            return expected.map((row) => ({
+              questionId: row['questionId'],
+              versionId: row['versionId'],
+              practiced: row['practiced'] === 1,
+              currentRating: row['currentRating'],
+              contentUpdated: row['contentUpdated'] === 1,
+              lastPracticedAt: row['lastPracticedAt'],
+            }))
+          })
+          const result = await questions(page, filters, null)
+          if (!result.ok) throw new Error(result.error.message)
+          const includeTime = practiceRecency !== 'all' || practiceOrder === 'oldest'
+          expect(
+            result.value.questions.map((row) => ({
+              questionId: row.questionId,
+              versionId: row.versionId,
+              practiced: row.practiced,
+              currentRating: row.currentRating,
+              contentUpdated: row.contentUpdated,
+              lastPracticedAt: includeTime ? row.lastPracticedAt : null,
+            })),
+          ).toEqual(
+            reference.map((row) => ({
+              ...row,
+              lastPracticedAt: includeTime ? row.lastPracticedAt : null,
+            })),
+          )
+        }
+      }
+    }
   } finally {
     await stop(application)
   }

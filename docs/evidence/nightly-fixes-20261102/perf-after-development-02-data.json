@@ -1,0 +1,690 @@
+{
+  "actual": {
+    "directory": "C:\\Users\\pc\\AppData\\Local\\Temp\\embedded-practice-TecvSS",
+    "executable": "E:\\My_Projects\\embedded-practice\\node_modules\\electron\\dist\\electron.exe",
+    "electron": "42.11.15",
+    "packaged": false
+  },
+  "build": "20261030.1-v003-bank",
+  "schema": 17,
+  "databaseBytes": 130928640,
+  "startupWithCopyMs": 2249.756000000001,
+  "cpu": "13th Gen Intel(R) Core(TM) i5-13500HX",
+  "windows": "10.0.26200",
+  "queryPlans": {
+    "sqlite": {
+      "version": "3.53.2"
+    },
+    "queries": [
+      {
+        "summary": false,
+        "text": "SELECT q.id,strftime('%Y-%m-%dT%H:%M:%fZ',(SELECT max(julianday(p.revealed_at)) FROM practice_items p\n  WHERE p.version_id=q.current_version_id AND p.revealed_at IS NOT NULL)),CASE WHEN (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IS NOT NULL OR EXISTS (\n  SELECT 1 FROM practice_items p WHERE p.version_id = q.current_version_id\n  AND p.revealed_at IS NOT NULL) THEN 1 ELSE 0 END\n        FROM questions q\n  JOIN topics t ON t.topic_id = q.topic_id\n  JOIN question_versions v ON v.id = q.current_version_id\n  LEFT JOIN question_user_state s ON s.question_id = q.id WHERE q.archived = @archived\n  AND (@categoryKind = 'all'\n  OR (@categoryKind = 'uncategorized' AND t.category_id IS NULL)\n  OR (@categoryKind = 'category' AND t.category_id = @categoryId))\n  AND (@topicId IS NULL OR q.topic_id = @topicId)\n  AND (@tag IS NULL OR EXISTS (SELECT 1 FROM json_each(q.tags_json) WHERE value = @tag))\n  AND (@personalTagId IS NULL OR EXISTS (SELECT 1 FROM question_personal_tags pt\n    WHERE pt.question_id = q.id AND pt.tag_id = @personalTagId))\n  AND (@difficulty IS NULL OR q.difficulty = @difficulty)\n  AND (@favoritesOnly = 0 OR s.favorite = 1)\n  AND (@practiceRecency='all' OR (@practiceRecency='never' AND (CASE WHEN (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IS NOT NULL OR EXISTS (\n  SELECT 1 FROM practice_items p WHERE p.version_id = q.current_version_id\n  AND p.revealed_at IS NOT NULL) THEN 1 ELSE 0 END)=0)\n    OR (@practiceRecency IN ('7d','30d') AND ((CASE WHEN (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IS NOT NULL OR EXISTS (\n  SELECT 1 FROM practice_items p WHERE p.version_id = q.current_version_id\n  AND p.revealed_at IS NOT NULL) THEN 1 ELSE 0 END)=0\n      OR (SELECT max(julianday(p.revealed_at)) FROM practice_items p\n  WHERE p.version_id=q.current_version_id AND p.revealed_at IS NOT NULL)<julianday(@practicedBefore))))\n  AND (@mastery = 'all' OR (@mastery = 'unpracticed' AND (CASE WHEN (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IS NOT NULL OR EXISTS (\n  SELECT 1 FROM practice_items p WHERE p.version_id = q.current_version_id\n  AND p.revealed_at IS NOT NULL) THEN 1 ELSE 0 END) = 0)\n    OR (@mastery = '不会＋不熟' AND (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IN ('不会', '不熟'))\n    OR (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) = @mastery)\n  AND (@query = '' OR instr(lower(q.title), lower(@query)) > 0\n    OR instr(lower(v.question_markdown), lower(@query)) > 0\n    OR EXISTS (SELECT 1 FROM json_each(q.tags_json) WHERE instr(lower(value), lower(@query)) > 0)) ORDER BY CASE WHEN @practiceOrder='oldest' THEN\n  CASE WHEN (CASE WHEN (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IS NOT NULL OR EXISTS (\n  SELECT 1 FROM practice_items p WHERE p.version_id = q.current_version_id\n  AND p.revealed_at IS NOT NULL) THEN 1 ELSE 0 END)=0 THEN 0 WHEN (SELECT max(julianday(p.revealed_at)) FROM practice_items p\n  WHERE p.version_id=q.current_version_id AND p.revealed_at IS NOT NULL) IS NOT NULL THEN 1 ELSE 2 END END,\n  CASE WHEN @practiceOrder='oldest' THEN (SELECT max(julianday(p.revealed_at)) FROM practice_items p\n  WHERE p.version_id=q.current_version_id AND p.revealed_at IS NOT NULL) END,\n  t.title,t.topic_id,q.position,q.id LIMIT 50",
+        "plan": [
+          {
+            "id": 10,
+            "parent": 0,
+            "notused": 215,
+            "detail": "SCAN q USING INDEX questions_topic_order"
+          },
+          {
+            "id": 23,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 3"
+          },
+          {
+            "id": 27,
+            "parent": 23,
+            "notused": 0,
+            "detail": "SCAN json_each VIRTUAL TABLE INDEX 1:"
+          },
+          {
+            "id": 41,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 4"
+          },
+          {
+            "id": 45,
+            "parent": 41,
+            "notused": 39,
+            "detail": "SEARCH pt USING COVERING INDEX sqlite_autoindex_question_personal_tags_1 (question_id=? AND tag_id=?)"
+          },
+          {
+            "id": 56,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH v USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 75,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 9"
+          },
+          {
+            "id": 79,
+            "parent": 75,
+            "notused": 0,
+            "detail": "SCAN json_each VIRTUAL TABLE INDEX 1:"
+          },
+          {
+            "id": 96,
+            "parent": 0,
+            "notused": 46,
+            "detail": "SEARCH t USING INDEX sqlite_autoindex_topics_1 (topic_id=?)"
+          },
+          {
+            "id": 108,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH s USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN"
+          },
+          {
+            "id": 126,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 5"
+          },
+          {
+            "id": 131,
+            "parent": 126,
+            "notused": 60,
+            "detail": "SEARCH p USING INDEX practice_items_version (version_id=?)"
+          },
+          {
+            "id": 160,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 6"
+          },
+          {
+            "id": 165,
+            "parent": 160,
+            "notused": 60,
+            "detail": "SEARCH p USING INDEX practice_items_version (version_id=?)"
+          },
+          {
+            "id": 188,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 7"
+          },
+          {
+            "id": 194,
+            "parent": 188,
+            "notused": 60,
+            "detail": "SEARCH p USING INDEX practice_items_version (version_id=?)"
+          },
+          {
+            "id": 240,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 8"
+          },
+          {
+            "id": 245,
+            "parent": 240,
+            "notused": 60,
+            "detail": "SEARCH p USING INDEX practice_items_version (version_id=?)"
+          },
+          {
+            "id": 272,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 10"
+          },
+          {
+            "id": 277,
+            "parent": 272,
+            "notused": 60,
+            "detail": "SEARCH p USING INDEX practice_items_version (version_id=?)"
+          },
+          {
+            "id": 298,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 11"
+          },
+          {
+            "id": 304,
+            "parent": 298,
+            "notused": 60,
+            "detail": "SEARCH p USING INDEX practice_items_version (version_id=?)"
+          },
+          {
+            "id": 330,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 12"
+          },
+          {
+            "id": 336,
+            "parent": 330,
+            "notused": 60,
+            "detail": "SEARCH p USING INDEX practice_items_version (version_id=?)"
+          },
+          {
+            "id": 367,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 1"
+          },
+          {
+            "id": 373,
+            "parent": 367,
+            "notused": 60,
+            "detail": "SEARCH p USING INDEX practice_items_version (version_id=?)"
+          },
+          {
+            "id": 401,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 2"
+          },
+          {
+            "id": 406,
+            "parent": 401,
+            "notused": 60,
+            "detail": "SEARCH p USING INDEX practice_items_version (version_id=?)"
+          },
+          {
+            "id": 429,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      },
+      {
+        "summary": true,
+        "text": "SELECT q.id,strftime('%Y-%m-%dT%H:%M:%fZ',recentPractice.lastPracticeJulian),CASE WHEN (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IS NOT NULL OR recentPractice.revealedCount > 0 THEN 1 ELSE 0 END\n        FROM questions q\n  JOIN topics t ON t.topic_id = q.topic_id\n  JOIN question_versions v ON v.id = q.current_version_id\n  LEFT JOIN question_user_state s ON s.question_id = q.id\n      LEFT JOIN (SELECT version_id, count(*) AS revealedCount,\n        max(julianday(revealed_at)) AS lastPracticeJulian\n        FROM practice_items NOT INDEXED WHERE revealed_at IS NOT NULL GROUP BY version_id\n      ) recentPractice ON recentPractice.version_id = q.current_version_id WHERE q.archived = @archived\n  AND (@categoryKind = 'all'\n  OR (@categoryKind = 'uncategorized' AND t.category_id IS NULL)\n  OR (@categoryKind = 'category' AND t.category_id = @categoryId))\n  AND (@topicId IS NULL OR q.topic_id = @topicId)\n  AND (@tag IS NULL OR EXISTS (SELECT 1 FROM json_each(q.tags_json) WHERE value = @tag))\n  AND (@personalTagId IS NULL OR EXISTS (SELECT 1 FROM question_personal_tags pt\n    WHERE pt.question_id = q.id AND pt.tag_id = @personalTagId))\n  AND (@difficulty IS NULL OR q.difficulty = @difficulty)\n  AND (@favoritesOnly = 0 OR s.favorite = 1)\n  AND (@practiceRecency='all' OR (@practiceRecency='never' AND (CASE WHEN (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IS NOT NULL OR recentPractice.revealedCount > 0 THEN 1 ELSE 0 END)=0)\n    OR (@practiceRecency IN ('7d','30d') AND ((CASE WHEN (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IS NOT NULL OR recentPractice.revealedCount > 0 THEN 1 ELSE 0 END)=0\n      OR recentPractice.lastPracticeJulian<julianday(@practicedBefore))))\n  AND (@mastery = 'all' OR (@mastery = 'unpracticed' AND (CASE WHEN (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IS NOT NULL OR recentPractice.revealedCount > 0 THEN 1 ELSE 0 END) = 0)\n    OR (@mastery = '不会＋不熟' AND (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IN ('不会', '不熟'))\n    OR (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) = @mastery)\n  AND (@query = '' OR instr(lower(q.title), lower(@query)) > 0\n    OR instr(lower(v.question_markdown), lower(@query)) > 0\n    OR EXISTS (SELECT 1 FROM json_each(q.tags_json) WHERE instr(lower(value), lower(@query)) > 0)) ORDER BY CASE WHEN @practiceOrder='oldest' THEN\n  CASE WHEN (CASE WHEN (CASE WHEN s.last_rated_version_id = q.current_version_id\n  THEN s.last_rating ELSE NULL END) IS NOT NULL OR recentPractice.revealedCount > 0 THEN 1 ELSE 0 END)=0 THEN 0 WHEN recentPractice.lastPracticeJulian IS NOT NULL THEN 1 ELSE 2 END END,\n  CASE WHEN @practiceOrder='oldest' THEN recentPractice.lastPracticeJulian END,\n  t.title,t.topic_id,q.position,q.id LIMIT 50",
+        "plan": [
+          {
+            "id": 3,
+            "parent": 0,
+            "notused": 0,
+            "detail": "MATERIALIZE recentPractice"
+          },
+          {
+            "id": 10,
+            "parent": 3,
+            "notused": 216,
+            "detail": "SCAN practice_items"
+          },
+          {
+            "id": 14,
+            "parent": 3,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR GROUP BY"
+          },
+          {
+            "id": 67,
+            "parent": 0,
+            "notused": 215,
+            "detail": "SCAN q USING INDEX questions_topic_order"
+          },
+          {
+            "id": 80,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 2"
+          },
+          {
+            "id": 84,
+            "parent": 80,
+            "notused": 0,
+            "detail": "SCAN json_each VIRTUAL TABLE INDEX 1:"
+          },
+          {
+            "id": 98,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 3"
+          },
+          {
+            "id": 102,
+            "parent": 98,
+            "notused": 39,
+            "detail": "SEARCH pt USING COVERING INDEX sqlite_autoindex_question_personal_tags_1 (question_id=? AND tag_id=?)"
+          },
+          {
+            "id": 113,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH v USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 132,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 4"
+          },
+          {
+            "id": 136,
+            "parent": 132,
+            "notused": 0,
+            "detail": "SCAN json_each VIRTUAL TABLE INDEX 1:"
+          },
+          {
+            "id": 153,
+            "parent": 0,
+            "notused": 46,
+            "detail": "SEARCH t USING INDEX sqlite_autoindex_topics_1 (topic_id=?)"
+          },
+          {
+            "id": 165,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH s USING INTEGER PRIMARY KEY (rowid=?) LEFT-JOIN"
+          },
+          {
+            "id": 177,
+            "parent": 0,
+            "notused": 0,
+            "detail": "BLOOM FILTER ON recentPractice (version_id=?)"
+          },
+          {
+            "id": 188,
+            "parent": 0,
+            "notused": 47,
+            "detail": "SEARCH recentPractice USING AUTOMATIC COVERING INDEX (version_id=?) LEFT-JOIN"
+          },
+          {
+            "id": 325,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      }
+    ]
+  },
+  "scope": "development Electron，真实生产IPC/SQL，生成题和历史，包含IPC开销；每组首轮预热后7次，查询计划单独读取；不代表真实用户数据或安装器",
+  "measurements": [
+    {
+      "items": 0,
+      "recency": "all",
+      "order": "default",
+      "samplesMs": [
+        12.870200000000068,
+        9.10369999999989,
+        9.43489999999997,
+        8.998199999999997,
+        9.216000000000122,
+        8.521099999999933,
+        11.987700000000132
+      ],
+      "medianMs": 9.216000000000122,
+      "maxMs": 12.870200000000068
+    },
+    {
+      "items": 0,
+      "recency": "all",
+      "order": "oldest",
+      "samplesMs": [
+        8.387199999999893,
+        7.646800000000212,
+        7.846199999999953,
+        7.595600000000104,
+        7.784400000000005,
+        7.516399999999976,
+        7.949399999999969
+      ],
+      "medianMs": 7.784400000000005,
+      "maxMs": 8.387199999999893
+    },
+    {
+      "items": 0,
+      "recency": "never",
+      "order": "default",
+      "samplesMs": [
+        8.552500000000009,
+        9.215800000000172,
+        9.012899999999945,
+        8.84050000000002,
+        9.491500000000087,
+        8.549400000000105,
+        9.138099999999895
+      ],
+      "medianMs": 9.012899999999945,
+      "maxMs": 9.491500000000087
+    },
+    {
+      "items": 0,
+      "recency": "never",
+      "order": "oldest",
+      "samplesMs": [
+        11.882599999999911,
+        8.803699999999935,
+        7.977399999999989,
+        8.222700000000032,
+        7.860800000000154,
+        8.093799999999874,
+        7.7905000000000655
+      ],
+      "medianMs": 8.093799999999874,
+      "maxMs": 11.882599999999911
+    },
+    {
+      "items": 0,
+      "recency": "7d",
+      "order": "default",
+      "samplesMs": [
+        9.189099999999826,
+        9.92450000000008,
+        8.356800000000021,
+        8.571899999999914,
+        8.805399999999963,
+        8.316299999999956,
+        8.426800000000185
+      ],
+      "medianMs": 8.571899999999914,
+      "maxMs": 9.92450000000008
+    },
+    {
+      "items": 0,
+      "recency": "7d",
+      "order": "oldest",
+      "samplesMs": [
+        8.922399999999925,
+        8.955099999999902,
+        8.731800000000021,
+        10.817800000000034,
+        8.50149999999985,
+        8.057800000000043,
+        8.389199999999846
+      ],
+      "medianMs": 8.731800000000021,
+      "maxMs": 10.817800000000034
+    },
+    {
+      "items": 0,
+      "recency": "30d",
+      "order": "default",
+      "samplesMs": [
+        8.217099999999846,
+        8.188599999999951,
+        8.99630000000002,
+        8.448699999999917,
+        8.189300000000003,
+        8.538699999999835,
+        8.668299999999817
+      ],
+      "medianMs": 8.448699999999917,
+      "maxMs": 8.99630000000002
+    },
+    {
+      "items": 0,
+      "recency": "30d",
+      "order": "oldest",
+      "samplesMs": [
+        9.489299999999957,
+        8.944499999999834,
+        8.820400000000063,
+        8.750900000000001,
+        8.846900000000005,
+        12.964299999999866,
+        8.471099999999979
+      ],
+      "medianMs": 8.846900000000005,
+      "maxMs": 12.964299999999866
+    },
+    {
+      "items": 100000,
+      "recency": "all",
+      "order": "default",
+      "samplesMs": [
+        7.479499999999916,
+        7.188099999999849,
+        8.153600000000097,
+        6.984899999999925,
+        6.898999999999887,
+        7.458599999999933,
+        8.096300000000156
+      ],
+      "medianMs": 7.458599999999933,
+      "maxMs": 8.153600000000097
+    },
+    {
+      "items": 100000,
+      "recency": "all",
+      "order": "oldest",
+      "samplesMs": [
+        46.746399999999994,
+        46.95769999999993,
+        46.890100000000075,
+        52.90689999999995,
+        46.21529999999984,
+        46.5317,
+        46.48329999999987
+      ],
+      "medianMs": 46.746399999999994,
+      "maxMs": 52.90689999999995
+    },
+    {
+      "items": 100000,
+      "recency": "never",
+      "order": "default",
+      "samplesMs": [
+        52.64340000000038,
+        50.94239999999991,
+        53.37049999999999,
+        51.96030000000019,
+        52.83899999999994,
+        50.76459999999997,
+        50.23270000000002
+      ],
+      "medianMs": 51.96030000000019,
+      "maxMs": 53.37049999999999
+    },
+    {
+      "items": 100000,
+      "recency": "never",
+      "order": "oldest",
+      "samplesMs": [
+        48.997699999999895,
+        47.16000000000031,
+        47.41840000000002,
+        48.871000000000095,
+        50.375400000000354,
+        50.00599999999986,
+        50.98880000000008
+      ],
+      "medianMs": 48.997699999999895,
+      "maxMs": 50.98880000000008
+    },
+    {
+      "items": 100000,
+      "recency": "7d",
+      "order": "default",
+      "samplesMs": [
+        50.589400000000296,
+        52.59880000000021,
+        52.60719999999992,
+        51.89420000000018,
+        49.35309999999981,
+        49.24189999999999,
+        53.108900000000176
+      ],
+      "medianMs": 51.89420000000018,
+      "maxMs": 53.108900000000176
+    },
+    {
+      "items": 100000,
+      "recency": "7d",
+      "order": "oldest",
+      "samplesMs": [
+        49.670900000000074,
+        57.27070000000003,
+        52.8090000000002,
+        50.62379999999939,
+        51.64800000000014,
+        50.796299999999974,
+        51.700299999999515
+      ],
+      "medianMs": 51.64800000000014,
+      "maxMs": 57.27070000000003
+    },
+    {
+      "items": 100000,
+      "recency": "30d",
+      "order": "default",
+      "samplesMs": [
+        54.076999999999316,
+        49.85190000000057,
+        51.435999999999694,
+        48.83970000000045,
+        49.96280000000024,
+        48.425600000000486,
+        52.09439999999995
+      ],
+      "medianMs": 49.96280000000024,
+      "maxMs": 54.076999999999316
+    },
+    {
+      "items": 100000,
+      "recency": "30d",
+      "order": "oldest",
+      "samplesMs": [
+        50.09569999999985,
+        54.66229999999996,
+        51.98150000000078,
+        49.772500000000036,
+        49.73109999999997,
+        48.71270000000004,
+        51.335399999999936
+      ],
+      "medianMs": 50.09569999999985,
+      "maxMs": 54.66229999999996
+    },
+    {
+      "items": 500000,
+      "recency": "all",
+      "order": "default",
+      "samplesMs": [
+        8.42489999999998,
+        12.38799999999992,
+        13.718399999999747,
+        8.744799999999486,
+        8.751900000000205,
+        11.783000000000357,
+        11.765400000000227
+      ],
+      "medianMs": 11.765400000000227,
+      "maxMs": 13.718399999999747
+    },
+    {
+      "items": 500000,
+      "recency": "all",
+      "order": "oldest",
+      "samplesMs": [
+        442.6813000000002,
+        382.4922000000006,
+        390.10429999999906,
+        377.7070999999996,
+        411.17279999999846,
+        369.90730000000076,
+        372.446899999999
+      ],
+      "medianMs": 382.4922000000006,
+      "maxMs": 442.6813000000002
+    },
+    {
+      "items": 500000,
+      "recency": "never",
+      "order": "default",
+      "samplesMs": [
+        236.03250000000116,
+        241.90740000000005,
+        237.02239999999983,
+        240.9483999999993,
+        232.17759999999907,
+        236.1358999999993,
+        241.88869999999952
+      ],
+      "medianMs": 237.02239999999983,
+      "maxMs": 241.90740000000005
+    },
+    {
+      "items": 500000,
+      "recency": "never",
+      "order": "oldest",
+      "samplesMs": [
+        346.1399000000001,
+        350.9983999999986,
+        347.3148000000001,
+        343.1934000000001,
+        356.78960000000006,
+        372.9966999999997,
+        341.01800000000003
+      ],
+      "medianMs": 347.3148000000001,
+      "maxMs": 372.9966999999997
+    },
+    {
+      "items": 500000,
+      "recency": "7d",
+      "order": "default",
+      "samplesMs": [
+        371.3475000000017,
+        359.8297999999995,
+        339.4282999999996,
+        351.40829999999914,
+        347.0691000000006,
+        361.54060000000027,
+        348.76580000000104
+      ],
+      "medianMs": 351.40829999999914,
+      "maxMs": 371.3475000000017
+    },
+    {
+      "items": 500000,
+      "recency": "7d",
+      "order": "oldest",
+      "samplesMs": [
+        347.76810000000114,
+        360.34790000000066,
+        359.6676000000007,
+        346.05539999999746,
+        340.0465000000004,
+        354.9904000000024,
+        340.9318000000021
+      ],
+      "medianMs": 347.76810000000114,
+      "maxMs": 360.34790000000066
+    },
+    {
+      "items": 500000,
+      "recency": "30d",
+      "order": "default",
+      "samplesMs": [
+        332.5066999999981,
+        350.7826000000023,
+        348.42359999999826,
+        343.3579000000027,
+        340.5822999999982,
+        362.02590000000055,
+        342.61149999999907
+      ],
+      "medianMs": 343.3579000000027,
+      "maxMs": 362.02590000000055
+    },
+    {
+      "items": 500000,
+      "recency": "30d",
+      "order": "oldest",
+      "samplesMs": [
+        370.37019999999757,
+        363.69810000000143,
+        353.46010000000024,
+        337.16939999999886,
+        344.70690000000104,
+        338.7191000000021,
+        342.21020000000135
+      ],
+      "medianMs": 344.70690000000104,
+      "maxMs": 370.37019999999757
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "config": {
+    "argv": [
+      "E:\\Program Files\\nodejs\\node.exe",
+      "E:\\My_Projects\\embedded-practice\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/recency-performance.spec.ts",
+      "--project=development",
+      "--reporter=list,json",
+      "--output=output/nightly-20261102/perf-after-development-01"
+    ],
+    "configFile": "E:\\My_Projects\\embedded-practice\\playwright.config.ts",
+    "rootDir": "E:/My_Projects/embedded-practice/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/nightly-20261102/perf-after-development-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/My_Projects/embedded-practice/output/nightly-20261102/perf-after-development-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "packaged",
+        "name": "packaged",
+        "testDir": "E:/My_Projects/embedded-practice/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\My_Projects\\embedded-practice\\output\\nightly-20261102\\perf-after-development-01",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "development",
+        "testDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "snapshotDir": "E:\\My_Projects\\embedded-practice\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {},
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "development"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "recency-performance.spec.ts",
+      "file": "recency-performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "生成5000题与0/10万/50万历史项的最近练习筛选测量",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "development",
+              "projectName": "development",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 53140,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T02:20:01.572Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "runtime-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcbm9kZV9tb2R1bGVzXFxlbGVjdHJvblxcZGlzdFxcZWxlY3Ryb24uZXhlIiwiZGlyZWN0b3J5IjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLVY0YVZVbSIsInBhY2thZ2VkIjpmYWxzZSwidmVyc2lvbiI6IjQyLjExLjE1Iiwic2NoZW1hVmVyc2lvbiI6MTcsImRhdGFiYXNlQXZhaWxhYmxlIjp0cnVlLCJidWlsZEZvb3RlciI6Iuemu+e6v+S9v+eUqCDCtyDmlbDmja7kv53lrZjlnKjmnKzmnLpcblY0Mi4xMS4xNSDmtYvor5XniYggwrcg5p6E5bu6IDIwMjYxMDMwLjEtdjAwMy1iYW5rIn0="
+                    },
+                    {
+                      "name": "runtime-target.json",
+                      "contentType": "application/json",
+                      "body": "eyJleGVjdXRhYmxlIjoiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcbm9kZV9tb2R1bGVzXFxlbGVjdHJvblxcZGlzdFxcZWxlY3Ryb24uZXhlIiwiZGlyZWN0b3J5IjoiQzpcXFVzZXJzXFxwY1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGVtYmVkZGVkLXByYWN0aWNlLVY0YVZVbSIsInBhY2thZ2VkIjpmYWxzZSwidmVyc2lvbiI6IjQyLjExLjE1Iiwic2NoZW1hVmVyc2lvbiI6MTcsImRhdGFiYXNlQXZhaWxhYmxlIjp0cnVlLCJidWlsZEZvb3RlciI6Iuemu+e6v+S9v+eUqCDCtyDmlbDmja7kv53lrZjlnKjmnKzmnLpcblY0Mi4xMS4xNSDmtYvor5XniYggwrcg5p6E5bu6IDIwMjYxMDMwLjEtdjAwMy1iYW5rIn0="
+                    },
+                    {
+                      "name": "recency-performance.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJhY3R1YWwiOiB7CiAgICAiZGlyZWN0b3J5IjogIkM6XFxVc2Vyc1xccGNcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxlbWJlZGRlZC1wcmFjdGljZS1WNGFWVW0iLAogICAgImV4ZWN1dGFibGUiOiAiRTpcXE15X1Byb2plY3RzXFxlbWJlZGRlZC1wcmFjdGljZVxcbm9kZV9tb2R1bGVzXFxlbGVjdHJvblxcZGlzdFxcZWxlY3Ryb24uZXhlIiwKICAgICJlbGVjdHJvbiI6ICI0Mi4xMS4xNSIKICB9LAogICJidWlsZCI6ICIyMDI2MTAzMC4xLXYwMDMtYmFuayIsCiAgInNjaGVtYSI6IDE3LAogICJkYXRhYmFzZUJ5dGVzIjogMTMwOTI4NjQwLAogICJzdGFydHVwV2l0aENvcHlNcyI6IDI0MjYuNjcxMDk5OTk5OTk5NiwKICAiY3B1IjogIjEzdGggR2VuIEludGVsKFIpIENvcmUoVE0pIGk1LTEzNTAwSFgiLAogICJ3aW5kb3dzIjogIjEwLjAuMjYyMDAiLAogICJzY29wZSI6ICLlvIDlj5FFbGVjdHJvbu+8jOecn+WunueUn+S6p0lQQy9TUUzvvIznlJ/miJDpopjlkozljoblj7LvvIzljIXlkKtJUEPlvIDplIDvvJvmr4/nu4Tpppbova7pooTng63lkI435qyh77yb5LiN5Luj6KGo55yf5a6e55So5oi35pWw5o2u5oiW5a6J6KOF5ZmoIiwKICAibWVhc3VyZW1lbnRzIjogWwogICAgewogICAgICAiaXRlbXMiOiAwLAogICAgICAicmVjZW5jeSI6ICJhbGwiLAogICAgICAib3JkZXIiOiAiZGVmYXVsdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgMTcuMjUwNDk5OTk5OTk5ODc0LAogICAgICAgIDkuNjQ1MDk5OTk5OTk5OTU3LAogICAgICAgIDguNTg5Njk5OTk5OTk5OTkzLAogICAgICAgIDguNDc5MTk5OTk5OTk5OTkyLAogICAgICAgIDcuODU1MDk5OTk5OTk5OTkzLAogICAgICAgIDguNjg5NzAwMDAwMDAwMTMsCiAgICAgICAgOC4wMzEwOTk5OTk5OTk5MjQKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogOC41ODk2OTk5OTk5OTk5OTMsCiAgICAgICJtYXhNcyI6IDE3LjI1MDQ5OTk5OTk5OTg3NAogICAgfSwKICAgIHsKICAgICAgIml0ZW1zIjogMCwKICAgICAgInJlY2VuY3kiOiAiYWxsIiwKICAgICAgIm9yZGVyIjogIm9sZGVzdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgOS4wMTc0OTk5OTk5OTk5MjcsCiAgICAgICAgNy45NDE3MDAwMDAwMDAwODMsCiAgICAgICAgOS41NjYyOTk5OTk5OTk5NTYsCiAgICAgICAgNy43MDc1OTk5OTk5OTk5NTcsCiAgICAgICAgOC4zNzg1MDAwMDAwMDAwMzEsCiAgICAgICAgOC45NzAxMDAwMDAwMDAwMDIsCiAgICAgICAgOC45ODEwOTk5OTk5OTk5NwogICAgICBdLAogICAgICAibWVkaWFuTXMiOiA4Ljk3MDEwMDAwMDAwMDAwMiwKICAgICAgIm1heE1zIjogOS41NjYyOTk5OTk5OTk5NTYKICAgIH0sCiAgICB7CiAgICAgICJpdGVtcyI6IDAsCiAgICAgICJyZWNlbmN5IjogIm5ldmVyIiwKICAgICAgIm9yZGVyIjogImRlZmF1bHQiLAogICAgICAic2FtcGxlc01zIjogWwogICAgICAgIDkuNTg0NjAwMDAwMDAwMTM3LAogICAgICAgIDkuMDY1MDAwMDAwMDAwMDU1LAogICAgICAgIDguNDgxNTAwMDAwMDAwMzI0LAogICAgICAgIDEwLjMyMTMwMDAwMDAwMDA2NSwKICAgICAgICA4LjMzNDUwMDAwMDAwMDM5LAogICAgICAgIDguNjk4MTk5OTk5OTk5ODE1LAogICAgICAgIDguNjA4Njk5OTk5OTk5NzcyCiAgICAgIF0sCiAgICAgICJtZWRpYW5NcyI6IDguNjk4MTk5OTk5OTk5ODE1LAogICAgICAibWF4TXMiOiAxMC4zMjEzMDAwMDAwMDAwNjUKICAgIH0sCiAgICB7CiAgICAgICJpdGVtcyI6IDAsCiAgICAgICJyZWNlbmN5IjogIm5ldmVyIiwKICAgICAgIm9yZGVyIjogIm9sZGVzdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgOS44MzQyMDAwMDAwMDAyMzcsCiAgICAgICAgMTAuMzE1NTAwMDAwMDAwMTU2LAogICAgICAgIDkuOTU4OTk5OTk5OTk5ODMzLAogICAgICAgIDkuNDcyOTAwMDAwMDAwMjA5LAogICAgICAgIDEzLjIyNTY5OTk5OTk5OTk2LAogICAgICAgIDguNjk5OTAwMDAwMDAwMDcsCiAgICAgICAgOS40NjU5MDAwMDAwMDAxNDcKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogOS44MzQyMDAwMDAwMDAyMzcsCiAgICAgICJtYXhNcyI6IDEzLjIyNTY5OTk5OTk5OTk2CiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiAwLAogICAgICAicmVjZW5jeSI6ICI3ZCIsCiAgICAgICJvcmRlciI6ICJkZWZhdWx0IiwKICAgICAgInNhbXBsZXNNcyI6IFsKICAgICAgICA4LjU1OTI5OTk5OTk5OTg5NCwKICAgICAgICA5LjM3NTY5OTk5OTk5OTU5NywKICAgICAgICA5LjQ1NjUwMDAwMDAwMDIzMywKICAgICAgICA4LjY3MjM5OTk5OTk5OTkyNSwKICAgICAgICAxMC4wNDM3OTk5OTk5OTk5MiwKICAgICAgICAxMC40Mjc3MDAwMDAwMDAxODYsCiAgICAgICAgMTAuMzQ1NDk5OTk5OTk5OTAyCiAgICAgIF0sCiAgICAgICJtZWRpYW5NcyI6IDkuNDU2NTAwMDAwMDAwMjMzLAogICAgICAibWF4TXMiOiAxMC40Mjc3MDAwMDAwMDAxODYKICAgIH0sCiAgICB7CiAgICAgICJpdGVtcyI6IDAsCiAgICAgICJyZWNlbmN5IjogIjdkIiwKICAgICAgIm9yZGVyIjogIm9sZGVzdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgMTAuNTEwNjk5OTk5OTk5ODE1LAogICAgICAgIDEwLjE3NDE5OTk5OTk5OTkyOCwKICAgICAgICA5LjIzMTI5OTk5OTk5OTkyLAogICAgICAgIDEwLjM4MDQ5OTk5OTk5OTc1NiwKICAgICAgICA5Ljc0ODU5OTk5OTk5OTg5NywKICAgICAgICA5LjY0Njc5OTk5OTk5OTk4NSwKICAgICAgICA5LjkxNDIwMDAwMDAwMDE2NAogICAgICBdLAogICAgICAibWVkaWFuTXMiOiA5LjkxNDIwMDAwMDAwMDE2NCwKICAgICAgIm1heE1zIjogMTAuNTEwNjk5OTk5OTk5ODE1CiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiAwLAogICAgICAicmVjZW5jeSI6ICIzMGQiLAogICAgICAib3JkZXIiOiAiZGVmYXVsdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgOS40ODM1MDAwMDAwMDAyNzYsCiAgICAgICAgOC4zOTE5OTk5OTk5OTk4MjUsCiAgICAgICAgOS44MzAzOTk5OTk5OTk4MjcsCiAgICAgICAgOS4xOTA5MDAwMDAwMDAwNTYsCiAgICAgICAgOC41NjE3MDAwMDAwMDAyLAogICAgICAgIDkuMjkyMzk5OTk5OTk5ODE2LAogICAgICAgIDguMTA3MTk5OTk5OTk5OTIKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogOS4xOTA5MDAwMDAwMDAwNTYsCiAgICAgICJtYXhNcyI6IDkuODMwMzk5OTk5OTk5ODI3CiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiAwLAogICAgICAicmVjZW5jeSI6ICIzMGQiLAogICAgICAib3JkZXIiOiAib2xkZXN0IiwKICAgICAgInNhbXBsZXNNcyI6IFsKICAgICAgICA4Ljk4MTI5OTk5OTk5OTkyLAogICAgICAgIDkuMDU3NjAwMDAwMDAwMDkzLAogICAgICAgIDkuMzExMjk5OTk5OTk5ODQ2LAogICAgICAgIDkuOTA0Mzk5OTk5OTk5ODk2LAogICAgICAgIDkuMTkzODk5OTk5OTk5NzU4LAogICAgICAgIDkuMTQ1Mzk5OTk5OTk5ODgxLAogICAgICAgIDkuOTQ2MTAwMDAwMDAwMTE1CiAgICAgIF0sCiAgICAgICJtZWRpYW5NcyI6IDkuMTkzODk5OTk5OTk5NzU4LAogICAgICAibWF4TXMiOiA5Ljk0NjEwMDAwMDAwMDExNQogICAgfSwKICAgIHsKICAgICAgIml0ZW1zIjogMTAwMDAwLAogICAgICAicmVjZW5jeSI6ICJhbGwiLAogICAgICAib3JkZXIiOiAiZGVmYXVsdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgOC4wMzE3LAogICAgICAgIDExLjI2MDM5OTk5OTk5OTY2MywKICAgICAgICA5LjY1NjQwMDAwMDAwMDMwMywKICAgICAgICA4LjAzMzEwMDAwMDAwMDEwNCwKICAgICAgICA4LjU0MDg5OTk5OTk5OTk2NSwKICAgICAgICA3Ljg3MjI5OTk5OTk5OTk5NiwKICAgICAgICA4LjYzMjMwMDAwMDAwMDIxNAogICAgICBdLAogICAgICAibWVkaWFuTXMiOiA4LjU0MDg5OTk5OTk5OTk2NSwKICAgICAgIm1heE1zIjogMTEuMjYwMzk5OTk5OTk5NjYzCiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiAxMDAwMDAsCiAgICAgICJyZWNlbmN5IjogImFsbCIsCiAgICAgICJvcmRlciI6ICJvbGRlc3QiLAogICAgICAic2FtcGxlc01zIjogWwogICAgICAgIDkxLjQ4NzUwMDAwMDAwMDE4LAogICAgICAgIDkwLjAyNDYwMDAwMDAwMDE5LAogICAgICAgIDk1LjkzNzk5OTk5OTk5OTY1LAogICAgICAgIDkyLjEwNzk5OTk5OTk5OTcyLAogICAgICAgIDkwLjU2NjI5OTk5OTk5OTk2LAogICAgICAgIDkxLjM3ODkwMDAwMDAwMDE2LAogICAgICAgIDk0LjEyNjI5OTk5OTk5OTkKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogOTEuNDg3NTAwMDAwMDAwMTgsCiAgICAgICJtYXhNcyI6IDk1LjkzNzk5OTk5OTk5OTY1CiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiAxMDAwMDAsCiAgICAgICJyZWNlbmN5IjogIm5ldmVyIiwKICAgICAgIm9yZGVyIjogImRlZmF1bHQiLAogICAgICAic2FtcGxlc01zIjogWwogICAgICAgIDkxLjkzMjk5OTk5OTk5OTk5LAogICAgICAgIDkyLjQ1OTI5OTk5OTk5OTk4LAogICAgICAgIDk1LjQ5MjIwMDAwMDAwMDE0LAogICAgICAgIDkyLjMwMzE5OTk5OTk5OTM4LAogICAgICAgIDkzLjEyMDQ5OTk5OTk5OTk5LAogICAgICAgIDkzLjYyMzgwMDAwMDAwMDMsCiAgICAgICAgOTMuMTQxMzk5OTk5OTk5NTIKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogOTMuMTIwNDk5OTk5OTk5OTksCiAgICAgICJtYXhNcyI6IDk1LjQ5MjIwMDAwMDAwMDE0CiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiAxMDAwMDAsCiAgICAgICJyZWNlbmN5IjogIm5ldmVyIiwKICAgICAgIm9yZGVyIjogIm9sZGVzdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgOTEuNDI1MjAwMDAwMDAwNTksCiAgICAgICAgOTIuMzc2NzAwMDAwMDAwNzEsCiAgICAgICAgOTIuMzIzNjAwMDAwMDAwNjIsCiAgICAgICAgOTAuMTAyNzk5OTk5OTk5NjYsCiAgICAgICAgOTEuODIyNzk5OTk5OTk5OTIsCiAgICAgICAgOTAuMjAwNjAwMDAwMDAwMTIsCiAgICAgICAgOTYuMjU0NjAwMDAwMDAwMjEKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogOTEuODIyNzk5OTk5OTk5OTIsCiAgICAgICJtYXhNcyI6IDk2LjI1NDYwMDAwMDAwMDIxCiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiAxMDAwMDAsCiAgICAgICJyZWNlbmN5IjogIjdkIiwKICAgICAgIm9yZGVyIjogImRlZmF1bHQiLAogICAgICAic2FtcGxlc01zIjogWwogICAgICAgIDkyLjQ1MTU5OTk5OTk5OTQyLAogICAgICAgIDkzLjcyMTMwMDAwMDAwMDE2LAogICAgICAgIDkxLjE2ODcwMDAwMDAwMDE3LAogICAgICAgIDk2LjIwMjI5OTk5OTk5OTkyLAogICAgICAgIDk5LjYwMzM5OTk5OTk5OTk3LAogICAgICAgIDkzLjU4MzQ5OTk5OTk5OTczLAogICAgICAgIDg5Ljc0MDk5OTk5OTk5OTk5CiAgICAgIF0sCiAgICAgICJtZWRpYW5NcyI6IDkzLjU4MzQ5OTk5OTk5OTczLAogICAgICAibWF4TXMiOiA5OS42MDMzOTk5OTk5OTk5NwogICAgfSwKICAgIHsKICAgICAgIml0ZW1zIjogMTAwMDAwLAogICAgICAicmVjZW5jeSI6ICI3ZCIsCiAgICAgICJvcmRlciI6ICJvbGRlc3QiLAogICAgICAic2FtcGxlc01zIjogWwogICAgICAgIDkxLjcwOTU5OTk5OTk5OTIzLAogICAgICAgIDkxLjU3NDU5OTk5OTk5OTkyLAogICAgICAgIDkxLjE2ODI5OTk5OTk5OTM2LAogICAgICAgIDkzLjA0NjQwMDAwMDAwMDE4LAogICAgICAgIDk1LjQxMTM5OTk5OTk5OTk2LAogICAgICAgIDk0Ljc2Mjg5OTk5OTk5OTcyLAogICAgICAgIDkzLjAxNDI5OTk5OTk5OTgyCiAgICAgIF0sCiAgICAgICJtZWRpYW5NcyI6IDkzLjAxNDI5OTk5OTk5OTgyLAogICAgICAibWF4TXMiOiA5NS40MTEzOTk5OTk5OTk5NgogICAgfSwKICAgIHsKICAgICAgIml0ZW1zIjogMTAwMDAwLAogICAgICAicmVjZW5jeSI6ICIzMGQiLAogICAgICAib3JkZXIiOiAiZGVmYXVsdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgOTQuNzAxMTAwMDAwMDAwMjIsCiAgICAgICAgMTAwLjIzODA5OTk5OTk5OTU4LAogICAgICAgIDkyLjMxNDE5OTk5OTk5OTgsCiAgICAgICAgOTYuOTI0ODk5OTk5OTk5OTgsCiAgICAgICAgOTQuNTIzMjAwMDAwMDAwNTQsCiAgICAgICAgOTIuMjEwNTk5OTk5OTk5NDMsCiAgICAgICAgMTAwLjA1NTE5OTk5OTk5OTc5CiAgICAgIF0sCiAgICAgICJtZWRpYW5NcyI6IDk0LjcwMTEwMDAwMDAwMDIyLAogICAgICAibWF4TXMiOiAxMDAuMjM4MDk5OTk5OTk5NTgKICAgIH0sCiAgICB7CiAgICAgICJpdGVtcyI6IDEwMDAwMCwKICAgICAgInJlY2VuY3kiOiAiMzBkIiwKICAgICAgIm9yZGVyIjogIm9sZGVzdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgOTQuNDUxMjAwMDAwMDAwNDMsCiAgICAgICAgMTAzLjI1NTY5OTk5OTk5OTcsCiAgICAgICAgOTMuNTgwMTk5OTk5OTk5NDIsCiAgICAgICAgOTQuODAxNTAwMDAwMDAwNDksCiAgICAgICAgOTguNzUzOTk5OTk5OTk5OSwKICAgICAgICAxMDAuNTY0MzAwMDAwMDAwOTEsCiAgICAgICAgOTEuNDIxNTAwMDAwMDAwMzgKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogOTQuODAxNTAwMDAwMDAwNDksCiAgICAgICJtYXhNcyI6IDEwMy4yNTU2OTk5OTk5OTk3CiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiA1MDAwMDAsCiAgICAgICJyZWNlbmN5IjogImFsbCIsCiAgICAgICJvcmRlciI6ICJkZWZhdWx0IiwKICAgICAgInNhbXBsZXNNcyI6IFsKICAgICAgICAxNC4xMTc3OTk5OTk5OTk5ODgsCiAgICAgICAgMTMuMzk1MzAwMDAwMDAwMTM0LAogICAgICAgIDEzLjczODYwMDAwMDAwMDU4OCwKICAgICAgICAxMy4xNDc0OTk5OTk5OTkxMjcsCiAgICAgICAgMTIuNzc0NDk5OTk5OTk5NTM0LAogICAgICAgIDEyLjE1MjAwMDAwMDAwMDA0NCwKICAgICAgICAxMi41MTgyOTk5OTk5OTk3MjYKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogMTMuMTQ3NDk5OTk5OTk5MTI3LAogICAgICAibWF4TXMiOiAxNC4xMTc3OTk5OTk5OTk5ODgKICAgIH0sCiAgICB7CiAgICAgICJpdGVtcyI6IDUwMDAwMCwKICAgICAgInJlY2VuY3kiOiAiYWxsIiwKICAgICAgIm9yZGVyIjogIm9sZGVzdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgNzI5Ljc3NzQwMDAwMDAwMDksCiAgICAgICAgNjg5LjgyOTg5OTk5OTk5ODgsCiAgICAgICAgNzA1LjgwNDUwMDAwMDAwMDIsCiAgICAgICAgNzE0LjY2ODcwMDAwMDAwMDIsCiAgICAgICAgNjk4LjA1MDk5OTk5OTk5OTUsCiAgICAgICAgNzIwLjk5MjcwMDAwMDAwMDcsCiAgICAgICAgNzE2Ljk4ODAwMDAwMDAwMTIKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogNzE0LjY2ODcwMDAwMDAwMDIsCiAgICAgICJtYXhNcyI6IDcyOS43Nzc0MDAwMDAwMDA5CiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiA1MDAwMDAsCiAgICAgICJyZWNlbmN5IjogIm5ldmVyIiwKICAgICAgIm9yZGVyIjogImRlZmF1bHQiLAogICAgICAic2FtcGxlc01zIjogWwogICAgICAgIDY5NC4zMjg2MDAwMDAwMDA3LAogICAgICAgIDY4Ni4xNzYyMDAwMDAwMDE3LAogICAgICAgIDY2Ni42NTkwMDAwMDAwMDMzLAogICAgICAgIDcyNi45MTk5MDAwMDAwMDA4LAogICAgICAgIDcwNy42NjMyOTk5OTk5OTY1LAogICAgICAgIDY4NS42MjE5OTk5OTk5OTk0LAogICAgICAgIDY5Ny4yMjE3OTk5OTk5OTkzCiAgICAgIF0sCiAgICAgICJtZWRpYW5NcyI6IDY5NC4zMjg2MDAwMDAwMDA3LAogICAgICAibWF4TXMiOiA3MjYuOTE5OTAwMDAwMDAwOAogICAgfSwKICAgIHsKICAgICAgIml0ZW1zIjogNTAwMDAwLAogICAgICAicmVjZW5jeSI6ICJuZXZlciIsCiAgICAgICJvcmRlciI6ICJvbGRlc3QiLAogICAgICAic2FtcGxlc01zIjogWwogICAgICAgIDY0Ny4zOTk0MDAwMDAwMDIxLAogICAgICAgIDY4Ny4wNTE0MDAwMDAwMDAzLAogICAgICAgIDY3NC42NDQ4OTk5OTk5OTkzLAogICAgICAgIDY2MC41Njg5OTk5OTk5OTk1LAogICAgICAgIDcyNC45MzIxMDAwMDAwMDE4LAogICAgICAgIDcxMC4zODc5MDAwMDAwMDE1LAogICAgICAgIDcxMy43NjgKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogNjg3LjA1MTQwMDAwMDAwMDMsCiAgICAgICJtYXhNcyI6IDcyNC45MzIxMDAwMDAwMDE4CiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiA1MDAwMDAsCiAgICAgICJyZWNlbmN5IjogIjdkIiwKICAgICAgIm9yZGVyIjogImRlZmF1bHQiLAogICAgICAic2FtcGxlc01zIjogWwogICAgICAgIDczMy4xOTM5OTk5OTk5OTk1LAogICAgICAgIDc0MC41NTQ4OTk5OTk5OTkyLAogICAgICAgIDY5NC45NzEyLAogICAgICAgIDcxOC44MDQyMDAwMDAwMDIzLAogICAgICAgIDY5NC41ODk2OTk5OTk5OTY4LAogICAgICAgIDcxMi40NjU2OTk5OTk5OTcsCiAgICAgICAgNzE1LjUxNjE5OTk5OTk5ODIKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogNzE1LjUxNjE5OTk5OTk5ODIsCiAgICAgICJtYXhNcyI6IDc0MC41NTQ4OTk5OTk5OTkyCiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiA1MDAwMDAsCiAgICAgICJyZWNlbmN5IjogIjdkIiwKICAgICAgIm9yZGVyIjogIm9sZGVzdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgNzM0LjU1NTAwMDAwMDAwMDMsCiAgICAgICAgNjgyLjIxMzYwMDAwMDAwMjgsCiAgICAgICAgNjk0LjE2MzIwMDAwMDAwMjcsCiAgICAgICAgNjkxLjczNjc5OTk5OTk5ODgsCiAgICAgICAgNjgwLjcxMTY5OTk5OTk5OTgsCiAgICAgICAgNjg5Ljc1NjE5OTk5OTk5NjIsCiAgICAgICAgNzAxLjkxMzUwMDAwMDAwMjQKICAgICAgXSwKICAgICAgIm1lZGlhbk1zIjogNjkxLjczNjc5OTk5OTk5ODgsCiAgICAgICJtYXhNcyI6IDczNC41NTUwMDAwMDAwMDAzCiAgICB9LAogICAgewogICAgICAiaXRlbXMiOiA1MDAwMDAsCiAgICAgICJyZWNlbmN5IjogIjMwZCIsCiAgICAgICJvcmRlciI6ICJkZWZhdWx0IiwKICAgICAgInNhbXBsZXNNcyI6IFsKICAgICAgICA3MjYuMjQ5NDk5OTk5OTk4MSwKICAgICAgICA3MTEuMTE2ODAwMDAwMDAzNCwKICAgICAgICA3MzguMzYzNjAwMDAwMDA0MiwKICAgICAgICA2OTcuMDMzMDAwMDAwMDAzMSwKICAgICAgICA2OTkuODI3Nzk5OTk5OTk5MSwKICAgICAgICA3MDUuNzA2Nzk5OTk5OTk5OSwKICAgICAgICA3MjEuMzU0NDAwMDAwMDAzOAogICAgICBdLAogICAgICAibWVkaWFuTXMiOiA3MTEuMTE2ODAwMDAwMDAzNCwKICAgICAgIm1heE1zIjogNzM4LjM2MzYwMDAwMDAwNDIKICAgIH0sCiAgICB7CiAgICAgICJpdGVtcyI6IDUwMDAwMCwKICAgICAgInJlY2VuY3kiOiAiMzBkIiwKICAgICAgIm9yZGVyIjogIm9sZGVzdCIsCiAgICAgICJzYW1wbGVzTXMiOiBbCiAgICAgICAgNzAyLjU4MTUwMDAwMDAwMDIsCiAgICAgICAgNjc0LjE3MTY5OTk5OTk5OSwKICAgICAgICA2NTMuMzQxOTk5OTk5OTk2OSwKICAgICAgICA2OTAuMDU2Mjk5OTk5OTk2NiwKICAgICAgICA2NTYuNjQwNTk5OTk5OTk4OCwKICAgICAgICA2OTMuOTA2NDk5OTk5OTk3MywKICAgICAgICA3MjQuMzQyNTk5OTk5OTk2MwogICAgICBdLAogICAgICAibWVkaWFuTXMiOiA2OTAuMDU2Mjk5OTk5OTk2NiwKICAgICAgIm1heE1zIjogNzI0LjM0MjU5OTk5OTk5NjMKICAgIH0KICBdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5717eaae22fc42ea9466-be3dfc36820e1bcba24d",
+          "file": "recency-performance.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-02T02:20:01.024Z",
+    "duration": 53738.909,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

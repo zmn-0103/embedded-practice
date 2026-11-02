@@ -1,6 +1,7 @@
-import { mkdtemp, rm } from 'node:fs/promises'
+import { mkdtemp, rm, stat } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
-import { basename, dirname, join, resolve } from 'node:path'
+import { basename, dirname, isAbsolute, join, resolve } from 'node:path'
+import { DatabaseSync } from 'node:sqlite'
 import { _electron, test as base, type Page } from '@playwright/test'
 import type { AppStatusResult, DesktopApi } from '../../src/shared/contracts/application'
 
@@ -48,8 +49,12 @@ export async function launchApplication(
   delete env['ELECTRON_RUN_AS_NODE']
   delete env['ELECTRON_RENDERER_URL']
   const packaged = projectName === 'packaged'
+  const executable = process.env['EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE']
 
   if (packaged) {
+    if (!executable || !isAbsolute(executable))
+      throw new Error('packaged 检查必须显式指定绝对路径 EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE。')
+    if (!(await stat(executable)).isFile()) throw new Error('指定的打包 EXE 不是文件。')
     delete env['Path']
     delete env['PATH']
     const windowsDirectory = process.env['SystemRoot']
@@ -60,10 +65,7 @@ export async function launchApplication(
   const application = await _electron.launch({
     ...(packaged
       ? {
-          executablePath: resolve(
-            process.env['EMBEDDED_PRACTICE_PACKAGED_EXECUTABLE'] ??
-              'release/win-unpacked/embedded-practice.exe',
-          ),
+          executablePath: executable!,
           args: [],
         }
       : { args: [resolve('out/main/index.js')] }),
@@ -77,8 +79,39 @@ export async function launchApplication(
     const window = await application.browserWindow(page)
     await window.evaluate((window) => window.setContentSize(1440, 1000))
     await page.locator('.app-shell').waitFor()
+    const actual = await application.evaluate(({ app }) => ({
+      executable: app.getPath('exe'),
+      directory: app.getPath('userData'),
+      packaged: app.isPackaged,
+      version: app.getVersion(),
+    }))
+    base.expect(actual.directory).toBe(directory)
+    base.expect(actual.packaged).toBe(packaged)
+    if (packaged)
+      base.expect(resolve(actual.executable).toLowerCase()).toBe(resolve(executable!).toLowerCase())
+    const status = await readAppStatus(page)
+    let schemaVersion: number | null = null
+    if (status.ok) {
+      const database = new DatabaseSync(join(directory, 'practice.sqlite3'), { readOnly: true })
+      try {
+        schemaVersion = Number(database.prepare('PRAGMA user_version').get()!['user_version'])
+      } finally {
+        database.close()
+      }
+      base.expect(schemaVersion).toBe(17)
+      await base.expect(page.locator('footer')).toContainText('20261030.1-v003-bank')
+    }
+    await base.info().attach('runtime-target.json', {
+      body: JSON.stringify({
+        ...actual,
+        schemaVersion,
+        databaseAvailable: status.ok,
+        buildFooter: await page.locator('footer').innerText(),
+      }),
+      contentType: 'application/json',
+    })
     if (initialPage) await openPage(page, initialPage)
-    else if ((await readAppStatus(page)).ok) await openPage(page, '开始练习')
+    else if (status.ok) await openPage(page, '开始练习')
     return { application, page }
   } catch (error) {
     await application.close()

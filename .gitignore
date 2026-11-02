@@ -14,6 +14,10 @@ test-results/
 .vite/
 *.tsbuildinfo
 
+# 原始运行输出保留本机；精简报告另存 docs/evidence，设计参考图继续跟踪。
+/output/*
+!/output/imagegen/
+
 # 本地配置与诊断；可提交不含秘密的配置示例。
 /.workbuddy/
 .env

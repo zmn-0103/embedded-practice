@@ -1,5 +1,6 @@
 import { EventEmitter } from 'node:events'
 import { randomUUID } from 'node:crypto'
+import { resolve } from 'node:path'
 import type { BrowserWindow, IpcMainInvokeEvent } from 'electron'
 import { afterEach, beforeEach, expect, test, vi } from 'vitest'
 import { registerBackupIpc } from '../../src/main/ipc/backup'
@@ -20,7 +21,7 @@ vi.mock('electron', () => ({
   },
 }))
 const file: BackupFile = {
-  filePath: 'C:/中文 空格/备份.sqlite3',
+  filePath: resolve('中文 空格', '备份.sqlite3'),
   summary: {
     createdAt: '2026-10-22T01:00:00.000Z',
     appVersion: '0.1.0',
